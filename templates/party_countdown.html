@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}{{ headline }} · {{ game_name }}{% endblock %}
+{% block content %}
+  <section
+    class="party-countdown-card"
+    data-party-countdown
+    data-remaining-ms="{{ remaining_ms }}"
+    data-visual-seconds="{{ visual_seconds }}"
+    data-refresh-url="{{ url_for('party_lobby', lobby_id=lobby.id) }}"
+    data-party-presence
+    data-status-url="{{ url_for('party_status', lobby_id=lobby.id) }}"
+  >
+    <p class="eyebrow">{{ lobby.name }}</p>
+    <h1>{{ headline }}</h1>
+    <div class="party-countdown-number" data-party-countdown-number>…</div>
+    <div class="party-countdown-track" aria-hidden="true">
+      <span data-party-countdown-bar></span>
+    </div>
+    <p>{{ detail }}</p>
+  </section>
+{% endblock %}
+{% block scripts %}
+  <script src="{{ url_for('static', filename='party.js', v='2') }}" defer></script>
+{% endblock %}

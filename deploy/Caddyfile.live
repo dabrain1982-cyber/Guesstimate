@@ -1,0 +1,17 @@
+igroup.it-sauther.de {
+	encode zstd gzip
+
+	handle_path /guesstimate/* {
+		reverse_proxy 127.0.0.1:8765 {
+			header_up X-Forwarded-Prefix /guesstimate
+		}
+	}
+
+	handle /guesstimate {
+		redir /guesstimate/ 308
+	}
+
+	handle {
+		reverse_proxy 127.0.0.1:8790
+	}
+}

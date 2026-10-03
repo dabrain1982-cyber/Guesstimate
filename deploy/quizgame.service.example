@@ -1,0 +1,17 @@
+[Unit]
+Description=KOPFKINO daily quiz
+After=network.target
+
+[Service]
+User=quizgame
+Group=quizgame
+WorkingDirectory=/srv/quizgame
+EnvironmentFile=/etc/quizgame.env
+ExecStart=/srv/quizgame/.venv/bin/gunicorn --workers 2 --bind 127.0.0.1:8765 --access-logfile - app:app
+Restart=on-failure
+RestartSec=3
+PrivateTmp=true
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target

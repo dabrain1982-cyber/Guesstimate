@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Fragenvorrat leer · {{ game_name }}{% endblock %}
+{% block content %}
+  <section class="party-head">
+    <p class="eyebrow">KURZE DENKPAUSE</p>
+    <h1>Alle neuen Fragen sind gespielt.</h1>
+    <p>Die Benachrichtigung an Stormseed ist vorgemerkt. Es werden keine alten Fragen automatisch wiederverwendet.</p>
+  </section>
+  {% include "_leaderboard.html" %}
+{% endblock %}

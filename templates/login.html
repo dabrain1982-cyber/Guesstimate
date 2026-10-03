@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Einloggen · {{ game_name }}{% endblock %}
+{% block shell_class %}login-shell{% endblock %}
+{% block header %}{% endblock %}
+{% block content %}
+  <section class="login-card">
+    <div class="hero-art"><img src="{{ url_for('static', filename='stormseed-hero.png') }}" alt="Eine elektrische Gewitterwolke lässt Wissen aus einem Samen sprießen"></div>
+    <h1 class="brand-title"><span>Stormseed´s</span><strong>Guesstimate</strong></h1>
+    <p class="login-intro">Fünf Fragen. Ein Versuch. Und morgen wissen alle, wer wirklich Ahnung hatte.</p>
+
+    <form method="post" class="stack-form" autocomplete="off">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <label>
+        <span>Spielername</span>
+        <input name="username" autocomplete="off" autocapitalize="none" required placeholder="Dein Name">
+      </label>
+      <label>
+        <span>PIN</span>
+        <input name="pin" type="password" inputmode="numeric" autocomplete="off" maxlength="12" required placeholder="••••">
+      </label>
+      <button class="primary-button" type="submit">Rein ins Quiz</button>
+    </form>
+    <div class="auth-switch"><span>Neu hier?</span><a href="{{ url_for('register') }}">Eigenen Login erstellen</a></div>
+  </section>
+{% endblock %}
