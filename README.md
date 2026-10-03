@@ -65,7 +65,7 @@ Die Dateien in `deploy/` richten einen abgeschotteten systemd-Dienst hinter dem 
 Ein erneutes Einspielen mit vollständigem Reset von Runden, Antworten und Highscore – bei unveränderten Logins – erfolgt mit:
 
 ```bash
-sudo "/home/igroup/minime-deploy/guesstimate/deploy/install-live.sh" --reset-game
+sudo "/home/igroup/Projekt MiniMe/guesstimate/deploy/install-live.sh" --reset-game
 ```
 
 Vor dem Reset wird automatisch eine Datenbanksicherung angelegt.
