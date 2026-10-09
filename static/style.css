@@ -634,6 +634,8 @@ input:-webkit-autofill:active {
 .progress-icons .category-icon.current { opacity: 1; transform: translateY(-2px) scale(1.28); filter: drop-shadow(0 0 7px rgba(216,255,66,.45)); }
 
 .question-topline { display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 76px; margin: -13px 0 13px; }
+.question-taxonomy { display: grid; justify-items: end; gap: 7px; }
+.knowledge-badge { padding: 5px 9px; border: 1px solid rgba(255,255,255,.28); border-radius: 999px; color: rgba(255,255,255,.76); font-size: .64rem; font-weight: 900; letter-spacing: .06em; text-transform: uppercase; }
 .question-art { width: clamp(78px, 22vw, 112px); margin: -13px 0 -6px -7px; transform: rotate(-3deg); }
 .category-badge { margin-bottom: 0; }
 .category-multiple_choice { box-shadow: 8px 8px 0 rgba(255,107,87,.55); }
@@ -816,19 +818,6 @@ input:-webkit-autofill:active {
 @media (max-width: 430px) {
   .order-comparison { grid-template-columns: 1fr; }
 }
-
-.content-warning {
-  display: grid;
-  gap: 3px;
-  margin-top: 14px;
-  padding: 12px 14px;
-  border-left: 4px solid var(--coral);
-  border-radius: 7px 13px 13px 7px;
-  background: rgba(255,107,87,.09);
-  color: #aeb7c9;
-  font-size: .8rem;
-}
-.content-warning strong { color: #ff9788; }
 
 /* Spielregeln und tägliche Login-Serie. */
 .rules-button {

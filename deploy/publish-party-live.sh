@@ -6,14 +6,15 @@ if [[ "${EUID}" -ne 0 ]]; then
   exit 1
 fi
 
-SOURCE="/home/igroup/Rate it"
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+SOURCE="$(cd -- "${SCRIPT_DIR}/.." && pwd)"
 LIVE_DB="/var/lib/guesstimate/quiz.sqlite3"
 STAMP="$(/usr/bin/date +%Y%m%d-%H%M%S)"
 
 /usr/bin/systemctl stop guesstimate.service
 trap '/usr/bin/systemctl start guesstimate.service' EXIT
 /usr/bin/env \
-  PYTHONPATH="${SOURCE}/.deps" \
+  PYTHONPATH="/srv/guesstimate/.deps" \
   /usr/bin/python3 "${SOURCE}/deploy/merge_player.py" --check \
   "${LIVE_DB}" "Pearlyde" "Pearlyde1"
 /bin/cp -a "${LIVE_DB}" "${LIVE_DB}.before-pearlyde-merge-${STAMP}"

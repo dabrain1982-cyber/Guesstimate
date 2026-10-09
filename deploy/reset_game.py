@@ -13,7 +13,9 @@ def reset(database_path: str) -> None:
     try:
         database.execute("PRAGMA foreign_keys = ON")
         with database:
-            for table in ("party_answers", "party_members", "party_lobbies", "question_usage", "system_notifications"):
+            # Usage and pending notifications are permanent history. A game reset
+            # must never make an already played question look unused again.
+            for table in ("party_answers", "party_members", "party_lobbies"):
                 if database.execute(
                     "SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = ?", (table,)
                 ).fetchone():

@@ -12,10 +12,6 @@
 
   {% include "_leaderboard.html" %}
 
-  {% if content_warning %}
-    <aside class="content-warning" role="status"><strong>Fragen-Nachschub</strong><span>{{ content_warning }}</span></aside>
-  {% endif %}
-
   <section class="action-dock">
     {% if active_round_date != today_iso_value %}
       <p class="catchup-date">Nachholrunde vom <strong>{{ active_round_date[8:10] }}.{{ active_round_date[5:7] }}.{{ active_round_date[0:4] }}</strong></p>
@@ -32,7 +28,7 @@
         </button>
       </form>
       <p class="home-quip">{{ greeting }}</p>
-      <small class="round-meta">5 Fragen · etwa 3 Minuten · nur ein Versuch</small>
+      <small class="round-meta">5 Fragearten · 6 Wissensgebiete · etwa 3 Minuten</small>
     {% endif %}
     <a class="party-mode-link" href="{{ url_for('party_index') }}">🎉 Partymodus</a>
 

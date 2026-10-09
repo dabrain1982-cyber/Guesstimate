@@ -8,6 +8,7 @@ import secrets
 import sqlite3
 import smtplib
 import ssl
+from collections import Counter
 from datetime import date, datetime, timedelta
 from email.message import EmailMessage
 from functools import wraps
@@ -27,7 +28,12 @@ from flask import (
 )
 from werkzeug.security import check_password_hash, generate_password_hash
 
-from questions import CATEGORY_LABELS, CATEGORY_ORDER, QUESTION_BANK
+from questions import (
+    CATEGORY_LABELS,
+    CATEGORY_ORDER,
+    KNOWLEDGE_CATEGORY_LABELS,
+    QUESTION_BANK,
+)
 
 
 GREETINGS = [
@@ -45,8 +51,9 @@ MIN_QUESTION_POINTS = 10
 MAX_QUESTION_POINTS = 100
 MAX_PLAYERS = 100
 DEFAULT_GAME_NAME = "Stormseed´s Guesstimate"
-RELEASE_VERSION = "2026.10.03-party-5"
+RELEASE_VERSION = "2026.10.06-flat-question-types-v2"
 FULL_TIME_SECONDS = 5.0
+FEEDBACK_SECONDS = 4
 QUESTION_DECAY_SECONDS = (5.0, 7.0, 10.0, 12.0, 20.0)
 QUESTION_TIME_LIMITS = tuple(
     FULL_TIME_SECONDS + decay for decay in QUESTION_DECAY_SECONDS
@@ -102,7 +109,6 @@ def create_app(test_config: dict[str, Any] | None = None) -> Flask:
         MAIL_USER=os.environ.get("QUIZ_MAIL_USER", ""),
         MAIL_TO=os.environ.get("QUIZ_MAIL_TO", ""),
         MAIL_PASSWORD_FILE=os.environ.get("QUIZ_MAIL_PASSWORD_FILE", ""),
-        CONTACT_EMAIL=os.environ.get("QUIZ_CONTACT_EMAIL", ""),
         PUBLIC_URL=os.environ.get("QUIZ_PUBLIC_URL", "").rstrip("/"),
     )
     if test_config:
@@ -217,6 +223,7 @@ def init_db() -> None:
 
         CREATE TABLE IF NOT EXISTS question_usage (
             question_id TEXT PRIMARY KEY,
+            content_hash TEXT,
             category TEXT NOT NULL,
             source_type TEXT NOT NULL,
             source_id TEXT NOT NULL,
@@ -326,6 +333,12 @@ def init_db() -> None:
         get_db().execute(
             "ALTER TABLE answers ADD COLUMN points INTEGER NOT NULL DEFAULT 0"
         )
+    usage_columns = {
+        row["name"]
+        for row in get_db().execute("PRAGMA table_info(question_usage)").fetchall()
+    }
+    if "content_hash" not in usage_columns:
+        get_db().execute("ALTER TABLE question_usage ADD COLUMN content_hash TEXT")
     party_lobby_columns = {
         row["name"]
         for row in get_db().execute("PRAGMA table_info(party_lobbies)").fetchall()
@@ -341,21 +354,99 @@ def init_db() -> None:
     get_db().execute(
         "UPDATE party_members SET last_seen_at = joined_at WHERE last_seen_at IS NULL"
     )
-    existing_rounds = get_db().execute(
-        "SELECT round_date, questions_json FROM daily_rounds"
-    ).fetchall()
-    for existing_round in existing_rounds:
-        for question in json.loads(existing_round["questions_json"]):
+    question_lookup = {
+        item["id"]: (category, item)
+        for category, bank in QUESTION_BANK.items()
+        for item in bank
+    }
+    stored_question_sources = [
+        ("daily_rounds", "round_date", row["round_date"], row["questions_json"])
+        for row in get_db()
+        .execute("SELECT round_date, questions_json FROM daily_rounds")
+        .fetchall()
+    ]
+    stored_question_sources.extend(
+        ("party_lobbies", "id", row["id"], row["questions_json"])
+        for row in get_db()
+        .execute(
+            "SELECT id, questions_json FROM party_lobbies WHERE questions_json IS NOT NULL"
+        )
+        .fetchall()
+    )
+    for table, key_column, key_value, questions_json in stored_question_sources:
+        questions = json.loads(questions_json)
+        changed = False
+        for question in questions:
+            found = question_lookup.get(question["id"])
+            if (
+                found
+                and not question.get("knowledge_category")
+                and found[1].get("knowledge_category")
+            ):
+                question["knowledge_category"] = found[1]["knowledge_category"]
+                changed = True
+        if changed:
+            get_db().execute(
+                f"UPDATE {table} SET questions_json = ? WHERE {key_column} = ?",
+                (json.dumps(questions, ensure_ascii=False), key_value),
+            )
+    for row in get_db().execute(
+        "SELECT question_id FROM question_usage WHERE content_hash IS NULL"
+    ).fetchall():
+        found = question_lookup.get(row["question_id"])
+        if found:
+            category, question = found
+            get_db().execute(
+                "UPDATE OR IGNORE question_usage SET content_hash = ? WHERE question_id = ?",
+                (question_fingerprint(question, category), row["question_id"]),
+            )
+    get_db().execute(
+        """
+        UPDATE question_usage
+        SET content_hash = NULL
+        WHERE content_hash IS NOT NULL
+          AND rowid NOT IN (
+              SELECT MIN(rowid) FROM question_usage
+              WHERE content_hash IS NOT NULL
+              GROUP BY content_hash
+          )
+        """
+    )
+    get_db().execute(
+        """
+        CREATE UNIQUE INDEX IF NOT EXISTS question_usage_content_hash_idx
+        ON question_usage(content_hash)
+        WHERE content_hash IS NOT NULL
+        """
+    )
+
+    existing_sources: list[tuple[str, str, str]] = []
+    existing_sources.extend(
+        ("daily", row["round_date"], row["questions_json"])
+        for row in get_db().execute(
+            "SELECT round_date, questions_json FROM daily_rounds"
+        ).fetchall()
+    )
+    existing_sources.extend(
+        ("party", str(row["id"]), row["questions_json"])
+        for row in get_db().execute(
+            "SELECT id, questions_json FROM party_lobbies WHERE questions_json IS NOT NULL"
+        ).fetchall()
+    )
+    for source_type, source_id, questions_json in existing_sources:
+        for question in json.loads(questions_json):
             get_db().execute(
                 """
                 INSERT OR IGNORE INTO question_usage
-                    (question_id, category, source_type, source_id, used_at)
-                VALUES (?, ?, 'daily', ?, ?)
+                    (question_id, content_hash, category, source_type, source_id, used_at)
+                VALUES (?, ?, ?, ?, ?, ?)
                 """,
                 (
                     question["id"],
+                    question_fingerprint(question),
                     question["category"],
-                    existing_round["round_date"],
+                    source_type,
+                    source_id,
                     datetime.now().isoformat(timespec="seconds"),
                 ),
             )
@@ -436,6 +527,37 @@ def daily_questions(day: str) -> list[dict[str, Any]]:
     return selected
 
 
+def question_fingerprint(
+    question: dict[str, Any], question_type: str | None = None
+) -> str:
+    """Return a stable identity for a question even if its ID changes."""
+
+    format_name = question_type or question.get("category", "")
+    answer: Any = question.get("answer")
+    if format_name == "multiple_choice":
+        answer = question.get("options", {}).get(answer, answer)
+
+    def normalize(value: Any) -> Any:
+        if isinstance(value, str):
+            return " ".join(value.casefold().split())
+        if isinstance(value, dict):
+            return {str(key): normalize(item) for key, item in sorted(value.items())}
+        if isinstance(value, list):
+            return [normalize(item) for item in value]
+        return value
+
+    canonical = {
+        "format": format_name,
+        "prompt": normalize(question.get("prompt", "")),
+        "answer": normalize(answer),
+        "unit": normalize(question.get("unit", "")),
+    }
+    encoded = json.dumps(
+        canonical, ensure_ascii=False, sort_keys=True, separators=(",", ":")
+    )
+    return hashlib.sha256(encoded.encode()).hexdigest()
+
+
 def question_subject_keys(question: dict[str, Any]) -> set[str]:
     """Return stable topic keys used to keep related questions apart."""
 
@@ -459,10 +581,17 @@ def reserve_question_sets(
             row["question_id"]
             for row in database.execute("SELECT question_id FROM question_usage").fetchall()
         }
+        used_hashes = {
+            row["content_hash"]
+            for row in database.execute(
+                "SELECT content_hash FROM question_usage WHERE content_hash IS NOT NULL"
+            ).fetchall()
+        }
         question_lookup = {
             item["id"]: item for bank in QUESTION_BANK.values() for item in bank
         }
         recent_subjects: set[str] = set()
+        recent_knowledge_categories: Counter[str] = Counter()
         for row in database.execute(
             """
             SELECT question_id FROM question_usage
@@ -473,10 +602,23 @@ def reserve_question_sets(
             previous = question_lookup.get(row["question_id"])
             if previous:
                 recent_subjects.update(question_subject_keys(previous))
+                if previous.get("knowledge_category"):
+                    recent_knowledge_categories[previous["knowledge_category"]] += 1
 
         available_by_category: dict[str, list[dict[str, Any]]] = {}
         for category in CATEGORY_ORDER:
-            available = [item for item in QUESTION_BANK[category] if item["id"] not in used_ids]
+            available = []
+            available_hashes: set[str] = set()
+            for item in QUESTION_BANK[category]:
+                content_hash = question_fingerprint(item, category)
+                if (
+                    item["id"] in used_ids
+                    or content_hash in used_hashes
+                    or content_hash in available_hashes
+                ):
+                    continue
+                available.append(item)
+                available_hashes.add(content_hash)
             if len(available) < set_count:
                 raise QuestionPoolExhausted(
                     f"Für {CATEGORY_LABELS[category]} sind nicht mehr genug neue Fragen vorhanden."
@@ -486,14 +628,21 @@ def reserve_question_sets(
         sets: list[list[dict[str, Any]]] = [[] for _ in range(set_count)]
         reservation_subjects: set[str] = set()
         for set_index in range(set_count):
+            set_knowledge_categories: set[str] = set()
             for category in CATEGORY_ORDER:
                 candidates = available_by_category[category]
 
-                def mixing_score(item: dict[str, Any]) -> tuple[int, int, str]:
+                def mixing_score(item: dict[str, Any]) -> tuple[int, int, int, int, str]:
                     subjects = question_subject_keys(item)
+                    knowledge_category = item.get("knowledge_category")
                     return (
                         len(subjects & reservation_subjects),
                         len(subjects & recent_subjects),
+                        int(
+                            bool(knowledge_category)
+                            and knowledge_category in set_knowledge_categories
+                        ),
+                        recent_knowledge_categories[knowledge_category],
                         hashlib.sha256(
                             f"{source_type}:{source_id}:{set_index}:{category}:{item['id']}".encode()
                         ).hexdigest(),
@@ -505,6 +654,8 @@ def reserve_question_sets(
                 question["category"] = category
                 sets[set_index].append(question)
                 reservation_subjects.update(question_subject_keys(question))
+                if question.get("knowledge_category"):
+                    set_knowledge_categories.add(question["knowledge_category"])
 
         now = datetime.now().isoformat(timespec="seconds")
         for question_set in sets:
@@ -512,10 +663,17 @@ def reserve_question_sets(
                 database.execute(
                     """
                     INSERT INTO question_usage
-                        (question_id, category, source_type, source_id, used_at)
-                    VALUES (?, ?, ?, ?, ?)
+                        (question_id, content_hash, category, source_type, source_id, used_at)
+                    VALUES (?, ?, ?, ?, ?, ?)
                     """,
-                    (question["id"], question["category"], source_type, source_id, now),
+                    (
+                        question["id"],
+                        question_fingerprint(question),
+                        question["category"],
+                        source_type,
+                        source_id,
+                        now,
+                    ),
                 )
         if manage_transaction:
             database.commit()
@@ -542,6 +700,19 @@ def record_pool_exhausted() -> None:
         pass
 
 
+def pool_mail_ready() -> bool:
+    from flask import current_app
+
+    password_file = current_app.config.get("MAIL_PASSWORD_FILE", "")
+    return bool(
+        current_app.config.get("MAIL_USER", "")
+        and current_app.config.get("MAIL_TO", "")
+        and password_file
+        and Path(password_file).is_file()
+        and Path(password_file).stat().st_size > 0
+    )
+
+
 def send_pool_exhausted_email() -> bool:
     from flask import current_app
 
@@ -553,7 +724,7 @@ def send_pool_exhausted_email() -> bool:
     user = current_app.config.get("MAIL_USER", "")
     recipient = current_app.config.get("MAIL_TO", "")
     password_file = current_app.config.get("MAIL_PASSWORD_FILE", "")
-    if not user or not recipient or not password_file or not Path(password_file).is_file():
+    if not pool_mail_ready():
         return False
     password = Path(password_file).read_text(encoding="utf-8").strip()
     message = EmailMessage()
@@ -579,16 +750,43 @@ def send_pool_exhausted_email() -> bool:
 
 
 def question_pool_status() -> dict[str, Any]:
-    used = {
+    used_ids = {
         row["question_id"]
         for row in get_db().execute("SELECT question_id FROM question_usage").fetchall()
     }
-    remaining = {
-        category: sum(question["id"] not in used for question in bank)
-        for category, bank in QUESTION_BANK.items()
+    used_hashes = {
+        row["content_hash"]
+        for row in get_db()
+        .execute(
+            "SELECT content_hash FROM question_usage WHERE content_hash IS NOT NULL"
+        )
+        .fetchall()
     }
+    remaining_questions: dict[str, list[dict[str, Any]]] = {}
+    for category, bank in QUESTION_BANK.items():
+        unique_fresh: dict[str, dict[str, Any]] = {}
+        for question in bank:
+            content_hash = question_fingerprint(question, category)
+            if question["id"] in used_ids or content_hash in used_hashes:
+                continue
+            unique_fresh.setdefault(content_hash, question)
+        remaining_questions[category] = list(unique_fresh.values())
+    remaining = {
+        category: len(questions)
+        for category, questions in remaining_questions.items()
+    }
+    remaining_by_knowledge_category = Counter(
+        question.get("knowledge_category")
+        for questions in remaining_questions.values()
+        for question in questions
+        if question.get("knowledge_category")
+    )
     return {
         "remaining": remaining,
+        "remaining_by_knowledge_category": {
+            category: remaining_by_knowledge_category[category]
+            for category in KNOWLEDGE_CATEGORY_LABELS
+        },
         "complete_rounds": min(remaining.values()),
         "exhausted": min(remaining.values()) == 0,
     }
@@ -718,8 +916,22 @@ def player_total_points(user_id: int) -> int:
     return int(row["points"])
 
 
-def estimate_points(guess: float, answer: float) -> tuple[int, float]:
-    relative_error = abs(guess - answer) / abs(answer)
+def estimate_points(
+    guess: float, answer: float, percentage_base: float | None = None
+) -> tuple[int, float]:
+    """Score an estimate by its percentage deviation from a meaningful base.
+
+    Most quantities use the answer itself as their base. Calendar years are
+    different: year zero is an arbitrary origin, so an 80-year miss must not
+    look like a tiny error merely because the date is around 1900. Their
+    caller therefore supplies a 100-year reference span.
+    """
+
+    base = abs(answer if percentage_base is None else percentage_base)
+    if base == 0:
+        relative_error = 0.0 if guess == answer else 1.0
+    else:
+        relative_error = abs(guess - answer) / base
     points = max(
         MIN_ESTIMATE_POINTS,
         round(100 * max(0.0, 1.0 - relative_error)),
@@ -802,6 +1014,9 @@ def answer_review(daily_round: sqlite3.Row, attempt: sqlite3.Row) -> list[dict[s
             {
                 "question": question,
                 "category_label": CATEGORY_LABELS[question["category"]],
+                "knowledge_category_label": KNOWLEDGE_CATEGORY_LABELS.get(
+                    question.get("knowledge_category"), ""
+                ),
                 "submitted": format_answer(question, submitted),
                 "correct_answer": format_answer(question, question["answer"]),
                 "credit": float(row["credit"]),
@@ -817,11 +1032,17 @@ def answer_review(daily_round: sqlite3.Row, attempt: sqlite3.Row) -> list[dict[s
 def order_credit(submitted: list[str], correct: list[str]) -> float:
     if len(submitted) != len(correct) or set(submitted) != set(correct):
         raise ValueError("Ungültige Reihenfolge")
-    correct_positions = sum(
-        submitted_item == correct_item
-        for submitted_item, correct_item in zip(submitted, correct)
+    if len(correct) < 2:
+        return 1.0
+
+    correct_positions = {item: index for index, item in enumerate(correct)}
+    correctly_ordered_pairs = sum(
+        correct_positions[first] < correct_positions[second]
+        for index, first in enumerate(submitted)
+        for second in submitted[index + 1 :]
     )
-    return partial_credit(correct_positions, len(correct))
+    pair_count = len(correct) * (len(correct) - 1) // 2
+    return partial_credit(correctly_ordered_pairs, pair_count)
 
 
 def evaluate(question: dict[str, Any], form: dict[str, str]) -> dict[str, Any]:
@@ -846,7 +1067,12 @@ def evaluate(question: dict[str, Any], form: dict[str, str]) -> dict[str, Any]:
             raise ValueError("Bitte gib eine gültige Zahl ein.") from error
         if not math.isfinite(submitted) or submitted < 0:
             raise ValueError("Deine Schätzung muss eine positive Zahl sein.")
-        raw, relative_error = estimate_points(submitted, float(question["answer"]))
+        percentage_base = 100.0 if question.get("unit") == "Jahr" else None
+        raw, relative_error = estimate_points(
+            submitted,
+            float(question["answer"]),
+            percentage_base=percentage_base,
+        )
         credit = raw / 100
         return {
             "submitted": submitted,
@@ -1245,17 +1471,12 @@ def register_routes(app: Flask) -> None:
             ), 503
         attempt = get_attempt(daily_round["id"])
         greeting_index = int(hashlib.sha256(f"{today_iso()}:{g.user['id']}".encode()).hexdigest()[:8], 16)
-        warning = None
-        pool_status = question_pool_status()
-        if g.user["username"] == "stormseed" and pool_status["complete_rounds"] <= 2:
-            warning = f"Nur noch {pool_status['complete_rounds']} vollständige neue Runden verfügbar. Zeit für Nachschub."
         return render_template(
             "home.html",
             daily_round=daily_round,
             attempt=attempt,
             leaderboards=leaderboard_sets(daily_round["round_date"]),
             greeting=GREETINGS[greeting_index % len(GREETINGS)],
-            content_warning=warning,
             show_catchup_prompt=session.pop("show_catchup_prompt", False),
             missed_week_days=session.get("missed_week_days", []),
             active_round_date=daily_round["round_date"],
@@ -1358,7 +1579,15 @@ def register_routes(app: Flask) -> None:
         if previous:
             feedback = dict(previous)
             feedback["submitted"] = json.loads(previous["answer_json"])
+            feedback_unlock_at = datetime.fromisoformat(previous["created_at"]) + timedelta(
+                seconds=FEEDBACK_SECONDS
+            )
+            feedback_remaining_ms = max(
+                0,
+                math.ceil((feedback_unlock_at - datetime.now()).total_seconds() * 1000),
+            )
         else:
+            feedback_remaining_ms = 0
             started_at = attempt["question_started_at"]
             if not started_at:
                 started_at = datetime.now().isoformat(timespec="microseconds")
@@ -1380,11 +1609,15 @@ def register_routes(app: Flask) -> None:
             match_options=match_options,
             feedback=feedback,
             category_label=CATEGORY_LABELS[item["category"]],
+            knowledge_category_label=KNOWLEDGE_CATEGORY_LABELS.get(
+                item.get("knowledge_category"), ""
+            ),
             timer_limit=QUESTION_TIME_LIMITS[index],
             timer_decay=QUESTION_DECAY_SECONDS[index],
             timer_hold=FULL_TIME_SECONDS,
             elapsed_seconds=elapsed_seconds,
             running_points=running_points,
+            feedback_remaining_ms=feedback_remaining_ms,
         )
 
     @app.post("/runde/antwort")
@@ -1441,7 +1674,7 @@ def register_routes(app: Flask) -> None:
                 elapsed_seconds,
                 evaluation["accuracy_points"],
                 earned_points,
-                datetime.now().isoformat(timespec="seconds"),
+                datetime.now().isoformat(timespec="microseconds"),
             ),
         )
         database.commit()
@@ -1459,11 +1692,16 @@ def register_routes(app: Flask) -> None:
         index = attempt["current_index"]
         item = questions[index]
         answered = get_db().execute(
-            "SELECT id FROM answers WHERE attempt_id = ? AND question_id = ?",
+            "SELECT id, created_at FROM answers WHERE attempt_id = ? AND question_id = ?",
             (attempt["id"], item["id"]),
         ).fetchone()
         if not answered:
             flash("Erst antworten, dann abhauen.", "error")
+            return redirect(url_for("question"))
+        feedback_unlock_at = datetime.fromisoformat(answered["created_at"]) + timedelta(
+            seconds=FEEDBACK_SECONDS
+        )
+        if datetime.now() < feedback_unlock_at:
             return redirect(url_for("question"))
         next_index = index + 1
         database = get_db()
@@ -1530,6 +1768,7 @@ def register_routes(app: Flask) -> None:
             "status": "ok",
             "release": RELEASE_VERSION,
             "questions": question_pool_status(),
+            "pool_mail_ready": pool_mail_ready(),
         }
 
     @app.get("/party")
@@ -1799,6 +2038,9 @@ def register_routes(app: Flask) -> None:
             question=question, index=index, total=len(questions), feedback=feedback,
             display_items=display_items, match_options=match_options,
             category_label=CATEGORY_LABELS[question["category"]],
+            knowledge_category_label=KNOWLEDGE_CATEGORY_LABELS.get(
+                question.get("knowledge_category"), ""
+            ),
             timer_limit=QUESTION_TIME_LIMITS[index % 5], timer_decay=QUESTION_DECAY_SECONDS[index % 5],
             timer_hold=FULL_TIME_SECONDS, elapsed_seconds=elapsed,
             waiting=bool(answer and index == lobby["current_question_index"]),
@@ -1996,7 +2238,6 @@ def register_template_helpers(app: Flask) -> None:
         return {
             "csrf_token": csrf_token,
             "game_name": app.config["GAME_NAME"],
-            "contact_email": app.config["CONTACT_EMAIL"],
             "today_display": date.today().strftime("%d.%m.%Y"),
             "today_iso_value": today_iso(),
             "currency_balance": player_total_points(user["id"]) if user else 0,

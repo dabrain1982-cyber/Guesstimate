@@ -7,6 +7,8 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 from unittest.mock import patch
 
+from markupsafe import escape
+
 from app import (
     create_app,
     daily_questions,
@@ -17,15 +19,105 @@ from app import (
     missed_current_week_dates,
     order_credit,
     partial_credit,
+    question_fingerprint,
     question_time_factor,
     question_subject_keys,
+    reserve_question_sets,
     send_pool_exhausted_email,
     timed_question_points,
 )
-from questions import QUESTION_BANK
+from deploy.reset_game import reset
+from deploy.validate_question_library import validate_library
+from questions import (
+    KNOWLEDGE_CATEGORY_DEFINITIONS,
+    KNOWLEDGE_CATEGORY_LABELS,
+    QUESTION_BANK,
+    QUESTION_LIBRARY_ROOT,
+    QUESTION_TYPE_DEFINITIONS,
+)
 
 
 class ScoringTests(unittest.TestCase):
+    def test_question_library_uses_question_types_without_category_quotas(self):
+        for question_type, questions in QUESTION_BANK.items():
+            self.assertTrue(questions, question_type)
+            for question in questions:
+                self.assertEqual(question["question_type"], question_type)
+                for required in ("id", "prompt", "answer", "explanation", "source"):
+                    self.assertIn(required, question)
+
+    def test_complete_question_library_matches_the_required_profiles(self):
+        self.assertEqual(validate_library(), [])
+
+    def test_true_false_questions_have_no_category_fields(self):
+        forbidden = {"primary_category", "knowledge_category", "subtopic", "topics", "tags"}
+        for question in QUESTION_BANK["true_false"]:
+            self.assertFalse(forbidden & question.keys(), question["id"])
+            self.assertIsInstance(question["answer"], bool, question["id"])
+
+    def test_non_true_false_categories_are_present_and_valid(self):
+        for question_type, questions in QUESTION_BANK.items():
+            if question_type == "true_false":
+                continue
+            for question in questions:
+                self.assertIn(question["knowledge_category"], KNOWLEDGE_CATEGORY_LABELS)
+                self.assertTrue(question["subtopic"], question["id"])
+                self.assertEqual(
+                    set(question["tags"]),
+                    {"topics", "entities", "genres", "regions", "eras"},
+                    question["id"],
+                )
+
+    def test_every_new_question_has_a_verified_https_source(self):
+        new_questions = [
+            question
+            for questions in QUESTION_BANK.values()
+            for question in questions
+            if int(re.search(r"\d+", question["id"]).group()) >= 151
+        ]
+        self.assertTrue(new_questions)
+        for question in new_questions:
+            self.assertEqual(question["source"]["status"], "verified", question["id"])
+            self.assertRegex(question["source"]["verified_on"], r"^\d{4}-\d{2}-\d{2}$")
+            references = question["source"]["references"]
+            self.assertTrue(references, question["id"])
+            self.assertTrue(
+                all(reference["url"].startswith("https://") for reference in references),
+                question["id"],
+            )
+
+    def test_physical_library_is_flat_by_question_type(self):
+        for question_type, definition in QUESTION_TYPE_DEFINITIONS.items():
+            path = QUESTION_LIBRARY_ROOT / definition["directory"] / "fragen.json"
+            self.assertTrue(path.is_file(), path)
+            questions = json.loads(path.read_text(encoding="utf-8"))
+            if question_type in ("word_scramble", "binary_sort"):
+                self.assertFalse(definition["active"])
+                self.assertEqual(questions, [])
+            else:
+                self.assertTrue(questions)
+
+    def test_physical_library_reserves_both_future_question_types(self):
+        for question_type in ("word_scramble", "binary_sort"):
+            definition = QUESTION_TYPE_DEFINITIONS[question_type]
+            self.assertFalse(definition["active"])
+            path = QUESTION_LIBRARY_ROOT / definition["directory"] / "fragen.json"
+            self.assertTrue(path.is_file(), path)
+            self.assertEqual(json.loads(path.read_text(encoding="utf-8")), [])
+
+    def test_hemingway_mentions_share_an_entity_key(self):
+        questions = [
+            question
+            for bank in QUESTION_BANK.values()
+            for question in bank
+            if "hemingway"
+            in (question.get("prompt", "") + question.get("explanation", "")).casefold()
+        ]
+        self.assertGreaterEqual(len(questions), 3)
+        self.assertTrue(
+            all("entity:ernest hemingway" in question_subject_keys(question) for question in questions)
+        )
+
     def test_relative_error_is_scale_independent(self):
         self.assertEqual(estimate_points(9_000, 8_000)[0], estimate_points(3.9375, 3.5)[0])
 
@@ -34,21 +126,45 @@ class ScoringTests(unittest.TestCase):
         self.assertEqual(estimate_points(16_000, 8_000)[0], 10)
         self.assertEqual(estimate_points(20_000, 8_000)[0], 10)
 
-    def test_order_credit_awards_25_percent_per_correct_position(self):
+    def test_calendar_year_uses_a_century_as_percentage_base(self):
+        points, relative_error = estimate_points(1865, 1945, percentage_base=100)
+        self.assertEqual(points, 20)
+        self.assertEqual(relative_error, 0.8)
+
+        evaluated = evaluate(
+            {"category": "estimate", "answer": 1945, "unit": "Jahr"},
+            {"answer": "1865"},
+        )
+        self.assertEqual(evaluated["accuracy_points"], 20)
+
+    def test_order_credit_awards_each_correctly_ordered_pair(self):
         correct = ["A", "B", "C", "D"]
         self.assertEqual(order_credit(correct, correct), 1.0)
         self.assertEqual(order_credit(["D", "C", "B", "A"], correct), 0.0)
-        self.assertEqual(order_credit(["A", "C", "D", "B"], correct), 0.25)
-        self.assertEqual(order_credit(["A", "B", "D", "C"], correct), 0.5)
+        self.assertAlmostEqual(order_credit(["A", "C", "D", "B"], correct), 4 / 6)
+        self.assertAlmostEqual(order_credit(["A", "B", "D", "C"], correct), 5 / 6)
+
+    def test_order_credit_survives_a_wrong_first_event(self):
+        correct = ["A", "B", "C", "D"]
+        self.assertEqual(order_credit(["B", "C", "D", "A"], correct), 0.5)
+
+        evaluated = evaluate(
+            {"category": "order", "answer": correct},
+            {"answer": json.dumps(["B", "C", "D", "A"])},
+        )
+        self.assertEqual(evaluated["accuracy_points"], 50)
 
     def test_question_plan_uses_every_question_before_repeating(self):
         seen = {}
         start = date(2026, 9, 30)
-        for offset in range(150):
+        for offset in range(max(len(questions) for questions in QUESTION_BANK.values())):
             questions = daily_questions((start + timedelta(days=offset)).isoformat())
             for question in questions:
                 seen.setdefault(question["category"], set()).add(question["id"])
-        self.assertTrue(all(len(question_ids) == 150 for question_ids in seen.values()))
+        self.assertEqual(
+            {question_type: len(question_ids) for question_type, question_ids in seen.items()},
+            {question_type: len(questions) for question_type, questions in QUESTION_BANK.items()},
+        )
 
     def test_time_factor_holds_then_reaches_zero_at_each_limit(self):
         self.assertEqual(question_time_factor(0, 0), 1.0)
@@ -97,7 +213,7 @@ class ScoringTests(unittest.TestCase):
         self.assertEqual(one_correct["accuracy_points"], 33)
 
     def test_match_options_never_reveal_row_to_option_position(self):
-        for offset in range(150):
+        for offset in range(len(QUESTION_BANK["match"])):
             questions = daily_questions(
                 (date(2026, 9, 30) + timedelta(days=offset)).isoformat()
             )
@@ -157,6 +273,14 @@ class GameFlowTests(unittest.TestCase):
         )
         with client.session_transaction() as client_session:
             return response, client_session["csrf_token"]
+
+    def test_mail_configuration_is_never_shown_to_players(self):
+        self.register("stormseed")
+        response = self.client.get("/")
+        self.assertEqual(response.status_code, 200)
+        self.assertNotIn(b"GMX", response.data)
+        self.assertNotIn(b"E-Mail-Warnung", response.data)
+        self.assertNotIn(b"Fragen-Nachschub", response.data)
 
     def finish_party_start_countdown(self, lobby_id):
         with self.app.app_context():
@@ -266,6 +390,17 @@ class GameFlowTests(unittest.TestCase):
             data["csrf_token"] = self.csrf()
             response = self.client.post("/runde/antwort", data=data)
             self.assertEqual(response.status_code, 302)
+            with self.app.app_context():
+                database = self.app.get_db()
+                database.execute(
+                    "UPDATE answers SET created_at = ? WHERE id = (SELECT MAX(id) FROM answers)",
+                    (
+                        (datetime.now() - timedelta(seconds=5)).isoformat(
+                            timespec="microseconds"
+                        ),
+                    ),
+                )
+                database.commit()
             self.client.post("/runde/weiter", data={"csrf_token": self.csrf()})
 
         response = self.client.get("/ergebnis")
@@ -278,7 +413,7 @@ class GameFlowTests(unittest.TestCase):
         self.assertIn(b"Wochenliga", response.data)
         self.assertIn(b"Hall of Fame", response.data)
         self.assertIn("Punkte nach Zeitabzug".encode(), response.data)
-        self.assertIn(questions[0]["prompt"].encode(), response.data)
+        self.assertIn(str(escape(questions[0]["prompt"])).encode(), response.data)
 
         with self.app.app_context():
             self.app.get_db().execute("UPDATE attempts SET rank_after = 99")
@@ -325,6 +460,99 @@ class GameFlowTests(unittest.TestCase):
         self.assertEqual(stored["time_factor"], 0.4)
         self.assertEqual(stored["accuracy_points"], 100)
         self.assertEqual(stored["points"], 70)
+
+    def test_used_content_cannot_return_under_a_different_id(self):
+        with self.app.app_context():
+            database = self.app.get_db()
+            original = QUESTION_BANK["true_false"][0]
+            database.execute(
+                """
+                INSERT INTO question_usage
+                    (question_id, content_hash, category, source_type, source_id, used_at)
+                VALUES (?, ?, ?, 'test', 'historic-alias', ?)
+                """,
+                (
+                    "historic-id-for-same-question",
+                    question_fingerprint(original, "true_false"),
+                    "true_false",
+                    datetime.now().isoformat(),
+                ),
+            )
+            database.commit()
+            selected = reserve_question_sets("test", "fresh-round")[0]
+        self.assertNotIn(original["id"], {question["id"] for question in selected})
+
+    def test_game_reset_preserves_permanent_question_history(self):
+        database_path = self.app.config["DATABASE"]
+        with self.app.app_context():
+            database = self.app.get_db()
+            question = QUESTION_BANK["true_false"][0]
+            database.execute(
+                """
+                INSERT INTO question_usage
+                    (question_id, content_hash, category, source_type, source_id, used_at)
+                VALUES (?, ?, 'true_false', 'test', 'before-reset', ?)
+                """,
+                (
+                    question["id"],
+                    question_fingerprint(question, "true_false"),
+                    datetime.now().isoformat(),
+                ),
+            )
+            database.commit()
+
+        reset(database_path)
+        database = sqlite3.connect(database_path)
+        try:
+            self.assertEqual(
+                database.execute("SELECT COUNT(*) FROM question_usage").fetchone()[0],
+                1,
+            )
+            self.assertEqual(
+                database.execute("SELECT COUNT(*) FROM daily_rounds").fetchone()[0],
+                0,
+            )
+        finally:
+            database.close()
+
+    def test_feedback_stays_visible_for_four_seconds_before_advancing(self):
+        self.register()
+        self.client.post("/runde/starten", data={"csrf_token": self.csrf()})
+        with self.app.app_context():
+            database = self.app.get_db()
+            round_row = database.execute("SELECT * FROM daily_rounds").fetchone()
+            question = json.loads(round_row["questions_json"])[0]
+
+        answer = "true" if question["answer"] else "false"
+        self.client.post(
+            "/runde/antwort",
+            data={"answer": answer, "csrf_token": self.csrf()},
+        )
+
+        feedback = self.client.get("/runde")
+        self.assertIn(b"data-feedback-delay", feedback.data)
+        self.assertIn(b"feedback.js?v=1", feedback.data)
+        self.assertRegex(feedback.data, rb"data-remaining-ms=\"[1-9][0-9]+\"")
+
+        self.client.post("/runde/weiter", data={"csrf_token": self.csrf()})
+        with self.app.app_context():
+            database = self.app.get_db()
+            attempt = database.execute("SELECT * FROM attempts").fetchone()
+            self.assertEqual(attempt["current_index"], 0)
+            database.execute(
+                "UPDATE answers SET created_at = ?",
+                (
+                    (datetime.now() - timedelta(seconds=5)).isoformat(
+                        timespec="microseconds"
+                    ),
+                ),
+            )
+            database.commit()
+
+        self.client.post("/runde/weiter", data={"csrf_token": self.csrf()})
+        with self.app.app_context():
+            attempt = self.app.get_db().execute("SELECT * FROM attempts").fetchone()
+        self.assertEqual(attempt["current_index"], 1)
 
     def test_match_rendering_is_deranged_and_order_uses_drag_and_drop(self):
         self.register()
@@ -879,8 +1107,8 @@ class GameFlowTests(unittest.TestCase):
         secret_path = Path(self.tempdir.name) / "mail.secret"
         secret_path.write_text("test-password", encoding="utf-8")
         self.app.config.update(
-            MAIL_USER="test@example.invalid",
-            MAIL_TO="test@example.invalid",
+            MAIL_USER="DaBrain@gmx.net",
+            MAIL_TO="DaBrain@gmx.net",
             MAIL_PASSWORD_FILE=str(secret_path),
         )
         with self.app.app_context():
@@ -894,7 +1122,7 @@ class GameFlowTests(unittest.TestCase):
                 smtp = smtp_class.return_value.__enter__.return_value
                 self.assertTrue(send_pool_exhausted_email())
                 smtp.starttls.assert_called_once()
-                smtp.login.assert_called_once_with("test@example.invalid", "test-password")
+                smtp.login.assert_called_once_with("DaBrain@gmx.net", "test-password")
                 smtp.send_message.assert_called_once()
             sent_at = database.execute(
                 "SELECT sent_at FROM system_notifications WHERE kind = ?",
@@ -927,7 +1155,7 @@ class GameFlowTests(unittest.TestCase):
             ).fetchone()[0]
         self.assertIsNotNone(status)
         self.assertIsNone(status["sent_at"])
-        self.assertEqual(remaining, 750)
+        self.assertEqual(remaining, sum(len(questions) for questions in QUESTION_BANK.values()))
 
 
 if __name__ == "__main__":

@@ -18,7 +18,10 @@
   <article class="question-card category-{{ question.category }}">
     <div class="question-topline">
       {{ category_icon(question.category, 'question-art') }}
-      <div class="category-badge"><span>{{ index + 1 }}</span>{{ category_label }}</div>
+      <div class="question-taxonomy">
+        <div class="category-badge"><span>{{ index + 1 }}</span>{{ category_label }}</div>
+        {% if knowledge_category_label %}<span class="knowledge-badge">{{ knowledge_category_label }}</span>{% endif %}
+      </div>
     </div>
     <h1>{{ question.prompt }}</h1>
 
@@ -49,7 +52,7 @@
             <p>Je näher dran, desto mehr von 100 Genauigkeitspunkten. 10 Punkte sind dir sicher.</p>
           </div>
         {% elif question.category == 'order' %}
-          <p class="microcopy">Ordne die Begriffe waagerecht von links nach rechts.</p>
+          <p class="microcopy">Ordne die Begriffe waagerecht von links nach rechts. Jedes richtig geordnete Paar zählt.</p>
           <input type="hidden" name="answer" id="order-answer">
           <ol class="order-list" id="order-list">
             {% for item in display_items %}
@@ -105,9 +108,17 @@
           <span class="time-result">{{ '%.1f'|format(feedback.response_seconds) }} s · {{ feedback.points }} Punkte</span>
         </div>
       </section>
-      <form method="post" action="{{ url_for('next_question') }}">
+      <form
+        method="post"
+        action="{{ url_for('next_question') }}"
+        data-feedback-delay
+        data-remaining-ms="{{ feedback_remaining_ms }}"
+      >
         <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-        <button class="primary-button" type="submit">{% if index + 1 == total %}Ergebnis ansehen{% else %}Weiter zu Frage {{ index + 2 }}{% endif %}</button>
+        <button class="primary-button" type="submit"{% if feedback_remaining_ms > 0 %} disabled{% endif %}>
+          <span data-feedback-button-label{% if feedback_remaining_ms > 0 %} hidden{% endif %}>{% if index + 1 == total %}Ergebnis ansehen{% else %}Weiter zu Frage {{ index + 2 }}{% endif %}</span>
+          <span data-feedback-countdown{% if feedback_remaining_ms <= 0 %} hidden{% endif %}></span>
+        </button>
       </form>
     {% endif %}
   </article>
@@ -121,5 +132,8 @@
   {% endif %}
   {% if question.category == 'match' and not feedback %}
     <script src="{{ url_for('static', filename='match.js', v='1') }}" defer></script>
+  {% endif %}
+  {% if feedback %}
+    <script src="{{ url_for('static', filename='feedback.js', v='1') }}" defer></script>
   {% endif %}
 {% endblock %}

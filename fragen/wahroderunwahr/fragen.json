@@ -1,0 +1,3605 @@
+[
+  {
+    "id": "tf01",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Bananen sind botanisch Beeren, Erdbeeren dagegen nicht.",
+    "answer": true,
+    "explanation": "Botanisch entsteht die Banane als Beere; die Erdbeere ist eine Sammelnussfrucht."
+  },
+  {
+    "id": "tf02",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Ein Tag auf der Venus dauert länger als ein Venusjahr.",
+    "answer": true,
+    "explanation": "Die Venus rotiert in etwa 243 Erdtagen, umrundet die Sonne aber in rund 225."
+  },
+  {
+    "id": "tf03",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Goldfische erinnern sich nur drei Sekunden lang an Dinge.",
+    "answer": false,
+    "explanation": "Goldfische können sich deutlich länger erinnern und sogar trainiert werden."
+  },
+  {
+    "id": "tf04",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Oxford University ist älter als das Aztekenreich.",
+    "answer": true,
+    "explanation": "In Oxford wurde spätestens 1096 gelehrt; das Aztekenreich entstand erst 1428."
+  },
+  {
+    "id": "tf05",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Menschen nutzen im Alltag nur zehn Prozent ihres Gehirns.",
+    "answer": false,
+    "explanation": "Bildgebende Verfahren zeigen Aktivität in praktisch allen Hirnregionen – nur nicht überall gleichzeitig."
+  },
+  {
+    "id": "tf06",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Haie existierten bereits vor den ersten Bäumen.",
+    "answer": true,
+    "explanation": "Frühe Haie gab es vor über 400 Millionen Jahren, Bäume kamen später."
+  },
+  {
+    "id": "tf07",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Die Chinesische Mauer ist mit bloßem Auge vom Mond aus sichtbar.",
+    "answer": false,
+    "explanation": "Vom Mond aus ist sie ohne Hilfsmittel nicht zu erkennen."
+  },
+  {
+    "id": "tf08",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wombat-Kot ist würfelförmig.",
+    "answer": true,
+    "explanation": "Die besondere Darmform von Wombats erzeugt tatsächlich annähernd würfelförmige Losung."
+  },
+  {
+    "id": "tf09",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Blitze können an einem Ort zweimal einschlagen.",
+    "answer": true,
+    "explanation": "Hohe Gebäude werden sogar regelmäßig mehrfach getroffen."
+  },
+  {
+    "id": "tf10",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Der Eiffelturm kann im Sommer durch Wärme mehr als zehn Zentimeter höher sein.",
+    "answer": true,
+    "explanation": "Wärmeausdehnung lässt die Eisenkonstruktion um ungefähr 15 Zentimeter wachsen."
+  },
+  {
+    "id": "tf11",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Fledermäuse sind blind.",
+    "answer": false,
+    "explanation": "Fledermäuse können sehen und nutzen zusätzlich Echoortung."
+  },
+  {
+    "id": "tf12",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Schottlands Nationaltier ist das Einhorn.",
+    "answer": true,
+    "explanation": "Das Einhorn ist seit Jahrhunderten ein schottisches Wappentier."
+  },
+  {
+    "id": "tf13",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Ein Oktopus hat blaues Blut.",
+    "answer": true,
+    "explanation": "Sein sauerstoffbindendes Hämocyanin enthält Kupfer und färbt das Blut blau."
+  },
+  {
+    "id": "tf14",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Der Mount Everest ist vom Erdmittelpunkt aus der höchste Berggipfel.",
+    "answer": false,
+    "explanation": "Durch die Erdwölbung ist der Chimborazo-Gipfel weiter vom Erdmittelpunkt entfernt."
+  },
+  {
+    "id": "tf15",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Koalas haben Fingerabdrücke, die menschlichen erstaunlich ähnlich sehen.",
+    "answer": true,
+    "explanation": "Koala-Fingerabdrücke sind selbst unter dem Mikroskop leicht mit menschlichen zu verwechseln."
+  },
+  {
+    "id": "tf16",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Napoleon Bonaparte war für seine Zeit außergewöhnlich klein.",
+    "answer": false,
+    "explanation": "Mit ungefähr 1,68 Meter lag er etwa im Durchschnitt seiner Epoche."
+  },
+  {
+    "id": "tf17",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Es gibt mehr mögliche Schachpartien als Atome im beobachtbaren Universum.",
+    "answer": true,
+    "explanation": "Die Zahl möglicher Spielverläufe wird extrem viel größer geschätzt als die Zahl der Atome.",
+    "subject_keys": [
+      "topic:gaming:spielmechanik-und-begriffe"
+    ]
+  },
+  {
+    "id": "tf18",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Pinguine leben in freier Wildbahn auch am Nordpol.",
+    "answer": false,
+    "explanation": "Wildlebende Pinguine kommen ausschließlich auf der Südhalbkugel vor."
+  },
+  {
+    "id": "tf19",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Der Geruch von frisch gemähtem Gras ist ein chemisches Notsignal der Pflanze.",
+    "answer": true,
+    "explanation": "Verletztes Gras setzt flüchtige Stoffe frei, die unter anderem Abwehrreaktionen auslösen."
+  },
+  {
+    "id": "tf20",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Glas ist bei Raumtemperatur eine extrem langsam fließende Flüssigkeit.",
+    "answer": false,
+    "explanation": "Glas ist ein amorpher Feststoff; alte Scheiben sind wegen früher Fertigungstechniken ungleich dick."
+  },
+  {
+    "id": "tf21",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Seepferdchen-Männchen tragen die Jungen aus.",
+    "answer": true,
+    "explanation": "Das Weibchen legt die Eier in die Bruttasche des Männchens, wo sie sich entwickeln."
+  },
+  {
+    "id": "tf22",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Die Sahara ist die größte Wüste der Erde.",
+    "answer": false,
+    "explanation": "Die größte Wüste ist die Antarktis; die Sahara ist die größte heiße Wüste."
+  },
+  {
+    "id": "tf23",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Ein Blitz ist heißer als die Oberfläche der Sonne.",
+    "answer": true,
+    "explanation": "Ein Blitzkanal kann etwa 30.000 Grad Celsius erreichen und ist damit deutlich heißer als die Sonnenoberfläche."
+  },
+  {
+    "id": "tf24",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Alle Säugetiere bringen lebende Junge zur Welt.",
+    "answer": false,
+    "explanation": "Kloakentiere wie Schnabeltier und Ameisenigel legen Eier."
+  },
+  {
+    "id": "tf25",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Die Haut ist das größte Organ des menschlichen Körpers.",
+    "answer": true,
+    "explanation": "Nach Fläche und Gewicht ist die Haut das größte Organ des Menschen."
+  },
+  {
+    "id": "tf26",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Der Amazonas ist gemessen an der Wassermenge der wasserreichste Fluss der Erde.",
+    "answer": true,
+    "explanation": "Kein anderer Fluss führt im Mittel annähernd so viel Wasser wie der Amazonas."
+  },
+  {
+    "id": "tf27",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Die Freiheitsstatue war bei ihrer Einweihung bereits grün.",
+    "answer": false,
+    "explanation": "Ihre Kupferhaut war zunächst braun und entwickelte erst später die grüne Patina."
+  },
+  {
+    "id": "tf28",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Schall breitet sich im Wasser schneller aus als in der Luft.",
+    "answer": true,
+    "explanation": "In Wasser ist Schall ungefähr viermal schneller als in Luft."
+  },
+  {
+    "id": "tf29",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Ein Strauß kann schneller laufen als ein Pferd.",
+    "answer": false,
+    "explanation": "Strauße sind sehr schnell, erreichen aber geringere Spitzengeschwindigkeiten als schnelle Pferde."
+  },
+  {
+    "id": "tf30",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Der menschliche Körper enthält mehr Bakterienzellen als menschliche Zellen im Verhältnis zehn zu eins.",
+    "answer": false,
+    "explanation": "Neuere Schätzungen gehen ungefähr von einem Verhältnis nahe eins zu eins aus."
+  },
+  {
+    "id": "tf31",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Auf dem Merkur gibt es Wassereis.",
+    "answer": true,
+    "explanation": "In dauerhaft schattigen Kratern nahe den Polen konnte Wassereis nachgewiesen werden."
+  },
+  {
+    "id": "tf32",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Spinnen gehören biologisch zu den Insekten.",
+    "answer": false,
+    "explanation": "Spinnen sind Spinnentiere und besitzen acht statt sechs Beine."
+  },
+  {
+    "id": "tf33",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Die Zahl Null wurde erst nach den römischen Zahlzeichen als eigenständige Zahl gebräuchlich.",
+    "answer": true,
+    "explanation": "Das römische Zahlensystem kannte keine Null als eigenständige Zahl; ihre moderne Verwendung kam später nach Europa."
+  },
+  {
+    "id": "tf34",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Ein erwachsener Mensch hat mehr Zähne als ein ausgewachsener Hund.",
+    "answer": false,
+    "explanation": "Menschen haben normalerweise 32 Zähne, erwachsene Hunde 42."
+  },
+  {
+    "id": "tf35",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Die Erdnuss wächst an einem Baum.",
+    "answer": false,
+    "explanation": "Erdnüsse wachsen an einer krautigen Pflanze und reifen unter der Erde."
+  },
+  {
+    "id": "tf36",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Der Pazifik bedeckt mehr Fläche als alle Landmassen der Erde zusammen.",
+    "answer": true,
+    "explanation": "Der Pazifik umfasst rund 165 Millionen Quadratkilometer, die gesamte Landfläche etwa 149 Millionen."
+  },
+  {
+    "id": "tf37",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Ein Jahr auf dem Mars dauert länger als zwei Erdenjahre.",
+    "answer": false,
+    "explanation": "Ein Marsjahr dauert rund 687 Tage und damit etwas weniger als zwei Erdenjahre."
+  },
+  {
+    "id": "tf38",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Krokodile können ihre Zunge nicht herausstrecken.",
+    "answer": true,
+    "explanation": "Eine Membran hält die Krokodilzunge am Unterkiefer fest."
+  },
+  {
+    "id": "tf39",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Diamant und Graphit bestehen beide aus Kohlenstoff.",
+    "answer": true,
+    "explanation": "Beide Stoffe bestehen aus Kohlenstoff, unterscheiden sich aber in der Anordnung ihrer Atome."
+  },
+  {
+    "id": "tf40",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Die Internationale Raumstation umkreist die Erde ungefähr einmal pro Tag.",
+    "answer": false,
+    "explanation": "Die ISS benötigt nur rund 90 Minuten pro Umlauf und schafft etwa 16 Umrundungen täglich."
+  },
+  {
+    "id": "tf041",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wellington ist die Hauptstadt von Neuseeland.",
+    "answer": true,
+    "explanation": "Die Hauptstadt von Neuseeland ist Wellington.",
+    "subject_keys": [
+      "entity:wellington",
+      "subject:neuseeland"
+    ]
+  },
+  {
+    "id": "tf042",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Helsinki ist die Hauptstadt von Marokko.",
+    "answer": false,
+    "explanation": "Die Hauptstadt von Marokko ist Rabat.",
+    "subject_keys": [
+      "entity:helsinki",
+      "entity:rabat",
+      "subject:marokko"
+    ]
+  },
+  {
+    "id": "tf043",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Helsinki ist die Hauptstadt von Finnland.",
+    "answer": true,
+    "explanation": "Die Hauptstadt von Finnland ist Helsinki.",
+    "subject_keys": [
+      "entity:helsinki",
+      "subject:finnland"
+    ]
+  },
+  {
+    "id": "tf044",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Hanoi ist die Hauptstadt von Chile.",
+    "answer": false,
+    "explanation": "Die Hauptstadt von Chile ist Santiago.",
+    "subject_keys": [
+      "entity:hanoi",
+      "entity:santiago",
+      "subject:chile"
+    ]
+  },
+  {
+    "id": "tf045",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Hanoi ist die Hauptstadt von Vietnam.",
+    "answer": true,
+    "explanation": "Die Hauptstadt von Vietnam ist Hanoi.",
+    "subject_keys": [
+      "entity:hanoi",
+      "subject:vietnam"
+    ]
+  },
+  {
+    "id": "tf046",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Nairobi ist die Hauptstadt von Irland.",
+    "answer": false,
+    "explanation": "Die Hauptstadt von Irland ist Dublin.",
+    "subject_keys": [
+      "entity:dublin",
+      "entity:nairobi",
+      "subject:irland"
+    ]
+  },
+  {
+    "id": "tf047",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Nairobi ist die Hauptstadt von Kenia.",
+    "answer": true,
+    "explanation": "Die Hauptstadt von Kenia ist Nairobi.",
+    "subject_keys": [
+      "entity:nairobi",
+      "subject:kenia"
+    ]
+  },
+  {
+    "id": "tf048",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Ottawa ist die Hauptstadt von Portugal.",
+    "answer": false,
+    "explanation": "Die Hauptstadt von Portugal ist Lissabon.",
+    "subject_keys": [
+      "entity:lissabon",
+      "entity:ottawa",
+      "subject:portugal"
+    ]
+  },
+  {
+    "id": "tf049",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Ottawa ist die Hauptstadt von Kanada.",
+    "answer": true,
+    "explanation": "Die Hauptstadt von Kanada ist Ottawa.",
+    "subject_keys": [
+      "entity:ottawa",
+      "subject:kanada"
+    ]
+  },
+  {
+    "id": "tf050",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wellington ist die Hauptstadt von Mongolei.",
+    "answer": false,
+    "explanation": "Die Hauptstadt von Mongolei ist Ulaanbaatar.",
+    "subject_keys": [
+      "entity:ulaanbaatar",
+      "entity:wellington",
+      "subject:mongolei"
+    ]
+  },
+  {
+    "id": "tf051",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Das chemische Symbol von Kalium lautet Ag.",
+    "answer": false,
+    "explanation": "Kalium trägt das Symbol K.",
+    "subject_keys": [
+      "entity:ag",
+      "entity:k",
+      "subject:kalium"
+    ]
+  },
+  {
+    "id": "tf052",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Das chemische Symbol von Silber lautet Ag.",
+    "answer": true,
+    "explanation": "Silber trägt das Symbol Ag.",
+    "subject_keys": [
+      "entity:ag",
+      "subject:silber"
+    ]
+  },
+  {
+    "id": "tf053",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Das chemische Symbol von Blei lautet Sn.",
+    "answer": false,
+    "explanation": "Blei trägt das Symbol Pb.",
+    "subject_keys": [
+      "entity:pb",
+      "entity:sn",
+      "subject:blei"
+    ]
+  },
+  {
+    "id": "tf054",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Das chemische Symbol von Zinn lautet Sn.",
+    "answer": true,
+    "explanation": "Zinn trägt das Symbol Sn.",
+    "subject_keys": [
+      "entity:sn",
+      "subject:zinn"
+    ]
+  },
+  {
+    "id": "tf055",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Das chemische Symbol von Kupfer lautet He.",
+    "answer": false,
+    "explanation": "Kupfer trägt das Symbol Cu.",
+    "subject_keys": [
+      "entity:cu",
+      "entity:he",
+      "subject:kupfer"
+    ]
+  },
+  {
+    "id": "tf056",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Das chemische Symbol von Helium lautet He.",
+    "answer": true,
+    "explanation": "Helium trägt das Symbol He.",
+    "subject_keys": [
+      "entity:he",
+      "subject:helium"
+    ]
+  },
+  {
+    "id": "tf057",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Das chemische Symbol von Calcium lautet W.",
+    "answer": false,
+    "explanation": "Calcium trägt das Symbol Ca.",
+    "subject_keys": [
+      "entity:ca",
+      "entity:w",
+      "subject:calcium"
+    ]
+  },
+  {
+    "id": "tf058",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Das chemische Symbol von Wolfram lautet W.",
+    "answer": true,
+    "explanation": "Wolfram trägt das Symbol W.",
+    "subject_keys": [
+      "entity:w",
+      "subject:wolfram"
+    ]
+  },
+  {
+    "id": "tf059",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Das chemische Symbol von Quecksilber lautet Co.",
+    "answer": false,
+    "explanation": "Quecksilber trägt das Symbol Hg.",
+    "subject_keys": [
+      "entity:co",
+      "entity:hg",
+      "subject:quecksilber"
+    ]
+  },
+  {
+    "id": "tf060",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Das chemische Symbol von Kobalt lautet Co.",
+    "answer": true,
+    "explanation": "Kobalt trägt das Symbol Co.",
+    "subject_keys": [
+      "entity:co",
+      "subject:kobalt"
+    ]
+  },
+  {
+    "id": "tf061",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "„Der Prozess“ wurde von Franz Kafka geschrieben.",
+    "answer": true,
+    "explanation": "Das Werk stammt von Franz Kafka.",
+    "subject_keys": [
+      "entity:franz kafka",
+      "subject:der prozess"
+    ]
+  },
+  {
+    "id": "tf062",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "„Stolz und Vorurteil“ wurde von Ernest Hemingway geschrieben.",
+    "answer": false,
+    "explanation": "Das Werk stammt von Jane Austen.",
+    "subject_keys": [
+      "entity:ernest hemingway",
+      "entity:jane austen",
+      "subject:stolz und vorurteil"
+    ]
+  },
+  {
+    "id": "tf063",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "„Der alte Mann und das Meer“ wurde von Ernest Hemingway geschrieben.",
+    "answer": true,
+    "explanation": "Das Werk stammt von Ernest Hemingway.",
+    "subject_keys": [
+      "entity:ernest hemingway",
+      "subject:der alte mann und das meer"
+    ]
+  },
+  {
+    "id": "tf064",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "„Moby-Dick“ wurde von Antoine de Saint-Exupéry geschrieben.",
+    "answer": false,
+    "explanation": "Das Werk stammt von Herman Melville.",
+    "subject_keys": [
+      "entity:antoine de saint-exupéry",
+      "entity:herman melville",
+      "subject:moby-dick"
+    ]
+  },
+  {
+    "id": "tf065",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "„Der kleine Prinz“ wurde von Antoine de Saint-Exupéry geschrieben.",
+    "answer": true,
+    "explanation": "Das Werk stammt von Antoine de Saint-Exupéry.",
+    "subject_keys": [
+      "entity:antoine de saint-exupéry",
+      "subject:der kleine prinz"
+    ]
+  },
+  {
+    "id": "tf066",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "„Faust“ wurde von Mary Shelley geschrieben.",
+    "answer": false,
+    "explanation": "Das Werk stammt von Johann Wolfgang von Goethe.",
+    "subject_keys": [
+      "entity:johann wolfgang von goethe",
+      "entity:mary shelley",
+      "subject:faust"
+    ]
+  },
+  {
+    "id": "tf067",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "„Frankenstein“ wurde von Mary Shelley geschrieben.",
+    "answer": true,
+    "explanation": "Das Werk stammt von Mary Shelley.",
+    "subject_keys": [
+      "entity:mary shelley",
+      "subject:frankenstein"
+    ]
+  },
+  {
+    "id": "tf068",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "„Der Name der Rose“ wurde von Robert Louis Stevenson geschrieben.",
+    "answer": false,
+    "explanation": "Das Werk stammt von Umberto Eco.",
+    "subject_keys": [
+      "entity:robert louis stevenson",
+      "entity:umberto eco",
+      "subject:der name der rose"
+    ]
+  },
+  {
+    "id": "tf069",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "„Die Schatzinsel“ wurde von Robert Louis Stevenson geschrieben.",
+    "answer": true,
+    "explanation": "Das Werk stammt von Robert Louis Stevenson.",
+    "subject_keys": [
+      "entity:robert louis stevenson",
+      "subject:die schatzinsel"
+    ]
+  },
+  {
+    "id": "tf070",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "„Madame Bovary“ wurde von Franz Kafka geschrieben.",
+    "answer": false,
+    "explanation": "Das Werk stammt von Gustave Flaubert.",
+    "subject_keys": [
+      "entity:franz kafka",
+      "entity:gustave flaubert",
+      "subject:madame bovary"
+    ]
+  },
+  {
+    "id": "tf071",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Das Kunstwerk „Guernica“ stammt von Jan Vermeer.",
+    "answer": false,
+    "explanation": "Geschaffen wurde es von Pablo Picasso.",
+    "subject_keys": [
+      "entity:jan vermeer",
+      "entity:pablo picasso",
+      "subject:guernica"
+    ]
+  },
+  {
+    "id": "tf072",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Das Kunstwerk „Das Mädchen mit dem Perlenohrring“ stammt von Jan Vermeer.",
+    "answer": true,
+    "explanation": "Geschaffen wurde es von Jan Vermeer.",
+    "subject_keys": [
+      "entity:jan vermeer",
+      "subject:das mädchen mit dem perlenohrring"
+    ]
+  },
+  {
+    "id": "tf073",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Das Kunstwerk „Die Beständigkeit der Erinnerung“ stammt von Gustav Klimt.",
+    "answer": false,
+    "explanation": "Geschaffen wurde es von Salvador Dalí.",
+    "subject_keys": [
+      "entity:gustav klimt",
+      "entity:salvador dalí",
+      "subject:die beständigkeit der erinnerung"
+    ]
+  },
+  {
+    "id": "tf074",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Das Kunstwerk „Der Kuss“ stammt von Gustav Klimt.",
+    "answer": true,
+    "explanation": "Geschaffen wurde es von Gustav Klimt.",
+    "subject_keys": [
+      "entity:gustav klimt",
+      "subject:der kuss"
+    ]
+  },
+  {
+    "id": "tf075",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Das Kunstwerk „Die Nachtwache“ stammt von Claude Monet.",
+    "answer": false,
+    "explanation": "Geschaffen wurde es von Rembrandt.",
+    "subject_keys": [
+      "entity:claude monet",
+      "entity:rembrandt",
+      "subject:die nachtwache"
+    ]
+  },
+  {
+    "id": "tf076",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Das Kunstwerk „Seerosen“ stammt von Claude Monet.",
+    "answer": true,
+    "explanation": "Geschaffen wurde es von Claude Monet.",
+    "subject_keys": [
+      "entity:claude monet",
+      "subject:seerosen"
+    ]
+  },
+  {
+    "id": "tf077",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Das Kunstwerk „American Gothic“ stammt von Sandro Botticelli.",
+    "answer": false,
+    "explanation": "Geschaffen wurde es von Grant Wood.",
+    "subject_keys": [
+      "entity:grant wood",
+      "entity:sandro botticelli",
+      "subject:american gothic"
+    ]
+  },
+  {
+    "id": "tf078",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Das Kunstwerk „Die Geburt der Venus“ stammt von Sandro Botticelli.",
+    "answer": true,
+    "explanation": "Geschaffen wurde es von Sandro Botticelli.",
+    "subject_keys": [
+      "entity:sandro botticelli",
+      "subject:die geburt der venus"
+    ]
+  },
+  {
+    "id": "tf079",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Das Kunstwerk „Der Denker“ stammt von Edward Hopper.",
+    "answer": false,
+    "explanation": "Geschaffen wurde es von Auguste Rodin.",
+    "subject_keys": [
+      "entity:auguste rodin",
+      "entity:edward hopper",
+      "subject:der denker"
+    ]
+  },
+  {
+    "id": "tf080",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Das Kunstwerk „Nighthawks“ stammt von Edward Hopper.",
+    "answer": true,
+    "explanation": "Geschaffen wurde es von Edward Hopper.",
+    "subject_keys": [
+      "entity:edward hopper",
+      "subject:nighthawks"
+    ]
+  },
+  {
+    "id": "tf081",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Elektrischer widerstand wird in Ohm gemessen.",
+    "answer": true,
+    "explanation": "Die passende Einheit ist Ohm.",
+    "subject_keys": [
+      "entity:ohm",
+      "subject:elektrischer widerstand"
+    ]
+  },
+  {
+    "id": "tf082",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Frequenz wird in Newton gemessen.",
+    "answer": false,
+    "explanation": "Die passende Einheit ist Hertz.",
+    "subject_keys": [
+      "entity:hertz",
+      "entity:newton",
+      "subject:frequenz"
+    ]
+  },
+  {
+    "id": "tf083",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Kraft wird in Newton gemessen.",
+    "answer": true,
+    "explanation": "Die passende Einheit ist Newton.",
+    "subject_keys": [
+      "entity:newton",
+      "subject:kraft"
+    ]
+  },
+  {
+    "id": "tf084",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Energie wird in Pascal gemessen.",
+    "answer": false,
+    "explanation": "Die passende Einheit ist Joule.",
+    "subject_keys": [
+      "entity:joule",
+      "entity:pascal",
+      "subject:energie"
+    ]
+  },
+  {
+    "id": "tf085",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Druck wird in Pascal gemessen.",
+    "answer": true,
+    "explanation": "Die passende Einheit ist Pascal.",
+    "subject_keys": [
+      "entity:pascal",
+      "subject:druck"
+    ]
+  },
+  {
+    "id": "tf086",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Lichtstärke wird in Kelvin gemessen.",
+    "answer": false,
+    "explanation": "Die passende Einheit ist Candela.",
+    "subject_keys": [
+      "entity:candela",
+      "entity:kelvin",
+      "subject:lichtstärke"
+    ]
+  },
+  {
+    "id": "tf087",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Temperatur im si-system wird in Kelvin gemessen.",
+    "answer": true,
+    "explanation": "Die passende Einheit ist Kelvin.",
+    "subject_keys": [
+      "entity:kelvin",
+      "subject:temperatur im si-system"
+    ]
+  },
+  {
+    "id": "tf088",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Elektrische ladung wird in Tesla gemessen.",
+    "answer": false,
+    "explanation": "Die passende Einheit ist Coulomb.",
+    "subject_keys": [
+      "entity:coulomb",
+      "entity:tesla",
+      "subject:elektrische ladung"
+    ]
+  },
+  {
+    "id": "tf089",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Magnetische flussdichte wird in Tesla gemessen.",
+    "answer": true,
+    "explanation": "Die passende Einheit ist Tesla.",
+    "subject_keys": [
+      "entity:tesla",
+      "subject:magnetische flussdichte"
+    ]
+  },
+  {
+    "id": "tf090",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Radioaktivität wird in Ohm gemessen.",
+    "answer": false,
+    "explanation": "Die passende Einheit ist Becquerel.",
+    "subject_keys": [
+      "entity:becquerel",
+      "entity:ohm",
+      "subject:radioaktivität"
+    ]
+  },
+  {
+    "id": "tf091",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Die christusstatue cristo redentor befindet sich in Pisa.",
+    "answer": false,
+    "explanation": "Der richtige Ort ist Rio de Janeiro.",
+    "subject_keys": [
+      "entity:pisa",
+      "entity:rio de janeiro",
+      "subject:die christusstatue cristo redentor"
+    ]
+  },
+  {
+    "id": "tf092",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Der schiefe turm befindet sich in Pisa.",
+    "answer": true,
+    "explanation": "Der richtige Ort ist Pisa.",
+    "subject_keys": [
+      "entity:pisa",
+      "subject:der schiefe turm"
+    ]
+  },
+  {
+    "id": "tf093",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Die hagia sophia befindet sich in Toronto.",
+    "answer": false,
+    "explanation": "Der richtige Ort ist Istanbul.",
+    "subject_keys": [
+      "entity:istanbul",
+      "entity:toronto",
+      "subject:die hagia sophia"
+    ]
+  },
+  {
+    "id": "tf094",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Der cn tower befindet sich in Toronto.",
+    "answer": true,
+    "explanation": "Der richtige Ort ist Toronto.",
+    "subject_keys": [
+      "entity:toronto",
+      "subject:der cn tower"
+    ]
+  },
+  {
+    "id": "tf095",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Die akropolis befindet sich in Shanghai.",
+    "answer": false,
+    "explanation": "Der richtige Ort ist Athen.",
+    "subject_keys": [
+      "entity:athen",
+      "entity:shanghai",
+      "subject:die akropolis"
+    ]
+  },
+  {
+    "id": "tf096",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Der fernsehturm oriental pearl befindet sich in Shanghai.",
+    "answer": true,
+    "explanation": "Der richtige Ort ist Shanghai.",
+    "subject_keys": [
+      "entity:shanghai",
+      "subject:der fernsehturm oriental pearl"
+    ]
+  },
+  {
+    "id": "tf097",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Das burj al arab befindet sich in Prag.",
+    "answer": false,
+    "explanation": "Der richtige Ort ist Dubai.",
+    "subject_keys": [
+      "entity:dubai",
+      "entity:prag",
+      "subject:das burj al arab"
+    ]
+  },
+  {
+    "id": "tf098",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Die karlsbrücke befindet sich in Prag.",
+    "answer": true,
+    "explanation": "Der richtige Ort ist Prag.",
+    "subject_keys": [
+      "entity:prag",
+      "subject:die karlsbrücke"
+    ]
+  },
+  {
+    "id": "tf099",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Der trevi-brunnen befindet sich in Amsterdam.",
+    "answer": false,
+    "explanation": "Der richtige Ort ist Rom.",
+    "subject_keys": [
+      "entity:amsterdam",
+      "entity:rom",
+      "subject:der trevi-brunnen"
+    ]
+  },
+  {
+    "id": "tf100",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Das rijksmuseum befindet sich in Amsterdam.",
+    "answer": true,
+    "explanation": "Der richtige Ort ist Amsterdam.",
+    "subject_keys": [
+      "entity:amsterdam",
+      "subject:das rijksmuseum"
+    ]
+  },
+  {
+    "id": "tf101",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Sushi stammt ursprünglich aus Japan.",
+    "answer": true,
+    "explanation": "Als Ursprungsregion gilt Japan.",
+    "subject_keys": [
+      "entity:japan",
+      "subject:sushi"
+    ]
+  },
+  {
+    "id": "tf102",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Paella stammt ursprünglich aus Ungarn.",
+    "answer": false,
+    "explanation": "Als Ursprungsregion gilt Spanien.",
+    "subject_keys": [
+      "entity:spanien",
+      "entity:ungarn",
+      "subject:paella"
+    ]
+  },
+  {
+    "id": "tf103",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Gulasch stammt ursprünglich aus Ungarn.",
+    "answer": true,
+    "explanation": "Als Ursprungsregion gilt Ungarn.",
+    "subject_keys": [
+      "entity:ungarn",
+      "subject:gulasch"
+    ]
+  },
+  {
+    "id": "tf104",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Kimchi stammt ursprünglich aus Mexiko.",
+    "answer": false,
+    "explanation": "Als Ursprungsregion gilt Korea.",
+    "subject_keys": [
+      "entity:korea",
+      "entity:mexiko",
+      "subject:kimchi"
+    ]
+  },
+  {
+    "id": "tf105",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Tacos stammt ursprünglich aus Mexiko.",
+    "answer": true,
+    "explanation": "Als Ursprungsregion gilt Mexiko.",
+    "subject_keys": [
+      "entity:mexiko",
+      "subject:tacos"
+    ]
+  },
+  {
+    "id": "tf106",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Fondue stammt ursprünglich aus Griechenland.",
+    "answer": false,
+    "explanation": "Als Ursprungsregion gilt Schweiz.",
+    "subject_keys": [
+      "entity:griechenland",
+      "entity:schweiz",
+      "subject:fondue"
+    ]
+  },
+  {
+    "id": "tf107",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Moussaka stammt ursprünglich aus Griechenland.",
+    "answer": true,
+    "explanation": "Als Ursprungsregion gilt Griechenland.",
+    "subject_keys": [
+      "entity:griechenland",
+      "subject:moussaka"
+    ]
+  },
+  {
+    "id": "tf108",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Feijoada stammt ursprünglich aus Thailand.",
+    "answer": false,
+    "explanation": "Als Ursprungsregion gilt Brasilien.",
+    "subject_keys": [
+      "entity:brasilien",
+      "entity:thailand",
+      "subject:feijoada"
+    ]
+  },
+  {
+    "id": "tf109",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Tom Yum stammt ursprünglich aus Thailand.",
+    "answer": true,
+    "explanation": "Als Ursprungsregion gilt Thailand.",
+    "subject_keys": [
+      "entity:thailand",
+      "subject:tom yum"
+    ]
+  },
+  {
+    "id": "tf110",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Hummus stammt ursprünglich aus Japan.",
+    "answer": false,
+    "explanation": "Als Ursprungsregion gilt Naher Osten.",
+    "subject_keys": [
+      "entity:japan",
+      "entity:naher osten",
+      "subject:hummus"
+    ]
+  },
+  {
+    "id": "tf111",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Louis Braille wird mit dem World Wide Web verbunden.",
+    "answer": false,
+    "explanation": "Damit verbunden wird Tim Berners-Lee.",
+    "subject_keys": [
+      "entity:louis braille",
+      "entity:tim berners-lee",
+      "subject:dem world wide web"
+    ]
+  },
+  {
+    "id": "tf112",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Louis Braille wird mit der Brailleschrift verbunden.",
+    "answer": true,
+    "explanation": "Damit verbunden wird Louis Braille.",
+    "subject_keys": [
+      "entity:louis braille",
+      "subject:der brailleschrift"
+    ]
+  },
+  {
+    "id": "tf113",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Willis Carrier wird mit dem Dieselmotor verbunden.",
+    "answer": false,
+    "explanation": "Damit verbunden wird Rudolf Diesel.",
+    "subject_keys": [
+      "entity:rudolf diesel",
+      "entity:willis carrier",
+      "subject:dem dieselmotor"
+    ]
+  },
+  {
+    "id": "tf114",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Willis Carrier wird mit der modernen Klimaanlage verbunden.",
+    "answer": true,
+    "explanation": "Damit verbunden wird Willis Carrier.",
+    "subject_keys": [
+      "entity:willis carrier",
+      "subject:der modernen klimaanlage"
+    ]
+  },
+  {
+    "id": "tf115",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Alexander Graham Bell wird mit dem Dynamit verbunden.",
+    "answer": false,
+    "explanation": "Damit verbunden wird Alfred Nobel.",
+    "subject_keys": [
+      "entity:alexander graham bell",
+      "entity:alfred nobel",
+      "subject:dem dynamit"
+    ]
+  },
+  {
+    "id": "tf116",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Alexander Graham Bell wird mit dem ersten praktikablen Telefon verbunden.",
+    "answer": true,
+    "explanation": "Damit verbunden wird Alexander Graham Bell.",
+    "subject_keys": [
+      "entity:alexander graham bell",
+      "subject:dem ersten praktikablen telefon"
+    ]
+  },
+  {
+    "id": "tf117",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Elisha Otis wird mit dem Klettverschluss verbunden.",
+    "answer": false,
+    "explanation": "Damit verbunden wird George de Mestral.",
+    "subject_keys": [
+      "entity:elisha otis",
+      "entity:george de mestral",
+      "subject:dem klettverschluss"
+    ]
+  },
+  {
+    "id": "tf118",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Elisha Otis wird mit dem Sicherheitsaufzug verbunden.",
+    "answer": true,
+    "explanation": "Damit verbunden wird Elisha Otis.",
+    "subject_keys": [
+      "entity:elisha otis",
+      "subject:dem sicherheitsaufzug"
+    ]
+  },
+  {
+    "id": "tf119",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "László Bíró wird mit der ersten mechanischen Rechenmaschine verbunden.",
+    "answer": false,
+    "explanation": "Damit verbunden wird Blaise Pascal.",
+    "subject_keys": [
+      "entity:blaise pascal",
+      "entity:lászló bíró",
+      "subject:der ersten mechanischen rechenmaschine"
+    ]
+  },
+  {
+    "id": "tf120",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "László Bíró wird mit dem modernen Kugelschreiber verbunden.",
+    "answer": true,
+    "explanation": "Damit verbunden wird László Bíró.",
+    "subject_keys": [
+      "entity:lászló bíró",
+      "subject:dem modernen kugelschreiber"
+    ]
+  },
+  {
+    "id": "tf121",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Der Fachbegriff für die Lehre von Pilzen lautet Mykologie.",
+    "answer": true,
+    "explanation": "Richtig ist Mykologie.",
+    "subject_keys": [
+      "entity:mykologie",
+      "subject:die lehre von pilzen"
+    ]
+  },
+  {
+    "id": "tf122",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Der Fachbegriff für die Wissenschaft von Erdbeben lautet Ornithologie.",
+    "answer": false,
+    "explanation": "Richtig ist Seismologie.",
+    "subject_keys": [
+      "entity:ornithologie",
+      "entity:seismologie",
+      "subject:die wissenschaft von erdbeben"
+    ]
+  },
+  {
+    "id": "tf123",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Der Fachbegriff für die Lehre von Vögeln lautet Ornithologie.",
+    "answer": true,
+    "explanation": "Richtig ist Ornithologie.",
+    "subject_keys": [
+      "entity:ornithologie",
+      "subject:die lehre von vögeln"
+    ]
+  },
+  {
+    "id": "tf124",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Der Fachbegriff für die Erforschung von Insekten lautet Kartografie.",
+    "answer": false,
+    "explanation": "Richtig ist Entomologie.",
+    "subject_keys": [
+      "entity:entomologie",
+      "entity:kartografie",
+      "subject:die erforschung von insekten"
+    ]
+  },
+  {
+    "id": "tf125",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Der Fachbegriff für die Lehre von Karten lautet Kartografie.",
+    "answer": true,
+    "explanation": "Richtig ist Kartografie.",
+    "subject_keys": [
+      "entity:kartografie",
+      "subject:die lehre von karten"
+    ]
+  },
+  {
+    "id": "tf126",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Der Fachbegriff für die Wissenschaft vom Wetter lautet Astronomie.",
+    "answer": false,
+    "explanation": "Richtig ist Meteorologie.",
+    "subject_keys": [
+      "entity:astronomie",
+      "entity:meteorologie",
+      "subject:die wissenschaft vom wetter"
+    ]
+  },
+  {
+    "id": "tf127",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Der Fachbegriff für die Lehre von Sternen und Weltall lautet Astronomie.",
+    "answer": true,
+    "explanation": "Richtig ist Astronomie.",
+    "subject_keys": [
+      "entity:astronomie",
+      "subject:die lehre von sternen und weltall"
+    ]
+  },
+  {
+    "id": "tf128",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Der Fachbegriff für die Erforschung alter Kulturen durch Funde lautet Genetik.",
+    "answer": false,
+    "explanation": "Richtig ist Archäologie.",
+    "subject_keys": [
+      "entity:archäologie",
+      "entity:genetik",
+      "subject:die erforschung alter kulturen durch funde"
+    ]
+  },
+  {
+    "id": "tf129",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Der Fachbegriff für die Lehre von Vererbung lautet Genetik.",
+    "answer": true,
+    "explanation": "Richtig ist Genetik.",
+    "subject_keys": [
+      "entity:genetik",
+      "subject:die lehre von vererbung"
+    ]
+  },
+  {
+    "id": "tf130",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Der Fachbegriff für die Lehre von Meeren lautet Mykologie.",
+    "answer": false,
+    "explanation": "Richtig ist Ozeanografie.",
+    "subject_keys": [
+      "entity:mykologie",
+      "entity:ozeanografie",
+      "subject:die lehre von meeren"
+    ]
+  },
+  {
+    "id": "tf131",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Für den längsten Hals ist der Zitteraal bekannt.",
+    "answer": false,
+    "explanation": "Das gesuchte Tier ist die Giraffe.",
+    "subject_keys": [
+      "entity:der zitteraal",
+      "entity:die giraffe",
+      "subject:den längsten hals"
+    ]
+  },
+  {
+    "id": "tf132",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Für elektrische Entladungen zur Verteidigung ist der Zitteraal bekannt.",
+    "answer": true,
+    "explanation": "Das gesuchte Tier ist der Zitteraal.",
+    "subject_keys": [
+      "entity:der zitteraal",
+      "subject:elektrische entladungen zur verteidigung"
+    ]
+  },
+  {
+    "id": "tf133",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Für Werkzeuggebrauch mit Steinen ist die Fledermaus bekannt.",
+    "answer": false,
+    "explanation": "Das gesuchte Tier ist der Seeotter.",
+    "subject_keys": [
+      "entity:der seeotter",
+      "entity:die fledermaus",
+      "subject:werkzeuggebrauch mit steinen"
+    ]
+  },
+  {
+    "id": "tf134",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Für Echoortung in völliger Dunkelheit ist die Fledermaus bekannt.",
+    "answer": true,
+    "explanation": "Das gesuchte Tier ist die Fledermaus.",
+    "subject_keys": [
+      "entity:die fledermaus",
+      "subject:echoortung in völliger dunkelheit"
+    ]
+  },
+  {
+    "id": "tf135",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Für Farbwechsel zur Tarnung ist der Wanderalbatros bekannt.",
+    "answer": false,
+    "explanation": "Das gesuchte Tier ist das Chamäleon.",
+    "subject_keys": [
+      "entity:das chamäleon",
+      "entity:der wanderalbatros",
+      "subject:farbwechsel zur tarnung"
+    ]
+  },
+  {
+    "id": "tf136",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Für die größte Spannweite unter lebenden Vögeln ist der Wanderalbatros bekannt.",
+    "answer": true,
+    "explanation": "Das gesuchte Tier ist der Wanderalbatros.",
+    "subject_keys": [
+      "entity:der wanderalbatros",
+      "subject:die grösste spannweite unter lebenden vögeln"
+    ]
+  },
+  {
+    "id": "tf137",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Für extrem langsamen Stoffwechsel ist das Stachelschwein bekannt.",
+    "answer": false,
+    "explanation": "Das gesuchte Tier ist das Faultier.",
+    "subject_keys": [
+      "entity:das faultier",
+      "entity:das stachelschwein",
+      "subject:extrem langsamen stoffwechsel"
+    ]
+  },
+  {
+    "id": "tf138",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Für Stacheln aus umgebildeten Haaren ist das Stachelschwein bekannt.",
+    "answer": true,
+    "explanation": "Das gesuchte Tier ist das Stachelschwein.",
+    "subject_keys": [
+      "entity:das stachelschwein",
+      "subject:stacheln aus umgebildeten haaren"
+    ]
+  },
+  {
+    "id": "tf139",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Für Bauten mit Dämmen ist der Ameisenbär bekannt.",
+    "answer": false,
+    "explanation": "Das gesuchte Tier ist der Biber.",
+    "subject_keys": [
+      "entity:der ameisenbär",
+      "entity:der biber",
+      "subject:bauten mit dämmen"
+    ]
+  },
+  {
+    "id": "tf140",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Für eine sehr lange klebrige Zunge ist der Ameisenbär bekannt.",
+    "answer": true,
+    "explanation": "Das gesuchte Tier ist der Ameisenbär.",
+    "subject_keys": [
+      "entity:der ameisenbär",
+      "subject:eine sehr lange klebrige zunge"
+    ]
+  },
+  {
+    "id": "tf141",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Die fiktive Stadt Hawkins aus „Stranger Things“ liegt in Indiana.",
+    "answer": true,
+    "explanation": "Hawkins ist eine fiktive Kleinstadt im US-Bundesstaat Indiana.",
+    "subject_keys": [
+      "modern:series:stranger-things"
+    ]
+  },
+  {
+    "id": "tf142",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "„Tenet“ wurde von Denis Villeneuve inszeniert.",
+    "answer": false,
+    "explanation": "Regie führte Christopher Nolan.",
+    "subject_keys": [
+      "modern:film:tenet"
+    ]
+  },
+  {
+    "id": "tf143",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Billie Eilish sang den Titelsong zum James-Bond-Film „No Time to Die“.",
+    "answer": true,
+    "explanation": "Billie Eilish sang und schrieb gemeinsam mit Finneas den Titelsong.",
+    "subject_keys": [
+      "modern:music:no-time-to-die",
+      "topic:music:internationale-musikgeschichte"
+    ]
+  },
+  {
+    "id": "tf144",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Die Serie „Succession“ dreht sich um eine Familie mit einem Medienimperium.",
+    "answer": true,
+    "explanation": "Im Zentrum stehen Logan Roy, seine Kinder und der Konzern Waystar Royco.",
+    "subject_keys": [
+      "modern:series:succession"
+    ]
+  },
+  {
+    "id": "tf145",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Das Videospiel „Minecraft“ wurde ursprünglich von Nintendo entwickelt.",
+    "answer": false,
+    "explanation": "Minecraft wurde von Markus Persson begonnen und später von Mojang weiterentwickelt.",
+    "subject_keys": [
+      "modern:game:minecraft",
+      "topic:gaming:studios-und-entwicklung"
+    ]
+  },
+  {
+    "id": "tf146",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "„Squid Game“ ist eine südkoreanische Serie.",
+    "answer": true,
+    "explanation": "Die Serie stammt aus Südkorea und wurde von Hwang Dong-hyuk geschaffen.",
+    "subject_keys": [
+      "modern:series:squid-game"
+    ]
+  },
+  {
+    "id": "tf147",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Jenna Ortega spielt Wednesday Addams in der Serie „Wednesday“.",
+    "answer": true,
+    "explanation": "Jenna Ortega übernahm die Titelrolle.",
+    "subject_keys": [
+      "modern:series:wednesday"
+    ]
+  },
+  {
+    "id": "tf148",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "„Baldur’s Gate 3“ wurde von Larian Studios entwickelt.",
+    "answer": true,
+    "explanation": "Das Rollenspiel stammt vom belgischen Entwickler Larian Studios.",
+    "subject_keys": [
+      "modern:game:baldurs-gate-3",
+      "topic:gaming:studios-und-entwicklung"
+    ]
+  },
+  {
+    "id": "tf149",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In „The Bear“ übernimmt Carmy ein Restaurant in Chicago.",
+    "answer": true,
+    "explanation": "Carmy kehrt nach Chicago zurück und übernimmt den Familienbetrieb.",
+    "subject_keys": [
+      "modern:series:the-bear"
+    ]
+  },
+  {
+    "id": "tf150",
+    "question_type": "true_false",
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Der erste „Avatar“-Film erschien nach „Avatar: The Way of Water“.",
+    "answer": false,
+    "explanation": "Der erste Film erschien 2009, „The Way of Water“ folgte 2022.",
+    "subject_keys": [
+      "modern:film:avatar"
+    ]
+  },
+  {
+    "id": "tf151",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Xbox 25th anniversary timeline",
+          "url": "https://www.xbox.com/en-us/xbox-25th-anniversary"
+        }
+      ]
+    },
+    "prompt": "Xbox Series X und Series S erschienen im Jahr 2020.",
+    "answer": true,
+    "explanation": "Microsoft nennt den 10. November 2020 als Start der Series-X|S-Generation.",
+    "subject_keys": [
+      "topic:gaming:geschichte-und-meilensteine",
+      "entity:xbox series x",
+      "entity:xbox series s"
+    ]
+  },
+  {
+    "id": "tf152",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Nintendo: Game Boy hardware history",
+          "url": "https://www.nintendo.com/en-gb/Hardware/Nintendo-History/Game-Boy/Game-Boy-627031.html"
+        }
+      ]
+    },
+    "prompt": "Der ursprüngliche Game Boy zeigte Spiele auf einem vollfarbigen Bildschirm.",
+    "answer": false,
+    "explanation": "Sein LCD stellte vier Graustufen dar, keine Vollfarben.",
+    "subject_keys": [
+      "topic:gaming:konsolen-und-hardware",
+      "entity:game boy"
+    ]
+  },
+  {
+    "id": "tf153",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "PlayStation history: 1994",
+          "url": "https://www.playstation.com/en-us/playstation-history/1994-ps-one/"
+        }
+      ]
+    },
+    "prompt": "Die PlayStation-Marke wurde von Nintendo eingeführt.",
+    "answer": false,
+    "explanation": "PlayStation ist eine Marke von Sony; Nintendo entwickelte eigene Konsolenreihen.",
+    "subject_keys": [
+      "topic:gaming:studios-und-entwicklung",
+      "entity:playstation",
+      "entity:sony"
+    ]
+  },
+  {
+    "id": "tf154",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Nintendo: The Triforce",
+          "url": "https://www.nintendo.com/us/explore/characters/zelda/triforce/"
+        }
+      ]
+    },
+    "prompt": "Link trägt in der Zelda-Triforce-Zuordnung den Teil des Mutes.",
+    "answer": true,
+    "explanation": "Nintendo ordnet Link die Triforce des Mutes zu.",
+    "subject_keys": [
+      "topic:gaming:spielwelten-und-figuren",
+      "entity:link",
+      "entity:triforce"
+    ]
+  },
+  {
+    "id": "tf155",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Minecraft: Everything you need to know about mobs",
+          "url": "https://www.minecraft.net/en-us/article/minecraft-mobs"
+        }
+      ]
+    },
+    "prompt": "Ein Creeper gilt in Minecraft als friedliche Kreatur.",
+    "answer": false,
+    "explanation": "Minecraft führt den Creeper als feindlichen Mob.",
+    "subject_keys": [
+      "topic:gaming:spielwelten-und-figuren",
+      "entity:minecraft",
+      "entity:creeper"
+    ]
+  },
+  {
+    "id": "tf156",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Minecraft: About Minecraft",
+          "url": "https://www.minecraft.net/en-us/about-minecraft"
+        }
+      ]
+    },
+    "prompt": "Minecraft besitzt laut offizieller Beschreibung kein fest vorgeschriebenes Spielende.",
+    "answer": true,
+    "explanation": "Als Sandboxspiel hat Minecraft kein offizielles Ende, auch wenn viele den Enderdrachen als persönliches Ziel betrachten.",
+    "subject_keys": [
+      "topic:gaming:spielmechanik-und-begriffe",
+      "entity:minecraft"
+    ]
+  },
+  {
+    "id": "tf157",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Minecraft: Everything you need to know about mobs",
+          "url": "https://www.minecraft.net/en-us/article/minecraft-mobs"
+        }
+      ]
+    },
+    "prompt": "Minecraft unterscheidet Mobs grundsätzlich in passive, neutrale und feindliche Gruppen.",
+    "answer": true,
+    "explanation": "Die offizielle Übersicht beschreibt genau diese drei Verhaltenskategorien.",
+    "subject_keys": [
+      "topic:gaming:spielmechanik-und-begriffe",
+      "entity:minecraft",
+      "entity:mobs"
+    ]
+  },
+  {
+    "id": "tf158",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Christianity",
+          "url": "https://www.britannica.com/topic/Christianity"
+        }
+      ]
+    },
+    "prompt": "Die christliche Bibel besteht grundsätzlich aus Altem und Neuem Testament.",
+    "answer": true,
+    "explanation": "Die beiden Hauptteile heißen Altes Testament und Neues Testament.",
+    "subject_keys": [
+      "topic:faith_religion:christentum",
+      "entity:bibel"
+    ]
+  },
+  {
+    "id": "tf159",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "United States Holocaust Memorial Museum: Introduction to Judaism",
+          "url": "https://encyclopedia.ushmm.org/content/en/article/introduction-to-judaism"
+        }
+      ]
+    },
+    "prompt": "Chanukka erinnert an Ereignisse, die zeitlich nach der Abfassung der Tora liegen.",
+    "answer": true,
+    "explanation": "Chanukka wurde zur Erinnerung an spätere Ereignisse der jüdischen Geschichte eingeführt.",
+    "subject_keys": [
+      "topic:faith_religion:judentum",
+      "entity:chanukka",
+      "entity:tora"
+    ]
+  },
+  {
+    "id": "tf160",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "ReligionFacts: Islamic sacred texts",
+          "url": "https://religionfacts.com/islam/texts"
+        }
+      ]
+    },
+    "prompt": "Das Wort „Koran“ beziehungsweise „Qur'an“ bedeutet sinngemäß Rezitation.",
+    "answer": true,
+    "explanation": "Die Bezeichnung leitet sich vom arabischen Wort für Rezitation beziehungsweise Vortrag ab.",
+    "subject_keys": [
+      "topic:faith_religion:islam",
+      "entity:koran"
+    ]
+  },
+  {
+    "id": "tf161",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Hinduism",
+          "url": "https://www.britannica.com/topic/Hinduism"
+        }
+      ]
+    },
+    "prompt": "Der Hinduismus geht auf einen einzigen historisch bestimmbaren Gründer zurück.",
+    "answer": false,
+    "explanation": "Der Hinduismus entwickelte sich über lange Zeit aus verschiedenen Traditionen und besitzt keinen einzelnen Gründer.",
+    "subject_keys": [
+      "topic:faith_religion:hinduismus",
+      "entity:hinduismus"
+    ]
+  },
+  {
+    "id": "tf162",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Buddhism",
+          "url": "https://www.britannica.com/topic/Buddhism"
+        }
+      ]
+    },
+    "prompt": "Der Edle Achtfache Pfad gehört zu den zentralen buddhistischen Lehren.",
+    "answer": true,
+    "explanation": "Er beschreibt acht miteinander verbundene Bereiche der Übung und Lebensführung.",
+    "subject_keys": [
+      "topic:faith_religion:buddhismus",
+      "entity:edler achtfacher pfad"
+    ]
+  },
+  {
+    "id": "tf163",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Sikhism",
+          "url": "https://www.britannica.com/topic/Sikhism"
+        }
+      ]
+    },
+    "prompt": "Der Sikhismus entstand in der Punjab-Region des indischen Subkontinents.",
+    "answer": true,
+    "explanation": "Die Tradition entstand dort im späten 15. Jahrhundert.",
+    "subject_keys": [
+      "topic:faith_religion:sikhismus-und-jainismus",
+      "entity:sikhismus"
+    ]
+  },
+  {
+    "id": "tf164",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "ReligionFacts: Shinto texts",
+          "url": "https://religionfacts.com/shinto/texts"
+        }
+      ]
+    },
+    "prompt": "Shinto besitzt eine einzige verbindliche Offenbarungsschrift, die der Bibel oder dem Koran entspricht.",
+    "answer": false,
+    "explanation": "Kojiki und Nihon Shoki sind wichtige Traditionsquellen, gelten aber nicht als eine vergleichbare einheitliche Offenbarungsschrift.",
+    "subject_keys": [
+      "topic:faith_religion:ostasiatische-religionen",
+      "entity:shinto",
+      "entity:kojiki",
+      "entity:nihon shoki"
+    ]
+  },
+  {
+    "id": "tf165",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "ReligionFacts: The Vedas",
+          "url": "https://religionfacts.com/hinduism/texts/vedas"
+        }
+      ]
+    },
+    "prompt": "Die vier Veden heißen Rigveda, Samaveda, Yajurveda und Atharvaveda.",
+    "answer": true,
+    "explanation": "Diese vier Sammlungen bilden den Kern der vedischen Schriften.",
+    "subject_keys": [
+      "topic:faith_religion:heilige-schriften",
+      "entity:veden"
+    ]
+  },
+  {
+    "id": "tf166",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Scottish Qualifications Authority: World Religions",
+          "url": "https://www.sqa.org.uk/sqa/files_ccc/N2USNRMEWorldReligions.pdf"
+        }
+      ]
+    },
+    "prompt": "Das Fest des Fastenbrechens folgt auf den Ramadan.",
+    "answer": true,
+    "explanation": "Eid al-Fitr beziehungsweise das Fest des Fastenbrechens beendet den Fastenmonat.",
+    "subject_keys": [
+      "topic:faith_religion:feste-und-rituale",
+      "entity:eid al-fitr",
+      "entity:ramadan"
+    ]
+  },
+  {
+    "id": "tf167",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "UNESCO: Old City of Jerusalem and its Walls",
+          "url": "https://whc.unesco.org/en/list/148"
+        }
+      ]
+    },
+    "prompt": "Jerusalem besitzt besondere religiöse Bedeutung für Judentum, Christentum und Islam.",
+    "answer": true,
+    "explanation": "UNESCO beschreibt Jerusalem als heilige Stadt dieser drei Religionen.",
+    "subject_keys": [
+      "topic:faith_religion:heilige-orte-und-religionsgeschichte",
+      "entity:jerusalem"
+    ]
+  },
+  {
+    "id": "tf168",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Rock & Roll Hall of Fame: Inductee classes",
+          "url": "https://rockhall.com/inductees/classes/"
+        }
+      ]
+    },
+    "prompt": "Led Zeppelin wurde 1995 in die Rock & Roll Hall of Fame aufgenommen.",
+    "answer": true,
+    "explanation": "Led Zeppelin gehört zur Klasse von 1995.",
+    "subject_keys": [
+      "topic:music:rock",
+      "entity:led zeppelin"
+    ]
+  },
+  {
+    "id": "tf169",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Rock & Roll Hall of Fame: Inductee classes",
+          "url": "https://rockhall.com/inductees/classes/"
+        }
+      ]
+    },
+    "prompt": "Radiohead wurde bereits in der ersten Hall-of-Fame-Klasse von 1986 aufgenommen.",
+    "answer": false,
+    "explanation": "Radiohead wurde 2019 aufgenommen; die erste Klasse stammt von 1986.",
+    "subject_keys": [
+      "topic:music:rock",
+      "entity:radiohead"
+    ]
+  },
+  {
+    "id": "tf170",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Deutsche Welle: Four decades of German electronic music",
+          "url": "https://www.dw.com/en/machine-music-four-decades-of-german-electronic-and-dance-music/a-6151880"
+        }
+      ]
+    },
+    "prompt": "Kraftwerk wurde 1970 in Düsseldorf gegründet.",
+    "answer": true,
+    "explanation": "Die Gründung durch Ralf Hütter und Florian Schneider erfolgte 1970 in Düsseldorf.",
+    "subject_keys": [
+      "topic:music:deutsche-musikgeschichte",
+      "entity:kraftwerk"
+    ]
+  },
+  {
+    "id": "tf171",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Goethe-Institut: Neue Deutsche Welle",
+          "url": "https://www.goethe.de/ins/sk/de/m/kul/sup/deu/ndw.html"
+        }
+      ]
+    },
+    "prompt": "„99 Luftballons“ wurde in den 1960er-Jahren veröffentlicht.",
+    "answer": false,
+    "explanation": "Der Song stammt aus dem Jahr 1983 und gehört zur Ära der Neuen Deutschen Welle.",
+    "subject_keys": [
+      "topic:music:deutsche-musikgeschichte",
+      "entity:nena",
+      "entity:99 luftballons"
+    ]
+  },
+  {
+    "id": "tf172",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Rock & Roll Hall of Fame: Inductee classes",
+          "url": "https://rockhall.com/inductees/classes/"
+        }
+      ]
+    },
+    "prompt": "ABBA gehört zur Rock-&-Roll-Hall-of-Fame-Klasse von 2010.",
+    "answer": true,
+    "explanation": "ABBA wurde 2010 aufgenommen.",
+    "subject_keys": [
+      "topic:music:internationale-musikgeschichte",
+      "entity:abba"
+    ]
+  },
+  {
+    "id": "tf173",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Ludwig van Beethoven",
+          "url": "https://www.britannica.com/biography/Ludwig-van-Beethoven"
+        }
+      ]
+    },
+    "prompt": "Beethoven vollendete neun Sinfonien.",
+    "answer": true,
+    "explanation": "Beethovens nummerierter Sinfoniezyklus umfasst neun Werke.",
+    "subject_keys": [
+      "topic:music:klassische-musik",
+      "entity:ludwig van beethoven"
+    ]
+  },
+  {
+    "id": "tf174",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: The Four Seasons",
+          "url": "https://www.britannica.com/topic/The-Four-Seasons-by-Vivaldi"
+        }
+      ]
+    },
+    "prompt": "Vivaldis „Vier Jahreszeiten“ bestehen aus vier Violinkonzerten.",
+    "answer": true,
+    "explanation": "Jede Jahreszeit wird durch ein eigenes Violinkonzert dargestellt.",
+    "subject_keys": [
+      "topic:music:klassische-musik",
+      "entity:antonio vivaldi",
+      "entity:die vier jahreszeiten"
+    ]
+  },
+  {
+    "id": "tf175",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Berliner Philharmoniker: What is a prepared piano?",
+          "url": "https://www.berliner-philharmoniker.de/en/stories/a-short-piano-lexicon/what-is-a-prepared-piano/"
+        }
+      ]
+    },
+    "prompt": "Bei einem „präparierten Klavier“ verändern Schrauben, Filz oder andere Gegenstände an den Saiten den Klang.",
+    "answer": true,
+    "explanation": "Schrauben, Filz, Holz oder andere Materialien verändern das Schwingungsverhalten der Saiten.",
+    "subject_keys": [
+      "topic:music:instrumente-und-musiktheorie",
+      "entity:präpariertes klavier"
+    ]
+  },
+  {
+    "id": "tf176",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Violin",
+          "url": "https://www.britannica.com/art/violin"
+        }
+      ]
+    },
+    "prompt": "Eine moderne Standardvioline besitzt normalerweise sechs Saiten.",
+    "answer": false,
+    "explanation": "Die Standardvioline besitzt vier Saiten.",
+    "subject_keys": [
+      "topic:music:instrumente-und-musiktheorie",
+      "entity:violine"
+    ]
+  },
+  {
+    "id": "tf177",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "IFAB Law 3: The Players",
+          "url": "https://theifab.com/laws/latest/the-players/"
+        }
+      ]
+    },
+    "prompt": "Ein Fußballspiel darf nicht beginnen, wenn eine Mannschaft weniger als sieben Spieler hat.",
+    "answer": true,
+    "explanation": "IFAB verlangt zum Beginn mindestens sieben Spieler pro Mannschaft.",
+    "subject_keys": [
+      "topic:sport:mannschafts-und-ballsport",
+      "entity:fussball"
+    ]
+  },
+  {
+    "id": "tf178",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "IOC Olympic Studies Centre: Olympic swimming pools",
+          "url": "https://library.olympics.com/default/digitalCollection/DigitalCollectionAttachmentDownloadHandler.ashx?documentId=619389&parentDocumentId=619388&skipCopyright=true&skipWatermark=true"
+        }
+      ]
+    },
+    "prompt": "Ein olympisches Schwimmbecken ist normalerweise 50 Meter lang.",
+    "answer": true,
+    "explanation": "Die dokumentierten olympischen Wettkampfbecken sind 50 Meter lang.",
+    "subject_keys": [
+      "topic:sport:wasser-winter-und-motorsport",
+      "entity:schwimmen"
+    ]
+  },
+  {
+    "id": "tf179",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "FIA: Formula One regulations and race flags",
+          "url": "https://www.fia.com/sites/default/files/final_din_a4_media_kit_english_26.07.2016.pdf"
+        }
+      ]
+    },
+    "prompt": "Die schwarz-weiß karierte Flagge kennzeichnet im Motorsport das Rennende.",
+    "answer": true,
+    "explanation": "Die FIA weist der karierten Flagge das Ende des Rennens zu.",
+    "subject_keys": [
+      "topic:sport:wasser-winter-und-motorsport",
+      "entity:motorsport",
+      "entity:karierte flagge"
+    ]
+  },
+  {
+    "id": "tf180",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "FIBA: Official Basketball Rules",
+          "url": "https://refereeing.fiba.basketball/en/rules"
+        }
+      ]
+    },
+    "prompt": "Ein Basketballspiel nach FIBA-Regeln ist in vier Viertel gegliedert.",
+    "answer": true,
+    "explanation": "FIBA-Basketball wird in vier Vierteln gespielt.",
+    "subject_keys": [
+      "topic:sport:regeln-und-ausruestung",
+      "entity:basketball"
+    ]
+  },
+  {
+    "id": "tf181",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "IHF: The evolution of indoor handball",
+          "url": "https://www.ihf.info/media-center/news/how-did-we-get-here-evolution-indoor-handball"
+        }
+      ]
+    },
+    "prompt": "Ein Handball-Feldspieler darf den Ball ohne Dribbling beliebig viele Schritte tragen.",
+    "answer": false,
+    "explanation": "Ohne Dribbling sind höchstens drei Schritte erlaubt.",
+    "subject_keys": [
+      "topic:sport:regeln-und-ausruestung",
+      "entity:handball"
+    ]
+  },
+  {
+    "id": "tf182",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "IOC Olympic Studies Centre: Olympic Games facts and figures",
+          "url": "https://library.olympics.com/digitalCollection/DigitalCollectionAttachmentDownloadHandler.ashx?documentId=3703315&parentDocumentId=172552&skipCopyright=true&skipWatermark=true"
+        }
+      ]
+    },
+    "prompt": "Bei den ersten Olympischen Spielen der Neuzeit 1896 nahmen ausschließlich Männer teil.",
+    "answer": true,
+    "explanation": "Für Athen 1896 nennt das IOC 241 Athleten und keine Athletinnen.",
+    "subject_keys": [
+      "topic:sport:olympische-geschichte-und-meilensteine",
+      "entity:athen 1896"
+    ]
+  },
+  {
+    "id": "tf183",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "IOC Olympic Studies Centre: Olympic Games facts and figures",
+          "url": "https://library.olympics.com/digitalCollection/DigitalCollectionAttachmentDownloadHandler.ashx?documentId=3703315&parentDocumentId=172552&skipCopyright=true&skipWatermark=true"
+        }
+      ]
+    },
+    "prompt": "Bei den Olympischen Spielen 1900 in Paris nahmen bereits Frauen teil.",
+    "answer": true,
+    "explanation": "Das IOC verzeichnet für Paris 1900 insgesamt 22 Athletinnen.",
+    "subject_keys": [
+      "topic:sport:olympische-geschichte-und-meilensteine",
+      "entity:paris 1900"
+    ]
+  },
+  {
+    "id": "tf184",
+    "question_type": "true_false",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "IOC: 100 years of the Olympic Winter Games",
+          "url": "https://newsroom.olympics.com/record/1298"
+        }
+      ]
+    },
+    "prompt": "An den Winterspielen von Chamonix 1924 nahmen mehr als 100 Nationen teil.",
+    "answer": false,
+    "explanation": "Es waren 16 nationale Mannschaften beziehungsweise NOKs vertreten.",
+    "subject_keys": [
+      "topic:sport:olympische-geschichte-und-meilensteine",
+      "entity:chamonix 1924"
+    ]
+  },
+  {
+    "id": "tf185",
+    "question_type": "true_false",
+    "prompt": "Der erste Mensch, der eine Fahrt in einem Fass über die Niagarafälle überlebte, war ein Mann.",
+    "answer": false,
+    "explanation": "Die erste Person war die Lehrerin Annie Edson Taylor. Sie überquerte 1901 in einem gepolsterten Fass die Horseshoe Falls und überlebte mit einer Kopfverletzung.",
+    "subject_keys": [
+      "entity:annie edson taylor",
+      "entity:niagarafälle"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-07",
+      "references": [
+        {
+          "title": "Smithsonian Magazine: October Anniversaries",
+          "url": "https://www.smithsonianmag.com/history/october-anniversaries-4-72394275/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf186",
+    "question_type": "true_false",
+    "prompt": "Der erste Dosenöffner wurde früher patentiert als die Konservendose aus Metall.",
+    "answer": false,
+    "explanation": "Die ersten mit Zinn beschichteten Eisendosen wurden bereits 1810 patentiert. Ezra J. Warners erster Dosenöffner folgte erst 1858; zuvor öffnete man Dosen mit Hammer und Meißel.",
+    "subject_keys": [
+      "entity:dosenöffner",
+      "entity:konservendose"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-07",
+      "references": [
+        {
+          "title": "Smithsonian Magazine: How Popping Open a Can Became the Sound of Summer",
+          "url": "https://www.smithsonianmag.com/innovation/how-popping-open-a-can-became-the-sound-of-summer-180982527/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf187",
+    "question_type": "true_false",
+    "prompt": "Das erste Faxgerät wurde erst nach dem Telefon erfunden.",
+    "answer": false,
+    "explanation": "Alexander Bain erhielt bereits 1843 ein britisches Patent auf ein Gerät zur elektrischen Bildübertragung – Jahrzehnte bevor das Telefon erfunden wurde.",
+    "subject_keys": [
+      "entity:faxgerät",
+      "entity:alexander bain",
+      "entity:telefon"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-07",
+      "references": [
+        {
+          "title": "International Telecommunication Union: The invention of the fax machine",
+          "url": "https://www.itu.int/itunews/manager/display.asp?ipage=pioneers&issue=04&lang=en&year=2007"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf188",
+    "question_type": "true_false",
+    "prompt": "Die erste Webcam zeigte eine Kaffeekanne, damit Forschende nicht umsonst zu einer leeren Kanne liefen.",
+    "answer": true,
+    "explanation": "Forschende der Universität Cambridge richteten 1991 eine Kamera auf ihre Kaffeekanne, um unnötige Wege zu einer leeren Kanne zu vermeiden. Als das System 1993 mit dem Web verbunden wurde, entstand daraus die erste Webcam.",
+    "subject_keys": [
+      "entity:webcam",
+      "entity:trojan room coffee pot",
+      "entity:university of cambridge"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-07",
+      "references": [
+        {
+          "title": "University of Cambridge Computer Laboratory: The Life and Times of the First Web Cam",
+          "url": "https://www.cl.cam.ac.uk/coffee/qsf/cacm200107.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf189",
+    "question_type": "true_false",
+    "prompt": "Auf dem Mars leuchtet der Himmel in der Nähe der untergehenden Sonne typischerweise rot.",
+    "answer": false,
+    "explanation": "Sonnenuntergänge auf dem Mars erscheinen in der Nähe der Sonne typischerweise bläulich. Feiner Staub in der Marsatmosphäre lässt blaues Licht dort effizienter zum Beobachter gelangen, während der übrige Himmel eher gelb bis orange wirkt.",
+    "subject_keys": [
+      "entity:mars",
+      "subject:sonnenuntergang auf dem mars"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-07",
+      "references": [
+        {
+          "title": "NASA Science: What Do Sunrises and Sunsets Look Like on Mars?",
+          "url": "https://science.nasa.gov/solar-system/planets/mars/what-does-a-sunrise-sunset-look-like-on-mars/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf190",
+    "question_type": "true_false",
+    "prompt": "Ein Stück reines Gallium kann in einer warmen Hand schmelzen.",
+    "answer": true,
+    "explanation": "Gallium ist bei 20 Grad Celsius fest, schmilzt aber bereits bei etwa 29,8 Grad. Eine ausreichend warme Hand kann das Metall daher verflüssigen.",
+    "subject_keys": [
+      "entity:gallium",
+      "subject:schmelzpunkt von gallium"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-07",
+      "references": [
+        {
+          "title": "Royal Society of Chemistry: Gallium",
+          "url": "https://periodic-table.rsc.org/element/31/gallium"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf191",
+    "question_type": "true_false",
+    "prompt": "Die einzelnen Haare im Fell eines Eisbären sind weiß.",
+    "answer": false,
+    "explanation": "Sowohl die Unterwolle als auch die längeren Deckhaare eines Eisbären sind pigmentfrei und transparent. Ihre überwiegend hohlen, luftgefüllten Kerne streuen und reflektieren sichtbares Licht, wodurch das Fell weiß erscheint.",
+    "subject_keys": [
+      "entity:eisbär",
+      "subject:farbe des eisbärenfells"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-07",
+      "references": [
+        {
+          "title": "Polar Bears International: What Does Polar Bear Fur Feel Like?",
+          "url": "https://polarbearsinternational.org/news-media/articles/what-does-polar-bear-fur-feel-like/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf192",
+    "question_type": "true_false",
+    "prompt": "Der Eiffelturm sollte ursprünglich nach 20 Jahren wieder abgebaut werden.",
+    "answer": true,
+    "explanation": "Gustave Eiffel erhielt für den 1889 eröffneten Turm zunächst nur eine 20-jährige Nutzungserlaubnis. Seine Bedeutung als riesige Funkantenne bewahrte den Eiffelturm vor dem geplanten Abbau und brachte Eiffel eine Verlängerung der Konzession ein.",
+    "subject_keys": [
+      "entity:eiffelturm",
+      "entity:gustave eiffel",
+      "subject:geplanter abbau des eiffelturms"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-07",
+      "references": [
+        {
+          "title": "Offizielle Website des Eiffelturms: How radio saved the Eiffel Tower from destruction",
+          "url": "https://www.toureiffel.paris/en/news/130-years/why-was-eiffel-tower-kept"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf193",
+    "question_type": "true_false",
+    "prompt": "Ein Waldfrosch kann überleben, obwohl sein Herz im Winter monatelang nicht schlägt.",
+    "answer": true,
+    "explanation": "Waldfrosch-Arten können während der Winterstarre weitgehend gefrieren. Dabei setzen Herzschlag und Atmung aus. Große Mengen Glukose schützen ihre Zellen vor Frostschäden. Beim Auftauen im Frühjahr beginnt zuerst das Herz wieder zu schlagen.",
+    "subject_keys": [
+      "entity:waldfrosch",
+      "subject:froststarre bei waldfröschen",
+      "subject:überleben ohne herzschlag"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-07",
+      "references": [
+        {
+          "title": "U.S. National Park Service: Biological Miracle",
+          "url": "https://www.nps.gov/gaar/learn/nature/wood-frog-page-2.htm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf194",
+    "question_type": "true_false",
+    "prompt": "Flamingos kommen bereits mit rosa Gefieder zur Welt.",
+    "answer": false,
+    "explanation": "Flamingoküken schlüpfen mit weißgrauen Daunen. Erst mit der Zeit färben Carotinoide aus ihrer Nahrung das Gefieder rosa.",
+    "subject_keys": [
+      "entity:flamingo",
+      "subject:gefiederfarbe von flamingos",
+      "subject:entwicklung von flamingoküken"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-07",
+      "references": [
+        {
+          "title": "Smithsonian’s National Zoo: Why Are Flamingos Pink? And Other Flamingo Facts",
+          "url": "https://nationalzoo.si.edu/animals/news/why-are-flamingos-pink-and-other-flamingo-facts"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf195",
+    "question_type": "true_false",
+    "prompt": "Der kürzeste verzeichnete Krieg dauerte länger als eine Stunde.",
+    "answer": false,
+    "explanation": "Der Anglo-Sansibar-Krieg zwischen Großbritannien und Sansibar dauerte am 27. August 1896 lediglich von 9:00 bis 9:45 Uhr – insgesamt etwa 45 Minuten.",
+    "subject_keys": [
+      "entity:anglo-sansibar-krieg",
+      "subject:kürzester verzeichneter krieg",
+      "subject:kriegsdauer"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-07",
+      "references": [
+        {
+          "title": "Guinness World Records: Shortest war",
+          "url": "https://www.guinnessworldrecords.com/world-records/65353-shortest-war"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf196",
+    "question_type": "true_false",
+    "prompt": "Auf der Erde gibt es mehr Bäume als Sterne in der Milchstraße.",
+    "answer": true,
+    "explanation": "Eine globale Studie schätzt die Zahl der Bäume auf rund 3,04 Billionen. Für die Milchstraße geht die NASA von etwa 100 bis 400 Milliarden Sternen aus. Selbst die obere Schätzung liegt damit deutlich unter der geschätzten Baumzahl.",
+    "subject_keys": [
+      "subject:anzahl der bäume auf der erde",
+      "entity:milchstraße",
+      "subject:anzahl der sterne in der milchstraße"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Yale News: Seeing the forest and the trees, all 3 trillion of them",
+          "url": "https://news.yale.edu/2015/09/02/seeing-forest-and-trees-all-3-trillion-them"
+        },
+        {
+          "title": "NASA Science: Our Milky Way Galaxy – How Big is Space?",
+          "url": "https://science.nasa.gov/universe/exoplanets/our-milky-way-galaxy-how-big-is-space/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf197",
+    "question_type": "true_false",
+    "prompt": "Der typische Geruch nach einem Regenschauer stammt vor allem aus dem Boden.",
+    "answer": true,
+    "explanation": "Regentropfen setzen Duftstoffe aus trockenem Boden frei. Dazu gehören Pflanzenöle und Stoffe von Bodenbakterien. Die Tropfen schleudern diese Stoffe als winzige Teilchen in die Luft. Der Geruch heißt Petrichor.",
+    "subject_keys": [
+      "subject:regengeruch",
+      "subject:petrichor",
+      "subject:duftstoffe aus dem boden"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Met Office: Rain",
+          "url": "https://weather.metoffice.gov.uk/learn-about/weather/types-of-weather/rain"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf198",
+    "question_type": "true_false",
+    "prompt": "Eulen können ihren Kopf vollständig um 360 Grad drehen.",
+    "answer": false,
+    "explanation": "Eulen können ihren Kopf höchstens etwa 270 Grad drehen. Das ist sehr weit, aber keine vollständige Umdrehung.",
+    "subject_keys": [
+      "entity:eule",
+      "subject:kopfdrehung bei eulen"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "National Geographic: How Owls Twist Their Heads Almost 360 Degrees",
+          "url": "https://www.nationalgeographic.com/animals/article/how-owls-twist-heads-almost-360-degrees"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf199",
+    "question_type": "true_false",
+    "prompt": "Kamele speichern in ihren Höckern vor allem Fett.",
+    "answer": true,
+    "explanation": "Kamelhöcker enthalten Fett und kein Wasser. Das Fett dient als Energiereserve, wenn Nahrung knapp ist.",
+    "subject_keys": [
+      "entity:kamel",
+      "subject:kamelhöcker",
+      "subject:fettspeicher"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "San Diego Zoo Wildlife Alliance: Camel",
+          "url": "https://animals.sandiegozoo.org/animals/camel?qt-animals_page_content_tabs=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf200",
+    "question_type": "true_false",
+    "prompt": "Kaninchen können sich nicht erbrechen.",
+    "answer": true,
+    "explanation": "Kaninchen können wegen ihrer sehr kräftigen Schließmuskeln an der Speiseröhre nicht erbrechen. Deshalb können Haarballen oder andere Blockaden in ihrem Verdauungstrakt besonders gefährlich werden.",
+    "subject_keys": [
+      "entity:kaninchen",
+      "subject:erbrechen bei kaninchen",
+      "subject:verdauung von kaninchen"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Cornell University College of Veterinary Medicine: Pinpointing Elusive, Sometimes Fatal Hairballs in Rabbits",
+          "url": "https://www.vet.cornell.edu/about-us/news/20240621/pinpointing-elusive-sometimes-fatal-hairballs-rabbits"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf201",
+    "question_type": "true_false",
+    "prompt": "Giraffen und Menschen haben gleich viele Halswirbel.",
+    "answer": true,
+    "explanation": "Giraffen und Menschen besitzen normalerweise jeweils sieben Halswirbel. Die einzelnen Wirbel einer Giraffe sind nur viel länger.",
+    "subject_keys": [
+      "entity:giraffe",
+      "entity:mensch",
+      "subject:anzahl der halswirbel"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "San Diego Zoo Wildlife Alliance: Giraffe",
+          "url": "https://animals.sandiegozoo.org/animals/giraffe?qt-animals_page_content_tabs=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf202",
+    "question_type": "true_false",
+    "prompt": "Das Skelett eines Hais besteht aus Knorpel.",
+    "answer": true,
+    "explanation": "Haie besitzen ein Skelett aus Knorpel. Dieses Material ist leichter und biegsamer als Knochen.",
+    "subject_keys": [
+      "entity:hai",
+      "subject:knorpelskelett der haie"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Smithsonian Ocean: Sharks",
+          "url": "https://ocean.si.edu/ocean-life/sharks-rays/sharks"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf203",
+    "question_type": "true_false",
+    "prompt": "Bei Mücken nehmen nur die Weibchen Blutmahlzeiten auf.",
+    "answer": true,
+    "explanation": "Weibliche Mücken nehmen Blutmahlzeiten auf, weil die meisten von ihnen das Blut zur Bildung ihrer Eier brauchen. Männliche Mücken stechen Menschen und Tiere nicht.",
+    "subject_keys": [
+      "entity:mücke",
+      "subject:blutmahlzeit weiblicher mücken"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Centers for Disease Control and Prevention: About Mosquito Bites",
+          "url": "https://www.cdc.gov/mosquitoes/about/about-mosquito-bites.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf204",
+    "question_type": "true_false",
+    "prompt": "Katzen besitzen einen funktionierenden Geschmackssinn für Süßes.",
+    "answer": false,
+    "explanation": "Bei Katzen ist ein wichtiger Teil des Rezeptors für süßen Geschmack funktionslos. Deshalb nehmen sie Zucker nicht als süß wahr wie Menschen.",
+    "subject_keys": [
+      "entity:katze",
+      "subject:süßgeschmack bei katzen"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "The Journal of Nutrition: Cats Lack a Sweet Taste Receptor",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16772462/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf205",
+    "question_type": "true_false",
+    "prompt": "Quallen haben kein Gehirn.",
+    "answer": true,
+    "explanation": "Quallen besitzen kein Gehirn. Ein einfaches Nervennetz ermöglicht ihnen dennoch, Licht, Gerüche und andere Reize wahrzunehmen.",
+    "subject_keys": [
+      "entity:qualle",
+      "subject:nervensystem von quallen"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "NOAA National Ocean Service: What Are Jellyfish Made Of?",
+          "url": "https://oceanservice.noaa.gov/facts/jellyfish.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf206",
+    "question_type": "true_false",
+    "prompt": "Delfine schlafen mit ihrem ganzen Gehirn gleichzeitig.",
+    "answer": false,
+    "explanation": "Delfine lassen beim Schlafen jeweils nur eine Gehirnhälfte ruhen. Die andere Hälfte bleibt aktiv, damit sie weiter schwimmen, atmen und ihre Umgebung beobachten können.",
+    "subject_keys": [
+      "entity:delfin",
+      "subject:halbseitiger schlaf bei delfinen"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "NOAA Fisheries: Dolphins and Whales on the High Seas",
+          "url": "https://www.fisheries.noaa.gov/pacific-islands/endangered-species-conservation/question-week-dolphins-and-whales-high-seas"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf207",
+    "question_type": "true_false",
+    "prompt": "Eine durchschnittliche Gewitterwolke wiegt weniger als ein Kleinwagen.",
+    "answer": false,
+    "explanation": "Eine durchschnittlich große Gewitterwolke kann etwa 400.000 Kilogramm wiegen. Das entspricht ungefähr dem Gewicht eines großen Passagierflugzeugs und ist weit mehr als ein Kleinwagen.",
+    "subject_keys": [
+      "entity:gewitterwolke",
+      "subject:gewicht von wolken"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Met Office: 7 Facts About Clouds",
+          "url": "https://weather.metoffice.gov.uk/learn-about/weather/types-of-weather/clouds/facts-about-clouds"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf208",
+    "question_type": "true_false",
+    "prompt": "Chemisch reines Wasser leitet elektrischen Strom besonders gut.",
+    "answer": false,
+    "explanation": "Chemisch reines Wasser leitet Strom nur sehr schlecht. Alltagswasser wird vor allem durch gelöste Salze und andere geladene Teilchen leitfähig.",
+    "subject_keys": [
+      "entity:reines wasser",
+      "subject:elektrische leitfähigkeit von wasser"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "U.S. Geological Survey: Conductivity and Water",
+          "url": "https://www.usgs.gov/water-science-school/science/conductivity-electrical-conductance-and-water"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf209",
+    "question_type": "true_false",
+    "prompt": "Ein Diamant kann bei hoher Temperatur verbrennen.",
+    "answer": true,
+    "explanation": "Diamanten bestehen aus Kohlenstoff und können bei hoher Temperatur verbrennen. Das Gemological Institute of America nennt dafür etwa 850 Grad Celsius.",
+    "subject_keys": [
+      "entity:diamant",
+      "subject:brennbarkeit von diamanten"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Gemological Institute of America: Diamond Care and Cleaning Guide",
+          "url": "https://www.gia.edu/diamond-care-cleaning"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf210",
+    "question_type": "true_false",
+    "prompt": "Auf dem Mond gibt es Beben.",
+    "answer": true,
+    "explanation": "Messgeräte der Apollo-Missionen zeichneten Mondbeben auf. Sie können unter anderem durch die Erdanziehung, das Abkühlen des Mondes, Meteoriteneinschläge oder starke Temperaturwechsel entstehen.",
+    "subject_keys": [
+      "entity:mond",
+      "subject:mondbeben"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "NASA Science: Moonquakes",
+          "url": "https://science.nasa.gov/moon/moonquakes/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf211",
+    "question_type": "true_false",
+    "prompt": "Die Jahreszeiten entstehen hauptsächlich durch den wechselnden Abstand der Erde zur Sonne.",
+    "answer": false,
+    "explanation": "Die Jahreszeiten entstehen vor allem durch die Neigung der Erdachse. Dadurch erhält jede Erdhalbkugel im Jahreslauf unterschiedlich viel direktes Sonnenlicht.",
+    "subject_keys": [
+      "entity:erde",
+      "entity:sonne",
+      "subject:ursache der jahreszeiten"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "NASA Space Place: What Causes the Seasons?",
+          "url": "https://spaceplace.nasa.gov/seasons/en/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf212",
+    "question_type": "true_false",
+    "prompt": "Afrika liegt in allen vier Erdhalbkugeln.",
+    "answer": true,
+    "explanation": "Der Äquator teilt Afrika in einen nördlichen und einen südlichen Teil. Der Nullmeridian verläuft ebenfalls durch den Kontinent und teilt ihn in einen östlichen und einen westlichen Teil.",
+    "subject_keys": [
+      "entity:afrika",
+      "subject:erdhalbkugeln",
+      "entity:äquator",
+      "entity:nullmeridian"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "National Geographic Society: Equator",
+          "url": "https://education.nationalgeographic.org/resource/equator/"
+        },
+        {
+          "title": "National Geographic Society: Prime Meridian",
+          "url": "https://education.nationalgeographic.org/resource/prime-meridian/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf213",
+    "question_type": "true_false",
+    "prompt": "Wikinger trugen im Kampf normalerweise Helme mit Hörnern.",
+    "answer": false,
+    "explanation": "Für Hörnerhelme als übliche Kampfausrüstung der Wikinger gibt es keine Belege. Der einzige vollständig erhaltene Wikingerhelm besitzt keine Hörner.",
+    "subject_keys": [
+      "entity:wikinger",
+      "subject:wikingerhelme",
+      "subject:hörnerhelm"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "National Museum of Denmark: Viking Helmets",
+          "url": "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/weapons/helmets/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf214",
+    "question_type": "true_false",
+    "prompt": "Big Ben ist der offizielle Name des berühmten Londoner Uhrturms.",
+    "answer": false,
+    "explanation": "Der Turm heißt Elizabeth Tower. Big Ben ist der Beiname seiner großen Stundenglocke.",
+    "subject_keys": [
+      "entity:big ben",
+      "entity:elizabeth tower",
+      "subject:name des londoner uhrturms"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "UK Parliament: The Towers of Parliament",
+          "url": "https://www.parliament.uk/about/living-heritage/building/palace/architecture/palacestructure/towers-of-parliament/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf215",
+    "question_type": "true_false",
+    "prompt": "Frösche nehmen Wasser durch ihre Haut auf.",
+    "answer": true,
+    "explanation": "Die dünne, feuchte Haut von Fröschen lässt Wasser hindurch. Viele Arten nehmen es besonders über einen Bereich an der Unterseite ihres Körpers auf.",
+    "subject_keys": [
+      "entity:frosch",
+      "subject:wasseraufnahme durch die haut"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "American Museum of Natural History: Thin Skin",
+          "url": "https://www.amnh.org/exhibitions/frogs-a-chorus-of-colors/a-frog-s-life/thin-skin"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf216",
+    "question_type": "true_false",
+    "prompt": "Echte Vanille stammt von einer Orchidee.",
+    "answer": true,
+    "explanation": "Vanille wird aus den behandelten Früchten einer kletternden Orchidee gewonnen. Die wichtigste Art dafür heißt Vanilla planifolia.",
+    "subject_keys": [
+      "entity:vanille",
+      "entity:vanilla planifolia",
+      "subject:vanilleorchidee"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Botanischer Garten der Johannes Gutenberg-Universität Mainz: Vanille",
+          "url": "https://www.botgarten.uni-mainz.de/vanille/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf217",
+    "question_type": "true_false",
+    "prompt": "Haare und Fingernägel wachsen nach dem Tod weiter.",
+    "answer": false,
+    "explanation": "Nach dem Tod wachsen Haare und Nägel nicht weiter. Die Haut trocknet aus und zieht sich zurück. Dadurch können Haare und Nägel länger wirken.",
+    "subject_keys": [
+      "entity:haar",
+      "entity:fingernagel",
+      "subject:körperveränderungen nach dem tod"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "BMJ: Medical Myths",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2151163/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf218",
+    "question_type": "true_false",
+    "prompt": "Das Blut in menschlichen Venen ist blau.",
+    "answer": false,
+    "explanation": "Menschliches Blut ist immer rot. Sauerstoffarmes Blut ist dunkelrot. Venen wirken durch das Zusammenspiel von Licht, Haut und Gefäßwand von außen oft blau.",
+    "subject_keys": [
+      "entity:menschliches blut",
+      "entity:vene",
+      "subject:farbe des blutes"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Cleveland Clinic: What Color Is Your Blood?",
+          "url": "https://health.clevelandclinic.org/what-color-is-blood"
+        }
+      ]
+    }
+  }
+]

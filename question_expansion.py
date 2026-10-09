@@ -28,6 +28,19 @@ MC_GROUPS = [
     ("Welches Tier ist für {left} bekannt?", "{right} ist dafür bekannt.", [("den längsten Hals","die Giraffe"),("elektrische Entladungen zur Verteidigung","der Zitteraal"),("Werkzeuggebrauch mit Steinen","der Seeotter"),("Echoortung in völliger Dunkelheit","die Fledermaus"),("Farbwechsel zur Tarnung","das Chamäleon"),("die größte Spannweite unter lebenden Vögeln","der Wanderalbatros"),("extrem langsamen Stoffwechsel","das Faultier"),("Stacheln aus umgebildeten Haaren","das Stachelschwein"),("Bauten mit Dämmen","der Biber"),("eine sehr lange klebrige Zunge","der Ameisenbär")]),
 ]
 
+MC_KNOWLEDGE_CATEGORIES = [
+    "geography",
+    "science_nature",
+    "arts_literature",
+    "arts_literature",
+    "science_nature",
+    "geography",
+    "sports_leisure",
+    "science_nature",
+    "science_nature",
+    "science_nature",
+]
+
 
 def build_multiple_choice():
     questions = []
@@ -37,7 +50,9 @@ def build_multiple_choice():
         for index, (left, right) in enumerate(pairs):
             choices = _options(values, index)
             answer = next(key for key, value in choices.items() if value == right)
-            questions.append({"id": f"mc{number:03d}", "prompt": prompt.format(left=left), "options": choices, "answer": answer, "explanation": explanation.format(left=left, right=right), "subject_keys": [f"knowledge:{group_index}:{left.casefold()}"]})
+            subject_keys = [f"subject:{left.casefold()}"]
+            subject_keys.extend(f"entity:{value.casefold()}" for value in choices.values())
+            questions.append({"id": f"mc{number:03d}", "prompt": prompt.format(left=left), "options": choices, "answer": answer, "explanation": explanation.format(left=left, right=right), "subject_keys": subject_keys, "knowledge_category": MC_KNOWLEDGE_CATEGORIES[group_index]})
             number += 1
     return questions
 
@@ -79,7 +94,12 @@ def build_true_false():
             else:
                 prompt = f"Für {left} ist {shown} bekannt."
                 explanation = f"Das gesuchte Tier ist {right}."
-            questions.append({"id": f"tf{number:03d}", "prompt": prompt, "answer": truth, "explanation": explanation, "subject_keys": [f"knowledge:{group_index}:{left.casefold()}"]})
+            subject_keys = {
+                f"subject:{left.casefold()}",
+                f"entity:{shown.casefold()}",
+                f"entity:{right.casefold()}",
+            }
+            questions.append({"id": f"tf{number:03d}", "prompt": prompt, "answer": truth, "explanation": explanation, "subject_keys": sorted(subject_keys), "knowledge_category": MC_KNOWLEDGE_CATEGORIES[group_index]})
             number += 1
     return questions
 
@@ -108,7 +128,9 @@ def build_match():
             left = [item[0] for item in chosen]
             right = [item[1] for item in chosen]
             answer = dict(chosen)
-            questions.append({"id": f"ma{number:03d}", "prompt": prompt, "left": left, "right": right, "answer": answer, "explanation": "; ".join(f"{a} – {b}" for a, b in chosen) + ".", "subject_keys": [f"knowledge:{group_index}:{item[0].casefold()}" for item in chosen]})
+            subject_keys = [f"subject:{item.casefold()}" for item in left]
+            subject_keys.extend(f"entity:{item.casefold()}" for item in right)
+            questions.append({"id": f"ma{number:03d}", "prompt": prompt, "left": left, "right": right, "answer": answer, "explanation": "; ".join(f"{a} – {b}" for a, b in chosen) + ".", "subject_keys": subject_keys, "knowledge_category": MC_KNOWLEDGE_CATEGORIES[group_index]})
             number += 1
     return questions
 
@@ -121,9 +143,22 @@ FACT_GROUPS = [
     ("Ordne die Tiere nach Spitzengeschwindigkeit – von langsamer zu schneller.", "Welche Spitzengeschwindigkeit erreicht {label} ungefähr?", "km/h", [("Faultier",0.3),("Riesenschildkröte",0.5),("Mensch im Sprint",45),("Elefant",40),("Hauskatze",48),("Giraffe",60),("Strauß",70),("Löwe",80),("Gepard",100),("Wanderfalke im Sturzflug",320)]),
     ("Ordne die Entfernungen von klein nach groß.", "Wie groß ist die mittlere Entfernung: {label}?", "km", [("Erde–ISS",400),("Berlin–München Luftlinie",505),("Berlin–Paris Luftlinie",880),("Erde–Mond",384400),("Sonne–Merkur",57900000),("Sonne–Venus",108200000),("Sonne–Erde",149600000),("Sonne–Mars",227900000),("Sonne–Jupiter",778500000),("Sonne–Saturn",1433000000)]),
     ("Ordne die Stoffe nach Schmelzpunkt – von niedrig zu hoch.", "Bei wie viel Grad Celsius schmilzt {label} ungefähr?", "°C", [("Quecksilber",-39),("Eis",0),("Schokolade",34),("Zinn",232),("Blei",327),("Aluminium",660),("Silber",962),("Gold",1064),("Kupfer",1085),("Eisen",1538)]),
-    ("Ordne die Erfindungen von früher nach später.", "In welchem Jahr wurde {label} erstmals vorgestellt oder patentiert?", "Jahr", [("Buchdruck mit beweglichen Lettern",1450),("Dampfmaschine von Watt",1769),("Fotografie von Daguerre",1839),("Telefon von Bell",1876),("praktische Glühlampe Edisons",1879),("Automobil von Benz",1886),("erster Motorflug der Wrights",1903),("Fernsehen von Baird",1926),("World Wide Web",1989),("erstes iPhone",2007)]),
+    ("Ordne die technischen Meilensteine von früher nach später.", "In welchem Jahr fand dieser technische Meilenstein statt: {label}?", "Jahr", [("Gutenbergs Buchdruck mit beweglichen Lettern",1450),("Watts Patent für seine verbesserte Dampfmaschine",1769),("Daguerres öffentliche Vorstellung seines Fotografieverfahrens",1839),("Bells Telefonpatent",1876),("Edisons Vorstellung seiner praktischen Glühlampe",1879),("Benz' Patent für sein Automobil",1886),("erster Motorflug der Brüder Wright",1903),("Bairds öffentliche Vorführung seines Fernsehsystems",1926),("Tim Berners-Lees Plan für das World Wide Web",1989),("Vorstellung des ersten iPhones",2007)]),
     ("Ordne die Werke nach Erstveröffentlichung.", "In welchem Jahr erschien {label} erstmals?", "Jahr", [("Don Quijote Teil 1",1605),("Robinson Crusoe",1719),("Stolz und Vorurteil",1813),("Frankenstein",1818),("Moby-Dick",1851),("Die Verwandlung",1915),("Der große Gatsby",1925),("1984",1949),("Der Herr der Ringe Band 1",1954),("Harry Potter Band 1",1997)]),
     ("Ordne die sportlichen Distanzen von kurz nach lang.", "Wie lang ist {label} genau oder ungefähr?", "Meter", [("Basketballfeld",28),("Olympisches Schwimmbecken",50),("Fußballfeld Standardlänge",105),("Leichtathletik-Runde",400),("Ruderregatta olympisch",2000),("5-km-Lauf",5000),("10-km-Lauf",10000),("Halbmarathon",21097.5),("Marathon",42195),("100-km-Ultramarathon",100000)]),
+]
+
+FACT_KNOWLEDGE_CATEGORIES = [
+    "history",
+    "geography",
+    "geography",
+    "geography",
+    "science_nature",
+    "science_nature",
+    "science_nature",
+    "science_nature",
+    "arts_literature",
+    "sports_leisure",
 ]
 
 
@@ -136,7 +171,7 @@ def build_order():
             answer = [facts[index][0] for index in pattern]
             answer.sort(key=lambda label: next(value for item, value in facts if item == label))
             items = sorted(answer, key=lambda value: hashlib.sha256(f"{number}:{value}".encode()).hexdigest())
-            questions.append({"id": f"or{number:03d}", "prompt": prompt, "items": items, "answer": answer, "explanation": "Richtig: " + " → ".join(answer) + ".", "subject_keys": [f"fact:{group_index}:{label.casefold()}" for label in answer]})
+            questions.append({"id": f"or{number:03d}", "prompt": prompt, "items": items, "answer": answer, "explanation": "Richtig: " + " → ".join(answer) + ".", "subject_keys": [f"fact:{group_index}:{label.casefold()}" for label in answer], "knowledge_category": FACT_KNOWLEDGE_CATEGORIES[group_index]})
             number += 1
     return questions
 
@@ -154,7 +189,7 @@ def build_estimate():
             elif value == 0:
                 question_prompt = "Bei wie viel Kelvin gefriert reines Wasser ungefähr?"
                 answer, answer_unit = 273.15, "Kelvin"
-            questions.append({"id": f"es{number:03d}", "prompt": question_prompt, "answer": answer, "unit": answer_unit, "explanation": f"Der gesuchte Richtwert beträgt {answer:g} {answer_unit}.", "subject_keys": [f"fact:{group_index}:{label.casefold()}"]})
+            questions.append({"id": f"es{number:03d}", "prompt": question_prompt, "answer": answer, "unit": answer_unit, "explanation": f"Der gesuchte Richtwert beträgt {answer:g} {answer_unit}.", "subject_keys": [f"fact:{group_index}:{label.casefold()}"], "knowledge_category": FACT_KNOWLEDGE_CATEGORIES[group_index]})
             number += 1
     return questions
 

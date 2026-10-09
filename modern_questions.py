@@ -62,3 +62,7 @@ MODERN_QUESTION_BANK = {
         {"id": "es150", "prompt": "Wie viele Episoden umfasst „Das Damengambit“?", "answer": 7, "unit": "Episoden", "explanation": "Die Miniserie „Das Damengambit“ hat sieben Episoden.", "subject_keys": ["modern:series:queens-gambit"]},
     ],
 }
+
+for _questions in MODERN_QUESTION_BANK.values():
+    for _question in _questions:
+        _question["knowledge_category"] = "entertainment"

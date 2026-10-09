@@ -1,0 +1,5855 @@
+[
+  {
+    "id": "es01",
+    "question_type": "estimate",
+    "primary_category": "human_everyday",
+    "subtopic": "Mensch und Alltag allgemein",
+    "tags": {
+      "topics": [
+        "Mensch und Alltag allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Liter Blut pumpt ein menschliches Herz ungefähr pro Tag?",
+    "answer": 7500,
+    "unit": "Liter",
+    "explanation": "Bei rund fünf Litern pro Minute kommen ungefähr 7.500 Liter am Tag zusammen."
+  },
+  {
+    "id": "es02",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Geografie und Welt allgemein",
+    "tags": {
+      "topics": [
+        "Geografie und Welt allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Kilometer lang ist der Äquator ungefähr?",
+    "answer": 40075,
+    "unit": "km",
+    "explanation": "Der Erdumfang am Äquator beträgt etwa 40.075 Kilometer."
+  },
+  {
+    "id": "es03",
+    "question_type": "estimate",
+    "primary_category": "music",
+    "subtopic": "Instrumente & Musiktheorie",
+    "tags": {
+      "topics": [
+        "Instrumente & Musiktheorie"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Tasten hat ein klassisches Klavier?",
+    "answer": 88,
+    "unit": "Tasten",
+    "explanation": "Ein Standardklavier besitzt 52 weiße und 36 schwarze Tasten.",
+    "subject_keys": [
+      "topic:music:instrumente-und-musiktheorie"
+    ]
+  },
+  {
+    "id": "es04",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Wissenschaft und Technik allgemein",
+    "tags": {
+      "topics": [
+        "Wissenschaft und Technik allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Minuten braucht das Licht von der Sonne bis zur Erde?",
+    "answer": 8.3,
+    "unit": "Minuten",
+    "explanation": "Im Mittel sind es etwa 8 Minuten und 20 Sekunden."
+  },
+  {
+    "id": "es05",
+    "question_type": "estimate",
+    "primary_category": "sport",
+    "subtopic": "Wasser-, Winter- & Motorsport",
+    "tags": {
+      "topics": [
+        "Wasser-, Winter- & Motorsport"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Liter Wasser passen ungefähr in ein olympisches Schwimmbecken?",
+    "answer": 2500000,
+    "unit": "Liter",
+    "explanation": "Bei 50 × 25 × 2 Metern sind es rund 2,5 Millionen Liter.",
+    "subject_keys": [
+      "topic:sport:wasser-winter-und-motorsport"
+    ]
+  },
+  {
+    "id": "es06",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Geografie und Welt allgemein",
+    "tags": {
+      "topics": [
+        "Geografie und Welt allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie hoch ist der Eiffelturm inklusive Antenne ungefähr?",
+    "answer": 330,
+    "unit": "Meter",
+    "explanation": "Seit der neuesten Antenne ist der Eiffelturm etwa 330 Meter hoch."
+  },
+  {
+    "id": "es07",
+    "question_type": "estimate",
+    "primary_category": "human_everyday",
+    "subtopic": "Mensch und Alltag allgemein",
+    "tags": {
+      "topics": [
+        "Mensch und Alltag allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Knochen hat ein erwachsener Mensch normalerweise?",
+    "answer": 206,
+    "unit": "Knochen",
+    "explanation": "Als Standardzahl gelten 206 Knochen."
+  },
+  {
+    "id": "es08",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Wissenschaft und Technik allgemein",
+    "tags": {
+      "topics": [
+        "Wissenschaft und Technik allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Sekunden hat ein Tag?",
+    "answer": 86400,
+    "unit": "Sekunden",
+    "explanation": "24 × 60 × 60 ergibt 86.400."
+  },
+  {
+    "id": "es09",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Wissenschaft und Technik allgemein",
+    "tags": {
+      "topics": [
+        "Wissenschaft und Technik allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Kilometer legt die Erde auf ihrer Bahn um die Sonne ungefähr pro Sekunde zurück?",
+    "answer": 29.8,
+    "unit": "km/s",
+    "explanation": "Die mittlere Bahngeschwindigkeit liegt knapp unter 30 km/s."
+  },
+  {
+    "id": "es10",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Wissenschaft und Technik allgemein",
+    "tags": {
+      "topics": [
+        "Wissenschaft und Technik allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Für wie viele Passagiere ist der Airbus A380 höchstens zugelassen?",
+    "answer": 853,
+    "unit": "Menschen",
+    "explanation": "Die zertifizierte Einklassen-Maximalkapazität liegt bei 853 Passagieren."
+  },
+  {
+    "id": "es11",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Geografie und Welt allgemein",
+    "tags": {
+      "topics": [
+        "Geografie und Welt allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Meter tief ist der Marianengraben an seiner tiefsten bekannten Stelle ungefähr?",
+    "answer": 10900,
+    "unit": "Meter",
+    "explanation": "Das Challengertief liegt grob 10.900 Meter unter dem Meeresspiegel."
+  },
+  {
+    "id": "es12",
+    "question_type": "estimate",
+    "primary_category": "human_everyday",
+    "subtopic": "Mensch und Alltag allgemein",
+    "tags": {
+      "topics": [
+        "Mensch und Alltag allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Wörter spricht ein Mensch bei normalem Gesprächstempo ungefähr pro Minute?",
+    "answer": 130,
+    "unit": "Wörter",
+    "explanation": "Ein typisches Gesprächstempo liegt ungefähr bei 120 bis 150 Wörtern pro Minute."
+  },
+  {
+    "id": "es13",
+    "question_type": "estimate",
+    "primary_category": "sport",
+    "subtopic": "Leichtathletik & Ausdauer",
+    "tags": {
+      "topics": [
+        "Leichtathletik & Ausdauer"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Kilometer misst ein Marathon exakt?",
+    "answer": 42.195,
+    "unit": "km",
+    "explanation": "Die offizielle Marathondistanz beträgt 42,195 Kilometer.",
+    "subject_keys": [
+      "topic:sport:leichtathletik-und-ausdauer"
+    ]
+  },
+  {
+    "id": "es14",
+    "question_type": "estimate",
+    "primary_category": "human_everyday",
+    "subtopic": "Mensch und Alltag allgemein",
+    "tags": {
+      "topics": [
+        "Mensch und Alltag allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Liter Luft atmet ein Erwachsener in Ruhe ungefähr pro Tag?",
+    "answer": 11000,
+    "unit": "Liter",
+    "explanation": "Je nach Atemvolumen und -frequenz sind es grob 10.000 bis 12.000 Liter."
+  },
+  {
+    "id": "es15",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Wissenschaft und Technik allgemein",
+    "tags": {
+      "topics": [
+        "Wissenschaft und Technik allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Kilometer ist der Mond im Mittel von der Erde entfernt?",
+    "answer": 384400,
+    "unit": "km",
+    "explanation": "Die mittlere Entfernung beträgt rund 384.400 Kilometer."
+  },
+  {
+    "id": "es16",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "Medien und Unterhaltung allgemein",
+    "tags": {
+      "topics": [
+        "Medien und Unterhaltung allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Stunden Videomaterial wurden ungefähr pro Minute auf YouTube hochgeladen (Richtwert 2022)?",
+    "answer": 500,
+    "unit": "Stunden",
+    "explanation": "Der häufig genannte Richtwert liegt bei mehr als 500 Stunden pro Minute."
+  },
+  {
+    "id": "es17",
+    "question_type": "estimate",
+    "primary_category": "human_everyday",
+    "subtopic": "Mensch und Alltag allgemein",
+    "tags": {
+      "topics": [
+        "Mensch und Alltag allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Liter fasst eine durchschnittliche Badewanne ungefähr?",
+    "answer": 150,
+    "unit": "Liter",
+    "explanation": "Übliche Wannen liegen grob zwischen 140 und 180 Litern."
+  },
+  {
+    "id": "es18",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Geografie und Welt allgemein",
+    "tags": {
+      "topics": [
+        "Geografie und Welt allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Kilometer lang ist die Luftlinie Berlin–Paris ungefähr?",
+    "answer": 880,
+    "unit": "km",
+    "explanation": "Die Luftlinie beträgt rund 880 Kilometer."
+  },
+  {
+    "id": "es19",
+    "question_type": "estimate",
+    "primary_category": "human_everyday",
+    "subtopic": "Mensch und Alltag allgemein",
+    "tags": {
+      "topics": [
+        "Mensch und Alltag allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Reiskörner sind grob in einem Kilogramm Langkornreis?",
+    "answer": 50000,
+    "unit": "Körner",
+    "explanation": "Bei etwa 20 Milligramm pro Korn sind es ungefähr 50.000."
+  },
+  {
+    "id": "es20",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Wissenschaft und Technik allgemein",
+    "tags": {
+      "topics": [
+        "Wissenschaft und Technik allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Tage dauert eine Reise zum Mars mit heutiger Technik typischerweise ungefähr?",
+    "answer": 210,
+    "unit": "Tage",
+    "explanation": "Gängige Transferbahnen benötigen rund sieben Monate beziehungsweise etwa 210 Tage."
+  },
+  {
+    "id": "es21",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Geografie und Welt allgemein",
+    "tags": {
+      "topics": [
+        "Geografie und Welt allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Kilometer ist die Chinesische Mauer mit allen erfassten Abschnitten ungefähr lang?",
+    "answer": 21196,
+    "unit": "km",
+    "explanation": "Die amtlich erfasste Gesamtlänge aller Abschnitte beträgt rund 21.196 Kilometer."
+  },
+  {
+    "id": "es22",
+    "question_type": "estimate",
+    "primary_category": "human_everyday",
+    "subtopic": "Mensch und Alltag allgemein",
+    "tags": {
+      "topics": [
+        "Mensch und Alltag allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Liter Blut hat ein erwachsener Mensch ungefähr im Körper?",
+    "answer": 5,
+    "unit": "Liter",
+    "explanation": "Bei Erwachsenen sind es je nach Körpergröße meist ungefähr fünf bis sechs Liter."
+  },
+  {
+    "id": "es23",
+    "question_type": "estimate",
+    "primary_category": "plants_animals",
+    "subtopic": "Pflanzen und Tiere allgemein",
+    "tags": {
+      "topics": [
+        "Pflanzen und Tiere allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Kilometer pro Stunde erreicht ein Gepard ungefähr in der Spitze?",
+    "answer": 100,
+    "unit": "km/h",
+    "explanation": "Auf kurzen Strecken erreichen Geparde ungefähr 100 Kilometer pro Stunde."
+  },
+  {
+    "id": "es24",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Geschichte allgemein",
+    "tags": {
+      "topics": [
+        "Geschichte allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Jahre dauerte der Bau des Kölner Doms von der Grundsteinlegung bis zur Vollendung insgesamt?",
+    "answer": 632,
+    "unit": "Jahre",
+    "explanation": "Zwischen der Grundsteinlegung 1248 und der Vollendung 1880 liegen 632 Jahre – mit langer Baupause."
+  },
+  {
+    "id": "es25",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Wissenschaft und Technik allgemein",
+    "tags": {
+      "topics": [
+        "Wissenschaft und Technik allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Kilometer beträgt die mittlere Entfernung der Erde zur Sonne?",
+    "answer": 149600000,
+    "unit": "km",
+    "explanation": "Eine Astronomische Einheit entspricht ungefähr 149,6 Millionen Kilometern."
+  },
+  {
+    "id": "es26",
+    "question_type": "estimate",
+    "primary_category": "human_everyday",
+    "subtopic": "Mensch und Alltag allgemein",
+    "tags": {
+      "topics": [
+        "Mensch und Alltag allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Muskeln besitzt der menschliche Körper ungefähr?",
+    "answer": 650,
+    "unit": "Muskeln",
+    "explanation": "Je nach Zählweise werden meist rund 650 Skelettmuskeln genannt."
+  },
+  {
+    "id": "es27",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Geografie und Welt allgemein",
+    "tags": {
+      "topics": [
+        "Geografie und Welt allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Meter ist der Burj Khalifa ungefähr hoch?",
+    "answer": 828,
+    "unit": "Meter",
+    "explanation": "Der Burj Khalifa erreicht eine Höhe von 828 Metern."
+  },
+  {
+    "id": "es28",
+    "question_type": "estimate",
+    "primary_category": "human_everyday",
+    "subtopic": "Mensch und Alltag allgemein",
+    "tags": {
+      "topics": [
+        "Mensch und Alltag allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Liter Wasser verbraucht eine durchschnittliche Person in Deutschland im Haushalt ungefähr pro Tag?",
+    "answer": 125,
+    "unit": "Liter",
+    "explanation": "Der tägliche Haushaltsverbrauch liegt grob bei 120 bis 130 Litern pro Person."
+  },
+  {
+    "id": "es29",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Wissenschaft und Technik allgemein",
+    "tags": {
+      "topics": [
+        "Wissenschaft und Technik allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Kilometer legt Licht in einer Sekunde ungefähr zurück?",
+    "answer": 300000,
+    "unit": "km",
+    "explanation": "Im Vakuum bewegt sich Licht mit rund 299.792 Kilometern pro Sekunde."
+  },
+  {
+    "id": "es30",
+    "question_type": "estimate",
+    "primary_category": "music",
+    "subtopic": "Instrumente & Musiktheorie",
+    "tags": {
+      "topics": [
+        "Instrumente & Musiktheorie"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Saiten hat eine Konzertharfe normalerweise?",
+    "answer": 47,
+    "unit": "Saiten",
+    "explanation": "Eine moderne Doppelpedal-Konzertharfe besitzt üblicherweise 47 Saiten.",
+    "subject_keys": [
+      "topic:music:instrumente-und-musiktheorie"
+    ]
+  },
+  {
+    "id": "es31",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Geografie und Welt allgemein",
+    "tags": {
+      "topics": [
+        "Geografie und Welt allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Kilometer lang ist der Rhein ungefähr?",
+    "answer": 1233,
+    "unit": "km",
+    "explanation": "Die heute anerkannte Länge des Rheins beträgt rund 1.233 Kilometer."
+  },
+  {
+    "id": "es32",
+    "question_type": "estimate",
+    "primary_category": "sport",
+    "subtopic": "Mannschafts- & Ballsport",
+    "tags": {
+      "topics": [
+        "Mannschafts- & Ballsport"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Minuten dauert ein Fußballspiel regulär ohne Nachspielzeit und Verlängerung?",
+    "answer": 90,
+    "unit": "Minuten",
+    "explanation": "Zwei Halbzeiten zu je 45 Minuten ergeben 90 Minuten.",
+    "subject_keys": [
+      "topic:sport:mannschafts-und-ballsport"
+    ]
+  },
+  {
+    "id": "es33",
+    "question_type": "estimate",
+    "primary_category": "plants_animals",
+    "subtopic": "Pflanzen und Tiere allgemein",
+    "tags": {
+      "topics": [
+        "Pflanzen und Tiere allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Kilometer pro Stunde erreicht ein Wanderfalke im Sturzflug ungefähr?",
+    "answer": 320,
+    "unit": "km/h",
+    "explanation": "Im Sturzflug werden häufig Geschwindigkeiten von mehr als 300 Kilometern pro Stunde gemessen."
+  },
+  {
+    "id": "es34",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Geografie und Welt allgemein",
+    "tags": {
+      "topics": [
+        "Geografie und Welt allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Inseln gehören ungefähr zu Griechenland?",
+    "answer": 6000,
+    "unit": "Inseln",
+    "explanation": "Griechenland umfasst ungefähr 6.000 Inseln und Inselchen, von denen nur ein kleiner Teil bewohnt ist."
+  },
+  {
+    "id": "es35",
+    "question_type": "estimate",
+    "primary_category": "plants_animals",
+    "subtopic": "Pflanzen und Tiere allgemein",
+    "tags": {
+      "topics": [
+        "Pflanzen und Tiere allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Jahre kann eine Riesenschildkröte ungefähr alt werden?",
+    "answer": 150,
+    "unit": "Jahre",
+    "explanation": "Viele Riesenschildkröten werden weit über 100 Jahre alt; rund 150 Jahre sind ein guter Richtwert."
+  },
+  {
+    "id": "es36",
+    "question_type": "estimate",
+    "primary_category": "sport",
+    "subtopic": "Mannschafts- & Ballsport",
+    "tags": {
+      "topics": [
+        "Mannschafts- & Ballsport"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Quadratmeter misst ein Fußballfeld mit dem häufig verwendeten Maß 105 mal 68 Meter?",
+    "answer": 7140,
+    "unit": "m²",
+    "explanation": "105 mal 68 Meter ergeben 7.140 Quadratmeter.",
+    "subject_keys": [
+      "topic:sport:mannschafts-und-ballsport"
+    ]
+  },
+  {
+    "id": "es37",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Geografie und Welt allgemein",
+    "tags": {
+      "topics": [
+        "Geografie und Welt allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Kilometer lang ist die Golden Gate Bridge einschließlich der Zufahrtsbrücken ungefähr?",
+    "answer": 2.7,
+    "unit": "km",
+    "explanation": "Die gesamte Brücke ist ungefähr 2,7 Kilometer lang."
+  },
+  {
+    "id": "es38",
+    "question_type": "estimate",
+    "primary_category": "human_everyday",
+    "subtopic": "Mensch und Alltag allgemein",
+    "tags": {
+      "topics": [
+        "Mensch und Alltag allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Herzschläge hat ein Mensch bei 70 Schlägen pro Minute ungefähr an einem Tag?",
+    "answer": 100800,
+    "unit": "Schläge",
+    "explanation": "70 mal 60 mal 24 ergibt 100.800 Herzschläge."
+  },
+  {
+    "id": "es39",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Geografie und Welt allgemein",
+    "tags": {
+      "topics": [
+        "Geografie und Welt allgemein"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Meter unter dem Meeresspiegel liegt die Oberfläche des Toten Meeres ungefähr?",
+    "answer": 430,
+    "unit": "Meter",
+    "explanation": "Die Wasseroberfläche liegt ungefähr 430 Meter unter dem Meeresspiegel und verändert sich weiter."
+  },
+  {
+    "id": "es40",
+    "question_type": "estimate",
+    "primary_category": "sport",
+    "subtopic": "Wasser-, Winter- & Motorsport",
+    "tags": {
+      "topics": [
+        "Wasser-, Winter- & Motorsport"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Kilometer lang ist eine Runde auf der Nürburgring-Nordschleife ungefähr?",
+    "answer": 20.8,
+    "unit": "km",
+    "explanation": "Die Nordschleife misst knapp 20,8 Kilometer.",
+    "subject_keys": [
+      "topic:sport:wasser-winter-und-motorsport"
+    ]
+  },
+  {
+    "id": "es041",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Historische Ereignisse",
+    "tags": {
+      "topics": [
+        "Historische Ereignisse"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr geschah: Kolumbus erreicht Amerika?",
+    "answer": 1492,
+    "unit": "Jahr",
+    "explanation": "Der gesuchte Richtwert beträgt 1492 Jahr.",
+    "subject_keys": [
+      "fact:0:kolumbus erreicht amerika"
+    ]
+  },
+  {
+    "id": "es042",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Historische Ereignisse",
+    "tags": {
+      "topics": [
+        "Historische Ereignisse"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr geschah: Luthers Thesenanschlag?",
+    "answer": 1517,
+    "unit": "Jahr",
+    "explanation": "Der gesuchte Richtwert beträgt 1517 Jahr.",
+    "subject_keys": [
+      "fact:0:luthers thesenanschlag"
+    ]
+  },
+  {
+    "id": "es043",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Historische Ereignisse",
+    "tags": {
+      "topics": [
+        "Historische Ereignisse"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr geschah: Unabhängigkeitserklärung der USA?",
+    "answer": 1776,
+    "unit": "Jahr",
+    "explanation": "Der gesuchte Richtwert beträgt 1776 Jahr.",
+    "subject_keys": [
+      "fact:0:unabhängigkeitserklärung der usa"
+    ]
+  },
+  {
+    "id": "es044",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Historische Ereignisse",
+    "tags": {
+      "topics": [
+        "Historische Ereignisse"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr geschah: Französische Revolution beginnt?",
+    "answer": 1789,
+    "unit": "Jahr",
+    "explanation": "Der gesuchte Richtwert beträgt 1789 Jahr.",
+    "subject_keys": [
+      "fact:0:französische revolution beginnt"
+    ]
+  },
+  {
+    "id": "es045",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Historische Ereignisse",
+    "tags": {
+      "topics": [
+        "Historische Ereignisse"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr geschah: erstes Telefonat Bells?",
+    "answer": 1876,
+    "unit": "Jahr",
+    "explanation": "Der gesuchte Richtwert beträgt 1876 Jahr.",
+    "subject_keys": [
+      "fact:0:erstes telefonat bells"
+    ]
+  },
+  {
+    "id": "es046",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Historische Ereignisse",
+    "tags": {
+      "topics": [
+        "Historische Ereignisse"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr geschah: erste moderne Olympische Spiele?",
+    "answer": 1896,
+    "unit": "Jahr",
+    "explanation": "Der gesuchte Richtwert beträgt 1896 Jahr.",
+    "subject_keys": [
+      "fact:0:erste moderne olympische spiele"
+    ]
+  },
+  {
+    "id": "es047",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Historische Ereignisse",
+    "tags": {
+      "topics": [
+        "Historische Ereignisse"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr geschah: Titanic sinkt?",
+    "answer": 1912,
+    "unit": "Jahr",
+    "explanation": "Der gesuchte Richtwert beträgt 1912 Jahr.",
+    "subject_keys": [
+      "fact:0:titanic sinkt"
+    ]
+  },
+  {
+    "id": "es048",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Historische Ereignisse",
+    "tags": {
+      "topics": [
+        "Historische Ereignisse"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr geschah: Ende des Zweiten Weltkriegs?",
+    "answer": 1945,
+    "unit": "Jahr",
+    "explanation": "Der gesuchte Richtwert beträgt 1945 Jahr.",
+    "subject_keys": [
+      "fact:0:ende des zweiten weltkriegs"
+    ]
+  },
+  {
+    "id": "es049",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Historische Ereignisse",
+    "tags": {
+      "topics": [
+        "Historische Ereignisse"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr geschah: erste Mondlandung?",
+    "answer": 1969,
+    "unit": "Jahr",
+    "explanation": "Der gesuchte Richtwert beträgt 1969 Jahr.",
+    "subject_keys": [
+      "fact:0:erste mondlandung"
+    ]
+  },
+  {
+    "id": "es050",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Historische Ereignisse",
+    "tags": {
+      "topics": [
+        "Historische Ereignisse"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr geschah: Fall der Berliner Mauer?",
+    "answer": 1989,
+    "unit": "Jahr",
+    "explanation": "Der gesuchte Richtwert beträgt 1989 Jahr.",
+    "subject_keys": [
+      "fact:0:fall der berliner mauer"
+    ]
+  },
+  {
+    "id": "es051",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Bauwerke",
+    "tags": {
+      "topics": [
+        "Bauwerke"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie hoch ist Brandenburger Tor ungefähr?",
+    "answer": 26,
+    "unit": "Meter",
+    "explanation": "Der gesuchte Richtwert beträgt 26 Meter.",
+    "subject_keys": [
+      "fact:1:brandenburger tor"
+    ]
+  },
+  {
+    "id": "es052",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Bauwerke",
+    "tags": {
+      "topics": [
+        "Bauwerke"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie hoch ist Freiheitsstatue mit Sockel ungefähr?",
+    "answer": 93,
+    "unit": "Meter",
+    "explanation": "Der gesuchte Richtwert beträgt 93 Meter.",
+    "subject_keys": [
+      "fact:1:freiheitsstatue mit sockel"
+    ]
+  },
+  {
+    "id": "es053",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Bauwerke",
+    "tags": {
+      "topics": [
+        "Bauwerke"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie hoch ist Big Ben mit Turm ungefähr?",
+    "answer": 96,
+    "unit": "Meter",
+    "explanation": "Der gesuchte Richtwert beträgt 96 Meter.",
+    "subject_keys": [
+      "fact:1:big ben mit turm"
+    ]
+  },
+  {
+    "id": "es054",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Bauwerke",
+    "tags": {
+      "topics": [
+        "Bauwerke"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie hoch ist Kölner Dom ungefähr?",
+    "answer": 157,
+    "unit": "Meter",
+    "explanation": "Der gesuchte Richtwert beträgt 157 Meter.",
+    "subject_keys": [
+      "fact:1:kölner dom"
+    ]
+  },
+  {
+    "id": "es055",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Bauwerke",
+    "tags": {
+      "topics": [
+        "Bauwerke"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie hoch ist Washington Monument ungefähr?",
+    "answer": 169,
+    "unit": "Meter",
+    "explanation": "Der gesuchte Richtwert beträgt 169 Meter.",
+    "subject_keys": [
+      "fact:1:washington monument"
+    ]
+  },
+  {
+    "id": "es056",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Bauwerke",
+    "tags": {
+      "topics": [
+        "Bauwerke"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie hoch ist Eiffelturm ungefähr?",
+    "answer": 330,
+    "unit": "Meter",
+    "explanation": "Der gesuchte Richtwert beträgt 330 Meter.",
+    "subject_keys": [
+      "fact:1:eiffelturm"
+    ]
+  },
+  {
+    "id": "es057",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Bauwerke",
+    "tags": {
+      "topics": [
+        "Bauwerke"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie hoch ist Empire State Building mit Antenne ungefähr?",
+    "answer": 443,
+    "unit": "Meter",
+    "explanation": "Der gesuchte Richtwert beträgt 443 Meter.",
+    "subject_keys": [
+      "fact:1:empire state building mit antenne"
+    ]
+  },
+  {
+    "id": "es058",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Bauwerke",
+    "tags": {
+      "topics": [
+        "Bauwerke"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie hoch ist CN Tower ungefähr?",
+    "answer": 553,
+    "unit": "Meter",
+    "explanation": "Der gesuchte Richtwert beträgt 553 Meter.",
+    "subject_keys": [
+      "fact:1:cn tower"
+    ]
+  },
+  {
+    "id": "es059",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Bauwerke",
+    "tags": {
+      "topics": [
+        "Bauwerke"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie hoch ist Shanghai Tower ungefähr?",
+    "answer": 632,
+    "unit": "Meter",
+    "explanation": "Der gesuchte Richtwert beträgt 632 Meter.",
+    "subject_keys": [
+      "fact:1:shanghai tower"
+    ]
+  },
+  {
+    "id": "es060",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Bauwerke",
+    "tags": {
+      "topics": [
+        "Bauwerke"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie hoch ist Burj Khalifa ungefähr?",
+    "answer": 828,
+    "unit": "Meter",
+    "explanation": "Der gesuchte Richtwert beträgt 828 Meter.",
+    "subject_keys": [
+      "fact:1:burj khalifa"
+    ]
+  },
+  {
+    "id": "es061",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Flüsse",
+    "tags": {
+      "topics": [
+        "Flüsse"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie lang ist Themse ungefähr?",
+    "answer": 346,
+    "unit": "km",
+    "explanation": "Der gesuchte Richtwert beträgt 346 km.",
+    "subject_keys": [
+      "fact:2:themse"
+    ]
+  },
+  {
+    "id": "es062",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Flüsse",
+    "tags": {
+      "topics": [
+        "Flüsse"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie lang ist Spree ungefähr?",
+    "answer": 400,
+    "unit": "km",
+    "explanation": "Der gesuchte Richtwert beträgt 400 km.",
+    "subject_keys": [
+      "fact:2:spree"
+    ]
+  },
+  {
+    "id": "es063",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Flüsse",
+    "tags": {
+      "topics": [
+        "Flüsse"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie lang ist Elbe ungefähr?",
+    "answer": 1094,
+    "unit": "km",
+    "explanation": "Der gesuchte Richtwert beträgt 1094 km.",
+    "subject_keys": [
+      "fact:2:elbe"
+    ]
+  },
+  {
+    "id": "es064",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Flüsse",
+    "tags": {
+      "topics": [
+        "Flüsse"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie lang ist Rhein ungefähr?",
+    "answer": 1233,
+    "unit": "km",
+    "explanation": "Der gesuchte Richtwert beträgt 1233 km.",
+    "subject_keys": [
+      "fact:2:rhein"
+    ]
+  },
+  {
+    "id": "es065",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Flüsse",
+    "tags": {
+      "topics": [
+        "Flüsse"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie lang ist Donau ungefähr?",
+    "answer": 2850,
+    "unit": "km",
+    "explanation": "Der gesuchte Richtwert beträgt 2850 km.",
+    "subject_keys": [
+      "fact:2:donau"
+    ]
+  },
+  {
+    "id": "es066",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Flüsse",
+    "tags": {
+      "topics": [
+        "Flüsse"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie lang ist Wolga ungefähr?",
+    "answer": 3530,
+    "unit": "km",
+    "explanation": "Der gesuchte Richtwert beträgt 3530 km.",
+    "subject_keys": [
+      "fact:2:wolga"
+    ]
+  },
+  {
+    "id": "es067",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Flüsse",
+    "tags": {
+      "topics": [
+        "Flüsse"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie lang ist Kongo ungefähr?",
+    "answer": 4700,
+    "unit": "km",
+    "explanation": "Der gesuchte Richtwert beträgt 4700 km.",
+    "subject_keys": [
+      "fact:2:kongo"
+    ]
+  },
+  {
+    "id": "es068",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Flüsse",
+    "tags": {
+      "topics": [
+        "Flüsse"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie lang ist Mississippi-Missouri ungefähr?",
+    "answer": 6275,
+    "unit": "km",
+    "explanation": "Der gesuchte Richtwert beträgt 6275 km.",
+    "subject_keys": [
+      "fact:2:mississippi-missouri"
+    ]
+  },
+  {
+    "id": "es069",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Flüsse",
+    "tags": {
+      "topics": [
+        "Flüsse"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie lang ist Jangtsekiang ungefähr?",
+    "answer": 6300,
+    "unit": "km",
+    "explanation": "Der gesuchte Richtwert beträgt 6300 km.",
+    "subject_keys": [
+      "fact:2:jangtsekiang"
+    ]
+  },
+  {
+    "id": "es070",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Flüsse",
+    "tags": {
+      "topics": [
+        "Flüsse"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie lang ist Nil ungefähr?",
+    "answer": 6650,
+    "unit": "km",
+    "explanation": "Der gesuchte Richtwert beträgt 6650 km.",
+    "subject_keys": [
+      "fact:2:nil"
+    ]
+  },
+  {
+    "id": "es071",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Länderflächen",
+    "tags": {
+      "topics": [
+        "Länderflächen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie groß ist die Fläche von Island ungefähr?",
+    "answer": 103000,
+    "unit": "km²",
+    "explanation": "Der gesuchte Richtwert beträgt 103000 km².",
+    "subject_keys": [
+      "fact:3:island"
+    ]
+  },
+  {
+    "id": "es072",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Länderflächen",
+    "tags": {
+      "topics": [
+        "Länderflächen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie groß ist die Fläche von Griechenland ungefähr?",
+    "answer": 132000,
+    "unit": "km²",
+    "explanation": "Der gesuchte Richtwert beträgt 132000 km².",
+    "subject_keys": [
+      "fact:3:griechenland"
+    ]
+  },
+  {
+    "id": "es073",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Länderflächen",
+    "tags": {
+      "topics": [
+        "Länderflächen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie groß ist die Fläche von Nepal ungefähr?",
+    "answer": 147000,
+    "unit": "km²",
+    "explanation": "Der gesuchte Richtwert beträgt 147000 km².",
+    "subject_keys": [
+      "fact:3:nepal"
+    ]
+  },
+  {
+    "id": "es074",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Länderflächen",
+    "tags": {
+      "topics": [
+        "Länderflächen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie groß ist die Fläche von Tunesien ungefähr?",
+    "answer": 164000,
+    "unit": "km²",
+    "explanation": "Der gesuchte Richtwert beträgt 164000 km².",
+    "subject_keys": [
+      "fact:3:tunesien"
+    ]
+  },
+  {
+    "id": "es075",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Länderflächen",
+    "tags": {
+      "topics": [
+        "Länderflächen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie groß ist die Fläche von Uruguay ungefähr?",
+    "answer": 176000,
+    "unit": "km²",
+    "explanation": "Der gesuchte Richtwert beträgt 176000 km².",
+    "subject_keys": [
+      "fact:3:uruguay"
+    ]
+  },
+  {
+    "id": "es076",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Länderflächen",
+    "tags": {
+      "topics": [
+        "Länderflächen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie groß ist die Fläche von Vereinigtes Königreich ungefähr?",
+    "answer": 244000,
+    "unit": "km²",
+    "explanation": "Der gesuchte Richtwert beträgt 244000 km².",
+    "subject_keys": [
+      "fact:3:vereinigtes königreich"
+    ]
+  },
+  {
+    "id": "es077",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Länderflächen",
+    "tags": {
+      "topics": [
+        "Länderflächen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie groß ist die Fläche von Italien ungefähr?",
+    "answer": 301000,
+    "unit": "km²",
+    "explanation": "Der gesuchte Richtwert beträgt 301000 km².",
+    "subject_keys": [
+      "fact:3:italien"
+    ]
+  },
+  {
+    "id": "es078",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Länderflächen",
+    "tags": {
+      "topics": [
+        "Länderflächen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie groß ist die Fläche von Deutschland ungefähr?",
+    "answer": 358000,
+    "unit": "km²",
+    "explanation": "Der gesuchte Richtwert beträgt 358000 km².",
+    "subject_keys": [
+      "fact:3:deutschland"
+    ]
+  },
+  {
+    "id": "es079",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Länderflächen",
+    "tags": {
+      "topics": [
+        "Länderflächen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie groß ist die Fläche von Japan ungefähr?",
+    "answer": 378000,
+    "unit": "km²",
+    "explanation": "Der gesuchte Richtwert beträgt 378000 km².",
+    "subject_keys": [
+      "fact:3:japan"
+    ]
+  },
+  {
+    "id": "es080",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Länderflächen",
+    "tags": {
+      "topics": [
+        "Länderflächen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie groß ist die Fläche von Schweden ungefähr?",
+    "answer": 450000,
+    "unit": "km²",
+    "explanation": "Der gesuchte Richtwert beträgt 450000 km².",
+    "subject_keys": [
+      "fact:3:schweden"
+    ]
+  },
+  {
+    "id": "es081",
+    "question_type": "estimate",
+    "primary_category": "plants_animals",
+    "subtopic": "Tiergeschwindigkeiten",
+    "tags": {
+      "topics": [
+        "Tiergeschwindigkeiten"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Welche Spitzengeschwindigkeit erreicht Faultier ungefähr?",
+    "answer": 0.3,
+    "unit": "km/h",
+    "explanation": "Der gesuchte Richtwert beträgt 0.3 km/h.",
+    "subject_keys": [
+      "fact:4:faultier"
+    ]
+  },
+  {
+    "id": "es082",
+    "question_type": "estimate",
+    "primary_category": "plants_animals",
+    "subtopic": "Tiergeschwindigkeiten",
+    "tags": {
+      "topics": [
+        "Tiergeschwindigkeiten"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Welche Spitzengeschwindigkeit erreicht Riesenschildkröte ungefähr?",
+    "answer": 0.5,
+    "unit": "km/h",
+    "explanation": "Der gesuchte Richtwert beträgt 0.5 km/h.",
+    "subject_keys": [
+      "fact:4:riesenschildkröte"
+    ]
+  },
+  {
+    "id": "es083",
+    "question_type": "estimate",
+    "primary_category": "plants_animals",
+    "subtopic": "Tiergeschwindigkeiten",
+    "tags": {
+      "topics": [
+        "Tiergeschwindigkeiten"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Welche Spitzengeschwindigkeit erreicht Mensch im Sprint ungefähr?",
+    "answer": 45,
+    "unit": "km/h",
+    "explanation": "Der gesuchte Richtwert beträgt 45 km/h.",
+    "subject_keys": [
+      "fact:4:mensch im sprint"
+    ]
+  },
+  {
+    "id": "es084",
+    "question_type": "estimate",
+    "primary_category": "plants_animals",
+    "subtopic": "Tiergeschwindigkeiten",
+    "tags": {
+      "topics": [
+        "Tiergeschwindigkeiten"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Welche Spitzengeschwindigkeit erreicht Elefant ungefähr?",
+    "answer": 40,
+    "unit": "km/h",
+    "explanation": "Der gesuchte Richtwert beträgt 40 km/h.",
+    "subject_keys": [
+      "fact:4:elefant"
+    ]
+  },
+  {
+    "id": "es085",
+    "question_type": "estimate",
+    "primary_category": "plants_animals",
+    "subtopic": "Tiergeschwindigkeiten",
+    "tags": {
+      "topics": [
+        "Tiergeschwindigkeiten"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Welche Spitzengeschwindigkeit erreicht Hauskatze ungefähr?",
+    "answer": 48,
+    "unit": "km/h",
+    "explanation": "Der gesuchte Richtwert beträgt 48 km/h.",
+    "subject_keys": [
+      "fact:4:hauskatze"
+    ]
+  },
+  {
+    "id": "es086",
+    "question_type": "estimate",
+    "primary_category": "plants_animals",
+    "subtopic": "Tiergeschwindigkeiten",
+    "tags": {
+      "topics": [
+        "Tiergeschwindigkeiten"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Welche Spitzengeschwindigkeit erreicht Giraffe ungefähr?",
+    "answer": 60,
+    "unit": "km/h",
+    "explanation": "Der gesuchte Richtwert beträgt 60 km/h.",
+    "subject_keys": [
+      "fact:4:giraffe"
+    ]
+  },
+  {
+    "id": "es087",
+    "question_type": "estimate",
+    "primary_category": "plants_animals",
+    "subtopic": "Tiergeschwindigkeiten",
+    "tags": {
+      "topics": [
+        "Tiergeschwindigkeiten"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Welche Spitzengeschwindigkeit erreicht Strauß ungefähr?",
+    "answer": 70,
+    "unit": "km/h",
+    "explanation": "Der gesuchte Richtwert beträgt 70 km/h.",
+    "subject_keys": [
+      "fact:4:strauss"
+    ]
+  },
+  {
+    "id": "es088",
+    "question_type": "estimate",
+    "primary_category": "plants_animals",
+    "subtopic": "Tiergeschwindigkeiten",
+    "tags": {
+      "topics": [
+        "Tiergeschwindigkeiten"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Welche Spitzengeschwindigkeit erreicht Löwe ungefähr?",
+    "answer": 80,
+    "unit": "km/h",
+    "explanation": "Der gesuchte Richtwert beträgt 80 km/h.",
+    "subject_keys": [
+      "fact:4:löwe"
+    ]
+  },
+  {
+    "id": "es089",
+    "question_type": "estimate",
+    "primary_category": "plants_animals",
+    "subtopic": "Tiergeschwindigkeiten",
+    "tags": {
+      "topics": [
+        "Tiergeschwindigkeiten"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Welche Spitzengeschwindigkeit erreicht Gepard ungefähr?",
+    "answer": 100,
+    "unit": "km/h",
+    "explanation": "Der gesuchte Richtwert beträgt 100 km/h.",
+    "subject_keys": [
+      "fact:4:gepard"
+    ]
+  },
+  {
+    "id": "es090",
+    "question_type": "estimate",
+    "primary_category": "plants_animals",
+    "subtopic": "Tiergeschwindigkeiten",
+    "tags": {
+      "topics": [
+        "Tiergeschwindigkeiten"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Welche Spitzengeschwindigkeit erreicht Wanderfalke im Sturzflug ungefähr?",
+    "answer": 320,
+    "unit": "km/h",
+    "explanation": "Der gesuchte Richtwert beträgt 320 km/h.",
+    "subject_keys": [
+      "fact:4:wanderfalke im sturzflug"
+    ]
+  },
+  {
+    "id": "es091",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Entfernungen",
+    "tags": {
+      "topics": [
+        "Entfernungen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie groß ist die mittlere Entfernung: Erde–ISS?",
+    "answer": 400,
+    "unit": "km",
+    "explanation": "Der gesuchte Richtwert beträgt 400 km.",
+    "subject_keys": [
+      "fact:5:erde–iss"
+    ]
+  },
+  {
+    "id": "es092",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Entfernungen",
+    "tags": {
+      "topics": [
+        "Entfernungen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie groß ist die mittlere Entfernung: Berlin–München Luftlinie?",
+    "answer": 505,
+    "unit": "km",
+    "explanation": "Der gesuchte Richtwert beträgt 505 km.",
+    "subject_keys": [
+      "fact:5:berlin–münchen luftlinie"
+    ]
+  },
+  {
+    "id": "es093",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Entfernungen",
+    "tags": {
+      "topics": [
+        "Entfernungen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie groß ist die mittlere Entfernung: Berlin–Paris Luftlinie?",
+    "answer": 880,
+    "unit": "km",
+    "explanation": "Der gesuchte Richtwert beträgt 880 km.",
+    "subject_keys": [
+      "fact:5:berlin–paris luftlinie"
+    ]
+  },
+  {
+    "id": "es094",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Entfernungen",
+    "tags": {
+      "topics": [
+        "Entfernungen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie groß ist die mittlere Entfernung: Erde–Mond?",
+    "answer": 384400,
+    "unit": "km",
+    "explanation": "Der gesuchte Richtwert beträgt 384400 km.",
+    "subject_keys": [
+      "fact:5:erde–mond"
+    ]
+  },
+  {
+    "id": "es095",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Entfernungen",
+    "tags": {
+      "topics": [
+        "Entfernungen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie groß ist die mittlere Entfernung: Sonne–Merkur?",
+    "answer": 57900000,
+    "unit": "km",
+    "explanation": "Der gesuchte Richtwert beträgt 5.79e+07 km.",
+    "subject_keys": [
+      "fact:5:sonne–merkur"
+    ]
+  },
+  {
+    "id": "es096",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Entfernungen",
+    "tags": {
+      "topics": [
+        "Entfernungen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie groß ist die mittlere Entfernung: Sonne–Venus?",
+    "answer": 108200000,
+    "unit": "km",
+    "explanation": "Der gesuchte Richtwert beträgt 1.082e+08 km.",
+    "subject_keys": [
+      "fact:5:sonne–venus"
+    ]
+  },
+  {
+    "id": "es097",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Entfernungen",
+    "tags": {
+      "topics": [
+        "Entfernungen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie groß ist die mittlere Entfernung: Sonne–Erde?",
+    "answer": 149600000,
+    "unit": "km",
+    "explanation": "Der gesuchte Richtwert beträgt 1.496e+08 km.",
+    "subject_keys": [
+      "fact:5:sonne–erde"
+    ]
+  },
+  {
+    "id": "es098",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Entfernungen",
+    "tags": {
+      "topics": [
+        "Entfernungen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie groß ist die mittlere Entfernung: Sonne–Mars?",
+    "answer": 227900000,
+    "unit": "km",
+    "explanation": "Der gesuchte Richtwert beträgt 2.279e+08 km.",
+    "subject_keys": [
+      "fact:5:sonne–mars"
+    ]
+  },
+  {
+    "id": "es099",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Entfernungen",
+    "tags": {
+      "topics": [
+        "Entfernungen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie groß ist die mittlere Entfernung: Sonne–Jupiter?",
+    "answer": 778500000,
+    "unit": "km",
+    "explanation": "Der gesuchte Richtwert beträgt 7.785e+08 km.",
+    "subject_keys": [
+      "fact:5:sonne–jupiter"
+    ]
+  },
+  {
+    "id": "es100",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Entfernungen",
+    "tags": {
+      "topics": [
+        "Entfernungen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie groß ist die mittlere Entfernung: Sonne–Saturn?",
+    "answer": 1433000000,
+    "unit": "km",
+    "explanation": "Der gesuchte Richtwert beträgt 1.433e+09 km.",
+    "subject_keys": [
+      "fact:5:sonne–saturn"
+    ]
+  },
+  {
+    "id": "es101",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Schmelzpunkte",
+    "tags": {
+      "topics": [
+        "Schmelzpunkte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Grad Celsius unter null liegt der Schmelzpunkt von Quecksilber?",
+    "answer": 39,
+    "unit": "Grad unter null",
+    "explanation": "Der gesuchte Richtwert beträgt 39 Grad unter null.",
+    "subject_keys": [
+      "fact:6:quecksilber"
+    ]
+  },
+  {
+    "id": "es102",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Schmelzpunkte",
+    "tags": {
+      "topics": [
+        "Schmelzpunkte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Bei wie viel Kelvin gefriert reines Wasser ungefähr?",
+    "answer": 273.15,
+    "unit": "Kelvin",
+    "explanation": "Der gesuchte Richtwert beträgt 273.15 Kelvin.",
+    "subject_keys": [
+      "fact:6:eis"
+    ]
+  },
+  {
+    "id": "es103",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Schmelzpunkte",
+    "tags": {
+      "topics": [
+        "Schmelzpunkte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Bei wie viel Grad Celsius schmilzt Schokolade ungefähr?",
+    "answer": 34,
+    "unit": "°C",
+    "explanation": "Der gesuchte Richtwert beträgt 34 °C.",
+    "subject_keys": [
+      "fact:6:schokolade"
+    ]
+  },
+  {
+    "id": "es104",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Schmelzpunkte",
+    "tags": {
+      "topics": [
+        "Schmelzpunkte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Bei wie viel Grad Celsius schmilzt Zinn ungefähr?",
+    "answer": 232,
+    "unit": "°C",
+    "explanation": "Der gesuchte Richtwert beträgt 232 °C.",
+    "subject_keys": [
+      "fact:6:zinn"
+    ]
+  },
+  {
+    "id": "es105",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Schmelzpunkte",
+    "tags": {
+      "topics": [
+        "Schmelzpunkte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Bei wie viel Grad Celsius schmilzt Blei ungefähr?",
+    "answer": 327,
+    "unit": "°C",
+    "explanation": "Der gesuchte Richtwert beträgt 327 °C.",
+    "subject_keys": [
+      "fact:6:blei"
+    ]
+  },
+  {
+    "id": "es106",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Schmelzpunkte",
+    "tags": {
+      "topics": [
+        "Schmelzpunkte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Bei wie viel Grad Celsius schmilzt Aluminium ungefähr?",
+    "answer": 660,
+    "unit": "°C",
+    "explanation": "Der gesuchte Richtwert beträgt 660 °C.",
+    "subject_keys": [
+      "fact:6:aluminium"
+    ]
+  },
+  {
+    "id": "es107",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Schmelzpunkte",
+    "tags": {
+      "topics": [
+        "Schmelzpunkte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Bei wie viel Grad Celsius schmilzt Silber ungefähr?",
+    "answer": 962,
+    "unit": "°C",
+    "explanation": "Der gesuchte Richtwert beträgt 962 °C.",
+    "subject_keys": [
+      "fact:6:silber"
+    ]
+  },
+  {
+    "id": "es108",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Schmelzpunkte",
+    "tags": {
+      "topics": [
+        "Schmelzpunkte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Bei wie viel Grad Celsius schmilzt Gold ungefähr?",
+    "answer": 1064,
+    "unit": "°C",
+    "explanation": "Der gesuchte Richtwert beträgt 1064 °C.",
+    "subject_keys": [
+      "fact:6:gold"
+    ]
+  },
+  {
+    "id": "es109",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Schmelzpunkte",
+    "tags": {
+      "topics": [
+        "Schmelzpunkte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Bei wie viel Grad Celsius schmilzt Kupfer ungefähr?",
+    "answer": 1085,
+    "unit": "°C",
+    "explanation": "Der gesuchte Richtwert beträgt 1085 °C.",
+    "subject_keys": [
+      "fact:6:kupfer"
+    ]
+  },
+  {
+    "id": "es110",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Schmelzpunkte",
+    "tags": {
+      "topics": [
+        "Schmelzpunkte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Bei wie viel Grad Celsius schmilzt Eisen ungefähr?",
+    "answer": 1538,
+    "unit": "°C",
+    "explanation": "Der gesuchte Richtwert beträgt 1538 °C.",
+    "subject_keys": [
+      "fact:6:eisen"
+    ]
+  },
+  {
+    "id": "es111",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Erfindungsgeschichte",
+    "tags": {
+      "topics": [
+        "Erfindungsgeschichte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Um welches Jahr verbreitete Gutenberg den Buchdruck mit beweglichen Lettern in Europa?",
+    "answer": 1450,
+    "unit": "Jahr",
+    "explanation": "Gutenbergs Drucktechnik mit beweglichen Metalllettern verbreitete sich in Europa um 1450.",
+    "subject_keys": [
+      "fact:7:buchdruck mit beweglichen lettern"
+    ]
+  },
+  {
+    "id": "es112",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Erfindungsgeschichte",
+    "tags": {
+      "topics": [
+        "Erfindungsgeschichte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr ließ James Watt seine verbesserte Dampfmaschine patentieren?",
+    "answer": 1769,
+    "unit": "Jahr",
+    "explanation": "James Watt erhielt 1769 ein Patent auf seine verbesserte Dampfmaschine.",
+    "subject_keys": [
+      "fact:7:dampfmaschine von watt"
+    ]
+  },
+  {
+    "id": "es113",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Erfindungsgeschichte",
+    "tags": {
+      "topics": [
+        "Erfindungsgeschichte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr wurde Daguerres fotografisches Verfahren öffentlich vorgestellt?",
+    "answer": 1839,
+    "unit": "Jahr",
+    "explanation": "Das Daguerre-Verfahren wurde 1839 öffentlich bekannt gemacht.",
+    "subject_keys": [
+      "fact:7:fotografie von daguerre"
+    ]
+  },
+  {
+    "id": "es114",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Erfindungsgeschichte",
+    "tags": {
+      "topics": [
+        "Erfindungsgeschichte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr erhielt Alexander Graham Bell sein Telefonpatent?",
+    "answer": 1876,
+    "unit": "Jahr",
+    "explanation": "Alexander Graham Bell erhielt sein US-Telefonpatent 1876.",
+    "subject_keys": [
+      "fact:7:telefon von bell"
+    ]
+  },
+  {
+    "id": "es115",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Erfindungsgeschichte",
+    "tags": {
+      "topics": [
+        "Erfindungsgeschichte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr stellte Thomas Edison seine praktische Glühlampe vor?",
+    "answer": 1879,
+    "unit": "Jahr",
+    "explanation": "Thomas Edison führte seine praktische Glühlampe 1879 vor.",
+    "subject_keys": [
+      "fact:7:praktische glühlampe edisons"
+    ]
+  },
+  {
+    "id": "es116",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Erfindungsgeschichte",
+    "tags": {
+      "topics": [
+        "Erfindungsgeschichte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr meldete Carl Benz sein Automobil zum Patent an?",
+    "answer": 1886,
+    "unit": "Jahr",
+    "explanation": "Carl Benz meldete seinen Motorwagen 1886 zum Patent an.",
+    "subject_keys": [
+      "fact:7:automobil von benz"
+    ]
+  },
+  {
+    "id": "es117",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Erfindungsgeschichte",
+    "tags": {
+      "topics": [
+        "Erfindungsgeschichte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr gelang den Brüdern Wright ihr erster Motorflug?",
+    "answer": 1903,
+    "unit": "Jahr",
+    "explanation": "Der erste erfolgreiche Motorflug der Brüder Wright fand 1903 statt.",
+    "subject_keys": [
+      "fact:7:erster motorflug der wrights"
+    ]
+  },
+  {
+    "id": "es118",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Erfindungsgeschichte",
+    "tags": {
+      "topics": [
+        "Erfindungsgeschichte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr führte John Logie Baird sein Fernsehsystem erstmals öffentlich vor?",
+    "answer": 1926,
+    "unit": "Jahr",
+    "explanation": "John Logie Baird führte sein Fernsehsystem 1926 öffentlich vor.",
+    "subject_keys": [
+      "fact:7:fernsehen von baird"
+    ]
+  },
+  {
+    "id": "es119",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Erfindungsgeschichte",
+    "tags": {
+      "topics": [
+        "Erfindungsgeschichte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr stellte Tim Berners-Lee seinen Plan für das World Wide Web vor?",
+    "answer": 1989,
+    "unit": "Jahr",
+    "explanation": "Tim Berners-Lee legte seinen ersten Vorschlag für das World Wide Web 1989 vor.",
+    "subject_keys": [
+      "fact:7:world wide web"
+    ]
+  },
+  {
+    "id": "es120",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Erfindungsgeschichte",
+    "tags": {
+      "topics": [
+        "Erfindungsgeschichte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr stellte Apple das erste iPhone vor?",
+    "answer": 2007,
+    "unit": "Jahr",
+    "explanation": "Apple stellte das erste iPhone 2007 vor.",
+    "subject_keys": [
+      "fact:7:erstes iphone"
+    ]
+  },
+  {
+    "id": "es121",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "Literaturgeschichte",
+    "tags": {
+      "topics": [
+        "Literaturgeschichte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr erschien Don Quijote Teil 1 erstmals?",
+    "answer": 1605,
+    "unit": "Jahr",
+    "explanation": "Der gesuchte Richtwert beträgt 1605 Jahr.",
+    "subject_keys": [
+      "fact:8:don quijote teil 1"
+    ]
+  },
+  {
+    "id": "es122",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "Literaturgeschichte",
+    "tags": {
+      "topics": [
+        "Literaturgeschichte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr erschien Robinson Crusoe erstmals?",
+    "answer": 1719,
+    "unit": "Jahr",
+    "explanation": "Der gesuchte Richtwert beträgt 1719 Jahr.",
+    "subject_keys": [
+      "fact:8:robinson crusoe"
+    ]
+  },
+  {
+    "id": "es123",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "Literaturgeschichte",
+    "tags": {
+      "topics": [
+        "Literaturgeschichte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr erschien Stolz und Vorurteil erstmals?",
+    "answer": 1813,
+    "unit": "Jahr",
+    "explanation": "Der gesuchte Richtwert beträgt 1813 Jahr.",
+    "subject_keys": [
+      "fact:8:stolz und vorurteil"
+    ]
+  },
+  {
+    "id": "es124",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "Literaturgeschichte",
+    "tags": {
+      "topics": [
+        "Literaturgeschichte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr erschien Frankenstein erstmals?",
+    "answer": 1818,
+    "unit": "Jahr",
+    "explanation": "Der gesuchte Richtwert beträgt 1818 Jahr.",
+    "subject_keys": [
+      "fact:8:frankenstein"
+    ]
+  },
+  {
+    "id": "es125",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "Literaturgeschichte",
+    "tags": {
+      "topics": [
+        "Literaturgeschichte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr erschien Moby-Dick erstmals?",
+    "answer": 1851,
+    "unit": "Jahr",
+    "explanation": "Der gesuchte Richtwert beträgt 1851 Jahr.",
+    "subject_keys": [
+      "fact:8:moby-dick"
+    ]
+  },
+  {
+    "id": "es126",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "Literaturgeschichte",
+    "tags": {
+      "topics": [
+        "Literaturgeschichte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr erschien Die Verwandlung erstmals?",
+    "answer": 1915,
+    "unit": "Jahr",
+    "explanation": "Der gesuchte Richtwert beträgt 1915 Jahr.",
+    "subject_keys": [
+      "fact:8:die verwandlung"
+    ]
+  },
+  {
+    "id": "es127",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "Literaturgeschichte",
+    "tags": {
+      "topics": [
+        "Literaturgeschichte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr erschien Der große Gatsby erstmals?",
+    "answer": 1925,
+    "unit": "Jahr",
+    "explanation": "Der gesuchte Richtwert beträgt 1925 Jahr.",
+    "subject_keys": [
+      "fact:8:der grosse gatsby"
+    ]
+  },
+  {
+    "id": "es128",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "Literaturgeschichte",
+    "tags": {
+      "topics": [
+        "Literaturgeschichte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr erschien 1984 erstmals?",
+    "answer": 1949,
+    "unit": "Jahr",
+    "explanation": "Der gesuchte Richtwert beträgt 1949 Jahr.",
+    "subject_keys": [
+      "fact:8:1984"
+    ]
+  },
+  {
+    "id": "es129",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "Literaturgeschichte",
+    "tags": {
+      "topics": [
+        "Literaturgeschichte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr erschien Der Herr der Ringe Band 1 erstmals?",
+    "answer": 1954,
+    "unit": "Jahr",
+    "explanation": "Der gesuchte Richtwert beträgt 1954 Jahr.",
+    "subject_keys": [
+      "fact:8:der herr der ringe band 1"
+    ]
+  },
+  {
+    "id": "es130",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "Literaturgeschichte",
+    "tags": {
+      "topics": [
+        "Literaturgeschichte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "In welchem Jahr erschien Harry Potter Band 1 erstmals?",
+    "answer": 1997,
+    "unit": "Jahr",
+    "explanation": "Der gesuchte Richtwert beträgt 1997 Jahr.",
+    "subject_keys": [
+      "fact:8:harry potter band 1"
+    ]
+  },
+  {
+    "id": "es131",
+    "question_type": "estimate",
+    "primary_category": "sport",
+    "subtopic": "Mannschafts- & Ballsport",
+    "tags": {
+      "topics": [
+        "Mannschafts- & Ballsport"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie lang ist Basketballfeld genau oder ungefähr?",
+    "answer": 28,
+    "unit": "Meter",
+    "explanation": "Der gesuchte Richtwert beträgt 28 Meter.",
+    "subject_keys": [
+      "fact:9:basketballfeld",
+      "topic:sport:mannschafts-und-ballsport"
+    ]
+  },
+  {
+    "id": "es132",
+    "question_type": "estimate",
+    "primary_category": "sport",
+    "subtopic": "Wasser-, Winter- & Motorsport",
+    "tags": {
+      "topics": [
+        "Wasser-, Winter- & Motorsport"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie lang ist Olympisches Schwimmbecken genau oder ungefähr?",
+    "answer": 50,
+    "unit": "Meter",
+    "explanation": "Der gesuchte Richtwert beträgt 50 Meter.",
+    "subject_keys": [
+      "fact:9:olympisches schwimmbecken",
+      "topic:sport:wasser-winter-und-motorsport"
+    ]
+  },
+  {
+    "id": "es133",
+    "question_type": "estimate",
+    "primary_category": "sport",
+    "subtopic": "Mannschafts- & Ballsport",
+    "tags": {
+      "topics": [
+        "Mannschafts- & Ballsport"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie lang ist Fußballfeld Standardlänge genau oder ungefähr?",
+    "answer": 105,
+    "unit": "Meter",
+    "explanation": "Der gesuchte Richtwert beträgt 105 Meter.",
+    "subject_keys": [
+      "fact:9:fussballfeld standardlänge",
+      "topic:sport:mannschafts-und-ballsport"
+    ]
+  },
+  {
+    "id": "es134",
+    "question_type": "estimate",
+    "primary_category": "sport",
+    "subtopic": "Leichtathletik & Ausdauer",
+    "tags": {
+      "topics": [
+        "Leichtathletik & Ausdauer"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie lang ist Leichtathletik-Runde genau oder ungefähr?",
+    "answer": 400,
+    "unit": "Meter",
+    "explanation": "Der gesuchte Richtwert beträgt 400 Meter.",
+    "subject_keys": [
+      "fact:9:leichtathletik-runde",
+      "topic:sport:leichtathletik-und-ausdauer"
+    ]
+  },
+  {
+    "id": "es135",
+    "question_type": "estimate",
+    "primary_category": "sport",
+    "subtopic": "Wasser-, Winter- & Motorsport",
+    "tags": {
+      "topics": [
+        "Wasser-, Winter- & Motorsport"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie lang ist Ruderregatta olympisch genau oder ungefähr?",
+    "answer": 2000,
+    "unit": "Meter",
+    "explanation": "Der gesuchte Richtwert beträgt 2000 Meter.",
+    "subject_keys": [
+      "fact:9:ruderregatta olympisch",
+      "topic:sport:wasser-winter-und-motorsport"
+    ]
+  },
+  {
+    "id": "es136",
+    "question_type": "estimate",
+    "primary_category": "sport",
+    "subtopic": "Leichtathletik & Ausdauer",
+    "tags": {
+      "topics": [
+        "Leichtathletik & Ausdauer"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie lang ist 5-km-Lauf genau oder ungefähr?",
+    "answer": 5000,
+    "unit": "Meter",
+    "explanation": "Der gesuchte Richtwert beträgt 5000 Meter.",
+    "subject_keys": [
+      "fact:9:5-km-lauf",
+      "topic:sport:leichtathletik-und-ausdauer"
+    ]
+  },
+  {
+    "id": "es137",
+    "question_type": "estimate",
+    "primary_category": "sport",
+    "subtopic": "Leichtathletik & Ausdauer",
+    "tags": {
+      "topics": [
+        "Leichtathletik & Ausdauer"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie lang ist 10-km-Lauf genau oder ungefähr?",
+    "answer": 10000,
+    "unit": "Meter",
+    "explanation": "Der gesuchte Richtwert beträgt 10000 Meter.",
+    "subject_keys": [
+      "fact:9:10-km-lauf",
+      "topic:sport:leichtathletik-und-ausdauer"
+    ]
+  },
+  {
+    "id": "es138",
+    "question_type": "estimate",
+    "primary_category": "sport",
+    "subtopic": "Leichtathletik & Ausdauer",
+    "tags": {
+      "topics": [
+        "Leichtathletik & Ausdauer"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie lang ist Halbmarathon genau oder ungefähr?",
+    "answer": 21097.5,
+    "unit": "Meter",
+    "explanation": "Der gesuchte Richtwert beträgt 21097.5 Meter.",
+    "subject_keys": [
+      "fact:9:halbmarathon",
+      "topic:sport:leichtathletik-und-ausdauer"
+    ]
+  },
+  {
+    "id": "es139",
+    "question_type": "estimate",
+    "primary_category": "sport",
+    "subtopic": "Leichtathletik & Ausdauer",
+    "tags": {
+      "topics": [
+        "Leichtathletik & Ausdauer"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie lang ist Marathon genau oder ungefähr?",
+    "answer": 42195,
+    "unit": "Meter",
+    "explanation": "Der gesuchte Richtwert beträgt 42195 Meter.",
+    "subject_keys": [
+      "fact:9:marathon",
+      "topic:sport:leichtathletik-und-ausdauer"
+    ]
+  },
+  {
+    "id": "es140",
+    "question_type": "estimate",
+    "primary_category": "sport",
+    "subtopic": "Leichtathletik & Ausdauer",
+    "tags": {
+      "topics": [
+        "Leichtathletik & Ausdauer"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie lang ist 100-km-Ultramarathon genau oder ungefähr?",
+    "answer": 100000,
+    "unit": "Meter",
+    "explanation": "Der gesuchte Richtwert beträgt 100000 Meter.",
+    "subject_keys": [
+      "fact:9:100-km-ultramarathon",
+      "topic:sport:leichtathletik-und-ausdauer"
+    ]
+  },
+  {
+    "id": "es141",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "Film",
+    "tags": {
+      "topics": [
+        "Film"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Minuten dauert „Oppenheimer“ ungefähr?",
+    "answer": 180,
+    "unit": "Minuten",
+    "explanation": "Die Kinofassung dauert rund 180 Minuten.",
+    "subject_keys": [
+      "modern:film:oppenheimer"
+    ]
+  },
+  {
+    "id": "es142",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "Film",
+    "tags": {
+      "topics": [
+        "Film"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Minuten dauert der Kinofilm „Barbie“ von 2023 ungefähr?",
+    "answer": 114,
+    "unit": "Minuten",
+    "explanation": "„Barbie“ dauert rund 114 Minuten.",
+    "subject_keys": [
+      "modern:film:barbie"
+    ]
+  },
+  {
+    "id": "es143",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "Film",
+    "tags": {
+      "topics": [
+        "Film"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Minuten dauert „Dune: Part Two“ ungefähr?",
+    "answer": 166,
+    "unit": "Minuten",
+    "explanation": "Der Film dauert ungefähr 166 Minuten.",
+    "subject_keys": [
+      "modern:film:dune"
+    ]
+  },
+  {
+    "id": "es144",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "Film",
+    "tags": {
+      "topics": [
+        "Film"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Minuten dauert „Avatar: The Way of Water“ ungefähr?",
+    "answer": 192,
+    "unit": "Minuten",
+    "explanation": "Der Film dauert rund 192 Minuten.",
+    "subject_keys": [
+      "modern:film:avatar"
+    ]
+  },
+  {
+    "id": "es145",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "Serien",
+    "tags": {
+      "topics": [
+        "Serien"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Folgen hat die komplette Serie „Breaking Bad“?",
+    "answer": 62,
+    "unit": "Folgen",
+    "explanation": "„Breaking Bad“ umfasst 62 Episoden.",
+    "subject_keys": [
+      "modern:series:breaking-bad"
+    ]
+  },
+  {
+    "id": "es146",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "Serien",
+    "tags": {
+      "topics": [
+        "Serien"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Folgen hat die komplette Serie „Game of Thrones“?",
+    "answer": 73,
+    "unit": "Folgen",
+    "explanation": "Die acht Staffeln umfassen insgesamt 73 Episoden.",
+    "subject_keys": [
+      "modern:series:game-of-thrones"
+    ]
+  },
+  {
+    "id": "es147",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "Serien",
+    "tags": {
+      "topics": [
+        "Serien"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Folgen hat die komplette Serie „Friends“?",
+    "answer": 236,
+    "unit": "Folgen",
+    "explanation": "„Friends“ kommt in zehn Staffeln auf 236 Episoden.",
+    "subject_keys": [
+      "modern:series:friends"
+    ]
+  },
+  {
+    "id": "es148",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "Serien",
+    "tags": {
+      "topics": [
+        "Serien"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Folgen hat die US-Serie „The Office“ insgesamt?",
+    "answer": 201,
+    "unit": "Folgen",
+    "explanation": "Die US-Version von „The Office“ umfasst 201 Episoden.",
+    "subject_keys": [
+      "modern:series:the-office"
+    ]
+  },
+  {
+    "id": "es149",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "Serien",
+    "tags": {
+      "topics": [
+        "Serien"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Episoden umfasst die Miniserie „Chernobyl“?",
+    "answer": 5,
+    "unit": "Episoden",
+    "explanation": "Die Miniserie besteht aus fünf Episoden.",
+    "subject_keys": [
+      "modern:series:chernobyl"
+    ]
+  },
+  {
+    "id": "es150",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "Serien",
+    "tags": {
+      "topics": [
+        "Serien"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "legacy_bank",
+      "references": []
+    },
+    "prompt": "Wie viele Episoden umfasst „Das Damengambit“?",
+    "answer": 7,
+    "unit": "Episoden",
+    "explanation": "Die Miniserie „Das Damengambit“ hat sieben Episoden.",
+    "subject_keys": [
+      "modern:series:queens-gambit"
+    ]
+  },
+  {
+    "id": "es151",
+    "question_type": "estimate",
+    "primary_category": "gaming",
+    "subtopic": "Geschichte & Meilensteine",
+    "tags": {
+      "topics": [
+        "Geschichte & Meilensteine"
+      ],
+      "entities": [
+        "Minecraft"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": [
+        "2000er"
+      ]
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Minecraft: About Minecraft",
+          "url": "https://www.minecraft.net/en-us/about-minecraft"
+        }
+      ]
+    },
+    "prompt": "In welchem Jahr erschien die erste spielbare PC-Version von Minecraft?",
+    "answer": 2009,
+    "explanation": "Die erste PC-Version erschien 2009; die Vollversion folgte 2011.",
+    "subject_keys": [
+      "topic:gaming:geschichte-und-meilensteine",
+      "entity:minecraft"
+    ],
+    "unit": "Jahr"
+  },
+  {
+    "id": "es152",
+    "question_type": "estimate",
+    "primary_category": "gaming",
+    "subtopic": "Konsolen & Hardware",
+    "tags": {
+      "topics": [
+        "Konsolen & Hardware"
+      ],
+      "entities": [
+        "Game Boy"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Nintendo: Game Boy hardware history",
+          "url": "https://www.nintendo.com/en-gb/Hardware/Nintendo-History/Game-Boy/Game-Boy-627031.html"
+        }
+      ]
+    },
+    "prompt": "Wie viele Pixel breit ist der Bildschirm des ursprünglichen Game Boy?",
+    "answer": 160,
+    "explanation": "Der Game-Boy-Bildschirm besitzt 160 Pixel in der Breite.",
+    "subject_keys": [
+      "topic:gaming:konsolen-und-hardware",
+      "entity:game boy"
+    ],
+    "unit": "Pixel"
+  },
+  {
+    "id": "es153",
+    "question_type": "estimate",
+    "primary_category": "gaming",
+    "subtopic": "Konsolen & Hardware",
+    "tags": {
+      "topics": [
+        "Konsolen & Hardware"
+      ],
+      "entities": [
+        "Game Boy"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Nintendo: Game Boy hardware history",
+          "url": "https://www.nintendo.com/en-gb/Hardware/Nintendo-History/Game-Boy/Game-Boy-627031.html"
+        }
+      ]
+    },
+    "prompt": "Wie viele Pixel hoch ist der Bildschirm des ursprünglichen Game Boy?",
+    "answer": 144,
+    "explanation": "Der Bildschirm ist 144 Pixel hoch.",
+    "subject_keys": [
+      "topic:gaming:konsolen-und-hardware",
+      "entity:game boy"
+    ],
+    "unit": "Pixel"
+  },
+  {
+    "id": "es154",
+    "question_type": "estimate",
+    "primary_category": "gaming",
+    "subtopic": "Konsolen & Hardware",
+    "tags": {
+      "topics": [
+        "Konsolen & Hardware"
+      ],
+      "entities": [
+        "Game Boy"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Nintendo: Game Boy hardware history",
+          "url": "https://www.nintendo.com/en-gb/Hardware/Nintendo-History/Game-Boy/Game-Boy-627031.html"
+        }
+      ]
+    },
+    "prompt": "Wie viele Stunden Batterielaufzeit nennt Nintendo ungefähr für den ursprünglichen Game Boy?",
+    "answer": 15,
+    "explanation": "Nintendo nennt ungefähr 15 Stunden mit vier AA-Batterien.",
+    "subject_keys": [
+      "topic:gaming:konsolen-und-hardware",
+      "entity:game boy"
+    ],
+    "unit": "Stunden"
+  },
+  {
+    "id": "es155",
+    "question_type": "estimate",
+    "primary_category": "gaming",
+    "subtopic": "Spielwelten & Figuren",
+    "tags": {
+      "topics": [
+        "Spielwelten & Figuren"
+      ],
+      "entities": [
+        "Triforce"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Nintendo: The Triforce",
+          "url": "https://www.nintendo.com/us/explore/characters/zelda/triforce/"
+        }
+      ]
+    },
+    "prompt": "Aus wie vielen Teilen besteht die Triforce in der Zelda-Reihe?",
+    "answer": 3,
+    "explanation": "Die Triforce besteht aus Kraft, Weisheit und Mut.",
+    "subject_keys": [
+      "topic:gaming:spielwelten-und-figuren",
+      "entity:triforce"
+    ],
+    "unit": "Teile"
+  },
+  {
+    "id": "es156",
+    "question_type": "estimate",
+    "primary_category": "gaming",
+    "subtopic": "Spielwelten & Figuren",
+    "tags": {
+      "topics": [
+        "Spielwelten & Figuren"
+      ],
+      "entities": [
+        "Link",
+        "Zelda",
+        "Ganondorf"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Nintendo: The Triforce",
+          "url": "https://www.nintendo.com/us/explore/characters/zelda/triforce/"
+        }
+      ]
+    },
+    "prompt": "Wie viele zentrale Figuren erhalten in Nintendos Triforce-Erklärung je einen Teil?",
+    "answer": 3,
+    "explanation": "Link, Zelda und Ganondorf erhalten jeweils einen Teil.",
+    "subject_keys": [
+      "topic:gaming:spielwelten-und-figuren",
+      "entity:link",
+      "entity:zelda",
+      "entity:ganondorf"
+    ],
+    "unit": "Figuren"
+  },
+  {
+    "id": "es157",
+    "question_type": "estimate",
+    "primary_category": "gaming",
+    "subtopic": "Spielmechanik & Begriffe",
+    "tags": {
+      "topics": [
+        "Spielmechanik & Begriffe"
+      ],
+      "entities": [
+        "Minecraft",
+        "Mobs"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Minecraft: Everything you need to know about mobs",
+          "url": "https://www.minecraft.net/en-us/article/minecraft-mobs"
+        }
+      ]
+    },
+    "prompt": "Wie viele grundlegende Verhaltenskategorien unterscheidet Minecraft bei Mobs?",
+    "answer": 3,
+    "explanation": "Die Kategorien sind passiv, neutral und feindlich.",
+    "subject_keys": [
+      "topic:gaming:spielmechanik-und-begriffe",
+      "entity:minecraft",
+      "entity:mobs"
+    ],
+    "unit": "Kategorien"
+  },
+  {
+    "id": "es158",
+    "question_type": "estimate",
+    "primary_category": "gaming",
+    "subtopic": "Spielmechanik & Begriffe",
+    "tags": {
+      "topics": [
+        "Spielmechanik & Begriffe"
+      ],
+      "entities": [
+        "Game Boy"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Nintendo: Game Boy hardware history",
+          "url": "https://www.nintendo.com/en-gb/Hardware/Nintendo-History/Game-Boy/Game-Boy-627031.html"
+        }
+      ]
+    },
+    "prompt": "Wie viele Graustufen konnte der ursprüngliche Game Boy darstellen?",
+    "answer": 4,
+    "explanation": "Das Display stellte vier Graustufen dar.",
+    "subject_keys": [
+      "topic:gaming:spielmechanik-und-begriffe",
+      "entity:game boy"
+    ],
+    "unit": "Graustufen"
+  },
+  {
+    "id": "es159",
+    "question_type": "estimate",
+    "primary_category": "gaming",
+    "subtopic": "Spielmechanik & Begriffe",
+    "tags": {
+      "topics": [
+        "Spielmechanik & Begriffe"
+      ],
+      "entities": [
+        "Nintendo Switch"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Nintendo: Switch launch",
+          "url": "https://www.nintendo.com/en-gb/News/2017/January/Nintendo-Switch-launches-on-3rd-March--1173122.html"
+        }
+      ]
+    },
+    "prompt": "Wie viele Spielmodi nennt Nintendo für die Switch: TV-, Tisch- und Handheld-Modus?",
+    "answer": 3,
+    "explanation": "Nintendo beschreibt TV-, Tisch- und Handheld-Modus.",
+    "subject_keys": [
+      "topic:gaming:spielmechanik-und-begriffe",
+      "entity:nintendo switch"
+    ],
+    "unit": "Spielmodi"
+  },
+  {
+    "id": "es160",
+    "question_type": "estimate",
+    "primary_category": "gaming",
+    "subtopic": "Spielmechanik & Begriffe",
+    "tags": {
+      "topics": [
+        "Spielmechanik & Begriffe"
+      ],
+      "entities": [
+        "Triforce"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Nintendo: The Triforce",
+          "url": "https://www.nintendo.com/us/explore/characters/zelda/triforce/"
+        }
+      ]
+    },
+    "prompt": "Wie viele heilige Eigenschaften verkörpern die drei Zelda-Triforce-Teile zusammen?",
+    "answer": 3,
+    "explanation": "Kraft, Weisheit und Mut bilden die drei Eigenschaften.",
+    "subject_keys": [
+      "topic:gaming:spielmechanik-und-begriffe",
+      "entity:triforce"
+    ],
+    "unit": "Eigenschaften"
+  },
+  {
+    "id": "es171",
+    "question_type": "estimate",
+    "primary_category": "music",
+    "subtopic": "Rock",
+    "tags": {
+      "topics": [
+        "Rock"
+      ],
+      "entities": [
+        "Oasis",
+        "Definitely Maybe"
+      ],
+      "genres": [
+        "Rock"
+      ],
+      "regions": [
+        "Großbritannien"
+      ],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Rock & Roll Hall of Fame: Oasis",
+          "url": "https://rockhall.com/inductees/oasis/"
+        }
+      ]
+    },
+    "prompt": "In welchem Jahr erschien Oasis' Debütalbum „Definitely Maybe“?",
+    "answer": 1994,
+    "explanation": "Das Album erschien 1994.",
+    "subject_keys": [
+      "topic:music:rock",
+      "entity:oasis",
+      "entity:definitely maybe"
+    ],
+    "unit": "Jahr"
+  },
+  {
+    "id": "es172",
+    "question_type": "estimate",
+    "primary_category": "music",
+    "subtopic": "Rock",
+    "tags": {
+      "topics": [
+        "Rock"
+      ],
+      "entities": [
+        "Nirvana",
+        "Rock & Roll Hall of Fame"
+      ],
+      "genres": [
+        "Rock",
+        "Grunge"
+      ],
+      "regions": [
+        "USA"
+      ],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Rock & Roll Hall of Fame: Inductee classes",
+          "url": "https://rockhall.com/inductees/classes/"
+        }
+      ]
+    },
+    "prompt": "Wie viele Jahre lagen zwischen der ersten Hall-of-Fame-Klasse von 1986 und Nirvanas Aufnahme 2014?",
+    "answer": 28,
+    "explanation": "Von 1986 bis 2014 sind es 28 Jahre.",
+    "subject_keys": [
+      "topic:music:rock",
+      "entity:nirvana",
+      "entity:rock & roll hall of fame"
+    ],
+    "unit": "Jahre"
+  },
+  {
+    "id": "es173",
+    "question_type": "estimate",
+    "primary_category": "music",
+    "subtopic": "Deutsche Musikgeschichte",
+    "tags": {
+      "topics": [
+        "Deutsche Musikgeschichte"
+      ],
+      "entities": [
+        "Kraftwerk"
+      ],
+      "genres": [],
+      "regions": [
+        "Deutschland"
+      ],
+      "eras": [
+        "1970er"
+      ]
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Deutsche Welle: Four decades of German electronic music",
+          "url": "https://www.dw.com/en/machine-music-four-decades-of-german-electronic-and-dance-music/a-6151880"
+        }
+      ]
+    },
+    "prompt": "In welchem Jahr wurde Kraftwerk gegründet?",
+    "answer": 1970,
+    "explanation": "Kraftwerk wurde 1970 in Düsseldorf gegründet.",
+    "subject_keys": [
+      "topic:music:deutsche-musikgeschichte",
+      "entity:kraftwerk"
+    ],
+    "unit": "Jahr"
+  },
+  {
+    "id": "es174",
+    "question_type": "estimate",
+    "primary_category": "music",
+    "subtopic": "Deutsche Musikgeschichte",
+    "tags": {
+      "topics": [
+        "Deutsche Musikgeschichte"
+      ],
+      "entities": [
+        "Nena",
+        "99 Luftballons"
+      ],
+      "genres": [],
+      "regions": [
+        "Deutschland"
+      ],
+      "eras": [
+        "1980er"
+      ]
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Goethe-Institut: Neue Deutsche Welle",
+          "url": "https://www.goethe.de/ins/sk/de/m/kul/sup/deu/ndw.html"
+        }
+      ]
+    },
+    "prompt": "In welchem Jahr erschien Nenas „99 Luftballons“?",
+    "answer": 1983,
+    "explanation": "Der Song erschien 1983.",
+    "subject_keys": [
+      "topic:music:deutsche-musikgeschichte",
+      "entity:nena",
+      "entity:99 luftballons"
+    ],
+    "unit": "Jahr"
+  },
+  {
+    "id": "es175",
+    "question_type": "estimate",
+    "primary_category": "music",
+    "subtopic": "Klassische Musik",
+    "tags": {
+      "topics": [
+        "Klassische Musik"
+      ],
+      "entities": [
+        "Ludwig van Beethoven"
+      ],
+      "genres": [
+        "Klassische Musik"
+      ],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Ludwig van Beethoven",
+          "url": "https://www.britannica.com/biography/Ludwig-van-Beethoven"
+        }
+      ]
+    },
+    "prompt": "Wie viele nummerierte Sinfonien vollendete Beethoven?",
+    "answer": 9,
+    "explanation": "Beethoven vollendete neun nummerierte Sinfonien.",
+    "subject_keys": [
+      "topic:music:klassische-musik",
+      "entity:ludwig van beethoven"
+    ],
+    "unit": "Sinfonien"
+  },
+  {
+    "id": "es176",
+    "question_type": "estimate",
+    "primary_category": "music",
+    "subtopic": "Klassische Musik",
+    "tags": {
+      "topics": [
+        "Klassische Musik"
+      ],
+      "entities": [
+        "Antonio Vivaldi",
+        "Die vier Jahreszeiten"
+      ],
+      "genres": [
+        "Barock"
+      ],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: The Four Seasons",
+          "url": "https://www.britannica.com/topic/The-Four-Seasons-by-Vivaldi"
+        }
+      ]
+    },
+    "prompt": "Aus wie vielen Violinkonzerten besteht Vivaldis Zyklus „Die vier Jahreszeiten“?",
+    "answer": 4,
+    "explanation": "Jede der vier Jahreszeiten besitzt ein eigenes Konzert.",
+    "subject_keys": [
+      "topic:music:klassische-musik",
+      "entity:antonio vivaldi",
+      "entity:die vier jahreszeiten"
+    ],
+    "unit": "Konzerte"
+  },
+  {
+    "id": "es177",
+    "question_type": "estimate",
+    "primary_category": "music",
+    "subtopic": "Instrumente & Musiktheorie",
+    "tags": {
+      "topics": [
+        "Instrumente & Musiktheorie"
+      ],
+      "entities": [
+        "Violine"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Violin",
+          "url": "https://www.britannica.com/art/violin"
+        }
+      ]
+    },
+    "prompt": "Wie viele Saiten besitzt eine Standardvioline?",
+    "answer": 4,
+    "explanation": "Eine Standardvioline hat vier Saiten.",
+    "subject_keys": [
+      "topic:music:instrumente-und-musiktheorie",
+      "entity:violine"
+    ],
+    "unit": "Saiten"
+  },
+  {
+    "id": "es178",
+    "question_type": "estimate",
+    "primary_category": "music",
+    "subtopic": "Instrumente & Musiktheorie",
+    "tags": {
+      "topics": [
+        "Instrumente & Musiktheorie"
+      ],
+      "entities": [
+        "Oktave"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-04",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Octave",
+          "url": "https://www.britannica.com/art/octave-music"
+        }
+      ]
+    },
+    "prompt": "Wie viele gleich große Halbtonschritte umfasst eine Oktave im westlichen chromatischen Tonsystem?",
+    "answer": 12,
+    "explanation": "Die Oktave wird chromatisch in zwölf Halbtonschritte geteilt.",
+    "subject_keys": [
+      "topic:music:instrumente-und-musiktheorie",
+      "entity:oktave"
+    ],
+    "unit": "Halbtonschritte"
+  },
+  {
+    "id": "es179",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Raumfahrt & Astronomie",
+    "tags": {
+      "topics": [
+        "Raumfahrt & Astronomie"
+      ],
+      "entities": [
+        "Internationale Raumstation (ISS)"
+      ],
+      "genres": [],
+      "regions": [
+        "Weltraum"
+      ],
+      "eras": []
+    },
+    "prompt": "Wie groß ist die Spannweite der Solaranlagen der ISS ungefähr?",
+    "answer": 109,
+    "unit": "Meter",
+    "explanation": "Die NASA gibt die Spannweite mit 356 Fuß beziehungsweise 109 Metern an. Der metrische Wert wird von der Quelle auf ganze Meter angegeben. Damit übertrifft die ISS sogar die dort zum Vergleich genannten 80 Meter Spannweite eines Airbus A380.",
+    "subject_keys": [
+      "topic:science_technology:raumfahrt-und-astronomie",
+      "entity:internationale raumstation",
+      "fact:iss:spannweite-solaranlagen"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-07",
+      "references": [
+        {
+          "title": "NASA: International Space Station Facts and Figures",
+          "url": "https://www.nasa.gov/international-space-station/space-station-facts-and-figures/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es180",
+    "question_type": "estimate",
+    "primary_category": "plants_animals",
+    "subtopic": "Pflanzen & Ökologie",
+    "tags": {
+      "topics": [
+        "Pflanzen & Ökologie"
+      ],
+      "entities": [
+        "Bäume",
+        "Erde"
+      ],
+      "genres": [],
+      "regions": [
+        "Weltweit"
+      ],
+      "eras": [
+        "2015"
+      ]
+    },
+    "prompt": "Wie viele Bäume gibt es laut einer Nature-Studie von 2015 weltweit ungefähr?",
+    "answer": 3040000000000,
+    "unit": "Bäume",
+    "explanation": "Die Studie kam auf ungefähr 3,04 Billionen Bäume. Als Baum galten Gehölze mit einem Stammdurchmesser von mindestens zehn Zentimetern auf Brusthöhe. Grundlage waren 429.775 Messungen der Baumdichte, kombiniert mit Satelliten- und Umweltdaten.",
+    "subject_keys": [
+      "topic:plants_animals:pflanzen-und-oekologie",
+      "entity:bäume",
+      "fact:globaler-baumbestand-2015"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-07",
+      "references": [
+        {
+          "title": "Nature: Mapping tree density at a global scale",
+          "url": "https://www.nature.com/articles/nature14967"
+        },
+        {
+          "title": "NASA Terra: Terra Helps See Earth’s 3 Trillion Trees",
+          "url": "https://terra.nasa.gov/news/terra-helps-see-earths-3-trillion-trees-2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es181",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Genetik & Zellbiologie",
+    "tags": {
+      "topics": [
+        "Genetik & Zellbiologie"
+      ],
+      "entities": [
+        "DNA",
+        "menschliche Zelle"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie lang ist die DNA einer menschlichen Körperzelle ungefähr, wenn man sie vollständig ausstreckt?",
+    "answer": 2000,
+    "unit": "Millimeter",
+    "explanation": "Das Europäische Laboratorium für Molekularbiologie gibt die Gesamtlänge der DNA mit ungefähr zwei Metern an. Das entspricht 2.000 Millimetern, die in einem Zellkern von nur etwa 0,005 bis 0,01 Millimetern Durchmesser Platz finden. Der Referenzwert ist eine von der Quelle ausdrücklich als Näherungswert angegebene Zahl.",
+    "subject_keys": [
+      "topic:science_technology:genetik-und-zellbiologie",
+      "entity:dna",
+      "entity:menschliche zelle"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-07",
+      "references": [
+        {
+          "title": "EMBL: Reshaping our DNA",
+          "url": "https://www.embl.org/news/picture-of-the-week/potw1951/"
+        },
+        {
+          "title": "National Human Genome Research Institute: Introduction to Genomics",
+          "url": "https://www.genome.gov/About-Genomics/Introduction-to-Genomics"
+        },
+        {
+          "title": "EMBL: Understanding chromosome organisation",
+          "url": "https://www.embl.org/news/science/understanding-chromosome-organisation/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es182",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "LEGO & Film-Franchises",
+    "tags": {
+      "topics": [
+        "LEGO & Film-Franchises"
+      ],
+      "entities": [
+        "LEGO",
+        "Millennium Falke",
+        "Star Wars"
+      ],
+      "genres": [
+        "Science-Fiction"
+      ],
+      "regions": [],
+      "eras": [
+        "2017"
+      ]
+    },
+    "prompt": "Wie viele Teile hat das LEGO-Set „Millennium Falcon“ 75192 aus dem Jahr 2017?",
+    "answer": 7541,
+    "unit": "Teile",
+    "explanation": "Der offizielle LEGO-Bauanleitungseintrag nennt exakt 7.541 Teile. In der allgemeinen Produktbeschreibung rundet LEGO die Anzahl stellenweise auf 7.500 ab; als Referenzwert wird deshalb die präzise Stückzahl aus dem Bauanleitungsverzeichnis verwendet.",
+    "subject_keys": [
+      "topic:media_entertainment:lego-und-film-franchises",
+      "entity:lego",
+      "entity:millennium falke",
+      "entity:star wars",
+      "product:lego:75192"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-07",
+      "references": [
+        {
+          "title": "LEGO: Bauanleitung für den Millennium Falcon 75192",
+          "url": "https://www.lego.com/en-us/service/building-instructions/75192"
+        },
+        {
+          "title": "LEGO Deutschland: Millennium Falke 75192",
+          "url": "https://www.lego.com/de-de/product/millennium-falcon-75192"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es183",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Computer- & Mikrochipgeschichte",
+    "tags": {
+      "topics": [
+        "Computer- & Mikrochipgeschichte"
+      ],
+      "entities": [
+        "Intel",
+        "Intel 4004"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": [
+        "1971"
+      ]
+    },
+    "prompt": "Wie viele Transistoren enthielt Intels 1971 vorgestellter Mikroprozessor 4004?",
+    "answer": 2300,
+    "unit": "Transistoren",
+    "explanation": "Intels technische Dokumentation nennt exakt 2.300 Transistoren. Der 4004 arbeitete mit einer anfänglichen Taktfrequenz von 108 Kilohertz und wurde in einer Strukturbreite von zehn Mikrometern gefertigt.",
+    "subject_keys": [
+      "topic:science_technology:computer-und-mikrochipgeschichte",
+      "entity:intel",
+      "entity:intel 4004"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-07",
+      "references": [
+        {
+          "title": "Intel: Transistors to Transformations",
+          "url": "https://www.intel.com/content/dam/www/public/us/en/documents/corporate-information/museum-transistors-to-transformations-brochure.pdf"
+        },
+        {
+          "title": "Intel: The First Programmable Microprocessor – The 4004",
+          "url": "https://timeline.intel.com/1971/the-first-programmable-microprocessor%3A-the-4004"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es184",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Politik & Demokratie",
+    "tags": {
+      "topics": ["Politik", "Demokratie", "Bundestagswahlen"],
+      "entities": ["Deutscher Bundestag", "Bundestagswahl 2025"],
+      "genres": [],
+      "regions": ["Deutschland"],
+      "eras": ["2025"]
+    },
+    "prompt": "Wie viele Abgeordnete wurden bei der Bundestagswahl 2025 in den 21. Deutschen Bundestag gewählt?",
+    "answer": 630,
+    "unit": "Abgeordnete",
+    "explanation": "Nach dem endgültigen Wahlergebnis umfasst der 21. Deutsche Bundestag 630 Abgeordnete. Der 2021 gewählte Bundestag hatte 735 Mitglieder – also 105 mehr.",
+    "subject_keys": ["topic:witnesses_of_time:politik-und-demokratie", "entity:deutscher-bundestag", "entity:bundestagswahl-2025"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Bundeswahlleiterin: Endgültiges Ergebnis der Bundestagswahl 2025",
+          "url": "https://bundeswahlleiterin.de/info/presse/mitteilungen/bundestagswahl-2025/29_25_endgueltiges-ergebnis.html"
+        },
+        {
+          "title": "Deutscher Bundestag: Endgültiges Ergebnis der Bundestagswahl festgestellt",
+          "url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw11-bundeswahlausschuss-1056272"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es185",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Internationale Organisationen",
+    "tags": {
+      "topics": ["Internationale Organisationen", "Weltpolitik"],
+      "entities": ["Vereinte Nationen"],
+      "genres": [],
+      "regions": ["Weltweit"],
+      "eras": ["2026"]
+    },
+    "prompt": "Wie viele Mitgliedstaaten haben die Vereinten Nationen im Oktober 2026?",
+    "answer": 193,
+    "unit": "Mitgliedstaaten",
+    "explanation": "Die Vereinten Nationen bestehen im Oktober 2026 aus 193 Mitgliedstaaten. Bei ihrer Gründung 1945 waren es 51.",
+    "subject_keys": ["topic:geography_world:internationale-organisationen", "entity:vereinte-nationen"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "United Nations: About Us",
+          "url": "https://www.un.org/en/about-us"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es186",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Europäische Union",
+    "tags": {
+      "topics": ["Europäische Union", "Parlamente"],
+      "entities": ["Europäisches Parlament"],
+      "genres": [],
+      "regions": ["Europäische Union"],
+      "eras": ["2024–2029"]
+    },
+    "prompt": "Wie viele Sitze hat das Europäische Parlament in der Wahlperiode 2024 bis 2029?",
+    "answer": 720,
+    "unit": "Sitze",
+    "explanation": "Für die Wahlperiode 2024 bis 2029 hat das Europäische Parlament 720 Sitze. Das sind 15 mehr als am Ende der vorherigen Wahlperiode.",
+    "subject_keys": ["topic:geography_world:europaeische-union", "entity:europaeisches-parlament"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Europäisches Parlament: Facts and figures for the 2024–2029 term",
+          "url": "https://www.europarl.europa.eu/topics/en/article/20190705STO56305/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es187",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Europäische Symbole",
+    "tags": {
+      "topics": ["Europäische Union", "Flaggen", "Symbole"],
+      "entities": ["Europaflagge"],
+      "genres": [],
+      "regions": ["Europa"],
+      "eras": []
+    },
+    "prompt": "Wie viele goldene Sterne zeigt die Europaflagge?",
+    "answer": 12,
+    "unit": "Sterne",
+    "explanation": "Die Europaflagge zeigt zwölf goldene Sterne im Kreis. Ihre Zahl steht nicht für die Anzahl der EU-Mitgliedstaaten, sondern symbolisiert Einheit und Harmonie.",
+    "subject_keys": ["topic:geography_world:europaeische-symbole", "entity:europaflagge"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "European Union: EU flag",
+          "url": "https://european-union.europa.eu/principles-countries-history/symbols/european-flag_en"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es188",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Chemie",
+    "tags": {
+      "topics": ["Chemie", "Periodensystem"],
+      "entities": ["IUPAC"],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele chemische Elemente umfasst das von der IUPAC anerkannte Periodensystem?",
+    "answer": 118,
+    "unit": "Elemente",
+    "explanation": "Das anerkannte Periodensystem umfasst 118 chemische Elemente. Es reicht von Wasserstoff mit der Ordnungszahl 1 bis Oganesson mit der Ordnungszahl 118.",
+    "subject_keys": ["topic:science_technology:chemie", "entity:periodensystem", "entity:iupac"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "IUPAC: Periodic Table of the Elements and Isotopes",
+          "url": "https://iupac.org/iptei/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es189",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Genetik",
+    "tags": {
+      "topics": ["Genetik", "Menschlicher Körper"],
+      "entities": ["Chromosomen", "Mensch"],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Chromosomen enthält eine typische menschliche Körperzelle?",
+    "answer": 46,
+    "unit": "Chromosomen",
+    "explanation": "Die meisten menschlichen Körperzellen enthalten 23 Chromosomenpaare und damit insgesamt 46 Chromosomen. Ei- und Samenzellen besitzen dagegen nur einen einfachen Satz mit 23.",
+    "subject_keys": ["topic:science_technology:genetik", "entity:menschliche-chromosomen"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "National Human Genome Research Institute: Diploid",
+          "url": "https://www.genome.gov/genetics-glossary/Diploid"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es190",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Raumfahrtgeschichte",
+    "tags": {
+      "topics": ["Raumfahrt", "Space Shuttle"],
+      "entities": ["NASA", "Space Shuttle"],
+      "genres": [],
+      "regions": ["USA"],
+      "eras": ["1981–2011"]
+    },
+    "prompt": "Wie viele Missionen flog die Space-Shuttle-Flotte der NASA insgesamt?",
+    "answer": 135,
+    "unit": "Missionen",
+    "explanation": "Zwischen dem ersten Start 1981 und der letzten Landung 2011 absolvierte die Space-Shuttle-Flotte der NASA insgesamt 135 Missionen.",
+    "subject_keys": ["topic:science_technology:raumfahrtgeschichte", "entity:nasa", "entity:space-shuttle"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "NASA: Space Shuttle",
+          "url": "https://www.nasa.gov/space-shuttle/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es191",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Mondmissionen",
+    "tags": {
+      "topics": ["Raumfahrt", "Mondlandungen"],
+      "entities": ["NASA", "Apollo-Programm", "Mond"],
+      "genres": [],
+      "regions": ["Mond"],
+      "eras": ["1969–1972"]
+    },
+    "prompt": "Wie viele Menschen haben bislang den Mond betreten?",
+    "answer": 12,
+    "unit": "Menschen",
+    "explanation": "Zwölf Menschen betraten zwischen 1969 und 1972 die Mondoberfläche. Sie gehörten zu den Apollo-Missionen 11, 12, 14, 15, 16 und 17.",
+    "subject_keys": ["topic:science_technology:mondmissionen", "entity:apollo-programm", "entity:mond"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "NASA Science: Moonwalkers",
+          "url": "https://science.nasa.gov/moon/moon-walkers/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es192",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Weltraumteleskope",
+    "tags": {
+      "topics": ["Astronomie", "Weltraumteleskope"],
+      "entities": ["James-Webb-Weltraumteleskop", "NASA"],
+      "genres": [],
+      "regions": ["Weltraum"],
+      "eras": []
+    },
+    "prompt": "Aus wie vielen sechseckigen Segmenten besteht der Hauptspiegel des James-Webb-Weltraumteleskops?",
+    "answer": 18,
+    "unit": "Spiegelsegmente",
+    "explanation": "Der Hauptspiegel des James-Webb-Weltraumteleskops besteht aus 18 sechseckigen Segmenten. Im Betrieb werden sie so ausgerichtet, dass sie wie ein einziger großer Spiegel arbeiten.",
+    "subject_keys": ["topic:science_technology:weltraumteleskope", "entity:james-webb-weltraumteleskop", "entity:nasa"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "NASA Science: Webb's Mirrors",
+          "url": "https://science.nasa.gov/mission/webb/webbs-mirrors/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es193",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Teilchenphysik",
+    "tags": {
+      "topics": ["Teilchenphysik", "Forschungsanlagen"],
+      "entities": ["CERN", "Large Hadron Collider"],
+      "genres": [],
+      "regions": ["Frankreich", "Schweiz"],
+      "eras": []
+    },
+    "prompt": "Wie viele Kilometer Umfang hat der Teilchenbeschleuniger Large Hadron Collider am CERN?",
+    "answer": 26.659,
+    "unit": "Kilometer",
+    "explanation": "Der Large Hadron Collider verläuft in einem Ring mit 26.659 Metern Umfang. Das entspricht 26,659 Kilometern unter der französisch-schweizerischen Grenzregion.",
+    "subject_keys": ["topic:science_technology:teilchenphysik", "entity:cern", "entity:large-hadron-collider"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "CERN: Large Hadron Collider",
+          "url": "https://home.cern/science/accelerators/large-hadron-collider/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es194",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Seen & Gewässer",
+    "tags": {
+      "topics": ["Seen", "Naturrekorde"],
+      "entities": ["Baikalsee", "UNESCO"],
+      "genres": [],
+      "regions": ["Russland", "Sibirien"],
+      "eras": []
+    },
+    "prompt": "Wie tief ist der Baikalsee laut UNESCO ungefähr?",
+    "answer": 1700,
+    "unit": "Meter",
+    "explanation": "Die UNESCO gibt die Tiefe des Baikalsees mit rund 1.700 Metern an. Damit ist er der tiefste See der Erde und enthält etwa ein Fünftel des nicht gefrorenen Oberflächen-Süßwassers.",
+    "subject_keys": ["topic:geography_world:seen-und-gewaesser", "entity:baikalsee", "entity:unesco"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "UNESCO World Heritage Centre: Lake Baikal",
+          "url": "https://whc.unesco.org/en/list/754"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es195",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Wasserfälle",
+    "tags": {
+      "topics": ["Wasserfälle", "Naturrekorde"],
+      "entities": ["Victoriafälle", "Sambesi"],
+      "genres": [],
+      "regions": ["Sambia", "Simbabwe"],
+      "eras": []
+    },
+    "prompt": "Wie viele Meter breit sind die Victoriafälle am Sambesi laut UNESCO?",
+    "answer": 1708,
+    "unit": "Meter",
+    "explanation": "Die Victoriafälle erstrecken sich über 1.708 Meter. Die UNESCO bezeichnet sie wegen dieser Breite und der Wassermenge als größten zusammenhängenden Wasservorhang der Welt.",
+    "subject_keys": ["topic:geography_world:wasserfaelle", "entity:victoriafaelle", "entity:sambesi"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "UNESCO World Heritage Centre: Mosi-oa-Tunya / Victoria Falls",
+          "url": "https://whc.unesco.org/en/list/509"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es196",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Meere & Riffe",
+    "tags": {
+      "topics": ["Korallenriffe", "Meere"],
+      "entities": ["Great Barrier Reef"],
+      "genres": [],
+      "regions": ["Australien", "Queensland"],
+      "eras": []
+    },
+    "prompt": "Über wie viele Kilometer erstreckt sich das Great Barrier Reef ungefähr entlang Australiens Nordostküste?",
+    "answer": 2300,
+    "unit": "Kilometer",
+    "explanation": "Das Great Barrier Reef erstreckt sich über ungefähr 2.300 Kilometer entlang der Küste von Queensland. Es ist das größte Korallenriff-Ökosystem der Erde.",
+    "subject_keys": ["topic:geography_world:meere-und-riffe", "entity:great-barrier-reef", "region:queensland"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Great Barrier Reef Marine Park Authority: Our story",
+          "url": "https://www.gbrmpa.gov.au/about-us/our-story"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es197",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Kanäle & Wasserwege",
+    "tags": {
+      "topics": ["Kanäle", "Schifffahrt"],
+      "entities": ["Panamakanal"],
+      "genres": [],
+      "regions": ["Panama"],
+      "eras": []
+    },
+    "prompt": "Wie lang ist der Panamakanal zwischen Atlantik und Pazifik ungefähr?",
+    "answer": 80,
+    "unit": "Kilometer",
+    "explanation": "Die Panamakanal-Behörde gibt die Strecke zwischen Atlantik und Pazifik mit ungefähr 80 Kilometern an. Eine Durchfahrt dauert im Mittel acht bis zehn Stunden.",
+    "subject_keys": ["topic:geography_world:kanaele-und-wasserwege", "entity:panamakanal", "region:panama"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Panama Canal Authority: History of the Panama Canal",
+          "url": "https://pancanal.com/en/history-of-the-panama-canal/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es198",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Tunnel & Ingenieurbau",
+    "tags": {
+      "topics": ["Tunnelbau", "Eisenbahn"],
+      "entities": ["Eurotunnel", "Ärmelkanal"],
+      "genres": [],
+      "regions": ["Frankreich", "Vereinigtes Königreich"],
+      "eras": []
+    },
+    "prompt": "Wie lang ist der Eisenbahntunnel unter dem Ärmelkanal insgesamt?",
+    "answer": 50.45,
+    "unit": "Kilometer",
+    "explanation": "Der Kanaltunnel zwischen Frankreich und Großbritannien ist 50,45 Kilometer lang. Er besteht aus zwei Eisenbahnröhren und einem Servicetunnel.",
+    "subject_keys": ["topic:science_technology:tunnel-und-ingenieurbau", "entity:eurotunnel", "entity:aermelkanal"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Eurostar: The Channel Tunnel",
+          "url": "https://www.eurostar.com/uk-en/travel-info/eurostar-experience/the-channel-tunnel"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es199",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Tunnel & Ingenieurbau",
+    "tags": {
+      "topics": ["Tunnelbau", "Eisenbahn"],
+      "entities": ["Gotthard-Basistunnel", "SBB"],
+      "genres": [],
+      "regions": ["Schweiz"],
+      "eras": []
+    },
+    "prompt": "Wie lang ist der Gotthard-Basistunnel ungefähr?",
+    "answer": 57,
+    "unit": "Kilometer",
+    "explanation": "Der Gotthard-Basistunnel ist rund 57 Kilometer lang. Die SBB führt ihn als längsten Eisenbahntunnel der Welt.",
+    "subject_keys": ["topic:science_technology:tunnel-und-ingenieurbau", "entity:gotthard-basistunnel", "entity:sbb"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "SBB: Langintervalle für die Erhaltung im Gotthard-Basistunnel",
+          "url": "https://company.sbb.ch/de/bahnentwicklung/projekte/tessin/langintervalle.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es200",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Historische Kunstwerke",
+    "tags": {
+      "topics": ["Mittelalter", "Textilkunst"],
+      "entities": ["Teppich von Bayeux"],
+      "genres": ["Stickerei"],
+      "regions": ["Frankreich", "England"],
+      "eras": ["11. Jahrhundert"]
+    },
+    "prompt": "Wie lang ist der Teppich von Bayeux ungefähr?",
+    "answer": 68.3,
+    "unit": "Meter",
+    "explanation": "Der sogenannte Teppich von Bayeux ist tatsächlich eine bestickte Leinenbahn von ungefähr 68,3 Metern Länge. Sie erzählt die Geschichte der normannischen Eroberung Englands.",
+    "subject_keys": ["topic:witnesses_of_time:historische-kunstwerke", "entity:teppich-von-bayeux"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Bayeux Museum: The Bayeux Tapestry is an embroidery",
+          "url": "https://www.bayeuxmuseum.com/en/the-bayeux-tapestry/discover-the-bayeux-tapestry/tapestry-or-embroidery/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es201",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Archäologische Funde",
+    "tags": {
+      "topics": ["Archäologie", "Altes Ägypten"],
+      "entities": ["Stein von Rosetta", "British Museum"],
+      "genres": [],
+      "regions": ["Ägypten", "Vereinigtes Königreich"],
+      "eras": ["196 v. Chr."]
+    },
+    "prompt": "Wie hoch ist der erhaltene Stein von Rosetta?",
+    "answer": 112.3,
+    "unit": "Zentimeter",
+    "explanation": "Der erhaltene Stein von Rosetta misst maximal 112,3 Zentimeter. Seine dreisprachige Inschrift lieferte den entscheidenden Schlüssel zur Entzifferung ägyptischer Hieroglyphen.",
+    "subject_keys": ["topic:witnesses_of_time:archaeologische-funde", "entity:stein-von-rosetta", "entity:british-museum"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "British Museum: The Rosetta Stone – Collection object EA24",
+          "url": "https://www.britishmuseum.org/collection/object/Y_EA24"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es202",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Rechtsgeschichte",
+    "tags": {
+      "topics": ["Rechtsgeschichte", "Mittelalter"],
+      "entities": ["Magna Carta"],
+      "genres": [],
+      "regions": ["England"],
+      "eras": ["1215"]
+    },
+    "prompt": "In wie viele Klauseln wird die Magna Carta von 1215 heute gegliedert?",
+    "answer": 63,
+    "unit": "Klauseln",
+    "explanation": "Die Magna Carta von 1215 wird heute in 63 Klauseln gegliedert. Das ursprüngliche Dokument war allerdings als fortlaufender Text ohne diese moderne Nummerierung geschrieben.",
+    "subject_keys": ["topic:witnesses_of_time:rechtsgeschichte", "entity:magna-carta"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "UK Parliament: The contents of Magna Carta",
+          "url": "https://www.parliament.uk/about/living-heritage/evolutionofparliament/originsofparliament/birthofparliament/overview/magnacarta/magnacartaclauses/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es203",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Schifffahrtsgeschichte",
+    "tags": {
+      "topics": ["Schifffahrt", "Katastrophen"],
+      "entities": ["RMS Titanic"],
+      "genres": [],
+      "regions": ["Nordatlantik"],
+      "eras": ["1912"]
+    },
+    "prompt": "Wie viele Rettungsboote führte die Titanic auf ihrer Jungfernfahrt mit?",
+    "answer": 20,
+    "unit": "Rettungsboote",
+    "explanation": "Die Titanic war mit 20 Rettungsbooten ausgerüstet. Zusammen boten sie nur ungefähr 1.178 Plätze und damit deutlich weniger als für alle Menschen an Bord nötig gewesen wären.",
+    "subject_keys": ["topic:witnesses_of_time:schifffahrtsgeschichte", "entity:rms-titanic", "topic:rettungsboote"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Royal Museums Greenwich: RMS Titanic facts",
+          "url": "https://www.rmg.co.uk/stories/topics/rms-titanic-facts"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es204",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Archäologische Stätten",
+    "tags": {
+      "topics": ["Archäologie", "Römisches Reich"],
+      "entities": ["Pompeji", "UNESCO"],
+      "genres": [],
+      "regions": ["Italien"],
+      "eras": ["79 n. Chr."]
+    },
+    "prompt": "Wie viele Hektar der antiken Stadt Pompeji sind laut UNESCO ausgegraben?",
+    "answer": 44,
+    "unit": "Hektar",
+    "explanation": "Die UNESCO beziffert die ausgegrabene Fläche von Pompeji auf 44 Hektar. Die gesamte antike Stadt erstreckte sich über ungefähr 66 Hektar.",
+    "subject_keys": ["topic:witnesses_of_time:archaeologische-staetten", "entity:pompeji", "entity:unesco"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "UNESCO World Heritage Centre: Archaeological Areas of Pompeii, Herculaneum and Torre Annunziata",
+          "url": "https://whc.unesco.org/en/list/829/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es205",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "Film & Auszeichnungen",
+    "tags": {
+      "topics": ["Film", "Oscarverleihung"],
+      "entities": ["Der Herr der Ringe: Die Rückkehr des Königs", "Academy Awards"],
+      "genres": ["Fantasyfilm"],
+      "regions": ["USA"],
+      "eras": ["2004"]
+    },
+    "prompt": "Wie viele Oscars gewann „Der Herr der Ringe: Die Rückkehr des Königs“?",
+    "answer": 11,
+    "unit": "Oscars",
+    "explanation": "Der Film war 2004 für elf Oscars nominiert und gewann in sämtlichen elf Kategorien. Dazu gehörten Bester Film, Regie und adaptiertes Drehbuch.",
+    "subject_keys": ["topic:media_entertainment:film-und-auszeichnungen", "entity:der-herr-der-ringe-die-rueckkehr-des-koenigs", "entity:academy-awards"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Oscars.org: The 76th Academy Awards – Memorable Moments",
+          "url": "https://www.oscars.org/oscars/ceremonies/2004/memorable-moments"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es206",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "Filmreihen",
+    "tags": {
+      "topics": ["Filmreihen", "Agentenfilme"],
+      "entities": ["James Bond", "Eon Productions"],
+      "genres": ["Agentenfilm"],
+      "regions": ["Vereinigtes Königreich"],
+      "eras": ["1962–2021"]
+    },
+    "prompt": "Wie viele offizielle James-Bond-Filme produzierte Eon Productions bis einschließlich „Keine Zeit zu sterben“?",
+    "answer": 25,
+    "unit": "Filme",
+    "explanation": "„Keine Zeit zu sterben“ ist der 25. James-Bond-Film von Eon Productions. Die Reihe begann 1962 mit „James Bond jagt Dr. No“.",
+    "subject_keys": ["topic:media_entertainment:filmreihen", "entity:james-bond", "entity:eon-productions"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "007.com: Number Games – The 25 EON Bond Films",
+          "url": "https://www.007.com/wp-content/uploads/2021/12/Bond_Quiz_2021_V13.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es207",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "Comedyserien",
+    "tags": {
+      "topics": ["Fernsehserien", "Sketch-Comedy"],
+      "entities": ["Monty Python", "Monty Python’s Flying Circus"],
+      "genres": ["Comedy"],
+      "regions": ["Vereinigtes Königreich"],
+      "eras": ["1969–1974"]
+    },
+    "prompt": "Wie viele Folgen umfasst die komplette Serie „Monty Python’s Flying Circus“?",
+    "answer": 45,
+    "unit": "Folgen",
+    "explanation": "„Monty Python’s Flying Circus“ umfasst insgesamt 45 Folgen aus vier Staffeln. Die BBC strahlte sie von 1969 bis 1974 aus.",
+    "subject_keys": ["topic:media_entertainment:comedyserien", "entity:monty-python", "entity:monty-pythons-flying-circus"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Monty Python Official Site: The Pythons",
+          "url": "https://www.montypython.com/python_the_pythons/14"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es208",
+    "question_type": "estimate",
+    "primary_category": "gaming",
+    "subtopic": "Pokémon",
+    "tags": {
+      "topics": ["Videospiele", "Pokédex"],
+      "entities": ["Pokémon", "Kanto"],
+      "genres": ["Rollenspiel"],
+      "regions": ["Japan"],
+      "eras": ["1996"]
+    },
+    "prompt": "Wie viele Pokémon gehörten zur ursprünglichen ersten Generation aus der Kanto-Region?",
+    "answer": 151,
+    "unit": "Pokémon",
+    "explanation": "Zur ursprünglichen Kanto-Generation gehören 151 Pokémon. Im Pokédex reicht sie von Bisasam mit Nummer 1 bis Mew mit Nummer 151.",
+    "subject_keys": ["topic:gaming:pokemon", "entity:pokemon", "entity:kanto"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Pokémon: Scarlet & Violet—151",
+          "url": "https://www.pokemon.com/us/pokemon-tcg/scarlet-violet-151"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es209",
+    "question_type": "estimate",
+    "primary_category": "gaming",
+    "subtopic": "Konsolengeschichte",
+    "tags": {
+      "topics": ["Spielkonsolen", "Verkaufszahlen"],
+      "entities": ["PlayStation 2", "Sony"],
+      "genres": ["Videospiele"],
+      "regions": ["Weltweit"],
+      "eras": ["2000–2012"]
+    },
+    "prompt": "Wie viele Millionen PlayStation-2-Konsolen wurden laut Sony weltweit mindestens verkauft?",
+    "answer": 160,
+    "unit": "Millionen Konsolen",
+    "explanation": "Sony nennt für die PlayStation 2 weltweit mehr als 160 Millionen ausgelieferte Konsolen. Der Referenzwert 160 Millionen ist deshalb die von Sony belegte Untergrenze.",
+    "subject_keys": ["topic:gaming:konsolengeschichte", "entity:playstation-2", "entity:sony"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Sony Interactive Entertainment: Business Data & Sales",
+          "url": "https://sonyinteractive.com/en/our-company/business-data-sales/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es210",
+    "question_type": "estimate",
+    "primary_category": "gaming",
+    "subtopic": "Rennspiele",
+    "tags": {
+      "topics": ["Videospiele", "Rennspiele", "Zusatzinhalte"],
+      "entities": ["Mario Kart 8 Deluxe", "Nintendo"],
+      "genres": ["Rennspiel"],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Rennstrecken bietet „Mario Kart 8 Deluxe“ mit vollständig installiertem Booster-Streckenpass?",
+    "answer": 96,
+    "unit": "Rennstrecken",
+    "explanation": "Das Grundspiel enthält 48 Rennstrecken. Der vollständig veröffentlichte Booster-Streckenpass ergänzt weitere 48 und erhöht die Gesamtzahl damit auf 96.",
+    "subject_keys": ["topic:gaming:rennspiele", "entity:mario-kart-8-deluxe", "entity:nintendo"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Nintendo: Mario Kart 8 Deluxe – Official Site",
+          "url": "https://mariokart8deluxe.nintendo.com/"
+        },
+        {
+          "title": "Nintendo: Mario Kart 8 Deluxe – Booster Course Pass",
+          "url": "https://mariokart8.nintendo.com/booster-course-pass/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es211",
+    "question_type": "estimate",
+    "primary_category": "gaming",
+    "subtopic": "Brettspiele",
+    "tags": {
+      "topics": ["Brettspiele", "Spielmaterial"],
+      "entities": ["Catan"],
+      "genres": ["Strategiespiel"],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Aus wie vielen Landschaftsfeldern besteht die Insel im Grundspiel Catan?",
+    "answer": 19,
+    "unit": "Landschaftsfelder",
+    "explanation": "Die Insel im Grundspiel Catan wird aus 19 sechseckigen Landschaftsfeldern zusammengesetzt. Durch ihre wechselnde Anordnung sieht der Spielplan nicht in jeder Partie gleich aus.",
+    "subject_keys": ["topic:gaming:brettspiele", "entity:catan", "topic:spielmaterial"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "CATAN: Rules – 3D Edition",
+          "url": "https://www.catan.com/sites/default/files/2024-01/Rules%203D-CATAN.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es212",
+    "question_type": "estimate",
+    "primary_category": "gaming",
+    "subtopic": "Traditionelle Strategiespiele",
+    "tags": {
+      "topics": ["Brettspiele", "Spielbretter"],
+      "entities": ["Go"],
+      "genres": ["Strategiespiel"],
+      "regions": ["Ostasien"],
+      "eras": []
+    },
+    "prompt": "Wie viele Schnittpunkte hat ein normales Go-Brett mit 19 mal 19 Linien?",
+    "answer": 361,
+    "unit": "Schnittpunkte",
+    "explanation": "Ein normales Go-Brett besitzt 19 waagerechte und 19 senkrechte Linien. Die Spielsteine werden auf deren 361 Schnittpunkte gesetzt, nicht in die Zwischenräume.",
+    "subject_keys": ["topic:gaming:traditionelle-strategiespiele", "entity:go", "topic:spielbretter"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "British Go Association: How to Play",
+          "url": "https://britgo.org/intro/intro2.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es213",
+    "question_type": "estimate",
+    "primary_category": "sport",
+    "subtopic": "Motorsport",
+    "tags": {
+      "topics": ["Formel 1", "Motorsport"],
+      "entities": ["Großer Preis von Monaco", "Circuit de Monaco"],
+      "genres": [],
+      "regions": ["Monaco"],
+      "eras": ["2026"]
+    },
+    "prompt": "Über wie viele Runden führt der Formel-1-Grand-Prix von Monaco 2026?",
+    "answer": 78,
+    "unit": "Runden",
+    "explanation": "Der Große Preis von Monaco 2026 führt über 78 Runden. Bei einer Streckenlänge von 3,337 Kilometern ergibt das eine Renndistanz von 260,286 Kilometern.",
+    "subject_keys": ["topic:sport:motorsport", "entity:grosser-preis-von-monaco", "entity:circuit-de-monaco"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Formula 1: Monaco Grand Prix 2026",
+          "url": "https://www.formula1.com/en/racing/2026/monaco"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es214",
+    "question_type": "estimate",
+    "primary_category": "sport",
+    "subtopic": "Tennis",
+    "tags": {
+      "topics": ["Tennis", "Grand Slam"],
+      "entities": ["Wimbledon"],
+      "genres": [],
+      "regions": ["Vereinigtes Königreich"],
+      "eras": []
+    },
+    "prompt": "Wie viele Plätze umfasst das Hauptfeld im Damen- oder Herreneinzel von Wimbledon?",
+    "answer": 128,
+    "unit": "Plätze",
+    "explanation": "Das Hauptfeld im Damen- und Herreneinzel von Wimbledon umfasst jeweils 128 Plätze. Wer den Titel gewinnt, benötigt deshalb sieben Siege in Folge.",
+    "subject_keys": ["topic:sport:tennis", "entity:wimbledon", "topic:grand-slam"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Wimbledon: Grand Slam Rulebook 2025",
+          "url": "https://www.wimbledon.com/pdf/Grand_Slam_Rulebook_2025.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es215",
+    "question_type": "estimate",
+    "primary_category": "sport",
+    "subtopic": "Triathlon",
+    "tags": {
+      "topics": ["Triathlon", "Ausdauersport"],
+      "entities": ["Ironman"],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Kilometer legt man bei einem vollständigen Ironman insgesamt zurück?",
+    "answer": 226,
+    "unit": "Kilometer",
+    "explanation": "Ein Ironman besteht aus 3,8 Kilometern Schwimmen, 180 Kilometern Radfahren und 42,2 Kilometern Laufen. Zusammen sind das 226 Kilometer.",
+    "subject_keys": ["topic:sport:triathlon", "entity:ironman", "topic:ausdauersport"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "IRONMAN: Official race distances",
+          "url": "https://www.ironman.com/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es216",
+    "question_type": "estimate",
+    "primary_category": "sport",
+    "subtopic": "Olympische Spiele",
+    "tags": {
+      "topics": ["Olympische Spiele", "Wettbewerbe"],
+      "entities": ["Paris 2024", "Internationales Olympisches Komitee"],
+      "genres": [],
+      "regions": ["Paris", "Frankreich"],
+      "eras": ["2024"]
+    },
+    "prompt": "Wie viele Medaillenentscheidungen gab es bei den Olympischen Spielen 2024 in Paris?",
+    "answer": 329,
+    "unit": "Medaillenentscheidungen",
+    "explanation": "Bei den Olympischen Spielen 2024 in Paris gab es 329 Medaillenentscheidungen in 32 Sportarten. Insgesamt nahmen 10.813 Athletinnen und Athleten teil.",
+    "subject_keys": ["topic:sport:olympische-spiele", "entity:paris-2024", "entity:internationales-olympisches-komitee"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Olympic World Library: The Olympic Movement, the IOC and the Olympic Games",
+          "url": "https://library.olympics.com/digitalCollection/DigitalCollectionAttachmentDownloadHandler.ashx?documentId=3703315&parentDocumentId=172552&skipCopyright=true&skipWatermark=true"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es217",
+    "question_type": "estimate",
+    "primary_category": "sport",
+    "subtopic": "Baseball",
+    "tags": {
+      "topics": ["Baseball", "Sportgeräte"],
+      "entities": ["Major League Baseball"],
+      "genres": [],
+      "regions": ["USA"],
+      "eras": []
+    },
+    "prompt": "Wie viele Doppelstiche halten die Naht eines regulären Baseballs zusammen?",
+    "answer": 108,
+    "unit": "Doppelstiche",
+    "explanation": "Die beiden Lederteile eines regulären Baseballs werden von 108 roten Doppelstichen zusammengehalten. Zählt man jeden einzelnen Einstich, sind es entsprechend 216.",
+    "subject_keys": ["topic:sport:baseball", "entity:major-league-baseball", "topic:sportgeraete"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "MLB.com: Express Written Consent – 108 Stitches",
+          "url": "https://www.mlb.com/news/actress-erin-cahill-joins-express-written-consent/c-93049472"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es218",
+    "question_type": "estimate",
+    "primary_category": "sport",
+    "subtopic": "Snooker",
+    "tags": {
+      "topics": ["Snooker", "Billardsport"],
+      "entities": ["WPBSA"],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Kugeln liegen zu Beginn eines normalen Snooker-Frames auf dem Tisch?",
+    "answer": 22,
+    "unit": "Kugeln",
+    "explanation": "Zu Beginn liegen 15 rote Kugeln, sechs farbige Objektkugeln und die weiße Spielkugel auf dem Tisch. Das ergibt insgesamt 22 Kugeln.",
+    "subject_keys": ["topic:sport:snooker", "entity:wpbsa", "topic:billardsport"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "WPBSA: Official Rules of Snooker and English Billiards 2024–25",
+          "url": "https://www.wpbsa.com/wp-content/uploads/2198_WPBSA-Rulebook-2024-25.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es219",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Digitale Codes",
+    "tags": {
+      "topics": ["QR-Code", "Datenspeicherung"],
+      "entities": ["Denso Wave"],
+      "genres": [],
+      "regions": ["Japan"],
+      "eras": []
+    },
+    "prompt": "Wie viele Ziffern kann ein QR-Code des verbreiteten Modells 2 höchstens speichern?",
+    "answer": 7089,
+    "unit": "Ziffern",
+    "explanation": "Ein QR-Code des Modells 2 kann bei rein numerischen Daten maximal 7.089 Ziffern speichern. Bei Buchstaben oder Binärdaten fällt die Kapazität geringer aus.",
+    "subject_keys": ["topic:science_technology:digitale-codes", "entity:qr-code", "entity:denso-wave"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "DENSO WAVE: QR Code Outline Specification",
+          "url": "https://www.qrcode.com/en/about/standards.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es220",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Speichermedien",
+    "tags": {
+      "topics": ["Speichermedien", "Optische Datenträger"],
+      "entities": ["Blu-ray Disc"],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Gigabyte speichert eine normale Blu-ray Disc mit einer Datenschicht?",
+    "answer": 25,
+    "unit": "Gigabyte",
+    "explanation": "Eine normale Blu-ray Disc mit einer Datenschicht speichert 25 Gigabyte. Eine doppellagige Disc verdoppelt die Kapazität auf 50 Gigabyte.",
+    "subject_keys": ["topic:science_technology:speichermedien", "entity:blu-ray-disc", "topic:optische-datentraeger"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Blu-ray Disc Association: Capacity",
+          "url": "https://us.blu-raydisc.com/blog/hd_benefits/capacity/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es221",
+    "question_type": "estimate",
+    "primary_category": "human_everyday",
+    "subtopic": "Geld & Zahlungsmittel",
+    "tags": {
+      "topics": ["Euro", "Münzen"],
+      "entities": ["Zwei-Euro-Münze", "Europäische Zentralbank"],
+      "genres": [],
+      "regions": ["Euroraum"],
+      "eras": []
+    },
+    "prompt": "Wie viele Gramm wiegt eine Zwei-Euro-Münze?",
+    "answer": 8.5,
+    "unit": "Gramm",
+    "explanation": "Eine Zwei-Euro-Münze wiegt exakt 8,5 Gramm. Sie hat einen Durchmesser von 25,75 Millimetern und ist 2,20 Millimeter dick.",
+    "subject_keys": ["topic:human_everyday:geld-und-zahlungsmittel", "entity:zwei-euro-muenze", "entity:europaeische-zentralbank"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "European Central Bank: The euro banknotes and coins",
+          "url": "https://www.ecb.europa.eu/pub/pdf/other/euroleafleten.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es222",
+    "question_type": "estimate",
+    "primary_category": "human_everyday",
+    "subtopic": "Bücher & Kennnummern",
+    "tags": {
+      "topics": ["Bücher", "Kennnummern"],
+      "entities": ["ISBN", "International ISBN Agency"],
+      "genres": [],
+      "regions": ["Weltweit"],
+      "eras": ["seit 2007"]
+    },
+    "prompt": "Aus wie vielen Ziffern besteht eine ISBN seit dem 1. Januar 2007?",
+    "answer": 13,
+    "unit": "Ziffern",
+    "explanation": "Seit dem 1. Januar 2007 besteht eine ISBN immer aus 13 Ziffern. Zuvor waren Internationale Standardbuchnummern zehnstellig.",
+    "subject_keys": ["topic:human_everyday:buecher-und-kennnummern", "entity:isbn", "entity:international-isbn-agency"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "International ISBN Agency: What is an ISBN?",
+          "url": "https://www.isbn-international.org/index.php/content/what-isbn/10"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es223",
+    "question_type": "estimate",
+    "primary_category": "human_everyday",
+    "subtopic": "Lebensmittelherstellung",
+    "tags": {
+      "topics": ["Käse", "Reifung", "Lebensmittelherstellung"],
+      "entities": ["Parmigiano Reggiano"],
+      "genres": [],
+      "regions": ["Italien"],
+      "eras": []
+    },
+    "prompt": "Wie viele Monate muss Parmigiano Reggiano mindestens reifen?",
+    "answer": 12,
+    "unit": "Monate",
+    "explanation": "Parmigiano Reggiano muss mindestens zwölf Monate reifen. Viele im Handel angebotene Laibe sind 24 bis 36 Monate alt; eine festgelegte Höchstreifezeit gibt es nicht.",
+    "subject_keys": ["topic:human_everyday:lebensmittelherstellung", "entity:parmigiano-reggiano", "topic:kaesereifung"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Consorzio del Formaggio Parmigiano Reggiano: FAQ",
+          "url": "https://www.parmigianoreggiano.com/en-US/faq"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es224",
+    "question_type": "estimate",
+    "primary_category": "human_everyday",
+    "subtopic": "Getränke & Herstellung",
+    "tags": {
+      "topics": ["Champagner", "Getränkeherstellung", "Druck"],
+      "entities": ["Comité Champagne"],
+      "genres": [],
+      "regions": ["Champagne", "Frankreich"],
+      "eras": []
+    },
+    "prompt": "Wie hoch ist der Druck in einer Champagnerflasche bei 20 Grad Celsius ungefähr?",
+    "answer": 6,
+    "unit": "Bar",
+    "explanation": "Das Comité Champagne nennt bei 20 Grad Celsius einen Druck von ungefähr sechs Bar. Das ist etwa dreimal so viel wie der Druck in einem Autoreifen.",
+    "subject_keys": ["topic:human_everyday:getraenke-und-herstellung", "entity:champagner", "entity:comite-champagne"],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Comité Champagne: The Champagne Making Process",
+          "url": "https://www.champagne.fr/system/files/2023-06/Fiches_Elaboration_Champagne_EN.pdf"
+        }
+      ]
+    }
+  }
+]

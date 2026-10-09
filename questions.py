@@ -1,243 +1,113 @@
-"""Curated question bank for the daily quiz.
+"""Load the physical, question-type-first question library."""
 
-All IDs are stable because completed daily rounds store a snapshot of their
-question data.  New questions can be appended without changing old results.
-"""
+from __future__ import annotations
 
-QUESTION_BANK = {
-    "multiple_choice": [
-        {"id": "mc01", "prompt": "Welche dieser Erfindungen kam zuerst auf den Markt?", "options": {"A": "DVD", "B": "Walkman", "C": "iPod", "D": "Blu-ray"}, "answer": "B", "explanation": "Der Sony Walkman erschien 1979 – lange vor DVD, iPod und Blu-ray."},
-        {"id": "mc02", "prompt": "Welche Stadt liegt am weitesten nördlich?", "options": {"A": "Edinburgh", "B": "Moskau", "C": "Kopenhagen", "D": "Amsterdam"}, "answer": "A", "explanation": "Edinburgh liegt bei rund 56° Nord und damit knapp nördlicher als Moskau und Kopenhagen."},
-        {"id": "mc03", "prompt": "Welches Lebensmittel verdirbt bei richtiger Lagerung praktisch nicht?", "options": {"A": "Reis", "B": "Honig", "C": "Olivenöl", "D": "Salzbutter"}, "answer": "B", "explanation": "Honig ist durch wenig Wasser und seine natürliche Säure extrem lange haltbar."},
-        {"id": "mc04", "prompt": "Welches Tier hat drei Herzen?", "options": {"A": "Delfin", "B": "Pinguin", "C": "Oktopus", "D": "Faultier"}, "answer": "C", "explanation": "Oktopusse besitzen ein Hauptherz und zwei Kiemenherzen."},
-        {"id": "mc05", "prompt": "Welche Programmiersprache wurde nach einer Comedy-Gruppe benannt?", "options": {"A": "Python", "B": "Java", "C": "Swift", "D": "Rust"}, "answer": "A", "explanation": "Guido van Rossum benannte Python nach Monty Python."},
-        {"id": "mc06", "prompt": "Welches Land hat – inklusive Überseegebieten – die meisten Zeitzonen?", "options": {"A": "Russland", "B": "USA", "C": "Frankreich", "D": "Australien"}, "answer": "C", "explanation": "Mit seinen Überseegebieten kommt Frankreich auf zwölf reguläre Zeitzonen."},
-        {"id": "mc07", "prompt": "Was ist der größte Knochen im menschlichen Körper?", "options": {"A": "Schienbein", "B": "Oberarmknochen", "C": "Becken", "D": "Oberschenkelknochen"}, "answer": "D", "explanation": "Der Femur ist der längste und kräftigste menschliche Knochen."},
-        {"id": "mc08", "prompt": "Welche Band veröffentlichte das Album „Nevermind“?", "options": {"A": "Pearl Jam", "B": "Nirvana", "C": "Radiohead", "D": "Oasis"}, "answer": "B", "explanation": "„Nevermind“ von Nirvana erschien 1991."},
-        {"id": "mc09", "prompt": "Welcher Planet dreht sich am schnellsten um die eigene Achse?", "options": {"A": "Mars", "B": "Erde", "C": "Jupiter", "D": "Neptun"}, "answer": "C", "explanation": "Ein Jupitertag dauert nur knapp zehn Stunden."},
-        {"id": "mc10", "prompt": "Welches dieser Länder nutzt nicht den Euro?", "options": {"A": "Slowenien", "B": "Kroatien", "C": "Dänemark", "D": "Finnland"}, "answer": "C", "explanation": "Dänemark behielt die Dänische Krone."},
-        {"id": "mc11", "prompt": "Woraus besteht Glas hauptsächlich?", "options": {"A": "Quarzsand", "B": "Kalkstein", "C": "Kohle", "D": "Ton"}, "answer": "A", "explanation": "Gewöhnliches Glas basiert vor allem auf Siliziumdioxid aus Quarzsand."},
-        {"id": "mc12", "prompt": "Welche Plattform ging zuerst online?", "options": {"A": "Facebook", "B": "YouTube", "C": "Wikipedia", "D": "Twitter"}, "answer": "C", "explanation": "Wikipedia startete 2001, Facebook 2004, YouTube 2005 und Twitter 2006."},
-        {"id": "mc13", "prompt": "Welche Farbe hat die „Black Box“ eines Flugzeugs normalerweise?", "options": {"A": "Schwarz", "B": "Signalorange", "C": "Silber", "D": "Neongrün"}, "answer": "B", "explanation": "Flugschreiber sind auffällig orange, damit man sie leichter findet."},
-        {"id": "mc14", "prompt": "Welches Gewürz wird aus den Narben einer Blüte gewonnen?", "options": {"A": "Kurkuma", "B": "Zimt", "C": "Safran", "D": "Muskat"}, "answer": "C", "explanation": "Safran besteht aus den getrockneten Narben des Safrankrokus."},
-        {"id": "mc15", "prompt": "Welche Hauptstadt liegt direkt an der Donau?", "options": {"A": "Prag", "B": "Budapest", "C": "Warschau", "D": "Zagreb"}, "answer": "B", "explanation": "Die Donau trennt in Budapest die Stadtteile Buda und Pest."},
-        {"id": "mc16", "prompt": "Welches Metall ist bei Raumtemperatur flüssig?", "options": {"A": "Quecksilber", "B": "Aluminium", "C": "Titan", "D": "Kupfer"}, "answer": "A", "explanation": "Quecksilber ist unter normalen Raumbedingungen flüssig."},
-        {"id": "mc17", "prompt": "Wofür steht das „QR“ in QR-Code?", "options": {"A": "Quality Read", "B": "Quick Response", "C": "Quantum Raster", "D": "Query Result"}, "answer": "B", "explanation": "QR bedeutet „Quick Response“ – schnelle Antwort."},
-        {"id": "mc18", "prompt": "Welcher Ozean ist flächenmäßig der kleinste?", "options": {"A": "Indischer Ozean", "B": "Atlantik", "C": "Arktischer Ozean", "D": "Südlicher Ozean"}, "answer": "C", "explanation": "Der Arktische Ozean ist der kleinste der fünf Ozeane."},
-        {"id": "mc19", "prompt": "Welche Süßigkeit war ursprünglich als Energieration für Soldaten gedacht?", "options": {"A": "Gummibärchen", "B": "Nutella", "C": "Mars-Riegel", "D": "M&M’s"}, "answer": "D", "explanation": "M&M’s wurden im Zweiten Weltkrieg an US-Soldaten ausgegeben, weil die Hülle das Schmelzen bremste."},
-        {"id": "mc20", "prompt": "Welcher Kontinent hat keine dauerhaft ansässige Bevölkerung?", "options": {"A": "Australien", "B": "Antarktika", "C": "Südamerika", "D": "Asien"}, "answer": "B", "explanation": "In der Antarktika leben nur zeitweise Forschende und Stationspersonal."},
-        {"id": "mc21", "prompt": "Welche dieser Städte liegt auf zwei Kontinenten?", "options": {"A": "Istanbul", "B": "Athen", "C": "Kairo", "D": "Lissabon"}, "answer": "A", "explanation": "Istanbul erstreckt sich beiderseits des Bosporus über Europa und Asien."},
-        {"id": "mc22", "prompt": "Welches Organ produziert Insulin?", "options": {"A": "Leber", "B": "Bauchspeicheldrüse", "C": "Milz", "D": "Niere"}, "answer": "B", "explanation": "Insulin wird in den Betazellen der Bauchspeicheldrüse gebildet."},
-        {"id": "mc23", "prompt": "Welcher Vogel kann rückwärts fliegen?", "options": {"A": "Kolibri", "B": "Falke", "C": "Albatros", "D": "Pinguin"}, "answer": "A", "explanation": "Kolibris können durch ihre besondere Flügelbewegung kontrolliert rückwärts fliegen."},
-        {"id": "mc24", "prompt": "Welche Schriftstellerin erfand die Figur Pippi Langstrumpf?", "options": {"A": "Selma Lagerlöf", "B": "Astrid Lindgren", "C": "Tove Jansson", "D": "Enid Blyton"}, "answer": "B", "explanation": "Astrid Lindgren veröffentlichte das erste Pippi-Langstrumpf-Buch 1945."},
-        {"id": "mc25", "prompt": "Welches Gas macht den größten Anteil der Erdatmosphäre aus?", "options": {"A": "Sauerstoff", "B": "Kohlendioxid", "C": "Stickstoff", "D": "Argon"}, "answer": "C", "explanation": "Die Atmosphäre besteht zu etwa 78 Prozent aus Stickstoff."},
-        {"id": "mc26", "prompt": "Welche Zahl ist die einzige gerade Primzahl?", "options": {"A": "0", "B": "2", "C": "4", "D": "6"}, "answer": "B", "explanation": "Nur die 2 ist gerade und hat genau zwei positive Teiler."},
-        {"id": "mc27", "prompt": "Welches Land wird häufig als Ursprungsland des Kaffees bezeichnet?", "options": {"A": "Brasilien", "B": "Kolumbien", "C": "Äthiopien", "D": "Vietnam"}, "answer": "C", "explanation": "Die Kaffeepflanze stammt ursprünglich aus der äthiopischen Region Kaffa."},
-        {"id": "mc28", "prompt": "Welcher Maler schuf die „Sternennacht“?", "options": {"A": "Claude Monet", "B": "Vincent van Gogh", "C": "Pablo Picasso", "D": "Salvador Dalí"}, "answer": "B", "explanation": "Vincent van Gogh malte „Die Sternennacht“ 1889."},
-        {"id": "mc29", "prompt": "Welches dieser Tiere ist ein Beuteltier?", "options": {"A": "Tapir", "B": "Erdmännchen", "C": "Wombat", "D": "Ameisenbär"}, "answer": "C", "explanation": "Wombats gehören wie Kängurus zu den Beuteltieren."},
-        {"id": "mc30", "prompt": "Welche Einheit misst elektrische Stromstärke?", "options": {"A": "Volt", "B": "Watt", "C": "Ohm", "D": "Ampere"}, "answer": "D", "explanation": "Elektrische Stromstärke wird in Ampere gemessen."},
-        {"id": "mc31", "prompt": "Welches Land besitzt die längste Küstenlinie der Welt?", "options": {"A": "Australien", "B": "Kanada", "C": "Indonesien", "D": "Russland"}, "answer": "B", "explanation": "Durch seine vielen Inseln und Buchten hat Kanada die längste Küstenlinie."},
-        {"id": "mc32", "prompt": "Wie heißt der Fachbegriff für die Angst vor engen Räumen?", "options": {"A": "Agoraphobie", "B": "Akrophobie", "C": "Klaustrophobie", "D": "Arachnophobie"}, "answer": "C", "explanation": "Klaustrophobie bezeichnet die Angst vor engen oder geschlossenen Räumen."},
-        {"id": "mc33", "prompt": "Welches Instrument besitzt normalerweise sechs Saiten?", "options": {"A": "Violine", "B": "Gitarre", "C": "Ukulele", "D": "Cello"}, "answer": "B", "explanation": "Die Standardgitarre besitzt sechs Saiten."},
-        {"id": "mc34", "prompt": "Welche Wüste ist flächenmäßig die größte Trockenwüste der Erde?", "options": {"A": "Sahara", "B": "Gobi", "C": "Atacama", "D": "Antarktische Wüste"}, "answer": "D", "explanation": "Die Antarktis gilt wegen ihrer extrem geringen Niederschläge als größte Trockenwüste."},
-        {"id": "mc35", "prompt": "Welcher Teil einer Pflanze betreibt hauptsächlich Fotosynthese?", "options": {"A": "Wurzel", "B": "Blatt", "C": "Samen", "D": "Blüte"}, "answer": "B", "explanation": "Die meisten Chloroplasten und damit die Hauptarbeit der Fotosynthese sitzen in den Blättern."},
-        {"id": "mc36", "prompt": "Welche Stadt ist für das Opernhaus mit den markanten weißen Dächern bekannt?", "options": {"A": "Melbourne", "B": "Auckland", "C": "Sydney", "D": "Kapstadt"}, "answer": "C", "explanation": "Das Sydney Opera House steht am Hafen von Sydney."},
-        {"id": "mc37", "prompt": "Aus welchem Material besteht die Mine eines Bleistifts hauptsächlich?", "options": {"A": "Blei", "B": "Graphit", "C": "Kohle", "D": "Zinn"}, "answer": "B", "explanation": "Bleistiftminen bestehen aus einer Mischung aus Graphit und Ton."},
-        {"id": "mc38", "prompt": "Welcher Planet ist für sein auffälliges Ringsystem bekannt?", "options": {"A": "Merkur", "B": "Mars", "C": "Saturn", "D": "Venus"}, "answer": "C", "explanation": "Auch andere Gasplaneten haben Ringe, doch beim Saturn sind sie besonders ausgeprägt."},
-        {"id": "mc39", "prompt": "Welche Sprache hat weltweit die meisten Muttersprachler?", "options": {"A": "Englisch", "B": "Spanisch", "C": "Hindi", "D": "Mandarin-Chinesisch"}, "answer": "D", "explanation": "Mandarin-Chinesisch führt nach der Zahl der Muttersprachler deutlich."},
-        {"id": "mc40", "prompt": "Welches dieser Tiere gehört zu den Menschenaffen?", "options": {"A": "Pavian", "B": "Gibbon", "C": "Katta", "D": "Kapuzineraffe"}, "answer": "B", "explanation": "Gibbons zählen zusammen mit den großen Menschenaffen zur Überfamilie der Menschenartigen."},
-    ],
-    "true_false": [
-        {"id": "tf01", "prompt": "Bananen sind botanisch Beeren, Erdbeeren dagegen nicht.", "answer": True, "explanation": "Botanisch entsteht die Banane als Beere; die Erdbeere ist eine Sammelnussfrucht."},
-        {"id": "tf02", "prompt": "Ein Tag auf der Venus dauert länger als ein Venusjahr.", "answer": True, "explanation": "Die Venus rotiert in etwa 243 Erdtagen, umrundet die Sonne aber in rund 225."},
-        {"id": "tf03", "prompt": "Goldfische erinnern sich nur drei Sekunden lang an Dinge.", "answer": False, "explanation": "Goldfische können sich deutlich länger erinnern und sogar trainiert werden."},
-        {"id": "tf04", "prompt": "Oxford University ist älter als das Aztekenreich.", "answer": True, "explanation": "In Oxford wurde spätestens 1096 gelehrt; das Aztekenreich entstand erst 1428."},
-        {"id": "tf05", "prompt": "Menschen nutzen im Alltag nur zehn Prozent ihres Gehirns.", "answer": False, "explanation": "Bildgebende Verfahren zeigen Aktivität in praktisch allen Hirnregionen – nur nicht überall gleichzeitig."},
-        {"id": "tf06", "prompt": "Haie existierten bereits vor den ersten Bäumen.", "answer": True, "explanation": "Frühe Haie gab es vor über 400 Millionen Jahren, Bäume kamen später."},
-        {"id": "tf07", "prompt": "Die Chinesische Mauer ist mit bloßem Auge vom Mond aus sichtbar.", "answer": False, "explanation": "Vom Mond aus ist sie ohne Hilfsmittel nicht zu erkennen."},
-        {"id": "tf08", "prompt": "Wombat-Kot ist würfelförmig.", "answer": True, "explanation": "Die besondere Darmform von Wombats erzeugt tatsächlich annähernd würfelförmige Losung."},
-        {"id": "tf09", "prompt": "Blitze können an einem Ort zweimal einschlagen.", "answer": True, "explanation": "Hohe Gebäude werden sogar regelmäßig mehrfach getroffen."},
-        {"id": "tf10", "prompt": "Der Eiffelturm kann im Sommer durch Wärme mehr als zehn Zentimeter höher sein.", "answer": True, "explanation": "Wärmeausdehnung lässt die Eisenkonstruktion um ungefähr 15 Zentimeter wachsen."},
-        {"id": "tf11", "prompt": "Fledermäuse sind blind.", "answer": False, "explanation": "Fledermäuse können sehen und nutzen zusätzlich Echoortung."},
-        {"id": "tf12", "prompt": "Schottlands Nationaltier ist das Einhorn.", "answer": True, "explanation": "Das Einhorn ist seit Jahrhunderten ein schottisches Wappentier."},
-        {"id": "tf13", "prompt": "Ein Oktopus hat blaues Blut.", "answer": True, "explanation": "Sein sauerstoffbindendes Hämocyanin enthält Kupfer und färbt das Blut blau."},
-        {"id": "tf14", "prompt": "Der Mount Everest ist vom Erdmittelpunkt aus der höchste Berggipfel.", "answer": False, "explanation": "Durch die Erdwölbung ist der Chimborazo-Gipfel weiter vom Erdmittelpunkt entfernt."},
-        {"id": "tf15", "prompt": "Koalas haben Fingerabdrücke, die menschlichen erstaunlich ähnlich sehen.", "answer": True, "explanation": "Koala-Fingerabdrücke sind selbst unter dem Mikroskop leicht mit menschlichen zu verwechseln."},
-        {"id": "tf16", "prompt": "Napoleon Bonaparte war für seine Zeit außergewöhnlich klein.", "answer": False, "explanation": "Mit ungefähr 1,68 Meter lag er etwa im Durchschnitt seiner Epoche."},
-        {"id": "tf17", "prompt": "Es gibt mehr mögliche Schachpartien als Atome im beobachtbaren Universum.", "answer": True, "explanation": "Die Zahl möglicher Spielverläufe wird extrem viel größer geschätzt als die Zahl der Atome."},
-        {"id": "tf18", "prompt": "Pinguine leben in freier Wildbahn auch am Nordpol.", "answer": False, "explanation": "Wildlebende Pinguine kommen ausschließlich auf der Südhalbkugel vor."},
-        {"id": "tf19", "prompt": "Der Geruch von frisch gemähtem Gras ist ein chemisches Notsignal der Pflanze.", "answer": True, "explanation": "Verletztes Gras setzt flüchtige Stoffe frei, die unter anderem Abwehrreaktionen auslösen."},
-        {"id": "tf20", "prompt": "Glas ist bei Raumtemperatur eine extrem langsam fließende Flüssigkeit.", "answer": False, "explanation": "Glas ist ein amorpher Feststoff; alte Scheiben sind wegen früher Fertigungstechniken ungleich dick."},
-        {"id": "tf21", "prompt": "Seepferdchen-Männchen tragen die Jungen aus.", "answer": True, "explanation": "Das Weibchen legt die Eier in die Bruttasche des Männchens, wo sie sich entwickeln."},
-        {"id": "tf22", "prompt": "Die Sahara ist die größte Wüste der Erde.", "answer": False, "explanation": "Die größte Wüste ist die Antarktis; die Sahara ist die größte heiße Wüste."},
-        {"id": "tf23", "prompt": "Ein Blitz ist heißer als die Oberfläche der Sonne.", "answer": True, "explanation": "Ein Blitzkanal kann etwa 30.000 Grad Celsius erreichen und ist damit deutlich heißer als die Sonnenoberfläche."},
-        {"id": "tf24", "prompt": "Alle Säugetiere bringen lebende Junge zur Welt.", "answer": False, "explanation": "Kloakentiere wie Schnabeltier und Ameisenigel legen Eier."},
-        {"id": "tf25", "prompt": "Die Haut ist das größte Organ des menschlichen Körpers.", "answer": True, "explanation": "Nach Fläche und Gewicht ist die Haut das größte Organ des Menschen."},
-        {"id": "tf26", "prompt": "Der Amazonas ist gemessen an der Wassermenge der wasserreichste Fluss der Erde.", "answer": True, "explanation": "Kein anderer Fluss führt im Mittel annähernd so viel Wasser wie der Amazonas."},
-        {"id": "tf27", "prompt": "Die Freiheitsstatue war bei ihrer Einweihung bereits grün.", "answer": False, "explanation": "Ihre Kupferhaut war zunächst braun und entwickelte erst später die grüne Patina."},
-        {"id": "tf28", "prompt": "Schall breitet sich im Wasser schneller aus als in der Luft.", "answer": True, "explanation": "In Wasser ist Schall ungefähr viermal schneller als in Luft."},
-        {"id": "tf29", "prompt": "Ein Strauß kann schneller laufen als ein Pferd.", "answer": False, "explanation": "Strauße sind sehr schnell, erreichen aber geringere Spitzengeschwindigkeiten als schnelle Pferde."},
-        {"id": "tf30", "prompt": "Der menschliche Körper enthält mehr Bakterienzellen als menschliche Zellen im Verhältnis zehn zu eins.", "answer": False, "explanation": "Neuere Schätzungen gehen ungefähr von einem Verhältnis nahe eins zu eins aus."},
-        {"id": "tf31", "prompt": "Auf dem Merkur gibt es Wassereis.", "answer": True, "explanation": "In dauerhaft schattigen Kratern nahe den Polen konnte Wassereis nachgewiesen werden."},
-        {"id": "tf32", "prompt": "Spinnen gehören biologisch zu den Insekten.", "answer": False, "explanation": "Spinnen sind Spinnentiere und besitzen acht statt sechs Beine."},
-        {"id": "tf33", "prompt": "Die Zahl Null wurde erst nach den römischen Zahlzeichen als eigenständige Zahl gebräuchlich.", "answer": True, "explanation": "Das römische Zahlensystem kannte keine Null als eigenständige Zahl; ihre moderne Verwendung kam später nach Europa."},
-        {"id": "tf34", "prompt": "Ein erwachsener Mensch hat mehr Zähne als ein ausgewachsener Hund.", "answer": False, "explanation": "Menschen haben normalerweise 32 Zähne, erwachsene Hunde 42."},
-        {"id": "tf35", "prompt": "Die Erdnuss wächst an einem Baum.", "answer": False, "explanation": "Erdnüsse wachsen an einer krautigen Pflanze und reifen unter der Erde."},
-        {"id": "tf36", "prompt": "Der Pazifik bedeckt mehr Fläche als alle Landmassen der Erde zusammen.", "answer": True, "explanation": "Der Pazifik umfasst rund 165 Millionen Quadratkilometer, die gesamte Landfläche etwa 149 Millionen."},
-        {"id": "tf37", "prompt": "Ein Jahr auf dem Mars dauert länger als zwei Erdenjahre.", "answer": False, "explanation": "Ein Marsjahr dauert rund 687 Tage und damit etwas weniger als zwei Erdenjahre."},
-        {"id": "tf38", "prompt": "Krokodile können ihre Zunge nicht herausstrecken.", "answer": True, "explanation": "Eine Membran hält die Krokodilzunge am Unterkiefer fest."},
-        {"id": "tf39", "prompt": "Diamant und Graphit bestehen beide aus Kohlenstoff.", "answer": True, "explanation": "Beide Stoffe bestehen aus Kohlenstoff, unterscheiden sich aber in der Anordnung ihrer Atome."},
-        {"id": "tf40", "prompt": "Die Internationale Raumstation umkreist die Erde ungefähr einmal pro Tag.", "answer": False, "explanation": "Die ISS benötigt nur rund 90 Minuten pro Umlauf und schafft etwa 16 Umrundungen täglich."},
-    ],
-    "estimate": [
-        {"id": "es01", "prompt": "Wie viele Liter Blut pumpt ein menschliches Herz ungefähr pro Tag?", "answer": 7500, "unit": "Liter", "explanation": "Bei rund fünf Litern pro Minute kommen ungefähr 7.500 Liter am Tag zusammen."},
-        {"id": "es02", "prompt": "Wie viele Kilometer lang ist der Äquator ungefähr?", "answer": 40075, "unit": "km", "explanation": "Der Erdumfang am Äquator beträgt etwa 40.075 Kilometer."},
-        {"id": "es03", "prompt": "Wie viele Tasten hat ein klassisches Klavier?", "answer": 88, "unit": "Tasten", "explanation": "Ein Standardklavier besitzt 52 weiße und 36 schwarze Tasten."},
-        {"id": "es04", "prompt": "Wie viele Minuten braucht das Licht von der Sonne bis zur Erde?", "answer": 8.3, "unit": "Minuten", "explanation": "Im Mittel sind es etwa 8 Minuten und 20 Sekunden."},
-        {"id": "es05", "prompt": "Wie viele Liter Wasser passen ungefähr in ein olympisches Schwimmbecken?", "answer": 2500000, "unit": "Liter", "explanation": "Bei 50 × 25 × 2 Metern sind es rund 2,5 Millionen Liter."},
-        {"id": "es06", "prompt": "Wie hoch ist der Eiffelturm inklusive Antenne ungefähr?", "answer": 330, "unit": "Meter", "explanation": "Seit der neuesten Antenne ist der Eiffelturm etwa 330 Meter hoch."},
-        {"id": "es07", "prompt": "Wie viele Knochen hat ein erwachsener Mensch normalerweise?", "answer": 206, "unit": "Knochen", "explanation": "Als Standardzahl gelten 206 Knochen."},
-        {"id": "es08", "prompt": "Wie viele Sekunden hat ein Tag?", "answer": 86400, "unit": "Sekunden", "explanation": "24 × 60 × 60 ergibt 86.400."},
-        {"id": "es09", "prompt": "Wie viele Kilometer legt die Erde auf ihrer Bahn um die Sonne ungefähr pro Sekunde zurück?", "answer": 29.8, "unit": "km/s", "explanation": "Die mittlere Bahngeschwindigkeit liegt knapp unter 30 km/s."},
-        {"id": "es10", "prompt": "Wie viele Menschen passen sitzend ungefähr in das größte Passagierflugzeug Airbus A380 in typischer Maximalbestuhlung?", "answer": 853, "unit": "Menschen", "explanation": "Die zertifizierte Einklassen-Maximalkapazität liegt bei 853 Passagieren."},
-        {"id": "es11", "prompt": "Wie viele Meter tief ist der Marianengraben an seiner tiefsten bekannten Stelle ungefähr?", "answer": 10900, "unit": "Meter", "explanation": "Das Challengertief liegt grob 10.900 Meter unter dem Meeresspiegel."},
-        {"id": "es12", "prompt": "Wie viele Wörter spricht ein Mensch bei normalem Gesprächstempo ungefähr pro Minute?", "answer": 130, "unit": "Wörter", "explanation": "Ein typisches Gesprächstempo liegt ungefähr bei 120 bis 150 Wörtern pro Minute."},
-        {"id": "es13", "prompt": "Wie viele Kilometer misst ein Marathon exakt?", "answer": 42.195, "unit": "km", "explanation": "Die offizielle Marathondistanz beträgt 42,195 Kilometer."},
-        {"id": "es14", "prompt": "Wie viele Liter Luft atmet ein Erwachsener in Ruhe ungefähr pro Tag?", "answer": 11000, "unit": "Liter", "explanation": "Je nach Atemvolumen und -frequenz sind es grob 10.000 bis 12.000 Liter."},
-        {"id": "es15", "prompt": "Wie viele Kilometer ist der Mond im Mittel von der Erde entfernt?", "answer": 384400, "unit": "km", "explanation": "Die mittlere Entfernung beträgt rund 384.400 Kilometer."},
-        {"id": "es16", "prompt": "Wie viele Stunden Videomaterial wurden ungefähr pro Minute auf YouTube hochgeladen (Richtwert 2022)?", "answer": 500, "unit": "Stunden", "explanation": "Der häufig genannte Richtwert liegt bei mehr als 500 Stunden pro Minute."},
-        {"id": "es17", "prompt": "Wie viele Liter fasst eine durchschnittliche Badewanne ungefähr?", "answer": 150, "unit": "Liter", "explanation": "Übliche Wannen liegen grob zwischen 140 und 180 Litern."},
-        {"id": "es18", "prompt": "Wie viele Kilometer lang ist die Luftlinie Berlin–Paris ungefähr?", "answer": 880, "unit": "km", "explanation": "Die Luftlinie beträgt rund 880 Kilometer."},
-        {"id": "es19", "prompt": "Wie viele Reiskörner sind grob in einem Kilogramm Langkornreis?", "answer": 50000, "unit": "Körner", "explanation": "Bei etwa 20 Milligramm pro Korn sind es ungefähr 50.000."},
-        {"id": "es20", "prompt": "Wie viele Tage dauert eine Reise zum Mars mit heutiger Technik typischerweise ungefähr?", "answer": 210, "unit": "Tage", "explanation": "Gängige Transferbahnen benötigen rund sieben Monate beziehungsweise etwa 210 Tage."},
-        {"id": "es21", "prompt": "Wie viele Kilometer ist die Chinesische Mauer mit allen erfassten Abschnitten ungefähr lang?", "answer": 21196, "unit": "km", "explanation": "Die amtlich erfasste Gesamtlänge aller Abschnitte beträgt rund 21.196 Kilometer."},
-        {"id": "es22", "prompt": "Wie viele Liter Blut hat ein erwachsener Mensch ungefähr im Körper?", "answer": 5, "unit": "Liter", "explanation": "Bei Erwachsenen sind es je nach Körpergröße meist ungefähr fünf bis sechs Liter."},
-        {"id": "es23", "prompt": "Wie viele Kilometer pro Stunde erreicht ein Gepard ungefähr in der Spitze?", "answer": 100, "unit": "km/h", "explanation": "Auf kurzen Strecken erreichen Geparde ungefähr 100 Kilometer pro Stunde."},
-        {"id": "es24", "prompt": "Wie viele Jahre dauerte der Bau des Kölner Doms von der Grundsteinlegung bis zur Vollendung insgesamt?", "answer": 632, "unit": "Jahre", "explanation": "Zwischen der Grundsteinlegung 1248 und der Vollendung 1880 liegen 632 Jahre – mit langer Baupause."},
-        {"id": "es25", "prompt": "Wie viele Kilometer beträgt die mittlere Entfernung der Erde zur Sonne?", "answer": 149600000, "unit": "km", "explanation": "Eine Astronomische Einheit entspricht ungefähr 149,6 Millionen Kilometern."},
-        {"id": "es26", "prompt": "Wie viele Muskeln besitzt der menschliche Körper ungefähr?", "answer": 650, "unit": "Muskeln", "explanation": "Je nach Zählweise werden meist rund 650 Skelettmuskeln genannt."},
-        {"id": "es27", "prompt": "Wie viele Meter ist der Burj Khalifa ungefähr hoch?", "answer": 828, "unit": "Meter", "explanation": "Der Burj Khalifa erreicht eine Höhe von 828 Metern."},
-        {"id": "es28", "prompt": "Wie viele Liter Wasser verbraucht eine durchschnittliche Person in Deutschland im Haushalt ungefähr pro Tag?", "answer": 125, "unit": "Liter", "explanation": "Der tägliche Haushaltsverbrauch liegt grob bei 120 bis 130 Litern pro Person."},
-        {"id": "es29", "prompt": "Wie viele Kilometer legt Licht in einer Sekunde ungefähr zurück?", "answer": 300000, "unit": "km", "explanation": "Im Vakuum bewegt sich Licht mit rund 299.792 Kilometern pro Sekunde."},
-        {"id": "es30", "prompt": "Wie viele Saiten hat eine Konzertharfe normalerweise?", "answer": 47, "unit": "Saiten", "explanation": "Eine moderne Doppelpedal-Konzertharfe besitzt üblicherweise 47 Saiten."},
-        {"id": "es31", "prompt": "Wie viele Kilometer lang ist der Rhein ungefähr?", "answer": 1233, "unit": "km", "explanation": "Die heute anerkannte Länge des Rheins beträgt rund 1.233 Kilometer."},
-        {"id": "es32", "prompt": "Wie viele Minuten dauert ein Fußballspiel regulär ohne Nachspielzeit und Verlängerung?", "answer": 90, "unit": "Minuten", "explanation": "Zwei Halbzeiten zu je 45 Minuten ergeben 90 Minuten."},
-        {"id": "es33", "prompt": "Wie viele Kilometer pro Stunde erreicht ein Wanderfalke im Sturzflug ungefähr?", "answer": 320, "unit": "km/h", "explanation": "Im Sturzflug werden häufig Geschwindigkeiten von mehr als 300 Kilometern pro Stunde gemessen."},
-        {"id": "es34", "prompt": "Wie viele Inseln gehören ungefähr zu Griechenland?", "answer": 6000, "unit": "Inseln", "explanation": "Griechenland umfasst ungefähr 6.000 Inseln und Inselchen, von denen nur ein kleiner Teil bewohnt ist."},
-        {"id": "es35", "prompt": "Wie viele Jahre kann eine Riesenschildkröte ungefähr alt werden?", "answer": 150, "unit": "Jahre", "explanation": "Viele Riesenschildkröten werden weit über 100 Jahre alt; rund 150 Jahre sind ein guter Richtwert."},
-        {"id": "es36", "prompt": "Wie viele Quadratmeter misst ein Fußballfeld mit dem häufig verwendeten Maß 105 mal 68 Meter?", "answer": 7140, "unit": "m²", "explanation": "105 mal 68 Meter ergeben 7.140 Quadratmeter."},
-        {"id": "es37", "prompt": "Wie viele Kilometer lang ist die Golden Gate Bridge einschließlich der Zufahrtsbrücken ungefähr?", "answer": 2.7, "unit": "km", "explanation": "Die gesamte Brücke ist ungefähr 2,7 Kilometer lang."},
-        {"id": "es38", "prompt": "Wie viele Herzschläge hat ein Mensch bei 70 Schlägen pro Minute ungefähr an einem Tag?", "answer": 100800, "unit": "Schläge", "explanation": "70 mal 60 mal 24 ergibt 100.800 Herzschläge."},
-        {"id": "es39", "prompt": "Wie viele Meter unter dem Meeresspiegel liegt die Oberfläche des Toten Meeres ungefähr?", "answer": 430, "unit": "Meter", "explanation": "Die Wasseroberfläche liegt ungefähr 430 Meter unter dem Meeresspiegel und verändert sich weiter."},
-        {"id": "es40", "prompt": "Wie viele Kilometer lang ist eine Runde auf der Nürburgring-Nordschleife ungefähr?", "answer": 20.8, "unit": "km", "explanation": "Die Nordschleife misst knapp 20,8 Kilometer."},
-    ],
-    "order": [
-        {"id": "or01", "prompt": "Ordne diese Dienste nach ihrem Start – vom ältesten zum jüngsten.", "items": ["Netflix", "YouTube", "Spotify", "Instagram"], "answer": ["Netflix", "YouTube", "Spotify", "Instagram"], "explanation": "Netflix (1997), YouTube (2005), Spotify (2008), Instagram (2010)."},
-        {"id": "or02", "prompt": "Ordne die Städte von Norden nach Süden.", "items": ["Rom", "Berlin", "Oslo", "Wien"], "answer": ["Oslo", "Berlin", "Wien", "Rom"], "explanation": "Oslo liegt am nördlichsten, danach folgen Berlin, Wien und Rom."},
-        {"id": "or03", "prompt": "Ordne diese Filme nach Kinostart – vom ältesten zum jüngsten.", "items": ["Titanic", "Jurassic Park", "Avatar", "Matrix"], "answer": ["Jurassic Park", "Titanic", "Matrix", "Avatar"], "explanation": "1993, 1997, 1999 und 2009."},
-        {"id": "or04", "prompt": "Ordne die Planeten nach ihrer Entfernung zur Sonne.", "items": ["Mars", "Venus", "Jupiter", "Erde"], "answer": ["Venus", "Erde", "Mars", "Jupiter"], "explanation": "Von innen nach außen: Venus, Erde, Mars, Jupiter."},
-        {"id": "or05", "prompt": "Ordne diese Geräte nach ihrer Markteinführung.", "items": ["iPhone", "Nintendo Game Boy", "Amazon Kindle", "Sony PlayStation"], "answer": ["Nintendo Game Boy", "Sony PlayStation", "iPhone", "Amazon Kindle"], "explanation": "Game Boy (1989), PlayStation (1994), iPhone (Juni 2007), Kindle (November 2007)."},
-        {"id": "or06", "prompt": "Ordne diese Länder nach Fläche – vom kleinsten zum größten.", "items": ["Deutschland", "Frankreich", "Japan", "Italien"], "answer": ["Italien", "Deutschland", "Japan", "Frankreich"], "explanation": "Italien ist am kleinsten, danach Deutschland, Japan und Frankreich."},
-        {"id": "or07", "prompt": "Ordne diese Sprachen nach der Zahl ihrer Muttersprachler – von weniger zu mehr.", "items": ["Deutsch", "Spanisch", "Englisch", "Mandarin"], "answer": ["Deutsch", "Englisch", "Spanisch", "Mandarin"], "explanation": "Grob: Deutsch 75–100 Mio., Englisch 380 Mio., Spanisch 480 Mio., Mandarin über 900 Mio."},
-        {"id": "or08", "prompt": "Ordne diese Erfindungen – von früher nach später.", "items": ["Telefon", "World Wide Web", "Buchdruck", "Glühbirne"], "answer": ["Buchdruck", "Telefon", "Glühbirne", "World Wide Web"], "explanation": "Buchdruck um 1450, Telefon 1876, praktische Glühlampe 1879, Web ab 1989."},
-        {"id": "or09", "prompt": "Ordne diese Tiere nach typischem Gewicht – vom leichtesten zum schwersten.", "items": ["Hauskatze", "Blauwal", "Elefant", "Goldhamster"], "answer": ["Goldhamster", "Hauskatze", "Elefant", "Blauwal"], "explanation": "Hamster, Katze, Elefant, Blauwal – der Abstand am Ende ist eher deutlich."},
-        {"id": "or10", "prompt": "Ordne die Ereignisse zeitlich.", "items": ["Erste Mondlandung", "Fall der Berliner Mauer", "Einführung des Euro-Bargelds", "Start von Wikipedia"], "answer": ["Erste Mondlandung", "Fall der Berliner Mauer", "Start von Wikipedia", "Einführung des Euro-Bargelds"], "explanation": "1969, 1989, 2001 und 2002."},
-        {"id": "or11", "prompt": "Ordne diese Berge nach Höhe – vom niedrigsten zum höchsten.", "items": ["Zugspitze", "Mont Blanc", "Kilimandscharo", "Mount Everest"], "answer": ["Zugspitze", "Mont Blanc", "Kilimandscharo", "Mount Everest"], "explanation": "2.962 m, etwa 4.806 m, 5.895 m, 8.849 m."},
-        {"id": "or12", "prompt": "Ordne diese Serien nach ihrer Erstausstrahlung.", "items": ["Breaking Bad", "Friends", "Stranger Things", "The Office (US)"], "answer": ["Friends", "The Office (US)", "Breaking Bad", "Stranger Things"], "explanation": "1994, 2005, 2008 und 2016."},
-        {"id": "or13", "prompt": "Ordne diese Einheiten von klein nach groß.", "items": ["Megabyte", "Terabyte", "Kilobyte", "Gigabyte"], "answer": ["Kilobyte", "Megabyte", "Gigabyte", "Terabyte"], "explanation": "Kilo, Mega, Giga, Tera."},
-        {"id": "or14", "prompt": "Ordne diese Getränke nach durchschnittlichem Koffeingehalt pro typischer Portion – von wenig zu viel.", "items": ["Espresso", "Cola", "Filterkaffee", "entkoffeinierter Kaffee"], "answer": ["entkoffeinierter Kaffee", "Cola", "Espresso", "Filterkaffee"], "explanation": "Typische Portionen enthalten grob wenige mg, etwa 30–40 mg, etwa 60 mg und 80–120 mg."},
-        {"id": "or15", "prompt": "Ordne die Länder nach Bevölkerungszahl – von weniger zu mehr.", "items": ["Kanada", "Deutschland", "Australien", "Japan"], "answer": ["Australien", "Kanada", "Deutschland", "Japan"], "explanation": "Australien, Kanada, Deutschland, Japan."},
-        {"id": "or16", "prompt": "Ordne diese Konsolen nach Veröffentlichung.", "items": ["Nintendo Switch", "PlayStation 2", "Xbox 360", "Wii"], "answer": ["PlayStation 2", "Xbox 360", "Wii", "Nintendo Switch"], "explanation": "2000, 2005, 2006 und 2017."},
-        {"id": "or17", "prompt": "Ordne diese Lebensmittel nach Wasseranteil – von weniger zu mehr.", "items": ["Gurke", "Brot", "Wassermelone", "Hartkäse"], "answer": ["Hartkäse", "Brot", "Wassermelone", "Gurke"], "explanation": "Hartkäse enthält am wenigsten Wasser; Gurken bestehen zu rund 95 Prozent daraus."},
-        {"id": "or18", "prompt": "Ordne die Ozeane nach Fläche – vom kleinsten zum größten.", "items": ["Atlantik", "Arktischer Ozean", "Pazifik", "Indischer Ozean"], "answer": ["Arktischer Ozean", "Indischer Ozean", "Atlantik", "Pazifik"], "explanation": "Arktisch, Indisch, Atlantisch, Pazifisch."},
-        {"id": "or19", "prompt": "Ordne diese Bücher nach Erstveröffentlichung.", "items": ["Harry Potter 1", "Der Herr der Ringe", "1984", "Der Da Vinci Code"], "answer": ["1984", "Der Herr der Ringe", "Harry Potter 1", "Der Da Vinci Code"], "explanation": "1949, 1954/55, 1997 und 2003."},
-        {"id": "or20", "prompt": "Ordne die Schritte eines klassischen Espresso-Bezugs.", "items": ["Mahlen", "Extrahieren", "Tampern", "Bohnen abwiegen"], "answer": ["Bohnen abwiegen", "Mahlen", "Tampern", "Extrahieren"], "explanation": "Abwiegen, mahlen, das Kaffeebett verdichten und dann extrahieren."},
-        {"id": "or21", "prompt": "Ordne diese deutschen Städte von Norden nach Süden.", "items": ["München", "Hamburg", "Frankfurt am Main", "Hannover"], "answer": ["Hamburg", "Hannover", "Frankfurt am Main", "München"], "explanation": "Von Nord nach Süd: Hamburg, Hannover, Frankfurt am Main, München."},
-        {"id": "or22", "prompt": "Ordne diese Tiere nach ihrer durchschnittlichen Lebensdauer – von kürzer zu länger.", "items": ["Hauskatze", "Eintagsfliege", "Galápagos-Riesenschildkröte", "Goldhamster"], "answer": ["Eintagsfliege", "Goldhamster", "Hauskatze", "Galápagos-Riesenschildkröte"], "explanation": "Eintagsfliege, Hamster, Katze und schließlich die sehr langlebige Riesenschildkröte."},
-        {"id": "or23", "prompt": "Ordne diese Musikepochen von früher nach später.", "items": ["Romantik", "Barock", "Klassik", "Renaissance"], "answer": ["Renaissance", "Barock", "Klassik", "Romantik"], "explanation": "Renaissance, Barock, Klassik und Romantik folgen zeitlich aufeinander."},
-        {"id": "or24", "prompt": "Ordne diese Planeten nach ihrem Durchmesser – vom kleinsten zum größten.", "items": ["Erde", "Jupiter", "Merkur", "Mars"], "answer": ["Merkur", "Mars", "Erde", "Jupiter"], "explanation": "Merkur ist kleiner als Mars, gefolgt von Erde und Jupiter."},
-        {"id": "or25", "prompt": "Ordne diese Bauwerke nach ihrer Fertigstellung – vom ältesten zum jüngsten.", "items": ["Burj Khalifa", "Eiffelturm", "Kolosseum", "Empire State Building"], "answer": ["Kolosseum", "Eiffelturm", "Empire State Building", "Burj Khalifa"], "explanation": "Kolosseum um 80, Eiffelturm 1889, Empire State Building 1931, Burj Khalifa 2010."},
-        {"id": "or26", "prompt": "Ordne diese Brüche nach ihrer Größe – vom kleinsten zum größten.", "items": ["3/4", "1/3", "2/3", "1/2"], "answer": ["1/3", "1/2", "2/3", "3/4"], "explanation": "Als Dezimalzahlen: etwa 0,33; 0,5; 0,67 und 0,75."},
-        {"id": "or27", "prompt": "Ordne diese Länder von Westen nach Osten.", "items": ["Polen", "Portugal", "Deutschland", "Frankreich"], "answer": ["Portugal", "Frankreich", "Deutschland", "Polen"], "explanation": "Portugal liegt am weitesten westlich, danach folgen Frankreich, Deutschland und Polen."},
-        {"id": "or28", "prompt": "Ordne diese Tiere nach ihrer Höchstgeschwindigkeit an Land – von langsamer zu schneller.", "items": ["Gepard", "Elefant", "Mensch", "Hauskatze"], "answer": ["Mensch", "Elefant", "Hauskatze", "Gepard"], "explanation": "Grob folgen Mensch, Elefant, Hauskatze und der besonders schnelle Gepard."},
-        {"id": "or29", "prompt": "Ordne diese Speichereinheiten von klein nach groß.", "items": ["Petabyte", "Gigabyte", "Terabyte", "Megabyte"], "answer": ["Megabyte", "Gigabyte", "Terabyte", "Petabyte"], "explanation": "Mega, Giga, Tera, Peta."},
-        {"id": "or30", "prompt": "Ordne diese Ereignisse der Raumfahrt zeitlich.", "items": ["Erster Mensch im All", "Start des ersten Space Shuttles", "Erste Mondlandung", "Start von Sputnik 1"], "answer": ["Start von Sputnik 1", "Erster Mensch im All", "Erste Mondlandung", "Start des ersten Space Shuttles"], "explanation": "Sputnik 1957, Juri Gagarin 1961, Mondlandung 1969, Space Shuttle 1981."},
-        {"id": "or31", "prompt": "Ordne diese Flüsse nach Länge – vom kürzesten zum längsten.", "items": ["Nil", "Rhein", "Donau", "Jangtsekiang"], "answer": ["Rhein", "Donau", "Jangtsekiang", "Nil"], "explanation": "Rhein, Donau, Jangtsekiang und Nil werden in dieser Reihenfolge länger."},
-        {"id": "or32", "prompt": "Ordne diese Stoffe nach ihrem Schmelzpunkt – vom niedrigsten zum höchsten.", "items": ["Eisen", "Eis", "Gold", "Schokolade"], "answer": ["Eis", "Schokolade", "Gold", "Eisen"], "explanation": "Eis schmilzt bei 0 °C, Schokolade etwas darüber, Gold bei 1.064 °C und Eisen bei 1.538 °C."},
-        {"id": "or33", "prompt": "Ordne diese Sprachen alphabetisch.", "items": ["Spanisch", "Arabisch", "Französisch", "Deutsch"], "answer": ["Arabisch", "Deutsch", "Französisch", "Spanisch"], "explanation": "Alphabetisch: Arabisch, Deutsch, Französisch, Spanisch."},
-        {"id": "or34", "prompt": "Ordne diese Altersstufen eines Schmetterlings.", "items": ["Puppe", "Ei", "Schmetterling", "Raupe"], "answer": ["Ei", "Raupe", "Puppe", "Schmetterling"], "explanation": "Aus dem Ei schlüpft die Raupe, sie verpuppt sich und wird zum Schmetterling."},
-        {"id": "or35", "prompt": "Ordne diese Länder nach ihrer Bevölkerungszahl – von weniger zu mehr.", "items": ["Italien", "Island", "Niederlande", "Norwegen"], "answer": ["Island", "Norwegen", "Niederlande", "Italien"], "explanation": "Island, Norwegen, Niederlande und Italien in aufsteigender Reihenfolge."},
-        {"id": "or36", "prompt": "Ordne diese Kommunikationsmittel nach ihrer Einführung – von früher nach später.", "items": ["E-Mail", "Morse-Telegrafie", "SMS", "Telefon"], "answer": ["Morse-Telegrafie", "Telefon", "E-Mail", "SMS"], "explanation": "Telegrafie ab den 1830ern, Telefon 1876, E-Mail 1971, SMS 1992."},
-        {"id": "or37", "prompt": "Ordne diese Wochentage chronologisch ab Montag.", "items": ["Sonntag", "Mittwoch", "Freitag", "Montag"], "answer": ["Montag", "Mittwoch", "Freitag", "Sonntag"], "explanation": "Montag, Mittwoch, Freitag, Sonntag."},
-        {"id": "or38", "prompt": "Ordne die Bestandteile des Verdauungswegs in ihrer üblichen Reihenfolge.", "items": ["Magen", "Speiseröhre", "Dickdarm", "Dünndarm"], "answer": ["Speiseröhre", "Magen", "Dünndarm", "Dickdarm"], "explanation": "Nach der Speiseröhre folgen Magen, Dünndarm und Dickdarm."},
-        {"id": "or39", "prompt": "Ordne diese Temperaturen von kalt nach heiß.", "items": ["Siedendes Wasser", "Gefrierendes Wasser", "menschliche Körpertemperatur", "Raumtemperatur"], "answer": ["Gefrierendes Wasser", "Raumtemperatur", "menschliche Körpertemperatur", "Siedendes Wasser"], "explanation": "Ungefähr 0, 20, 37 und 100 Grad Celsius."},
-        {"id": "or40", "prompt": "Ordne diese Kontinente nach Fläche – vom kleinsten zum größten.", "items": ["Asien", "Europa", "Afrika", "Australien/Ozeanien"], "answer": ["Australien/Ozeanien", "Europa", "Afrika", "Asien"], "explanation": "Australien/Ozeanien, Europa, Afrika und Asien."},
-    ],
-    "match": [
-        {"id": "ma01", "prompt": "Welche Person gehört zu welcher Erfindung?", "left": ["Tim Berners-Lee", "James Dyson", "Hedy Lamarr"], "right": ["World Wide Web", "beutelloser Staubsauger", "Frequenzsprungverfahren"], "answer": {"Tim Berners-Lee": "World Wide Web", "James Dyson": "beutelloser Staubsauger", "Hedy Lamarr": "Frequenzsprungverfahren"}, "explanation": "Web, Staubsauger und Funktechnik – drei sehr verschiedene Erfinderbiografien."},
-        {"id": "ma02", "prompt": "Ordne das Gericht seinem Herkunftsland zu.", "left": ["Pho", "Poutine", "Ceviche"], "right": ["Vietnam", "Kanada", "Peru"], "answer": {"Pho": "Vietnam", "Poutine": "Kanada", "Ceviche": "Peru"}, "explanation": "Pho–Vietnam, Poutine–Kanada, Ceviche–Peru."},
-        {"id": "ma03", "prompt": "Welche Figur gehört zu welchem Franchise?", "left": ["Gandalf", "Eleven", "Geralt"], "right": ["Der Herr der Ringe", "Stranger Things", "The Witcher"], "answer": {"Gandalf": "Der Herr der Ringe", "Eleven": "Stranger Things", "Geralt": "The Witcher"}, "explanation": "Gandalf, Eleven und Geralt haben ihre Welten wiedergefunden."},
-        {"id": "ma04", "prompt": "Ordne die Marke ihrem Ursprungsland zu.", "left": ["LEGO", "Samsung", "IKEA"], "right": ["Dänemark", "Südkorea", "Schweden"], "answer": {"LEGO": "Dänemark", "Samsung": "Südkorea", "IKEA": "Schweden"}, "explanation": "LEGO–Dänemark, Samsung–Südkorea, IKEA–Schweden."},
-        {"id": "ma05", "prompt": "Ordne das Tier seiner Besonderheit zu.", "left": ["Axolotl", "Gepard", "Narwal"], "right": ["regeneriert Gliedmaßen", "schnellstes Landtier", "langer Stoßzahn"], "answer": {"Axolotl": "regeneriert Gliedmaßen", "Gepard": "schnellstes Landtier", "Narwal": "langer Stoßzahn"}, "explanation": "Regeneration, Geschwindigkeit und der berühmte „Einhorn“-Zahn."},
-        {"id": "ma06", "prompt": "Ordne die Hauptstadt ihrem Land zu.", "left": ["Canberra", "Ottawa", "Brasília"], "right": ["Australien", "Kanada", "Brasilien"], "answer": {"Canberra": "Australien", "Ottawa": "Kanada", "Brasília": "Brasilien"}, "explanation": "Nicht Sydney, Toronto oder Rio – die Hauptstädte sind Canberra, Ottawa und Brasília."},
-        {"id": "ma07", "prompt": "Ordne den Künstler dem Werk zu.", "left": ["Banksy", "Edvard Munch", "Frida Kahlo"], "right": ["Girl with Balloon", "Der Schrei", "Die zwei Fridas"], "answer": {"Banksy": "Girl with Balloon", "Edvard Munch": "Der Schrei", "Frida Kahlo": "Die zwei Fridas"}, "explanation": "Banksy, Munch und Kahlo passen zu den drei Werken."},
-        {"id": "ma08", "prompt": "Ordne die Technologie ihrer Funktion zu.", "left": ["GPS", "NFC", "VPN"], "right": ["Positionsbestimmung", "kontaktlose Nahbereichskommunikation", "verschlüsselte Netzwerkverbindung"], "answer": {"GPS": "Positionsbestimmung", "NFC": "kontaktlose Nahbereichskommunikation", "VPN": "verschlüsselte Netzwerkverbindung"}, "explanation": "Ortung, kurze Funkdistanz und geschützter Netzwerktunnel."},
-        {"id": "ma09", "prompt": "Ordne den Film der Hauptdarstellerin oder dem Hauptdarsteller zu.", "left": ["Forrest Gump", "Barbie", "Gladiator"], "right": ["Tom Hanks", "Margot Robbie", "Russell Crowe"], "answer": {"Forrest Gump": "Tom Hanks", "Barbie": "Margot Robbie", "Gladiator": "Russell Crowe"}, "explanation": "Tom Hanks, Margot Robbie und Russell Crowe."},
-        {"id": "ma10", "prompt": "Ordne das Element seinem chemischen Symbol zu.", "left": ["Gold", "Natrium", "Eisen"], "right": ["Au", "Na", "Fe"], "answer": {"Gold": "Au", "Natrium": "Na", "Eisen": "Fe"}, "explanation": "Au, Na und Fe stammen von lateinischen Bezeichnungen."},
-        {"id": "ma11", "prompt": "Ordne die App ihrer ursprünglichen Kernidee zu.", "left": ["Shazam", "Duolingo", "Strava"], "right": ["Musikerkennung", "Sprachenlernen", "Sporttracking"], "answer": {"Shazam": "Musikerkennung", "Duolingo": "Sprachenlernen", "Strava": "Sporttracking"}, "explanation": "Musik erkennen, Sprachen üben und sportliche Aktivitäten aufzeichnen."},
-        {"id": "ma12", "prompt": "Ordne die Einheit ihrer Messgröße zu.", "left": ["Pascal", "Lumen", "Watt"], "right": ["Druck", "Lichtstrom", "Leistung"], "answer": {"Pascal": "Druck", "Lumen": "Lichtstrom", "Watt": "Leistung"}, "explanation": "Pascal misst Druck, Lumen Lichtstrom und Watt Leistung."},
-        {"id": "ma13", "prompt": "Ordne das Fest dem typischen Land zu.", "left": ["Día de los Muertos", "Songkran", "Midsommar"], "right": ["Mexiko", "Thailand", "Schweden"], "answer": {"Día de los Muertos": "Mexiko", "Songkran": "Thailand", "Midsommar": "Schweden"}, "explanation": "Mexiko, Thailand und Schweden."},
-        {"id": "ma14", "prompt": "Ordne die Romanfigur ihrem Autor oder ihrer Autorin zu.", "left": ["Sherlock Holmes", "Pippi Langstrumpf", "Harry Potter"], "right": ["Arthur Conan Doyle", "Astrid Lindgren", "J. K. Rowling"], "answer": {"Sherlock Holmes": "Arthur Conan Doyle", "Pippi Langstrumpf": "Astrid Lindgren", "Harry Potter": "J. K. Rowling"}, "explanation": "Doyle, Lindgren und Rowling."},
-        {"id": "ma15", "prompt": "Ordne den Sport seinem Spielgerät zu.", "left": ["Curling", "Badminton", "Lacrosse"], "right": ["Granitstein", "Federball", "Schläger mit Netz"], "answer": {"Curling": "Granitstein", "Badminton": "Federball", "Lacrosse": "Schläger mit Netz"}, "explanation": "Stein, Federball und ein Netz am Schläger."},
-        {"id": "ma16", "prompt": "Ordne das Unternehmen seinem bekannten Produkt zu.", "left": ["Adobe", "Nintendo", "SpaceX"], "right": ["Photoshop", "Switch", "Falcon 9"], "answer": {"Adobe": "Photoshop", "Nintendo": "Switch", "SpaceX": "Falcon 9"}, "explanation": "Software, Spielkonsole und Trägerrakete."},
-        {"id": "ma17", "prompt": "Ordne die Stadt ihrem Wahrzeichen zu.", "left": ["Barcelona", "San Francisco", "Sydney"], "right": ["Sagrada Família", "Golden Gate Bridge", "Opernhaus"], "answer": {"Barcelona": "Sagrada Família", "San Francisco": "Golden Gate Bridge", "Sydney": "Opernhaus"}, "explanation": "Drei Städte, drei ziemlich unverwechselbare Silhouetten."},
-        {"id": "ma18", "prompt": "Ordne die Wissenschaftlerin oder den Wissenschaftler dem Gebiet zu.", "left": ["Marie Curie", "Charles Darwin", "Ada Lovelace"], "right": ["Radioaktivität", "Evolution", "frühe Programmierung"], "answer": {"Marie Curie": "Radioaktivität", "Charles Darwin": "Evolution", "Ada Lovelace": "frühe Programmierung"}, "explanation": "Curie, Darwin und Lovelace prägten sehr unterschiedliche Forschungsfelder."},
-        {"id": "ma19", "prompt": "Ordne das Getränk seiner Grundzutat zu.", "left": ["Sake", "Tequila", "Cider"], "right": ["Reis", "Agave", "Äpfel"], "answer": {"Sake": "Reis", "Tequila": "Agave", "Cider": "Äpfel"}, "explanation": "Reis, Agave und Äpfel."},
-        {"id": "ma20", "prompt": "Ordne das Dateiformat seinem typischen Inhalt zu.", "left": ["SVG", "CSV", "FLAC"], "right": ["Vektorgrafik", "Tabellendaten", "verlustfreies Audio"], "answer": {"SVG": "Vektorgrafik", "CSV": "Tabellendaten", "FLAC": "verlustfreies Audio"}, "explanation": "Grafik, Datentabelle und Audiodatei."},
-        {"id": "ma21", "prompt": "Ordne den Planeten seinem markanten Merkmal zu.", "left": ["Mars", "Jupiter", "Venus"], "right": ["roter Eisenoxidstaub", "Großer Roter Fleck", "dichte Kohlendioxidatmosphäre"], "answer": {"Mars": "roter Eisenoxidstaub", "Jupiter": "Großer Roter Fleck", "Venus": "dichte Kohlendioxidatmosphäre"}, "explanation": "Mars ist rostrot, Jupiter trägt den riesigen Sturm und die Venus besitzt eine sehr dichte Atmosphäre."},
-        {"id": "ma22", "prompt": "Ordne das Bauwerk seiner Stadt zu.", "left": ["Brandenburger Tor", "Atomium", "Guggenheim-Museum"], "right": ["Berlin", "Brüssel", "Bilbao"], "answer": {"Brandenburger Tor": "Berlin", "Atomium": "Brüssel", "Guggenheim-Museum": "Bilbao"}, "explanation": "Berlin, Brüssel und Bilbao."},
-        {"id": "ma23", "prompt": "Ordne das Tier seiner Tierklasse zu.", "left": ["Salamander", "Delfin", "Forelle"], "right": ["Amphibium", "Säugetier", "Fisch"], "answer": {"Salamander": "Amphibium", "Delfin": "Säugetier", "Forelle": "Fisch"}, "explanation": "Salamander sind Amphibien, Delfine Säugetiere und Forellen Fische."},
-        {"id": "ma24", "prompt": "Ordne den Komponisten seinem Werk zu.", "left": ["Ludwig van Beethoven", "Wolfgang Amadeus Mozart", "Antonio Vivaldi"], "right": ["9. Sinfonie", "Die Zauberflöte", "Die vier Jahreszeiten"], "answer": {"Ludwig van Beethoven": "9. Sinfonie", "Wolfgang Amadeus Mozart": "Die Zauberflöte", "Antonio Vivaldi": "Die vier Jahreszeiten"}, "explanation": "Beethoven, Mozart und Vivaldi gehören zu den drei berühmten Werken."},
-        {"id": "ma25", "prompt": "Ordne das Land seiner Währung zu.", "left": ["Japan", "Schweiz", "Indien"], "right": ["Yen", "Franken", "Rupie"], "answer": {"Japan": "Yen", "Schweiz": "Franken", "Indien": "Rupie"}, "explanation": "Japanischer Yen, Schweizer Franken und Indische Rupie."},
-        {"id": "ma26", "prompt": "Ordne die Wolkenart ihrem typischen Erscheinungsbild zu.", "left": ["Cumulus", "Cirrus", "Stratus"], "right": ["bauschige Haufenwolke", "federartige hohe Wolke", "gleichmäßige Schichtwolke"], "answer": {"Cumulus": "bauschige Haufenwolke", "Cirrus": "federartige hohe Wolke", "Stratus": "gleichmäßige Schichtwolke"}, "explanation": "Haufen, Federn und Schichten helfen beim Wiedererkennen."},
-        {"id": "ma27", "prompt": "Ordne den Begriff seiner Sportart zu.", "left": ["Birdie", "Ippon", "Touchdown"], "right": ["Golf", "Judo", "American Football"], "answer": {"Birdie": "Golf", "Ippon": "Judo", "Touchdown": "American Football"}, "explanation": "Birdie im Golf, Ippon im Judo, Touchdown im American Football."},
-        {"id": "ma28", "prompt": "Ordne den Kontinent seinem höchsten Berg zu.", "left": ["Afrika", "Südamerika", "Europa"], "right": ["Kilimandscharo", "Aconcagua", "Elbrus"], "answer": {"Afrika": "Kilimandscharo", "Südamerika": "Aconcagua", "Europa": "Elbrus"}, "explanation": "Kilimandscharo, Aconcagua und Elbrus sind die jeweiligen Kontinentalrekorde."},
-        {"id": "ma29", "prompt": "Ordne den Körperteil dem passenden Knochen zu.", "left": ["Oberarm", "Oberschenkel", "Unterkiefer"], "right": ["Humerus", "Femur", "Mandibula"], "answer": {"Oberarm": "Humerus", "Oberschenkel": "Femur", "Unterkiefer": "Mandibula"}, "explanation": "Humerus, Femur und Mandibula sind die anatomischen Bezeichnungen."},
-        {"id": "ma30", "prompt": "Ordne die Programmiersprache ihrem bekannten Einsatzgebiet zu.", "left": ["JavaScript", "SQL", "Swift"], "right": ["interaktive Webseiten", "Datenbankabfragen", "Apple-Apps"], "answer": {"JavaScript": "interaktive Webseiten", "SQL": "Datenbankabfragen", "Swift": "Apple-Apps"}, "explanation": "Web-Interaktion, Datenbanken und Apples App-Ökosystem."},
-        {"id": "ma31", "prompt": "Ordne das Gewässer seiner Lage zu.", "left": ["Totes Meer", "Gardasee", "Titicacasee"], "right": ["Israel und Jordanien", "Italien", "Peru und Bolivien"], "answer": {"Totes Meer": "Israel und Jordanien", "Gardasee": "Italien", "Titicacasee": "Peru und Bolivien"}, "explanation": "Naher Osten, Norditalien und die Anden."},
-        {"id": "ma32", "prompt": "Ordne das Märchen der bekannten Figur zu.", "left": ["Aschenputtel", "Peter Pan", "Alice im Wunderland"], "right": ["gläserner Schuh", "Captain Hook", "Grinsekatze"], "answer": {"Aschenputtel": "gläserner Schuh", "Peter Pan": "Captain Hook", "Alice im Wunderland": "Grinsekatze"}, "explanation": "Schuh, Piratenkapitän und Grinsekatze weisen den Weg."},
-        {"id": "ma33", "prompt": "Ordne die Substanz ihrem pH-Bereich zu.", "left": ["Zitronensaft", "reines Wasser", "Seifenlauge"], "right": ["sauer", "neutral", "basisch"], "answer": {"Zitronensaft": "sauer", "reines Wasser": "neutral", "Seifenlauge": "basisch"}, "explanation": "Zitronensaft ist sauer, reines Wasser neutral und Seifenlauge basisch."},
-        {"id": "ma34", "prompt": "Ordne die historische Person ihrem Wirkungsfeld zu.", "left": ["Johannes Gutenberg", "Florence Nightingale", "Amelia Earhart"], "right": ["Buchdruck", "moderne Krankenpflege", "Luftfahrt"], "answer": {"Johannes Gutenberg": "Buchdruck", "Florence Nightingale": "moderne Krankenpflege", "Amelia Earhart": "Luftfahrt"}, "explanation": "Drucktechnik, Pflege und Fliegerei."},
-        {"id": "ma35", "prompt": "Ordne die Küchentechnik ihrer Beschreibung zu.", "left": ["Blanchieren", "Pochieren", "Flambieren"], "right": ["kurz in kochendem Wasser garen", "sanft unter dem Siedepunkt garen", "mit brennendem Alkohol aromatisieren"], "answer": {"Blanchieren": "kurz in kochendem Wasser garen", "Pochieren": "sanft unter dem Siedepunkt garen", "Flambieren": "mit brennendem Alkohol aromatisieren"}, "explanation": "Kurz kochen, sanft ziehen lassen und kontrolliert abbrennen."},
-        {"id": "ma36", "prompt": "Ordne den Tanz seinem Herkunftsraum zu.", "left": ["Tango", "Flamenco", "Haka"], "right": ["Argentinien und Uruguay", "Spanien", "Neuseeland"], "answer": {"Tango": "Argentinien und Uruguay", "Flamenco": "Spanien", "Haka": "Neuseeland"}, "explanation": "Río de la Plata, Andalusien und die Kultur der Māori."},
-        {"id": "ma37", "prompt": "Ordne den Mond seinem Planeten zu.", "left": ["Titan", "Europa", "Phobos"], "right": ["Saturn", "Jupiter", "Mars"], "answer": {"Titan": "Saturn", "Europa": "Jupiter", "Phobos": "Mars"}, "explanation": "Titan kreist um Saturn, Europa um Jupiter und Phobos um Mars."},
-        {"id": "ma38", "prompt": "Ordne das Tier seinem Laut zu.", "left": ["Pferd", "Frosch", "Eule"], "right": ["wiehern", "quaken", "rufen"], "answer": {"Pferd": "wiehern", "Frosch": "quaken", "Eule": "rufen"}, "explanation": "Pferde wiehern, Frösche quaken und Eulen rufen."},
-        {"id": "ma39", "prompt": "Ordne das Werkzeug seinem typischen Zweck zu.", "left": ["Wasserwaage", "Drehmomentschlüssel", "Messschieber"], "right": ["Neigung prüfen", "Schrauben kontrolliert anziehen", "Maße präzise bestimmen"], "answer": {"Wasserwaage": "Neigung prüfen", "Drehmomentschlüssel": "Schrauben kontrolliert anziehen", "Messschieber": "Maße präzise bestimmen"}, "explanation": "Ausrichten, mit festgelegtem Drehmoment anziehen und genau messen."},
-        {"id": "ma40", "prompt": "Ordne den Nobelpreisträger seinem bekannten Beitrag zu.", "left": ["Alexander Fleming", "Albert Einstein", "Martin Luther King Jr."], "right": ["Penicillin", "Photoeffekt", "gewaltfreier Kampf für Bürgerrechte"], "answer": {"Alexander Fleming": "Penicillin", "Albert Einstein": "Photoeffekt", "Martin Luther King Jr.": "gewaltfreier Kampf für Bürgerrechte"}, "explanation": "Medizin, Physik und Frieden: Fleming, Einstein und King."},
-    ],
+import json
+import re
+from pathlib import Path
+from typing import Any
+
+
+QUESTION_LIBRARY_ROOT = Path(__file__).resolve().parent / "fragen"
+MANIFEST_PATH = QUESTION_LIBRARY_ROOT / "manifest.json"
+
+
+def _read_json(path: Path) -> Any:
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except FileNotFoundError as exc:
+        raise RuntimeError(f"Fragen-Datei fehlt: {path}") from exc
+    except json.JSONDecodeError as exc:
+        raise RuntimeError(f"Ungültiges JSON in {path}: {exc}") from exc
+
+
+QUESTION_LIBRARY_MANIFEST = _read_json(MANIFEST_PATH)
+if QUESTION_LIBRARY_MANIFEST.get("schema_version") != 2:
+    raise RuntimeError("Die Version der Fragenablage wird nicht unterstützt")
+
+QUESTION_TYPE_DEFINITIONS = QUESTION_LIBRARY_MANIFEST["question_types"]
+KNOWLEDGE_CATEGORY_DEFINITIONS = QUESTION_LIBRARY_MANIFEST["categories"]
+
+KNOWLEDGE_CATEGORY_LABELS = {
+    key: definition["label"]
+    for key, definition in KNOWLEDGE_CATEGORY_DEFINITIONS.items()
 }
-
-from question_expansion import EXTRA_QUESTION_BANK
-from modern_questions import MODERN_QUESTION_BANK
-
-for _category, _questions in EXTRA_QUESTION_BANK.items():
-    QUESTION_BANK[_category].extend(_questions)
-
-for _category, _questions in MODERN_QUESTION_BANK.items():
-    QUESTION_BANK[_category].extend(_questions)
 
 CATEGORY_LABELS = {
-    "multiple_choice": "Auswahl",
-    "true_false": "Wahr oder falsch",
-    "estimate": "Schätzung",
-    "order": "Reihenfolge",
-    "match": "Paare bilden",
+    key: definition["label"]
+    for key, definition in QUESTION_TYPE_DEFINITIONS.items()
+    if definition["active"]
 }
 
-CATEGORY_ORDER = [
-    "true_false",
-    "multiple_choice",
-    "match",
-    "order",
-    "estimate",
-]
+CATEGORY_ORDER = QUESTION_LIBRARY_MANIFEST["round_order"]
+if set(CATEGORY_ORDER) != set(CATEGORY_LABELS):
+    raise RuntimeError("Aktive Fragearten und Rundenreihenfolge widersprechen sich")
+
+
+def _id_sort_key(question: dict[str, Any]) -> tuple[str, int]:
+    question_id = str(question.get("id", ""))
+    match = re.search(r"\d+", question_id)
+    return (
+        question_id[: match.start()] if match else question_id,
+        int(match.group()) if match else 0,
+    )
+
+
+def _load_question_bank() -> dict[str, list[dict[str, Any]]]:
+    bank: dict[str, list[dict[str, Any]]] = {
+        question_type: [] for question_type in CATEGORY_ORDER
+    }
+    seen_ids: set[str] = set()
+
+    for question_type in CATEGORY_ORDER:
+        type_definition = QUESTION_TYPE_DEFINITIONS[question_type]
+        path = QUESTION_LIBRARY_ROOT / type_definition["directory"] / "fragen.json"
+        questions = _read_json(path)
+        if not isinstance(questions, list):
+            raise RuntimeError(f"{path} muss eine Liste von Fragen enthalten")
+
+        for stored in questions:
+            if not isinstance(stored, dict):
+                raise RuntimeError(f"Ungültiger Eintrag in {path}")
+            question = dict(stored)
+            question_id = question.get("id")
+            if not question_id or question_id in seen_ids:
+                raise RuntimeError(f"Fehlende oder doppelte Fragen-ID: {question_id}")
+            if question.get("question_type") != question_type:
+                raise RuntimeError(f"Falsche Frageart bei {question_id} in {path}")
+            for required in ("prompt", "answer", "explanation", "source"):
+                if required not in question:
+                    raise RuntimeError(f"{question_id} fehlt das Feld {required}")
+            if question_type == "true_false":
+                if any(
+                    field in question
+                    for field in ("primary_category", "category", "subtopic", "topics", "tags")
+                ):
+                    raise RuntimeError(
+                        f"Wahr-oder-unwahr-Frage {question_id} enthält Kategorienfelder"
+                    )
+            else:
+                for required in ("primary_category", "subtopic", "tags"):
+                    if required not in question:
+                        raise RuntimeError(
+                            f"{question_id} fehlt das Steckbrief-Feld {required}"
+                        )
+                if question["primary_category"] not in KNOWLEDGE_CATEGORY_DEFINITIONS:
+                    raise RuntimeError(
+                        f"Unbekannte Themenkategorie bei {question_id}"
+                    )
+
+            # Runtime compatibility: the game calls the question type "category".
+            question["category"] = question_type
+            knowledge_category = question.get("primary_category")
+            if knowledge_category:
+                question["knowledge_category"] = knowledge_category
+            bank[question_type].append(question)
+            seen_ids.add(question_id)
+
+        bank[question_type].sort(key=_id_sort_key)
+
+    return bank
+
+
+QUESTION_BANK = _load_question_bank()

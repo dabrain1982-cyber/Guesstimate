@@ -47,7 +47,7 @@
     <div class="review-list">
       {% for item in answer_review %}
         <article class="review-card {% if item.credit == 1 %}perfect{% elif item.credit > 0 %}partial{% else %}wrong{% endif %}">
-          <div class="review-topline"><span>{{ loop.index }} · {{ item.category_label }}</span><strong>{{ item.points }} PKT</strong></div>
+          <div class="review-topline"><span>{{ loop.index }} · {{ item.category_label }}{% if item.knowledge_category_label %} · {{ item.knowledge_category_label }}{% endif %}</span><strong>{{ item.points }} PKT</strong></div>
           <h3>{{ item.question.prompt }}</h3>
           <dl>
             <div><dt>Deine Antwort</dt><dd>{{ item.submitted }}</dd></div>
@@ -71,7 +71,7 @@
     {% else %}
       <button class="primary-button completed" disabled>Schau morgen wieder rein</button>
     {% endif %}
-    {% if contact_email %}<p class="idea-note">Hast du Ideen für weitere Kategorien, die du bei <strong>{{ game_name }}</strong> gerne sehen würdest?<br>Schreib mir: <a href="mailto:{{ contact_email }}">{{ contact_email }}</a></p>{% endif %}
+    <p class="idea-note">Hast du Ideen für weitere Kategorien, die du bei <strong>{{ game_name }}</strong> gerne sehen würdest?<br>Schreib mir: <a href="mailto:DaBrain@gmx.net">DaBrain@gmx.net</a></p>
     <a href="{{ url_for('home') }}">Zurück zur Übersicht</a>
   </section>
 {% endblock %}
