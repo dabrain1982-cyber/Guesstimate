@@ -107,7 +107,7 @@ bleiben Spieler, Ergebnisse und der dauerhafte Fragenverbrauch unverändert.
 Ein erneutes Einspielen mit Reset von Runden, Antworten und Highscore – bei unveränderten Logins und dauerhaft erhaltenem Fragenverlauf – erfolgt mit:
 
 ```bash
-sudo "/home/igroup/Projekt MiniMe/minime/guesstimate/deploy/install-live.sh" --reset-game
+sudo "/home/igroup/Rate it/deploy/install-live.sh" --reset-game
 ```
 
 Vor dem Reset wird automatisch eine Datenbanksicherung angelegt.
