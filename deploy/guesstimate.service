@@ -1,0 +1,35 @@
+[Unit]
+Description=Stormseed´s Guesstimate daily quiz
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=guesstimate
+Group=guesstimate
+WorkingDirectory=/srv/guesstimate
+Environment=PYTHONPATH=/srv/guesstimate/.deps
+Environment=QUIZ_SECRET_KEY_FILE=/srv/guesstimate/config/session.secret
+Environment=QUIZ_DATABASE=/srv/guesstimate/runtime/quiz.sqlite3
+Environment="QUIZ_GAME_NAME=Stormseed´s Guesstimate"
+Environment=QUIZ_URL_PREFIX=/guesstimate
+Environment=QUIZ_PUBLIC_URL=https://igroup.it-sauther.de/guesstimate
+Environment=QUIZ_MAIL_USER=DaBrain@gmx.net
+Environment=QUIZ_MAIL_TO=DaBrain@gmx.net
+Environment=QUIZ_MAIL_PASSWORD_FILE=/srv/guesstimate/config/mail.secret
+ExecStart=/usr/bin/python3 -m gunicorn --workers 2 --timeout 60 --bind 127.0.0.1:8765 app:app
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/srv/guesstimate/runtime
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+
+[Install]
+WantedBy=multi-user.target

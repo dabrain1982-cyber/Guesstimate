@@ -1,0 +1,38 @@
+<section class="leaderboard" aria-labelledby="leaderboard-heading" data-leaderboards>
+  <div class="section-heading">
+    <div>
+      <span class="section-kicker">BESTENLISTEN</span>
+      <h2 id="leaderboard-heading"><span class="leader-star" aria-hidden="true">★</span> Wer liegt vorn?</h2>
+    </div>
+    <span class="live-pill">Live</span>
+  </div>
+
+  <div class="leaderboard-tabs" role="tablist" aria-label="Zeitraum der Bestenliste">
+    <button type="button" role="tab" id="tab-daily" aria-controls="panel-daily" aria-selected="true" data-leaderboard-tab="daily">Tagessieger</button>
+    <button type="button" role="tab" id="tab-weekly" aria-controls="panel-weekly" aria-selected="false" data-leaderboard-tab="weekly">Wochenliga</button>
+    <button type="button" role="tab" id="tab-all" aria-controls="panel-all" aria-selected="false" data-leaderboard-tab="all">Hall of Fame</button>
+  </div>
+
+  {% for board_key, board_label in [('daily', 'Tagessieger'), ('weekly', 'Wochenliga'), ('all', 'Hall of Fame')] %}
+    {% set players = leaderboards[board_key] %}
+    <div class="leaderboard-panel" id="panel-{{ board_key }}" role="tabpanel" aria-labelledby="tab-{{ board_key }}" data-leaderboard-panel="{{ board_key }}" {% if board_key != 'daily' %}hidden{% endif %}>
+      <ol class="rank-list {% if players|length > 5 %}is-scrollable{% endif %}" {% if players|length > 5 %}tabindex="0" aria-label="{{ board_label }} mit {{ players|length }} Spielern; zum Blättern scrollen"{% endif %}>
+        {% for player in players %}
+          <li class="rank-row rank-{{ player.rank }} {% if player.id == g.user['id'] %}is-me{% endif %}">
+            <span class="rank-number">{{ player.rank }}</span>
+            <span class="player-name">{{ player.display_name }}{% if player.id == g.user['id'] %}<small>Du</small>{% endif %}</span>
+            <strong>{{ player.points|points }} <small>PKT</small></strong>
+          </li>
+        {% endfor %}
+        {% for empty_index in range([0, 5 - players|length]|max) %}
+          <li class="rank-row is-empty" aria-label="Noch unbelegter Rang">
+            <span class="rank-number">{{ players|length + empty_index + 1 }}</span>
+            <span class="player-name">Noch frei</span>
+            <strong>— <small>PKT</small></strong>
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+  {% endfor %}
+</section>
+

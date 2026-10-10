@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+{% from "_icons.html" import category_icon %}
+{% block title %}Frage {{ index + 1 }} · {{ game_name }}{% endblock %}
+{% block content %}
+  <section class="round-status" aria-label="Rundenfortschritt">
+    <div class="status-topline">
+      <span>FRAGE {{ index + 1 }} VON {{ total }}</span>
+      <span class="multiplier">{{ running_points }} PKT</span>
+    </div>
+    <div class="progress-track"><span style="width: {{ ((index + (1 if feedback else 0)) / total * 100)|round }}%"></span></div>
+    <div class="progress-icons" aria-hidden="true">
+      {% for category in ['true_false', 'multiple_choice', 'match', 'order', 'estimate'] %}
+        {{ category_icon(category, 'done' if loop.index0 < index or (loop.index0 == index and feedback) else ('current' if loop.index0 == index else '')) }}
+      {% endfor %}
+    </div>
+  </section>
+
+  <article class="question-card category-{{ question.category }}">
+    <div class="question-topline">
+      {{ category_icon(question.category, 'question-art') }}
+      <div class="question-taxonomy">
+        <div class="category-badge"><span>{{ index + 1 }}</span>{{ category_label }}</div>
+        {% if knowledge_category_label %}<span class="knowledge-badge">{{ knowledge_category_label }}</span>{% endif %}
+      </div>
+    </div>
+    <h1>{{ question.prompt }}</h1>
+
+    {% if not feedback %}
+      <section class="time-factor" id="time-factor" data-elapsed="{{ '%.3f'|format(elapsed_seconds) }}" data-limit="{{ timer_limit|int }}" data-hold="{{ timer_hold|int }}" data-max-penalty="50" aria-label="Verbleibende Zeitpunkte">
+        <div class="time-factor-head"><span>Zeitpunkte</span><strong id="time-factor-value">100 PKT</strong></div>
+        <div class="time-factor-track" role="progressbar" aria-valuemin="50" aria-valuemax="100" aria-valuenow="100"><span id="time-factor-bar"></span></div>
+        <small>{{ timer_hold|int }} Sekunden ohne Abzug · danach {{ timer_decay|int }} Sekunden · höchstens −50 Punkte</small>
+      </section>
+      <form method="post" action="{{ url_for('answer_question') }}" class="answer-form" id="answer-form">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+
+        {% if question.category == 'multiple_choice' %}
+          <div class="choice-grid">
+            {% for key, option in question.options.items() %}
+              <label class="choice"><input type="radio" name="answer" value="{{ key }}" required><span class="choice-key">{{ key }}</span><span>{{ option }}</span></label>
+            {% endfor %}
+          </div>
+        {% elif question.category == 'true_false' %}
+          <div class="binary-grid">
+            <label class="choice true-choice"><input type="radio" name="answer" value="true" required><span class="choice-symbol">✓</span><span>Wahr</span></label>
+            <label class="choice false-choice"><input type="radio" name="answer" value="false" required><span class="choice-symbol">×</span><span>Falsch</span></label>
+          </div>
+        {% elif question.category == 'estimate' %}
+          <div class="estimate-wrap">
+            <label for="estimate">Deine Schätzung</label>
+            <div class="estimate-input"><input id="estimate" name="answer" type="text" inputmode="decimal" autocomplete="off" required autofocus><span>{{ question.unit }}</span></div>
+            <p>Je näher dran, desto mehr von 100 Genauigkeitspunkten. 10 Punkte sind dir sicher.</p>
+          </div>
+        {% elif question.category == 'order' %}
+          <p class="microcopy">Ordne die Begriffe waagerecht von links nach rechts. Jedes richtig geordnete Paar zählt.</p>
+          <input type="hidden" name="answer" id="order-answer">
+          <ol class="order-list" id="order-list">
+            {% for item in display_items %}
+              <li data-value="{{ item }}" tabindex="0"><span class="order-position">{{ loop.index }}</span><strong>{{ item }}</strong><span class="drag-handle" aria-hidden="true">↔</span></li>
+            {% endfor %}
+          </ol>
+          <p class="drag-hint">Begriff greifen und nach links oder rechts an die gewünschte Stelle ziehen.</p>
+        {% elif question.category == 'match' %}
+          <p class="microcopy">Tippe pro Begriff auf ein Gegenstück. Jede Antwort darf nur einmal vorkommen.</p>
+          <div class="match-list" data-match-buttons>
+            {% for left in question.left %}
+              <div class="match-row" data-match-row>
+                <strong>{{ left }}</strong>
+                <input type="hidden" name="pair_{{ loop.index0 }}" value="">
+                <div class="match-options">
+                  {% for right in match_options %}<button type="button" class="match-option" data-match-value="{{ right }}" aria-pressed="false">{{ right }}</button>{% endfor %}
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        <button class="primary-button answer-button" type="submit"{% if question.category == 'match' %} data-match-submit disabled{% endif %}>Antwort einloggen</button>
+      </form>
+    {% else %}
+      <section class="feedback-panel {% if feedback.credit == 1 %}perfect{% elif feedback.credit > 0 %}partial{% else %}wrong{% endif %}" aria-live="polite">
+        <div class="feedback-icon">{% if feedback.credit == 1 %}✓{% elif feedback.credit > 0 %}½{% else %}×{% endif %}</div>
+        <div>
+          <p class="feedback-title">
+            {% if question.category == 'estimate' %}
+              {{ feedback.accuracy_points }} Genauigkeitspunkte
+            {% elif feedback.credit == 1 %}
+              Volltreffer.
+            {% elif feedback.credit > 0 %}
+              Teiltreffer: {{ (feedback.credit * 100)|round|int }} % richtig.
+            {% else %}
+              Knapp daneben. Oder auch nicht knapp.
+            {% endif %}
+          </p>
+          <p>{{ question.explanation }}</p>
+          {% if question.category == 'order' %}
+            <div class="order-comparison">
+              <div>
+                <span>Deine Reihenfolge</span>
+                <ol>{% for item in feedback.submitted %}<li>{{ item }}</li>{% endfor %}</ol>
+              </div>
+              <div>
+                <span>Richtige Reihenfolge</span>
+                <ol>{% for item in question.answer %}<li>{{ item }}</li>{% endfor %}</ol>
+              </div>
+            </div>
+          {% endif %}
+          <span class="time-result">{{ '%.1f'|format(feedback.response_seconds) }} s · {{ feedback.points }} Punkte</span>
+        </div>
+      </section>
+      <form
+        method="post"
+        action="{{ url_for('next_question') }}"
+        data-feedback-delay
+        data-remaining-ms="{{ feedback_remaining_ms }}"
+      >
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <button class="primary-button" type="submit"{% if feedback_remaining_ms > 0 %} disabled{% endif %}>
+          <span data-feedback-button-label{% if feedback_remaining_ms > 0 %} hidden{% endif %}>{% if index + 1 == total %}Ergebnis ansehen{% else %}Weiter zu Frage {{ index + 2 }}{% endif %}</span>
+          <span data-feedback-countdown{% if feedback_remaining_ms <= 0 %} hidden{% endif %}></span>
+        </button>
+      </form>
+    {% endif %}
+  </article>
+{% endblock %}
+{% block scripts %}
+  {% if not feedback %}
+    <script src="{{ url_for('static', filename='timer.js', v='3') }}" defer></script>
+  {% endif %}
+  {% if question.category == 'order' and not feedback %}
+    <script src="{{ url_for('static', filename='game.js', v='3') }}" defer></script>
+  {% endif %}
+  {% if question.category == 'match' and not feedback %}
+    <script src="{{ url_for('static', filename='match.js', v='1') }}" defer></script>
+  {% endif %}
+  {% if feedback %}
+    <script src="{{ url_for('static', filename='feedback.js', v='1') }}" defer></script>
+  {% endif %}
+{% endblock %}
+

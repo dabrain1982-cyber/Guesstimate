@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Partymodus · {{ game_name }}{% endblock %}
+{% block content %}
+  <section class="party-head">
+    <p class="eyebrow">NUR FÜR DEN RUHM</p>
+    <h1>Partymodus</h1>
+    <p>Gemeinsam spielen, allein triumphieren. Ohne Ikühe und ohne Einfluss auf die regulären Ranglisten.</p>
+  </section>
+  <section
+    class="party-list"
+    aria-label="Aktive Partys"
+    data-party-index
+    data-status-url="{{ url_for('party_overview_status') }}"
+    data-party-signature="{{ party_signature }}"
+  >
+    {% for lobby in lobbies %}
+      <article class="party-tile">
+        <div><span>{% if lobby.status == 'playing' %}LÄUFT{% elif lobby.status == 'countdown' %}STARTET{% else %}OFFEN{% endif %}</span><h2>{{ lobby.name }}</h2><p>{{ lobby.member_count }}/10 Spieler · {{ lobby.rounds }} {{ 'Runde' if lobby.rounds == 1 else 'Runden' }}</p></div>
+        {% if lobby.is_member %}
+          <a class="party-return" href="{{ url_for('party_lobby', lobby_id=lobby.id) }}">{{ 'Zurück ins Spiel' if lobby.status in ('playing', 'countdown') else 'Zur Lobby' }}</a>
+        {% elif lobby.status == 'waiting' %}
+          <form method="post" action="{{ url_for('party_join', lobby_id=lobby.id) }}">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+            <button type="submit">Beitreten</button>
+          </form>
+        {% else %}<strong>Gestartet</strong>{% endif %}
+      </article>
+    {% else %}
+      <div class="party-empty">Noch keine Party. Das ist verdächtig vernünftig.</div>
+    {% endfor %}
+  </section>
+  <form method="post" action="{{ url_for('party_create') }}" class="party-create">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <button class="primary-button" type="submit">Lobby erstellen</button>
+  </form>
+  <a class="back-link" href="{{ url_for('home') }}">Zurück zur Übersicht</a>
+{% endblock %}
+{% block scripts %}
+  <script src="{{ url_for('static', filename='party.js', v='2') }}" defer></script>
+{% endblock %}

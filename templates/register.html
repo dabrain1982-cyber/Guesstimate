@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Mitspielen · {{ game_name }}{% endblock %}
+{% block shell_class %}login-shell{% endblock %}
+{% block header %}{% endblock %}
+{% block content %}
+  <section class="login-card register-card">
+    <div class="mini-brand"><span class="mini-bolt">⚡</span><strong>Stormseed´s<br>Guesstimate</strong></div>
+    <p class="eyebrow">DEIN SPIELERKONTO</p>
+    <h1>Such dir einen Namen aus.</h1>
+    <p class="login-intro">So erscheinst du später in der Bestenliste. Name und PIN sind frei wählbar.</p>
+
+    <form method="post" class="stack-form">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <label>
+        <span>Spielername</span>
+        <input name="username" minlength="2" maxlength="24" autocomplete="nickname" required autofocus placeholder="z. B. Quizkönigin">
+      </label>
+      <label>
+        <span>Deine PIN</span>
+        <input name="pin" type="password" minlength="4" maxlength="32" autocomplete="new-password" required placeholder="Mindestens 4 Zeichen">
+      </label>
+      <label>
+        <span>PIN wiederholen</span>
+        <input name="pin_confirm" type="password" minlength="4" maxlength="32" autocomplete="new-password" required placeholder="Noch einmal">
+      </label>
+      <button class="primary-button" type="submit">Konto anlegen & mitspielen</button>
+    </form>
+    <div class="auth-switch"><span>Schon registriert?</span><a href="{{ url_for('login') }}">Zum Login</a></div>
+  </section>
+{% endblock %}

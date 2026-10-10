@@ -1,0 +1,3 @@
+{% macro category_icon(name, extra_class='') -%}
+  <span class="category-icon icon-{{ name }} {{ extra_class }}" aria-hidden="true"><img src="{{ url_for('static', filename='category-sprite.png', v='2') }}" alt=""></span>
+{%- endmacro %}

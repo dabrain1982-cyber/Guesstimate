@@ -1,0 +1,103 @@
+{
+  "schema_version": 2,
+  "storage_order": [
+    "question_type"
+  ],
+  "round_order": [
+    "true_false",
+    "multiple_choice",
+    "match",
+    "order",
+    "estimate"
+  ],
+  "usage_tracking": {
+    "location": "database.question_usage",
+    "repeat_before_exhaustion": false
+  },
+  "question_types": {
+    "multiple_choice": {
+      "label": "Auswahl",
+      "directory": "multiplechoice",
+      "active": true
+    },
+    "true_false": {
+      "label": "Wahr oder falsch",
+      "directory": "wahroderunwahr",
+      "active": true
+    },
+    "match": {
+      "label": "Paare bilden",
+      "directory": "paarebilden",
+      "active": true
+    },
+    "order": {
+      "label": "Reihenfolge",
+      "directory": "reihenfolge",
+      "active": true
+    },
+    "estimate": {
+      "label": "Schätzung",
+      "directory": "schaetzung",
+      "active": true
+    },
+    "word_scramble": {
+      "label": "Buchstabensalat",
+      "directory": "buchstabensalat",
+      "active": false
+    },
+    "binary_sort": {
+      "label": "Zwei Gruppen zuordnen",
+      "directory": "zweigruppenzuordnen",
+      "active": false
+    }
+  },
+  "categories": {
+    "gaming": {
+      "label": "Gaming",
+      "directory": "gaming"
+    },
+    "faith_religion": {
+      "label": "Glaube & Religion",
+      "directory": "glaube-religion"
+    },
+    "music": {
+      "label": "Musik",
+      "directory": "musik"
+    },
+    "sport": {
+      "label": "Sport",
+      "directory": "sport"
+    },
+    "witnesses_of_time": {
+      "label": "Zeugen der Zeit",
+      "directory": "zeugen-der-zeit"
+    },
+    "media_entertainment": {
+      "label": "Medien & Unterhaltung",
+      "directory": "medien-unterhaltung"
+    },
+    "plants_animals": {
+      "label": "Pflanzen & Tiere",
+      "directory": "pflanzen-tiere"
+    },
+    "geography_world": {
+      "label": "Geografie & Welt",
+      "directory": "geografie-welt"
+    },
+    "science_technology": {
+      "label": "Wissenschaft & Technik",
+      "directory": "wissenschaft-technik"
+    },
+    "human_everyday": {
+      "label": "Mensch & Alltag",
+      "directory": "mensch-alltag"
+    }
+  },
+  "taxonomy": {
+    "mode": "required_except_forbidden_types",
+    "forbidden_for_question_types": [
+      "true_false"
+    ],
+    "production_quotas": false
+  }
+}

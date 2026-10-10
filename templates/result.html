@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% from "_icons.html" import category_icon %}
+{% block title %}Dein Ergebnis · {{ game_name }}{% endblock %}
+{% block content %}
+  <section class="result-hero">
+    <p class="eyebrow">RUNDE GESCHAFFT</p>
+    <div class="result-icon-burst" aria-hidden="true">
+      {{ category_icon('true_false') }}
+      {{ category_icon('multiple_choice') }}
+      {{ category_icon('match') }}
+      {{ category_icon('order') }}
+      {{ category_icon('estimate') }}
+    </div>
+    <div class="score-orbit">
+      <span class="score">{{ attempt['score']|points }}</span>
+      <span>PKT</span>
+    </div>
+    <h1>
+      {% if attempt['score'] >= 400 %}Das war verdächtig souverän.
+      {% elif attempt['score'] >= 250 %}Solide. Damit kann man angeben.
+      {% elif attempt['score'] >= 120 %}Da war Licht. Und etwas Schatten.
+      {% else %}Morgen ist auch noch ein Quiztag.{% endif %}
+    </h1>
+    <div class="score-equation"><span>5 Fragen</span><b>·</b><span>maximal 500 Punkte</span></div>
+    <p class="currency-earned">Du hast <strong>{{ attempt['score']|points }} Ikühe</strong> verdient.</p>
+  </section>
+
+  {% include "_leaderboard.html" %}
+
+  <section class="result-belt">
+    <div>
+      <span>DEIN AKTUELLER PLATZ</span>
+      <strong>#{{ current_position }}</strong>
+    </div>
+    <div class="movement {% if movement > 0 %}up{% elif movement < 0 %}down{% endif %}">
+      {% if movement > 0 %}↑ +{{ movement }} {{ 'Platz' if movement == 1 else 'Plätze' }}
+      {% elif movement < 0 %}↓ {{ movement }} {{ 'Platz' if movement == -1 else 'Plätze' }}
+      {% else %}±0 unverändert{% endif %}
+    </div>
+  </section>
+
+  <section class="answer-review" aria-labelledby="answer-review-heading">
+    <div class="review-heading">
+      <span class="section-kicker">DEINE RUNDE</span>
+      <h2 id="answer-review-heading">Deine Antworten</h2>
+    </div>
+    <div class="review-list">
+      {% for item in answer_review %}
+        <article class="review-card {% if item.credit == 1 %}perfect{% elif item.credit > 0 %}partial{% else %}wrong{% endif %}">
+          <div class="review-topline"><span>{{ loop.index }} · {{ item.category_label }}{% if item.knowledge_category_label %} · {{ item.knowledge_category_label }}{% endif %}</span><strong>{{ item.points }} PKT</strong></div>
+          <h3>{{ item.question.prompt }}</h3>
+          <dl>
+            <div><dt>Deine Antwort</dt><dd>{{ item.submitted }}</dd></div>
+            <div><dt>Richtige Antwort</dt><dd>{{ item.correct_answer }}</dd></div>
+          </dl>
+          <p>{{ item.question.explanation }}</p>
+          <div class="review-score">
+            <span><strong>{{ item.accuracy_points }} Punkte</strong>, {{ '%.1f'|format(item.response_seconds) }} Sekunden: <strong>{{ item.points }} Punkte nach Zeitabzug</strong></span>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="action-dock result-dock">
+    {% if has_next_catchup %}
+      <form method="post" action="{{ url_for('next_catchup_round') }}">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <button class="primary-button" type="submit">Nächsten Tag nachholen</button>
+      </form>
+    {% else %}
+      <button class="primary-button completed" disabled>Schau morgen wieder rein</button>
+    {% endif %}
+    <p class="idea-note">Hast du Ideen für weitere Kategorien, die du bei <strong>{{ game_name }}</strong> gerne sehen würdest?<br>Schreib mir: <a href="mailto:DaBrain@gmx.net">DaBrain@gmx.net</a></p>
+    <a href="{{ url_for('home') }}">Zurück zur Übersicht</a>
+  </section>
+{% endblock %}
+

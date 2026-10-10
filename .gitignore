@@ -1,0 +1,12 @@
+.deps/
+.venv/
+__pycache__/
+*.py[cod]
+/runtime/
+/config/
+/instance/
+*.sqlite*
+*.log
+.env
+.env.*
+!.env.example
