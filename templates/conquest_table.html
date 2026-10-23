@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block title %}{{ lobby.name }} · Stormseed’s Conquest{% endblock %}
+{% block shell_class %}conquest-shell{% endblock %}
+{% block header %}{% endblock %}
+{% block extra_head %}<link rel="stylesheet" href="{{ url_for('static', filename='conquest-table.css', v='1') }}">{% endblock %}
+{% block content %}
+  <main class="conquest-app" data-conquest-app
+    data-world-url="{{ url_for('static', filename='conquest/world.json') }}"
+    data-assets-root="{{ url_for('static', filename='conquest/') }}"
+    data-theme-url="{{ url_for('static', filename='vendor/dddice-outgunned/theme.json') }}"
+    data-theme-assets-url="{{ url_for('static', filename='vendor/dddice-outgunned/') }}"
+    data-die-type="65d8ad5d-ed69-4c48-8ac6-8ff0a1636979"
+    data-status-url="{{ url_for('conquest_status', lobby_id=lobby.id) }}"
+    data-member-id="{{ member.id }}" data-board-style="{{ lobby.board_style }}" data-card-style="{{ lobby.card_style }}">
+    <header class="conquest-toolbar">
+      <a href="{{ url_for('conquest_index') }}" class="conquest-back">← Feldzüge</a>
+      <div class="conquest-title"><small>RUNDE {{ state.round }} · {{ current_name }} IST DRAN</small><strong>{{ lobby.name }}</strong></div>
+      <div class="conquest-styles" role="group" aria-label="Brettstil">
+        <button type="button" class="is-active" data-style="klassisch">Klassisch</button>
+        <button type="button" data-style="taktisch">Taktisch</button>
+        <button type="button" data-style="farbenfroh">Farbenfroh</button>
+      </div>
+      <div class="conquest-camera-actions" role="group" aria-label="Kamera">
+        <button type="button" data-view="center">Brett zentrieren</button>
+        <button type="button" data-view="top">Draufsicht</button>
+        <button type="button" data-view="angle">3D-Ansicht</button>
+      </div>
+    </header>
+
+    <section class="conquest-stage" data-stage aria-label="Dreidimensionaler Spieltisch">
+      <div class="conquest-scene" data-scene>
+        <div class="conquest-table">
+          <div class="conquest-board-wrap">
+            <img class="conquest-board" data-board src="{{ url_for('static', filename='conquest/boards/welt-klassisch.webp') }}" alt="Stormseed’s Conquest Weltspielbrett">
+            <div class="conquest-territories" data-territories></div>
+          </div>
+
+          <button type="button" class="conquest-deck territory-deck" data-deck="territory" aria-label="Länderkarte ziehen">
+            <span class="conquest-card-back"></span><b>Länderkarten</b>
+          </button>
+          <button type="button" class="conquest-deck mission-deck" data-deck="mission" aria-label="Missionskarte ziehen">
+            <span class="conquest-card-back"></span><b>Missionen</b>
+          </button>
+          <div class="conquest-floating-cards" data-floating-cards></div>
+        </div>
+      </div>
+      <p class="conquest-camera-help">Ziehen verschiebt den Blick · Umschalt + Ziehen dreht · Mausrad zoomt immer zur Brettmitte</p>
+    </section>
+
+    <aside class="conquest-info" data-info>
+      <small>PHASE 1 · VERSTÄRKEN</small>
+      <strong>{{ current_name }} ist am Zug</strong>
+      <span>Danach: Angriff wählen oder überspringen · anschließend einmal festigen oder Zug beenden.</span>
+    </aside>
+
+    <aside class="conquest-turn-panel">
+      <small>DEIN ZUGMENÜ</small>
+      <ol><li class="is-current">Verstärken</li><li>Angreifen</li><li>Festigen</li></ol>
+      <button type="button" disabled>Truppen setzen</button>
+      <button type="button" disabled>Angriff wählen</button>
+      <button type="button" disabled>Angriff überspringen</button>
+      <button type="button" disabled>Festigen / Zug beenden</button>
+      <p>Die Lobby und automatische Startaufstellung sind aktiv. Die regelgeprüften Zugaktionen werden als nächster Baustein freigeschaltet.</p>
+      {% if own_mission %}<strong class="conquest-own-mission">Deine geheime Mission liegt verdeckt in deiner Hand.</strong>{% endif %}
+    </aside>
+
+    <section class="conquest-dice-tray" aria-label="Angriffs- und Verteidigungswürfel">
+      <canvas data-conquest-dice></canvas>
+      <div class="conquest-dice-controls">
+        <strong>Angriff</strong>
+        <button type="button" data-roll>3 Angriff · 2 Verteidigung würfeln</button>
+        <span data-dice-status>Würfel werden vorbereitet …</span>
+      </div>
+    </section>
+  </main>
+{% endblock %}
+{% block scripts %}
+  <script src="{{ url_for('static', filename='vendor/dddice-0.21.8.js') }}" defer></script>
+  <script src="{{ url_for('static', filename='conquest-table.js', v='1') }}" defer></script>
+{% endblock %}

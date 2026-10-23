@@ -3,6 +3,7 @@
 {% block title %}Dein Ergebnis · {{ game_name }}{% endblock %}
 {% block content %}
   <section class="result-hero">
+    <p class="active-player-phrase">„{{ equipped_phrase }}“</p>
     <p class="eyebrow">RUNDE GESCHAFFT</p>
     <div class="result-icon-burst" aria-hidden="true">
       {{ category_icon('true_false') }}
@@ -55,7 +56,11 @@
           </dl>
           <p>{{ item.question.explanation }}</p>
           <div class="review-score">
-            <span><strong>{{ item.accuracy_points }} Punkte</strong>, {{ '%.1f'|format(item.response_seconds) }} Sekunden: <strong>{{ item.points }} Punkte nach Zeitabzug</strong></span>
+            {% if item.order_correct_count is not none %}
+              <span><strong>{{ item.order_correct_count }} {{ 'Begriff' if item.order_correct_count == 1 else 'Begriffe' }} richtig</strong>, {{ '%.1f'|format(item.response_seconds) }} Sekunden: <strong>{{ item.points }} Punkte</strong></span>
+            {% else %}
+              <span><strong>{{ item.accuracy_points }} Punkte</strong>, {{ '%.1f'|format(item.response_seconds) }} Sekunden: <strong>{{ item.points }} Punkte nach Zeitabzug</strong></span>
+            {% endif %}
           </div>
         </article>
       {% endfor %}

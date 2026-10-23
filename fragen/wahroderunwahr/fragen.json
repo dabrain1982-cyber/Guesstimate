@@ -2288,220 +2288,6 @@
     ]
   },
   {
-    "id": "tf158",
-    "question_type": "true_false",
-    "source": {
-      "status": "verified",
-      "verified_on": "2026-10-04",
-      "references": [
-        {
-          "title": "Encyclopaedia Britannica: Christianity",
-          "url": "https://www.britannica.com/topic/Christianity"
-        }
-      ]
-    },
-    "prompt": "Die christliche Bibel besteht grundsätzlich aus Altem und Neuem Testament.",
-    "answer": true,
-    "explanation": "Die beiden Hauptteile heißen Altes Testament und Neues Testament.",
-    "subject_keys": [
-      "topic:faith_religion:christentum",
-      "entity:bibel"
-    ]
-  },
-  {
-    "id": "tf159",
-    "question_type": "true_false",
-    "source": {
-      "status": "verified",
-      "verified_on": "2026-10-04",
-      "references": [
-        {
-          "title": "United States Holocaust Memorial Museum: Introduction to Judaism",
-          "url": "https://encyclopedia.ushmm.org/content/en/article/introduction-to-judaism"
-        }
-      ]
-    },
-    "prompt": "Chanukka erinnert an Ereignisse, die zeitlich nach der Abfassung der Tora liegen.",
-    "answer": true,
-    "explanation": "Chanukka wurde zur Erinnerung an spätere Ereignisse der jüdischen Geschichte eingeführt.",
-    "subject_keys": [
-      "topic:faith_religion:judentum",
-      "entity:chanukka",
-      "entity:tora"
-    ]
-  },
-  {
-    "id": "tf160",
-    "question_type": "true_false",
-    "source": {
-      "status": "verified",
-      "verified_on": "2026-10-04",
-      "references": [
-        {
-          "title": "ReligionFacts: Islamic sacred texts",
-          "url": "https://religionfacts.com/islam/texts"
-        }
-      ]
-    },
-    "prompt": "Das Wort „Koran“ beziehungsweise „Qur'an“ bedeutet sinngemäß Rezitation.",
-    "answer": true,
-    "explanation": "Die Bezeichnung leitet sich vom arabischen Wort für Rezitation beziehungsweise Vortrag ab.",
-    "subject_keys": [
-      "topic:faith_religion:islam",
-      "entity:koran"
-    ]
-  },
-  {
-    "id": "tf161",
-    "question_type": "true_false",
-    "source": {
-      "status": "verified",
-      "verified_on": "2026-10-04",
-      "references": [
-        {
-          "title": "Encyclopaedia Britannica: Hinduism",
-          "url": "https://www.britannica.com/topic/Hinduism"
-        }
-      ]
-    },
-    "prompt": "Der Hinduismus geht auf einen einzigen historisch bestimmbaren Gründer zurück.",
-    "answer": false,
-    "explanation": "Der Hinduismus entwickelte sich über lange Zeit aus verschiedenen Traditionen und besitzt keinen einzelnen Gründer.",
-    "subject_keys": [
-      "topic:faith_religion:hinduismus",
-      "entity:hinduismus"
-    ]
-  },
-  {
-    "id": "tf162",
-    "question_type": "true_false",
-    "source": {
-      "status": "verified",
-      "verified_on": "2026-10-04",
-      "references": [
-        {
-          "title": "Encyclopaedia Britannica: Buddhism",
-          "url": "https://www.britannica.com/topic/Buddhism"
-        }
-      ]
-    },
-    "prompt": "Der Edle Achtfache Pfad gehört zu den zentralen buddhistischen Lehren.",
-    "answer": true,
-    "explanation": "Er beschreibt acht miteinander verbundene Bereiche der Übung und Lebensführung.",
-    "subject_keys": [
-      "topic:faith_religion:buddhismus",
-      "entity:edler achtfacher pfad"
-    ]
-  },
-  {
-    "id": "tf163",
-    "question_type": "true_false",
-    "source": {
-      "status": "verified",
-      "verified_on": "2026-10-04",
-      "references": [
-        {
-          "title": "Encyclopaedia Britannica: Sikhism",
-          "url": "https://www.britannica.com/topic/Sikhism"
-        }
-      ]
-    },
-    "prompt": "Der Sikhismus entstand in der Punjab-Region des indischen Subkontinents.",
-    "answer": true,
-    "explanation": "Die Tradition entstand dort im späten 15. Jahrhundert.",
-    "subject_keys": [
-      "topic:faith_religion:sikhismus-und-jainismus",
-      "entity:sikhismus"
-    ]
-  },
-  {
-    "id": "tf164",
-    "question_type": "true_false",
-    "source": {
-      "status": "verified",
-      "verified_on": "2026-10-04",
-      "references": [
-        {
-          "title": "ReligionFacts: Shinto texts",
-          "url": "https://religionfacts.com/shinto/texts"
-        }
-      ]
-    },
-    "prompt": "Shinto besitzt eine einzige verbindliche Offenbarungsschrift, die der Bibel oder dem Koran entspricht.",
-    "answer": false,
-    "explanation": "Kojiki und Nihon Shoki sind wichtige Traditionsquellen, gelten aber nicht als eine vergleichbare einheitliche Offenbarungsschrift.",
-    "subject_keys": [
-      "topic:faith_religion:ostasiatische-religionen",
-      "entity:shinto",
-      "entity:kojiki",
-      "entity:nihon shoki"
-    ]
-  },
-  {
-    "id": "tf165",
-    "question_type": "true_false",
-    "source": {
-      "status": "verified",
-      "verified_on": "2026-10-04",
-      "references": [
-        {
-          "title": "ReligionFacts: The Vedas",
-          "url": "https://religionfacts.com/hinduism/texts/vedas"
-        }
-      ]
-    },
-    "prompt": "Die vier Veden heißen Rigveda, Samaveda, Yajurveda und Atharvaveda.",
-    "answer": true,
-    "explanation": "Diese vier Sammlungen bilden den Kern der vedischen Schriften.",
-    "subject_keys": [
-      "topic:faith_religion:heilige-schriften",
-      "entity:veden"
-    ]
-  },
-  {
-    "id": "tf166",
-    "question_type": "true_false",
-    "source": {
-      "status": "verified",
-      "verified_on": "2026-10-04",
-      "references": [
-        {
-          "title": "Scottish Qualifications Authority: World Religions",
-          "url": "https://www.sqa.org.uk/sqa/files_ccc/N2USNRMEWorldReligions.pdf"
-        }
-      ]
-    },
-    "prompt": "Das Fest des Fastenbrechens folgt auf den Ramadan.",
-    "answer": true,
-    "explanation": "Eid al-Fitr beziehungsweise das Fest des Fastenbrechens beendet den Fastenmonat.",
-    "subject_keys": [
-      "topic:faith_religion:feste-und-rituale",
-      "entity:eid al-fitr",
-      "entity:ramadan"
-    ]
-  },
-  {
-    "id": "tf167",
-    "question_type": "true_false",
-    "source": {
-      "status": "verified",
-      "verified_on": "2026-10-04",
-      "references": [
-        {
-          "title": "UNESCO: Old City of Jerusalem and its Walls",
-          "url": "https://whc.unesco.org/en/list/148"
-        }
-      ]
-    },
-    "prompt": "Jerusalem besitzt besondere religiöse Bedeutung für Judentum, Christentum und Islam.",
-    "answer": true,
-    "explanation": "UNESCO beschreibt Jerusalem als heilige Stadt dieser drei Religionen.",
-    "subject_keys": [
-      "topic:faith_religion:heilige-orte-und-religionsgeschichte",
-      "entity:jerusalem"
-    ]
-  },
-  {
     "id": "tf168",
     "question_type": "true_false",
     "source": {
@@ -3598,6 +3384,1266 @@
         {
           "title": "Cleveland Clinic: What Color Is Your Blood?",
           "url": "https://health.clevelandclinic.org/what-color-is-blood"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf500",
+    "question_type": "true_false",
+    "prompt": "Nintendo begann im 19. Jahrhundert mit Spielkarten.",
+    "answer": true,
+    "explanation": "Nintendo wurde 1889 gegründet und stellte zunächst Hanafuda-Spielkarten her.",
+    "subject_keys": [
+      "topic:phase2:nintendo-ursprung",
+      "fact:true-false:500"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Nintendo History",
+          "url": "https://www.nintendo.com/en-gb/Hardware/Nintendo-History/Nintendo-History-625945.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf501",
+    "question_type": "true_false",
+    "prompt": "Die erste PlayStation kam in Japan noch vor 1995 auf den Markt.",
+    "answer": true,
+    "explanation": "Sony veröffentlichte die erste PlayStation in Japan im Dezember 1994.",
+    "subject_keys": [
+      "topic:phase2:playstation-start",
+      "fact:true-false:501"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "PlayStation history",
+          "url": "https://www.playstation.com/en-us/playstation-history/1994-ps-one/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf502",
+    "question_type": "true_false",
+    "prompt": "Die erste Xbox erschien vor der PlayStation 2.",
+    "answer": false,
+    "explanation": "Die PlayStation 2 startete 2000, die erste Xbox 2001.",
+    "subject_keys": [
+      "topic:phase2:konsolen-chronologie",
+      "fact:true-false:502"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Xbox 25th anniversary timeline",
+          "url": "https://www.xbox.com/en-us/xbox-25th-anniversary"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf503",
+    "question_type": "true_false",
+    "prompt": "Ein Creeper kann in Minecraft durch einen Blitz zu einem geladenen Creeper werden.",
+    "answer": true,
+    "explanation": "Ein Blitzeinschlag lädt einen Creeper auf und verstärkt seine Explosion.",
+    "subject_keys": [
+      "topic:phase2:minecraft-creeper",
+      "fact:true-false:503"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Minecraft: About Minecraft",
+          "url": "https://www.minecraft.net/en-us/about-minecraft"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf504",
+    "question_type": "true_false",
+    "prompt": "Jeder Tetris-Stein besteht aus fünf Quadraten.",
+    "answer": false,
+    "explanation": "Tetrominos, die klassischen Tetris-Steine, bestehen aus vier Quadraten.",
+    "subject_keys": [
+      "topic:phase2:tetris-tetrominos",
+      "fact:true-false:504"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Tetris: About Tetris",
+          "url": "https://tetris.com/about"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf510",
+    "question_type": "true_false",
+    "prompt": "Eine Oboe erzeugt ihren Ton mit einem Doppelrohrblatt.",
+    "answer": true,
+    "explanation": "Bei der Oboe schwingen zwei gegeneinanderliegende Rohrblätter.",
+    "subject_keys": [
+      "topic:phase2:oboe",
+      "fact:true-false:510"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Musical instrument",
+          "url": "https://www.britannica.com/art/musical-instrument"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf511",
+    "question_type": "true_false",
+    "prompt": "Das Saxofon gehört trotz seines Metallkörpers zu den Holzblasinstrumenten.",
+    "answer": true,
+    "explanation": "Entscheidend ist das einfache Rohrblatt, nicht das Material des Korpus.",
+    "subject_keys": [
+      "topic:phase2:saxofon",
+      "fact:true-false:511"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Musical instrument",
+          "url": "https://www.britannica.com/art/musical-instrument"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf512",
+    "question_type": "true_false",
+    "prompt": "Ein Theremin wird normalerweise gespielt, ohne das Instrument zu berühren.",
+    "answer": true,
+    "explanation": "Die Hände verändern in elektromagnetischen Feldern Tonhöhe und Lautstärke.",
+    "subject_keys": [
+      "topic:phase2:theremin",
+      "fact:true-false:512"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Musical instrument",
+          "url": "https://www.britannica.com/art/musical-instrument"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf513",
+    "question_type": "true_false",
+    "prompt": "John Cages 4′33″ schreibt eine durchgehend festgelegte Melodie vor.",
+    "answer": false,
+    "explanation": "Das Werk lässt die ungeplanten Umgebungsgeräusche der Aufführung hörbar werden.",
+    "subject_keys": [
+      "topic:phase2:4-minuten-33",
+      "fact:true-false:513"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "John Cage Trust: 4′33″",
+          "url": "https://johncage.org/apps"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf514",
+    "question_type": "true_false",
+    "prompt": "Eine Bratsche ist üblicherweise höher gestimmt als eine Violine.",
+    "answer": false,
+    "explanation": "Die Bratsche ist tiefer gestimmt; ihre tiefste Saite ist die C-Saite.",
+    "subject_keys": [
+      "topic:phase2:bratsche",
+      "fact:true-false:514"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Musical instrument",
+          "url": "https://www.britannica.com/art/musical-instrument"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf515",
+    "question_type": "true_false",
+    "prompt": "Beim sportlichen Gehen muss ständig ein für das menschliche Auge sichtbarer Bodenkontakt bestehen.",
+    "answer": true,
+    "explanation": "Die Wettkampfregel verlangt sichtbaren Bodenkontakt und ein gestrecktes Knie in der vorgeschriebenen Phase.",
+    "subject_keys": [
+      "topic:phase2:sportliches-gehen",
+      "fact:true-false:515"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "World Athletics: Disciplines",
+          "url": "https://worldathletics.org/disciplines"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf516",
+    "question_type": "true_false",
+    "prompt": "Ein Fußballteam darf ein Spiel mit sechs Spielern fortsetzen.",
+    "answer": false,
+    "explanation": "Nach IFAB-Regeln darf ein Spiel bei weniger als sieben Spielern nicht fortgesetzt werden.",
+    "subject_keys": [
+      "topic:phase2:mindestspielerzahl-fussball",
+      "fact:true-false:516"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "IFAB: Laws of the Game",
+          "url": "https://theifab.com/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf517",
+    "question_type": "true_false",
+    "prompt": "Ein FIBA-Basketballspiel besteht regulär aus vier Vierteln.",
+    "answer": true,
+    "explanation": "Nach FIBA-Regeln werden vier Viertel zu je zehn Minuten gespielt.",
+    "subject_keys": [
+      "topic:phase2:basketball-viertel",
+      "fact:true-false:517"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "FIBA: Official Basketball Rules",
+          "url": "https://refereeing.fiba.basketball/en/rules"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf518",
+    "question_type": "true_false",
+    "prompt": "Beim Tennis ist der Ball bei einem Aufschlag, der das Netz berührt und korrekt landet, sofort aus.",
+    "answer": false,
+    "explanation": "Ein solcher Netzaufschlag wird ohne Punktwertung wiederholt.",
+    "subject_keys": [
+      "topic:phase2:netzaufschlag-tennis",
+      "fact:true-false:518"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "ITF: Rules and regulations",
+          "url": "https://www.itftennis.com/en/about-us/governance/rules-and-regulations/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf519",
+    "question_type": "true_false",
+    "prompt": "Beim Fußball kann direkt aus einem Abstoß ein Abseits entstehen.",
+    "answer": false,
+    "explanation": "Bei direktem Ballerhalt aus einem Abstoß gilt die Abseitsregel nicht.",
+    "subject_keys": [
+      "topic:phase2:abseits-beim-abstoss",
+      "fact:true-false:519"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "IFAB: Laws of the Game",
+          "url": "https://theifab.com/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf520",
+    "question_type": "true_false",
+    "prompt": "Der Stein von Rosette trägt Texte in drei verschiedenen Schriften.",
+    "answer": true,
+    "explanation": "Die Inschrift nutzt Hieroglyphen, Demotisch und Altgriechisch.",
+    "subject_keys": [
+      "topic:phase2:stein-von-rosette",
+      "fact:true-false:520"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "British Museum: The Rosetta Stone",
+          "url": "https://www.britishmuseum.org/blog/everything-you-ever-wanted-know-about-rosetta-stone"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf521",
+    "question_type": "true_false",
+    "prompt": "Der gregorianische Kalender wurde erstmals 1582 eingeführt.",
+    "answer": true,
+    "explanation": "Papst Gregor XIII. führte die Kalenderreform 1582 ein.",
+    "subject_keys": [
+      "topic:phase2:gregorianischer-kalender",
+      "fact:true-false:521"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: History of Europe",
+          "url": "https://www.britannica.com/topic/history-of-Europe"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf522",
+    "question_type": "true_false",
+    "prompt": "Neuseeland führte 1893 als erstes selbstverwaltetes Land das nationale Frauenwahlrecht ein.",
+    "answer": true,
+    "explanation": "Das Wahlgesetz erhielt am 19. September 1893 die königliche Zustimmung.",
+    "subject_keys": [
+      "topic:phase2:frauenwahlrecht-neuseeland",
+      "fact:true-false:522"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "New Zealand History: Women and the vote",
+          "url": "https://nzhistory.govt.nz/politics/womens-suffrage"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf523",
+    "question_type": "true_false",
+    "prompt": "Die Magna Carta wurde im 14. Jahrhundert besiegelt.",
+    "answer": false,
+    "explanation": "König Johann besiegelte die Magna Carta 1215, also im 13. Jahrhundert.",
+    "subject_keys": [
+      "topic:phase2:magna-carta",
+      "fact:true-false:523"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: History of Europe",
+          "url": "https://www.britannica.com/topic/history-of-Europe"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf524",
+    "question_type": "true_false",
+    "prompt": "Apollo 11 landete nach der Mondmission im Atlantik.",
+    "answer": false,
+    "explanation": "Die Kapsel wasserte 1969 im Pazifik.",
+    "subject_keys": [
+      "topic:phase2:apollo-11-wasserung",
+      "fact:true-false:524"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "NASA: Missions",
+          "url": "https://www.nasa.gov/missions/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf525",
+    "question_type": "true_false",
+    "prompt": "Pixars Studiomaskottchen Luxo Jr. ist eine Schreibtischlampe.",
+    "answer": true,
+    "explanation": "Die hüpfende Lampe aus dem Kurzfilm Luxo Jr. wurde Teil des Pixar-Logos.",
+    "subject_keys": [
+      "topic:phase2:pixar-maskottchen",
+      "fact:true-false:525"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Pixar: Our Story",
+          "url": "https://www.pixar.com/our-story"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf526",
+    "question_type": "true_false",
+    "prompt": "Der Filmpreis Oscar hieß von Anfang an offiziell so.",
+    "answer": false,
+    "explanation": "Die Auszeichnung heißt offiziell Academy Award of Merit; Oscar ist der gebräuchliche Spitzname.",
+    "subject_keys": [
+      "topic:phase2:oscar-name",
+      "fact:true-false:526"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Academy Awards: Ceremonies",
+          "url": "https://www.oscars.org/oscars/ceremonies"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf527",
+    "question_type": "true_false",
+    "prompt": "Dr. No war der erste von Eon Productions produzierte James-Bond-Film.",
+    "answer": true,
+    "explanation": "Die Eon-Filmreihe begann 1962 mit Dr. No.",
+    "subject_keys": [
+      "topic:phase2:james-bond-filmstart",
+      "fact:true-false:527"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "007: The Films",
+          "url": "https://www.007.com/the-films/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf528",
+    "question_type": "true_false",
+    "prompt": "Wakanda ist in den Marvel-Geschichten ein fiktives afrikanisches Land.",
+    "answer": true,
+    "explanation": "Wakanda ist die Heimat von Black Panther im Marvel-Universum.",
+    "subject_keys": [
+      "topic:phase2:wakanda",
+      "fact:true-false:528"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Marvel: Characters",
+          "url": "https://www.marvel.com/characters"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf529",
+    "question_type": "true_false",
+    "prompt": "Die Emmy Awards zeichnen ausschließlich Kinofilme aus.",
+    "answer": false,
+    "explanation": "Die Emmys sind vor allem Auszeichnungen für Fernsehen und verwandte Programme.",
+    "subject_keys": [
+      "topic:phase2:emmy-awards",
+      "fact:true-false:529"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Television Academy: History",
+          "url": "https://www.televisionacademy.com/academy/about/history"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf530",
+    "question_type": "true_false",
+    "prompt": "Das Blut vieler Kraken erscheint wegen des kupferhaltigen Hämocyanins blau.",
+    "answer": true,
+    "explanation": "Hämocyanin transportiert Sauerstoff mit Kupfer statt mit Eisen.",
+    "subject_keys": [
+      "topic:phase2:krakenblut",
+      "fact:true-false:530"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "NOAA Ocean Service: Ocean facts",
+          "url": "https://oceanservice.noaa.gov/facts/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf531",
+    "question_type": "true_false",
+    "prompt": "Fledermäuse sind die einzigen Säugetiere mit aktivem Dauerflug.",
+    "answer": true,
+    "explanation": "Andere gleitende Säugetiere können nicht aus eigener Kraft dauerhaft fliegen.",
+    "subject_keys": [
+      "topic:phase2:fledermausflug",
+      "fact:true-false:531"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Smithsonian's National Zoo: Animals",
+          "url": "https://nationalzoo.si.edu/animals"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf532",
+    "question_type": "true_false",
+    "prompt": "Bambus gehört botanisch zu den Gräsern.",
+    "answer": true,
+    "explanation": "Bambusse bilden eine Unterfamilie innerhalb der Süßgräser.",
+    "subject_keys": [
+      "topic:phase2:bambus",
+      "fact:true-false:532"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Kew: Plants of the World Online",
+          "url": "https://powo.science.kew.org/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf533",
+    "question_type": "true_false",
+    "prompt": "Kaffeebohnen sind botanisch die Samen der Kaffeefrucht.",
+    "answer": true,
+    "explanation": "Die sogenannten Bohnen sind die Samen in den Kaffeekirschen.",
+    "subject_keys": [
+      "topic:phase2:kaffeesamen",
+      "fact:true-false:533"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Kew: Plants of the World Online",
+          "url": "https://powo.science.kew.org/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf534",
+    "question_type": "true_false",
+    "prompt": "Haie besitzen ein Knochenskelett wie die meisten Landwirbeltiere.",
+    "answer": false,
+    "explanation": "Das Skelett der Haie besteht überwiegend aus Knorpel.",
+    "subject_keys": [
+      "topic:phase2:haiskelett",
+      "fact:true-false:534"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "NOAA Ocean Service: Ocean facts",
+          "url": "https://oceanservice.noaa.gov/facts/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf535",
+    "question_type": "true_false",
+    "prompt": "Das Sargassomeer wird vollständig durch Meeresströmungen statt durch Küsten begrenzt.",
+    "answer": true,
+    "explanation": "Es ist das einzige Meer ohne Landgrenze und wird durch Strömungen des Nordatlantikwirbels gefasst.",
+    "subject_keys": [
+      "topic:phase2:sargassomeer",
+      "fact:true-false:535"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "NOAA: What is the Sargasso Sea?",
+          "url": "https://oceanservice.noaa.gov/facts/sargassosea.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf536",
+    "question_type": "true_false",
+    "prompt": "Der Nullmeridian ist als Längengrad 0 festgelegt.",
+    "answer": true,
+    "explanation": "Von ihm aus werden geografische Längengrade gezählt.",
+    "subject_keys": [
+      "topic:phase2:nullmeridian",
+      "fact:true-false:536"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Geography",
+          "url": "https://www.britannica.com/science/geography"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf537",
+    "question_type": "true_false",
+    "prompt": "Der Baikalsee ist der tiefste See der Erde.",
+    "answer": true,
+    "explanation": "Seine größte Tiefe beträgt rund 1.642 Meter.",
+    "subject_keys": [
+      "topic:phase2:baikalsee",
+      "fact:true-false:537"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf538",
+    "question_type": "true_false",
+    "prompt": "Die Donau mündet in die Ostsee.",
+    "answer": false,
+    "explanation": "Die Donau fließt durch ihr Delta ins Schwarze Meer.",
+    "subject_keys": [
+      "topic:phase2:donaumundung",
+      "fact:true-false:538"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Geography",
+          "url": "https://www.britannica.com/science/geography"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf539",
+    "question_type": "true_false",
+    "prompt": "Die Antarktis gilt wegen ihrer geringen Niederschläge als Wüste.",
+    "answer": true,
+    "explanation": "Wüste bezeichnet Trockenheit, nicht zwingend Hitze.",
+    "subject_keys": [
+      "topic:phase2:antarktische-wuste",
+      "fact:true-false:539"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Geography",
+          "url": "https://www.britannica.com/science/geography"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf540",
+    "question_type": "true_false",
+    "prompt": "Helium hat eine geringere Dichte als Luft.",
+    "answer": true,
+    "explanation": "Helium ist ein sehr leichtes Edelgas und steigt in Luft auf.",
+    "subject_keys": [
+      "topic:phase2:heliumdichte",
+      "fact:true-false:540"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "IUPAC: Periodic Table of Elements",
+          "url": "https://iupac.org/what-we-do/periodic-table-of-elements/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf541",
+    "question_type": "true_false",
+    "prompt": "Brom ist bei normaler Raumtemperatur flüssig.",
+    "answer": true,
+    "explanation": "Brom gehört neben Quecksilber zu den wenigen Elementen, die bei Raumtemperatur flüssig sind.",
+    "subject_keys": [
+      "topic:phase2:flussiges-brom",
+      "fact:true-false:541"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "IUPAC: Periodic Table of Elements",
+          "url": "https://iupac.org/what-we-do/periodic-table-of-elements/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf542",
+    "question_type": "true_false",
+    "prompt": "Kelvinwerte werden mit einem Gradzeichen geschrieben.",
+    "answer": false,
+    "explanation": "Die SI-Einheit heißt Kelvin und wird ohne Gradzeichen geschrieben, etwa 300 K.",
+    "subject_keys": [
+      "topic:phase2:kelvin-schreibweise",
+      "fact:true-false:542"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "BIPM: SI Brochure",
+          "url": "https://www.bipm.org/en/publications/si-brochure"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf543",
+    "question_type": "true_false",
+    "prompt": "RNA verwendet normalerweise Uracil anstelle von Thymin.",
+    "answer": true,
+    "explanation": "In RNA ersetzt Uracil in der Regel die Base Thymin der DNA.",
+    "subject_keys": [
+      "topic:phase2:rna-basen",
+      "fact:true-false:543"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "MedlinePlus: Body systems",
+          "url": "https://medlineplus.gov/anatomy.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf544",
+    "question_type": "true_false",
+    "prompt": "Ein einzelnes sichtbares Emoji kann in Unicode aus mehreren Zeichen bestehen.",
+    "answer": true,
+    "explanation": "Flaggen, Hauttöne und ZWJ-Folgen können als eine Glyphe erscheinen.",
+    "subject_keys": [
+      "topic:phase2:emoji-sequenzen",
+      "fact:true-false:544"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Unicode Consortium: Unicode Statistics",
+          "url": "https://www.unicode.org/versions/stats/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf545",
+    "question_type": "true_false",
+    "prompt": "Reife rote Blutkörperchen des Menschen besitzen keinen Zellkern.",
+    "answer": true,
+    "explanation": "Bei ihrer Reifung verlieren menschliche Erythrozyten den Zellkern.",
+    "subject_keys": [
+      "topic:phase2:rote-blutkorperchen",
+      "fact:true-false:545"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "MedlinePlus: Body systems",
+          "url": "https://medlineplus.gov/anatomy.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf546",
+    "question_type": "true_false",
+    "prompt": "Die Leber kann nach einem Teilverlust Gewebe nachbilden.",
+    "answer": true,
+    "explanation": "Sie besitzt eine außergewöhnliche Regenerationsfähigkeit.",
+    "subject_keys": [
+      "topic:phase2:leberregeneration",
+      "fact:true-false:546"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "MedlinePlus: Body systems",
+          "url": "https://medlineplus.gov/anatomy.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf547",
+    "question_type": "true_false",
+    "prompt": "Vitamin D ist wasserlöslich.",
+    "answer": false,
+    "explanation": "Vitamin D gehört zu den fettlöslichen Vitaminen.",
+    "subject_keys": [
+      "topic:phase2:vitamin-d",
+      "fact:true-false:547"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "NIH Office of Dietary Supplements: Fact Sheets",
+          "url": "https://ods.od.nih.gov/factsheets/list-all/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf548",
+    "question_type": "true_false",
+    "prompt": "Die Rufnummer 112 funktioniert als europäische Notrufnummer in allen EU-Staaten.",
+    "answer": true,
+    "explanation": "112 ist EU-weit kostenlos erreichbar.",
+    "subject_keys": [
+      "topic:phase2:eu-notruf-112",
+      "fact:true-false:548"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "European Commission: 112",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/112"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf549",
+    "question_type": "true_false",
+    "prompt": "Baumwolle ist eine synthetische Faser aus Erdöl.",
+    "answer": false,
+    "explanation": "Baumwolle ist eine natürliche Pflanzenfaser.",
+    "subject_keys": [
+      "topic:phase2:baumwollfaser",
+      "fact:true-false:549"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "USDA: Natural Fibers",
+          "url": "https://agresearchmag.ars.usda.gov/2000/nov/dye/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf601",
+    "question_type": "true_false",
+    "prompt": "Der QR-Code wurde ursprünglich für die Verwaltung von Autoteilen entwickelt.",
+    "answer": true,
+    "explanation": "DENSO entwickelte den QR-Code für die Produktion und Nachverfolgung von Automobilteilen.",
+    "subject_keys": [
+      "topic:phase2:qr-code-ursprung",
+      "fact:true-false:601"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "DENSO WAVE: QR Code 30th anniversary",
+          "url": "https://www.denso-wave.com/en/system/qr/qr30th/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf602",
+    "question_type": "true_false",
+    "prompt": "Die Idee für Post-it-Zettel entstand aus der Suche nach einem wiederablösbaren Lesezeichen.",
+    "answer": true,
+    "explanation": "Art Fry wollte ein Lesezeichen, das haftet, aber die Buchseiten nicht beschädigt.",
+    "subject_keys": [
+      "topic:phase2:post-it-idee",
+      "fact:true-false:602"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "USPTO: Sticking to it",
+          "url": "https://www.uspto.gov/learning-and-resources/journeys-innovation/sticking-it"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf603",
+    "question_type": "true_false",
+    "prompt": "Der Mars-Helikopter Ingenuity war für höchstens fünf Testflüge geplant und schaffte am Ende 72.",
+    "answer": true,
+    "explanation": "Aus einer Demonstration mit bis zu fünf geplanten Flügen wurden 72 Flüge in fast drei Jahren.",
+    "subject_keys": [
+      "topic:phase2:ingenuity-fluge",
+      "fact:true-false:603"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "NASA: Ingenuity Mars Helicopter",
+          "url": "https://science.nasa.gov/mission/mars-2020-perseverance/ingenuity-mars-helicopter/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf604",
+    "question_type": "true_false",
+    "prompt": "St.-Elms-Feuer ist trotz seines Namens keine gewöhnliche Flamme.",
+    "answer": true,
+    "explanation": "Das Leuchten entsteht durch eine elektrische Entladung in einem starken elektrischen Feld.",
+    "subject_keys": [
+      "topic:phase2:st-elms-feuer",
+      "fact:true-false:604"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "NOAA: Weird Ocean Phenomena",
+          "url": "https://oceanservice.noaa.gov/ocean/weird-ocean-weather.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf606",
+    "question_type": "true_false",
+    "prompt": "CERN stellte die Web-Software 1993 kostenlos in die Public Domain.",
+    "answer": true,
+    "explanation": "Am 30. April 1993 gab CERN die grundlegende Web-Software zur freien Nutzung, Veränderung und Weitergabe frei.",
+    "subject_keys": [
+      "topic:phase2:freies-web",
+      "fact:true-false:606"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "CERN: Where the web was born",
+          "url": "https://home.cern/science/computing/the-birth-of-the-web/where-web-was-born/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf607",
+    "question_type": "true_false",
+    "prompt": "Der QR-Code kam erstmals auf Kontaktlinsen-Packungen als allgemeines Konsumprodukt zum Einsatz.",
+    "answer": true,
+    "explanation": "DENSO nennt Kontaktlinsen-Packungen als ersten Einsatz auf allgemeinen Handelsprodukten.",
+    "subject_keys": [
+      "topic:phase2:qr-code-im-handel",
+      "fact:true-false:607"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "DENSO WAVE: QR Code 30th anniversary",
+          "url": "https://www.denso-wave.com/en/system/qr/qr30th/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf608",
+    "question_type": "true_false",
+    "prompt": "Bluetooth war zunächst nur als vorläufiger Codename gedacht.",
+    "answer": true,
+    "explanation": "RadioWire oder PAN sollten den Namen ersetzen; Bluetooth setzte sich vorher bereits durch.",
+    "subject_keys": [
+      "topic:phase2:bluetooth-codename",
+      "fact:true-false:608"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Bluetooth SIG: Origin of the name",
+          "url": "https://www.bluetooth.com/about-us/bluetooth-origin/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf609",
+    "question_type": "true_false",
+    "prompt": "Ab etwa 1.000 Metern Meerestiefe dringt nach Angaben der NOAA kein Sonnenlicht mehr vor.",
+    "answer": true,
+    "explanation": "Kaum Licht reicht tiefer als 200 Meter; unter 1.000 Metern dringt kein Sonnenlicht mehr vor.",
+    "subject_keys": [
+      "topic:phase2:dunkle-tiefsee",
+      "fact:true-false:609"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "NOAA: Why is the ocean blue?",
+          "url": "https://oceanservice.noaa.gov/facts/oceanblue.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf610",
+    "question_type": "true_false",
+    "prompt": "Celluloid wurde als Elfenbeinersatz für Billardkugeln entwickelt, erwies sich dafür aber als ungeeignet.",
+    "answer": true,
+    "explanation": "Der frühe halbsynthetische Kunststoff sollte Elfenbein ersetzen, funktionierte als Billardkugelmaterial jedoch nicht gut genug.",
+    "subject_keys": [
+      "topic:phase2:celluloid-ursprung",
+      "fact:true-false:610"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Smithsonian: One word — Plastics",
+          "url": "https://americanhistory.si.edu/explore/stories/one-word-plastics"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf611",
+    "question_type": "true_false",
+    "prompt": "Armbanduhren galten vielen Männern vor dem Ersten Weltkrieg als weibischer Schmuck.",
+    "answer": true,
+    "explanation": "Das Smithsonian beschreibt, dass Männer sie lange als feminine Spielerei betrachteten und erst im Ersten Weltkrieg breiter trugen.",
+    "subject_keys": [
+      "topic:phase2:armbanduhr-kultur",
+      "fact:true-false:611"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Smithsonian: Revolution on Your Wrist",
+          "url": "https://amhistory.si.edu/docs/Dennis_Stephens_Dillon_%20Revolution_on_Wrist_1997.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf612",
+    "question_type": "true_false",
+    "prompt": "Blauwale können unter passenden Meeresbedingungen Artgenossen noch in rund 1.600 Kilometern Entfernung erreichen.",
+    "answer": true,
+    "explanation": "NOAA nennt Entfernungen bis zu 1.000 Meilen, also ungefähr 1.600 Kilometer.",
+    "subject_keys": [
+      "topic:phase2:blauwal-rufe",
+      "fact:true-false:612"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "NOAA Fisheries: Blue Whale",
+          "url": "https://www.fisheries.noaa.gov/species/blue-whale"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf613",
+    "question_type": "true_false",
+    "prompt": "Der Klettverschluss wurde durch Kletten inspiriert, die an Kleidung und Fell hängen blieben.",
+    "answer": true,
+    "explanation": "George de Mestral übertrug die Hakenstruktur der Kletten auf einen textilen Verschluss.",
+    "subject_keys": [
+      "topic:phase2:klettverschluss-idee",
+      "fact:true-false:613"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "USPTO: Biomimicry",
+          "url": "https://www.uspto.gov/kids/Biomimicry.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf614",
+    "question_type": "true_false",
+    "prompt": "Der DART-Einschlag veränderte nicht nur die Umlaufzeit, sondern auch die Form von Dimorphos.",
+    "answer": true,
+    "explanation": "NASA-Auswertungen zeigen eine verkürzte Bahn und eine veränderte, länglichere Form des Asteroiden.",
+    "subject_keys": [
+      "topic:phase2:dart-formanderung",
+      "fact:true-false:614"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "NASA: Asteroid orbit changed after DART impact",
+          "url": "https://www.nasa.gov/missions/dart/nasa-study-asteroids-orbit-shape-changed-after-dart-impact/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf615",
+    "question_type": "true_false",
+    "prompt": "Der Begriff CAPTCHA wurde im Jahr 2000 von einem Team der Carnegie Mellon University geprägt.",
+    "answer": true,
+    "explanation": "Das Team entwickelte die Tests gegen Bots und prägte zugleich die Abkürzung CAPTCHA.",
+    "subject_keys": [
+      "topic:phase2:captcha-ursprung",
+      "fact:true-false:615"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Carnegie Mellon: Computer Security as a Song",
+          "url": "https://www.cs.cmu.edu/news/2013/computer-security-song"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf616",
+    "question_type": "true_false",
+    "prompt": "Luftpolsterfolie war ursprünglich als strukturierte Tapete gedacht.",
+    "answer": true,
+    "explanation": "Alfred Fielding und Marc Chavannes laminierten 1957 zwei Kunststofffolien mit eingeschlossenen Luftblasen für einen Wandbelag. Erst später wurde daraus Schutzverpackung.",
+    "subject_keys": [
+      "topic:phase2:luftpolsterfolie-ursprung",
+      "fact:true-false:616"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Sealed Air: BUBBLE WRAP Brand Protective Packaging",
+          "url": "https://www.sealedair.com/products/brand/bubble-wrap"
         }
       ]
     }

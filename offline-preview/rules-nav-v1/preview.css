@@ -1,0 +1,64 @@
+/* Nur die Regel-Navigation der isolierten Vorschau. */
+.rules-button { display: none !important; }
+.currency-indicator.shop-trigger { display: none !important; }
+
+/* „stormseed´s“ selbst rückt nach unten an „guesstimate“ heran. */
+.quiz-show-stage > .arena-brand-lockup .arena-wordmark > span {
+  text-transform: lowercase;
+  transform: translateY(.65em) !important;
+}
+
+.arena-main-nav .arena-nav-rules {
+  display: grid;
+  place-items: center;
+  min-height: 38px;
+  flex: .8 1 auto;
+  padding: 7px 13px;
+  border: 1px solid rgba(142,128,255,.58);
+  border-radius: 9px;
+  color: #d9d3ff;
+  background: rgba(91,70,173,.18);
+  font: 950 .69rem/1.1 inherit;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.arena-main-nav .arena-nav-rules:hover { border-color: #a995ff; color: #fff; background: rgba(112,86,207,.3); }
+
+.rules-library-dialog { width: min(880px, calc(100vw - 28px)); max-width: 880px; }
+.rules-library-dialog .rules-panel { padding: clamp(22px, 4vw, 34px); }
+.rules-game-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin: 24px 0 18px;
+  padding: 6px;
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 16px;
+  background: rgba(4,8,25,.74);
+}
+.rules-game-tab {
+  min-height: 50px;
+  padding: 8px 10px;
+  border: 1px solid rgba(255,255,255,.13);
+  border-radius: 11px;
+  color: #aab4c8;
+  background: rgba(255,255,255,.035);
+  font-size: .74rem;
+  font-weight: 950;
+  line-height: 1.15;
+  cursor: pointer;
+}
+.rules-game-daily[aria-selected="true"] { border-color: var(--acid); color: #091127; background: var(--acid); }
+.rules-game-classic[aria-selected="true"] { border-color: #72ddff; color: #08152a; background: #72ddff; }
+.rules-game-perfect[aria-selected="true"] { border-color: #f8b737; color: #281803; background: #f8b737; }
+.rules-game-cards[aria-selected="true"] { border-color: #7bd38a; color: #071b10; background: #7bd38a; }
+.rules-game-panel { min-height: 310px; padding: 22px 24px; border: 1px solid rgba(114,221,255,.16); border-radius: 18px; background: rgba(8,13,35,.72); }
+.rules-game-panel h3 { margin: 0 0 16px; color: #f3f5fb; font-size: 1.35rem; }
+.rules-library-dialog .rules-game-panel ul { margin: 0; }
+
+@media (max-width: 760px) {
+  .arena-main-nav .arena-nav-rules { min-width: max-content; }
+  .rules-game-tabs { display: flex; overflow-x: auto; }
+  .rules-game-tab { flex: 0 0 150px; }
+  .rules-game-panel { min-height: 360px; padding: 18px 16px; }
+}

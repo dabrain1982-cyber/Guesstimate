@@ -10,14 +10,20 @@ from unittest.mock import patch
 from markupsafe import escape
 
 from app import (
+    PLAQUE_CATALOG,
+    awarded_question_points,
     create_app,
     daily_questions,
     estimate_points,
     evaluate,
     get_or_create_round,
+    init_db,
     match_option_order,
     missed_current_week_dates,
     order_credit,
+    order_correct_positions,
+    order_question_points,
+    player_trophy_counts,
     partial_credit,
     question_fingerprint,
     question_time_factor,
@@ -91,19 +97,23 @@ class ScoringTests(unittest.TestCase):
             path = QUESTION_LIBRARY_ROOT / definition["directory"] / "fragen.json"
             self.assertTrue(path.is_file(), path)
             questions = json.loads(path.read_text(encoding="utf-8"))
-            if question_type in ("word_scramble", "binary_sort"):
+            if question_type == "binary_sort":
                 self.assertFalse(definition["active"])
-                self.assertEqual(questions, [])
+                self.assertEqual(len(questions), 60)
             else:
                 self.assertTrue(questions)
 
-    def test_physical_library_reserves_both_future_question_types(self):
-        for question_type in ("word_scramble", "binary_sort"):
-            definition = QUESTION_TYPE_DEFINITIONS[question_type]
-            self.assertFalse(definition["active"])
-            path = QUESTION_LIBRARY_ROOT / definition["directory"] / "fragen.json"
-            self.assertTrue(path.is_file(), path)
-            self.assertEqual(json.loads(path.read_text(encoding="utf-8")), [])
+    def test_physical_library_reserves_future_question_type(self):
+        binary_sort = QUESTION_TYPE_DEFINITIONS["binary_sort"]
+        self.assertFalse(binary_sort["active"])
+        binary_sort_path = QUESTION_LIBRARY_ROOT / binary_sort["directory"] / "fragen.json"
+        questions = json.loads(binary_sort_path.read_text(encoding="utf-8"))
+        self.assertEqual(len(questions), 60)
+        self.assertEqual({question["question_type"] for question in questions}, {"binary_sort"})
+        self.assertTrue(all(len(question["items"]) == 7 for question in questions))
+        self.assertTrue(
+            all(set(question["answer"].values()) >= {"A", "B", "both"} for question in questions)
+        )
 
     def test_hemingway_mentions_share_an_entity_key(self):
         questions = [
@@ -137,22 +147,44 @@ class ScoringTests(unittest.TestCase):
         )
         self.assertEqual(evaluated["accuracy_points"], 20)
 
-    def test_order_credit_awards_each_correctly_ordered_pair(self):
+    def test_order_credit_counts_only_exact_positions(self):
         correct = ["A", "B", "C", "D"]
         self.assertEqual(order_credit(correct, correct), 1.0)
         self.assertEqual(order_credit(["D", "C", "B", "A"], correct), 0.0)
-        self.assertAlmostEqual(order_credit(["A", "C", "D", "B"], correct), 4 / 6)
-        self.assertAlmostEqual(order_credit(["A", "B", "D", "C"], correct), 5 / 6)
+        self.assertEqual(order_credit(["A", "C", "D", "B"], correct), 1 / 4)
+        self.assertEqual(order_credit(["A", "B", "D", "C"], correct), 2 / 4)
+        self.assertEqual(order_correct_positions(["A", "C", "D", "B"], correct), 1)
 
-    def test_order_credit_survives_a_wrong_first_event(self):
+    def test_order_credit_does_not_reward_displaced_sequences(self):
         correct = ["A", "B", "C", "D"]
-        self.assertEqual(order_credit(["B", "C", "D", "A"], correct), 0.5)
+        self.assertEqual(order_credit(["B", "C", "D", "A"], correct), 0.0)
 
         evaluated = evaluate(
             {"category": "order", "answer": correct},
             {"answer": json.dumps(["B", "C", "D", "A"])},
         )
-        self.assertEqual(evaluated["accuracy_points"], 50)
+        self.assertEqual(evaluated["accuracy_points"], 0)
+        self.assertEqual(evaluated["order_correct_count"], 0)
+
+    def test_order_points_use_the_requested_fast_and_late_tables(self):
+        self.assertEqual(
+            [order_question_points(count, 1.0) for count in range(5)],
+            [0, 15, 50, 100, 100],
+        )
+        self.assertEqual(
+            [order_question_points(count, 0.0) for count in range(5)],
+            [0, 10, 25, 50, 50],
+        )
+        self.assertEqual(order_question_points(1, 0.5), 13)
+        self.assertEqual(order_question_points(2, 0.5), 38)
+        self.assertEqual(order_question_points(3, 0.5), 75)
+
+        evaluated = evaluate(
+            {"category": "order", "answer": ["A", "B", "C", "D"]},
+            {"answer": json.dumps(["A", "C", "D", "B"])},
+        )
+        self.assertEqual(evaluated["accuracy_points"], 15)
+        self.assertEqual(awarded_question_points(evaluated, 0.0), 10)
 
     def test_question_plan_uses_every_question_before_repeating(self):
         seen = {}
@@ -174,6 +206,10 @@ class ScoringTests(unittest.TestCase):
         self.assertEqual(question_time_factor(7, 0), 0.6)
         self.assertEqual(question_time_factor(10, 0), 0.0)
         self.assertEqual(question_time_factor(12, 1), 0.0)
+        self.assertEqual(question_time_factor(8, 3), 1.0)
+        self.assertEqual(question_time_factor(8.99, 3), 1.0)
+        self.assertAlmostEqual(question_time_factor(9, 3), 11 / 12)
+        self.assertEqual(question_time_factor(20, 3), 0.0)
         self.assertAlmostEqual(question_time_factor(15, 4), 0.5)
 
     def test_question_points_are_zero_when_wrong_and_time_never_halves_more(self):
@@ -282,6 +318,408 @@ class GameFlowTests(unittest.TestCase):
         self.assertNotIn(b"E-Mail-Warnung", response.data)
         self.assertNotIn(b"Fragen-Nachschub", response.data)
 
+    def test_shop_uses_fixed_prices_and_rejects_insufficient_balance(self):
+        self.register("Stormseed")
+        response = self.client.get("/shop")
+        self.assertIn(b"2.000 iK\xc3\xbche", response.data)
+        self.assertIn(b"3.000 iK\xc3\xbche", response.data)
+        self.assertIn(b"1.000 iK\xc3\xbche", response.data)
+        self.assertIn(b"250 iK\xc3\xbche", response.data)
+        self.assertIn(b">Spr\xc3\xbcche<", response.data)
+        self.assertNotIn(b">A01<", response.data)
+        self.assertNotIn(b">P01<", response.data)
+        self.assertNotIn("Noch nicht gewählt".encode(), response.data)
+        self.assertNotIn(b"Startpult", response.data)
+        self.assertNotIn(b"/shop/ausruesten/", response.data)
+        response = self.client.post(
+            "/shop/kaufen/avatar/a01",
+            data={"csrf_token": self.csrf()},
+            follow_redirects=True,
+        )
+        self.assertIn("Dafür fehlen dir noch ein paar iKühe".encode(), response.data)
+        with self.app.app_context():
+            purchases = self.app.get_db().execute(
+                "SELECT COUNT(*) FROM shop_purchases"
+            ).fetchone()[0]
+        self.assertEqual(purchases, 0)
+
+    def test_personal_background_defaults_buys_equips_and_renders(self):
+        self.register("Kulissenfan")
+
+        response = self.client.get("/")
+        self.assertIn(b"arena-stage-background-v1.png", response.data)
+        self.assertIn(b"--profile-window-background", response.data)
+
+        response = self.client.get("/shop?tab=backgrounds")
+        self.assertIn("Hintergründe".encode(), response.data)
+        self.assertIn(b"Neon-Arena", response.data)
+        self.assertIn(b"background-papierlandschaft-v1.png", response.data)
+        self.assertIn("Gehört dir · im Profil ausrüsten".encode(), response.data)
+
+        with self.app.app_context():
+            self.app.config["PREVIEW_CURRENCY_BONUS"] = 3000
+
+        response = self.client.post(
+            "/shop/kaufen/background/b09",
+            data={"csrf_token": self.csrf()},
+            follow_redirects=True,
+        )
+        self.assertIn(b"Papierlandschaft", response.data)
+
+        response = self.client.post(
+            "/profil/ausruesten/background/b09",
+            data={"csrf_token": self.csrf()},
+            follow_redirects=True,
+        )
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b"Ausger\xc3\xbcstet", response.data)
+
+        response = self.client.get("/")
+        self.assertIn(b"background-papierlandschaft-v1.png", response.data)
+        with self.app.app_context():
+            row = self.app.get_db().execute(
+                "SELECT background_id FROM user_cosmetics"
+            ).fetchone()
+            self.assertEqual(row["background_id"], "b09")
+
+    def test_phrases_can_be_bought_equipped_and_shown_in_game(self):
+        self.register("Spruchreif")
+        response = self.client.get("/shop?tab=phrases")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.data.count(b'/shop/kaufen/phrase/'), 40)
+        self.assertIn("Ich rate nicht. Ich interpretiere Fakten kreativ.".encode(), response.data)
+
+        with self.app.app_context():
+            self.app.config["PREVIEW_CURRENCY_BONUS"] = 1000
+
+        response = self.client.post(
+            "/shop/kaufen/phrase/s03",
+            data={"csrf_token": self.csrf()},
+            follow_redirects=True,
+        )
+        self.assertIn(b"Spruch 3", response.data)
+        with self.app.app_context():
+            purchase = self.app.get_db().execute(
+                "SELECT price FROM shop_purchases WHERE item_type = 'phrase' AND item_id = 's03'"
+            ).fetchone()
+            self.assertEqual(purchase["price"], 250)
+
+        response = self.client.post(
+            "/profil/ausruesten/phrase/s03",
+            data={"csrf_token": self.csrf()},
+            follow_redirects=True,
+        )
+        self.assertIn(b"Ausger\xc3\xbcstet", response.data)
+        self.assertIn("Ich rate nicht. Ich interpretiere Fakten kreativ.".encode(), response.data)
+
+        response = self.client.post(
+            "/runde/starten",
+            data={"csrf_token": self.csrf()},
+            follow_redirects=True,
+        )
+        self.assertIn("Ich rate nicht. Ich interpretiere Fakten kreativ.".encode(), response.data)
+
+    def test_owner_only_developer_mode_unlocks_and_safely_resets_items(self):
+        self.register("stormseed")
+        response = self.client.get("/profil")
+        self.assertIn(b"developer_enabled", response.data)
+        self.assertNotIn(b"Wolkenpavillon", response.data)
+
+        response = self.client.post(
+            "/profil/entwickler",
+            data={"csrf_token": self.csrf(), "developer_enabled": "1"},
+            follow_redirects=True,
+        )
+        self.assertIn("Entwicklermodus aktiviert".encode(), response.data)
+        self.assertIn(b"Wolkenpavillon", response.data)
+        for asset in (
+            b"a14-somnus-cutout-v2.png",
+            b"a15-ember-cutout-v2.png",
+            b"a16-myrli-cutout-v2.png",
+            b"a17-luno-cutout-v2.png",
+            b"a18-nimbus-cutout-v2.png",
+        ):
+            self.assertIn(asset, response.data)
+
+        response = self.client.post(
+            "/profil/ausruesten/background/b10",
+            data={"csrf_token": self.csrf()},
+            follow_redirects=True,
+        )
+        self.assertEqual(response.status_code, 200)
+        with self.app.app_context():
+            database = self.app.get_db()
+            self.assertEqual(database.execute("SELECT COUNT(*) FROM shop_purchases").fetchone()[0], 0)
+            self.assertEqual(database.execute("SELECT background_id FROM user_cosmetics").fetchone()[0], "b10")
+
+        response = self.client.post(
+            "/profil/entwickler",
+            data={"csrf_token": self.csrf()},
+            follow_redirects=True,
+        )
+        self.assertIn("Entwicklermodus deaktiviert".encode(), response.data)
+        with self.app.app_context():
+            row = self.app.get_db().execute(
+                "SELECT background_id, developer_enabled FROM user_cosmetics"
+            ).fetchone()
+            self.assertEqual((row["background_id"], row["developer_enabled"]), ("b00", 0))
+
+        outsider = self.app.test_client()
+        _, outsider_csrf = self.register_client(outsider, "Nicht Stormseed", "2200")
+        response = outsider.get("/profil")
+        self.assertNotIn(b"developer_enabled", response.data)
+        response = outsider.post(
+            "/profil/entwickler",
+            data={"csrf_token": outsider_csrf, "developer_enabled": "1"},
+        )
+        self.assertEqual(response.status_code, 403)
+
+    def test_home_and_profile_use_the_same_profile_window_component(self):
+        root = Path(__file__).parents[1]
+        home = (root / "templates" / "home.html").read_text()
+        profile = (root / "templates" / "profile.html").read_text()
+        shared = (root / "templates" / "_profile_window.html").read_text()
+        self.assertIn("profile_window(player_cosmetics, trophies)", home)
+        self.assertIn(
+            "profile_window(cosmetics, trophies, show_edit=False, show_details=False)",
+            profile,
+        )
+        self.assertIn('class="variant-a-profile', shared)
+        self.assertIn("variant-a-profile-canonical", shared)
+        self.assertNotIn("request.endpoint", shared)
+        self.assertNotIn("variant-a-profile-editor", shared)
+        self.assertIn("variant-a-podium-balance", shared)
+        self.assertIn("if game_points is none", shared)
+        self.assertIn("{{ visible_balance|points }} iKühe", shared)
+        self.assertNotIn("willkommen zurück", shared)
+        self.assertNotIn('class="variant-a-balance"', shared)
+        self.assertNotIn("<blockquote>", shared)
+        self.assertNotIn("profile-current-window", profile)
+        self.assertNotIn(
+            "profile-current-window",
+            (root / "static" / "quiz-arena.css").read_text(),
+        )
+        stage_stylesheet = (root / "static" / "profile-stage-v1.css").read_text()
+        self.assertIn(".variant-a-profile-canonical .variant-a-profile-scene", stage_stylesheet)
+        self.assertIn("aspect-ratio: 43 / 57", stage_stylesheet)
+        self.assertIn("height: auto !important", stage_stylesheet)
+        self.assertIn("top: 20%", stage_stylesheet)
+        self.assertIn("bottom: 0", stage_stylesheet)
+        self.assertIn("aspect-ratio: 8 / 7", stage_stylesheet)
+        self.assertNotIn(".variant-a-profile-canonical.avatar-a", stage_stylesheet)
+        self.assertIn("top: var(--profile-balance-y, 68%)", stage_stylesheet)
+
+    def test_profile_stage_has_asset_specific_proportion_hooks(self):
+        root = Path(__file__).parents[1]
+        base = (root / "templates" / "base.html").read_text()
+        shared = (root / "templates" / "_profile_window.html").read_text()
+        stylesheet = (root / "static" / "profile-stage-v1.css").read_text()
+        fitter = (root / "static" / "profile-stage-v1.js").read_text()
+        self.assertGreater(base.index("profile-stage-v1.css"), base.index("typography-v1.css"))
+        self.assertIn("profile-stage-v1.js", base)
+        self.assertIn("avatar-{{ cosmetics.avatar_id }}", shared)
+        self.assertIn("plaque-{{ cosmetics.plaque_id }}", shared)
+        self.assertEqual(shared.count("data-fit-podium-text"), 2)
+        self.assertIn("scrollWidth > element.clientWidth", fitter)
+        for plaque_id in ("p00", *(item["id"] for item in PLAQUE_CATALOG)):
+            self.assertIn(f".variant-a-profile.plaque-{plaque_id}", stylesheet)
+
+    def test_typography_package_is_local_and_separately_reversible(self):
+        root = Path(__file__).parents[1]
+        base = (root / "templates" / "base.html").read_text()
+        typography = (root / "static" / "typography-v1.css").read_text()
+        self.assertIn("typography-v1.css", base)
+        self.assertIn('font-family: "Guesstimate Inter"', typography)
+        self.assertIn('font-family: "Guesstimate Fredoka"', typography)
+        self.assertTrue((root / "static" / "fonts" / "Inter-Variable.ttf").is_file())
+        self.assertTrue((root / "static" / "fonts" / "Fredoka-Variable.ttf").is_file())
+        self.assertNotIn("fonts.googleapis.com", typography)
+
+    def test_profile_owns_equipping_and_shows_trophy_cabinet(self):
+        self.register("Stormseed")
+        response = self.client.get("/profil")
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b"profile.js?v=4", response.data)
+        self.assertIn(b"Deine Titel", response.data)
+        self.assertIn(b"Tagessieger", response.data)
+        self.assertIn(b"Wochensieger", response.data)
+        self.assertIn(b"Monatssieger", response.data)
+        self.assertIn(b"Party-Meister", response.data)
+        self.assertIn(b"Start-Avatar", response.data)
+        self.assertNotIn("Noch nicht gewählt".encode(), response.data)
+        self.assertIn(b"starter-neutral-public.svg", response.data)
+        self.assertIn(b"starter-neutral.svg", response.data)
+        self.assertIn(b"Startpult", response.data)
+        self.assertIn(b"p00-startpult-v1.png", response.data)
+
+        profile_script = self.client.get("/static/profile.js")
+        self.assertIn(b'form[action*="/profil/ausruesten/"]', profile_script.data)
+        self.assertIn(b"currentPanel.scrollTop = panelScrollTop", profile_script.data)
+        self.assertIn(b"window.scrollTo(0, pageScrollY)", profile_script.data)
+
+        with self.app.app_context():
+            database = self.app.get_db()
+            user_id = database.execute("SELECT id FROM users").fetchone()[0]
+            database.execute(
+                """
+                INSERT INTO shop_purchases
+                    (user_id, item_type, item_id, price, purchased_at)
+                VALUES (?, 'avatar', 'a01', 2000, ?)
+                """,
+                (user_id, datetime.now().isoformat()),
+            )
+            database.commit()
+
+        response = self.client.get("/profil")
+        self.assertIn(b"Kea", response.data)
+        response = self.client.post(
+            "/profil/ausruesten/avatar/a01",
+            data={"csrf_token": self.csrf()},
+            follow_redirects=True,
+        )
+        self.assertEqual(response.status_code, 200)
+        with self.app.app_context():
+            equipped = self.app.get_db().execute(
+                "SELECT avatar_id FROM user_cosmetics"
+            ).fetchone()[0]
+        self.assertEqual(equipped, "a01")
+
+        response = self.client.get("/shop")
+        self.assertIn("Gehört dir · im Profil ausrüsten".encode(), response.data)
+        self.assertNotIn(b"/profil/ausruesten/", response.data)
+
+    def test_trophy_counts_use_only_finalized_periods_and_completed_parties(self):
+        self.register("Stormseed")
+        with self.app.app_context():
+            database = self.app.get_db()
+            stormseed_id = database.execute("SELECT id FROM users").fetchone()[0]
+            rival_id = database.execute(
+                """
+                INSERT INTO users (username, display_name, pin_hash, created_at)
+                VALUES ('rival', 'Rival', 'unused', ?)
+                """,
+                (datetime.now().isoformat(),),
+            ).lastrowid
+            for round_day, stormseed_score, rival_score in (
+                ("2026-09-03", 500, 300),
+                ("2026-10-03", 450, 400),
+            ):
+                round_id = database.execute(
+                    """
+                    INSERT INTO daily_rounds (round_date, questions_json, created_at)
+                    VALUES (?, '[]', ?)
+                    """,
+                    (round_day, datetime.now().isoformat()),
+                ).lastrowid
+                for player_id, score in ((stormseed_id, stormseed_score), (rival_id, rival_score)):
+                    database.execute(
+                        """
+                        INSERT INTO attempts
+                            (user_id, round_id, status, score, started_at, completed_at)
+                        VALUES (?, ?, 'completed', ?, ?, ?)
+                        """,
+                        (player_id, round_id, score, datetime.now().isoformat(), datetime.now().isoformat()),
+                    )
+            lobby_id = database.execute(
+                """
+                INSERT INTO party_lobbies
+                    (name, host_user_id, status, created_at, completed_at)
+                VALUES ('Testparty', ?, 'completed', ?, ?)
+                """,
+                (stormseed_id, datetime.now().isoformat(), datetime.now().isoformat()),
+            ).lastrowid
+            for player_id, score in ((stormseed_id, 90), (rival_id, 60)):
+                database.execute(
+                    """
+                    INSERT INTO party_members
+                        (lobby_id, user_id, status, score, joined_at)
+                    VALUES (?, ?, 'active', ?, ?)
+                    """,
+                    (lobby_id, player_id, score, datetime.now().isoformat()),
+                )
+            database.commit()
+            trophies = player_trophy_counts(stormseed_id, date(2026, 10, 13))
+
+        self.assertEqual(trophies, {"daily": 2, "weekly": 2, "monthly": 1, "party": 1})
+
+    def test_app_initialization_never_rewrites_player_shop_data(self):
+        with self.app.app_context():
+            database = self.app.get_db()
+            user_ids = {}
+            for username in ("stormseed", "pearlyde", "jule"):
+                user_ids[username] = database.execute(
+                    """
+                    INSERT INTO users (username, display_name, pin_hash, created_at)
+                    VALUES (?, ?, 'unused', ?)
+                    """,
+                    (username, username.title(), datetime.now().isoformat()),
+                ).lastrowid
+            database.executemany(
+                """
+                INSERT INTO shop_purchases
+                    (user_id, item_type, item_id, price, purchased_at)
+                VALUES (?, ?, ?, ?, ?)
+                """,
+                [
+                    (user_ids["stormseed"], "avatar", "a06", 240, datetime.now().isoformat()),
+                    (user_ids["stormseed"], "plaque", "p05", 340, datetime.now().isoformat()),
+                    (user_ids["pearlyde"], "avatar", "a01", 240, datetime.now().isoformat()),
+                    (user_ids["pearlyde"], "plaque", "p05", 340, datetime.now().isoformat()),
+                    (user_ids["jule"], "avatar", "a02", 123, datetime.now().isoformat()),
+                ],
+            )
+            for username, avatar_id in (("stormseed", "a06"), ("pearlyde", "a01"), ("jule", "a02")):
+                database.execute(
+                    """
+                    INSERT INTO user_cosmetics (user_id, avatar_id, plaque_id, updated_at)
+                    VALUES (?, ?, 'p05', ?)
+                    """,
+                    (user_ids[username], avatar_id, datetime.now().isoformat()),
+                )
+            database.commit()
+
+            init_db()
+            for username, expected_count, expected_cosmetics in (
+                ("stormseed", 2, ("a06", "p05")),
+                ("pearlyde", 2, ("a01", "p05")),
+                ("jule", 1, ("a02", "p05")),
+            ):
+                self.assertEqual(
+                    database.execute(
+                        "SELECT COUNT(*) FROM shop_purchases WHERE user_id = ?",
+                        (user_ids[username],),
+                    ).fetchone()[0],
+                    expected_count,
+                )
+                cosmetics = database.execute(
+                    "SELECT avatar_id, plaque_id FROM user_cosmetics WHERE user_id = ?",
+                    (user_ids[username],),
+                ).fetchone()
+                self.assertEqual(
+                    (cosmetics["avatar_id"], cosmetics["plaque_id"]),
+                    expected_cosmetics,
+                )
+
+            # Die Bereinigung ist absichtlich einmalig; spätere freigegebene Käufe
+            # dürfen nicht bei jedem Neustart wieder verschwinden.
+            database.execute(
+                """
+                INSERT INTO shop_purchases
+                    (user_id, item_type, item_id, price, purchased_at)
+                VALUES (?, 'avatar', 'a03', 777, ?)
+                """,
+                (user_ids["stormseed"], datetime.now().isoformat()),
+            )
+            database.commit()
+            init_db()
+            self.assertEqual(
+                database.execute(
+                    "SELECT price FROM shop_purchases WHERE user_id = ? AND item_id = 'a03'",
+                    (user_ids["stormseed"],),
+                ).fetchone()[0],
+                777,
+            )
+
     def finish_party_start_countdown(self, lobby_id):
         with self.app.app_context():
             database = self.app.get_db()
@@ -314,7 +752,7 @@ class GameFlowTests(unittest.TestCase):
         self.assertIn('placeholder="••••"'.encode(), response.data)
         self.assertNotIn(b'placeholder="z. B. jan"', response.data)
         self.assertIn(b"Neu hier?", response.data)
-        self.assertIn(b"Spielregeln", response.data)
+        self.assertIn("Spielregeln – So wird gespielt".encode(), response.data)
         self.assertIn("Verpasste Runden der laufenden Woche".encode(), response.data)
         self.assertNotIn(b"Urlaub", response.data)
         self.assertIn(b'<meta property="og:title" content="Guesstimate">', response.data)
@@ -323,6 +761,32 @@ class GameFlowTests(unittest.TestCase):
             response.data,
         )
         self.assertIn(b'<meta name="twitter:card" content="summary_large_image">', response.data)
+
+    def test_rules_are_scoped_to_the_matching_game_area(self):
+        self.register()
+
+        daily = self.client.get("/")
+        self.assertIn("Spielregeln – So wird gespielt".encode(), daily.data)
+        self.assertIn("Verpasste Runden der laufenden Woche".encode(), daily.data)
+
+        profile = self.client.get("/profil")
+        self.assertNotIn(b"data-rules-open", profile.data)
+        self.assertNotIn(b'class="game-header"', profile.data)
+        shop = self.client.get("/shop")
+        self.assertNotIn(b"data-rules-open", shop.data)
+        self.assertNotIn(b'class="game-header"', shop.data)
+        perfect = self.client.get("/nerd")
+        self.assertIn(b"data-rules-open", perfect.data)
+        self.assertIn("Stormseed´s Perfect".encode(), perfect.data)
+        self.assertIn("der Host legt Zielpunktzahl oder Spielzeit fest".encode(), perfect.data)
+        self.assertNotIn("Verpasste Runden der laufenden Woche".encode(), perfect.data)
+
+        party = self.client.get("/party")
+        self.assertNotIn(b'class="game-header"', party.data)
+        self.assertIn("Spielregeln – So wird gespielt".encode(), party.data)
+        self.assertIn(b"Partymodus-Classic", party.data)
+        self.assertIn("wählt 1 bis 5 Runden".encode(), party.data)
+        self.assertNotIn("Verpasste Runden der laufenden Woche".encode(), party.data)
 
     def test_login_offers_every_missed_day_of_the_current_week(self):
         self.register()
@@ -342,6 +806,42 @@ class GameFlowTests(unittest.TestCase):
             )
             self.assertIn(b"Nachholrunde vom", response.data)
         self.assertNotIn(b"Urlaub nehmen", response.data)
+
+    def test_missed_rounds_remain_accessible_after_the_login_prompt(self):
+        class Wednesday(date):
+            @classmethod
+            def today(cls):
+                return cls(2026, 10, 21)
+
+        with patch("app.date", Wednesday):
+            self.register()
+
+            first_home = self.client.get("/")
+            self.assertIn(b'<dialog class="catchup-dialog"', first_home.data)
+            self.assertIn(b"2 verpasste Runden nachholen", first_home.data)
+
+            later_home = self.client.get("/")
+            self.assertNotIn(b'<dialog class="catchup-dialog"', later_home.data)
+            self.assertIn(b"2 verpasste Runden nachholen", later_home.data)
+
+            today_only = self.client.post(
+                "/woche/auswahl",
+                data={"choice": "today", "csrf_token": self.csrf()},
+                follow_redirects=True,
+            )
+            self.assertIn(b"2 verpasste Runden nachholen", today_only.data)
+
+            catchup = self.client.post(
+                "/woche/auswahl",
+                data={"choice": "all", "csrf_token": self.csrf()},
+                follow_redirects=True,
+            )
+            self.assertIn(b"Nachholrunde vom", catchup.data)
+            with self.client.session_transaction() as client_session:
+                self.assertEqual(
+                    client_session["catchup_queue"],
+                    ["2026-10-19", "2026-10-20", "2026-10-21"],
+                )
 
     def test_sunday_login_can_replay_every_missed_day_of_the_week(self):
         self.register()
@@ -408,9 +908,11 @@ class GameFlowTests(unittest.TestCase):
         self.assertIn(b"DEIN AKTUELLER PLATZ", response.data)
         self.assertIn(b"Deine Antworten", response.data)
         self.assertIn("Du hast <strong>500 Ikühe</strong> verdient".encode(), response.data)
-        self.assertIn("Du hast 500 Ikühe".encode(), response.data)
+        self.assertIn(b"<span>shop</span>", response.data)
         self.assertIn(b"Tagessieger", response.data)
         self.assertIn(b"Wochenliga", response.data)
+        self.assertIn(b"player-week-tally", response.data)
+        self.assertIn(b"1 gespielte Runde", response.data)
         self.assertIn(b"Hall of Fame", response.data)
         self.assertIn("Punkte nach Zeitabzug".encode(), response.data)
         self.assertIn(str(escape(questions[0]["prompt"])).encode(), response.data)
@@ -601,7 +1103,7 @@ class GameFlowTests(unittest.TestCase):
         self.assertIn("↔".encode(), response.data)
         self.assertNotIn("↕".encode(), response.data)
         self.assertIn(b"Spielregeln", response.data)
-        self.assertIn("Du hast 0 Ikühe".encode(), response.data)
+        self.assertIn(b"<span>shop</span>", response.data)
         self.assertIn(b"game.js?v=3", response.data)
         self.assertNotIn(b"move-up", response.data)
         self.assertNotIn(b"move-down", response.data)
@@ -665,15 +1167,84 @@ class GameFlowTests(unittest.TestCase):
                 """,
                 [
                     (f"spieler {index}", f"Spieler {index}", "unused", datetime.now().isoformat())
-                    for index in range(2, 8)
+                    for index in range(2, 7)
                 ],
             )
             database.commit()
 
         response = self.client.get("/")
         self.assertIn(b"is-scrollable", response.data)
-        self.assertIn("Spieler 7".encode(), response.data)
-        self.assertIn("7 Spielern".encode(), response.data)
+        self.assertIn("Spieler 6".encode(), response.data)
+        self.assertIn(b"week-tally", response.data)
+        self.assertIn(b"data-week-date", response.data)
+        self.assertIn(b'class="avatar-profile-link" href="/profil"', response.data)
+        self.assertIn("6 Spielern".encode(), response.data)
+
+    def test_leaderboard_does_not_scroll_with_five_players(self):
+        self.register("Spieler 1")
+        with self.app.app_context():
+            database = self.app.get_db()
+            database.executemany(
+                """
+                INSERT INTO users (username, display_name, pin_hash, created_at)
+                VALUES (?, ?, ?, ?)
+                """,
+                [
+                    (f"spieler {index}", f"Spieler {index}", "unused", datetime.now().isoformat())
+                    for index in range(2, 6)
+                ],
+            )
+            database.commit()
+
+        response = self.client.get("/")
+        self.assertNotIn(b"is-scrollable", response.data)
+
+    def test_home_renders_variant_a_lobby(self):
+        self.register("Arena Spieler")
+
+        response = self.client.get("/")
+
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b"home-variant-a", response.data)
+        self.assertIn(b'class="variant-a-profile ', response.data)
+        self.assertIn(b'class="variant-a-showcase"', response.data)
+        self.assertIn(b'class="variant-a-ranking"', response.data)
+        self.assertIn(b'data-game-slide="3"', response.data)
+        self.assertIn(b'data-game-slide="4"', response.data)
+        self.assertEqual(response.data.count(b"variant-a-flyer-copy"), 5)
+        self.assertIn("Fünf Fragen um täglich deine Unwissenheit zu beweisen!".encode(), response.data)
+        self.assertIn("Das tägliche Quiz als Zeit-Stress-Partymodus".encode(), response.data)
+        self.assertIn("Oder weißt du etwa, was eine Mansube ist?".encode(), response.data)
+        self.assertIn("Ein Spieltisch, der täglich erweitert wird.".encode(), response.data)
+        self.assertIn(b"Tabletop Connection", response.data)
+        self.assertIn("Alles Gute auch zum Wochensieg in guesstimate!!!".encode(), response.data)
+        self.assertIn(b'class="variant-a-title-screen"', response.data)
+        self.assertNotIn(b"data-carousel-tab", response.data)
+        self.assertNotIn(b"data-carousel-action", response.data)
+        self.assertNotIn("party öffnen".encode(), response.data)
+        self.assertNotIn("perfect öffnen".encode(), response.data)
+        self.assertNotIn("playtable öffnen".encode(), response.data)
+        self.assertNotIn(b"data-winner-dialog", response.data)
+        self.assertNotIn(b"winner-congratulate", response.data)
+        self.assertIn(b'data-leaderboard-tab="weekly_wins"', response.data)
+        self.assertIn(b"0 iK", response.data)
+        self.assertNotIn(b'class="arena-host', response.data)
+
+    def test_navigation_places_party_second_and_tabletop_after_rules(self):
+        self.register("Navigationspruefung")
+
+        page = self.client.get("/").get_data(as_text=True)
+        navigation = page.split('<nav class="arena-main-nav"', 1)[1].split("</nav>", 1)[0]
+
+        self.assertNotIn("arena-nav-multiplayer", navigation)
+        self.assertNotIn("multiplayer", navigation.lower())
+        self.assertNotIn("arena-nav-perfect", navigation)
+        self.assertNotIn("stormseed´s perfect", navigation.lower())
+        self.assertIn('aria-label="tabletop connection"', navigation)
+        self.assertIn("<span>tabletop</span><span>connection</span>", navigation)
+        self.assertLess(navigation.index(">guesstimate</a>"), navigation.index('aria-label="guesstimate party"'))
+        self.assertLess(navigation.index('aria-label="guesstimate party"'), navigation.index(">profil</span>"))
+        self.assertLess(navigation.index(">regeln</span>"), navigation.index('aria-label="tabletop connection"'))
 
     def test_party_lobby_reserves_questions_without_affecting_regular_scores(self):
         self.register("Partyhost")

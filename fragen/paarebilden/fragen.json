@@ -8710,377 +8710,4643 @@
     }
   },
   {
-    "id": "ma192", "question_type": "match", "primary_category": "human_everyday", "subtopic": "Notruf und Hilfe",
-    "tags": {"topics": ["Notruf und Hilfe"], "entities": ["Polizei", "Feuerwehr und Rettungsdienst", "Ärztlicher Bereitschaftsdienst"], "genres": [], "regions": ["Deutschland"], "eras": []},
+    "id": "ma192",
+    "question_type": "match",
+    "primary_category": "human_everyday",
+    "subtopic": "Notruf und Hilfe",
+    "tags": {
+      "topics": [
+        "Notruf und Hilfe"
+      ],
+      "entities": [
+        "Polizei",
+        "Feuerwehr und Rettungsdienst",
+        "Ärztlicher Bereitschaftsdienst"
+      ],
+      "genres": [],
+      "regions": [
+        "Deutschland"
+      ],
+      "eras": []
+    },
     "prompt": "Ordne den Hilfsdienst seiner Telefonnummer in Deutschland zu.",
-    "left": ["Polizei-Notruf", "Feuerwehr und Rettungsdienst", "Ärztlicher Bereitschaftsdienst"],
-    "right": ["112", "116117", "110"],
-    "answer": {"Polizei-Notruf": "110", "Feuerwehr und Rettungsdienst": "112", "Ärztlicher Bereitschaftsdienst": "116117"},
+    "left": [
+      "Polizei-Notruf",
+      "Feuerwehr und Rettungsdienst",
+      "Ärztlicher Bereitschaftsdienst"
+    ],
+    "right": [
+      "112",
+      "116117",
+      "110"
+    ],
+    "answer": {
+      "Polizei-Notruf": "110",
+      "Feuerwehr und Rettungsdienst": "112",
+      "Ärztlicher Bereitschaftsdienst": "116117"
+    },
     "explanation": "Die 110 führt zur Polizei, die 112 zu Feuerwehr und Rettungsdienst. Unter 116117 hilft der ärztliche Bereitschaftsdienst bei dringenden, aber nicht lebensbedrohlichen Beschwerden.",
-    "subject_keys": ["topic:human_everyday:notruf-und-hilfe", "entity:polizei-notruf", "entity:feuerwehr-und-rettungsdienst", "entity:aerztlicher-bereitschaftsdienst"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Polizeiliche Kriminalprävention: Notrufnummern 110 und 112", "url": "https://www.polizei-beratung.de/themen-und-tipps/informationen-fuer-zuwanderer/"}, {"title": "116117: Kontakt und richtige Rufnummer", "url": "https://www.116117.de/de/index.php?page=kontakt"}]}
+    "subject_keys": [
+      "topic:human_everyday:notruf-und-hilfe",
+      "entity:polizei-notruf",
+      "entity:feuerwehr-und-rettungsdienst",
+      "entity:aerztlicher-bereitschaftsdienst"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Polizeiliche Kriminalprävention: Notrufnummern 110 und 112",
+          "url": "https://www.polizei-beratung.de/themen-und-tipps/informationen-fuer-zuwanderer/"
+        },
+        {
+          "title": "116117: Kontakt und richtige Rufnummer",
+          "url": "https://www.116117.de/de/index.php?page=kontakt"
+        }
+      ]
+    }
   },
   {
-    "id": "ma193", "question_type": "match", "primary_category": "geography_world", "subtopic": "Länderdomains",
-    "tags": {"topics": ["Länderdomains"], "entities": ["Deutschland", "Österreich", "Schweiz"], "genres": [], "regions": ["Europa"], "eras": []},
+    "id": "ma193",
+    "question_type": "match",
+    "primary_category": "geography_world",
+    "subtopic": "Länderdomains",
+    "tags": {
+      "topics": [
+        "Länderdomains"
+      ],
+      "entities": [
+        "Deutschland",
+        "Österreich",
+        "Schweiz"
+      ],
+      "genres": [],
+      "regions": [
+        "Europa"
+      ],
+      "eras": []
+    },
     "prompt": "Ordne die Länderdomain dem Staat zu.",
-    "left": [".de", ".at", ".ch"],
-    "right": ["Österreich", "Schweiz", "Deutschland"],
-    "answer": {".de": "Deutschland", ".at": "Österreich", ".ch": "Schweiz"},
+    "left": [
+      ".de",
+      ".at",
+      ".ch"
+    ],
+    "right": [
+      "Österreich",
+      "Schweiz",
+      "Deutschland"
+    ],
+    "answer": {
+      ".de": "Deutschland",
+      ".at": "Österreich",
+      ".ch": "Schweiz"
+    },
     "explanation": ".de ist die Länderkennung Deutschlands, .at gehört zu Österreich und .ch zur Schweiz. Das Kürzel CH geht auf den lateinischen Namen Confoederatio Helvetica zurück.",
-    "subject_keys": ["topic:geography_world:laenderdomains", "entity:de-domain", "entity:at-domain", "entity:ch-domain"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "IANA: Root Zone Database", "url": "https://www.iana.org/domains/root/db"}]}
+    "subject_keys": [
+      "topic:geography_world:laenderdomains",
+      "entity:de-domain",
+      "entity:at-domain",
+      "entity:ch-domain"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "IANA: Root Zone Database",
+          "url": "https://www.iana.org/domains/root/db"
+        }
+      ]
+    }
   },
   {
-    "id": "ma194", "question_type": "match", "primary_category": "science_technology", "subtopic": "Weltraumteleskope",
-    "tags": {"topics": ["Weltraumteleskope", "Beobachtungsbereiche"], "entities": ["Hubble", "James Webb", "Chandra"], "genres": [], "regions": [], "eras": ["Moderne Raumfahrt"]},
+    "id": "ma194",
+    "question_type": "match",
+    "primary_category": "science_technology",
+    "subtopic": "Weltraumteleskope",
+    "tags": {
+      "topics": [
+        "Weltraumteleskope",
+        "Beobachtungsbereiche"
+      ],
+      "entities": [
+        "Hubble",
+        "James Webb",
+        "Chandra"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": [
+        "Moderne Raumfahrt"
+      ]
+    },
     "prompt": "Ordne das Weltraumteleskop seinem wichtigsten Beobachtungsbereich zu.",
-    "left": ["Hubble", "James Webb", "Chandra"],
-    "right": ["vor allem Infrarotlicht", "Röntgenstrahlung", "UV-, sichtbares und nahes Infrarotlicht"],
-    "answer": {"Hubble": "UV-, sichtbares und nahes Infrarotlicht", "James Webb": "vor allem Infrarotlicht", "Chandra": "Röntgenstrahlung"},
+    "left": [
+      "Hubble",
+      "James Webb",
+      "Chandra"
+    ],
+    "right": [
+      "vor allem Infrarotlicht",
+      "Röntgenstrahlung",
+      "UV-, sichtbares und nahes Infrarotlicht"
+    ],
+    "answer": {
+      "Hubble": "UV-, sichtbares und nahes Infrarotlicht",
+      "James Webb": "vor allem Infrarotlicht",
+      "Chandra": "Röntgenstrahlung"
+    },
     "explanation": "Hubble beobachtet vom Ultraviolett bis ins nahe Infrarot. Webb ist für Infrarotlicht optimiert, Chandra für Röntgenstrahlung aus sehr heißen Bereichen des Alls.",
-    "subject_keys": ["topic:science_technology:weltraumteleskope", "entity:hubble", "entity:james-webb", "entity:chandra"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "NASA: Hubble Instruments", "url": "https://science.nasa.gov/mission/hubble/observatory/design/instruments/"}, {"title": "NASA: Webb FAQ", "url": "https://science.nasa.gov/mission/webb/faqs-full/"}, {"title": "NASA: Chandra X-ray Observatory", "url": "https://science.nasa.gov/mission/Chandra/"}]}
+    "subject_keys": [
+      "topic:science_technology:weltraumteleskope",
+      "entity:hubble",
+      "entity:james-webb",
+      "entity:chandra"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "NASA: Hubble Instruments",
+          "url": "https://science.nasa.gov/mission/hubble/observatory/design/instruments/"
+        },
+        {
+          "title": "NASA: Webb FAQ",
+          "url": "https://science.nasa.gov/mission/webb/faqs-full/"
+        },
+        {
+          "title": "NASA: Chandra X-ray Observatory",
+          "url": "https://science.nasa.gov/mission/Chandra/"
+        }
+      ]
+    }
   },
   {
-    "id": "ma195", "question_type": "match", "primary_category": "science_technology", "subtopic": "Raumsonden",
-    "tags": {"topics": ["Raumsonden", "Planetenerkundung"], "entities": ["Juno", "Cassini", "New Horizons"], "genres": [], "regions": [], "eras": ["Moderne Raumfahrt"]},
+    "id": "ma195",
+    "question_type": "match",
+    "primary_category": "science_technology",
+    "subtopic": "Raumsonden",
+    "tags": {
+      "topics": [
+        "Raumsonden",
+        "Planetenerkundung"
+      ],
+      "entities": [
+        "Juno",
+        "Cassini",
+        "New Horizons"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": [
+        "Moderne Raumfahrt"
+      ]
+    },
     "prompt": "Ordne die Raumsonde ihrem wichtigsten Ziel zu.",
-    "left": ["Juno", "Cassini", "New Horizons"],
-    "right": ["Saturnsystem", "Pluto und Kuipergürtel", "Jupiter"],
-    "answer": {"Juno": "Jupiter", "Cassini": "Saturnsystem", "New Horizons": "Pluto und Kuipergürtel"},
+    "left": [
+      "Juno",
+      "Cassini",
+      "New Horizons"
+    ],
+    "right": [
+      "Saturnsystem",
+      "Pluto und Kuipergürtel",
+      "Jupiter"
+    ],
+    "answer": {
+      "Juno": "Jupiter",
+      "Cassini": "Saturnsystem",
+      "New Horizons": "Pluto und Kuipergürtel"
+    },
     "explanation": "Juno erforscht Jupiter. Cassini untersuchte Saturn und seine Monde, während New Horizons an Pluto vorbeiflog und den Kuipergürtel erkundet.",
-    "subject_keys": ["topic:science_technology:raumsonden", "entity:juno", "entity:cassini", "entity:new-horizons"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "NASA: Juno", "url": "https://science.nasa.gov/mission/juno/"}, {"title": "NASA: Cassini", "url": "https://science.nasa.gov/mission/cassini/"}, {"title": "NASA: New Horizons", "url": "https://science.nasa.gov/mission/new-horizons/"}]}
+    "subject_keys": [
+      "topic:science_technology:raumsonden",
+      "entity:juno",
+      "entity:cassini",
+      "entity:new-horizons"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "NASA: Juno",
+          "url": "https://science.nasa.gov/mission/juno/"
+        },
+        {
+          "title": "NASA: Cassini",
+          "url": "https://science.nasa.gov/mission/cassini/"
+        },
+        {
+          "title": "NASA: New Horizons",
+          "url": "https://science.nasa.gov/mission/new-horizons/"
+        }
+      ]
+    }
   },
   {
-    "id": "ma196", "question_type": "match", "primary_category": "science_technology", "subtopic": "Schichten der Atmosphäre",
-    "tags": {"topics": ["Atmosphäre"], "entities": ["Troposphäre", "Stratosphäre", "Thermosphäre"], "genres": [], "regions": [], "eras": []},
+    "id": "ma196",
+    "question_type": "match",
+    "primary_category": "science_technology",
+    "subtopic": "Schichten der Atmosphäre",
+    "tags": {
+      "topics": [
+        "Atmosphäre"
+      ],
+      "entities": [
+        "Troposphäre",
+        "Stratosphäre",
+        "Thermosphäre"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne die Atmosphärenschicht ihrem typischen Merkmal zu.",
-    "left": ["Troposphäre", "Stratosphäre", "Thermosphäre"],
-    "right": ["enthält die Ozonschicht", "absorbiert viel UV- und Röntgenstrahlung", "hier spielt sich fast das gesamte Wetter ab"],
-    "answer": {"Troposphäre": "hier spielt sich fast das gesamte Wetter ab", "Stratosphäre": "enthält die Ozonschicht", "Thermosphäre": "absorbiert viel UV- und Röntgenstrahlung"},
+    "left": [
+      "Troposphäre",
+      "Stratosphäre",
+      "Thermosphäre"
+    ],
+    "right": [
+      "enthält die Ozonschicht",
+      "absorbiert viel UV- und Röntgenstrahlung",
+      "hier spielt sich fast das gesamte Wetter ab"
+    ],
+    "answer": {
+      "Troposphäre": "hier spielt sich fast das gesamte Wetter ab",
+      "Stratosphäre": "enthält die Ozonschicht",
+      "Thermosphäre": "absorbiert viel UV- und Röntgenstrahlung"
+    },
     "explanation": "Das Wetter entsteht überwiegend in der Troposphäre. In der Stratosphäre liegt die Ozonschicht; die Thermosphäre nimmt energiereiche UV- und Röntgenstrahlung auf.",
-    "subject_keys": ["topic:science_technology:atmosphaerenschichten", "entity:troposphaere", "entity:stratosphaere", "entity:thermosphaere"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "NOAA JetStream: Layers of the Atmosphere", "url": "https://www.noaa.gov/jetstream/atmosphere/layers-of-atmosphere"}]}
+    "subject_keys": [
+      "topic:science_technology:atmosphaerenschichten",
+      "entity:troposphaere",
+      "entity:stratosphaere",
+      "entity:thermosphaere"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "NOAA JetStream: Layers of the Atmosphere",
+          "url": "https://www.noaa.gov/jetstream/atmosphere/layers-of-atmosphere"
+        }
+      ]
+    }
   },
   {
-    "id": "ma197", "question_type": "match", "primary_category": "media_entertainment", "subtopic": "Fotografie",
-    "tags": {"topics": ["Fotografie", "Belichtung"], "entities": ["Blende", "Belichtungszeit", "ISO-Wert"], "genres": [], "regions": [], "eras": []},
+    "id": "ma197",
+    "question_type": "match",
+    "primary_category": "media_entertainment",
+    "subtopic": "Fotografie",
+    "tags": {
+      "topics": [
+        "Fotografie",
+        "Belichtung"
+      ],
+      "entities": [
+        "Blende",
+        "Belichtungszeit",
+        "ISO-Wert"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne die Kameraeinstellung ihrer typischen Bildwirkung zu.",
-    "left": ["Blende", "Belichtungszeit", "ISO-Wert"],
-    "right": ["bestimmt, ob Bewegung scharf oder verwischt erscheint", "erhöht Lichtempfindlichkeit und oft Bildrauschen", "steuert besonders die Schärfentiefe"],
-    "answer": {"Blende": "steuert besonders die Schärfentiefe", "Belichtungszeit": "bestimmt, ob Bewegung scharf oder verwischt erscheint", "ISO-Wert": "erhöht Lichtempfindlichkeit und oft Bildrauschen"},
+    "left": [
+      "Blende",
+      "Belichtungszeit",
+      "ISO-Wert"
+    ],
+    "right": [
+      "bestimmt, ob Bewegung scharf oder verwischt erscheint",
+      "erhöht Lichtempfindlichkeit und oft Bildrauschen",
+      "steuert besonders die Schärfentiefe"
+    ],
+    "answer": {
+      "Blende": "steuert besonders die Schärfentiefe",
+      "Belichtungszeit": "bestimmt, ob Bewegung scharf oder verwischt erscheint",
+      "ISO-Wert": "erhöht Lichtempfindlichkeit und oft Bildrauschen"
+    },
     "explanation": "Die Blende beeinflusst die Schärfentiefe. Eine kurze Belichtungszeit friert Bewegung ein, und ein hoher ISO-Wert macht den Sensor empfindlicher, kann aber stärkeres Bildrauschen erzeugen.",
-    "subject_keys": ["topic:media_entertainment:fotografie", "entity:blende", "entity:belichtungszeit", "entity:iso-wert"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Nikon: Understanding Auto ISO", "url": "https://www.nikonusa.com/learn-and-explore/c/tips-and-techniques/understanding-auto-iso"}]}
+    "subject_keys": [
+      "topic:media_entertainment:fotografie",
+      "entity:blende",
+      "entity:belichtungszeit",
+      "entity:iso-wert"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Nikon: Understanding Auto ISO",
+          "url": "https://www.nikonusa.com/learn-and-explore/c/tips-and-techniques/understanding-auto-iso"
+        }
+      ]
+    }
   },
   {
-    "id": "ma198", "question_type": "match", "primary_category": "media_entertainment", "subtopic": "Typografie",
-    "tags": {"topics": ["Typografie"], "entities": ["Serife", "Kerning", "Durchschuss"], "genres": [], "regions": [], "eras": []},
+    "id": "ma198",
+    "question_type": "match",
+    "primary_category": "media_entertainment",
+    "subtopic": "Typografie",
+    "tags": {
+      "topics": [
+        "Typografie"
+      ],
+      "entities": [
+        "Serife",
+        "Kerning",
+        "Durchschuss"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne den Begriff aus der Typografie seiner Bedeutung zu.",
-    "left": ["Serife", "Kerning", "Durchschuss"],
-    "right": ["Abstand zwischen einzelnen Buchstaben", "Abstand zwischen Textzeilen", "kleiner Abschlussstrich an einem Buchstaben"],
-    "answer": {"Serife": "kleiner Abschlussstrich an einem Buchstaben", "Kerning": "Abstand zwischen einzelnen Buchstaben", "Durchschuss": "Abstand zwischen Textzeilen"},
+    "left": [
+      "Serife",
+      "Kerning",
+      "Durchschuss"
+    ],
+    "right": [
+      "Abstand zwischen einzelnen Buchstaben",
+      "Abstand zwischen Textzeilen",
+      "kleiner Abschlussstrich an einem Buchstaben"
+    ],
+    "answer": {
+      "Serife": "kleiner Abschlussstrich an einem Buchstaben",
+      "Kerning": "Abstand zwischen einzelnen Buchstaben",
+      "Durchschuss": "Abstand zwischen Textzeilen"
+    },
     "explanation": "Serifen sind kleine Abschlussstriche an Buchstaben. Kerning gleicht den Abstand einzelner Buchstabenpaare aus; der Durchschuss bezeichnet den vertikalen Abstand zwischen Zeilen.",
-    "subject_keys": ["topic:media_entertainment:typografie", "entity:serife", "entity:kerning", "entity:durchschuss"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Adobe Education Exchange: Typography Basics", "url": "https://cdn.edex.adobe.com/exAttachments/115-9-2435.pdf"}]}
+    "subject_keys": [
+      "topic:media_entertainment:typografie",
+      "entity:serife",
+      "entity:kerning",
+      "entity:durchschuss"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Adobe Education Exchange: Typography Basics",
+          "url": "https://cdn.edex.adobe.com/exAttachments/115-9-2435.pdf"
+        }
+      ]
+    }
   },
   {
-    "id": "ma199", "question_type": "match", "primary_category": "science_technology", "subtopic": "Cyberangriffe",
-    "tags": {"topics": ["Cybersicherheit"], "entities": ["Phishing", "Ransomware", "DDoS-Angriff"], "genres": [], "regions": [], "eras": []},
+    "id": "ma199",
+    "question_type": "match",
+    "primary_category": "science_technology",
+    "subtopic": "Cyberangriffe",
+    "tags": {
+      "topics": [
+        "Cybersicherheit"
+      ],
+      "entities": [
+        "Phishing",
+        "Ransomware",
+        "DDoS-Angriff"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne die Art des Cyberangriffs ihrem typischen Vorgehen zu.",
-    "left": ["Phishing", "Ransomware", "DDoS-Angriff"],
-    "right": ["verschlüsselt Daten und fordert Lösegeld", "überlastet einen Dienst mit sehr vielen Anfragen", "lockt Zugangsdaten über gefälschte Nachrichten ab"],
-    "answer": {"Phishing": "lockt Zugangsdaten über gefälschte Nachrichten ab", "Ransomware": "verschlüsselt Daten und fordert Lösegeld", "DDoS-Angriff": "überlastet einen Dienst mit sehr vielen Anfragen"},
+    "left": [
+      "Phishing",
+      "Ransomware",
+      "DDoS-Angriff"
+    ],
+    "right": [
+      "verschlüsselt Daten und fordert Lösegeld",
+      "überlastet einen Dienst mit sehr vielen Anfragen",
+      "lockt Zugangsdaten über gefälschte Nachrichten ab"
+    ],
+    "answer": {
+      "Phishing": "lockt Zugangsdaten über gefälschte Nachrichten ab",
+      "Ransomware": "verschlüsselt Daten und fordert Lösegeld",
+      "DDoS-Angriff": "überlastet einen Dienst mit sehr vielen Anfragen"
+    },
     "explanation": "Phishing täuscht vertrauenswürdige Nachrichten vor. Ransomware sperrt oder verschlüsselt Daten gegen Lösegeld, und ein DDoS-Angriff legt Dienste durch massenhafte Anfragen lahm.",
-    "subject_keys": ["topic:science_technology:cyberangriffe", "entity:phishing", "entity:ransomware", "entity:ddos"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "BSI: E-Mail-Sicherheit und Phishing", "url": "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Sicherheitsirrtuemer/irrtuemer-e-mail-sicherheit.html"}, {"title": "BSI: Ransomware", "url": "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Cyber-Sicherheitslage/Methoden-der-Cyber-Kriminalitaet/Schadprogramme/Ransomware/ransomware.html"}, {"title": "BSI: Denial of Service", "url": "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Cyber-Sicherheitslage/Methoden-der-Cyber-Kriminalitaet/DoS-Denial-of-Service/dos-denial-of-service_node.html"}]}
+    "subject_keys": [
+      "topic:science_technology:cyberangriffe",
+      "entity:phishing",
+      "entity:ransomware",
+      "entity:ddos"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "BSI: E-Mail-Sicherheit und Phishing",
+          "url": "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Sicherheitsirrtuemer/irrtuemer-e-mail-sicherheit.html"
+        },
+        {
+          "title": "BSI: Ransomware",
+          "url": "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Cyber-Sicherheitslage/Methoden-der-Cyber-Kriminalitaet/Schadprogramme/Ransomware/ransomware.html"
+        },
+        {
+          "title": "BSI: Denial of Service",
+          "url": "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Cyber-Sicherheitslage/Methoden-der-Cyber-Kriminalitaet/DoS-Denial-of-Service/dos-denial-of-service_node.html"
+        }
+      ]
+    }
   },
   {
-    "id": "ma200", "question_type": "match", "primary_category": "science_technology", "subtopic": "Internetprotokolle",
-    "tags": {"topics": ["Internetprotokolle"], "entities": ["DNS", "SMTP", "HTTPS"], "genres": [], "regions": [], "eras": []},
+    "id": "ma200",
+    "question_type": "match",
+    "primary_category": "science_technology",
+    "subtopic": "Internetprotokolle",
+    "tags": {
+      "topics": [
+        "Internetprotokolle"
+      ],
+      "entities": [
+        "DNS",
+        "SMTP",
+        "HTTPS"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne das Internetkürzel seiner Hauptaufgabe zu.",
-    "left": ["DNS", "SMTP", "HTTPS"],
-    "right": ["überträgt E-Mails", "schützt Webverbindungen mit Verschlüsselung", "übersetzt Domainnamen in technische Adressen"],
-    "answer": {"DNS": "übersetzt Domainnamen in technische Adressen", "SMTP": "überträgt E-Mails", "HTTPS": "schützt Webverbindungen mit Verschlüsselung"},
+    "left": [
+      "DNS",
+      "SMTP",
+      "HTTPS"
+    ],
+    "right": [
+      "überträgt E-Mails",
+      "schützt Webverbindungen mit Verschlüsselung",
+      "übersetzt Domainnamen in technische Adressen"
+    ],
+    "answer": {
+      "DNS": "übersetzt Domainnamen in technische Adressen",
+      "SMTP": "überträgt E-Mails",
+      "HTTPS": "schützt Webverbindungen mit Verschlüsselung"
+    },
     "explanation": "DNS findet zu einem Domainnamen die passende technische Adresse. SMTP dient dem E-Mail-Transport, HTTPS schützt HTTP-Verbindungen mit TLS-Verschlüsselung.",
-    "subject_keys": ["topic:science_technology:internetprotokolle", "entity:dns", "entity:smtp", "entity:https"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "ICANN: The Domain Name System", "url": "https://www.icann.org/resources/pages/dns-2022-09-13-en"}, {"title": "RFC 5321: Simple Mail Transfer Protocol", "url": "https://www.rfc-editor.org/rfc/rfc5321.html"}, {"title": "RFC 2818: HTTP Over TLS", "url": "https://www.rfc-editor.org/info/rfc2818/"}]}
+    "subject_keys": [
+      "topic:science_technology:internetprotokolle",
+      "entity:dns",
+      "entity:smtp",
+      "entity:https"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "ICANN: The Domain Name System",
+          "url": "https://www.icann.org/resources/pages/dns-2022-09-13-en"
+        },
+        {
+          "title": "RFC 5321: Simple Mail Transfer Protocol",
+          "url": "https://www.rfc-editor.org/rfc/rfc5321.html"
+        },
+        {
+          "title": "RFC 2818: HTTP Over TLS",
+          "url": "https://www.rfc-editor.org/info/rfc2818/"
+        }
+      ]
+    }
   },
   {
-    "id": "ma201", "question_type": "match", "primary_category": "media_entertainment", "subtopic": "Filmpreise",
-    "tags": {"topics": ["Filmpreise", "Filmfestivals"], "entities": ["Oscar", "Goldener Bär", "Goldene Palme"], "genres": ["Film"], "regions": ["USA", "Deutschland", "Frankreich"], "eras": []},
+    "id": "ma201",
+    "question_type": "match",
+    "primary_category": "media_entertainment",
+    "subtopic": "Filmpreise",
+    "tags": {
+      "topics": [
+        "Filmpreise",
+        "Filmfestivals"
+      ],
+      "entities": [
+        "Oscar",
+        "Goldener Bär",
+        "Goldene Palme"
+      ],
+      "genres": [
+        "Film"
+      ],
+      "regions": [
+        "USA",
+        "Deutschland",
+        "Frankreich"
+      ],
+      "eras": []
+    },
     "prompt": "Ordne den Filmpreis der Veranstaltung zu.",
-    "left": ["Oscar", "Goldener Bär", "Goldene Palme"],
-    "right": ["Berlinale", "Festival de Cannes", "Academy Awards"],
-    "answer": {"Oscar": "Academy Awards", "Goldener Bär": "Berlinale", "Goldene Palme": "Festival de Cannes"},
+    "left": [
+      "Oscar",
+      "Goldener Bär",
+      "Goldene Palme"
+    ],
+    "right": [
+      "Berlinale",
+      "Festival de Cannes",
+      "Academy Awards"
+    ],
+    "answer": {
+      "Oscar": "Academy Awards",
+      "Goldener Bär": "Berlinale",
+      "Goldene Palme": "Festival de Cannes"
+    },
     "explanation": "Die Oscars werden von der US-Filmakademie vergeben. Der Goldene Bär ist der Hauptpreis der Berlinale, die Goldene Palme der Hauptpreis in Cannes.",
-    "subject_keys": ["topic:media_entertainment:filmpreise", "entity:oscar", "entity:goldener-baer", "entity:goldene-palme"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Academy of Motion Picture Arts and Sciences: Awards Rules", "url": "https://www.oscars.org/sites/oscars/files/2024-04/97th_oscars_complete_rules.pdf"}, {"title": "Festival de Cannes: The Palme d'Or", "url": "https://www.festival-cannes.com/en/the-festival/the-palme-d-or/"}, {"title": "Berlinale: Awards", "url": "https://www.berlinale.de/en/archive/awards-juries/awards.html"}]}
+    "subject_keys": [
+      "topic:media_entertainment:filmpreise",
+      "entity:oscar",
+      "entity:goldener-baer",
+      "entity:goldene-palme"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Academy of Motion Picture Arts and Sciences: Awards Rules",
+          "url": "https://www.oscars.org/sites/oscars/files/2024-04/97th_oscars_complete_rules.pdf"
+        },
+        {
+          "title": "Festival de Cannes: The Palme d'Or",
+          "url": "https://www.festival-cannes.com/en/the-festival/the-palme-d-or/"
+        },
+        {
+          "title": "Berlinale: Awards",
+          "url": "https://www.berlinale.de/en/archive/awards-juries/awards.html"
+        }
+      ]
+    }
   },
   {
-    "id": "ma202", "question_type": "match", "primary_category": "witnesses_of_time", "subtopic": "Friedensabkommen",
-    "tags": {"topics": ["Friedensabkommen", "Konfliktgeschichte"], "entities": ["Westfälischer Frieden", "Versailler Vertrag", "Abkommen von Dayton"], "genres": [], "regions": ["Europa"], "eras": ["17. Jahrhundert", "20. Jahrhundert"]},
+    "id": "ma202",
+    "question_type": "match",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Friedensabkommen",
+    "tags": {
+      "topics": [
+        "Friedensabkommen",
+        "Konfliktgeschichte"
+      ],
+      "entities": [
+        "Westfälischer Frieden",
+        "Versailler Vertrag",
+        "Abkommen von Dayton"
+      ],
+      "genres": [],
+      "regions": [
+        "Europa"
+      ],
+      "eras": [
+        "17. Jahrhundert",
+        "20. Jahrhundert"
+      ]
+    },
     "prompt": "Ordne das Friedensabkommen dem Konflikt zu, den es beendete.",
-    "left": ["Westfälischer Frieden", "Versailler Vertrag", "Abkommen von Dayton"],
-    "right": ["Erster Weltkrieg zwischen Deutschland und den Alliierten", "Bosnienkrieg", "Dreißigjähriger Krieg"],
-    "answer": {"Westfälischer Frieden": "Dreißigjähriger Krieg", "Versailler Vertrag": "Erster Weltkrieg zwischen Deutschland und den Alliierten", "Abkommen von Dayton": "Bosnienkrieg"},
+    "left": [
+      "Westfälischer Frieden",
+      "Versailler Vertrag",
+      "Abkommen von Dayton"
+    ],
+    "right": [
+      "Erster Weltkrieg zwischen Deutschland und den Alliierten",
+      "Bosnienkrieg",
+      "Dreißigjähriger Krieg"
+    ],
+    "answer": {
+      "Westfälischer Frieden": "Dreißigjähriger Krieg",
+      "Versailler Vertrag": "Erster Weltkrieg zwischen Deutschland und den Alliierten",
+      "Abkommen von Dayton": "Bosnienkrieg"
+    },
     "explanation": "Der Westfälische Frieden beendete 1648 den Dreißigjährigen Krieg. Versailles regelte 1919 den Frieden mit Deutschland nach dem Ersten Weltkrieg, Dayton beendete 1995 den Bosnienkrieg.",
-    "subject_keys": ["topic:witnesses_of_time:friedensabkommen", "entity:westfaelischer-frieden", "entity:versailler-vertrag", "entity:dayton-abkommen"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Encyclopaedia Britannica: Peace of Westphalia", "url": "https://www.britannica.com/event/Peace-of-Westphalia"}, {"title": "U.S. Department of State: The Paris Peace Conference and the Treaty of Versailles", "url": "https://history.state.gov/milestones/1914-1920/paris-peace"}, {"title": "OSCE: Dayton Peace Agreement", "url": "https://www.osce.org/bih/126173"}]}
+    "subject_keys": [
+      "topic:witnesses_of_time:friedensabkommen",
+      "entity:westfaelischer-frieden",
+      "entity:versailler-vertrag",
+      "entity:dayton-abkommen"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Peace of Westphalia",
+          "url": "https://www.britannica.com/event/Peace-of-Westphalia"
+        },
+        {
+          "title": "U.S. Department of State: The Paris Peace Conference and the Treaty of Versailles",
+          "url": "https://history.state.gov/milestones/1914-1920/paris-peace"
+        },
+        {
+          "title": "OSCE: Dayton Peace Agreement",
+          "url": "https://www.osce.org/bih/126173"
+        }
+      ]
+    }
   },
   {
-    "id": "ma203", "question_type": "match", "primary_category": "faith_religion", "subtopic": "Pilgerorte",
-    "tags": {"topics": ["Pilgerorte", "Religionen"], "entities": ["Mekka", "Bodh Gaya", "Varanasi"], "genres": [], "regions": ["Saudi-Arabien", "Indien"], "eras": []},
-    "prompt": "Ordne den Pilgerort der Religion zu, für die er besonders wichtig ist.",
-    "left": ["Mekka", "Bodh Gaya", "Varanasi"],
-    "right": ["Buddhismus", "Hinduismus", "Islam"],
-    "answer": {"Mekka": "Islam", "Bodh Gaya": "Buddhismus", "Varanasi": "Hinduismus"},
-    "explanation": "Mekka ist das Ziel der islamischen Haddsch. Bodh Gaya erinnert an Buddhas Erleuchtung, und Varanasi am Ganges gehört zu den heiligsten Städten des Hinduismus.",
-    "subject_keys": ["topic:faith_religion:pilgerorte", "entity:mekka", "entity:bodh-gaya", "entity:varanasi"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Encyclopaedia Britannica: Mecca", "url": "https://www.britannica.com/place/Mecca"}, {"title": "UNESCO: Mahabodhi Temple Complex at Bodh Gaya", "url": "https://whc.unesco.org/en/list/1056/"}, {"title": "Encyclopaedia Britannica: Varanasi", "url": "https://www.britannica.com/place/Varanasi"}]}
-  },
-  {
-    "id": "ma204", "question_type": "match", "primary_category": "science_technology", "subtopic": "Wetterinstrumente",
-    "tags": {"topics": ["Wetterbeobachtung"], "entities": ["Barometer", "Anemometer", "Hygrometer"], "genres": [], "regions": [], "eras": []},
+    "id": "ma204",
+    "question_type": "match",
+    "primary_category": "science_technology",
+    "subtopic": "Wetterinstrumente",
+    "tags": {
+      "topics": [
+        "Wetterbeobachtung"
+      ],
+      "entities": [
+        "Barometer",
+        "Anemometer",
+        "Hygrometer"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne das Wetterinstrument seiner Messgröße zu.",
-    "left": ["Barometer", "Anemometer", "Hygrometer"],
-    "right": ["Windgeschwindigkeit", "Luftfeuchtigkeit", "Luftdruck"],
-    "answer": {"Barometer": "Luftdruck", "Anemometer": "Windgeschwindigkeit", "Hygrometer": "Luftfeuchtigkeit"},
+    "left": [
+      "Barometer",
+      "Anemometer",
+      "Hygrometer"
+    ],
+    "right": [
+      "Windgeschwindigkeit",
+      "Luftfeuchtigkeit",
+      "Luftdruck"
+    ],
+    "answer": {
+      "Barometer": "Luftdruck",
+      "Anemometer": "Windgeschwindigkeit",
+      "Hygrometer": "Luftfeuchtigkeit"
+    },
     "explanation": "Ein Barometer misst den Luftdruck. Das Anemometer erfasst die Windgeschwindigkeit, das Hygrometer die Luftfeuchtigkeit.",
-    "subject_keys": ["topic:science_technology:wetterinstrumente", "entity:barometer", "entity:anemometer", "entity:hygrometer"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "U.S. National Weather Service: Weather Basics", "url": "https://www.weather.gov/media/mhx/Weather%20Basics%20Virtual%20Visit%20-%20Interactive%20Updated%20Spring%202020.pdf"}]}
+    "subject_keys": [
+      "topic:science_technology:wetterinstrumente",
+      "entity:barometer",
+      "entity:anemometer",
+      "entity:hygrometer"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "U.S. National Weather Service: Weather Basics",
+          "url": "https://www.weather.gov/media/mhx/Weather%20Basics%20Virtual%20Visit%20-%20Interactive%20Updated%20Spring%202020.pdf"
+        }
+      ]
+    }
   },
   {
-    "id": "ma205", "question_type": "match", "primary_category": "sport", "subtopic": "Spezialrollen im Teamsport",
-    "tags": {"topics": ["Spielpositionen", "Teamsport"], "entities": ["Libero", "Coxswain", "Skip"], "genres": [], "regions": [], "eras": []},
+    "id": "ma205",
+    "question_type": "match",
+    "primary_category": "sport",
+    "subtopic": "Spezialrollen im Teamsport",
+    "tags": {
+      "topics": [
+        "Spielpositionen",
+        "Teamsport"
+      ],
+      "entities": [
+        "Libero",
+        "Coxswain",
+        "Skip"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne die Spezialrolle ihrer Hauptaufgabe zu.",
-    "left": ["Libero im Volleyball", "Coxswain im Rudern", "Skip im Curling"],
-    "right": ["steuert das Boot und gibt Kommandos", "bestimmt die Taktik und spielt meist die letzten Steine", "stärkt Annahme und Abwehr im Hinterfeld"],
-    "answer": {"Libero im Volleyball": "stärkt Annahme und Abwehr im Hinterfeld", "Coxswain im Rudern": "steuert das Boot und gibt Kommandos", "Skip im Curling": "bestimmt die Taktik und spielt meist die letzten Steine"},
+    "left": [
+      "Libero im Volleyball",
+      "Coxswain im Rudern",
+      "Skip im Curling"
+    ],
+    "right": [
+      "steuert das Boot und gibt Kommandos",
+      "bestimmt die Taktik und spielt meist die letzten Steine",
+      "stärkt Annahme und Abwehr im Hinterfeld"
+    ],
+    "answer": {
+      "Libero im Volleyball": "stärkt Annahme und Abwehr im Hinterfeld",
+      "Coxswain im Rudern": "steuert das Boot und gibt Kommandos",
+      "Skip im Curling": "bestimmt die Taktik und spielt meist die letzten Steine"
+    },
     "explanation": "Der Libero ist auf Abwehr und Annahme spezialisiert. Der Coxswain steuert und koordiniert das Ruderboot; der Skip führt das Curlingteam taktisch und wirft meist zuletzt.",
-    "subject_keys": ["topic:sport:spezialrollen-im-teamsport", "entity:volleyball-libero", "entity:rowing-coxswain", "entity:curling-skip"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "FIVB: Official Volleyball Rules", "url": "https://www.fivb.com/volleyball/the-game/official-volleyball-rules/"}, {"title": "World Rowing: Rules of Racing", "url": "https://worldrowing.com/technical/rules/"}, {"title": "World Curling: Rules of Curling", "url": "https://worldcurling.org/competitions/rules/"}]}
+    "subject_keys": [
+      "topic:sport:spezialrollen-im-teamsport",
+      "entity:volleyball-libero",
+      "entity:rowing-coxswain",
+      "entity:curling-skip"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "FIVB: Official Volleyball Rules",
+          "url": "https://www.fivb.com/volleyball/the-game/official-volleyball-rules/"
+        },
+        {
+          "title": "World Rowing: Rules of Racing",
+          "url": "https://worldrowing.com/technical/rules/"
+        },
+        {
+          "title": "World Curling: Rules of Curling",
+          "url": "https://worldcurling.org/competitions/rules/"
+        }
+      ]
+    }
   },
   {
-    "id": "ma206", "question_type": "match", "primary_category": "science_technology", "subtopic": "Mineralhärte",
-    "tags": {"topics": ["Minerale", "Mohs-Härteskala"], "entities": ["Talk", "Quarz", "Diamant"], "genres": [], "regions": [], "eras": []},
+    "id": "ma206",
+    "question_type": "match",
+    "primary_category": "science_technology",
+    "subtopic": "Mineralhärte",
+    "tags": {
+      "topics": [
+        "Minerale",
+        "Mohs-Härteskala"
+      ],
+      "entities": [
+        "Talk",
+        "Quarz",
+        "Diamant"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne das Mineral seiner Härte auf der Mohs-Skala zu.",
-    "left": ["Talk", "Quarz", "Diamant"],
-    "right": ["Härte 7", "Härte 10", "Härte 1"],
-    "answer": {"Talk": "Härte 1", "Quarz": "Härte 7", "Diamant": "Härte 10"},
+    "left": [
+      "Talk",
+      "Quarz",
+      "Diamant"
+    ],
+    "right": [
+      "Härte 7",
+      "Härte 10",
+      "Härte 1"
+    ],
+    "answer": {
+      "Talk": "Härte 1",
+      "Quarz": "Härte 7",
+      "Diamant": "Härte 10"
+    },
     "explanation": "Talk steht mit Härte 1 am weichen Ende der Mohs-Skala. Quarz hat Härte 7, Diamant bildet mit Härte 10 das harte Ende.",
-    "subject_keys": ["topic:science_technology:mohs-haerteskala", "entity:talk", "entity:quarz", "entity:diamant"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "USGS: Mineral Hardness", "url": "https://pubs.usgs.gov/gip/gemstones/mineral.html"}]}
+    "subject_keys": [
+      "topic:science_technology:mohs-haerteskala",
+      "entity:talk",
+      "entity:quarz",
+      "entity:diamant"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "USGS: Mineral Hardness",
+          "url": "https://pubs.usgs.gov/gip/gemstones/mineral.html"
+        }
+      ]
+    }
   },
   {
-    "id": "ma207", "question_type": "match", "primary_category": "human_everyday", "subtopic": "Zahnarten",
-    "tags": {"topics": ["Zähne", "Körper"], "entities": ["Schneidezähne", "Eckzähne", "Backenzähne"], "genres": [], "regions": [], "eras": []},
+    "id": "ma207",
+    "question_type": "match",
+    "primary_category": "human_everyday",
+    "subtopic": "Zahnarten",
+    "tags": {
+      "topics": [
+        "Zähne",
+        "Körper"
+      ],
+      "entities": [
+        "Schneidezähne",
+        "Eckzähne",
+        "Backenzähne"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne die Zahnart ihrer Hauptaufgabe beim Kauen zu.",
-    "left": ["Schneidezähne", "Eckzähne", "Backenzähne"],
-    "right": ["Nahrung festhalten und zerreißen", "Nahrung zermahlen", "Nahrung abbeißen und schneiden"],
-    "answer": {"Schneidezähne": "Nahrung abbeißen und schneiden", "Eckzähne": "Nahrung festhalten und zerreißen", "Backenzähne": "Nahrung zermahlen"},
+    "left": [
+      "Schneidezähne",
+      "Eckzähne",
+      "Backenzähne"
+    ],
+    "right": [
+      "Nahrung festhalten und zerreißen",
+      "Nahrung zermahlen",
+      "Nahrung abbeißen und schneiden"
+    ],
+    "answer": {
+      "Schneidezähne": "Nahrung abbeißen und schneiden",
+      "Eckzähne": "Nahrung festhalten und zerreißen",
+      "Backenzähne": "Nahrung zermahlen"
+    },
     "explanation": "Schneidezähne teilen Nahrung ab, Eckzähne greifen und zerreißen sie. Die breiteren Backenzähne zerquetschen und zermahlen sie.",
-    "subject_keys": ["topic:human_everyday:zahnarten", "entity:schneidezahn", "entity:eckzahn", "entity:backenzahn"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "American Dental Association: Watch Your Mouth", "url": "https://www.mouthhealthy.org/-/media/project/ada-organization/ada/mouthhealthy/files/smile-smarts/ada_watchyourmouth_presentation.pdf"}]}
+    "subject_keys": [
+      "topic:human_everyday:zahnarten",
+      "entity:schneidezahn",
+      "entity:eckzahn",
+      "entity:backenzahn"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "American Dental Association: Watch Your Mouth",
+          "url": "https://www.mouthhealthy.org/-/media/project/ada-organization/ada/mouthhealthy/files/smile-smarts/ada_watchyourmouth_presentation.pdf"
+        }
+      ]
+    }
   },
   {
-    "id": "ma208", "question_type": "match", "primary_category": "human_everyday", "subtopic": "Textilfasern",
-    "tags": {"topics": ["Textilien", "Naturfasern"], "entities": ["Baumwolle", "Wolle", "Seide"], "genres": [], "regions": [], "eras": []},
+    "id": "ma208",
+    "question_type": "match",
+    "primary_category": "human_everyday",
+    "subtopic": "Textilfasern",
+    "tags": {
+      "topics": [
+        "Textilien",
+        "Naturfasern"
+      ],
+      "entities": [
+        "Baumwolle",
+        "Wolle",
+        "Seide"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne die Naturfaser ihrer Herkunft zu.",
-    "left": ["Baumwolle", "Wolle", "Seide"],
-    "right": ["Haare von Schafen", "Kokon der Seidenraupe", "Samenhaare der Baumwollpflanze"],
-    "answer": {"Baumwolle": "Samenhaare der Baumwollpflanze", "Wolle": "Haare von Schafen", "Seide": "Kokon der Seidenraupe"},
+    "left": [
+      "Baumwolle",
+      "Wolle",
+      "Seide"
+    ],
+    "right": [
+      "Haare von Schafen",
+      "Kokon der Seidenraupe",
+      "Samenhaare der Baumwollpflanze"
+    ],
+    "answer": {
+      "Baumwolle": "Samenhaare der Baumwollpflanze",
+      "Wolle": "Haare von Schafen",
+      "Seide": "Kokon der Seidenraupe"
+    },
     "explanation": "Baumwolle wächst als Samenhaar an der Pflanze. Wolle stammt meist vom Fell von Schafen; Seide wird aus den Fäden der Kokons von Seidenraupen gewonnen.",
-    "subject_keys": ["topic:human_everyday:naturfasern", "entity:baumwolle", "entity:wolle", "entity:seide"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "USDA Agricultural Research Service: Natural Fibers", "url": "https://agresearchmag.ars.usda.gov/2000/nov/dye/"}, {"title": "Smithsonian: Art and Archaeology of Ancient China", "url": "https://asia-archive.si.edu/wp-content/uploads/2020/05/Art-and-Archaeology-of-Ancient-China.pdf"}]}
+    "subject_keys": [
+      "topic:human_everyday:naturfasern",
+      "entity:baumwolle",
+      "entity:wolle",
+      "entity:seide"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "USDA Agricultural Research Service: Natural Fibers",
+          "url": "https://agresearchmag.ars.usda.gov/2000/nov/dye/"
+        },
+        {
+          "title": "Smithsonian: Art and Archaeology of Ancient China",
+          "url": "https://asia-archive.si.edu/wp-content/uploads/2020/05/Art-and-Archaeology-of-Ancient-China.pdf"
+        }
+      ]
+    }
   },
   {
-    "id": "ma209", "question_type": "match", "primary_category": "music", "subtopic": "Tempoangaben",
-    "tags": {"topics": ["Musiktheorie", "Tempoangaben"], "entities": ["Largo", "Andante", "Presto"], "genres": ["Klassische Musik"], "regions": [], "eras": []},
+    "id": "ma209",
+    "question_type": "match",
+    "primary_category": "music",
+    "subtopic": "Tempoangaben",
+    "tags": {
+      "topics": [
+        "Musiktheorie",
+        "Tempoangaben"
+      ],
+      "entities": [
+        "Largo",
+        "Andante",
+        "Presto"
+      ],
+      "genres": [
+        "Klassische Musik"
+      ],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne die musikalische Tempoangabe ihrer üblichen Bedeutung zu.",
-    "left": ["Largo", "Andante", "Presto"],
-    "right": ["mäßig, etwa im Gehtempo", "sehr schnell", "breit und sehr langsam"],
-    "answer": {"Largo": "breit und sehr langsam", "Andante": "mäßig, etwa im Gehtempo", "Presto": "sehr schnell"},
+    "left": [
+      "Largo",
+      "Andante",
+      "Presto"
+    ],
+    "right": [
+      "mäßig, etwa im Gehtempo",
+      "sehr schnell",
+      "breit und sehr langsam"
+    ],
+    "answer": {
+      "Largo": "breit und sehr langsam",
+      "Andante": "mäßig, etwa im Gehtempo",
+      "Presto": "sehr schnell"
+    },
     "explanation": "Largo bezeichnet ein breites, sehr langsames Tempo. Andante erinnert an ein ruhiges Gehtempo, Presto verlangt ein sehr schnelles Spiel.",
-    "subject_keys": ["topic:music:tempoangaben", "entity:largo", "entity:andante", "entity:presto"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Encyclopaedia Britannica: Tempo", "url": "https://www.britannica.com/art/tempo-music"}]}
+    "subject_keys": [
+      "topic:music:tempoangaben",
+      "entity:largo",
+      "entity:andante",
+      "entity:presto"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Tempo",
+          "url": "https://www.britannica.com/art/tempo-music"
+        }
+      ]
+    }
   },
   {
-    "id": "ma210", "question_type": "match", "primary_category": "media_entertainment", "subtopic": "Gedichtformen",
-    "tags": {"topics": ["Lyrik", "Gedichtformen"], "entities": ["Haiku", "Sonett", "Limerick"], "genres": ["Literatur"], "regions": [], "eras": []},
+    "id": "ma210",
+    "question_type": "match",
+    "primary_category": "media_entertainment",
+    "subtopic": "Gedichtformen",
+    "tags": {
+      "topics": [
+        "Lyrik",
+        "Gedichtformen"
+      ],
+      "entities": [
+        "Haiku",
+        "Sonett",
+        "Limerick"
+      ],
+      "genres": [
+        "Literatur"
+      ],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne die Gedichtform ihrem typischen Aufbau zu.",
-    "left": ["Haiku", "Sonett", "Limerick"],
-    "right": ["14 Zeilen", "fünf Zeilen mit dem Reimschema AABBA", "drei kurze Zeilen, oft im Muster 5–7–5"],
-    "answer": {"Haiku": "drei kurze Zeilen, oft im Muster 5–7–5", "Sonett": "14 Zeilen", "Limerick": "fünf Zeilen mit dem Reimschema AABBA"},
+    "left": [
+      "Haiku",
+      "Sonett",
+      "Limerick"
+    ],
+    "right": [
+      "14 Zeilen",
+      "fünf Zeilen mit dem Reimschema AABBA",
+      "drei kurze Zeilen, oft im Muster 5–7–5"
+    ],
+    "answer": {
+      "Haiku": "drei kurze Zeilen, oft im Muster 5–7–5",
+      "Sonett": "14 Zeilen",
+      "Limerick": "fünf Zeilen mit dem Reimschema AABBA"
+    },
     "explanation": "Ein Haiku besteht meist aus drei knappen Zeilen. Das Sonett hat 14 Zeilen; der Limerick fünf Zeilen mit dem Reimschema AABBA.",
-    "subject_keys": ["topic:media_entertainment:gedichtformen", "entity:haiku", "entity:sonett", "entity:limerick"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Poetry Foundation: Haiku", "url": "https://www.poetryfoundation.org/education/glossary/haiku-or-hokku"}, {"title": "Poetry Foundation: Sonnet", "url": "https://www.poetryfoundation.org/education/glossary/sonnet"}, {"title": "Poetry Foundation: Limerick", "url": "https://www.poetryfoundation.org/education/glossary/limerick"}]}
+    "subject_keys": [
+      "topic:media_entertainment:gedichtformen",
+      "entity:haiku",
+      "entity:sonett",
+      "entity:limerick"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Poetry Foundation: Haiku",
+          "url": "https://www.poetryfoundation.org/education/glossary/haiku-or-hokku"
+        },
+        {
+          "title": "Poetry Foundation: Sonnet",
+          "url": "https://www.poetryfoundation.org/education/glossary/sonnet"
+        },
+        {
+          "title": "Poetry Foundation: Limerick",
+          "url": "https://www.poetryfoundation.org/education/glossary/limerick"
+        }
+      ]
+    }
   },
   {
-    "id": "ma211", "question_type": "match", "primary_category": "science_technology", "subtopic": "SI-Vorsätze",
-    "tags": {"topics": ["Maßeinheiten", "Zehnerpotenzen"], "entities": ["Milli", "Kilo", "Mega"], "genres": [], "regions": [], "eras": []},
+    "id": "ma211",
+    "question_type": "match",
+    "primary_category": "science_technology",
+    "subtopic": "SI-Vorsätze",
+    "tags": {
+      "topics": [
+        "Maßeinheiten",
+        "Zehnerpotenzen"
+      ],
+      "entities": [
+        "Milli",
+        "Kilo",
+        "Mega"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne den SI-Vorsatz seiner Zehnerpotenz zu.",
-    "left": ["Milli", "Kilo", "Mega"],
-    "right": ["10³", "10⁶", "10⁻³"],
-    "answer": {"Milli": "10⁻³", "Kilo": "10³", "Mega": "10⁶"},
+    "left": [
+      "Milli",
+      "Kilo",
+      "Mega"
+    ],
+    "right": [
+      "10³",
+      "10⁶",
+      "10⁻³"
+    ],
+    "answer": {
+      "Milli": "10⁻³",
+      "Kilo": "10³",
+      "Mega": "10⁶"
+    },
     "explanation": "Milli steht für ein Tausendstel, also 10⁻³. Kilo bedeutet tausend oder 10³, Mega eine Million oder 10⁶.",
-    "subject_keys": ["topic:science_technology:si-vorsaetze", "entity:milli", "entity:kilo", "entity:mega"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "BIPM: SI Prefixes", "url": "https://www.bipm.org/en/measurement-units/si-prefixes"}]}
+    "subject_keys": [
+      "topic:science_technology:si-vorsaetze",
+      "entity:milli",
+      "entity:kilo",
+      "entity:mega"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "BIPM: SI Prefixes",
+          "url": "https://www.bipm.org/en/measurement-units/si-prefixes"
+        }
+      ]
+    }
   },
   {
-    "id": "ma212", "question_type": "match", "primary_category": "science_technology", "subtopic": "Trennverfahren",
-    "tags": {"topics": ["Chemie", "Trennverfahren"], "entities": ["Filtration", "Destillation", "Chromatografie"], "genres": [], "regions": [], "eras": []},
+    "id": "ma212",
+    "question_type": "match",
+    "primary_category": "science_technology",
+    "subtopic": "Trennverfahren",
+    "tags": {
+      "topics": [
+        "Chemie",
+        "Trennverfahren"
+      ],
+      "entities": [
+        "Filtration",
+        "Destillation",
+        "Chromatografie"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne das Trennverfahren seinem Grundprinzip zu.",
-    "left": ["Filtration", "Destillation", "Chromatografie"],
-    "right": ["unterschiedliche Siedepunkte", "unterschiedliche Wanderung in einem Trägermaterial", "Teilchengröße an einem Filter"],
-    "answer": {"Filtration": "Teilchengröße an einem Filter", "Destillation": "unterschiedliche Siedepunkte", "Chromatografie": "unterschiedliche Wanderung in einem Trägermaterial"},
+    "left": [
+      "Filtration",
+      "Destillation",
+      "Chromatografie"
+    ],
+    "right": [
+      "unterschiedliche Siedepunkte",
+      "unterschiedliche Wanderung in einem Trägermaterial",
+      "Teilchengröße an einem Filter"
+    ],
+    "answer": {
+      "Filtration": "Teilchengröße an einem Filter",
+      "Destillation": "unterschiedliche Siedepunkte",
+      "Chromatografie": "unterschiedliche Wanderung in einem Trägermaterial"
+    },
     "explanation": "Beim Filtern hält ein Filter größere Teilchen zurück. Destillation nutzt verschiedene Siedepunkte; Chromatografie trennt Stoffe durch ihre unterschiedliche Bewegung in einem Trägermaterial.",
-    "subject_keys": ["topic:science_technology:trennverfahren", "entity:filtration", "entity:destillation", "entity:chromatografie"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "OpenStax Chemistry 2e: Physical and Chemical Properties", "url": "https://openstax.org/books/chemistry-2e/pages/1-3-physical-and-chemical-properties"}, {"title": "NIST: Chromatography", "url": "https://www.nist.gov/programs-projects/chromatography"}]}
+    "subject_keys": [
+      "topic:science_technology:trennverfahren",
+      "entity:filtration",
+      "entity:destillation",
+      "entity:chromatografie"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "OpenStax Chemistry 2e: Physical and Chemical Properties",
+          "url": "https://openstax.org/books/chemistry-2e/pages/1-3-physical-and-chemical-properties"
+        },
+        {
+          "title": "NIST: Chromatography",
+          "url": "https://www.nist.gov/programs-projects/chromatography"
+        }
+      ]
+    }
   },
   {
-    "id": "ma213", "question_type": "match", "primary_category": "science_technology", "subtopic": "Netzwerkgeräte",
-    "tags": {"topics": ["Computernetzwerke"], "entities": ["Switch", "Router", "Modem"], "genres": [], "regions": [], "eras": []},
+    "id": "ma213",
+    "question_type": "match",
+    "primary_category": "science_technology",
+    "subtopic": "Netzwerkgeräte",
+    "tags": {
+      "topics": [
+        "Computernetzwerke"
+      ],
+      "entities": [
+        "Switch",
+        "Router",
+        "Modem"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne das Netzwerkgerät seiner Hauptaufgabe zu.",
-    "left": ["Switch", "Router", "Modem"],
-    "right": ["verbindet verschiedene Netzwerke", "stellt die Verbindung zum Internetanbieter her", "verbindet Geräte innerhalb eines lokalen Netzes"],
-    "answer": {"Switch": "verbindet Geräte innerhalb eines lokalen Netzes", "Router": "verbindet verschiedene Netzwerke", "Modem": "stellt die Verbindung zum Internetanbieter her"},
+    "left": [
+      "Switch",
+      "Router",
+      "Modem"
+    ],
+    "right": [
+      "verbindet verschiedene Netzwerke",
+      "stellt die Verbindung zum Internetanbieter her",
+      "verbindet Geräte innerhalb eines lokalen Netzes"
+    ],
+    "answer": {
+      "Switch": "verbindet Geräte innerhalb eines lokalen Netzes",
+      "Router": "verbindet verschiedene Netzwerke",
+      "Modem": "stellt die Verbindung zum Internetanbieter her"
+    },
     "explanation": "Ein Switch verbindet Geräte in einem lokalen Netz. Ein Router leitet Daten zwischen Netzen weiter, während ein Modem die Verbindung zur Leitung des Internetanbieters herstellt.",
-    "subject_keys": ["topic:science_technology:netzwerkgeraete", "entity:switch", "entity:router", "entity:modem"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Cisco: Network Switch vs. Router", "url": "https://www.cisco.com/site/us/en/learn/topics/small-business/network-switch-vs-router.html"}, {"title": "Cisco: How Does a Router Work?", "url": "https://www.cisco.com/site/us/en/learn/topics/small-business/how-does-a-router-work.html"}]}
+    "subject_keys": [
+      "topic:science_technology:netzwerkgeraete",
+      "entity:switch",
+      "entity:router",
+      "entity:modem"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Cisco: Network Switch vs. Router",
+          "url": "https://www.cisco.com/site/us/en/learn/topics/small-business/network-switch-vs-router.html"
+        },
+        {
+          "title": "Cisco: How Does a Router Work?",
+          "url": "https://www.cisco.com/site/us/en/learn/topics/small-business/how-does-a-router-work.html"
+        }
+      ]
+    }
   },
   {
-    "id": "ma214", "question_type": "match", "primary_category": "science_technology", "subtopic": "Transpondercodes in der Luftfahrt",
-    "tags": {"topics": ["Luftfahrt", "Notfallcodes"], "entities": ["7500", "7600", "7700"], "genres": [], "regions": [], "eras": []},
+    "id": "ma214",
+    "question_type": "match",
+    "primary_category": "science_technology",
+    "subtopic": "Transpondercodes in der Luftfahrt",
+    "tags": {
+      "topics": [
+        "Luftfahrt",
+        "Notfallcodes"
+      ],
+      "entities": [
+        "7500",
+        "7600",
+        "7700"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne den Transpondercode aus der Luftfahrt seiner Bedeutung zu.",
-    "left": ["7500", "7600", "7700"],
-    "right": ["Ausfall des Funkverkehrs", "allgemeiner Notfall", "Entführung oder unrechtmäßiger Eingriff"],
-    "answer": {"7500": "Entführung oder unrechtmäßiger Eingriff", "7600": "Ausfall des Funkverkehrs", "7700": "allgemeiner Notfall"},
+    "left": [
+      "7500",
+      "7600",
+      "7700"
+    ],
+    "right": [
+      "Ausfall des Funkverkehrs",
+      "allgemeiner Notfall",
+      "Entführung oder unrechtmäßiger Eingriff"
+    ],
+    "answer": {
+      "7500": "Entführung oder unrechtmäßiger Eingriff",
+      "7600": "Ausfall des Funkverkehrs",
+      "7700": "allgemeiner Notfall"
+    },
     "explanation": "Piloten senden 7500 bei einer Entführung, 7600 bei Funkausfall und 7700 bei einem allgemeinen Notfall. Die Codes lösen besondere Hinweise bei der Flugsicherung aus.",
-    "subject_keys": ["topic:science_technology:luftfahrt-transpondercodes", "entity:code-7500", "entity:code-7600", "entity:code-7700"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "FAA Aeronautical Information Manual: Air Traffic Control", "url": "https://www.faa.gov/air_traffic/publications/ATpubs/AIM/aim0401.html"}, {"title": "FAA Aeronautical Information Manual: Distress and Urgency Procedures", "url": "https://www.faa.gov/air_traffic/publications/aim_html/chap6_section_3.html"}]}
+    "subject_keys": [
+      "topic:science_technology:luftfahrt-transpondercodes",
+      "entity:code-7500",
+      "entity:code-7600",
+      "entity:code-7700"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "FAA Aeronautical Information Manual: Air Traffic Control",
+          "url": "https://www.faa.gov/air_traffic/publications/ATpubs/AIM/aim0401.html"
+        },
+        {
+          "title": "FAA Aeronautical Information Manual: Distress and Urgency Procedures",
+          "url": "https://www.faa.gov/air_traffic/publications/aim_html/chap6_section_3.html"
+        }
+      ]
+    }
   },
   {
-    "id": "ma215", "question_type": "match", "primary_category": "human_everyday", "subtopic": "Kunststoffcodes",
-    "tags": {"topics": ["Kunststoffe", "Recyclingcodes"], "entities": ["PET", "HDPE", "PP"], "genres": [], "regions": [], "eras": []},
+    "id": "ma215",
+    "question_type": "match",
+    "primary_category": "human_everyday",
+    "subtopic": "Kunststoffcodes",
+    "tags": {
+      "topics": [
+        "Kunststoffe",
+        "Recyclingcodes"
+      ],
+      "entities": [
+        "PET",
+        "HDPE",
+        "PP"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne den Kunststoff seinem Recyclingcode zu.",
-    "left": ["PET", "HDPE", "PP"],
-    "right": ["02", "05", "01"],
-    "answer": {"PET": "01", "HDPE": "02", "PP": "05"},
+    "left": [
+      "PET",
+      "HDPE",
+      "PP"
+    ],
+    "right": [
+      "02",
+      "05",
+      "01"
+    ],
+    "answer": {
+      "PET": "01",
+      "HDPE": "02",
+      "PP": "05"
+    },
     "explanation": "PET trägt den Code 01, Polyethylen hoher Dichte den Code 02 und Polypropylen den Code 05. Die Nummern bezeichnen die Kunststoffart.",
-    "subject_keys": ["topic:human_everyday:kunststoffcodes", "entity:pet", "entity:hdpe", "entity:pp"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "U.S. Environmental Protection Agency: Resin Identification Codes", "url": "https://www.epa.gov/system/files/documents/2024-05/session-1-7_horst.pdf"}]}
+    "subject_keys": [
+      "topic:human_everyday:kunststoffcodes",
+      "entity:pet",
+      "entity:hdpe",
+      "entity:pp"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "U.S. Environmental Protection Agency: Resin Identification Codes",
+          "url": "https://www.epa.gov/system/files/documents/2024-05/session-1-7_horst.pdf"
+        }
+      ]
+    }
   },
   {
-    "id": "ma216", "question_type": "match", "primary_category": "human_everyday", "subtopic": "Klassische Küchenschnitte",
-    "tags": {"topics": ["Kochen", "Schneidetechniken"], "entities": ["Julienne", "Brunoise", "Tourné"], "genres": [], "regions": ["Frankreich"], "eras": []},
+    "id": "ma216",
+    "question_type": "match",
+    "primary_category": "human_everyday",
+    "subtopic": "Klassische Küchenschnitte",
+    "tags": {
+      "topics": [
+        "Kochen",
+        "Schneidetechniken"
+      ],
+      "entities": [
+        "Julienne",
+        "Brunoise",
+        "Tourné"
+      ],
+      "genres": [],
+      "regions": [
+        "Frankreich"
+      ],
+      "eras": []
+    },
     "prompt": "Ordne den klassischen Küchenschnitt seiner Form zu.",
-    "left": ["Julienne", "Brunoise", "Tourné"],
-    "right": ["sehr kleine Würfel", "längliche Form mit sieben Seiten", "feine, streichholzartige Streifen"],
-    "answer": {"Julienne": "feine, streichholzartige Streifen", "Brunoise": "sehr kleine Würfel", "Tourné": "längliche Form mit sieben Seiten"},
+    "left": [
+      "Julienne",
+      "Brunoise",
+      "Tourné"
+    ],
+    "right": [
+      "sehr kleine Würfel",
+      "längliche Form mit sieben Seiten",
+      "feine, streichholzartige Streifen"
+    ],
+    "answer": {
+      "Julienne": "feine, streichholzartige Streifen",
+      "Brunoise": "sehr kleine Würfel",
+      "Tourné": "längliche Form mit sieben Seiten"
+    },
     "explanation": "Julienne sind feine Streifen. Brunoise bezeichnet sehr kleine Würfel, und beim Tourné wird Gemüse in eine längliche Form mit sieben Flächen geschnitten.",
-    "subject_keys": ["topic:human_everyday:klassische-kuechenschnitte", "entity:julienne", "entity:brunoise", "entity:tourne"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Culinary Institute of America: Knife Cuts Guide", "url": "https://www.ciafoodies.com/wp-content/uploads/2021/11/Knife-Cuts-Guide.pdf"}]}
+    "subject_keys": [
+      "topic:human_everyday:klassische-kuechenschnitte",
+      "entity:julienne",
+      "entity:brunoise",
+      "entity:tourne"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Culinary Institute of America: Knife Cuts Guide",
+          "url": "https://www.ciafoodies.com/wp-content/uploads/2021/11/Knife-Cuts-Guide.pdf"
+        }
+      ]
+    }
   },
   {
-    "id": "ma217", "question_type": "match", "primary_category": "plants_animals", "subtopic": "Lebensdauer von Pflanzen",
-    "tags": {"topics": ["Pflanzen", "Lebenszyklen"], "entities": ["Einjährige Pflanze", "Zweijährige Pflanze", "Mehrjährige Pflanze"], "genres": [], "regions": [], "eras": []},
+    "id": "ma217",
+    "question_type": "match",
+    "primary_category": "plants_animals",
+    "subtopic": "Lebensdauer von Pflanzen",
+    "tags": {
+      "topics": [
+        "Pflanzen",
+        "Lebenszyklen"
+      ],
+      "entities": [
+        "Einjährige Pflanze",
+        "Zweijährige Pflanze",
+        "Mehrjährige Pflanze"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne den Pflanzentyp seinem Lebenszyklus zu.",
-    "left": ["Einjährige Pflanze", "Zweijährige Pflanze", "Mehrjährige Pflanze"],
-    "right": ["wächst zunächst und blüht meist erst im zweiten Jahr", "lebt und blüht über mehrere Jahre", "keimt, blüht und stirbt in einer Saison"],
-    "answer": {"Einjährige Pflanze": "keimt, blüht und stirbt in einer Saison", "Zweijährige Pflanze": "wächst zunächst und blüht meist erst im zweiten Jahr", "Mehrjährige Pflanze": "lebt und blüht über mehrere Jahre"},
+    "left": [
+      "Einjährige Pflanze",
+      "Zweijährige Pflanze",
+      "Mehrjährige Pflanze"
+    ],
+    "right": [
+      "wächst zunächst und blüht meist erst im zweiten Jahr",
+      "lebt und blüht über mehrere Jahre",
+      "keimt, blüht und stirbt in einer Saison"
+    ],
+    "answer": {
+      "Einjährige Pflanze": "keimt, blüht und stirbt in einer Saison",
+      "Zweijährige Pflanze": "wächst zunächst und blüht meist erst im zweiten Jahr",
+      "Mehrjährige Pflanze": "lebt und blüht über mehrere Jahre"
+    },
     "explanation": "Einjährige Pflanzen vollenden ihren Zyklus in einer Saison. Zweijährige wachsen zunächst und blühen meist im Folgejahr; mehrjährige Pflanzen leben länger als zwei Jahre.",
-    "subject_keys": ["topic:plants_animals:pflanzenlebenszyklen", "entity:einjaehrige-pflanze", "entity:zweijaehrige-pflanze", "entity:mehrjaehrige-pflanze"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Royal Horticultural Society: Annuals and Biennials", "url": "https://www.rhs.org.uk/plants/types/annuals-biennials"}, {"title": "Royal Horticultural Society: Perennials", "url": "https://www.rhs.org.uk/plants/types/perennials/growing-guide"}]}
+    "subject_keys": [
+      "topic:plants_animals:pflanzenlebenszyklen",
+      "entity:einjaehrige-pflanze",
+      "entity:zweijaehrige-pflanze",
+      "entity:mehrjaehrige-pflanze"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Royal Horticultural Society: Annuals and Biennials",
+          "url": "https://www.rhs.org.uk/plants/types/annuals-biennials"
+        },
+        {
+          "title": "Royal Horticultural Society: Perennials",
+          "url": "https://www.rhs.org.uk/plants/types/perennials/growing-guide"
+        }
+      ]
+    }
   },
   {
-    "id": "ma218", "question_type": "match", "primary_category": "human_everyday", "subtopic": "Blutgefäße",
-    "tags": {"topics": ["Blutkreislauf", "Körper"], "entities": ["Arterie", "Vene", "Kapillare"], "genres": [], "regions": [], "eras": []},
+    "id": "ma218",
+    "question_type": "match",
+    "primary_category": "human_everyday",
+    "subtopic": "Blutgefäße",
+    "tags": {
+      "topics": [
+        "Blutkreislauf",
+        "Körper"
+      ],
+      "entities": [
+        "Arterie",
+        "Vene",
+        "Kapillare"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne das Blutgefäß seiner Hauptaufgabe zu.",
-    "left": ["Arterie", "Vene", "Kapillare"],
-    "right": ["führt Blut zum Herzen zurück", "ermöglicht den Stoffaustausch mit dem Gewebe", "führt Blut vom Herzen weg"],
-    "answer": {"Arterie": "führt Blut vom Herzen weg", "Vene": "führt Blut zum Herzen zurück", "Kapillare": "ermöglicht den Stoffaustausch mit dem Gewebe"},
+    "left": [
+      "Arterie",
+      "Vene",
+      "Kapillare"
+    ],
+    "right": [
+      "führt Blut zum Herzen zurück",
+      "ermöglicht den Stoffaustausch mit dem Gewebe",
+      "führt Blut vom Herzen weg"
+    ],
+    "answer": {
+      "Arterie": "führt Blut vom Herzen weg",
+      "Vene": "führt Blut zum Herzen zurück",
+      "Kapillare": "ermöglicht den Stoffaustausch mit dem Gewebe"
+    },
     "explanation": "Arterien führen Blut vom Herzen weg, Venen bringen es zurück. In den sehr feinen Kapillaren werden Sauerstoff, Nährstoffe und Abfallstoffe mit dem Gewebe ausgetauscht.",
-    "subject_keys": ["topic:human_everyday:blutgefaesse", "entity:arterie", "entity:vene", "entity:kapillare"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "NHLBI: How the Heart Works – Blood Flow", "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow"}, {"title": "NCBI Bookshelf: Vascular Physiology", "url": "https://www.ncbi.nlm.nih.gov/books/NBK542252/"}]}
+    "subject_keys": [
+      "topic:human_everyday:blutgefaesse",
+      "entity:arterie",
+      "entity:vene",
+      "entity:kapillare"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "NHLBI: How the Heart Works – Blood Flow",
+          "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow"
+        },
+        {
+          "title": "NCBI Bookshelf: Vascular Physiology",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK542252/"
+        }
+      ]
+    }
   },
   {
-    "id": "ma219", "question_type": "match", "primary_category": "human_everyday", "subtopic": "Schlafphasen",
-    "tags": {"topics": ["Schlaf", "Körper"], "entities": ["N1-Schlaf", "N3-Schlaf", "REM-Schlaf"], "genres": [], "regions": [], "eras": []},
+    "id": "ma219",
+    "question_type": "match",
+    "primary_category": "human_everyday",
+    "subtopic": "Schlafphasen",
+    "tags": {
+      "topics": [
+        "Schlaf",
+        "Körper"
+      ],
+      "entities": [
+        "N1-Schlaf",
+        "N3-Schlaf",
+        "REM-Schlaf"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne die Schlafphase ihrem typischen Merkmal zu.",
-    "left": ["N1-Schlaf", "N3-Schlaf", "REM-Schlaf"],
-    "right": ["tiefer Schlaf mit langsamen Hirnwellen", "lebhafte Träume und schnelle Augenbewegungen", "Übergang vom Wachsein zum Schlaf"],
-    "answer": {"N1-Schlaf": "Übergang vom Wachsein zum Schlaf", "N3-Schlaf": "tiefer Schlaf mit langsamen Hirnwellen", "REM-Schlaf": "lebhafte Träume und schnelle Augenbewegungen"},
+    "left": [
+      "N1-Schlaf",
+      "N3-Schlaf",
+      "REM-Schlaf"
+    ],
+    "right": [
+      "tiefer Schlaf mit langsamen Hirnwellen",
+      "lebhafte Träume und schnelle Augenbewegungen",
+      "Übergang vom Wachsein zum Schlaf"
+    ],
+    "answer": {
+      "N1-Schlaf": "Übergang vom Wachsein zum Schlaf",
+      "N3-Schlaf": "tiefer Schlaf mit langsamen Hirnwellen",
+      "REM-Schlaf": "lebhafte Träume und schnelle Augenbewegungen"
+    },
     "explanation": "N1 ist die leichte Übergangsphase. N3 ist der tiefe Schlaf mit langsamen Wellen; im REM-Schlaf treten schnelle Augenbewegungen und besonders lebhafte Träume auf.",
-    "subject_keys": ["topic:human_everyday:schlafphasen", "entity:n1-schlaf", "entity:n3-schlaf", "entity:rem-schlaf"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "NHLBI: Sleep Stages", "url": "https://www.nhlbi.nih.gov/health/sleep/stages-of-sleep"}]}
+    "subject_keys": [
+      "topic:human_everyday:schlafphasen",
+      "entity:n1-schlaf",
+      "entity:n3-schlaf",
+      "entity:rem-schlaf"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "NHLBI: Sleep Stages",
+          "url": "https://www.nhlbi.nih.gov/health/sleep/stages-of-sleep"
+        }
+      ]
+    }
   },
   {
-    "id": "ma220", "question_type": "match", "primary_category": "geography_world", "subtopic": "Flughafencodes",
-    "tags": {"topics": ["Flughäfen", "IATA-Codes"], "entities": ["FRA", "LHR", "CDG"], "genres": [], "regions": ["Deutschland", "Vereinigtes Königreich", "Frankreich"], "eras": []},
+    "id": "ma220",
+    "question_type": "match",
+    "primary_category": "geography_world",
+    "subtopic": "Flughafencodes",
+    "tags": {
+      "topics": [
+        "Flughäfen",
+        "IATA-Codes"
+      ],
+      "entities": [
+        "FRA",
+        "LHR",
+        "CDG"
+      ],
+      "genres": [],
+      "regions": [
+        "Deutschland",
+        "Vereinigtes Königreich",
+        "Frankreich"
+      ],
+      "eras": []
+    },
     "prompt": "Ordne den Flughafencode dem Flughafen zu.",
-    "left": ["FRA", "LHR", "CDG"],
-    "right": ["London Heathrow", "Paris Charles de Gaulle", "Frankfurt am Main"],
-    "answer": {"FRA": "Frankfurt am Main", "LHR": "London Heathrow", "CDG": "Paris Charles de Gaulle"},
+    "left": [
+      "FRA",
+      "LHR",
+      "CDG"
+    ],
+    "right": [
+      "London Heathrow",
+      "Paris Charles de Gaulle",
+      "Frankfurt am Main"
+    ],
+    "answer": {
+      "FRA": "Frankfurt am Main",
+      "LHR": "London Heathrow",
+      "CDG": "Paris Charles de Gaulle"
+    },
     "explanation": "FRA steht für Frankfurt, LHR für London Heathrow und CDG für den Pariser Flughafen Charles de Gaulle.",
-    "subject_keys": ["topic:geography_world:flughafencodes", "entity:fra", "entity:lhr", "entity:cdg"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Frankfurt Airport: Acronyms", "url": "https://cdm.frankfurt-airport.com/content/fraport-company-cdm/en/acronyms.html"}, {"title": "Heathrow Airport: Official Website", "url": "https://www.heathrow.com/"}, {"title": "Paris Aéroport: Paris Charles de Gaulle", "url": "https://www.parisaeroport.fr/en/passengers/access/paris-charles-de-gaulle"}]}
+    "subject_keys": [
+      "topic:geography_world:flughafencodes",
+      "entity:fra",
+      "entity:lhr",
+      "entity:cdg"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Frankfurt Airport: Acronyms",
+          "url": "https://cdm.frankfurt-airport.com/content/fraport-company-cdm/en/acronyms.html"
+        },
+        {
+          "title": "Heathrow Airport: Official Website",
+          "url": "https://www.heathrow.com/"
+        },
+        {
+          "title": "Paris Aéroport: Paris Charles de Gaulle",
+          "url": "https://www.parisaeroport.fr/en/passengers/access/paris-charles-de-gaulle"
+        }
+      ]
+    }
   },
   {
-    "id": "ma221", "question_type": "match", "primary_category": "science_technology", "subtopic": "HTTP-Statuscodes",
-    "tags": {"topics": ["Webtechnik", "HTTP"], "entities": ["301", "403", "503"], "genres": [], "regions": [], "eras": []},
+    "id": "ma221",
+    "question_type": "match",
+    "primary_category": "science_technology",
+    "subtopic": "HTTP-Statuscodes",
+    "tags": {
+      "topics": [
+        "Webtechnik",
+        "HTTP"
+      ],
+      "entities": [
+        "301",
+        "403",
+        "503"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne den HTTP-Statuscode seiner Bedeutung zu.",
-    "left": ["301", "403", "503"],
-    "right": ["Zugriff verboten", "Dienst vorübergehend nicht verfügbar", "dauerhaft weitergeleitet"],
-    "answer": {"301": "dauerhaft weitergeleitet", "403": "Zugriff verboten", "503": "Dienst vorübergehend nicht verfügbar"},
+    "left": [
+      "301",
+      "403",
+      "503"
+    ],
+    "right": [
+      "Zugriff verboten",
+      "Dienst vorübergehend nicht verfügbar",
+      "dauerhaft weitergeleitet"
+    ],
+    "answer": {
+      "301": "dauerhaft weitergeleitet",
+      "403": "Zugriff verboten",
+      "503": "Dienst vorübergehend nicht verfügbar"
+    },
     "explanation": "301 meldet eine dauerhafte Weiterleitung. 403 bedeutet, dass der Server den Zugriff verweigert; 503 zeigt einen vorübergehend nicht verfügbaren Dienst an.",
-    "subject_keys": ["topic:science_technology:http-statuscodes", "entity:http-301", "entity:http-403", "entity:http-503"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "MDN Web Docs: HTTP Response Status Codes", "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status"}]}
+    "subject_keys": [
+      "topic:science_technology:http-statuscodes",
+      "entity:http-301",
+      "entity:http-403",
+      "entity:http-503"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "MDN Web Docs: HTTP Response Status Codes",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status"
+        }
+      ]
+    }
   },
   {
-    "id": "ma222", "question_type": "match", "primary_category": "science_technology", "subtopic": "Browserdaten",
-    "tags": {"topics": ["Webbrowser", "Datenspeicherung"], "entities": ["Cookie", "Cache", "Browserverlauf"], "genres": [], "regions": [], "eras": []},
+    "id": "ma222",
+    "question_type": "match",
+    "primary_category": "science_technology",
+    "subtopic": "Browserdaten",
+    "tags": {
+      "topics": [
+        "Webbrowser",
+        "Datenspeicherung"
+      ],
+      "entities": [
+        "Cookie",
+        "Cache",
+        "Browserverlauf"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne die Browserdaten ihrem typischen Inhalt zu.",
-    "left": ["Cookie", "Cache", "Browserverlauf"],
-    "right": ["vorübergehende Kopien von Webinhalten", "Liste besuchter Seiten", "Anmelde- oder Seiteneinstellungen"],
-    "answer": {"Cookie": "Anmelde- oder Seiteneinstellungen", "Cache": "vorübergehende Kopien von Webinhalten", "Browserverlauf": "Liste besuchter Seiten"},
+    "left": [
+      "Cookie",
+      "Cache",
+      "Browserverlauf"
+    ],
+    "right": [
+      "vorübergehende Kopien von Webinhalten",
+      "Liste besuchter Seiten",
+      "Anmelde- oder Seiteneinstellungen"
+    ],
+    "answer": {
+      "Cookie": "Anmelde- oder Seiteneinstellungen",
+      "Cache": "vorübergehende Kopien von Webinhalten",
+      "Browserverlauf": "Liste besuchter Seiten"
+    },
     "explanation": "Cookies speichern etwa Anmeldung oder Spracheinstellungen. Der Cache hält Kopien von Webinhalten bereit, und der Verlauf führt zuvor besuchte Seiten auf.",
-    "subject_keys": ["topic:science_technology:browserdaten", "entity:cookie", "entity:browser-cache", "entity:browserverlauf"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Mozilla Support: Cookies", "url": "https://support.mozilla.org/kb/Cookies"}, {"title": "Mozilla Support: Clear Cookies and Site Data", "url": "https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox"}, {"title": "Mozilla Support: Browsing History", "url": "https://support.mozilla.org/en-US/kb/browsing-history-firefox"}]}
+    "subject_keys": [
+      "topic:science_technology:browserdaten",
+      "entity:cookie",
+      "entity:browser-cache",
+      "entity:browserverlauf"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Mozilla Support: Cookies",
+          "url": "https://support.mozilla.org/kb/Cookies"
+        },
+        {
+          "title": "Mozilla Support: Clear Cookies and Site Data",
+          "url": "https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox"
+        },
+        {
+          "title": "Mozilla Support: Browsing History",
+          "url": "https://support.mozilla.org/en-US/kb/browsing-history-firefox"
+        }
+      ]
+    }
   },
   {
-    "id": "ma223", "question_type": "match", "primary_category": "media_entertainment", "subtopic": "Farbmodelle",
-    "tags": {"topics": ["Grafikdesign", "Farbmodelle"], "entities": ["RGB", "CMYK", "Graustufen"], "genres": [], "regions": [], "eras": []},
+    "id": "ma223",
+    "question_type": "match",
+    "primary_category": "media_entertainment",
+    "subtopic": "Farbmodelle",
+    "tags": {
+      "topics": [
+        "Grafikdesign",
+        "Farbmodelle"
+      ],
+      "entities": [
+        "RGB",
+        "CMYK",
+        "Graustufen"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne den Farbmodus seinem typischen Einsatz zu.",
-    "left": ["RGB", "CMYK", "Graustufen"],
-    "right": ["Farbdruck mit vier Prozessfarben", "Bild nur mit Helligkeitsstufen", "Darstellung auf digitalen Bildschirmen"],
-    "answer": {"RGB": "Darstellung auf digitalen Bildschirmen", "CMYK": "Farbdruck mit vier Prozessfarben", "Graustufen": "Bild nur mit Helligkeitsstufen"},
+    "left": [
+      "RGB",
+      "CMYK",
+      "Graustufen"
+    ],
+    "right": [
+      "Farbdruck mit vier Prozessfarben",
+      "Bild nur mit Helligkeitsstufen",
+      "Darstellung auf digitalen Bildschirmen"
+    ],
+    "answer": {
+      "RGB": "Darstellung auf digitalen Bildschirmen",
+      "CMYK": "Farbdruck mit vier Prozessfarben",
+      "Graustufen": "Bild nur mit Helligkeitsstufen"
+    },
     "explanation": "RGB mischt Lichtfarben für Bildschirme. CMYK beschreibt vier Druckfarben; ein Graustufenbild enthält nur Abstufungen zwischen Schwarz und Weiß.",
-    "subject_keys": ["topic:media_entertainment:farbmodelle", "entity:rgb", "entity:cmyk", "entity:graustufen"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Adobe Photoshop: Understanding Color Modes", "url": "https://helpx.adobe.com/photoshop/using/color-modes.html"}]}
+    "subject_keys": [
+      "topic:media_entertainment:farbmodelle",
+      "entity:rgb",
+      "entity:cmyk",
+      "entity:graustufen"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Adobe Photoshop: Understanding Color Modes",
+          "url": "https://helpx.adobe.com/photoshop/using/color-modes.html"
+        }
+      ]
+    }
   },
   {
-    "id": "ma224", "question_type": "match", "primary_category": "human_everyday", "subtopic": "Formen von Verkehrszeichen",
-    "tags": {"topics": ["Straßenverkehr", "Verkehrszeichen"], "entities": ["Vorfahrt gewähren", "Halt. Vorfahrt gewähren", "Vorfahrtstraße"], "genres": [], "regions": ["Deutschland"], "eras": []},
+    "id": "ma224",
+    "question_type": "match",
+    "primary_category": "human_everyday",
+    "subtopic": "Formen von Verkehrszeichen",
+    "tags": {
+      "topics": [
+        "Straßenverkehr",
+        "Verkehrszeichen"
+      ],
+      "entities": [
+        "Vorfahrt gewähren",
+        "Halt. Vorfahrt gewähren",
+        "Vorfahrtstraße"
+      ],
+      "genres": [],
+      "regions": [
+        "Deutschland"
+      ],
+      "eras": []
+    },
     "prompt": "Ordne das Verkehrszeichen seiner auffälligen Form zu.",
-    "left": ["Vorfahrt gewähren", "Halt. Vorfahrt gewähren", "Vorfahrtstraße"],
-    "right": ["Achteck", "auf der Spitze stehendes Quadrat", "Dreieck mit Spitze nach unten"],
-    "answer": {"Vorfahrt gewähren": "Dreieck mit Spitze nach unten", "Halt. Vorfahrt gewähren": "Achteck", "Vorfahrtstraße": "auf der Spitze stehendes Quadrat"},
+    "left": [
+      "Vorfahrt gewähren",
+      "Halt. Vorfahrt gewähren",
+      "Vorfahrtstraße"
+    ],
+    "right": [
+      "Achteck",
+      "auf der Spitze stehendes Quadrat",
+      "Dreieck mit Spitze nach unten"
+    ],
+    "answer": {
+      "Vorfahrt gewähren": "Dreieck mit Spitze nach unten",
+      "Halt. Vorfahrt gewähren": "Achteck",
+      "Vorfahrtstraße": "auf der Spitze stehendes Quadrat"
+    },
     "explanation": "Das Zeichen „Vorfahrt gewähren“ ist ein umgedrehtes Dreieck. Das Stoppschild ist achteckig, das Zeichen für eine Vorfahrtstraße eine auf der Spitze stehende quadratische Raute.",
-    "subject_keys": ["topic:human_everyday:formen-von-verkehrszeichen", "entity:zeichen-205", "entity:zeichen-206", "entity:zeichen-306"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Straßenverkehrs-Ordnung: Anlagen mit Verkehrszeichen", "url": "https://www.gesetze-im-internet.de/stvo_2013/BJNR036710013.html"}]}
+    "subject_keys": [
+      "topic:human_everyday:formen-von-verkehrszeichen",
+      "entity:zeichen-205",
+      "entity:zeichen-206",
+      "entity:zeichen-306"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Straßenverkehrs-Ordnung: Anlagen mit Verkehrszeichen",
+          "url": "https://www.gesetze-im-internet.de/stvo_2013/BJNR036710013.html"
+        }
+      ]
+    }
   },
   {
-    "id": "ma225", "question_type": "match", "primary_category": "geography_world", "subtopic": "Deutsche Bundesgerichte",
-    "tags": {"topics": ["Bundesgerichte", "Städte"], "entities": ["Bundesverfassungsgericht", "Bundesverwaltungsgericht", "Bundesarbeitsgericht"], "genres": [], "regions": ["Deutschland"], "eras": []},
+    "id": "ma225",
+    "question_type": "match",
+    "primary_category": "geography_world",
+    "subtopic": "Deutsche Bundesgerichte",
+    "tags": {
+      "topics": [
+        "Bundesgerichte",
+        "Städte"
+      ],
+      "entities": [
+        "Bundesverfassungsgericht",
+        "Bundesverwaltungsgericht",
+        "Bundesarbeitsgericht"
+      ],
+      "genres": [],
+      "regions": [
+        "Deutschland"
+      ],
+      "eras": []
+    },
     "prompt": "Ordne das deutsche Bundesgericht seinem Sitz zu.",
-    "left": ["Bundesverfassungsgericht", "Bundesverwaltungsgericht", "Bundesarbeitsgericht"],
-    "right": ["Leipzig", "Erfurt", "Karlsruhe"],
-    "answer": {"Bundesverfassungsgericht": "Karlsruhe", "Bundesverwaltungsgericht": "Leipzig", "Bundesarbeitsgericht": "Erfurt"},
+    "left": [
+      "Bundesverfassungsgericht",
+      "Bundesverwaltungsgericht",
+      "Bundesarbeitsgericht"
+    ],
+    "right": [
+      "Leipzig",
+      "Erfurt",
+      "Karlsruhe"
+    ],
+    "answer": {
+      "Bundesverfassungsgericht": "Karlsruhe",
+      "Bundesverwaltungsgericht": "Leipzig",
+      "Bundesarbeitsgericht": "Erfurt"
+    },
     "explanation": "Das Bundesverfassungsgericht sitzt in Karlsruhe. Das Bundesverwaltungsgericht hat seinen Sitz in Leipzig, das Bundesarbeitsgericht in Erfurt.",
-    "subject_keys": ["topic:geography_world:deutsche-bundesgerichte", "entity:bundesverfassungsgericht", "entity:bundesverwaltungsgericht", "entity:bundesarbeitsgericht"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Bundesverfassungsgericht: Kontakt", "url": "https://www.bundesverfassungsgericht.de/"}, {"title": "Bundesverwaltungsgericht: Kontakt", "url": "https://www.bverwg.de/kontakt"}, {"title": "Bundesarbeitsgericht: Kontakt", "url": "https://www.bundesarbeitsgericht.de/kontakt/"}]}
+    "subject_keys": [
+      "topic:geography_world:deutsche-bundesgerichte",
+      "entity:bundesverfassungsgericht",
+      "entity:bundesverwaltungsgericht",
+      "entity:bundesarbeitsgericht"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Bundesverfassungsgericht: Kontakt",
+          "url": "https://www.bundesverfassungsgericht.de/"
+        },
+        {
+          "title": "Bundesverwaltungsgericht: Kontakt",
+          "url": "https://www.bverwg.de/kontakt"
+        },
+        {
+          "title": "Bundesarbeitsgericht: Kontakt",
+          "url": "https://www.bundesarbeitsgericht.de/kontakt/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma227",
+    "question_type": "match",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Nobelpreis & Institutionen",
+    "tags": {
+      "topics": [
+        "Nobelpreis",
+        "Preisvergabe",
+        "Institutionen"
+      ],
+      "entities": [
+        "Königlich Schwedische Akademie der Wissenschaften",
+        "Karolinska-Institut",
+        "Schwedische Akademie"
+      ],
+      "genres": [],
+      "regions": [
+        "Schweden"
+      ],
+      "eras": [
+        "seit 1901"
+      ]
+    },
+    "prompt": "Ordne den Nobelpreis der Institution zu, die seine Preisträger auswählt.",
+    "left": [
+      "Nobelpreis für Physik",
+      "Nobelpreis für Physiologie oder Medizin",
+      "Nobelpreis für Literatur"
+    ],
+    "right": [
+      "Schwedische Akademie",
+      "Nobelversammlung am Karolinska-Institut",
+      "Königlich Schwedische Akademie der Wissenschaften"
+    ],
+    "answer": {
+      "Nobelpreis für Physik": "Königlich Schwedische Akademie der Wissenschaften",
+      "Nobelpreis für Physiologie oder Medizin": "Nobelversammlung am Karolinska-Institut",
+      "Nobelpreis für Literatur": "Schwedische Akademie"
+    },
+    "explanation": "Die Wissenschaftsakademie entscheidet über Physik, die Nobelversammlung am Karolinska-Institut über Medizin und die Schwedische Akademie über Literatur.",
+    "subject_keys": [
+      "topic:witnesses_of_time:nobelpreis-vergabeinstitutionen",
+      "entity:koeniglich-schwedische-akademie-der-wissenschaften",
+      "entity:karolinska-institut",
+      "entity:schwedische-akademie"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Nobel Prize: The history of the Nobel Foundation",
+          "url": "https://www.nobelprize.org/were-in-this-forever-the-history-of-the-nobel-foundation/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma500",
+    "question_type": "match",
+    "prompt": "Verbinde das Spiel mit der Konsole, auf der es ursprünglich besonders bekannt wurde.",
+    "answer": {
+      "Sonic the Hedgehog": "Mega Drive",
+      "Halo: Combat Evolved": "Xbox",
+      "Wii Sports": "Wii"
+    },
+    "explanation": "Sonic the Hedgehog – Mega Drive; Halo: Combat Evolved – Xbox; Wii Sports – Wii.",
+    "subject_keys": [
+      "topic:gaming:originalplattformen",
+      "fact:match:500"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "The Strong: World Video Game Hall of Fame",
+          "url": "https://www.strongmuseum.org/exhibits/world-video-game-hall-of-fame/"
+        }
+      ]
+    },
+    "left": [
+      "Sonic the Hedgehog",
+      "Halo: Combat Evolved",
+      "Wii Sports"
+    ],
+    "right": [
+      "Wii",
+      "Xbox",
+      "Mega Drive"
+    ],
+    "primary_category": "gaming",
+    "subtopic": "Originalplattformen",
+    "tags": {
+      "topics": [
+        "Originalplattformen"
+      ],
+      "entities": [
+        "Sonic the Hedgehog",
+        "Halo: Combat Evolved",
+        "Wii Sports"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma501",
+    "question_type": "match",
+    "prompt": "Ordne das Spiel seiner Hauptfigur zu.",
+    "answer": {
+      "Hades": "Zagreus",
+      "Metroid": "Samus Aran",
+      "Tomb Raider": "Lara Croft"
+    },
+    "explanation": "Hades – Zagreus; Metroid – Samus Aran; Tomb Raider – Lara Croft.",
+    "subject_keys": [
+      "topic:gaming:spielfiguren",
+      "fact:match:501"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "The Strong: World Video Game Hall of Fame",
+          "url": "https://www.strongmuseum.org/exhibits/world-video-game-hall-of-fame/"
+        }
+      ]
+    },
+    "left": [
+      "Hades",
+      "Metroid",
+      "Tomb Raider"
+    ],
+    "right": [
+      "Lara Croft",
+      "Samus Aran",
+      "Zagreus"
+    ],
+    "primary_category": "gaming",
+    "subtopic": "Spielfiguren",
+    "tags": {
+      "topics": [
+        "Spielfiguren"
+      ],
+      "entities": [
+        "Hades",
+        "Metroid",
+        "Tomb Raider"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma502",
+    "question_type": "match",
+    "prompt": "Ordne den Minecraft-Gegner seiner typischen Dimension zu.",
+    "answer": {
+      "Shulker": "Das Ende",
+      "Blaze": "Nether",
+      "Wächter": "Oberwelt"
+    },
+    "explanation": "Shulker – Das Ende; Blaze – Nether; Wächter – Oberwelt.",
+    "subject_keys": [
+      "topic:gaming:minecraft-dimensionen",
+      "fact:match:502"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Minecraft: About Minecraft",
+          "url": "https://www.minecraft.net/en-us/about-minecraft"
+        }
+      ]
+    },
+    "left": [
+      "Shulker",
+      "Blaze",
+      "Wächter"
+    ],
+    "right": [
+      "Oberwelt",
+      "Nether",
+      "Das Ende"
+    ],
+    "primary_category": "gaming",
+    "subtopic": "Minecraft-Dimensionen",
+    "tags": {
+      "topics": [
+        "Minecraft-Dimensionen"
+      ],
+      "entities": [
+        "Shulker",
+        "Blaze",
+        "Wächter"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma503",
+    "question_type": "match",
+    "prompt": "Ordne das Arcade-Spiel seinem Entwickler zu.",
+    "answer": {
+      "Pac-Man": "Namco",
+      "Donkey Kong": "Nintendo",
+      "Asteroids": "Atari"
+    },
+    "explanation": "Pac-Man – Namco; Donkey Kong – Nintendo; Asteroids – Atari.",
+    "subject_keys": [
+      "topic:gaming:klassische-arcade-spiele",
+      "fact:match:503"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "The Strong: World Video Game Hall of Fame",
+          "url": "https://www.strongmuseum.org/exhibits/world-video-game-hall-of-fame/"
+        }
+      ]
+    },
+    "left": [
+      "Pac-Man",
+      "Donkey Kong",
+      "Asteroids"
+    ],
+    "right": [
+      "Atari",
+      "Nintendo",
+      "Namco"
+    ],
+    "primary_category": "gaming",
+    "subtopic": "Klassische Arcade-Spiele",
+    "tags": {
+      "topics": [
+        "Klassische Arcade-Spiele"
+      ],
+      "entities": [
+        "Pac-Man",
+        "Donkey Kong",
+        "Asteroids"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma504",
+    "question_type": "match",
+    "prompt": "Ordne die Figur ihrer Nintendo-Spielreihe zu.",
+    "answer": {
+      "Fox McCloud": "Star Fox",
+      "Olimar": "Pikmin",
+      "Melinda": "Animal Crossing"
+    },
+    "explanation": "Fox McCloud – Star Fox; Olimar – Pikmin; Melinda – Animal Crossing.",
+    "subject_keys": [
+      "topic:gaming:nintendo-serien",
+      "fact:match:504"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Nintendo History",
+          "url": "https://www.nintendo.com/en-gb/Hardware/Nintendo-History/Nintendo-History-625945.html"
+        }
+      ]
+    },
+    "left": [
+      "Fox McCloud",
+      "Olimar",
+      "Melinda"
+    ],
+    "right": [
+      "Animal Crossing",
+      "Pikmin",
+      "Star Fox"
+    ],
+    "primary_category": "gaming",
+    "subtopic": "Nintendo-Serien",
+    "tags": {
+      "topics": [
+        "Nintendo-Serien"
+      ],
+      "entities": [
+        "Fox McCloud",
+        "Olimar",
+        "Melinda"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma510",
+    "question_type": "match",
+    "prompt": "Ordne das Blasinstrument seiner Art der Tonerzeugung zu.",
+    "answer": {
+      "Oboe": "Doppelrohrblatt",
+      "Klarinette": "Einfachrohrblatt",
+      "Querflöte": "Luftstrom an einer Kante"
+    },
+    "explanation": "Oboe – Doppelrohrblatt; Klarinette – Einfachrohrblatt; Querflöte – Luftstrom an einer Kante.",
+    "subject_keys": [
+      "topic:music:tonentstehung-bei-blasern",
+      "fact:match:510"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Musical instrument",
+          "url": "https://www.britannica.com/art/musical-instrument"
+        }
+      ]
+    },
+    "left": [
+      "Oboe",
+      "Klarinette",
+      "Querflöte"
+    ],
+    "right": [
+      "Luftstrom an einer Kante",
+      "Einfachrohrblatt",
+      "Doppelrohrblatt"
+    ],
+    "primary_category": "music",
+    "subtopic": "Tonentstehung bei Bläsern",
+    "tags": {
+      "topics": [
+        "Tonentstehung bei Bläsern"
+      ],
+      "entities": [
+        "Oboe",
+        "Klarinette",
+        "Querflöte"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma511",
+    "question_type": "match",
+    "prompt": "Verbinde die Dur-Tonart mit ihrer Zahl an Vorzeichen.",
+    "answer": {
+      "C-Dur": "keine Vorzeichen",
+      "G-Dur": "ein Kreuz",
+      "F-Dur": "ein Be"
+    },
+    "explanation": "C-Dur – keine Vorzeichen; G-Dur – ein Kreuz; F-Dur – ein Be.",
+    "subject_keys": [
+      "topic:music:tonarten",
+      "fact:match:511"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Classical music",
+          "url": "https://www.britannica.com/art/Western-music"
+        }
+      ]
+    },
+    "left": [
+      "C-Dur",
+      "G-Dur",
+      "F-Dur"
+    ],
+    "right": [
+      "ein Be",
+      "ein Kreuz",
+      "keine Vorzeichen"
+    ],
+    "primary_category": "music",
+    "subtopic": "Tonarten",
+    "tags": {
+      "topics": [
+        "Tonarten"
+      ],
+      "entities": [
+        "C-Dur",
+        "G-Dur",
+        "F-Dur"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma512",
+    "question_type": "match",
+    "prompt": "Ordne die musikalische Artikulationsangabe ihrer Wirkung zu.",
+    "answer": {
+      "Legato": "gebunden",
+      "Staccato": "kurz getrennt",
+      "Tenuto": "ausgehalten"
+    },
+    "explanation": "Legato – gebunden; Staccato – kurz getrennt; Tenuto – ausgehalten.",
+    "subject_keys": [
+      "topic:music:artikulation",
+      "fact:match:512"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Classical music",
+          "url": "https://www.britannica.com/art/Western-music"
+        }
+      ]
+    },
+    "left": [
+      "Legato",
+      "Staccato",
+      "Tenuto"
+    ],
+    "right": [
+      "ausgehalten",
+      "kurz getrennt",
+      "gebunden"
+    ],
+    "primary_category": "music",
+    "subtopic": "Artikulation",
+    "tags": {
+      "topics": [
+        "Artikulation"
+      ],
+      "entities": [
+        "Legato",
+        "Staccato",
+        "Tenuto"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma513",
+    "question_type": "match",
+    "prompt": "Ordne den Tanz seinem Ursprungsland zu.",
+    "answer": {
+      "Tango": "Argentinien",
+      "Samba": "Brasilien",
+      "Flamenco": "Spanien"
+    },
+    "explanation": "Tango – Argentinien; Samba – Brasilien; Flamenco – Spanien.",
+    "subject_keys": [
+      "topic:music:tanzherkunft",
+      "fact:match:513"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Classical music",
+          "url": "https://www.britannica.com/art/Western-music"
+        }
+      ]
+    },
+    "left": [
+      "Tango",
+      "Samba",
+      "Flamenco"
+    ],
+    "right": [
+      "Spanien",
+      "Brasilien",
+      "Argentinien"
+    ],
+    "primary_category": "music",
+    "subtopic": "Tanzherkunft",
+    "tags": {
+      "topics": [
+        "Tanzherkunft"
+      ],
+      "entities": [
+        "Tango",
+        "Samba",
+        "Flamenco"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma514",
+    "question_type": "match",
+    "prompt": "Ordne die Stimmlage ihrer üblichen Lage zu.",
+    "answer": {
+      "Sopran": "hohe Frauenstimme",
+      "Tenor": "hohe Männerstimme",
+      "Bass": "tiefe Männerstimme"
+    },
+    "explanation": "Sopran – hohe Frauenstimme; Tenor – hohe Männerstimme; Bass – tiefe Männerstimme.",
+    "subject_keys": [
+      "topic:music:stimmlagen",
+      "fact:match:514"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Classical music",
+          "url": "https://www.britannica.com/art/Western-music"
+        }
+      ]
+    },
+    "left": [
+      "Sopran",
+      "Tenor",
+      "Bass"
+    ],
+    "right": [
+      "tiefe Männerstimme",
+      "hohe Männerstimme",
+      "hohe Frauenstimme"
+    ],
+    "primary_category": "music",
+    "subtopic": "Stimmlagen",
+    "tags": {
+      "topics": [
+        "Stimmlagen"
+      ],
+      "entities": [
+        "Sopran",
+        "Tenor",
+        "Bass"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma515",
+    "question_type": "match",
+    "prompt": "Ordne den Pokal seiner Sportart zu.",
+    "answer": {
+      "Davis Cup": "Tennis",
+      "Ryder Cup": "Golf",
+      "Stanley Cup": "Eishockey"
+    },
+    "explanation": "Davis Cup – Tennis; Ryder Cup – Golf; Stanley Cup – Eishockey.",
+    "subject_keys": [
+      "topic:sport:sportpokale",
+      "fact:match:515"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Olympics: Sports",
+          "url": "https://www.olympics.com/en/sports/"
+        }
+      ]
+    },
+    "left": [
+      "Davis Cup",
+      "Ryder Cup",
+      "Stanley Cup"
+    ],
+    "right": [
+      "Eishockey",
+      "Golf",
+      "Tennis"
+    ],
+    "primary_category": "sport",
+    "subtopic": "Sportpokale",
+    "tags": {
+      "topics": [
+        "Sportpokale"
+      ],
+      "entities": [
+        "Davis Cup",
+        "Ryder Cup",
+        "Stanley Cup"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma516",
+    "question_type": "match",
+    "prompt": "Ordne die Position ihrer Sportart zu.",
+    "answer": {
+      "Quarterback": "American Football",
+      "Libero": "Volleyball",
+      "Wicketkeeper": "Cricket"
+    },
+    "explanation": "Quarterback – American Football; Libero – Volleyball; Wicketkeeper – Cricket.",
+    "subject_keys": [
+      "topic:sport:spielpositionen",
+      "fact:match:516"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Olympics: Sports",
+          "url": "https://www.olympics.com/en/sports/"
+        }
+      ]
+    },
+    "left": [
+      "Quarterback",
+      "Libero",
+      "Wicketkeeper"
+    ],
+    "right": [
+      "Cricket",
+      "Volleyball",
+      "American Football"
+    ],
+    "primary_category": "sport",
+    "subtopic": "Spielpositionen",
+    "tags": {
+      "topics": [
+        "Spielpositionen"
+      ],
+      "entities": [
+        "Quarterback",
+        "Libero",
+        "Wicketkeeper"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma517",
+    "question_type": "match",
+    "prompt": "Ordne die Sportart ihrer typischen Wettkampffläche zu.",
+    "answer": {
+      "Bahnradsport": "Velodrom",
+      "Judo": "Tatami",
+      "Fechten": "Planche"
+    },
+    "explanation": "Bahnradsport – Velodrom; Judo – Tatami; Fechten – Planche.",
+    "subject_keys": [
+      "topic:sport:sportstatten",
+      "fact:match:517"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Olympics: Sports",
+          "url": "https://www.olympics.com/en/sports/"
+        }
+      ]
+    },
+    "left": [
+      "Bahnradsport",
+      "Judo",
+      "Fechten"
+    ],
+    "right": [
+      "Planche",
+      "Tatami",
+      "Velodrom"
+    ],
+    "primary_category": "sport",
+    "subtopic": "Sportstätten",
+    "tags": {
+      "topics": [
+        "Sportstätten"
+      ],
+      "entities": [
+        "Bahnradsport",
+        "Judo",
+        "Fechten"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma518",
+    "question_type": "match",
+    "prompt": "Ordne das Gerät seiner Sportart zu.",
+    "answer": {
+      "Puck": "Eishockey",
+      "Federball": "Badminton",
+      "Florett": "Fechten"
+    },
+    "explanation": "Puck – Eishockey; Federball – Badminton; Florett – Fechten.",
+    "subject_keys": [
+      "topic:sport:sportgerate",
+      "fact:match:518"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Olympics: Sports",
+          "url": "https://www.olympics.com/en/sports/"
+        }
+      ]
+    },
+    "left": [
+      "Puck",
+      "Federball",
+      "Florett"
+    ],
+    "right": [
+      "Fechten",
+      "Badminton",
+      "Eishockey"
+    ],
+    "primary_category": "sport",
+    "subtopic": "Sportgeräte",
+    "tags": {
+      "topics": [
+        "Sportgeräte"
+      ],
+      "entities": [
+        "Puck",
+        "Federball",
+        "Florett"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma519",
+    "question_type": "match",
+    "prompt": "Ordne den Weltverband seiner Sportart zu.",
+    "answer": {
+      "World Athletics": "Leichtathletik",
+      "World Aquatics": "Schwimmsport",
+      "UCI": "Radsport"
+    },
+    "explanation": "World Athletics – Leichtathletik; World Aquatics – Schwimmsport; UCI – Radsport.",
+    "subject_keys": [
+      "topic:sport:weltverbande",
+      "fact:match:519"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Olympics: Sports",
+          "url": "https://www.olympics.com/en/sports/"
+        }
+      ]
+    },
+    "left": [
+      "World Athletics",
+      "World Aquatics",
+      "UCI"
+    ],
+    "right": [
+      "Radsport",
+      "Schwimmsport",
+      "Leichtathletik"
+    ],
+    "primary_category": "sport",
+    "subtopic": "Weltverbände",
+    "tags": {
+      "topics": [
+        "Weltverbände"
+      ],
+      "entities": [
+        "World Athletics",
+        "World Aquatics",
+        "UCI"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma520",
+    "question_type": "match",
+    "prompt": "Ordne die historische Stätte ihrer Kultur zu.",
+    "answer": {
+      "Machu Picchu": "Inka",
+      "Chichén Itzá": "Maya",
+      "Persepolis": "Achämeniden"
+    },
+    "explanation": "Machu Picchu – Inka; Chichén Itzá – Maya; Persepolis – Achämeniden.",
+    "subject_keys": [
+      "topic:witnesses_of_time:antike-statten",
+      "fact:match:520"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "UNESCO World Heritage List",
+          "url": "https://whc.unesco.org/en/list/"
+        }
+      ]
+    },
+    "left": [
+      "Machu Picchu",
+      "Chichén Itzá",
+      "Persepolis"
+    ],
+    "right": [
+      "Achämeniden",
+      "Maya",
+      "Inka"
+    ],
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Antike Stätten",
+    "tags": {
+      "topics": [
+        "Antike Stätten"
+      ],
+      "entities": [
+        "Machu Picchu",
+        "Chichén Itzá",
+        "Persepolis"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma521",
+    "question_type": "match",
+    "prompt": "Ordne das Kalendersystem der historischen Einführung zu.",
+    "answer": {
+      "Julianischer Kalender": "Julius Caesar",
+      "Gregorianischer Kalender": "Papst Gregor XIII.",
+      "Französischer Revolutionskalender": "Nationalkonvent"
+    },
+    "explanation": "Julianischer Kalender – Julius Caesar; Gregorianischer Kalender – Papst Gregor XIII.; Französischer Revolutionskalender – Nationalkonvent.",
+    "subject_keys": [
+      "topic:witnesses_of_time:kalenderreformen",
+      "fact:match:521"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: History of Europe",
+          "url": "https://www.britannica.com/topic/history-of-Europe"
+        }
+      ]
+    },
+    "left": [
+      "Julianischer Kalender",
+      "Gregorianischer Kalender",
+      "Französischer Revolutionskalender"
+    ],
+    "right": [
+      "Nationalkonvent",
+      "Papst Gregor XIII.",
+      "Julius Caesar"
+    ],
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Kalenderreformen",
+    "tags": {
+      "topics": [
+        "Kalenderreformen"
+      ],
+      "entities": [
+        "Julianischer Kalender",
+        "Gregorianischer Kalender",
+        "Französischer Revolutionskalender"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma522",
+    "question_type": "match",
+    "prompt": "Ordne das Dokument seinem Jahr zu.",
+    "answer": {
+      "Magna Carta": "1215",
+      "Unabhängigkeitserklärung der USA": "1776",
+      "Allgemeine Erklärung der Menschenrechte": "1948"
+    },
+    "explanation": "Magna Carta – 1215; Unabhängigkeitserklärung der USA – 1776; Allgemeine Erklärung der Menschenrechte – 1948.",
+    "subject_keys": [
+      "topic:witnesses_of_time:historische-dokumente",
+      "fact:match:522"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: History of Europe",
+          "url": "https://www.britannica.com/topic/history-of-Europe"
+        }
+      ]
+    },
+    "left": [
+      "Magna Carta",
+      "Unabhängigkeitserklärung der USA",
+      "Allgemeine Erklärung der Menschenrechte"
+    ],
+    "right": [
+      "1948",
+      "1776",
+      "1215"
+    ],
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Historische Dokumente",
+    "tags": {
+      "topics": [
+        "Historische Dokumente"
+      ],
+      "entities": [
+        "Magna Carta",
+        "Unabhängigkeitserklärung der USA",
+        "Allgemeine Erklärung der Menschenrechte"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma523",
+    "question_type": "match",
+    "prompt": "Ordne den Seefahrer seinem bekannten Reiseziel zu.",
+    "answer": {
+      "Vasco da Gama": "Seeweg nach Indien",
+      "Ferdinand Magellan": "erste Weltumsegelungsexpedition",
+      "James Cook": "Ostküste Australiens"
+    },
+    "explanation": "Vasco da Gama – Seeweg nach Indien; Ferdinand Magellan – erste Weltumsegelungsexpedition; James Cook – Ostküste Australiens.",
+    "subject_keys": [
+      "topic:witnesses_of_time:entdeckungsfahrten",
+      "fact:match:523"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: History of Europe",
+          "url": "https://www.britannica.com/topic/history-of-Europe"
+        }
+      ]
+    },
+    "left": [
+      "Vasco da Gama",
+      "Ferdinand Magellan",
+      "James Cook"
+    ],
+    "right": [
+      "Ostküste Australiens",
+      "erste Weltumsegelungsexpedition",
+      "Seeweg nach Indien"
+    ],
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Entdeckungsfahrten",
+    "tags": {
+      "topics": [
+        "Entdeckungsfahrten"
+      ],
+      "entities": [
+        "Vasco da Gama",
+        "Ferdinand Magellan",
+        "James Cook"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma524",
+    "question_type": "match",
+    "prompt": "Ordne das Schreibmedium dem typischen Material zu.",
+    "answer": {
+      "Papyrus": "Pflanzenmark",
+      "Pergament": "Tierhaut",
+      "Keilschrifttafel": "Ton"
+    },
+    "explanation": "Papyrus – Pflanzenmark; Pergament – Tierhaut; Keilschrifttafel – Ton.",
+    "subject_keys": [
+      "topic:witnesses_of_time:alte-schreibmedien",
+      "fact:match:524"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: History of Europe",
+          "url": "https://www.britannica.com/topic/history-of-Europe"
+        }
+      ]
+    },
+    "left": [
+      "Papyrus",
+      "Pergament",
+      "Keilschrifttafel"
+    ],
+    "right": [
+      "Ton",
+      "Tierhaut",
+      "Pflanzenmark"
+    ],
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Alte Schreibmedien",
+    "tags": {
+      "topics": [
+        "Alte Schreibmedien"
+      ],
+      "entities": [
+        "Papyrus",
+        "Pergament",
+        "Keilschrifttafel"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma525",
+    "question_type": "match",
+    "prompt": "Ordne den Film seiner Regisseurin oder seinem Regisseur zu.",
+    "answer": {
+      "Jaws": "Steven Spielberg",
+      "Psycho": "Alfred Hitchcock",
+      "Lost in Translation": "Sofia Coppola"
+    },
+    "explanation": "Jaws – Steven Spielberg; Psycho – Alfred Hitchcock; Lost in Translation – Sofia Coppola.",
+    "subject_keys": [
+      "topic:media_entertainment:filmregie",
+      "fact:match:525"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Academy Awards: Ceremonies",
+          "url": "https://www.oscars.org/oscars/ceremonies"
+        }
+      ]
+    },
+    "left": [
+      "Jaws",
+      "Psycho",
+      "Lost in Translation"
+    ],
+    "right": [
+      "Sofia Coppola",
+      "Alfred Hitchcock",
+      "Steven Spielberg"
+    ],
+    "primary_category": "media_entertainment",
+    "subtopic": "Filmregie",
+    "tags": {
+      "topics": [
+        "Filmregie"
+      ],
+      "entities": [
+        "Jaws",
+        "Psycho",
+        "Lost in Translation"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma526",
+    "question_type": "match",
+    "prompt": "Ordne den Film seinem Animationsstudio zu.",
+    "answer": {
+      "Toy Story": "Pixar",
+      "Chihiros Reise ins Zauberland": "Studio Ghibli",
+      "Shrek": "DreamWorks Animation"
+    },
+    "explanation": "Toy Story – Pixar; Chihiros Reise ins Zauberland – Studio Ghibli; Shrek – DreamWorks Animation.",
+    "subject_keys": [
+      "topic:media_entertainment:animationsstudios",
+      "fact:match:526"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Pixar: Our Story",
+          "url": "https://www.pixar.com/our-story"
+        }
+      ]
+    },
+    "left": [
+      "Toy Story",
+      "Chihiros Reise ins Zauberland",
+      "Shrek"
+    ],
+    "right": [
+      "DreamWorks Animation",
+      "Studio Ghibli",
+      "Pixar"
+    ],
+    "primary_category": "media_entertainment",
+    "subtopic": "Animationsstudios",
+    "tags": {
+      "topics": [
+        "Animationsstudios"
+      ],
+      "entities": [
+        "Toy Story",
+        "Chihiros Reise ins Zauberland",
+        "Shrek"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma527",
+    "question_type": "match",
+    "prompt": "Ordne die Figur der Filmreihe zu.",
+    "answer": {
+      "Ellen Ripley": "Alien",
+      "Indiana Jones": "Jäger des verlorenen Schatzes",
+      "Marty McFly": "Zurück in die Zukunft"
+    },
+    "explanation": "Ellen Ripley – Alien; Indiana Jones – Jäger des verlorenen Schatzes; Marty McFly – Zurück in die Zukunft.",
+    "subject_keys": [
+      "topic:media_entertainment:filmfiguren",
+      "fact:match:527"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Academy Awards: Ceremonies",
+          "url": "https://www.oscars.org/oscars/ceremonies"
+        }
+      ]
+    },
+    "left": [
+      "Ellen Ripley",
+      "Indiana Jones",
+      "Marty McFly"
+    ],
+    "right": [
+      "Zurück in die Zukunft",
+      "Jäger des verlorenen Schatzes",
+      "Alien"
+    ],
+    "primary_category": "media_entertainment",
+    "subtopic": "Filmfiguren",
+    "tags": {
+      "topics": [
+        "Filmfiguren"
+      ],
+      "entities": [
+        "Ellen Ripley",
+        "Indiana Jones",
+        "Marty McFly"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma528",
+    "question_type": "match",
+    "prompt": "Ordne den Hauptpreis seinem Filmfestival zu.",
+    "answer": {
+      "Goldene Palme": "Cannes",
+      "Goldener Löwe": "Venedig",
+      "Goldener Bär": "Berlin"
+    },
+    "explanation": "Goldene Palme – Cannes; Goldener Löwe – Venedig; Goldener Bär – Berlin.",
+    "subject_keys": [
+      "topic:media_entertainment:festivalpreise",
+      "fact:match:528"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Academy Awards: Ceremonies",
+          "url": "https://www.oscars.org/oscars/ceremonies"
+        }
+      ]
+    },
+    "left": [
+      "Goldene Palme",
+      "Goldener Löwe",
+      "Goldener Bär"
+    ],
+    "right": [
+      "Berlin",
+      "Venedig",
+      "Cannes"
+    ],
+    "primary_category": "media_entertainment",
+    "subtopic": "Festivalpreise",
+    "tags": {
+      "topics": [
+        "Festivalpreise"
+      ],
+      "entities": [
+        "Goldene Palme",
+        "Goldener Löwe",
+        "Goldener Bär"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma529",
+    "question_type": "match",
+    "prompt": "Ordne den Ort dem erzählten Universum zu.",
+    "answer": {
+      "Wakanda": "Marvel",
+      "Hogwarts": "Harry Potter",
+      "Mittelerde": "Der Herr der Ringe"
+    },
+    "explanation": "Wakanda – Marvel; Hogwarts – Harry Potter; Mittelerde – Der Herr der Ringe.",
+    "subject_keys": [
+      "topic:media_entertainment:fiktive-orte",
+      "fact:match:529"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Marvel: Characters",
+          "url": "https://www.marvel.com/characters"
+        }
+      ]
+    },
+    "left": [
+      "Wakanda",
+      "Hogwarts",
+      "Mittelerde"
+    ],
+    "right": [
+      "Der Herr der Ringe",
+      "Harry Potter",
+      "Marvel"
+    ],
+    "primary_category": "media_entertainment",
+    "subtopic": "Fiktive Orte",
+    "tags": {
+      "topics": [
+        "Fiktive Orte"
+      ],
+      "entities": [
+        "Wakanda",
+        "Hogwarts",
+        "Mittelerde"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma530",
+    "question_type": "match",
+    "prompt": "Ordne das Tier seiner Wirbeltierklasse zu.",
+    "answer": {
+      "Axolotl": "Amphibien",
+      "Komodowaran": "Reptilien",
+      "Schnabeltier": "Säugetiere"
+    },
+    "explanation": "Axolotl – Amphibien; Komodowaran – Reptilien; Schnabeltier – Säugetiere.",
+    "subject_keys": [
+      "topic:plants_animals:tierklassen",
+      "fact:match:530"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Smithsonian's National Zoo: Animals",
+          "url": "https://nationalzoo.si.edu/animals"
+        }
+      ]
+    },
+    "left": [
+      "Axolotl",
+      "Komodowaran",
+      "Schnabeltier"
+    ],
+    "right": [
+      "Säugetiere",
+      "Reptilien",
+      "Amphibien"
+    ],
+    "primary_category": "plants_animals",
+    "subtopic": "Tierklassen",
+    "tags": {
+      "topics": [
+        "Tierklassen"
+      ],
+      "entities": [
+        "Axolotl",
+        "Komodowaran",
+        "Schnabeltier"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma531",
+    "question_type": "match",
+    "prompt": "Ordne die Pflanze ihrem Produkt zu.",
+    "answer": {
+      "Hevea brasiliensis": "Naturkautschuk",
+      "Linum usitatissimum": "Leinen",
+      "Theobroma cacao": "Kakao"
+    },
+    "explanation": "Hevea brasiliensis – Naturkautschuk; Linum usitatissimum – Leinen; Theobroma cacao – Kakao.",
+    "subject_keys": [
+      "topic:plants_animals:nutzpflanzen",
+      "fact:match:531"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Kew: Plants of the World Online",
+          "url": "https://powo.science.kew.org/"
+        }
+      ]
+    },
+    "left": [
+      "Hevea brasiliensis",
+      "Linum usitatissimum",
+      "Theobroma cacao"
+    ],
+    "right": [
+      "Kakao",
+      "Leinen",
+      "Naturkautschuk"
+    ],
+    "primary_category": "plants_animals",
+    "subtopic": "Nutzpflanzen",
+    "tags": {
+      "topics": [
+        "Nutzpflanzen"
+      ],
+      "entities": [
+        "Hevea brasiliensis",
+        "Linum usitatissimum",
+        "Theobroma cacao"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma532",
+    "question_type": "match",
+    "prompt": "Ordne das Tier seinem natürlichen Lebensraum zu.",
+    "answer": {
+      "Fennek": "Sahara",
+      "Eisbär": "Arktis",
+      "Kaiserpinguin": "Antarktis"
+    },
+    "explanation": "Fennek – Sahara; Eisbär – Arktis; Kaiserpinguin – Antarktis.",
+    "subject_keys": [
+      "topic:plants_animals:lebensraume",
+      "fact:match:532"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Smithsonian's National Zoo: Animals",
+          "url": "https://nationalzoo.si.edu/animals"
+        }
+      ]
+    },
+    "left": [
+      "Fennek",
+      "Eisbär",
+      "Kaiserpinguin"
+    ],
+    "right": [
+      "Antarktis",
+      "Arktis",
+      "Sahara"
+    ],
+    "primary_category": "plants_animals",
+    "subtopic": "Lebensräume",
+    "tags": {
+      "topics": [
+        "Lebensräume"
+      ],
+      "entities": [
+        "Fennek",
+        "Eisbär",
+        "Kaiserpinguin"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma533",
+    "question_type": "match",
+    "prompt": "Ordne das Tier seiner ungefähren Tragzeit zu.",
+    "answer": {
+      "Hauskatze": "2 Monate",
+      "Pferd": "11 Monate",
+      "Elefant": "22 Monate"
+    },
+    "explanation": "Hauskatze – 2 Monate; Pferd – 11 Monate; Elefant – 22 Monate.",
+    "subject_keys": [
+      "topic:plants_animals:tragzeiten",
+      "fact:match:533"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "MSD Veterinary Manual: Gestation periods",
+          "url": "https://www.msdvetmanual.com/multimedia/table/approximate-gestation-periods"
+        }
+      ]
+    },
+    "left": [
+      "Hauskatze",
+      "Pferd",
+      "Elefant"
+    ],
+    "right": [
+      "22 Monate",
+      "11 Monate",
+      "2 Monate"
+    ],
+    "primary_category": "plants_animals",
+    "subtopic": "Tragzeiten",
+    "tags": {
+      "topics": [
+        "Tragzeiten"
+      ],
+      "entities": [
+        "Hauskatze",
+        "Pferd",
+        "Elefant"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma534",
+    "question_type": "match",
+    "prompt": "Ordne den Baum seiner typischen Blattform zu.",
+    "answer": {
+      "Ginkgo": "fächerförmig",
+      "Ahorn": "handförmig gelappt",
+      "Weide": "schmal lanzettlich"
+    },
+    "explanation": "Ginkgo – fächerförmig; Ahorn – handförmig gelappt; Weide – schmal lanzettlich.",
+    "subject_keys": [
+      "topic:plants_animals:blattformen",
+      "fact:match:534"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Kew: Plants of the World Online",
+          "url": "https://powo.science.kew.org/"
+        }
+      ]
+    },
+    "left": [
+      "Ginkgo",
+      "Ahorn",
+      "Weide"
+    ],
+    "right": [
+      "schmal lanzettlich",
+      "handförmig gelappt",
+      "fächerförmig"
+    ],
+    "primary_category": "plants_animals",
+    "subtopic": "Blattformen",
+    "tags": {
+      "topics": [
+        "Blattformen"
+      ],
+      "entities": [
+        "Ginkgo",
+        "Ahorn",
+        "Weide"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma535",
+    "question_type": "match",
+    "prompt": "Verbinde jeden Staat mit dem Namen seines gesetzlichen Zahlungsmittels.",
+    "answer": {
+      "Bhutan": "Ngultrum",
+      "Belize": "Belize-Dollar",
+      "Kasachstan": "Tenge"
+    },
+    "explanation": "Bhutan – Ngultrum; Belize – Belize-Dollar; Kasachstan – Tenge.",
+    "subject_keys": [
+      "topic:geography_world:wahrungen",
+      "fact:match:535"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "CIA: The World Factbook",
+          "url": "https://www.cia.gov/the-world-factbook/"
+        }
+      ]
+    },
+    "left": [
+      "Bhutan",
+      "Belize",
+      "Kasachstan"
+    ],
+    "right": [
+      "Tenge",
+      "Belize-Dollar",
+      "Ngultrum"
+    ],
+    "primary_category": "geography_world",
+    "subtopic": "Währungen",
+    "tags": {
+      "topics": [
+        "Währungen"
+      ],
+      "entities": [
+        "Bhutan",
+        "Belize",
+        "Kasachstan"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma536",
+    "question_type": "match",
+    "prompt": "Ordne den Fluss dem Meer zu, in das er mündet.",
+    "answer": {
+      "Po": "Adriatisches Meer",
+      "Weichsel": "Ostsee",
+      "Orinoco": "Atlantik"
+    },
+    "explanation": "Po – Adriatisches Meer; Weichsel – Ostsee; Orinoco – Atlantik.",
+    "subject_keys": [
+      "topic:geography_world:flussmundungen",
+      "fact:match:536"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Geography",
+          "url": "https://www.britannica.com/science/geography"
+        }
+      ]
+    },
+    "left": [
+      "Po",
+      "Weichsel",
+      "Orinoco"
+    ],
+    "right": [
+      "Atlantik",
+      "Ostsee",
+      "Adriatisches Meer"
+    ],
+    "primary_category": "geography_world",
+    "subtopic": "Flussmündungen",
+    "tags": {
+      "topics": [
+        "Flussmündungen"
+      ],
+      "entities": [
+        "Po",
+        "Weichsel",
+        "Orinoco"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma537",
+    "question_type": "match",
+    "prompt": "Ordne den Berg seinem Gebirge zu.",
+    "answer": {
+      "Aconcagua": "Anden",
+      "Denali": "Alaskakette",
+      "Elbrus": "Kaukasus"
+    },
+    "explanation": "Aconcagua – Anden; Denali – Alaskakette; Elbrus – Kaukasus.",
+    "subject_keys": [
+      "topic:geography_world:gebirge",
+      "fact:match:537"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Geography",
+          "url": "https://www.britannica.com/science/geography"
+        }
+      ]
+    },
+    "left": [
+      "Aconcagua",
+      "Denali",
+      "Elbrus"
+    ],
+    "right": [
+      "Kaukasus",
+      "Alaskakette",
+      "Anden"
+    ],
+    "primary_category": "geography_world",
+    "subtopic": "Gebirge",
+    "tags": {
+      "topics": [
+        "Gebirge"
+      ],
+      "entities": [
+        "Aconcagua",
+        "Denali",
+        "Elbrus"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma538",
+    "question_type": "match",
+    "prompt": "Ordne die Insel dem Staat zu.",
+    "answer": {
+      "Tasmanien": "Australien",
+      "Hokkaidō": "Japan",
+      "Sizilien": "Italien"
+    },
+    "explanation": "Tasmanien – Australien; Hokkaidō – Japan; Sizilien – Italien.",
+    "subject_keys": [
+      "topic:geography_world:inselstaaten",
+      "fact:match:538"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "CIA: The World Factbook",
+          "url": "https://www.cia.gov/the-world-factbook/"
+        }
+      ]
+    },
+    "left": [
+      "Tasmanien",
+      "Hokkaidō",
+      "Sizilien"
+    ],
+    "right": [
+      "Italien",
+      "Japan",
+      "Australien"
+    ],
+    "primary_category": "geography_world",
+    "subtopic": "Inselstaaten",
+    "tags": {
+      "topics": [
+        "Inselstaaten"
+      ],
+      "entities": [
+        "Tasmanien",
+        "Hokkaidō",
+        "Sizilien"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma539",
+    "question_type": "match",
+    "prompt": "Ordne den See dem Land zu.",
+    "answer": {
+      "Tanasee": "Äthiopien",
+      "Bleder See": "Slowenien",
+      "Tauposee": "Neuseeland"
+    },
+    "explanation": "Tanasee – Äthiopien; Bleder See – Slowenien; Tauposee – Neuseeland.",
+    "subject_keys": [
+      "topic:geography_world:seen-und-lander",
+      "fact:match:539"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "CIA: The World Factbook",
+          "url": "https://www.cia.gov/the-world-factbook/"
+        }
+      ]
+    },
+    "left": [
+      "Tanasee",
+      "Bleder See",
+      "Tauposee"
+    ],
+    "right": [
+      "Neuseeland",
+      "Slowenien",
+      "Äthiopien"
+    ],
+    "primary_category": "geography_world",
+    "subtopic": "Seen und Länder",
+    "tags": {
+      "topics": [
+        "Seen und Länder"
+      ],
+      "entities": [
+        "Tanasee",
+        "Bleder See",
+        "Tauposee"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma540",
+    "question_type": "match",
+    "prompt": "Ordne das Element seiner Ordnungszahl zu.",
+    "answer": {
+      "Neon": "10",
+      "Kobalt": "27",
+      "Zinn": "50"
+    },
+    "explanation": "Neon – 10; Kobalt – 27; Zinn – 50.",
+    "subject_keys": [
+      "topic:science_technology:ordnungszahlen",
+      "fact:match:540"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "IUPAC: Periodic Table of Elements",
+          "url": "https://iupac.org/what-we-do/periodic-table-of-elements/"
+        }
+      ]
+    },
+    "left": [
+      "Neon",
+      "Kobalt",
+      "Zinn"
+    ],
+    "right": [
+      "50",
+      "27",
+      "10"
+    ],
+    "primary_category": "science_technology",
+    "subtopic": "Ordnungszahlen",
+    "tags": {
+      "topics": [
+        "Ordnungszahlen"
+      ],
+      "entities": [
+        "Neon",
+        "Kobalt",
+        "Zinn"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma541",
+    "question_type": "match",
+    "prompt": "Ordne die SI-Basiseinheit ihrer Größe zu.",
+    "answer": {
+      "Candela": "Lichtstärke",
+      "Mol": "Stoffmenge",
+      "Kelvin": "Temperatur"
+    },
+    "explanation": "Candela – Lichtstärke; Mol – Stoffmenge; Kelvin – Temperatur.",
+    "subject_keys": [
+      "topic:science_technology:si-basisgrossen",
+      "fact:match:541"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "BIPM: SI Brochure",
+          "url": "https://www.bipm.org/en/publications/si-brochure"
+        }
+      ]
+    },
+    "left": [
+      "Candela",
+      "Mol",
+      "Kelvin"
+    ],
+    "right": [
+      "Temperatur",
+      "Stoffmenge",
+      "Lichtstärke"
+    ],
+    "primary_category": "science_technology",
+    "subtopic": "SI-Basisgrößen",
+    "tags": {
+      "topics": [
+        "SI-Basisgrößen"
+      ],
+      "entities": [
+        "Candela",
+        "Mol",
+        "Kelvin"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma542",
+    "question_type": "match",
+    "prompt": "Ordne den Planeten seinem größten Mond zu.",
+    "answer": {
+      "Jupiter": "Ganymed",
+      "Saturn": "Titan",
+      "Neptun": "Triton"
+    },
+    "explanation": "Jupiter – Ganymed; Saturn – Titan; Neptun – Triton.",
+    "subject_keys": [
+      "topic:science_technology:planetenmonde",
+      "fact:match:542"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "NASA: Planetary Fact Sheet",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/"
+        }
+      ]
+    },
+    "left": [
+      "Jupiter",
+      "Saturn",
+      "Neptun"
+    ],
+    "right": [
+      "Triton",
+      "Titan",
+      "Ganymed"
+    ],
+    "primary_category": "science_technology",
+    "subtopic": "Planetenmonde",
+    "tags": {
+      "topics": [
+        "Planetenmonde"
+      ],
+      "entities": [
+        "Jupiter",
+        "Saturn",
+        "Neptun"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma543",
+    "question_type": "match",
+    "prompt": "Ordne die Person dem nach ihr benannten Gesetz zu.",
+    "answer": {
+      "Georg Ohm": "elektrischer Widerstand",
+      "Robert Hooke": "elastische Verformung",
+      "Blaise Pascal": "Druckübertragung"
+    },
+    "explanation": "Georg Ohm – elektrischer Widerstand; Robert Hooke – elastische Verformung; Blaise Pascal – Druckübertragung.",
+    "subject_keys": [
+      "topic:science_technology:naturgesetze",
+      "fact:match:543"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "NIST: Metric (SI) Program",
+          "url": "https://www.nist.gov/pml/owm/metric-si"
+        }
+      ]
+    },
+    "left": [
+      "Georg Ohm",
+      "Robert Hooke",
+      "Blaise Pascal"
+    ],
+    "right": [
+      "Druckübertragung",
+      "elastische Verformung",
+      "elektrischer Widerstand"
+    ],
+    "primary_category": "science_technology",
+    "subtopic": "Naturgesetze",
+    "tags": {
+      "topics": [
+        "Naturgesetze"
+      ],
+      "entities": [
+        "Georg Ohm",
+        "Robert Hooke",
+        "Blaise Pascal"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma544",
+    "question_type": "match",
+    "prompt": "Ordne die Einheit ihrer üblichen Bedeutung zu.",
+    "answer": {
+      "Bit": "binäre Stelle",
+      "Byte": "acht Bit",
+      "Hertz": "Ereignisse pro Sekunde"
+    },
+    "explanation": "Bit – binäre Stelle; Byte – acht Bit; Hertz – Ereignisse pro Sekunde.",
+    "subject_keys": [
+      "topic:science_technology:digitale-einheiten",
+      "fact:match:544"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "NIST: Metric (SI) Program",
+          "url": "https://www.nist.gov/pml/owm/metric-si"
+        }
+      ]
+    },
+    "left": [
+      "Bit",
+      "Byte",
+      "Hertz"
+    ],
+    "right": [
+      "Ereignisse pro Sekunde",
+      "acht Bit",
+      "binäre Stelle"
+    ],
+    "primary_category": "science_technology",
+    "subtopic": "Digitale Einheiten",
+    "tags": {
+      "topics": [
+        "Digitale Einheiten"
+      ],
+      "entities": [
+        "Bit",
+        "Byte",
+        "Hertz"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma545",
+    "question_type": "match",
+    "prompt": "Ordne das Organ seiner Hauptaufgabe zu.",
+    "answer": {
+      "Niere": "Blut filtern",
+      "Lunge": "Gasaustausch",
+      "Bauchspeicheldrüse": "Verdauungsenzyme und Hormone bilden"
+    },
+    "explanation": "Niere – Blut filtern; Lunge – Gasaustausch; Bauchspeicheldrüse – Verdauungsenzyme und Hormone bilden.",
+    "subject_keys": [
+      "topic:human_everyday:organe",
+      "fact:match:545"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "MedlinePlus: Body systems",
+          "url": "https://medlineplus.gov/anatomy.html"
+        }
+      ]
+    },
+    "left": [
+      "Niere",
+      "Lunge",
+      "Bauchspeicheldrüse"
+    ],
+    "right": [
+      "Verdauungsenzyme und Hormone bilden",
+      "Gasaustausch",
+      "Blut filtern"
+    ],
+    "primary_category": "human_everyday",
+    "subtopic": "Organe",
+    "tags": {
+      "topics": [
+        "Organe"
+      ],
+      "entities": [
+        "Niere",
+        "Lunge",
+        "Bauchspeicheldrüse"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma546",
+    "question_type": "match",
+    "prompt": "Ordne den Nährstoff seiner klassischen Mangelkrankheit zu.",
+    "answer": {
+      "Vitamin C": "Skorbut",
+      "Vitamin D": "Rachitis",
+      "Vitamin B1": "Beriberi"
+    },
+    "explanation": "Vitamin C – Skorbut; Vitamin D – Rachitis; Vitamin B1 – Beriberi.",
+    "subject_keys": [
+      "topic:human_everyday:mangelkrankheiten",
+      "fact:match:546"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "NIH Office of Dietary Supplements: Fact Sheets",
+          "url": "https://ods.od.nih.gov/factsheets/list-all/"
+        }
+      ]
+    },
+    "left": [
+      "Vitamin C",
+      "Vitamin D",
+      "Vitamin B1"
+    ],
+    "right": [
+      "Beriberi",
+      "Rachitis",
+      "Skorbut"
+    ],
+    "primary_category": "human_everyday",
+    "subtopic": "Mangelkrankheiten",
+    "tags": {
+      "topics": [
+        "Mangelkrankheiten"
+      ],
+      "entities": [
+        "Vitamin C",
+        "Vitamin D",
+        "Vitamin B1"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma547",
+    "question_type": "match",
+    "prompt": "Ordne das Werkzeug seiner Hauptanwendung zu.",
+    "answer": {
+      "Schneebesen": "Aufschlagen",
+      "Mörser": "Zerstoßen",
+      "Sieb": "Trennen nach Größe"
+    },
+    "explanation": "Schneebesen – Aufschlagen; Mörser – Zerstoßen; Sieb – Trennen nach Größe.",
+    "subject_keys": [
+      "topic:human_everyday:kuchenwerkzeuge",
+      "fact:match:547"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Geography",
+          "url": "https://www.britannica.com/science/geography"
+        }
+      ]
+    },
+    "left": [
+      "Schneebesen",
+      "Mörser",
+      "Sieb"
+    ],
+    "right": [
+      "Trennen nach Größe",
+      "Zerstoßen",
+      "Aufschlagen"
+    ],
+    "primary_category": "human_everyday",
+    "subtopic": "Küchenwerkzeuge",
+    "tags": {
+      "topics": [
+        "Küchenwerkzeuge"
+      ],
+      "entities": [
+        "Schneebesen",
+        "Mörser",
+        "Sieb"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma548",
+    "question_type": "match",
+    "prompt": "Ordne die Garmethode ihrem hauptsächlichen Wärmeträger zu.",
+    "answer": {
+      "Dämpfen": "Wasserdampf",
+      "Frittieren": "heißes Fett",
+      "Sous-vide": "temperiertes Wasserbad"
+    },
+    "explanation": "Dämpfen – Wasserdampf; Frittieren – heißes Fett; Sous-vide – temperiertes Wasserbad.",
+    "subject_keys": [
+      "topic:human_everyday:garmethoden",
+      "fact:match:548"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Cooking",
+          "url": "https://www.britannica.com/topic/cooking"
+        }
+      ]
+    },
+    "left": [
+      "Dämpfen",
+      "Frittieren",
+      "Sous-vide"
+    ],
+    "right": [
+      "temperiertes Wasserbad",
+      "heißes Fett",
+      "Wasserdampf"
+    ],
+    "primary_category": "human_everyday",
+    "subtopic": "Garmethoden",
+    "tags": {
+      "topics": [
+        "Garmethoden"
+      ],
+      "entities": [
+        "Dämpfen",
+        "Frittieren",
+        "Sous-vide"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma549",
+    "question_type": "match",
+    "prompt": "Ordne den Kunststoff seinem Resin-Code zu.",
+    "answer": {
+      "PET": "1",
+      "HDPE": "2",
+      "PVC": "3"
+    },
+    "explanation": "PET – 1; HDPE – 2; PVC – 3.",
+    "subject_keys": [
+      "topic:human_everyday:recyclingcodes",
+      "fact:match:549"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "US EPA: Resin Identification Codes",
+          "url": "https://www.epa.gov/recycle/frequent-questions-recycling"
+        }
+      ]
+    },
+    "left": [
+      "PET",
+      "HDPE",
+      "PVC"
+    ],
+    "right": [
+      "3",
+      "2",
+      "1"
+    ],
+    "primary_category": "human_everyday",
+    "subtopic": "Recyclingcodes",
+    "tags": {
+      "topics": [
+        "Recyclingcodes"
+      ],
+      "entities": [
+        "PET",
+        "HDPE",
+        "PVC"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma600",
+    "question_type": "match",
+    "prompt": "Ordne das Phänomen seiner Ursache zu.",
+    "answer": {
+      "Meteotsunami": "Luftdruckstörung",
+      "St.-Elms-Feuer": "elektrische Entladung",
+      "Maelstrom": "aufeinandertreffende Strömungen"
+    },
+    "explanation": "Meteotsunami – Luftdruckstörung; St.-Elms-Feuer – elektrische Entladung; Maelstrom – aufeinandertreffende Strömungen.",
+    "subject_keys": [
+      "topic:geography_world:seltsames-meereswetter",
+      "fact:match:600"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "NOAA: Weird Ocean Phenomena",
+          "url": "https://oceanservice.noaa.gov/ocean/weird-ocean-weather.html"
+        }
+      ]
+    },
+    "left": [
+      "Meteotsunami",
+      "St.-Elms-Feuer",
+      "Maelstrom"
+    ],
+    "right": [
+      "aufeinandertreffende Strömungen",
+      "elektrische Entladung",
+      "Luftdruckstörung"
+    ],
+    "primary_category": "geography_world",
+    "subtopic": "Seltsames Meereswetter",
+    "tags": {
+      "topics": [
+        "Seltsames Meereswetter"
+      ],
+      "entities": [
+        "Meteotsunami",
+        "St.-Elms-Feuer",
+        "Maelstrom"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma601",
+    "question_type": "match",
+    "prompt": "Ordne den digitalen Meilenstein seinem Jahr zu.",
+    "answer": {
+      "erste SMS": "1992",
+      "QR-Code": "1994",
+      "originales Emoji-Set": "1999"
+    },
+    "explanation": "erste SMS – 1992; QR-Code – 1994; originales Emoji-Set – 1999.",
+    "subject_keys": [
+      "topic:witnesses_of_time:digitale-premieren",
+      "fact:match:601"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Vodafone: 25 years since the first text message",
+          "url": "https://www.vodafone.com/news/newsroom/technology/25-anniversary-text-message"
+        },
+        {
+          "title": "DENSO WAVE: QR Code 30th anniversary",
+          "url": "https://www.denso-wave.com/en/system/qr/qr30th/"
+        },
+        {
+          "title": "MoMA: Shigetaka Kurita — Emoji",
+          "url": "https://www.moma.org/collection/works/196070"
+        }
+      ]
+    },
+    "left": [
+      "erste SMS",
+      "QR-Code",
+      "originales Emoji-Set"
+    ],
+    "right": [
+      "1999",
+      "1994",
+      "1992"
+    ],
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Digitale Premieren",
+    "tags": {
+      "topics": [
+        "Digitale Premieren"
+      ],
+      "entities": [
+        "erste SMS",
+        "QR-Code",
+        "originales Emoji-Set"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma602",
+    "question_type": "match",
+    "prompt": "Ordne die Erfindung ihrem Auslöser zu.",
+    "answer": {
+      "Post-it": "haftendes Lesezeichen",
+      "Klettverschluss": "Kletten am Stoff",
+      "Celluloid": "Ersatz für Elfenbein"
+    },
+    "explanation": "Post-it – haftendes Lesezeichen; Klettverschluss – Kletten am Stoff; Celluloid – Ersatz für Elfenbein.",
+    "subject_keys": [
+      "topic:human_everyday:ideen-aus-dem-alltag",
+      "fact:match:602"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "USPTO: Sticking to it",
+          "url": "https://www.uspto.gov/learning-and-resources/journeys-innovation/sticking-it"
+        },
+        {
+          "title": "USPTO: Biomimicry",
+          "url": "https://www.uspto.gov/kids/Biomimicry.pdf"
+        },
+        {
+          "title": "Smithsonian: One word — Plastics",
+          "url": "https://americanhistory.si.edu/explore/stories/one-word-plastics"
+        }
+      ]
+    },
+    "left": [
+      "Post-it",
+      "Klettverschluss",
+      "Celluloid"
+    ],
+    "right": [
+      "Ersatz für Elfenbein",
+      "Kletten am Stoff",
+      "haftendes Lesezeichen"
+    ],
+    "primary_category": "human_everyday",
+    "subtopic": "Ideen aus dem Alltag",
+    "tags": {
+      "topics": [
+        "Ideen aus dem Alltag"
+      ],
+      "entities": [
+        "Post-it",
+        "Klettverschluss",
+        "Celluloid"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma603",
+    "question_type": "match",
+    "prompt": "Ordne das NASA-Projekt seiner Aufgabe zu.",
+    "answer": {
+      "DART": "Asteroid ablenken",
+      "Ingenuity": "Flug auf dem Mars testen",
+      "Perseverance": "Marsgestein untersuchen"
+    },
+    "explanation": "DART – Asteroid ablenken; Ingenuity – Flug auf dem Mars testen; Perseverance – Marsgestein untersuchen.",
+    "subject_keys": [
+      "topic:science_technology:mission-mit-ansage",
+      "fact:match:603"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "NASA: Asteroid orbit changed after DART impact",
+          "url": "https://www.nasa.gov/missions/dart/nasa-study-asteroids-orbit-shape-changed-after-dart-impact/"
+        },
+        {
+          "title": "NASA: Ingenuity Mars Helicopter",
+          "url": "https://science.nasa.gov/mission/mars-2020-perseverance/ingenuity-mars-helicopter/"
+        },
+        {
+          "title": "NASA: Missions",
+          "url": "https://www.nasa.gov/missions/"
+        }
+      ]
+    },
+    "left": [
+      "DART",
+      "Ingenuity",
+      "Perseverance"
+    ],
+    "right": [
+      "Marsgestein untersuchen",
+      "Flug auf dem Mars testen",
+      "Asteroid ablenken"
+    ],
+    "primary_category": "science_technology",
+    "subtopic": "Mission mit Ansage",
+    "tags": {
+      "topics": [
+        "Mission mit Ansage"
+      ],
+      "entities": [
+        "DART",
+        "Ingenuity",
+        "Perseverance"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma604",
+    "question_type": "match",
+    "prompt": "Ordne den Begriff seiner wörtlichen oder ausgeschriebenen Bedeutung zu.",
+    "answer": {
+      "Emoji": "Bildzeichen",
+      "QR": "Quick Response",
+      "CAPTCHA": "automatischer Turing-Test"
+    },
+    "explanation": "Emoji – Bildzeichen; QR – Quick Response; CAPTCHA – automatischer Turing-Test.",
+    "subject_keys": [
+      "topic:media_entertainment:digitale-worter",
+      "fact:match:604"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "MoMA: Shigetaka Kurita — Emoji",
+          "url": "https://www.moma.org/collection/works/196070"
+        },
+        {
+          "title": "DENSO WAVE: QR Code 30th anniversary",
+          "url": "https://www.denso-wave.com/en/system/qr/qr30th/"
+        },
+        {
+          "title": "Carnegie Mellon: Computer Security as a Song",
+          "url": "https://www.cs.cmu.edu/news/2013/computer-security-song"
+        }
+      ]
+    },
+    "left": [
+      "Emoji",
+      "QR",
+      "CAPTCHA"
+    ],
+    "right": [
+      "automatischer Turing-Test",
+      "Quick Response",
+      "Bildzeichen"
+    ],
+    "primary_category": "media_entertainment",
+    "subtopic": "Digitale Wörter",
+    "tags": {
+      "topics": [
+        "Digitale Wörter"
+      ],
+      "entities": [
+        "Emoji",
+        "QR",
+        "CAPTCHA"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "ma606",
+    "question_type": "match",
+    "prompt": "Ordne den digitalen Meilenstein seinem Entstehungsumfeld zu.",
+    "answer": {
+      "QR-Code": "DENSO in Japan",
+      "World Wide Web": "CERN in der Schweiz",
+      "erste SMS": "Vodafone in Großbritannien"
+    },
+    "explanation": "QR-Code – DENSO in Japan; World Wide Web – CERN in der Schweiz; erste SMS – Vodafone in Großbritannien.",
+    "subject_keys": [
+      "topic:science_technology:coole-tech-geburtsorte",
+      "fact:match:606"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "DENSO WAVE: QR Code 30th anniversary",
+          "url": "https://www.denso-wave.com/en/system/qr/qr30th/"
+        },
+        {
+          "title": "CERN: Where the web was born",
+          "url": "https://home.cern/science/computing/the-birth-of-the-web/where-web-was-born/"
+        },
+        {
+          "title": "Vodafone: 25 years since the first text message",
+          "url": "https://www.vodafone.com/news/newsroom/technology/25-anniversary-text-message"
+        }
+      ]
+    },
+    "left": [
+      "QR-Code",
+      "World Wide Web",
+      "erste SMS"
+    ],
+    "right": [
+      "Vodafone in Großbritannien",
+      "CERN in der Schweiz",
+      "DENSO in Japan"
+    ],
+    "primary_category": "science_technology",
+    "subtopic": "Coole Tech-Geburtsorte",
+    "tags": {
+      "topics": [
+        "Coole Tech-Geburtsorte"
+      ],
+      "entities": [
+        "QR-Code",
+        "World Wide Web",
+        "erste SMS"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
   }
 ]

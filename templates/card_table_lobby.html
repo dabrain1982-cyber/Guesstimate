@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% from "_player_identity.html" import player_identity with context %}
+{% block title %}{{ lobby.name }} · Playtable{% endblock %}
+{% block extra_head %}<link rel="stylesheet" href="{{ url_for('static', filename='card-table.css', v='12') }}">{% endblock %}
+{% block header %}{% endblock %}
+{% block content %}
+  <section class="party-head" data-card-lobby data-status-url="{{ url_for('card_table_status', lobby_id=lobby.id) }}" data-revision="{{ lobby.revision }}" data-member-count="{{ members|length }}">
+    <p class="eyebrow">LOBBY OFFEN</p>
+    <h1>{{ lobby.name }}</h1>
+    <p>{{ members|length }}/6 Plätze belegt</p>
+  </section>
+  {% if lobby.host_user_id == g.user.id %}
+    <form class="party-settings card-lobby-settings" method="post" action="{{ url_for('card_table_start', lobby_id=lobby.id) }}" data-card-settings data-settings-url="{{ url_for('card_table_settings', lobby_id=lobby.id) }}">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <label>Kartensatz
+        <select name="deck_size">
+          {% for value, label in deck_choices.items() %}<option value="{{ value }}" {% if value == lobby.deck_size %}selected{% endif %}>{{ label }}</option>{% endfor %}
+        </select>
+      </label>
+      {% if 'starting_points' in lobby.keys() %}<label>Startpunkte pro Person <small>(optional)</small>
+        <input type="number" name="starting_points" min="1" max="1000000000" step="1" value="{{ lobby.starting_points or '' }}" placeholder="Keine Punkte">
+      </label>{% endif %}
+      <p class="party-autosave" data-card-autosave>Wird automatisch übernommen.</p>
+      <button class="primary-button" type="submit">Playtable starten</button>
+    </form>
+  {% else %}
+    <div class="card-lobby-choice"><span>Kartensatz</span><strong>{{ deck_choices[lobby.deck_size] }}</strong></div>
+    {% if 'starting_points' in lobby.keys() %}<div class="card-lobby-choice"><span>Startpunkte</span><strong>{{ lobby.starting_points if lobby.starting_points is not none else 'Ohne Punkte' }}</strong></div>{% endif %}
+  {% endif %}
+  <ol class="party-members">
+    {% for player in members %}
+      <li><span>{{ loop.index }}</span><strong>{{ player.display_name }}</strong><small>{{ 'Host' if player.user_id == lobby.host_user_id else 'Mitspieler' }}</small></li>
+    {% endfor %}
+  </ol>
+  {% if lobby.host_user_id != g.user.id %}<p class="party-wait">Der Host startet die Playtable, sobald alle da sind.</p>{% endif %}
+  <form class="party-leave" method="post" action="{{ url_for('card_table_leave', lobby_id=lobby.id) }}">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <button class="secondary-button" type="submit">Lobby verlassen</button>
+  </form>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='card-table.js', v='11') }}" defer></script>{% endblock %}
+

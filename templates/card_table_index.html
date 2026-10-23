@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Playtable · {{ game_name }}{% endblock %}
+{% block extra_head %}<link rel="stylesheet" href="{{ url_for('static', filename='card-table.css', v='1') }}">{% endblock %}
+{% block header %}{% endblock %}
+{% block content %}
+  <section class="party-head card-table-head">
+    <p class="eyebrow">KARTEN AUF DEN TISCH</p>
+    <h1>Playtable</h1>
+    <p>Ein freier Spieltisch für eure eigenen Regeln.</p>
+  </section>
+  <section class="party-list" aria-label="Aktive Playtables">
+    {% for lobby in lobbies %}
+      <article class="party-tile">
+        <div>
+          <span>{{ 'LÄUFT' if lobby.status == 'playing' else 'OFFEN' }}</span>
+          <h2>{{ lobby.name }}</h2>
+          <p>{{ lobby.member_count }}/6 Spieler · {{ lobby.deck_size }} Karten</p>
+        </div>
+        {% if lobby.is_member %}
+          <a class="party-return" href="{{ url_for('card_table_lobby', lobby_id=lobby.id) }}">{{ 'Zurück an den Tisch' if lobby.status == 'playing' else 'Zur Lobby' }}</a>
+        {% elif lobby.status == 'waiting' %}
+          <form method="post" action="{{ url_for('card_table_join', lobby_id=lobby.id) }}">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+            <button type="submit">Beitreten</button>
+          </form>
+        {% else %}<strong>Gestartet</strong>{% endif %}
+      </article>
+    {% else %}
+      <div class="party-empty">Noch steht keine Playtable bereit.</div>
+    {% endfor %}
+  </section>
+  <form method="post" action="{{ url_for('card_table_create') }}" class="party-create">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <button class="primary-button" type="submit">Lobby erstellen</button>
+  </form>
+  <a class="back-link" href="{{ url_for('tabletop_connection') }}">zurück zu tabletop connection</a>
+{% endblock %}
+

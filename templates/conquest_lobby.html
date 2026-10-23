@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}{{ lobby.name }} · Stormseed’s Conquest{% endblock %}
+{% block shell_class %}conquest-lobby-shell{% endblock %}
+{% block header %}{% endblock %}
+{% block extra_head %}<link rel="stylesheet" href="{{ url_for('static', filename='conquest-lobby.css', v='1') }}">{% endblock %}
+{% block content %}
+  <section class="conquest-lobby-page conquest-waiting" data-conquest-lobby data-status-url="{{ url_for('conquest_status', lobby_id=lobby.id) }}" data-revision="{{ lobby.revision }}" data-member-count="{{ members|length }}">
+    <section class="conquest-lobby-hero compact"><p class="eyebrow">LOBBY OFFEN</p><h1>{{ lobby.name }}</h1><p>{{ members|length }}/6 Plätze belegt · ab 2 Personen startbereit</p></section>
+    <div class="conquest-waiting-grid">
+      <section class="conquest-lobby-panel conquest-roster">
+        <div class="conquest-panel-heading"><span>AM TISCH</span><strong>{{ members|length }}/6</strong></div>
+        <ol>{% for player in members %}<li><span>{{ loop.index }}</span><strong>{{ player.display_name }}</strong><small>{{ 'Host' if player.user_id == lobby.host_user_id else 'Mitspieler' }}</small></li>{% endfor %}</ol>
+      </section>
+      <section class="conquest-lobby-panel conquest-setup">
+        <div class="conquest-panel-heading"><span>SPIEL EINSTELLEN</span><strong>frei kombinierbar</strong></div>
+        {% if lobby.host_user_id == g.user.id %}
+          <form method="post" action="{{ url_for('conquest_start', lobby_id=lobby.id) }}" data-conquest-settings data-settings-url="{{ url_for('conquest_settings', lobby_id=lobby.id) }}">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+            <label>Brett<select name="board_style">{% for value, label in styles.items() %}<option value="{{ value }}" {% if value == lobby.board_style %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label>
+            <label>Karten<select name="card_style">{% for value, label in styles.items() %}<option value="{{ value }}" {% if value == lobby.card_style %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label>
+            <label>Figuren<select name="figure_style">{% for value, label in figures.items() %}<option value="{{ value }}" {% if value == lobby.figure_style %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label>
+            <label>Würfel<select name="dice_style">{% for value, label in dice_choices.items() %}<option value="{{ value }}" {% if value == lobby.dice_style %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label>
+            <label>Siegziel<select name="victory_mode">{% for value, label in victories.items() %}<option value="{{ value }}" {% if value == lobby.victory_mode %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label>
+            <label>Startverteilung<select name="setup_mode">{% for value, label in setups.items() %}<option value="{{ value }}" {% if value == lobby.setup_mode %}selected{% endif %}>{{ label }}{% if value == 'classic' %} · folgt{% endif %}</option>{% endfor %}</select></label>
+            <p data-conquest-autosave>Änderungen werden automatisch gespeichert.</p>
+            <button class="conquest-start" type="submit" {% if members|length < 2 %}disabled{% endif %}>Feldzug starten</button>
+          </form>
+        {% else %}
+          <dl class="conquest-choice-list"><div><dt>Brett</dt><dd>{{ styles[lobby.board_style] }}</dd></div><div><dt>Karten</dt><dd>{{ styles[lobby.card_style] }}</dd></div><div><dt>Figuren</dt><dd>{{ figures[lobby.figure_style] }}</dd></div><div><dt>Würfel</dt><dd>{{ dice_choices[lobby.dice_style] }}</dd></div><div><dt>Siegziel</dt><dd>{{ victories[lobby.victory_mode] }}</dd></div><div><dt>Verteilung</dt><dd>{{ setups[lobby.setup_mode] }}</dd></div></dl>
+          <p class="conquest-wait">Der Host startet, sobald alle am Tisch sind.</p>
+        {% endif %}
+      </section>
+    </div>
+    <section class="conquest-start-guide">
+      <h2>So beginnt die Runde</h2>
+      <ol><li>Farben und Skins werden festgelegt.</li><li>Alle 42 Gebiete erhalten Besitzer und mindestens eine Truppe.</li><li>Die übrigen Starttruppen werden verteilt; bei zwei Personen spielt zusätzlich eine neutrale Armee mit.</li><li>Ein verdeckter Würfelentscheid bestimmt die erste Person.</li><li>Der erste Zug beginnt mit Verstärken, danach Angriff und einmaligem Verschieben.</li></ol>
+    </section>
+    <form method="post" action="{{ url_for('conquest_leave', lobby_id=lobby.id) }}" class="conquest-leave"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit">Lobby verlassen</button></form>
+  </section>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='conquest-lobby.js', v='1') }}" defer></script>{% endblock %}

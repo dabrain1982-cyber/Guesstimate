@@ -4702,17 +4702,32 @@
     "primary_category": "witnesses_of_time",
     "subtopic": "Politik & Demokratie",
     "tags": {
-      "topics": ["Politik", "Demokratie", "Bundestagswahlen"],
-      "entities": ["Deutscher Bundestag", "Bundestagswahl 2025"],
+      "topics": [
+        "Politik",
+        "Demokratie",
+        "Bundestagswahlen"
+      ],
+      "entities": [
+        "Deutscher Bundestag",
+        "Bundestagswahl 2025"
+      ],
       "genres": [],
-      "regions": ["Deutschland"],
-      "eras": ["2025"]
+      "regions": [
+        "Deutschland"
+      ],
+      "eras": [
+        "2025"
+      ]
     },
     "prompt": "Wie viele Abgeordnete wurden bei der Bundestagswahl 2025 in den 21. Deutschen Bundestag gewählt?",
     "answer": 630,
     "unit": "Abgeordnete",
     "explanation": "Nach dem endgültigen Wahlergebnis umfasst der 21. Deutsche Bundestag 630 Abgeordnete. Der 2021 gewählte Bundestag hatte 735 Mitglieder – also 105 mehr.",
-    "subject_keys": ["topic:witnesses_of_time:politik-und-demokratie", "entity:deutscher-bundestag", "entity:bundestagswahl-2025"],
+    "subject_keys": [
+      "topic:witnesses_of_time:politik-und-demokratie",
+      "entity:deutscher-bundestag",
+      "entity:bundestagswahl-2025"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -4734,17 +4749,29 @@
     "primary_category": "geography_world",
     "subtopic": "Internationale Organisationen",
     "tags": {
-      "topics": ["Internationale Organisationen", "Weltpolitik"],
-      "entities": ["Vereinte Nationen"],
+      "topics": [
+        "Internationale Organisationen",
+        "Weltpolitik"
+      ],
+      "entities": [
+        "Vereinte Nationen"
+      ],
       "genres": [],
-      "regions": ["Weltweit"],
-      "eras": ["2026"]
+      "regions": [
+        "Weltweit"
+      ],
+      "eras": [
+        "2026"
+      ]
     },
     "prompt": "Wie viele Mitgliedstaaten haben die Vereinten Nationen im Oktober 2026?",
     "answer": 193,
     "unit": "Mitgliedstaaten",
     "explanation": "Die Vereinten Nationen bestehen im Oktober 2026 aus 193 Mitgliedstaaten. Bei ihrer Gründung 1945 waren es 51.",
-    "subject_keys": ["topic:geography_world:internationale-organisationen", "entity:vereinte-nationen"],
+    "subject_keys": [
+      "topic:geography_world:internationale-organisationen",
+      "entity:vereinte-nationen"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -4762,17 +4789,29 @@
     "primary_category": "geography_world",
     "subtopic": "Europäische Union",
     "tags": {
-      "topics": ["Europäische Union", "Parlamente"],
-      "entities": ["Europäisches Parlament"],
+      "topics": [
+        "Europäische Union",
+        "Parlamente"
+      ],
+      "entities": [
+        "Europäisches Parlament"
+      ],
       "genres": [],
-      "regions": ["Europäische Union"],
-      "eras": ["2024–2029"]
+      "regions": [
+        "Europäische Union"
+      ],
+      "eras": [
+        "2024–2029"
+      ]
     },
     "prompt": "Wie viele Sitze hat das Europäische Parlament in der Wahlperiode 2024 bis 2029?",
     "answer": 720,
     "unit": "Sitze",
     "explanation": "Für die Wahlperiode 2024 bis 2029 hat das Europäische Parlament 720 Sitze. Das sind 15 mehr als am Ende der vorherigen Wahlperiode.",
-    "subject_keys": ["topic:geography_world:europaeische-union", "entity:europaeisches-parlament"],
+    "subject_keys": [
+      "topic:geography_world:europaeische-union",
+      "entity:europaeisches-parlament"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -4790,17 +4829,28 @@
     "primary_category": "geography_world",
     "subtopic": "Europäische Symbole",
     "tags": {
-      "topics": ["Europäische Union", "Flaggen", "Symbole"],
-      "entities": ["Europaflagge"],
+      "topics": [
+        "Europäische Union",
+        "Flaggen",
+        "Symbole"
+      ],
+      "entities": [
+        "Europaflagge"
+      ],
       "genres": [],
-      "regions": ["Europa"],
+      "regions": [
+        "Europa"
+      ],
       "eras": []
     },
     "prompt": "Wie viele goldene Sterne zeigt die Europaflagge?",
     "answer": 12,
     "unit": "Sterne",
     "explanation": "Die Europaflagge zeigt zwölf goldene Sterne im Kreis. Ihre Zahl steht nicht für die Anzahl der EU-Mitgliedstaaten, sondern symbolisiert Einheit und Harmonie.",
-    "subject_keys": ["topic:geography_world:europaeische-symbole", "entity:europaflagge"],
+    "subject_keys": [
+      "topic:geography_world:europaeische-symbole",
+      "entity:europaflagge"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -4818,8 +4868,13 @@
     "primary_category": "science_technology",
     "subtopic": "Chemie",
     "tags": {
-      "topics": ["Chemie", "Periodensystem"],
-      "entities": ["IUPAC"],
+      "topics": [
+        "Chemie",
+        "Periodensystem"
+      ],
+      "entities": [
+        "IUPAC"
+      ],
       "genres": [],
       "regions": [],
       "eras": []
@@ -4828,7 +4883,11 @@
     "answer": 118,
     "unit": "Elemente",
     "explanation": "Das anerkannte Periodensystem umfasst 118 chemische Elemente. Es reicht von Wasserstoff mit der Ordnungszahl 1 bis Oganesson mit der Ordnungszahl 118.",
-    "subject_keys": ["topic:science_technology:chemie", "entity:periodensystem", "entity:iupac"],
+    "subject_keys": [
+      "topic:science_technology:chemie",
+      "entity:periodensystem",
+      "entity:iupac"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -4846,8 +4905,14 @@
     "primary_category": "science_technology",
     "subtopic": "Genetik",
     "tags": {
-      "topics": ["Genetik", "Menschlicher Körper"],
-      "entities": ["Chromosomen", "Mensch"],
+      "topics": [
+        "Genetik",
+        "Menschlicher Körper"
+      ],
+      "entities": [
+        "Chromosomen",
+        "Mensch"
+      ],
       "genres": [],
       "regions": [],
       "eras": []
@@ -4856,7 +4921,10 @@
     "answer": 46,
     "unit": "Chromosomen",
     "explanation": "Die meisten menschlichen Körperzellen enthalten 23 Chromosomenpaare und damit insgesamt 46 Chromosomen. Ei- und Samenzellen besitzen dagegen nur einen einfachen Satz mit 23.",
-    "subject_keys": ["topic:science_technology:genetik", "entity:menschliche-chromosomen"],
+    "subject_keys": [
+      "topic:science_technology:genetik",
+      "entity:menschliche-chromosomen"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -4874,17 +4942,31 @@
     "primary_category": "science_technology",
     "subtopic": "Raumfahrtgeschichte",
     "tags": {
-      "topics": ["Raumfahrt", "Space Shuttle"],
-      "entities": ["NASA", "Space Shuttle"],
+      "topics": [
+        "Raumfahrt",
+        "Space Shuttle"
+      ],
+      "entities": [
+        "NASA",
+        "Space Shuttle"
+      ],
       "genres": [],
-      "regions": ["USA"],
-      "eras": ["1981–2011"]
+      "regions": [
+        "USA"
+      ],
+      "eras": [
+        "1981–2011"
+      ]
     },
     "prompt": "Wie viele Missionen flog die Space-Shuttle-Flotte der NASA insgesamt?",
     "answer": 135,
     "unit": "Missionen",
     "explanation": "Zwischen dem ersten Start 1981 und der letzten Landung 2011 absolvierte die Space-Shuttle-Flotte der NASA insgesamt 135 Missionen.",
-    "subject_keys": ["topic:science_technology:raumfahrtgeschichte", "entity:nasa", "entity:space-shuttle"],
+    "subject_keys": [
+      "topic:science_technology:raumfahrtgeschichte",
+      "entity:nasa",
+      "entity:space-shuttle"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -4902,17 +4984,32 @@
     "primary_category": "science_technology",
     "subtopic": "Mondmissionen",
     "tags": {
-      "topics": ["Raumfahrt", "Mondlandungen"],
-      "entities": ["NASA", "Apollo-Programm", "Mond"],
+      "topics": [
+        "Raumfahrt",
+        "Mondlandungen"
+      ],
+      "entities": [
+        "NASA",
+        "Apollo-Programm",
+        "Mond"
+      ],
       "genres": [],
-      "regions": ["Mond"],
-      "eras": ["1969–1972"]
+      "regions": [
+        "Mond"
+      ],
+      "eras": [
+        "1969–1972"
+      ]
     },
     "prompt": "Wie viele Menschen haben bislang den Mond betreten?",
     "answer": 12,
     "unit": "Menschen",
     "explanation": "Zwölf Menschen betraten zwischen 1969 und 1972 die Mondoberfläche. Sie gehörten zu den Apollo-Missionen 11, 12, 14, 15, 16 und 17.",
-    "subject_keys": ["topic:science_technology:mondmissionen", "entity:apollo-programm", "entity:mond"],
+    "subject_keys": [
+      "topic:science_technology:mondmissionen",
+      "entity:apollo-programm",
+      "entity:mond"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -4930,17 +5027,29 @@
     "primary_category": "science_technology",
     "subtopic": "Weltraumteleskope",
     "tags": {
-      "topics": ["Astronomie", "Weltraumteleskope"],
-      "entities": ["James-Webb-Weltraumteleskop", "NASA"],
+      "topics": [
+        "Astronomie",
+        "Weltraumteleskope"
+      ],
+      "entities": [
+        "James-Webb-Weltraumteleskop",
+        "NASA"
+      ],
       "genres": [],
-      "regions": ["Weltraum"],
+      "regions": [
+        "Weltraum"
+      ],
       "eras": []
     },
     "prompt": "Aus wie vielen sechseckigen Segmenten besteht der Hauptspiegel des James-Webb-Weltraumteleskops?",
     "answer": 18,
     "unit": "Spiegelsegmente",
     "explanation": "Der Hauptspiegel des James-Webb-Weltraumteleskops besteht aus 18 sechseckigen Segmenten. Im Betrieb werden sie so ausgerichtet, dass sie wie ein einziger großer Spiegel arbeiten.",
-    "subject_keys": ["topic:science_technology:weltraumteleskope", "entity:james-webb-weltraumteleskop", "entity:nasa"],
+    "subject_keys": [
+      "topic:science_technology:weltraumteleskope",
+      "entity:james-webb-weltraumteleskop",
+      "entity:nasa"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -4958,17 +5067,30 @@
     "primary_category": "science_technology",
     "subtopic": "Teilchenphysik",
     "tags": {
-      "topics": ["Teilchenphysik", "Forschungsanlagen"],
-      "entities": ["CERN", "Large Hadron Collider"],
+      "topics": [
+        "Teilchenphysik",
+        "Forschungsanlagen"
+      ],
+      "entities": [
+        "CERN",
+        "Large Hadron Collider"
+      ],
       "genres": [],
-      "regions": ["Frankreich", "Schweiz"],
+      "regions": [
+        "Frankreich",
+        "Schweiz"
+      ],
       "eras": []
     },
     "prompt": "Wie viele Kilometer Umfang hat der Teilchenbeschleuniger Large Hadron Collider am CERN?",
     "answer": 26.659,
     "unit": "Kilometer",
     "explanation": "Der Large Hadron Collider verläuft in einem Ring mit 26.659 Metern Umfang. Das entspricht 26,659 Kilometern unter der französisch-schweizerischen Grenzregion.",
-    "subject_keys": ["topic:science_technology:teilchenphysik", "entity:cern", "entity:large-hadron-collider"],
+    "subject_keys": [
+      "topic:science_technology:teilchenphysik",
+      "entity:cern",
+      "entity:large-hadron-collider"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -4986,17 +5108,30 @@
     "primary_category": "geography_world",
     "subtopic": "Seen & Gewässer",
     "tags": {
-      "topics": ["Seen", "Naturrekorde"],
-      "entities": ["Baikalsee", "UNESCO"],
+      "topics": [
+        "Seen",
+        "Naturrekorde"
+      ],
+      "entities": [
+        "Baikalsee",
+        "UNESCO"
+      ],
       "genres": [],
-      "regions": ["Russland", "Sibirien"],
+      "regions": [
+        "Russland",
+        "Sibirien"
+      ],
       "eras": []
     },
     "prompt": "Wie tief ist der Baikalsee laut UNESCO ungefähr?",
     "answer": 1700,
     "unit": "Meter",
     "explanation": "Die UNESCO gibt die Tiefe des Baikalsees mit rund 1.700 Metern an. Damit ist er der tiefste See der Erde und enthält etwa ein Fünftel des nicht gefrorenen Oberflächen-Süßwassers.",
-    "subject_keys": ["topic:geography_world:seen-und-gewaesser", "entity:baikalsee", "entity:unesco"],
+    "subject_keys": [
+      "topic:geography_world:seen-und-gewaesser",
+      "entity:baikalsee",
+      "entity:unesco"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5014,17 +5149,30 @@
     "primary_category": "geography_world",
     "subtopic": "Wasserfälle",
     "tags": {
-      "topics": ["Wasserfälle", "Naturrekorde"],
-      "entities": ["Victoriafälle", "Sambesi"],
+      "topics": [
+        "Wasserfälle",
+        "Naturrekorde"
+      ],
+      "entities": [
+        "Victoriafälle",
+        "Sambesi"
+      ],
       "genres": [],
-      "regions": ["Sambia", "Simbabwe"],
+      "regions": [
+        "Sambia",
+        "Simbabwe"
+      ],
       "eras": []
     },
     "prompt": "Wie viele Meter breit sind die Victoriafälle am Sambesi laut UNESCO?",
     "answer": 1708,
     "unit": "Meter",
     "explanation": "Die Victoriafälle erstrecken sich über 1.708 Meter. Die UNESCO bezeichnet sie wegen dieser Breite und der Wassermenge als größten zusammenhängenden Wasservorhang der Welt.",
-    "subject_keys": ["topic:geography_world:wasserfaelle", "entity:victoriafaelle", "entity:sambesi"],
+    "subject_keys": [
+      "topic:geography_world:wasserfaelle",
+      "entity:victoriafaelle",
+      "entity:sambesi"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5042,17 +5190,29 @@
     "primary_category": "geography_world",
     "subtopic": "Meere & Riffe",
     "tags": {
-      "topics": ["Korallenriffe", "Meere"],
-      "entities": ["Great Barrier Reef"],
+      "topics": [
+        "Korallenriffe",
+        "Meere"
+      ],
+      "entities": [
+        "Great Barrier Reef"
+      ],
       "genres": [],
-      "regions": ["Australien", "Queensland"],
+      "regions": [
+        "Australien",
+        "Queensland"
+      ],
       "eras": []
     },
     "prompt": "Über wie viele Kilometer erstreckt sich das Great Barrier Reef ungefähr entlang Australiens Nordostküste?",
     "answer": 2300,
     "unit": "Kilometer",
     "explanation": "Das Great Barrier Reef erstreckt sich über ungefähr 2.300 Kilometer entlang der Küste von Queensland. Es ist das größte Korallenriff-Ökosystem der Erde.",
-    "subject_keys": ["topic:geography_world:meere-und-riffe", "entity:great-barrier-reef", "region:queensland"],
+    "subject_keys": [
+      "topic:geography_world:meere-und-riffe",
+      "entity:great-barrier-reef",
+      "region:queensland"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5070,17 +5230,28 @@
     "primary_category": "geography_world",
     "subtopic": "Kanäle & Wasserwege",
     "tags": {
-      "topics": ["Kanäle", "Schifffahrt"],
-      "entities": ["Panamakanal"],
+      "topics": [
+        "Kanäle",
+        "Schifffahrt"
+      ],
+      "entities": [
+        "Panamakanal"
+      ],
       "genres": [],
-      "regions": ["Panama"],
+      "regions": [
+        "Panama"
+      ],
       "eras": []
     },
     "prompt": "Wie lang ist der Panamakanal zwischen Atlantik und Pazifik ungefähr?",
     "answer": 80,
     "unit": "Kilometer",
     "explanation": "Die Panamakanal-Behörde gibt die Strecke zwischen Atlantik und Pazifik mit ungefähr 80 Kilometern an. Eine Durchfahrt dauert im Mittel acht bis zehn Stunden.",
-    "subject_keys": ["topic:geography_world:kanaele-und-wasserwege", "entity:panamakanal", "region:panama"],
+    "subject_keys": [
+      "topic:geography_world:kanaele-und-wasserwege",
+      "entity:panamakanal",
+      "region:panama"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5098,17 +5269,30 @@
     "primary_category": "science_technology",
     "subtopic": "Tunnel & Ingenieurbau",
     "tags": {
-      "topics": ["Tunnelbau", "Eisenbahn"],
-      "entities": ["Eurotunnel", "Ärmelkanal"],
+      "topics": [
+        "Tunnelbau",
+        "Eisenbahn"
+      ],
+      "entities": [
+        "Eurotunnel",
+        "Ärmelkanal"
+      ],
       "genres": [],
-      "regions": ["Frankreich", "Vereinigtes Königreich"],
+      "regions": [
+        "Frankreich",
+        "Vereinigtes Königreich"
+      ],
       "eras": []
     },
     "prompt": "Wie lang ist der Eisenbahntunnel unter dem Ärmelkanal insgesamt?",
     "answer": 50.45,
     "unit": "Kilometer",
     "explanation": "Der Kanaltunnel zwischen Frankreich und Großbritannien ist 50,45 Kilometer lang. Er besteht aus zwei Eisenbahnröhren und einem Servicetunnel.",
-    "subject_keys": ["topic:science_technology:tunnel-und-ingenieurbau", "entity:eurotunnel", "entity:aermelkanal"],
+    "subject_keys": [
+      "topic:science_technology:tunnel-und-ingenieurbau",
+      "entity:eurotunnel",
+      "entity:aermelkanal"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5126,17 +5310,29 @@
     "primary_category": "science_technology",
     "subtopic": "Tunnel & Ingenieurbau",
     "tags": {
-      "topics": ["Tunnelbau", "Eisenbahn"],
-      "entities": ["Gotthard-Basistunnel", "SBB"],
+      "topics": [
+        "Tunnelbau",
+        "Eisenbahn"
+      ],
+      "entities": [
+        "Gotthard-Basistunnel",
+        "SBB"
+      ],
       "genres": [],
-      "regions": ["Schweiz"],
+      "regions": [
+        "Schweiz"
+      ],
       "eras": []
     },
     "prompt": "Wie lang ist der Gotthard-Basistunnel ungefähr?",
     "answer": 57,
     "unit": "Kilometer",
     "explanation": "Der Gotthard-Basistunnel ist rund 57 Kilometer lang. Die SBB führt ihn als längsten Eisenbahntunnel der Welt.",
-    "subject_keys": ["topic:science_technology:tunnel-und-ingenieurbau", "entity:gotthard-basistunnel", "entity:sbb"],
+    "subject_keys": [
+      "topic:science_technology:tunnel-und-ingenieurbau",
+      "entity:gotthard-basistunnel",
+      "entity:sbb"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5154,17 +5350,32 @@
     "primary_category": "witnesses_of_time",
     "subtopic": "Historische Kunstwerke",
     "tags": {
-      "topics": ["Mittelalter", "Textilkunst"],
-      "entities": ["Teppich von Bayeux"],
-      "genres": ["Stickerei"],
-      "regions": ["Frankreich", "England"],
-      "eras": ["11. Jahrhundert"]
+      "topics": [
+        "Mittelalter",
+        "Textilkunst"
+      ],
+      "entities": [
+        "Teppich von Bayeux"
+      ],
+      "genres": [
+        "Stickerei"
+      ],
+      "regions": [
+        "Frankreich",
+        "England"
+      ],
+      "eras": [
+        "11. Jahrhundert"
+      ]
     },
     "prompt": "Wie lang ist der Teppich von Bayeux ungefähr?",
     "answer": 68.3,
     "unit": "Meter",
     "explanation": "Der sogenannte Teppich von Bayeux ist tatsächlich eine bestickte Leinenbahn von ungefähr 68,3 Metern Länge. Sie erzählt die Geschichte der normannischen Eroberung Englands.",
-    "subject_keys": ["topic:witnesses_of_time:historische-kunstwerke", "entity:teppich-von-bayeux"],
+    "subject_keys": [
+      "topic:witnesses_of_time:historische-kunstwerke",
+      "entity:teppich-von-bayeux"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5182,17 +5393,32 @@
     "primary_category": "witnesses_of_time",
     "subtopic": "Archäologische Funde",
     "tags": {
-      "topics": ["Archäologie", "Altes Ägypten"],
-      "entities": ["Stein von Rosetta", "British Museum"],
+      "topics": [
+        "Archäologie",
+        "Altes Ägypten"
+      ],
+      "entities": [
+        "Stein von Rosetta",
+        "British Museum"
+      ],
       "genres": [],
-      "regions": ["Ägypten", "Vereinigtes Königreich"],
-      "eras": ["196 v. Chr."]
+      "regions": [
+        "Ägypten",
+        "Vereinigtes Königreich"
+      ],
+      "eras": [
+        "196 v. Chr."
+      ]
     },
     "prompt": "Wie hoch ist der erhaltene Stein von Rosetta?",
     "answer": 112.3,
     "unit": "Zentimeter",
     "explanation": "Der erhaltene Stein von Rosetta misst maximal 112,3 Zentimeter. Seine dreisprachige Inschrift lieferte den entscheidenden Schlüssel zur Entzifferung ägyptischer Hieroglyphen.",
-    "subject_keys": ["topic:witnesses_of_time:archaeologische-funde", "entity:stein-von-rosetta", "entity:british-museum"],
+    "subject_keys": [
+      "topic:witnesses_of_time:archaeologische-funde",
+      "entity:stein-von-rosetta",
+      "entity:british-museum"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5210,17 +5436,29 @@
     "primary_category": "witnesses_of_time",
     "subtopic": "Rechtsgeschichte",
     "tags": {
-      "topics": ["Rechtsgeschichte", "Mittelalter"],
-      "entities": ["Magna Carta"],
+      "topics": [
+        "Rechtsgeschichte",
+        "Mittelalter"
+      ],
+      "entities": [
+        "Magna Carta"
+      ],
       "genres": [],
-      "regions": ["England"],
-      "eras": ["1215"]
+      "regions": [
+        "England"
+      ],
+      "eras": [
+        "1215"
+      ]
     },
     "prompt": "In wie viele Klauseln wird die Magna Carta von 1215 heute gegliedert?",
     "answer": 63,
     "unit": "Klauseln",
     "explanation": "Die Magna Carta von 1215 wird heute in 63 Klauseln gegliedert. Das ursprüngliche Dokument war allerdings als fortlaufender Text ohne diese moderne Nummerierung geschrieben.",
-    "subject_keys": ["topic:witnesses_of_time:rechtsgeschichte", "entity:magna-carta"],
+    "subject_keys": [
+      "topic:witnesses_of_time:rechtsgeschichte",
+      "entity:magna-carta"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5238,17 +5476,30 @@
     "primary_category": "witnesses_of_time",
     "subtopic": "Schifffahrtsgeschichte",
     "tags": {
-      "topics": ["Schifffahrt", "Katastrophen"],
-      "entities": ["RMS Titanic"],
+      "topics": [
+        "Schifffahrt",
+        "Katastrophen"
+      ],
+      "entities": [
+        "RMS Titanic"
+      ],
       "genres": [],
-      "regions": ["Nordatlantik"],
-      "eras": ["1912"]
+      "regions": [
+        "Nordatlantik"
+      ],
+      "eras": [
+        "1912"
+      ]
     },
     "prompt": "Wie viele Rettungsboote führte die Titanic auf ihrer Jungfernfahrt mit?",
     "answer": 20,
     "unit": "Rettungsboote",
     "explanation": "Die Titanic war mit 20 Rettungsbooten ausgerüstet. Zusammen boten sie nur ungefähr 1.178 Plätze und damit deutlich weniger als für alle Menschen an Bord nötig gewesen wären.",
-    "subject_keys": ["topic:witnesses_of_time:schifffahrtsgeschichte", "entity:rms-titanic", "topic:rettungsboote"],
+    "subject_keys": [
+      "topic:witnesses_of_time:schifffahrtsgeschichte",
+      "entity:rms-titanic",
+      "topic:rettungsboote"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5266,17 +5517,31 @@
     "primary_category": "witnesses_of_time",
     "subtopic": "Archäologische Stätten",
     "tags": {
-      "topics": ["Archäologie", "Römisches Reich"],
-      "entities": ["Pompeji", "UNESCO"],
+      "topics": [
+        "Archäologie",
+        "Römisches Reich"
+      ],
+      "entities": [
+        "Pompeji",
+        "UNESCO"
+      ],
       "genres": [],
-      "regions": ["Italien"],
-      "eras": ["79 n. Chr."]
+      "regions": [
+        "Italien"
+      ],
+      "eras": [
+        "79 n. Chr."
+      ]
     },
     "prompt": "Wie viele Hektar der antiken Stadt Pompeji sind laut UNESCO ausgegraben?",
     "answer": 44,
     "unit": "Hektar",
     "explanation": "Die UNESCO beziffert die ausgegrabene Fläche von Pompeji auf 44 Hektar. Die gesamte antike Stadt erstreckte sich über ungefähr 66 Hektar.",
-    "subject_keys": ["topic:witnesses_of_time:archaeologische-staetten", "entity:pompeji", "entity:unesco"],
+    "subject_keys": [
+      "topic:witnesses_of_time:archaeologische-staetten",
+      "entity:pompeji",
+      "entity:unesco"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5294,17 +5559,33 @@
     "primary_category": "media_entertainment",
     "subtopic": "Film & Auszeichnungen",
     "tags": {
-      "topics": ["Film", "Oscarverleihung"],
-      "entities": ["Der Herr der Ringe: Die Rückkehr des Königs", "Academy Awards"],
-      "genres": ["Fantasyfilm"],
-      "regions": ["USA"],
-      "eras": ["2004"]
+      "topics": [
+        "Film",
+        "Oscarverleihung"
+      ],
+      "entities": [
+        "Der Herr der Ringe: Die Rückkehr des Königs",
+        "Academy Awards"
+      ],
+      "genres": [
+        "Fantasyfilm"
+      ],
+      "regions": [
+        "USA"
+      ],
+      "eras": [
+        "2004"
+      ]
     },
     "prompt": "Wie viele Oscars gewann „Der Herr der Ringe: Die Rückkehr des Königs“?",
     "answer": 11,
     "unit": "Oscars",
     "explanation": "Der Film war 2004 für elf Oscars nominiert und gewann in sämtlichen elf Kategorien. Dazu gehörten Bester Film, Regie und adaptiertes Drehbuch.",
-    "subject_keys": ["topic:media_entertainment:film-und-auszeichnungen", "entity:der-herr-der-ringe-die-rueckkehr-des-koenigs", "entity:academy-awards"],
+    "subject_keys": [
+      "topic:media_entertainment:film-und-auszeichnungen",
+      "entity:der-herr-der-ringe-die-rueckkehr-des-koenigs",
+      "entity:academy-awards"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5322,17 +5603,33 @@
     "primary_category": "media_entertainment",
     "subtopic": "Filmreihen",
     "tags": {
-      "topics": ["Filmreihen", "Agentenfilme"],
-      "entities": ["James Bond", "Eon Productions"],
-      "genres": ["Agentenfilm"],
-      "regions": ["Vereinigtes Königreich"],
-      "eras": ["1962–2021"]
+      "topics": [
+        "Filmreihen",
+        "Agentenfilme"
+      ],
+      "entities": [
+        "James Bond",
+        "Eon Productions"
+      ],
+      "genres": [
+        "Agentenfilm"
+      ],
+      "regions": [
+        "Vereinigtes Königreich"
+      ],
+      "eras": [
+        "1962–2021"
+      ]
     },
     "prompt": "Wie viele offizielle James-Bond-Filme produzierte Eon Productions bis einschließlich „Keine Zeit zu sterben“?",
     "answer": 25,
     "unit": "Filme",
     "explanation": "„Keine Zeit zu sterben“ ist der 25. James-Bond-Film von Eon Productions. Die Reihe begann 1962 mit „James Bond jagt Dr. No“.",
-    "subject_keys": ["topic:media_entertainment:filmreihen", "entity:james-bond", "entity:eon-productions"],
+    "subject_keys": [
+      "topic:media_entertainment:filmreihen",
+      "entity:james-bond",
+      "entity:eon-productions"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5350,17 +5647,33 @@
     "primary_category": "media_entertainment",
     "subtopic": "Comedyserien",
     "tags": {
-      "topics": ["Fernsehserien", "Sketch-Comedy"],
-      "entities": ["Monty Python", "Monty Python’s Flying Circus"],
-      "genres": ["Comedy"],
-      "regions": ["Vereinigtes Königreich"],
-      "eras": ["1969–1974"]
+      "topics": [
+        "Fernsehserien",
+        "Sketch-Comedy"
+      ],
+      "entities": [
+        "Monty Python",
+        "Monty Python’s Flying Circus"
+      ],
+      "genres": [
+        "Comedy"
+      ],
+      "regions": [
+        "Vereinigtes Königreich"
+      ],
+      "eras": [
+        "1969–1974"
+      ]
     },
     "prompt": "Wie viele Folgen umfasst die komplette Serie „Monty Python’s Flying Circus“?",
     "answer": 45,
     "unit": "Folgen",
     "explanation": "„Monty Python’s Flying Circus“ umfasst insgesamt 45 Folgen aus vier Staffeln. Die BBC strahlte sie von 1969 bis 1974 aus.",
-    "subject_keys": ["topic:media_entertainment:comedyserien", "entity:monty-python", "entity:monty-pythons-flying-circus"],
+    "subject_keys": [
+      "topic:media_entertainment:comedyserien",
+      "entity:monty-python",
+      "entity:monty-pythons-flying-circus"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5378,17 +5691,33 @@
     "primary_category": "gaming",
     "subtopic": "Pokémon",
     "tags": {
-      "topics": ["Videospiele", "Pokédex"],
-      "entities": ["Pokémon", "Kanto"],
-      "genres": ["Rollenspiel"],
-      "regions": ["Japan"],
-      "eras": ["1996"]
+      "topics": [
+        "Videospiele",
+        "Pokédex"
+      ],
+      "entities": [
+        "Pokémon",
+        "Kanto"
+      ],
+      "genres": [
+        "Rollenspiel"
+      ],
+      "regions": [
+        "Japan"
+      ],
+      "eras": [
+        "1996"
+      ]
     },
     "prompt": "Wie viele Pokémon gehörten zur ursprünglichen ersten Generation aus der Kanto-Region?",
     "answer": 151,
     "unit": "Pokémon",
     "explanation": "Zur ursprünglichen Kanto-Generation gehören 151 Pokémon. Im Pokédex reicht sie von Bisasam mit Nummer 1 bis Mew mit Nummer 151.",
-    "subject_keys": ["topic:gaming:pokemon", "entity:pokemon", "entity:kanto"],
+    "subject_keys": [
+      "topic:gaming:pokemon",
+      "entity:pokemon",
+      "entity:kanto"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5406,17 +5735,33 @@
     "primary_category": "gaming",
     "subtopic": "Konsolengeschichte",
     "tags": {
-      "topics": ["Spielkonsolen", "Verkaufszahlen"],
-      "entities": ["PlayStation 2", "Sony"],
-      "genres": ["Videospiele"],
-      "regions": ["Weltweit"],
-      "eras": ["2000–2012"]
+      "topics": [
+        "Spielkonsolen",
+        "Verkaufszahlen"
+      ],
+      "entities": [
+        "PlayStation 2",
+        "Sony"
+      ],
+      "genres": [
+        "Videospiele"
+      ],
+      "regions": [
+        "Weltweit"
+      ],
+      "eras": [
+        "2000–2012"
+      ]
     },
     "prompt": "Wie viele Millionen PlayStation-2-Konsolen wurden laut Sony weltweit mindestens verkauft?",
     "answer": 160,
     "unit": "Millionen Konsolen",
     "explanation": "Sony nennt für die PlayStation 2 weltweit mehr als 160 Millionen ausgelieferte Konsolen. Der Referenzwert 160 Millionen ist deshalb die von Sony belegte Untergrenze.",
-    "subject_keys": ["topic:gaming:konsolengeschichte", "entity:playstation-2", "entity:sony"],
+    "subject_keys": [
+      "topic:gaming:konsolengeschichte",
+      "entity:playstation-2",
+      "entity:sony"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5434,9 +5779,18 @@
     "primary_category": "gaming",
     "subtopic": "Rennspiele",
     "tags": {
-      "topics": ["Videospiele", "Rennspiele", "Zusatzinhalte"],
-      "entities": ["Mario Kart 8 Deluxe", "Nintendo"],
-      "genres": ["Rennspiel"],
+      "topics": [
+        "Videospiele",
+        "Rennspiele",
+        "Zusatzinhalte"
+      ],
+      "entities": [
+        "Mario Kart 8 Deluxe",
+        "Nintendo"
+      ],
+      "genres": [
+        "Rennspiel"
+      ],
       "regions": [],
       "eras": []
     },
@@ -5444,7 +5798,11 @@
     "answer": 96,
     "unit": "Rennstrecken",
     "explanation": "Das Grundspiel enthält 48 Rennstrecken. Der vollständig veröffentlichte Booster-Streckenpass ergänzt weitere 48 und erhöht die Gesamtzahl damit auf 96.",
-    "subject_keys": ["topic:gaming:rennspiele", "entity:mario-kart-8-deluxe", "entity:nintendo"],
+    "subject_keys": [
+      "topic:gaming:rennspiele",
+      "entity:mario-kart-8-deluxe",
+      "entity:nintendo"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5466,9 +5824,16 @@
     "primary_category": "gaming",
     "subtopic": "Brettspiele",
     "tags": {
-      "topics": ["Brettspiele", "Spielmaterial"],
-      "entities": ["Catan"],
-      "genres": ["Strategiespiel"],
+      "topics": [
+        "Brettspiele",
+        "Spielmaterial"
+      ],
+      "entities": [
+        "Catan"
+      ],
+      "genres": [
+        "Strategiespiel"
+      ],
       "regions": [],
       "eras": []
     },
@@ -5476,7 +5841,11 @@
     "answer": 19,
     "unit": "Landschaftsfelder",
     "explanation": "Die Insel im Grundspiel Catan wird aus 19 sechseckigen Landschaftsfeldern zusammengesetzt. Durch ihre wechselnde Anordnung sieht der Spielplan nicht in jeder Partie gleich aus.",
-    "subject_keys": ["topic:gaming:brettspiele", "entity:catan", "topic:spielmaterial"],
+    "subject_keys": [
+      "topic:gaming:brettspiele",
+      "entity:catan",
+      "topic:spielmaterial"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5494,17 +5863,30 @@
     "primary_category": "gaming",
     "subtopic": "Traditionelle Strategiespiele",
     "tags": {
-      "topics": ["Brettspiele", "Spielbretter"],
-      "entities": ["Go"],
-      "genres": ["Strategiespiel"],
-      "regions": ["Ostasien"],
+      "topics": [
+        "Brettspiele",
+        "Spielbretter"
+      ],
+      "entities": [
+        "Go"
+      ],
+      "genres": [
+        "Strategiespiel"
+      ],
+      "regions": [
+        "Ostasien"
+      ],
       "eras": []
     },
     "prompt": "Wie viele Schnittpunkte hat ein normales Go-Brett mit 19 mal 19 Linien?",
     "answer": 361,
     "unit": "Schnittpunkte",
     "explanation": "Ein normales Go-Brett besitzt 19 waagerechte und 19 senkrechte Linien. Die Spielsteine werden auf deren 361 Schnittpunkte gesetzt, nicht in die Zwischenräume.",
-    "subject_keys": ["topic:gaming:traditionelle-strategiespiele", "entity:go", "topic:spielbretter"],
+    "subject_keys": [
+      "topic:gaming:traditionelle-strategiespiele",
+      "entity:go",
+      "topic:spielbretter"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5522,17 +5904,31 @@
     "primary_category": "sport",
     "subtopic": "Motorsport",
     "tags": {
-      "topics": ["Formel 1", "Motorsport"],
-      "entities": ["Großer Preis von Monaco", "Circuit de Monaco"],
+      "topics": [
+        "Formel 1",
+        "Motorsport"
+      ],
+      "entities": [
+        "Großer Preis von Monaco",
+        "Circuit de Monaco"
+      ],
       "genres": [],
-      "regions": ["Monaco"],
-      "eras": ["2026"]
+      "regions": [
+        "Monaco"
+      ],
+      "eras": [
+        "2026"
+      ]
     },
     "prompt": "Über wie viele Runden führt der Formel-1-Grand-Prix von Monaco 2026?",
     "answer": 78,
     "unit": "Runden",
     "explanation": "Der Große Preis von Monaco 2026 führt über 78 Runden. Bei einer Streckenlänge von 3,337 Kilometern ergibt das eine Renndistanz von 260,286 Kilometern.",
-    "subject_keys": ["topic:sport:motorsport", "entity:grosser-preis-von-monaco", "entity:circuit-de-monaco"],
+    "subject_keys": [
+      "topic:sport:motorsport",
+      "entity:grosser-preis-von-monaco",
+      "entity:circuit-de-monaco"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5550,17 +5946,28 @@
     "primary_category": "sport",
     "subtopic": "Tennis",
     "tags": {
-      "topics": ["Tennis", "Grand Slam"],
-      "entities": ["Wimbledon"],
+      "topics": [
+        "Tennis",
+        "Grand Slam"
+      ],
+      "entities": [
+        "Wimbledon"
+      ],
       "genres": [],
-      "regions": ["Vereinigtes Königreich"],
+      "regions": [
+        "Vereinigtes Königreich"
+      ],
       "eras": []
     },
     "prompt": "Wie viele Plätze umfasst das Hauptfeld im Damen- oder Herreneinzel von Wimbledon?",
     "answer": 128,
     "unit": "Plätze",
     "explanation": "Das Hauptfeld im Damen- und Herreneinzel von Wimbledon umfasst jeweils 128 Plätze. Wer den Titel gewinnt, benötigt deshalb sieben Siege in Folge.",
-    "subject_keys": ["topic:sport:tennis", "entity:wimbledon", "topic:grand-slam"],
+    "subject_keys": [
+      "topic:sport:tennis",
+      "entity:wimbledon",
+      "topic:grand-slam"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5578,8 +5985,13 @@
     "primary_category": "sport",
     "subtopic": "Triathlon",
     "tags": {
-      "topics": ["Triathlon", "Ausdauersport"],
-      "entities": ["Ironman"],
+      "topics": [
+        "Triathlon",
+        "Ausdauersport"
+      ],
+      "entities": [
+        "Ironman"
+      ],
       "genres": [],
       "regions": [],
       "eras": []
@@ -5588,7 +6000,11 @@
     "answer": 226,
     "unit": "Kilometer",
     "explanation": "Ein Ironman besteht aus 3,8 Kilometern Schwimmen, 180 Kilometern Radfahren und 42,2 Kilometern Laufen. Zusammen sind das 226 Kilometer.",
-    "subject_keys": ["topic:sport:triathlon", "entity:ironman", "topic:ausdauersport"],
+    "subject_keys": [
+      "topic:sport:triathlon",
+      "entity:ironman",
+      "topic:ausdauersport"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5606,17 +6022,32 @@
     "primary_category": "sport",
     "subtopic": "Olympische Spiele",
     "tags": {
-      "topics": ["Olympische Spiele", "Wettbewerbe"],
-      "entities": ["Paris 2024", "Internationales Olympisches Komitee"],
+      "topics": [
+        "Olympische Spiele",
+        "Wettbewerbe"
+      ],
+      "entities": [
+        "Paris 2024",
+        "Internationales Olympisches Komitee"
+      ],
       "genres": [],
-      "regions": ["Paris", "Frankreich"],
-      "eras": ["2024"]
+      "regions": [
+        "Paris",
+        "Frankreich"
+      ],
+      "eras": [
+        "2024"
+      ]
     },
     "prompt": "Wie viele Medaillenentscheidungen gab es bei den Olympischen Spielen 2024 in Paris?",
     "answer": 329,
     "unit": "Medaillenentscheidungen",
     "explanation": "Bei den Olympischen Spielen 2024 in Paris gab es 329 Medaillenentscheidungen in 32 Sportarten. Insgesamt nahmen 10.813 Athletinnen und Athleten teil.",
-    "subject_keys": ["topic:sport:olympische-spiele", "entity:paris-2024", "entity:internationales-olympisches-komitee"],
+    "subject_keys": [
+      "topic:sport:olympische-spiele",
+      "entity:paris-2024",
+      "entity:internationales-olympisches-komitee"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5634,17 +6065,28 @@
     "primary_category": "sport",
     "subtopic": "Baseball",
     "tags": {
-      "topics": ["Baseball", "Sportgeräte"],
-      "entities": ["Major League Baseball"],
+      "topics": [
+        "Baseball",
+        "Sportgeräte"
+      ],
+      "entities": [
+        "Major League Baseball"
+      ],
       "genres": [],
-      "regions": ["USA"],
+      "regions": [
+        "USA"
+      ],
       "eras": []
     },
     "prompt": "Wie viele Doppelstiche halten die Naht eines regulären Baseballs zusammen?",
     "answer": 108,
     "unit": "Doppelstiche",
     "explanation": "Die beiden Lederteile eines regulären Baseballs werden von 108 roten Doppelstichen zusammengehalten. Zählt man jeden einzelnen Einstich, sind es entsprechend 216.",
-    "subject_keys": ["topic:sport:baseball", "entity:major-league-baseball", "topic:sportgeraete"],
+    "subject_keys": [
+      "topic:sport:baseball",
+      "entity:major-league-baseball",
+      "topic:sportgeraete"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5662,8 +6104,13 @@
     "primary_category": "sport",
     "subtopic": "Snooker",
     "tags": {
-      "topics": ["Snooker", "Billardsport"],
-      "entities": ["WPBSA"],
+      "topics": [
+        "Snooker",
+        "Billardsport"
+      ],
+      "entities": [
+        "WPBSA"
+      ],
       "genres": [],
       "regions": [],
       "eras": []
@@ -5672,7 +6119,11 @@
     "answer": 22,
     "unit": "Kugeln",
     "explanation": "Zu Beginn liegen 15 rote Kugeln, sechs farbige Objektkugeln und die weiße Spielkugel auf dem Tisch. Das ergibt insgesamt 22 Kugeln.",
-    "subject_keys": ["topic:sport:snooker", "entity:wpbsa", "topic:billardsport"],
+    "subject_keys": [
+      "topic:sport:snooker",
+      "entity:wpbsa",
+      "topic:billardsport"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5690,17 +6141,28 @@
     "primary_category": "science_technology",
     "subtopic": "Digitale Codes",
     "tags": {
-      "topics": ["QR-Code", "Datenspeicherung"],
-      "entities": ["Denso Wave"],
+      "topics": [
+        "QR-Code",
+        "Datenspeicherung"
+      ],
+      "entities": [
+        "Denso Wave"
+      ],
       "genres": [],
-      "regions": ["Japan"],
+      "regions": [
+        "Japan"
+      ],
       "eras": []
     },
     "prompt": "Wie viele Ziffern kann ein QR-Code des verbreiteten Modells 2 höchstens speichern?",
     "answer": 7089,
     "unit": "Ziffern",
     "explanation": "Ein QR-Code des Modells 2 kann bei rein numerischen Daten maximal 7.089 Ziffern speichern. Bei Buchstaben oder Binärdaten fällt die Kapazität geringer aus.",
-    "subject_keys": ["topic:science_technology:digitale-codes", "entity:qr-code", "entity:denso-wave"],
+    "subject_keys": [
+      "topic:science_technology:digitale-codes",
+      "entity:qr-code",
+      "entity:denso-wave"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5718,8 +6180,13 @@
     "primary_category": "science_technology",
     "subtopic": "Speichermedien",
     "tags": {
-      "topics": ["Speichermedien", "Optische Datenträger"],
-      "entities": ["Blu-ray Disc"],
+      "topics": [
+        "Speichermedien",
+        "Optische Datenträger"
+      ],
+      "entities": [
+        "Blu-ray Disc"
+      ],
       "genres": [],
       "regions": [],
       "eras": []
@@ -5728,7 +6195,11 @@
     "answer": 25,
     "unit": "Gigabyte",
     "explanation": "Eine normale Blu-ray Disc mit einer Datenschicht speichert 25 Gigabyte. Eine doppellagige Disc verdoppelt die Kapazität auf 50 Gigabyte.",
-    "subject_keys": ["topic:science_technology:speichermedien", "entity:blu-ray-disc", "topic:optische-datentraeger"],
+    "subject_keys": [
+      "topic:science_technology:speichermedien",
+      "entity:blu-ray-disc",
+      "topic:optische-datentraeger"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5746,17 +6217,29 @@
     "primary_category": "human_everyday",
     "subtopic": "Geld & Zahlungsmittel",
     "tags": {
-      "topics": ["Euro", "Münzen"],
-      "entities": ["Zwei-Euro-Münze", "Europäische Zentralbank"],
+      "topics": [
+        "Euro",
+        "Münzen"
+      ],
+      "entities": [
+        "Zwei-Euro-Münze",
+        "Europäische Zentralbank"
+      ],
       "genres": [],
-      "regions": ["Euroraum"],
+      "regions": [
+        "Euroraum"
+      ],
       "eras": []
     },
     "prompt": "Wie viele Gramm wiegt eine Zwei-Euro-Münze?",
     "answer": 8.5,
     "unit": "Gramm",
     "explanation": "Eine Zwei-Euro-Münze wiegt exakt 8,5 Gramm. Sie hat einen Durchmesser von 25,75 Millimetern und ist 2,20 Millimeter dick.",
-    "subject_keys": ["topic:human_everyday:geld-und-zahlungsmittel", "entity:zwei-euro-muenze", "entity:europaeische-zentralbank"],
+    "subject_keys": [
+      "topic:human_everyday:geld-und-zahlungsmittel",
+      "entity:zwei-euro-muenze",
+      "entity:europaeische-zentralbank"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5774,17 +6257,31 @@
     "primary_category": "human_everyday",
     "subtopic": "Bücher & Kennnummern",
     "tags": {
-      "topics": ["Bücher", "Kennnummern"],
-      "entities": ["ISBN", "International ISBN Agency"],
+      "topics": [
+        "Bücher",
+        "Kennnummern"
+      ],
+      "entities": [
+        "ISBN",
+        "International ISBN Agency"
+      ],
       "genres": [],
-      "regions": ["Weltweit"],
-      "eras": ["seit 2007"]
+      "regions": [
+        "Weltweit"
+      ],
+      "eras": [
+        "seit 2007"
+      ]
     },
     "prompt": "Aus wie vielen Ziffern besteht eine ISBN seit dem 1. Januar 2007?",
     "answer": 13,
     "unit": "Ziffern",
     "explanation": "Seit dem 1. Januar 2007 besteht eine ISBN immer aus 13 Ziffern. Zuvor waren Internationale Standardbuchnummern zehnstellig.",
-    "subject_keys": ["topic:human_everyday:buecher-und-kennnummern", "entity:isbn", "entity:international-isbn-agency"],
+    "subject_keys": [
+      "topic:human_everyday:buecher-und-kennnummern",
+      "entity:isbn",
+      "entity:international-isbn-agency"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5802,17 +6299,29 @@
     "primary_category": "human_everyday",
     "subtopic": "Lebensmittelherstellung",
     "tags": {
-      "topics": ["Käse", "Reifung", "Lebensmittelherstellung"],
-      "entities": ["Parmigiano Reggiano"],
+      "topics": [
+        "Käse",
+        "Reifung",
+        "Lebensmittelherstellung"
+      ],
+      "entities": [
+        "Parmigiano Reggiano"
+      ],
       "genres": [],
-      "regions": ["Italien"],
+      "regions": [
+        "Italien"
+      ],
       "eras": []
     },
     "prompt": "Wie viele Monate muss Parmigiano Reggiano mindestens reifen?",
     "answer": 12,
     "unit": "Monate",
     "explanation": "Parmigiano Reggiano muss mindestens zwölf Monate reifen. Viele im Handel angebotene Laibe sind 24 bis 36 Monate alt; eine festgelegte Höchstreifezeit gibt es nicht.",
-    "subject_keys": ["topic:human_everyday:lebensmittelherstellung", "entity:parmigiano-reggiano", "topic:kaesereifung"],
+    "subject_keys": [
+      "topic:human_everyday:lebensmittelherstellung",
+      "entity:parmigiano-reggiano",
+      "topic:kaesereifung"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5830,17 +6339,30 @@
     "primary_category": "human_everyday",
     "subtopic": "Getränke & Herstellung",
     "tags": {
-      "topics": ["Champagner", "Getränkeherstellung", "Druck"],
-      "entities": ["Comité Champagne"],
+      "topics": [
+        "Champagner",
+        "Getränkeherstellung",
+        "Druck"
+      ],
+      "entities": [
+        "Comité Champagne"
+      ],
       "genres": [],
-      "regions": ["Champagne", "Frankreich"],
+      "regions": [
+        "Champagne",
+        "Frankreich"
+      ],
       "eras": []
     },
     "prompt": "Wie hoch ist der Druck in einer Champagnerflasche bei 20 Grad Celsius ungefähr?",
     "answer": 6,
     "unit": "Bar",
     "explanation": "Das Comité Champagne nennt bei 20 Grad Celsius einen Druck von ungefähr sechs Bar. Das ist etwa dreimal so viel wie der Druck in einem Autoreifen.",
-    "subject_keys": ["topic:human_everyday:getraenke-und-herstellung", "entity:champagner", "entity:comite-champagne"],
+    "subject_keys": [
+      "topic:human_everyday:getraenke-und-herstellung",
+      "entity:champagner",
+      "entity:comite-champagne"
+    ],
     "source": {
       "status": "verified",
       "verified_on": "2026-10-08",
@@ -5848,6 +6370,2333 @@
         {
           "title": "Comité Champagne: The Champagne Making Process",
           "url": "https://www.champagne.fr/system/files/2023-06/Fiches_Elaboration_Champagne_EN.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es225",
+    "question_type": "estimate",
+    "primary_category": "music",
+    "subtopic": "Musik im Weltraum",
+    "tags": {
+      "topics": [
+        "Voyager Golden Record",
+        "Musikauswahl",
+        "Raumfahrt"
+      ],
+      "entities": [
+        "NASA",
+        "Voyager Golden Record"
+      ],
+      "genres": [],
+      "regions": [
+        "Weltraum"
+      ],
+      "eras": [
+        "1977"
+      ]
+    },
+    "prompt": "Wie viele Minuten Musik enthält die Voyager Golden Record laut NASA?",
+    "answer": 90,
+    "unit": "Minuten",
+    "explanation": "Die vergoldete Schallplatte an Voyager 1 und 2 enthält eine 90-minütige Musikauswahl aus verschiedenen Kulturen und Epochen.",
+    "subject_keys": [
+      "topic:music:voyager-golden-record",
+      "entity:nasa",
+      "entity:voyager-golden-record"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "NASA: Golden Record Contents",
+          "url": "https://science.nasa.gov/mission/voyager/golden-record-contents/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es226",
+    "question_type": "estimate",
+    "primary_category": "gaming",
+    "subtopic": "Spielzeit & Tageszyklus",
+    "tags": {
+      "topics": [
+        "Minecraft",
+        "Tageszyklus",
+        "Spielmechanik"
+      ],
+      "entities": [
+        "Minecraft",
+        "Mojang"
+      ],
+      "genres": [
+        "Sandbox"
+      ],
+      "regions": [
+        "International"
+      ],
+      "eras": [
+        "Gegenwart"
+      ]
+    },
+    "prompt": "Wie viele reale Minuten dauert ein vollständiger Tag in Minecraft?",
+    "answer": 20,
+    "unit": "Minuten",
+    "explanation": "Ein vollständiger Minecraft-Tag umfasst 24.000 Spielticks und dauert 20 Minuten realer Spielzeit.",
+    "subject_keys": [
+      "topic:gaming:minecraft-tageszyklus",
+      "entity:minecraft",
+      "subject:24000-spielticks"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Minecraft Education: Coding with Minecraft – Adjust Time",
+          "url": "https://education.minecraft.net/lessonsupportfiles/8325548264145603-Coding%20with%20Minecraft_Unit%206_Functions.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es227",
+    "question_type": "estimate",
+    "primary_category": "sport",
+    "subtopic": "Basketball & Spielfeldmaße",
+    "tags": {
+      "topics": [
+        "Basketball",
+        "Korbhöhe",
+        "Sportregeln"
+      ],
+      "entities": [
+        "FIBA"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": [
+        "Regelstand 2026"
+      ]
+    },
+    "prompt": "Wie hoch hängt ein Basketballkorb nach FIBA-Regeln über dem Spielfeld?",
+    "answer": 3.05,
+    "unit": "Meter",
+    "explanation": "Die Oberkante des Rings liegt nach den internationalen Basketballregeln 3,05 Meter über dem Boden.",
+    "subject_keys": [
+      "topic:sport:basketball-korbhoehe",
+      "entity:fiba",
+      "subject:hoehe-des-basketballrings"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "FIBA: Official Basketball Rules 2026",
+          "url": "https://about.fiba.basketball/en/services/resource-hub/downloads"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es228",
+    "question_type": "estimate",
+    "primary_category": "sport",
+    "subtopic": "Curling & Sportgerät",
+    "tags": {
+      "topics": [
+        "Curling",
+        "Curlingstein",
+        "Wintersport"
+      ],
+      "entities": [
+        "Olympische Spiele"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    },
+    "prompt": "Wie viele Kilogramm wiegt ein olympischer Curlingstein laut IOC-Unterlagen?",
+    "answer": 19.96,
+    "unit": "Kilogramm",
+    "explanation": "Die Olympia-Unterlagen nennen für den beim Curling gespielten Stein ein Gewicht von 19,96 Kilogramm.",
+    "subject_keys": [
+      "topic:sport:gewicht-eines-curlingsteins",
+      "entity:curlingstein",
+      "entity:ioc"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "IOC Olympic Library: Sochi 2014 Ticket Sales Guide – Curling",
+          "url": "https://library.olympics.com/digitalCollection/DigitalCollectionAttachmentDownloadHandler.ashx?documentId=161101&parentDocumentId=56870&skipCopyright=true&skipWatermark=true"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es229",
+    "question_type": "estimate",
+    "primary_category": "gaming",
+    "subtopic": "LEGO & Spielfiguren",
+    "tags": {
+      "topics": [
+        "LEGO",
+        "Minifigur",
+        "Bausteinsystem"
+      ],
+      "entities": [
+        "LEGO Minifigur",
+        "LEGO Group"
+      ],
+      "genres": [
+        "Konstruktionsspielzeug"
+      ],
+      "regions": [
+        "Dänemark",
+        "International"
+      ],
+      "eras": [
+        "seit 1978"
+      ]
+    },
+    "prompt": "Wie viele aufeinandergesetzte normale LEGO-Steine ist eine Minifigur ohne Haare oder Kopfbedeckung hoch?",
+    "answer": 4,
+    "unit": "LEGO-Steine",
+    "explanation": "Ohne Haare oder Kopfbedeckung ist eine klassische LEGO-Minifigur genau so hoch wie vier aufeinandergesetzte Standardsteine.",
+    "subject_keys": [
+      "topic:gaming:lego-minifigur-proportionen",
+      "entity:lego-minifigur",
+      "entity:lego-group"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "LEGO: Little Figure, Big Story",
+          "url": "https://www.lego.com/en-us/aboutus/news/2019/october/minifigure-40"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es230",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Nobelpreis & Auszeichnungen",
+    "tags": {
+      "topics": [
+        "Nobelpreis",
+        "Medaille",
+        "Gold"
+      ],
+      "entities": [
+        "Nobelstiftung",
+        "Nobelpreismedaille"
+      ],
+      "genres": [],
+      "regions": [
+        "Schweden",
+        "Norwegen"
+      ],
+      "eras": [
+        "Gegenwart"
+      ]
+    },
+    "prompt": "Wie viele Karat hat das recycelte Gold der heutigen Nobelpreismedaillen?",
+    "answer": 18,
+    "unit": "Karat",
+    "explanation": "Die Nobelstiftung lässt die Medaillen heute in Handarbeit aus recyceltem Gold mit 18 Karat herstellen.",
+    "subject_keys": [
+      "topic:witnesses_of_time:nobelpreismedaillen",
+      "entity:nobelstiftung",
+      "subject:18-karat-gold"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Nobel Prize: Nobel Prize facts",
+          "url": "https://www.nobelprize.org/prizes/lists/nobel-prize-facts/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es231",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Berlin & Bauwerke",
+    "tags": {
+      "topics": [
+        "Berliner Fernsehturm",
+        "Treppen",
+        "Bauwerke"
+      ],
+      "entities": [
+        "Berliner Fernsehturm"
+      ],
+      "genres": [],
+      "regions": [
+        "Berlin",
+        "Deutschland"
+      ],
+      "eras": [
+        "Gegenwart"
+      ]
+    },
+    "prompt": "Wie viele Stufen umfasst das Treppenhaus des Berliner Fernsehturms?",
+    "answer": 986,
+    "unit": "Stufen",
+    "explanation": "Das Treppenhaus des Berliner Fernsehturms umfasst 986 Stufen. Es ist nur für Notfälle und Servicepersonal vorgesehen.",
+    "subject_keys": [
+      "topic:geography_world:berliner-fernsehturm",
+      "entity:berliner-fernsehturm",
+      "subject:treppenhaus"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Berliner Fernsehturm: FAQ",
+          "url": "https://tv-turm.de/faqs/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es232",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Bundestag & Reichstagsgebäude",
+    "tags": {
+      "topics": [
+        "Bundestagsadler",
+        "Reichstagsgebäude",
+        "Parlamentskunst"
+      ],
+      "entities": [
+        "Bundestagsadler",
+        "Norman Foster",
+        "Ludwig Gies"
+      ],
+      "genres": [],
+      "regions": [
+        "Berlin",
+        "Deutschland"
+      ],
+      "eras": [
+        "1999"
+      ]
+    },
+    "prompt": "Wie viele Tonnen wiegt der große Bundesadler im Plenarsaal des Bundestages ungefähr?",
+    "answer": 2.5,
+    "unit": "Tonnen",
+    "explanation": "Der aus vier Aluminiumschichten bestehende Adler hat 58 Quadratmeter Fläche und wiegt ungefähr 2,5 Tonnen.",
+    "subject_keys": [
+      "topic:witnesses_of_time:bundestagsadler",
+      "entity:bundestagsadler",
+      "entity:reichstagsgebaeude"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Deutscher Bundestag: Norman Foster",
+          "url": "https://www.bundestag.de/blueprint/servlet/en/visittheBundestag/art/artists/foster_inhalt-369938"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es233",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Genetik & Zellbiologie",
+    "tags": {
+      "topics": [
+        "DNA",
+        "Genom",
+        "Zellkern"
+      ],
+      "entities": [
+        "menschliche DNA",
+        "NHGRI"
+      ],
+      "genres": [],
+      "regions": [
+        "Menschlicher Körper"
+      ],
+      "eras": []
+    },
+    "prompt": "Wie viele Meter lang wäre die DNA aus dem Zellkern einer menschlichen Körperzelle ausgestreckt ungefähr?",
+    "answer": 2,
+    "unit": "Meter",
+    "explanation": "Die DNA eines menschlichen Zellkerns wäre ausgestreckt ungefähr zwei Meter lang, obwohl der Zellkern nur mikroskopisch klein ist.",
+    "subject_keys": [
+      "topic:science_technology:dna-verpackung",
+      "entity:menschliche-dna",
+      "subject:dna-laenge-pro-zelle"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "National Human Genome Research Institute: 10 Years of the Human Genome",
+          "url": "https://www.genome.gov/Pages/About/Planning/Symposium2011AgendaPowerpoints/Bernstein-10yearsHumanGenome.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es235",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Bahnhöfe & Infrastruktur",
+    "tags": {
+      "topics": [
+        "Bahnhöfe",
+        "Bahnsteige",
+        "Rekorde"
+      ],
+      "entities": [
+        "Essen Hauptbahnhof",
+        "Deutsche Bahn"
+      ],
+      "genres": [],
+      "regions": [
+        "Essen",
+        "Deutschland"
+      ],
+      "eras": [
+        "Gegenwart"
+      ]
+    },
+    "prompt": "Wie viele Meter lang ist Deutschlands längster Bahnsteig am Essener Hauptbahnhof laut Deutscher Bahn?",
+    "answer": 667,
+    "unit": "Meter",
+    "explanation": "Der Bahnsteig an den Gleisen 4 und 6 in Essen ist 667 Meter lang und wird von der Deutschen Bahn als längster Bahnsteig Deutschlands bezeichnet.",
+    "subject_keys": [
+      "topic:geography_world:deutsche-bahnhoefe",
+      "entity:essen-hauptbahnhof",
+      "subject:laengster-bahnsteig-deutschlands"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Deutsche Bahn: Top 10 der NRW-Bahnhöfe",
+          "url": "https://www-ecm-pu.deutschebahn.com/de/presse/presse-regional/pr-duesseldorf-de/DB-in-NRW/Top-10-der-NRW-Bahnhoefe-11276958"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es500",
+    "question_type": "estimate",
+    "prompt": "Wie viele Felder ist das klassische Tetris-Spielfeld breit?",
+    "answer": 10,
+    "unit": "Felder",
+    "explanation": "Das sichtbare Standard-Spielfeld ist zehn Felder breit.",
+    "subject_keys": [
+      "topic:gaming:tetris-spielfeld",
+      "fact:estimate:500"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Tetris: About Tetris",
+          "url": "https://tetris.com/about"
+        }
+      ]
+    },
+    "primary_category": "gaming",
+    "subtopic": "Tetris-Spielfeld",
+    "tags": {
+      "topics": [
+        "Tetris-Spielfeld"
+      ],
+      "entities": [
+        "Tetris-Spielfeld"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es501",
+    "question_type": "estimate",
+    "prompt": "Wie viele kleine Punkte liegen im ursprünglichen Pac-Man-Labyrinth?",
+    "answer": 240,
+    "unit": "Punkte",
+    "explanation": "Das klassische Labyrinth enthält 240 kleine Pellets plus vier Energiekugeln.",
+    "subject_keys": [
+      "topic:gaming:pac-man-punkte",
+      "fact:estimate:501"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "The Strong: World Video Game Hall of Fame",
+          "url": "https://www.strongmuseum.org/exhibits/world-video-game-hall-of-fame/"
+        }
+      ]
+    },
+    "primary_category": "gaming",
+    "subtopic": "Pac-Man-Punkte",
+    "tags": {
+      "topics": [
+        "Pac-Man-Punkte"
+      ],
+      "entities": [
+        "Pac-Man-Punkte"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es502",
+    "question_type": "estimate",
+    "prompt": "Wie viele Blöcke passen bei den meisten Blockarten in einen Minecraft-Stapel?",
+    "answer": 64,
+    "unit": "Blöcke",
+    "explanation": "Die übliche maximale Stapelgröße beträgt 64.",
+    "subject_keys": [
+      "topic:gaming:minecraft-stapel",
+      "fact:estimate:502"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Minecraft: About Minecraft",
+          "url": "https://www.minecraft.net/en-us/about-minecraft"
+        }
+      ]
+    },
+    "primary_category": "gaming",
+    "subtopic": "Minecraft-Stapel",
+    "tags": {
+      "topics": [
+        "Minecraft-Stapel"
+      ],
+      "entities": [
+        "Minecraft-Stapel"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es503",
+    "question_type": "estimate",
+    "prompt": "Wie viele Felder hat ein gewöhnliches Schachbrett?",
+    "answer": 64,
+    "unit": "Felder",
+    "explanation": "Acht mal acht Felder ergeben 64.",
+    "subject_keys": [
+      "topic:gaming:schachbrett",
+      "fact:estimate:503"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "The Strong: World Video Game Hall of Fame",
+          "url": "https://www.strongmuseum.org/exhibits/world-video-game-hall-of-fame/"
+        }
+      ]
+    },
+    "primary_category": "gaming",
+    "subtopic": "Schachbrett",
+    "tags": {
+      "topics": [
+        "Schachbrett"
+      ],
+      "entities": [
+        "Schachbrett"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es504",
+    "question_type": "estimate",
+    "prompt": "Wie viele Monopoly-Dollar Startgeld erhält jeder Spieler in der US-Klassikversion?",
+    "answer": 1500,
+    "unit": "Monopoly-Dollar",
+    "explanation": "Die klassische US-Ausgabe verteilt 1.500 Monopoly-Dollar pro Person.",
+    "subject_keys": [
+      "topic:gaming:monopoly-startgeld",
+      "fact:estimate:504"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "The Strong: World Video Game Hall of Fame",
+          "url": "https://www.strongmuseum.org/exhibits/world-video-game-hall-of-fame/"
+        }
+      ]
+    },
+    "primary_category": "gaming",
+    "subtopic": "Monopoly-Startgeld",
+    "tags": {
+      "topics": [
+        "Monopoly-Startgeld"
+      ],
+      "entities": [
+        "Monopoly-Startgeld"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es510",
+    "question_type": "estimate",
+    "prompt": "Wie viele Hertz hat der international gebräuchliche Kammerton a′?",
+    "answer": 440,
+    "unit": "Hertz",
+    "explanation": "Für die Standardstimmung wird der Kammerton a′ üblicherweise auf 440 Hertz gesetzt.",
+    "subject_keys": [
+      "topic:music:kammerton",
+      "fact:estimate:510"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Musical instrument",
+          "url": "https://www.britannica.com/art/musical-instrument"
+        }
+      ]
+    },
+    "primary_category": "music",
+    "subtopic": "Kammerton",
+    "tags": {
+      "topics": [
+        "Kammerton"
+      ],
+      "entities": [
+        "Kammerton"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es511",
+    "question_type": "estimate",
+    "prompt": "Wie viele Titel enthält die britische Originalausgabe des Beatles-Albums Abbey Road?",
+    "answer": 17,
+    "unit": "Titel",
+    "explanation": "Die ursprüngliche Trackliste umfasst 17 Titel.",
+    "subject_keys": [
+      "topic:music:abbey-road",
+      "fact:estimate:511"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Rock & Roll Hall of Fame: Inductees",
+          "url": "https://rockhall.com/inductees/"
+        }
+      ]
+    },
+    "primary_category": "music",
+    "subtopic": "Abbey Road",
+    "tags": {
+      "topics": [
+        "Abbey Road"
+      ],
+      "entities": [
+        "Abbey Road"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es512",
+    "question_type": "estimate",
+    "prompt": "Wie viele grundlegende Zugpositionen hat eine gewöhnliche Tenorposaune?",
+    "answer": 7,
+    "unit": "Positionen",
+    "explanation": "Der Posaunenzug wird in sieben Grundpositionen gespielt.",
+    "subject_keys": [
+      "topic:music:posaunenzug",
+      "fact:estimate:512"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Musical instrument",
+          "url": "https://www.britannica.com/art/musical-instrument"
+        }
+      ]
+    },
+    "primary_category": "music",
+    "subtopic": "Posaunenzug",
+    "tags": {
+      "topics": [
+        "Posaunenzug"
+      ],
+      "entities": [
+        "Posaunenzug"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es513",
+    "question_type": "estimate",
+    "prompt": "Wie viele Ventile hat eine gewöhnliche moderne Trompete?",
+    "answer": 3,
+    "unit": "Ventile",
+    "explanation": "Die Standardtrompete besitzt drei Ventile.",
+    "subject_keys": [
+      "topic:music:trompetenventile",
+      "fact:estimate:513"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Musical instrument",
+          "url": "https://www.britannica.com/art/musical-instrument"
+        }
+      ]
+    },
+    "primary_category": "music",
+    "subtopic": "Trompetenventile",
+    "tags": {
+      "topics": [
+        "Trompetenventile"
+      ],
+      "entities": [
+        "Trompetenventile"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es514",
+    "question_type": "estimate",
+    "prompt": "Wie viele Sekunden entsprechen der Titeldauer von John Cages 4′33″?",
+    "answer": 273,
+    "unit": "Sekunden",
+    "explanation": "Vier Minuten und 33 Sekunden sind 273 Sekunden.",
+    "subject_keys": [
+      "topic:music:cage-dauer",
+      "fact:estimate:514"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "John Cage Trust: 4′33″",
+          "url": "https://johncage.org/apps"
+        }
+      ]
+    },
+    "primary_category": "music",
+    "subtopic": "Cage-Dauer",
+    "tags": {
+      "topics": [
+        "Cage-Dauer"
+      ],
+      "entities": [
+        "Cage-Dauer"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es515",
+    "question_type": "estimate",
+    "prompt": "Wie viele Meter ist der Strafstoßpunkt im Fußball von der Torlinie entfernt?",
+    "answer": 11,
+    "unit": "Meter",
+    "explanation": "Der Strafstoßpunkt liegt elf Meter von der Mitte der Torlinie entfernt.",
+    "subject_keys": [
+      "topic:sport:elfmeterpunkt",
+      "fact:estimate:515"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "IFAB: Laws of the Game",
+          "url": "https://theifab.com/"
+        }
+      ]
+    },
+    "primary_category": "sport",
+    "subtopic": "Elfmeterpunkt",
+    "tags": {
+      "topics": [
+        "Elfmeterpunkt"
+      ],
+      "entities": [
+        "Elfmeterpunkt"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es516",
+    "question_type": "estimate",
+    "prompt": "Wie viele Meter lang ist ein FIBA-Basketballfeld?",
+    "answer": 28,
+    "unit": "Meter",
+    "explanation": "Das FIBA-Spielfeld misst 28 mal 15 Meter.",
+    "subject_keys": [
+      "topic:sport:basketballfeld",
+      "fact:estimate:516"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "FIBA: Official Basketball Rules",
+          "url": "https://refereeing.fiba.basketball/en/rules"
+        }
+      ]
+    },
+    "primary_category": "sport",
+    "subtopic": "Basketballfeld",
+    "tags": {
+      "topics": [
+        "Basketballfeld"
+      ],
+      "entities": [
+        "Basketballfeld"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es517",
+    "question_type": "estimate",
+    "prompt": "Wie hoch ist ein Tennisnetz in der Mitte?",
+    "answer": 0.914,
+    "unit": "Meter",
+    "explanation": "In der Mitte wird das Netz auf 0,914 Meter gehalten.",
+    "subject_keys": [
+      "topic:sport:tennisnetz",
+      "fact:estimate:517"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "ITF: Rules and regulations",
+          "url": "https://www.itftennis.com/en/about-us/governance/rules-and-regulations/"
+        }
+      ]
+    },
+    "primary_category": "sport",
+    "subtopic": "Tennisnetz",
+    "tags": {
+      "topics": [
+        "Tennisnetz"
+      ],
+      "entities": [
+        "Tennisnetz"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es518",
+    "question_type": "estimate",
+    "prompt": "Wie viele Meter breit ist ein olympisches Wettkampfbecken üblicherweise?",
+    "answer": 25,
+    "unit": "Meter",
+    "explanation": "Das Langbahnbecken misst üblicherweise 50 mal 25 Meter.",
+    "subject_keys": [
+      "topic:sport:olympiabecken",
+      "fact:estimate:518"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Olympics: Sports",
+          "url": "https://www.olympics.com/en/sports/"
+        }
+      ]
+    },
+    "primary_category": "sport",
+    "subtopic": "Olympiabecken",
+    "tags": {
+      "topics": [
+        "Olympiabecken"
+      ],
+      "entities": [
+        "Olympiabecken"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es519",
+    "question_type": "estimate",
+    "prompt": "Wie viele Meter breit ist ein Fußballtor zwischen den Pfosten?",
+    "answer": 7.32,
+    "unit": "Meter",
+    "explanation": "Der Abstand zwischen den Innenkanten der Pfosten beträgt 7,32 Meter.",
+    "subject_keys": [
+      "topic:sport:fussballtor",
+      "fact:estimate:519"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "IFAB: Laws of the Game",
+          "url": "https://theifab.com/"
+        }
+      ]
+    },
+    "primary_category": "sport",
+    "subtopic": "Fußballtor",
+    "tags": {
+      "topics": [
+        "Fußballtor"
+      ],
+      "entities": [
+        "Fußballtor"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es520",
+    "question_type": "estimate",
+    "prompt": "Wie hoch ist der Stein von Rosette ungefähr?",
+    "answer": 112.3,
+    "unit": "Zentimeter",
+    "explanation": "Der erhaltene Stein ist rund 112,3 Zentimeter hoch.",
+    "subject_keys": [
+      "topic:witnesses_of_time:rosetta-abmessung",
+      "fact:estimate:520"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "British Museum: The Rosetta Stone",
+          "url": "https://www.britishmuseum.org/blog/everything-you-ever-wanted-know-about-rosetta-stone"
+        }
+      ]
+    },
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Rosetta-Abmessung",
+    "tags": {
+      "topics": [
+        "Rosetta-Abmessung"
+      ],
+      "entities": [
+        "Rosetta-Abmessung"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es521",
+    "question_type": "estimate",
+    "prompt": "Wie viele Zeilen stehen auf einer voll gesetzten Seite der Gutenberg-Bibel gewöhnlich?",
+    "answer": 42,
+    "unit": "Zeilen",
+    "explanation": "Die berühmte Ausgabe wird deshalb auch 42-zeilige Bibel genannt.",
+    "subject_keys": [
+      "topic:witnesses_of_time:gutenberg-bibel",
+      "fact:estimate:521"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: History of Europe",
+          "url": "https://www.britannica.com/topic/history-of-Europe"
+        }
+      ]
+    },
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Gutenberg-Bibel",
+    "tags": {
+      "topics": [
+        "Gutenberg-Bibel"
+      ],
+      "entities": [
+        "Gutenberg-Bibel"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es522",
+    "question_type": "estimate",
+    "prompt": "Wie viele Meter lang ist die gedruckte Rolle des Diamant-Sutra ungefähr?",
+    "answer": 5,
+    "unit": "Meter",
+    "explanation": "Die aus mehreren Papierblättern geklebte Rolle ist etwa fünf Meter lang.",
+    "subject_keys": [
+      "topic:witnesses_of_time:diamant-sutra",
+      "fact:estimate:522"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: History of Europe",
+          "url": "https://www.britannica.com/topic/history-of-Europe"
+        }
+      ]
+    },
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Diamant-Sutra",
+    "tags": {
+      "topics": [
+        "Diamant-Sutra"
+      ],
+      "entities": [
+        "Diamant-Sutra"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es523",
+    "question_type": "estimate",
+    "prompt": "Wie viele Kilometer lang waren die Grenzanlagen um West-Berlin ungefähr?",
+    "answer": 155,
+    "unit": "Kilometer",
+    "explanation": "Die Anlagen um West-Berlin erstreckten sich über rund 155 Kilometer.",
+    "subject_keys": [
+      "topic:witnesses_of_time:berliner-mauer",
+      "fact:estimate:523"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: History of Europe",
+          "url": "https://www.britannica.com/topic/history-of-Europe"
+        }
+      ]
+    },
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Berliner Mauer",
+    "tags": {
+      "topics": [
+        "Berliner Mauer"
+      ],
+      "entities": [
+        "Berliner Mauer"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es524",
+    "question_type": "estimate",
+    "prompt": "Wie viele Stunden dauerte die Apollo-11-Mission ungefähr?",
+    "answer": 195,
+    "unit": "Stunden",
+    "explanation": "Vom Start bis zur Wasserung vergingen gut acht Tage beziehungsweise rund 195 Stunden.",
+    "subject_keys": [
+      "topic:witnesses_of_time:apollo-11-dauer",
+      "fact:estimate:524"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "NASA: Missions",
+          "url": "https://www.nasa.gov/missions/"
+        }
+      ]
+    },
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Apollo-11-Dauer",
+    "tags": {
+      "topics": [
+        "Apollo-11-Dauer"
+      ],
+      "entities": [
+        "Apollo-11-Dauer"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es525",
+    "question_type": "estimate",
+    "prompt": "Wie hoch ist eine Oscar-Statuette ungefähr?",
+    "answer": 34.3,
+    "unit": "Zentimeter",
+    "explanation": "Die Academy nennt eine Höhe von 13,5 Zoll, also etwa 34,3 Zentimetern.",
+    "subject_keys": [
+      "topic:media_entertainment:oscar-statuette",
+      "fact:estimate:525"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Academy Awards: Ceremonies",
+          "url": "https://www.oscars.org/oscars/ceremonies"
+        }
+      ]
+    },
+    "primary_category": "media_entertainment",
+    "subtopic": "Oscar-Statuette",
+    "tags": {
+      "topics": [
+        "Oscar-Statuette"
+      ],
+      "entities": [
+        "Oscar-Statuette"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es526",
+    "question_type": "estimate",
+    "prompt": "Wie viele James-Bond-Romane schrieb Ian Fleming?",
+    "answer": 12,
+    "unit": "Romane",
+    "explanation": "Ian Fleming schrieb zwölf Bond-Romane; hinzu kamen zwei Sammlungen mit Kurzgeschichten.",
+    "subject_keys": [
+      "topic:media_entertainment:bond-romane",
+      "fact:estimate:526"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Ian Fleming",
+          "url": "https://www.britannica.com/biography/Ian-Fleming"
+        }
+      ]
+    },
+    "primary_category": "media_entertainment",
+    "subtopic": "Bond-Romane",
+    "tags": {
+      "topics": [
+        "Bond-Romane"
+      ],
+      "entities": [
+        "Bond-Romane"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es527",
+    "question_type": "estimate",
+    "prompt": "Wie viele Minuten dauert der erste Toy Story ungefähr?",
+    "answer": 81,
+    "unit": "Minuten",
+    "explanation": "Der Kinofilm hat eine Laufzeit von rund 81 Minuten.",
+    "subject_keys": [
+      "topic:media_entertainment:toy-story-laufzeit",
+      "fact:estimate:527"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Pixar: Our Story",
+          "url": "https://www.pixar.com/our-story"
+        }
+      ]
+    },
+    "primary_category": "media_entertainment",
+    "subtopic": "Toy-Story-Laufzeit",
+    "tags": {
+      "topics": [
+        "Toy-Story-Laufzeit"
+      ],
+      "entities": [
+        "Toy-Story-Laufzeit"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es528",
+    "question_type": "estimate",
+    "prompt": "Wie viele Bilder pro Sekunde sind im Tonfilm-Kino traditionell Standard?",
+    "answer": 24,
+    "unit": "Bilder pro Sekunde",
+    "explanation": "Mit dem Tonfilm setzte sich 24 Bilder pro Sekunde als Kinostandard durch.",
+    "subject_keys": [
+      "topic:media_entertainment:kinobildrate",
+      "fact:estimate:528"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Academy Awards: Ceremonies",
+          "url": "https://www.oscars.org/oscars/ceremonies"
+        }
+      ]
+    },
+    "primary_category": "media_entertainment",
+    "subtopic": "Kinobildrate",
+    "tags": {
+      "topics": [
+        "Kinobildrate"
+      ],
+      "entities": [
+        "Kinobildrate"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es529",
+    "question_type": "estimate",
+    "prompt": "In welchem Jahr wurden die ersten Emmy Awards verliehen?",
+    "answer": 1949,
+    "unit": "Jahr",
+    "explanation": "Die erste Emmy-Verleihung fand 1949 statt.",
+    "subject_keys": [
+      "topic:media_entertainment:emmy-start",
+      "fact:estimate:529"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Television Academy: History",
+          "url": "https://www.televisionacademy.com/academy/about/history"
+        }
+      ]
+    },
+    "primary_category": "media_entertainment",
+    "subtopic": "Emmy-Start",
+    "tags": {
+      "topics": [
+        "Emmy-Start"
+      ],
+      "entities": [
+        "Emmy-Start"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es530",
+    "question_type": "estimate",
+    "prompt": "Wie viele Arme besitzt ein Krake?",
+    "answer": 8,
+    "unit": "Arme",
+    "explanation": "Kraken gehören zu den Achtarmigen Tintenfischen und besitzen acht Arme.",
+    "subject_keys": [
+      "topic:plants_animals:krakenarme",
+      "fact:estimate:530"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "NOAA Ocean Service: Ocean facts",
+          "url": "https://oceanservice.noaa.gov/facts/"
+        }
+      ]
+    },
+    "primary_category": "plants_animals",
+    "subtopic": "Krakenarme",
+    "tags": {
+      "topics": [
+        "Krakenarme"
+      ],
+      "entities": [
+        "Krakenarme"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es531",
+    "question_type": "estimate",
+    "prompt": "Wie viele Arme hat ein gewöhnlicher Gemeiner Seestern typischerweise?",
+    "answer": 5,
+    "unit": "Arme",
+    "explanation": "Der Gemeine Seestern besitzt typischerweise fünf Arme.",
+    "subject_keys": [
+      "topic:plants_animals:seesternarme",
+      "fact:estimate:531"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "NOAA Ocean Service: Ocean facts",
+          "url": "https://oceanservice.noaa.gov/facts/"
+        }
+      ]
+    },
+    "primary_category": "plants_animals",
+    "subtopic": "Seesternarme",
+    "tags": {
+      "topics": [
+        "Seesternarme"
+      ],
+      "entities": [
+        "Seesternarme"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es532",
+    "question_type": "estimate",
+    "prompt": "Wie viele Tage dauert die Tragzeit eines Roten Riesenkängurus ungefähr?",
+    "answer": 33,
+    "unit": "Tage",
+    "explanation": "Nach etwa 33 Tagen wird das winzige Junge geboren und kriecht in den Beutel.",
+    "subject_keys": [
+      "topic:plants_animals:kanguru-tragzeit",
+      "fact:estimate:532"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "MSD Veterinary Manual: Gestation periods",
+          "url": "https://www.msdvetmanual.com/multimedia/table/approximate-gestation-periods"
+        }
+      ]
+    },
+    "primary_category": "plants_animals",
+    "subtopic": "Känguru-Tragzeit",
+    "tags": {
+      "topics": [
+        "Känguru-Tragzeit"
+      ],
+      "entities": [
+        "Känguru-Tragzeit"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es533",
+    "question_type": "estimate",
+    "prompt": "Wie viele Kilogramm kann das Herz eines großen Blauwals ungefähr wiegen?",
+    "answer": 180,
+    "unit": "Kilogramm",
+    "explanation": "Häufig genannte Vermessungen großer Blauwalherzen liegen um 180 Kilogramm.",
+    "subject_keys": [
+      "topic:plants_animals:blauwalherz",
+      "fact:estimate:533"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "NOAA Ocean Service: Ocean facts",
+          "url": "https://oceanservice.noaa.gov/facts/"
+        }
+      ]
+    },
+    "primary_category": "plants_animals",
+    "subtopic": "Blauwalherz",
+    "tags": {
+      "topics": [
+        "Blauwalherz"
+      ],
+      "entities": [
+        "Blauwalherz"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es534",
+    "question_type": "estimate",
+    "prompt": "Wie viele Zentimeter kann besonders schnell wachsender Bambus an einem Tag ungefähr zulegen?",
+    "answer": 91,
+    "unit": "Zentimeter",
+    "explanation": "Bei bestimmten Bambusarten wurden Tageszuwächse um 91 Zentimeter gemessen.",
+    "subject_keys": [
+      "topic:plants_animals:bambuswachstum",
+      "fact:estimate:534"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Kew: Plants of the World Online",
+          "url": "https://powo.science.kew.org/"
+        }
+      ]
+    },
+    "primary_category": "plants_animals",
+    "subtopic": "Bambuswachstum",
+    "tags": {
+      "topics": [
+        "Bambuswachstum"
+      ],
+      "entities": [
+        "Bambuswachstum"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es535",
+    "question_type": "estimate",
+    "prompt": "Wie viele Kilometer beträgt der Erdumfang über die Pole ungefähr?",
+    "answer": 40008,
+    "unit": "Kilometer",
+    "explanation": "Der meridionale Erdumfang liegt bei rund 40.008 Kilometern.",
+    "subject_keys": [
+      "topic:geography_world:polarumfang",
+      "fact:estimate:535"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Geography",
+          "url": "https://www.britannica.com/science/geography"
+        }
+      ]
+    },
+    "primary_category": "geography_world",
+    "subtopic": "Polarumfang",
+    "tags": {
+      "topics": [
+        "Polarumfang"
+      ],
+      "entities": [
+        "Polarumfang"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es536",
+    "question_type": "estimate",
+    "prompt": "Wie viele Kilometer lang ist der Marianengraben ungefähr?",
+    "answer": 2550,
+    "unit": "Kilometer",
+    "explanation": "Der bogenförmige Tiefseegraben erstreckt sich über ungefähr 2.550 Kilometer.",
+    "subject_keys": [
+      "topic:geography_world:marianengraben-lange",
+      "fact:estimate:536"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "NOAA: What is the Sargasso Sea?",
+          "url": "https://oceanservice.noaa.gov/facts/sargassosea.html"
+        }
+      ]
+    },
+    "primary_category": "geography_world",
+    "subtopic": "Marianengraben-Länge",
+    "tags": {
+      "topics": [
+        "Marianengraben-Länge"
+      ],
+      "entities": [
+        "Marianengraben-Länge"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es537",
+    "question_type": "estimate",
+    "prompt": "Wie viele Meter hoch ist der Mount Everest nach der gemeinsamen Festlegung Nepals und Chinas?",
+    "answer": 8848.86,
+    "unit": "Meter",
+    "explanation": "Die 2020 bekanntgegebene offizielle Höhe beträgt 8.848,86 Meter.",
+    "subject_keys": [
+      "topic:geography_world:mount-everest",
+      "fact:estimate:537"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Geography",
+          "url": "https://www.britannica.com/science/geography"
+        }
+      ]
+    },
+    "primary_category": "geography_world",
+    "subtopic": "Mount Everest",
+    "tags": {
+      "topics": [
+        "Mount Everest"
+      ],
+      "entities": [
+        "Mount Everest"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es538",
+    "question_type": "estimate",
+    "prompt": "Wie viele Meter tief ist der Baikalsee maximal?",
+    "answer": 1642,
+    "unit": "Meter",
+    "explanation": "Die maximale Tiefe des Baikalsees beträgt 1.642 Meter.",
+    "subject_keys": [
+      "topic:geography_world:baikalsee-tiefe",
+      "fact:estimate:538"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list"
+        }
+      ]
+    },
+    "primary_category": "geography_world",
+    "subtopic": "Baikalsee-Tiefe",
+    "tags": {
+      "topics": [
+        "Baikalsee-Tiefe"
+      ],
+      "entities": [
+        "Baikalsee-Tiefe"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es539",
+    "question_type": "estimate",
+    "prompt": "Wie viele Gründungsmitglieder hatten die Vereinten Nationen 1945?",
+    "answer": 51,
+    "unit": "Staaten",
+    "explanation": "51 Staaten gehören zu den Gründungsmitgliedern der Vereinten Nationen.",
+    "subject_keys": [
+      "topic:geography_world:un-grundung",
+      "fact:estimate:539"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "United Nations: Member States",
+          "url": "https://www.un.org/en/about-us/member-states"
+        }
+      ]
+    },
+    "primary_category": "geography_world",
+    "subtopic": "UN-Gründung",
+    "tags": {
+      "topics": [
+        "UN-Gründung"
+      ],
+      "entities": [
+        "UN-Gründung"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es540",
+    "question_type": "estimate",
+    "prompt": "Bei wie vielen Grad Celsius liegt der absolute Nullpunkt?",
+    "answer": -273.15,
+    "unit": "Grad Celsius",
+    "explanation": "Null Kelvin entsprechen exakt minus 273,15 Grad Celsius.",
+    "subject_keys": [
+      "topic:science_technology:absoluter-nullpunkt",
+      "fact:estimate:540"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "NIST: Metric (SI) Program",
+          "url": "https://www.nist.gov/pml/owm/metric-si"
+        }
+      ]
+    },
+    "primary_category": "science_technology",
+    "subtopic": "Absoluter Nullpunkt",
+    "tags": {
+      "topics": [
+        "Absoluter Nullpunkt"
+      ],
+      "entities": [
+        "Absoluter Nullpunkt"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es541",
+    "question_type": "estimate",
+    "prompt": "Wie groß ist die Avogadro-Konstante ungefähr, als Teilchen pro Mol?",
+    "answer": 6.02214076e+23,
+    "unit": "Teilchen pro Mol",
+    "explanation": "Die SI-Definition legt exakt 6,02214076 × 10²³ pro Mol fest.",
+    "subject_keys": [
+      "topic:science_technology:avogadro-konstante",
+      "fact:estimate:541"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "BIPM: SI Brochure",
+          "url": "https://www.bipm.org/en/publications/si-brochure"
+        }
+      ]
+    },
+    "primary_category": "science_technology",
+    "subtopic": "Avogadro-Konstante",
+    "tags": {
+      "topics": [
+        "Avogadro-Konstante"
+      ],
+      "entities": [
+        "Avogadro-Konstante"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es542",
+    "question_type": "estimate",
+    "prompt": "Wie viele offizielle SI-Präfixe gibt es seit der Ergänzung um quetta bis quecto?",
+    "answer": 24,
+    "unit": "Präfixe",
+    "explanation": "Seit 2022 reichen 24 Präfixe von quecto bis quetta.",
+    "subject_keys": [
+      "topic:science_technology:si-prafixe",
+      "fact:estimate:542"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "BIPM: SI Brochure",
+          "url": "https://www.bipm.org/en/publications/si-brochure"
+        }
+      ]
+    },
+    "primary_category": "science_technology",
+    "subtopic": "SI-Präfixe",
+    "tags": {
+      "topics": [
+        "SI-Präfixe"
+      ],
+      "entities": [
+        "SI-Präfixe"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es543",
+    "question_type": "estimate",
+    "prompt": "Wie viele mögliche Codepunkte umfasst der gesamte Unicode-Coderaum?",
+    "answer": 1114112,
+    "unit": "Codepunkte",
+    "explanation": "17 Ebenen mit je 65.536 Positionen ergeben 1.114.112 mögliche Codepunkte.",
+    "subject_keys": [
+      "topic:science_technology:unicode-codepunkte",
+      "fact:estimate:543"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Unicode Consortium: Unicode Statistics",
+          "url": "https://www.unicode.org/versions/stats/"
+        }
+      ]
+    },
+    "primary_category": "science_technology",
+    "subtopic": "Unicode-Codepunkte",
+    "tags": {
+      "topics": [
+        "Unicode-Codepunkte"
+      ],
+      "entities": [
+        "Unicode-Codepunkte"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es544",
+    "question_type": "estimate",
+    "prompt": "Wie groß ist die Fallbeschleunigung auf dem Mond ungefähr?",
+    "answer": 1.62,
+    "unit": "Meter pro Quadratsekunde",
+    "explanation": "An der Mondoberfläche beträgt die Fallbeschleunigung ungefähr 1,62 m/s².",
+    "subject_keys": [
+      "topic:science_technology:mondgravitation",
+      "fact:estimate:544"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "NASA: Planetary Fact Sheet",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/"
+        }
+      ]
+    },
+    "primary_category": "science_technology",
+    "subtopic": "Mondgravitation",
+    "tags": {
+      "topics": [
+        "Mondgravitation"
+      ],
+      "entities": [
+        "Mondgravitation"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es545",
+    "question_type": "estimate",
+    "prompt": "Wie viele Rippenpaare besitzt ein Mensch gewöhnlich?",
+    "answer": 12,
+    "unit": "Rippenpaare",
+    "explanation": "Der menschliche Brustkorb besitzt gewöhnlich zwölf Rippenpaare.",
+    "subject_keys": [
+      "topic:human_everyday:rippenpaare",
+      "fact:estimate:545"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "MedlinePlus: Body systems",
+          "url": "https://medlineplus.gov/anatomy.html"
+        }
+      ]
+    },
+    "primary_category": "human_everyday",
+    "subtopic": "Rippenpaare",
+    "tags": {
+      "topics": [
+        "Rippenpaare"
+      ],
+      "entities": [
+        "Rippenpaare"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es546",
+    "question_type": "estimate",
+    "prompt": "Wie viele Lungenlappen haben beide menschlichen Lungen zusammen?",
+    "answer": 5,
+    "unit": "Lungenlappen",
+    "explanation": "Die rechte Lunge hat drei, die linke zwei Lappen.",
+    "subject_keys": [
+      "topic:human_everyday:lungenlappen",
+      "fact:estimate:546"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "MedlinePlus: Body systems",
+          "url": "https://medlineplus.gov/anatomy.html"
+        }
+      ]
+    },
+    "primary_category": "human_everyday",
+    "subtopic": "Lungenlappen",
+    "tags": {
+      "topics": [
+        "Lungenlappen"
+      ],
+      "entities": [
+        "Lungenlappen"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es547",
+    "question_type": "estimate",
+    "prompt": "Wie viel Prozent des Körpergewichts eines Erwachsenen bestehen ungefähr aus Wasser?",
+    "answer": 60,
+    "unit": "Prozent",
+    "explanation": "Als grober Mittelwert werden für Erwachsene rund 60 Prozent genannt.",
+    "subject_keys": [
+      "topic:human_everyday:korperwasser",
+      "fact:estimate:547"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "MedlinePlus: Body systems",
+          "url": "https://medlineplus.gov/anatomy.html"
+        }
+      ]
+    },
+    "primary_category": "human_everyday",
+    "subtopic": "Körperwasser",
+    "tags": {
+      "topics": [
+        "Körperwasser"
+      ],
+      "entities": [
+        "Körperwasser"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es548",
+    "question_type": "estimate",
+    "prompt": "Wie viele Schläge pro Minute hat ein typischer erwachsener Ruhepuls ungefähr?",
+    "answer": 70,
+    "unit": "Schläge pro Minute",
+    "explanation": "Ein üblicher Ruhebereich liegt etwa zwischen 60 und 100; 70 ist ein plausibler Richtwert.",
+    "subject_keys": [
+      "topic:human_everyday:ruhepuls",
+      "fact:estimate:548"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "MedlinePlus: Body systems",
+          "url": "https://medlineplus.gov/anatomy.html"
+        }
+      ]
+    },
+    "primary_category": "human_everyday",
+    "subtopic": "Ruhepuls",
+    "tags": {
+      "topics": [
+        "Ruhepuls"
+      ],
+      "entities": [
+        "Ruhepuls"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es549",
+    "question_type": "estimate",
+    "prompt": "Wie viele Mitgliedstaaten hat die Europäische Union im Jahr 2026?",
+    "answer": 27,
+    "unit": "Staaten",
+    "explanation": "Seit dem Austritt des Vereinigten Königreichs besteht die EU aus 27 Mitgliedstaaten.",
+    "subject_keys": [
+      "topic:human_everyday:eu-staaten",
+      "fact:estimate:549"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "European Commission: 112",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/112"
+        }
+      ]
+    },
+    "primary_category": "human_everyday",
+    "subtopic": "EU-Staaten",
+    "tags": {
+      "topics": [
+        "EU-Staaten"
+      ],
+      "entities": [
+        "EU-Staaten"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es600",
+    "question_type": "estimate",
+    "prompt": "Wie viele Flüge absolvierte der Mars-Helikopter Ingenuity insgesamt?",
+    "answer": 72,
+    "unit": "Flüge",
+    "explanation": "Aus höchstens fünf geplanten Testflügen wurden am Ende 72.",
+    "subject_keys": [
+      "topic:science_technology:ingenuity-flugbuch",
+      "fact:estimate:600"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "NASA: Ingenuity Mars Helicopter",
+          "url": "https://science.nasa.gov/mission/mars-2020-perseverance/ingenuity-mars-helicopter/"
+        }
+      ]
+    },
+    "primary_category": "science_technology",
+    "subtopic": "Ingenuity-Flugbuch",
+    "tags": {
+      "topics": [
+        "Ingenuity-Flugbuch"
+      ],
+      "entities": [
+        "Ingenuity-Flugbuch"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es601",
+    "question_type": "estimate",
+    "prompt": "Wie viele Emojis enthielt das 1999 veröffentlichte Originalset von NTT DOCOMO?",
+    "answer": 176,
+    "unit": "Emojis",
+    "explanation": "Shigetaka Kuritas Set umfasste 176 Bildzeichen auf einem Raster von zwölf mal zwölf Pixeln.",
+    "subject_keys": [
+      "topic:media_entertainment:original-emojis",
+      "fact:estimate:601"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "MoMA: Shigetaka Kurita — Emoji",
+          "url": "https://www.moma.org/collection/works/196070"
+        }
+      ]
+    },
+    "primary_category": "media_entertainment",
+    "subtopic": "Original-Emojis",
+    "tags": {
+      "topics": [
+        "Original-Emojis"
+      ],
+      "entities": [
+        "Original-Emojis"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es602",
+    "question_type": "estimate",
+    "prompt": "Um wie viele Minuten verkürzte DART die Umlaufzeit von Dimorphos ungefähr?",
+    "answer": 33.25,
+    "unit": "Minuten",
+    "explanation": "Die später verfeinerte Messung ergab 33 Minuten und 15 Sekunden.",
+    "subject_keys": [
+      "topic:science_technology:dart-wirkung",
+      "fact:estimate:602"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "NASA: Asteroid orbit changed after DART impact",
+          "url": "https://www.nasa.gov/missions/dart/nasa-study-asteroids-orbit-shape-changed-after-dart-impact/"
+        }
+      ]
+    },
+    "primary_category": "science_technology",
+    "subtopic": "DART-Wirkung",
+    "tags": {
+      "topics": [
+        "DART-Wirkung"
+      ],
+      "entities": [
+        "DART-Wirkung"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es603",
+    "question_type": "estimate",
+    "prompt": "Wie viele Zeichen durfte eine klassische SMS höchstens enthalten?",
+    "answer": 160,
+    "unit": "Zeichen",
+    "explanation": "Die frühe SMS war auf 160 Zeichen begrenzt.",
+    "subject_keys": [
+      "topic:human_everyday:sms-zeichenlimit",
+      "fact:estimate:603"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Vodafone: 25 years since the first text message",
+          "url": "https://www.vodafone.com/news/newsroom/technology/25-anniversary-text-message"
+        }
+      ]
+    },
+    "primary_category": "human_everyday",
+    "subtopic": "SMS-Zeichenlimit",
+    "tags": {
+      "topics": [
+        "SMS-Zeichenlimit"
+      ],
+      "entities": [
+        "SMS-Zeichenlimit"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es604",
+    "question_type": "estimate",
+    "prompt": "Wie viele US-Cent kostete der 1974 zuerst gescannte Kaugummi?",
+    "answer": 67,
+    "unit": "US-Cent",
+    "explanation": "Die Zehnerpackung Wrigley's Juicy Fruit kostete 67 Cent.",
+    "subject_keys": [
+      "topic:human_everyday:erster-barcode-kauf",
+      "fact:estimate:604"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "GS1: First barcode scan",
+          "url": "https://www.gs1.org/docs/media_centre/gs1pr_260614_first_barcode_scan.pdf"
+        }
+      ]
+    },
+    "primary_category": "human_everyday",
+    "subtopic": "Erster Barcode-Kauf",
+    "tags": {
+      "topics": [
+        "Erster Barcode-Kauf"
+      ],
+      "entities": [
+        "Erster Barcode-Kauf"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "es605",
+    "question_type": "estimate",
+    "primary_category": "human_everyday",
+    "subtopic": "Post-it-Entwicklung",
+    "tags": {
+      "topics": [
+        "Post-it",
+        "Erfindungen",
+        "Büroalltag"
+      ],
+      "entities": [
+        "Spencer Silver",
+        "Art Fry",
+        "3M"
+      ],
+      "genres": [],
+      "regions": [
+        "USA"
+      ],
+      "eras": [
+        "1968 bis 1980"
+      ]
+    },
+    "prompt": "Wie viele Jahre lagen ungefähr zwischen der Entdeckung des Post-it-Klebers 1968 und dem Marktstart 1980?",
+    "answer": 12,
+    "unit": "Jahre",
+    "explanation": "Der schwach haftende Kleber entstand 1968; Post-it Notes kamen 1980 auf den Markt. Dazwischen lagen rund zwölf Jahre.",
+    "subject_keys": [
+      "topic:human_everyday:post-it-entwicklung",
+      "entity:post-it",
+      "entity:3m"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "USPTO: Post-it Notes show real sticking power",
+          "url": "https://ttabvue.uspto.gov/ttabvue/ttabvue-91173411-OPP-44.pdf"
         }
       ]
     }

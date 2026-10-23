@@ -1,15 +1,52 @@
-<section class="leaderboard" aria-labelledby="leaderboard-heading" data-leaderboards>
+{% from "_player_identity.html" import player_identity with context %}
+{% if request.endpoint == 'home' %}
+<section class="leaderboard quiz-arena-board variant-a-leaderboard" aria-labelledby="leaderboard-heading" data-leaderboards>
+  <div class="section-heading">
+    <h2 id="leaderboard-heading"><span aria-hidden="true">🏆</span> rangliste</h2>
+  </div>
+
+  <div class="leaderboard-tabs" role="tablist" aria-label="Zeitraum der Rangliste">
+    <button type="button" role="tab" id="tab-daily" aria-controls="panel-daily" aria-selected="true" data-leaderboard-tab="daily">tag</button>
+    <button type="button" role="tab" id="tab-weekly" aria-controls="panel-weekly" aria-selected="false" data-leaderboard-tab="weekly">woche<span class="week-tally visually-hidden" data-week-date="{{ today_iso_value }}" aria-hidden="true"></span></button>
+    <button type="button" role="tab" id="tab-all" aria-controls="panel-all" aria-selected="false" data-leaderboard-tab="all">hall of fame</button>
+    <button type="button" role="tab" id="tab-weekly-wins" aria-controls="panel-weekly-wins" aria-selected="false" data-leaderboard-tab="weekly_wins">wochensiege</button>
+  </div>
+
+  {% for board_key, board_label in [('daily', 'Tagesrangliste'), ('weekly', 'Wochenrangliste'), ('all', 'Hall of Fame'), ('weekly_wins', 'Gewonnene Wochen')] %}
+    {% set players = leaderboards[board_key] %}
+    {% set panel_id = board_key|replace('_', '-') %}
+    <div class="leaderboard-panel" id="panel-{{ panel_id }}" role="tabpanel" aria-labelledby="tab-{{ panel_id }}" data-leaderboard-panel="{{ board_key }}" {% if board_key != 'daily' %}hidden{% endif %}>
+      <ol class="rank-list {% if players|length > 5 %}is-scrollable{% endif %}" {% if players|length > 5 %}tabindex="0" aria-label="{{ board_label }} mit {{ players|length }} Spielern; zum Blättern scrollen"{% endif %}>
+        {% for player in players %}
+          <li class="rank-row rank-{{ player.rank }} {% if player.id == g.user['id'] %}is-me{% endif %}">
+            {{ player_identity(player.display_name, player.avatar_id, player.plaque_id, 'ranking', 'Du' if player.id == g.user['id'] else None, points=player.points, rank=player.rank, show_avatar_action=player.id == g.user['id'], avatar_action_url=url_for('profile') if player.id == g.user['id'] else None, weekly_rounds=player.rounds if board_key == 'weekly' else None, points_unit='SIEGE' if board_key == 'weekly_wins' else 'PKT') }}
+          </li>
+        {% endfor %}
+        {% for empty_index in range([0, 5 - players|length]|max) %}
+          <li class="rank-row is-empty" aria-label="Noch unbelegter Rang">
+            {{ player_identity('Noch frei', 'a00', 'p00', 'ranking', None, None, players|length + empty_index + 1) }}
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+  {% endfor %}
+</section>
+{% else %}
+<section class="leaderboard quiz-arena-board" aria-labelledby="leaderboard-heading" data-leaderboards>
   <div class="section-heading">
     <div>
-      <span class="section-kicker">BESTENLISTEN</span>
+      <span class="section-kicker">QUIZ-ARENA</span>
       <h2 id="leaderboard-heading"><span class="leader-star" aria-hidden="true">★</span> Wer liegt vorn?</h2>
     </div>
-    <span class="live-pill">Live</span>
+    <span class="live-pill"><i></i> Live</span>
   </div>
 
   <div class="leaderboard-tabs" role="tablist" aria-label="Zeitraum der Bestenliste">
     <button type="button" role="tab" id="tab-daily" aria-controls="panel-daily" aria-selected="true" data-leaderboard-tab="daily">Tagessieger</button>
-    <button type="button" role="tab" id="tab-weekly" aria-controls="panel-weekly" aria-selected="false" data-leaderboard-tab="weekly">Wochenliga</button>
+    <button type="button" role="tab" id="tab-weekly" aria-controls="panel-weekly" aria-selected="false" data-leaderboard-tab="weekly">
+      <span>Wochenliga</span>
+      <span class="week-tally" data-week-date="{{ today_iso_value }}" aria-label="Wochenfortschritt"></span>
+    </button>
     <button type="button" role="tab" id="tab-all" aria-controls="panel-all" aria-selected="false" data-leaderboard-tab="all">Hall of Fame</button>
   </div>
 
@@ -19,20 +56,17 @@
       <ol class="rank-list {% if players|length > 5 %}is-scrollable{% endif %}" {% if players|length > 5 %}tabindex="0" aria-label="{{ board_label }} mit {{ players|length }} Spielern; zum Blättern scrollen"{% endif %}>
         {% for player in players %}
           <li class="rank-row rank-{{ player.rank }} {% if player.id == g.user['id'] %}is-me{% endif %}">
-            <span class="rank-number">{{ player.rank }}</span>
-            <span class="player-name">{{ player.display_name }}{% if player.id == g.user['id'] %}<small>Du</small>{% endif %}</span>
-            <strong>{{ player.points|points }} <small>PKT</small></strong>
+            {{ player_identity(player.display_name, player.avatar_id, player.plaque_id, 'ranking', 'Du' if player.id == g.user['id'] else None, points=player.points, rank=player.rank, show_avatar_action=player.id == g.user['id'], avatar_action_url=url_for('profile') if player.id == g.user['id'] else None, weekly_rounds=player.rounds if board_key == 'weekly' else None) }}
           </li>
         {% endfor %}
         {% for empty_index in range([0, 5 - players|length]|max) %}
           <li class="rank-row is-empty" aria-label="Noch unbelegter Rang">
-            <span class="rank-number">{{ players|length + empty_index + 1 }}</span>
-            <span class="player-name">Noch frei</span>
-            <strong>— <small>PKT</small></strong>
+            {{ player_identity('Noch frei', 'a00', 'p00', 'ranking', None, None, players|length + empty_index + 1) }}
           </li>
         {% endfor %}
       </ol>
     </div>
   {% endfor %}
 </section>
+{% endif %}
 

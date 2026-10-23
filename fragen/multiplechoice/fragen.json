@@ -7145,11 +7145,23 @@
     "primary_category": "science_technology",
     "subtopic": "Chemie & Entdeckungen",
     "tags": {
-      "topics": ["Elemente", "Spektroskopie", "Entdeckungen"],
-      "entities": ["Helium", "Sonne"],
+      "topics": [
+        "Elemente",
+        "Spektroskopie",
+        "Entdeckungen"
+      ],
+      "entities": [
+        "Helium",
+        "Sonne"
+      ],
       "genres": [],
-      "regions": ["Weltraum"],
-      "eras": ["1868", "1895"]
+      "regions": [
+        "Weltraum"
+      ],
+      "eras": [
+        "1868",
+        "1895"
+      ]
     },
     "source": {
       "status": "verified",
@@ -7164,7 +7176,11 @@
     "prompt": "Welches Element wurde zuerst im Licht der Sonne nachgewiesen und erst später auf der Erde gefunden?",
     "answer": "B",
     "explanation": "Helium wurde 1868 durch Linien im Sonnenspektrum erkannt. Auf der Erde wurde das Element erst 1895 sicher nachgewiesen.",
-    "subject_keys": ["topic:science_technology:chemie-und-entdeckungen", "entity:helium", "entity:sonne"],
+    "subject_keys": [
+      "topic:science_technology:chemie-und-entdeckungen",
+      "entity:helium",
+      "entity:sonne"
+    ],
     "options": {
       "A": "Neon",
       "B": "Helium",
@@ -7178,8 +7194,14 @@
     "primary_category": "science_technology",
     "subtopic": "Materialien & Eigenschaften",
     "tags": {
-      "topics": ["Metalle", "Schmelzpunkt", "Materialkunde"],
-      "entities": ["Wolfram"],
+      "topics": [
+        "Metalle",
+        "Schmelzpunkt",
+        "Materialkunde"
+      ],
+      "entities": [
+        "Wolfram"
+      ],
       "genres": [],
       "regions": [],
       "eras": []
@@ -7197,7 +7219,10 @@
     "prompt": "Welches Metall hat den höchsten Schmelzpunkt?",
     "answer": "C",
     "explanation": "Wolfram schmilzt erst bei etwa 3.414 Grad Celsius. Damit hat es den höchsten Schmelzpunkt aller Metalle.",
-    "subject_keys": ["topic:science_technology:materialien-und-eigenschaften", "entity:wolfram"],
+    "subject_keys": [
+      "topic:science_technology:materialien-und-eigenschaften",
+      "entity:wolfram"
+    ],
     "options": {
       "A": "Eisen",
       "B": "Platin",
@@ -7211,11 +7236,22 @@
     "primary_category": "science_technology",
     "subtopic": "Astronomie & Raumfahrt",
     "tags": {
-      "topics": ["Mond", "Umlaufbahn", "Entfernung"],
-      "entities": ["Mond", "Erde"],
+      "topics": [
+        "Mond",
+        "Umlaufbahn",
+        "Entfernung"
+      ],
+      "entities": [
+        "Mond",
+        "Erde"
+      ],
       "genres": [],
-      "regions": ["Weltraum"],
-      "eras": ["Gegenwart"]
+      "regions": [
+        "Weltraum"
+      ],
+      "eras": [
+        "Gegenwart"
+      ]
     },
     "source": {
       "status": "verified",
@@ -7230,7 +7266,11 @@
     "prompt": "Wie weit entfernt sich der Mond derzeit ungefähr pro Jahr von der Erde?",
     "answer": "B",
     "explanation": "Der Mond entfernt sich im Mittel um rund 3,8 Zentimeter pro Jahr von der Erde. Gemessen wird das unter anderem mit Laserreflektoren auf dem Mond.",
-    "subject_keys": ["topic:science_technology:astronomie-und-raumfahrt", "entity:mond", "entity:erde"],
+    "subject_keys": [
+      "topic:science_technology:astronomie-und-raumfahrt",
+      "entity:mond",
+      "entity:erde"
+    ],
     "options": {
       "A": "3,8 Millimeter",
       "B": "3,8 Zentimeter",
@@ -7244,8 +7284,14 @@
     "primary_category": "science_technology",
     "subtopic": "Physik im Alltag",
     "tags": {
-      "topics": ["Wasser", "Aggregatzustände", "Temperatur"],
-      "entities": ["Tripelpunkt"],
+      "topics": [
+        "Wasser",
+        "Aggregatzustände",
+        "Temperatur"
+      ],
+      "entities": [
+        "Tripelpunkt"
+      ],
       "genres": [],
       "regions": [],
       "eras": []
@@ -7263,7 +7309,11 @@
     "prompt": "An welchem besonderen Punkt existiert Wasser gleichzeitig als Eis, Flüssigkeit und Dampf?",
     "answer": "D",
     "explanation": "Am Tripelpunkt stehen die feste, flüssige und gasförmige Form von Wasser gleichzeitig im Gleichgewicht.",
-    "subject_keys": ["topic:science_technology:physik-im-alltag", "entity:tripelpunkt", "entity:wasser"],
+    "subject_keys": [
+      "topic:science_technology:physik-im-alltag",
+      "entity:tripelpunkt",
+      "entity:wasser"
+    ],
     "options": {
       "A": "Am Siedepunkt",
       "B": "Am Gefrierpunkt",
@@ -7277,11 +7327,22 @@
     "primary_category": "science_technology",
     "subtopic": "Computergeschichte",
     "tags": {
-      "topics": ["Computermaus", "Eingabegeräte", "Erfindungen"],
-      "entities": ["Douglas Engelbart", "SRI"],
+      "topics": [
+        "Computermaus",
+        "Eingabegeräte",
+        "Erfindungen"
+      ],
+      "entities": [
+        "Douglas Engelbart",
+        "SRI"
+      ],
       "genres": [],
-      "regions": ["USA"],
-      "eras": ["1964"]
+      "regions": [
+        "USA"
+      ],
+      "eras": [
+        "1964"
+      ]
     },
     "source": {
       "status": "verified",
@@ -7300,7 +7361,11 @@
     "prompt": "Aus welchem Material bestand das Gehäuse der ersten Computermaus von 1964?",
     "answer": "A",
     "explanation": "Der erste Maus-Prototyp von Douglas Engelbarts Team hatte ein kleines Holzgehäuse. Im Inneren erfassten zwei Räder die Bewegung.",
-    "subject_keys": ["topic:science_technology:computergeschichte", "entity:computermaus", "entity:douglas-engelbart"],
+    "subject_keys": [
+      "topic:science_technology:computergeschichte",
+      "entity:computermaus",
+      "entity:douglas-engelbart"
+    ],
     "options": {
       "A": "Holz",
       "B": "Aluminium",
@@ -7314,8 +7379,14 @@
     "primary_category": "human_everyday",
     "subtopic": "Körper & Gesundheit",
     "tags": {
-      "topics": ["Auge", "Blutgefäße", "Sehen"],
-      "entities": ["Hornhaut"],
+      "topics": [
+        "Auge",
+        "Blutgefäße",
+        "Sehen"
+      ],
+      "entities": [
+        "Hornhaut"
+      ],
       "genres": [],
       "regions": [],
       "eras": []
@@ -7333,7 +7404,11 @@
     "prompt": "Welcher durchsichtige Teil des Auges besitzt keine eigenen Blutgefäße?",
     "answer": "C",
     "explanation": "Die Hornhaut ist durchsichtig und frei von Blutgefäßen. Nährstoffe erhält sie vor allem aus der Tränenflüssigkeit und dem Kammerwasser im Auge.",
-    "subject_keys": ["topic:human_everyday:koerper-und-gesundheit", "entity:hornhaut", "entity:auge"],
+    "subject_keys": [
+      "topic:human_everyday:koerper-und-gesundheit",
+      "entity:hornhaut",
+      "entity:auge"
+    ],
     "options": {
       "A": "Netzhaut",
       "B": "Iris",
@@ -7347,8 +7422,14 @@
     "primary_category": "human_everyday",
     "subtopic": "Körper & Gesundheit",
     "tags": {
-      "topics": ["Organe", "Regeneration", "Körper"],
-      "entities": ["Leber"],
+      "topics": [
+        "Organe",
+        "Regeneration",
+        "Körper"
+      ],
+      "entities": [
+        "Leber"
+      ],
       "genres": [],
       "regions": [],
       "eras": []
@@ -7366,7 +7447,11 @@
     "prompt": "Welches Organ kann nach einer Teilentfernung wieder annähernd seine ursprüngliche Größe erreichen?",
     "answer": "A",
     "explanation": "Die Leber kann fehlende Masse besonders gut ausgleichen. Dabei wachsen die verbliebenen Teile, bis das Organ wieder ungefähr seine benötigte Größe erreicht.",
-    "subject_keys": ["topic:human_everyday:koerper-und-gesundheit", "entity:leber", "topic:regeneration"],
+    "subject_keys": [
+      "topic:human_everyday:koerper-und-gesundheit",
+      "entity:leber",
+      "topic:regeneration"
+    ],
     "options": {
       "A": "Leber",
       "B": "Milz",
@@ -7380,8 +7465,14 @@
     "primary_category": "plants_animals",
     "subtopic": "Sinne der Tiere",
     "tags": {
-      "topics": ["Schmetterlinge", "Geschmackssinn", "Insekten"],
-      "entities": ["Schmetterlinge"],
+      "topics": [
+        "Schmetterlinge",
+        "Geschmackssinn",
+        "Insekten"
+      ],
+      "entities": [
+        "Schmetterlinge"
+      ],
       "genres": [],
       "regions": [],
       "eras": []
@@ -7399,7 +7490,11 @@
     "prompt": "Mit welchem Körperteil prüfen Schmetterlinge beim Landen den Geschmack eines Blattes?",
     "answer": "B",
     "explanation": "An den Füßen von Schmetterlingen sitzen Geschmackssensoren. So können sie schon beim Landen prüfen, ob eine Pflanze geeignet ist.",
-    "subject_keys": ["topic:plants_animals:sinne-der-tiere", "entity:schmetterlinge", "topic:geschmackssinn"],
+    "subject_keys": [
+      "topic:plants_animals:sinne-der-tiere",
+      "entity:schmetterlinge",
+      "topic:geschmackssinn"
+    ],
     "options": {
       "A": "Mit den Flügeln",
       "B": "Mit den Füßen",
@@ -7413,11 +7508,21 @@
     "primary_category": "plants_animals",
     "subtopic": "Anpassungen von Tieren",
     "tags": {
-      "topics": ["Rentiere", "Augen", "Arktis"],
-      "entities": ["Rentiere"],
+      "topics": [
+        "Rentiere",
+        "Augen",
+        "Arktis"
+      ],
+      "entities": [
+        "Rentiere"
+      ],
       "genres": [],
-      "regions": ["Arktis"],
-      "eras": ["Winter"]
+      "regions": [
+        "Arktis"
+      ],
+      "eras": [
+        "Winter"
+      ]
     },
     "source": {
       "status": "verified",
@@ -7432,7 +7537,11 @@
     "prompt": "Welche Farbe hat die reflektierende Schicht in Rentieraugen typischerweise im arktischen Winter?",
     "answer": "B",
     "explanation": "Im Sommer reflektiert diese Schicht goldfarbenes Licht. Im dunklen arktischen Winter wird sie tiefblau und erhöht damit die Empfindlichkeit des Auges.",
-    "subject_keys": ["topic:plants_animals:anpassungen-von-tieren", "entity:rentiere", "region:arktis"],
+    "subject_keys": [
+      "topic:plants_animals:anpassungen-von-tieren",
+      "entity:rentiere",
+      "region:arktis"
+    ],
     "options": {
       "A": "Gold",
       "B": "Blau",
@@ -7446,8 +7555,14 @@
     "primary_category": "plants_animals",
     "subtopic": "Tierische Rekorde",
     "tags": {
-      "topics": ["Säugetiere", "Flug", "Fledermäuse"],
-      "entities": ["Fledermäuse"],
+      "topics": [
+        "Säugetiere",
+        "Flug",
+        "Fledermäuse"
+      ],
+      "entities": [
+        "Fledermäuse"
+      ],
       "genres": [],
       "regions": [],
       "eras": []
@@ -7465,7 +7580,11 @@
     "prompt": "Welche Säugetiere können als einzige aus eigener Kraft dauerhaft fliegen?",
     "answer": "B",
     "explanation": "Nur Fledermäuse beherrschen einen echten, angetriebenen Flug. Flughörnchen und andere sogenannte Flugtiere unter den Säugetieren können lediglich gleiten.",
-    "subject_keys": ["topic:plants_animals:tierische-rekorde", "entity:fledermaeuse", "topic:flug"],
+    "subject_keys": [
+      "topic:plants_animals:tierische-rekorde",
+      "entity:fledermaeuse",
+      "topic:flug"
+    ],
     "options": {
       "A": "Flughörnchen",
       "B": "Fledermäuse",
@@ -7479,10 +7598,19 @@
     "primary_category": "plants_animals",
     "subtopic": "Nutzpflanzen & Lebensmittel",
     "tags": {
-      "topics": ["Kaffee", "Samen", "Früchte"],
-      "entities": ["Kaffeepflanze", "Kaffeebohne"],
+      "topics": [
+        "Kaffee",
+        "Samen",
+        "Früchte"
+      ],
+      "entities": [
+        "Kaffeepflanze",
+        "Kaffeebohne"
+      ],
       "genres": [],
-      "regions": ["Tropen"],
+      "regions": [
+        "Tropen"
+      ],
       "eras": []
     },
     "source": {
@@ -7498,7 +7626,11 @@
     "prompt": "Was ist die sogenannte Kaffeebohne botanisch?",
     "answer": "B",
     "explanation": "Kaffeebohnen sind die Samen der Früchte einer Kaffeepflanze. Eine Frucht enthält meist zwei dieser Samen.",
-    "subject_keys": ["topic:plants_animals:nutzpflanzen-und-lebensmittel", "entity:kaffeepflanze", "entity:kaffeebohne"],
+    "subject_keys": [
+      "topic:plants_animals:nutzpflanzen-und-lebensmittel",
+      "entity:kaffeepflanze",
+      "entity:kaffeebohne"
+    ],
     "options": {
       "A": "Eine Wurzelknolle",
       "B": "Der Samen einer Frucht",
@@ -7512,11 +7644,24 @@
     "primary_category": "gaming",
     "subtopic": "Videospielgeschichte",
     "tags": {
-      "topics": ["Tetris", "Spielnamen", "Videospiele"],
-      "entities": ["Alexei Paschitnow", "Tetris"],
-      "genres": ["Puzzlespiel"],
-      "regions": ["Sowjetunion"],
-      "eras": ["1984"]
+      "topics": [
+        "Tetris",
+        "Spielnamen",
+        "Videospiele"
+      ],
+      "entities": [
+        "Alexei Paschitnow",
+        "Tetris"
+      ],
+      "genres": [
+        "Puzzlespiel"
+      ],
+      "regions": [
+        "Sowjetunion"
+      ],
+      "eras": [
+        "1984"
+      ]
     },
     "source": {
       "status": "verified",
@@ -7531,7 +7676,11 @@
     "prompt": "Aus welchen beiden Begriffen setzt sich der Name „Tetris“ zusammen?",
     "answer": "A",
     "explanation": "Der Name verbindet „tetra“, das griechische Wort für vier, mit „Tennis“, dem Lieblingssport des Erfinders Alexei Paschitnow.",
-    "subject_keys": ["topic:gaming:videospielgeschichte", "entity:tetris", "entity:alexei-paschitnow"],
+    "subject_keys": [
+      "topic:gaming:videospielgeschichte",
+      "entity:tetris",
+      "entity:alexei-paschitnow"
+    ],
     "options": {
       "A": "Tetra und Tennis",
       "B": "Technik und Risiko",
@@ -7545,11 +7694,26 @@
     "primary_category": "gaming",
     "subtopic": "Brettspielgeschichte",
     "tags": {
-      "topics": ["Monopoly", "Brettspiele", "Spielgeschichte"],
-      "entities": ["Elizabeth Magie", "The Landlord’s Game", "Monopoly"],
-      "genres": ["Brettspiel"],
-      "regions": ["USA"],
-      "eras": ["1903", "1935"]
+      "topics": [
+        "Monopoly",
+        "Brettspiele",
+        "Spielgeschichte"
+      ],
+      "entities": [
+        "Elizabeth Magie",
+        "The Landlord’s Game",
+        "Monopoly"
+      ],
+      "genres": [
+        "Brettspiel"
+      ],
+      "regions": [
+        "USA"
+      ],
+      "eras": [
+        "1903",
+        "1935"
+      ]
     },
     "source": {
       "status": "verified",
@@ -7564,7 +7728,12 @@
     "prompt": "Auf welchem früheren Brettspiel beruht Monopoly?",
     "answer": "A",
     "explanation": "Monopoly geht wesentlich auf „The Landlord’s Game“ von Elizabeth Magie zurück. Sie ließ ihr Spiel bereits 1903 patentieren.",
-    "subject_keys": ["topic:gaming:brettspielgeschichte", "entity:monopoly", "entity:elizabeth-magie", "entity:the-landlords-game"],
+    "subject_keys": [
+      "topic:gaming:brettspielgeschichte",
+      "entity:monopoly",
+      "entity:elizabeth-magie",
+      "entity:the-landlords-game"
+    ],
     "options": {
       "A": "The Landlord’s Game",
       "B": "The Mansion Game",
@@ -7578,11 +7747,23 @@
     "primary_category": "witnesses_of_time",
     "subtopic": "Schriften & Entzifferung",
     "tags": {
-      "topics": ["Rosetta-Stein", "Sprachen", "Schriften"],
-      "entities": ["Stein von Rosette"],
-      "genres": ["Inschrift"],
-      "regions": ["Ägypten"],
-      "eras": ["196 v. Chr."]
+      "topics": [
+        "Rosetta-Stein",
+        "Sprachen",
+        "Schriften"
+      ],
+      "entities": [
+        "Stein von Rosette"
+      ],
+      "genres": [
+        "Inschrift"
+      ],
+      "regions": [
+        "Ägypten"
+      ],
+      "eras": [
+        "196 v. Chr."
+      ]
     },
     "source": {
       "status": "verified",
@@ -7597,7 +7778,11 @@
     "prompt": "Wie viele Sprachen stehen auf dem Stein von Rosette?",
     "answer": "B",
     "explanation": "Der Text steht in zwei Sprachen: Ägyptisch und Altgriechisch. Für das Ägyptische wurden zwei Schriften verwendet, sodass insgesamt drei Schriftarten zu sehen sind.",
-    "subject_keys": ["topic:witnesses_of_time:schriften-und-entzifferung", "entity:stein-von-rosette", "region:aegypten"],
+    "subject_keys": [
+      "topic:witnesses_of_time:schriften-und-entzifferung",
+      "entity:stein-von-rosette",
+      "region:aegypten"
+    ],
     "options": {
       "A": "Eine",
       "B": "Zwei",
@@ -7611,11 +7796,24 @@
     "primary_category": "witnesses_of_time",
     "subtopic": "Buch- & Druckgeschichte",
     "tags": {
-      "topics": ["Buchdruck", "Datierung", "Buddhismus"],
-      "entities": ["Diamant-Sutra"],
-      "genres": ["Religiöser Text", "Druckwerk"],
-      "regions": ["China"],
-      "eras": ["868"]
+      "topics": [
+        "Buchdruck",
+        "Datierung",
+        "Buddhismus"
+      ],
+      "entities": [
+        "Diamant-Sutra"
+      ],
+      "genres": [
+        "Religiöser Text",
+        "Druckwerk"
+      ],
+      "regions": [
+        "China"
+      ],
+      "eras": [
+        "868"
+      ]
     },
     "source": {
       "status": "verified",
@@ -7630,7 +7828,11 @@
     "prompt": "Welches Werk gilt als ältestes erhaltenes gedrucktes Buch mit einem angegebenen Datum?",
     "answer": "B",
     "explanation": "Die erhaltene Ausgabe des Diamant-Sutra trägt das Datum 11. Mai 868. Sie gilt als das älteste vollständig datierte gedruckte Buch.",
-    "subject_keys": ["topic:witnesses_of_time:buch-und-druckgeschichte", "entity:diamant-sutra", "region:china"],
+    "subject_keys": [
+      "topic:witnesses_of_time:buch-und-druckgeschichte",
+      "entity:diamant-sutra",
+      "region:china"
+    ],
     "options": {
       "A": "Gutenberg-Bibel",
       "B": "Diamant-Sutra",
@@ -7644,11 +7846,23 @@
     "primary_category": "geography_world",
     "subtopic": "Karten & Orientierung",
     "tags": {
-      "topics": ["Nullmeridian", "Längengrade", "Zeitmessung"],
-      "entities": ["Greenwich", "International Meridian Conference"],
+      "topics": [
+        "Nullmeridian",
+        "Längengrade",
+        "Zeitmessung"
+      ],
+      "entities": [
+        "Greenwich",
+        "International Meridian Conference"
+      ],
       "genres": [],
-      "regions": ["Vereinigtes Königreich", "Washington, D.C."],
-      "eras": ["1884"]
+      "regions": [
+        "Vereinigtes Königreich",
+        "Washington, D.C."
+      ],
+      "eras": [
+        "1884"
+      ]
     },
     "source": {
       "status": "verified",
@@ -7663,7 +7877,11 @@
     "prompt": "Welcher Ort wurde 1884 als Bezugspunkt für den internationalen Nullmeridian gewählt?",
     "answer": "C",
     "explanation": "Die internationale Meridiankonferenz stimmte 1884 für den Meridian von Greenwich. Er diente fortan als gemeinsamer Bezug für Längengrade.",
-    "subject_keys": ["topic:geography_world:karten-und-orientierung", "entity:greenwich", "entity:nullmeridian"],
+    "subject_keys": [
+      "topic:geography_world:karten-und-orientierung",
+      "entity:greenwich",
+      "entity:nullmeridian"
+    ],
     "options": {
       "A": "Paris",
       "B": "Rom",
@@ -7677,11 +7895,21 @@
     "primary_category": "geography_world",
     "subtopic": "Nationalparks & Schutzgebiete",
     "tags": {
-      "topics": ["Nationalparks", "Naturschutz", "USA"],
-      "entities": ["Yellowstone-Nationalpark"],
+      "topics": [
+        "Nationalparks",
+        "Naturschutz",
+        "USA"
+      ],
+      "entities": [
+        "Yellowstone-Nationalpark"
+      ],
       "genres": [],
-      "regions": ["USA"],
-      "eras": ["1872"]
+      "regions": [
+        "USA"
+      ],
+      "eras": [
+        "1872"
+      ]
     },
     "source": {
       "status": "verified",
@@ -7696,7 +7924,11 @@
     "prompt": "Welches Gebiet wurde 1872 zum ersten Nationalpark der Welt erklärt?",
     "answer": "A",
     "explanation": "Der Yellowstone-Nationalpark wurde am 1. März 1872 gegründet. Der US National Park Service bezeichnet ihn als ersten Nationalpark der Welt.",
-    "subject_keys": ["topic:geography_world:nationalparks-und-schutzgebiete", "entity:yellowstone-nationalpark", "region:usa"],
+    "subject_keys": [
+      "topic:geography_world:nationalparks-und-schutzgebiete",
+      "entity:yellowstone-nationalpark",
+      "region:usa"
+    ],
     "options": {
       "A": "Yellowstone",
       "B": "Yosemite",
@@ -7710,11 +7942,21 @@
     "primary_category": "witnesses_of_time",
     "subtopic": "Kalender & Zeitrechnung",
     "tags": {
-      "topics": ["Gregorianischer Kalender", "Zeitrechnung", "Kalenderreform"],
-      "entities": ["Papst Gregor XIII."],
+      "topics": [
+        "Gregorianischer Kalender",
+        "Zeitrechnung",
+        "Kalenderreform"
+      ],
+      "entities": [
+        "Papst Gregor XIII."
+      ],
       "genres": [],
-      "regions": ["Europa"],
-      "eras": ["1582"]
+      "regions": [
+        "Europa"
+      ],
+      "eras": [
+        "1582"
+      ]
     },
     "source": {
       "status": "verified",
@@ -7729,7 +7971,11 @@
     "prompt": "Nach wem ist der gregorianische Kalender benannt?",
     "answer": "A",
     "explanation": "Papst Gregor XIII. führte den Kalender 1582 ein. Die Reform korrigierte die Verschiebung des julianischen Kalenders gegenüber den Jahreszeiten.",
-    "subject_keys": ["topic:witnesses_of_time:kalender-und-zeitrechnung", "entity:papst-gregor-xiii", "entity:gregorianischer-kalender"],
+    "subject_keys": [
+      "topic:witnesses_of_time:kalender-und-zeitrechnung",
+      "entity:papst-gregor-xiii",
+      "entity:gregorianischer-kalender"
+    ],
     "options": {
       "A": "Papst Gregor XIII.",
       "B": "Julius Caesar",
@@ -7743,11 +7989,25 @@
     "primary_category": "media_entertainment",
     "subtopic": "Fotografiegeschichte",
     "tags": {
-      "topics": ["Fotografie", "Erfindungen", "Bildgeschichte"],
-      "entities": ["Joseph Nicéphore Niépce", "Blick aus dem Fenster in Le Gras"],
-      "genres": ["Fotografie"],
-      "regions": ["Frankreich"],
-      "eras": ["1826", "1827"]
+      "topics": [
+        "Fotografie",
+        "Erfindungen",
+        "Bildgeschichte"
+      ],
+      "entities": [
+        "Joseph Nicéphore Niépce",
+        "Blick aus dem Fenster in Le Gras"
+      ],
+      "genres": [
+        "Fotografie"
+      ],
+      "regions": [
+        "Frankreich"
+      ],
+      "eras": [
+        "1826",
+        "1827"
+      ]
     },
     "source": {
       "status": "verified",
@@ -7762,7 +8022,11 @@
     "prompt": "Was zeigt die älteste erhaltene Fotografie der Welt?",
     "answer": "A",
     "explanation": "Joseph Nicéphore Niépces Aufnahme zeigt den Blick aus einem oberen Fenster seines Anwesens Le Gras in Frankreich. Sie entstand 1826 oder 1827.",
-    "subject_keys": ["topic:media_entertainment:fotografiegeschichte", "entity:joseph-nicephore-niepce", "entity:blick-aus-dem-fenster-in-le-gras"],
+    "subject_keys": [
+      "topic:media_entertainment:fotografiegeschichte",
+      "entity:joseph-nicephore-niepce",
+      "entity:blick-aus-dem-fenster-in-le-gras"
+    ],
     "options": {
       "A": "Den Blick aus einem Fenster",
       "B": "Ein Porträt des Erfinders",
@@ -7776,11 +8040,21 @@
     "primary_category": "geography_world",
     "subtopic": "Flüsse & Grenzen",
     "tags": {
-      "topics": ["Donau", "Staaten", "Flüsse"],
-      "entities": ["Donau"],
+      "topics": [
+        "Donau",
+        "Staaten",
+        "Flüsse"
+      ],
+      "entities": [
+        "Donau"
+      ],
       "genres": [],
-      "regions": ["Europa"],
-      "eras": ["Gegenwart"]
+      "regions": [
+        "Europa"
+      ],
+      "eras": [
+        "Gegenwart"
+      ]
     },
     "source": {
       "status": "verified",
@@ -7795,7 +8069,11 @@
     "prompt": "Durch wie viele Staaten fließt die Donau oder bildet deren Grenze?",
     "answer": "B",
     "explanation": "Vom Schwarzwald bis zum Schwarzen Meer berührt die Donau zehn Staaten. Ihr Einzugsgebiet reicht sogar in neunzehn Staaten.",
-    "subject_keys": ["topic:geography_world:fluesse-und-grenzen", "entity:donau", "region:europa"],
+    "subject_keys": [
+      "topic:geography_world:fluesse-und-grenzen",
+      "entity:donau",
+      "region:europa"
+    ],
     "options": {
       "A": "Acht",
       "B": "Zehn",
@@ -7809,11 +8087,23 @@
     "primary_category": "geography_world",
     "subtopic": "Staaten & Hauptstädte",
     "tags": {
-      "topics": ["Hauptstädte", "Regierungssitze", "Südafrika"],
-      "entities": ["Pretoria", "Kapstadt", "Bloemfontein"],
+      "topics": [
+        "Hauptstädte",
+        "Regierungssitze",
+        "Südafrika"
+      ],
+      "entities": [
+        "Pretoria",
+        "Kapstadt",
+        "Bloemfontein"
+      ],
       "genres": [],
-      "regions": ["Südafrika"],
-      "eras": ["Gegenwart"]
+      "regions": [
+        "Südafrika"
+      ],
+      "eras": [
+        "Gegenwart"
+      ]
     },
     "source": {
       "status": "verified",
@@ -7828,7 +8118,13 @@
     "prompt": "Wie viele Hauptstädte hat Südafrika?",
     "answer": "C",
     "explanation": "Südafrika hat drei Hauptstädte: Pretoria ist der Verwaltungssitz, Kapstadt der Sitz des Parlaments und Bloemfontein der traditionelle Justizsitz.",
-    "subject_keys": ["topic:geography_world:staaten-und-hauptstaedte", "entity:suedafrika", "entity:pretoria", "entity:kapstadt", "entity:bloemfontein"],
+    "subject_keys": [
+      "topic:geography_world:staaten-und-hauptstaedte",
+      "entity:suedafrika",
+      "entity:pretoria",
+      "entity:kapstadt",
+      "entity:bloemfontein"
+    ],
     "options": {
       "A": "Eine",
       "B": "Zwei",
@@ -7842,11 +8138,22 @@
     "primary_category": "geography_world",
     "subtopic": "Seen & Süßwasser",
     "tags": {
-      "topics": ["Seen", "Süßwasser", "Naturrekorde"],
-      "entities": ["Baikalsee"],
+      "topics": [
+        "Seen",
+        "Süßwasser",
+        "Naturrekorde"
+      ],
+      "entities": [
+        "Baikalsee"
+      ],
       "genres": [],
-      "regions": ["Russland", "Sibirien"],
-      "eras": ["Gegenwart"]
+      "regions": [
+        "Russland",
+        "Sibirien"
+      ],
+      "eras": [
+        "Gegenwart"
+      ]
     },
     "source": {
       "status": "verified",
@@ -7861,7 +8168,11 @@
     "prompt": "Welcher See enthält ungefähr ein Fünftel des weltweit nicht gefrorenen Süßwassers?",
     "answer": "A",
     "explanation": "Der Baikalsee enthält rund zwanzig Prozent der nicht gefrorenen Süßwasserreserven der Erde. Er ist außerdem der tiefste See der Welt.",
-    "subject_keys": ["topic:geography_world:seen-und-suesswasser", "entity:baikalsee", "region:sibirien"],
+    "subject_keys": [
+      "topic:geography_world:seen-und-suesswasser",
+      "entity:baikalsee",
+      "region:sibirien"
+    ],
     "options": {
       "A": "Baikalsee",
       "B": "Victoriasee",
@@ -7875,11 +8186,22 @@
     "primary_category": "geography_world",
     "subtopic": "Landschaften & Naturrekorde",
     "tags": {
-      "topics": ["Salzflächen", "Naturrekorde", "Landschaften"],
-      "entities": ["Salar de Uyuni"],
+      "topics": [
+        "Salzflächen",
+        "Naturrekorde",
+        "Landschaften"
+      ],
+      "entities": [
+        "Salar de Uyuni"
+      ],
       "genres": [],
-      "regions": ["Bolivien", "Südamerika"],
-      "eras": ["Gegenwart"]
+      "regions": [
+        "Bolivien",
+        "Südamerika"
+      ],
+      "eras": [
+        "Gegenwart"
+      ]
     },
     "source": {
       "status": "verified",
@@ -7894,7 +8216,11 @@
     "prompt": "Wie heißt die größte Salzfläche der Erde?",
     "answer": "A",
     "explanation": "Der Salar de Uyuni in Bolivien ist die größte Salzfläche der Welt. Seine Salzkruste bedeckt ungefähr 10.000 Quadratkilometer.",
-    "subject_keys": ["topic:geography_world:landschaften-und-naturrekorde", "entity:salar-de-uyuni", "region:bolivien"],
+    "subject_keys": [
+      "topic:geography_world:landschaften-und-naturrekorde",
+      "entity:salar-de-uyuni",
+      "region:bolivien"
+    ],
     "options": {
       "A": "Salar de Uyuni",
       "B": "Bonneville Salt Flats",
@@ -7908,11 +8234,24 @@
     "primary_category": "media_entertainment",
     "subtopic": "Filmgeschichte & Animation",
     "tags": {
-      "topics": ["Computeranimation", "Filmgeschichte", "Animationsfilm"],
-      "entities": ["Toy Story", "Pixar"],
-      "genres": ["Animationsfilm"],
-      "regions": ["USA"],
-      "eras": ["1995"]
+      "topics": [
+        "Computeranimation",
+        "Filmgeschichte",
+        "Animationsfilm"
+      ],
+      "entities": [
+        "Toy Story",
+        "Pixar"
+      ],
+      "genres": [
+        "Animationsfilm"
+      ],
+      "regions": [
+        "USA"
+      ],
+      "eras": [
+        "1995"
+      ]
     },
     "source": {
       "status": "verified",
@@ -7927,7 +8266,11 @@
     "prompt": "Welcher Film war der erste vollständig computeranimierte Kinofilm in Spielfilmlänge?",
     "answer": "B",
     "explanation": "Pixars „Toy Story“ kam 1995 ins Kino und war der erste vollständig am Computer animierte Film in Spielfilmlänge.",
-    "subject_keys": ["topic:media_entertainment:filmgeschichte-und-animation", "entity:toy-story", "entity:pixar"],
+    "subject_keys": [
+      "topic:media_entertainment:filmgeschichte-und-animation",
+      "entity:toy-story",
+      "entity:pixar"
+    ],
     "options": {
       "A": "Shrek",
       "B": "Toy Story",
@@ -7941,11 +8284,25 @@
     "primary_category": "media_entertainment",
     "subtopic": "Filmpreise & Rekorde",
     "tags": {
-      "topics": ["Oscar", "Bester Film", "Filmrekorde"],
-      "entities": ["Parasite", "Bong Joon-ho"],
-      "genres": ["Spielfilm"],
-      "regions": ["Südkorea", "USA"],
-      "eras": ["2020"]
+      "topics": [
+        "Oscar",
+        "Bester Film",
+        "Filmrekorde"
+      ],
+      "entities": [
+        "Parasite",
+        "Bong Joon-ho"
+      ],
+      "genres": [
+        "Spielfilm"
+      ],
+      "regions": [
+        "Südkorea",
+        "USA"
+      ],
+      "eras": [
+        "2020"
+      ]
     },
     "source": {
       "status": "verified",
@@ -7964,7 +8321,11 @@
     "prompt": "Welcher Film gewann als erster nicht englischsprachiger Beitrag den Oscar als bester Film?",
     "answer": "A",
     "explanation": "„Parasite“ schrieb 2020 Oscar-Geschichte. Die südkoreanische Produktion war der erste nicht englischsprachige Film, der als bester Film ausgezeichnet wurde.",
-    "subject_keys": ["topic:media_entertainment:filmpreise-und-rekorde", "entity:parasite", "entity:oscar"],
+    "subject_keys": [
+      "topic:media_entertainment:filmpreise-und-rekorde",
+      "entity:parasite",
+      "entity:oscar"
+    ],
     "options": {
       "A": "Parasite",
       "B": "Roma",
@@ -7978,11 +8339,24 @@
     "primary_category": "music",
     "subtopic": "Moderne Komposition",
     "tags": {
-      "topics": ["Stille", "Umgebungsgeräusche", "Komposition"],
-      "entities": ["John Cage", "4′33″"],
-      "genres": ["Experimentelle Musik"],
-      "regions": ["USA"],
-      "eras": ["1952"]
+      "topics": [
+        "Stille",
+        "Umgebungsgeräusche",
+        "Komposition"
+      ],
+      "entities": [
+        "John Cage",
+        "4′33″"
+      ],
+      "genres": [
+        "Experimentelle Musik"
+      ],
+      "regions": [
+        "USA"
+      ],
+      "eras": [
+        "1952"
+      ]
     },
     "source": {
       "status": "verified",
@@ -7997,7 +8371,11 @@
     "prompt": "Was hören die Zuhörer in John Cages Stück „4′33″“ hauptsächlich?",
     "answer": "C",
     "explanation": "Die Ausführenden erzeugen während der drei Sätze keine beabsichtigten Klänge. Dadurch werden zufällige Geräusche im Raum und in der Umgebung zum hörbaren Inhalt.",
-    "subject_keys": ["topic:music:moderne-komposition", "entity:john-cage", "entity:vier-dreiunddreissig"],
+    "subject_keys": [
+      "topic:music:moderne-komposition",
+      "entity:john-cage",
+      "entity:vier-dreiunddreissig"
+    ],
     "options": {
       "A": "Eine Aufnahme von Straßenlärm",
       "B": "Einen einzelnen Klavierton",
@@ -8011,11 +8389,26 @@
     "primary_category": "music",
     "subtopic": "Klassische Musikgeschichte",
     "tags": {
-      "topics": ["Requiem", "Unvollendete Werke", "Klassik"],
-      "entities": ["Wolfgang Amadeus Mozart", "Franz Xaver Süßmayr"],
-      "genres": ["Requiem", "Klassik"],
-      "regions": ["Österreich"],
-      "eras": ["1791", "1792"]
+      "topics": [
+        "Requiem",
+        "Unvollendete Werke",
+        "Klassik"
+      ],
+      "entities": [
+        "Wolfgang Amadeus Mozart",
+        "Franz Xaver Süßmayr"
+      ],
+      "genres": [
+        "Requiem",
+        "Klassik"
+      ],
+      "regions": [
+        "Österreich"
+      ],
+      "eras": [
+        "1791",
+        "1792"
+      ]
     },
     "source": {
       "status": "verified",
@@ -8030,7 +8423,11 @@
     "prompt": "Wer vervollständigte Mozarts unvollendetes Requiem nach seinem Tod hauptsächlich?",
     "answer": "D",
     "explanation": "Franz Xaver Süßmayr ergänzte und vollendete das Requiem nach Mozarts Tod. Seine Fassung wurde zur traditionellen Aufführungsfassung des Werks.",
-    "subject_keys": ["topic:music:klassische-musikgeschichte", "entity:wolfgang-amadeus-mozart", "entity:franz-xaver-suessmayr"],
+    "subject_keys": [
+      "topic:music:klassische-musikgeschichte",
+      "entity:wolfgang-amadeus-mozart",
+      "entity:franz-xaver-suessmayr"
+    ],
     "options": {
       "A": "Antonio Salieri",
       "B": "Joseph Haydn",
@@ -8044,11 +8441,22 @@
     "primary_category": "sport",
     "subtopic": "Olympische Spiele",
     "tags": {
-      "topics": ["Olympische Medaillen", "Materialien", "Sportwissen"],
-      "entities": ["Olympische Goldmedaille", "IOC"],
+      "topics": [
+        "Olympische Medaillen",
+        "Materialien",
+        "Sportwissen"
+      ],
+      "entities": [
+        "Olympische Goldmedaille",
+        "IOC"
+      ],
       "genres": [],
-      "regions": ["International"],
-      "eras": ["Moderne"]
+      "regions": [
+        "International"
+      ],
+      "eras": [
+        "Moderne"
+      ]
     },
     "source": {
       "status": "verified",
@@ -8063,7 +8471,11 @@
     "prompt": "Aus welchem Metall besteht der größte Teil einer modernen olympischen Goldmedaille?",
     "answer": "B",
     "explanation": "Eine olympische Goldmedaille besteht überwiegend aus Silber und trägt nur eine Goldauflage. Die IOC-Vorgaben verlangen mindestens 92,5 Prozent Silber und mindestens sechs Gramm Gold.",
-    "subject_keys": ["topic:sport:olympische-spiele", "entity:olympische-goldmedaille", "entity:ioc"],
+    "subject_keys": [
+      "topic:sport:olympische-spiele",
+      "entity:olympische-goldmedaille",
+      "entity:ioc"
+    ],
     "options": {
       "A": "Gold",
       "B": "Silber",
@@ -8077,11 +8489,23 @@
     "primary_category": "sport",
     "subtopic": "Olympische Symbole",
     "tags": {
-      "topics": ["Olympische Ringe", "Farben", "Symbole"],
-      "entities": ["IOC", "Pierre de Coubertin"],
+      "topics": [
+        "Olympische Ringe",
+        "Farben",
+        "Symbole"
+      ],
+      "entities": [
+        "IOC",
+        "Pierre de Coubertin"
+      ],
       "genres": [],
-      "regions": ["International"],
-      "eras": ["1913", "1914"]
+      "regions": [
+        "International"
+      ],
+      "eras": [
+        "1913",
+        "1914"
+      ]
     },
     "source": {
       "status": "verified",
@@ -8096,7 +8520,11 @@
     "prompt": "Welche Aussage zu den Farben der olympischen Ringe ist richtig?",
     "answer": "B",
     "explanation": "Die Ringe stehen gemeinsam für die fünf Kontinente, aber keine einzelne Farbe ist fest einem Kontinent zugeordnet. Zusammen mit Weiß kamen die Farben damals in allen Nationalflaggen vor.",
-    "subject_keys": ["topic:sport:olympische-symbole", "entity:olympische-ringe", "entity:ioc"],
+    "subject_keys": [
+      "topic:sport:olympische-symbole",
+      "entity:olympische-ringe",
+      "entity:ioc"
+    ],
     "options": {
       "A": "Jede Farbe steht fest für einen Kontinent.",
       "B": "Keine Farbe ist fest einem Kontinent zugeordnet.",
@@ -8110,11 +8538,24 @@
     "primary_category": "science_technology",
     "subtopic": "Forschung & Auszeichnungen",
     "tags": {
-      "topics": ["Nobelpreis", "Physik", "Chemie"],
-      "entities": ["Marie Curie"],
+      "topics": [
+        "Nobelpreis",
+        "Physik",
+        "Chemie"
+      ],
+      "entities": [
+        "Marie Curie"
+      ],
       "genres": [],
-      "regions": ["Polen", "Frankreich", "Schweden"],
-      "eras": ["1903", "1911"]
+      "regions": [
+        "Polen",
+        "Frankreich",
+        "Schweden"
+      ],
+      "eras": [
+        "1903",
+        "1911"
+      ]
     },
     "source": {
       "status": "verified",
@@ -8129,7 +8570,11 @@
     "prompt": "Welche Person erhielt Nobelpreise in zwei verschiedenen Naturwissenschaften?",
     "answer": "A",
     "explanation": "Marie Curie erhielt 1903 den Nobelpreis für Physik und 1911 den Nobelpreis für Chemie. Sie ist bis heute die einzige Person mit Nobelpreisen in zwei Wissenschaftskategorien.",
-    "subject_keys": ["topic:science_technology:forschung-und-auszeichnungen", "entity:marie-curie", "entity:nobelpreis"],
+    "subject_keys": [
+      "topic:science_technology:forschung-und-auszeichnungen",
+      "entity:marie-curie",
+      "entity:nobelpreis"
+    ],
     "options": {
       "A": "Marie Curie",
       "B": "Linus Pauling",
@@ -8143,10 +8588,18 @@
     "primary_category": "plants_animals",
     "subtopic": "Nutzpflanzen & Gewürze",
     "tags": {
-      "topics": ["Vanille", "Orchideen", "Gewürzpflanzen"],
-      "entities": ["Vanilla planifolia"],
+      "topics": [
+        "Vanille",
+        "Orchideen",
+        "Gewürzpflanzen"
+      ],
+      "entities": [
+        "Vanilla planifolia"
+      ],
       "genres": [],
-      "regions": ["Tropen"],
+      "regions": [
+        "Tropen"
+      ],
       "eras": []
     },
     "source": {
@@ -8162,12 +8615,2165 @@
     "prompt": "Zu welcher Pflanzenfamilie gehört die Gewürzvanille?",
     "answer": "C",
     "explanation": "Die Gewürzvanille ist eine Orchidee. Das bekannte Aroma stammt aus ihren geernteten, getrockneten und behandelten Früchten.",
-    "subject_keys": ["topic:plants_animals:nutzpflanzen-und-gewuerze", "entity:vanilla-planifolia", "topic:orchideen"],
+    "subject_keys": [
+      "topic:plants_animals:nutzpflanzen-und-gewuerze",
+      "entity:vanilla-planifolia",
+      "topic:orchideen"
+    ],
     "options": {
       "A": "Liliengewächse",
       "B": "Süßgräser",
       "C": "Orchideen",
       "D": "Hülsenfrüchtler"
+    }
+  },
+  {
+    "id": "mc500",
+    "question_type": "multiple_choice",
+    "prompt": "Wer leitete bei Nintendo die Entwicklung des ursprünglichen Game Boy?",
+    "answer": "A",
+    "explanation": "Gunpei Yokoi leitete das Team, das den Game Boy entwickelte.",
+    "subject_keys": [
+      "topic:gaming:game-boy-entwicklung",
+      "fact:multiple-choice:500"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Nintendo History",
+          "url": "https://www.nintendo.com/en-gb/Hardware/Nintendo-History/Nintendo-History-625945.html"
+        }
+      ]
+    },
+    "options": {
+      "A": "Gunpei Yokoi",
+      "B": "Shigeru Miyamoto",
+      "C": "Satoru Iwata",
+      "D": "Masayuki Uemura"
+    },
+    "primary_category": "gaming",
+    "subtopic": "Game-Boy-Entwicklung",
+    "tags": {
+      "topics": [
+        "Game-Boy-Entwicklung"
+      ],
+      "entities": [
+        "Gunpei Yokoi"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc501",
+    "question_type": "multiple_choice",
+    "prompt": "In welchem Land erschien die erste PlayStation zuerst?",
+    "answer": "D",
+    "explanation": "Die erste PlayStation startete im Dezember 1994 in Japan.",
+    "subject_keys": [
+      "topic:gaming:playstation-start",
+      "fact:multiple-choice:501"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "PlayStation history",
+          "url": "https://www.playstation.com/en-us/playstation-history/1994-ps-one/"
+        }
+      ]
+    },
+    "options": {
+      "A": "USA",
+      "B": "Frankreich",
+      "C": "Südkorea",
+      "D": "Japan"
+    },
+    "primary_category": "gaming",
+    "subtopic": "PlayStation-Start",
+    "tags": {
+      "topics": [
+        "PlayStation-Start"
+      ],
+      "entities": [
+        "Japan"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc502",
+    "question_type": "multiple_choice",
+    "prompt": "Wer entwickelte 1984 das ursprüngliche Tetris?",
+    "answer": "C",
+    "explanation": "Alexei Paschitnow entwickelte Tetris in Moskau.",
+    "subject_keys": [
+      "topic:gaming:tetris-erfinder",
+      "fact:multiple-choice:502"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Tetris: About Tetris",
+          "url": "https://tetris.com/about"
+        }
+      ]
+    },
+    "options": {
+      "A": "John Carmack",
+      "B": "Sid Meier",
+      "C": "Alexei Paschitnow",
+      "D": "Toru Iwatani"
+    },
+    "primary_category": "gaming",
+    "subtopic": "Tetris-Erfinder",
+    "tags": {
+      "topics": [
+        "Tetris-Erfinder"
+      ],
+      "entities": [
+        "Alexei Paschitnow"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc503",
+    "question_type": "multiple_choice",
+    "prompt": "Welche drei Tugenden verkörpern die Teile der Triforce?",
+    "answer": "B",
+    "explanation": "Die Triforce besteht aus Kraft, Weisheit und Mut.",
+    "subject_keys": [
+      "topic:gaming:triforce",
+      "fact:multiple-choice:503"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Nintendo History",
+          "url": "https://www.nintendo.com/en-gb/Hardware/Nintendo-History/Nintendo-History-625945.html"
+        }
+      ]
+    },
+    "options": {
+      "A": "Stärke, Glück und Magie",
+      "B": "Kraft, Weisheit und Mut",
+      "C": "Feuer, Wasser und Erde",
+      "D": "Zeit, Raum und Licht"
+    },
+    "primary_category": "gaming",
+    "subtopic": "Triforce",
+    "tags": {
+      "topics": [
+        "Triforce"
+      ],
+      "entities": [
+        "Kraft, Weisheit und Mut"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc504",
+    "question_type": "multiple_choice",
+    "prompt": "Aus welchem Material wird der Rahmen eines Netherportals in Minecraft gebaut?",
+    "answer": "A",
+    "explanation": "Ein Netherportal benötigt einen Rahmen aus Obsidian.",
+    "subject_keys": [
+      "topic:gaming:minecraft-portale",
+      "fact:multiple-choice:504"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Minecraft: About Minecraft",
+          "url": "https://www.minecraft.net/en-us/about-minecraft"
+        }
+      ]
+    },
+    "options": {
+      "A": "Obsidian",
+      "B": "Endstein",
+      "C": "Grundgestein",
+      "D": "Quarzblock"
+    },
+    "primary_category": "gaming",
+    "subtopic": "Minecraft-Portale",
+    "tags": {
+      "topics": [
+        "Minecraft-Portale"
+      ],
+      "entities": [
+        "Obsidian"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc510",
+    "question_type": "multiple_choice",
+    "prompt": "Wer komponierte Rhapsody in Blue?",
+    "answer": "C",
+    "explanation": "George Gershwin komponierte Rhapsody in Blue für die Uraufführung von 1924.",
+    "subject_keys": [
+      "topic:music:rhapsody-in-blue",
+      "fact:multiple-choice:510"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Classical music",
+          "url": "https://www.britannica.com/art/Western-music"
+        }
+      ]
+    },
+    "options": {
+      "A": "Leonard Bernstein",
+      "B": "Duke Ellington",
+      "C": "George Gershwin",
+      "D": "Aaron Copland"
+    },
+    "primary_category": "music",
+    "subtopic": "Rhapsody in Blue",
+    "tags": {
+      "topics": [
+        "Rhapsody in Blue"
+      ],
+      "entities": [
+        "George Gershwin"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc511",
+    "question_type": "multiple_choice",
+    "prompt": "Welcher Komponist machte das präparierte Klavier besonders bekannt?",
+    "answer": "B",
+    "explanation": "John Cage entwickelte viele Werke für Klavier mit Gegenständen an den Saiten.",
+    "subject_keys": [
+      "topic:music:prapariertes-klavier",
+      "fact:multiple-choice:511"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "John Cage Trust: 4′33″",
+          "url": "https://johncage.org/apps"
+        }
+      ]
+    },
+    "options": {
+      "A": "Anton Bruckner",
+      "B": "John Cage",
+      "C": "Gustav Mahler",
+      "D": "Claude Debussy"
+    },
+    "primary_category": "music",
+    "subtopic": "Präpariertes Klavier",
+    "tags": {
+      "topics": [
+        "Präpariertes Klavier"
+      ],
+      "entities": [
+        "John Cage"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc512",
+    "question_type": "multiple_choice",
+    "prompt": "Nach wem ist das elektronische Instrument Theremin benannt?",
+    "answer": "A",
+    "explanation": "Der Erfinder Leon Theremin gab dem Instrument seinen Namen.",
+    "subject_keys": [
+      "topic:music:theremin",
+      "fact:multiple-choice:512"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Musical instrument",
+          "url": "https://www.britannica.com/art/musical-instrument"
+        }
+      ]
+    },
+    "options": {
+      "A": "Leon Theremin",
+      "B": "Robert Moog",
+      "C": "Thomas Edison",
+      "D": "Hermann von Helmholtz"
+    },
+    "primary_category": "music",
+    "subtopic": "Theremin",
+    "tags": {
+      "topics": [
+        "Theremin"
+      ],
+      "entities": [
+        "Leon Theremin"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc513",
+    "question_type": "multiple_choice",
+    "prompt": "Wer erfand das Saxofon?",
+    "answer": "D",
+    "explanation": "Der belgische Instrumentenbauer Adolphe Sax patentierte das Saxofon 1846.",
+    "subject_keys": [
+      "topic:music:saxofon",
+      "fact:multiple-choice:513"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Musical instrument",
+          "url": "https://www.britannica.com/art/musical-instrument"
+        }
+      ]
+    },
+    "options": {
+      "A": "Theobald Böhm",
+      "B": "Antonio Stradivari",
+      "C": "Hector Berlioz",
+      "D": "Adolphe Sax"
+    },
+    "primary_category": "music",
+    "subtopic": "Saxofon",
+    "tags": {
+      "topics": [
+        "Saxofon"
+      ],
+      "entities": [
+        "Adolphe Sax"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc514",
+    "question_type": "multiple_choice",
+    "prompt": "Wer komponierte den Boléro?",
+    "answer": "C",
+    "explanation": "Maurice Ravel komponierte den Boléro 1928.",
+    "subject_keys": [
+      "topic:music:bolero",
+      "fact:multiple-choice:514"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Classical music",
+          "url": "https://www.britannica.com/art/Western-music"
+        }
+      ]
+    },
+    "options": {
+      "A": "Claude Debussy",
+      "B": "Camille Saint-Saëns",
+      "C": "Maurice Ravel",
+      "D": "Erik Satie"
+    },
+    "primary_category": "music",
+    "subtopic": "Boléro",
+    "tags": {
+      "topics": [
+        "Boléro"
+      ],
+      "entities": [
+        "Maurice Ravel"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc515",
+    "question_type": "multiple_choice",
+    "prompt": "Welchen Umfang muss ein regulärer Fußball haben?",
+    "answer": "B",
+    "explanation": "IFAB schreibt einen Umfang von 68 bis 70 Zentimetern vor.",
+    "subject_keys": [
+      "topic:sport:fussballumfang",
+      "fact:multiple-choice:515"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "IFAB: Laws of the Game",
+          "url": "https://theifab.com/"
+        }
+      ]
+    },
+    "options": {
+      "A": "80 bis 82 Zentimeter",
+      "B": "68 bis 70 Zentimeter",
+      "C": "58 bis 60 Zentimeter",
+      "D": "73 bis 75 Zentimeter"
+    },
+    "primary_category": "sport",
+    "subtopic": "Fußballumfang",
+    "tags": {
+      "topics": [
+        "Fußballumfang"
+      ],
+      "entities": [
+        "68 bis 70 Zentimeter"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc516",
+    "question_type": "multiple_choice",
+    "prompt": "Wie lange läuft die FIBA-Wurfuhr bei einem neuen Ballbesitz?",
+    "answer": "A",
+    "explanation": "Ein Team muss innerhalb von 24 Sekunden einen Wurf abgeben, der den Ring berührt oder trifft.",
+    "subject_keys": [
+      "topic:sport:basketball-wurfuhr",
+      "fact:multiple-choice:516"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "FIBA: Official Basketball Rules",
+          "url": "https://refereeing.fiba.basketball/en/rules"
+        }
+      ]
+    },
+    "options": {
+      "A": "24 Sekunden",
+      "B": "20 Sekunden",
+      "C": "30 Sekunden",
+      "D": "35 Sekunden"
+    },
+    "primary_category": "sport",
+    "subtopic": "Basketball-Wurfuhr",
+    "tags": {
+      "topics": [
+        "Basketball-Wurfuhr"
+      ],
+      "entities": [
+        "24 Sekunden"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc517",
+    "question_type": "multiple_choice",
+    "prompt": "Welches Grand-Slam-Turnier wird auf Sand gespielt?",
+    "answer": "D",
+    "explanation": "Roland-Garros in Paris wird auf roten Sandplätzen ausgetragen.",
+    "subject_keys": [
+      "topic:sport:grand-slam-belage",
+      "fact:multiple-choice:517"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "ITF: Rules and regulations",
+          "url": "https://www.itftennis.com/en/about-us/governance/rules-and-regulations/"
+        }
+      ]
+    },
+    "options": {
+      "A": "Wimbledon",
+      "B": "US Open",
+      "C": "Australian Open",
+      "D": "Roland-Garros"
+    },
+    "primary_category": "sport",
+    "subtopic": "Grand-Slam-Beläge",
+    "tags": {
+      "topics": [
+        "Grand-Slam-Beläge"
+      ],
+      "entities": [
+        "Roland-Garros"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc518",
+    "question_type": "multiple_choice",
+    "prompt": "Aus wie vielen Disziplinen besteht ein Zehnkampf?",
+    "answer": "C",
+    "explanation": "Der Zehnkampf kombiniert zehn Leichtathletikdisziplinen an zwei Tagen.",
+    "subject_keys": [
+      "topic:sport:zehnkampf",
+      "fact:multiple-choice:518"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "World Athletics: Disciplines",
+          "url": "https://worldathletics.org/disciplines"
+        }
+      ]
+    },
+    "options": {
+      "A": "Neun",
+      "B": "Zwölf",
+      "C": "Zehn",
+      "D": "Sieben"
+    },
+    "primary_category": "sport",
+    "subtopic": "Zehnkampf",
+    "tags": {
+      "topics": [
+        "Zehnkampf"
+      ],
+      "entities": [
+        "Zehn"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc519",
+    "question_type": "multiple_choice",
+    "prompt": "Was bezeichnet Par beim Golf?",
+    "answer": "B",
+    "explanation": "Par ist die festgelegte Schlagzahl, die ein sehr guter Spieler für ein Loch erwarten lässt.",
+    "subject_keys": [
+      "topic:sport:golf-par",
+      "fact:multiple-choice:519"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Olympics: Sports",
+          "url": "https://www.olympics.com/en/sports/"
+        }
+      ]
+    },
+    "options": {
+      "A": "Das Gewicht des Balls",
+      "B": "Die erwartete Schlagzahl für ein Loch",
+      "C": "Die Zahl der Spieler einer Gruppe",
+      "D": "Die Breite des Fairways"
+    },
+    "primary_category": "sport",
+    "subtopic": "Golf-Par",
+    "tags": {
+      "topics": [
+        "Golf-Par"
+      ],
+      "entities": [
+        "Die erwartete Schlagzahl für ein Loch"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc520",
+    "question_type": "multiple_choice",
+    "prompt": "Welche alte Schrift ließ sich mit Hilfe des Steins von Rosette entziffern?",
+    "answer": "A",
+    "explanation": "Der parallele griechische Text half beim Verständnis der Hieroglyphen.",
+    "subject_keys": [
+      "topic:witnesses_of_time:hieroglyphen-entzifferung",
+      "fact:multiple-choice:520"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "British Museum: The Rosetta Stone",
+          "url": "https://www.britishmuseum.org/blog/everything-you-ever-wanted-know-about-rosetta-stone"
+        }
+      ]
+    },
+    "options": {
+      "A": "Ägyptische Hieroglyphen",
+      "B": "Maya-Schrift",
+      "C": "Linear A",
+      "D": "Indus-Schrift"
+    },
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Hieroglyphen-Entzifferung",
+    "tags": {
+      "topics": [
+        "Hieroglyphen-Entzifferung"
+      ],
+      "entities": [
+        "Ägyptische Hieroglyphen"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc521",
+    "question_type": "multiple_choice",
+    "prompt": "Aus welchem Jahr stammt die datierte Druckausgabe des Diamant-Sutra?",
+    "answer": "D",
+    "explanation": "Die chinesische Buchrolle trägt ein Kolophon aus dem Jahr 868.",
+    "subject_keys": [
+      "topic:witnesses_of_time:diamant-sutra",
+      "fact:multiple-choice:521"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: History of Europe",
+          "url": "https://www.britannica.com/topic/history-of-Europe"
+        }
+      ]
+    },
+    "options": {
+      "A": "476",
+      "B": "1215",
+      "C": "1455",
+      "D": "868"
+    },
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Diamant-Sutra",
+    "tags": {
+      "topics": [
+        "Diamant-Sutra"
+      ],
+      "entities": [
+        "868"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc522",
+    "question_type": "multiple_choice",
+    "prompt": "Welche Aktivistin prägte die neuseeländische Frauenwahlrechtskampagne?",
+    "answer": "C",
+    "explanation": "Kate Sheppard organisierte die großen Petitionen, die dem Wahlgesetz von 1893 vorausgingen.",
+    "subject_keys": [
+      "topic:witnesses_of_time:frauenwahlrecht",
+      "fact:multiple-choice:522"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "New Zealand History: Women and the vote",
+          "url": "https://nzhistory.govt.nz/politics/womens-suffrage"
+        }
+      ]
+    },
+    "options": {
+      "A": "Susan B. Anthony",
+      "B": "Olympe de Gouges",
+      "C": "Kate Sheppard",
+      "D": "Emmeline Pankhurst"
+    },
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Frauenwahlrecht",
+    "tags": {
+      "topics": [
+        "Frauenwahlrecht"
+      ],
+      "entities": [
+        "Kate Sheppard"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc523",
+    "question_type": "multiple_choice",
+    "prompt": "In welchem Jahr wurde der Westfälische Friede geschlossen?",
+    "answer": "B",
+    "explanation": "Die Verträge von Münster und Osnabrück beendeten 1648 den Dreißigjährigen Krieg.",
+    "subject_keys": [
+      "topic:witnesses_of_time:westfalischer-friede",
+      "fact:multiple-choice:523"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: History of Europe",
+          "url": "https://www.britannica.com/topic/history-of-Europe"
+        }
+      ]
+    },
+    "options": {
+      "A": "1815",
+      "B": "1648",
+      "C": "1492",
+      "D": "1713"
+    },
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Westfälischer Friede",
+    "tags": {
+      "topics": [
+        "Westfälischer Friede"
+      ],
+      "entities": [
+        "1648"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc524",
+    "question_type": "multiple_choice",
+    "prompt": "Wo wurde der Versailler Vertrag 1919 unterzeichnet?",
+    "answer": "A",
+    "explanation": "Die Unterzeichnung fand am 28. Juni 1919 im Spiegelsaal statt.",
+    "subject_keys": [
+      "topic:witnesses_of_time:versailler-vertrag",
+      "fact:multiple-choice:524"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: History of Europe",
+          "url": "https://www.britannica.com/topic/history-of-Europe"
+        }
+      ]
+    },
+    "options": {
+      "A": "Im Spiegelsaal von Versailles",
+      "B": "Im Louvre",
+      "C": "Im Élysée-Palast",
+      "D": "In Notre-Dame"
+    },
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Versailler Vertrag",
+    "tags": {
+      "topics": [
+        "Versailler Vertrag"
+      ],
+      "entities": [
+        "Im Spiegelsaal von Versailles"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc525",
+    "question_type": "multiple_choice",
+    "prompt": "Welcher Film war Pixars erster abendfüllender Kinofilm?",
+    "answer": "D",
+    "explanation": "Toy Story erschien 1995 als Pixars erster Langfilm.",
+    "subject_keys": [
+      "topic:media_entertainment:pixar-erstling",
+      "fact:multiple-choice:525"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Pixar: Our Story",
+          "url": "https://www.pixar.com/our-story"
+        }
+      ]
+    },
+    "options": {
+      "A": "Cars",
+      "B": "Findet Nemo",
+      "C": "Die Unglaublichen",
+      "D": "Toy Story"
+    },
+    "primary_category": "media_entertainment",
+    "subtopic": "Pixar-Erstling",
+    "tags": {
+      "topics": [
+        "Pixar-Erstling"
+      ],
+      "entities": [
+        "Toy Story"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc526",
+    "question_type": "multiple_choice",
+    "prompt": "Wie heißt der Hauptpreis des Filmfestivals von Cannes?",
+    "answer": "C",
+    "explanation": "Die Palme d'Or ist die höchste Auszeichnung des Festivals von Cannes.",
+    "subject_keys": [
+      "topic:media_entertainment:filmfest-cannes",
+      "fact:multiple-choice:526"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Academy Awards: Ceremonies",
+          "url": "https://www.oscars.org/oscars/ceremonies"
+        }
+      ]
+    },
+    "options": {
+      "A": "Goldener Bär",
+      "B": "Goldene Kamera",
+      "C": "Goldene Palme",
+      "D": "Goldener Löwe"
+    },
+    "primary_category": "media_entertainment",
+    "subtopic": "Filmfest Cannes",
+    "tags": {
+      "topics": [
+        "Filmfest Cannes"
+      ],
+      "entities": [
+        "Goldene Palme"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc527",
+    "question_type": "multiple_choice",
+    "prompt": "Welches Tier trägt der Hauptpreis der Berlinale im Namen?",
+    "answer": "B",
+    "explanation": "Der Hauptpreis der Berlinale heißt Goldener Bär.",
+    "subject_keys": [
+      "topic:media_entertainment:berlinale",
+      "fact:multiple-choice:527"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Academy Awards: Ceremonies",
+          "url": "https://www.oscars.org/oscars/ceremonies"
+        }
+      ]
+    },
+    "options": {
+      "A": "Pferd",
+      "B": "Bär",
+      "C": "Löwe",
+      "D": "Adler"
+    },
+    "primary_category": "media_entertainment",
+    "subtopic": "Berlinale",
+    "tags": {
+      "topics": [
+        "Berlinale"
+      ],
+      "entities": [
+        "Bär"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc528",
+    "question_type": "multiple_choice",
+    "prompt": "Welcher Darsteller spielte James Bond in Dr. No?",
+    "answer": "A",
+    "explanation": "Sean Connery spielte Bond im ersten Eon-Kinofilm Dr. No.",
+    "subject_keys": [
+      "topic:media_entertainment:james-bond",
+      "fact:multiple-choice:528"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "007: The Films",
+          "url": "https://www.007.com/the-films/"
+        }
+      ]
+    },
+    "options": {
+      "A": "Sean Connery",
+      "B": "Roger Moore",
+      "C": "George Lazenby",
+      "D": "Daniel Craig"
+    },
+    "primary_category": "media_entertainment",
+    "subtopic": "James Bond",
+    "tags": {
+      "topics": [
+        "James Bond"
+      ],
+      "entities": [
+        "Sean Connery"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc529",
+    "question_type": "multiple_choice",
+    "prompt": "Welche Organisation vergibt die Oscars?",
+    "answer": "D",
+    "explanation": "Die Academy of Motion Picture Arts and Sciences richtet die Academy Awards aus.",
+    "subject_keys": [
+      "topic:media_entertainment:academy-awards",
+      "fact:multiple-choice:529"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Academy Awards: Ceremonies",
+          "url": "https://www.oscars.org/oscars/ceremonies"
+        }
+      ]
+    },
+    "options": {
+      "A": "Hollywood Foreign Press Association",
+      "B": "Screen Actors Guild",
+      "C": "British Film Institute",
+      "D": "Academy of Motion Picture Arts and Sciences"
+    },
+    "primary_category": "media_entertainment",
+    "subtopic": "Academy Awards",
+    "tags": {
+      "topics": [
+        "Academy Awards"
+      ],
+      "entities": [
+        "Academy of Motion Picture Arts and Sciences"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc530",
+    "question_type": "multiple_choice",
+    "prompt": "Aus welchem Pflanzenteil wird Zimt gewonnen?",
+    "answer": "C",
+    "explanation": "Zimt entsteht aus der getrockneten inneren Rinde von Zimtbäumen.",
+    "subject_keys": [
+      "topic:plants_animals:zimt",
+      "fact:multiple-choice:530"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Kew: Plants of the World Online",
+          "url": "https://powo.science.kew.org/"
+        }
+      ]
+    },
+    "options": {
+      "A": "Blütennarbe",
+      "B": "Fruchtkern",
+      "C": "Innere Rinde",
+      "D": "Wurzel"
+    },
+    "primary_category": "plants_animals",
+    "subtopic": "Zimt",
+    "tags": {
+      "topics": [
+        "Zimt"
+      ],
+      "entities": [
+        "Innere Rinde"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc531",
+    "question_type": "multiple_choice",
+    "prompt": "Aus welcher Region stammt Coffea arabica ursprünglich?",
+    "answer": "B",
+    "explanation": "Wildformen von Arabica-Kaffee stammen aus Äthiopien und angrenzenden Gebieten.",
+    "subject_keys": [
+      "topic:plants_animals:arabica-kaffee",
+      "fact:multiple-choice:531"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Kew: Plants of the World Online",
+          "url": "https://powo.science.kew.org/"
+        }
+      ]
+    },
+    "options": {
+      "A": "Mexikanisches Hochland",
+      "B": "Äthiopisches Hochland",
+      "C": "Anden",
+      "D": "Java"
+    },
+    "primary_category": "plants_animals",
+    "subtopic": "Arabica-Kaffee",
+    "tags": {
+      "topics": [
+        "Arabica-Kaffee"
+      ],
+      "entities": [
+        "Äthiopisches Hochland"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc532",
+    "question_type": "multiple_choice",
+    "prompt": "Welche Tiere sind die nächsten heute lebenden Verwandten der Wale?",
+    "answer": "A",
+    "explanation": "Molekulare und fossile Befunde ordnen Wale und Flusspferde derselben Verwandtschaftsgruppe zu.",
+    "subject_keys": [
+      "topic:plants_animals:wal-verwandtschaft",
+      "fact:multiple-choice:532"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Smithsonian's National Zoo: Animals",
+          "url": "https://nationalzoo.si.edu/animals"
+        }
+      ]
+    },
+    "options": {
+      "A": "Flusspferde",
+      "B": "Robben",
+      "C": "Seekühe",
+      "D": "Elefanten"
+    },
+    "primary_category": "plants_animals",
+    "subtopic": "Wal-Verwandtschaft",
+    "tags": {
+      "topics": [
+        "Wal-Verwandtschaft"
+      ],
+      "entities": [
+        "Flusspferde"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc533",
+    "question_type": "multiple_choice",
+    "prompt": "Welche Farbe kann das Tapetum im Rentierauge im Winter annehmen?",
+    "answer": "D",
+    "explanation": "Die reflektierende Schicht wechselt im dunklen arktischen Winter von golden zu blau.",
+    "subject_keys": [
+      "topic:plants_animals:rentieraugen",
+      "fact:multiple-choice:533"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Smithsonian's National Zoo: Animals",
+          "url": "https://nationalzoo.si.edu/animals"
+        }
+      ]
+    },
+    "options": {
+      "A": "Rot",
+      "B": "Orange",
+      "C": "Schwarz",
+      "D": "Blau"
+    },
+    "primary_category": "plants_animals",
+    "subtopic": "Rentieraugen",
+    "tags": {
+      "topics": [
+        "Rentieraugen"
+      ],
+      "entities": [
+        "Blau"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc534",
+    "question_type": "multiple_choice",
+    "prompt": "Womit orientieren sich viele Fledermäuse in der Dunkelheit?",
+    "answer": "C",
+    "explanation": "Sie senden Ultraschallrufe aus und werten deren Echos aus.",
+    "subject_keys": [
+      "topic:plants_animals:fledermaus-ortung",
+      "fact:multiple-choice:534"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Smithsonian's National Zoo: Animals",
+          "url": "https://nationalzoo.si.edu/animals"
+        }
+      ]
+    },
+    "options": {
+      "A": "Infrarotaugen",
+      "B": "Elektrischen Organen",
+      "C": "Echoortung",
+      "D": "Magnetischen Schnurrhaaren"
+    },
+    "primary_category": "plants_animals",
+    "subtopic": "Fledermaus-Ortung",
+    "tags": {
+      "topics": [
+        "Fledermaus-Ortung"
+      ],
+      "entities": [
+        "Echoortung"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc535",
+    "question_type": "multiple_choice",
+    "prompt": "In welcher Stadt befindet sich das NATO-Hauptquartier?",
+    "answer": "B",
+    "explanation": "Das NATO-Hauptquartier befindet sich in Brüssel.",
+    "subject_keys": [
+      "topic:geography_world:nato-sitz",
+      "fact:multiple-choice:535"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "CIA: The World Factbook",
+          "url": "https://www.cia.gov/the-world-factbook/"
+        }
+      ]
+    },
+    "options": {
+      "A": "Straßburg",
+      "B": "Brüssel",
+      "C": "Den Haag",
+      "D": "Genf"
+    },
+    "primary_category": "geography_world",
+    "subtopic": "NATO-Sitz",
+    "tags": {
+      "topics": [
+        "NATO-Sitz"
+      ],
+      "entities": [
+        "Brüssel"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc536",
+    "question_type": "multiple_choice",
+    "prompt": "In welcher Stadt sitzt die Europäische Zentralbank?",
+    "answer": "A",
+    "explanation": "Die EZB hat ihren Sitz in Frankfurt am Main.",
+    "subject_keys": [
+      "topic:geography_world:ezb-sitz",
+      "fact:multiple-choice:536"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "CIA: The World Factbook",
+          "url": "https://www.cia.gov/the-world-factbook/"
+        }
+      ]
+    },
+    "options": {
+      "A": "Frankfurt am Main",
+      "B": "Brüssel",
+      "C": "Luxemburg",
+      "D": "Wien"
+    },
+    "primary_category": "geography_world",
+    "subtopic": "EZB-Sitz",
+    "tags": {
+      "topics": [
+        "EZB-Sitz"
+      ],
+      "entities": [
+        "Frankfurt am Main"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc537",
+    "question_type": "multiple_choice",
+    "prompt": "In welcher Stadt hat der Gerichtshof der Europäischen Union seinen Sitz?",
+    "answer": "D",
+    "explanation": "Der Gerichtshof der Europäischen Union sitzt in Luxemburg.",
+    "subject_keys": [
+      "topic:geography_world:eu-gerichtshof",
+      "fact:multiple-choice:537"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "CIA: The World Factbook",
+          "url": "https://www.cia.gov/the-world-factbook/"
+        }
+      ]
+    },
+    "options": {
+      "A": "Brüssel",
+      "B": "Straßburg",
+      "C": "Den Haag",
+      "D": "Luxemburg"
+    },
+    "primary_category": "geography_world",
+    "subtopic": "EU-Gerichtshof",
+    "tags": {
+      "topics": [
+        "EU-Gerichtshof"
+      ],
+      "entities": [
+        "Luxemburg"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc538",
+    "question_type": "multiple_choice",
+    "prompt": "In welchem Land liegt der Salar de Uyuni?",
+    "answer": "C",
+    "explanation": "Der riesige Salzsee liegt im bolivianischen Altiplano.",
+    "subject_keys": [
+      "topic:geography_world:salar-de-uyuni",
+      "fact:multiple-choice:538"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Geography",
+          "url": "https://www.britannica.com/science/geography"
+        }
+      ]
+    },
+    "options": {
+      "A": "Chile",
+      "B": "Argentinien",
+      "C": "Bolivien",
+      "D": "Peru"
+    },
+    "primary_category": "geography_world",
+    "subtopic": "Salar de Uyuni",
+    "tags": {
+      "topics": [
+        "Salar de Uyuni"
+      ],
+      "entities": [
+        "Bolivien"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc539",
+    "question_type": "multiple_choice",
+    "prompt": "In welchem Land liegt der Baikalsee?",
+    "answer": "B",
+    "explanation": "Der Baikalsee liegt in Sibirien in Russland.",
+    "subject_keys": [
+      "topic:geography_world:baikalsee",
+      "fact:multiple-choice:539"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list"
+        }
+      ]
+    },
+    "options": {
+      "A": "China",
+      "B": "Russland",
+      "C": "Mongolei",
+      "D": "Kasachstan"
+    },
+    "primary_category": "geography_world",
+    "subtopic": "Baikalsee",
+    "tags": {
+      "topics": [
+        "Baikalsee"
+      ],
+      "entities": [
+        "Russland"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc540",
+    "question_type": "multiple_choice",
+    "prompt": "Welche Ordnungszahl hat Helium?",
+    "answer": "A",
+    "explanation": "Helium ist das zweite Element des Periodensystems.",
+    "subject_keys": [
+      "topic:science_technology:helium",
+      "fact:multiple-choice:540"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "IUPAC: Periodic Table of Elements",
+          "url": "https://iupac.org/what-we-do/periodic-table-of-elements/"
+        }
+      ]
+    },
+    "options": {
+      "A": "2",
+      "B": "1",
+      "C": "4",
+      "D": "8"
+    },
+    "primary_category": "science_technology",
+    "subtopic": "Helium",
+    "tags": {
+      "topics": [
+        "Helium"
+      ],
+      "entities": [
+        "2"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc541",
+    "question_type": "multiple_choice",
+    "prompt": "Welche Ordnungszahl hat Wolfram?",
+    "answer": "D",
+    "explanation": "Wolfram ist Element 74 des Periodensystems.",
+    "subject_keys": [
+      "topic:science_technology:wolfram",
+      "fact:multiple-choice:541"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "IUPAC: Periodic Table of Elements",
+          "url": "https://iupac.org/what-we-do/periodic-table-of-elements/"
+        }
+      ]
+    },
+    "options": {
+      "A": "47",
+      "B": "72",
+      "C": "79",
+      "D": "74"
+    },
+    "primary_category": "science_technology",
+    "subtopic": "Wolfram",
+    "tags": {
+      "topics": [
+        "Wolfram"
+      ],
+      "entities": [
+        "74"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc542",
+    "question_type": "multiple_choice",
+    "prompt": "Welche SI-Basiseinheit misst die elektrische Stromstärke?",
+    "answer": "C",
+    "explanation": "Das Ampere ist die SI-Basiseinheit der elektrischen Stromstärke.",
+    "subject_keys": [
+      "topic:science_technology:si-basiseinheiten",
+      "fact:multiple-choice:542"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "BIPM: SI Brochure",
+          "url": "https://www.bipm.org/en/publications/si-brochure"
+        }
+      ]
+    },
+    "options": {
+      "A": "Ohm",
+      "B": "Coulomb",
+      "C": "Ampere",
+      "D": "Volt"
+    },
+    "primary_category": "science_technology",
+    "subtopic": "SI-Basiseinheiten",
+    "tags": {
+      "topics": [
+        "SI-Basiseinheiten"
+      ],
+      "entities": [
+        "Ampere"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc543",
+    "question_type": "multiple_choice",
+    "prompt": "Welche Unicode-Kodierung verwendet pro Codepunkt ein bis vier Bytes?",
+    "answer": "B",
+    "explanation": "UTF-8 ist eine variable Kodierung mit ein bis vier Bytes je Unicode-Codepunkt.",
+    "subject_keys": [
+      "topic:science_technology:unicode-kodierung",
+      "fact:multiple-choice:543"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Unicode Consortium: Unicode Statistics",
+          "url": "https://www.unicode.org/versions/stats/"
+        }
+      ]
+    },
+    "options": {
+      "A": "EBCDIC",
+      "B": "UTF-8",
+      "C": "ASCII",
+      "D": "UTF-32"
+    },
+    "primary_category": "science_technology",
+    "subtopic": "Unicode-Kodierung",
+    "tags": {
+      "topics": [
+        "Unicode-Kodierung"
+      ],
+      "entities": [
+        "UTF-8"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc544",
+    "question_type": "multiple_choice",
+    "prompt": "Wer führte 1968 die Computermaus in der berühmten „Mother of All Demos“ vor?",
+    "answer": "A",
+    "explanation": "Douglas Engelbart demonstrierte das Zeigegerät 1968 öffentlich.",
+    "subject_keys": [
+      "topic:science_technology:computermaus",
+      "fact:multiple-choice:544"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "NIST: Metric (SI) Program",
+          "url": "https://www.nist.gov/pml/owm/metric-si"
+        }
+      ]
+    },
+    "options": {
+      "A": "Douglas Engelbart",
+      "B": "Alan Turing",
+      "C": "Tim Berners-Lee",
+      "D": "Dennis Ritchie"
+    },
+    "primary_category": "science_technology",
+    "subtopic": "Computermaus",
+    "tags": {
+      "topics": [
+        "Computermaus"
+      ],
+      "entities": [
+        "Douglas Engelbart"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc545",
+    "question_type": "multiple_choice",
+    "prompt": "Welche Krankheit entsteht klassisch bei schwerem Vitamin-C-Mangel?",
+    "answer": "D",
+    "explanation": "Längerer Vitamin-C-Mangel kann Skorbut verursachen.",
+    "subject_keys": [
+      "topic:human_everyday:vitamin-c",
+      "fact:multiple-choice:545"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "NIH Office of Dietary Supplements: Fact Sheets",
+          "url": "https://ods.od.nih.gov/factsheets/list-all/"
+        }
+      ]
+    },
+    "options": {
+      "A": "Rachitis",
+      "B": "Beriberi",
+      "C": "Pellagra",
+      "D": "Skorbut"
+    },
+    "primary_category": "human_everyday",
+    "subtopic": "Vitamin C",
+    "tags": {
+      "topics": [
+        "Vitamin C"
+      ],
+      "entities": [
+        "Skorbut"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc546",
+    "question_type": "multiple_choice",
+    "prompt": "Welche Mineralstoffaufnahme unterstützt Vitamin D besonders?",
+    "answer": "C",
+    "explanation": "Vitamin D fördert die Calciumaufnahme und unterstützt Knochen.",
+    "subject_keys": [
+      "topic:human_everyday:vitamin-d",
+      "fact:multiple-choice:546"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "NIH Office of Dietary Supplements: Fact Sheets",
+          "url": "https://ods.od.nih.gov/factsheets/list-all/"
+        }
+      ]
+    },
+    "options": {
+      "A": "Kupfer",
+      "B": "Fluorid",
+      "C": "Calcium",
+      "D": "Natrium"
+    },
+    "primary_category": "human_everyday",
+    "subtopic": "Vitamin D",
+    "tags": {
+      "topics": [
+        "Vitamin D"
+      ],
+      "entities": [
+        "Calcium"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc547",
+    "question_type": "multiple_choice",
+    "prompt": "Welche Nummer verbindet in Deutschland mit der Polizei?",
+    "answer": "B",
+    "explanation": "110 ist der Polizeinotruf; 112 erreicht Feuerwehr und Rettungsdienst.",
+    "subject_keys": [
+      "topic:human_everyday:notrufnummern",
+      "fact:multiple-choice:547"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "European Commission: 112",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/112"
+        }
+      ]
+    },
+    "options": {
+      "A": "115",
+      "B": "110",
+      "C": "112",
+      "D": "116117"
+    },
+    "primary_category": "human_everyday",
+    "subtopic": "Notrufnummern",
+    "tags": {
+      "topics": [
+        "Notrufnummern"
+      ],
+      "entities": [
+        "110"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc548",
+    "question_type": "multiple_choice",
+    "prompt": "Welche Nummer hat der ärztliche Bereitschaftsdienst in Deutschland?",
+    "answer": "A",
+    "explanation": "116117 ist für dringende, aber nicht lebensbedrohliche medizinische Probleme außerhalb der Sprechzeiten gedacht.",
+    "subject_keys": [
+      "topic:human_everyday:arztlicher-bereitschaftsdienst",
+      "fact:multiple-choice:548"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "European Commission: 112",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/112"
+        }
+      ]
+    },
+    "options": {
+      "A": "116117",
+      "B": "110",
+      "C": "112",
+      "D": "115"
+    },
+    "primary_category": "human_everyday",
+    "subtopic": "Ärztlicher Bereitschaftsdienst",
+    "tags": {
+      "topics": [
+        "Ärztlicher Bereitschaftsdienst"
+      ],
+      "entities": [
+        "116117"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc549",
+    "question_type": "multiple_choice",
+    "prompt": "Welche Faser wächst als Samenhaar an einer Pflanze?",
+    "answer": "D",
+    "explanation": "Baumwolle besteht aus Fasern, die die Samen der Baumwollpflanze umgeben.",
+    "subject_keys": [
+      "topic:human_everyday:naturfasern",
+      "fact:multiple-choice:549"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "USDA: Natural Fibers",
+          "url": "https://agresearchmag.ars.usda.gov/2000/nov/dye/"
+        }
+      ]
+    },
+    "options": {
+      "A": "Nylon",
+      "B": "Polyester",
+      "C": "Acryl",
+      "D": "Baumwolle"
+    },
+    "primary_category": "human_everyday",
+    "subtopic": "Naturfasern",
+    "tags": {
+      "topics": [
+        "Naturfasern"
+      ],
+      "entities": [
+        "Baumwolle"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc600",
+    "question_type": "multiple_choice",
+    "prompt": "Welcher HTTP-Code bedeutet im Aprilscherz-RFC „I'm a teapot“?",
+    "answer": "A",
+    "explanation": "RFC 2324 legte am 1. April 1998 für eine Teekanne den scherzhaften Code 418 fest.",
+    "subject_keys": [
+      "topic:science_technology:http-humor",
+      "fact:multiple-choice:600"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "RFC Editor: RFC 2324",
+          "url": "https://www.rfc-editor.org/rfc/rfc2324.html"
+        }
+      ]
+    },
+    "options": {
+      "A": "418",
+      "B": "204",
+      "C": "302",
+      "D": "451"
+    },
+    "primary_category": "science_technology",
+    "subtopic": "HTTP-Humor",
+    "tags": {
+      "topics": [
+        "HTTP-Humor"
+      ],
+      "entities": [
+        "418"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc601",
+    "question_type": "multiple_choice",
+    "prompt": "Was ist bei NASA-Raumanzügen die „Snoopy cap“?",
+    "answer": "D",
+    "explanation": "Die Communications Carrier Assembly mit Kopfhörern und Mikrofonen trägt den Spitznamen Snoopy cap.",
+    "subject_keys": [
+      "topic:science_technology:raumanzug-spitznamen",
+      "fact:multiple-choice:601"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "NASA: Suited for Spacewalking",
+          "url": "https://www.nasa.gov/wp-content/uploads/2009/07/143159main_suited_for_spacewalking.pdf"
+        }
+      ]
+    },
+    "options": {
+      "A": "ein Sonnenschutz",
+      "B": "ein Notfallhandschuh",
+      "C": "eine Werkzeugtasche",
+      "D": "eine Kommunikationshaube"
+    },
+    "primary_category": "science_technology",
+    "subtopic": "Raumanzug-Spitznamen",
+    "tags": {
+      "topics": [
+        "Raumanzug-Spitznamen"
+      ],
+      "entities": [
+        "eine Kommunikationshaube"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc602",
+    "question_type": "multiple_choice",
+    "prompt": "Wofür steht das C in CAPTCHA?",
+    "answer": "C",
+    "explanation": "CAPTCHA steht für Completely Automated Public Turing Test to Tell Computers and Humans Apart.",
+    "subject_keys": [
+      "topic:science_technology:captcha",
+      "fact:multiple-choice:602"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Carnegie Mellon: Computer Security as a Song",
+          "url": "https://www.cs.cmu.edu/news/2013/computer-security-song"
+        }
+      ]
+    },
+    "options": {
+      "A": "Cryptographic",
+      "B": "Certified",
+      "C": "Completely",
+      "D": "Computer"
+    },
+    "primary_category": "science_technology",
+    "subtopic": "CAPTCHA",
+    "tags": {
+      "topics": [
+        "CAPTCHA"
+      ],
+      "entities": [
+        "Completely"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc603",
+    "question_type": "multiple_choice",
+    "prompt": "Was stand in der ersten SMS von 1992?",
+    "answer": "B",
+    "explanation": "Neil Papworth schickte die erste SMS von einem Computer; ihr Text lautete Merry Christmas.",
+    "subject_keys": [
+      "topic:media_entertainment:erste-sms",
+      "fact:multiple-choice:603"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Vodafone: 25 years since the first text message",
+          "url": "https://www.vodafone.com/news/newsroom/technology/25-anniversary-text-message"
+        }
+      ]
+    },
+    "options": {
+      "A": "Happy New Year",
+      "B": "Merry Christmas",
+      "C": "Hello World",
+      "D": "Call me"
+    },
+    "primary_category": "media_entertainment",
+    "subtopic": "Erste SMS",
+    "tags": {
+      "topics": [
+        "Erste SMS"
+      ],
+      "entities": [
+        "Merry Christmas"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc604",
+    "question_type": "multiple_choice",
+    "prompt": "Welches Produkt wurde 1974 als erstes an einer Kasse per Barcode gescannt?",
+    "answer": "A",
+    "explanation": "In einem Supermarkt in Ohio wurde eine Packung Wrigley's Juicy Fruit gescannt.",
+    "subject_keys": [
+      "topic:human_everyday:erster-barcode-scan",
+      "fact:multiple-choice:604"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "GS1: First barcode scan",
+          "url": "https://www.gs1.org/docs/media_centre/gs1pr_260614_first_barcode_scan.pdf"
+        }
+      ]
+    },
+    "options": {
+      "A": "Wrigley's-Kaugummi",
+      "B": "eine Cola-Dose",
+      "C": "eine Cornflakes-Packung",
+      "D": "eine Zahnpastatube"
+    },
+    "primary_category": "human_everyday",
+    "subtopic": "Erster Barcode-Scan",
+    "tags": {
+      "topics": [
+        "Erster Barcode-Scan"
+      ],
+      "entities": [
+        "Wrigley's-Kaugummi"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "mc606",
+    "question_type": "multiple_choice",
+    "primary_category": "human_everyday",
+    "subtopic": "Snackkultur & Markensprache",
+    "tags": {
+      "topics": [
+        "Snacks",
+        "Popkultur",
+        "Markensprache"
+      ],
+      "entities": [
+        "Cheetos",
+        "Cheetle",
+        "PepsiCo"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": [
+        "Gegenwart"
+      ]
+    },
+    "prompt": "Wie nennt Cheetos offiziell den orangefarbenen Staub, der nach dem Snacken an den Fingern klebt?",
+    "answer": "B",
+    "explanation": "Cheetos nennt den orangefarbenen Gewürzstaub an den Fingern offiziell „Cheetle“.",
+    "subject_keys": [
+      "topic:human_everyday:snackkultur-und-markensprache",
+      "entity:cheetos",
+      "entity:cheetle"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "PepsiCo: Cheetos Pops Into The New Year",
+          "url": "https://www.pepsico.com/en/newsroom/press-releases/2020/cheetos-pops-into-the-new-year-with-launch-of-cheetos-popcorn-in-stores-nationwide"
+        }
+      ]
+    },
+    "options": {
+      "A": "Cheddarprint",
+      "B": "Cheetle",
+      "C": "Chester Dust",
+      "D": "Crunchmark"
     }
   }
 ]

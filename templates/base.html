@@ -25,38 +25,88 @@
   <link rel="canonical" href="{{ public_url }}/">
   <title>{% block title %}{{ game_name }}{% endblock %}</title>
   <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css', v='21') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css', v='26') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='quiz-arena.css', v='67') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='typography-v1.css', v='2') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='profile-stage-v1.css', v='20') }}">
+  {% block extra_head %}{% endblock %}
 </head>
-<body>
+<body{% if g.user %} class="has-player-background" style="--player-background-image: url('{{ url_for('static', filename=background_catalog[player_cosmetics.background_id].asset) }}')"{% endif %}>
   <div class="noise" aria-hidden="true"></div>
+  {% set daily_rule_endpoints = ('login', 'register', 'home', 'question', 'result') %}
+  {% set show_daily_rules = request.endpoint in daily_rule_endpoints %}
+  {% set show_party_rules = request.endpoint and request.endpoint.startswith('party_') %}
+  {% set show_perfect_rules = request.endpoint and request.endpoint.startswith('nerd_') %}
+  {% set show_maexchen_rules = request.endpoint and request.endpoint.startswith('maexchen_') %}
   {% block rules %}
-    {% if g.user %}
-      <div class="currency-indicator" aria-label="Dein Guthaben">
-        <span>Ikühe</span>
-        <strong>Du hast {{ currency_balance|points }} Ikühe</strong>
-      </div>
-      <button class="rules-button is-secondary" type="button" data-rules-open>Spielregeln</button>
-    {% else %}
-      <button class="rules-button" type="button" data-rules-open>Spielregeln</button>
-    {% endif %}
-    <dialog class="rules-dialog" id="rules-dialog" aria-labelledby="rules-title">
-      <form method="dialog" class="rules-panel">
-        <div class="rules-heading">
-          <div>
-            <span class="eyebrow">SO LÄUFT ES</span>
-            <h2 id="rules-title">Spielregeln</h2>
+    {% if show_daily_rules or show_party_rules or show_perfect_rules or show_maexchen_rules %}
+      {% if not g.user %}<button class="rules-button" type="button" data-rules-open>Spielregeln – So wird gespielt</button>{% endif %}
+      <dialog class="rules-dialog" id="rules-dialog" aria-labelledby="rules-title">
+        <form method="dialog" class="rules-panel">
+          <div class="rules-heading">
+            <div>
+              <span class="eyebrow">SO LÄUFT ES</span>
+              <h2 id="rules-title">{% if show_maexchen_rules %}Mäxchen{% elif show_party_rules %}Partymodus-Classic{% elif show_perfect_rules %}Stormseed´s Perfect{% else %}Spielregeln{% endif %}</h2>
+            </div>
+            <button class="rules-close" type="submit" value="close" aria-label="Spielregeln schließen">×</button>
           </div>
-          <button class="rules-close" type="submit" value="close" aria-label="Spielregeln schließen">×</button>
-        </div>
-        <ul>
-          <li>Beantworte täglich 5 Fragen und miss dich mit der Creme de la Creme unserer Glaubensgemeinschaft!</li>
-          <li>Je schneller du antwortest, desto mehr Punkte erhältst du.</li>
-          <li>Wir sind in der Betaphase und dankbar für Bewertungen und Anregungen.</li>
-          <li>Verpasste Runden der laufenden Woche kannst du jederzeit bis Sonntag nachholen.</li>
-        </ul>
-      </form>
-    </dialog>
+          <ul>
+            {% if show_maexchen_rules %}
+              <li>Zwei Würfel bilden einen Wert: Die größere Augenzahl steht vorne. Normale Werte steigen von 31 bis 65, danach folgen die Pasche von 11 bis 66; am höchsten ist das Mäxchen 21.</li>
+              <li>Nur der Würfler sieht seinen Wurf. Er muss einen strikt höheren Wert als zuvor ansagen und darf dabei bluffen.</li>
+              <li>Der Nächste glaubt und würfelt weiter oder deckt für alle auf. Deckt der echte Wurf die Ansage, verliert der Zweifler ein Leben; andernfalls verliert der Bluffende.</li>
+              <li>Ein echtes angezweifeltes Mäxchen kostet den Zweifler zwei Leben. Wer ein angesagtes Mäxchen glaubt, gibt ein Leben ab und darf die neue Runde vorlegen.</li>
+              <li>Nach der zweiten Niederlage schwimmt man. Nach der dritten scheidet man aus. Der Verlierer legt die nächste Runde vor; die letzte Person am Tisch gewinnt.</li>
+            {% elif show_perfect_rules %}
+              <li>Erstelle eine Lobby oder tritt einer offenen Lobby bei. Bis zu {{ config.get('PERFECT_MAX_PLAYERS', 7) }} Personen spielen mit; der Host legt Zielpunktzahl oder Spielzeit fest.</li>
+              <li>Zu jedem seltenen Begriff oder jeder Kuriosität erfinden alle in drei Minuten eine möglichst glaubwürdige Antwort. Für die anschließende Auswahl bleiben eine Minute und 45 Sekunden; beide Timer warnen bei 30 Sekunden.</li>
+              <li>Die echte Auflösung wird anonym unter die erfundenen Antworten gemischt. Die eigene Antwort kann nicht gewählt werden; alle Wahlen bleiben bis zur Auflösung geheim. Danach zeigen Avatar-Münzen, wer welche Antwort gewählt hat.</li>
+              <li>Der Host kann Antworten als ebenfalls richtig anerkennen. Eine richtige Wahl und jede getäuschte Person bringen jeweils 100 Punkte.</li>
+              <li>Der Host kann das laufende Spiel pausieren und fortsetzen. Plätze bleiben erhalten, bis eine Person die Lobby ausdrücklich verlässt.</li>
+              <li>Bei einem Punktespiel gewinnt, wer das Ziel zuerst erreicht. Beim Zeitspiel wird die laufende Frage noch beendet; danach gewinnt die höchste Punktzahl.</li>
+            {% elif show_party_rules %}
+              <li>Erstelle eine Lobby oder tritt der Lobby deiner Freunde bei. Bis zu 10 Personen können gemeinsam spielen.</li>
+              <li>Der Host gibt der Lobby einen Namen, wählt 1 bis 5 Runden und startet das Spiel, sobald alle da sind.</li>
+              <li>Jede Runde besteht aus den fünf bekannten Guesstimate-Fragearten. Alle beantworten dieselben Fragen gleichzeitig.</li>
+              <li>Richtige Antworten bringen Punkte – und wer schneller antwortet, kann mehr Punkte holen. Nach der letzten Frage gewinnt die höchste Gesamtpunktzahl.</li>
+              <li>Der Partymodus ist nur für den gemeinsamen Ruhm: Das Ergebnis verändert weder iKühe noch die regulären Ranglisten.</li>
+            {% else %}
+              <li>Beantworte täglich 5 Fragen und miss dich mit der Creme de la Creme unserer Glaubensgemeinschaft!</li>
+              <li>Je schneller du antwortest, desto mehr Punkte erhältst du.</li>
+              <li>Wir sind in der Betaphase und dankbar für Bewertungen und Anregungen.</li>
+              <li>Verpasste Runden der laufenden Woche kannst du jederzeit bis Sonntag nachholen.</li>
+            {% endif %}
+          </ul>
+        </form>
+      </dialog>
+    {% endif %}
   {% endblock %}
+  {% if g.user %}
+    <nav class="arena-main-nav" aria-label="Hauptbereiche">
+      <a class="arena-nav-brand" href="{{ url_for('home') }}" aria-label="stormseed´s guesstimate – Startseite"><span class="arena-brand-word"><small>stormseed´s</small><strong>guesstimate</strong></span></a>
+      <div class="arena-nav-cluster arena-nav-home" aria-label="Guesstimate">
+        <a class="{% if request.endpoint == 'home' %}is-active{% endif %}" href="{{ url_for('home') }}">guesstimate</a>
+        <a class="arena-nav-party nav-two-line{% if request.endpoint and request.endpoint.startswith('party_') %} is-active{% endif %}" href="{{ url_for('party_index') }}" aria-label="guesstimate party"><span>guesstimate</span><span>party</span></a>
+        <a class="{% if request.endpoint in ('profile', 'profile_equip') %}is-active{% endif %}" href="{{ url_for('profile') }}">
+          <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M4 21c0-5 3.2-8 8-8s8 3 8 8"/></svg><span>profil</span>
+        </a>
+        <a class="{% if request.endpoint in ('shop', 'shop_buy') %}is-active{% endif %}" href="{{ url_for('shop') }}">
+          <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16l-1 13H5L4 8Z"/><path d="M8 9V6a4 4 0 0 1 8 0v3"/></svg><span>shop</span>
+        </a>
+        {% if show_daily_rules or show_party_rules or show_perfect_rules or show_maexchen_rules %}
+          <button class="arena-nav-rules" type="button" data-rules-open aria-label="Spielregeln – So wird gespielt">
+            <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5c3-1.5 6-1.3 9 .7v14c-3-2-6-2.2-9-.7v-14Zm18 0c-3-1.5-6-1.3-9 .7v14c3-2 6-2.2 9-.7v-14Z"/></svg><span>regeln</span>
+          </button>
+        {% else %}
+          <a href="{{ url_for('home', regeln=1) }}">
+            <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5c3-1.5 6-1.3 9 .7v14c-3-2-6-2.2-9-.7v-14Zm18 0c-3-1.5-6-1.3-9 .7v14c3-2 6-2.2 9-.7v-14Z"/></svg><span>regeln</span>
+          </a>
+        {% endif %}
+      </div>
+      {% if config.CARD_TABLE_ENABLED %}<a class="arena-nav-cards arena-nav-tabletop nav-two-line{% if request.endpoint and (request.endpoint.startswith('card_table_') or request.endpoint.startswith('conquest_') or request.endpoint == 'tabletop_connection') %} is-active{% endif %}" href="{{ url_for('tabletop_connection') }}" aria-label="tabletop connection"><span>tabletop</span><span>connection</span></a>{% endif %}
+      <span class="arena-nav-date"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18"/></svg><span>{{ today_display }}</span></span>
+    </nav>
+  {% endif %}
   <main class="app-shell {% if g.user %}has-account-bar{% endif %} {% block shell_class %}{% endblock %}">
     {% block header %}
       <header class="game-header">
@@ -78,7 +128,8 @@
     {% block content %}{% endblock %}
   </main>
   <script src="{{ url_for('static', filename='rules.js', v='1') }}" defer></script>
-  <script src="{{ url_for('static', filename='leaderboards.js', v='1') }}" defer></script>
+  <script src="{{ url_for('static', filename='leaderboards.js', v='2') }}" defer></script>
+  <script src="{{ url_for('static', filename='profile-stage-v1.js', v='3') }}" defer></script>
   {% block scripts %}{% endblock %}
 </body>
 </html>

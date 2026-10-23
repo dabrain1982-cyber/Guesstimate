@@ -1,5 +1,7 @@
 {% extends "base.html" %}
+{% from "_player_identity.html" import player_identity with context %}
 {% block title %}{{ lobby.name }} · {{ game_name }}{% endblock %}
+{% block header %}{% endblock %}
 {% block content %}
   <section
     class="party-head"
@@ -11,27 +13,26 @@
     data-rounds="{{ lobby.rounds }}"
   ><p class="eyebrow">LOBBY OFFEN</p><h1>{{ lobby.name }}</h1><p>{{ members|length }}/10 Plätze belegt</p></section>
   {% if lobby.host_user_id == g.user['id'] %}
-    <form class="party-settings" method="post" action="{{ url_for('party_settings', lobby_id=lobby.id) }}">
+    <form class="party-settings" method="post" action="{{ url_for('party_start', lobby_id=lobby.id) }}" data-party-settings data-settings-url="{{ url_for('party_settings', lobby_id=lobby.id) }}">
       <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
       <label>Lobbyname<input name="name" value="{{ lobby.name }}" maxlength="36"></label>
       <label>Anzahl der Runden<select name="rounds">{% for count in range(1, 6) %}<option value="{{ count }}" {% if count == lobby.rounds %}selected{% endif %}>{{ count }}</option>{% endfor %}</select></label>
-      <button class="secondary-button" type="submit">Einstellungen speichern</button>
+      <p class="party-autosave" data-party-autosave>Wird automatisch übernommen.<span class="visually-hidden"> Einstellungen speichern ist nicht nötig.</span></p>
+      <button class="primary-button" type="submit">Classic-Quiz starten</button>
     </form>
   {% endif %}
   <ol class="party-members">
     {% for player in members %}
-      <li><span>{{ loop.index }}</span><strong>{{ player.display_name }}{% if player.user_id == lobby.host_user_id %}<small>Host</small>{% endif %}</strong>
+      <li><span>{{ loop.index }}</span>{{ player_identity(player.display_name, player.avatar_id, player.plaque_id, 'party', 'Host' if player.user_id == lobby.host_user_id else 'Mitspieler') }}
       {% if lobby.host_user_id == g.user['id'] and player.user_id != lobby.host_user_id %}<form method="post" action="{{ url_for('party_remove_member', lobby_id=lobby.id, member_id=player.id) }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit">Entfernen</button></form>{% endif %}</li>
     {% endfor %}
   </ol>
-  {% if lobby.host_user_id == g.user['id'] %}
-    <form method="post" action="{{ url_for('party_start', lobby_id=lobby.id) }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="primary-button" type="submit">Party starten</button></form>
-  {% else %}<p class="party-wait">Der Host startet die Party, sobald alle da sind.</p>{% endif %}
+  {% if lobby.host_user_id != g.user['id'] %}<p class="party-wait">Der Host startet die Party, sobald alle da sind.</p>{% endif %}
   <form class="party-leave" method="post" action="{{ url_for('party_leave', lobby_id=lobby.id) }}">
     <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
     <button class="secondary-button" type="submit">Lobby verlassen</button>
   </form>
 {% endblock %}
 {% block scripts %}
-  <script src="{{ url_for('static', filename='party.js', v='2') }}" defer></script>
+  <script src="{{ url_for('static', filename='party.js', v='2', rev='autosave') }}" defer></script>
 {% endblock %}

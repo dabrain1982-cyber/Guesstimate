@@ -40,11 +40,6 @@
       "directory": "schaetzung",
       "active": true
     },
-    "word_scramble": {
-      "label": "Buchstabensalat",
-      "directory": "buchstabensalat",
-      "active": false
-    },
     "binary_sort": {
       "label": "Zwei Gruppen zuordnen",
       "directory": "zweigruppenzuordnen",
@@ -55,10 +50,6 @@
     "gaming": {
       "label": "Gaming",
       "directory": "gaming"
-    },
-    "faith_religion": {
-      "label": "Glaube & Religion",
-      "directory": "glaube-religion"
     },
     "music": {
       "label": "Musik",

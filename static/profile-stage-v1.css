@@ -1,0 +1,468 @@
+/* Finale Profil- und Navigationskorrekturen; muss nach typography-v1.css laden. */
+.arena-main-nav .arena-nav-brand > .arena-brand-word {
+  position: relative;
+  display: block;
+  min-height: 0;
+  padding: .72rem 0 0;
+  color: inherit;
+  font: inherit;
+  white-space: nowrap;
+}
+.arena-main-nav .arena-brand-word strong {
+  display: block;
+  color: var(--variant-a-acid);
+  white-space: nowrap;
+}
+.arena-main-nav .arena-brand-word small {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  display: block;
+  width: 44%;
+  min-height: 0;
+  padding: 0;
+  overflow: visible;
+  color: #e8f1ff;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@media (min-width: 1281px) {
+  .arena-main-nav {
+    grid-template-columns: max-content max-content max-content max-content;
+    justify-content: space-between;
+    width: min(1840px, calc(100vw - 48px));
+    min-height: 66px;
+    padding-block: 6px;
+  }
+
+  .arena-main-nav .arena-nav-brand {
+    position: relative;
+    display: flex;
+    padding: 5px 16px 4px;
+  }
+  .arena-main-nav .arena-nav-brand strong {
+    display: block;
+    font-size: clamp(1.8rem, 2vw, 2.25rem);
+    font-weight: 700;
+    line-height: .82;
+    letter-spacing: -.055em;
+  }
+  .arena-main-nav .arena-brand-word small {
+    position: absolute;
+    display: block;
+    width: 44%;
+    margin: 0;
+    padding: 0;
+    font-size: .82rem;
+    font-weight: 750;
+    line-height: .78;
+    letter-spacing: -.025em;
+    text-align: center;
+  }
+
+  .arena-main-nav .arena-nav-home { display: flex; width: max-content; }
+  .arena-main-nav a,
+  .arena-main-nav button,
+  .arena-main-nav > .arena-nav-date {
+    min-height: 46px;
+    padding: 5px 13px;
+    font-size: clamp(.94rem, .96vw, 1.04rem);
+    font-weight: 750;
+  }
+  .arena-main-nav .arena-nav-home > a,
+  .arena-main-nav .arena-nav-home > button { min-width: 0; }
+
+  .arena-main-nav .nav-two-line {
+    min-width: max-content;
+    flex-direction: column;
+    gap: 0;
+    padding-inline: 17px;
+    line-height: 1.02;
+  }
+  .arena-main-nav .nav-two-line > span {
+    display: block;
+    min-height: 0;
+    padding: 0;
+    font: inherit;
+    line-height: inherit;
+  }
+}
+
+/* Die Startseite zeigt denselben Profilkern wie der Profil-Editor. */
+.home-variant-a .variant-a-profile,
+.home-variant-a .variant-a-ranking {
+  background: rgba(3, 13, 36, .12);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .018);
+  backdrop-filter: none;
+}
+.home-variant-a .variant-a-profile-details {
+  padding: 0 18px 14px;
+  background: transparent;
+}
+.home-variant-a .variant-a-profile-details .variant-a-trophies { margin-top: 0; }
+/* Einzige verbindliche Innenkomposition für Profil und Hauptseitenkopie. */
+.variant-a-profile-canonical {
+  align-content: start;
+  grid-template-rows: auto auto;
+}
+.variant-a-profile-canonical .variant-a-profile-scene {
+  container-type: inline-size;
+  width: 100%;
+  height: auto !important;
+  min-height: 0 !important;
+  aspect-ratio: 43 / 57;
+}
+.profile-window-copy > .variant-a-profile.variant-a-profile-canonical {
+  height: auto;
+  min-height: 0;
+}
+.variant-a-profile-canonical .variant-a-profile-scene::after { box-shadow: inset 0 -24px 42px rgba(3, 12, 32, .48); }
+.variant-a-profile-canonical .variant-a-hanging-plaque {
+  top: .5%;
+  width: min(84%, 500px);
+  aspect-ratio: 3.1 / 1;
+}
+.variant-a-profile-canonical .variant-a-hanging-plaque i { height: 13cqw; }
+.variant-a-profile-canonical .variant-a-hanging-plaque img { inset: -7%; width: 114%; height: 114%; }
+.variant-a-profile-canonical .variant-a-hanging-plaque span {
+  max-width: 88%;
+  padding: 0 5%;
+  font-family: var(--font-display);
+  font-size: clamp(.72rem, 3.65cqw, 1.16rem);
+  font-weight: 700;
+  line-height: 1.08;
+  white-space: normal;
+}
+.variant-a-profile-canonical .variant-a-avatar {
+  top: 20%;
+  bottom: auto;
+  width: 58%;
+  height: 49%;
+}
+.variant-a-profile-canonical .variant-a-podium {
+  bottom: 0;
+  width: 79%;
+  aspect-ratio: 8 / 7;
+}
+.variant-a-profile-canonical .variant-a-podium strong {
+  top: var(--profile-name-y, 42%);
+  right: var(--profile-name-r, 25%);
+  left: var(--profile-name-l, 25%);
+  transform: translateY(-50%);
+  font-family: var(--font-display);
+  font-size: clamp(.88rem, 4.15cqw, 1.55rem);
+  font-weight: 700;
+  line-height: 1;
+}
+.variant-a-profile-canonical .variant-a-podium-balance { font-size: clamp(.72rem, 3.1cqw, 1.12rem); }
+
+.variant-a-podium-balance {
+  position: absolute;
+  top: var(--profile-balance-y, 68%);
+  right: var(--profile-balance-r, 25%);
+  left: var(--profile-balance-l, 25%);
+  z-index: 2;
+  display: flex;
+  height: var(--profile-balance-h, 12%);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: .28em;
+  padding-inline: 2%;
+  overflow: hidden;
+  transform: translateY(-50%);
+  color: var(--variant-a-acid);
+  font-weight: 850;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  text-shadow: 0 2px 4px #000;
+  white-space: nowrap;
+}
+.variant-a-podium-balance > span { flex: 0 0 auto; white-space: nowrap; }
+.variant-a-profile .variant-a-podium > strong {
+  display: flex;
+  height: var(--profile-name-h, 14%);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 2%;
+  line-height: 1;
+}
+
+/* Feldlagen sämtlicher hoher Pulte gelten auf Profil und Hauptseite identisch. */
+.variant-a-profile.plaque-p00 { --profile-name-y: 40.76%; --profile-name-h: 12.02%; --profile-balance-y: 71.67%; --profile-name-l: 28.21%; --profile-name-r: 26.97%; --profile-balance-l: 28.21%; --profile-balance-r: 26.97%; }
+.variant-a-profile.plaque-p01 { --profile-name-y: 51.92%; --profile-name-h: 15.46%; --profile-balance-y: 77.68%; --profile-name-l: 28.92%; --profile-name-r: 27.48%; --profile-balance-l: 28.92%; --profile-balance-r: 27.48%; }
+.variant-a-profile.plaque-p02 { --profile-name-y: 40.86%; --profile-name-h: 12%; --profile-balance-y: 65.71%; --profile-name-l: 30.89%; --profile-name-r: 30.54%; --profile-balance-l: 30.89%; --profile-balance-r: 30.54%; }
+.variant-a-profile.plaque-p03 { --profile-name-y: 38.29%; --profile-name-h: 12%; --profile-balance-y: 68.29%; --profile-name-l: 31.66%; --profile-name-r: 30.84%; --profile-balance-l: 32.41%; --profile-balance-r: 31.59%; }
+.variant-a-profile.plaque-p04 { --profile-name-y: 42.20%; --profile-name-h: 12.08%; --profile-balance-y: 67.22%; --profile-name-l: 29.70%; --profile-name-r: 29.54%; --profile-balance-l: 29.70%; --profile-balance-r: 29.54%; }
+.variant-a-profile.plaque-p05 { --profile-name-y: 48.30%; --profile-name-h: 12.52%; --profile-balance-y: 75.13%; --profile-name-l: 27.74%; --profile-name-r: 26.87%; --profile-balance-l: 29.31%; --profile-balance-r: 28.44%; }
+.variant-a-profile.plaque-p06 { --profile-name-y: 42.64%; --profile-name-h: 12.35%; --profile-balance-y: 68.23%; --profile-name-l: 29.23%; --profile-name-r: 29.07%; --profile-balance-l: 30.77%; --profile-balance-r: 30.62%; }
+.variant-a-profile.plaque-p07 { --profile-name-y: 46.64%; --profile-name-h: 12.05%; --profile-balance-y: 72.46%; --profile-name-l: 30.13%; --profile-name-r: 27.70%; --profile-balance-l: 30.13%; --profile-balance-r: 27.70%; }
+.variant-a-profile.plaque-p08 { --profile-name-y: 45.73%; --profile-name-h: 12.63%; --profile-balance-y: 73.71%; --profile-name-l: 28.75%; --profile-name-r: 27.03%; --profile-balance-l: 30.33%; --profile-balance-r: 28.61%; }
+.variant-a-profile.plaque-p09 { --profile-name-y: 46.86%; --profile-name-h: 12%; --profile-balance-y: 72.57%; --profile-name-l: 30.29%; --profile-name-r: 28.24%; --profile-balance-l: 31.77%; --profile-balance-r: 29.72%; }
+.variant-a-profile.plaque-p10 { --profile-name-y: 41.20%; --profile-name-h: 12.16%; --profile-balance-y: 71.59%; --profile-name-l: 29.74%; --profile-name-r: 27.71%; --profile-balance-l: 31.26%; --profile-balance-r: 29.23%; }
+.variant-a-profile.plaque-p11 { --profile-name-y: 37.23%; --profile-name-h: 12.20%; --profile-balance-y: 64.26%; --profile-name-l: 31.54%; --profile-name-r: 30.32%; --profile-balance-l: 31.54%; --profile-balance-r: 30.32%; }
+.variant-a-profile.plaque-p12 { --profile-name-y: 43.43%; --profile-name-h: 12%; --profile-balance-y: 69.14%; --profile-name-l: 31.47%; --profile-name-r: 29.53%; --profile-balance-l: 32.22%; --profile-balance-r: 30.28%; }
+.variant-a-profile.plaque-p13 { --profile-name-y: 45.34%; --profile-name-h: 12.79%; --profile-balance-y: 73.64%; --profile-name-l: 31.04%; --profile-name-r: 29.01%; --profile-balance-l: 33.44%; --profile-balance-r: 31.40%; }
+
+/* Ranglisten dürfen vertikal scrollen, aber nie eine horizontale Leiste bilden. */
+.home-variant-a .variant-a-leaderboard .rank-list,
+.home-variant-a .variant-a-leaderboard .rank-list.is-scrollable {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  margin-right: 0;
+  overflow-x: hidden;
+}
+.home-variant-a .variant-a-leaderboard .rank-row,
+.home-variant-a .variant-a-leaderboard .identity-ranking,
+.home-variant-a .variant-a-leaderboard .player-card-surface { min-width: 0; max-width: 100%; }
+.home-variant-a .variant-a-leaderboard .identity-ranking { width: 100%; }
+.home-variant-a .identity-ranking:not(.plaque-p00) .player-card-surface {
+  grid-template-columns: clamp(52px, 17%, 72px) minmax(0, 1fr) max-content;
+}
+.home-variant-a .identity-ranking.has-week-tally:not(.plaque-p00) .player-card-surface {
+  grid-template-columns: clamp(52px, 17%, 72px) minmax(0, 1fr) max-content max-content;
+}
+
+/* Hauptseite: feste Daily-Marke, darunter nur das per Pfeilen bediente Karussell. */
+.home-variant-a .variant-a-showcase {
+  display: grid;
+  grid-template-rows: auto minmax(260px, 1fr) auto auto;
+  gap: 12px;
+  padding: 24px 18px 16px;
+}
+.variant-a-title-screen {
+  display: grid;
+  min-height: 195px;
+  place-content: center;
+  justify-items: center;
+  padding: 8px 5%;
+  color: #fff;
+  text-align: center;
+}
+.variant-a-title-screen h1 {
+  margin: 0;
+  color: var(--variant-a-acid);
+  font-family: var(--font-display);
+  font-size: clamp(2.7rem, 4.15vw, 5.2rem);
+  font-weight: 700;
+  line-height: .86;
+  letter-spacing: -.055em;
+}
+.variant-a-title-screen .variant-a-title-brand {
+  position: relative;
+  display: block;
+  padding-top: .33em;
+  white-space: nowrap;
+}
+.variant-a-title-screen .variant-a-title-brand > span {
+  display: block;
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  white-space: nowrap;
+}
+.variant-a-title-screen h1 .variant-a-title-brand small {
+  position: absolute;
+  top: calc(.14em + 10px);
+  left: 0;
+  display: block;
+  width: 44%;
+  margin: 0;
+  color: #f7f9ff;
+  font-family: var(--font-ui);
+  font-size: .28em;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -.02em;
+  text-align: center;
+  white-space: nowrap;
+}
+.variant-a-title-screen strong {
+  margin-top: 16px;
+  font-size: clamp(.92rem, 1.14vw, 1.18rem);
+  font-weight: 800;
+  text-transform: lowercase;
+}
+.variant-a-title-screen p {
+  max-width: 580px;
+  margin: 7px 0 0;
+  color: #c7d5e9;
+  font-size: clamp(.76rem, .84vw, .9rem);
+  line-height: 1.45;
+}
+.home-variant-a .variant-a-slides {
+  min-height: 0;
+  overflow: hidden;
+  border: 1px solid rgba(91, 144, 223, .44);
+  border-radius: 18px;
+}
+.home-variant-a .variant-a-slide-copy { display: none; }
+.variant-a-flyer-copy {
+  position: absolute;
+  right: clamp(18px, 5%, 52px);
+  bottom: clamp(18px, 5%, 44px);
+  left: clamp(18px, 5%, 52px);
+  z-index: 3;
+  display: grid;
+  justify-items: center;
+  padding: clamp(14px, 2.2vw, 24px) clamp(18px, 4vw, 42px);
+  border: 1px solid rgba(161, 209, 255, .56);
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(4, 12, 35, .88), rgba(15, 30, 69, .76));
+  box-shadow: 0 18px 42px rgba(0, 0, 0, .45), inset 0 0 0 1px rgba(255, 255, 255, .07);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  text-align: center;
+}
+.variant-a-flyer-copy::before,
+.variant-a-flyer-copy::after {
+  position: absolute;
+  top: 50%;
+  width: clamp(22px, 5vw, 68px);
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--variant-a-acid));
+  content: "";
+}
+.variant-a-flyer-copy::before { right: 100%; }
+.variant-a-flyer-copy::after { left: 100%; transform: rotate(180deg); }
+.variant-a-flyer-copy h2 {
+  margin: 0;
+  color: var(--variant-a-acid);
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.2vw, 3.8rem);
+  font-weight: 700;
+  line-height: .9;
+  letter-spacing: -.045em;
+  text-shadow: 0 3px 0 rgba(52, 35, 126, .9), 0 7px 20px rgba(0, 0, 0, .7);
+  text-transform: lowercase;
+}
+.variant-a-flyer-copy h2 small,
+.variant-a-flyer-copy h2 em {
+  display: block;
+  margin-bottom: 4px;
+  color: #fff;
+  font-family: var(--font-ui);
+  font-size: .36em;
+  font-style: normal;
+  font-weight: 850;
+  letter-spacing: .04em;
+}
+.variant-a-flyer-copy p {
+  max-width: 720px;
+  margin: 11px 0 0;
+  color: #eef6ff;
+  font-size: clamp(.78rem, 1.08vw, 1.08rem);
+  font-weight: 750;
+  line-height: 1.3;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, .9);
+}
+.home-variant-a .slide-party .variant-a-flyer-copy { --variant-a-acid: #ffda54; }
+.home-variant-a .slide-perfect .variant-a-flyer-copy { --variant-a-acid: #ffb24c; }
+.home-variant-a .slide-playtable .variant-a-flyer-copy { --variant-a-acid: #7cffc5; }
+.home-variant-a .slide-birthday .variant-a-flyer-copy { --variant-a-acid: #ff8ee8; }
+.home-variant-a .variant-a-carousel-tabs { display: none; }
+.home-variant-a .variant-a-actions { min-height: 72px; padding-top: 2px; }
+.home-variant-a .variant-a-action { width: min(520px, 88%); }
+
+/* Die Rangliste nutzt die freie Panelhöhe. Erst wenn mehr Einträge vorhanden
+   sind als in diese Fläche passen, scrollt ausschließlich die Liste. */
+.home-variant-a .variant-a-ranking { padding-top: 18px; }
+.home-variant-a .variant-a-leaderboard .rank-list,
+.home-variant-a .variant-a-leaderboard .rank-list.is-scrollable {
+  max-height: 405px;
+  overflow-y: auto;
+}
+
+@media (min-width: 1021px) {
+  .home-variant-a .variant-a-stage {
+    height: calc(100dvh - 150px);
+    min-height: 0;
+  }
+
+  .home-variant-a .variant-a-leaderboard {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  .home-variant-a .variant-a-leaderboard .leaderboard-panel:not([hidden]) {
+    display: flex;
+    flex: 1 1 auto;
+    min-height: 0;
+  }
+
+  .home-variant-a .variant-a-leaderboard .rank-list,
+  .home-variant-a .variant-a-leaderboard .rank-list.is-scrollable {
+    flex: 1 1 auto;
+    width: 100%;
+    min-height: 0;
+    max-height: none;
+    grid-auto-rows: 72px;
+    gap: 10px;
+    align-content: start;
+  }
+}
+
+@media (max-width: 1280px) {
+  .variant-a-title-screen { min-height: 170px; }
+  .home-variant-a .variant-a-showcase { padding-inline: 13px; }
+}
+
+@media (max-width: 700px) {
+  .home-variant-a .variant-a-showcase { min-height: 760px; }
+  .variant-a-title-screen { min-height: 180px; }
+  .home-variant-a .variant-a-slides { min-height: 390px; }
+  .home-variant-a .variant-a-ranking { padding-top: 20px; }
+  .home-variant-a .variant-a-flyer-copy { right: 12px; bottom: 12px; left: 12px; padding: 13px 15px; }
+  .home-variant-a .variant-a-flyer-copy h2 { font-size: clamp(1.65rem, 9vw, 2.5rem); }
+  .home-variant-a .variant-a-flyer-copy p { font-size: .76rem; }
+}
+
+/* Profil und Shop teilen sich auf Desktop dieselbe zentrierte Arbeitsbreite.
+   Diese finale Regel hebt die kompakte Normalmonitor-Begrenzung aus dem
+   älteren Arena-Stylesheet gezielt für diese beiden Ansichten auf. */
+@media (min-width: 901px) {
+  .profile-shell,
+  .shop-shell {
+    width: min(1540px, calc(100% - 38px));
+    max-width: 1540px;
+    margin-inline: auto;
+  }
+
+  .shop-grid,
+  .avatar-shop-grid,
+  .plaque-shop-grid,
+  .background-shop-grid,
+  .phrase-shop-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* Classic-Lobby: Plaketten-Endstücke behalten ihre Originalproportionen;
+   ausschließlich das dafür vorgesehene Mittelstück wächst in die Breite. */
+.party-members .identity-party:not(.plaque-p00) .player-card-surface {
+  overflow: visible;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.party-members .identity-party:not(.plaque-p00) .player-card-surface::after { display: none; }
+.party-members .identity-party:not(.plaque-p00) .player-plaque-art {
+  inset: 0;
+  width: auto;
+  height: auto;
+  border-style: solid;
+  border-width: 0 52px;
+  border-image-source: var(--plaque-source);
+  border-image-slice: 0 225 0 225 fill;
+  border-image-width: 0 52px;
+  border-image-repeat: stretch;
+  background: none;
+  filter: drop-shadow(0 5px 4px rgba(0, 0, 0, .5));
+}

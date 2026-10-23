@@ -1,0 +1,6037 @@
+[
+  {
+    "id": "ssp-begriff-001",
+    "card_type": "term",
+    "term": "Aposiopese",
+    "prompt": "Wer oder was ist eine „Aposiopese“?",
+    "answer": "Der bewusste Abbruch einer Rede oder eines begonnenen Gedankens unmittelbar vor der entscheidenden Aussage.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Duden: Aposiopese",
+          "url": "https://www.duden.de/rechtschreibung/Aposiopese"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-002",
+    "card_type": "term",
+    "term": "Quincunx",
+    "prompt": "Wer oder was ist ein „Quincunx“?",
+    "answer": "Eine Anordnung von fünf Elementen wie die fünf Punkte auf einem Würfel: vier außen und eines in der Mitte.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Duden: Quincunx",
+          "url": "https://www.duden.de/rechtschreibung/Quincunx"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-003",
+    "card_type": "term",
+    "term": "Koprolith",
+    "prompt": "Wer oder was ist ein „Koprolith“?",
+    "answer": "Ein versteinertes Stück urzeitlichen Kots.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Duden: Koprolith",
+          "url": "https://www.duden.de/rechtschreibung/Koprolith"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-004",
+    "card_type": "term",
+    "term": "kalfatern",
+    "prompt": "Was bedeutet „kalfatern“?",
+    "answer": "Die Fugen hölzerner Schiffswände oder Schiffsdecks mit Werg und Teer oder Kitt abdichten.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Duden: kalfatern",
+          "url": "https://www.duden.de/rechtschreibung/kalfatern"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-005",
+    "card_type": "term",
+    "term": "Faszikel",
+    "prompt": "Wer oder was ist ein „Faszikel“?",
+    "answer": "Ein Bündel von Akten, Manuskriptseiten oder Druckfahnen; in der Anatomie auch ein kleines Bündel von Muskel- oder Nervenfasern.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Duden: Faszikel",
+          "url": "https://www.duden.de/rechtschreibung/Faszikel"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-006",
+    "card_type": "term",
+    "term": "Kamisol",
+    "prompt": "Wer oder was ist ein „Kamisol“?",
+    "answer": "Eine früher getragene eng anliegende Jacke beziehungsweise Unterjacke oder ein Mieder.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Duden: Kamisol",
+          "url": "https://www.duden.de/rechtschreibung/Kamisol"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-007",
+    "card_type": "term",
+    "term": "Kautel",
+    "prompt": "Wer oder was ist eine „Kautel“?",
+    "answer": "Ein vertraglicher Vorbehalt oder eine rechtliche Absicherung beziehungsweise Sicherheitsvorkehrung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Duden: Kautel",
+          "url": "https://www.duden.de/rechtschreibung/Kautel"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-008",
+    "card_type": "term",
+    "term": "verkamisolen",
+    "prompt": "Was bedeutet „verkamisolen“?",
+    "answer": "Jemanden verprügeln.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Duden: verkamisolen",
+          "url": "https://www.duden.de/rechtschreibung/verkamisolen"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-009",
+    "card_type": "term",
+    "term": "Anakoluth",
+    "prompt": "Wer oder was ist ein „Anakoluth“?",
+    "answer": "Ein Satzbruch, bei dem in einer anderen Konstruktion weitergesprochen wird als ursprünglich begonnen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Duden: Anakoluth",
+          "url": "https://www.duden.de/rechtschreibung/Anakoluth"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-010",
+    "card_type": "term",
+    "term": "Apotropaion",
+    "prompt": "Wer oder was ist ein „Apotropaion“?",
+    "answer": "Ein Zaubermittel oder Gegenstand, der Unheil abwehren soll.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Duden: Apotropaion",
+          "url": "https://www.duden.de/rechtschreibung/Apotropaion"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-011",
+    "card_type": "term",
+    "term": "Rabulistik",
+    "prompt": "Wer oder was ist „Rabulistik“?",
+    "answer": "Eine spitzfindige, wortklauberische Argumentations- oder Redeweise.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Duden: Rabulistik",
+          "url": "https://www.duden.de/rechtschreibung/Rabulistik"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-012",
+    "card_type": "term",
+    "term": "Agraffe",
+    "prompt": "Wer oder was ist eine „Agraffe“?",
+    "answer": "Unter anderem das Drahtgestell, das einen Sektkorken in der Flasche hält; das Wort bezeichnet außerdem bestimmte Spangen und Klammern.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Duden: Agraffe",
+          "url": "https://www.duden.de/rechtschreibung/Agraffe"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-013",
+    "card_type": "term",
+    "term": "Adstrat",
+    "prompt": "Was bedeutet „Adstrat“?",
+    "answer": "Wechselseitiger sprachlicher Einfluss benachbarter Sprachgemeinschaften ohne Verdrängung einer der Sprachen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Adstrat",
+          "url": "https://de.wikipedia.org/wiki/Adstrat"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-014",
+    "card_type": "term",
+    "term": "Akrolekt",
+    "prompt": "Was bedeutet „Akrolekt“?",
+    "answer": "Die gesellschaftlich angesehenste und meist standardsprachlichste Varietät in einem sprachlichen Kontinuum.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Akrolekt",
+          "url": "https://de.wikipedia.org/wiki/Akrolekt"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-015",
+    "card_type": "term",
+    "term": "Amphibolie",
+    "prompt": "Was bedeutet „Amphibolie“?",
+    "answer": "Eine grammatisch verursachte Mehrdeutigkeit, durch die ein Satz verschieden verstanden werden kann.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Amphibolie",
+          "url": "https://de.wikipedia.org/wiki/Amphibolie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-016",
+    "card_type": "term",
+    "term": "Anaptyxe",
+    "prompt": "Was bedeutet „Anaptyxe“?",
+    "answer": "Das Einschieben eines Vokals in eine Lautfolge, meist um die Aussprache zu erleichtern.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Sprossvokal",
+          "url": "https://de.wikipedia.org/wiki/Sprossvokal"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-017",
+    "card_type": "term",
+    "term": "Antanaklasis",
+    "prompt": "Was bedeutet „Antanaklasis“?",
+    "answer": "Die Wiederholung desselben Wortes in unmittelbar wechselnder Bedeutung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Antanaclasis",
+          "url": "https://en.wikipedia.org/wiki/Antanaclasis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-018",
+    "card_type": "term",
+    "term": "Antonomasie",
+    "prompt": "Was bedeutet „Antonomasie“?",
+    "answer": "Das Ersetzen eines Eigennamens durch eine kennzeichnende Umschreibung oder umgekehrt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Antonomasie",
+          "url": "https://de.wikipedia.org/wiki/Antonomasie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-019",
+    "card_type": "term",
+    "term": "Apokope",
+    "prompt": "Was bedeutet „Apokope“?",
+    "answer": "Der Wegfall eines Lautes oder einer Silbe am Ende eines Wortes.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Apokope",
+          "url": "https://de.wikipedia.org/wiki/Apokope"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-020",
+    "card_type": "term",
+    "term": "Apophthegma",
+    "prompt": "Was bedeutet „Apophthegma“?",
+    "answer": "Ein knapp und pointiert formulierter Ausspruch, der eine Einsicht oder Lebensregel enthält.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Apophthegma",
+          "url": "https://de.wikipedia.org/wiki/Apophthegma"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-021",
+    "card_type": "term",
+    "term": "Asyndeton",
+    "prompt": "Was bedeutet „Asyndeton“?",
+    "answer": "Eine Aufzählung, deren Glieder ohne verbindende Konjunktionen nebeneinanderstehen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Asyndeton",
+          "url": "https://de.wikipedia.org/wiki/Asyndeton"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-022",
+    "card_type": "term",
+    "term": "Autosemantikum",
+    "prompt": "Was bedeutet „Autosemantikum“?",
+    "answer": "Ein Wort mit eigenständiger lexikalischer Bedeutung, etwa ein Substantiv oder Vollverb.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Autosemantikum",
+          "url": "https://de.wikipedia.org/wiki/Autosemantikum"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-023",
+    "card_type": "term",
+    "term": "Brachylogie",
+    "prompt": "Was bedeutet „Brachylogie“?",
+    "answer": "Eine besonders knappe Ausdrucksweise, bei der leicht ergänzbare Satzteile ausgelassen werden.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Brachylogie",
+          "url": "https://de.wikipedia.org/wiki/Brachylogie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-024",
+    "card_type": "term",
+    "term": "Brevitas",
+    "prompt": "Was bedeutet „Brevitas“?",
+    "answer": "Das rhetorische Ideal, einen Gedanken möglichst kurz und ohne Überflüssiges auszudrücken.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Brevitas",
+          "url": "https://de.wikipedia.org/wiki/Brevitas"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-025",
+    "card_type": "term",
+    "term": "Diärese",
+    "prompt": "Was bedeutet „Diärese“?",
+    "answer": "Die getrennte Aussprache zweier aufeinanderfolgender Vokale, die sonst einen Diphthong bilden könnten.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Diärese",
+          "url": "https://de.wikipedia.org/wiki/Di%C3%A4rese"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-026",
+    "card_type": "term",
+    "term": "Diathese",
+    "prompt": "Was bedeutet „Diathese“?",
+    "answer": "Die grammatische Handlungsrichtung eines Verbs, beispielsweise Aktiv oder Passiv.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Diathese",
+          "url": "https://de.wikipedia.org/wiki/Diathese"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-027",
+    "card_type": "term",
+    "term": "Dittographie",
+    "prompt": "Was bedeutet „Dittographie“?",
+    "answer": "Das versehentliche doppelte Schreiben eines Buchstabens, Wortes oder Textabschnitts beim Abschreiben.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Dittographie",
+          "url": "https://de.wikipedia.org/wiki/Dittographie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-028",
+    "card_type": "term",
+    "term": "Enallage",
+    "prompt": "Was bedeutet „Enallage“?",
+    "answer": "Eine rhetorische Abweichung, bei der eine grammatische Form durch eine unübliche andere ersetzt wird.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Hypallage",
+          "url": "https://de.wikipedia.org/wiki/Hypallage"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-029",
+    "card_type": "term",
+    "term": "Enantiosemie",
+    "prompt": "Was bedeutet „Enantiosemie“?",
+    "answer": "Das Phänomen, dass ein Wort zwei einander entgegengesetzte Bedeutungen besitzt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Contronym",
+          "url": "https://en.wikipedia.org/wiki/Contronym"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-030",
+    "card_type": "term",
+    "term": "Epenthese",
+    "prompt": "Was bedeutet „Epenthese“?",
+    "answer": "Das Einfügen eines zusätzlichen Lautes in das Innere eines Wortes.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Epenthese",
+          "url": "https://de.wikipedia.org/wiki/Epenthese"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-031",
+    "card_type": "term",
+    "term": "Epipher",
+    "prompt": "Was bedeutet „Epipher“?",
+    "answer": "Die Wiederholung desselben Wortes oder derselben Wortgruppe am Ende aufeinanderfolgender Sätze oder Verse.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Epiphora (Rhetorik)",
+          "url": "https://de.wikipedia.org/wiki/Epiphora_(Rhetorik)"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-032",
+    "card_type": "term",
+    "term": "Epitrochasmus",
+    "prompt": "Was bedeutet „Epitrochasmus“?",
+    "answer": "Eine hastig wirkende Reihung vieler kurzer, gleichgeordneter Wörter oder Satzglieder.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Brigham Young University: epitrochasmus",
+          "url": "https://rhetoric.byu.edu/Figures/E/epitrochasmus.htm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-033",
+    "card_type": "term",
+    "term": "Geminatio",
+    "prompt": "Was bedeutet „Geminatio“?",
+    "answer": "Die unmittelbare Wiederholung eines Wortes oder einer Wortgruppe zur Verstärkung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Geminatio",
+          "url": "https://de.wikipedia.org/wiki/Geminatio"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-034",
+    "card_type": "term",
+    "term": "Haplologie",
+    "prompt": "Was bedeutet „Haplologie“?",
+    "answer": "Der Wegfall einer von zwei ähnlich klingenden, direkt benachbarten Silben.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Haplologie",
+          "url": "https://de.wikipedia.org/wiki/Haplologie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-035",
+    "card_type": "term",
+    "term": "Homoioteleuton",
+    "prompt": "Was bedeutet „Homoioteleuton“?",
+    "answer": "Gleicher oder ähnlicher Wortausgang mehrerer aufeinanderfolgender Satzglieder.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Homoioteleuton",
+          "url": "https://de.wikipedia.org/wiki/Homoioteleuton"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-036",
+    "card_type": "term",
+    "term": "Hypallage",
+    "prompt": "Was bedeutet „Hypallage“?",
+    "answer": "Eine ungewöhnliche Zuordnung eines Eigenschaftswortes zu einem anderen Bezugswort als dem logisch gemeinten.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Hypallage",
+          "url": "https://de.wikipedia.org/wiki/Hypallage"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-037",
+    "card_type": "term",
+    "term": "Hypotaxe",
+    "prompt": "Was bedeutet „Hypotaxe“?",
+    "answer": "Ein Satzbau, bei dem Haupt- und Nebensätze hierarchisch untergeordnet miteinander verbunden sind.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Hypotaxe",
+          "url": "https://de.wikipedia.org/wiki/Hypotaxe"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-038",
+    "card_type": "term",
+    "term": "Isoglosse",
+    "prompt": "Was bedeutet „Isoglosse“?",
+    "answer": "Eine Linie auf einer Sprachkarte, die Gebiete mit unterschiedlicher Ausprägung eines Sprachmerkmals trennt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Isoglosse",
+          "url": "https://de.wikipedia.org/wiki/Isoglosse"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-039",
+    "card_type": "term",
+    "term": "Katachrese",
+    "prompt": "Was bedeutet „Katachrese“?",
+    "answer": "Die Verbindung eigentlich unvereinbarer Bilder oder eine bildliche Benennung für etwas ohne eigene Bezeichnung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Katachrese",
+          "url": "https://de.wiktionary.org/wiki/Katachrese"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-040",
+    "card_type": "term",
+    "term": "Kenning",
+    "prompt": "Was bedeutet „Kenning“?",
+    "answer": "Eine meist zweiteilige dichterische Umschreibung, besonders in der altgermanischen Dichtung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Kenning",
+          "url": "https://de.wiktionary.org/wiki/Kenning"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-041",
+    "card_type": "term",
+    "term": "Klitik",
+    "prompt": "Was bedeutet „Klitik“?",
+    "answer": "Ein unbetontes Wort, das sich lautlich an ein benachbartes Wort anlehnen muss.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Clitic",
+          "url": "https://en.wikipedia.org/wiki/Clitic"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-042",
+    "card_type": "term",
+    "term": "Konfix",
+    "prompt": "Was bedeutet „Konfix“?",
+    "answer": "Ein gebundenes Wortbildungselement wie „bio-“ oder „-thek“, das nicht selbstständig als Wort vorkommt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Konfix",
+          "url": "https://de.wiktionary.org/wiki/Konfix"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-043",
+    "card_type": "term",
+    "term": "Metalepse",
+    "prompt": "Was bedeutet „Metalepse“?",
+    "answer": "Ein Bedeutungsübergang, bei dem ein Ausdruck über mehrere gedankliche Zwischenschritte ersetzt wird.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Metalepse",
+          "url": "https://de.wiktionary.org/wiki/Metalepse"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-044",
+    "card_type": "term",
+    "term": "Metaplasmus",
+    "prompt": "Was bedeutet „Metaplasmus“?",
+    "answer": "Eine bewusste oder historische Veränderung der Laut- oder Buchstabenform eines Wortes.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Metaplasmus",
+          "url": "https://www.duden.de/rechtschreibung/Metaplasmus"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-045",
+    "card_type": "term",
+    "term": "Monophthongierung",
+    "prompt": "Was bedeutet „Monophthongierung“?",
+    "answer": "Die Entwicklung eines Doppellauts zu einem einzelnen Vokal.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Monophthongierung",
+          "url": "https://de.wiktionary.org/wiki/Monophthongierung"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-046",
+    "card_type": "term",
+    "term": "Paragoge",
+    "prompt": "Was bedeutet „Paragoge“?",
+    "answer": "Das Anfügen eines zusätzlichen Lautes oder einer Silbe am Wortende.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Epenthesis",
+          "url": "https://en.wikipedia.org/wiki/Epenthesis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-047",
+    "card_type": "term",
+    "term": "Paronomasie",
+    "prompt": "Was bedeutet „Paronomasie“?",
+    "answer": "Ein Wortspiel mit ähnlich klingenden, aber verschieden bedeutenden Wörtern.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Paronomasie",
+          "url": "https://www.duden.de/rechtschreibung/Paronomasie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-048",
+    "card_type": "term",
+    "term": "Polyptoton",
+    "prompt": "Was bedeutet „Polyptoton“?",
+    "answer": "Die Wiederholung desselben Wortstamms in unterschiedlichen grammatischen Formen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Polyptoton",
+          "url": "https://www.duden.de/rechtschreibung/Polyptoton"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-049",
+    "card_type": "term",
+    "term": "Prolepse",
+    "prompt": "Was bedeutet „Prolepse“?",
+    "answer": "Die gedankliche oder erzählerische Vorwegnahme eines späteren Ereignisses oder Einwands.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Prolepse",
+          "url": "https://www.duden.de/rechtschreibung/Prolepse"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-050",
+    "card_type": "term",
+    "term": "Prosopopöie",
+    "prompt": "Was bedeutet „Prosopopöie“?",
+    "answer": "Eine Redefigur, bei der Abwesende, Tote, Dinge oder abstrakte Begriffe sprechend auftreten.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Prosopopoeia",
+          "url": "https://en.wikipedia.org/wiki/Prosopopoeia"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-051",
+    "card_type": "term",
+    "term": "Reduplikation",
+    "prompt": "Was bedeutet „Reduplikation“?",
+    "answer": "Die vollständige oder teilweise Verdopplung eines Wortstamms als grammatisches oder wortbildendes Mittel.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Reduplikation",
+          "url": "https://de.wiktionary.org/wiki/Reduplikation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-052",
+    "card_type": "term",
+    "term": "Rhotazismus",
+    "prompt": "Was bedeutet „Rhotazismus“?",
+    "answer": "Ein Lautwandel, bei dem ein anderer Laut zu einem r-Laut wird.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Rhotazismus",
+          "url": "https://de.wiktionary.org/wiki/Rhotazismus"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-053",
+    "card_type": "term",
+    "term": "Synalöphe",
+    "prompt": "Was bedeutet „Synalöphe“?",
+    "answer": "Das Verschmelzen zweier aufeinanderstoßender Vokale über eine Wortgrenze hinweg.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Synalepha",
+          "url": "https://en.wikipedia.org/wiki/Synalepha"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-054",
+    "card_type": "term",
+    "term": "Synärese",
+    "prompt": "Was bedeutet „Synärese“?",
+    "answer": "Das Zusammenziehen zweier Vokale innerhalb eines Wortes zu einer Silbe.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Synaeresis",
+          "url": "https://en.wikipedia.org/wiki/Synaeresis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-055",
+    "card_type": "term",
+    "term": "Synizese",
+    "prompt": "Was bedeutet „Synizese“?",
+    "answer": "Das einsilbige Aussprechen zweier benachbarter Vokale, ohne dass daraus zwingend ein Diphthong wird.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Synizese",
+          "url": "https://de.wiktionary.org/wiki/Synizese"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-056",
+    "card_type": "term",
+    "term": "Tmesis",
+    "prompt": "Was bedeutet „Tmesis“?",
+    "answer": "Die Trennung der Bestandteile eines zusammengesetzten Wortes durch dazwischengeschobene Wörter.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Tmesis",
+          "url": "https://de.wiktionary.org/wiki/Tmesis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-057",
+    "card_type": "term",
+    "term": "Transfix",
+    "prompt": "Was bedeutet „Transfix“?",
+    "answer": "Ein aus mehreren Lautteilen bestehendes Morphem, das in einen Wortstamm eingefügt wird.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Transfix",
+          "url": "https://en.wikipedia.org/wiki/Transfix"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-058",
+    "card_type": "term",
+    "term": "Trochäus",
+    "prompt": "Was bedeutet „Trochäus“?",
+    "answer": "Ein Versfuß aus einer betonten und einer darauffolgenden unbetonten Silbe.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Trochäus",
+          "url": "https://de.wiktionary.org/wiki/Troch%C3%A4us"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-059",
+    "card_type": "term",
+    "term": "Velarisierung",
+    "prompt": "Was bedeutet „Velarisierung“?",
+    "answer": "Eine Lautbildung, bei der sich der hintere Zungenrücken zusätzlich dem weichen Gaumen nähert.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Velarisierung",
+          "url": "https://www.duden.de/rechtschreibung/Velarisierung"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-060",
+    "card_type": "term",
+    "term": "Zirkumfix",
+    "prompt": "Was bedeutet „Zirkumfix“?",
+    "answer": "Eine zweiteilige Vorsilben-Nachsilben-Kombination, die gemeinsam einen Wortstamm umschließt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Zirkumfix",
+          "url": "https://de.wiktionary.org/wiki/Zirkumfix"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-061",
+    "card_type": "term",
+    "term": "Zeugma",
+    "prompt": "Was bedeutet „Zeugma“?",
+    "answer": "Die Verbindung mehrerer Satzglieder mit einem Wort, das zu ihnen grammatisch oder semantisch unterschiedlich passt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Zeugma",
+          "url": "https://de.wiktionary.org/wiki/Zeugma"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-062",
+    "card_type": "term",
+    "term": "Zäsur",
+    "prompt": "Was bedeutet „Zäsur“?",
+    "answer": "Ein deutlicher Einschnitt innerhalb eines Verses, Satzes oder musikalischen Ablaufs.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Zäsur",
+          "url": "https://de.wiktionary.org/wiki/Z%C3%A4sur"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-063",
+    "card_type": "term",
+    "term": "Azeotrop",
+    "prompt": "Was bedeutet „Azeotrop“?",
+    "answer": "Ein Flüssigkeitsgemisch, dessen Dampf dieselbe Zusammensetzung wie die Flüssigkeit hat und das daher konstant siedet.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Azeotrop",
+          "url": "https://de.wikipedia.org/wiki/Azeotrop"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-064",
+    "card_type": "term",
+    "term": "Baroklinität",
+    "prompt": "Was bedeutet „Baroklinität“?",
+    "answer": "Ein Zustand in einem Fluid, bei dem Flächen gleichen Drucks und gleicher Dichte gegeneinander geneigt sind.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Baroklinität",
+          "url": "https://de.wikipedia.org/wiki/Baroklinit%C3%A4t"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-065",
+    "card_type": "term",
+    "term": "Baryzentrum",
+    "prompt": "Was bedeutet „Baryzentrum“?",
+    "answer": "Der gemeinsame Schwerpunkt eines Systems aus mehreren Massen, etwa zweier einander umkreisender Himmelskörper.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Baryzentrum",
+          "url": "https://de.wikipedia.org/wiki/Baryzentrum"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-066",
+    "card_type": "term",
+    "term": "Birefringenz",
+    "prompt": "Was bedeutet „Birefringenz“?",
+    "answer": "Die Aufspaltung eines Lichtstrahls in zwei unterschiedlich gebrochene Strahlen in einem anisotropen Material.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Birefringence",
+          "url": "https://en.wikipedia.org/wiki/Birefringence"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-067",
+    "card_type": "term",
+    "term": "Bremsstrahlung",
+    "prompt": "Was bedeutet „Bremsstrahlung“?",
+    "answer": "Elektromagnetische Strahlung, die bei der Beschleunigung oder Abbremsung geladener Teilchen entsteht.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Bremsstrahlung",
+          "url": "https://de.wikipedia.org/wiki/Bremsstrahlung"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-068",
+    "card_type": "term",
+    "term": "Chemisorption",
+    "prompt": "Was bedeutet „Chemisorption“?",
+    "answer": "Die Anlagerung von Teilchen an eine Oberfläche durch Ausbildung chemischer Bindungen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Chemisorption",
+          "url": "https://de.wikipedia.org/wiki/Chemisorption"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-069",
+    "card_type": "term",
+    "term": "Deliqueszenz",
+    "prompt": "Was bedeutet „Deliqueszenz“?",
+    "answer": "Das Zerfließen eines hygroskopischen Stoffes, weil er so viel Luftfeuchtigkeit aufnimmt, dass eine Lösung entsteht.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Deliqueszenz",
+          "url": "https://de.wikipedia.org/wiki/Deliqueszenz"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-070",
+    "card_type": "term",
+    "term": "Desublimation",
+    "prompt": "Was bedeutet „Desublimation“?",
+    "answer": "Der direkte Übergang eines Stoffes vom gasförmigen in den festen Zustand.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Deposition (phase transition)",
+          "url": "https://en.wikipedia.org/wiki/Deposition_(phase_transition)"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-071",
+    "card_type": "term",
+    "term": "Diamagnetismus",
+    "prompt": "Was bedeutet „Diamagnetismus“?",
+    "answer": "Magnetisches Verhalten, bei dem ein Stoff ein äußeres Magnetfeld schwach aus seinem Inneren verdrängt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Diamagnetismus",
+          "url": "https://de.wikipedia.org/wiki/Diamagnetismus"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-072",
+    "card_type": "term",
+    "term": "Diffusiophorese",
+    "prompt": "Was bedeutet „Diffusiophorese“?",
+    "answer": "Die Bewegung kleiner Teilchen in einer Flüssigkeit infolge eines Konzentrationsgefälles gelöster Stoffe.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Diffusiophoresis and diffusioosmosis",
+          "url": "https://en.wikipedia.org/wiki/Diffusiophoresis_and_diffusioosmosis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-073",
+    "card_type": "term",
+    "term": "Effloreszenz",
+    "prompt": "Was bedeutet „Effloreszenz“?",
+    "answer": "Eine kristalline Ausblühung auf einer Oberfläche, die durch austretende und verdunstende Salzlösung entsteht.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Effloreszenz",
+          "url": "https://de.wikipedia.org/wiki/Effloreszenz"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-074",
+    "card_type": "term",
+    "term": "Elektrostriktion",
+    "prompt": "Was bedeutet „Elektrostriktion“?",
+    "answer": "Die Verformung eines dielektrischen Materials durch ein elektrisches Feld, unabhängig von dessen Richtung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Elektrostriktion",
+          "url": "https://de.wikipedia.org/wiki/Elektrostriktion"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-075",
+    "card_type": "term",
+    "term": "Enantiotropie",
+    "prompt": "Was bedeutet „Enantiotropie“?",
+    "answer": "Die reversible Umwandlung zweier Kristallformen eines Stoffes bei einer bestimmten Temperatur oder einem bestimmten Druck.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Enantiotropie",
+          "url": "https://de.wikipedia.org/wiki/Enantiotropie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-076",
+    "card_type": "term",
+    "term": "Exziton",
+    "prompt": "Was bedeutet „Exziton“?",
+    "answer": "Ein gebundener Zustand aus einem angeregten Elektron und dem von ihm hinterlassenen positiv wirkenden Loch.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Exziton",
+          "url": "https://de.wikipedia.org/wiki/Exziton"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-077",
+    "card_type": "term",
+    "term": "Ferroelektrikum",
+    "prompt": "Was bedeutet „Ferroelektrikum“?",
+    "answer": "Ein Material mit einer spontan ausgerichteten elektrischen Polarisation, die sich durch ein äußeres Feld umkehren lässt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Ferroelektrikum",
+          "url": "https://de.wikipedia.org/wiki/Ferroelektrikum"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-078",
+    "card_type": "term",
+    "term": "Flokkulation",
+    "prompt": "Was bedeutet „Flokkulation“?",
+    "answer": "Das Zusammenlagern fein verteilter Teilchen zu lockeren Flocken.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Flokkulation",
+          "url": "https://www.duden.de/rechtschreibung/Flokkulation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-079",
+    "card_type": "term",
+    "term": "Fugazität",
+    "prompt": "Was bedeutet „Fugazität“?",
+    "answer": "Eine korrigierte Druckgröße, die das chemische Potential eines realen Gases oder Gemisches beschreibt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Fugazität",
+          "url": "https://de.wikipedia.org/wiki/Fugazit%C3%A4t"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-080",
+    "card_type": "term",
+    "term": "Glimmentladung",
+    "prompt": "Was bedeutet „Glimmentladung“?",
+    "answer": "Eine selbstständige Gasentladung bei niedrigem Druck, die ein charakteristisches Leuchten erzeugt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Glimmentladung",
+          "url": "https://de.wikipedia.org/wiki/Glimmentladung"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-081",
+    "card_type": "term",
+    "term": "Hysterese",
+    "prompt": "Was bedeutet „Hysterese“?",
+    "answer": "Die Abhängigkeit eines Systemzustands nicht nur vom aktuellen Einfluss, sondern auch von seiner Vorgeschichte.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Hysterese",
+          "url": "https://de.wikipedia.org/wiki/Hysterese"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-082",
+    "card_type": "term",
+    "term": "Imbibition",
+    "prompt": "Was bedeutet „Imbibition“?",
+    "answer": "Die Aufnahme einer Flüssigkeit durch ein quellfähiges festes Material ohne Auflösung des Materials.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Imbibition",
+          "url": "https://de.wikipedia.org/wiki/Imbibition"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-083",
+    "card_type": "term",
+    "term": "Isostasie",
+    "prompt": "Was bedeutet „Isostasie“?",
+    "answer": "Der annähernde Schwimmgleichgewichtszustand der Erdkruste auf dem dichteren Erdmantel.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Isostasie",
+          "url": "https://de.wikipedia.org/wiki/Isostasie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-084",
+    "card_type": "term",
+    "term": "Kavitation",
+    "prompt": "Was bedeutet „Kavitation“?",
+    "answer": "Die Bildung und der schlagartige Zusammenfall von Dampfblasen in einer Flüssigkeit infolge örtlich niedrigen Drucks.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Kavitation",
+          "url": "https://de.wikipedia.org/wiki/Kavitation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-085",
+    "card_type": "term",
+    "term": "Koazervation",
+    "prompt": "Was bedeutet „Koazervation“?",
+    "answer": "Die Entmischung einer kolloidalen Lösung in eine teilchenreiche und eine teilchenarme flüssige Phase.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Koazervation",
+          "url": "https://www.duden.de/rechtschreibung/Koazervation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-086",
+    "card_type": "term",
+    "term": "Koerzitivfeldstärke",
+    "prompt": "Was bedeutet „Koerzitivfeldstärke“?",
+    "answer": "Die entgegengesetzte Feldstärke, die nötig ist, um die verbleibende Magnetisierung eines Stoffes auf null zu bringen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Koerzitivfeldstärke",
+          "url": "https://de.wikipedia.org/wiki/Koerzitivfeldst%C3%A4rke"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-087",
+    "card_type": "term",
+    "term": "Kryoskopie",
+    "prompt": "Was bedeutet „Kryoskopie“?",
+    "answer": "Die Bestimmung gelöster Stoffmengen über die Erniedrigung des Gefrierpunkts einer Lösung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Kryoskopie",
+          "url": "https://de.wikipedia.org/wiki/Kryoskopie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-088",
+    "card_type": "term",
+    "term": "Libration",
+    "prompt": "Was bedeutet „Libration“?",
+    "answer": "Eine scheinbare periodische Schwankung eines gebunden rotierenden Himmelskörpers, durch die mehr als eine Hälfte sichtbar wird.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Libration",
+          "url": "https://de.wiktionary.org/wiki/Libration"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-089",
+    "card_type": "term",
+    "term": "Magnetostriktion",
+    "prompt": "Was bedeutet „Magnetostriktion“?",
+    "answer": "Die Änderung von Form oder Abmessungen eines ferromagnetischen Stoffes beim Magnetisieren.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Magnetostriktion",
+          "url": "https://www.duden.de/rechtschreibung/Magnetostriktion"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-090",
+    "card_type": "term",
+    "term": "Metastabilität",
+    "prompt": "Was bedeutet „Metastabilität“?",
+    "answer": "Ein länger anhaltender, scheinbar stabiler Zustand, der nicht dem energetisch günstigsten Zustand entspricht.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Metastability",
+          "url": "https://en.wikipedia.org/wiki/Metastability"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-091",
+    "card_type": "term",
+    "term": "Nephelometrie",
+    "prompt": "Was bedeutet „Nephelometrie“?",
+    "answer": "Ein Messverfahren, das die seitlich gestreute Lichtmenge einer trüben Probe bestimmt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Nephelometrie",
+          "url": "https://www.duden.de/rechtschreibung/Nephelometrie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-092",
+    "card_type": "term",
+    "term": "Ostwald-Reifung",
+    "prompt": "Was bedeutet „Ostwald-Reifung“?",
+    "answer": "Das Wachstum großer Teilchen oder Tropfen auf Kosten kleinerer, weil diese leichter in Lösung gehen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Ostwald ripening",
+          "url": "https://en.wikipedia.org/wiki/Ostwald_ripening"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-093",
+    "card_type": "term",
+    "term": "Paramagnetismus",
+    "prompt": "Was bedeutet „Paramagnetismus“?",
+    "answer": "Magnetisches Verhalten, bei dem ein Stoff von einem äußeren Magnetfeld schwach angezogen wird.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Paramagnetismus",
+          "url": "https://de.wikipedia.org/wiki/Paramagnetismus"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-094",
+    "card_type": "term",
+    "term": "Perkolation",
+    "prompt": "Was bedeutet „Perkolation“?",
+    "answer": "Das Durchströmen eines porösen Stoffes oder, modellhaft, die Ausbildung verbundener Wege in einem zufälligen Netzwerk.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Perkolation",
+          "url": "https://de.wikipedia.org/wiki/Perkolation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-095",
+    "card_type": "term",
+    "term": "Phonon",
+    "prompt": "Was bedeutet „Phonon“?",
+    "answer": "Ein quantisiertes Schwingungsanregungspaket in einem Kristallgitter.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Phonon",
+          "url": "https://de.wikipedia.org/wiki/Phonon"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-096",
+    "card_type": "term",
+    "term": "Piezoelektrizität",
+    "prompt": "Was bedeutet „Piezoelektrizität“?",
+    "answer": "Das Entstehen elektrischer Spannung durch mechanische Verformung bestimmter Materialien und der umgekehrte Effekt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Piezoelektrizität",
+          "url": "https://de.wikipedia.org/wiki/Piezoelektrizit%C3%A4t"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-097",
+    "card_type": "term",
+    "term": "Plasmon",
+    "prompt": "Was bedeutet „Plasmon“?",
+    "answer": "Ein Quant einer gemeinsamen Schwingung der frei beweglichen Elektronen in einem Material.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Plasmon",
+          "url": "https://de.wikipedia.org/wiki/Plasmon"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-098",
+    "card_type": "term",
+    "term": "Pleochroismus",
+    "prompt": "Was bedeutet „Pleochroismus“?",
+    "answer": "Die richtungsabhängige unterschiedliche Farbe eines anisotropen Kristalls bei der Lichtdurchstrahlung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Pleochroismus",
+          "url": "https://de.wiktionary.org/wiki/Pleochroismus"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-099",
+    "card_type": "term",
+    "term": "Pyroelektrizität",
+    "prompt": "Was bedeutet „Pyroelektrizität“?",
+    "answer": "Das Auftreten elektrischer Oberflächenladung in bestimmten Kristallen bei einer Temperaturänderung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Pyroelektrizität",
+          "url": "https://de.wikipedia.org/wiki/Pyroelektrizit%C3%A4t"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-100",
+    "card_type": "term",
+    "term": "Rekaleszenz",
+    "prompt": "Was bedeutet „Rekaleszenz“?",
+    "answer": "Ein vorübergehender Temperaturanstieg beim Erstarren einer unterkühlten Schmelze durch frei werdende Kristallisationswärme.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Rekaleszenz",
+          "url": "https://www.duden.de/rechtschreibung/Rekaleszenz"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-101",
+    "card_type": "term",
+    "term": "Rheopexie",
+    "prompt": "Was bedeutet „Rheopexie“?",
+    "answer": "Die zeitabhängige Zunahme der Zähigkeit eines Stoffes bei anhaltender Scherbeanspruchung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Rheopexie",
+          "url": "https://de.wikipedia.org/wiki/Rheopexie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-102",
+    "card_type": "term",
+    "term": "Solvatation",
+    "prompt": "Was bedeutet „Solvatation“?",
+    "answer": "Die Anlagerung von Lösungsmittelmolekülen an gelöste Teilchen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Solvatation",
+          "url": "https://www.duden.de/rechtschreibung/Solvatation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-103",
+    "card_type": "term",
+    "term": "Sonolumineszenz",
+    "prompt": "Was bedeutet „Sonolumineszenz“?",
+    "answer": "Kurze Lichtblitze aus Gasblasen in einer Flüssigkeit, die durch Schallwellen rasch zusammenfallen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Sonolumineszenz",
+          "url": "https://de.wikipedia.org/wiki/Sonolumineszenz"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-104",
+    "card_type": "term",
+    "term": "Spinodale",
+    "prompt": "Was bedeutet „Spinodale“?",
+    "answer": "Die Grenze eines instabilen Bereichs, in dem ein Gemisch sich ohne Keimbildungsbarriere spontan entmischt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Spinodal",
+          "url": "https://en.wikipedia.org/wiki/Spinodal"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-105",
+    "card_type": "term",
+    "term": "Superfluidität",
+    "prompt": "Was bedeutet „Superfluidität“?",
+    "answer": "Ein quantenphysikalischer Flüssigkeitszustand mit verschwindender innerer Reibung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Superfluidity",
+          "url": "https://en.wikipedia.org/wiki/Superfluidity"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-106",
+    "card_type": "term",
+    "term": "Thermokline",
+    "prompt": "Was bedeutet „Thermokline“?",
+    "answer": "Eine Wasserschicht, in der die Temperatur mit der Tiefe besonders stark abnimmt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Thermocline",
+          "url": "https://en.wikipedia.org/wiki/Thermocline"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-107",
+    "card_type": "term",
+    "term": "Thixotropie",
+    "prompt": "Was bedeutet „Thixotropie“?",
+    "answer": "Die zeitabhängige Abnahme der Zähigkeit bei Scherung und deren Erholung in Ruhe.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Thixotropie",
+          "url": "https://de.wiktionary.org/wiki/Thixotropie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-108",
+    "card_type": "term",
+    "term": "Tribolumineszenz",
+    "prompt": "Was bedeutet „Tribolumineszenz“?",
+    "answer": "Lichtemission beim Reiben, Brechen oder Zerdrücken bestimmter Stoffe.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Tribolumineszenz",
+          "url": "https://www.duden.de/rechtschreibung/Tribolumineszenz"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-109",
+    "card_type": "term",
+    "term": "Vitrifikation",
+    "prompt": "Was bedeutet „Vitrifikation“?",
+    "answer": "Die Umwandlung eines Stoffes in einen glasartigen, nicht kristallinen Zustand.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Vitrification",
+          "url": "https://en.wikipedia.org/wiki/Vitrification"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-110",
+    "card_type": "term",
+    "term": "Zetapotential",
+    "prompt": "Was bedeutet „Zetapotential“?",
+    "answer": "Das elektrische Potential an der Gleitebene eines Teilchens in einer Flüssigkeit und ein Maß für die Stabilität einer Dispersion.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Zeta potential",
+          "url": "https://en.wikipedia.org/wiki/Zeta_potential"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-111",
+    "card_type": "term",
+    "term": "Zirkonisierung",
+    "prompt": "Was bedeutet „Zirkonisierung“?",
+    "answer": "Eine Oberflächenbehandlung, bei der eine dünne zirkoniumhaltige Konversionsschicht als Korrosionsschutz entsteht.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Conversion coating",
+          "url": "https://en.wikipedia.org/wiki/Conversion_coating"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-112",
+    "card_type": "term",
+    "term": "Zwickelphase",
+    "prompt": "Was bedeutet „Zwickelphase“?",
+    "answer": "Eine zusätzliche Phase in einem Werkstoffgefüge, die sich in den Zwischenräumen zwischen anderen Körnern oder Phasen befindet.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Wikipedia: Gefüge (Werkstoffkunde)",
+          "url": "https://de.wikipedia.org/wiki/Gef%C3%BCge_(Werkstoffkunde)"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-113",
+    "card_type": "term",
+    "term": "Abaxial",
+    "prompt": "Was bedeutet „Abaxial“?",
+    "answer": "Von der Achse abgewandt; bei einem Blatt gewöhnlich die Unterseite bezeichnend.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Glossary of leaf morphology",
+          "url": "https://en.wikipedia.org/wiki/Glossary_of_leaf_morphology"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-114",
+    "card_type": "term",
+    "term": "Abszission",
+    "prompt": "Was bedeutet „Abszission“?",
+    "answer": "Das kontrollierte Abwerfen eines Pflanzenorgans wie Blatt, Blüte oder Frucht durch eine Trennschicht.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Abszission",
+          "url": "https://de.wikipedia.org/wiki/Abszission"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-115",
+    "card_type": "term",
+    "term": "Aerenchym",
+    "prompt": "Was bedeutet „Aerenchym“?",
+    "answer": "Ein Pflanzengewebe mit großen luftgefüllten Zwischenräumen, das den Gasaustausch erleichtert.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Aerenchym",
+          "url": "https://www.duden.de/rechtschreibung/Aerenchym"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-116",
+    "card_type": "term",
+    "term": "Allelopathie",
+    "prompt": "Was bedeutet „Allelopathie“?",
+    "answer": "Die chemische Beeinflussung einer Pflanze oder eines Mikroorganismus durch von einem anderen Organismus freigesetzte Stoffe.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Allelopathie",
+          "url": "https://de.wikipedia.org/wiki/Allelopathie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-117",
+    "card_type": "term",
+    "term": "Allometrie",
+    "prompt": "Was bedeutet „Allometrie“?",
+    "answer": "Die gesetzmäßige Veränderung von Körperproportionen oder biologischen Größen mit der Gesamtgröße eines Organismus.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Allometrie",
+          "url": "https://de.wikipedia.org/wiki/Allometrie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-118",
+    "card_type": "term",
+    "term": "Amensalismus",
+    "prompt": "Was bedeutet „Amensalismus“?",
+    "answer": "Eine Beziehung zwischen Arten, bei der eine geschädigt wird, während die andere weder Vor- noch Nachteil hat.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Amensalismus",
+          "url": "https://de.wikipedia.org/wiki/Amensalismus"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-119",
+    "card_type": "term",
+    "term": "Anabiose",
+    "prompt": "Was bedeutet „Anabiose“?",
+    "answer": "Ein stark herabgesetzter, scheinbar lebloser Zustand, aus dem ein Organismus wieder aktiv werden kann.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Anabiose",
+          "url": "https://www.duden.de/rechtschreibung/Anabiose"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-120",
+    "card_type": "term",
+    "term": "Anisogamie",
+    "prompt": "Was bedeutet „Anisogamie“?",
+    "answer": "Geschlechtliche Fortpflanzung durch die Verschmelzung unterschiedlich großer oder gestalteter Keimzellen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Anisogamie",
+          "url": "https://de.wikipedia.org/wiki/Anisogamie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-121",
+    "card_type": "term",
+    "term": "Apomixis",
+    "prompt": "Was bedeutet „Apomixis“?",
+    "answer": "Samenbildung ohne Befruchtung und damit eine Form ungeschlechtlicher Fortpflanzung bei Pflanzen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Apomixis",
+          "url": "https://de.wikipedia.org/wiki/Apomixis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-122",
+    "card_type": "term",
+    "term": "Apoplast",
+    "prompt": "Was bedeutet „Apoplast“?",
+    "answer": "Das zusammenhängende System aus Zellwänden und Zellzwischenräumen einer Pflanze außerhalb der Zellmembranen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Apoplast",
+          "url": "https://de.wikipedia.org/wiki/Apoplast"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-123",
+    "card_type": "term",
+    "term": "Autotomie",
+    "prompt": "Was bedeutet „Autotomie“?",
+    "answer": "Das selbsttätige Abwerfen eines Körperteils durch ein Tier, meist zur Flucht vor einem Angreifer.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Autotomie",
+          "url": "https://de.wikipedia.org/wiki/Autotomie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-124",
+    "card_type": "term",
+    "term": "Auxese",
+    "prompt": "Was bedeutet „Auxese“?",
+    "answer": "Wachstum eines Organs oder Organismus durch Vergrößerung bereits vorhandener Zellen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Auxesis (biology)",
+          "url": "https://en.wikipedia.org/wiki/Auxesis_(biology)"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-125",
+    "card_type": "term",
+    "term": "Benthon",
+    "prompt": "Was bedeutet „Benthon“?",
+    "answer": "Die Gesamtheit der Organismen, die am oder im Grund eines Gewässers leben.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Benthic zone",
+          "url": "https://en.wikipedia.org/wiki/Benthic_zone"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-126",
+    "card_type": "term",
+    "term": "Blastochorie",
+    "prompt": "Was bedeutet „Blastochorie“?",
+    "answer": "Die vegetative Ausbreitung einer Pflanze durch abgelöste Sprosse, Knospen oder andere Brutkörper.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Blastochorie",
+          "url": "https://de.wikipedia.org/wiki/Blastochorie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-127",
+    "card_type": "term",
+    "term": "Brachydaktylie",
+    "prompt": "Was bedeutet „Brachydaktylie“?",
+    "answer": "Eine angeborene Verkürzung einzelner oder mehrerer Finger beziehungsweise Zehen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Brachydaktylie",
+          "url": "https://de.wikipedia.org/wiki/Brachydaktylie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-128",
+    "card_type": "term",
+    "term": "Cauliflorie",
+    "prompt": "Was bedeutet „Cauliflorie“?",
+    "answer": "Das Hervorbringen von Blüten und Früchten direkt am Stamm oder an älteren Ästen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Cauliflory",
+          "url": "https://en.wikipedia.org/wiki/Cauliflory"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-129",
+    "card_type": "term",
+    "term": "Chasmogamie",
+    "prompt": "Was bedeutet „Chasmogamie“?",
+    "answer": "Das Blühen mit geöffneten Blüten, in denen Bestäubung zwischen freiliegenden Geschlechtsorganen möglich ist.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Chasmogamie",
+          "url": "https://www.duden.de/rechtschreibung/Chasmogamie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-130",
+    "card_type": "term",
+    "term": "Chemotaxis",
+    "prompt": "Was bedeutet „Chemotaxis“?",
+    "answer": "Die gerichtete Bewegung eines Organismus oder einer Zelle entlang eines chemischen Konzentrationsgefälles.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Chemotaxis",
+          "url": "https://de.wikipedia.org/wiki/Chemotaxis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-131",
+    "card_type": "term",
+    "term": "Chiasma",
+    "prompt": "Was bedeutet „Chiasma“?",
+    "answer": "Die sichtbare Überkreuzungsstelle homologer Chromatiden während der meiotischen Rekombination.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Chiasma",
+          "url": "https://de.wikipedia.org/wiki/Chiasma"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-132",
+    "card_type": "term",
+    "term": "Diapause",
+    "prompt": "Was bedeutet „Diapause“?",
+    "answer": "Eine hormonell gesteuerte Ruhephase in der Entwicklung eines Tieres, die ungünstige Zeiten überbrückt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Diapause",
+          "url": "https://www.duden.de/rechtschreibung/Diapause"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-133",
+    "card_type": "term",
+    "term": "Dichogamie",
+    "prompt": "Was bedeutet „Dichogamie“?",
+    "answer": "Die zeitlich versetzte Reife männlicher und weiblicher Blütenorgane zur Verringerung der Selbstbestäubung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Dichogamie",
+          "url": "https://de.wikipedia.org/wiki/Dichogamie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-134",
+    "card_type": "term",
+    "term": "Ektomykorrhiza",
+    "prompt": "Was bedeutet „Ektomykorrhiza“?",
+    "answer": "Eine Symbiose, bei der Pilzhyphen Pflanzenwurzeln umhüllen und zwischen deren Zellen wachsen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Ectomycorrhiza",
+          "url": "https://en.wikipedia.org/wiki/Ectomycorrhiza"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-135",
+    "card_type": "term",
+    "term": "Endosymbiose",
+    "prompt": "Was bedeutet „Endosymbiose“?",
+    "answer": "Das dauerhafte Zusammenleben zweier Arten, bei dem ein Partner im Inneren des anderen lebt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Endosymbiose",
+          "url": "https://www.duden.de/rechtschreibung/Endosymbiose"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-136",
+    "card_type": "term",
+    "term": "Epibiose",
+    "prompt": "Was bedeutet „Epibiose“?",
+    "answer": "Das Leben eines Organismus auf der Oberfläche eines anderen, ohne ihn dabei notwendig zu schädigen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Epibiose",
+          "url": "https://www.duden.de/rechtschreibung/Epibiose"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-137",
+    "card_type": "term",
+    "term": "Epiphytie",
+    "prompt": "Was bedeutet „Epiphytie“?",
+    "answer": "Das Wachstum einer Pflanze auf einer anderen Pflanze, die nur als Unterlage und nicht als Nahrungsquelle dient.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Epiphyte",
+          "url": "https://en.wikipedia.org/wiki/Epiphyte"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-138",
+    "card_type": "term",
+    "term": "Euryökie",
+    "prompt": "Was bedeutet „Euryökie“?",
+    "answer": "Die Fähigkeit einer Art, große Schwankungen eines oder mehrerer Umweltfaktoren zu ertragen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Euryökie",
+          "url": "https://de.wikipedia.org/wiki/Eury%C3%B6kie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-139",
+    "card_type": "term",
+    "term": "Exuvie",
+    "prompt": "Was bedeutet „Exuvie“?",
+    "answer": "Die bei einer Häutung abgestreifte äußere Körperhülle eines Gliederfüßers.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Exuvie",
+          "url": "https://de.wikipedia.org/wiki/Exuvie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-140",
+    "card_type": "term",
+    "term": "Geokarpie",
+    "prompt": "Was bedeutet „Geokarpie“?",
+    "answer": "Das Reifen von Früchten im Boden, nachdem der Fruchtknoten dorthin gelangt ist.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Geokarpie",
+          "url": "https://www.duden.de/rechtschreibung/Geokarpie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-141",
+    "card_type": "term",
+    "term": "Heterostylie",
+    "prompt": "Was bedeutet „Heterostylie“?",
+    "answer": "Das Auftreten unterschiedlich langer Griffel und Staubblätter bei Blüten derselben Art.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Heterostylie",
+          "url": "https://de.wikipedia.org/wiki/Heterostylie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-142",
+    "card_type": "term",
+    "term": "Homöosis",
+    "prompt": "Was bedeutet „Homöosis“?",
+    "answer": "Die entwicklungsbedingte Umwandlung eines Körperteils in die Gestalt eines anderen Körperteils.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Homeosis",
+          "url": "https://en.wikipedia.org/wiki/Homeosis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-143",
+    "card_type": "term",
+    "term": "Hydathode",
+    "prompt": "Was bedeutet „Hydathode“?",
+    "answer": "Eine spezielle Blattstruktur, über die Pflanzen flüssiges Wasser ausscheiden können.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Hydathode",
+          "url": "https://de.wikipedia.org/wiki/Hydathode"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-144",
+    "card_type": "term",
+    "term": "Hypermetamorphose",
+    "prompt": "Was bedeutet „Hypermetamorphose“?",
+    "answer": "Eine Entwicklung mit mehreren Larvenstadien, die sich in Körperbau und Lebensweise stark unterscheiden.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Hypermetamorphose",
+          "url": "https://de.wikipedia.org/wiki/Hypermetamorphose"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-145",
+    "card_type": "term",
+    "term": "Karyogamie",
+    "prompt": "Was bedeutet „Karyogamie“?",
+    "answer": "Die Verschmelzung zweier Zellkerne bei der geschlechtlichen Fortpflanzung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Karyogamie",
+          "url": "https://de.wikipedia.org/wiki/Karyogamie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-146",
+    "card_type": "term",
+    "term": "Kleistogamie",
+    "prompt": "Was bedeutet „Kleistogamie“?",
+    "answer": "Selbstbestäubung in Blüten, die geschlossen bleiben.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Kleistogamie",
+          "url": "https://de.wikipedia.org/wiki/Kleistogamie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-147",
+    "card_type": "term",
+    "term": "Kryptobiose",
+    "prompt": "Was bedeutet „Kryptobiose“?",
+    "answer": "Ein Zustand nahezu vollständig eingestellten Stoffwechsels, der extreme Umweltbedingungen überdauerbar macht.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Kryptobiose",
+          "url": "https://de.wikipedia.org/wiki/Kryptobiose"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-148",
+    "card_type": "term",
+    "term": "Meristem",
+    "prompt": "Was bedeutet „Meristem“?",
+    "answer": "Ein teilungsfähiges Pflanzengewebe, aus dem neue Zellen und Organe hervorgehen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Meristem",
+          "url": "https://de.wikipedia.org/wiki/Meristem"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-149",
+    "card_type": "term",
+    "term": "Myrmekochorie",
+    "prompt": "Was bedeutet „Myrmekochorie“?",
+    "answer": "Die Ausbreitung von Pflanzensamen durch Ameisen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Myrmekochorie",
+          "url": "https://de.wikipedia.org/wiki/Myrmekochorie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-150",
+    "card_type": "term",
+    "term": "Nekton",
+    "prompt": "Was bedeutet „Nekton“?",
+    "answer": "Die Gesamtheit aktiv schwimmender Wasserorganismen, die sich unabhängig von Strömungen fortbewegen können.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Nekton",
+          "url": "https://de.wikipedia.org/wiki/Nekton"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-151",
+    "card_type": "term",
+    "term": "Oogamie",
+    "prompt": "Was bedeutet „Oogamie“?",
+    "answer": "Eine Form der Geschlechtsfortpflanzung mit großer unbeweglicher Eizelle und kleinerer meist beweglicher Samenzelle.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Oogamie",
+          "url": "https://de.wiktionary.org/wiki/Oogamie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-152",
+    "card_type": "term",
+    "term": "Phoresie",
+    "prompt": "Was bedeutet „Phoresie“?",
+    "answer": "Das zeitweilige Mittragen eines kleineren Organismus durch einen anderen ohne parasitische Ernährung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Phoresie",
+          "url": "https://www.duden.de/rechtschreibung/Phoresie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-153",
+    "card_type": "term",
+    "term": "Phyllokladium",
+    "prompt": "Was bedeutet „Phyllokladium“?",
+    "answer": "Ein abgeflachter grüner Spross, der die Funktion eines Blattes übernimmt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Phyllokladium",
+          "url": "https://de.wiktionary.org/wiki/Phyllokladium"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-154",
+    "card_type": "term",
+    "term": "Poikilothermie",
+    "prompt": "Was bedeutet „Poikilothermie“?",
+    "answer": "Die Abhängigkeit der Körpertemperatur eines Organismus von der Umgebungstemperatur.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Poikilothermie",
+          "url": "https://de.wiktionary.org/wiki/Poikilothermie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-155",
+    "card_type": "term",
+    "term": "Protandrie",
+    "prompt": "Was bedeutet „Protandrie“?",
+    "answer": "Das frühere Reifen der männlichen gegenüber den weiblichen Geschlechtsorganen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Dichogamie",
+          "url": "https://de.wikipedia.org/wiki/Dichogamie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-156",
+    "card_type": "term",
+    "term": "Protogynie",
+    "prompt": "Was bedeutet „Protogynie“?",
+    "answer": "Das frühere Reifen der weiblichen gegenüber den männlichen Geschlechtsorganen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Dichogamie",
+          "url": "https://de.wikipedia.org/wiki/Dichogamie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-157",
+    "card_type": "term",
+    "term": "Rhizodermis",
+    "prompt": "Was bedeutet „Rhizodermis“?",
+    "answer": "Das äußerste Abschlussgewebe junger Pflanzenwurzeln, das Wasser und Mineralsalze aufnimmt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Rhizodermis",
+          "url": "https://www.duden.de/rechtschreibung/Rhizodermis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-158",
+    "card_type": "term",
+    "term": "Saprobiont",
+    "prompt": "Was bedeutet „Saprobiont“?",
+    "answer": "Ein Organismus, der sich von totem organischem Material ernährt oder darin lebt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Saprobiont",
+          "url": "https://www.duden.de/rechtschreibung/Saprobiont"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-159",
+    "card_type": "term",
+    "term": "Sklerenchym",
+    "prompt": "Was bedeutet „Sklerenchym“?",
+    "answer": "Ein festigendes Pflanzengewebe aus meist dickwandigen, bei Reife oft abgestorbenen Zellen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Sklerenchym",
+          "url": "https://www.duden.de/rechtschreibung/Sklerenchym"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-160",
+    "card_type": "term",
+    "term": "Stenökie",
+    "prompt": "Was bedeutet „Stenökie“?",
+    "answer": "Die Bindung einer Art an einen engen Bereich bestimmter Umweltbedingungen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Stenökie",
+          "url": "https://de.wikipedia.org/wiki/Sten%C3%B6kie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-161",
+    "card_type": "term",
+    "term": "Thallus",
+    "prompt": "Was bedeutet „Thallus“?",
+    "answer": "Ein Pflanzen- oder Pilzkörper, der nicht in echte Wurzel, Sprossachse und Blätter gegliedert ist.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Thallus",
+          "url": "https://de.wiktionary.org/wiki/Thallus"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-162",
+    "card_type": "term",
+    "term": "Viviparie",
+    "prompt": "Was bedeutet „Viviparie“?",
+    "answer": "Das Gebären lebender Jungtiere oder bei Pflanzen das Auskeimen des Samens noch an der Mutterpflanze.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Viviparie",
+          "url": "https://de.wiktionary.org/wiki/Viviparie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-163",
+    "card_type": "term",
+    "term": "Abasie",
+    "prompt": "Was bedeutet „Abasie“?",
+    "answer": "Die Unfähigkeit zu gehen, obwohl Kraft, Gefühl und Koordination der Beine dafür grundsätzlich ausreichen können.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Abasie",
+          "url": "https://de.wikipedia.org/wiki/Abasie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-164",
+    "card_type": "term",
+    "term": "Aboulie",
+    "prompt": "Was bedeutet „Aboulie“?",
+    "answer": "Eine krankhafte Willens- und Entschlusslosigkeit mit stark vermindertem Antrieb.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Abulia",
+          "url": "https://en.wikipedia.org/wiki/Abulia"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-165",
+    "card_type": "term",
+    "term": "Achromatopsie",
+    "prompt": "Was bedeutet „Achromatopsie“?",
+    "answer": "Eine seltene Sehstörung, bei der Farben gar nicht oder nur stark eingeschränkt wahrgenommen werden.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Achromatopsie",
+          "url": "https://de.wikipedia.org/wiki/Achromatopsie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-166",
+    "card_type": "term",
+    "term": "Adiadochokinese",
+    "prompt": "Was bedeutet „Adiadochokinese“?",
+    "answer": "Die Unfähigkeit, rasch aufeinanderfolgende entgegengesetzte Bewegungen auszuführen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Adiadochokinese",
+          "url": "https://www.duden.de/rechtschreibung/Adiadochokinese"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-167",
+    "card_type": "term",
+    "term": "Agnosie",
+    "prompt": "Was bedeutet „Agnosie“?",
+    "answer": "Die Unfähigkeit, einen Sinneseindruck zu erkennen, obwohl das betreffende Sinnesorgan grundsätzlich funktioniert.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Agnosie",
+          "url": "https://de.wikipedia.org/wiki/Agnosie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-168",
+    "card_type": "term",
+    "term": "Alexithymie",
+    "prompt": "Was bedeutet „Alexithymie“?",
+    "answer": "Eine ausgeprägte Schwierigkeit, eigene Gefühle wahrzunehmen, zu unterscheiden und sprachlich auszudrücken.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Alexithymie",
+          "url": "https://de.wikipedia.org/wiki/Alexithymie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-169",
+    "card_type": "term",
+    "term": "Allodynie",
+    "prompt": "Was bedeutet „Allodynie“?",
+    "answer": "Schmerz, der durch einen normalerweise nicht schmerzhaften Reiz ausgelöst wird.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Allodynie",
+          "url": "https://de.wikipedia.org/wiki/Allodynie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-170",
+    "card_type": "term",
+    "term": "Amaurose",
+    "prompt": "Was bedeutet „Amaurose“?",
+    "answer": "Vollständige Blindheit eines Auges ohne äußerlich erkennbare Schädigung des Auges.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Amaurose",
+          "url": "https://de.wikipedia.org/wiki/Amaurose"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-171",
+    "card_type": "term",
+    "term": "Anhedonie",
+    "prompt": "Was bedeutet „Anhedonie“?",
+    "answer": "Die stark verminderte Fähigkeit, Freude oder Lust zu empfinden.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Anhedonie",
+          "url": "https://de.wikipedia.org/wiki/Anhedonie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-172",
+    "card_type": "term",
+    "term": "Anosognosie",
+    "prompt": "Was bedeutet „Anosognosie“?",
+    "answer": "Das krankheitsbedingte Nichterkennen einer eigenen Erkrankung oder Funktionsstörung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Anosognosie",
+          "url": "https://de.wikipedia.org/wiki/Anosognosie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-173",
+    "card_type": "term",
+    "term": "Anosmie",
+    "prompt": "Was bedeutet „Anosmie“?",
+    "answer": "Der vollständige Verlust des Geruchssinns.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Anosmie",
+          "url": "https://de.wikipedia.org/wiki/Anosmie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-174",
+    "card_type": "term",
+    "term": "Apraxie",
+    "prompt": "Was bedeutet „Apraxie“?",
+    "answer": "Die Unfähigkeit, erlernte zielgerichtete Bewegungen auszuführen, obwohl Kraft und grundlegende Beweglichkeit erhalten sind.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Apraxie",
+          "url": "https://de.wikipedia.org/wiki/Apraxie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-175",
+    "card_type": "term",
+    "term": "Asterixis",
+    "prompt": "Was bedeutet „Asterixis“?",
+    "answer": "Ein unwillkürliches, kurzes Nachlassen der Haltespannung, das oft als flatterndes Zittern der Hände erscheint.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Asterixis",
+          "url": "https://de.wikipedia.org/wiki/Asterixis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-176",
+    "card_type": "term",
+    "term": "Autotopagnosie",
+    "prompt": "Was bedeutet „Autotopagnosie“?",
+    "answer": "Die Unfähigkeit, Teile des eigenen Körpers richtig zu erkennen, zu benennen oder zu lokalisieren.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Autotopagnosia",
+          "url": "https://en.wikipedia.org/wiki/Autotopagnosia"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-177",
+    "card_type": "term",
+    "term": "Bradylalie",
+    "prompt": "Was bedeutet „Bradylalie“?",
+    "answer": "Ein krankhaft verlangsamtes Sprechen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Bradylalie",
+          "url": "https://www.duden.de/rechtschreibung/Bradylalie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-178",
+    "card_type": "term",
+    "term": "Bruxismus",
+    "prompt": "Was bedeutet „Bruxismus“?",
+    "answer": "Unbewusstes Zähneknirschen oder starkes Aufeinanderpressen der Zähne.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Bruxismus",
+          "url": "https://de.wikipedia.org/wiki/Bruxismus"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-179",
+    "card_type": "term",
+    "term": "Dysdiadochokinese",
+    "prompt": "Was bedeutet „Dysdiadochokinese“?",
+    "answer": "Eine beeinträchtigte Fähigkeit, rasch wechselnde entgegengesetzte Bewegungen gleichmäßig auszuführen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Dysdiadochokinesia",
+          "url": "https://en.wikipedia.org/wiki/Dysdiadochokinesia"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-180",
+    "card_type": "term",
+    "term": "Dysgeusie",
+    "prompt": "Was bedeutet „Dysgeusie“?",
+    "answer": "Eine Störung oder Verfälschung des Geschmacksempfindens.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Dysgeusia",
+          "url": "https://en.wikipedia.org/wiki/Dysgeusia"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-181",
+    "card_type": "term",
+    "term": "Dysmetrie",
+    "prompt": "Was bedeutet „Dysmetrie“?",
+    "answer": "Die Unfähigkeit, Bewegungen richtig abzumessen, sodass ein Ziel über- oder unterschossen wird.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Dysmetrie",
+          "url": "https://de.wikipedia.org/wiki/Dysmetrie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-182",
+    "card_type": "term",
+    "term": "Echolalie",
+    "prompt": "Was bedeutet „Echolalie“?",
+    "answer": "Das automatische, oft sinnunabhängige Nachsprechen von Wörtern oder Sätzen anderer.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Echolalie",
+          "url": "https://de.wikipedia.org/wiki/Echolalie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-183",
+    "card_type": "term",
+    "term": "Eidetik",
+    "prompt": "Was bedeutet „Eidetik“?",
+    "answer": "Die Fähigkeit, früher Wahrgenommenes ungewöhnlich anschaulich und detailreich innerlich wiederzusehen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Eidetik",
+          "url": "https://de.wikipedia.org/wiki/Eidetik"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-184",
+    "card_type": "term",
+    "term": "Erythromelalgie",
+    "prompt": "Was bedeutet „Erythromelalgie“?",
+    "answer": "Eine seltene Erkrankung mit anfallsweiser Rötung, Überwärmung und brennenden Schmerzen vor allem an Händen oder Füßen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Erythromelalgie",
+          "url": "https://de.wikipedia.org/wiki/Erythromelalgie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-185",
+    "card_type": "term",
+    "term": "Exophthalmus",
+    "prompt": "Was bedeutet „Exophthalmus“?",
+    "answer": "Ein auffälliges Hervortreten eines oder beider Augäpfel aus der Augenhöhle.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Exophthalmus",
+          "url": "https://de.wikipedia.org/wiki/Exophthalmus"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-186",
+    "card_type": "term",
+    "term": "Formikation",
+    "prompt": "Was bedeutet „Formikation“?",
+    "answer": "Eine Missempfindung, als krabbelten kleine Tiere auf oder unter der Haut.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Formication",
+          "url": "https://en.wikipedia.org/wiki/Formication"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-187",
+    "card_type": "term",
+    "term": "Graphästhesie",
+    "prompt": "Was bedeutet „Graphästhesie“?",
+    "answer": "Die Fähigkeit, auf die Haut gezeichnete Zahlen oder Zeichen allein durch den Tastsinn zu erkennen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Graphesthesia",
+          "url": "https://en.wikipedia.org/wiki/Graphesthesia"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-188",
+    "card_type": "term",
+    "term": "Hemianopsie",
+    "prompt": "Was bedeutet „Hemianopsie“?",
+    "answer": "Der Ausfall jeweils einer Hälfte des Gesichtsfeldes eines oder beider Augen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Hemianopsie",
+          "url": "https://de.wikipedia.org/wiki/Hemianopsie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-189",
+    "card_type": "term",
+    "term": "Hyperakusis",
+    "prompt": "Was bedeutet „Hyperakusis“?",
+    "answer": "Eine krankhaft gesteigerte Empfindlichkeit gegenüber gewöhnlich lauten Alltagsgeräuschen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Hyperakusis",
+          "url": "https://de.wikipedia.org/wiki/Hyperakusis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-190",
+    "card_type": "term",
+    "term": "Hyperästhesie",
+    "prompt": "Was bedeutet „Hyperästhesie“?",
+    "answer": "Eine übermäßig gesteigerte Empfindlichkeit gegenüber Berührungs- oder anderen Sinnesreizen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Hyperästhesie",
+          "url": "https://de.wikipedia.org/wiki/Hyper%C3%A4sthesie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-191",
+    "card_type": "term",
+    "term": "Hypersomnie",
+    "prompt": "Was bedeutet „Hypersomnie“?",
+    "answer": "Ein übermäßiges Schlafbedürfnis oder krankhaft starke Tagesschläfrigkeit trotz ausreichender Schlafzeit.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Hypersomnie",
+          "url": "https://www.duden.de/rechtschreibung/Hypersomnie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-192",
+    "card_type": "term",
+    "term": "Hypogeusie",
+    "prompt": "Was bedeutet „Hypogeusie“?",
+    "answer": "Ein vermindertes Geschmacksempfinden.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Hypogeusie",
+          "url": "https://www.duden.de/rechtschreibung/Hypogeusie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-193",
+    "card_type": "term",
+    "term": "Ideomotorik",
+    "prompt": "Was bedeutet „Ideomotorik“?",
+    "answer": "Das unbewusste Umsetzen einer Vorstellung oder Erwartung in eine kleine Körperbewegung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Ideomotorik",
+          "url": "https://www.duden.de/rechtschreibung/Ideomotorik"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-194",
+    "card_type": "term",
+    "term": "Kataplexie",
+    "prompt": "Was bedeutet „Kataplexie“?",
+    "answer": "Ein plötzliches, meist durch starke Gefühle ausgelöstes Nachlassen der Muskelspannung bei erhaltenem Bewusstsein.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Kataplexie",
+          "url": "https://de.wikipedia.org/wiki/Kataplexie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-195",
+    "card_type": "term",
+    "term": "Kinesie",
+    "prompt": "Was bedeutet „Kinesie“?",
+    "answer": "Bewegung oder Bewegungsfähigkeit eines Organismus beziehungsweise Körperteils.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Kinesis (biology)",
+          "url": "https://en.wikipedia.org/wiki/Kinesis_(biology)"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-196",
+    "card_type": "term",
+    "term": "Konfabulation",
+    "prompt": "Was bedeutet „Konfabulation“?",
+    "answer": "Das unbewusste Füllen von Erinnerungslücken mit erfundenen, für wahr gehaltenen Inhalten.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Konfabulation",
+          "url": "https://de.wikipedia.org/wiki/Konfabulation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-197",
+    "card_type": "term",
+    "term": "Koprolalie",
+    "prompt": "Was bedeutet „Koprolalie“?",
+    "answer": "Der zwanghafte oder unwillkürliche Gebrauch obszöner oder sozial anstößiger Wörter.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Koprolalie",
+          "url": "https://de.wikipedia.org/wiki/Koprolalie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-198",
+    "card_type": "term",
+    "term": "Makropsie",
+    "prompt": "Was bedeutet „Makropsie“?",
+    "answer": "Eine Sehstörung, bei der Gegenstände größer erscheinen, als sie tatsächlich sind.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Makropsie",
+          "url": "https://www.duden.de/rechtschreibung/Makropsie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-199",
+    "card_type": "term",
+    "term": "Mikropsie",
+    "prompt": "Was bedeutet „Mikropsie“?",
+    "answer": "Eine Sehstörung, bei der Gegenstände kleiner erscheinen, als sie tatsächlich sind.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Mikropsie",
+          "url": "https://www.duden.de/rechtschreibung/Mikropsie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-200",
+    "card_type": "term",
+    "term": "Misophonie",
+    "prompt": "Was bedeutet „Misophonie“?",
+    "answer": "Eine starke emotionale Abwehrreaktion auf bestimmte, meist alltägliche Geräusche.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Misophonie",
+          "url": "https://de.wikipedia.org/wiki/Misophonie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-201",
+    "card_type": "term",
+    "term": "Narkolepsie",
+    "prompt": "Was bedeutet „Narkolepsie“?",
+    "answer": "Eine neurologische Schlaf-Wach-Störung mit unwiderstehlicher Tagesschläfrigkeit und plötzlichen Schlafattacken.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Narkolepsie",
+          "url": "https://de.wikipedia.org/wiki/Narkolepsie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-202",
+    "card_type": "term",
+    "term": "Nykturie",
+    "prompt": "Was bedeutet „Nykturie“?",
+    "answer": "Das nächtliche Aufwachen, weil ein- oder mehrmals Wasser gelassen werden muss.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Nykturie",
+          "url": "https://de.wikipedia.org/wiki/Nykturie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-203",
+    "card_type": "term",
+    "term": "Parästhesie",
+    "prompt": "Was bedeutet „Parästhesie“?",
+    "answer": "Eine unangemessene Hautempfindung wie Kribbeln, Brennen oder Ameisenlaufen ohne entsprechenden äußeren Reiz.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Parästhesie",
+          "url": "https://de.wikipedia.org/wiki/Par%C3%A4sthesie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-204",
+    "card_type": "term",
+    "term": "Prosopagnosie",
+    "prompt": "Was bedeutet „Prosopagnosie“?",
+    "answer": "Die Unfähigkeit, vertraute Menschen zuverlässig an ihrem Gesicht zu erkennen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Prosopagnosie",
+          "url": "https://de.wikipedia.org/wiki/Prosopagnosie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-205",
+    "card_type": "term",
+    "term": "Sakkade",
+    "prompt": "Was bedeutet „Sakkade“?",
+    "answer": "Eine sehr schnelle, ruckartige Augenbewegung, die den Blick von einem Fixationspunkt zum nächsten verschiebt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Saccade",
+          "url": "https://en.wikipedia.org/wiki/Saccade"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-206",
+    "card_type": "term",
+    "term": "Somatoparaphrenie",
+    "prompt": "Was bedeutet „Somatoparaphrenie“?",
+    "answer": "Die wahnhafte Überzeugung, ein eigener meist gelähmter Körperteil gehöre zu einer anderen Person.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Somatoparaphrenia",
+          "url": "https://en.wikipedia.org/wiki/Somatoparaphrenia"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-207",
+    "card_type": "term",
+    "term": "Synästhesie",
+    "prompt": "Was bedeutet „Synästhesie“?",
+    "answer": "Das automatische Miterleben eines zusätzlichen Sinneseindrucks, etwa einer Farbe beim Hören eines Tons.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Synesthesia",
+          "url": "https://en.wikipedia.org/wiki/Synesthesia"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-208",
+    "card_type": "term",
+    "term": "Tachyphylaxie",
+    "prompt": "Was bedeutet „Tachyphylaxie“?",
+    "answer": "Ein rascher Wirkungsverlust eines Arzneistoffs bei wiederholter Gabe in kurzen Abständen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Tachyphylaxie",
+          "url": "https://www.duden.de/rechtschreibung/Tachyphylaxie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-209",
+    "card_type": "term",
+    "term": "Tetanie",
+    "prompt": "Was bedeutet „Tetanie“?",
+    "answer": "Eine gesteigerte Erregbarkeit von Nerven und Muskeln mit schmerzhaften Krämpfen, oft durch gestörten Kalziumhaushalt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Tetanie",
+          "url": "https://www.duden.de/rechtschreibung/Tetanie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-210",
+    "card_type": "term",
+    "term": "Trichotillomanie",
+    "prompt": "Was bedeutet „Trichotillomanie“?",
+    "answer": "Der wiederkehrende Drang, sich die eigenen Haare auszureißen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Trichotillomanie",
+          "url": "https://www.duden.de/rechtschreibung/Trichotillomanie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-211",
+    "card_type": "term",
+    "term": "Xerostomie",
+    "prompt": "Was bedeutet „Xerostomie“?",
+    "answer": "Ungewöhnliche Mundtrockenheit infolge zu geringer Speichelbildung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Xerostomie",
+          "url": "https://www.duden.de/rechtschreibung/Xerostomie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-212",
+    "card_type": "term",
+    "term": "Zoopsie",
+    "prompt": "Was bedeutet „Zoopsie“?",
+    "answer": "Eine Halluzination, bei der Tiere gesehen werden.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Université de Sherbrooke, Usito: zoopsie",
+          "url": "https://usito.usherbrooke.ca/lexies/mots/zoopsie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-213",
+    "card_type": "term",
+    "term": "Abrasionsterrasse",
+    "prompt": "Was bedeutet „Abrasionsterrasse“?",
+    "answer": "Eine annähernd ebene Felsfläche an einer Küste, die durch die abtragende Wirkung der Brandung entsteht.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Wave-cut platform",
+          "url": "https://en.wikipedia.org/wiki/Wave-cut_platform"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-214",
+    "card_type": "term",
+    "term": "Advektion",
+    "prompt": "Was bedeutet „Advektion“?",
+    "answer": "Der horizontale Transport von Luft, Wärme oder anderen Eigenschaften durch eine Strömung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Advektion",
+          "url": "https://de.wikipedia.org/wiki/Advektion"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-215",
+    "card_type": "term",
+    "term": "Anatexis",
+    "prompt": "Was bedeutet „Anatexis“?",
+    "answer": "Das teilweise oder vollständige Aufschmelzen bereits vorhandener Gesteine in der Erdkruste.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Anatexis",
+          "url": "https://de.wikipedia.org/wiki/Anatexis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-216",
+    "card_type": "term",
+    "term": "Antiklinale",
+    "prompt": "Was bedeutet „Antiklinale“?",
+    "answer": "Eine nach oben gewölbte geologische Falte, deren ältere Schichten gewöhnlich im Kern liegen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Antiklinale",
+          "url": "https://de.wikipedia.org/wiki/Antiklinale"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-217",
+    "card_type": "term",
+    "term": "Arête",
+    "prompt": "Was bedeutet „Arête“?",
+    "answer": "Ein schmaler, scharfkantiger Felsgrat zwischen zwei durch Gletscher geformten Mulden oder Tälern.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Arête",
+          "url": "https://en.wikipedia.org/wiki/Ar%C3%AAte"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-218",
+    "card_type": "term",
+    "term": "Batholith",
+    "prompt": "Was bedeutet „Batholith“?",
+    "answer": "Ein sehr großer, tief in der Erdkruste erstarrter Körper aus magmatischem Gestein.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Batholith",
+          "url": "https://de.wikipedia.org/wiki/Batholith"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-219",
+    "card_type": "term",
+    "term": "Bergschrund",
+    "prompt": "Was bedeutet „Bergschrund“?",
+    "answer": "Eine tiefe Spalte am oberen Rand eines Gletschers zwischen bewegtem Eis und festliegendem Firn oder Fels.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Bergschrund",
+          "url": "https://de.wikipedia.org/wiki/Bergschrund"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-220",
+    "card_type": "term",
+    "term": "Boudinage",
+    "prompt": "Was bedeutet „Boudinage“?",
+    "answer": "Die streckungsbedingte Zerlegung einer härteren Gesteinsschicht in wurst- oder kissenförmige Abschnitte.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Boudinage",
+          "url": "https://de.wikipedia.org/wiki/Boudinage"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-221",
+    "card_type": "term",
+    "term": "Deflation",
+    "prompt": "Was bedeutet „Deflation“?",
+    "answer": "Das Ausblasen und Abtragen lockeren Feinmaterials durch den Wind.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Deflation",
+          "url": "https://de.wikipedia.org/wiki/Deflation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-222",
+    "card_type": "term",
+    "term": "Dendrochronologie",
+    "prompt": "Was bedeutet „Dendrochronologie“?",
+    "answer": "Die Datierung und Umweltrekonstruktion mithilfe der zeitlichen Muster von Baumjahresringen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Dendrochronologie",
+          "url": "https://de.wikipedia.org/wiki/Dendrochronologie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-223",
+    "card_type": "term",
+    "term": "Diapir",
+    "prompt": "Was bedeutet „Diapir“?",
+    "answer": "Eine aufsteigende, kuppel- oder pilzförmige Masse leichteren Gesteins, die darüberliegende Schichten durchdringt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Diapir",
+          "url": "https://de.wikipedia.org/wiki/Diapir"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-224",
+    "card_type": "term",
+    "term": "Drumlin",
+    "prompt": "Was bedeutet „Drumlin“?",
+    "answer": "Ein länglicher, stromlinienförmiger Hügel aus Gletschersediment, der unter bewegtem Eis geformt wurde.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Drumlin",
+          "url": "https://de.wikipedia.org/wiki/Drumlin"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-225",
+    "card_type": "term",
+    "term": "Eklogit",
+    "prompt": "Was bedeutet „Eklogit“?",
+    "answer": "Ein dichtes metamorphes Gestein, das bei sehr hohem Druck entsteht und vor allem Granat und Omphazit enthält.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Eklogit",
+          "url": "https://de.wikipedia.org/wiki/Eklogit"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-226",
+    "card_type": "term",
+    "term": "Endmoräne",
+    "prompt": "Was bedeutet „Endmoräne“?",
+    "answer": "Ein Wall aus Gesteinsschutt am früheren Rand oder Ende eines Gletschers.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Endmoräne",
+          "url": "https://de.wikipedia.org/wiki/Endmor%C3%A4ne"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-227",
+    "card_type": "term",
+    "term": "Epirogenese",
+    "prompt": "Was bedeutet „Epirogenese“?",
+    "answer": "Eine langsame, großräumige Hebung oder Senkung der Erdkruste ohne starke Faltung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Epirogenese",
+          "url": "https://de.wikipedia.org/wiki/Epirogenese"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-228",
+    "card_type": "term",
+    "term": "Evaporit",
+    "prompt": "Was bedeutet „Evaporit“?",
+    "answer": "Ein Sedimentgestein wie Gips oder Steinsalz, das beim Verdunsten mineralreichen Wassers ausfällt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Evaporit",
+          "url": "https://de.wikipedia.org/wiki/Evaporit"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-229",
+    "card_type": "term",
+    "term": "Firn",
+    "prompt": "Was bedeutet „Firn“?",
+    "answer": "Mehrjähriger, körnig verdichteter Schnee, der noch nicht vollständig zu Gletschereis geworden ist.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Firn",
+          "url": "https://de.wikipedia.org/wiki/Firn"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-230",
+    "card_type": "term",
+    "term": "Flasergefüge",
+    "prompt": "Was bedeutet „Flasergefüge“?",
+    "answer": "Ein metamorphes Gesteinsgefüge, in dem helle oder dunkle Minerale linsen- und schlierenförmig angeordnet sind.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Flaser bed",
+          "url": "https://en.wikipedia.org/wiki/Flaser_bed"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-231",
+    "card_type": "term",
+    "term": "Fumarole",
+    "prompt": "Was bedeutet „Fumarole“?",
+    "answer": "Eine Öffnung in vulkanischem Gebiet, aus der heiße Gase und Wasserdampf austreten.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Fumarole",
+          "url": "https://de.wikipedia.org/wiki/Fumarole"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-232",
+    "card_type": "term",
+    "term": "Gelifluktion",
+    "prompt": "Was bedeutet „Gelifluktion“?",
+    "answer": "Das langsame Fließen wassergesättigten Bodens über gefrorenem Untergrund in kaltem Klima.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Gelifluktion",
+          "url": "https://de.wikipedia.org/wiki/Gelifluktion"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-233",
+    "card_type": "term",
+    "term": "Geosutur",
+    "prompt": "Was bedeutet „Geosutur“?",
+    "answer": "Eine tief reichende Nahtzone, an der nach der Schließung eines Ozeans zwei Krustenblöcke zusammengeschweißt wurden.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Geosutur",
+          "url": "https://de.wikipedia.org/wiki/Geosutur"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-234",
+    "card_type": "term",
+    "term": "Grabenbruch",
+    "prompt": "Was bedeutet „Grabenbruch“?",
+    "answer": "Ein länglicher, zwischen annähernd parallelen Störungen abgesunkener Block der Erdkruste.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Grabenbruch",
+          "url": "https://de.wikipedia.org/wiki/Grabenbruch"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-235",
+    "card_type": "term",
+    "term": "Harnischfläche",
+    "prompt": "Was bedeutet „Harnischfläche“?",
+    "answer": "Eine durch Reibung an einer geologischen Störung geglättete und oft gerillte Gesteinsfläche.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Slickenside",
+          "url": "https://en.wikipedia.org/wiki/Slickenside"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-236",
+    "card_type": "term",
+    "term": "Horst",
+    "prompt": "Was bedeutet „Horst“?",
+    "answer": "Ein gegenüber seinen Nachbarblöcken entlang von Störungen angehobener oder stehen gebliebener Krustenblock.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Horst",
+          "url": "https://de.wikipedia.org/wiki/Horst"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-237",
+    "card_type": "term",
+    "term": "Ignimbrit",
+    "prompt": "Was bedeutet „Ignimbrit“?",
+    "answer": "Ein Gestein aus abgelagertem und oft verschweißtem Material eines heißen pyroklastischen Stroms.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Ignimbrite",
+          "url": "https://en.wikipedia.org/wiki/Ignimbrite"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-238",
+    "card_type": "term",
+    "term": "Inversion",
+    "prompt": "Was bedeutet „Inversion“?",
+    "answer": "Eine Wetterlage, bei der die Lufttemperatur mit der Höhe zunimmt statt wie gewöhnlich abzunehmen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Inversion",
+          "url": "https://www.duden.de/rechtschreibung/Inversion"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-239",
+    "card_type": "term",
+    "term": "Isobare",
+    "prompt": "Was bedeutet „Isobare“?",
+    "answer": "Eine Linie auf einer Wetterkarte, die Orte mit gleichem Luftdruck verbindet.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Isobare",
+          "url": "https://www.duden.de/rechtschreibung/Isobare"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-240",
+    "card_type": "term",
+    "term": "Isostasieanomalie",
+    "prompt": "Was bedeutet „Isostasieanomalie“?",
+    "answer": "Eine Abweichung der gemessenen Schwerkraft von dem Wert, der bei vollständig ausgeglichenen Krustenmassen erwartet wird.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Gravity anomaly",
+          "url": "https://en.wikipedia.org/wiki/Gravity_anomaly"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-241",
+    "card_type": "term",
+    "term": "Karren",
+    "prompt": "Was bedeutet „Karren“?",
+    "answer": "Rinnen, Furchen und scharfkantige Formen auf löslichem Gestein, die durch chemische Verwitterung entstehen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Karren",
+          "url": "https://www.duden.de/rechtschreibung/Karren"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-242",
+    "card_type": "term",
+    "term": "Kataklase",
+    "prompt": "Was bedeutet „Kataklase“?",
+    "answer": "Die mechanische Zertrümmerung und Verformung von Gestein in einer Störungszone.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Kataklase",
+          "url": "https://www.duden.de/rechtschreibung/Kataklase"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-243",
+    "card_type": "term",
+    "term": "Kryoturbation",
+    "prompt": "Was bedeutet „Kryoturbation“?",
+    "answer": "Das Durchmischen und Verformen von Boden durch wiederholtes Gefrieren und Auftauen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Kryoturbation",
+          "url": "https://www.duden.de/rechtschreibung/Kryoturbation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-244",
+    "card_type": "term",
+    "term": "Lahars",
+    "prompt": "Was bedeutet „Lahars“?",
+    "answer": "Schnell fließende Schlamm- und Schuttströme aus vulkanischem Material und Wasser.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Lahar",
+          "url": "https://en.wikipedia.org/wiki/Lahar"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-245",
+    "card_type": "term",
+    "term": "Maar",
+    "prompt": "Was bedeutet „Maar“?",
+    "answer": "Ein meist trichterförmiger Vulkanexplosionskrater, der durch den Kontakt von Magma und Grundwasser entstand.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Maar",
+          "url": "https://www.duden.de/rechtschreibung/Maar"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-246",
+    "card_type": "term",
+    "term": "Mélange",
+    "prompt": "Was bedeutet „Mélange“?",
+    "answer": "Ein chaotisches geologisches Gemenge verschiedenartiger Gesteinsblöcke in einer stark verformten Grundmasse.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Mélange",
+          "url": "https://en.wikipedia.org/wiki/M%C3%A9lange"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-247",
+    "card_type": "term",
+    "term": "Monadnock",
+    "prompt": "Was bedeutet „Monadnock“?",
+    "answer": "Ein einzeln aufragender Restberg, der eine weitgehend abgetragene Landschaft überragt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Monadnock",
+          "url": "https://www.duden.de/rechtschreibung/Monadnock"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-248",
+    "card_type": "term",
+    "term": "Nunatak",
+    "prompt": "Was bedeutet „Nunatak“?",
+    "answer": "Ein Felsgipfel oder Bergrücken, der aus einer Inlandeisdecke oder einem Gletscher herausragt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Nunatak",
+          "url": "https://www.duden.de/rechtschreibung/Nunatak"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-249",
+    "card_type": "term",
+    "term": "Ophiolith",
+    "prompt": "Was bedeutet „Ophiolith“?",
+    "answer": "Ein an Land gelangtes Stück ehemaliger ozeanischer Kruste samt Teilen des oberen Erdmantels.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Ophiolite",
+          "url": "https://en.wikipedia.org/wiki/Ophiolite"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-250",
+    "card_type": "term",
+    "term": "Peneplain",
+    "prompt": "Was bedeutet „Peneplain“?",
+    "answer": "Eine durch sehr lange Abtragung entstandene, beinahe ebene Rumpffläche.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Peneplain",
+          "url": "https://www.duden.de/rechtschreibung/Peneplain"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-251",
+    "card_type": "term",
+    "term": "Periglazial",
+    "prompt": "Was bedeutet „Periglazial“?",
+    "answer": "Eine Landschaft oder ein Prozess im nicht vergletscherten Randbereich eines Gletschers oder Eisschilds.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Periglaciation",
+          "url": "https://en.wikipedia.org/wiki/Periglaciation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-252",
+    "card_type": "term",
+    "term": "Pingo",
+    "prompt": "Was bedeutet „Pingo“?",
+    "answer": "Ein meist runder Hügel mit einem Kern aus Bodeneis, der in Permafrostgebieten wächst.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Pingo",
+          "url": "https://en.wikipedia.org/wiki/Pingo"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-253",
+    "card_type": "term",
+    "term": "Plutonit",
+    "prompt": "Was bedeutet „Plutonit“?",
+    "answer": "Ein magmatisches Gestein, das langsam in größerer Tiefe erstarrt ist.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Plutonit",
+          "url": "https://www.duden.de/rechtschreibung/Plutonit"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-254",
+    "card_type": "term",
+    "term": "Regolith",
+    "prompt": "Was bedeutet „Regolith“?",
+    "answer": "Die lockere Decke aus verwittertem Gestein und Bodenmaterial über festem Untergrund.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Regolith",
+          "url": "https://en.wikipedia.org/wiki/Regolith"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-255",
+    "card_type": "term",
+    "term": "Solifluktion",
+    "prompt": "Was bedeutet „Solifluktion“?",
+    "answer": "Das langsame hangabwärtige Fließen wassergesättigten Bodens, besonders über gefrorenem Untergrund.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Solifluktion",
+          "url": "https://www.duden.de/rechtschreibung/Solifluktion"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-256",
+    "card_type": "term",
+    "term": "Synklinale",
+    "prompt": "Was bedeutet „Synklinale“?",
+    "answer": "Eine nach unten gebogene geologische Falte, deren jüngere Schichten gewöhnlich im Kern liegen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Synklinale",
+          "url": "https://www.duden.de/rechtschreibung/Synklinale"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-257",
+    "card_type": "term",
+    "term": "Tektogenese",
+    "prompt": "Was bedeutet „Tektogenese“?",
+    "answer": "Die Entstehung und Verformung größerer Strukturen der Erdkruste durch tektonische Kräfte.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Tektogenese",
+          "url": "https://www.duden.de/rechtschreibung/Tektogenese"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-258",
+    "card_type": "term",
+    "term": "Tillit",
+    "prompt": "Was bedeutet „Tillit“?",
+    "answer": "Ein zu festem Gestein verfestigtes, unsortiertes Gletschersediment.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Tillit",
+          "url": "https://www.duden.de/rechtschreibung/Tillit"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-259",
+    "card_type": "term",
+    "term": "Transgression",
+    "prompt": "Was bedeutet „Transgression“?",
+    "answer": "Das Vorrücken des Meeres über zuvor trockenes Land infolge steigenden Meeresspiegels oder sinkenden Landes.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Transgression",
+          "url": "https://www.duden.de/rechtschreibung/Transgression"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-260",
+    "card_type": "term",
+    "term": "Yardang",
+    "prompt": "Was bedeutet „Yardang“?",
+    "answer": "Ein lang gestreckter, stromlinienförmiger Rücken, den Wind aus verfestigtem Sediment herausgearbeitet hat.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Yardang",
+          "url": "https://en.wikipedia.org/wiki/Yardang"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-261",
+    "card_type": "term",
+    "term": "Zeugenberg",
+    "prompt": "Was bedeutet „Zeugenberg“?",
+    "answer": "Ein isolierter Restberg, der die frühere Höhe einer weitgehend abgetragenen Gesteinsschicht erkennen lässt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Zeugenberg",
+          "url": "https://www.duden.de/rechtschreibung/Zeugenberg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-262",
+    "card_type": "term",
+    "term": "Abandon",
+    "prompt": "Was bedeutet „Abandon“?",
+    "answer": "Die Aufgabe eines Rechts oder eines versicherten Gegenstands, besonders die Überlassung an einen Versicherer gegen Entschädigung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Abandon",
+          "url": "https://de.wikipedia.org/wiki/Abandon"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-263",
+    "card_type": "term",
+    "term": "Abstraktionsprinzip",
+    "prompt": "Was bedeutet „Abstraktionsprinzip“?",
+    "answer": "Der Rechtsgrundsatz, dass Verpflichtungsgeschäft und Übertragung eines Rechts unabhängig voneinander wirksam beurteilt werden.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Abstraktionsprinzip",
+          "url": "https://de.wikipedia.org/wiki/Abstraktionsprinzip"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-264",
+    "card_type": "term",
+    "term": "Akzessorietät",
+    "prompt": "Was bedeutet „Akzessorietät“?",
+    "answer": "Die rechtliche Abhängigkeit eines Nebenrechts vom Bestehen einer Hauptforderung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Akzessorietät",
+          "url": "https://de.wikipedia.org/wiki/Akzessoriet%C3%A4t"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-265",
+    "card_type": "term",
+    "term": "Aleatorischer Vertrag",
+    "prompt": "Was bedeutet „Aleatorischer Vertrag“?",
+    "answer": "Ein Vertrag, bei dem Leistung oder Gegenleistung wesentlich von einem ungewissen Ereignis abhängt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Aleatory contract",
+          "url": "https://en.wikipedia.org/wiki/Aleatory_contract"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-266",
+    "card_type": "term",
+    "term": "Allmende",
+    "prompt": "Was bedeutet „Allmende“?",
+    "answer": "Ein Grundstück oder eine Ressource, die von einer berechtigten Gemeinschaft gemeinsam genutzt wird.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Allmende",
+          "url": "https://de.wikipedia.org/wiki/Allmende"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-267",
+    "card_type": "term",
+    "term": "Amortisation",
+    "prompt": "Was bedeutet „Amortisation“?",
+    "answer": "Die planmäßige Rückzahlung einer Schuld oder die allmähliche Deckung einer Investition durch ihre Erträge.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Amortisation",
+          "url": "https://de.wikipedia.org/wiki/Amortisation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-268",
+    "card_type": "term",
+    "term": "Anwachsung",
+    "prompt": "Was bedeutet „Anwachsung“?",
+    "answer": "Der gesetzliche Übergang eines frei werdenden Anteils auf die verbleibenden Mitberechtigten.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Anwachsung",
+          "url": "https://de.wikipedia.org/wiki/Anwachsung"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-269",
+    "card_type": "term",
+    "term": "Appellation",
+    "prompt": "Was bedeutet „Appellation“?",
+    "answer": "Ein historisches oder ausländisches Rechtsmittel, mit dem eine höhere Instanz zur erneuten Entscheidung angerufen wird.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Appellation",
+          "url": "https://de.wikipedia.org/wiki/Appellation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-270",
+    "card_type": "term",
+    "term": "Arrogation",
+    "prompt": "Was bedeutet „Arrogation“?",
+    "answer": "Im römischen Recht die Annahme einer bislang selbstständigen Person an Kindes statt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Adoption in ancient Rome",
+          "url": "https://en.wikipedia.org/wiki/Adoption_in_ancient_Rome"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-271",
+    "card_type": "term",
+    "term": "Assumpsit",
+    "prompt": "Was bedeutet „Assumpsit“?",
+    "answer": "Eine historische Klageform des englischen Common Law wegen Verletzung eines ausdrücklich oder stillschweigend gegebenen Versprechens.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Assumpsit",
+          "url": "https://en.wikipedia.org/wiki/Assumpsit"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-272",
+    "card_type": "term",
+    "term": "Avulsion",
+    "prompt": "Was bedeutet „Avulsion“?",
+    "answer": "Die plötzliche Abtrennung und Verlagerung eines Landstücks durch die Gewalt eines Gewässers.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Avulsion (common law jurisdictions)",
+          "url": "https://en.wikipedia.org/wiki/Avulsion_(common_law_jurisdictions)"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-273",
+    "card_type": "term",
+    "term": "Benefizium",
+    "prompt": "Was bedeutet „Benefizium“?",
+    "answer": "Ein rechtlicher Vorteil oder eine Vergünstigung; historisch häufig ein mit Einkünften verbundenes Amt oder Lehen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Benefizium",
+          "url": "https://de.wikipedia.org/wiki/Benefizium"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-274",
+    "card_type": "term",
+    "term": "Cessio legis",
+    "prompt": "Was bedeutet „Cessio legis“?",
+    "answer": "Der unmittelbare Übergang einer Forderung kraft Gesetzes auf einen anderen Gläubiger.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Subrogation",
+          "url": "https://en.wikipedia.org/wiki/Subrogation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-275",
+    "card_type": "term",
+    "term": "Dereliktion",
+    "prompt": "Was bedeutet „Dereliktion“?",
+    "answer": "Die Aufgabe des Eigentums an einer beweglichen Sache in der Absicht, sie herrenlos werden zu lassen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Dereliktion",
+          "url": "https://de.wikipedia.org/wiki/Dereliktion"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-276",
+    "card_type": "term",
+    "term": "Devolutiveffekt",
+    "prompt": "Was bedeutet „Devolutiveffekt“?",
+    "answer": "Die Wirkung eines Rechtsmittels, durch die die Sache zur Entscheidung an eine höhere Instanz gelangt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Devolutiveffekt",
+          "url": "https://www.duden.de/rechtschreibung/Devolutiveffekt"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-277",
+    "card_type": "term",
+    "term": "Dispositionsmaxime",
+    "prompt": "Was bedeutet „Dispositionsmaxime“?",
+    "answer": "Der Grundsatz, dass die Parteien Beginn, Gegenstand und Ende eines Zivilprozesses bestimmen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Dispositionsmaxime",
+          "url": "https://de.wikipedia.org/wiki/Dispositionsmaxime"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-278",
+    "card_type": "term",
+    "term": "Dotalrecht",
+    "prompt": "Was bedeutet „Dotalrecht“?",
+    "answer": "Historisches Recht über Mitgift und das für eine Ehe eingebrachte Vermögen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Dowry",
+          "url": "https://en.wikipedia.org/wiki/Dowry"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-279",
+    "card_type": "term",
+    "term": "Emphyteuse",
+    "prompt": "Was bedeutet „Emphyteuse“?",
+    "answer": "Ein vererbliches und übertragbares langfristiges Nutzungsrecht an fremdem Grund gegen regelmäßige Abgabe.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Emphyteuse",
+          "url": "https://de.wikipedia.org/wiki/Emphyteuse"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-280",
+    "card_type": "term",
+    "term": "Ersitzung",
+    "prompt": "Was bedeutet „Ersitzung“?",
+    "answer": "Der Erwerb eines Rechts durch lang andauernden Eigenbesitz unter den gesetzlich festgelegten Voraussetzungen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Ersitzung",
+          "url": "https://de.wikipedia.org/wiki/Ersitzung"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-281",
+    "card_type": "term",
+    "term": "Evokation",
+    "prompt": "Was bedeutet „Evokation“?",
+    "answer": "Das Ansichziehen eines Verfahrens durch eine übergeordnete Instanz.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Evokation",
+          "url": "https://de.wikipedia.org/wiki/Evokation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-282",
+    "card_type": "term",
+    "term": "Exequatur",
+    "prompt": "Was bedeutet „Exequatur“?",
+    "answer": "Die gerichtliche Zulassung, durch die eine ausländische Entscheidung im Inland vollstreckbar wird.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Exequatur",
+          "url": "https://de.wikipedia.org/wiki/Exequatur"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-283",
+    "card_type": "term",
+    "term": "Fideikommiss",
+    "prompt": "Was bedeutet „Fideikommiss“?",
+    "answer": "Eine erbrechtliche Bindung von Familienvermögen, die dessen dauernde Weitergabe nach festgelegter Erbfolge sichern sollte.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Fideikommiss",
+          "url": "https://www.duden.de/rechtschreibung/Fideikommiss"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-284",
+    "card_type": "term",
+    "term": "Fiskalismus",
+    "prompt": "Was bedeutet „Fiskalismus“?",
+    "answer": "Eine starke Ausrichtung staatlicher Politik auf Einnahmen, Kasseninteressen und fiskalische Maßnahmen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Fiskalismus",
+          "url": "https://www.duden.de/rechtschreibung/Fiskalismus"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-285",
+    "card_type": "term",
+    "term": "Gesamthand",
+    "prompt": "Was bedeutet „Gesamthand“?",
+    "answer": "Eine gemeinschaftliche Vermögensbindung, bei der Einzelne nicht frei über ihren Anteil an jedem Gegenstand verfügen können.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Gabler Wirtschaftslexikon: Gemeinschaft zur gesamten Hand",
+          "url": "https://wirtschaftslexikon.gabler.de/definition/gemeinschaft-zur-gesamten-hand-32491"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-286",
+    "card_type": "term",
+    "term": "Ingerenz",
+    "prompt": "Was bedeutet „Ingerenz“?",
+    "answer": "Die rechtliche Verantwortlichkeit aus einem pflichtwidrigen Vorverhalten, durch das eine Gefahr geschaffen wurde.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Ingerenz",
+          "url": "https://de.wikipedia.org/wiki/Ingerenz"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-287",
+    "card_type": "term",
+    "term": "Interzession",
+    "prompt": "Was bedeutet „Interzession“?",
+    "answer": "Das rechtliche Einstehen für die Schuld eines anderen, etwa durch Bürgschaft oder Schuldbeitritt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Interzession",
+          "url": "https://de.wikipedia.org/wiki/Interzession"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-288",
+    "card_type": "term",
+    "term": "Kaduzierung",
+    "prompt": "Was bedeutet „Kaduzierung“?",
+    "answer": "Der Verlust eines Rechts oder Anteils wegen nicht erfüllter Pflichten, besonders einer fälligen Einzahlung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Kaduzierung",
+          "url": "https://de.wikipedia.org/wiki/Kaduzierung"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-289",
+    "card_type": "term",
+    "term": "Kollation",
+    "prompt": "Was bedeutet „Kollation“?",
+    "answer": "Die erbrechtliche Anrechnung oder Ausgleichung bestimmter Zuwendungen unter Miterben.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Kollation",
+          "url": "https://de.wikipedia.org/wiki/Kollation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-290",
+    "card_type": "term",
+    "term": "Konvaleszenz",
+    "prompt": "Was bedeutet „Konvaleszenz“?",
+    "answer": "Das nachträgliche Wirksamwerden eines zunächst unwirksamen Rechtsgeschäfts durch Wegfall des Mangels.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Konvaleszenz",
+          "url": "https://de.wikipedia.org/wiki/Konvaleszenz"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-291",
+    "card_type": "term",
+    "term": "Legalzession",
+    "prompt": "Was bedeutet „Legalzession“?",
+    "answer": "Ein Forderungsübergang, der unmittelbar aufgrund einer gesetzlichen Vorschrift eintritt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Subrogation",
+          "url": "https://en.wikipedia.org/wiki/Subrogation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-292",
+    "card_type": "term",
+    "term": "Litiskontestation",
+    "prompt": "Was bedeutet „Litiskontestation“?",
+    "answer": "Im älteren Prozessrecht der förmliche Streitbeitritt, durch den der Prozessgegenstand festgelegt wurde.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Litiskontestation",
+          "url": "https://de.wikipedia.org/wiki/Litiskontestation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-293",
+    "card_type": "term",
+    "term": "Novation",
+    "prompt": "Was bedeutet „Novation“?",
+    "answer": "Die Ersetzung eines bestehenden Schuldverhältnisses durch ein neues, wodurch das alte erlischt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Novation",
+          "url": "https://de.wikipedia.org/wiki/Novation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-294",
+    "card_type": "term",
+    "term": "Obstruktion",
+    "prompt": "Was bedeutet „Obstruktion“?",
+    "answer": "Die gezielte Behinderung eines politischen oder parlamentarischen Verfahrens mit den verfügbaren Verfahrensmitteln.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Obstruktion",
+          "url": "https://de.wikipedia.org/wiki/Obstruktion"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-295",
+    "card_type": "term",
+    "term": "Okkupation",
+    "prompt": "Was bedeutet „Okkupation“?",
+    "answer": "Der Eigentumserwerb durch erlaubte Aneignung einer herrenlosen Sache.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Okkupation",
+          "url": "https://de.wikipedia.org/wiki/Okkupation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-296",
+    "card_type": "term",
+    "term": "Parömie",
+    "prompt": "Was bedeutet „Parömie“?",
+    "answer": "Ein kurzer, allgemein verbreiteter Spruch oder Rechtssatz mit sprichwörtlichem Charakter.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Parömie",
+          "url": "https://de.wikipedia.org/wiki/Par%C3%B6mie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-297",
+    "card_type": "term",
+    "term": "Peremption",
+    "prompt": "Was bedeutet „Peremption“?",
+    "answer": "Das endgültige Erlöschen eines Rechts oder Verfahrens wegen Ablaufs einer Frist oder unterlassener Handlung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Peremption",
+          "url": "https://www.duden.de/rechtschreibung/Peremption"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-298",
+    "card_type": "term",
+    "term": "Präklusion",
+    "prompt": "Was bedeutet „Präklusion“?",
+    "answer": "Der Ausschluss eines verspätet geltend gemachten Rechts, Einwands oder Beweismittels.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Präklusion",
+          "url": "https://de.wikipedia.org/wiki/Pr%C3%A4klusion"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-299",
+    "card_type": "term",
+    "term": "Prorogation",
+    "prompt": "Was bedeutet „Prorogation“?",
+    "answer": "Die Vereinbarung oder Anordnung einer Zuständigkeit, die ohne sie nicht bestehen würde.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Prorogation",
+          "url": "https://de.wikipedia.org/wiki/Prorogation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-300",
+    "card_type": "term",
+    "term": "Publizitätsprinzip",
+    "prompt": "Was bedeutet „Publizitätsprinzip“?",
+    "answer": "Der Grundsatz, dass dingliche Rechtsänderungen nach außen erkennbar sein sollen, etwa durch Besitzübergabe oder Registereintrag.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Publizitätsprinzip",
+          "url": "https://de.wikipedia.org/wiki/Publizit%C3%A4tsprinzip"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-301",
+    "card_type": "term",
+    "term": "Realkonkurrenz",
+    "prompt": "Was bedeutet „Realkonkurrenz“?",
+    "answer": "Das Zusammentreffen mehrerer selbstständiger Straftaten, die gemeinsam abgeurteilt werden.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Realkonkurrenz",
+          "url": "https://www.duden.de/rechtschreibung/Realkonkurrenz"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-302",
+    "card_type": "term",
+    "term": "Remonstration",
+    "prompt": "Was bedeutet „Remonstration“?",
+    "answer": "Die förmliche Einwendung eines Beamten gegen die Rechtmäßigkeit einer dienstlichen Anordnung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Remonstration",
+          "url": "https://de.wikipedia.org/wiki/Remonstration"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-303",
+    "card_type": "term",
+    "term": "Repartition",
+    "prompt": "Was bedeutet „Repartition“?",
+    "answer": "Die anteilige Verteilung einer Gesamtlast, Forderung oder Umlage auf mehrere Beteiligte.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Repartition",
+          "url": "https://www.duden.de/rechtschreibung/Repartition"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-304",
+    "card_type": "term",
+    "term": "Subrogation",
+    "prompt": "Was bedeutet „Subrogation“?",
+    "answer": "Das Eintreten einer Person oder Forderung an die rechtliche Stelle einer anderen, meist nach Befriedigung eines Gläubigers.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Subrogation",
+          "url": "https://de.wikipedia.org/wiki/Subrogation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-305",
+    "card_type": "term",
+    "term": "Surrogation",
+    "prompt": "Was bedeutet „Surrogation“?",
+    "answer": "Das Ersetzen eines Vermögensgegenstands durch einen anderen, der rechtlich dessen Stellung übernimmt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Surrogation",
+          "url": "https://www.duden.de/rechtschreibung/Surrogation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-306",
+    "card_type": "term",
+    "term": "Usukapion",
+    "prompt": "Was bedeutet „Usukapion“?",
+    "answer": "Der Eigentumserwerb durch qualifizierten Besitz über eine gesetzlich bestimmte Zeit, besonders im römischen Recht.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Usukapion",
+          "url": "https://www.duden.de/rechtschreibung/Usukapion"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-307",
+    "card_type": "term",
+    "term": "Vindikationslage",
+    "prompt": "Was bedeutet „Vindikationslage“?",
+    "answer": "Eine Situation, in der der Eigentümer von einem unberechtigten Besitzer die Herausgabe einer Sache verlangen kann.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Rei vindicatio",
+          "url": "https://en.wikipedia.org/wiki/Rei_vindicatio"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-308",
+    "card_type": "term",
+    "term": "Voluntativ",
+    "prompt": "Was bedeutet „Voluntativ“?",
+    "answer": "Eine sprachliche Form oder Bedeutung, die einen Willen, Wunsch oder eine Absicht ausdrückt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Voluntativ",
+          "url": "https://www.duden.de/rechtschreibung/Voluntativ"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-309",
+    "card_type": "term",
+    "term": "Zessionar",
+    "prompt": "Was bedeutet „Zessionar“?",
+    "answer": "Die Person, auf die eine Forderung durch Abtretung übertragen wird.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Zessionar",
+          "url": "https://www.duden.de/rechtschreibung/Zessionar"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-310",
+    "card_type": "term",
+    "term": "Zessionsregress",
+    "prompt": "Was bedeutet „Zessionsregress“?",
+    "answer": "Ein Rückgriff, bei dem ein Sicherungsgeber nach Befriedigung des Gläubigers die Forderung abgetreten erhält, um gegen den eigentlichen Schuldner vorzugehen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duncker & Humblot: Regreßfiguren im Zivilrecht",
+          "url": "https://www.duncker-humblot.de/_files_media/leseproben/9783428502233.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-311",
+    "card_type": "term",
+    "term": "Abkantung",
+    "prompt": "Was bedeutet „Abkantung“?",
+    "answer": "Das Herstellen einer geraden Biegung oder Kante in einem Blech oder Werkstück.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Bending (metalworking)",
+          "url": "https://en.wikipedia.org/wiki/Bending_(metalworking)"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-312",
+    "card_type": "term",
+    "term": "Achterstag",
+    "prompt": "Was bedeutet „Achterstag“?",
+    "answer": "Ein vom Mast nach achtern führendes Tau oder Drahtseil, das den Mast abstützt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Achterstag",
+          "url": "https://de.wikipedia.org/wiki/Achterstag"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-313",
+    "card_type": "term",
+    "term": "Adiabate",
+    "prompt": "Was bedeutet „Adiabate“?",
+    "answer": "Eine Zustandskurve, auf der ein thermodynamisches System keine Wärme mit seiner Umgebung austauscht.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Adiabate",
+          "url": "https://www.duden.de/rechtschreibung/Adiabate"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-314",
+    "card_type": "term",
+    "term": "Ankerklüse",
+    "prompt": "Was bedeutet „Ankerklüse“?",
+    "answer": "Eine verstärkte Öffnung in der Bordwand, durch die Ankerkette oder Ankerschaft geführt werden.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Hawsehole",
+          "url": "https://en.wikipedia.org/wiki/Hawsehole"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-315",
+    "card_type": "term",
+    "term": "Architrav",
+    "prompt": "Was bedeutet „Architrav“?",
+    "answer": "Der waagerechte Hauptbalken, der in der klassischen Architektur unmittelbar auf Säulen oder Pfeilern liegt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Architrav",
+          "url": "https://de.wikipedia.org/wiki/Architrav"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-316",
+    "card_type": "term",
+    "term": "Ballastkiel",
+    "prompt": "Was bedeutet „Ballastkiel“?",
+    "answer": "Ein schwerer Kiel, dessen Gewicht einem Segelboot Stabilität gegen Krängung gibt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Keel",
+          "url": "https://en.wikipedia.org/wiki/Keel"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-317",
+    "card_type": "term",
+    "term": "Barkentine",
+    "prompt": "Was bedeutet „Barkentine“?",
+    "answer": "Ein Segelschiff mit mindestens drei Masten, Rahsegeln nur am vordersten Mast und Schratsegeln an den übrigen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Barquentine",
+          "url": "https://en.wikipedia.org/wiki/Barquentine"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-318",
+    "card_type": "term",
+    "term": "Bauschingereffekt",
+    "prompt": "Was bedeutet „Bauschingereffekt“?",
+    "answer": "Die verringerte Fließgrenze eines Metalls bei Belastungsumkehr nach vorheriger plastischer Verformung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Bauschingereffekt",
+          "url": "https://de.wikipedia.org/wiki/Bauschingereffekt"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-319",
+    "card_type": "term",
+    "term": "Bilge",
+    "prompt": "Was bedeutet „Bilge“?",
+    "answer": "Der unterste Innenraum eines Schiffsrumpfs, in dem sich eingedrungenes Wasser sammelt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Bilge",
+          "url": "https://de.wikipedia.org/wiki/Bilge"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-320",
+    "card_type": "term",
+    "term": "Bimsbeton",
+    "prompt": "Was bedeutet „Bimsbeton“?",
+    "answer": "Ein leichter Beton, bei dem poröser Bimsstein als Zuschlagstoff verwendet wird.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Bimsbeton",
+          "url": "https://www.duden.de/rechtschreibung/Bimsbeton"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-321",
+    "card_type": "term",
+    "term": "Blindniet",
+    "prompt": "Was bedeutet „Blindniet“?",
+    "answer": "Ein Niet, der von nur einer Seite eines Werkstücks gesetzt werden kann.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Rivet",
+          "url": "https://en.wikipedia.org/wiki/Rivet"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-322",
+    "card_type": "term",
+    "term": "Bramme",
+    "prompt": "Was bedeutet „Bramme“?",
+    "answer": "Ein dicker, flacher Halbzeugblock aus Metall, der meist zu Blechen oder Bändern ausgewalzt wird.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Bramme",
+          "url": "https://de.wikipedia.org/wiki/Bramme"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-323",
+    "card_type": "term",
+    "term": "Davit",
+    "prompt": "Was bedeutet „Davit“?",
+    "answer": "Eine schwenk- oder ausfahrbare Hebevorrichtung an Schiffen, besonders zum Aussetzen von Beibooten.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Davit",
+          "url": "https://de.wikipedia.org/wiki/Davit"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-324",
+    "card_type": "term",
+    "term": "Dollbord",
+    "prompt": "Was bedeutet „Dollbord“?",
+    "answer": "Der verstärkte obere Rand der Seitenwand eines offenen Bootes.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Dollbord",
+          "url": "https://de.wikipedia.org/wiki/Dollbord"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-325",
+    "card_type": "term",
+    "term": "Duktilität",
+    "prompt": "Was bedeutet „Duktilität“?",
+    "answer": "Die Fähigkeit eines Werkstoffs, sich unter Belastung dauerhaft plastisch zu verformen, bevor er bricht.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duktilität",
+          "url": "https://de.wikipedia.org/wiki/Duktilit%C3%A4t"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-326",
+    "card_type": "term",
+    "term": "Entasis",
+    "prompt": "Was bedeutet „Entasis“?",
+    "answer": "Eine leichte bauchige Verdickung eines Säulenschafts, die optisch ein eingesunkenes Erscheinungsbild ausgleicht.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Entasis",
+          "url": "https://de.wikipedia.org/wiki/Entasis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-327",
+    "card_type": "term",
+    "term": "Eutektikum",
+    "prompt": "Was bedeutet „Eutektikum“?",
+    "answer": "Ein Stoffgemisch mit einer Zusammensetzung, bei der es bei der niedrigsten möglichen Temperatur gleichzeitig schmilzt oder erstarrt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Eutektikum",
+          "url": "https://de.wikipedia.org/wiki/Eutektikum"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-328",
+    "card_type": "term",
+    "term": "Fachwerkbinder",
+    "prompt": "Was bedeutet „Fachwerkbinder“?",
+    "answer": "Ein tragender Balkenverband aus stabförmigen Bauteilen, die zu Dreiecken verbunden sind.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Truss",
+          "url": "https://en.wikipedia.org/wiki/Truss"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-329",
+    "card_type": "term",
+    "term": "Freibord",
+    "prompt": "Was bedeutet „Freibord“?",
+    "answer": "Der senkrechte Abstand zwischen Wasserlinie und oberem Rand des wasserdichten Schiffsrumpfs.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Freibord",
+          "url": "https://de.wikipedia.org/wiki/Freibord"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-330",
+    "card_type": "term",
+    "term": "Gangspill",
+    "prompt": "Was bedeutet „Gangspill“?",
+    "answer": "Eine senkrecht stehende Schiffswinde, die früher durch im Kreis gehende Personen an langen Spaken gedreht wurde.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Gangspill",
+          "url": "https://www.duden.de/rechtschreibung/Gangspill"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-331",
+    "card_type": "term",
+    "term": "Hohlkehle",
+    "prompt": "Was bedeutet „Hohlkehle“?",
+    "answer": "Eine nach innen gerundete, rinnenförmige Verbindung oder Zierleiste zwischen zwei Flächen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Hohlkehle",
+          "url": "https://de.wikipedia.org/wiki/Hohlkehle"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-332",
+    "card_type": "term",
+    "term": "Inkrustation",
+    "prompt": "Was bedeutet „Inkrustation“?",
+    "answer": "Eine harte Ablagerung oder Kruste auf einer Oberfläche; in der Kunst auch eine Einlegearbeit aus andersfarbigem Material.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Inkrustation",
+          "url": "https://de.wikipedia.org/wiki/Inkrustation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-333",
+    "card_type": "term",
+    "term": "Kalfatwerk",
+    "prompt": "Was bedeutet „Kalfatwerk“?",
+    "answer": "Das in die Fugen einer hölzernen Schiffshaut eingetriebene Dichtungsmaterial, meist Werg mit Pech oder Teer.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Caulk",
+          "url": "https://en.wikipedia.org/wiki/Caulk"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-334",
+    "card_type": "term",
+    "term": "Karronade",
+    "prompt": "Was bedeutet „Karronade“?",
+    "answer": "Ein kurzes, großkalibriges Schiffsgeschütz des späten 18. und frühen 19. Jahrhunderts für kurze Entfernungen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Karronade",
+          "url": "https://de.wikipedia.org/wiki/Karronade"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-335",
+    "card_type": "term",
+    "term": "Kimm",
+    "prompt": "Was bedeutet „Kimm“?",
+    "answer": "Der gekrümmte Übergangsbereich zwischen Schiffsboden und Seitenwand eines Rumpfs.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Kimm",
+          "url": "https://de.wikipedia.org/wiki/Kimm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-336",
+    "card_type": "term",
+    "term": "Kokille",
+    "prompt": "Was bedeutet „Kokille“?",
+    "answer": "Eine wiederverwendbare metallische Gussform, in der flüssiges Metall erstarrt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Kokille",
+          "url": "https://de.wikipedia.org/wiki/Kokille"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-337",
+    "card_type": "term",
+    "term": "Kragstein",
+    "prompt": "Was bedeutet „Kragstein“?",
+    "answer": "Ein aus einer Wand vorspringender Stein, der ein darüberliegendes Bauteil trägt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Kragstein",
+          "url": "https://de.wikipedia.org/wiki/Kragstein"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-338",
+    "card_type": "term",
+    "term": "Lenzpumpe",
+    "prompt": "Was bedeutet „Lenzpumpe“?",
+    "answer": "Eine Pumpe, mit der eingedrungenes Wasser aus dem tiefsten Bereich eines Bootes oder Schiffes entfernt wird.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Lenzpumpe",
+          "url": "https://www.duden.de/rechtschreibung/Lenzpumpe"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-339",
+    "card_type": "term",
+    "term": "Liek",
+    "prompt": "Was bedeutet „Liek“?",
+    "answer": "Der verstärkte Rand eines Segels, häufig mit eingenähtem Tau oder Draht.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Liek",
+          "url": "https://de.wikipedia.org/wiki/Liek"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-340",
+    "card_type": "term",
+    "term": "Lukarne",
+    "prompt": "Was bedeutet „Lukarne“?",
+    "answer": "Ein senkrecht stehendes Dachfenster mit eigenem kleinen Dachaufbau.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Lukarne",
+          "url": "https://de.wikipedia.org/wiki/Lukarne"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-341",
+    "card_type": "term",
+    "term": "Metope",
+    "prompt": "Was bedeutet „Metope“?",
+    "answer": "Das meist verzierte rechteckige Feld zwischen zwei Triglyphen im dorischen Fries.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Metope",
+          "url": "https://de.wikipedia.org/wiki/Metope"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-342",
+    "card_type": "term",
+    "term": "Nonius",
+    "prompt": "Was bedeutet „Nonius“?",
+    "answer": "Eine zusätzliche Skala an einem Messgerät, mit der Bruchteile der Teilung der Hauptskala abgelesen werden.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Nonius",
+          "url": "https://de.wikipedia.org/wiki/Nonius"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-343",
+    "card_type": "term",
+    "term": "Palstek",
+    "prompt": "Was bedeutet „Palstek“?",
+    "answer": "Ein Seemannsknoten, der eine feste Schlaufe bildet, die sich unter Belastung nicht zuzieht.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Palstek",
+          "url": "https://de.wikipedia.org/wiki/Palstek"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-344",
+    "card_type": "term",
+    "term": "Pinne",
+    "prompt": "Was bedeutet „Pinne“?",
+    "answer": "Ein am Ruderkopf befestigter Hebel, mit dem ein Boot von Hand gesteuert wird.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Pinne",
+          "url": "https://de.wikipedia.org/wiki/Pinne"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-345",
+    "card_type": "term",
+    "term": "Pütting",
+    "prompt": "Was bedeutet „Pütting“?",
+    "answer": "Ein kräftiger Beschlag am Schiffsrumpf, an dem Wanten oder Stage befestigt werden.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Pütting",
+          "url": "https://de.wikipedia.org/wiki/P%C3%BCtting"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-346",
+    "card_type": "term",
+    "term": "Rah",
+    "prompt": "Was bedeutet „Rah“?",
+    "answer": "Eine waagerechte Spiere am Mast eines Segelschiffs, an der ein Rahsegel angeschlagen ist.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Rah",
+          "url": "https://de.wikipedia.org/wiki/Rah"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-347",
+    "card_type": "term",
+    "term": "Saling",
+    "prompt": "Was bedeutet „Saling“?",
+    "answer": "Eine quer vom Mast abstehende Stütze, die Wanten nach außen spreizt und den Mast seitlich stabilisiert.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Saling",
+          "url": "https://de.wikipedia.org/wiki/Saling"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-348",
+    "card_type": "term",
+    "term": "Schamotte",
+    "prompt": "Was bedeutet „Schamotte“?",
+    "answer": "Ein feuerfestes, bereits gebranntes und zerkleinertes Tonmaterial für hitzebeständige Steine und Auskleidungen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Schamotte",
+          "url": "https://de.wikipedia.org/wiki/Schamotte"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-349",
+    "card_type": "term",
+    "term": "Schergang",
+    "prompt": "Was bedeutet „Schergang“?",
+    "answer": "Der oberste durchlaufende Plankengang oder Plattengang der Außenhaut eines Schiffes.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Schergang",
+          "url": "https://www.duden.de/rechtschreibung/Schergang"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-350",
+    "card_type": "term",
+    "term": "Setzbord",
+    "prompt": "Was bedeutet „Setzbord“?",
+    "answer": "Ein abnehmbarer oder aufgesetzter Aufbau, der die Seitenwand eines Boots oder Fahrzeugs erhöht.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Setzbord",
+          "url": "https://de.wikipedia.org/wiki/Setzbord"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-351",
+    "card_type": "term",
+    "term": "Spriet",
+    "prompt": "Was bedeutet „Spriet“?",
+    "answer": "Eine schräg nach oben gerichtete Spiere, die bei einem Sprietsegel dessen obere äußere Ecke ausspannt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Duden: Spriet",
+          "url": "https://www.duden.de/rechtschreibung/Spriet"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-352",
+    "card_type": "term",
+    "term": "Strebewerk",
+    "prompt": "Was bedeutet „Strebewerk“?",
+    "answer": "Das System aus Strebepfeilern und Strebebögen, das die seitlichen Kräfte eines Gewölbes nach außen ableitet.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Strebewerk",
+          "url": "https://de.wikipedia.org/wiki/Strebewerk"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-353",
+    "card_type": "term",
+    "term": "Toppnant",
+    "prompt": "Was bedeutet „Toppnant“?",
+    "answer": "Ein Tau oder Drahtseil, das das Ende einer Rah oder eines Baums trägt und in der Höhe hält.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Toppnant",
+          "url": "https://de.wikipedia.org/wiki/Toppnant"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-354",
+    "card_type": "term",
+    "term": "Triglyphe",
+    "prompt": "Was bedeutet „Triglyphe“?",
+    "answer": "Eine Platte mit drei senkrechten Rillen im dorischen Fries zwischen den Metopen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Triglyphe",
+          "url": "https://de.wikipedia.org/wiki/Triglyphe"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-begriff-355",
+    "card_type": "term",
+    "term": "Wantenspanner",
+    "prompt": "Was bedeutet „Wantenspanner“?",
+    "answer": "Eine Spannvorrichtung, mit der die Drahtseile der seitlichen Mastabstützung straff eingestellt werden.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Turnbuckle",
+          "url": "https://en.wikipedia.org/wiki/Turnbuckle"
+        }
+      ]
+    }
+  }
+]

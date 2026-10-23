@@ -1,0 +1,87 @@
+{% macro player_identity(display_name, avatar_id, plaque_id, size='medium', subtitle=None, points=None, rank=None, show_avatar_action=False, speech=None, show_avatar=True, daily_points=None, weekly_points=None, avatar_action_url=None, weekly_rounds=None, points_unit='PKT') %}
+  {% set avatar = avatar_catalog[avatar_id] %}
+  {% set portrait_asset = avatar.asset %}
+  {% set stage_asset = avatar.stage_asset %}
+  {% if size == 'ranking' %}{% set portrait_asset = avatar.stage_asset %}{% endif %}
+  {% if avatar_id == 'a00' and not show_avatar_action %}
+    {% set portrait_asset = avatar.public_asset %}
+    {% set stage_asset = avatar.public_asset %}
+  {% endif %}
+  {% set stage_view = size in ('hero', 'podium', 'shopset') %}
+  {% if stage_view %}
+    {% set podium_asset = plaque_catalog[plaque_id].get('podium_asset') %}
+    <div class="player-identity identity-{{ size }} plaque-{{ plaque_id }}{% if podium_asset %} has-podium-art{% endif %}{% if not show_avatar %} no-avatar{% endif %}">
+      <div class="podium-aura" aria-hidden="true"></div>
+      {% if show_avatar %}
+        <div class="podium-avatar {% if avatar_id == 'a00' %}is-neutral{% endif %}{% if avatar_id == 'a00' and avatar_action_url %} has-avatar-action{% endif %}">
+          {% if avatar_id == 'a00' and avatar_action_url %}<a class="avatar-profile-link" href="{{ avatar_action_url }}" aria-label="Start-Avatar im Profil ändern">{% endif %}
+          <img src="{{ url_for('static', filename='avatars/' ~ stage_asset) }}" alt="{{ avatar.name }}">
+          {% if avatar_id == 'a00' and avatar_action_url %}</a>{% endif %}
+        </div>
+        {% if speech %}<div class="avatar-speech-bubble"><span>{{ speech }}</span></div>{% endif %}
+      {% endif %}
+      {% if podium_asset %}
+        <div class="podium-render">
+          <img src="{{ url_for('static', filename='podiums/' ~ podium_asset) }}" alt="{{ plaque_catalog[plaque_id].name }}-Pult">
+          <span class="podium-render-name">
+            <strong title="{{ display_name }}">{{ display_name }}</strong>
+            {% if daily_points is not none or weekly_points is not none %}
+              <small class="podium-scoreline">
+                <span>HEUTE <b>{{ (daily_points or 0)|points }} PKT</b></span>
+                <span>WOCHE <b>{{ (weekly_points or 0)|points }} PKT</b></span>
+              </small>
+            {% elif points is not none %}<small>{{ points|points }} {{ points_unit }}</small>{% endif %}
+          </span>
+        </div>
+      {% elif plaque_id == 'p00' %}
+        <div class="podium-structure" aria-hidden="true">
+          <i class="podium-wing podium-wing-left"></i>
+          <i class="podium-wing podium-wing-right"></i>
+          <i class="podium-base"></i>
+        </div>
+        <div class="podium-front podium-plaque">
+          <span class="player-plaque-label">
+            <strong title="{{ display_name }}">{{ display_name }}</strong>
+            {% if daily_points is not none or weekly_points is not none %}
+              <small class="podium-scoreline">
+                <span>HEUTE <b>{{ (daily_points or 0)|points }} PKT</b></span>
+                <span>WOCHE <b>{{ (weekly_points or 0)|points }} PKT</b></span>
+              </small>
+            {% elif points is not none %}<small>{{ points|points }} {{ points_unit }}</small>{% endif %}
+          </span>
+        </div>
+      {% else %}
+        <div class="podium-asset-pending"><span>Passendes Pultbild folgt</span></div>
+      {% endif %}
+    </div>
+  {% else %}
+    <div class="player-identity identity-{{ size }} plaque-{{ plaque_id }}{% if weekly_rounds is not none %} has-week-tally{% endif %}">
+      {% if rank is not none %}<span class="identity-rank" aria-label="Rang {{ rank }}">{{ rank }}</span>{% endif %}
+      <div class="player-card-surface">
+        {% if plaque_id != 'p00' %}<span class="player-plaque-art" style="--plaque-source: url('{{ url_for('static', filename='plaques/' ~ plaque_catalog[plaque_id].asset) }}')"></span>{% endif %}
+        <div class="player-avatar {% if avatar_id == 'a00' %}is-neutral{% endif %}{% if avatar_id == 'a00' and avatar_action_url %} has-avatar-action{% endif %}">
+          {% if avatar_id == 'a00' and avatar_action_url %}<a class="avatar-profile-link" href="{{ avatar_action_url }}" aria-label="Start-Avatar im Profil ändern">{% endif %}
+          <img src="{{ url_for('static', filename='avatars/' ~ portrait_asset) }}" alt="{{ avatar.name }}">
+          {% if avatar_id == 'a00' and avatar_action_url %}</a>{% endif %}
+        </div>
+        <span class="player-plaque-label">
+          <strong title="{{ display_name }}">{{ display_name }}</strong>
+          {% if subtitle %}<small>{{ subtitle }}</small>{% endif %}
+        </span>
+        {% if weekly_rounds is not none %}
+          <span class="week-tally player-week-tally" title="{{ weekly_rounds }} {{ 'Runde' if weekly_rounds == 1 else 'Runden' }} diese Woche" aria-label="{{ display_name }}: {{ weekly_rounds }} {{ 'gespielte Runde' if weekly_rounds == 1 else 'gespielte Runden' }} diese Woche">
+            <span class="tally-group {% if weekly_rounds >= 5 %}is-five{% endif %}" aria-hidden="true">
+              {% for mark in range([weekly_rounds, 4]|min) %}<i></i>{% endfor %}
+            </span>
+            {% if weekly_rounds > 5 %}
+              <span class="tally-group" aria-hidden="true">
+                {% for mark in range(weekly_rounds - 5) %}<i></i>{% endfor %}
+              </span>
+            {% endif %}
+          </span>
+        {% endif %}
+        {% if points is not none %}<span class="identity-points"><b>{{ points|points }}</b><small>{{ points_unit }}</small></span>{% endif %}
+      </div>
+    </div>
+  {% endif %}
+{% endmacro %}

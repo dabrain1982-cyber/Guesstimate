@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1672" height="941" viewBox="0 0 1672 941">
+  <defs>
+    <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#160704" flood-opacity=".8"/></filter>
+    <linearGradient id="frame" x2="0" y2="1"><stop stop-color="#b16b31"/><stop offset=".2" stop-color="#5a2a16"/><stop offset=".75" stop-color="#2e120b"/><stop offset="1" stop-color="#8d4d24"/></linearGradient>
+    <symbol id="jan" viewBox="0 0 430 570">
+      <image href="../../static/background-bergsee-v1.png" width="430" height="570" preserveAspectRatio="xMidYMid slice"/>
+      <rect width="430" height="570" fill="#170904" opacity=".12"/>
+      <image href="../../static/plaques/p01.webp" x="38" y="12" width="354" height="96" preserveAspectRatio="none"/>
+      <text x="215" y="62" text-anchor="middle" fill="#fff1c4" font-family="Georgia" font-size="17" font-weight="700">„Ich rate nicht. Ich weiß kreativ.“</text>
+      <image href="../../static/avatars/stage/a01-kea.webp" x="67" y="112" width="296" height="296" preserveAspectRatio="xMidYMid meet"/>
+      <image href="../../static/podiums/p01-tavernenschild-tall-v2.png" x="24" y="286" width="382" height="284" preserveAspectRatio="xMidYMid meet"/>
+      <text x="215" y="442" text-anchor="middle" fill="#fff4ce" stroke="#251006" stroke-width="3" paint-order="stroke" font-family="Georgia" font-size="27" font-weight="700">Jan</text>
+      <text x="215" y="516" text-anchor="middle" fill="#ffe16d" stroke="#251006" stroke-width="3" paint-order="stroke" font-family="Arial" font-size="21" font-weight="700">300 Punkte</text>
+    </symbol>
+    <symbol id="mira" viewBox="0 0 430 570">
+      <image href="../../static/background-neon-garten-v1.png" width="430" height="570" preserveAspectRatio="xMidYMid slice"/>
+      <rect width="430" height="570" fill="#170904" opacity=".12"/>
+      <image href="../../static/plaques/p06.webp" x="38" y="12" width="354" height="96" preserveAspectRatio="none"/>
+      <text x="215" y="62" text-anchor="middle" fill="#fff1c4" font-family="Georgia" font-size="17" font-weight="700">„Plausibel ist fast schon wahr.“</text>
+      <image href="../../static/avatars/stage/a06-oktopus.webp" x="67" y="112" width="296" height="296" preserveAspectRatio="xMidYMid meet"/>
+      <image href="../../static/podiums/p06-theatersamt-tall-v2.png" x="24" y="286" width="382" height="284" preserveAspectRatio="xMidYMid meet"/>
+      <text x="215" y="442" text-anchor="middle" fill="#fff4ce" stroke="#251006" stroke-width="3" paint-order="stroke" font-family="Georgia" font-size="27" font-weight="700">Mira</text>
+      <text x="215" y="516" text-anchor="middle" fill="#ffe16d" stroke="#251006" stroke-width="3" paint-order="stroke" font-family="Arial" font-size="21" font-weight="700">500 Punkte</text>
+    </symbol>
+    <symbol id="tom" viewBox="0 0 430 570">
+      <image href="../../static/background-wissensatelier-v1.png" width="430" height="570" preserveAspectRatio="xMidYMid slice"/>
+      <rect width="430" height="570" fill="#170904" opacity=".12"/>
+      <image href="../../static/plaques/p09.webp" x="38" y="12" width="354" height="96" preserveAspectRatio="none"/>
+      <text x="215" y="62" text-anchor="middle" fill="#fff1c4" font-family="Georgia" font-size="17" font-weight="700">„Details werden völlig überschätzt.“</text>
+      <image href="../../static/avatars/stage/a14-somnus-cutout-v2.png" x="67" y="112" width="296" height="296" preserveAspectRatio="xMidYMid meet"/>
+      <image href="../../static/podiums/p09-kupferpatina-tall-v2.png" x="24" y="286" width="382" height="284" preserveAspectRatio="xMidYMid meet"/>
+      <text x="215" y="442" text-anchor="middle" fill="#fff4ce" stroke="#251006" stroke-width="3" paint-order="stroke" font-family="Georgia" font-size="27" font-weight="700">Tom</text>
+      <text x="215" y="516" text-anchor="middle" fill="#ffe16d" stroke="#251006" stroke-width="3" paint-order="stroke" font-family="Arial" font-size="21" font-weight="700">200 Punkte</text>
+    </symbol>
+    <symbol id="lea" viewBox="0 0 430 570">
+      <image href="../../static/background-wolkenpavillon-v1.png" width="430" height="570" preserveAspectRatio="xMidYMid slice"/>
+      <rect width="430" height="570" fill="#170904" opacity=".12"/>
+      <image href="../../static/plaques/p12.webp" x="38" y="12" width="354" height="96" preserveAspectRatio="none"/>
+      <text x="215" y="62" text-anchor="middle" fill="#fff1c4" font-family="Georgia" font-size="17" font-weight="700">„Die Wahrheit klingt verdächtig.“</text>
+      <image href="../../static/avatars/stage/a17-luno-cutout-v2.png" x="67" y="112" width="296" height="296" preserveAspectRatio="xMidYMid meet"/>
+      <image href="../../static/podiums/p12-wurzelholz-tall-v2.png" x="24" y="286" width="382" height="284" preserveAspectRatio="xMidYMid meet"/>
+      <text x="215" y="442" text-anchor="middle" fill="#fff4ce" stroke="#251006" stroke-width="3" paint-order="stroke" font-family="Georgia" font-size="27" font-weight="700">Lea</text>
+      <text x="215" y="516" text-anchor="middle" fill="#ffe16d" stroke="#251006" stroke-width="3" paint-order="stroke" font-family="Arial" font-size="21" font-weight="700">400 Punkte</text>
+    </symbol>
+  </defs>
+  <image href="setzkasten-4-base.png" width="1672" height="941"/>
+  <g filter="url(#shadow)">
+    <rect x="187" y="102" width="250" height="331.4" rx="4" fill="url(#frame)"/>
+    <rect x="187" y="476" width="250" height="331.4" rx="4" fill="url(#frame)"/>
+    <rect x="1235" y="102" width="250" height="331.4" rx="4" fill="url(#frame)"/>
+    <rect x="1235" y="476" width="250" height="331.4" rx="4" fill="url(#frame)"/>
+  </g>
+  <use href="#jan" x="197" y="112" width="230" height="304.884"/>
+  <use href="#tom" x="197" y="486" width="230" height="304.884"/>
+  <use href="#mira" x="1245" y="112" width="230" height="304.884"/>
+  <use href="#lea" x="1245" y="486" width="230" height="304.884"/>
+</svg>

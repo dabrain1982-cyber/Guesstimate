@@ -18,6 +18,7 @@ from typing import Any
 from flask import (
     Flask,
     abort,
+    current_app,
     flash,
     g,
     redirect,
@@ -34,6 +35,10 @@ from questions import (
     KNOWLEDGE_CATEGORY_LABELS,
     QUESTION_BANK,
 )
+from nerd_mode import init_nerd_db, register_nerd_routes
+from card_table import init_card_table_db, register_card_table_routes
+from conquest import init_conquest_db, register_conquest_routes
+from dice_table import init_dice_table_db, register_dice_table_routes
 
 
 GREETINGS = [
@@ -45,18 +50,20 @@ GREETINGS = [
     "Dein Platz in der Tabelle wirkt noch etwas provisorisch.",
     "Kurz überlegen, dann selbstbewusst danebenliegen.",
 ]
+DEFAULT_PHRASE = "Noch kein Spruch gewählt."
 
 MIN_ESTIMATE_POINTS = 10
 MIN_QUESTION_POINTS = 10
 MAX_QUESTION_POINTS = 100
 MAX_PLAYERS = 100
 DEFAULT_GAME_NAME = "Stormseed´s Guesstimate"
-RELEASE_VERSION = "2026.10.06-flat-question-types-v2"
-FULL_TIME_SECONDS = 5.0
+RELEASE_VERSION = "2026.10.23-daily-catchup-access-v1"
+QUESTION_FULL_TIME_SECONDS = (5.0, 5.0, 5.0, 8.0, 5.0)
 FEEDBACK_SECONDS = 4
 QUESTION_DECAY_SECONDS = (5.0, 7.0, 10.0, 12.0, 20.0)
 QUESTION_TIME_LIMITS = tuple(
-    FULL_TIME_SECONDS + decay for decay in QUESTION_DECAY_SECONDS
+    hold + decay
+    for hold, decay in zip(QUESTION_FULL_TIME_SECONDS, QUESTION_DECAY_SECONDS)
 )
 PARTY_START_COUNTDOWN_SECONDS = 6
 PARTY_FEEDBACK_SECONDS = 4
@@ -73,6 +80,133 @@ CATEGORY_OFFSETS = {
     "order": 11,
     "estimate": 15,
 }
+
+AVATAR_CATALOG = [
+    {"id": "a01", "name": "Kea", "trait": "Neugierig", "price": 2000, "asset": "stage/a01-kea.webp", "stage_asset": "stage/a01-kea.webp"},
+    {"id": "a02", "name": "Wasserschwein", "trait": "Tiefenentspannt", "price": 2000, "asset": "a02-wasserschwein.webp", "stage_asset": "stage/a02-wasserschwein.webp"},
+    {"id": "a03", "name": "Wanderfalke", "trait": "Übermotiviert", "price": 2000, "asset": "a03-wanderfalke.webp", "stage_asset": "stage/a03-wanderfalke.webp"},
+    {"id": "a04", "name": "Faultier", "trait": "Effizient faul", "price": 2000, "asset": "a04-faultier.webp", "stage_asset": "stage/a04-faultier.webp"},
+    {"id": "a05", "name": "Waschbär", "trait": "Improvisiert alles", "price": 2000, "asset": "a05-waschbaer.webp", "stage_asset": "stage/a05-waschbaer.webp"},
+    {"id": "a06", "name": "Oktopus", "trait": "Multitasking", "price": 2000, "asset": "a06-oktopus.webp", "stage_asset": "stage/a06-oktopus.webp"},
+    {"id": "a07", "name": "Ziege", "trait": "Unbeirrbar", "price": 2000, "asset": "a07-ziege.webp", "stage_asset": "stage/a07-ziege.webp"},
+    {"id": "a08", "name": "Krähe", "trait": "Weiß es besser", "price": 2000, "asset": "a08-kraehe.webp", "stage_asset": "stage/a08-kraehe.webp"},
+    {"id": "a09", "name": "Fennek", "trait": "Hört alles", "price": 2000, "asset": "a09-fennek.webp", "stage_asset": "stage/a09-fennek.webp"},
+    {"id": "a10", "name": "Wombat", "trait": "Unerschütterlich", "price": 2000, "asset": "a10-wombat.webp", "stage_asset": "stage/a10-wombat.webp"},
+    {"id": "a11", "name": "Gans", "trait": "Elegantes Chaos", "price": 2000, "asset": "a11-gans.webp", "stage_asset": "stage/a11-gans.webp"},
+    {"id": "a12", "name": "Fangschreckenkrebs", "trait": "Sieht alles", "price": 2000, "asset": "a12-fangschreckenkrebs.webp", "stage_asset": "stage/a12-fangschreckenkrebs.webp"},
+    {"id": "a13", "name": "Axolotl", "trait": "Unheilbar optimistisch", "price": 2000, "asset": "a13-axolotl.webp", "stage_asset": "stage/a13-axolotl.webp"},
+    {"id": "a14", "name": "Somnus", "trait": "Döst strategisch", "price": 2000, "asset": "a14-somnus-cutout-v2.png", "stage_asset": "stage/a14-somnus-cutout-v2.png"},
+    {"id": "a15", "name": "Ember", "trait": "Feuer und Flamme", "price": 2000, "asset": "a15-ember-cutout-v2.png", "stage_asset": "stage/a15-ember-cutout-v2.png"},
+    {"id": "a16", "name": "Myrli", "trait": "Leuchtet ein", "price": 2000, "asset": "a16-myrli-cutout-v2.png", "stage_asset": "stage/a16-myrli-cutout-v2.png"},
+    {"id": "a17", "name": "Luno", "trait": "Zielsicher verträumt", "price": 2000, "asset": "a17-luno-cutout-v2.png", "stage_asset": "stage/a17-luno-cutout-v2.png"},
+    {"id": "a18", "name": "Nimbus", "trait": "Hat den Dreh raus", "price": 2000, "asset": "a18-nimbus-cutout-v2.png", "stage_asset": "stage/a18-nimbus-cutout-v2.png"},
+]
+
+PLAQUE_CATALOG = [
+    {"id": "p01", "name": "Tavernenschild", "material": "Alte Eiche", "price": 3000, "asset": "p01.webp", "podium_asset": "p01-tavernenschild-v1.png", "perfect_podium_asset": "p01-tavernenschild-tall-v2.png", "desk_asset": "p01-tavernenschild-v1.png"},
+    {"id": "p02", "name": "Schiefer", "material": "Stein & Quarz", "price": 3000, "asset": "p02.webp", "podium_asset": "p02-schiefer-v1.png", "perfect_podium_asset": "p02-schiefer-tall-v2.png", "desk_asset": "p02-schiefer-v1.png"},
+    {"id": "p03", "name": "Gebürsteter Stahl", "material": "Kühler Stahl", "price": 3000, "asset": "p03.webp", "podium_asset": "p03-arena-console-v2.png", "perfect_podium_asset": "p03-arena-console-tall-v3.png", "desk_asset": "p03-arena-console-v2.png"},
+    {"id": "p04", "name": "Gefalteter Stahl", "material": "Damaststruktur", "price": 3000, "asset": "p04.webp", "podium_asset": "p04-gefalteter-stahl-v1.png", "perfect_podium_asset": "p04-gefalteter-stahl-tall-v2.png", "desk_asset": "p04-gefalteter-stahl-v1.png"},
+    {"id": "p05", "name": "Neonglas", "material": "Glas & Licht", "price": 3000, "asset": "p05.webp", "podium_asset": "p05-neonglas-v1.png", "perfect_podium_asset": "p05-neonglas-tall-v2.png", "desk_asset": "p05-neonglas-v1.png"},
+    {"id": "p06", "name": "Theatersamt", "material": "Samt & Gold", "price": 3000, "asset": "p06.webp", "podium_asset": "p06-theatersamt-v1.png", "perfect_podium_asset": "p06-theatersamt-tall-v2.png", "desk_asset": "p06-theatersamt-v1.png"},
+    {"id": "p07", "name": "Arcade-Acryl", "material": "Acryl & Konfetti", "price": 3000, "asset": "p07.webp", "podium_asset": "p07-arcade-acryl-v1.png", "perfect_podium_asset": "p07-arcade-acryl-tall-v2.png", "desk_asset": "p07-arcade-acryl-v1.png"},
+    {"id": "p08", "name": "Emaille-Schild", "material": "Emaille & Metall", "price": 3000, "asset": "p08.webp", "podium_asset": "p08-emaille-v1.png", "perfect_podium_asset": "p08-emaille-tall-v2.png", "desk_asset": "p08-emaille-v1.png"},
+    {"id": "p09", "name": "Kupferpatina", "material": "Kupfer & Grünspan", "price": 3000, "asset": "p09.webp", "podium_asset": "p09-kupferpatina-v1.png", "perfect_podium_asset": "p09-kupferpatina-tall-v2.png", "desk_asset": "p09-kupferpatina-v1.png"},
+    {"id": "p10", "name": "Reiseleder", "material": "Leder & Messing", "price": 3000, "asset": "p10.webp", "podium_asset": "p10-reiseleder-v1.png", "perfect_podium_asset": "p10-reiseleder-tall-v2.png", "desk_asset": "p10-reiseleder-v1.png"},
+    {"id": "p11", "name": "Kristalleis", "material": "Eis & Kristall", "price": 3000, "asset": "p11.webp", "podium_asset": "p11-kristalleis-v1.png", "perfect_podium_asset": "p11-kristalleis-tall-v2.png", "desk_asset": "p11-kristalleis-v1.png"},
+    {"id": "p12", "name": "Wurzelholz", "material": "Holz, Moos & Pilze", "price": 3000, "asset": "p12.webp", "podium_asset": "p12-wurzelholz-v1.png", "perfect_podium_asset": "p12-wurzelholz-tall-v2.png", "desk_asset": "p12-wurzelholz-v1.png"},
+    {"id": "p13", "name": "Spielhallen-Beton", "material": "Beton & Neon", "price": 3000, "asset": "p13.webp", "podium_asset": "p13-baustellenmeister-v1.png", "perfect_podium_asset": "p13-baustellenmeister-tall-v2.png", "desk_asset": "p13-baustellenmeister-v1.png"},
+]
+
+BACKGROUND_CATALOG = [
+    {"id": "b01", "name": "Arena-Rundblick", "mood": "Neon & große Bühne", "price": 1000, "asset": "arena-stage-background-v2.png"},
+    {"id": "b02", "name": "Clubzimmer", "mood": "Holz, Pflanzen & Abendlicht", "price": 1000, "asset": "stormseeds-perfect-clubroom-v1.png"},
+    {"id": "b03", "name": "Wissensatelier", "mood": "Bücher, Sterne & warmes Licht", "price": 1000, "asset": "background-wissensatelier-v1.png"},
+    {"id": "b04", "name": "Neon-Garten", "mood": "Botanik & Nachtlichter", "price": 1000, "asset": "background-neon-garten-v1.png"},
+    {"id": "b05", "name": "Bergsee", "mood": "Weite, Wasser & Morgenlicht", "price": 1000, "asset": "background-bergsee-v1.png"},
+    {"id": "b06", "name": "Quiz-Kosmos", "mood": "Galaxien & Leuchtpflanzen", "price": 1000, "asset": "background-quiz-kosmos-v1.png"},
+    {"id": "b07", "name": "Gameshow-Arena", "mood": "Publikum & Scheinwerfer", "price": 1000, "asset": "background-gameshow-arena-v1.png"},
+    {"id": "b08", "name": "Mediterraner Hof", "mood": "Sonne, Stein & Terrakotta", "price": 1000, "asset": "background-mediterraner-hof-v1.png"},
+    {"id": "b09", "name": "Papierlandschaft", "mood": "Papier, Farbe & Fernblick", "price": 1000, "asset": "background-papierlandschaft-v1.png"},
+    {"id": "b10", "name": "Wolkenpavillon", "mood": "Pastell, Wolken & Ruhe", "price": 1000, "asset": "background-wolkenpavillon-v1.png"},
+]
+
+PHRASE_CATALOG = [
+    {"id": f"s{index:02d}", "text": text, "name": f"Spruch {index}", "price": 250}
+    for index, text in enumerate((
+        "Ich wusste es. Also fast.",
+        "Wissen ist Macht. Halbwissen reicht hier aber völlig.",
+        "Ich rate nicht. Ich interpretiere Fakten kreativ.",
+        "Selbstbewusstsein ersetzt erstaunlich viel Wissen.",
+        "Falsch geraten, überzeugend vorgetragen.",
+        "Meine Bildung hat heute leider frei.",
+        "Ich bin nicht ahnungslos. Ich bin ergebnisoffen.",
+        "Google wäre jetzt stolz auf mich. Oder peinlich berührt.",
+        "Kompetenz wird maßlos überschätzt.",
+        "Ich kam, sah und lag daneben.",
+        "Andere haben Wissen. Ich habe Ausstrahlung.",
+        "Knapp daneben ist auch eine Form von Präzision.",
+        "Wenn ich raten will, frage ich mich selbst.",
+        "Fakten sind auch nur Meinungen mit Quellenangabe.",
+        "Ich kenne die Antwort. Sie kennt mich nur noch nicht.",
+        "Heute Genie, morgen wieder realistisch.",
+        "Mein gefährliches Halbwissen ist vollständig geladen.",
+        "Ich verliere nicht. Ich sammle dramatische Wendungen.",
+        "Niveau ist keine Punktzahl.",
+        "Erst antworten, dann denken – spart Zeit.",
+        "Ich spiele nicht schlecht. Ihr versteht nur meine Strategie nicht.",
+        "Bescheidenheit ist etwas für die unteren Ranglistenplätze.",
+        "Für diese Antwort möchte ich einen Telefonjoker verklagen.",
+        "Bildungslücke? Ich nenne das geistigen Freiraum.",
+        "Ich bin der Grund, warum Multiple Choice vier Antworten braucht.",
+        "Intelligenz sieht bei mir nur aus wie Glück.",
+        "Wissen vergeht. Mein Punktestand bleibt peinlich.",
+        "Wer richtig liegt, hat nur weniger mutig geraten.",
+        "Ich habe keine Ahnung – aber davon erschreckend viel.",
+        "Gegen mich zu verlieren ist immerhin eine gute Geschichte.",
+        "Wenn Arroganz Punkte gäbe, wäre das hier vorbei.",
+        "Ich benötige keine Fakten. Ich habe eine starke Meinung.",
+        "Mein Gehirn lädt noch. Bitte nicht aktualisieren.",
+        "Das war taktisch falsch.",
+        "Ich lasse euch gewinnen. Aus sozialen Gründen.",
+        "Irren ist menschlich. Ich bin heute besonders menschlich.",
+        "Mein Wissen endet dort, wo die Frage beginnt.",
+        "Die Antwort war richtig, bevor ich sie angeklickt habe.",
+        "Ich bin nicht Letzter. Ich kontrolliere das Tabellenende.",
+        "Diese Runde wird später aus meiner Biografie gestrichen.",
+    ), 1)
+]
+
+DEFAULT_AVATAR = {
+    "id": "a00",
+    "name": "Start-Avatar",
+    "trait": "Neutraler Klassiker",
+    "asset": "starter-neutral.svg",
+    "public_asset": "starter-neutral-public.svg",
+    "stage_asset": "starter-neutral.svg",
+    "price": 0,
+}
+DEFAULT_PLAQUE = {
+    "id": "p00",
+    "name": "Startpult",
+    "material": "Neutral",
+    "price": 0,
+    "asset": None,
+    "podium_asset": "p00-startpult-v1.png",
+    "perfect_podium_asset": "p00-startpult-tall-v2.png",
+    "desk_asset": "p00-startpult-v1.png",
+}
+DEFAULT_BACKGROUND = {
+    "id": "b00",
+    "name": "Neon-Arena",
+    "mood": "Der Guesstimate-Klassiker",
+    "price": 0,
+    "asset": "arena-stage-background-v1.png",
+}
+DEFAULT_AVATAR_ID = "a00"
+DEFAULT_PLAQUE_ID = "p00"
+DEFAULT_BACKGROUND_ID = "b00"
+DEFAULT_PHRASE_ID = ""
 
 
 class ForwardedPrefixMiddleware:
@@ -101,6 +235,12 @@ def create_app(test_config: dict[str, Any] | None = None) -> Flask:
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_mapping(
         SECRET_KEY=configured_secret_key(),
+        # UI-Arbeit wird direkt aus dem einzigen Projektordner ausgeliefert.
+        # Der Produktionsprozess darf deshalb Templates bei geändertem
+        # Dateistempel neu laden, ohne dass für jede Layoutkorrektur ein
+        # privilegierter Dienstneustart nötig ist.
+        TEMPLATES_AUTO_RELOAD=True,
+        SEND_FILE_MAX_AGE_DEFAULT=0,
         DATABASE=os.environ.get(
             "QUIZ_DATABASE", str(Path(app.instance_path) / "quiz.sqlite3")
         ),
@@ -110,6 +250,13 @@ def create_app(test_config: dict[str, Any] | None = None) -> Flask:
         MAIL_TO=os.environ.get("QUIZ_MAIL_TO", ""),
         MAIL_PASSWORD_FILE=os.environ.get("QUIZ_MAIL_PASSWORD_FILE", ""),
         PUBLIC_URL=os.environ.get("QUIZ_PUBLIC_URL", "").rstrip("/"),
+        PREVIEW_CURRENCY_BONUS=int(os.environ.get("QUIZ_PREVIEW_CURRENCY_BONUS", "0")),
+        OWNER_USERNAME=normalize_username(os.environ.get("QUIZ_OWNER_USERNAME", "stormseed")),
+        CARD_TABLE_ENABLED=os.environ.get("QUIZ_ENABLE_CARD_TABLE", "1") == "1",
+        DICE_TABLE_AVAILABLE=True,
+        KNIFFEL_AVAILABLE=True,
+        MAEXCHEN_AVAILABLE=True,
+        TABLETOP_FAMILY_HUBS_AVAILABLE=True,
     )
     if test_config:
         app.config.update(test_config)
@@ -117,11 +264,21 @@ def create_app(test_config: dict[str, Any] | None = None) -> Flask:
     Path(app.instance_path).mkdir(parents=True, exist_ok=True)
     register_database(app)
     register_routes(app)
+    register_nerd_routes(app)
+    if app.config["CARD_TABLE_ENABLED"]:
+        register_card_table_routes(app, login_required, require_csrf)
+        register_conquest_routes(app, login_required, require_csrf)
+    register_dice_table_routes(app, login_required, require_csrf)
     register_template_helpers(app)
     app.wsgi_app = ForwardedPrefixMiddleware(app.wsgi_app)
 
     with app.app_context():
         init_db()
+        init_nerd_db(get_db)
+        if app.config["CARD_TABLE_ENABLED"]:
+            init_card_table_db(get_db)
+            init_conquest_db(get_db)
+        init_dice_table_db(get_db)
 
     return app
 
@@ -283,6 +440,32 @@ def init_db() -> None:
             sent_at TEXT
         );
 
+        CREATE TABLE IF NOT EXISTS user_cosmetics (
+            user_id INTEGER PRIMARY KEY,
+            avatar_id TEXT NOT NULL DEFAULT 'a00',
+            plaque_id TEXT NOT NULL DEFAULT 'p00',
+            background_id TEXT NOT NULL DEFAULT 'b00',
+            phrase_id TEXT NOT NULL DEFAULT '',
+            developer_enabled INTEGER NOT NULL DEFAULT 0,
+            updated_at TEXT NOT NULL,
+            FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE
+        );
+
+        CREATE TABLE IF NOT EXISTS shop_purchases (
+            user_id INTEGER NOT NULL,
+            item_type TEXT NOT NULL,
+            item_id TEXT NOT NULL,
+            price INTEGER NOT NULL,
+            purchased_at TEXT NOT NULL,
+            PRIMARY KEY(user_id, item_type, item_id),
+            FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE
+        );
+
+        CREATE TABLE IF NOT EXISTS data_migrations (
+            id TEXT PRIMARY KEY,
+            applied_at TEXT NOT NULL
+        );
+
         CREATE INDEX IF NOT EXISTS party_members_lobby_idx ON party_members(lobby_id);
         CREATE INDEX IF NOT EXISTS party_answers_lobby_idx ON party_answers(lobby_id);
 
@@ -332,6 +515,22 @@ def init_db() -> None:
     if "points" not in answer_columns:
         get_db().execute(
             "ALTER TABLE answers ADD COLUMN points INTEGER NOT NULL DEFAULT 0"
+        )
+    cosmetics_columns = {
+        row["name"]
+        for row in get_db().execute("PRAGMA table_info(user_cosmetics)").fetchall()
+    }
+    if "background_id" not in cosmetics_columns:
+        get_db().execute(
+            "ALTER TABLE user_cosmetics ADD COLUMN background_id TEXT NOT NULL DEFAULT 'b00'"
+        )
+    if "developer_enabled" not in cosmetics_columns:
+        get_db().execute(
+            "ALTER TABLE user_cosmetics ADD COLUMN developer_enabled INTEGER NOT NULL DEFAULT 0"
+        )
+    if "phrase_id" not in cosmetics_columns:
+        get_db().execute(
+            "ALTER TABLE user_cosmetics ADD COLUMN phrase_id TEXT NOT NULL DEFAULT ''"
         )
     usage_columns = {
         row["name"]
@@ -488,11 +687,11 @@ def missed_current_week_dates(user_id: int, current_day: date | None = None) -> 
     ]
 
 
-def record_daily_login(user_id: int, login_day: date | None = None) -> None:
-    """Count at most one login per player and calendar day."""
+def record_daily_login(user_id: int, login_day: date | None = None) -> bool:
+    """Count at most one login per day and report whether it was the first."""
 
     database = get_db()
-    database.execute(
+    cursor = database.execute(
         """
         INSERT OR IGNORE INTO login_days (user_id, login_date, created_at)
         VALUES (?, ?, ?)
@@ -504,6 +703,7 @@ def record_daily_login(user_id: int, login_day: date | None = None) -> None:
         ),
     )
     database.commit()
+    return cursor.rowcount == 1
 
 
 def content_day_number(day: str) -> int:
@@ -855,15 +1055,18 @@ def rank_rows(scope: str = "all", reference_day: str | None = None) -> list[dict
     rows = get_db().execute(
         f"""
         SELECT u.id, u.display_name,
+               COALESCE(uc.avatar_id, ?) AS avatar_id,
+               COALESCE(uc.plaque_id, ?) AS plaque_id,
                COALESCE(SUM({score_expression}), 0) AS points,
                COUNT({round_expression}) AS rounds
         FROM users u
+        LEFT JOIN user_cosmetics uc ON uc.user_id = u.id
         LEFT JOIN attempts a ON a.user_id = u.id AND a.status = 'completed'
         LEFT JOIN daily_rounds r ON r.id = a.round_id
-        GROUP BY u.id, u.display_name
+        GROUP BY u.id, u.display_name, uc.avatar_id, uc.plaque_id
         ORDER BY points DESC, u.display_name COLLATE NOCASE ASC
         """,
-        parameters,
+        (DEFAULT_AVATAR_ID, DEFAULT_PLAQUE_ID, *parameters),
     ).fetchall()
     if scope != "all":
         rows = [row for row in rows if int(row["rounds"]) > 0]
@@ -879,6 +1082,8 @@ def rank_rows(scope: str = "all", reference_day: str | None = None) -> list[dict
             {
                 "id": row["id"],
                 "display_name": row["display_name"],
+                "avatar_id": row["avatar_id"],
+                "plaque_id": row["plaque_id"],
                 "points": points,
                 "rounds": int(row["rounds"]),
                 "rank": last_rank,
@@ -901,7 +1106,82 @@ def leaderboard_sets(reference_day: str | None = None) -> dict[str, list[dict[st
         "daily": rank_rows("daily", reference_day),
         "weekly": rank_rows("weekly", reference_day),
         "all": rank_rows("all"),
+        "weekly_wins": weekly_winner_rows(reference_day),
     }
+
+
+def weekly_winner_rows(reference_day: str | None = None) -> list[dict[str, Any]]:
+    """Rank players by completed weekly victories before the current week."""
+    current_day = date.fromisoformat(reference_day or today_iso())
+    current_week_start = current_day - timedelta(days=current_day.weekday())
+    database = get_db()
+    users = database.execute(
+        """
+        SELECT u.id, u.display_name,
+               COALESCE(uc.avatar_id, ?) AS avatar_id,
+               COALESCE(uc.plaque_id, ?) AS plaque_id
+        FROM users u
+        LEFT JOIN user_cosmetics uc ON uc.user_id = u.id
+        ORDER BY u.display_name COLLATE NOCASE ASC
+        """,
+        (DEFAULT_AVATAR_ID, DEFAULT_PLAQUE_ID),
+    ).fetchall()
+    attempts = database.execute(
+        """
+        SELECT r.round_date, a.user_id, COALESCE(a.score, 0) AS score
+        FROM attempts a
+        JOIN daily_rounds r ON r.id = a.round_id
+        WHERE a.status = 'completed' AND r.round_date < ?
+        """,
+        (current_week_start.isoformat(),),
+    ).fetchall()
+
+    weekly_scores: dict[tuple[int, int], dict[int, int]] = {}
+    for attempt in attempts:
+        week_key = date.fromisoformat(attempt["round_date"]).isocalendar()[:2]
+        scores = weekly_scores.setdefault(week_key, {})
+        user_id = int(attempt["user_id"])
+        scores[user_id] = scores.get(user_id, 0) + int(attempt["score"])
+
+    victories = {int(user["id"]): 0 for user in users}
+    for scores in weekly_scores.values():
+        if not scores:
+            continue
+        winning_score = max(scores.values())
+        for user_id, score in scores.items():
+            if score == winning_score:
+                victories[user_id] = victories.get(user_id, 0) + 1
+
+    ordered = sorted(
+        users,
+        key=lambda user: (-victories[int(user["id"])], user["display_name"].casefold()),
+    )
+    leaderboard: list[dict[str, Any]] = []
+    last_wins = None
+    last_rank = 0
+    for index, user in enumerate(ordered, 1):
+        wins = victories[int(user["id"])]
+        if wins != last_wins:
+            last_rank = index
+            last_wins = wins
+        leaderboard.append(
+            {
+                "id": user["id"],
+                "display_name": user["display_name"],
+                "avatar_id": user["avatar_id"],
+                "plaque_id": user["plaque_id"],
+                "points": wins,
+                "rounds": 0,
+                "rank": last_rank,
+            }
+        )
+    return leaderboard
+
+
+def previous_daily_winner(reference_day: date | None = None) -> dict[str, Any] | None:
+    yesterday = (reference_day or date.today()) - timedelta(days=1)
+    winners = rank_rows("daily", yesterday.isoformat())
+    return winners[0] if winners else None
 
 
 def player_total_points(user_id: int) -> int:
@@ -914,6 +1194,131 @@ def player_total_points(user_id: int) -> int:
         (user_id,),
     ).fetchone()
     return int(row["points"])
+
+
+def player_currency_balance(user_id: int) -> int:
+    spent = get_db().execute(
+        "SELECT COALESCE(SUM(price), 0) FROM shop_purchases WHERE user_id = ?",
+        (user_id,),
+    ).fetchone()[0]
+    return max(
+        0,
+        player_total_points(user_id)
+        - int(spent)
+        + int(current_app.config.get("PREVIEW_CURRENCY_BONUS", 0)),
+    )
+
+
+def player_cosmetics(user_id: int) -> dict[str, Any]:
+    row = get_db().execute(
+        "SELECT avatar_id, plaque_id, background_id, phrase_id, developer_enabled FROM user_cosmetics WHERE user_id = ?",
+        (user_id,),
+    ).fetchone()
+    return {
+        "avatar_id": row["avatar_id"] if row else DEFAULT_AVATAR_ID,
+        "plaque_id": row["plaque_id"] if row else DEFAULT_PLAQUE_ID,
+        "background_id": row["background_id"] if row else DEFAULT_BACKGROUND_ID,
+        "phrase_id": row["phrase_id"] if row else DEFAULT_PHRASE_ID,
+        "developer_enabled": bool(row["developer_enabled"]) if row else False,
+    }
+
+
+def is_owner_user(user_id: int) -> bool:
+    row = get_db().execute("SELECT username FROM users WHERE id = ?", (user_id,)).fetchone()
+    return bool(row and row["username"] == current_app.config["OWNER_USERNAME"])
+
+
+def catalog_ids(item_type: str) -> set[str]:
+    if item_type == "avatar":
+        return {DEFAULT_AVATAR_ID, *(item["id"] for item in AVATAR_CATALOG)}
+    if item_type == "plaque":
+        return {DEFAULT_PLAQUE_ID, *(item["id"] for item in PLAQUE_CATALOG)}
+    if item_type == "background":
+        return {DEFAULT_BACKGROUND_ID, *(item["id"] for item in BACKGROUND_CATALOG)}
+    if item_type == "phrase":
+        return {item["id"] for item in PHRASE_CATALOG}
+    return set()
+
+
+def owned_catalog_ids(user_id: int, item_type: str) -> set[str]:
+    defaults = (
+        {DEFAULT_AVATAR_ID}
+        if item_type == "avatar"
+        else {DEFAULT_PLAQUE_ID}
+        if item_type == "plaque"
+        else {DEFAULT_BACKGROUND_ID}
+        if item_type == "background"
+        else set()
+    )
+    rows = get_db().execute(
+        "SELECT item_id FROM shop_purchases WHERE user_id = ? AND item_type = ?",
+        (user_id, item_type),
+    ).fetchall()
+    owned = defaults | {row["item_id"] for row in rows}
+    cosmetics = player_cosmetics(user_id)
+    if is_owner_user(user_id) and cosmetics["developer_enabled"]:
+        return catalog_ids(item_type)
+    return owned
+
+
+def player_trophy_counts(user_id: int, reference_day: date | None = None) -> dict[str, int]:
+    """Count finalized first-place finishes for the compact profile cabinet."""
+    today = reference_day or date.today()
+    rows = get_db().execute(
+        """
+        SELECT r.round_date, a.user_id, COALESCE(a.score, 0) AS score
+        FROM attempts a
+        JOIN daily_rounds r ON r.id = a.round_id
+        WHERE a.status = 'completed' AND r.round_date < ?
+        ORDER BY r.round_date
+        """,
+        (today.isoformat(),),
+    ).fetchall()
+
+    daily_scores: dict[str, dict[int, int]] = {}
+    weekly_scores: dict[tuple[int, int], dict[int, int]] = {}
+    monthly_scores: dict[tuple[int, int], dict[int, int]] = {}
+    current_week = today.isocalendar()[:2]
+    current_month = (today.year, today.month)
+    for row in rows:
+        round_day = date.fromisoformat(row["round_date"])
+        score = int(row["score"])
+        daily_scores.setdefault(row["round_date"], {})[row["user_id"]] = score
+
+        week_key = round_day.isocalendar()[:2]
+        if week_key < current_week:
+            week = weekly_scores.setdefault(week_key, {})
+            week[row["user_id"]] = week.get(row["user_id"], 0) + score
+
+        month_key = (round_day.year, round_day.month)
+        if month_key < current_month:
+            month = monthly_scores.setdefault(month_key, {})
+            month[row["user_id"]] = month.get(row["user_id"], 0) + score
+
+    def wins(periods: dict[Any, dict[int, int]]) -> int:
+        return sum(
+            1
+            for scores in periods.values()
+            if user_id in scores and scores[user_id] == max(scores.values())
+        )
+
+    party_scores: dict[int, dict[int, int]] = {}
+    for row in get_db().execute(
+        """
+        SELECT pl.id AS lobby_id, pm.user_id, pm.score
+        FROM party_lobbies pl
+        JOIN party_members pm ON pm.lobby_id = pl.id
+        WHERE pl.status = 'completed' AND pm.status = 'active'
+        """
+    ).fetchall():
+        party_scores.setdefault(row["lobby_id"], {})[row["user_id"]] = int(row["score"])
+
+    return {
+        "daily": wins(daily_scores),
+        "weekly": wins(weekly_scores),
+        "monthly": wins(monthly_scores),
+        "party": wins(party_scores),
+    }
 
 
 def estimate_points(
@@ -944,12 +1349,13 @@ def question_time_factor(elapsed_seconds: float, question_index: int) -> float:
 
     limit = QUESTION_TIME_LIMITS[question_index]
     decay = QUESTION_DECAY_SECONDS[question_index]
+    hold = QUESTION_FULL_TIME_SECONDS[question_index]
     elapsed = max(0.0, elapsed_seconds)
-    if elapsed <= FULL_TIME_SECONDS:
+    if elapsed <= hold:
         return 1.0
     if elapsed >= limit:
         return 0.0
-    elapsed_decay_seconds = math.floor(elapsed - FULL_TIME_SECONDS)
+    elapsed_decay_seconds = math.floor(elapsed - hold)
     return (decay - elapsed_decay_seconds) / decay
 
 
@@ -963,6 +1369,33 @@ def timed_question_points(accuracy_points: int, time_factor: float) -> int:
     time_multiplier = 0.5 + 0.5 * factor
     value = int(math.floor(accuracy * time_multiplier + 0.5))
     return max(MIN_QUESTION_POINTS, value)
+
+
+def order_question_points(correct_count: int, time_factor: float) -> int:
+    """Score exact-position hits for a four-item ordering question.
+
+    One correct position is largely unavoidable in a four-item permutation, so
+    ordering questions use their own deliberately flatter point table. The
+    normal time factor interpolates between the late and no-deduction values.
+    """
+
+    if not 0 <= correct_count <= 4:
+        raise ValueError("Ungültige Anzahl richtiger Positionen")
+    late_points = (0, 10, 25, 50, 50)
+    fast_points = (0, 15, 50, 100, 100)
+    factor = min(1.0, max(0.0, time_factor))
+    value = late_points[correct_count] + (
+        fast_points[correct_count] - late_points[correct_count]
+    ) * factor
+    return int(math.floor(value + 0.5))
+
+
+def awarded_question_points(evaluation: dict[str, Any], time_factor: float) -> int:
+    """Apply the category-specific time scoring to an evaluated answer."""
+
+    if "order_correct_count" in evaluation:
+        return order_question_points(evaluation["order_correct_count"], time_factor)
+    return timed_question_points(evaluation["accuracy_points"], time_factor)
 
 
 def partial_credit(correct_count: int, total_count: int) -> float:
@@ -1010,6 +1443,11 @@ def answer_review(daily_round: sqlite3.Row, attempt: sqlite3.Row) -> list[dict[s
         if row is None:
             continue
         submitted = json.loads(row["answer_json"])
+        order_correct_count = (
+            order_correct_positions(submitted, question["answer"])
+            if question["category"] == "order"
+            else None
+        )
         review.append(
             {
                 "question": question,
@@ -1024,29 +1462,35 @@ def answer_review(daily_round: sqlite3.Row, attempt: sqlite3.Row) -> list[dict[s
                 "response_seconds": float(row["response_seconds"]),
                 "accuracy_points": int(row["accuracy_points"]),
                 "points": int(row["points"]),
+                "order_correct_count": order_correct_count,
             }
         )
     return review
 
 
-def order_credit(submitted: list[str], correct: list[str]) -> float:
-    if len(submitted) != len(correct) or set(submitted) != set(correct):
+def order_correct_positions(submitted: list[str], correct: list[str]) -> int:
+    if (
+        not isinstance(submitted, list)
+        or len(submitted) != len(correct)
+        or not all(isinstance(item, str) for item in submitted)
+        or set(submitted) != set(correct)
+    ):
         raise ValueError("Ungültige Reihenfolge")
-    if len(correct) < 2:
-        return 1.0
-
-    correct_positions = {item: index for index, item in enumerate(correct)}
-    correctly_ordered_pairs = sum(
-        correct_positions[first] < correct_positions[second]
-        for index, first in enumerate(submitted)
-        for second in submitted[index + 1 :]
+    return sum(
+        submitted_item == correct_item
+        for submitted_item, correct_item in zip(submitted, correct)
     )
-    pair_count = len(correct) * (len(correct) - 1) // 2
-    return partial_credit(correctly_ordered_pairs, pair_count)
+
+
+def order_credit(submitted: list[str], correct: list[str]) -> float:
+    if not correct:
+        raise ValueError("Ungültige Reihenfolge")
+    return partial_credit(order_correct_positions(submitted, correct), len(correct))
 
 
 def evaluate(question: dict[str, Any], form: dict[str, str]) -> dict[str, Any]:
     category = question["category"]
+    order_correct_count = None
     if category == "multiple_choice":
         value = form.get("answer", "")
         if value not in question["options"]:
@@ -1089,7 +1533,8 @@ def evaluate(question: dict[str, Any], form: dict[str, str]) -> dict[str, Any]:
             submitted = json.loads(raw)
         except json.JSONDecodeError as error:
             raise ValueError("Die Reihenfolge konnte nicht gelesen werden.") from error
-        credit = order_credit(submitted, question["answer"])
+        order_correct_count = order_correct_positions(submitted, question["answer"])
+        credit = partial_credit(order_correct_count, len(question["answer"]))
     elif category == "match":
         submitted = {left: form.get(f"pair_{index}", "") for index, left in enumerate(question["left"])}
         values = list(submitted.values())
@@ -1100,8 +1545,12 @@ def evaluate(question: dict[str, Any], form: dict[str, str]) -> dict[str, Any]:
     else:  # pragma: no cover
         raise ValueError("Unbekannte Kategorie")
 
-    accuracy_points = int(math.floor(MAX_QUESTION_POINTS * credit + 0.5))
-    return {
+    accuracy_points = (
+        order_question_points(order_correct_count, 1.0)
+        if order_correct_count is not None
+        else int(math.floor(MAX_QUESTION_POINTS * credit + 0.5))
+    )
+    evaluation = {
         "submitted": submitted,
         "credit": credit,
         "correct": credit == 1.0,
@@ -1109,6 +1558,9 @@ def evaluate(question: dict[str, Any], form: dict[str, str]) -> dict[str, Any]:
         "estimate_raw": None,
         "accuracy_points": accuracy_points,
     }
+    if order_correct_count is not None:
+        evaluation["order_correct_count"] = order_correct_count
+    return evaluation
 
 
 def login_required(view):
@@ -1181,24 +1633,24 @@ def touch_party_member(lobby_id: int, user_id: int) -> None:
     """Record that a player still has this party open without writing every poll."""
 
     now_value = datetime.now()
-    write_before = (
-        now_value - timedelta(seconds=PARTY_PRESENCE_WRITE_SECONDS)
-    ).isoformat(timespec="microseconds")
-    cursor = get_db().execute(
+    member = get_db().execute(
         """
-        UPDATE party_members
-        SET last_seen_at = ?
+        SELECT COALESCE(last_seen_at, joined_at) AS seen_at
+        FROM party_members
         WHERE lobby_id = ? AND user_id = ? AND status = 'active'
-          AND COALESCE(last_seen_at, joined_at) < ?
         """,
-        (
-            now_value.isoformat(timespec="microseconds"),
-            lobby_id,
-            user_id,
-            write_before,
-        ),
-    )
-    if cursor.rowcount:
+        (lobby_id, user_id),
+    ).fetchone()
+    if member and now_value - datetime.fromisoformat(member["seen_at"]) >= timedelta(
+        seconds=PARTY_PRESENCE_WRITE_SECONDS
+    ):
+        get_db().execute(
+            """
+            UPDATE party_members SET last_seen_at = ?
+            WHERE lobby_id = ? AND user_id = ? AND status = 'active'
+            """,
+            (now_value.isoformat(timespec="microseconds"), lobby_id, user_id),
+        )
         get_db().commit()
 
 
@@ -1266,12 +1718,15 @@ def refresh_party_presence(lobby_id: int | None = None) -> None:
 def party_members(lobby_id: int) -> list[sqlite3.Row]:
     return get_db().execute(
         """
-        SELECT pm.*, u.display_name
+        SELECT pm.*, u.display_name,
+               COALESCE(uc.avatar_id, ?) AS avatar_id,
+               COALESCE(uc.plaque_id, ?) AS plaque_id
         FROM party_members pm JOIN users u ON u.id = pm.user_id
+        LEFT JOIN user_cosmetics uc ON uc.user_id = u.id
         WHERE pm.lobby_id = ? AND pm.status = 'active'
         ORDER BY pm.joined_at, pm.id
         """,
-        (lobby_id,),
+        (DEFAULT_AVATAR_ID, DEFAULT_PLAQUE_ID, lobby_id),
     ).fetchall()
 
 
@@ -1359,7 +1814,8 @@ def register_routes(app: Flask) -> None:
             and request.endpoint != "static"
             and session.get("login_recorded_on") != today_iso()
         ):
-            record_daily_login(g.user["id"])
+            if record_daily_login(g.user["id"]):
+                session["show_yesterday_winner"] = True
             session["login_recorded_on"] = today_iso()
 
     @app.route("/login", methods=("GET", "POST"))
@@ -1379,7 +1835,7 @@ def register_routes(app: Flask) -> None:
                 session.clear()
                 session["user_id"] = user["id"]
                 session["csrf_token"] = secrets.token_urlsafe(24)
-                record_daily_login(user["id"])
+                session["show_yesterday_winner"] = record_daily_login(user["id"])
                 session["login_recorded_on"] = today_iso()
                 missed_days = missed_current_week_dates(user["id"])
                 session["show_catchup_prompt"] = bool(missed_days)
@@ -1443,7 +1899,9 @@ def register_routes(app: Flask) -> None:
                     session.clear()
                     session["user_id"] = cursor.lastrowid
                     session["csrf_token"] = secrets.token_urlsafe(24)
-                    record_daily_login(cursor.lastrowid)
+                    session["show_yesterday_winner"] = record_daily_login(
+                        cursor.lastrowid
+                    )
                     session["login_recorded_on"] = today_iso()
                     missed_days = missed_current_week_dates(cursor.lastrowid)
                     session["show_catchup_prompt"] = bool(missed_days)
@@ -1458,9 +1916,219 @@ def register_routes(app: Flask) -> None:
         session.clear()
         return redirect(url_for("login"))
 
+    @app.get("/profil")
+    @login_required
+    def profile():
+        cosmetics = player_cosmetics(g.user["id"])
+        owned_avatar_ids = owned_catalog_ids(g.user["id"], "avatar")
+        owned_plaque_ids = owned_catalog_ids(g.user["id"], "plaque")
+        owned_background_ids = owned_catalog_ids(g.user["id"], "background")
+        owned_phrase_ids = owned_catalog_ids(g.user["id"], "phrase")
+        return render_template(
+            "profile.html",
+            cosmetics=cosmetics,
+            owned_avatars=[
+                item for item in [DEFAULT_AVATAR, *AVATAR_CATALOG]
+                if item["id"] in owned_avatar_ids
+            ],
+            owned_plaques=[
+                item for item in [DEFAULT_PLAQUE, *PLAQUE_CATALOG]
+                if item["id"] in owned_plaque_ids
+            ],
+            owned_backgrounds=[
+                item for item in [DEFAULT_BACKGROUND, *BACKGROUND_CATALOG]
+                if item["id"] in owned_background_ids
+            ],
+            owned_phrases=[item for item in PHRASE_CATALOG if item["id"] in owned_phrase_ids],
+            trophies=player_trophy_counts(g.user["id"]),
+            total_points=player_total_points(g.user["id"]),
+            is_owner=is_owner_user(g.user["id"]),
+        )
+
+    @app.post("/profil/entwickler")
+    @login_required
+    def profile_developer_mode():
+        require_csrf()
+        if not is_owner_user(g.user["id"]):
+            abort(403)
+        enabled = request.form.get("developer_enabled") == "1"
+        cosmetics = player_cosmetics(g.user["id"])
+        if not enabled:
+            actually_owned = {
+                item_type: (
+                    ({DEFAULT_AVATAR_ID} if item_type == "avatar" else
+                     {DEFAULT_PLAQUE_ID} if item_type == "plaque" else
+                     {DEFAULT_BACKGROUND_ID} if item_type == "background" else
+                     set())
+                    | {
+                        row["item_id"]
+                        for row in get_db().execute(
+                            "SELECT item_id FROM shop_purchases WHERE user_id = ? AND item_type = ?",
+                            (g.user["id"], item_type),
+                        ).fetchall()
+                    }
+                )
+                for item_type in ("avatar", "plaque", "background", "phrase")
+            }
+            if cosmetics["avatar_id"] not in actually_owned["avatar"]:
+                cosmetics["avatar_id"] = DEFAULT_AVATAR_ID
+            if cosmetics["plaque_id"] not in actually_owned["plaque"]:
+                cosmetics["plaque_id"] = DEFAULT_PLAQUE_ID
+            if cosmetics["background_id"] not in actually_owned["background"]:
+                cosmetics["background_id"] = DEFAULT_BACKGROUND_ID
+            if cosmetics["phrase_id"] not in actually_owned["phrase"]:
+                cosmetics["phrase_id"] = DEFAULT_PHRASE_ID
+        get_db().execute(
+            """
+            INSERT INTO user_cosmetics
+                (user_id, avatar_id, plaque_id, background_id, phrase_id, developer_enabled, updated_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+            ON CONFLICT(user_id) DO UPDATE SET
+                avatar_id = excluded.avatar_id,
+                plaque_id = excluded.plaque_id,
+                background_id = excluded.background_id,
+                phrase_id = excluded.phrase_id,
+                developer_enabled = excluded.developer_enabled,
+                updated_at = excluded.updated_at
+            """,
+            (
+                g.user["id"], cosmetics["avatar_id"], cosmetics["plaque_id"],
+                cosmetics["background_id"], cosmetics["phrase_id"], int(enabled),
+                datetime.now().isoformat(timespec="seconds"),
+            ),
+        )
+        get_db().commit()
+        flash("Entwicklermodus aktiviert." if enabled else "Entwicklermodus deaktiviert.", "success")
+        return redirect(url_for("profile"))
+
+    @app.get("/shop")
+    @login_required
+    def shop():
+        cosmetics = player_cosmetics(g.user["id"])
+        return render_template(
+            "shop.html",
+            avatars=AVATAR_CATALOG,
+            plaques=PLAQUE_CATALOG,
+            backgrounds=[DEFAULT_BACKGROUND, *BACKGROUND_CATALOG],
+            phrases=PHRASE_CATALOG,
+            owned_avatars=owned_catalog_ids(g.user["id"], "avatar"),
+            owned_plaques=owned_catalog_ids(g.user["id"], "plaque"),
+            owned_backgrounds=owned_catalog_ids(g.user["id"], "background"),
+            owned_phrases=owned_catalog_ids(g.user["id"], "phrase"),
+            cosmetics=cosmetics,
+        )
+
+    @app.post("/shop/kaufen/<item_type>/<item_id>")
+    @login_required
+    def shop_buy(item_type: str, item_id: str):
+        require_csrf()
+        catalog = (
+            AVATAR_CATALOG
+            if item_type == "avatar"
+            else PLAQUE_CATALOG
+            if item_type == "plaque"
+            else BACKGROUND_CATALOG
+            if item_type == "background"
+            else PHRASE_CATALOG
+            if item_type == "phrase"
+            else []
+        )
+        item = next((entry for entry in catalog if entry["id"] == item_id), None)
+        if not item:
+            abort(404)
+        if item["price"] is None:
+            flash(
+                "Der Preis wird erst von Stormseed festgelegt. Dieser Artikel ist noch nicht kaufbar.",
+                "error",
+            )
+            return redirect(
+                url_for("shop", tab={"avatar": "avatars", "plaque": "plaques", "background": "backgrounds", "phrase": "phrases"}[item_type])
+            )
+        database = get_db()
+        database.execute("BEGIN IMMEDIATE")
+        if item_id in owned_catalog_ids(g.user["id"], item_type):
+            database.rollback()
+            flash("Dieses Stück gehört dir bereits.", "success")
+            return redirect(url_for("shop"))
+        if player_currency_balance(g.user["id"]) < item["price"]:
+            database.rollback()
+            flash("Dafür fehlen dir noch ein paar iKühe.", "error")
+            return redirect(url_for("shop"))
+        database.execute(
+            """
+            INSERT INTO shop_purchases (user_id, item_type, item_id, price, purchased_at)
+            VALUES (?, ?, ?, ?, ?)
+            """,
+            (
+                g.user["id"],
+                item_type,
+                item_id,
+                item["price"],
+                datetime.now().isoformat(timespec="seconds"),
+            ),
+        )
+        database.commit()
+        flash(f"{item['name']} gehört jetzt dir.", "success")
+        return redirect(
+            url_for("shop", tab={"avatar": "avatars", "plaque": "plaques", "background": "backgrounds", "phrase": "phrases"}[item_type])
+        )
+
+    @app.post("/shop/ausruesten/<item_type>/<item_id>")
+    @app.post("/profil/ausruesten/<item_type>/<item_id>")
+    @login_required
+    def profile_equip(item_type: str, item_id: str):
+        require_csrf()
+        if (
+            item_type not in ("avatar", "plaque", "background", "phrase")
+            or item_id not in owned_catalog_ids(g.user["id"], item_type)
+        ):
+            abort(403)
+        cosmetics = player_cosmetics(g.user["id"])
+        if item_type == "avatar":
+            cosmetics["avatar_id"] = item_id
+        elif item_type == "plaque":
+            cosmetics["plaque_id"] = item_id
+        elif item_type == "background":
+            cosmetics["background_id"] = item_id
+        else:
+            cosmetics["phrase_id"] = item_id
+        get_db().execute(
+            """
+            INSERT INTO user_cosmetics (user_id, avatar_id, plaque_id, background_id, phrase_id, developer_enabled, updated_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+            ON CONFLICT(user_id) DO UPDATE SET avatar_id = excluded.avatar_id,
+                plaque_id = excluded.plaque_id,
+                background_id = excluded.background_id,
+                phrase_id = excluded.phrase_id,
+                developer_enabled = excluded.developer_enabled,
+                updated_at = excluded.updated_at
+            """,
+            (
+                g.user["id"],
+                cosmetics["avatar_id"],
+                cosmetics["plaque_id"],
+                cosmetics["background_id"],
+                cosmetics["phrase_id"],
+                int(cosmetics["developer_enabled"]),
+                datetime.now().isoformat(timespec="seconds"),
+            ),
+        )
+        get_db().commit()
+        return redirect(url_for("profile", section=item_type))
+
     @app.get("/")
     @login_required
     def home():
+        should_greet_with_winner = session.pop("show_yesterday_winner", False)
+        missed_days = missed_current_week_dates(g.user["id"])
+        selected_round_date = session.get("active_round_date")
+        if (
+            selected_round_date
+            and selected_round_date != today_iso()
+            and selected_round_date not in missed_days
+        ):
+            session.pop("active_round_date", None)
+            session.pop("catchup_queue", None)
         try:
             daily_round = get_or_create_round(active_round_date())
         except QuestionPoolExhausted:
@@ -1477,9 +2145,16 @@ def register_routes(app: Flask) -> None:
             attempt=attempt,
             leaderboards=leaderboard_sets(daily_round["round_date"]),
             greeting=GREETINGS[greeting_index % len(GREETINGS)],
-            show_catchup_prompt=session.pop("show_catchup_prompt", False),
-            missed_week_days=session.get("missed_week_days", []),
+            default_phrase=DEFAULT_PHRASE,
+            yesterday_winner=(
+                previous_daily_winner() if should_greet_with_winner else None
+            ),
+            show_catchup_prompt=(
+                session.pop("show_catchup_prompt", False) and bool(missed_days)
+            ),
+            missed_week_days=missed_days,
             active_round_date=daily_round["round_date"],
+            trophies=player_trophy_counts(g.user["id"]),
         )
 
     @app.post("/woche/auswahl")
@@ -1579,6 +2254,10 @@ def register_routes(app: Flask) -> None:
         if previous:
             feedback = dict(previous)
             feedback["submitted"] = json.loads(previous["answer_json"])
+            if item["category"] == "order":
+                feedback["order_correct_count"] = order_correct_positions(
+                    feedback["submitted"], item["answer"]
+                )
             feedback_unlock_at = datetime.fromisoformat(previous["created_at"]) + timedelta(
                 seconds=FEEDBACK_SECONDS
             )
@@ -1614,7 +2293,7 @@ def register_routes(app: Flask) -> None:
             ),
             timer_limit=QUESTION_TIME_LIMITS[index],
             timer_decay=QUESTION_DECAY_SECONDS[index],
-            timer_hold=FULL_TIME_SECONDS,
+            timer_hold=QUESTION_FULL_TIME_SECONDS[index],
             elapsed_seconds=elapsed_seconds,
             running_points=running_points,
             feedback_remaining_ms=feedback_remaining_ms,
@@ -1633,12 +2312,6 @@ def register_routes(app: Flask) -> None:
         if index >= len(questions):
             return redirect(url_for("result"))
         item = questions[index]
-        existing = get_db().execute(
-            "SELECT id FROM answers WHERE attempt_id = ? AND question_id = ?",
-            (attempt["id"], item["id"]),
-        ).fetchone()
-        if existing:
-            return redirect(url_for("question"))
         try:
             evaluation = evaluate(item, request.form.to_dict())
         except ValueError as error:
@@ -1651,13 +2324,11 @@ def register_routes(app: Flask) -> None:
             else 0.0
         )
         time_factor = question_time_factor(elapsed_seconds, index)
-        earned_points = timed_question_points(
-            evaluation["accuracy_points"], time_factor
-        )
+        earned_points = awarded_question_points(evaluation, time_factor)
         database = get_db()
-        database.execute(
+        cursor = database.execute(
             """
-            INSERT INTO answers
+            INSERT OR IGNORE INTO answers
                 (attempt_id, question_id, answer_json, correct, credit,
                  multiplier_delta, time_factor, response_seconds,
                  accuracy_points, points, created_at)
@@ -1678,6 +2349,8 @@ def register_routes(app: Flask) -> None:
             ),
         )
         database.commit()
+        if not cursor.rowcount:
+            return redirect(url_for("question"))
         return redirect(url_for("question"))
 
     @app.post("/runde/weiter")
@@ -1912,8 +2585,22 @@ def register_routes(app: Flask) -> None:
             database.rollback()
             abort(403)
         try:
+            rounds = max(
+                1, min(5, int(request.form.get("rounds", lobby["rounds"])))
+            )
+        except (TypeError, ValueError):
+            rounds = lobby["rounds"]
+        name = (
+            " ".join(request.form.get("name", lobby["name"]).strip().split())[:36]
+            or lobby["name"]
+        )
+        database.execute(
+            "UPDATE party_lobbies SET rounds = ?, name = ? WHERE id = ?",
+            (rounds, name, lobby_id),
+        )
+        try:
             question_sets = reserve_question_sets(
-                "party", str(lobby_id), lobby["rounds"], manage_transaction=False
+                "party", str(lobby_id), rounds, manage_transaction=False
             )
         except QuestionPoolExhausted as error:
             database.rollback()
@@ -1988,6 +2675,10 @@ def register_routes(app: Flask) -> None:
         if answer:
             feedback = dict(answer)
             feedback["submitted"] = json.loads(answer["answer_json"])
+            if question["category"] == "order":
+                feedback["order_correct_count"] = order_correct_positions(
+                    feedback["submitted"], question["answer"]
+                )
             feedback["submitted_display"] = format_answer(
                 question, feedback["submitted"]
             )
@@ -2042,7 +2733,7 @@ def register_routes(app: Flask) -> None:
                 question.get("knowledge_category"), ""
             ),
             timer_limit=QUESTION_TIME_LIMITS[index % 5], timer_decay=QUESTION_DECAY_SECONDS[index % 5],
-            timer_hold=FULL_TIME_SECONDS, elapsed_seconds=elapsed,
+            timer_hold=QUESTION_FULL_TIME_SECONDS[index % 5], elapsed_seconds=elapsed,
             waiting=bool(answer and index == lobby["current_question_index"]),
             historical_feedback=requested_feedback is not None and index < lobby["current_question_index"],
             party_status_url=url_for("party_status", lobby_id=lobby_id),
@@ -2131,12 +2822,6 @@ def register_routes(app: Flask) -> None:
             return redirect(url_for("party_lobby", lobby_id=lobby_id))
         index = lobby["current_question_index"]
         question = json.loads(lobby["questions_json"])[index]
-        existing = get_db().execute(
-            "SELECT id FROM party_answers WHERE member_id = ? AND question_index = ?",
-            (member["id"], index),
-        ).fetchone()
-        if existing:
-            return redirect(url_for("party_lobby", lobby_id=lobby_id, feedback=index))
         try:
             evaluation = evaluate(question, request.form.to_dict())
         except ValueError as error:
@@ -2144,11 +2829,11 @@ def register_routes(app: Flask) -> None:
             return redirect(url_for("party_lobby", lobby_id=lobby_id))
         elapsed = max(0.0, (datetime.now() - datetime.fromisoformat(lobby["question_started_at"])).total_seconds())
         time_factor = question_time_factor(elapsed, index % 5)
-        points = timed_question_points(evaluation["accuracy_points"], time_factor)
+        points = awarded_question_points(evaluation, time_factor)
         database = get_db()
-        database.execute(
+        cursor = database.execute(
             """
-            INSERT INTO party_answers
+            INSERT OR IGNORE INTO party_answers
                 (lobby_id, member_id, question_index, question_id, answer_json, correct,
                  credit, response_seconds, accuracy_points, points, created_at)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
@@ -2158,6 +2843,9 @@ def register_routes(app: Flask) -> None:
              evaluation["credit"], elapsed, evaluation["accuracy_points"], points,
              datetime.now().isoformat(timespec="seconds")),
         )
+        if not cursor.rowcount:
+            database.rollback()
+            return redirect(url_for("party_lobby", lobby_id=lobby_id, feedback=index))
         database.execute(
             "UPDATE party_members SET score = score + ? WHERE id = ?", (points, member["id"])
         )
@@ -2235,12 +2923,30 @@ def register_template_helpers(app: Flask) -> None:
     def inject_globals():
         user = getattr(g, "user", None)
         public_url = app.config.get("PUBLIC_URL") or request.url_root.rstrip("/")
+        cosmetics = player_cosmetics(user["id"]) if user else None
+        phrase_lookup = {item["id"]: item for item in PHRASE_CATALOG}
         return {
             "csrf_token": csrf_token,
             "game_name": app.config["GAME_NAME"],
             "today_display": date.today().strftime("%d.%m.%Y"),
             "today_iso_value": today_iso(),
-            "currency_balance": player_total_points(user["id"]) if user else 0,
+            "currency_balance": player_currency_balance(user["id"]) if user else 0,
+            "default_phrase": DEFAULT_PHRASE,
+            "equipped_phrase": phrase_lookup.get(cosmetics["phrase_id"], {}).get("text", DEFAULT_PHRASE) if cosmetics else DEFAULT_PHRASE,
+            "player_cosmetics": cosmetics,
+            "avatar_catalog": {
+                DEFAULT_AVATAR_ID: DEFAULT_AVATAR,
+                **{item["id"]: item for item in AVATAR_CATALOG},
+            },
+            "plaque_catalog": {
+                DEFAULT_PLAQUE_ID: DEFAULT_PLAQUE,
+                **{item["id"]: item for item in PLAQUE_CATALOG},
+            },
+            "background_catalog": {
+                DEFAULT_BACKGROUND_ID: DEFAULT_BACKGROUND,
+                **{item["id"]: item for item in BACKGROUND_CATALOG},
+            },
+            "phrase_catalog": phrase_lookup,
             "public_url": public_url,
             "share_image_url": f"{public_url}/static/guesstimate-share.jpg",
         }

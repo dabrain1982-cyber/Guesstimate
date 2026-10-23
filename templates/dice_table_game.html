@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% from "_profile_window.html" import profile_window with context %}
+{% set resolved_game_mode = game_mode|default('sandbox', true) %}
+{% set is_kniffel = resolved_game_mode == 'kniffel' %}
+{% set is_maexchen = resolved_game_mode == 'maexchen' %}
+{% block title %}{{ lobby.name }} · {{ 'Mäxchen' if is_maexchen else ('Kniffel' if is_kniffel else 'Würfeltisch') }}{% endblock %}
+{% block extra_head %}<link rel="stylesheet" href="{{ url_for('static', filename='dice-table.css', v='8') }}">{% endblock %}
+{% block shell_class %}dice-game-shell{% endblock %}
+{% block header %}{% endblock %}
+{% block content %}
+  <div class="dice-game-viewport">
+    <main class="dice-game-room" data-dice-room
+      data-status-url="{{ url_for('dice_table_status', lobby_id=lobby.id) }}"
+      data-action-url="{{ url_for('dice_table_action', lobby_id=lobby.id) }}"
+      data-camera-url="{{ url_for('dice_table_camera') }}"
+      data-member-id="{{ member.id }}"
+      data-theme="{{ dddice_theme }}"
+      data-theme-url="{{ url_for('static', filename='vendor/dddice-outgunned/theme.json') }}"
+      data-theme-assets-url="{{ url_for('static', filename='vendor/dddice-outgunned/') }}"
+      data-die-type="{{ dddice_die_type }}"
+      data-dice-count="{{ lobby.dice_count }}"
+      data-game-mode="{{ resolved_game_mode }}"
+      data-hidden-roll="{{ 1 if lobby.use_cup else 0 }}"
+      data-camera-locked="{{ 1 if camera_preference.locked else 0 }}"
+      data-camera-config="{{ camera_preference.camera|tojson|forceescape }}">
+      <input type="hidden" data-csrf value="{{ csrf_token() }}">
+
+      <header class="dice-game-heading">
+        <span>{{ lobby.name }}</span>
+        <strong>{% if is_maexchen %}Mäxchen · 3 Leben · strikt höher{% elif is_kniffel %}Kniffel · 3 Würfe je Zug{% else %}{{ lobby.dice_count }} Würfel · {{ 'verdecktes Würfeln' if lobby.use_cup else 'offenes Würfeln' }}{% endif %}</strong>
+        {% if is_maexchen %}<button class="maexchen-rules-open" type="button" data-rules-open>Spielregeln</button>{% endif %}
+      </header>
+
+      <section class="dice-game-players" aria-label="Mitspieler">
+        {% for player in members %}
+          <article class="dice-game-player seat-{{ loop.index }}{% if player.id == member.id %} is-you{% endif %}" data-dice-player="{{ player.id }}">
+            {{ profile_window(player.cosmetics, {}, show_edit=False, show_details=False, player_name=player.display_name, player_balance=player.currency_balance, instance_id='dice-game-player-' ~ player.id, balance_link=False) }}
+            <span>{{ player.display_name }}{% if player.user_id == lobby.host_user_id %} · Host{% endif %}</span>
+            {% if is_maexchen %}<div class="maexchen-life" data-maexchen-life="{{ player.id }}" aria-label="Drei Leben">♥ ♥ ♥</div>{% endif %}
+          </article>
+        {% endfor %}
+      </section>
+
+      <aside class="dice-held-zone" aria-label="Behaltene Würfel" {% if is_maexchen %}hidden{% endif %}>
+        <strong>Behalten</strong>
+        <div data-dice-held></div>
+      </aside>
+
+      <section class="dice-render-area" aria-label="Animierte Würfelfläche">
+        <canvas data-dddice-canvas aria-label="Dreidimensional animierte Würfel"></canvas>
+        <div class="dice-result-fallback" data-dice-fallback aria-live="polite"></div>
+        <div class="dice-concealed-roll" data-dice-concealed aria-label="Verdeckter Wurf"></div>
+        <p class="dice-engine-status" data-dice-engine-status>Würfeltechnik wird vorbereitet …</p>
+      </section>
+
+      {% if is_kniffel %}
+        <aside class="dice-score-note is-kniffel-sheet" aria-label="Kniffelblock">
+          <strong>Kniffelblock</strong>
+          <div class="kniffel-sheet" data-kniffel-sheet></div>
+        </aside>
+      {% endif %}
+
+      <section class="dice-player-console{% if is_kniffel %} is-kniffel-console{% endif %}{% if is_maexchen %} is-maexchen-console{% endif %}" aria-label="Spielerpult">
+        {% if is_maexchen %}
+          <div class="maexchen-round-panel">
+            <img src="{{ url_for('static', filename='maexchen-logo-v1.svg') }}" alt="Mäxchen 21" class="maexchen-console-logo">
+            <div class="maexchen-announcement" data-maexchen-announcement>Noch keine Ansage</div>
+            <div class="maexchen-order" data-maexchen-order aria-label="Zugreihenfolge"></div>
+          </div>
+        {% elif not is_kniffel %}
+          <aside class="dice-score-note" aria-label="Notizzettel der Würfe">
+            <strong>Würfe</strong>
+            <div data-dice-history></div>
+          </aside>
+        {% endif %}
+        <div class="dice-console-actions">
+          <div class="dice-tray" data-dice-tray aria-label="Eingesammelte Würfel" {% if is_maexchen %}hidden{% endif %}></div>
+          {% if is_maexchen %}
+            <button class="is-primary" type="button" data-dice-action="roll">Würfeln</button>
+            <label class="maexchen-claim-control" data-maexchen-claim-control hidden>Ansage
+              <select data-maexchen-claim>{% for value in maexchen_values %}<option value="{{ value }}">{{ 'Mäxchen · 21' if value == '21' else (value[0] ~ 'er-Pasch' if value[0] == value[1] else value) }}</option>{% endfor %}</select>
+            </label>
+            <button type="button" data-dice-action="claim" hidden>Ansagen</button>
+            <button type="button" data-dice-action="believe" hidden>Glauben & würfeln</button>
+            <button type="button" data-dice-action="believe_maexchen" hidden>Mäxchen glauben · 1 Leben</button>
+            <button class="is-danger" type="button" data-dice-action="reveal" hidden>Aufdecken</button>
+            <button class="is-primary" type="button" data-dice-action="next_round" hidden>Nächste Runde vorlegen</button>
+          {% else %}
+            <button type="button" data-dice-action="collect">Alle einsammeln</button>
+            <button class="is-primary" type="button" data-dice-action="roll">{{ lobby.dice_count }} Würfel würfeln</button>
+            {% if lobby.use_cup %}<button type="button" data-dice-action="reveal" disabled>Aufdecken</button>{% endif %}
+          {% endif %}
+          <label class="dice-camera-lock"><input type="checkbox" data-camera-lock {% if camera_preference.locked %}checked{% endif %}> Kamera fixieren <small>nur für mich</small></label>
+          {% if is_kniffel %}<div class="kniffel-roll-lights" data-kniffel-lights aria-label="Verbleibende Würfe"><i></i><i></i><i></i></div>{% endif %}
+          <p data-dice-message>Der Tisch ist bereit.</p>
+        </div>
+      </section>
+
+      <form class="dice-game-leave" method="post" action="{{ url_for('dice_table_leave', lobby_id=lobby.id) }}">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <button type="submit">Lobby verlassen</button>
+      </form>
+    </main>
+  </div>
+{% endblock %}
+{% block scripts %}
+  <script src="{{ url_for('static', filename='vendor/dddice-0.21.8.js') }}" defer></script>
+  <script src="{{ url_for('static', filename='dice-table.js', v='9') }}" defer></script>
+{% endblock %}

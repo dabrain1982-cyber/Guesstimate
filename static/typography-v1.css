@@ -1,0 +1,97 @@
+/*
+ * Abgegrenztes Typografiepaket 2026-10-20.
+ * Rücknahme: Diese Datei und ihre Einbindung in templates/base.html entfernen.
+ */
+@font-face {
+  font-family: "Guesstimate Inter";
+  src: url("fonts/Inter-Variable.ttf") format("truetype-variations");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Guesstimate Fredoka";
+  src: url("fonts/Fredoka-Variable.ttf") format("truetype-variations");
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+:root {
+  --font-ui: "Guesstimate Inter", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: "Guesstimate Fredoka", "Guesstimate Inter", system-ui, sans-serif;
+  font-family: var(--font-ui);
+  font-synthesis: none;
+}
+
+body,
+button,
+input,
+select,
+textarea { font-family: var(--font-ui); }
+
+h1,
+h2,
+h3,
+.wordmark,
+.arena-nav-brand,
+.variant-a-slide-copy h1,
+.variant-a-slide-copy h2,
+.profile-hero h1,
+.shop-hero h1,
+.question-card > h1,
+.result-hero > h1,
+.section-heading h2 { font-family: var(--font-display); }
+
+h1,
+h2,
+h3 { letter-spacing: -.025em; }
+
+.arena-main-nav .arena-nav-brand small { font-family: var(--font-ui); font-weight: 700; }
+.arena-main-nav .arena-nav-brand strong { font-family: var(--font-display); font-weight: 700; letter-spacing: -.035em; }
+.arena-main-nav a,
+.arena-main-nav button,
+.arena-main-nav > .arena-nav-date { font-size: clamp(.7rem, .78vw, .82rem); font-weight: 700; }
+.variant-a-slide-copy p { font-size: .72rem; font-weight: 700; letter-spacing: .15em; }
+.variant-a-slide-copy h1,
+.variant-a-slide-copy h2 { font-weight: 700; line-height: .96; letter-spacing: -.04em; }
+.variant-a-slide-copy > strong { font-size: clamp(.9rem, 1.1vw, 1.12rem); font-weight: 700; }
+.variant-a-slide-copy > span { font-size: clamp(.84rem, .82vw, .94rem); line-height: 1.5; }
+.variant-a-carousel-tabs button { font-size: .74rem; font-weight: 700; }
+.variant-a-action .primary-button { font-size: 1.02rem; font-weight: 800; }
+
+.variant-a-hanging-plaque span,
+.variant-a-podium strong { font-weight: 800; }
+.variant-a-balance { font-weight: 700; }
+.variant-a-profile-details blockquote {
+  color: #d9e5f6;
+  font-size: clamp(.92rem, .82vw, 1rem);
+  font-style: normal;
+  font-weight: 500;
+}
+.variant-a-trophies b { font-weight: 700; font-variant-numeric: tabular-nums; }
+.variant-a-trophies small { font-size: .6rem; font-weight: 600; }
+
+.home-variant-a .variant-a-leaderboard .section-heading h2 { font-weight: 700; letter-spacing: -.025em; }
+.home-variant-a .variant-a-leaderboard .leaderboard-tabs button {
+  font-size: clamp(.61rem, .69vw, .74rem);
+  font-weight: 700;
+}
+.identity-ranking .player-plaque-label strong { font-size: .96rem; font-weight: 800; }
+.identity-ranking .identity-points b { font-weight: 800; font-variant-numeric: tabular-nums; }
+.identity-ranking .identity-points small { font-weight: 600; }
+
+.eyebrow,
+.section-kicker { font-weight: 700; letter-spacing: .13em; }
+.primary-button,
+.secondary-button,
+.shop-item button,
+.profile-item button,
+.leaderboard-tabs button { font-weight: 700; }
+
+@media (max-width: 760px) {
+  .arena-main-nav a,
+  .arena-main-nav button,
+  .arena-main-nav > .arena-nav-date { font-size: .66rem; }
+}

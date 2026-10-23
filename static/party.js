@@ -33,6 +33,31 @@
     window.setTimeout(pollLobby, 800);
   }
 
+  const settings = document.querySelector("[data-party-settings]");
+  if (settings) {
+    let timer;
+    const status = settings.querySelector("[data-party-autosave]");
+    const save = async () => {
+      status.textContent = "Speichert …";
+      try {
+        const response = await fetch(settings.dataset.settingsUrl, {
+          method: "POST",
+          body: new FormData(settings),
+          headers: { Accept: "text/html" },
+        });
+        if (!response.ok) throw new Error("save failed");
+        status.textContent = "Gespeichert.";
+      } catch (_) {
+        status.textContent = "Wird spätestens beim Start übernommen.";
+      }
+    };
+    settings.querySelector("select")?.addEventListener("change", save);
+    settings.querySelector("input[name='name']")?.addEventListener("input", () => {
+      window.clearTimeout(timer);
+      timer = window.setTimeout(save, 500);
+    });
+  }
+
   const partyIndex = document.querySelector("[data-party-index]");
   if (partyIndex) {
     const pollPartyIndex = async () => {

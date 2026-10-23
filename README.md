@@ -29,7 +29,7 @@ Ein mobil optimiertes Quiz für bis zu 100 Personen: Login, eine tägliche Runde
 
 Jede der fünf Fragen bringt 0 bis 100 Punkte. Eine fachlich vollständig falsche Antwort bringt immer 0 Punkte; eine perfekte Runde erreicht 500.
 
-Wahr/Falsch und Auswahl erhalten fachlich 100 Punkte bei einer richtigen und 0 Punkte bei einer falschen Antwort. Bei der waagerechten Reihenfolge wird jedes Paar von Ereignissen danach bewertet, ob es in der richtigen relativen Reihenfolge steht. Bei vier Ereignissen zählen damit sechs Paare anteilig; auch bei einem falsch platzierten ersten Ereignis bleiben Punkte für die richtig sortierten Beziehungen erhalten. Die Zuordnung wird pro richtigem Paar anteilig bewertet. Die Schätzung liefert abhängig von der relativen Abweichung 10 bis 100 Genauigkeitspunkte. Mengen und Größen werden relativ zum richtigen Wert bewertet. Bei Kalenderjahren dient eine Spanne von 100 Jahren als Prozentbasis, damit beispielsweise 80 Jahre Abweichung als 80 Prozent Fehler zählen und nicht durch die große Jahreszahl verharmlost werden.
+Wahr/Falsch und Auswahl erhalten fachlich 100 Punkte bei einer richtigen und 0 Punkte bei einer falschen Antwort. Bei der waagerechten Reihenfolge zählt ausschließlich jeder Begriff, der exakt auf seiner richtigen Position liegt. Ohne Zeitabzug ergeben ein Treffer 15 Punkte, zwei Treffer 50 Punkte und drei oder vier Treffer 100 Punkte. Mit vollständig abgelaufener Zeit sind es 10, 25 beziehungsweise 50 Punkte. Dazwischen sinkt die Wertung mit dem normalen Zeitfaktor stufenweise. Die Zuordnung wird pro richtigem Paar anteilig bewertet. Die Schätzung liefert abhängig von der relativen Abweichung 10 bis 100 Genauigkeitspunkte. Mengen und Größen werden relativ zum richtigen Wert bewertet. Bei Kalenderjahren dient eine Spanne von 100 Jahren als Prozentbasis, damit beispielsweise 80 Jahre Abweichung als 80 Prozent Fehler zählen und nicht durch die große Jahreszahl verharmlost werden.
 
 Nach jeder Auflösung bleiben Antwort, richtige Lösung und Erklärung mindestens vier Sekunden sichtbar, bevor die nächste Frage oder das Ergebnis geöffnet werden kann.
 
@@ -60,9 +60,14 @@ fragen/
 ├── paarebilden/fragen.json
 ├── reihenfolge/fragen.json
 ├── schaetzung/fragen.json
-├── buchstabensalat/fragen.json
 └── zweigruppenzuordnen/fragen.json
 ```
+
+Die unabhängige Ablage `fragen/stormseedsperfekt/` ist für ein separates,
+noch nicht eingebundenes Spiel vorgemerkt. Sie gehört nicht zum Fragenmanifest
+und enthält derzeit 12 neu recherchierte Begriffskarten sowie 12 neu
+recherchierte Kuriositätenkarten in getrennten Listen. Der frühere ungeprüfte
+Bestand wurde vollständig ersetzt.
 
 Wahr-oder-unwahr-Fragen enthalten keinerlei Kategorien- oder Unterthemenfelder.
 Alle anderen Fragearten besitzen einen einheitlichen Steckbrief mit
@@ -95,9 +100,13 @@ Die Systemregistrierung zeigt auf `deploy/guesstimate.service` in diesem Projekt
 Öffentliche Adresse: https://igroup.it-sauther.de/guesstimate/
 Gesundheitsprüfung: https://igroup.it-sauther.de/guesstimate/health
 
-Nach Änderungen: `sudo /srv/guesstimate/deploy/install-live.sh`.
-Das Skript prüft den vorhandenen Projektstand und startet den Dienst neu.
-Es überschreibt weder Spielstände noch die Konfiguration des gemeinsamen HTTPS-Proxys.
+Die Dienstregistrierung wird einmalig mit
+`sudo /srv/guesstimate/deploy/install-live.sh` aktualisiert. Danach lädt Gunicorn
+Änderungen am Python-Code automatisch; Templates und statische Dateien werden
+ohnehin direkt aus dem Projekt gelesen. Der Installer bleibt für Änderungen an
+Abhängigkeiten oder der Dienstdefinition zuständig. Er prüft den vorhandenen
+Projektstand, überschreibt aber weder Spielstände noch die Konfiguration des
+gemeinsamen HTTPS-Proxys.
 
 ## Tests
 

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Stormseed’s Conquest · {{ game_name }}{% endblock %}
+{% block shell_class %}conquest-lobby-shell{% endblock %}
+{% block header %}{% endblock %}
+{% block extra_head %}<link rel="stylesheet" href="{{ url_for('static', filename='conquest-lobby.css', v='1') }}">{% endblock %}
+{% block content %}
+  <section class="conquest-lobby-page conquest-browser">
+    <section class="conquest-lobby-hero">
+      <p class="eyebrow">WELTTAKTIK AM SPIELTISCH</p>
+      <h1>Stormseed’s Conquest</h1>
+      <p>Erstelle einen Feldzug oder tritt einer offenen Runde bei. Brett, Karten, Figuren und Würfel lassen sich unabhängig kombinieren.</p>
+    </section>
+    <section class="conquest-lobby-panel" aria-label="Offene Feldzüge">
+      <div class="conquest-panel-heading"><span>OFFENE LOBBYS</span><strong>2–6 Personen</strong></div>
+      <div class="conquest-lobby-list">
+        {% for lobby in lobbies %}
+          <article class="conquest-lobby-tile">
+            <div><small>{{ 'LÄUFT' if lobby.status == 'playing' else 'OFFEN' }}</small><h2>{{ lobby.name }}</h2><p>{{ lobby.member_count }}/6 · {{ 'Missionen' if lobby.victory_mode == 'missions' else 'Welteroberung' }}</p></div>
+            {% if lobby.is_member %}<a href="{{ url_for('conquest_lobby', lobby_id=lobby.id) }}">{{ 'Zurück zum Spiel' if lobby.status == 'playing' else 'Zur Lobby' }}</a>
+            {% elif lobby.status == 'waiting' %}<form method="post" action="{{ url_for('conquest_join', lobby_id=lobby.id) }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit">Beitreten</button></form>
+            {% else %}<strong>Gestartet</strong>{% endif %}
+          </article>
+        {% else %}<p class="conquest-empty">Noch wartet kein Feldzug. Du kannst den ersten Tisch eröffnen.</p>{% endfor %}
+      </div>
+      <form method="post" action="{{ url_for('conquest_create') }}" class="conquest-create"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit">Lobby erstellen</button></form>
+    </section>
+    <a class="conquest-back-link" href="{{ url_for('tabletop_connection') }}">zurück zu tabletop connection</a>
+  </section>
+{% endblock %}

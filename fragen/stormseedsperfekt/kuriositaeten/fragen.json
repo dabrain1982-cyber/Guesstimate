@@ -1,0 +1,2752 @@
+[
+  {
+    "id": "ssp-kuriositaet-001",
+    "card_type": "curiosity",
+    "prompt": "Wie ließ der Juwelier Harry Winston 1958 den weltberühmten Hope-Diamanten zum Smithsonian bringen?",
+    "answer": "In einem unscheinbaren, braun verpackten Paket per Einschreiben.",
+    "explanation": "Winston hielt die registrierte Post für den sichersten Versandweg für Edelsteine. Der Diamant reiste von New York nach Washington; fast die gesamte Gebühr entfiel auf die Versicherung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Smithsonian National Postal Museum: Hope Diamond Packaging",
+          "url": "https://postalmuseum.si.edu/hope-diamond-packaging"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-002",
+    "card_type": "curiosity",
+    "prompt": "Warum schlägt die Glocke „Great Tom“ in Oxford jeden Abend um 21:05 Uhr genau 101-mal?",
+    "answer": "Die 101 Schläge erinnerten an die ursprünglichen Mitglieder des Colleges; 21:05 Uhr entspricht dort neun Uhr nach der traditionellen Oxford-Zeit.",
+    "explanation": "Oxford liegt geografisch gut fünf Minuten hinter Greenwich. Christ Church behielt diese örtliche Zeit für den abendlichen Glockenschlag bei.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "University of Oxford: Oxford’s Own Time Lord",
+          "url": "https://www.ox.ac.uk/sites/files/oxford/Blueprint_September%202016.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-003",
+    "card_type": "curiosity",
+    "prompt": "Welche offizielle Aufgabe bekam die Comicfigur Snoopy bei der NASA?",
+    "answer": "Snoopy wurde zum Symbol für Flugsicherheit und Missionserfolg.",
+    "explanation": "Astronauten verleihen bis heute den Silver Snoopy Award an Beschäftigte mit besonderen Beiträgen zur Sicherheit. Der dazugehörige Anstecker ist zuvor im Weltraum geflogen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "NASA: Everyone Plays Role in Flight Safety, Mission Success",
+          "url": "https://www.nasa.gov/history/sfa-message-everyone-plays-role-in-flight-safety-mission-success/"
+        },
+        {
+          "title": "NASA: Silver Snoopy Award",
+          "url": "https://www.nasa.gov/space-flight-awareness/silver-snoopy-award/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-004",
+    "card_type": "curiosity",
+    "prompt": "Wie kam Winnie Puuh zu seinem Vornamen?",
+    "answer": "Christopher Robin benannte seinen Teddybären nach Winnie, einer echten Schwarzbärin, die er im Londoner Zoo besuchte.",
+    "explanation": "A. A. Milnes Sohn Christopher Robin mochte die Bärin im Londoner Zoo. Sein nach ihr benannter Teddy wurde zur Vorlage für Winnie Puuh.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Zoological Society of London: How ZSL helped shape the way the world looks",
+          "url": "https://www.zsl.org/news-and-events/feature/how-zsl-helped-shape-way-world-looks"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-005",
+    "card_type": "curiosity",
+    "prompt": "Warum bewahrt das Smithsonian Hunderte Pfropfen aus Wal-Ohrenschmalz auf?",
+    "answer": "Ihre Schichten verraten unter anderem Alter, Stressphasen und Schadstoffbelastung eines Wals.",
+    "explanation": "Die hellen und dunklen Wachsschichten entstehen im Laufe des Lebens. Bei Blauwalen entspricht ein hell-dunkles Schichtenpaar ungefähr einem Lebensjahr; chemische Analysen können zusätzlich Hormone und Schadstoffe zeigen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Smithsonian Ocean: Whale Earwax",
+          "url": "https://ocean.si.edu/ocean-life/marine-mammals/whale-earwax-what-you-can-learn-strange-collections"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-006",
+    "card_type": "curiosity",
+    "prompt": "Welche Einreiseformalität mussten die Apollo-11-Astronauten nach ihrer Rückkehr vom Mond erledigen?",
+    "answer": "Sie mussten in Hawaii eine gemeinsame Erklärung für Zoll, Landwirtschaft, Einwanderung und Gesundheit abgeben.",
+    "explanation": "Wie andere Reisende mussten sie am ersten amerikanischen Einreisehafen eine General Declaration einreichen – obwohl ihr Ausgangspunkt der Mond gewesen war.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "NASA History: Exploring the Unknown, Volume VII",
+          "url": "https://www.nasa.gov/wp-content/uploads/2023/03/sp-4407-etuv7.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-007",
+    "card_type": "curiosity",
+    "prompt": "Was vermuteten Menschen früher hinter dem seltenen Stoff Ambra, bevor seine Herkunft geklärt war?",
+    "answer": "Unter anderem getrockneten Meeresschaum, Robbenschaum, einen Pilz vom Meeresboden oder eine seltene Tonerde.",
+    "explanation": "Tatsächlich entsteht Ambra im Verdauungstrakt von Pottwalen: Eine wachsartige Masse umschließt unverdauliche Tintenfischschnäbel und verändert ihren Geruch während des Alterns im Meer.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Smithsonian Ocean: What is Ambergris?",
+          "url": "https://ocean.si.edu/ocean-life/marine-mammals/mystery-ambergris"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-008",
+    "card_type": "curiosity",
+    "prompt": "Woraus bauten US-Seabees im Zweiten Weltkrieg eine Maschine, die mehr als tausend Gallonen Eiscreme herstellte?",
+    "answer": "Aus erbeuteten und geborgenen Teilen – darunter Bauteile eines abgestürzten deutschen Dornier-Flugbootes, ein Einzylindermotor, ein Getriebe und ein Benzinfass.",
+    "explanation": "Die improvisierte Maschine trug den Spitznamen „Belching Bertha“ und entstand aus einem Sammelsurium von Kriegsschrott und geborgenen Teilen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "U.S. Naval History and Heritage Command: Seabee News Service, 2 May 1944",
+          "url": "https://www.history.navy.mil/content/dam/museums/Seabee/Online%20Reading%20Room/Manuals%20and%20Publications/Publications/seabeenewsservice/Issue%2018_%202%20May%201944.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-009",
+    "card_type": "curiosity",
+    "prompt": "Warum wurde die erste Webcam der Welt auf eine Kaffeekanne gerichtet?",
+    "answer": "Damit Forschende in Cambridge von ihrem Arbeitsplatz aus sehen konnten, ob noch Kaffee da war, bevor sie vergeblich zum entfernten Aufenthaltsraum liefen.",
+    "explanation": "Die Kamera beobachtete ab 1991 die Kanne im Trojan Room. 1993 wurde das ständig wechselnde Bild ins Web eingebunden und daraus die erste Webcam.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "University of Cambridge Computer Laboratory: The Trojan Room Coffee Pot",
+          "url": "https://www.cl.cam.ac.uk/coffee/qsf/cacm200107.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-010",
+    "card_type": "curiosity",
+    "prompt": "Welche Aufgabe sollten Tauben in B. F. Skinners geheimem „Project Pigeon“ während des Zweiten Weltkriegs übernehmen?",
+    "answer": "Sie sollten in der Spitze eines Flugkörpers ein Ziel auf einem Bildschirm erkennen und durch Picken dessen Steuerung lenken.",
+    "explanation": "Skinner trainierte Tauben für ein biologisches Lenksystem, weil präzise technische Zielsysteme noch ein großes Problem darstellten.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Smithsonian: B. F. Skinner’s Pigeon-Guided Rocket",
+          "url": "https://www.smithsonianmag.com/smithsonian-institution/bf-skinners-pigeon-guided-rocket-53443995/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-011",
+    "card_type": "curiosity",
+    "prompt": "Wie reiste die fünfjährige May Pierstorff 1914 zu ihren Großeltern in Idaho?",
+    "answer": "Als Postsendung im Bahnpostwagen – versehen mit Briefmarken für 53 Cent.",
+    "explanation": "May lag knapp unter der damaligen Gewichtsgrenze für Pakete und wurde von einem Bahnpostbeamten begleitet. Sie war weder das einzige noch das erste Kind, das auf diese Weise befördert wurde.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Smithsonian National Postal Museum: The Oddest Parcels",
+          "url": "https://postalmuseum.si.edu/research-article/100-years-of-parcels-packages-and-packets-oh-my/the-oddest-parcels"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-012",
+    "card_type": "curiosity",
+    "prompt": "Warum musste jede Stimme für Thomas Edisons sprechende Puppen einzeln aufgenommen werden?",
+    "answer": "Weil die damaligen Tonaufnahmen nicht kopiert wurden: Eine Sprecherin musste jeden winzigen Wachszylinder separat besprechen.",
+    "explanation": "Junge Frauen riefen Kinderreime einzeln in die Aufnahmegeräte. Die kratzige Wiedergabe und die aufwendige Herstellung trugen dazu bei, dass sich die Puppen schlecht verkauften.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Smithsonian: Edison’s Demon Dolls",
+          "url": "https://www.si.edu/sidedoor/ep-1-edisons-demon-dolls"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-013",
+    "card_type": "curiosity",
+    "prompt": "Welche Gesellschaft muss ein Meerschweinchen nach Schweizer Tierschutzrecht bekommen?",
+    "answer": "Kontakt zu mindestens einem Artgenossen.",
+    "explanation": "Die Schweizer Tierschutzverordnung verlangt für Meerschweinchen Sozialkontakt mit Artgenossen. Die oft erzählte Kurzfassung vom ausdrücklichen „Einzelhaltungsverbot“ trifft den Kern, ist aber weniger genau als die tatsächliche Vorschrift.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Schweizer Bundesamt für Lebensmittelsicherheit und Veterinärwesen: Tierschutzverordnung",
+          "url": "https://www.blv.admin.ch/dam/blv/en/dokumente/tiere/rechts-und-vollzugsgrundlagen/tschv-en.pdf.download.pdf/Animal%20Protection%20Ordinance%20455.1.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-014",
+    "card_type": "curiosity",
+    "prompt": "Welche beliebte Soße soll einer Wanderlegende zufolge im 19. Jahrhundert als Medizin verkauft worden sein?",
+    "answer": "Ketchup.",
+    "explanation": "Der wahre Kern sind medizinische Versprechen rund um Tomaten und damals verkaufte Tomatenpillen. Historische Quellen belegen zudem Ketchuprezepte aus derselben Zeit, aber nicht die oft behauptete amtliche Vermarktung von Ketchup als Arznei im Jahr 1834.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "University of Illinois Press: The Tomato in America",
+          "url": "https://www.press.uillinois.edu/books/?id=p070099"
+        },
+        {
+          "title": "University of Michigan Clements Library: The American Magazine – Tomato History",
+          "url": "https://clements.umich.edu/wp-content/uploads/2019/09/americanmagazine-v3n2.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-015",
+    "card_type": "curiosity",
+    "prompt": "Wozu schickte Australien 1932 Soldaten mit Maschinengewehren in ein landwirtschaftliches Gebiet?",
+    "answer": "Sie sollten Emus töten, die Weizenfelder beschädigten.",
+    "explanation": "Der als „Emu War“ verspottete Einsatz war kein erklärter Krieg, sondern eine militärisch unterstützte Schädlingsbekämpfung. Die Vögel verteilten sich so geschickt, dass der Einsatz das Problem kaum löste.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Sydney Harbour Federation Trust: Brigadier Gwynydd Meredith",
+          "url": "https://www.harbourtrust.gov.au/discover-and-learn/harbour-history/historical-people-and-landmarks/brigadier-gwynydd-meredith/"
+        },
+        {
+          "title": "State Library of Western Australia: Channel 7 historical news collection – Emu War",
+          "url": "https://purl.slwa.wa.gov.au/slwa_b6580504"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-016",
+    "card_type": "curiosity",
+    "prompt": "Warum verbot der Bürgermeister von Sarpourenx 2008 Menschen ohne Grabstelle, in seiner Gemeinde zu sterben?",
+    "answer": "Der Friedhof war voll, und ein Gericht hatte die Erweiterung auf ein Nachbargrundstück abgelehnt.",
+    "explanation": "Das nicht ernsthaft vollstreckbare Dekret war ein öffentlicher Protest gegen die festgefahrene Friedhofsfrage. Es drohte Verstorbenen sogar eine „strenge Bestrafung“ an.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "ABC News / Reuters: Cemetery full, French Mayor tells locals not to die",
+          "url": "https://www.abc.net.au/news/2008-03-06/cemetery-full-french-mayor-tells-locals-not-to-die/1063670"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-017",
+    "card_type": "curiosity",
+    "prompt": "Welche Ausnahme steckt hinter Singapurs berühmtem Kaugummiverbot?",
+    "answer": "Zugelassene therapeutische und zahnmedizinische Kaugummis dürfen eingeführt werden.",
+    "explanation": "Gewöhnlicher Kaugummi ist bei der Einfuhr grundsätzlich verboten. Die verbreitete Behauptung, jeder erlaubte Kaugummi setze ein persönliches ärztliches Rezept voraus, verkürzt die Regelung jedoch zu stark.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Singapore Customs: Chewing Gum",
+          "url": "https://www.customs.gov.sg/doing-business/quick-links-for-traders/tradenet/competent-authorities-requirements-for-controlled-items/singapore-customs"
+        },
+        {
+          "title": "Singapore Customs: Import of Chewing Gum with Therapeutic Value",
+          "url": "https://www.customs.gov.sg/news-and-media/circulars/2003-12-16-circular432003.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-018",
+    "card_type": "curiosity",
+    "prompt": "Warum kann ein kanadischer Händler einen großen Kauf ablehnen, obwohl der Kunde genug gültige Münzen hinlegt?",
+    "answer": "Kanadas Währungsgesetz begrenzt je nach Münzwert, bis zu welchem Gesamtbetrag Münzen gesetzliches Zahlungsmittel sind.",
+    "explanation": "Bei Ein-Dollar-Münzen endet die gesetzliche Annahmewirkung beispielsweise bei 25 Dollar, bei Fünf-Cent-Münzen bei fünf Dollar. Das ist kein allgemeines Kleingeldverbot, sondern eine Staffelung nach Nennwert.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Government of Canada: Currency Act, Section 8",
+          "url": "https://laws-lois.justice.gc.ca/eng/acts/C-52/section-8.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-021",
+    "card_type": "curiosity",
+    "prompt": "Welchen Tiernamen soll Frankreich einer hartnäckigen Wanderlegende zufolge gesetzlich verboten haben?",
+    "answer": "Ein Schwein „Napoleon“ zu nennen.",
+    "explanation": "Ein entsprechendes Gesetz wurde nie gefunden. Eine mögliche Quelle der Geschichte ist die erste französische Ausgabe von Orwells „Farm der Tiere“, in der der Eber Napoleon in César umbenannt wurde.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "The Connexion: Urban myth or true – Is it illegal to call a pig Napoleon in France?",
+          "url": "https://beta.connexionfrance.com/magazine/urban-myth-or-true-is-it-illegal-to-call-a-pig-napoleon-in-france/122445"
+        },
+        {
+          "title": "Légifrance: Gesetz vom 23. August 1794 über Namen von Bürgern",
+          "url": "https://www.legifrance.gouv.fr/loda/id/LEGITEXT000053397407"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-022",
+    "card_type": "curiosity",
+    "prompt": "Welche nächtliche Alltagshandlung soll in Schweizer Mietwohnungen einer Wanderlegende zufolge verboten sein?",
+    "answer": "Nach 22 Uhr die Toilette zu spülen.",
+    "explanation": "Es gibt kein allgemeines Schweizer Spülverbot. Ruhezeiten sind real, doch ein solches Verbot würde nach Auskunft von Mietrechtsexperten die persönliche Freiheit unverhältnismäßig einschränken.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "The Local Switzerland: Can I flush my toilet at night?",
+          "url": "https://www.thelocal.ch/20190909/swiss-daily-dilemmas-can-i-flush-my-toilet-at-night"
+        },
+        {
+          "title": "Kanton Solothurn: Living in Switzerland – quiet hours",
+          "url": "https://ukraine.so.ch/fileadmin/ukraine/Helfen/Dokumente/Living_in_Switzerland_englisch.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-023",
+    "card_type": "curiosity",
+    "prompt": "Wie korrigierte eine große Studie die Behauptung, alle Ameisen zusammen wögen mehr als alle Menschen?",
+    "answer": "Ihre geschätzte Trockenmasse beträgt nur etwa ein Fünftel der menschlichen Trockenmasse.",
+    "explanation": "Die rund 20 Billiarden Ameisen übertreffen nach der Studie zwar die gemeinsame Trockenmasse aller wild lebenden Vögel und Säugetiere, nicht aber die der Menschen – und erst recht nicht Menschen und Vögel zusammen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Proceedings of the National Academy of Sciences: The abundance, biomass, and distribution of ants on Earth",
+          "url": "https://doi.org/10.1073/pnas.2201550119"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-024",
+    "card_type": "curiosity",
+    "prompt": "Was ist eine Himbeere botanisch, obwohl ihr Name sie als Beere ausgibt?",
+    "answer": "Eine Sammelfrucht aus vielen kleinen Steinfrüchtchen.",
+    "explanation": "Jede kleine Kugel der Himbeere ist ein eigenes Steinfrüchtchen. Deshalb ist die ganze Frucht im strengen botanischen Sinn keine echte Beere.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Royal Botanic Gardens, Kew: Bramble – the wild berries on your doorstep",
+          "url": "https://growwild.kew.org/blog/bramble-wild-berries-your-doorstep"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-025",
+    "card_type": "curiosity",
+    "prompt": "Welche gewöhnliche Fortbewegung schaffen Elefanten trotz ihrer erstaunlichen Beweglichkeit nicht?",
+    "answer": "Sie können nicht springen und dabei alle vier Füße gleichzeitig vom Boden lösen.",
+    "explanation": "Elefanten können rennen, balancieren und sogar auf zwei Beinen stehen. Die zusätzliche Behauptung, sie seien das einzige nicht springende Säugetier, ist dagegen nicht belastbar.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian’s National Zoo: Happy Asian Elephant Awareness Month",
+          "url": "https://nationalzoo.si.edu/animals/news/happy-asian-elephant-awareness-month"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-026",
+    "card_type": "curiosity",
+    "prompt": "Welches eheliche Versäumnis wird Samoa in Listen angeblich verrückter Gesetze angedichtet?",
+    "answer": "Dass ein Ehemann den Geburtstag seiner Frau vergisst.",
+    "explanation": "Die Geschichte kursiert seit Jahren, doch eine Recherche im samoanischen Recht fand kein solches Gesetz. Ein örtlicher Jurist bezeichnete sie als apokryphe Erzählung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "LegalClarity: The Weirdest Laws in the World Still on the Books",
+          "url": "https://legalclarity.org/the-weirdest-laws-in-the-world-still-on-the-books/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-027",
+    "card_type": "curiosity",
+    "prompt": "Welche heute noch lebende Tiergruppe schwamm bereits im Meer, bevor es die ersten Bäume gab?",
+    "answer": "Haie beziehungsweise ihre frühen Vorfahren.",
+    "explanation": "Die ältesten möglichen Spuren haiartiger Tiere sind etwa 450 Millionen Jahre alt. Baumförmige Pflanzen entwickelten sich erst deutlich später.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Natural History Museum: Shark evolution – a 450 million year timeline",
+          "url": "https://www.nhm.ac.uk/discover/shark-evolution-a-450-million-year-timeline.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-028",
+    "card_type": "curiosity",
+    "prompt": "Welches moderne Ereignis lag zeitlich näher an Kleopatras Leben als der Bau der Großen Pyramide?",
+    "answer": "Die erste bemannte Mondlandung im Jahr 1969.",
+    "explanation": "Kleopatra starb 30 vor Christus. Bis zur Mondlandung waren es knapp 2.000 Jahre; die Große Pyramide war zu ihrer Zeit bereits ungefähr 2.500 Jahre alt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Cleopatra VII",
+          "url": "https://www.britannica.com/biography/Cleopatra-queen-of-Egypt"
+        },
+        {
+          "title": "Encyclopaedia Britannica: Great Pyramid of Giza",
+          "url": "https://www.britannica.com/topic/Great-Pyramid-of-Giza"
+        },
+        {
+          "title": "NASA: Apollo 11 Mission Overview",
+          "url": "https://www.nasa.gov/history/apollo-11-mission-overview/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-029",
+    "card_type": "curiosity",
+    "prompt": "Wie entstehen die fast würfelförmigen Häufchen eines Wombats?",
+    "answer": "Unterschiedlich elastische Bereiche seines langen Darms formen den Kot schon vor dem Ausscheiden.",
+    "explanation": "Nicht ein eckiger Schließmuskel erzeugt die Form. Die flachen Seiten helfen wahrscheinlich zusätzlich, dass die zur Kommunikation abgelegten Häufchen an auffälligen Stellen liegen bleiben.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "University of Georgia: Why do wombats have square poop?",
+          "url": "https://news.uga.edu/why-do-wombats-have-square-poop/"
+        },
+        {
+          "title": "Georgia Tech: Studying Wombats’ Cubic Poop",
+          "url": "https://d7.cos.gatech.edu/news/studying-wombats-cubic-poop"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-030",
+    "card_type": "curiosity",
+    "prompt": "Wovon hängt in Arizona ab, ob der Diebstahl eines geschützten Kaktus ein Vergehen oder ein schwereres Delikt ist?",
+    "answer": "Vom Wert der entwendeten geschützten Pflanzen.",
+    "explanation": "Die oft genannte pauschale Strafe von 25 Jahren steht so nicht im Gesetz. Je nach Pflanzenwert reicht die Einstufung vom schweren Vergehen bis zu unterschiedlichen Felony-Klassen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Arizona Revised Statutes § 3-932: Violation; classification; penalties",
+          "url": "https://azleg.gov/ars/3/00932.htm"
+        },
+        {
+          "title": "Arizona Revised Statutes § 3-908: Protected native plants",
+          "url": "https://www.azleg.gov/ars/3/00908.htm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-031",
+    "card_type": "curiosity",
+    "prompt": "Welche Flugmanöver beherrschen Kolibris, die anderen Vögeln in dieser Kombination fehlen?",
+    "answer": "Anhaltendes Schweben sowie kontrolliertes Rückwärts- und Seitwärtsfliegen.",
+    "explanation": "Kolibris erzeugen beim Auf- und Abschlag ihrer drehbaren Flügel Auftrieb. Dadurch können sie vor einer Blüte stehen bleiben und in mehrere Richtungen davonfliegen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian’s National Zoo: Hummingbirds",
+          "url": "https://nationalzoo.si.edu/migratory-birds/hummingbirds"
+        },
+        {
+          "title": "Smithsonian Gardens: Hovering",
+          "url": "https://gardens.si.edu/exhibitions/traveling/habitat/hovering/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-032",
+    "card_type": "curiosity",
+    "prompt": "Was stellte Nintendo jahrzehntelang her, bevor das Unternehmen für Videospiele berühmt wurde?",
+    "answer": "Japanische Hanafuda-Spielkarten.",
+    "explanation": "Fusajiro Yamauchi begann 1889 in Kyoto mit der Herstellung der Blumenkarten. Elektronische Unterhaltung kam erst viele Jahrzehnte später hinzu.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Nintendo: Creating smiles for generations",
+          "url": "https://www.nintendo.com/us/about/"
+        },
+        {
+          "title": "Nintendo: Revisit Nintendo’s roots with Hanafuda",
+          "url": "https://www.nintendo.com/en-gb/News/2021/August/Revisit-Nintendo-s-roots-with-Hanafuda-2019412.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-033",
+    "card_type": "curiosity",
+    "prompt": "Wozu besitzt ein Oktopus drei Herzen statt nur eines?",
+    "answer": "Zwei pumpen sauerstoffarmes Blut durch die Kiemen; das dritte versorgt den übrigen Körper mit sauerstoffreichem Blut.",
+    "explanation": "Sein Blut erscheint durch den kupferhaltigen Sauerstoffträger Hämocyanin blau. Die drei Pumpen teilen sich Kiemen- und Körperkreislauf.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian Ocean: Octopuses, Squids and Relatives",
+          "url": "https://ocean.si.edu/ocean-life/invertebrates/octopuses-squids-and-relatives"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-034",
+    "card_type": "curiosity",
+    "prompt": "Was stimmt an der Geschichte vom angeblich essbaren Honig aus Pharaonengräbern nicht?",
+    "answer": "Für tatsächlich probierten, jahrtausendealten Grab-Honig gibt es keinen belastbaren Nachweis.",
+    "explanation": "Honig ist wegen wenig Wasser, viel Zucker und seiner Säure außergewöhnlich haltbar. Daraus entstand die populäre Zuspitzung, Archäologen hätten 3.000 Jahre alten Honig gefunden und gegessen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian Magazine: The Science Behind Honey’s Eternal Shelf Life",
+          "url": "https://www.smithsonianmag.com/science-nature/the-science-behind-honeys-eternal-shelf-life-1218690/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-035",
+    "card_type": "curiosity",
+    "prompt": "Wie viel Wasser steckt ungefähr in einer gewöhnlichen bauschigen Wolke, die rund einen Kubikkilometer groß ist?",
+    "answer": "Etwa 500 Tonnen beziehungsweise rund 500.000 Liter.",
+    "explanation": "Die Wolke bleibt dennoch oben, weil sich die winzigen Tröpfchen über ein riesiges Luftvolumen verteilen und von Luftbewegungen getragen werden.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Met Office: 7 facts about clouds",
+          "url": "https://weather.metoffice.gov.uk/learn-about/weather/types-of-weather/clouds/facts-about-clouds"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-036",
+    "card_type": "curiosity",
+    "prompt": "Womit steuert ein Seestern seinen Körper, obwohl er kein Gehirn besitzt?",
+    "answer": "Mit einem dezentralen Nervensystem aus Nervenring, Nervensträngen und Sinneszellen.",
+    "explanation": "Das fehlende Gehirn bedeutet nicht, dass Seesterne völlig ohne Steuerung sind. Ihre Nerven und Augenflecken koordinieren Bewegung und Reaktionen auf die Umwelt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "NOAA: Underwater Exploration Lab Manual",
+          "url": "https://repository.library.noaa.gov/view/noaa/45459/noaa_45459_DS1.pdf"
+        },
+        {
+          "title": "NOAA Ocean Service: Are starfish really fish?",
+          "url": "https://oceanservice.noaa.gov/facts/starfish.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-037",
+    "card_type": "curiosity",
+    "prompt": "Warum verändert der Eiffelturm im Jahreslauf messbar seine Höhe?",
+    "answer": "Sein Eisen dehnt sich bei Wärme aus und zieht sich bei Kälte zusammen.",
+    "explanation": "Je nach Temperatur kann die Spitze um mehrere Zentimeter wandern; häufig werden bis zu etwa 15 Zentimeter saisonaler Höhenunterschied genannt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Offizielle Website des Eiffelturms: Why does the Eiffel Tower change size?",
+          "url": "https://www.toureiffel.paris/en/news/history-and-culture/why-does-eiffel-tower-change-size"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-038",
+    "card_type": "curiosity",
+    "prompt": "Wessen Asche wurde tatsächlich in Erinnerungs-Frisbees verarbeitet?",
+    "answer": "Die des Discgolf-Pioniers und Frisbee-Entwicklers Ed Headrick – nicht die von Walter Morrison.",
+    "explanation": "Die verbreitete Geschichte nennt oft den frühen Flugscheiben-Erfinder Walter Morrison. Die Memorial-Scheiben gehen jedoch auf Ed Headrick zurück, der den modernen Frisbee mitprägte und Discgolf organisierte.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Professional Disc Golf Association: The Father of Disc Golf – Steady Ed Headrick",
+          "url": "https://www.pdga.com/history/steady-ed-headrick"
+        },
+        {
+          "title": "Los Angeles Times: Walter Fredrick Morrison dies at 90",
+          "url": "https://www.latimes.com/local/obituaries/la-me-fred-morrison13-2010feb13-story.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-039",
+    "card_type": "curiosity",
+    "prompt": "Welche Geschichte erzählt man sich über Liechtensteins letzten Kriegseinsatz von 1866?",
+    "answer": "Das Kontingent sei mit 80 Mann ausgerückt und mit 81 zurückgekehrt.",
+    "explanation": "Die berühmte Erzählung ist in dieser Form nicht sicher belegt. Historische Angaben unterscheiden zwischen der Größe des gesamten Kontingents und der tatsächlich ausgerückten Truppe; der zusätzliche Mann soll ein österreichischer Verbindungsoffizier gewesen sein – nicht ein neu gewonnener italienischer Gegner.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "St. Galler Tagblatt: 80 Mann rückten aus, 81 kehrten heim",
+          "url": "https://www.tagblatt.ch/ostschweiz/werdenberg-obertoggenburg/historisch-80-mann-rueckten-aus-81-kehrten-heim-ld.1006342"
+        },
+        {
+          "title": "Liechtenstein-Institut: Kommentar zu Artikel 44 der Landesverfassung",
+          "url": "https://verfassung.li/Art._44"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-040",
+    "card_type": "curiosity",
+    "prompt": "Welches sonntägliche Fangverbot wird dem US-Bundesstaat Ohio in kuriosen Gesetzeslisten angedichtet?",
+    "answer": "Das angebliche Verbot, sonntags Wale zu fangen.",
+    "explanation": "Die Behauptung ist eine Wanderlegende. Weder im Gesetzbuch Ohios noch in den Regeln der zuständigen Naturbehörde findet sich ein solches Walfangverbot.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "LegalClarity: Stupid Laws in Ohio – What’s Real and What’s a Myth",
+          "url": "https://legalclarity.org/stupid-laws-in-ohio-whats-real-and-whats-a-myth/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-041",
+    "card_type": "curiosity",
+    "prompt": "Wofür ist das Herz eines Blauwals bekannt?",
+    "answer": "Es ist das größte Herz im Tierreich und wird anschaulich mit der Größe eines kleinen Autos verglichen.",
+    "explanation": "Solche Vergleiche sind Näherungen und hängen vom untersuchten Tier ab. Ein präpariertes Blauwalherz im Royal Ontario Museum macht die tatsächlichen Dimensionen sichtbar; die oft ergänzte Geschichte, ein Mensch könne durch die Hauptschlagader schwimmen, ist eine populäre Übertreibung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Royal Ontario Museum: Blue Whale Update – A Whole Lotta Heart",
+          "url": "https://www.rom.on.ca/blogs/blue-whale-update-whole-lotta-heart"
+        },
+        {
+          "title": "Royal Ontario Museum: Blue Whale Heart Arrives at the ROM",
+          "url": "https://www.rom.on.ca/news-releases/blue-whale-heart-arrives-rom"
+        }
+      ]
+    }
+  },
+{
+    "id": "ssp-kuriositaet-042",
+    "card_type": "curiosity",
+    "prompt": "Was muss man nach britischem Recht bei einem Fisch unter „verdächtigen Umständen“ unterlassen?",
+    "answer": "Ihn annehmen, behalten, entfernen oder verwerten, wenn ein Fischereidelikt vernünftigerweise zu vermuten ist.",
+    "explanation": "Ihn annehmen, behalten, entfernen oder verwerten, wenn ein Fischereidelikt vernünftigerweise zu vermuten ist. Der berühmte Wortlaut ist keine Vorschrift über „verdächtig aussehende Lachse“.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Salmon Act 1986, Section 32",
+          "url": "https://www.legislation.gov.uk/ukpga/1986/62/section/32"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-043",
+    "card_type": "curiosity",
+    "prompt": "Wann konnte Drachensteigen im Londoner Polizeibezirk zur Ordnungswidrigkeit werden?",
+    "answer": "Wenn das Spiel Bewohner oder Passanten belästigte.",
+    "explanation": "Wenn das Spiel Bewohner oder Passanten belästigte.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Metropolitan Police Act 1839, Section 54",
+          "url": "https://www.legislation.gov.uk/ukpga/Vict/2-3/47/pdfs/ukpga_18390047_en.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-044",
+    "card_type": "curiosity",
+    "prompt": "Welche winterliche Straßenbeschäftigung stellte ein Londoner Gesetz von 1839 unter Strafe?",
+    "answer": "Das Anlegen oder Benutzen einer Eis- oder Schneerutsche, wenn dadurch Passanten allgemein gefährdet wurden.",
+    "explanation": "Das Anlegen oder Benutzen einer Eis- oder Schneerutsche, wenn dadurch Passanten allgemein gefährdet wurden.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Metropolitan Police Act 1839, Section 54",
+          "url": "https://www.legislation.gov.uk/ukpga/Vict/2-3/47/pdfs/ukpga_18390047_en.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-045",
+    "card_type": "curiosity",
+    "prompt": "Welcher scheinbar harmlose Klingelstreich steht ausdrücklich in einem Londoner Polizeigesetz?",
+    "answer": "Mutwilliges Klingeln oder Klopfen an einer Tür ohne rechtmäßigen Grund.",
+    "explanation": "Mutwilliges Klingeln oder Klopfen an einer Tür ohne rechtmäßigen Grund.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Metropolitan Police Act 1839, Section 54",
+          "url": "https://www.legislation.gov.uk/ukpga/Vict/2-3/47/pdfs/ukpga_18390047_en.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-046",
+    "card_type": "curiosity",
+    "prompt": "Wer kann in Frankreich aus schwerwiegenden Gründen eine Eheschließung nach dem Tod eines Verlobten erlauben?",
+    "answer": "Der Präsident der Republik, wenn Tatsachen den vorherigen eindeutigen Ehewillen belegen.",
+    "explanation": "Der Präsident der Republik, wenn Tatsachen den vorherigen eindeutigen Ehewillen belegen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Französischer Code civil, Artikel 171",
+          "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000024025844/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-047",
+    "card_type": "curiosity",
+    "prompt": "Was darf ein Imker nach deutschem Recht tun, wenn er seinen entflogenen Bienenschwarm verfolgt?",
+    "answer": "Fremde Grundstücke betreten und unter bestimmten Bedingungen sogar eine unbesetzte fremde Bienenwohnung öffnen.",
+    "explanation": "Fremde Grundstücke betreten und unter bestimmten Bedingungen sogar eine unbesetzte fremde Bienenwohnung öffnen; Schäden muss er ersetzen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "§ 962 BGB",
+          "url": "https://www.gesetze-im-internet.de/bgb/__962.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-048",
+    "card_type": "curiosity",
+    "prompt": "Wem gehört ein eingefangener Gesamtschwarm, wenn sich mehrere verfolgte Bienenschwärme vermischen?",
+    "answer": "Den verfolgenden Eigentümern gemeinsam.",
+    "explanation": "Den verfolgenden Eigentümern gemeinsam; ihre Anteile richten sich nach der Zahl ihrer Schwärme.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "§ 963 BGB",
+          "url": "https://www.gesetze-im-internet.de/bgb/__963.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-049",
+    "card_type": "curiosity",
+    "prompt": "Was geschieht rechtlich, wenn ein Bienenschwarm in eine bereits besetzte fremde Bienenwohnung einzieht?",
+    "answer": "Das Eigentum am eingezogenen Schwarm erlischt zugunsten der Rechte an den bereits dort lebenden Bienen.",
+    "explanation": "Das Eigentum am eingezogenen Schwarm erlischt zugunsten der Rechte an den bereits dort lebenden Bienen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "§ 964 BGB",
+          "url": "https://www.gesetze-im-internet.de/bgb/__964.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-050",
+    "card_type": "curiosity",
+    "prompt": "Wie wird in Deutschland ein Schatz geteilt, dessen ursprünglicher Eigentümer nicht mehr ermittelbar ist?",
+    "answer": "Grundsätzlich je zur Hälfte zwischen Entdecker und Eigentümer der Sache, in der er verborgen war.",
+    "explanation": "Grundsätzlich je zur Hälfte zwischen Entdecker und Eigentümer der Sache, in der er verborgen war; Denkmalschutzrecht kann zusätzlich eingreifen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "§ 984 BGB",
+          "url": "https://www.gesetze-im-internet.de/bgb/__984.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-051",
+    "card_type": "curiosity",
+    "prompt": "Wie sorgte Ludwig van Beethoven dafür, dass sein selbst aufgebrühter Kaffee stets gleich stark wurde?",
+    "answer": "Er zählte für jede Tasse 60 Bohnen ab.",
+    "explanation": "Er zählte für jede Tasse 60 Bohnen ab.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Beethoven-Haus Bonn: Gaumengenüsse in Beethovens Alltag",
+          "url": "https://internet.beethoven.de/pdf-web/appassionato_46.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-052",
+    "card_type": "curiosity",
+    "prompt": "Wie richtete Maya Angelou ihren ungewöhnlichen Arbeitsplatz zum Schreiben ein?",
+    "answer": "Sie mietete ein schlichtes Hotelzimmer, ließ Bilder entfernen, schrieb morgens auf dem Bett und nutzte das Zimmer nie zum Schlafen.",
+    "explanation": "Sie mietete ein schlichtes Hotelzimmer, ließ Bilder entfernen, schrieb morgens auf dem Bett und nutzte das Zimmer nie zum Schlafen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "The Paris Review: Maya Angelou, The Art of Fiction No. 119",
+          "url": "https://www.theparisreview.org/interviews/2279/the-art-of-fiction-no-119-maya-angelou"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-053",
+    "card_type": "curiosity",
+    "prompt": "In welcher Körperhaltung schrieb Ernest Hemingway gewöhnlich seine ersten Fassungen?",
+    "answer": "Stehend an einem brusthohen Schreibbrett, zunächst mit Bleistift.",
+    "explanation": "Stehend an einem brusthohen Schreibbrett, zunächst mit Bleistift; zur Schreibmaschine wechselte er bei schnell laufenden Passagen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "The Paris Review: Ernest Hemingway, The Art of Fiction No. 21",
+          "url": "https://www.theparisreview.org/interviews/4825/the-art-of-fiction-no-21-ernest-hemingway"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-054",
+    "card_type": "curiosity",
+    "prompt": "Was verstand Benjamin Franklin unter seinem täglichen „Luftbad“?",
+    "answer": "Er saß unbekleidet bei geöffnetem Fenster in kalter Luft und las oder schrieb dabei eine halbe bis ganze Stunde.",
+    "explanation": "Er saß unbekleidet bei geöffnetem Fenster in kalter Luft und las oder schrieb dabei eine halbe bis ganze Stunde.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "National Library of Scotland: Works of Benjamin Franklin, Luftbad-Brief",
+          "url": "https://deriv.nls.uk/dcn23/1299/2414/129924148.23.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-055",
+    "card_type": "curiosity",
+    "prompt": "Wie machte Andy Warhol aus seinem täglichen Papier- und Gegenstandsstrom ein Archiv?",
+    "answer": "Er füllte offene Kartons, versiegelte und datierte sie.",
+    "explanation": "Er füllte offene Kartons, versiegelte und datierte sie; so entstanden 610 „Time Capsules“.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "The Andy Warhol Museum: Time Capsule 21",
+          "url": "https://www.warhol.org/lessons/time-capsule-21-activity/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-056",
+    "card_type": "curiosity",
+    "prompt": "Was erfand Mark Twain, weil ihn das Einkleben von Zeitungsausschnitten fluchen ließ?",
+    "answer": "Ein selbstklebendes Sammelalbum mit gummierten Streifen, die wie Briefmarken angefeuchtet wurden.",
+    "explanation": "Ein selbstklebendes Sammelalbum mit gummierten Streifen, die wie Briefmarken angefeuchtet wurden.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "United States Patent and Trademark Office: Mark Twain",
+          "url": "https://www.uspto.gov/learning-and-resources/journeys-innovation/mark-twain"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-057",
+    "card_type": "curiosity",
+    "prompt": "Was sollte Luftpolsterfolie ursprünglich werden?",
+    "answer": "Eine strukturierte Kunststofftapete.",
+    "explanation": "Eine strukturierte Kunststofftapete; erst später wurde sie als Verpackungsschutz erfolgreich.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian: The Accidental Invention of Bubble Wrap",
+          "url": "https://www.smithsonianmag.com/innovation/accidental-invention-bubble-wrap-180971325/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-058",
+    "card_type": "curiosity",
+    "prompt": "Wofür wurde die spätere Spielknete Play-Doh zunächst verkauft?",
+    "answer": "Als weiche Masse zum Entfernen von Ruß auf Tapeten.",
+    "explanation": "Als weiche Masse zum Entfernen von Ruß auf Tapeten.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian: The Accidental Invention of Play-Doh",
+          "url": "https://www.smithsonianmag.com/innovation/accidental-invention-play-doh-180973527/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-059",
+    "card_type": "curiosity",
+    "prompt": "Welche vermeintliche Schwäche eines neuen Klebstoffs führte zu den Post-it-Zetteln?",
+    "answer": "Er klebte nur leicht, ließ sich aber wieder ablösen und erneut anheften.",
+    "explanation": "Er klebte nur leicht, ließ sich aber wieder ablösen und erneut anheften; genau das löste später Art Frys Lesezeichenproblem.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "3M/Post-it: History of Post-it Notes",
+          "url": "https://www.post-it.com/3M/en_US/post-it/contact-us/about-us/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-060",
+    "card_type": "curiosity",
+    "prompt": "Was bedeuten Name und Zahl in „WD-40“?",
+    "answer": "„Water Displacement“, vollendet beim 40.",
+    "explanation": "„Water Displacement“, vollendet beim 40. Versuch.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "WD-40: Markengeschichte",
+          "url": "https://www.wd40.com/cool-stuff/history/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-061",
+    "card_type": "curiosity",
+    "prompt": "Was wollte Erwin Perzy verbessern, als er unbeabsichtigt die Schneekugel entwickelte?",
+    "answer": "Die Beleuchtung von Operationssälen.",
+    "explanation": "Die Beleuchtung von Operationssälen; Partikel in einer wassergefüllten Glaskugel erinnerten ihn an Schnee.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian: Accidental Invention of the Snow Globe",
+          "url": "https://www.smithsonianmag.com/innovation/how-an-experiment-to-amplify-light-in-hospital-operating-rooms-led-to-the-accidental-invention-of-the-snow-globe-180985742/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-062",
+    "card_type": "curiosity",
+    "prompt": "Was bemerkte Percy Spencer in seiner Tasche, als er an einem Magnetron arbeitete?",
+    "answer": "Ein Schokoriegel war geschmolzen.",
+    "explanation": "Ein Schokoriegel war geschmolzen; seine Folgeversuche führten zur Mikrowellenkochung.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "MIT Lemelson Program: Percy Spencer",
+          "url": "https://lemelson.mit.edu/resources/percy-spencer"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-063",
+    "card_type": "curiosity",
+    "prompt": "Was fand Roy Plunkett statt des erwarteten Kältemittelgases in einem Druckbehälter?",
+    "answer": "Ein weißes, wachsartiges Polymer: Polytetrafluorethylen, später als Teflon bekannt.",
+    "explanation": "Ein weißes, wachsartiges Polymer: Polytetrafluorethylen, später als Teflon bekannt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian: Eureka!",
+          "url": "https://www.smithsonianmag.com/science-nature/eureka-89414180/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-064",
+    "card_type": "curiosity",
+    "prompt": "In welche Behälter füllte Bette Nesmith Graham ihre frühe Korrekturflüssigkeit ab?",
+    "answer": "In Nagellackfläschchen mit kleinen Pinseln.",
+    "explanation": "In Nagellackfläschchen mit kleinen Pinseln.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "USPTO: Perseverance, thy name is Bette",
+          "url": "https://www.uspto.gov/learning-and-resources/journeys-innovation/historical-stories/perseverance-thy-name-bette"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-065",
+    "card_type": "curiosity",
+    "prompt": "Warum bekam die Computermaus ihren Tiernamen?",
+    "answer": "Das Gehäuse erinnerte mit seinem herausführenden Kabelschwanz an eine Maus.",
+    "explanation": "Das Gehäuse erinnerte mit seinem herausführenden Kabelschwanz an eine Maus; wer den Namen zuerst gebrauchte, wusste später niemand mehr.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Computer History Museum: The Mouse",
+          "url": "https://www.computerhistory.org/revolution/story/350"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-066",
+    "card_type": "curiosity",
+    "prompt": "Woraus stammte die Kugel eines frühen kanadischen Trackballs?",
+    "answer": "Aus dem kanadischen Fünf-Kegel-Bowling.",
+    "explanation": "Aus dem kanadischen Fünf-Kegel-Bowling.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Computer History Museum: The Mouse",
+          "url": "https://www.computerhistory.org/revolution/story/350"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-067",
+    "card_type": "curiosity",
+    "prompt": "Welches Tier wurde 1947 als „erster tatsächlicher Fall eines gefundenen Bugs“ ins Computerlogbuch geklebt?",
+    "answer": "Eine Motte aus einem Relais des Harvard Mark II.",
+    "explanation": "Eine Motte aus einem Relais des Harvard Mark II; das Wort „Bug“ für technische Fehler war allerdings älter.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Computer History Museum: First Actual Computer Bug",
+          "url": "https://www.computerhistory.org/tdih/September/09/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-068",
+    "card_type": "curiosity",
+    "prompt": "Wie verteidigte Margaret Knight ihre Maschine für flachbodige Papiertüten gegen einen Patentdieb?",
+    "answer": "Sie legte detaillierte Zeichnungen und Entwicklungsunterlagen vor.",
+    "explanation": "Sie legte detaillierte Zeichnungen und Entwicklungsunterlagen vor; der Konkurrent konnte Vergleichbares nicht zeigen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian: Margaret Knight and the Paper Bag Machine",
+          "url": "https://www.smithsonianmag.com/smithsonian-institution/meet-female-inventor-behind-mass-market-paper-bags-180968469/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-069",
+    "card_type": "curiosity",
+    "prompt": "Was brachte den jungen George Nissen auf die Idee für das Trampolin?",
+    "answer": "Luftakrobaten, die nach ihrem Auftritt federnd im Sicherheitsnetz landeten.",
+    "explanation": "Luftakrobaten, die nach ihrem Auftritt federnd im Sicherheitsnetz landeten.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian: How the Trampoline Came to Be",
+          "url": "https://www.smithsonianmag.com/innovation/how-trampoline-came-be-180974343/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-070",
+    "card_type": "curiosity",
+    "prompt": "Was schmuggelte John Young 1965 in einer Tasche seines Raumanzugs an Bord von Gemini III?",
+    "answer": "Ein Corned-Beef-Sandwich, dessen Roggenbrotkrümel beinahe durch die Kabine schwebten und anschließend den US-Kongress beschäftigten.",
+    "explanation": "Ein Corned-Beef-Sandwich, dessen Roggenbrotkrümel beinahe durch die Kabine schwebten und anschließend den US-Kongress beschäftigten.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "NASA: Unauthorized Gemini III Space Sandwich",
+          "url": "https://www.nasa.gov/history/fallout-from-the-unauthorized-gemini-iii-space-sandwich"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-071",
+    "card_type": "curiosity",
+    "prompt": "Warum ersetzten Tortillas das gewöhnliche Brot auf vielen Raumflügen?",
+    "answer": "Sie krümeln kaum und gefährden daher weder Augen noch empfindliche Technik.",
+    "explanation": "Sie krümeln kaum und gefährden daher weder Augen noch empfindliche Technik.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "NASA: Food on the International Space Station",
+          "url": "https://www.nasa.gov/history/space-station-20th-food-on-iss/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-072",
+    "card_type": "curiosity",
+    "prompt": "Wie ließ ein Geschäftsmann mehr als 80.000 Ziegel für ein Bankgebäude nach Utah transportieren?",
+    "answer": "Als einzelne Pakete mit der US-Paketpost.",
+    "explanation": "Als einzelne Pakete mit der US-Paketpost; danach führte die Post ein tägliches Gewichtslimit ein.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian National Postal Museum: The Oddest Parcels",
+          "url": "https://postalmuseum.si.edu/research-article/100-years-of-parcels-packages-and-packets-oh-my/the-oddest-parcels"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-073",
+    "card_type": "curiosity",
+    "prompt": "Was versuchte die CIA beim Projekt „Acoustic Kitty“ in einer Katze unterzubringen?",
+    "answer": "Ein verdecktes Abhörgerät.",
+    "explanation": "Ein verdecktes Abhörgerät; die CIA-eigene Rückschau bezeichnet den Versuch als neuartig, aber erfolglos.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "CIA Studies in Intelligence: Spycraft",
+          "url": "https://www.cia.gov/resources/csi/static/aa0cfeac9590267ae05e12673bcb87d1/Studies-52-2-Jun08.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-074",
+    "card_type": "curiosity",
+    "prompt": "Was aß der erste Mensch im All aus einer Aluminiumtube?",
+    "answer": "Juri Gagarin aß Rindfleisch-Leber-Paste und anschließend Schokoladensoße.",
+    "explanation": "Juri Gagarin aß Rindfleisch-Leber-Paste und anschließend Schokoladensoße.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "NASA: Food on the International Space Station",
+          "url": "https://www.nasa.gov/history/space-station-20th-food-on-iss/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-075",
+    "card_type": "curiosity",
+    "prompt": "Wozu besitzt ein Seeotter lose Hauttaschen unter den Vorderbeinen?",
+    "answer": "Darin verstaut er beim Tauchen Beute, während die Pfoten weiter suchen können.",
+    "explanation": "Darin verstaut er beim Tauchen Beute, während die Pfoten weiter suchen können.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Monterey Bay Aquarium: Sea Otter",
+          "url": "https://www.montereybayaquarium.org/animals-the-ocean/animals-a-to-z/sea-otter"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-076",
+    "card_type": "curiosity",
+    "prompt": "Welches rätselhafte Spiel zeigen vor allem hungrige und junge Zwergotter?",
+    "answer": "Sie lassen Kiesel zwischen ihren Vorderpfoten kreisen beziehungsweise „jonglieren“.",
+    "explanation": "Sie lassen Kiesel zwischen ihren Vorderpfoten kreisen beziehungsweise „jonglieren“; ein eindeutiger Nutzen ist nicht belegt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian: Otters Juggle, but the Function Remains Mysterious",
+          "url": "https://www.smithsonianmag.com/smart-news/hungry-otters-juggle-behaviors-function-remains-mysterious-180974837/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-077",
+    "card_type": "curiosity",
+    "prompt": "Was taten Hummeln freiwillig mit kleinen Holzkugeln, obwohl sie dafür kein Futter bekamen?",
+    "answer": "Sie rollten die Kugeln wiederholt.",
+    "explanation": "Sie rollten die Kugeln wiederholt; die Forschenden werteten das als spielähnliches Verhalten.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Animal Behaviour / Queen Mary University: Do bumble bees play?",
+          "url": "https://doi.org/10.1016/j.anbehav.2022.08.013"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-078",
+    "card_type": "curiosity",
+    "prompt": "Wie maßregeln manche Oktopusse ihre Fischpartner bei einer gemeinsamen Jagd?",
+    "answer": "Mit einer schnellen, gezielten Armbewegung, die die Forschenden als „Punch“ beschreiben.",
+    "explanation": "Mit einer schnellen, gezielten Armbewegung, die die Forschenden als „Punch“ beschreiben.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Ecology: Octopuses punch fishes",
+          "url": "https://doi.org/10.1002/ecy.3266"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-079",
+    "card_type": "curiosity",
+    "prompt": "Wie überlebt der nordamerikanische Waldfrosch Monate ohne Herzschlag und Atmung?",
+    "answer": "Ein hoher Glukosegehalt schützt seine Zellen, während große Teile des Körpers gefrieren und im Frühjahr wieder auftauen.",
+    "explanation": "Ein hoher Glukosegehalt schützt seine Zellen, während große Teile des Körpers gefrieren und im Frühjahr wieder auftauen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "U.S. National Park Service: Wood Frog – Biological Miracle",
+          "url": "https://www.nps.gov/gaar/learn/nature/wood-frog-page-2.htm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-080",
+    "card_type": "curiosity",
+    "prompt": "Welche von Menschen erzeugten Geräusche kann ein Leierschwanz in seinen Balzgesang einbauen?",
+    "answer": "Unter anderem Kettensägen, Automotoren und Hundegebell.",
+    "explanation": "Unter anderem Kettensägen, Automotoren und Hundegebell; etwa 80 Prozent des Gesangs können aus Imitationen bestehen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Australian Museum: Superb Lyrebird",
+          "url": "https://australian.museum/learn/animals/birds/superb-lyrebird/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-081",
+    "card_type": "curiosity",
+    "prompt": "Wie holt ein Schützenfisch ein Insekt von einem Ast über der Wasseroberfläche?",
+    "answer": "Mit einem gezielten Wasserstrahl aus dem Maul.",
+    "explanation": "Mit einem gezielten Wasserstrahl aus dem Maul.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Monterey Bay Aquarium: Wild About Otters Press Kit, Tierprofile",
+          "url": "https://storage.montereybayaquarium.org/storage/pressroom/presskit/pdf/wild%20about%20otters%20press%20kit.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-082",
+    "card_type": "curiosity",
+    "prompt": "Wie lockt die Titanenwurz Aasfliegen an, ohne ein verwesendes Tier zu sein?",
+    "answer": "Sie imitiert Farbe und Geruch von Aas und erzeugt zusätzlich Wärme, die den Geruch verbreitet.",
+    "explanation": "Sie imitiert Farbe und Geruch von Aas und erzeugt zusätzlich Wärme, die den Geruch verbreitet.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Royal Botanic Gardens, Kew: Titan arum",
+          "url": "https://www.kew.org/read-and-watch/the-giant-pongy-plant-titan-arum"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-083",
+    "card_type": "curiosity",
+    "prompt": "Wie bewegen sich schwere Steine scheinbar von selbst über den Racetrack Playa im Death Valley?",
+    "answer": "Dünne schwimmende Eisplatten schieben sie bei leichtem Wind über den nassen Seeboden.",
+    "explanation": "Dünne schwimmende Eisplatten schieben sie bei leichtem Wind über den nassen Seeboden.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "U.S. National Park Service: The Racetrack",
+          "url": "https://www.nps.gov/deva/planyourvisit/the-racetrack.htm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-084",
+    "card_type": "curiosity",
+    "prompt": "Was trat 1986 aus dem kamerunischen Nyos-See aus und erstickte Menschen in den Tälern darunter?",
+    "answer": "Eine große Wolke aus angesammeltem Kohlendioxid, die nach einer plötzlichen Freisetzung bodennah bergab strömte.",
+    "explanation": "Eine große Wolke aus angesammeltem Kohlendioxid, die nach einer plötzlichen Freisetzung bodennah bergab strömte.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "U.S. Geological Survey: Lake Nyos Investigation",
+          "url": "https://pubs.usgs.gov/of/1987/0097/report.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-085",
+    "card_type": "curiosity",
+    "prompt": "Warum fließt aus dem antarktischen Taylor-Gletscher scheinbar blutrotes Wasser?",
+    "answer": "Eisenreiche Salzlake tritt aus und färbt sich beim Kontakt mit Sauerstoff rostrot.",
+    "explanation": "Eisenreiche Salzlake tritt aus und färbt sich beim Kontakt mit Sauerstoff rostrot.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian: Antarctica’s Blood Red Waterfall",
+          "url": "https://www.smithsonianmag.com/travel/antarcticas-blood-red-waterfall-180949507/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-086",
+    "card_type": "curiosity",
+    "prompt": "Was überrollte 1919 nach dem Bersten eines Tanks Teile von Boston?",
+    "answer": "Eine meterhohe Welle aus rund 2,3 Millionen Gallonen Melasse.",
+    "explanation": "Eine meterhohe Welle aus rund 2,3 Millionen Gallonen Melasse.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian: The Great Boston Molasses Flood",
+          "url": "https://www.smithsonianmag.com/history/without-warning-molasses-january-surged-over-boston-180971251/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-087",
+    "card_type": "curiosity",
+    "prompt": "Warum finden Forschende auf antarktischem Eis ungewöhnlich viele Meteoriten?",
+    "answer": "Das fließende Eis transportiert sie wie ein Förderband.",
+    "explanation": "Das fließende Eis transportiert sie wie ein Förderband; an Gebirgen wird Eis abgetragen und die dunklen Steine sammeln sich sichtbar an der Oberfläche.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian National Museum of Natural History: Antarctic Meteorites",
+          "url": "https://www.smithsonianmag.com/blogs/national-museum-of-natural-history/2021/01/12/what-antarctic-meteorites-tell-us-about-earths-origins/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-088",
+    "card_type": "curiosity",
+    "prompt": "Was machte manche leuchtend grünen Tapeten im viktorianischen Zeitalter gesundheitsschädlich?",
+    "answer": "Arsenhaltige Pigmente wie Schweinfurter Grün.",
+    "explanation": "Arsenhaltige Pigmente wie Schweinfurter Grün.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian: Arsenic and Old Tastes Made Victorian Wallpaper Deadly",
+          "url": "https://www.smithsonianmag.com/smart-news/victorian-wallpaper-got-its-gaudy-colors-poison-180962709/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-089",
+    "card_type": "curiosity",
+    "prompt": "Was stößt manche Seegurke zur Abwehr durch den After aus?",
+    "answer": "Klebrige Cuvier-Schläuche.",
+    "explanation": "Klebrige Cuvier-Schläuche; sie sind regenerierbar und der Vorgang ist nicht tödlich.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Natural History Museum: Sea cucumbers",
+          "url": "https://www.nhm.ac.uk/discover/what-is-a-sea-cucumber.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-090",
+    "card_type": "curiosity",
+    "prompt": "Wie öffnet ein Pfauen-Fangschreckenkrebs harte Beute?",
+    "answer": "Mit extrem schnellen Keulenschlägen, deren Geschwindigkeit mit einem Geschoss verglichen wird.",
+    "explanation": "Mit extrem schnellen Keulenschlägen, deren Geschwindigkeit mit einem Geschoss verglichen wird.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Monterey Bay Aquarium: Peacock mantis shrimp",
+          "url": "https://www.montereybayaquarium.org/animals-the-ocean/animals-a-to-z/peacock-mantis-shrimp"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-091",
+    "card_type": "curiosity",
+    "prompt": "Was können bei Flamingos sowohl Mutter als auch Vater für ihr Küken bilden?",
+    "answer": "Rote, fett- und proteinreiche Kropfmilch.",
+    "explanation": "Rote, fett- und proteinreiche Kropfmilch.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian National Zoo: Flamingo facts",
+          "url": "https://nationalzoo.si.edu/animals/news/why-are-flamingos-pink-and-other-flamingo-facts"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-092",
+    "card_type": "curiosity",
+    "prompt": "Wie verändert sich das Innere eines Rentierauges zwischen Sommer und Winter?",
+    "answer": "Die reflektierende Schicht wechselt von Gold zu Blau und erhöht die Lichtempfindlichkeit.",
+    "explanation": "Die reflektierende Schicht wechselt von Gold zu Blau und erhöht die Lichtempfindlichkeit.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Natural History Museum: Reindeer eye",
+          "url": "https://www.nhm.ac.uk/discover/colour-in-collection-reindeer-eye.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-093",
+    "card_type": "curiosity",
+    "prompt": "Was geschieht in einer Clownfischgruppe, wenn das fortpflanzungsfähige Weibchen fehlt?",
+    "answer": "Ein Männchen kann zum Weibchen werden.",
+    "explanation": "Ein Männchen kann zum Weibchen werden.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Monterey Bay Aquarium: Clownfish",
+          "url": "https://www.montereybayaquarium.org/animals-the-ocean/animals-a-to-z/clownfish"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-094",
+    "card_type": "curiosity",
+    "prompt": "Woran können Große Tümmler einzelne Artgenossen akustisch erkennen?",
+    "answer": "An erlernten individuellen Signaturpfiffen, die ähnlich wie Namen funktionieren.",
+    "explanation": "An erlernten individuellen Signaturpfiffen, die ähnlich wie Namen funktionieren.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian Ocean: Whales and Dolphins",
+          "url": "https://ocean.si.edu/ocean-life/marine-mammals/whales"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-095",
+    "card_type": "curiosity",
+    "prompt": "Was frisst ein Vampirtintenfisch trotz seines räuberischen Namens hauptsächlich?",
+    "answer": "Herabsinkenden „Meeresschnee“ aus abgestorbenem Plankton, Kot, Schleim und anderem organischem Material.",
+    "explanation": "Herabsinkenden „Meeresschnee“ aus abgestorbenem Plankton, Kot, Schleim und anderem organischem Material.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "MBARI: Vampire squid",
+          "url": "https://www.mbari.org/animal/vampire-squid/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-096",
+    "card_type": "curiosity",
+    "prompt": "Wozu besitzt ein Tokay-Gecko zusätzlich zu seinen beiden Augen ein lichtempfindliches Scheitelauge?",
+    "answer": "Es erzeugt keine Bilder, dürfte aber die Aktivität über Lichtreize mitsteuern.",
+    "explanation": "Es erzeugt keine Bilder, dürfte aber die Aktivität über Lichtreize mitsteuern.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian National Zoo: Tokay gecko",
+          "url": "https://nationalzoo.si.edu/animals/tokay-gecko"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-097",
+    "card_type": "curiosity",
+    "prompt": "Wie kann ein Chamäleon gleichzeitig über und unter sich Ausschau halten?",
+    "answer": "Seine Augen können sich unabhängig in verschiedene Richtungen bewegen.",
+    "explanation": "Seine Augen können sich unabhängig in verschiedene Richtungen bewegen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian National Zoo: Meller’s chameleon",
+          "url": "https://nationalzoo.si.edu/animals/news/new-zoo-meet-mellers-chameleon"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-098",
+    "card_type": "curiosity",
+    "prompt": "Wie gewinnen Seeschlangen neben der Lunge zusätzlichen Sauerstoff?",
+    "answer": "Sie nehmen Sauerstoff durch ihre Haut ins Blut auf.",
+    "explanation": "Sie nehmen Sauerstoff durch ihre Haut ins Blut auf.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Natural History Museum: Sea snake adaptations",
+          "url": "https://www.nhm.ac.uk/discover/sea-snakes-sea-kraits-and-their-aquatic-adaptations.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-099",
+    "card_type": "curiosity",
+    "prompt": "Was ist am Kopf des Tiefseefischs Macropinna durchsichtig?",
+    "answer": "Eine flüssigkeitsgefüllte Haube, durch die seine grünen Röhrenaugen sichtbar sind.",
+    "explanation": "Eine flüssigkeitsgefüllte Haube, durch die seine grünen Röhrenaugen sichtbar sind.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "MBARI: Barreleye",
+          "url": "https://www.mbari.org/animal/barreleye/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-100",
+    "card_type": "curiosity",
+    "prompt": "Wie versorgt ein Pazifischer Riesenkrake monatelang seine Eier?",
+    "answer": "Er bewacht und belüftet sie, frisst dabei nicht und stirbt gewöhnlich kurz nach dem Schlupf.",
+    "explanation": "Er bewacht und belüftet sie, frisst dabei nicht und stirbt gewöhnlich kurz nach dem Schlupf.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Monterey Bay Aquarium: Giant Pacific octopus",
+          "url": "https://www.montereybayaquarium.org/animals/animals-a-to-z/giant-pacific-octopus"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-101",
+    "card_type": "curiosity",
+    "prompt": "Wie täuscht der Wunderpus mögliche Angreifer?",
+    "answer": "Er verändert Farbe, Form und Bewegung und ahmt unter anderem giftige Rotfeuerfische oder Seeschlangen nach.",
+    "explanation": "Er verändert Farbe, Form und Bewegung und ahmt unter anderem giftige Rotfeuerfische oder Seeschlangen nach.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Monterey Bay Aquarium: Wunderpus",
+          "url": "https://www.montereybayaquarium.org/animals/animals-a-to-z/wunderpus"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-102",
+    "card_type": "curiosity",
+    "prompt": "Wie jagen Spinnerdelfine gemeinsam einen Fischschwarm?",
+    "answer": "Sie umringen ihn und tauchen nacheinander zum Beutefang hindurch.",
+    "explanation": "Sie umringen ihn und tauchen nacheinander zum Beutefang hindurch.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian Ocean: Spinner Dolphins",
+          "url": "https://ocean.si.edu/ocean-life/marine-mammals/spinner-dolphins"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-103",
+    "card_type": "curiosity",
+    "prompt": "In welche Richtung kann ein Kalifornischer Schafkopf sein Geschlecht wechseln?",
+    "answer": "Er beginnt als Weibchen und kann später zum Männchen werden.",
+    "explanation": "Er beginnt als Weibchen und kann später zum Männchen werden.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Monterey Bay Aquarium: Nature is queer",
+          "url": "https://www.montereybayaquarium.org/about-us/stories/nature-is-queer"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-104",
+    "card_type": "curiosity",
+    "prompt": "Wie konnten einzelne in Aquarien gehaltene Haie ohne Männchen Nachwuchs erzeugen?",
+    "answer": "Durch Parthenogenese, also die Entwicklung unbefruchteter Eizellen.",
+    "explanation": "Durch Parthenogenese, also die Entwicklung unbefruchteter Eizellen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Monterey Bay Aquarium: Nature is queer",
+          "url": "https://www.montereybayaquarium.org/about-us/stories/nature-is-queer"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-105",
+    "card_type": "curiosity",
+    "prompt": "Warum ist Einbeinstehen für Flamingos nicht unbedingt anstrengender?",
+    "answer": "Messungen zufolge benötigen sie dabei weniger Muskelkraft als auf zwei Beinen.",
+    "explanation": "Messungen zufolge benötigen sie dabei weniger Muskelkraft als auf zwei Beinen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian National Zoo: Flamingo facts",
+          "url": "https://nationalzoo.si.edu/animals/news/why-are-flamingos-pink-and-other-flamingo-facts"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-106",
+    "card_type": "curiosity",
+    "prompt": "Womit läuft eine Tiefsee-Seegurke namens „Seeschwein“ über den Boden?",
+    "answer": "Mit vergrößerten, hydraulisch bewegten Röhrenfüßen.",
+    "explanation": "Mit vergrößerten, hydraulisch bewegten Röhrenfüßen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Natural History Museum: Sea cucumbers",
+          "url": "https://www.nhm.ac.uk/discover/what-is-a-sea-cucumber.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-107",
+    "card_type": "curiosity",
+    "prompt": "Wodurch erzeugt die Disco-Muschel ihr blitzendes Lichtband?",
+    "answer": "Durch winzige Siliziumdioxid-Kügelchen im Gewebe, die Licht spiegeln.",
+    "explanation": "Durch winzige Siliziumdioxid-Kügelchen im Gewebe, die Licht spiegeln.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Natural History Museum: Disco clam",
+          "url": "https://www.nhm.ac.uk/discover/disco-clam-poster-child-for-weird-bivalves.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-108",
+    "card_type": "curiosity",
+    "prompt": "Wie bleiben die riesigen Augen mancher Tiefsee-Flohkrebse besser getarnt?",
+    "answer": "Fast alle Pigmente fehlen.",
+    "explanation": "Fast alle Pigmente fehlen; bis auf die nötigen Retinabereiche sind die Augen weitgehend durchsichtig.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian Ocean: Hyperiid eyes",
+          "url": "https://ocean.si.edu/ocean-life/invertebrates/many-eyes-many-perspectives-astonishing-visual-systems-hyperiids"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-109",
+    "card_type": "curiosity",
+    "prompt": "Was setzt ein Vampirtintenfisch statt normaler Tinte zur Ablenkung frei?",
+    "answer": "Leuchtende, biolumineszente Flüssigkeit.",
+    "explanation": "Leuchtende, biolumineszente Flüssigkeit.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "MBARI: Vampire squid",
+          "url": "https://www.mbari.org/animal/vampire-squid/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-110",
+    "card_type": "curiosity",
+    "prompt": "Wie teilen sich Strauße ein Nest, obwohl mehrere Weibchen Eier legen?",
+    "answer": "Mehrere Weibchen legen in eine gemeinsame Bodenmulde.",
+    "explanation": "Mehrere Weibchen legen in eine gemeinsame Bodenmulde; ein dominantes Paar übernimmt den Hauptteil des Brütens.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian National Zoo: Ostrich",
+          "url": "https://www.nationalzoo.si.edu/animals/ostrich"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-111",
+    "card_type": "curiosity",
+    "prompt": "Welche Säugetiere beherrschen als einzige echten aktiven Flug?",
+    "answer": "Fledermäuse.",
+    "explanation": "Fledermäuse; andere sogenannte fliegende Säuger gleiten lediglich.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian: Bat facts",
+          "url": "https://www.si.edu/spotlight/bats/batfacts"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-112",
+    "card_type": "curiosity",
+    "prompt": "Welche geistige Leistung zeigt ein Pazifischer Riesenkrake im Aquarium?",
+    "answer": "Er kann Gläser öffnen, Aufgaben lösen und Pflegende wiedererkennen.",
+    "explanation": "Er kann Gläser öffnen, Aufgaben lösen und Pflegende wiedererkennen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Monterey Bay Aquarium: Giant Pacific octopus",
+          "url": "https://www.montereybayaquarium.org/animals/animals-a-to-z/giant-pacific-octopus"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-113",
+    "card_type": "curiosity",
+    "prompt": "Was ließ Richard James fallen, bevor daraus der Slinky wurde?",
+    "answer": "Eine Schraubenfeder für ein Gerät, das Schiffsausrüstung stabilisieren sollte.",
+    "explanation": "Eine Schraubenfeder für ein Gerät, das Schiffsausrüstung stabilisieren sollte; sie „lief“ über den Boden.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian: Accidental Invention of the Slinky",
+          "url": "https://www.smithsonianmag.com/innovation/accidental-invention-slinky-180973016/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-114",
+    "card_type": "curiosity",
+    "prompt": "Welches Ärgernis brachte Josephine Cochrane zur Entwicklung einer brauchbaren Geschirrspülmaschine?",
+    "answer": "Beim Spülen von Hand wurde ihr feines Geschirr angeschlagen.",
+    "explanation": "Beim Spülen von Hand wurde ihr feines Geschirr angeschlagen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "USPTO: Giving thanks to our inventors",
+          "url": "https://www.uspto.gov/blog/giving-thanks-our-inventors"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-115",
+    "card_type": "curiosity",
+    "prompt": "Was mussten Straßenbahnfahrer tun, bevor Mary Andersons Scheibenwischer half?",
+    "answer": "Bei schlechtem Wetter aus dem Seitenfenster lehnen, um sehen zu können.",
+    "explanation": "Bei schlechtem Wetter aus dem Seitenfenster lehnen, um sehen zu können.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "USPTO: Let’s start creating",
+          "url": "https://www.uspto.gov/kids/lets-start-creating"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-116",
+    "card_type": "curiosity",
+    "prompt": "Womit sollten frühe Konservendosen laut Hersteller geöffnet werden?",
+    "answer": "Mit Hammer und Meißel.",
+    "explanation": "Mit Hammer und Meißel; der Dosenöffner kam erst Jahrzehnte später.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian: Why the Can Opener Came Later",
+          "url": "https://www.smithsonianmag.com/smart-news/why-can-opener-wasnt-invented-until-almost-50-years-after-can-180964590/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-117",
+    "card_type": "curiosity",
+    "prompt": "Womit öffnete Ermal Fraze bei einem Picknick eine Dose, bevor er den Aufreißdeckel entwickelte?",
+    "answer": "Mit der Heckflosse seines Autos, weil der Öffner fehlte.",
+    "explanation": "Mit der Heckflosse seines Autos, weil der Öffner fehlte.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian: How Popping Open a Can Became the Sound of Summer",
+          "url": "https://www.smithsonianmag.com/innovation/how-popping-open-a-can-became-the-sound-of-summer-180982527/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-118",
+    "card_type": "curiosity",
+    "prompt": "Woraus bestand die improvisierte erste hitzefeste Pyrex-Backform?",
+    "answer": "Aus dem abgesägten Boden eines Batteriegefäßes.",
+    "explanation": "Aus dem abgesägten Boden eines Batteriegefäßes; darin wurde erfolgreich Kuchen gebacken.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian: How Pyrex Reinvented Glass",
+          "url": "https://www.smithsonianmag.com/innovation/how-pyrex-reinvented-glass-new-age-180955513/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-119",
+    "card_type": "curiosity",
+    "prompt": "Welches Bedienproblem löste Alfred Cralles Eisportionierer?",
+    "answer": "Eis ließ sich zuvor oft nur mit zwei Händen und mehreren Werkzeugen ausgeben.",
+    "explanation": "Eis ließ sich zuvor oft nur mit zwei Händen und mehreren Werkzeugen ausgeben.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "USPTO: Giving thanks to our inventors",
+          "url": "https://www.uspto.gov/blog/giving-thanks-our-inventors"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-120",
+    "card_type": "curiosity",
+    "prompt": "Welcher Artikel wurde 1974 als erster mit einem UPC an einer Supermarktkasse gescannt?",
+    "answer": "Eine Packung Wrigley’s Juicy Fruit Kaugummi.",
+    "explanation": "Eine Packung Wrigley’s Juicy Fruit Kaugummi.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian: UPC barcode history",
+          "url": "https://www.smithsonianmag.com/innovation/history-bar-code-180956704/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-121",
+    "card_type": "curiosity",
+    "prompt": "Woraus fertigte Laënnec den Vorläufer des Stethoskops?",
+    "answer": "Aus eng gerolltem Papier, bevor daraus ein hölzernes Rohr wurde.",
+    "explanation": "Aus eng gerolltem Papier, bevor daraus ein hölzernes Rohr wurde.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "NCBI Bookshelf: Origins of the physical examination",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK458/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-122",
+    "card_type": "curiosity",
+    "prompt": "Welches Tier war das einzige Todesopfer des britisch-amerikanischen „Schweinekriegs“?",
+    "answer": "Ein Schwein, dessen Erschießung 1859 einen militärischen Grenzkonflikt auslöste.",
+    "explanation": "Ein Schwein, dessen Erschießung 1859 einen militärischen Grenzkonflikt auslöste.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "U.S. National Park Service: The Pig War",
+          "url": "https://www.nps.gov/sajh/learn/historyculture/the-pig-war.htm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-123",
+    "card_type": "curiosity",
+    "prompt": "Woher bekam der „Pork and Beans War“ seinen Namen?",
+    "answer": "Grenzsoldaten und bewaffnete Holzfäller lebten an der Front weitgehend von Schweinefleisch und Bohnen.",
+    "explanation": "Grenzsoldaten und bewaffnete Holzfäller lebten an der Front weitgehend von Schweinefleisch und Bohnen; der Konflikt blieb unblutig.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "U.S. National Park Service: Pork and Beans War",
+          "url": "https://www.nps.gov/places/the-pork-and-beans-war.htm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-124",
+    "card_type": "curiosity",
+    "prompt": "Womit ließ die US-„Ghost Army“ im Zweiten Weltkrieg nicht vorhandene Panzerverbände erscheinen?",
+    "answer": "Mit aufblasbaren Fahrzeugen, falschem Funk, Imitationen und Geräuschen.",
+    "explanation": "Mit aufblasbaren Fahrzeugen, falschem Funk, Imitationen und Geräuschen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "U.S. Army: Ghost Army deception tactics",
+          "url": "https://www.army.mil/article/247350/fort_leonard_wood_examines_wwii_ghost_army_deception_tactics"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-125",
+    "card_type": "curiosity",
+    "prompt": "Was spielten Tonwagen der Ghost Army über große Lautsprecher ab?",
+    "answer": "Aufnahmen von Panzermotoren, Truppenbewegungen und Bauarbeiten, um Phantomverbände hörbar zu machen.",
+    "explanation": "Aufnahmen von Panzermotoren, Truppenbewegungen und Bauarbeiten, um Phantomverbände hörbar zu machen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "U.S. Army: Sonic deception training",
+          "url": "https://www.army.mil/article-amp/240486/fort_drum_exhibit_to_highlight_sonic_deception_training_at_pine_camp_during_wwii"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-126",
+    "card_type": "curiosity",
+    "prompt": "Womit wurde Marathonläufer Thomas Hicks 1904 während des Rennens behandelt?",
+    "answer": "Mit kleinen Dosen Strychnin, Brandy und Eiweiß.",
+    "explanation": "Mit kleinen Dosen Strychnin, Brandy und Eiweiß; damals gab es dafür noch kein Verbot.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Olympic Studies Centre: IOC and anti-doping",
+          "url": "https://library.olympics.com/default/digitalCollection/DigitalCollectionAttachmentDownloadHandler.ashx?documentId=174911&parentDocumentId=174910&skipCopyright=true&skipWatermark=true"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-127",
+    "card_type": "curiosity",
+    "prompt": "Womit tränkte man 1858 Vorhänge des britischen Parlaments gegen den „Great Stink“?",
+    "answer": "Mit Chlorkalk.",
+    "explanation": "Mit Chlorkalk; der Gestank der Themse beschleunigte den Bau eines neuen Abwassersystems.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "London Museum: The Great Stink",
+          "url": "https://www.londonmuseum.org.uk/collections/london-stories/great-stink-of-1858/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-128",
+    "card_type": "curiosity",
+    "prompt": "Worauf trat Samuel Pepys 1660 beim Öffnen seiner Kellertür?",
+    "answer": "Auf übergelaufene Fäkalien aus der benachbarten Toilette.",
+    "explanation": "Auf übergelaufene Fäkalien aus der benachbarten Toilette.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "London Museum: Early modern sewage problems",
+          "url": "https://www.londonmuseum.org.uk/collections/london-stories/early-modern-londons-sewage-problems/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-129",
+    "card_type": "curiosity",
+    "prompt": "Wie versuchte Fred Lorz beim olympischen Marathon 1904 die Strecke abzukürzen?",
+    "answer": "Er fuhr einen großen Teil im Auto und lief erst nach einer Panne weiter.",
+    "explanation": "Er fuhr einen großen Teil im Auto und lief erst nach einer Panne weiter.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Olympic Studies Centre: Historical Archives",
+          "url": "https://library.olympics.com/Default/basicfilesdownload.ashx?itemGuid=2ECE9BE9-EA5F-4F0F-97DF-84C75B6BC60A"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-130",
+    "card_type": "curiosity",
+    "prompt": "Wodurch „dröhnt“ eine singende Sanddüne?",
+    "answer": "Beim Lawinenrutschen scheren ähnlich große Sandkörner aneinander und erzeugen einen tiefen Ton.",
+    "explanation": "Beim Lawinenrutschen scheren ähnlich große Sandkörner aneinander und erzeugen einen tiefen Ton.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "U.S. Geological Survey: Booming dunes",
+          "url": "https://pubs.usgs.gov/of/1998/0131a/report.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-131",
+    "card_type": "curiosity",
+    "prompt": "Welche roten, quallenartigen Lichtgestalten können über Gewittern erscheinen?",
+    "answer": "Sprites, sehr kurze elektrische Entladungen hoch oberhalb der Wolken.",
+    "explanation": "Sprites, sehr kurze elektrische Entladungen hoch oberhalb der Wolken.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "NOAA National Severe Storms Laboratory: Lightning types",
+          "url": "https://www.nssl.noaa.gov/education/svrwx101/lightning/types/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-132",
+    "card_type": "curiosity",
+    "prompt": "Was sind „Frostblumen“ auf jungem Meereis?",
+    "answer": "Eiskristalle, die entstehen, wenn Wasserdampf direkt fest wird und sich auf dem Eis absetzt.",
+    "explanation": "Eiskristalle, die entstehen, wenn Wasserdampf direkt fest wird und sich auf dem Eis absetzt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "National Snow and Ice Data Center: Frost flowers",
+          "url": "https://nsidc.org/learn/cryosphere-glossary/frost-flowers"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-133",
+    "card_type": "curiosity",
+    "prompt": "Welches Wetterphänomen wird häufig für UFO-Sichtungen gehalten?",
+    "answer": "Linsenwolken, die in stehenden Luftwellen hinter Bergen entstehen.",
+    "explanation": "Linsenwolken, die in stehenden Luftwellen hinter Bergen entstehen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Met Office: Unusual cloud formations",
+          "url": "https://weather.metoffice.gov.uk/learn-about/weather/types-of-weather/clouds/unusual-cloud-formations"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-134",
+    "card_type": "curiosity",
+    "prompt": "Wie entsteht ein Regenbogen bei Nacht?",
+    "answer": "Mondlicht wird in Wassertropfen gebrochen und reflektiert.",
+    "explanation": "Mondlicht wird in Wassertropfen gebrochen und reflektiert; für das Auge wirkt der seltene Mondbogen meist weiß.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Met Office: Rainbows",
+          "url": "https://weather.metoffice.gov.uk/learn-about/weather/optical-effects/rainbows"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-135",
+    "card_type": "curiosity",
+    "prompt": "Welche Form hat ein Regenbogen vollständig, wenn Boden und Horizont ihn nicht verdecken?",
+    "answer": "Einen ganzen Kreis, der etwa von Flugzeugen oder hohen Standpunkten sichtbar werden kann.",
+    "explanation": "Einen ganzen Kreis, der etwa von Flugzeugen oder hohen Standpunkten sichtbar werden kann.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Met Office: Rainbows",
+          "url": "https://weather.metoffice.gov.uk/learn-about/weather/optical-effects/rainbows"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-136",
+    "card_type": "curiosity",
+    "prompt": "Warum wirkt ein Nebelbogen fast weiß?",
+    "answer": "Sehr kleine Tröpfchen beugen und verwischen die Farben stärker als Regentropfen.",
+    "explanation": "Sehr kleine Tröpfchen beugen und verwischen die Farben stärker als Regentropfen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Met Office: Rainbows",
+          "url": "https://weather.metoffice.gov.uk/learn-about/weather/optical-effects/rainbows"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-137",
+    "card_type": "curiosity",
+    "prompt": "Wo kann außer in Gewitterwolken noch Blitzentladung auftreten?",
+    "answer": "Unter anderem in Vulkanasche, extremen Feuerwolken und starken Schneestürmen.",
+    "explanation": "Unter anderem in Vulkanasche, extremen Feuerwolken und starken Schneestürmen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "NOAA NSSL: Lightning FAQ",
+          "url": "https://www.nssl.noaa.gov/education/svrwx101/lightning/faq/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-138",
+    "card_type": "curiosity",
+    "prompt": "Warum kann eine Schiffsmastspitze im Sturm blau oder violett leuchten?",
+    "answer": "Ein starkes elektrisches Feld regt die Luft an.",
+    "explanation": "Ein starkes elektrisches Feld regt die Luft an; das Korona-Leuchten heißt Elmsfeuer.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "NOAA Ocean Service: Weird ocean weather",
+          "url": "https://oceanservice.noaa.gov/ocean/weird-ocean-weather.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-139",
+    "card_type": "curiosity",
+    "prompt": "Was kann in großer Kälte einen explosionsartigen Knall im Boden erzeugen?",
+    "answer": "Gefrierendes Grundwasser dehnt sich aus und lässt Boden oder Gestein bei einem Frostbeben reißen.",
+    "explanation": "Gefrierendes Grundwasser dehnt sich aus und lässt Boden oder Gestein bei einem Frostbeben reißen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "U.S. Geological Survey: Earthquake booms",
+          "url": "https://www.usgs.gov/programs/earthquake-hazards/earthquake-booms-seneca-guns-and-other-sounds"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-140",
+    "card_type": "curiosity",
+    "prompt": "Was ist der scheinbar kopfstehende Regenbogen hoch am Himmel?",
+    "answer": "Ein Zirkumzenitalbogen, der durch Brechung an waagerechten Eiskristallen entsteht.",
+    "explanation": "Ein Zirkumzenitalbogen, der durch Brechung an waagerechten Eiskristallen entsteht.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Met Office: Optical effects",
+          "url": "https://weather.metoffice.gov.uk/learn-about/weather/optical-effects"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-141",
+    "card_type": "curiosity",
+    "prompt": "Warum kann die Sonne beim Untergang für einen Moment grün aufblitzen?",
+    "answer": "Atmosphärische Brechung zerlegt die letzten sichtbaren Sonnenstrahlen.",
+    "explanation": "Atmosphärische Brechung zerlegt die letzten sichtbaren Sonnenstrahlen; unter passenden Bedingungen erreicht vor allem grünes Licht das Auge.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "NOAA Coast Pilot: Green flash",
+          "url": "https://www.nauticalcharts.noaa.gov/publications/coast-pilot/files/cp8/CPB8_WEB.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-142",
+    "card_type": "curiosity",
+    "prompt": "Was lässt manche Meereswellen nachts blau aufleuchten?",
+    "answer": "Bestimmte Dinoflagellaten reagieren auf Wellen und andere Bewegung im Wasser mit Biolumineszenz.",
+    "explanation": "Bestimmte Dinoflagellaten reagieren auf Wellen und andere Bewegung im Wasser mit Biolumineszenz.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Scripps Institution of Oceanography: Red tides and bioluminescence",
+          "url": "https://scripps.ucsd.edu/news/red-tides-and-bioluminescence"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-143",
+    "card_type": "curiosity",
+    "prompt": "Wie kann auf dem Meeresboden ein See im Meer entstehen?",
+    "answer": "Sehr salzige, dichte Lake sinkt ab und sammelt sich in Vertiefungen zu einer abgegrenzten Solelache.",
+    "explanation": "Sehr salzige, dichte Lake sinkt ab und sammelt sich in Vertiefungen zu einer abgegrenzten Solelache.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "NOAA Ocean Exploration: Brine Pool",
+          "url": "https://oceanexplorer.noaa.gov/multimedia/daily-image-media-20200917/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-144",
+    "card_type": "curiosity",
+    "prompt": "Womit schrieb Toni Morrison ihre ersten Fassungen bevorzugt?",
+    "answer": "Mit einem Bleistift auf gelben Schreibblöcken.",
+    "explanation": "Mit einem Bleistift auf gelben Schreibblöcken; erst später übertrug und überarbeitete sie am Computer.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "The Paris Review: Toni Morrison",
+          "url": "https://www.theparisreview.org/interviews/1888/the-art-of-fiction-no-134-toni-morrison"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-145",
+    "card_type": "curiosity",
+    "prompt": "Wie setzte Stephen King sein tägliches Schreibpensum im späteren Interview an?",
+    "answer": "Bei etwa tausend Wörtern beziehungsweise vier Seiten pro Tag.",
+    "explanation": "Bei etwa tausend Wörtern beziehungsweise vier Seiten pro Tag.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "The Paris Review: Stephen King",
+          "url": "https://www.theparisreview.org/interviews/5653/the-art-of-fiction-no-189-stephen-king"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-146",
+    "card_type": "curiosity",
+    "prompt": "Was verlangte José Saramago an Arbeitstagen von sich?",
+    "answer": "Gewöhnlich zwei fertige Seiten.",
+    "explanation": "Gewöhnlich zwei fertige Seiten; über ein Jahr summiere sich das auf fast 800.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "The Paris Review: José Saramago",
+          "url": "https://www.theparisreview.org/interviews/1032/the-art-of-fiction-no-155-jose-saramago"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-147",
+    "card_type": "curiosity",
+    "prompt": "Welche Pause nannte William Gibson wesentlich für seinen Schreibprozess?",
+    "answer": "Ein Nickerchen.",
+    "explanation": "Ein Nickerchen; besonders wichtig sei der Zustand direkt beim Erwachen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "The Paris Review: William Gibson",
+          "url": "https://preview.theparisreview.org/interviews/6089/the-art-of-fiction-no-211-william-gibson"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-148",
+    "card_type": "curiosity",
+    "prompt": "Wie korrigierte Christopher Isherwood früher Tippfehler ohne Korrekturmittel?",
+    "answer": "Er kratzte Wörter mit einer Rasierklinge ab, glättete das Papier mit dem Daumennagel und schrieb neu.",
+    "explanation": "Er kratzte Wörter mit einer Rasierklinge ab, glättete das Papier mit dem Daumennagel und schrieb neu.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "The Paris Review: Christopher Isherwood",
+          "url": "https://www.theparisreview.org/interviews/3971/the-art-of-fiction-no-49-christopher-isherwood"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-149",
+    "card_type": "curiosity",
+    "prompt": "Wie änderte sich John Irvings tägliche Schreibdauer im Verlauf eines Romans?",
+    "answer": "Anfang und Ende verlangten zwei bis drei Stunden.",
+    "explanation": "Anfang und Ende verlangten zwei bis drei Stunden; in der Mitte arbeitete er teils acht bis zwölf Stunden täglich.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "The Paris Review: John Irving",
+          "url": "https://www.theparisreview.org/interviews/2757/the-art-of-fiction-no-93-john-irving"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-150",
+    "card_type": "curiosity",
+    "prompt": "Womit begann Robert Stone gewöhnlich sehr früh seinen Schreibtag?",
+    "answer": "Mit einer ganzen Kanne Tee, danach schrieb er so lange wie möglich.",
+    "explanation": "Mit einer ganzen Kanne Tee, danach schrieb er so lange wie möglich.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "The Paris Review: Robert Stone",
+          "url": "https://www.theparisreview.org/interviews/2845/the-art-of-fiction-no-90-robert-stone"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-151",
+    "card_type": "curiosity",
+    "prompt": "Wo überarbeitete Stephen King zeitweise Manuskripte zwischen einzelnen Spielabschnitten?",
+    "answer": "Im Baseballstadion Fenway Park zwischen Innings und Pitcherwechseln.",
+    "explanation": "Im Baseballstadion Fenway Park zwischen Innings und Pitcherwechseln.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "The Paris Review: Stephen King",
+          "url": "https://www.theparisreview.org/interviews/5653/the-art-of-fiction-no-189-stephen-king"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-152",
+    "card_type": "curiosity",
+    "prompt": "Welche Vornamen darf Neuseelands Register ohne ausreichende Begründung ablehnen?",
+    "answer": "Namen, die einem amtlichen Titel oder Rang entsprechen oder ähneln.",
+    "explanation": "Namen, die einem amtlichen Titel oder Rang entsprechen oder ähneln.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "New Zealand Legislation: Registration Act, Section 18",
+          "url": "https://www.legislation.govt.nz/act/public/2021/57/en/latest/sections/DLM7273643/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-153",
+    "card_type": "curiosity",
+    "prompt": "Welches anderswo gewöhnliche Haustier ist in Queensland grundsätzlich verboten?",
+    "answer": "Das Kaninchen, weil es dort als invasiver Schädling gilt.",
+    "explanation": "Das Kaninchen, weil es dort als invasiver Schädling gilt.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Queensland Government: Exotic pets",
+          "url": "https://www.qld.gov.au/family/family-and-parents/government/pets/keeping-exotic-animals-as-pets-in-queensland"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-154",
+    "card_type": "curiosity",
+    "prompt": "Was gilt in Ontario trotz einer Entschuldigung zivilrechtlich nicht automatisch als zugegeben?",
+    "answer": "Schuld oder Haftung.",
+    "explanation": "Schuld oder Haftung; Entschuldigungen sind dafür grundsätzlich auch nicht als Beweis zulässig.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Ontario Apology Act 2009",
+          "url": "https://www.ontario.ca/laws/statute/09a03?search=apology"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-155",
+    "card_type": "curiosity",
+    "prompt": "Welche Kartoffeln definierte eine britische Verordnung eigens nach Herkunft und Anbaujahr?",
+    "answer": "„Polish potatoes“, also in Polen 2003 oder später angebaute Kartoffeln, wegen Pflanzenschutzauflagen.",
+    "explanation": "„Polish potatoes“, also in Polen 2003 oder später angebaute Kartoffeln, wegen Pflanzenschutzauflagen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "UK legislation: Polish Potatoes Order 2004",
+          "url": "https://www.legislation.gov.uk/uksi/2004/1452/pdfs/uksi_20041452_en.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-156",
+    "card_type": "curiosity",
+    "prompt": "Welche berühmte Behauptung über die Chinesische Mauer widerlegt die NASA?",
+    "answer": "Sie ist nicht mit bloßem Auge vom Mond sichtbar und selbst aus niedriger Erdumlaufbahn schwer zu erkennen.",
+    "explanation": "Sie ist nicht mit bloßem Auge vom Mond sichtbar und selbst aus niedriger Erdumlaufbahn schwer zu erkennen.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "NASA: Great Wall",
+          "url": "https://www.nasa.gov/image-article/great-wall/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-157",
+    "card_type": "curiosity",
+    "prompt": "Was stimmt an „Ein Blitz schlägt nie zweimal an derselben Stelle ein“ nicht?",
+    "answer": "Blitze treffen denselben Ort durchaus wiederholt, besonders hohe isolierte Objekte.",
+    "explanation": "Blitze treffen denselben Ort durchaus wiederholt, besonders hohe isolierte Objekte.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "NOAA: Lightning facts versus myths",
+          "url": "https://www.noaa.gov/stories/5-striking-facts-versus-myths-about-lightning-you-should-know"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-158",
+    "card_type": "curiosity",
+    "prompt": "Was stimmt an der Redensart „blind wie eine Fledermaus“ nicht?",
+    "answer": "Alle Fledermäuse können sehen, auch wenn andere Sinne oft wichtiger sind.",
+    "explanation": "Alle Fledermäuse können sehen, auch wenn andere Sinne oft wichtiger sind.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian: Bat facts",
+          "url": "https://www.si.edu/spotlight/bats/batfacts"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-159",
+    "card_type": "curiosity",
+    "prompt": "Welches echte Verhalten dürfte die Legende vom kopfvergrabenden Strauß erzeugt haben?",
+    "answer": "Strauße senken beim Wenden ihrer Eier den Kopf tief zum Bodennest.",
+    "explanation": "Strauße senken beim Wenden ihrer Eier den Kopf tief zum Bodennest.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Smithsonian National Zoo: Ostrich",
+          "url": "https://www.nationalzoo.si.edu/animals/ostrich"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssp-kuriositaet-160",
+    "card_type": "curiosity",
+    "prompt": "Welcher langlebige Neuromythos behauptet, der Mensch nutze nur einen kleinen Gehirnanteil?",
+    "answer": "Der „Wir nutzen nur zehn Prozent“-Mythos.",
+    "explanation": "Der „Wir nutzen nur zehn Prozent“-Mythos; Hirnbildgebung und Neurologie widersprechen ihm.",
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-21",
+      "references": [
+        {
+          "title": "Systematic review of neuromyths",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7835631/"
+        }
+      ]
+    }
+  }
+]

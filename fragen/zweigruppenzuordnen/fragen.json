@@ -1,1 +1,3174 @@
-[]
+[
+  {
+    "id": "bs151",
+    "question_type": "binary_sort",
+    "primary_category": "human_everyday",
+    "subtopic": "Käse und Ortsnamen",
+    "tags": {
+      "topics": [
+        "Käse und Ortsnamen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "Gemeinde Banon: Dorf und Käse",
+          "url": "https://banon.fr/village-de-banon/"
+        },
+        {
+          "title": "Gemeinde Chaource: Ort und AOP-Käse",
+          "url": "https://www.chaource.fr/les-atouts-de-la-commune/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:151"
+    ],
+    "prompt": "Käsesorte, Ort in Frankreich oder beides?",
+    "groups": {
+      "A": "Käsesorte",
+      "B": "Ort in Frankreich"
+    },
+    "items": [
+      "Banon",
+      "Chaource",
+      "Mimolette",
+      "Reblochon",
+      "Sisteron",
+      "Époisses",
+      "Salers"
+    ],
+    "answer": {
+      "Banon": "both",
+      "Chaource": "both",
+      "Mimolette": "A",
+      "Reblochon": "A",
+      "Sisteron": "B",
+      "Époisses": "both",
+      "Salers": "both"
+    },
+    "explanation": "Beides: Banon, Chaource, Époisses, Salers. Nur Käsesorte: Mimolette, Reblochon. Nur Ort in Frankreich: Sisteron."
+  },
+  {
+    "id": "bs152",
+    "question_type": "binary_sort",
+    "primary_category": "human_everyday",
+    "subtopic": "Kleidung mit Ortsnamen",
+    "tags": {
+      "topics": [
+        "Kleidung mit Ortsnamen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "Clothing named after places",
+          "url": "https://en.wikipedia.org/wiki/List_of_clothing_named_after_places"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:152"
+    ],
+    "prompt": "Kleidung oder Accessoire, Geografischer Ort oder beides?",
+    "groups": {
+      "A": "Kleidung oder Accessoire",
+      "B": "Geografischer Ort"
+    },
+    "items": [
+      "Jersey",
+      "Bikini",
+      "Cardigan",
+      "Balaclava",
+      "Parka",
+      "Calais",
+      "Ushuaia"
+    ],
+    "answer": {
+      "Jersey": "both",
+      "Bikini": "both",
+      "Cardigan": "both",
+      "Balaclava": "both",
+      "Parka": "A",
+      "Calais": "B",
+      "Ushuaia": "B"
+    },
+    "explanation": "Beides: Jersey, Bikini, Cardigan, Balaclava. Nur Kleidung oder Accessoire: Parka. Nur Geografischer Ort: Calais, Ushuaia."
+  },
+  {
+    "id": "bs153",
+    "question_type": "binary_sort",
+    "primary_category": "human_everyday",
+    "subtopic": "Cocktails und US-Städte",
+    "tags": {
+      "topics": [
+        "Cocktails und US-Städte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "International Bartenders Association: Cocktails",
+          "url": "https://iba-world.com/cocktails/all-cocktails/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:153"
+    ],
+    "prompt": "Cocktail, Stadt in den USA oder beides?",
+    "groups": {
+      "A": "Cocktail",
+      "B": "Stadt in den USA"
+    },
+    "items": [
+      "Manhattan",
+      "Bronx",
+      "Chicago",
+      "Negroni",
+      "Daiquiri",
+      "Seattle",
+      "Philadelphia"
+    ],
+    "answer": {
+      "Manhattan": "both",
+      "Bronx": "both",
+      "Chicago": "both",
+      "Negroni": "A",
+      "Daiquiri": "A",
+      "Seattle": "B",
+      "Philadelphia": "B"
+    },
+    "explanation": "Beides: Manhattan, Bronx, Chicago. Nur Cocktail: Negroni, Daiquiri. Nur Stadt in den USA: Seattle, Philadelphia."
+  },
+  {
+    "id": "bs154",
+    "question_type": "binary_sort",
+    "primary_category": "human_everyday",
+    "subtopic": "Italienische Käse und Orte",
+    "tags": {
+      "topics": [
+        "Italienische Käse und Orte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "EU-Register für geografische Angaben",
+          "url": "https://ec.europa.eu/agriculture/eambrosia/geographical-indications-register/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:154"
+    ],
+    "prompt": "Italienischer Käse, Ort in Italien oder beides?",
+    "groups": {
+      "A": "Italienischer Käse",
+      "B": "Ort in Italien"
+    },
+    "items": [
+      "Asiago",
+      "Gorgonzola",
+      "Taleggio",
+      "Fontina",
+      "Burrata",
+      "Verona",
+      "Matera"
+    ],
+    "answer": {
+      "Asiago": "both",
+      "Gorgonzola": "both",
+      "Taleggio": "both",
+      "Fontina": "A",
+      "Burrata": "A",
+      "Verona": "B",
+      "Matera": "B"
+    },
+    "explanation": "Beides: Asiago, Gorgonzola, Taleggio. Nur Italienischer Käse: Fontina, Burrata. Nur Ort in Italien: Verona, Matera."
+  },
+  {
+    "id": "bs155",
+    "question_type": "binary_sort",
+    "primary_category": "human_everyday",
+    "subtopic": "Marken und Geografie",
+    "tags": {
+      "topics": [
+        "Marken und Geografie"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "WIPO Global Brand Database",
+          "url": "https://branddb.wipo.int/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:155"
+    ],
+    "prompt": "Konsumgütermarke, Geografischer Name oder beides?",
+    "groups": {
+      "A": "Konsumgütermarke",
+      "B": "Geografischer Name"
+    },
+    "items": [
+      "Amazon",
+      "Patagonia",
+      "Fiji",
+      "Apple",
+      "Dove",
+      "Nile",
+      "Sahara"
+    ],
+    "answer": {
+      "Amazon": "both",
+      "Patagonia": "both",
+      "Fiji": "both",
+      "Apple": "A",
+      "Dove": "A",
+      "Nile": "B",
+      "Sahara": "B"
+    },
+    "explanation": "Beides: Amazon, Patagonia, Fiji. Nur Konsumgütermarke: Apple, Dove. Nur Geografischer Name: Nile, Sahara."
+  },
+  {
+    "id": "bs156",
+    "question_type": "binary_sort",
+    "primary_category": "human_everyday",
+    "subtopic": "Monate und Vornamen",
+    "tags": {
+      "topics": [
+        "Monate und Vornamen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "US Social Security: Vornamendaten",
+          "url": "https://www.ssa.gov/oact/babynames/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:156"
+    ],
+    "prompt": "Englischer Monatsname, Vorname oder beides?",
+    "groups": {
+      "A": "Englischer Monatsname",
+      "B": "Vorname"
+    },
+    "items": [
+      "April",
+      "May",
+      "June",
+      "August",
+      "October",
+      "Maria",
+      "Kevin"
+    ],
+    "answer": {
+      "April": "both",
+      "May": "both",
+      "June": "both",
+      "August": "both",
+      "October": "A",
+      "Maria": "B",
+      "Kevin": "B"
+    },
+    "explanation": "Beides: April, May, June, August. Nur Englischer Monatsname: October. Nur Vorname: Maria, Kevin."
+  },
+  {
+    "id": "bs157",
+    "question_type": "binary_sort",
+    "primary_category": "gaming",
+    "subtopic": "Hades und griechische Mythologie",
+    "tags": {
+      "topics": [
+        "Hades und griechische Mythologie"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "Supergiant Games: Hades",
+          "url": "https://www.supergiantgames.com/games/hades/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:157"
+    ],
+    "prompt": "Figur aus dem Spiel Hades, Mythologische Gestalt oder beides?",
+    "groups": {
+      "A": "Figur aus dem Spiel Hades",
+      "B": "Mythologische Gestalt"
+    },
+    "items": [
+      "Zagreus",
+      "Hades",
+      "Nyx",
+      "Thanatos",
+      "Skelly",
+      "Achilles",
+      "Odysseus"
+    ],
+    "answer": {
+      "Zagreus": "both",
+      "Hades": "both",
+      "Nyx": "both",
+      "Thanatos": "both",
+      "Skelly": "A",
+      "Achilles": "both",
+      "Odysseus": "B"
+    },
+    "explanation": "Beides: Zagreus, Hades, Nyx, Thanatos, Achilles. Nur Figur aus dem Spiel Hades: Skelly. Nur Mythologische Gestalt: Odysseus."
+  },
+  {
+    "id": "bs158",
+    "question_type": "binary_sort",
+    "primary_category": "gaming",
+    "subtopic": "Pokémon und englische Wörter",
+    "tags": {
+      "topics": [
+        "Pokémon und englische Wörter"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "The Pokémon Company: Pokédex",
+          "url": "https://www.pokemon.com/us/pokedex"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:158"
+    ],
+    "prompt": "Pokémon, Englisches Wort oder beides?",
+    "groups": {
+      "A": "Pokémon",
+      "B": "Englisches Wort"
+    },
+    "items": [
+      "Ditto",
+      "Persian",
+      "Mew",
+      "Slowpoke",
+      "Electrode",
+      "Pikachu",
+      "Umbrella"
+    ],
+    "answer": {
+      "Ditto": "both",
+      "Persian": "both",
+      "Mew": "both",
+      "Slowpoke": "both",
+      "Electrode": "both",
+      "Pikachu": "A",
+      "Umbrella": "B"
+    },
+    "explanation": "Beides: Ditto, Persian, Mew, Slowpoke, Electrode. Nur Pokémon: Pikachu. Nur Englisches Wort: Umbrella."
+  },
+  {
+    "id": "bs159",
+    "question_type": "binary_sort",
+    "primary_category": "gaming",
+    "subtopic": "Minecraft und Elemente",
+    "tags": {
+      "topics": [
+        "Minecraft und Elemente"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "Minecraft: Block-Enzyklopädie",
+          "url": "https://www.minecraft.net/en-us/article/around-block"
+        },
+        {
+          "title": "IUPAC: Periodensystem",
+          "url": "https://iupac.org/what-we-do/periodic-table-of-elements/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:159"
+    ],
+    "prompt": "Material in Minecraft, Chemisches Element oder beides?",
+    "groups": {
+      "A": "Material in Minecraft",
+      "B": "Chemisches Element"
+    },
+    "items": [
+      "Gold",
+      "Iron",
+      "Copper",
+      "Coal",
+      "Redstone",
+      "Neon",
+      "Argon"
+    ],
+    "answer": {
+      "Gold": "both",
+      "Iron": "both",
+      "Copper": "both",
+      "Coal": "A",
+      "Redstone": "A",
+      "Neon": "B",
+      "Argon": "B"
+    },
+    "explanation": "Beides: Gold, Iron, Copper. Nur Material in Minecraft: Coal, Redstone. Nur Chemisches Element: Neon, Argon."
+  },
+  {
+    "id": "bs160",
+    "question_type": "binary_sort",
+    "primary_category": "gaming",
+    "subtopic": "Mario und englische Wörter",
+    "tags": {
+      "topics": [
+        "Mario und englische Wörter"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "Nintendo: Super Mario Figuren",
+          "url": "https://mario.nintendo.com/characters/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:160"
+    ],
+    "prompt": "Figur aus Super Mario, Englisches Wort oder beides?",
+    "groups": {
+      "A": "Figur aus Super Mario",
+      "B": "Englisches Wort"
+    },
+    "items": [
+      "Peach",
+      "Daisy",
+      "Toad",
+      "Bowser",
+      "Yoshi",
+      "Goomba",
+      "Lantern"
+    ],
+    "answer": {
+      "Peach": "both",
+      "Daisy": "both",
+      "Toad": "both",
+      "Bowser": "both",
+      "Yoshi": "A",
+      "Goomba": "A",
+      "Lantern": "B"
+    },
+    "explanation": "Beides: Peach, Daisy, Toad, Bowser. Nur Figur aus Super Mario: Yoshi, Goomba. Nur Englisches Wort: Lantern."
+  },
+  {
+    "id": "bs161",
+    "question_type": "binary_sort",
+    "primary_category": "gaming",
+    "subtopic": "Spielestudios und Wörter",
+    "tags": {
+      "topics": [
+        "Spielestudios und Wörter"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "International Game Developers Association",
+          "url": "https://igda.org/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:161"
+    ],
+    "prompt": "Spielestudio, Englisches Wort oder beides?",
+    "groups": {
+      "A": "Spielestudio",
+      "B": "Englisches Wort"
+    },
+    "items": [
+      "Blizzard",
+      "Valve",
+      "Remedy",
+      "Gearbox",
+      "Ubisoft",
+      "Bungie",
+      "Thunder"
+    ],
+    "answer": {
+      "Blizzard": "both",
+      "Valve": "both",
+      "Remedy": "both",
+      "Gearbox": "both",
+      "Ubisoft": "A",
+      "Bungie": "A",
+      "Thunder": "B"
+    },
+    "explanation": "Beides: Blizzard, Valve, Remedy, Gearbox. Nur Spielestudio: Ubisoft, Bungie. Nur Englisches Wort: Thunder."
+  },
+  {
+    "id": "bs162",
+    "question_type": "binary_sort",
+    "primary_category": "gaming",
+    "subtopic": "Zelda und englische Wörter",
+    "tags": {
+      "topics": [
+        "Zelda und englische Wörter"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "Nintendo: The Legend of Zelda",
+          "url": "https://www.nintendo.com/us/zelda/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:162"
+    ],
+    "prompt": "Figur oder Rolle aus Zelda, Englisches Wort oder beides?",
+    "groups": {
+      "A": "Figur oder Rolle aus Zelda",
+      "B": "Englisches Wort"
+    },
+    "items": [
+      "Link",
+      "Guardian",
+      "Champion",
+      "Sage",
+      "Midna",
+      "Impa",
+      "Lantern"
+    ],
+    "answer": {
+      "Link": "both",
+      "Guardian": "both",
+      "Champion": "both",
+      "Sage": "both",
+      "Midna": "A",
+      "Impa": "A",
+      "Lantern": "B"
+    },
+    "explanation": "Beides: Link, Guardian, Champion, Sage. Nur Figur oder Rolle aus Zelda: Midna, Impa. Nur Englisches Wort: Lantern."
+  },
+  {
+    "id": "bs169",
+    "question_type": "binary_sort",
+    "primary_category": "music",
+    "subtopic": "Bands und US-Orte",
+    "tags": {
+      "topics": [
+        "Bands und US-Orte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "Rock & Roll Hall of Fame: Inductees",
+          "url": "https://rockhall.com/inductees/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:169"
+    ],
+    "prompt": "Band, US-Ortsname oder beides?",
+    "groups": {
+      "A": "Band",
+      "B": "US-Ortsname"
+    },
+    "items": [
+      "Boston",
+      "Chicago",
+      "Kansas",
+      "Alabama",
+      "Nirvana",
+      "Metallica",
+      "Seattle"
+    ],
+    "answer": {
+      "Boston": "both",
+      "Chicago": "both",
+      "Kansas": "both",
+      "Alabama": "both",
+      "Nirvana": "A",
+      "Metallica": "A",
+      "Seattle": "B"
+    },
+    "explanation": "Beides: Boston, Chicago, Kansas, Alabama. Nur Band: Nirvana, Metallica. Nur US-Ortsname: Seattle."
+  },
+  {
+    "id": "bs170",
+    "question_type": "binary_sort",
+    "primary_category": "music",
+    "subtopic": "Bands und Lebensmittelwörter",
+    "tags": {
+      "topics": [
+        "Bands und Lebensmittelwörter"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "Rock & Roll Hall of Fame: Inductees",
+          "url": "https://rockhall.com/inductees/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:170"
+    ],
+    "prompt": "Band, Englisches Lebensmittelwort oder beides?",
+    "groups": {
+      "A": "Band",
+      "B": "Englisches Lebensmittelwort"
+    },
+    "items": [
+      "Cream",
+      "Bread",
+      "Cake",
+      "Wings",
+      "Queen",
+      "Rice",
+      "Soup"
+    ],
+    "answer": {
+      "Cream": "both",
+      "Bread": "both",
+      "Cake": "both",
+      "Wings": "both",
+      "Queen": "A",
+      "Rice": "B",
+      "Soup": "B"
+    },
+    "explanation": "Beides: Cream, Bread, Cake, Wings. Nur Band: Queen. Nur Englisches Lebensmittelwort: Rice, Soup."
+  },
+  {
+    "id": "bs171",
+    "question_type": "binary_sort",
+    "primary_category": "music",
+    "subtopic": "Komponisten und Merkurkrater",
+    "tags": {
+      "topics": [
+        "Komponisten und Merkurkrater"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "USGS: Gazetteer of Planetary Nomenclature",
+          "url": "https://planetarynames.wr.usgs.gov/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:171"
+    ],
+    "prompt": "Komponist, Merkurkrater oder beides?",
+    "groups": {
+      "A": "Komponist",
+      "B": "Merkurkrater"
+    },
+    "items": [
+      "Beethoven",
+      "Bach",
+      "Chopin",
+      "Debussy",
+      "Mozart",
+      "Hans Zimmer",
+      "Kuiper"
+    ],
+    "answer": {
+      "Beethoven": "both",
+      "Bach": "both",
+      "Chopin": "both",
+      "Debussy": "both",
+      "Mozart": "both",
+      "Hans Zimmer": "A",
+      "Kuiper": "B"
+    },
+    "explanation": "Beides: Beethoven, Bach, Chopin, Debussy, Mozart. Nur Komponist: Hans Zimmer. Nur Merkurkrater: Kuiper."
+  },
+  {
+    "id": "bs172",
+    "question_type": "binary_sort",
+    "primary_category": "music",
+    "subtopic": "Operntitel und Vornamen",
+    "tags": {
+      "topics": [
+        "Operntitel und Vornamen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "Metropolitan Opera: Archives",
+          "url": "https://www.metopera.org/discover/archives/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:172"
+    ],
+    "prompt": "Operntitel, Weiblicher Vorname oder beides?",
+    "groups": {
+      "A": "Operntitel",
+      "B": "Weiblicher Vorname"
+    },
+    "items": [
+      "Carmen",
+      "Aida",
+      "Norma",
+      "Tosca",
+      "Rigoletto",
+      "Maria",
+      "Sabine"
+    ],
+    "answer": {
+      "Carmen": "both",
+      "Aida": "both",
+      "Norma": "both",
+      "Tosca": "both",
+      "Rigoletto": "A",
+      "Maria": "B",
+      "Sabine": "B"
+    },
+    "explanation": "Beides: Carmen, Aida, Norma, Tosca. Nur Operntitel: Rigoletto. Nur Weiblicher Vorname: Maria, Sabine."
+  },
+  {
+    "id": "bs173",
+    "question_type": "binary_sort",
+    "primary_category": "music",
+    "subtopic": "Bands und Mythologie",
+    "tags": {
+      "topics": [
+        "Bands und Mythologie"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Greek mythology",
+          "url": "https://www.britannica.com/topic/Greek-mythology"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:173"
+    ],
+    "prompt": "Band, Mythologischer Begriff oder beides?",
+    "groups": {
+      "A": "Band",
+      "B": "Mythologischer Begriff"
+    },
+    "items": [
+      "Phoenix",
+      "Muse",
+      "Styx",
+      "Nirvana",
+      "ABBA",
+      "Medusa",
+      "Minotaur"
+    ],
+    "answer": {
+      "Phoenix": "both",
+      "Muse": "both",
+      "Styx": "both",
+      "Nirvana": "A",
+      "ABBA": "A",
+      "Medusa": "B",
+      "Minotaur": "B"
+    },
+    "explanation": "Beides: Phoenix, Muse, Styx. Nur Band: Nirvana, ABBA. Nur Mythologischer Begriff: Medusa, Minotaur."
+  },
+  {
+    "id": "bs174",
+    "question_type": "binary_sort",
+    "primary_category": "music",
+    "subtopic": "Taylor-Swift-Alben und Farben",
+    "tags": {
+      "topics": [
+        "Taylor-Swift-Alben und Farben"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "Taylor Swift: Albums",
+          "url": "https://www.taylorswift.com/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:174"
+    ],
+    "prompt": "Taylor-Swift-Album, Englischer Farbname oder beides?",
+    "groups": {
+      "A": "Taylor-Swift-Album",
+      "B": "Englischer Farbname"
+    },
+    "items": [
+      "Red",
+      "1989",
+      "Midnights",
+      "Lover",
+      "Blue",
+      "Magenta",
+      "Turquoise"
+    ],
+    "answer": {
+      "Red": "both",
+      "1989": "A",
+      "Midnights": "A",
+      "Lover": "A",
+      "Blue": "B",
+      "Magenta": "B",
+      "Turquoise": "B"
+    },
+    "explanation": "Beides: Red. Nur Taylor-Swift-Album: 1989, Midnights, Lover. Nur Englischer Farbname: Blue, Magenta, Turquoise."
+  },
+  {
+    "id": "bs175",
+    "question_type": "binary_sort",
+    "primary_category": "sport",
+    "subtopic": "NFL und Vögel",
+    "tags": {
+      "topics": [
+        "NFL und Vögel"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "NFL: Teams",
+          "url": "https://www.nfl.com/teams/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:175"
+    ],
+    "prompt": "NFL-Teamname, Englischer Vogelname oder beides?",
+    "groups": {
+      "A": "NFL-Teamname",
+      "B": "Englischer Vogelname"
+    },
+    "items": [
+      "Eagles",
+      "Falcons",
+      "Ravens",
+      "Cardinals",
+      "Jets",
+      "Packers",
+      "Kestrels"
+    ],
+    "answer": {
+      "Eagles": "both",
+      "Falcons": "both",
+      "Ravens": "both",
+      "Cardinals": "both",
+      "Jets": "A",
+      "Packers": "A",
+      "Kestrels": "B"
+    },
+    "explanation": "Beides: Eagles, Falcons, Ravens, Cardinals. Nur NFL-Teamname: Jets, Packers. Nur Englischer Vogelname: Kestrels."
+  },
+  {
+    "id": "bs176",
+    "question_type": "binary_sort",
+    "primary_category": "sport",
+    "subtopic": "Formel 1 und Automarken",
+    "tags": {
+      "topics": [
+        "Formel 1 und Automarken"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "Formula 1: Teams",
+          "url": "https://www.formula1.com/en/teams"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:176"
+    ],
+    "prompt": "Formel-1-Konstrukteur, Straßenautomarke oder beides?",
+    "groups": {
+      "A": "Formel-1-Konstrukteur",
+      "B": "Straßenautomarke"
+    },
+    "items": [
+      "Ferrari",
+      "Mercedes",
+      "McLaren",
+      "Aston Martin",
+      "Haas",
+      "Williams",
+      "Volvo"
+    ],
+    "answer": {
+      "Ferrari": "both",
+      "Mercedes": "both",
+      "McLaren": "both",
+      "Aston Martin": "both",
+      "Haas": "A",
+      "Williams": "A",
+      "Volvo": "B"
+    },
+    "explanation": "Beides: Ferrari, Mercedes, McLaren, Aston Martin. Nur Formel-1-Konstrukteur: Haas, Williams. Nur Straßenautomarke: Volvo."
+  },
+  {
+    "id": "bs177",
+    "question_type": "binary_sort",
+    "primary_category": "sport",
+    "subtopic": "Fußballclubs und London",
+    "tags": {
+      "topics": [
+        "Fußballclubs und London"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "The Football Association",
+          "url": "https://www.thefa.com/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:177"
+    ],
+    "prompt": "Englischer Fußballclub, Londoner Stadtteil oder beides?",
+    "groups": {
+      "A": "Englischer Fußballclub",
+      "B": "Londoner Stadtteil"
+    },
+    "items": [
+      "Chelsea",
+      "Fulham",
+      "Tottenham",
+      "Brentford",
+      "Wimbledon",
+      "Liverpool",
+      "Croydon"
+    ],
+    "answer": {
+      "Chelsea": "both",
+      "Fulham": "both",
+      "Tottenham": "both",
+      "Brentford": "both",
+      "Wimbledon": "both",
+      "Liverpool": "A",
+      "Croydon": "B"
+    },
+    "explanation": "Beides: Chelsea, Fulham, Tottenham, Brentford, Wimbledon. Nur Englischer Fußballclub: Liverpool. Nur Londoner Stadtteil: Croydon."
+  },
+  {
+    "id": "bs178",
+    "question_type": "binary_sort",
+    "primary_category": "sport",
+    "subtopic": "Olympia und Tanz",
+    "tags": {
+      "topics": [
+        "Olympia und Tanz"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "Olympics: Sports",
+          "url": "https://www.olympics.com/en/sports/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:178"
+    ],
+    "prompt": "Olympische Sportart, Tanzstil oder beides?",
+    "groups": {
+      "A": "Olympische Sportart",
+      "B": "Tanzstil"
+    },
+    "items": [
+      "Breaking",
+      "Boxing",
+      "Fencing",
+      "Skateboarding",
+      "Waltz",
+      "Tango",
+      "Salsa"
+    ],
+    "answer": {
+      "Breaking": "both",
+      "Boxing": "A",
+      "Fencing": "A",
+      "Skateboarding": "A",
+      "Waltz": "B",
+      "Tango": "B",
+      "Salsa": "B"
+    },
+    "explanation": "Beides: Breaking. Nur Olympische Sportart: Boxing, Fencing, Skateboarding. Nur Tanzstil: Waltz, Tango, Salsa."
+  },
+  {
+    "id": "bs179",
+    "question_type": "binary_sort",
+    "primary_category": "sport",
+    "subtopic": "Teamnamen und Tiere",
+    "tags": {
+      "topics": [
+        "Teamnamen und Tiere"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "NBA: Teams",
+          "url": "https://www.nba.com/teams"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:179"
+    ],
+    "prompt": "NBA- oder NFL-Teamname, Englischer Tiername oder beides?",
+    "groups": {
+      "A": "NBA- oder NFL-Teamname",
+      "B": "Englischer Tiername"
+    },
+    "items": [
+      "Bulls",
+      "Bears",
+      "Dolphins",
+      "Panthers",
+      "Lakers",
+      "Packers",
+      "Badgers"
+    ],
+    "answer": {
+      "Bulls": "both",
+      "Bears": "both",
+      "Dolphins": "both",
+      "Panthers": "both",
+      "Lakers": "A",
+      "Packers": "A",
+      "Badgers": "B"
+    },
+    "explanation": "Beides: Bulls, Bears, Dolphins, Panthers. Nur NBA- oder NFL-Teamname: Lakers, Packers. Nur Englischer Tiername: Badgers."
+  },
+  {
+    "id": "bs180",
+    "question_type": "binary_sort",
+    "primary_category": "sport",
+    "subtopic": "Golf und Vögel",
+    "tags": {
+      "topics": [
+        "Golf und Vögel"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "The R&A: Rules of Golf",
+          "url": "https://www.randa.org/rog/the-rules-of-golf"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:180"
+    ],
+    "prompt": "Golfbegriff, Englischer Vogelname oder beides?",
+    "groups": {
+      "A": "Golfbegriff",
+      "B": "Englischer Vogelname"
+    },
+    "items": [
+      "Eagle",
+      "Albatross",
+      "Condor",
+      "Birdie",
+      "Bogey",
+      "Sparrow",
+      "Kestrel"
+    ],
+    "answer": {
+      "Eagle": "both",
+      "Albatross": "both",
+      "Condor": "both",
+      "Birdie": "A",
+      "Bogey": "A",
+      "Sparrow": "B",
+      "Kestrel": "B"
+    },
+    "explanation": "Beides: Eagle, Albatross, Condor. Nur Golfbegriff: Birdie, Bogey. Nur Englischer Vogelname: Sparrow, Kestrel."
+  },
+  {
+    "id": "bs181",
+    "question_type": "binary_sort",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Reiche und heutige Staaten",
+    "tags": {
+      "topics": [
+        "Reiche und heutige Staaten"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Western Africa",
+          "url": "https://www.britannica.com/place/western-Africa"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:181"
+    ],
+    "prompt": "Historisches afrikanisches Reich, Heutiger Staat oder beides?",
+    "groups": {
+      "A": "Historisches afrikanisches Reich",
+      "B": "Heutiger Staat"
+    },
+    "items": [
+      "Mali",
+      "Ghana",
+      "Benin",
+      "Äthiopien",
+      "Songhai",
+      "Togo",
+      "Kenia"
+    ],
+    "answer": {
+      "Mali": "both",
+      "Ghana": "both",
+      "Benin": "both",
+      "Äthiopien": "both",
+      "Songhai": "A",
+      "Togo": "B",
+      "Kenia": "B"
+    },
+    "explanation": "Beides: Mali, Ghana, Benin, Äthiopien. Nur Historisches afrikanisches Reich: Songhai. Nur Heutiger Staat: Togo, Kenia."
+  },
+  {
+    "id": "bs182",
+    "question_type": "binary_sort",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "US-Präsidenten und Städte",
+    "tags": {
+      "topics": [
+        "US-Präsidenten und Städte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "White House: Presidents",
+          "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:182"
+    ],
+    "prompt": "Nachname eines US-Präsidenten, US-Stadt oder beides?",
+    "groups": {
+      "A": "Nachname eines US-Präsidenten",
+      "B": "US-Stadt"
+    },
+    "items": [
+      "Washington",
+      "Lincoln",
+      "Cleveland",
+      "Madison",
+      "Obama",
+      "Seattle",
+      "Dallas"
+    ],
+    "answer": {
+      "Washington": "both",
+      "Lincoln": "both",
+      "Cleveland": "both",
+      "Madison": "both",
+      "Obama": "A",
+      "Seattle": "B",
+      "Dallas": "B"
+    },
+    "explanation": "Beides: Washington, Lincoln, Cleveland, Madison. Nur Nachname eines US-Präsidenten: Obama. Nur US-Stadt: Seattle, Dallas."
+  },
+  {
+    "id": "bs183",
+    "question_type": "binary_sort",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Operationen des Zweiten Weltkriegs",
+    "tags": {
+      "topics": [
+        "Operationen des Zweiten Weltkriegs"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "Imperial War Museums: Second World War",
+          "url": "https://www.iwm.org.uk/history/second-world-war"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:183"
+    ],
+    "prompt": "Militäroperation im Zweiten Weltkrieg, Englisches Alltagswort oder beides?",
+    "groups": {
+      "A": "Militäroperation im Zweiten Weltkrieg",
+      "B": "Englisches Alltagswort"
+    },
+    "items": [
+      "Torch",
+      "Mincemeat",
+      "Compass",
+      "Avalanche",
+      "Citadel",
+      "Bagration",
+      "Spoon"
+    ],
+    "answer": {
+      "Torch": "both",
+      "Mincemeat": "both",
+      "Compass": "both",
+      "Avalanche": "both",
+      "Citadel": "both",
+      "Bagration": "A",
+      "Spoon": "B"
+    },
+    "explanation": "Beides: Torch, Mincemeat, Compass, Avalanche, Citadel. Nur Militäroperation im Zweiten Weltkrieg: Bagration. Nur Englisches Alltagswort: Spoon."
+  },
+  {
+    "id": "bs184",
+    "question_type": "binary_sort",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Römische Götter und Planeten",
+    "tags": {
+      "topics": [
+        "Römische Götter und Planeten"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "NASA: Planets",
+          "url": "https://science.nasa.gov/solar-system/planets/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:184"
+    ],
+    "prompt": "Römische Gottheit, Englischer Planetenname oder beides?",
+    "groups": {
+      "A": "Römische Gottheit",
+      "B": "Englischer Planetenname"
+    },
+    "items": [
+      "Mercury",
+      "Venus",
+      "Mars",
+      "Jupiter",
+      "Saturn",
+      "Vulcan",
+      "Earth"
+    ],
+    "answer": {
+      "Mercury": "both",
+      "Venus": "both",
+      "Mars": "both",
+      "Jupiter": "both",
+      "Saturn": "both",
+      "Vulcan": "A",
+      "Earth": "B"
+    },
+    "explanation": "Beides: Mercury, Venus, Mars, Jupiter, Saturn. Nur Römische Gottheit: Vulcan. Nur Englischer Planetenname: Earth."
+  },
+  {
+    "id": "bs185",
+    "question_type": "binary_sort",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Historische Titel und Schach",
+    "tags": {
+      "topics": [
+        "Historische Titel und Schach"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "FIDE: Laws of Chess",
+          "url": "https://handbook.fide.com/chapter/E012023"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:185"
+    ],
+    "prompt": "Historischer Titel, Englischer Schachbegriff oder beides?",
+    "groups": {
+      "A": "Historischer Titel",
+      "B": "Englischer Schachbegriff"
+    },
+    "items": [
+      "King",
+      "Queen",
+      "Bishop",
+      "Knight",
+      "Emperor",
+      "Rook",
+      "Pawn"
+    ],
+    "answer": {
+      "King": "both",
+      "Queen": "both",
+      "Bishop": "both",
+      "Knight": "both",
+      "Emperor": "A",
+      "Rook": "B",
+      "Pawn": "B"
+    },
+    "explanation": "Beides: King, Queen, Bishop, Knight. Nur Historischer Titel: Emperor. Nur Englischer Schachbegriff: Rook, Pawn."
+  },
+  {
+    "id": "bs186",
+    "question_type": "binary_sort",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Herrscherhäuser und Orte",
+    "tags": {
+      "topics": [
+        "Herrscherhäuser und Orte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: History of Europe",
+          "url": "https://www.britannica.com/topic/history-of-Europe"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:186"
+    ],
+    "prompt": "Europäisches Herrscherhaus, Geografischer Ort oder beides?",
+    "groups": {
+      "A": "Europäisches Herrscherhaus",
+      "B": "Geografischer Ort"
+    },
+    "items": [
+      "York",
+      "Lancaster",
+      "Windsor",
+      "Hannover",
+      "Bourbon",
+      "Plantagenet",
+      "Bremen"
+    ],
+    "answer": {
+      "York": "both",
+      "Lancaster": "both",
+      "Windsor": "both",
+      "Hannover": "both",
+      "Bourbon": "both",
+      "Plantagenet": "A",
+      "Bremen": "B"
+    },
+    "explanation": "Beides: York, Lancaster, Windsor, Hannover, Bourbon. Nur Europäisches Herrscherhaus: Plantagenet. Nur Geografischer Ort: Bremen."
+  },
+  {
+    "id": "bs187",
+    "question_type": "binary_sort",
+    "primary_category": "geography_world",
+    "subtopic": "Flüsse und Staaten",
+    "tags": {
+      "topics": [
+        "Flüsse und Staaten"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "Vereinte Nationen: Mitgliedstaaten",
+          "url": "https://www.un.org/en/about-us/member-states"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:187"
+    ],
+    "prompt": "Fluss, Heutiger Staat oder beides?",
+    "groups": {
+      "A": "Fluss",
+      "B": "Heutiger Staat"
+    },
+    "items": [
+      "Kongo",
+      "Niger",
+      "Senegal",
+      "Gambia",
+      "Uruguay",
+      "Amazonas",
+      "Laos"
+    ],
+    "answer": {
+      "Kongo": "both",
+      "Niger": "both",
+      "Senegal": "both",
+      "Gambia": "both",
+      "Uruguay": "both",
+      "Amazonas": "A",
+      "Laos": "B"
+    },
+    "explanation": "Beides: Kongo, Niger, Senegal, Gambia, Uruguay. Nur Fluss: Amazonas. Nur Heutiger Staat: Laos."
+  },
+  {
+    "id": "bs188",
+    "question_type": "binary_sort",
+    "primary_category": "geography_world",
+    "subtopic": "Inseln und Staaten",
+    "tags": {
+      "topics": [
+        "Inseln und Staaten"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "Vereinte Nationen: Mitgliedstaaten",
+          "url": "https://www.un.org/en/about-us/member-states"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:188"
+    ],
+    "prompt": "Insel, Heutiger Staat oder beides?",
+    "groups": {
+      "A": "Insel",
+      "B": "Heutiger Staat"
+    },
+    "items": [
+      "Zypern",
+      "Malta",
+      "Island",
+      "Bahrain",
+      "Madagaskar",
+      "Borneo",
+      "Nepal"
+    ],
+    "answer": {
+      "Zypern": "both",
+      "Malta": "both",
+      "Island": "both",
+      "Bahrain": "both",
+      "Madagaskar": "both",
+      "Borneo": "A",
+      "Nepal": "B"
+    },
+    "explanation": "Beides: Zypern, Malta, Island, Bahrain, Madagaskar. Nur Insel: Borneo. Nur Heutiger Staat: Nepal."
+  },
+  {
+    "id": "bs189",
+    "question_type": "binary_sort",
+    "primary_category": "geography_world",
+    "subtopic": "Staaten und Vornamen",
+    "tags": {
+      "topics": [
+        "Staaten und Vornamen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "US Social Security: Vornamendaten",
+          "url": "https://www.ssa.gov/oact/babynames/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:189"
+    ],
+    "prompt": "Englischer Staatsname, Vorname oder beides?",
+    "groups": {
+      "A": "Englischer Staatsname",
+      "B": "Vorname"
+    },
+    "items": [
+      "Georgia",
+      "Jordan",
+      "Chad",
+      "Dominica",
+      "India",
+      "Nepal",
+      "Kevin"
+    ],
+    "answer": {
+      "Georgia": "both",
+      "Jordan": "both",
+      "Chad": "both",
+      "Dominica": "both",
+      "India": "both",
+      "Nepal": "A",
+      "Kevin": "B"
+    },
+    "explanation": "Beides: Georgia, Jordan, Chad, Dominica, India. Nur Englischer Staatsname: Nepal. Nur Vorname: Kevin."
+  },
+  {
+    "id": "bs190",
+    "question_type": "binary_sort",
+    "primary_category": "geography_world",
+    "subtopic": "Orte und Automodelle",
+    "tags": {
+      "topics": [
+        "Orte und Automodelle"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Geography",
+          "url": "https://www.britannica.com/science/geography"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:190"
+    ],
+    "prompt": "Automodell, Geografischer Ort oder beides?",
+    "groups": {
+      "A": "Automodell",
+      "B": "Geografischer Ort"
+    },
+    "items": [
+      "Tucson",
+      "Tacoma",
+      "Cayenne",
+      "Ibiza",
+      "Aspen",
+      "Golf",
+      "Lissabon"
+    ],
+    "answer": {
+      "Tucson": "both",
+      "Tacoma": "both",
+      "Cayenne": "both",
+      "Ibiza": "both",
+      "Aspen": "both",
+      "Golf": "A",
+      "Lissabon": "B"
+    },
+    "explanation": "Beides: Tucson, Tacoma, Cayenne, Ibiza, Aspen. Nur Automodell: Golf. Nur Geografischer Ort: Lissabon."
+  },
+  {
+    "id": "bs191",
+    "question_type": "binary_sort",
+    "primary_category": "geography_world",
+    "subtopic": "Meere und Farben",
+    "tags": {
+      "topics": [
+        "Meere und Farben"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "International Hydrographic Organization",
+          "url": "https://iho.int/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:191"
+    ],
+    "prompt": "Teil eines Meeresnamens, Englisches Farbwort oder beides?",
+    "groups": {
+      "A": "Teil eines Meeresnamens",
+      "B": "Englisches Farbwort"
+    },
+    "items": [
+      "Black",
+      "Red",
+      "White",
+      "Yellow",
+      "Coral",
+      "Baltic",
+      "Purple"
+    ],
+    "answer": {
+      "Black": "both",
+      "Red": "both",
+      "White": "both",
+      "Yellow": "both",
+      "Coral": "both",
+      "Baltic": "A",
+      "Purple": "B"
+    },
+    "explanation": "Beides: Black, Red, White, Yellow, Coral. Nur Teil eines Meeresnamens: Baltic. Nur Englisches Farbwort: Purple."
+  },
+  {
+    "id": "bs192",
+    "question_type": "binary_sort",
+    "primary_category": "geography_world",
+    "subtopic": "Seen und Staaten",
+    "tags": {
+      "topics": [
+        "Seen und Staaten"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Geography",
+          "url": "https://www.britannica.com/science/geography"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:192"
+    ],
+    "prompt": "Name eines Sees, Heutiger Staat oder beides?",
+    "groups": {
+      "A": "Name eines Sees",
+      "B": "Heutiger Staat"
+    },
+    "items": [
+      "Tschad",
+      "Malawi",
+      "Nicaragua",
+      "Victoria",
+      "Superior",
+      "Ruanda",
+      "Nepal"
+    ],
+    "answer": {
+      "Tschad": "both",
+      "Malawi": "both",
+      "Nicaragua": "both",
+      "Victoria": "A",
+      "Superior": "A",
+      "Ruanda": "B",
+      "Nepal": "B"
+    },
+    "explanation": "Beides: Tschad, Malawi, Nicaragua. Nur Name eines Sees: Victoria, Superior. Nur Heutiger Staat: Ruanda, Nepal."
+  },
+  {
+    "id": "bs193",
+    "question_type": "binary_sort",
+    "primary_category": "science_technology",
+    "subtopic": "Raumfahrt und Mythologie",
+    "tags": {
+      "topics": [
+        "Raumfahrt und Mythologie"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "NASA: Missions",
+          "url": "https://www.nasa.gov/missions/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:193"
+    ],
+    "prompt": "NASA-Mission, Mythologische Gestalt oder beides?",
+    "groups": {
+      "A": "NASA-Mission",
+      "B": "Mythologische Gestalt"
+    },
+    "items": [
+      "Apollo",
+      "Artemis",
+      "Juno",
+      "Psyche",
+      "Voyager",
+      "Lucy",
+      "Athena"
+    ],
+    "answer": {
+      "Apollo": "both",
+      "Artemis": "both",
+      "Juno": "both",
+      "Psyche": "both",
+      "Voyager": "A",
+      "Lucy": "A",
+      "Athena": "B"
+    },
+    "explanation": "Beides: Apollo, Artemis, Juno, Psyche. Nur NASA-Mission: Voyager, Lucy. Nur Mythologische Gestalt: Athena."
+  },
+  {
+    "id": "bs194",
+    "question_type": "binary_sort",
+    "primary_category": "science_technology",
+    "subtopic": "Programmiersprachen und Schlangen",
+    "tags": {
+      "topics": [
+        "Programmiersprachen und Schlangen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "ACM Digital Library",
+          "url": "https://dl.acm.org/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:194"
+    ],
+    "prompt": "Programmiersprache, Englischer Schlangenname oder beides?",
+    "groups": {
+      "A": "Programmiersprache",
+      "B": "Englischer Schlangenname"
+    },
+    "items": [
+      "Python",
+      "Cobra",
+      "Boa",
+      "Julia",
+      "Rust",
+      "Mamba",
+      "Anaconda"
+    ],
+    "answer": {
+      "Python": "both",
+      "Cobra": "both",
+      "Boa": "both",
+      "Julia": "A",
+      "Rust": "A",
+      "Mamba": "B",
+      "Anaconda": "B"
+    },
+    "explanation": "Beides: Python, Cobra, Boa. Nur Programmiersprache: Julia, Rust. Nur Englischer Schlangenname: Mamba, Anaconda."
+  },
+  {
+    "id": "bs195",
+    "question_type": "binary_sort",
+    "primary_category": "science_technology",
+    "subtopic": "Maßeinheiten und Forschende",
+    "tags": {
+      "topics": [
+        "Maßeinheiten und Forschende"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "BIPM: SI Brochure",
+          "url": "https://www.bipm.org/en/publications/si-brochure"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:195"
+    ],
+    "prompt": "Maßeinheit, Nachname eines Forschers oder beides?",
+    "groups": {
+      "A": "Maßeinheit",
+      "B": "Nachname eines Forschers"
+    },
+    "items": [
+      "Newton",
+      "Pascal",
+      "Watt",
+      "Joule",
+      "Kelvin",
+      "Meter",
+      "Einstein"
+    ],
+    "answer": {
+      "Newton": "both",
+      "Pascal": "both",
+      "Watt": "both",
+      "Joule": "both",
+      "Kelvin": "both",
+      "Meter": "A",
+      "Einstein": "B"
+    },
+    "explanation": "Beides: Newton, Pascal, Watt, Joule, Kelvin. Nur Maßeinheit: Meter. Nur Nachname eines Forschers: Einstein."
+  },
+  {
+    "id": "bs196",
+    "question_type": "binary_sort",
+    "primary_category": "science_technology",
+    "subtopic": "Elemente und Himmelskörper",
+    "tags": {
+      "topics": [
+        "Elemente und Himmelskörper"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "IUPAC: Periodensystem",
+          "url": "https://iupac.org/what-we-do/periodic-table-of-elements/"
+        },
+        {
+          "title": "NASA: Solar System",
+          "url": "https://science.nasa.gov/solar-system/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:196"
+    ],
+    "prompt": "Englischer Elementname, Himmelskörper oder beides?",
+    "groups": {
+      "A": "Englischer Elementname",
+      "B": "Himmelskörper"
+    },
+    "items": [
+      "Mercury",
+      "Helium",
+      "Uranium",
+      "Neon",
+      "Mars",
+      "Ceres",
+      "Titan"
+    ],
+    "answer": {
+      "Mercury": "both",
+      "Helium": "A",
+      "Uranium": "A",
+      "Neon": "A",
+      "Mars": "B",
+      "Ceres": "B",
+      "Titan": "B"
+    },
+    "explanation": "Beides: Mercury. Nur Englischer Elementname: Helium, Uranium, Neon. Nur Himmelskörper: Mars, Ceres, Titan."
+  },
+  {
+    "id": "bs197",
+    "question_type": "binary_sort",
+    "primary_category": "science_technology",
+    "subtopic": "Edelsteine und Farben",
+    "tags": {
+      "topics": [
+        "Edelsteine und Farben"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "GIA: Gem Encyclopedia",
+          "url": "https://www.gia.edu/gem-encyclopedia"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:197"
+    ],
+    "prompt": "Englischer Edelsteinname, Englischer Farbname oder beides?",
+    "groups": {
+      "A": "Englischer Edelsteinname",
+      "B": "Englischer Farbname"
+    },
+    "items": [
+      "Amber",
+      "Jade",
+      "Ruby",
+      "Emerald",
+      "Sapphire",
+      "Diamond",
+      "Magenta"
+    ],
+    "answer": {
+      "Amber": "both",
+      "Jade": "both",
+      "Ruby": "both",
+      "Emerald": "both",
+      "Sapphire": "both",
+      "Diamond": "A",
+      "Magenta": "B"
+    },
+    "explanation": "Beides: Amber, Jade, Ruby, Emerald, Sapphire. Nur Englischer Edelsteinname: Diamond. Nur Englischer Farbname: Magenta."
+  },
+  {
+    "id": "bs198",
+    "question_type": "binary_sort",
+    "primary_category": "science_technology",
+    "subtopic": "Wolken und Automodelle",
+    "tags": {
+      "topics": [
+        "Wolken und Automodelle"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "World Meteorological Organization: Cloud Atlas",
+          "url": "https://cloudatlas.wmo.int/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:198"
+    ],
+    "prompt": "Wolkengattung, Automodell oder beides?",
+    "groups": {
+      "A": "Wolkengattung",
+      "B": "Automodell"
+    },
+    "items": [
+      "Stratus",
+      "Cirrus",
+      "Cumulus",
+      "Altostratus",
+      "Mustang",
+      "Golf",
+      "Fiesta"
+    ],
+    "answer": {
+      "Stratus": "both",
+      "Cirrus": "both",
+      "Cumulus": "A",
+      "Altostratus": "A",
+      "Mustang": "B",
+      "Golf": "B",
+      "Fiesta": "B"
+    },
+    "explanation": "Beides: Stratus, Cirrus. Nur Wolkengattung: Cumulus, Altostratus. Nur Automodell: Mustang, Golf, Fiesta."
+  },
+  {
+    "id": "bs199",
+    "question_type": "binary_sort",
+    "primary_category": "plants_animals",
+    "subtopic": "Blumen und Vornamen",
+    "tags": {
+      "topics": [
+        "Blumen und Vornamen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "Royal Horticultural Society: Plants",
+          "url": "https://www.rhs.org.uk/plants"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:199"
+    ],
+    "prompt": "Blume oder Blütenpflanze, Vorname oder beides?",
+    "groups": {
+      "A": "Blume oder Blütenpflanze",
+      "B": "Vorname"
+    },
+    "items": [
+      "Rose",
+      "Iris",
+      "Lily",
+      "Daisy",
+      "Heather",
+      "Tulip",
+      "Kevin"
+    ],
+    "answer": {
+      "Rose": "both",
+      "Iris": "both",
+      "Lily": "both",
+      "Daisy": "both",
+      "Heather": "both",
+      "Tulip": "A",
+      "Kevin": "B"
+    },
+    "explanation": "Beides: Rose, Iris, Lily, Daisy, Heather. Nur Blume oder Blütenpflanze: Tulip. Nur Vorname: Kevin."
+  },
+  {
+    "id": "bs200",
+    "question_type": "binary_sort",
+    "primary_category": "plants_animals",
+    "subtopic": "Tiere und Autos",
+    "tags": {
+      "topics": [
+        "Tiere und Autos"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "Smithsonian National Zoo: Animals",
+          "url": "https://nationalzoo.si.edu/animals"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:200"
+    ],
+    "prompt": "Englischer Tiername, Automarke oder Automodell oder beides?",
+    "groups": {
+      "A": "Englischer Tiername",
+      "B": "Automarke oder Automodell"
+    },
+    "items": [
+      "Beetle",
+      "Mustang",
+      "Puma",
+      "Jaguar",
+      "Panda",
+      "Platypus",
+      "Golf"
+    ],
+    "answer": {
+      "Beetle": "both",
+      "Mustang": "both",
+      "Puma": "both",
+      "Jaguar": "both",
+      "Panda": "both",
+      "Platypus": "A",
+      "Golf": "B"
+    },
+    "explanation": "Beides: Beetle, Mustang, Puma, Jaguar, Panda. Nur Englischer Tiername: Platypus. Nur Automarke oder Automodell: Golf."
+  },
+  {
+    "id": "bs201",
+    "question_type": "binary_sort",
+    "primary_category": "plants_animals",
+    "subtopic": "Hunderassen und Regionen",
+    "tags": {
+      "topics": [
+        "Hunderassen und Regionen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "American Kennel Club: Dog Breeds",
+          "url": "https://www.akc.org/dog-breeds/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:201"
+    ],
+    "prompt": "Englischer Hunderassenname, Geografische Region oder beides?",
+    "groups": {
+      "A": "Englischer Hunderassenname",
+      "B": "Geografische Region"
+    },
+    "items": [
+      "Labrador",
+      "Newfoundland",
+      "Chihuahua",
+      "Brittany",
+      "Beagle",
+      "Sahara",
+      "Patagonia"
+    ],
+    "answer": {
+      "Labrador": "both",
+      "Newfoundland": "both",
+      "Chihuahua": "both",
+      "Brittany": "both",
+      "Beagle": "A",
+      "Sahara": "B",
+      "Patagonia": "B"
+    },
+    "explanation": "Beides: Labrador, Newfoundland, Chihuahua, Brittany. Nur Englischer Hunderassenname: Beagle. Nur Geografische Region: Sahara, Patagonia."
+  },
+  {
+    "id": "bs202",
+    "question_type": "binary_sort",
+    "primary_category": "plants_animals",
+    "subtopic": "Vögel und Sternbilder",
+    "tags": {
+      "topics": [
+        "Vögel und Sternbilder"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "International Astronomical Union: Constellations",
+          "url": "https://www.iau.org/public/themes/constellations/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:202"
+    ],
+    "prompt": "Deutscher Vogelname, Deutscher Sternbildname oder beides?",
+    "groups": {
+      "A": "Deutscher Vogelname",
+      "B": "Deutscher Sternbildname"
+    },
+    "items": [
+      "Adler",
+      "Schwan",
+      "Pfau",
+      "Kranich",
+      "Rabe",
+      "Spatz",
+      "Dreieck"
+    ],
+    "answer": {
+      "Adler": "both",
+      "Schwan": "both",
+      "Pfau": "both",
+      "Kranich": "both",
+      "Rabe": "both",
+      "Spatz": "A",
+      "Dreieck": "B"
+    },
+    "explanation": "Beides: Adler, Schwan, Pfau, Kranich, Rabe. Nur Deutscher Vogelname: Spatz. Nur Deutscher Sternbildname: Dreieck."
+  },
+  {
+    "id": "bs203",
+    "question_type": "binary_sort",
+    "primary_category": "plants_animals",
+    "subtopic": "Pflanzen und griechische Mythologie",
+    "tags": {
+      "topics": [
+        "Pflanzen und griechische Mythologie"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "Kew: Plants of the World Online",
+          "url": "https://powo.science.kew.org/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:203"
+    ],
+    "prompt": "Botanische Gattung, Mythologische Gestalt oder beides?",
+    "groups": {
+      "A": "Botanische Gattung",
+      "B": "Mythologische Gestalt"
+    },
+    "items": [
+      "Narcissus",
+      "Adonis",
+      "Iris",
+      "Daphne",
+      "Hyacinthus",
+      "Tulipa",
+      "Zeus"
+    ],
+    "answer": {
+      "Narcissus": "both",
+      "Adonis": "both",
+      "Iris": "both",
+      "Daphne": "both",
+      "Hyacinthus": "both",
+      "Tulipa": "A",
+      "Zeus": "B"
+    },
+    "explanation": "Beides: Narcissus, Adonis, Iris, Daphne, Hyacinthus. Nur Botanische Gattung: Tulipa. Nur Mythologische Gestalt: Zeus."
+  },
+  {
+    "id": "bs204",
+    "question_type": "binary_sort",
+    "primary_category": "plants_animals",
+    "subtopic": "Raubtiere und macOS",
+    "tags": {
+      "topics": [
+        "Raubtiere und macOS"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "Apple: macOS releases",
+          "url": "https://support.apple.com/en-us/109033"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:204"
+    ],
+    "prompt": "Englischer Tiername, Apple-Betriebssystemversion oder beides?",
+    "groups": {
+      "A": "Englischer Tiername",
+      "B": "Apple-Betriebssystemversion"
+    },
+    "items": [
+      "Cheetah",
+      "Puma",
+      "Jaguar",
+      "Panther",
+      "Leopard",
+      "Ocelot",
+      "Ventura"
+    ],
+    "answer": {
+      "Cheetah": "both",
+      "Puma": "both",
+      "Jaguar": "both",
+      "Panther": "both",
+      "Leopard": "both",
+      "Ocelot": "A",
+      "Ventura": "B"
+    },
+    "explanation": "Beides: Cheetah, Puma, Jaguar, Panther, Leopard. Nur Englischer Tiername: Ocelot. Nur Apple-Betriebssystemversion: Ventura."
+  },
+  {
+    "id": "bs205",
+    "question_type": "binary_sort",
+    "primary_category": "media_entertainment",
+    "subtopic": "Filmtitel und Städte",
+    "tags": {
+      "topics": [
+        "Filmtitel und Städte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "Academy Awards: Ceremonies",
+          "url": "https://www.oscars.org/oscars/ceremonies"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:205"
+    ],
+    "prompt": "Spielfilmtitel, Stadt oder beides?",
+    "groups": {
+      "A": "Spielfilmtitel",
+      "B": "Stadt"
+    },
+    "items": [
+      "Chicago",
+      "Casablanca",
+      "Philadelphia",
+      "Munich",
+      "Fargo",
+      "Titanic",
+      "Lissabon"
+    ],
+    "answer": {
+      "Chicago": "both",
+      "Casablanca": "both",
+      "Philadelphia": "both",
+      "Munich": "both",
+      "Fargo": "both",
+      "Titanic": "A",
+      "Lissabon": "B"
+    },
+    "explanation": "Beides: Chicago, Casablanca, Philadelphia, Munich, Fargo. Nur Spielfilmtitel: Titanic. Nur Stadt: Lissabon."
+  },
+  {
+    "id": "bs206",
+    "question_type": "binary_sort",
+    "primary_category": "media_entertainment",
+    "subtopic": "X-Men und englische Wörter",
+    "tags": {
+      "topics": [
+        "X-Men und englische Wörter"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "Marvel: X-Men",
+          "url": "https://www.marvel.com/teams-and-groups/x-men"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:206"
+    ],
+    "prompt": "X-Men-Figur, Englisches Wort oder beides?",
+    "groups": {
+      "A": "X-Men-Figur",
+      "B": "Englisches Wort"
+    },
+    "items": [
+      "Storm",
+      "Rogue",
+      "Beast",
+      "Angel",
+      "Cyclops",
+      "Magneto",
+      "Umbrella"
+    ],
+    "answer": {
+      "Storm": "both",
+      "Rogue": "both",
+      "Beast": "both",
+      "Angel": "both",
+      "Cyclops": "both",
+      "Magneto": "A",
+      "Umbrella": "B"
+    },
+    "explanation": "Beides: Storm, Rogue, Beast, Angel, Cyclops. Nur X-Men-Figur: Magneto. Nur Englisches Wort: Umbrella."
+  },
+  {
+    "id": "bs207",
+    "question_type": "binary_sort",
+    "primary_category": "media_entertainment",
+    "subtopic": "Disney und Astronomie",
+    "tags": {
+      "topics": [
+        "Disney und Astronomie"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "NASA: Moons",
+          "url": "https://science.nasa.gov/solar-system/moons/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:207"
+    ],
+    "prompt": "Disney-Figur, Himmelskörper oder beides?",
+    "groups": {
+      "A": "Disney-Figur",
+      "B": "Himmelskörper"
+    },
+    "items": [
+      "Pluto",
+      "Ariel",
+      "Triton",
+      "Elsa",
+      "Simba",
+      "Europa",
+      "Titan"
+    ],
+    "answer": {
+      "Pluto": "both",
+      "Ariel": "both",
+      "Triton": "both",
+      "Elsa": "A",
+      "Simba": "A",
+      "Europa": "B",
+      "Titan": "B"
+    },
+    "explanation": "Beides: Pluto, Ariel, Triton. Nur Disney-Figur: Elsa, Simba. Nur Himmelskörper: Europa, Titan."
+  },
+  {
+    "id": "bs208",
+    "question_type": "binary_sort",
+    "primary_category": "media_entertainment",
+    "subtopic": "Comicfiguren und Mythologie",
+    "tags": {
+      "topics": [
+        "Comicfiguren und Mythologie"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "Marvel: Characters",
+          "url": "https://www.marvel.com/characters"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:208"
+    ],
+    "prompt": "Comicfigur, Mythologische Gestalt oder beides?",
+    "groups": {
+      "A": "Comicfigur",
+      "B": "Mythologische Gestalt"
+    },
+    "items": [
+      "Thor",
+      "Hercules",
+      "Loki",
+      "Wonder Woman",
+      "Batman",
+      "Achilles",
+      "Athena"
+    ],
+    "answer": {
+      "Thor": "both",
+      "Hercules": "both",
+      "Loki": "both",
+      "Wonder Woman": "A",
+      "Batman": "A",
+      "Achilles": "B",
+      "Athena": "B"
+    },
+    "explanation": "Beides: Thor, Hercules, Loki. Nur Comicfigur: Wonder Woman, Batman. Nur Mythologische Gestalt: Achilles, Athena."
+  },
+  {
+    "id": "bs209",
+    "question_type": "binary_sort",
+    "primary_category": "media_entertainment",
+    "subtopic": "Serientitel und Orte",
+    "tags": {
+      "topics": [
+        "Serientitel und Orte"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "Television Academy: Shows",
+          "url": "https://www.televisionacademy.com/shows"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:209"
+    ],
+    "prompt": "Fernsehserie, Geografischer Ort oder beides?",
+    "groups": {
+      "A": "Fernsehserie",
+      "B": "Geografischer Ort"
+    },
+    "items": [
+      "Fargo",
+      "Dallas",
+      "Rome",
+      "Versailles",
+      "Berlin",
+      "Lost",
+      "Lissabon"
+    ],
+    "answer": {
+      "Fargo": "both",
+      "Dallas": "both",
+      "Rome": "both",
+      "Versailles": "both",
+      "Berlin": "both",
+      "Lost": "A",
+      "Lissabon": "B"
+    },
+    "explanation": "Beides: Fargo, Dallas, Rome, Versailles, Berlin. Nur Fernsehserie: Lost. Nur Geografischer Ort: Lissabon."
+  },
+  {
+    "id": "bs210",
+    "question_type": "binary_sort",
+    "primary_category": "media_entertainment",
+    "subtopic": "James Bond und Popsongs",
+    "tags": {
+      "topics": [
+        "James Bond und Popsongs"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "references": [
+        {
+          "title": "007: The Films",
+          "url": "https://www.007.com/the-films/"
+        },
+        {
+          "title": "Adele: Music",
+          "url": "https://www.adele.com/"
+        },
+        {
+          "title": "Billie Eilish: Music",
+          "url": "https://www.billieeilish.com/music"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:210"
+    ],
+    "prompt": "James-Bond-Film, Song von Adele oder Billie Eilish oder beides?",
+    "groups": {
+      "A": "James-Bond-Film",
+      "B": "Song von Adele oder Billie Eilish"
+    },
+    "items": [
+      "Skyfall",
+      "Goldfinger",
+      "Spectre",
+      "Casino Royale",
+      "Hello",
+      "Easy on Me",
+      "No Time to Die"
+    ],
+    "answer": {
+      "Skyfall": "both",
+      "Goldfinger": "A",
+      "Spectre": "A",
+      "Casino Royale": "A",
+      "Hello": "B",
+      "Easy on Me": "B",
+      "No Time to Die": "both"
+    },
+    "explanation": "Beides: Skyfall, No Time to Die. Nur James-Bond-Film: Goldfinger, Spectre, Casino Royale. Nur Song von Adele oder Billie Eilish: Hello, Easy on Me."
+  },
+  {
+    "id": "bs600",
+    "question_type": "binary_sort",
+    "primary_category": "science_technology",
+    "subtopic": "Code mit Tiernamen",
+    "tags": {
+      "topics": [
+        "Code mit Tiernamen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Python Software Foundation: Python documentation",
+          "url": "https://docs.python.org/3/"
+        },
+        {
+          "title": "Swift.org: Documentation",
+          "url": "https://www.swift.org/documentation/"
+        },
+        {
+          "title": "The Rust Programming Language",
+          "url": "https://www.rust-lang.org/"
+        },
+        {
+          "title": "Smithsonian's National Zoo: Animals",
+          "url": "https://nationalzoo.si.edu/animals"
+        },
+        {
+          "title": "Merriam-Webster Dictionary",
+          "url": "https://www.merriam-webster.com/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:600"
+    ],
+    "prompt": "Programmiersprache, Tiername oder beides?",
+    "groups": {
+      "A": "Programmiersprache",
+      "B": "Tiername"
+    },
+    "items": [
+      "Python",
+      "Swift",
+      "Ruby",
+      "Rust",
+      "Go",
+      "Cobra",
+      "Lemur"
+    ],
+    "answer": {
+      "Python": "both",
+      "Swift": "both",
+      "Ruby": "A",
+      "Rust": "A",
+      "Go": "A",
+      "Cobra": "B",
+      "Lemur": "B"
+    },
+    "explanation": "Beides: Python und Swift. Nur Programmiersprache: Ruby, Rust, Go. Nur Tiername: Cobra, Lemur."
+  },
+  {
+    "id": "bs601",
+    "question_type": "binary_sort",
+    "primary_category": "science_technology",
+    "subtopic": "NASA und Alltagsenglisch",
+    "tags": {
+      "topics": [
+        "NASA und Alltagsenglisch"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "NASA: Missions",
+          "url": "https://www.nasa.gov/missions/"
+        },
+        {
+          "title": "Merriam-Webster Dictionary",
+          "url": "https://www.merriam-webster.com/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:601"
+    ],
+    "prompt": "NASA-Mission, englisches Alltagswort oder beides?",
+    "groups": {
+      "A": "NASA-Mission",
+      "B": "englisches Alltagswort"
+    },
+    "items": [
+      "Voyager",
+      "Curiosity",
+      "Opportunity",
+      "Spirit",
+      "Dawn",
+      "Cassini",
+      "Umbrella"
+    ],
+    "answer": {
+      "Voyager": "both",
+      "Curiosity": "both",
+      "Opportunity": "both",
+      "Spirit": "both",
+      "Dawn": "both",
+      "Cassini": "A",
+      "Umbrella": "B"
+    },
+    "explanation": "Beides: Voyager, Curiosity, Opportunity, Spirit, Dawn. Nur NASA-Mission: Cassini. Nur Alltagswort: Umbrella."
+  },
+  {
+    "id": "bs602",
+    "question_type": "binary_sort",
+    "primary_category": "music",
+    "subtopic": "Bandnamen als Wörter",
+    "tags": {
+      "topics": [
+        "Bandnamen als Wörter"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Rock & Roll Hall of Fame: Inductees",
+          "url": "https://rockhall.com/inductees/"
+        },
+        {
+          "title": "Merriam-Webster Dictionary",
+          "url": "https://www.merriam-webster.com/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:602"
+    ],
+    "prompt": "Bandname, englisches Alltagswort oder beides?",
+    "groups": {
+      "A": "Bandname",
+      "B": "englisches Alltagswort"
+    },
+    "items": [
+      "Queen",
+      "Rush",
+      "Kiss",
+      "Journey",
+      "Heart",
+      "ABBA",
+      "Table"
+    ],
+    "answer": {
+      "Queen": "both",
+      "Rush": "both",
+      "Kiss": "both",
+      "Journey": "both",
+      "Heart": "both",
+      "ABBA": "A",
+      "Table": "B"
+    },
+    "explanation": "Beides: Queen, Rush, Kiss, Journey, Heart. Nur Bandname: ABBA. Nur Alltagswort: Table."
+  },
+  {
+    "id": "bs603",
+    "question_type": "binary_sort",
+    "primary_category": "science_technology",
+    "subtopic": "Einheiten und Namen",
+    "tags": {
+      "topics": [
+        "Einheiten und Namen"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "BIPM: SI Brochure",
+          "url": "https://www.bipm.org/en/publications/si-brochure"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:603"
+    ],
+    "prompt": "SI-Einheit, Nachname eines Wissenschaftlers oder beides?",
+    "groups": {
+      "A": "SI-Einheit",
+      "B": "Wissenschaftler-Nachname"
+    },
+    "items": [
+      "Watt",
+      "Pascal",
+      "Kelvin",
+      "Ampere",
+      "Candela",
+      "Einstein",
+      "Curie"
+    ],
+    "answer": {
+      "Watt": "both",
+      "Pascal": "both",
+      "Kelvin": "both",
+      "Ampere": "both",
+      "Candela": "A",
+      "Einstein": "B",
+      "Curie": "B"
+    },
+    "explanation": "Beides: Watt, Pascal, Kelvin, Ampere. Nur SI-Einheit: Candela. Nur Nachname: Einstein, Curie."
+  },
+  {
+    "id": "bs604",
+    "question_type": "binary_sort",
+    "primary_category": "human_everyday",
+    "subtopic": "Essen in Farbe",
+    "tags": {
+      "topics": [
+        "Essen in Farbe"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "USDA FoodData Central",
+          "url": "https://fdc.nal.usda.gov/"
+        },
+        {
+          "title": "W3C: CSS Color Module",
+          "url": "https://www.w3.org/TR/css-color-4/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:604"
+    ],
+    "prompt": "Lebensmittel, englischer Farbname oder beides?",
+    "groups": {
+      "A": "Lebensmittel",
+      "B": "englischer Farbname"
+    },
+    "items": [
+      "Orange",
+      "Lime",
+      "Olive",
+      "Salmon",
+      "Chocolate",
+      "Pasta",
+      "Turquoise"
+    ],
+    "answer": {
+      "Orange": "both",
+      "Lime": "both",
+      "Olive": "both",
+      "Salmon": "both",
+      "Chocolate": "both",
+      "Pasta": "A",
+      "Turquoise": "B"
+    },
+    "explanation": "Beides: Orange, Lime, Olive, Salmon, Chocolate. Nur Lebensmittel: Pasta. Nur Farbname: Turquoise."
+  },
+  {
+    "id": "bs605",
+    "question_type": "binary_sort",
+    "primary_category": "science_technology",
+    "subtopic": "Computerwörter im echten Leben",
+    "tags": {
+      "topics": [
+        "Computerwörter im echten Leben"
+      ],
+      "entities": [],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "NIST: Computer Security Resource Center Glossary",
+          "url": "https://csrc.nist.gov/glossary"
+        },
+        {
+          "title": "Merriam-Webster Dictionary",
+          "url": "https://www.merriam-webster.com/"
+        }
+      ]
+    },
+    "subject_keys": [
+      "binary-sort:605"
+    ],
+    "prompt": "Computerbegriff, Ding außerhalb der IT oder beides?",
+    "groups": {
+      "A": "Computerbegriff",
+      "B": "Ding außerhalb der IT"
+    },
+    "items": [
+      "Mouse",
+      "Cookie",
+      "Tablet",
+      "Window",
+      "Server",
+      "Router",
+      "Muffin"
+    ],
+    "answer": {
+      "Mouse": "both",
+      "Cookie": "both",
+      "Tablet": "both",
+      "Window": "both",
+      "Server": "both",
+      "Router": "A",
+      "Muffin": "B"
+    },
+    "explanation": "Beides: Mouse, Cookie, Tablet, Window, Server. Nur Computerbegriff: Router. Nur außerhalb der IT: Muffin."
+  }
+]

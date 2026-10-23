@@ -3,6 +3,7 @@
 {% block title %}Frage {{ index + 1 }} · {{ game_name }}{% endblock %}
 {% block content %}
   <section class="round-status" aria-label="Rundenfortschritt">
+    <p class="active-player-phrase">„{{ equipped_phrase }}“</p>
     <div class="status-topline">
       <span>FRAGE {{ index + 1 }} VON {{ total }}</span>
       <span class="multiplier">{{ running_points }} PKT</span>
@@ -52,7 +53,7 @@
             <p>Je näher dran, desto mehr von 100 Genauigkeitspunkten. 10 Punkte sind dir sicher.</p>
           </div>
         {% elif question.category == 'order' %}
-          <p class="microcopy">Ordne die Begriffe waagerecht von links nach rechts. Jedes richtig geordnete Paar zählt.</p>
+          <p class="microcopy">Ordne die Begriffe waagerecht von links nach rechts. Jeder Begriff auf der richtigen Position zählt.</p>
           <input type="hidden" name="answer" id="order-answer">
           <ol class="order-list" id="order-list">
             {% for item in display_items %}
@@ -84,6 +85,8 @@
           <p class="feedback-title">
             {% if question.category == 'estimate' %}
               {{ feedback.accuracy_points }} Genauigkeitspunkte
+            {% elif question.category == 'order' %}
+              {{ feedback.order_correct_count }} {{ 'Begriff' if feedback.order_correct_count == 1 else 'Begriffe' }} auf der richtigen Position.
             {% elif feedback.credit == 1 %}
               Volltreffer.
             {% elif feedback.credit > 0 %}

@@ -7024,519 +7024,5041 @@
     "question_type": "order",
     "primary_category": "plants_animals",
     "subtopic": "Tierbiologie",
-    "tags": {"topics": ["Fortpflanzung bei Säugetieren"], "entities": ["Hauskaninchen", "Hund", "Rind", "Elefant"], "genres": [], "regions": [], "eras": []},
+    "tags": {
+      "topics": [
+        "Fortpflanzung bei Säugetieren"
+      ],
+      "entities": [
+        "Hauskaninchen",
+        "Hund",
+        "Rind",
+        "Elefant"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne diese Säugetiere nach ihrer typischen Trächtigkeitsdauer – von kurz nach lang.",
-    "items": ["Elefant", "Hund", "Rind", "Hauskaninchen"],
-    "answer": ["Hauskaninchen", "Hund", "Rind", "Elefant"],
+    "items": [
+      "Elefant",
+      "Hund",
+      "Rind",
+      "Hauskaninchen"
+    ],
+    "answer": [
+      "Hauskaninchen",
+      "Hund",
+      "Rind",
+      "Elefant"
+    ],
     "explanation": "Hauskaninchen (31 Tage) → Hund (62–64 Tage) → Rind (9 Monate) → Elefant (660 Tage).",
-    "subject_keys": ["topic:plants_animals:trächtigkeitsdauer", "entity:hauskaninchen", "entity:hund", "entity:rind", "entity:elefant"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "MSD Veterinary Manual: Approximate Gestation Periods", "url": "https://www.msdvetmanual.com/multimedia/table/approximate-gestation-periods"}]}
+    "subject_keys": [
+      "topic:plants_animals:trächtigkeitsdauer",
+      "entity:hauskaninchen",
+      "entity:hund",
+      "entity:rind",
+      "entity:elefant"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "MSD Veterinary Manual: Approximate Gestation Periods",
+          "url": "https://www.msdvetmanual.com/multimedia/table/approximate-gestation-periods"
+        }
+      ]
+    }
   },
   {
     "id": "or187",
     "question_type": "order",
     "primary_category": "science_technology",
     "subtopic": "Minerale & Gesteine",
-    "tags": {"topics": ["Mineralhärte"], "entities": ["Gips", "Calcit", "Quarz", "Diamant"], "genres": [], "regions": [], "eras": []},
+    "tags": {
+      "topics": [
+        "Mineralhärte"
+      ],
+      "entities": [
+        "Gips",
+        "Calcit",
+        "Quarz",
+        "Diamant"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne diese Minerale nach ihrer Härte auf der Mohs-Skala – von weich nach hart.",
-    "items": ["Quarz", "Gips", "Diamant", "Calcit"],
-    "answer": ["Gips", "Calcit", "Quarz", "Diamant"],
+    "items": [
+      "Quarz",
+      "Gips",
+      "Diamant",
+      "Calcit"
+    ],
+    "answer": [
+      "Gips",
+      "Calcit",
+      "Quarz",
+      "Diamant"
+    ],
     "explanation": "Gips (Mohshärte 2) → Calcit (3) → Quarz (7) → Diamant (10).",
-    "subject_keys": ["topic:science_technology:mohs-härteskala", "entity:gips", "entity:calcit", "entity:quarz", "entity:diamant"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "U.S. Geological Survey: Natural Gemstones – Mineral Gemstones", "url": "https://pubs.usgs.gov/gip/gemstones/mineral.html"}]}
+    "subject_keys": [
+      "topic:science_technology:mohs-härteskala",
+      "entity:gips",
+      "entity:calcit",
+      "entity:quarz",
+      "entity:diamant"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "U.S. Geological Survey: Natural Gemstones – Mineral Gemstones",
+          "url": "https://pubs.usgs.gov/gip/gemstones/mineral.html"
+        }
+      ]
+    }
   },
   {
     "id": "or188",
     "question_type": "order",
     "primary_category": "science_technology",
     "subtopic": "Erdatmosphäre",
-    "tags": {"topics": ["Atmosphärenschichten"], "entities": ["Troposphäre", "Stratosphäre", "Mesosphäre", "Thermosphäre"], "genres": [], "regions": ["Erde"], "eras": []},
+    "tags": {
+      "topics": [
+        "Atmosphärenschichten"
+      ],
+      "entities": [
+        "Troposphäre",
+        "Stratosphäre",
+        "Mesosphäre",
+        "Thermosphäre"
+      ],
+      "genres": [],
+      "regions": [
+        "Erde"
+      ],
+      "eras": []
+    },
     "prompt": "Ordne diese Schichten der Erdatmosphäre – vom Boden nach oben.",
-    "items": ["Mesosphäre", "Troposphäre", "Thermosphäre", "Stratosphäre"],
-    "answer": ["Troposphäre", "Stratosphäre", "Mesosphäre", "Thermosphäre"],
+    "items": [
+      "Mesosphäre",
+      "Troposphäre",
+      "Thermosphäre",
+      "Stratosphäre"
+    ],
+    "answer": [
+      "Troposphäre",
+      "Stratosphäre",
+      "Mesosphäre",
+      "Thermosphäre"
+    ],
     "explanation": "Troposphäre (ab 0 km) → Stratosphäre (ab etwa 12 km) → Mesosphäre (ab etwa 50 km) → Thermosphäre (ab etwa 80 km).",
-    "subject_keys": ["topic:science_technology:atmosphärenschichten", "entity:troposphäre", "entity:stratosphäre", "entity:mesosphäre", "entity:thermosphäre"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "NASA Science: Earth’s Atmosphere – A Multi-layered Cake", "url": "https://science.nasa.gov/earth/earth-atmosphere/earths-atmosphere-a-multi-layered-cake/"}]}
+    "subject_keys": [
+      "topic:science_technology:atmosphärenschichten",
+      "entity:troposphäre",
+      "entity:stratosphäre",
+      "entity:mesosphäre",
+      "entity:thermosphäre"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "NASA Science: Earth’s Atmosphere – A Multi-layered Cake",
+          "url": "https://science.nasa.gov/earth/earth-atmosphere/earths-atmosphere-a-multi-layered-cake/"
+        }
+      ]
+    }
   },
   {
     "id": "or189",
     "question_type": "order",
     "primary_category": "science_technology",
     "subtopic": "Physik & Strahlung",
-    "tags": {"topics": ["Elektromagnetisches Spektrum"], "entities": ["Radiowellen", "Mikrowellen", "Sichtbares Licht", "Röntgenstrahlung"], "genres": [], "regions": [], "eras": []},
+    "tags": {
+      "topics": [
+        "Elektromagnetisches Spektrum"
+      ],
+      "entities": [
+        "Radiowellen",
+        "Mikrowellen",
+        "Sichtbares Licht",
+        "Röntgenstrahlung"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne diese Strahlungsarten nach ihrer Frequenz – von niedrig nach hoch.",
-    "items": ["Sichtbares Licht", "Radiowellen", "Röntgenstrahlung", "Mikrowellen"],
-    "answer": ["Radiowellen", "Mikrowellen", "Sichtbares Licht", "Röntgenstrahlung"],
+    "items": [
+      "Sichtbares Licht",
+      "Radiowellen",
+      "Röntgenstrahlung",
+      "Mikrowellen"
+    ],
+    "answer": [
+      "Radiowellen",
+      "Mikrowellen",
+      "Sichtbares Licht",
+      "Röntgenstrahlung"
+    ],
     "explanation": "Radiowellen (unter 3 × 10⁹ Hz) → Mikrowellen (bis 3 × 10¹¹ Hz) → sichtbares Licht (etwa 4 × 10¹⁴ bis 7,5 × 10¹⁴ Hz) → Röntgenstrahlung (ab etwa 3 × 10¹⁶ Hz).",
-    "subject_keys": ["topic:science_technology:elektromagnetisches-spektrum", "entity:radiowellen", "entity:mikrowellen", "entity:sichtbares licht", "entity:röntgenstrahlung"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "NASA Goddard: Wavelength, Frequency, and Energy", "url": "https://imagine.gsfc.nasa.gov/science/toolbox/spectrum_chart.html"}]}
+    "subject_keys": [
+      "topic:science_technology:elektromagnetisches-spektrum",
+      "entity:radiowellen",
+      "entity:mikrowellen",
+      "entity:sichtbares licht",
+      "entity:röntgenstrahlung"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "NASA Goddard: Wavelength, Frequency, and Energy",
+          "url": "https://imagine.gsfc.nasa.gov/science/toolbox/spectrum_chart.html"
+        }
+      ]
+    }
   },
   {
     "id": "or190",
     "question_type": "order",
     "primary_category": "science_technology",
     "subtopic": "Astronomie & Planeten",
-    "tags": {"topics": ["Umlaufzeiten"], "entities": ["Merkur", "Erde", "Jupiter", "Neptun"], "genres": [], "regions": ["Sonnensystem"], "eras": []},
+    "tags": {
+      "topics": [
+        "Umlaufzeiten"
+      ],
+      "entities": [
+        "Merkur",
+        "Erde",
+        "Jupiter",
+        "Neptun"
+      ],
+      "genres": [],
+      "regions": [
+        "Sonnensystem"
+      ],
+      "eras": []
+    },
     "prompt": "Ordne diese Planeten nach ihrer Umlaufzeit um die Sonne – von kurz nach lang.",
-    "items": ["Jupiter", "Merkur", "Neptun", "Erde"],
-    "answer": ["Merkur", "Erde", "Jupiter", "Neptun"],
+    "items": [
+      "Jupiter",
+      "Merkur",
+      "Neptun",
+      "Erde"
+    ],
+    "answer": [
+      "Merkur",
+      "Erde",
+      "Jupiter",
+      "Neptun"
+    ],
     "explanation": "Merkur (88 Tage) → Erde (365 Tage) → Jupiter (11,86 Jahre) → Neptun (164,79 Jahre).",
-    "subject_keys": ["topic:science_technology:planetare-umlaufzeiten", "entity:merkur", "entity:erde", "entity:jupiter", "entity:neptun"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "NASA Goddard: Planets of the Solar System", "url": "https://pwg.gsfc.nasa.gov/stargaze/SplanetsA.htm"}]}
+    "subject_keys": [
+      "topic:science_technology:planetare-umlaufzeiten",
+      "entity:merkur",
+      "entity:erde",
+      "entity:jupiter",
+      "entity:neptun"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "NASA Goddard: Planets of the Solar System",
+          "url": "https://pwg.gsfc.nasa.gov/stargaze/SplanetsA.htm"
+        }
+      ]
+    }
   },
   {
     "id": "or191",
     "question_type": "order",
     "primary_category": "science_technology",
     "subtopic": "Raumfahrtgeschichte",
-    "tags": {"topics": ["Marsrover"], "entities": ["Sojourner", "Spirit", "Curiosity", "Perseverance"], "genres": [], "regions": ["Mars"], "eras": ["20. Jahrhundert", "21. Jahrhundert"]},
+    "tags": {
+      "topics": [
+        "Marsrover"
+      ],
+      "entities": [
+        "Sojourner",
+        "Spirit",
+        "Curiosity",
+        "Perseverance"
+      ],
+      "genres": [],
+      "regions": [
+        "Mars"
+      ],
+      "eras": [
+        "20. Jahrhundert",
+        "21. Jahrhundert"
+      ]
+    },
     "prompt": "Ordne diese Marsrover nach ihrer Landung – vom frühesten zum spätesten.",
-    "items": ["Curiosity", "Sojourner", "Perseverance", "Spirit"],
-    "answer": ["Sojourner", "Spirit", "Curiosity", "Perseverance"],
+    "items": [
+      "Curiosity",
+      "Sojourner",
+      "Perseverance",
+      "Spirit"
+    ],
+    "answer": [
+      "Sojourner",
+      "Spirit",
+      "Curiosity",
+      "Perseverance"
+    ],
     "explanation": "Sojourner (1997) → Spirit (2004) → Curiosity (2012) → Perseverance (2021).",
-    "subject_keys": ["topic:science_technology:marsrover-landungen", "entity:sojourner", "entity:spirit", "entity:curiosity", "entity:perseverance"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "NASA JPL: Evolution of NASA Mars Rover Onboard Autonomy", "url": "https://robotics.jpl.nasa.gov/media/documents/2023-rapid-traverse.pdf"}]}
+    "subject_keys": [
+      "topic:science_technology:marsrover-landungen",
+      "entity:sojourner",
+      "entity:spirit",
+      "entity:curiosity",
+      "entity:perseverance"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "NASA JPL: Evolution of NASA Mars Rover Onboard Autonomy",
+          "url": "https://robotics.jpl.nasa.gov/media/documents/2023-rapid-traverse.pdf"
+        }
+      ]
+    }
   },
   {
     "id": "or192",
     "question_type": "order",
     "primary_category": "science_technology",
     "subtopic": "Weltraumteleskope",
-    "tags": {"topics": ["Weltraumobservatorien"], "entities": ["Hubble", "Chandra", "Kepler", "James Webb"], "genres": [], "regions": ["Weltraum"], "eras": ["20. Jahrhundert", "21. Jahrhundert"]},
+    "tags": {
+      "topics": [
+        "Weltraumobservatorien"
+      ],
+      "entities": [
+        "Hubble",
+        "Chandra",
+        "Kepler",
+        "James Webb"
+      ],
+      "genres": [],
+      "regions": [
+        "Weltraum"
+      ],
+      "eras": [
+        "20. Jahrhundert",
+        "21. Jahrhundert"
+      ]
+    },
     "prompt": "Ordne diese Weltraumteleskope nach ihrem Start – vom frühesten zum spätesten.",
-    "items": ["Kepler", "Hubble", "James Webb", "Chandra"],
-    "answer": ["Hubble", "Chandra", "Kepler", "James Webb"],
+    "items": [
+      "Kepler",
+      "Hubble",
+      "James Webb",
+      "Chandra"
+    ],
+    "answer": [
+      "Hubble",
+      "Chandra",
+      "Kepler",
+      "James Webb"
+    ],
     "explanation": "Hubble (1990) → Chandra (1999) → Kepler (2009) → James Webb (2021).",
-    "subject_keys": ["topic:science_technology:weltraumteleskop-starts", "entity:hubble", "entity:chandra", "entity:kepler", "entity:james webb"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "NASA Science: About Hubble", "url": "https://science.nasa.gov/mission/hubble/overview/about-hubble/"}, {"title": "NASA Science: Chandra X-ray Observatory", "url": "https://science.nasa.gov/mission/Chandra/"}, {"title": "NASA JPL: Kepler", "url": "https://www.jpl.nasa.gov/missions/kepler/"}, {"title": "NASA Science: Webb Overview", "url": "https://science.nasa.gov/mission/webb/about-overview/"}]}
+    "subject_keys": [
+      "topic:science_technology:weltraumteleskop-starts",
+      "entity:hubble",
+      "entity:chandra",
+      "entity:kepler",
+      "entity:james webb"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "NASA Science: About Hubble",
+          "url": "https://science.nasa.gov/mission/hubble/overview/about-hubble/"
+        },
+        {
+          "title": "NASA Science: Chandra X-ray Observatory",
+          "url": "https://science.nasa.gov/mission/Chandra/"
+        },
+        {
+          "title": "NASA JPL: Kepler",
+          "url": "https://www.jpl.nasa.gov/missions/kepler/"
+        },
+        {
+          "title": "NASA Science: Webb Overview",
+          "url": "https://science.nasa.gov/mission/webb/about-overview/"
+        }
+      ]
+    }
   },
   {
     "id": "or193",
     "question_type": "order",
     "primary_category": "witnesses_of_time",
     "subtopic": "Europäische Einigung",
-    "tags": {"topics": ["EU-Erweiterung"], "entities": ["Dänemark", "Griechenland", "Österreich", "Kroatien"], "genres": [], "regions": ["Europa"], "eras": ["20. Jahrhundert", "21. Jahrhundert"]},
+    "tags": {
+      "topics": [
+        "EU-Erweiterung"
+      ],
+      "entities": [
+        "Dänemark",
+        "Griechenland",
+        "Österreich",
+        "Kroatien"
+      ],
+      "genres": [],
+      "regions": [
+        "Europa"
+      ],
+      "eras": [
+        "20. Jahrhundert",
+        "21. Jahrhundert"
+      ]
+    },
     "prompt": "Ordne diese Länder nach ihrem Beitritt zur Europäischen Union – vom frühesten zum spätesten.",
-    "items": ["Österreich", "Kroatien", "Dänemark", "Griechenland"],
-    "answer": ["Dänemark", "Griechenland", "Österreich", "Kroatien"],
+    "items": [
+      "Österreich",
+      "Kroatien",
+      "Dänemark",
+      "Griechenland"
+    ],
+    "answer": [
+      "Dänemark",
+      "Griechenland",
+      "Österreich",
+      "Kroatien"
+    ],
     "explanation": "Dänemark (1973) → Griechenland (1981) → Österreich (1995) → Kroatien (2013).",
-    "subject_keys": ["topic:witnesses_of_time:eu-beitritte", "entity:dänemark", "entity:griechenland", "entity:österreich", "entity:kroatien"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Rat der Europäischen Union: Timeline – accession of EU member states", "url": "https://www.consilium.europa.eu/en/policies/how-enlargement-works/timeline-accession-eu-member-states/"}]}
+    "subject_keys": [
+      "topic:witnesses_of_time:eu-beitritte",
+      "entity:dänemark",
+      "entity:griechenland",
+      "entity:österreich",
+      "entity:kroatien"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Rat der Europäischen Union: Timeline – accession of EU member states",
+          "url": "https://www.consilium.europa.eu/en/policies/how-enlargement-works/timeline-accession-eu-member-states/"
+        }
+      ]
+    }
   },
   {
     "id": "or194",
     "question_type": "order",
     "primary_category": "witnesses_of_time",
     "subtopic": "Demokratiegeschichte",
-    "tags": {"topics": ["Frauenwahlrecht"], "entities": ["Neuseeland", "Deutschland", "Frankreich", "Schweiz"], "genres": [], "regions": ["Neuseeland", "Deutschland", "Frankreich", "Schweiz"], "eras": ["19. Jahrhundert", "20. Jahrhundert"]},
+    "tags": {
+      "topics": [
+        "Frauenwahlrecht"
+      ],
+      "entities": [
+        "Neuseeland",
+        "Deutschland",
+        "Frankreich",
+        "Schweiz"
+      ],
+      "genres": [],
+      "regions": [
+        "Neuseeland",
+        "Deutschland",
+        "Frankreich",
+        "Schweiz"
+      ],
+      "eras": [
+        "19. Jahrhundert",
+        "20. Jahrhundert"
+      ]
+    },
     "prompt": "Ordne diese Länder nach der Einführung des Frauenwahlrechts auf nationaler Ebene – vom frühesten zum spätesten.",
-    "items": ["Frankreich", "Neuseeland", "Schweiz", "Deutschland"],
-    "answer": ["Neuseeland", "Deutschland", "Frankreich", "Schweiz"],
+    "items": [
+      "Frankreich",
+      "Neuseeland",
+      "Schweiz",
+      "Deutschland"
+    ],
+    "answer": [
+      "Neuseeland",
+      "Deutschland",
+      "Frankreich",
+      "Schweiz"
+    ],
     "explanation": "Neuseeland (1893) → Deutschland (1918) → Frankreich (1944) → Schweiz (1971).",
-    "subject_keys": ["topic:witnesses_of_time:frauenwahlrecht", "entity:neuseeland", "entity:deutschland", "entity:frankreich", "entity:schweiz"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "NZ History: Women win the right to vote", "url": "https://nzhistory.govt.nz/womens-suffrage-day"}, {"title": "Deutscher Bundestag: Reichswahlgesetz führt das Frauenwahlrecht ein", "url": "https://www.bundestag.de/dokumente/textarchiv/1918-11-30-frauenwahlrecht-580156"}, {"title": "Assemblée nationale: L’accession des femmes au droit de vote", "url": "https://www.assemblee-nationale.fr/dyn/histoire-et-patrimoine/deuxieme-guerre-mondiale/l-accession-des-femmes-au-droit-de-vote"}, {"title": "Schweizerisches Bundesarchiv: Le suffrage féminin en Suisse", "url": "https://www.bar.admin.ch/fr/le-suffrage-feminin-en-suisse"}]}
+    "subject_keys": [
+      "topic:witnesses_of_time:frauenwahlrecht",
+      "entity:neuseeland",
+      "entity:deutschland",
+      "entity:frankreich",
+      "entity:schweiz"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "NZ History: Women win the right to vote",
+          "url": "https://nzhistory.govt.nz/womens-suffrage-day"
+        },
+        {
+          "title": "Deutscher Bundestag: Reichswahlgesetz führt das Frauenwahlrecht ein",
+          "url": "https://www.bundestag.de/dokumente/textarchiv/1918-11-30-frauenwahlrecht-580156"
+        },
+        {
+          "title": "Assemblée nationale: L’accession des femmes au droit de vote",
+          "url": "https://www.assemblee-nationale.fr/dyn/histoire-et-patrimoine/deuxieme-guerre-mondiale/l-accession-des-femmes-au-droit-de-vote"
+        },
+        {
+          "title": "Schweizerisches Bundesarchiv: Le suffrage féminin en Suisse",
+          "url": "https://www.bar.admin.ch/fr/le-suffrage-feminin-en-suisse"
+        }
+      ]
+    }
   },
   {
     "id": "or195",
     "question_type": "order",
     "primary_category": "gaming",
     "subtopic": "Brettspiele & Auszeichnungen",
-    "tags": {"topics": ["Spiel des Jahres"], "entities": ["Die Siedler von Catan", "Carcassonne", "Dominion", "Kingdom Builder"], "genres": ["Brettspiel"], "regions": ["Deutschland"], "eras": ["20. Jahrhundert", "21. Jahrhundert"]},
+    "tags": {
+      "topics": [
+        "Spiel des Jahres"
+      ],
+      "entities": [
+        "Die Siedler von Catan",
+        "Carcassonne",
+        "Dominion",
+        "Kingdom Builder"
+      ],
+      "genres": [
+        "Brettspiel"
+      ],
+      "regions": [
+        "Deutschland"
+      ],
+      "eras": [
+        "20. Jahrhundert",
+        "21. Jahrhundert"
+      ]
+    },
     "prompt": "Ordne diese Gewinner des Preises „Spiel des Jahres“ nach ihrem Gewinnjahr – vom frühesten zum spätesten.",
-    "items": ["Dominion", "Die Siedler von Catan", "Kingdom Builder", "Carcassonne"],
-    "answer": ["Die Siedler von Catan", "Carcassonne", "Dominion", "Kingdom Builder"],
+    "items": [
+      "Dominion",
+      "Die Siedler von Catan",
+      "Kingdom Builder",
+      "Carcassonne"
+    ],
+    "answer": [
+      "Die Siedler von Catan",
+      "Carcassonne",
+      "Dominion",
+      "Kingdom Builder"
+    ],
     "explanation": "Die Siedler von Catan (1995) → Carcassonne (2001) → Dominion (2009) → Kingdom Builder (2012).",
-    "subject_keys": ["topic:gaming:spiel-des-jahres", "entity:die siedler von catan", "entity:carcassonne", "entity:dominion", "entity:kingdom builder"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Spiel des Jahres: Bisherige Preisträger", "url": "https://www.spiel-des-jahres.de/wp-content/uploads/2019/09/broschuere2019.pdf"}]}
+    "subject_keys": [
+      "topic:gaming:spiel-des-jahres",
+      "entity:die siedler von catan",
+      "entity:carcassonne",
+      "entity:dominion",
+      "entity:kingdom builder"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Spiel des Jahres: Bisherige Preisträger",
+          "url": "https://www.spiel-des-jahres.de/wp-content/uploads/2019/09/broschuere2019.pdf"
+        }
+      ]
+    }
   },
   {
     "id": "or196",
     "question_type": "order",
     "primary_category": "witnesses_of_time",
     "subtopic": "Nobelpreisgeschichte",
-    "tags": {"topics": ["Nobelpreise"], "entities": ["Marie Curie", "Albert Einstein", "Martin Luther King Jr.", "Malala Yousafzai"], "genres": [], "regions": ["International"], "eras": ["20. Jahrhundert", "21. Jahrhundert"]},
+    "tags": {
+      "topics": [
+        "Nobelpreise"
+      ],
+      "entities": [
+        "Marie Curie",
+        "Albert Einstein",
+        "Martin Luther King Jr.",
+        "Malala Yousafzai"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": [
+        "20. Jahrhundert",
+        "21. Jahrhundert"
+      ]
+    },
     "prompt": "Ordne diese Persönlichkeiten nach dem Jahr ihres ersten Nobelpreises – vom frühesten zum spätesten.",
-    "items": ["Martin Luther King Jr.", "Marie Curie", "Malala Yousafzai", "Albert Einstein"],
-    "answer": ["Marie Curie", "Albert Einstein", "Martin Luther King Jr.", "Malala Yousafzai"],
+    "items": [
+      "Martin Luther King Jr.",
+      "Marie Curie",
+      "Malala Yousafzai",
+      "Albert Einstein"
+    ],
+    "answer": [
+      "Marie Curie",
+      "Albert Einstein",
+      "Martin Luther King Jr.",
+      "Malala Yousafzai"
+    ],
     "explanation": "Marie Curie (1903) → Albert Einstein (1921) → Martin Luther King Jr. (1964) → Malala Yousafzai (2014).",
-    "subject_keys": ["topic:witnesses_of_time:nobelpreisjahre", "entity:marie curie", "entity:albert einstein", "entity:martin luther king jr.", "entity:malala yousafzai"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Nobel Foundation: Annual Review 2015", "url": "https://www.nobelprize.org/uploads/2018/07/annual_review_15.pdf"}]}
+    "subject_keys": [
+      "topic:witnesses_of_time:nobelpreisjahre",
+      "entity:marie curie",
+      "entity:albert einstein",
+      "entity:martin luther king jr.",
+      "entity:malala yousafzai"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Nobel Foundation: Annual Review 2015",
+          "url": "https://www.nobelprize.org/uploads/2018/07/annual_review_15.pdf"
+        }
+      ]
+    }
   },
   {
     "id": "or197",
     "question_type": "order",
     "primary_category": "witnesses_of_time",
     "subtopic": "Museumsgeschichte",
-    "tags": {"topics": ["Museumsöffnungen"], "entities": ["British Museum", "Louvre", "Museo del Prado", "Museum of Modern Art"], "genres": ["Kunst", "Kulturgeschichte"], "regions": ["London", "Paris", "Madrid", "New York"], "eras": ["18. Jahrhundert", "19. Jahrhundert", "20. Jahrhundert"]},
+    "tags": {
+      "topics": [
+        "Museumsöffnungen"
+      ],
+      "entities": [
+        "British Museum",
+        "Louvre",
+        "Museo del Prado",
+        "Museum of Modern Art"
+      ],
+      "genres": [
+        "Kunst",
+        "Kulturgeschichte"
+      ],
+      "regions": [
+        "London",
+        "Paris",
+        "Madrid",
+        "New York"
+      ],
+      "eras": [
+        "18. Jahrhundert",
+        "19. Jahrhundert",
+        "20. Jahrhundert"
+      ]
+    },
     "prompt": "Ordne diese Museen nach ihrer Öffnung für das Publikum – vom frühesten zum spätesten.",
-    "items": ["Museo del Prado", "British Museum", "Museum of Modern Art", "Louvre"],
-    "answer": ["British Museum", "Louvre", "Museo del Prado", "Museum of Modern Art"],
+    "items": [
+      "Museo del Prado",
+      "British Museum",
+      "Museum of Modern Art",
+      "Louvre"
+    ],
+    "answer": [
+      "British Museum",
+      "Louvre",
+      "Museo del Prado",
+      "Museum of Modern Art"
+    ],
     "explanation": "British Museum (1759) → Louvre (1793) → Museo del Prado (1819) → Museum of Modern Art (1929).",
-    "subject_keys": ["topic:witnesses_of_time:museumsöffnungen", "entity:british museum", "entity:louvre", "entity:museo del prado", "entity:museum of modern art"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "British Museum: History", "url": "https://www.britishmuseum.org/about-us/british-museum-story/history"}, {"title": "Musée du Louvre: The museum at a glance", "url": "https://presse.louvre.fr/le-musee-du-louvre-en-bref-1063000220316/?lang=en"}, {"title": "Museo Nacional del Prado: History of the museum", "url": "https://www.museodelprado.es/en/museum/history-of-the-museum"}, {"title": "MoMA: Exhibition history", "url": "https://www.moma.org/calendar/about/exhibition-history"}]}
+    "subject_keys": [
+      "topic:witnesses_of_time:museumsöffnungen",
+      "entity:british museum",
+      "entity:louvre",
+      "entity:museo del prado",
+      "entity:museum of modern art"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "British Museum: History",
+          "url": "https://www.britishmuseum.org/about-us/british-museum-story/history"
+        },
+        {
+          "title": "Musée du Louvre: The museum at a glance",
+          "url": "https://presse.louvre.fr/le-musee-du-louvre-en-bref-1063000220316/?lang=en"
+        },
+        {
+          "title": "Museo Nacional del Prado: History of the museum",
+          "url": "https://www.museodelprado.es/en/museum/history-of-the-museum"
+        },
+        {
+          "title": "MoMA: Exhibition history",
+          "url": "https://www.moma.org/calendar/about/exhibition-history"
+        }
+      ]
+    }
   },
   {
     "id": "or198",
     "question_type": "order",
     "primary_category": "science_technology",
     "subtopic": "Softwaregeschichte",
-    "tags": {"topics": ["Programmiersprachen"], "entities": ["Lisp", "C", "Python", "Java"], "genres": [], "regions": ["International"], "eras": ["20. Jahrhundert"]},
+    "tags": {
+      "topics": [
+        "Programmiersprachen"
+      ],
+      "entities": [
+        "Lisp",
+        "C",
+        "Python",
+        "Java"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": [
+        "20. Jahrhundert"
+      ]
+    },
     "prompt": "Ordne diese Programmiersprachen nach ihrem Entstehungsjahr – vom frühesten zum spätesten.",
-    "items": ["Python", "Lisp", "Java", "C"],
-    "answer": ["Lisp", "C", "Python", "Java"],
+    "items": [
+      "Python",
+      "Lisp",
+      "Java",
+      "C"
+    ],
+    "answer": [
+      "Lisp",
+      "C",
+      "Python",
+      "Java"
+    ],
     "explanation": "Lisp (1959) → C (1972) → Python (1991) → Java (1995).",
-    "subject_keys": ["topic:science_technology:programmiersprachen-geschichte", "entity:lisp", "entity:c-programmiersprache", "entity:python", "entity:java"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "University of Virginia: Timeline of Programming Languages", "url": "https://galileo.phys.virginia.edu/compfac/courses/comp_phys1/01-Intro-notes.pdf"}]}
+    "subject_keys": [
+      "topic:science_technology:programmiersprachen-geschichte",
+      "entity:lisp",
+      "entity:c-programmiersprache",
+      "entity:python",
+      "entity:java"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "University of Virginia: Timeline of Programming Languages",
+          "url": "https://galileo.phys.virginia.edu/compfac/courses/comp_phys1/01-Intro-notes.pdf"
+        }
+      ]
+    }
   },
   {
     "id": "or199",
     "question_type": "order",
     "primary_category": "science_technology",
     "subtopic": "Betriebssysteme",
-    "tags": {"topics": ["Softwareveröffentlichungen"], "entities": ["Windows 95", "Mac OS X", "Ubuntu", "Android 1.0"], "genres": [], "regions": ["International"], "eras": ["20. Jahrhundert", "21. Jahrhundert"]},
+    "tags": {
+      "topics": [
+        "Softwareveröffentlichungen"
+      ],
+      "entities": [
+        "Windows 95",
+        "Mac OS X",
+        "Ubuntu",
+        "Android 1.0"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": [
+        "20. Jahrhundert",
+        "21. Jahrhundert"
+      ]
+    },
     "prompt": "Ordne diese Betriebssysteme nach ihrer ersten Veröffentlichung – vom frühesten zum spätesten.",
-    "items": ["Ubuntu", "Windows 95", "Android 1.0", "Mac OS X"],
-    "answer": ["Windows 95", "Mac OS X", "Ubuntu", "Android 1.0"],
+    "items": [
+      "Ubuntu",
+      "Windows 95",
+      "Android 1.0",
+      "Mac OS X"
+    ],
+    "answer": [
+      "Windows 95",
+      "Mac OS X",
+      "Ubuntu",
+      "Android 1.0"
+    ],
     "explanation": "Windows 95 (1995) → Mac OS X (2001) → Ubuntu (2004) → Android 1.0 (2008).",
-    "subject_keys": ["topic:science_technology:betriebssystem-veröffentlichungen", "entity:windows 95", "entity:mac os x", "entity:ubuntu", "entity:android 1.0"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Microsoft: Windows 95", "url": "https://www.microsoft.com/en-us/edge/learning-center/how-internet-explorer-once-took-over-the-web"}, {"title": "Apple: Mac OS X to Ship on March 24", "url": "https://www.apple.com/newsroom/2001/01/09Apples-Mac-OS-X-to-Ship-on-March-24/"}, {"title": "Ubuntu: About the Ubuntu project", "url": "https://ubuntu.com/about"}, {"title": "Android Developers: Announcing Android 1.0", "url": "https://android-developers.googleblog.com/2008/09/announcing-android-10-sdk-release-1.html"}]}
+    "subject_keys": [
+      "topic:science_technology:betriebssystem-veröffentlichungen",
+      "entity:windows 95",
+      "entity:mac os x",
+      "entity:ubuntu",
+      "entity:android 1.0"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Microsoft: Windows 95",
+          "url": "https://www.microsoft.com/en-us/edge/learning-center/how-internet-explorer-once-took-over-the-web"
+        },
+        {
+          "title": "Apple: Mac OS X to Ship on March 24",
+          "url": "https://www.apple.com/newsroom/2001/01/09Apples-Mac-OS-X-to-Ship-on-March-24/"
+        },
+        {
+          "title": "Ubuntu: About the Ubuntu project",
+          "url": "https://ubuntu.com/about"
+        },
+        {
+          "title": "Android Developers: Announcing Android 1.0",
+          "url": "https://android-developers.googleblog.com/2008/09/announcing-android-10-sdk-release-1.html"
+        }
+      ]
+    }
   },
   {
     "id": "or200",
     "question_type": "order",
     "primary_category": "media_entertainment",
     "subtopic": "Animationsfilm",
-    "tags": {"topics": ["Pixar-Filme"], "entities": ["Toy Story", "Findet Nemo", "WALL·E", "Alles steht Kopf"], "genres": ["Animationsfilm"], "regions": ["USA"], "eras": ["20. Jahrhundert", "21. Jahrhundert"]},
+    "tags": {
+      "topics": [
+        "Pixar-Filme"
+      ],
+      "entities": [
+        "Toy Story",
+        "Findet Nemo",
+        "WALL·E",
+        "Alles steht Kopf"
+      ],
+      "genres": [
+        "Animationsfilm"
+      ],
+      "regions": [
+        "USA"
+      ],
+      "eras": [
+        "20. Jahrhundert",
+        "21. Jahrhundert"
+      ]
+    },
     "prompt": "Ordne diese Pixar-Filme nach ihrem Kinostart – vom frühesten zum spätesten.",
-    "items": ["WALL·E", "Toy Story", "Alles steht Kopf", "Findet Nemo"],
-    "answer": ["Toy Story", "Findet Nemo", "WALL·E", "Alles steht Kopf"],
+    "items": [
+      "WALL·E",
+      "Toy Story",
+      "Alles steht Kopf",
+      "Findet Nemo"
+    ],
+    "answer": [
+      "Toy Story",
+      "Findet Nemo",
+      "WALL·E",
+      "Alles steht Kopf"
+    ],
     "explanation": "Toy Story (1995) → Findet Nemo (2003) → WALL·E (2008) → Alles steht Kopf (2015).",
-    "subject_keys": ["topic:media_entertainment:pixar-kinostarts", "entity:toy story", "entity:findet nemo", "entity:wall-e", "entity:alles steht kopf"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Pixar Animation Studios: Feature Films", "url": "https://www.pixar.com/feature-films"}]}
+    "subject_keys": [
+      "topic:media_entertainment:pixar-kinostarts",
+      "entity:toy story",
+      "entity:findet nemo",
+      "entity:wall-e",
+      "entity:alles steht kopf"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Pixar Animation Studios: Feature Films",
+          "url": "https://www.pixar.com/feature-films"
+        }
+      ]
+    }
   },
   {
     "id": "or201",
     "question_type": "order",
     "primary_category": "music",
     "subtopic": "Eurovision Song Contest",
-    "tags": {"topics": ["Eurovision-Siege"], "entities": ["ABBA", "Céline Dion", "Lordi", "Måneskin"], "genres": ["Pop", "Rock"], "regions": ["Europa"], "eras": ["20. Jahrhundert", "21. Jahrhundert"]},
+    "tags": {
+      "topics": [
+        "Eurovision-Siege"
+      ],
+      "entities": [
+        "ABBA",
+        "Céline Dion",
+        "Lordi",
+        "Måneskin"
+      ],
+      "genres": [
+        "Pop",
+        "Rock"
+      ],
+      "regions": [
+        "Europa"
+      ],
+      "eras": [
+        "20. Jahrhundert",
+        "21. Jahrhundert"
+      ]
+    },
     "prompt": "Ordne diese Eurovision-Sieger nach ihrem Gewinnjahr – vom frühesten zum spätesten.",
-    "items": ["Lordi", "ABBA", "Måneskin", "Céline Dion"],
-    "answer": ["ABBA", "Céline Dion", "Lordi", "Måneskin"],
+    "items": [
+      "Lordi",
+      "ABBA",
+      "Måneskin",
+      "Céline Dion"
+    ],
+    "answer": [
+      "ABBA",
+      "Céline Dion",
+      "Lordi",
+      "Måneskin"
+    ],
     "explanation": "ABBA (1974) → Céline Dion (1988) → Lordi (2006) → Måneskin (2021).",
-    "subject_keys": ["topic:music:eurovision-siegjahre", "entity:abba", "entity:céline dion", "entity:lordi", "entity:måneskin"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Eurovision Song Contest: Media Handbook 2023 – List of Winners", "url": "https://eurovision.tv/sites/default/files/uploads/2023-04/EUROVISION%202023%20MEDIA%20HANDBOOK.pdf"}]}
+    "subject_keys": [
+      "topic:music:eurovision-siegjahre",
+      "entity:abba",
+      "entity:céline dion",
+      "entity:lordi",
+      "entity:måneskin"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Eurovision Song Contest: Media Handbook 2023 – List of Winners",
+          "url": "https://eurovision.tv/sites/default/files/uploads/2023-04/EUROVISION%202023%20MEDIA%20HANDBOOK.pdf"
+        }
+      ]
+    }
   },
   {
     "id": "or202",
     "question_type": "order",
     "primary_category": "sport",
     "subtopic": "Fußballgeschichte",
-    "tags": {"topics": ["Erster WM-Titel"], "entities": ["Uruguay", "Brasilien", "Argentinien", "Spanien"], "genres": ["Fußball"], "regions": ["International"], "eras": ["20. Jahrhundert", "21. Jahrhundert"]},
+    "tags": {
+      "topics": [
+        "Erster WM-Titel"
+      ],
+      "entities": [
+        "Uruguay",
+        "Brasilien",
+        "Argentinien",
+        "Spanien"
+      ],
+      "genres": [
+        "Fußball"
+      ],
+      "regions": [
+        "International"
+      ],
+      "eras": [
+        "20. Jahrhundert",
+        "21. Jahrhundert"
+      ]
+    },
     "prompt": "Ordne diese Länder nach ihrem ersten Titel bei der Fußball-Weltmeisterschaft der Männer – vom frühesten zum spätesten.",
-    "items": ["Argentinien", "Spanien", "Uruguay", "Brasilien"],
-    "answer": ["Uruguay", "Brasilien", "Argentinien", "Spanien"],
+    "items": [
+      "Argentinien",
+      "Spanien",
+      "Uruguay",
+      "Brasilien"
+    ],
+    "answer": [
+      "Uruguay",
+      "Brasilien",
+      "Argentinien",
+      "Spanien"
+    ],
     "explanation": "Uruguay (1930) → Brasilien (1958) → Argentinien (1978) → Spanien (2010).",
-    "subject_keys": ["topic:sport:erster-fußball-wm-titel", "entity:uruguay", "entity:brasilien", "entity:argentinien", "entity:spanien"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "FIFA: World Cup champions 1930–1978", "url": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1930-1978-uruguay-italy-germany-brazil-england-argentina"}, {"title": "FIFA: World Cup finals that made history", "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/world-cup-finals-that-made-history"}]}
+    "subject_keys": [
+      "topic:sport:erster-fußball-wm-titel",
+      "entity:uruguay",
+      "entity:brasilien",
+      "entity:argentinien",
+      "entity:spanien"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "FIFA: World Cup champions 1930–1978",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1930-1978-uruguay-italy-germany-brazil-england-argentina"
+        },
+        {
+          "title": "FIFA: World Cup finals that made history",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/world-cup-finals-that-made-history"
+        }
+      ]
+    }
   },
   {
     "id": "or203",
     "question_type": "order",
     "primary_category": "media_entertainment",
     "subtopic": "Film & Oscars",
-    "tags": {"topics": ["Oscar für den besten Film"], "entities": ["Casablanca", "Der Pate", "Titanic", "Parasite"], "genres": ["Film"], "regions": ["USA"], "eras": ["20. Jahrhundert", "21. Jahrhundert"]},
+    "tags": {
+      "topics": [
+        "Oscar für den besten Film"
+      ],
+      "entities": [
+        "Casablanca",
+        "Der Pate",
+        "Titanic",
+        "Parasite"
+      ],
+      "genres": [
+        "Film"
+      ],
+      "regions": [
+        "USA"
+      ],
+      "eras": [
+        "20. Jahrhundert",
+        "21. Jahrhundert"
+      ]
+    },
     "prompt": "Ordne diese Filme nach der Oscar-Verleihung, bei der sie als bester Film gewannen – vom frühesten zum spätesten.",
-    "items": ["Titanic", "Casablanca", "Parasite", "Der Pate"],
-    "answer": ["Casablanca", "Der Pate", "Titanic", "Parasite"],
+    "items": [
+      "Titanic",
+      "Casablanca",
+      "Parasite",
+      "Der Pate"
+    ],
+    "answer": [
+      "Casablanca",
+      "Der Pate",
+      "Titanic",
+      "Parasite"
+    ],
     "explanation": "Casablanca (1944) → Der Pate (1973) → Titanic (1998) → Parasite (2020).",
-    "subject_keys": ["topic:media_entertainment:best-picture-siegjahre", "entity:casablanca", "entity:der pate", "entity:titanic", "entity:parasite"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Academy Awards 1944", "url": "https://www.oscars.org/oscars/ceremonies/1944"}, {"title": "Academy Awards 1973", "url": "https://www.oscars.org/oscars/ceremonies/1973"}, {"title": "Academy Awards 1998", "url": "https://www.oscars.org/oscars/ceremonies/1998"}, {"title": "Academy Awards 2020", "url": "https://www.oscars.org/oscars/ceremonies/2020"}]}
+    "subject_keys": [
+      "topic:media_entertainment:best-picture-siegjahre",
+      "entity:casablanca",
+      "entity:der pate",
+      "entity:titanic",
+      "entity:parasite"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Academy Awards 1944",
+          "url": "https://www.oscars.org/oscars/ceremonies/1944"
+        },
+        {
+          "title": "Academy Awards 1973",
+          "url": "https://www.oscars.org/oscars/ceremonies/1973"
+        },
+        {
+          "title": "Academy Awards 1998",
+          "url": "https://www.oscars.org/oscars/ceremonies/1998"
+        },
+        {
+          "title": "Academy Awards 2020",
+          "url": "https://www.oscars.org/oscars/ceremonies/2020"
+        }
+      ]
+    }
   },
   {
     "id": "or204",
     "question_type": "order",
     "primary_category": "science_technology",
     "subtopic": "Astronomie & Planeten",
-    "tags": {"topics": ["Oberflächengravitation"], "entities": ["Merkur", "Uranus", "Neptun", "Jupiter"], "genres": [], "regions": ["Sonnensystem"], "eras": []},
+    "tags": {
+      "topics": [
+        "Oberflächengravitation"
+      ],
+      "entities": [
+        "Merkur",
+        "Uranus",
+        "Neptun",
+        "Jupiter"
+      ],
+      "genres": [],
+      "regions": [
+        "Sonnensystem"
+      ],
+      "eras": []
+    },
     "prompt": "Ordne diese Planeten nach ihrer Schwerkraft an der Oberfläche – von schwach nach stark.",
-    "items": ["Neptun", "Merkur", "Jupiter", "Uranus"],
-    "answer": ["Merkur", "Uranus", "Neptun", "Jupiter"],
+    "items": [
+      "Neptun",
+      "Merkur",
+      "Jupiter",
+      "Uranus"
+    ],
+    "answer": [
+      "Merkur",
+      "Uranus",
+      "Neptun",
+      "Jupiter"
+    ],
     "explanation": "Merkur (3,7 m/s²) → Uranus (8,7 m/s²) → Neptun (11,0 m/s²) → Jupiter (23,1 m/s²).",
-    "subject_keys": ["topic:science_technology:planetare-gravitation", "entity:merkur", "entity:uranus", "entity:neptun", "entity:jupiter"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "NASA Goddard: Planetary Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/"}]}
+    "subject_keys": [
+      "topic:science_technology:planetare-gravitation",
+      "entity:merkur",
+      "entity:uranus",
+      "entity:neptun",
+      "entity:jupiter"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "NASA Goddard: Planetary Fact Sheet",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/"
+        }
+      ]
+    }
   },
   {
     "id": "or205",
     "question_type": "order",
     "primary_category": "science_technology",
     "subtopic": "Astronomie & Planeten",
-    "tags": {"topics": ["Planetendichte"], "entities": ["Saturn", "Uranus", "Neptun", "Erde"], "genres": [], "regions": ["Sonnensystem"], "eras": []},
+    "tags": {
+      "topics": [
+        "Planetendichte"
+      ],
+      "entities": [
+        "Saturn",
+        "Uranus",
+        "Neptun",
+        "Erde"
+      ],
+      "genres": [],
+      "regions": [
+        "Sonnensystem"
+      ],
+      "eras": []
+    },
     "prompt": "Ordne diese Planeten nach ihrer mittleren Dichte – von niedrig nach hoch.",
-    "items": ["Neptun", "Erde", "Saturn", "Uranus"],
-    "answer": ["Saturn", "Uranus", "Neptun", "Erde"],
+    "items": [
+      "Neptun",
+      "Erde",
+      "Saturn",
+      "Uranus"
+    ],
+    "answer": [
+      "Saturn",
+      "Uranus",
+      "Neptun",
+      "Erde"
+    ],
     "explanation": "Saturn (687 kg/m³) → Uranus (1.270 kg/m³) → Neptun (1.638 kg/m³) → Erde (5.514 kg/m³).",
-    "subject_keys": ["topic:science_technology:planetendichte", "entity:saturn", "entity:uranus", "entity:neptun", "entity:erde"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "NASA Goddard: Planetary Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/"}]}
+    "subject_keys": [
+      "topic:science_technology:planetendichte",
+      "entity:saturn",
+      "entity:uranus",
+      "entity:neptun",
+      "entity:erde"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "NASA Goddard: Planetary Fact Sheet",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/"
+        }
+      ]
+    }
   },
   {
     "id": "or206",
     "question_type": "order",
     "primary_category": "science_technology",
     "subtopic": "Zellbiologie",
-    "tags": {"topics": ["Mitose"], "entities": ["Prophase", "Metaphase", "Anaphase", "Telophase"], "genres": [], "regions": [], "eras": []},
+    "tags": {
+      "topics": [
+        "Mitose"
+      ],
+      "entities": [
+        "Prophase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne diese Phasen der Mitose – von der frühesten zur spätesten.",
-    "items": ["Anaphase", "Prophase", "Telophase", "Metaphase"],
-    "answer": ["Prophase", "Metaphase", "Anaphase", "Telophase"],
+    "items": [
+      "Anaphase",
+      "Prophase",
+      "Telophase",
+      "Metaphase"
+    ],
+    "answer": [
+      "Prophase",
+      "Metaphase",
+      "Anaphase",
+      "Telophase"
+    ],
     "explanation": "Prophase (Chromosomen werden sichtbar) → Metaphase (Anordnung in der Zellmitte) → Anaphase (Trennung) → Telophase (neue Kernhüllen entstehen).",
-    "subject_keys": ["topic:science_technology:mitose-phasen", "entity:prophase", "entity:metaphase", "entity:anaphase", "entity:telophase"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "National Institute of General Medical Sciences: Mitosis", "url": "https://www.nigms.nih.gov/node/42776"}]}
+    "subject_keys": [
+      "topic:science_technology:mitose-phasen",
+      "entity:prophase",
+      "entity:metaphase",
+      "entity:anaphase",
+      "entity:telophase"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "National Institute of General Medical Sciences: Mitosis",
+          "url": "https://www.nigms.nih.gov/node/42776"
+        }
+      ]
+    }
   },
   {
     "id": "or207",
     "question_type": "order",
     "primary_category": "science_technology",
     "subtopic": "Mond & Himmelsbeobachtung",
-    "tags": {"topics": ["Mondphasen"], "entities": ["Neumond", "Zunehmende Sichel", "Erstes Viertel", "Zunehmender Dreiviertelmond"], "genres": [], "regions": ["Erde"], "eras": []},
+    "tags": {
+      "topics": [
+        "Mondphasen"
+      ],
+      "entities": [
+        "Neumond",
+        "Zunehmende Sichel",
+        "Erstes Viertel",
+        "Zunehmender Dreiviertelmond"
+      ],
+      "genres": [],
+      "regions": [
+        "Erde"
+      ],
+      "eras": []
+    },
     "prompt": "Ordne diese Mondphasen in ihrem Ablauf – beginnend mit dem Neumond.",
-    "items": ["Erstes Viertel", "Neumond", "Zunehmender Dreiviertelmond", "Zunehmende Sichel"],
-    "answer": ["Neumond", "Zunehmende Sichel", "Erstes Viertel", "Zunehmender Dreiviertelmond"],
+    "items": [
+      "Erstes Viertel",
+      "Neumond",
+      "Zunehmender Dreiviertelmond",
+      "Zunehmende Sichel"
+    ],
+    "answer": [
+      "Neumond",
+      "Zunehmende Sichel",
+      "Erstes Viertel",
+      "Zunehmender Dreiviertelmond"
+    ],
     "explanation": "Neumond → zunehmende Sichel → erstes Viertel → zunehmender Dreiviertelmond. Danach folgt der Vollmond.",
-    "subject_keys": ["topic:science_technology:mondphasen-ablauf", "entity:neumond", "entity:zunehmende sichel", "entity:erstes viertel", "entity:zunehmender dreiviertelmond"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "NASA Science: Moon Phases", "url": "https://science.nasa.gov/moon/moon-phases/"}]}
+    "subject_keys": [
+      "topic:science_technology:mondphasen-ablauf",
+      "entity:neumond",
+      "entity:zunehmende sichel",
+      "entity:erstes viertel",
+      "entity:zunehmender dreiviertelmond"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "NASA Science: Moon Phases",
+          "url": "https://science.nasa.gov/moon/moon-phases/"
+        }
+      ]
+    }
   },
   {
     "id": "or208",
     "question_type": "order",
     "primary_category": "science_technology",
     "subtopic": "Sterne & Entwicklung",
-    "tags": {"topics": ["Lebenszyklus eines Sterns"], "entities": ["Sternennebel", "Protostern", "Hauptreihenstern", "Roter Riese"], "genres": [], "regions": ["Weltraum"], "eras": []},
+    "tags": {
+      "topics": [
+        "Lebenszyklus eines Sterns"
+      ],
+      "entities": [
+        "Sternennebel",
+        "Protostern",
+        "Hauptreihenstern",
+        "Roter Riese"
+      ],
+      "genres": [],
+      "regions": [
+        "Weltraum"
+      ],
+      "eras": []
+    },
     "prompt": "Ordne diese Stationen im Leben eines sonnenähnlichen Sterns – von früh nach spät.",
-    "items": ["Hauptreihenstern", "Sternennebel", "Roter Riese", "Protostern"],
-    "answer": ["Sternennebel", "Protostern", "Hauptreihenstern", "Roter Riese"],
+    "items": [
+      "Hauptreihenstern",
+      "Sternennebel",
+      "Roter Riese",
+      "Protostern"
+    ],
+    "answer": [
+      "Sternennebel",
+      "Protostern",
+      "Hauptreihenstern",
+      "Roter Riese"
+    ],
     "explanation": "Sternennebel (Gas und Staub) → Protostern (Verdichtung) → Hauptreihenstern (stabile Kernfusion) → Roter Riese (aufgeblähte späte Phase).",
-    "subject_keys": ["topic:science_technology:sternentwicklung", "entity:sternenebel", "entity:protostern", "entity:hauptreihenstern", "entity:roter riese"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "NASA Goddard: The Life Cycles of Stars", "url": "https://imagine.gsfc.nasa.gov/educators/lifecycles/starchild5.pdf"}]}
+    "subject_keys": [
+      "topic:science_technology:sternentwicklung",
+      "entity:sternenebel",
+      "entity:protostern",
+      "entity:hauptreihenstern",
+      "entity:roter riese"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "NASA Goddard: The Life Cycles of Stars",
+          "url": "https://imagine.gsfc.nasa.gov/educators/lifecycles/starchild5.pdf"
+        }
+      ]
+    }
   },
   {
     "id": "or209",
     "question_type": "order",
     "primary_category": "science_technology",
     "subtopic": "Wasser & Klima",
-    "tags": {"topics": ["Wasserkreislauf"], "entities": ["Verdunstung", "Kondensation", "Niederschlag", "Oberflächenabfluss"], "genres": [], "regions": ["Erde"], "eras": []},
+    "tags": {
+      "topics": [
+        "Wasserkreislauf"
+      ],
+      "entities": [
+        "Verdunstung",
+        "Kondensation",
+        "Niederschlag",
+        "Oberflächenabfluss"
+      ],
+      "genres": [],
+      "regions": [
+        "Erde"
+      ],
+      "eras": []
+    },
     "prompt": "Ordne diese Schritte im Wasserkreislauf – beginnend mit der Verdunstung von Oberflächenwasser.",
-    "items": ["Niederschlag", "Verdunstung", "Oberflächenabfluss", "Kondensation"],
-    "answer": ["Verdunstung", "Kondensation", "Niederschlag", "Oberflächenabfluss"],
+    "items": [
+      "Niederschlag",
+      "Verdunstung",
+      "Oberflächenabfluss",
+      "Kondensation"
+    ],
+    "answer": [
+      "Verdunstung",
+      "Kondensation",
+      "Niederschlag",
+      "Oberflächenabfluss"
+    ],
     "explanation": "Verdunstung (Wasser wird zu Dampf) → Kondensation (Wolken entstehen) → Niederschlag (Wasser fällt) → Oberflächenabfluss (Wasser fließt zurück).",
-    "subject_keys": ["topic:science_technology:wasserkreislauf", "entity:verdunstung", "entity:kondensation", "entity:niederschlag", "entity:oberflächenabfluss"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "U.S. Geological Survey: Follow a Drip Through the Water Cycle", "url": "https://www.usgs.gov/water-science-school/science/follow-a-drip-through-water-cycle"}]}
+    "subject_keys": [
+      "topic:science_technology:wasserkreislauf",
+      "entity:verdunstung",
+      "entity:kondensation",
+      "entity:niederschlag",
+      "entity:oberflächenabfluss"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "U.S. Geological Survey: Follow a Drip Through the Water Cycle",
+          "url": "https://www.usgs.gov/water-science-school/science/follow-a-drip-through-water-cycle"
+        }
+      ]
+    }
   },
   {
     "id": "or210",
     "question_type": "order",
     "primary_category": "science_technology",
     "subtopic": "Hören & Ohr",
-    "tags": {"topics": ["Hörvorgang"], "entities": ["Gehörgang", "Trommelfell", "Gehörknöchelchen", "Hörschnecke"], "genres": [], "regions": [], "eras": []},
+    "tags": {
+      "topics": [
+        "Hörvorgang"
+      ],
+      "entities": [
+        "Gehörgang",
+        "Trommelfell",
+        "Gehörknöchelchen",
+        "Hörschnecke"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne diese Stationen des Schalls im Ohr – von außen nach innen.",
-    "items": ["Gehörknöchelchen", "Gehörgang", "Hörschnecke", "Trommelfell"],
-    "answer": ["Gehörgang", "Trommelfell", "Gehörknöchelchen", "Hörschnecke"],
+    "items": [
+      "Gehörknöchelchen",
+      "Gehörgang",
+      "Hörschnecke",
+      "Trommelfell"
+    ],
+    "answer": [
+      "Gehörgang",
+      "Trommelfell",
+      "Gehörknöchelchen",
+      "Hörschnecke"
+    ],
     "explanation": "Gehörgang (leitet Schall hinein) → Trommelfell (beginnt zu schwingen) → Gehörknöchelchen (verstärken die Schwingung) → Hörschnecke (wandelt sie weiter um).",
-    "subject_keys": ["topic:science_technology:hörweg", "entity:gehörgang", "entity:trommelfell", "entity:gehörknöchelchen", "entity:hörschnecke"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "National Institute on Deafness and Other Communication Disorders: How Do We Hear?", "url": "https://www.nidcd.nih.gov/health/how-do-we-hear"}]}
+    "subject_keys": [
+      "topic:science_technology:hörweg",
+      "entity:gehörgang",
+      "entity:trommelfell",
+      "entity:gehörknöchelchen",
+      "entity:hörschnecke"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "National Institute on Deafness and Other Communication Disorders: How Do We Hear?",
+          "url": "https://www.nidcd.nih.gov/health/how-do-we-hear"
+        }
+      ]
+    }
   },
   {
     "id": "or211",
     "question_type": "order",
     "primary_category": "science_technology",
     "subtopic": "Herz & Kreislauf",
-    "tags": {"topics": ["Blutkreislauf"], "entities": ["Rechter Vorhof", "Rechte Herzkammer", "Lunge", "Linker Vorhof"], "genres": [], "regions": [], "eras": []},
+    "tags": {
+      "topics": [
+        "Blutkreislauf"
+      ],
+      "entities": [
+        "Rechter Vorhof",
+        "Rechte Herzkammer",
+        "Lunge",
+        "Linker Vorhof"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne diese Stationen des Blutflusses – beginnend mit dem rechten Vorhof.",
-    "items": ["Lunge", "Rechter Vorhof", "Linker Vorhof", "Rechte Herzkammer"],
-    "answer": ["Rechter Vorhof", "Rechte Herzkammer", "Lunge", "Linker Vorhof"],
+    "items": [
+      "Lunge",
+      "Rechter Vorhof",
+      "Linker Vorhof",
+      "Rechte Herzkammer"
+    ],
+    "answer": [
+      "Rechter Vorhof",
+      "Rechte Herzkammer",
+      "Lunge",
+      "Linker Vorhof"
+    ],
     "explanation": "Rechter Vorhof → rechte Herzkammer → Lunge, wo das Blut Sauerstoff aufnimmt → linker Vorhof, in den es zurückkehrt.",
-    "subject_keys": ["topic:science_technology:blutfluss-herz-lunge", "entity:rechter vorhof", "entity:rechte herzkammer", "entity:lunge", "entity:linker vorhof"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "National Heart, Lung, and Blood Institute: How Blood Flows through the Heart", "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow"}]}
+    "subject_keys": [
+      "topic:science_technology:blutfluss-herz-lunge",
+      "entity:rechter vorhof",
+      "entity:rechte herzkammer",
+      "entity:lunge",
+      "entity:linker vorhof"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "National Heart, Lung, and Blood Institute: How Blood Flows through the Heart",
+          "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow"
+        }
+      ]
+    }
   },
   {
     "id": "or212",
     "question_type": "order",
     "primary_category": "human_everyday",
     "subtopic": "Abfall & Recycling",
-    "tags": {"topics": ["Abfallhierarchie"], "entities": ["Abfallvermeidung", "Vorbereitung zur Wiederverwendung", "Recycling", "Beseitigung"], "genres": [], "regions": ["Europäische Union"], "eras": []},
+    "tags": {
+      "topics": [
+        "Abfallhierarchie"
+      ],
+      "entities": [
+        "Abfallvermeidung",
+        "Vorbereitung zur Wiederverwendung",
+        "Recycling",
+        "Beseitigung"
+      ],
+      "genres": [],
+      "regions": [
+        "Europäische Union"
+      ],
+      "eras": []
+    },
     "prompt": "Ordne diese Wege der Abfallbehandlung nach der EU-Abfallhierarchie – von bevorzugt bis letzte Lösung.",
-    "items": ["Recycling", "Beseitigung", "Abfallvermeidung", "Vorbereitung zur Wiederverwendung"],
-    "answer": ["Abfallvermeidung", "Vorbereitung zur Wiederverwendung", "Recycling", "Beseitigung"],
+    "items": [
+      "Recycling",
+      "Beseitigung",
+      "Abfallvermeidung",
+      "Vorbereitung zur Wiederverwendung"
+    ],
+    "answer": [
+      "Abfallvermeidung",
+      "Vorbereitung zur Wiederverwendung",
+      "Recycling",
+      "Beseitigung"
+    ],
     "explanation": "Abfallvermeidung (höchste Priorität) → Vorbereitung zur Wiederverwendung → Recycling → Beseitigung (letzte Lösung).",
-    "subject_keys": ["topic:human_everyday:eu-abfallhierarchie", "entity:abfallvermeidung", "entity:vorbereitung zur wiederverwendung", "entity:recycling", "entity:beseitigung"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "EUR-Lex: Waste hierarchy", "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=legissum%3Awaste_hierarchy"}]}
+    "subject_keys": [
+      "topic:human_everyday:eu-abfallhierarchie",
+      "entity:abfallvermeidung",
+      "entity:vorbereitung zur wiederverwendung",
+      "entity:recycling",
+      "entity:beseitigung"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "EUR-Lex: Waste hierarchy",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=legissum%3Awaste_hierarchy"
+        }
+      ]
+    }
   },
   {
     "id": "or213",
     "question_type": "order",
     "primary_category": "science_technology",
     "subtopic": "Biologische Systematik",
-    "tags": {"topics": ["Taxonomische Ränge"], "entities": ["Reich", "Stamm", "Klasse", "Ordnung"], "genres": [], "regions": [], "eras": []},
+    "tags": {
+      "topics": [
+        "Taxonomische Ränge"
+      ],
+      "entities": [
+        "Reich",
+        "Stamm",
+        "Klasse",
+        "Ordnung"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne diese biologischen Ränge – von der größten zur kleinsten Gruppe.",
-    "items": ["Klasse", "Reich", "Ordnung", "Stamm"],
-    "answer": ["Reich", "Stamm", "Klasse", "Ordnung"],
+    "items": [
+      "Klasse",
+      "Reich",
+      "Ordnung",
+      "Stamm"
+    ],
+    "answer": [
+      "Reich",
+      "Stamm",
+      "Klasse",
+      "Ordnung"
+    ],
     "explanation": "Reich (sehr breite Gruppe) → Stamm → Klasse → Ordnung (engste der vier genannten Gruppen).",
-    "subject_keys": ["topic:science_technology:taxonomische-ränge", "entity:reich", "entity:stamm", "entity:klasse", "entity:ordnung"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Natural History Museum: What is taxonomy?", "url": "https://www.nhm.ac.uk/discover/what-is-taxonomy.html"}]}
+    "subject_keys": [
+      "topic:science_technology:taxonomische-ränge",
+      "entity:reich",
+      "entity:stamm",
+      "entity:klasse",
+      "entity:ordnung"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Natural History Museum: What is taxonomy?",
+          "url": "https://www.nhm.ac.uk/discover/what-is-taxonomy.html"
+        }
+      ]
+    }
   },
   {
     "id": "or214",
     "question_type": "order",
     "primary_category": "science_technology",
     "subtopic": "Maßeinheiten",
-    "tags": {"topics": ["SI-Präfixe"], "entities": ["Milli", "Zenti", "Kilo", "Mega"], "genres": [], "regions": ["International"], "eras": []},
+    "tags": {
+      "topics": [
+        "SI-Präfixe"
+      ],
+      "entities": [
+        "Milli",
+        "Zenti",
+        "Kilo",
+        "Mega"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    },
     "prompt": "Ordne diese SI-Präfixe nach ihrem Zahlenfaktor – vom kleinsten zum größten.",
-    "items": ["Kilo", "Milli", "Mega", "Zenti"],
-    "answer": ["Milli", "Zenti", "Kilo", "Mega"],
+    "items": [
+      "Kilo",
+      "Milli",
+      "Mega",
+      "Zenti"
+    ],
+    "answer": [
+      "Milli",
+      "Zenti",
+      "Kilo",
+      "Mega"
+    ],
     "explanation": "Milli (10⁻³) → Zenti (10⁻²) → Kilo (10³) → Mega (10⁶).",
-    "subject_keys": ["topic:science_technology:si-präfixe", "entity:milli", "entity:zenti", "entity:kilo", "entity:mega"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Bureau International des Poids et Mesures: SI prefixes", "url": "https://www.bipm.org/en/measurement-units/si-prefixes"}]}
+    "subject_keys": [
+      "topic:science_technology:si-präfixe",
+      "entity:milli",
+      "entity:zenti",
+      "entity:kilo",
+      "entity:mega"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Bureau International des Poids et Mesures: SI prefixes",
+          "url": "https://www.bipm.org/en/measurement-units/si-prefixes"
+        }
+      ]
+    }
   },
   {
     "id": "or215",
     "question_type": "order",
     "primary_category": "science_technology",
     "subtopic": "Erdgeschichte",
-    "tags": {"topics": ["Geologische Perioden"], "entities": ["Kambrium", "Jura", "Kreide", "Quartär"], "genres": [], "regions": ["Erde"], "eras": []},
+    "tags": {
+      "topics": [
+        "Geologische Perioden"
+      ],
+      "entities": [
+        "Kambrium",
+        "Jura",
+        "Kreide",
+        "Quartär"
+      ],
+      "genres": [],
+      "regions": [
+        "Erde"
+      ],
+      "eras": []
+    },
     "prompt": "Ordne diese geologischen Perioden – von der ältesten zur jüngsten.",
-    "items": ["Kreide", "Quartär", "Kambrium", "Jura"],
-    "answer": ["Kambrium", "Jura", "Kreide", "Quartär"],
+    "items": [
+      "Kreide",
+      "Quartär",
+      "Kambrium",
+      "Jura"
+    ],
+    "answer": [
+      "Kambrium",
+      "Jura",
+      "Kreide",
+      "Quartär"
+    ],
     "explanation": "Kambrium (Beginn vor etwa 541 Mio. Jahren) → Jura (201 Mio.) → Kreide (145 Mio.) → Quartär (2,58 Mio.).",
-    "subject_keys": ["topic:science_technology:geologische-perioden", "entity:kambrium", "entity:jura", "entity:kreide", "entity:quartär"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "U.S. Geological Survey: Divisions of Geologic Time", "url": "https://pubs.usgs.gov/fs/2018/3054/fs20183054.pdf"}]}
+    "subject_keys": [
+      "topic:science_technology:geologische-perioden",
+      "entity:kambrium",
+      "entity:jura",
+      "entity:kreide",
+      "entity:quartär"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "U.S. Geological Survey: Divisions of Geologic Time",
+          "url": "https://pubs.usgs.gov/fs/2018/3054/fs20183054.pdf"
+        }
+      ]
+    }
   },
   {
     "id": "or216",
     "question_type": "order",
     "primary_category": "gaming",
     "subtopic": "Kartenspiele",
-    "tags": {"topics": ["Pokerhände"], "entities": ["Ein Paar", "Straße", "Full House", "Vierling"], "genres": ["Poker"], "regions": ["International"], "eras": []},
+    "tags": {
+      "topics": [
+        "Pokerhände"
+      ],
+      "entities": [
+        "Ein Paar",
+        "Straße",
+        "Full House",
+        "Vierling"
+      ],
+      "genres": [
+        "Poker"
+      ],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    },
     "prompt": "Ordne diese Pokerhände nach ihrer Stärke – von schwach nach stark.",
-    "items": ["Full House", "Ein Paar", "Vierling", "Straße"],
-    "answer": ["Ein Paar", "Straße", "Full House", "Vierling"],
+    "items": [
+      "Full House",
+      "Ein Paar",
+      "Vierling",
+      "Straße"
+    ],
+    "answer": [
+      "Ein Paar",
+      "Straße",
+      "Full House",
+      "Vierling"
+    ],
     "explanation": "Ein Paar → Straße → Full House → Vierling. In der üblichen Rangfolge schlägt jede Hand die davor genannte.",
-    "subject_keys": ["topic:gaming:pokerhand-rangfolge", "entity:ein paar", "entity:straße", "entity:full house", "entity:vierling"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "PokerStars: Poker Hand Rankings", "url": "https://www.pokerstars.com/poker/games/rules/hand-rankings/"}]}
+    "subject_keys": [
+      "topic:gaming:pokerhand-rangfolge",
+      "entity:ein paar",
+      "entity:straße",
+      "entity:full house",
+      "entity:vierling"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "PokerStars: Poker Hand Rankings",
+          "url": "https://www.pokerstars.com/poker/games/rules/hand-rankings/"
+        }
+      ]
+    }
   },
   {
     "id": "or217",
     "question_type": "order",
     "primary_category": "sport",
     "subtopic": "Olympische Sportgeschichte",
-    "tags": {"topics": ["Olympische Debüts"], "entities": ["Basketball", "Judo", "BMX", "Skateboarden"], "genres": ["Olympische Spiele"], "regions": ["International"], "eras": ["20. Jahrhundert", "21. Jahrhundert"]},
+    "tags": {
+      "topics": [
+        "Olympische Debüts"
+      ],
+      "entities": [
+        "Basketball",
+        "Judo",
+        "BMX",
+        "Skateboarden"
+      ],
+      "genres": [
+        "Olympische Spiele"
+      ],
+      "regions": [
+        "International"
+      ],
+      "eras": [
+        "20. Jahrhundert",
+        "21. Jahrhundert"
+      ]
+    },
     "prompt": "Ordne diese Sportarten nach ihrem olympischen Debüt – vom frühesten zum spätesten.",
-    "items": ["BMX", "Basketball", "Skateboarden", "Judo"],
-    "answer": ["Basketball", "Judo", "BMX", "Skateboarden"],
+    "items": [
+      "BMX",
+      "Basketball",
+      "Skateboarden",
+      "Judo"
+    ],
+    "answer": [
+      "Basketball",
+      "Judo",
+      "BMX",
+      "Skateboarden"
+    ],
     "explanation": "Basketball (1936) → Judo (1964) → BMX (2008) → Skateboarden (bei den Spielen Tokio 2020, ausgetragen 2021).",
-    "subject_keys": ["topic:sport:olympische-debüts", "entity:basketball", "entity:judo", "entity:bmx", "entity:skateboarden"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "IOC Olympic Studies Centre: Date of First Inclusion for Sports", "url": "https://library.olympics.com/default/digitalCollection/DigitalCollectionAttachmentDownloadHandler.ashx?documentId=162035&parentDocumentId=37555&skipCopyright=true&skipWatermark=true"}, {"title": "IOC: Tokyo 2020 sport debuts", "url": "https://newsroom.olympics.com/record/1121/media_id/2368"}]}
+    "subject_keys": [
+      "topic:sport:olympische-debüts",
+      "entity:basketball",
+      "entity:judo",
+      "entity:bmx",
+      "entity:skateboarden"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "IOC Olympic Studies Centre: Date of First Inclusion for Sports",
+          "url": "https://library.olympics.com/default/digitalCollection/DigitalCollectionAttachmentDownloadHandler.ashx?documentId=162035&parentDocumentId=37555&skipCopyright=true&skipWatermark=true"
+        },
+        {
+          "title": "IOC: Tokyo 2020 sport debuts",
+          "url": "https://newsroom.olympics.com/record/1121/media_id/2368"
+        }
+      ]
+    }
   },
   {
     "id": "or218",
     "question_type": "order",
     "primary_category": "geography_world",
     "subtopic": "Deutschland & Bundesländer",
-    "tags": {"topics": ["Fläche der Bundesländer"], "entities": ["Saarland", "Hessen", "Nordrhein-Westfalen", "Bayern"], "genres": [], "regions": ["Deutschland"], "eras": []},
+    "tags": {
+      "topics": [
+        "Fläche der Bundesländer"
+      ],
+      "entities": [
+        "Saarland",
+        "Hessen",
+        "Nordrhein-Westfalen",
+        "Bayern"
+      ],
+      "genres": [],
+      "regions": [
+        "Deutschland"
+      ],
+      "eras": []
+    },
     "prompt": "Ordne diese Bundesländer nach ihrer Fläche – von klein nach groß.",
-    "items": ["Nordrhein-Westfalen", "Saarland", "Bayern", "Hessen"],
-    "answer": ["Saarland", "Hessen", "Nordrhein-Westfalen", "Bayern"],
+    "items": [
+      "Nordrhein-Westfalen",
+      "Saarland",
+      "Bayern",
+      "Hessen"
+    ],
+    "answer": [
+      "Saarland",
+      "Hessen",
+      "Nordrhein-Westfalen",
+      "Bayern"
+    ],
     "explanation": "Saarland (2.572 km²) → Hessen (21.116 km²) → Nordrhein-Westfalen (34.112 km²) → Bayern (70.542 km²).",
-    "subject_keys": ["topic:geography_world:bundesländer-fläche", "entity:saarland", "entity:hessen", "entity:nordrhein-westfalen", "entity:bayern"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Statistisches Bundesamt: Bodenfläche nach Bundesländern", "url": "https://www.destatis.de/DE/Themen/Branchen-Unternehmen/Landwirtschaft-Forstwirtschaft-Fischerei/Flaechennutzung/Tabellen/bodenflaeche-laender.html"}]}
+    "subject_keys": [
+      "topic:geography_world:bundesländer-fläche",
+      "entity:saarland",
+      "entity:hessen",
+      "entity:nordrhein-westfalen",
+      "entity:bayern"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Statistisches Bundesamt: Bodenfläche nach Bundesländern",
+          "url": "https://www.destatis.de/DE/Themen/Branchen-Unternehmen/Landwirtschaft-Forstwirtschaft-Fischerei/Flaechennutzung/Tabellen/bodenflaeche-laender.html"
+        }
+      ]
+    }
   },
   {
     "id": "or219",
     "question_type": "order",
     "primary_category": "geography_world",
     "subtopic": "Deutschland & Bundesländer",
-    "tags": {"topics": ["Bevölkerung der Bundesländer"], "entities": ["Bremen", "Saarland", "Hessen", "Bayern"], "genres": [], "regions": ["Deutschland"], "eras": ["21. Jahrhundert"]},
+    "tags": {
+      "topics": [
+        "Bevölkerung der Bundesländer"
+      ],
+      "entities": [
+        "Bremen",
+        "Saarland",
+        "Hessen",
+        "Bayern"
+      ],
+      "genres": [],
+      "regions": [
+        "Deutschland"
+      ],
+      "eras": [
+        "21. Jahrhundert"
+      ]
+    },
     "prompt": "Ordne diese Bundesländer nach ihrer Bevölkerung am 31. Dezember 2025 – von wenig nach viel.",
-    "items": ["Hessen", "Bremen", "Bayern", "Saarland"],
-    "answer": ["Bremen", "Saarland", "Hessen", "Bayern"],
+    "items": [
+      "Hessen",
+      "Bremen",
+      "Bayern",
+      "Saarland"
+    ],
+    "answer": [
+      "Bremen",
+      "Saarland",
+      "Hessen",
+      "Bayern"
+    ],
     "explanation": "Bremen (706.915) → Saarland (1.007.342) → Hessen (6.278.594) → Bayern (13.245.503 Einwohner).",
-    "subject_keys": ["topic:geography_world:bundesländer-bevölkerung-2025", "entity:bremen", "entity:saarland", "entity:hessen", "entity:bayern"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Statistisches Bundesamt: Bevölkerung am 31.12.2025 nach Bundesländern", "url": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Bevoelkerungsstand/Tabellen/bevoelkerung-nichtdeutsch-laender-basis-2022.html"}]}
+    "subject_keys": [
+      "topic:geography_world:bundesländer-bevölkerung-2025",
+      "entity:bremen",
+      "entity:saarland",
+      "entity:hessen",
+      "entity:bayern"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Statistisches Bundesamt: Bevölkerung am 31.12.2025 nach Bundesländern",
+          "url": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Bevoelkerungsstand/Tabellen/bevoelkerung-nichtdeutsch-laender-basis-2022.html"
+        }
+      ]
+    }
   },
   {
     "id": "or220",
     "question_type": "order",
     "primary_category": "human_everyday",
     "subtopic": "Geld & Alltag",
-    "tags": {"topics": ["Gewicht von Euromünzen"], "entities": ["1-Cent-Münze", "10-Cent-Münze", "20-Cent-Münze", "2-Euro-Münze"], "genres": [], "regions": ["Euro-Währungsgebiet"], "eras": []},
+    "tags": {
+      "topics": [
+        "Gewicht von Euromünzen"
+      ],
+      "entities": [
+        "1-Cent-Münze",
+        "10-Cent-Münze",
+        "20-Cent-Münze",
+        "2-Euro-Münze"
+      ],
+      "genres": [],
+      "regions": [
+        "Euro-Währungsgebiet"
+      ],
+      "eras": []
+    },
     "prompt": "Ordne diese Euromünzen nach ihrem Gewicht – von leicht nach schwer.",
-    "items": ["20-Cent-Münze", "1-Cent-Münze", "2-Euro-Münze", "10-Cent-Münze"],
-    "answer": ["1-Cent-Münze", "10-Cent-Münze", "20-Cent-Münze", "2-Euro-Münze"],
+    "items": [
+      "20-Cent-Münze",
+      "1-Cent-Münze",
+      "2-Euro-Münze",
+      "10-Cent-Münze"
+    ],
+    "answer": [
+      "1-Cent-Münze",
+      "10-Cent-Münze",
+      "20-Cent-Münze",
+      "2-Euro-Münze"
+    ],
     "explanation": "1-Cent-Münze (2,30 g) → 10-Cent-Münze (4,10 g) → 20-Cent-Münze (5,74 g) → 2-Euro-Münze (8,50 g).",
-    "subject_keys": ["topic:human_everyday:euromünzen-gewicht", "entity:1-cent-münze", "entity:10-cent-münze", "entity:20-cent-münze", "entity:2-euro-münze"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Europäische Zentralbank: Euro coins – general characteristics", "url": "https://www.ecb.europa.eu/euro/pdf/material/Trainer_A4_EN_SPECIMEN.pdf"}]}
+    "subject_keys": [
+      "topic:human_everyday:euromünzen-gewicht",
+      "entity:1-cent-münze",
+      "entity:10-cent-münze",
+      "entity:20-cent-münze",
+      "entity:2-euro-münze"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Europäische Zentralbank: Euro coins – general characteristics",
+          "url": "https://www.ecb.europa.eu/euro/pdf/material/Trainer_A4_EN_SPECIMEN.pdf"
+        }
+      ]
+    }
   },
   {
     "id": "or221",
     "question_type": "order",
     "primary_category": "human_everyday",
     "subtopic": "Geld & Alltag",
-    "tags": {"topics": ["Größe von Eurobanknoten"], "entities": ["5-Euro-Schein", "10-Euro-Schein", "20-Euro-Schein", "50-Euro-Schein"], "genres": [], "regions": ["Euro-Währungsgebiet"], "eras": []},
+    "tags": {
+      "topics": [
+        "Größe von Eurobanknoten"
+      ],
+      "entities": [
+        "5-Euro-Schein",
+        "10-Euro-Schein",
+        "20-Euro-Schein",
+        "50-Euro-Schein"
+      ],
+      "genres": [],
+      "regions": [
+        "Euro-Währungsgebiet"
+      ],
+      "eras": []
+    },
     "prompt": "Ordne diese Eurobanknoten nach ihrer Länge – von kurz nach lang.",
-    "items": ["20-Euro-Schein", "5-Euro-Schein", "50-Euro-Schein", "10-Euro-Schein"],
-    "answer": ["5-Euro-Schein", "10-Euro-Schein", "20-Euro-Schein", "50-Euro-Schein"],
+    "items": [
+      "20-Euro-Schein",
+      "5-Euro-Schein",
+      "50-Euro-Schein",
+      "10-Euro-Schein"
+    ],
+    "answer": [
+      "5-Euro-Schein",
+      "10-Euro-Schein",
+      "20-Euro-Schein",
+      "50-Euro-Schein"
+    ],
     "explanation": "5-Euro-Schein (120 mm) → 10-Euro-Schein (127 mm) → 20-Euro-Schein (133 mm) → 50-Euro-Schein (140 mm).",
-    "subject_keys": ["topic:human_everyday:eurobanknoten-länge", "entity:5-euro-schein", "entity:10-euro-schein", "entity:20-euro-schein", "entity:50-euro-schein"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "Europäische Zentralbank: The complete Europa series", "url": "https://www.ecb.europa.eu/euro/pdf/material/leaflet_100_200%20banknotes/Cashier_brochure_100_200_Euro_WEB.en.pdf"}]}
+    "subject_keys": [
+      "topic:human_everyday:eurobanknoten-länge",
+      "entity:5-euro-schein",
+      "entity:10-euro-schein",
+      "entity:20-euro-schein",
+      "entity:50-euro-schein"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "Europäische Zentralbank: The complete Europa series",
+          "url": "https://www.ecb.europa.eu/euro/pdf/material/leaflet_100_200%20banknotes/Cashier_brochure_100_200_Euro_WEB.en.pdf"
+        }
+      ]
+    }
   },
   {
     "id": "or222",
     "question_type": "order",
     "primary_category": "science_technology",
     "subtopic": "Chemie & Elemente",
-    "tags": {"topics": ["Ordnungszahlen"], "entities": ["Wasserstoff", "Kohlenstoff", "Sauerstoff", "Eisen"], "genres": [], "regions": [], "eras": []},
+    "tags": {
+      "topics": [
+        "Ordnungszahlen"
+      ],
+      "entities": [
+        "Wasserstoff",
+        "Kohlenstoff",
+        "Sauerstoff",
+        "Eisen"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
     "prompt": "Ordne diese chemischen Elemente nach ihrer Ordnungszahl – von niedrig nach hoch.",
-    "items": ["Sauerstoff", "Eisen", "Wasserstoff", "Kohlenstoff"],
-    "answer": ["Wasserstoff", "Kohlenstoff", "Sauerstoff", "Eisen"],
+    "items": [
+      "Sauerstoff",
+      "Eisen",
+      "Wasserstoff",
+      "Kohlenstoff"
+    ],
+    "answer": [
+      "Wasserstoff",
+      "Kohlenstoff",
+      "Sauerstoff",
+      "Eisen"
+    ],
     "explanation": "Wasserstoff (1) → Kohlenstoff (6) → Sauerstoff (8) → Eisen (26).",
-    "subject_keys": ["topic:science_technology:ordnungszahlen", "entity:wasserstoff", "entity:kohlenstoff", "entity:sauerstoff", "entity:eisen"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "IUPAC: Periodic Table of the Elements", "url": "https://iupac.org/wp-content/uploads/2018/02/IUPAC_Periodic_Table-19Feb10.pdf"}]}
+    "subject_keys": [
+      "topic:science_technology:ordnungszahlen",
+      "entity:wasserstoff",
+      "entity:kohlenstoff",
+      "entity:sauerstoff",
+      "entity:eisen"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "IUPAC: Periodic Table of the Elements",
+          "url": "https://iupac.org/wp-content/uploads/2018/02/IUPAC_Periodic_Table-19Feb10.pdf"
+        }
+      ]
+    }
   },
   {
     "id": "or223",
     "question_type": "order",
     "primary_category": "geography_world",
     "subtopic": "Meere & Ozeane",
-    "tags": {"topics": ["Mittlere Ozeantiefe"], "entities": ["Arktischer Ozean", "Atlantischer Ozean", "Indischer Ozean", "Pazifischer Ozean"], "genres": [], "regions": ["Weltweit"], "eras": []},
+    "tags": {
+      "topics": [
+        "Mittlere Ozeantiefe"
+      ],
+      "entities": [
+        "Arktischer Ozean",
+        "Atlantischer Ozean",
+        "Indischer Ozean",
+        "Pazifischer Ozean"
+      ],
+      "genres": [],
+      "regions": [
+        "Weltweit"
+      ],
+      "eras": []
+    },
     "prompt": "Ordne diese Ozeane nach ihrer mittleren Tiefe – von flach nach tief.",
-    "items": ["Indischer Ozean", "Arktischer Ozean", "Pazifischer Ozean", "Atlantischer Ozean"],
-    "answer": ["Arktischer Ozean", "Atlantischer Ozean", "Indischer Ozean", "Pazifischer Ozean"],
+    "items": [
+      "Indischer Ozean",
+      "Arktischer Ozean",
+      "Pazifischer Ozean",
+      "Atlantischer Ozean"
+    ],
+    "answer": [
+      "Arktischer Ozean",
+      "Atlantischer Ozean",
+      "Indischer Ozean",
+      "Pazifischer Ozean"
+    ],
     "explanation": "Arktischer Ozean (1.205 m) → Atlantischer Ozean (3.926 m) → Indischer Ozean (3.963 m) → Pazifischer Ozean (4.282 m).",
-    "subject_keys": ["topic:geography_world:mittlere-ozeantiefe", "entity:arktischer ozean", "entity:atlantischer ozean", "entity:indischer ozean", "entity:pazifischer ozean"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "NOAA: Of Sand and Sea – Teachings from the Southeastern Shoreline", "url": "https://repository.library.noaa.gov/view/noaa/37694/noaa_37694_DS1.pdf"}]}
+    "subject_keys": [
+      "topic:geography_world:mittlere-ozeantiefe",
+      "entity:arktischer ozean",
+      "entity:atlantischer ozean",
+      "entity:indischer ozean",
+      "entity:pazifischer ozean"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "NOAA: Of Sand and Sea – Teachings from the Southeastern Shoreline",
+          "url": "https://repository.library.noaa.gov/view/noaa/37694/noaa_37694_DS1.pdf"
+        }
+      ]
+    }
   },
   {
     "id": "or224",
     "question_type": "order",
     "primary_category": "witnesses_of_time",
     "subtopic": "Verkehrs- und Technikgeschichte",
-    "tags": {"topics": ["Kanaleröffnungen"], "entities": ["Eriekanal", "Suezkanal", "Nord-Ostsee-Kanal", "Panamakanal"], "genres": [], "regions": ["USA", "Ägypten", "Deutschland", "Panama"], "eras": ["19. Jahrhundert", "20. Jahrhundert"]},
+    "tags": {
+      "topics": [
+        "Kanaleröffnungen"
+      ],
+      "entities": [
+        "Eriekanal",
+        "Suezkanal",
+        "Nord-Ostsee-Kanal",
+        "Panamakanal"
+      ],
+      "genres": [],
+      "regions": [
+        "USA",
+        "Ägypten",
+        "Deutschland",
+        "Panama"
+      ],
+      "eras": [
+        "19. Jahrhundert",
+        "20. Jahrhundert"
+      ]
+    },
     "prompt": "Ordne diese Schifffahrtskanäle nach ihrer Eröffnung – vom frühesten zum spätesten.",
-    "items": ["Nord-Ostsee-Kanal", "Eriekanal", "Panamakanal", "Suezkanal"],
-    "answer": ["Eriekanal", "Suezkanal", "Nord-Ostsee-Kanal", "Panamakanal"],
+    "items": [
+      "Nord-Ostsee-Kanal",
+      "Eriekanal",
+      "Panamakanal",
+      "Suezkanal"
+    ],
+    "answer": [
+      "Eriekanal",
+      "Suezkanal",
+      "Nord-Ostsee-Kanal",
+      "Panamakanal"
+    ],
     "explanation": "Eriekanal (1825) → Suezkanal (1869) → Nord-Ostsee-Kanal (1895) → Panamakanal (1914).",
-    "subject_keys": ["topic:witnesses_of_time:kanaleröffnungen", "entity:eriekanal", "entity:suezkanal", "entity:nord-ostsee-kanal", "entity:panamakanal"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "New York State Canals: History of the Erie Canal", "url": "https://www.canals.ny.gov/About/History"}, {"title": "Suez Canal Authority: Canal History", "url": "https://www.suezcanal.gov.eg/English/About/SuezCanal/Pages/CanalHistory.aspx"}, {"title": "Kiel-Canal: History", "url": "https://www.kiel-canal.de/history/"}, {"title": "Panama Canal Authority: End of the Construction", "url": "https://pancanal.com/en/end-of-the-construction/"}]}
+    "subject_keys": [
+      "topic:witnesses_of_time:kanaleröffnungen",
+      "entity:eriekanal",
+      "entity:suezkanal",
+      "entity:nord-ostsee-kanal",
+      "entity:panamakanal"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "New York State Canals: History of the Erie Canal",
+          "url": "https://www.canals.ny.gov/About/History"
+        },
+        {
+          "title": "Suez Canal Authority: Canal History",
+          "url": "https://www.suezcanal.gov.eg/English/About/SuezCanal/Pages/CanalHistory.aspx"
+        },
+        {
+          "title": "Kiel-Canal: History",
+          "url": "https://www.kiel-canal.de/history/"
+        },
+        {
+          "title": "Panama Canal Authority: End of the Construction",
+          "url": "https://pancanal.com/en/end-of-the-construction/"
+        }
+      ]
+    }
   },
   {
     "id": "or225",
     "question_type": "order",
     "primary_category": "geography_world",
     "subtopic": "Nationalparks & Naturschutz",
-    "tags": {"topics": ["Gründung von Nationalparks"], "entities": ["Yellowstone-Nationalpark", "Banff-Nationalpark", "Schweizerischer Nationalpark", "Komodo-Nationalpark"], "genres": [], "regions": ["USA", "Kanada", "Schweiz", "Indonesien"], "eras": ["19. Jahrhundert", "20. Jahrhundert"]},
+    "tags": {
+      "topics": [
+        "Gründung von Nationalparks"
+      ],
+      "entities": [
+        "Yellowstone-Nationalpark",
+        "Banff-Nationalpark",
+        "Schweizerischer Nationalpark",
+        "Komodo-Nationalpark"
+      ],
+      "genres": [],
+      "regions": [
+        "USA",
+        "Kanada",
+        "Schweiz",
+        "Indonesien"
+      ],
+      "eras": [
+        "19. Jahrhundert",
+        "20. Jahrhundert"
+      ]
+    },
     "prompt": "Ordne diese Nationalparks nach ihrem Gründungsjahr – vom ältesten zum jüngsten.",
-    "items": ["Schweizerischer Nationalpark", "Yellowstone-Nationalpark", "Komodo-Nationalpark", "Banff-Nationalpark"],
-    "answer": ["Yellowstone-Nationalpark", "Banff-Nationalpark", "Schweizerischer Nationalpark", "Komodo-Nationalpark"],
+    "items": [
+      "Schweizerischer Nationalpark",
+      "Yellowstone-Nationalpark",
+      "Komodo-Nationalpark",
+      "Banff-Nationalpark"
+    ],
+    "answer": [
+      "Yellowstone-Nationalpark",
+      "Banff-Nationalpark",
+      "Schweizerischer Nationalpark",
+      "Komodo-Nationalpark"
+    ],
     "explanation": "Yellowstone-Nationalpark (1872) → Banff-Nationalpark (1885) → Schweizerischer Nationalpark (1914) → Komodo-Nationalpark (1980).",
-    "subject_keys": ["topic:geography_world:nationalpark-gründungen", "entity:yellowstone-nationalpark", "entity:banff-nationalpark", "entity:schweizerischer nationalpark", "entity:komodo-nationalpark"],
-    "source": {"status": "verified", "verified_on": "2026-10-08", "references": [{"title": "U.S. National Park Service: Birth of a National Park", "url": "https://www.nps.gov/yell/learn/historyculture/yellowstoneestablishment.htm"}, {"title": "Parks Canada: Banff National Park Management Plan", "url": "https://parks.canada.ca/pn-np/ab/banff/info/gestion-management/involved/plan/plan-2022"}, {"title": "Schweizerischer Nationalpark: Grundlagen & Impressionen", "url": "https://nationalpark.ch/about/nationalpark/"}, {"title": "UNESCO World Heritage Centre: Komodo National Park", "url": "https://whc.unesco.org/en/list/609"}]}
+    "subject_keys": [
+      "topic:geography_world:nationalpark-gründungen",
+      "entity:yellowstone-nationalpark",
+      "entity:banff-nationalpark",
+      "entity:schweizerischer nationalpark",
+      "entity:komodo-nationalpark"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-08",
+      "references": [
+        {
+          "title": "U.S. National Park Service: Birth of a National Park",
+          "url": "https://www.nps.gov/yell/learn/historyculture/yellowstoneestablishment.htm"
+        },
+        {
+          "title": "Parks Canada: Banff National Park Management Plan",
+          "url": "https://parks.canada.ca/pn-np/ab/banff/info/gestion-management/involved/plan/plan-2022"
+        },
+        {
+          "title": "Schweizerischer Nationalpark: Grundlagen & Impressionen",
+          "url": "https://nationalpark.ch/about/nationalpark/"
+        },
+        {
+          "title": "UNESCO World Heritage Centre: Komodo National Park",
+          "url": "https://whc.unesco.org/en/list/609"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or401",
+    "question_type": "order",
+    "primary_category": "music",
+    "subtopic": "Tonträger & Audioformate",
+    "tags": {
+      "topics": [
+        "Audioformate",
+        "Musikspeicherung",
+        "Technikgeschichte"
+      ],
+      "entities": [
+        "Langspielplatte",
+        "Compact Cassette",
+        "Compact Disc",
+        "MP3"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": [
+        "20. Jahrhundert"
+      ]
+    },
+    "prompt": "Ordne diese Audioformate nach ihrer Einführung – vom ältesten zum jüngsten.",
+    "items": [
+      "Compact Disc (CD)",
+      "MP3-Dateiendung",
+      "Langspielplatte (LP)",
+      "Compact Cassette"
+    ],
+    "answer": [
+      "Langspielplatte (LP)",
+      "Compact Cassette",
+      "Compact Disc (CD)",
+      "MP3-Dateiendung"
+    ],
+    "explanation": "Langspielplatte (1948) → Compact Cassette (1963) → Compact Disc (1982) → MP3-Dateiendung (1995).",
+    "subject_keys": [
+      "topic:music:geschichte-der-audioformate",
+      "entity:langspielplatte",
+      "entity:compact-cassette",
+      "entity:compact-disc",
+      "entity:mp3"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Library of Congress: Recording Technology Timeline",
+          "url": "https://www.loc.gov/programs/national-recording-preservation-plan/tools-and-resources/historical-background/timeline/"
+        },
+        {
+          "title": "Fraunhofer IIS: 30 Years of .mp3",
+          "url": "https://www.iis.fraunhofer.de/en/magazin/panorama/2025/30-years-of-mp3.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or402",
+    "question_type": "order",
+    "primary_category": "sport",
+    "subtopic": "Sportbälle & Regelmaße",
+    "tags": {
+      "topics": [
+        "Sportgeräte",
+        "Ballgewicht",
+        "Regelwerke"
+      ],
+      "entities": [
+        "ITTF",
+        "ITF",
+        "IFAB",
+        "FIBA"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": [
+        "Regelstand 2024 bis 2026"
+      ]
+    },
+    "prompt": "Ordne diese regulären Sportbälle nach ihrem vorgeschriebenen Gewicht – von leicht nach schwer.",
+    "items": [
+      "Fußball",
+      "Tischtennisball",
+      "Basketball Größe 7",
+      "Tennisball"
+    ],
+    "answer": [
+      "Tischtennisball",
+      "Tennisball",
+      "Fußball",
+      "Basketball Größe 7"
+    ],
+    "explanation": "Tischtennisball (2,7 g) → Tennisball (56,0–59,4 g) → Fußball (410–450 g) → Basketball Größe 7 (580–620 g). Die Gewichtsbereiche überschneiden sich nicht.",
+    "subject_keys": [
+      "topic:sport:regelgewichte-von-sportbaellen",
+      "entity:tischtennisball",
+      "entity:tennisball",
+      "entity:fussball",
+      "entity:basketball-groesse-7"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "ITTF: Technical Leaflet T3 – The Ball",
+          "url": "https://documents.ittf.sport/sites/default/files/public/2020-10/2020_BoD_documents_2.pdf"
+        },
+        {
+          "title": "ITF: 2025 Rules of Tennis",
+          "url": "https://www.itftennis.com/media/7221/2025-rules-of-tennis-english.pdf"
+        },
+        {
+          "title": "IFAB: Law 2 – The Ball",
+          "url": "https://www.theifab.com/laws/2025-26/the-ball/"
+        },
+        {
+          "title": "FIBA: Official Basketball Rules 2024 – Basketball Equipment",
+          "url": "https://assets.fiba.basketball/image/upload/documents-corporate-fiba-official-rules-2024-official-basketball-rules-and-basketball-equipment.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or403",
+    "question_type": "order",
+    "primary_category": "science_technology",
+    "subtopic": "Monde im Sonnensystem",
+    "tags": {
+      "topics": [
+        "Monde",
+        "Durchmesser",
+        "Sonnensystem"
+      ],
+      "entities": [
+        "Phobos",
+        "Enceladus",
+        "Europa",
+        "Titan"
+      ],
+      "genres": [],
+      "regions": [
+        "Sonnensystem"
+      ],
+      "eras": []
+    },
+    "prompt": "Ordne diese Monde nach ihrem mittleren Durchmesser – vom kleinsten zum größten.",
+    "items": [
+      "Europa",
+      "Phobos",
+      "Titan",
+      "Enceladus"
+    ],
+    "answer": [
+      "Phobos",
+      "Enceladus",
+      "Europa",
+      "Titan"
+    ],
+    "explanation": "Phobos (22,2 km) → Enceladus (498,8 km) → Europa (3.121,6 km) → Titan (5.150 km). Die Durchmesser ergeben sich aus den von NASA angegebenen mittleren Radien.",
+    "subject_keys": [
+      "topic:science_technology:monddurchmesser",
+      "entity:phobos",
+      "entity:enceladus",
+      "entity:europa-mond",
+      "entity:titan-mond"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "NASA: Solar System Lithograph Set – Moons",
+          "url": "https://www.nasa.gov/wp-content/uploads/2011/05/solar_system_lithograph_set_h.pdf?emrc=c77ddc"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or404",
+    "question_type": "order",
+    "primary_category": "human_everyday",
+    "subtopic": "Bundestag & Gesetzgebung",
+    "tags": {
+      "topics": [
+        "Gesetzgebung",
+        "Bundestag",
+        "Parlamentsarbeit"
+      ],
+      "entities": [
+        "Deutscher Bundestag",
+        "Bundestagsausschüsse"
+      ],
+      "genres": [],
+      "regions": [
+        "Deutschland"
+      ],
+      "eras": [
+        "Gegenwart"
+      ]
+    },
+    "prompt": "Ordne diese Stationen eines üblichen Gesetzentwurfs im Bundestag – von früh nach spät.",
+    "items": [
+      "Beratung im Fachausschuss",
+      "Dritte Lesung und Schlussabstimmung",
+      "Erste Lesung und Überweisung",
+      "Zweite Lesung im Plenum"
+    ],
+    "answer": [
+      "Erste Lesung und Überweisung",
+      "Beratung im Fachausschuss",
+      "Zweite Lesung im Plenum",
+      "Dritte Lesung und Schlussabstimmung"
+    ],
+    "explanation": "Erste Lesung und Überweisung → Beratung im Fachausschuss → zweite Lesung im Plenum → dritte Lesung und Schlussabstimmung.",
+    "subject_keys": [
+      "topic:human_everyday:gesetzgebungsverfahren-im-bundestag",
+      "entity:deutscher-bundestag",
+      "subject:lesungen-eines-gesetzentwurfs"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Deutscher Bundestag: Weg der Gesetzgebung",
+          "url": "https://www.bundestag.de/parlament/aufgaben/gesetzgebung_neu/gesetzgebung/weg-255468"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or500",
+    "question_type": "order",
+    "prompt": "Ordne diese Nintendo-Konsolen nach ihrer Erstveröffentlichung – von früh nach spät.",
+    "answer": [
+      "Nintendo Entertainment System",
+      "Game Boy",
+      "Nintendo 64",
+      "Nintendo Switch"
+    ],
+    "explanation": "Nintendo Entertainment System (1983 Jahr) → Game Boy (1989 Jahr) → Nintendo 64 (1996 Jahr) → Nintendo Switch (2017 Jahr).",
+    "subject_keys": [
+      "topic:gaming:nintendo-konsolen",
+      "fact:order:500"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Nintendo History",
+          "url": "https://www.nintendo.com/en-gb/Hardware/Nintendo-History/Nintendo-History-625945.html"
+        }
+      ]
+    },
+    "items": [
+      "Nintendo 64",
+      "Nintendo Switch",
+      "Nintendo Entertainment System",
+      "Game Boy"
+    ],
+    "primary_category": "gaming",
+    "subtopic": "Nintendo-Konsolen",
+    "tags": {
+      "topics": [
+        "Nintendo-Konsolen"
+      ],
+      "entities": [
+        "Nintendo Entertainment System",
+        "Game Boy",
+        "Nintendo 64",
+        "Nintendo Switch"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or501",
+    "question_type": "order",
+    "prompt": "Ordne die PlayStation-Konsolen nach ihrer Veröffentlichung – von früh nach spät.",
+    "answer": [
+      "PlayStation",
+      "PlayStation 2",
+      "PlayStation 3",
+      "PlayStation 5"
+    ],
+    "explanation": "PlayStation (1994 Jahr) → PlayStation 2 (2000 Jahr) → PlayStation 3 (2006 Jahr) → PlayStation 5 (2020 Jahr).",
+    "subject_keys": [
+      "topic:gaming:playstation-generationen",
+      "fact:order:501"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "PlayStation history",
+          "url": "https://www.playstation.com/en-us/playstation-history/1994-ps-one/"
+        }
+      ]
+    },
+    "items": [
+      "PlayStation 3",
+      "PlayStation 5",
+      "PlayStation",
+      "PlayStation 2"
+    ],
+    "primary_category": "gaming",
+    "subtopic": "PlayStation-Generationen",
+    "tags": {
+      "topics": [
+        "PlayStation-Generationen"
+      ],
+      "entities": [
+        "PlayStation",
+        "PlayStation 2",
+        "PlayStation 3",
+        "PlayStation 5"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or502",
+    "question_type": "order",
+    "prompt": "Ordne diese Spiele nach ihrer ersten kommerziellen Ausgabe – von früh nach spät.",
+    "answer": [
+      "Monopoly",
+      "Scrabble",
+      "Risiko",
+      "Catan"
+    ],
+    "explanation": "Monopoly (1935 Jahr) → Scrabble (1948 Jahr) → Risiko (1957 Jahr) → Catan (1995 Jahr).",
+    "subject_keys": [
+      "topic:gaming:brettspiel-erscheinungen",
+      "fact:order:502"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "The Strong: World Video Game Hall of Fame",
+          "url": "https://www.strongmuseum.org/exhibits/world-video-game-hall-of-fame/"
+        }
+      ]
+    },
+    "items": [
+      "Risiko",
+      "Catan",
+      "Monopoly",
+      "Scrabble"
+    ],
+    "primary_category": "gaming",
+    "subtopic": "Brettspiel-Erscheinungen",
+    "tags": {
+      "topics": [
+        "Brettspiel-Erscheinungen"
+      ],
+      "entities": [
+        "Monopoly",
+        "Scrabble",
+        "Risiko",
+        "Catan"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or503",
+    "question_type": "order",
+    "prompt": "Ordne diese Spiele nach ihrer ersten Veröffentlichung – von früh nach spät.",
+    "answer": [
+      "Pong",
+      "Space Invaders",
+      "Pac-Man",
+      "Tetris"
+    ],
+    "explanation": "Pong (1972 Jahr) → Space Invaders (1978 Jahr) → Pac-Man (1980 Jahr) → Tetris (1984 Jahr).",
+    "subject_keys": [
+      "topic:gaming:spielklassiker",
+      "fact:order:503"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "The Strong: World Video Game Hall of Fame",
+          "url": "https://www.strongmuseum.org/exhibits/world-video-game-hall-of-fame/"
+        }
+      ]
+    },
+    "items": [
+      "Pac-Man",
+      "Tetris",
+      "Pong",
+      "Space Invaders"
+    ],
+    "primary_category": "gaming",
+    "subtopic": "Spielklassiker",
+    "tags": {
+      "topics": [
+        "Spielklassiker"
+      ],
+      "entities": [
+        "Pong",
+        "Space Invaders",
+        "Pac-Man",
+        "Tetris"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or504",
+    "question_type": "order",
+    "prompt": "Ordne diese Minecraft-Meilensteine – von früh nach spät.",
+    "answer": [
+      "Öffentliche Alpha",
+      "Vollversion 1.0",
+      "Aquatic Update",
+      "Caves & Cliffs"
+    ],
+    "explanation": "Öffentliche Alpha (2010 Jahr) → Vollversion 1.0 (2011 Jahr) → Aquatic Update (2018 Jahr) → Caves & Cliffs (2021 Jahr).",
+    "subject_keys": [
+      "topic:gaming:minecraft-versionen",
+      "fact:order:504"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Minecraft: About Minecraft",
+          "url": "https://www.minecraft.net/en-us/about-minecraft"
+        }
+      ]
+    },
+    "items": [
+      "Aquatic Update",
+      "Caves & Cliffs",
+      "Öffentliche Alpha",
+      "Vollversion 1.0"
+    ],
+    "primary_category": "gaming",
+    "subtopic": "Minecraft-Versionen",
+    "tags": {
+      "topics": [
+        "Minecraft-Versionen"
+      ],
+      "entities": [
+        "Öffentliche Alpha",
+        "Vollversion 1.0",
+        "Aquatic Update",
+        "Caves & Cliffs"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or510",
+    "question_type": "order",
+    "prompt": "Ordne diese Tonträger und Geräte nach ihrer Einführung – von früh nach spät.",
+    "answer": [
+      "Phonograph",
+      "Schellackplatte",
+      "Compact Cassette",
+      "Compact Disc"
+    ],
+    "explanation": "Phonograph (1877 Jahr ungefähr) → Schellackplatte (1890 Jahr ungefähr) → Compact Cassette (1963 Jahr ungefähr) → Compact Disc (1982 Jahr ungefähr).",
+    "subject_keys": [
+      "topic:music:tonaufzeichnung",
+      "fact:order:510"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Library of Congress: Recording Technology Timeline",
+          "url": "https://www.loc.gov/programs/national-recording-preservation-plan/tools-and-resources/historical-background/timeline/"
+        }
+      ]
+    },
+    "items": [
+      "Compact Cassette",
+      "Compact Disc",
+      "Phonograph",
+      "Schellackplatte"
+    ],
+    "primary_category": "music",
+    "subtopic": "Tonaufzeichnung",
+    "tags": {
+      "topics": [
+        "Tonaufzeichnung"
+      ],
+      "entities": [
+        "Phonograph",
+        "Schellackplatte",
+        "Compact Cassette",
+        "Compact Disc"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or511",
+    "question_type": "order",
+    "prompt": "Ordne diese Werke nach ihrer Uraufführung – von früh nach spät.",
+    "answer": [
+      "Messias",
+      "9. Sinfonie von Beethoven",
+      "Boléro",
+      "4′33″"
+    ],
+    "explanation": "Messias (1742 Jahr) → 9. Sinfonie von Beethoven (1824 Jahr) → Boléro (1928 Jahr) → 4′33″ (1952 Jahr).",
+    "subject_keys": [
+      "topic:music:kompositionen",
+      "fact:order:511"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Classical music",
+          "url": "https://www.britannica.com/art/Western-music"
+        }
+      ]
+    },
+    "items": [
+      "Boléro",
+      "4′33″",
+      "Messias",
+      "9. Sinfonie von Beethoven"
+    ],
+    "primary_category": "music",
+    "subtopic": "Kompositionen",
+    "tags": {
+      "topics": [
+        "Kompositionen"
+      ],
+      "entities": [
+        "Messias",
+        "9. Sinfonie von Beethoven",
+        "Boléro",
+        "4′33″"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or512",
+    "question_type": "order",
+    "prompt": "Ordne diese Instrumente nach ihrer üblichen Tonlage – von tief nach hoch.",
+    "answer": [
+      "Kontrabass",
+      "Violoncello",
+      "Viola",
+      "Violine"
+    ],
+    "explanation": "Kontrabass (1 Tonlage) → Violoncello (2 Tonlage) → Viola (3 Tonlage) → Violine (4 Tonlage).",
+    "subject_keys": [
+      "topic:music:orchesterinstrumente",
+      "fact:order:512"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Musical instrument",
+          "url": "https://www.britannica.com/art/musical-instrument"
+        }
+      ]
+    },
+    "items": [
+      "Viola",
+      "Violine",
+      "Kontrabass",
+      "Violoncello"
+    ],
+    "primary_category": "music",
+    "subtopic": "Orchesterinstrumente",
+    "tags": {
+      "topics": [
+        "Orchesterinstrumente"
+      ],
+      "entities": [
+        "Kontrabass",
+        "Violoncello",
+        "Viola",
+        "Violine"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or513",
+    "question_type": "order",
+    "prompt": "Ordne die Notenwerte nach ihrer Dauer – von kurz nach lang.",
+    "answer": [
+      "Sechzehntelnote",
+      "Achtelnote",
+      "Viertelnote",
+      "Ganze Note"
+    ],
+    "explanation": "Sechzehntelnote (0.0625 ganze Note) → Achtelnote (0.125 ganze Note) → Viertelnote (0.25 ganze Note) → Ganze Note (1 ganze Note).",
+    "subject_keys": [
+      "topic:music:notenwerte",
+      "fact:order:513"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Classical music",
+          "url": "https://www.britannica.com/art/Western-music"
+        }
+      ]
+    },
+    "items": [
+      "Viertelnote",
+      "Ganze Note",
+      "Sechzehntelnote",
+      "Achtelnote"
+    ],
+    "primary_category": "music",
+    "subtopic": "Notenwerte",
+    "tags": {
+      "topics": [
+        "Notenwerte"
+      ],
+      "entities": [
+        "Sechzehntelnote",
+        "Achtelnote",
+        "Viertelnote",
+        "Ganze Note"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or514",
+    "question_type": "order",
+    "prompt": "Ordne diese Musikfestivals nach ihrer ersten Ausgabe – von früh nach spät.",
+    "answer": [
+      "Newport Jazz Festival",
+      "Monterey Pop Festival",
+      "Glastonbury Festival",
+      "Lollapalooza"
+    ],
+    "explanation": "Newport Jazz Festival (1954 Jahr) → Monterey Pop Festival (1967 Jahr) → Glastonbury Festival (1970 Jahr) → Lollapalooza (1991 Jahr).",
+    "subject_keys": [
+      "topic:music:musikfestival-grundungen",
+      "fact:order:514"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Rock & Roll Hall of Fame: Inductees",
+          "url": "https://rockhall.com/inductees/"
+        }
+      ]
+    },
+    "items": [
+      "Glastonbury Festival",
+      "Lollapalooza",
+      "Newport Jazz Festival",
+      "Monterey Pop Festival"
+    ],
+    "primary_category": "music",
+    "subtopic": "Musikfestival-Gründungen",
+    "tags": {
+      "topics": [
+        "Musikfestival-Gründungen"
+      ],
+      "entities": [
+        "Newport Jazz Festival",
+        "Monterey Pop Festival",
+        "Glastonbury Festival",
+        "Lollapalooza"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or515",
+    "question_type": "order",
+    "prompt": "Ordne diese Leichtathletik-Wurfgeräte nach Regelgewicht – von leicht nach schwer.",
+    "answer": [
+      "Frauen-Speer",
+      "Frauen-Diskus",
+      "Männer-Diskus",
+      "Männer-Kugel"
+    ],
+    "explanation": "Frauen-Speer (0.6 Kilogramm) → Frauen-Diskus (1 Kilogramm) → Männer-Diskus (2 Kilogramm) → Männer-Kugel (7.26 Kilogramm).",
+    "subject_keys": [
+      "topic:sport:wurfgerate",
+      "fact:order:515"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "World Athletics: Disciplines",
+          "url": "https://worldathletics.org/disciplines"
+        }
+      ]
+    },
+    "items": [
+      "Männer-Diskus",
+      "Männer-Kugel",
+      "Frauen-Speer",
+      "Frauen-Diskus"
+    ],
+    "primary_category": "sport",
+    "subtopic": "Wurfgeräte",
+    "tags": {
+      "topics": [
+        "Wurfgeräte"
+      ],
+      "entities": [
+        "Frauen-Speer",
+        "Frauen-Diskus",
+        "Männer-Diskus",
+        "Männer-Kugel"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or516",
+    "question_type": "order",
+    "prompt": "Ordne diese Beckenschwimm-Strecken – von kurz nach lang.",
+    "answer": [
+      "50 Meter Freistil",
+      "100 Meter Rücken",
+      "200 Meter Schmetterling",
+      "1.500 Meter Freistil"
+    ],
+    "explanation": "50 Meter Freistil (50 Meter) → 100 Meter Rücken (100 Meter) → 200 Meter Schmetterling (200 Meter) → 1.500 Meter Freistil (1500 Meter).",
+    "subject_keys": [
+      "topic:sport:schwimmstrecken",
+      "fact:order:516"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Olympics: Sports",
+          "url": "https://www.olympics.com/en/sports/"
+        }
+      ]
+    },
+    "items": [
+      "200 Meter Schmetterling",
+      "1.500 Meter Freistil",
+      "50 Meter Freistil",
+      "100 Meter Rücken"
+    ],
+    "primary_category": "sport",
+    "subtopic": "Schwimmstrecken",
+    "tags": {
+      "topics": [
+        "Schwimmstrecken"
+      ],
+      "entities": [
+        "50 Meter Freistil",
+        "100 Meter Rücken",
+        "200 Meter Schmetterling",
+        "1.500 Meter Freistil"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or517",
+    "question_type": "order",
+    "prompt": "Ordne die Sportarten nach Spielern pro Team auf dem Feld – von wenigen nach vielen.",
+    "answer": [
+      "Beachvolleyball",
+      "Basketball",
+      "Handball",
+      "Fußball"
+    ],
+    "explanation": "Beachvolleyball (2 Spieler) → Basketball (5 Spieler) → Handball (7 Spieler) → Fußball (11 Spieler).",
+    "subject_keys": [
+      "topic:sport:teamgrossen",
+      "fact:order:517"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Olympics: Sports",
+          "url": "https://www.olympics.com/en/sports/"
+        }
+      ]
+    },
+    "items": [
+      "Handball",
+      "Fußball",
+      "Beachvolleyball",
+      "Basketball"
+    ],
+    "primary_category": "sport",
+    "subtopic": "Teamgrößen",
+    "tags": {
+      "topics": [
+        "Teamgrößen"
+      ],
+      "entities": [
+        "Beachvolleyball",
+        "Basketball",
+        "Handball",
+        "Fußball"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or518",
+    "question_type": "order",
+    "prompt": "Ordne diese Sportarten nach ihrer ersten olympischen Austragung – von früh nach spät.",
+    "answer": [
+      "Leichtathletik",
+      "Basketball",
+      "Triathlon",
+      "Skateboard"
+    ],
+    "explanation": "Leichtathletik (1896 Jahr) → Basketball (1936 Jahr) → Triathlon (2000 Jahr) → Skateboard (2021 Jahr).",
+    "subject_keys": [
+      "topic:sport:olympische-premieren",
+      "fact:order:518"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Olympics: Sports",
+          "url": "https://www.olympics.com/en/sports/"
+        }
+      ]
+    },
+    "items": [
+      "Triathlon",
+      "Skateboard",
+      "Leichtathletik",
+      "Basketball"
+    ],
+    "primary_category": "sport",
+    "subtopic": "Olympische Premieren",
+    "tags": {
+      "topics": [
+        "Olympische Premieren"
+      ],
+      "entities": [
+        "Leichtathletik",
+        "Basketball",
+        "Triathlon",
+        "Skateboard"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or519",
+    "question_type": "order",
+    "prompt": "Ordne diese Hürden nach ihrer Höhe – von niedrig nach hoch.",
+    "answer": [
+      "400 m Hürden Frauen",
+      "100 m Hürden Frauen",
+      "400 m Hürden Männer",
+      "110 m Hürden Männer"
+    ],
+    "explanation": "400 m Hürden Frauen (0.762 Meter) → 100 m Hürden Frauen (0.838 Meter) → 400 m Hürden Männer (0.914 Meter) → 110 m Hürden Männer (1.067 Meter).",
+    "subject_keys": [
+      "topic:sport:hurdenhohen",
+      "fact:order:519"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "World Athletics: Disciplines",
+          "url": "https://worldathletics.org/disciplines"
+        }
+      ]
+    },
+    "items": [
+      "400 m Hürden Männer",
+      "110 m Hürden Männer",
+      "400 m Hürden Frauen",
+      "100 m Hürden Frauen"
+    ],
+    "primary_category": "sport",
+    "subtopic": "Hürdenhöhen",
+    "tags": {
+      "topics": [
+        "Hürdenhöhen"
+      ],
+      "entities": [
+        "400 m Hürden Frauen",
+        "100 m Hürden Frauen",
+        "400 m Hürden Männer",
+        "110 m Hürden Männer"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or520",
+    "question_type": "order",
+    "prompt": "Ordne diese historischen Epochen – von früh nach spät.",
+    "answer": [
+      "Bronzezeit",
+      "Römische Kaiserzeit",
+      "Renaissance",
+      "Industrialisierung"
+    ],
+    "explanation": "Bronzezeit (-2200 Beginn ungefähr) → Römische Kaiserzeit (27 Beginn ungefähr) → Renaissance (1400 Beginn ungefähr) → Industrialisierung (1760 Beginn ungefähr).",
+    "subject_keys": [
+      "topic:witnesses_of_time:epochenfolge",
+      "fact:order:520"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: History of Europe",
+          "url": "https://www.britannica.com/topic/history-of-Europe"
+        }
+      ]
+    },
+    "items": [
+      "Renaissance",
+      "Industrialisierung",
+      "Bronzezeit",
+      "Römische Kaiserzeit"
+    ],
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Epochenfolge",
+    "tags": {
+      "topics": [
+        "Epochenfolge"
+      ],
+      "entities": [
+        "Bronzezeit",
+        "Römische Kaiserzeit",
+        "Renaissance",
+        "Industrialisierung"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or521",
+    "question_type": "order",
+    "prompt": "Ordne diese Revolutionen – von früh nach spät.",
+    "answer": [
+      "Glorious Revolution",
+      "Amerikanische Revolution",
+      "Französische Revolution",
+      "Russische Oktoberrevolution"
+    ],
+    "explanation": "Glorious Revolution (1688 Jahr) → Amerikanische Revolution (1775 Jahr) → Französische Revolution (1789 Jahr) → Russische Oktoberrevolution (1917 Jahr).",
+    "subject_keys": [
+      "topic:witnesses_of_time:revolutionen",
+      "fact:order:521"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: History of Europe",
+          "url": "https://www.britannica.com/topic/history-of-Europe"
+        }
+      ]
+    },
+    "items": [
+      "Französische Revolution",
+      "Russische Oktoberrevolution",
+      "Glorious Revolution",
+      "Amerikanische Revolution"
+    ],
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Revolutionen",
+    "tags": {
+      "topics": [
+        "Revolutionen"
+      ],
+      "entities": [
+        "Glorious Revolution",
+        "Amerikanische Revolution",
+        "Französische Revolution",
+        "Russische Oktoberrevolution"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or522",
+    "question_type": "order",
+    "prompt": "Ordne diese Raumfahrt-Meilensteine – von früh nach spät.",
+    "answer": [
+      "Sputnik 1",
+      "Juri Gagarin im All",
+      "Apollo 11",
+      "Start des Hubble-Teleskops"
+    ],
+    "explanation": "Sputnik 1 (1957 Jahr) → Juri Gagarin im All (1961 Jahr) → Apollo 11 (1969 Jahr) → Start des Hubble-Teleskops (1990 Jahr).",
+    "subject_keys": [
+      "topic:witnesses_of_time:raumfahrt",
+      "fact:order:522"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "NASA: Missions",
+          "url": "https://www.nasa.gov/missions/"
+        }
+      ]
+    },
+    "items": [
+      "Apollo 11",
+      "Start des Hubble-Teleskops",
+      "Sputnik 1",
+      "Juri Gagarin im All"
+    ],
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Raumfahrt",
+    "tags": {
+      "topics": [
+        "Raumfahrt"
+      ],
+      "entities": [
+        "Sputnik 1",
+        "Juri Gagarin im All",
+        "Apollo 11",
+        "Start des Hubble-Teleskops"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or523",
+    "question_type": "order",
+    "prompt": "Ordne diese Verträge – von früh nach spät.",
+    "answer": [
+      "Westfälischer Friede",
+      "Wiener Kongress",
+      "Versailler Vertrag",
+      "Dayton-Abkommen"
+    ],
+    "explanation": "Westfälischer Friede (1648 Jahr) → Wiener Kongress (1815 Jahr) → Versailler Vertrag (1919 Jahr) → Dayton-Abkommen (1995 Jahr).",
+    "subject_keys": [
+      "topic:witnesses_of_time:friedensvertrage",
+      "fact:order:523"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: History of Europe",
+          "url": "https://www.britannica.com/topic/history-of-Europe"
+        }
+      ]
+    },
+    "items": [
+      "Versailler Vertrag",
+      "Dayton-Abkommen",
+      "Westfälischer Friede",
+      "Wiener Kongress"
+    ],
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Friedensverträge",
+    "tags": {
+      "topics": [
+        "Friedensverträge"
+      ],
+      "entities": [
+        "Westfälischer Friede",
+        "Wiener Kongress",
+        "Versailler Vertrag",
+        "Dayton-Abkommen"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or524",
+    "question_type": "order",
+    "prompt": "Ordne diese Nobelpreis-Ereignisse – von früh nach spät.",
+    "answer": [
+      "Alfred Nobels Testament",
+      "Erste Preisvergabe",
+      "Wirtschaftspreis gestiftet",
+      "Malala als jüngste Preisträgerin"
+    ],
+    "explanation": "Alfred Nobels Testament (1895 Jahr) → Erste Preisvergabe (1901 Jahr) → Wirtschaftspreis gestiftet (1968 Jahr) → Malala als jüngste Preisträgerin (2014 Jahr).",
+    "subject_keys": [
+      "topic:witnesses_of_time:nobelpreis-meilensteine",
+      "fact:order:524"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Nobel Prize facts",
+          "url": "https://www.nobelprize.org/prizes/facts/nobel-prize-facts/"
+        }
+      ]
+    },
+    "items": [
+      "Wirtschaftspreis gestiftet",
+      "Malala als jüngste Preisträgerin",
+      "Alfred Nobels Testament",
+      "Erste Preisvergabe"
+    ],
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Nobelpreis-Meilensteine",
+    "tags": {
+      "topics": [
+        "Nobelpreis-Meilensteine"
+      ],
+      "entities": [
+        "Alfred Nobels Testament",
+        "Erste Preisvergabe",
+        "Wirtschaftspreis gestiftet",
+        "Malala als jüngste Preisträgerin"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or525",
+    "question_type": "order",
+    "prompt": "Ordne diese Filme nach ihrem Kinostart – von früh nach spät.",
+    "answer": [
+      "Metropolis",
+      "Citizen Kane",
+      "Der Pate",
+      "Pulp Fiction"
+    ],
+    "explanation": "Metropolis (1927 Jahr) → Citizen Kane (1941 Jahr) → Der Pate (1972 Jahr) → Pulp Fiction (1994 Jahr).",
+    "subject_keys": [
+      "topic:media_entertainment:filmklassiker",
+      "fact:order:525"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Academy Awards: Ceremonies",
+          "url": "https://www.oscars.org/oscars/ceremonies"
+        }
+      ]
+    },
+    "items": [
+      "Der Pate",
+      "Pulp Fiction",
+      "Metropolis",
+      "Citizen Kane"
+    ],
+    "primary_category": "media_entertainment",
+    "subtopic": "Filmklassiker",
+    "tags": {
+      "topics": [
+        "Filmklassiker"
+      ],
+      "entities": [
+        "Metropolis",
+        "Citizen Kane",
+        "Der Pate",
+        "Pulp Fiction"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or526",
+    "question_type": "order",
+    "prompt": "Ordne diese Pixar-Filme nach ihrem Start – von früh nach spät.",
+    "answer": [
+      "Toy Story",
+      "Die Monster AG",
+      "Ratatouille",
+      "Alles steht Kopf"
+    ],
+    "explanation": "Toy Story (1995 Jahr) → Die Monster AG (2001 Jahr) → Ratatouille (2007 Jahr) → Alles steht Kopf (2015 Jahr).",
+    "subject_keys": [
+      "topic:media_entertainment:pixar-filme",
+      "fact:order:526"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Pixar: Our Story",
+          "url": "https://www.pixar.com/our-story"
+        }
+      ]
+    },
+    "items": [
+      "Ratatouille",
+      "Alles steht Kopf",
+      "Toy Story",
+      "Die Monster AG"
+    ],
+    "primary_category": "media_entertainment",
+    "subtopic": "Pixar-Filme",
+    "tags": {
+      "topics": [
+        "Pixar-Filme"
+      ],
+      "entities": [
+        "Toy Story",
+        "Die Monster AG",
+        "Ratatouille",
+        "Alles steht Kopf"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or527",
+    "question_type": "order",
+    "prompt": "Ordne diese Bond-Filme nach ihrem Kinostart – von früh nach spät.",
+    "answer": [
+      "Dr. No",
+      "Goldfinger",
+      "GoldenEye",
+      "Skyfall"
+    ],
+    "explanation": "Dr. No (1962 Jahr) → Goldfinger (1964 Jahr) → GoldenEye (1995 Jahr) → Skyfall (2012 Jahr).",
+    "subject_keys": [
+      "topic:media_entertainment:bond-filme",
+      "fact:order:527"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "007: The Films",
+          "url": "https://www.007.com/the-films/"
+        }
+      ]
+    },
+    "items": [
+      "GoldenEye",
+      "Skyfall",
+      "Dr. No",
+      "Goldfinger"
+    ],
+    "primary_category": "media_entertainment",
+    "subtopic": "Bond-Filme",
+    "tags": {
+      "topics": [
+        "Bond-Filme"
+      ],
+      "entities": [
+        "Dr. No",
+        "Goldfinger",
+        "GoldenEye",
+        "Skyfall"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or528",
+    "question_type": "order",
+    "prompt": "Ordne diese Filmtechnik-Meilensteine – von früh nach spät.",
+    "answer": [
+      "Erste öffentliche Lumière-Vorführung",
+      "The Jazz Singer mit Ton",
+      "Breiter Einsatz von Technicolor",
+      "Toy Story vollständig computeranimiert"
+    ],
+    "explanation": "Erste öffentliche Lumière-Vorführung (1895 Jahr) → The Jazz Singer mit Ton (1927 Jahr) → Breiter Einsatz von Technicolor (1939 Jahr) → Toy Story vollständig computeranimiert (1995 Jahr).",
+    "subject_keys": [
+      "topic:media_entertainment:filmtechnik",
+      "fact:order:528"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Academy Awards: Ceremonies",
+          "url": "https://www.oscars.org/oscars/ceremonies"
+        }
+      ]
+    },
+    "items": [
+      "Breiter Einsatz von Technicolor",
+      "Toy Story vollständig computeranimiert",
+      "Erste öffentliche Lumière-Vorführung",
+      "The Jazz Singer mit Ton"
+    ],
+    "primary_category": "media_entertainment",
+    "subtopic": "Filmtechnik",
+    "tags": {
+      "topics": [
+        "Filmtechnik"
+      ],
+      "entities": [
+        "Erste öffentliche Lumière-Vorführung",
+        "The Jazz Singer mit Ton",
+        "Breiter Einsatz von Technicolor",
+        "Toy Story vollständig computeranimiert"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or529",
+    "question_type": "order",
+    "prompt": "Ordne diese Marvel-Filme nach ihrem Start – von früh nach spät.",
+    "answer": [
+      "Iron Man",
+      "The Avengers",
+      "Black Panther",
+      "Shang-Chi"
+    ],
+    "explanation": "Iron Man (2008 Jahr) → The Avengers (2012 Jahr) → Black Panther (2018 Jahr) → Shang-Chi (2021 Jahr).",
+    "subject_keys": [
+      "topic:media_entertainment:marvel-filmstarts",
+      "fact:order:529"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Marvel: Characters",
+          "url": "https://www.marvel.com/characters"
+        }
+      ]
+    },
+    "items": [
+      "Black Panther",
+      "Shang-Chi",
+      "Iron Man",
+      "The Avengers"
+    ],
+    "primary_category": "media_entertainment",
+    "subtopic": "Marvel-Filmstarts",
+    "tags": {
+      "topics": [
+        "Marvel-Filmstarts"
+      ],
+      "entities": [
+        "Iron Man",
+        "The Avengers",
+        "Black Panther",
+        "Shang-Chi"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or530",
+    "question_type": "order",
+    "prompt": "Ordne diese Tiere nach typischer Körpermasse – von leicht nach schwer.",
+    "answer": [
+      "Honigbiene",
+      "Hauskatze",
+      "Afrikanischer Elefant",
+      "Blauwal"
+    ],
+    "explanation": "Honigbiene (0.0001 Kilogramm ungefähr) → Hauskatze (4 Kilogramm ungefähr) → Afrikanischer Elefant (6000 Kilogramm ungefähr) → Blauwal (120000 Kilogramm ungefähr).",
+    "subject_keys": [
+      "topic:plants_animals:tiergrossen",
+      "fact:order:530"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Smithsonian's National Zoo: Animals",
+          "url": "https://nationalzoo.si.edu/animals"
+        }
+      ]
+    },
+    "items": [
+      "Afrikanischer Elefant",
+      "Blauwal",
+      "Honigbiene",
+      "Hauskatze"
+    ],
+    "primary_category": "plants_animals",
+    "subtopic": "Tiergrößen",
+    "tags": {
+      "topics": [
+        "Tiergrößen"
+      ],
+      "entities": [
+        "Honigbiene",
+        "Hauskatze",
+        "Afrikanischer Elefant",
+        "Blauwal"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or531",
+    "question_type": "order",
+    "prompt": "Ordne diese Vogeleier nach der typischen Brutdauer – von kurz nach lang.",
+    "answer": [
+      "Huhn",
+      "Ente",
+      "Gans",
+      "Strauß"
+    ],
+    "explanation": "Huhn (21 Tage ungefähr) → Ente (28 Tage ungefähr) → Gans (30 Tage ungefähr) → Strauß (42 Tage ungefähr).",
+    "subject_keys": [
+      "topic:plants_animals:brutdauer",
+      "fact:order:531"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Smithsonian's National Zoo: Animals",
+          "url": "https://nationalzoo.si.edu/animals"
+        }
+      ]
+    },
+    "items": [
+      "Gans",
+      "Strauß",
+      "Huhn",
+      "Ente"
+    ],
+    "primary_category": "plants_animals",
+    "subtopic": "Brutdauer",
+    "tags": {
+      "topics": [
+        "Brutdauer"
+      ],
+      "entities": [
+        "Huhn",
+        "Ente",
+        "Gans",
+        "Strauß"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or532",
+    "question_type": "order",
+    "prompt": "Ordne diese Pflanzen nach ihrer möglichen Höhe – von niedrig nach hoch.",
+    "answer": [
+      "Moos",
+      "Sonnenblume",
+      "Riesenbambus",
+      "Küstenmammutbaum"
+    ],
+    "explanation": "Moos (0.05 Meter ungefähr) → Sonnenblume (3 Meter ungefähr) → Riesenbambus (30 Meter ungefähr) → Küstenmammutbaum (115 Meter ungefähr).",
+    "subject_keys": [
+      "topic:plants_animals:pflanzenhohe",
+      "fact:order:532"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Kew: Plants of the World Online",
+          "url": "https://powo.science.kew.org/"
+        }
+      ]
+    },
+    "items": [
+      "Riesenbambus",
+      "Küstenmammutbaum",
+      "Moos",
+      "Sonnenblume"
+    ],
+    "primary_category": "plants_animals",
+    "subtopic": "Pflanzenhöhe",
+    "tags": {
+      "topics": [
+        "Pflanzenhöhe"
+      ],
+      "entities": [
+        "Moos",
+        "Sonnenblume",
+        "Riesenbambus",
+        "Küstenmammutbaum"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or533",
+    "question_type": "order",
+    "prompt": "Ordne diese Dinosaurier nach ihrem ersten Auftreten – von früh nach spät.",
+    "answer": [
+      "Plateosaurus",
+      "Stegosaurus",
+      "Iguanodon",
+      "Tyrannosaurus"
+    ],
+    "explanation": "Plateosaurus (-214 Millionen Jahre) → Stegosaurus (-155 Millionen Jahre) → Iguanodon (-140 Millionen Jahre) → Tyrannosaurus (-68 Millionen Jahre).",
+    "subject_keys": [
+      "topic:plants_animals:dinosaurier-zeit",
+      "fact:order:533"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Natural History Museum: Dino Directory",
+          "url": "https://www.nhm.ac.uk/discover/dino-directory.html"
+        }
+      ]
+    },
+    "items": [
+      "Iguanodon",
+      "Tyrannosaurus",
+      "Plateosaurus",
+      "Stegosaurus"
+    ],
+    "primary_category": "plants_animals",
+    "subtopic": "Dinosaurier-Zeit",
+    "tags": {
+      "topics": [
+        "Dinosaurier-Zeit"
+      ],
+      "entities": [
+        "Plateosaurus",
+        "Stegosaurus",
+        "Iguanodon",
+        "Tyrannosaurus"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or534",
+    "question_type": "order",
+    "prompt": "Ordne diese Samen nach typischer Masse – von leicht nach schwer.",
+    "answer": [
+      "Orchideensamen",
+      "Mohnsamen",
+      "Reiskorn",
+      "Kokosnuss"
+    ],
+    "explanation": "Orchideensamen (1e-06 Gramm ungefähr) → Mohnsamen (0.0005 Gramm ungefähr) → Reiskorn (0.025 Gramm ungefähr) → Kokosnuss (1400 Gramm ungefähr).",
+    "subject_keys": [
+      "topic:plants_animals:samenmasse",
+      "fact:order:534"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Kew: Plants of the World Online",
+          "url": "https://powo.science.kew.org/"
+        }
+      ]
+    },
+    "items": [
+      "Reiskorn",
+      "Kokosnuss",
+      "Orchideensamen",
+      "Mohnsamen"
+    ],
+    "primary_category": "plants_animals",
+    "subtopic": "Samenmasse",
+    "tags": {
+      "topics": [
+        "Samenmasse"
+      ],
+      "entities": [
+        "Orchideensamen",
+        "Mohnsamen",
+        "Reiskorn",
+        "Kokosnuss"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or535",
+    "question_type": "order",
+    "prompt": "Ordne diese Inselstaaten nach ihrer Unabhängigkeit – von früh nach spät.",
+    "answer": [
+      "Sri Lanka",
+      "Zypern",
+      "Malta",
+      "Vanuatu"
+    ],
+    "explanation": "Sri Lanka (1948 Jahr) → Zypern (1960 Jahr) → Malta (1964 Jahr) → Vanuatu (1980 Jahr).",
+    "subject_keys": [
+      "topic:geography_world:inselstaaten-unabhangigkeit",
+      "fact:order:535"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "CIA: The World Factbook",
+          "url": "https://www.cia.gov/the-world-factbook/"
+        }
+      ]
+    },
+    "items": [
+      "Malta",
+      "Vanuatu",
+      "Sri Lanka",
+      "Zypern"
+    ],
+    "primary_category": "geography_world",
+    "subtopic": "Inselstaaten-Unabhängigkeit",
+    "tags": {
+      "topics": [
+        "Inselstaaten-Unabhängigkeit"
+      ],
+      "entities": [
+        "Sri Lanka",
+        "Zypern",
+        "Malta",
+        "Vanuatu"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or536",
+    "question_type": "order",
+    "prompt": "Ordne diese Inseln nach Fläche – von klein nach groß.",
+    "answer": [
+      "Malta",
+      "Kreta",
+      "Island",
+      "Grönland"
+    ],
+    "explanation": "Malta (316 Quadratkilometer ungefähr) → Kreta (8336 Quadratkilometer ungefähr) → Island (103000 Quadratkilometer ungefähr) → Grönland (2.16609e+06 Quadratkilometer ungefähr).",
+    "subject_keys": [
+      "topic:geography_world:inselflachen",
+      "fact:order:536"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "CIA: The World Factbook",
+          "url": "https://www.cia.gov/the-world-factbook/"
+        }
+      ]
+    },
+    "items": [
+      "Island",
+      "Grönland",
+      "Malta",
+      "Kreta"
+    ],
+    "primary_category": "geography_world",
+    "subtopic": "Inselflächen",
+    "tags": {
+      "topics": [
+        "Inselflächen"
+      ],
+      "entities": [
+        "Malta",
+        "Kreta",
+        "Island",
+        "Grönland"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or537",
+    "question_type": "order",
+    "prompt": "Ordne diese Flüsse nach Länge – von kurz nach lang.",
+    "answer": [
+      "Themse",
+      "Rhein",
+      "Donau",
+      "Nil"
+    ],
+    "explanation": "Themse (346 Kilometer ungefähr) → Rhein (1233 Kilometer ungefähr) → Donau (2850 Kilometer ungefähr) → Nil (6650 Kilometer ungefähr).",
+    "subject_keys": [
+      "topic:geography_world:flusslangen",
+      "fact:order:537"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Encyclopaedia Britannica: Geography",
+          "url": "https://www.britannica.com/science/geography"
+        }
+      ]
+    },
+    "items": [
+      "Donau",
+      "Nil",
+      "Themse",
+      "Rhein"
+    ],
+    "primary_category": "geography_world",
+    "subtopic": "Flusslängen",
+    "tags": {
+      "topics": [
+        "Flusslängen"
+      ],
+      "entities": [
+        "Themse",
+        "Rhein",
+        "Donau",
+        "Nil"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or538",
+    "question_type": "order",
+    "prompt": "Ordne diese Länder nach Fläche – von klein nach groß.",
+    "answer": [
+      "Luxemburg",
+      "Portugal",
+      "Japan",
+      "Argentinien"
+    ],
+    "explanation": "Luxemburg (2586 Quadratkilometer ungefähr) → Portugal (92226 Quadratkilometer ungefähr) → Japan (377975 Quadratkilometer ungefähr) → Argentinien (2.7804e+06 Quadratkilometer ungefähr).",
+    "subject_keys": [
+      "topic:geography_world:landerflachen",
+      "fact:order:538"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "CIA: The World Factbook",
+          "url": "https://www.cia.gov/the-world-factbook/"
+        }
+      ]
+    },
+    "items": [
+      "Japan",
+      "Argentinien",
+      "Luxemburg",
+      "Portugal"
+    ],
+    "primary_category": "geography_world",
+    "subtopic": "Länderflächen",
+    "tags": {
+      "topics": [
+        "Länderflächen"
+      ],
+      "entities": [
+        "Luxemburg",
+        "Portugal",
+        "Japan",
+        "Argentinien"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or539",
+    "question_type": "order",
+    "prompt": "Ordne diese Städte geografisch – von Süden nach Norden.",
+    "answer": [
+      "Kapstadt",
+      "Singapur",
+      "Berlin",
+      "Reykjavík"
+    ],
+    "explanation": "Kapstadt (-33.9 Grad Nord) → Singapur (1.3 Grad Nord) → Berlin (52.5 Grad Nord) → Reykjavík (64.1 Grad Nord).",
+    "subject_keys": [
+      "topic:geography_world:breitengrade",
+      "fact:order:539"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "CIA: The World Factbook",
+          "url": "https://www.cia.gov/the-world-factbook/"
+        }
+      ]
+    },
+    "items": [
+      "Berlin",
+      "Reykjavík",
+      "Kapstadt",
+      "Singapur"
+    ],
+    "primary_category": "geography_world",
+    "subtopic": "Breitengrade",
+    "tags": {
+      "topics": [
+        "Breitengrade"
+      ],
+      "entities": [
+        "Kapstadt",
+        "Singapur",
+        "Berlin",
+        "Reykjavík"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or540",
+    "question_type": "order",
+    "prompt": "Ordne diese Planeten nach Durchmesser – von klein nach groß.",
+    "answer": [
+      "Merkur",
+      "Mars",
+      "Neptun",
+      "Jupiter"
+    ],
+    "explanation": "Merkur (4879 Kilometer) → Mars (6792 Kilometer) → Neptun (49528 Kilometer) → Jupiter (142984 Kilometer).",
+    "subject_keys": [
+      "topic:science_technology:planetendurchmesser",
+      "fact:order:540"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "NASA: Planetary Fact Sheet",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/"
+        }
+      ]
+    },
+    "items": [
+      "Neptun",
+      "Jupiter",
+      "Merkur",
+      "Mars"
+    ],
+    "primary_category": "science_technology",
+    "subtopic": "Planetendurchmesser",
+    "tags": {
+      "topics": [
+        "Planetendurchmesser"
+      ],
+      "entities": [
+        "Merkur",
+        "Mars",
+        "Neptun",
+        "Jupiter"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or541",
+    "question_type": "order",
+    "prompt": "Ordne diese Elemente nach ihrer Ordnungszahl – aufsteigend.",
+    "answer": [
+      "Kohlenstoff",
+      "Aluminium",
+      "Eisen",
+      "Gold"
+    ],
+    "explanation": "Kohlenstoff (6 Ordnungszahl) → Aluminium (13 Ordnungszahl) → Eisen (26 Ordnungszahl) → Gold (79 Ordnungszahl).",
+    "subject_keys": [
+      "topic:science_technology:ordnungszahlen",
+      "fact:order:541"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "IUPAC: Periodic Table of Elements",
+          "url": "https://iupac.org/what-we-do/periodic-table-of-elements/"
+        }
+      ]
+    },
+    "items": [
+      "Eisen",
+      "Gold",
+      "Kohlenstoff",
+      "Aluminium"
+    ],
+    "primary_category": "science_technology",
+    "subtopic": "Ordnungszahlen",
+    "tags": {
+      "topics": [
+        "Ordnungszahlen"
+      ],
+      "entities": [
+        "Kohlenstoff",
+        "Aluminium",
+        "Eisen",
+        "Gold"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or542",
+    "question_type": "order",
+    "prompt": "Ordne diese SI-Präfixe nach ihrer Größe – von klein nach groß.",
+    "answer": [
+      "Nano",
+      "Mikro",
+      "Milli",
+      "Kilo"
+    ],
+    "explanation": "Nano (1e-09 Faktor) → Mikro (1e-06 Faktor) → Milli (0.001 Faktor) → Kilo (1000 Faktor).",
+    "subject_keys": [
+      "topic:science_technology:si-prafixe",
+      "fact:order:542"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "BIPM: SI Brochure",
+          "url": "https://www.bipm.org/en/publications/si-brochure"
+        }
+      ]
+    },
+    "items": [
+      "Milli",
+      "Kilo",
+      "Nano",
+      "Mikro"
+    ],
+    "primary_category": "science_technology",
+    "subtopic": "SI-Präfixe",
+    "tags": {
+      "topics": [
+        "SI-Präfixe"
+      ],
+      "entities": [
+        "Nano",
+        "Mikro",
+        "Milli",
+        "Kilo"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or543",
+    "question_type": "order",
+    "prompt": "Ordne diese Datenmengen – von klein nach groß.",
+    "answer": [
+      "Bit",
+      "Byte",
+      "Kilobyte",
+      "Megabyte"
+    ],
+    "explanation": "Bit (0.125 Byte) → Byte (1 Byte) → Kilobyte (1000 Byte) → Megabyte (1e+06 Byte).",
+    "subject_keys": [
+      "topic:science_technology:datengrossen",
+      "fact:order:543"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "NIST: Metric (SI) Program",
+          "url": "https://www.nist.gov/pml/owm/metric-si"
+        }
+      ]
+    },
+    "items": [
+      "Kilobyte",
+      "Megabyte",
+      "Bit",
+      "Byte"
+    ],
+    "primary_category": "science_technology",
+    "subtopic": "Datengrößen",
+    "tags": {
+      "topics": [
+        "Datengrößen"
+      ],
+      "entities": [
+        "Bit",
+        "Byte",
+        "Kilobyte",
+        "Megabyte"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or544",
+    "question_type": "order",
+    "prompt": "Ordne diese Unicode-Versionen nach Veröffentlichung – von früh nach spät.",
+    "answer": [
+      "Unicode 1.1",
+      "Unicode 3.0",
+      "Unicode 6.0",
+      "Unicode 15.0"
+    ],
+    "explanation": "Unicode 1.1 (1993 Jahr) → Unicode 3.0 (1999 Jahr) → Unicode 6.0 (2010 Jahr) → Unicode 15.0 (2022 Jahr).",
+    "subject_keys": [
+      "topic:science_technology:unicode-versionen",
+      "fact:order:544"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "Unicode Consortium: Unicode Statistics",
+          "url": "https://www.unicode.org/versions/stats/"
+        }
+      ]
+    },
+    "items": [
+      "Unicode 6.0",
+      "Unicode 15.0",
+      "Unicode 1.1",
+      "Unicode 3.0"
+    ],
+    "primary_category": "science_technology",
+    "subtopic": "Unicode-Versionen",
+    "tags": {
+      "topics": [
+        "Unicode-Versionen"
+      ],
+      "entities": [
+        "Unicode 1.1",
+        "Unicode 3.0",
+        "Unicode 6.0",
+        "Unicode 15.0"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or545",
+    "question_type": "order",
+    "prompt": "Ordne diese Zahnarten im Oberkiefer von vorn nach hinten.",
+    "answer": [
+      "Schneidezähne",
+      "Eckzahn",
+      "Vormahlzähne",
+      "Mahlzähne"
+    ],
+    "explanation": "Schneidezähne (1 Position) → Eckzahn (2 Position) → Vormahlzähne (3 Position) → Mahlzähne (4 Position).",
+    "subject_keys": [
+      "topic:human_everyday:zahnentwicklung",
+      "fact:order:545"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "MedlinePlus: Body systems",
+          "url": "https://medlineplus.gov/anatomy.html"
+        }
+      ]
+    },
+    "items": [
+      "Vormahlzähne",
+      "Mahlzähne",
+      "Schneidezähne",
+      "Eckzahn"
+    ],
+    "primary_category": "human_everyday",
+    "subtopic": "Zahnentwicklung",
+    "tags": {
+      "topics": [
+        "Zahnentwicklung"
+      ],
+      "entities": [
+        "Schneidezähne",
+        "Eckzahn",
+        "Vormahlzähne",
+        "Mahlzähne"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or546",
+    "question_type": "order",
+    "prompt": "Ordne diese Organe nach typischer Masse – von leicht nach schwer.",
+    "answer": [
+      "Schilddrüse",
+      "Herz",
+      "Gehirn",
+      "Leber"
+    ],
+    "explanation": "Schilddrüse (25 Gramm ungefähr) → Herz (300 Gramm ungefähr) → Gehirn (1400 Gramm ungefähr) → Leber (1500 Gramm ungefähr).",
+    "subject_keys": [
+      "topic:human_everyday:korperorgane",
+      "fact:order:546"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "MedlinePlus: Body systems",
+          "url": "https://medlineplus.gov/anatomy.html"
+        }
+      ]
+    },
+    "items": [
+      "Gehirn",
+      "Leber",
+      "Schilddrüse",
+      "Herz"
+    ],
+    "primary_category": "human_everyday",
+    "subtopic": "Körperorgane",
+    "tags": {
+      "topics": [
+        "Körperorgane"
+      ],
+      "entities": [
+        "Schilddrüse",
+        "Herz",
+        "Gehirn",
+        "Leber"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or547",
+    "question_type": "order",
+    "prompt": "Ordne diese Vorgänge bei Normaldruck nach Temperatur – von niedrig nach hoch.",
+    "answer": [
+      "Schokolade schmilzt",
+      "Eiweiß gerinnt",
+      "Wasser siedet",
+      "Zucker karamellisiert"
+    ],
+    "explanation": "Schokolade schmilzt (32 Grad Celsius ungefähr) → Eiweiß gerinnt (62 Grad Celsius ungefähr) → Wasser siedet (100 Grad Celsius ungefähr) → Zucker karamellisiert (170 Grad Celsius ungefähr).",
+    "subject_keys": [
+      "topic:human_everyday:kochtemperaturen",
+      "fact:order:547"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "MedlinePlus: Body systems",
+          "url": "https://medlineplus.gov/anatomy.html"
+        }
+      ]
+    },
+    "items": [
+      "Wasser siedet",
+      "Zucker karamellisiert",
+      "Schokolade schmilzt",
+      "Eiweiß gerinnt"
+    ],
+    "primary_category": "human_everyday",
+    "subtopic": "Kochtemperaturen",
+    "tags": {
+      "topics": [
+        "Kochtemperaturen"
+      ],
+      "entities": [
+        "Schokolade schmilzt",
+        "Eiweiß gerinnt",
+        "Wasser siedet",
+        "Zucker karamellisiert"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or548",
+    "question_type": "order",
+    "prompt": "Ordne diese Fasern nach ihrer industriellen Einführung – von früh nach spät.",
+    "answer": [
+      "Baumwolle",
+      "Viskose",
+      "Nylon",
+      "Elasthan"
+    ],
+    "explanation": "Baumwolle (1700 Jahr ungefähr) → Viskose (1891 Jahr ungefähr) → Nylon (1935 Jahr ungefähr) → Elasthan (1958 Jahr ungefähr).",
+    "subject_keys": [
+      "topic:human_everyday:textilgeschichte",
+      "fact:order:548"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "USDA: Natural Fibers",
+          "url": "https://agresearchmag.ars.usda.gov/2000/nov/dye/"
+        }
+      ]
+    },
+    "items": [
+      "Nylon",
+      "Elasthan",
+      "Baumwolle",
+      "Viskose"
+    ],
+    "primary_category": "human_everyday",
+    "subtopic": "Textilgeschichte",
+    "tags": {
+      "topics": [
+        "Textilgeschichte"
+      ],
+      "entities": [
+        "Baumwolle",
+        "Viskose",
+        "Nylon",
+        "Elasthan"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or549",
+    "question_type": "order",
+    "prompt": "Ordne diese Rufnummern nach ihrem Zahlenwert – aufsteigend.",
+    "answer": [
+      "Polizei 110",
+      "EU-Notruf 112",
+      "Behördennummer 115",
+      "Bereitschaftsdienst 116117"
+    ],
+    "explanation": "Polizei 110 (110 Nummer) → EU-Notruf 112 (112 Nummer) → Behördennummer 115 (115 Nummer) → Bereitschaftsdienst 116117 (116117 Nummer).",
+    "subject_keys": [
+      "topic:human_everyday:notrufnummern",
+      "fact:order:549"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-17",
+      "references": [
+        {
+          "title": "European Commission: 112",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/112"
+        }
+      ]
+    },
+    "items": [
+      "Behördennummer 115",
+      "Bereitschaftsdienst 116117",
+      "Polizei 110",
+      "EU-Notruf 112"
+    ],
+    "primary_category": "human_everyday",
+    "subtopic": "Notrufnummern",
+    "tags": {
+      "topics": [
+        "Notrufnummern"
+      ],
+      "entities": [
+        "Polizei 110",
+        "EU-Notruf 112",
+        "Behördennummer 115",
+        "Bereitschaftsdienst 116117"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or600",
+    "question_type": "order",
+    "prompt": "Ordne diese digitalen Alltagsmomente – von früh nach spät.",
+    "answer": [
+      "erster Barcode-Scan",
+      "Web-Vorschlag",
+      "erste SMS",
+      "QR-Code"
+    ],
+    "explanation": "erster Barcode-Scan (1974 Jahr) → Web-Vorschlag (1989 Jahr) → erste SMS (1992 Jahr) → QR-Code (1994 Jahr).",
+    "subject_keys": [
+      "topic:witnesses_of_time:tech-alltag",
+      "fact:order:600"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "GS1: First barcode scan",
+          "url": "https://www.gs1.org/docs/media_centre/gs1pr_260614_first_barcode_scan.pdf"
+        },
+        {
+          "title": "CERN: Where the web was born",
+          "url": "https://home.cern/science/computing/the-birth-of-the-web/where-web-was-born/"
+        },
+        {
+          "title": "Vodafone: 25 years since the first text message",
+          "url": "https://www.vodafone.com/news/newsroom/technology/25-anniversary-text-message"
+        },
+        {
+          "title": "DENSO WAVE: QR Code 30th anniversary",
+          "url": "https://www.denso-wave.com/en/system/qr/qr30th/"
+        }
+      ]
+    },
+    "items": [
+      "erste SMS",
+      "QR-Code",
+      "erster Barcode-Scan",
+      "Web-Vorschlag"
+    ],
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Tech-Alltag",
+    "tags": {
+      "topics": [
+        "Tech-Alltag"
+      ],
+      "entities": [
+        "erster Barcode-Scan",
+        "Web-Vorschlag",
+        "erste SMS",
+        "QR-Code"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or601",
+    "question_type": "order",
+    "prompt": "Ordne diese Web-Meilensteine – von früh nach spät.",
+    "answer": [
+      "erster Web-Vorschlag",
+      "erster Browser und Server",
+      "Line-Mode-Browser",
+      "Web-Software gemeinfrei"
+    ],
+    "explanation": "erster Web-Vorschlag (1989 Jahr) → erster Browser und Server (1990 Jahr) → Line-Mode-Browser (1992 Jahr) → Web-Software gemeinfrei (1993 Jahr).",
+    "subject_keys": [
+      "topic:science_technology:geburt-des-web",
+      "fact:order:601"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "CERN: Where the web was born",
+          "url": "https://home.cern/science/computing/the-birth-of-the-web/where-web-was-born/"
+        }
+      ]
+    },
+    "items": [
+      "Line-Mode-Browser",
+      "Web-Software gemeinfrei",
+      "erster Web-Vorschlag",
+      "erster Browser und Server"
+    ],
+    "primary_category": "science_technology",
+    "subtopic": "Geburt des Web",
+    "tags": {
+      "topics": [
+        "Geburt des Web"
+      ],
+      "entities": [
+        "erster Web-Vorschlag",
+        "erster Browser und Server",
+        "Line-Mode-Browser",
+        "Web-Software gemeinfrei"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or602",
+    "question_type": "order",
+    "prompt": "Ordne diese Kommunikations-Meilensteine – von früh nach spät.",
+    "answer": [
+      "E-Mail dominiert ARPANET",
+      "erste SMS",
+      "originales Emoji-Set",
+      "CAPTCHA-Begriff"
+    ],
+    "explanation": "E-Mail dominiert ARPANET (1973 Jahr) → erste SMS (1992 Jahr) → originales Emoji-Set (1999 Jahr) → CAPTCHA-Begriff (2000 Jahr).",
+    "subject_keys": [
+      "topic:media_entertainment:digitale-kommunikation",
+      "fact:order:602"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "Computer History Museum: Networking & the Web",
+          "url": "https://www.computerhistory.org/timeline/networking-the-web/"
+        },
+        {
+          "title": "Vodafone: 25 years since the first text message",
+          "url": "https://www.vodafone.com/news/newsroom/technology/25-anniversary-text-message"
+        },
+        {
+          "title": "MoMA: Shigetaka Kurita — Emoji",
+          "url": "https://www.moma.org/collection/works/196070"
+        },
+        {
+          "title": "Carnegie Mellon: Computer Security as a Song",
+          "url": "https://www.cs.cmu.edu/news/2013/computer-security-song"
+        }
+      ]
+    },
+    "items": [
+      "originales Emoji-Set",
+      "CAPTCHA-Begriff",
+      "E-Mail dominiert ARPANET",
+      "erste SMS"
+    ],
+    "primary_category": "media_entertainment",
+    "subtopic": "Digitale Kommunikation",
+    "tags": {
+      "topics": [
+        "Digitale Kommunikation"
+      ],
+      "entities": [
+        "E-Mail dominiert ARPANET",
+        "erste SMS",
+        "originales Emoji-Set",
+        "CAPTCHA-Begriff"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or603",
+    "question_type": "order",
+    "prompt": "Ordne diese DART-Ereignisse – von früh nach spät.",
+    "answer": [
+      "Start der Sonde",
+      "Freisetzung von LICIACube",
+      "Einschlag auf Dimorphos",
+      "Bestätigung der Bahnänderung"
+    ],
+    "explanation": "Start der Sonde (2021.11 Zeitpunkt) → Freisetzung von LICIACube (2022.09 Zeitpunkt) → Einschlag auf Dimorphos (2022.09 Zeitpunkt) → Bestätigung der Bahnänderung (2022.1 Zeitpunkt).",
+    "subject_keys": [
+      "topic:science_technology:dart-mission",
+      "fact:order:603"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "NASA Science: Double Asteroid Redirection Test",
+          "url": "https://science.nasa.gov/mission/dart/"
+        },
+        {
+          "title": "NASA: Asteroid orbit changed after DART impact",
+          "url": "https://www.nasa.gov/missions/dart/nasa-study-asteroids-orbit-shape-changed-after-dart-impact/"
+        }
+      ]
+    },
+    "items": [
+      "Einschlag auf Dimorphos",
+      "Bestätigung der Bahnänderung",
+      "Start der Sonde",
+      "Freisetzung von LICIACube"
+    ],
+    "primary_category": "science_technology",
+    "subtopic": "DART-Mission",
+    "tags": {
+      "topics": [
+        "DART-Mission"
+      ],
+      "entities": [
+        "Start der Sonde",
+        "Freisetzung von LICIACube",
+        "Einschlag auf Dimorphos",
+        "Bestätigung der Bahnänderung"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
+  },
+  {
+    "id": "or604",
+    "question_type": "order",
+    "prompt": "Ordne diese Ingenuity-Ereignisse – von früh nach spät.",
+    "answer": [
+      "Landung mit Perseverance",
+      "erster Flug",
+      "letzter Flug",
+      "Missionsende"
+    ],
+    "explanation": "Landung mit Perseverance (2021.02 Zeitpunkt) → erster Flug (2021.04 Zeitpunkt) → letzter Flug (2024.01 Zeitpunkt) → Missionsende (2024.01 Zeitpunkt).",
+    "subject_keys": [
+      "topic:science_technology:ingenuity-mission",
+      "fact:order:604"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-18",
+      "references": [
+        {
+          "title": "NASA: Ingenuity Mars Helicopter",
+          "url": "https://science.nasa.gov/mission/mars-2020-perseverance/ingenuity-mars-helicopter/"
+        }
+      ]
+    },
+    "items": [
+      "letzter Flug",
+      "Missionsende",
+      "Landung mit Perseverance",
+      "erster Flug"
+    ],
+    "primary_category": "science_technology",
+    "subtopic": "Ingenuity-Mission",
+    "tags": {
+      "topics": [
+        "Ingenuity-Mission"
+      ],
+      "entities": [
+        "Landung mit Perseverance",
+        "erster Flug",
+        "letzter Flug",
+        "Missionsende"
+      ],
+      "genres": [],
+      "regions": [
+        "International"
+      ],
+      "eras": []
+    }
   }
 ]

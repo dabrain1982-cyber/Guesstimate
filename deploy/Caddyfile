@@ -1,0 +1,35 @@
+igroup.it-sauther.de {
+	encode zstd gzip
+
+	handle_path /guesstimate/* {
+		reverse_proxy 127.0.0.1:8765 {
+			header_up X-Forwarded-Prefix /guesstimate
+		}
+	}
+
+	handle /guesstimate {
+		redir * /guesstimate/ 308
+	}
+
+	@private_entry path /JansPortal /JansPortal/
+	handle @private_entry {
+		rewrite * /login.html
+		header +Set-Cookie "igroup_private_entry=4b3cc58c120d476f979dc4b6; Path=/; Max-Age=31536000; Secure; HttpOnly; SameSite=Strict"
+		reverse_proxy 127.0.0.1:8790
+	}
+
+	@private_login_assets path /JansPortal/login.css /JansPortal/login.js
+	handle @private_login_assets {
+		uri strip_prefix /JansPortal
+		reverse_proxy 127.0.0.1:8790
+	}
+
+	@private_browser header_regexp private_entry Cookie "(^|;\\s*)igroup_private_entry=4b3cc58c120d476f979dc4b6(;|$)"
+	handle @private_browser {
+		reverse_proxy 127.0.0.1:8790
+	}
+
+	handle {
+		redir * /guesstimate/ 302
+	}
+}

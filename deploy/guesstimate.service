@@ -14,6 +14,7 @@ Environment=QUIZ_DATABASE=/srv/guesstimate/runtime/quiz.sqlite3
 Environment="QUIZ_GAME_NAME=Stormseed´s Guesstimate"
 Environment=QUIZ_URL_PREFIX=/guesstimate
 Environment=QUIZ_PUBLIC_URL=https://igroup.it-sauther.de/guesstimate
+Environment=QUIZ_ENABLE_CARD_TABLE=1
 Environment=QUIZ_MAIL_USER=DaBrain@gmx.net
 Environment=QUIZ_MAIL_TO=DaBrain@gmx.net
 Environment=QUIZ_MAIL_PASSWORD_FILE=/srv/guesstimate/config/mail.secret

@@ -8,6 +8,8 @@ from pathlib import Path
 from typing import Any
 
 
+# The JSON library is loaded at process start; changing this module also gives
+# the live Gunicorn reloader a deterministic signal after question rollouts.
 QUESTION_LIBRARY_ROOT = Path(__file__).resolve().parent / "fragen"
 MANIFEST_PATH = QUESTION_LIBRARY_ROOT / "manifest.json"
 

@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+{% from "_player_identity.html" import player_identity with context %}
+{% from "_profile_window.html" import profile_window with context %}
+{% block title %}Dein Profil · {{ game_name }}{% endblock %}
+{% block shell_class %}profile-shell{% endblock %}
+{% block header %}{% endblock %}
+{% block content %}
+  <header class="profile-hero">
+    <div><p class="eyebrow">DEIN AUFTRITT. DEINE ERFOLGE.</p><h1>Dein Profil</h1><p>So sehen dich die anderen.</p></div>
+    <div class="profile-hero-actions">
+      <strong>{{ total_points|points }} <small>Punkte erspielt</small></strong>
+      {% if is_owner %}
+        <form class="developer-toggle" method="post" action="{{ url_for('profile_developer_mode') }}">
+          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+          <label>
+            <input type="checkbox" name="developer_enabled" value="1" {% if cosmetics.developer_enabled %}checked{% endif %} onchange="this.form.submit()">
+            <span aria-hidden="true"></span>
+            Entwicklermodus
+          </label>
+        </form>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="profile-workspace">
+    <section class="profile-current" aria-label="Aktuell ausgerüstetes Profil">
+      <div class="profile-window-copy">{{ profile_window(cosmetics, trophies, show_edit=False, show_details=False) }}</div>
+    </section>
+
+    <section class="profile-wardrobe" aria-labelledby="profile-wardrobe-title">
+    <div class="profile-section-heading">
+      <div><span>DEINE SAMMLUNG</span><h2 id="profile-wardrobe-title">Aussehen auswählen</h2></div>
+      <a href="{{ url_for('shop') }}">Mehr im Shop kaufen ›</a>
+    </div>
+    <div class="profile-tabs" role="tablist" aria-label="Ausrüstungskategorien">
+      <button type="button" role="tab" aria-selected="true" data-profile-tab="avatar">Avatare</button>
+      <button type="button" role="tab" aria-selected="false" data-profile-tab="plaque">Pulte &amp; Plaketten</button>
+      <button type="button" role="tab" aria-selected="false" data-profile-tab="background">Hintergründe</button>
+      <button type="button" role="tab" aria-selected="false" data-profile-tab="phrase">Sprüche</button>
+    </div>
+
+    <div class="profile-panel" data-profile-panel="avatar">
+      <div class="profile-inventory avatar-inventory">
+        {% for item in owned_avatars %}
+          <article class="profile-item {% if cosmetics.avatar_id == item.id %}is-equipped{% endif %}">
+            {% set preview_asset = item.public_asset if item.id == 'a00' else item.asset %}
+            <div class="profile-avatar-preview"><img src="{{ url_for('static', filename='avatars/' ~ preview_asset) }}" alt="{{ 'Start-Avatar' if item.id == 'a00' else item.name }}"></div>
+            <div><h3>{{ 'Start-Avatar' if item.id == 'a00' else item.name }}</h3><p>{{ 'Neutraler Klassiker' if item.id == 'a00' else item.trait }}</p></div>
+            {% if cosmetics.avatar_id == item.id %}
+              <button type="button" disabled>Ausgerüstet</button>
+            {% else %}
+              <form method="post" action="{{ url_for('profile_equip', item_type='avatar', item_id=item.id) }}">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                <button type="submit">Avatar anlegen</button>
+              </form>
+            {% endif %}
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="profile-panel" data-profile-panel="plaque" hidden>
+      <div class="profile-inventory plaque-inventory">
+        {% for item in owned_plaques %}
+          <article class="profile-item {% if cosmetics.plaque_id == item.id %}is-equipped{% endif %}">
+            <div class="profile-plaque-preview">{{ player_identity(g.user.display_name, cosmetics.avatar_id, item.id, 'shopset', show_avatar=False) }}</div>
+            <div><h3>{{ item.name }}</h3><p>{{ item.material }}</p></div>
+            {% if cosmetics.plaque_id == item.id %}
+              <button type="button" disabled>Ausgerüstet</button>
+            {% else %}
+              <form method="post" action="{{ url_for('profile_equip', item_type='plaque', item_id=item.id) }}">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                <button type="submit">Pult aufstellen</button>
+              </form>
+            {% endif %}
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="profile-panel" data-profile-panel="background" hidden>
+      <div class="profile-inventory background-inventory">
+        {% for item in owned_backgrounds %}
+          <article class="profile-item background-profile-item {% if cosmetics.background_id == item.id %}is-equipped{% endif %}">
+            <div class="profile-background-preview"><img src="{{ url_for('static', filename=item.asset) }}" alt="Hintergrund {{ item.name }}"></div>
+            <div><h3>{{ item.name }}</h3><p>{{ item.mood }}</p></div>
+            {% if cosmetics.background_id == item.id %}
+              <button type="button" disabled>Ausgerüstet</button>
+            {% else %}
+              <form method="post" action="{{ url_for('profile_equip', item_type='background', item_id=item.id) }}">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                <button type="submit">Hintergrund verwenden</button>
+              </form>
+            {% endif %}
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="profile-panel" data-profile-panel="phrase" hidden>
+      {% if owned_phrases %}
+        <div class="profile-inventory phrase-inventory">
+          {% for item in owned_phrases %}
+            <article class="profile-item phrase-profile-item {% if cosmetics.phrase_id == item.id %}is-equipped{% endif %}">
+              <blockquote>„{{ item.text }}“</blockquote>
+              <div><h3>{{ item.name }}</h3><p>Dein persönlicher Spielspruch</p></div>
+              {% if cosmetics.phrase_id == item.id %}
+                <button type="button" disabled>Ausgerüstet</button>
+              {% else %}
+                <form method="post" action="{{ url_for('profile_equip', item_type='phrase', item_id=item.id) }}">
+                  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                  <button type="submit">Spruch verwenden</button>
+                </form>
+              {% endif %}
+            </article>
+          {% endfor %}
+        </div>
+      {% else %}
+        <p class="shop-note">Du besitzt noch keinen Spruch. Im Shop warten 40 mehr oder weniger kluge Ausreden auf dich.</p>
+      {% endif %}
+    </div>
+    </section>
+  </div>
+
+  <section class="profile-trophies" aria-labelledby="profile-trophies-title">
+    <div class="profile-section-heading">
+      <div><span>POKALSCHRANK</span><h2 id="profile-trophies-title">Deine Titel</h2></div>
+      <small>Weitere Erfolge kommen später dazu</small>
+    </div>
+    <div class="trophy-grid">
+      <article class="trophy-card trophy-daily"><i aria-hidden="true">★</i><div><strong>{{ trophies.daily }}</strong><span>Tagessieger</span></div></article>
+      <article class="trophy-card trophy-weekly"><i aria-hidden="true">W</i><div><strong>{{ trophies.weekly }}</strong><span>Wochensieger</span></div></article>
+      <article class="trophy-card trophy-monthly"><i aria-hidden="true">M</i><div><strong>{{ trophies.monthly }}</strong><span>Monatssieger</span></div></article>
+      <article class="trophy-card trophy-party"><i aria-hidden="true">♛</i><div><strong>{{ trophies.party }}</strong><span>Party-Meister</span></div></article>
+    </div>
+  </section>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='profile.js', v='4') }}" defer></script>{% endblock %}

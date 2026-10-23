@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% set is_dice = family == 'dice' %}
+{% set family_title = 'Würfeltische' if is_dice else 'Kartentische' %}
+{% block title %}{{ family_title }} · {{ game_name }}{% endblock %}
+{% block shell_class %}tabletop-family-shell{% endblock %}
+{% block header %}{% endblock %}
+{% block extra_head %}<link rel="stylesheet" href="{{ url_for('static', filename='card-table.css', v='13') }}">{% endblock %}
+{% block content %}
+  <main class="tabletop-family-page is-{{ family }}">
+    <header class="tabletop-family-head">
+      <p class="eyebrow">TABLETOP CONNECTION</p>
+      <h1>{{ family_title }}</h1>
+    </header>
+    <section class="tabletop-game-grid tabletop-family-grid" aria-label="{{ family_title }}">
+      {% if is_dice %}
+        <a class="tabletop-game-tile is-available" href="{{ url_for('dice_table_index') }}">
+          <img src="{{ url_for('static', filename='tabletop-dice-table-tile-v1.png') }}" alt="Würfel und Würfelbecher auf einem grünen Filztisch">
+          <span>Freies Würfeln</span>
+          <h2>Würfeltisch</h2>
+        </a>
+        <a class="tabletop-game-tile is-available" href="{{ url_for('kniffel_index') }}">
+          <img src="{{ url_for('static', filename='tabletop-kniffel-tile-v1.png') }}" alt="Fünf Würfel, Würfelbecher und Wertungsblock auf einem grünen Filztisch">
+          <span>Lobby geöffnet</span>
+          <h2>Kniffel</h2>
+        </a>
+        <a class="tabletop-game-tile is-available" href="{{ url_for('maexchen_index') }}">
+          <img src="{{ url_for('static', filename='tabletop-dice-table-tile-v1.png') }}" alt="Zwei Würfel auf einem grünen Filztisch">
+          <span>Lobby geöffnet</span>
+          <h2>Mäxchen</h2>
+        </a>
+        <article class="tabletop-game-tile is-coming" aria-disabled="true">
+          <img src="{{ url_for('static', filename='tabletop-dice-table-tile-v1.png') }}" alt="Würfel auf einem grünen Filztisch">
+          <span>Demnächst</span>
+          <h2>Schweinchen</h2>
+        </article>
+      {% else %}
+        <a class="tabletop-game-tile is-available" href="{{ url_for('card_table_index') }}">
+          <img src="{{ url_for('static', filename='tabletop-card-table-tile-v1.png') }}" alt="Standard-Spielkarten auf einem grünen Filztisch">
+          <span>Lobby geöffnet</span>
+          <h2>Freies Spiel mit allen Standardkarten</h2>
+        </a>
+      {% endif %}
+    </section>
+    <a class="back-link" href="{{ url_for('tabletop_connection') }}">zurück zu tabletop connection</a>
+  </main>
+{% endblock %}

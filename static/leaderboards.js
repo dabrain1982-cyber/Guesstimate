@@ -22,3 +22,18 @@ document.querySelectorAll("[data-leaderboards]").forEach((leaderboard) => {
     });
   });
 });
+
+document.querySelectorAll("[data-week-date]").forEach((tally) => {
+  const date = new Date(`${tally.dataset.weekDate}T12:00:00`);
+  const day = date.getDay() || 7;
+  const addGroup = (count, crossed = false) => {
+    const group = document.createElement("span");
+    group.className = `tally-group${crossed ? " is-five" : ""}`;
+    group.setAttribute("aria-hidden", "true");
+    for (let mark = 0; mark < count; mark += 1) group.append(document.createElement("i"));
+    tally.append(group);
+  };
+  addGroup(Math.min(day, 4), day >= 5);
+  if (day > 5) addGroup(day - 5);
+  tally.setAttribute("aria-label", `Wochentag ${day} von 7`);
+});

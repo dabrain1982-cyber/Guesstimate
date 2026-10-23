@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block title %}Stormseed´s Perfect · {{ game_name }}{% endblock %}
+{% block extra_head %}<link rel="stylesheet" href="{{ url_for('static', filename='stormseeds-perfect.css', v='20') }}">{% endblock %}
+{% block shell_class %}perfect-index-shell{% endblock %}
+{% block header %}{% endblock %}
+{% block content %}
+  {% set perfect_capacity = config.get('PERFECT_MAX_PLAYERS', 7) %}
+  <section class="party-head perfect-index-head">
+    <p class="eyebrow">BLUFFEN, WISSEN, ÜBERZEUGEN</p>
+    <h1>Stormseed´s Perfect</h1>
+    <p>Oder weißt du etwa nicht, was ein Apotropaion ist?</p>
+  </section>
+
+  <section class="perfect-lobby-browser" aria-labelledby="perfect-lobbies-title">
+    <header>
+      <div><h1 id="perfect-lobbies-title">Spiellobbys</h1></div>
+      <form method="post" action="{{ url_for('nerd_create') }}">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <button class="perfect-button perfect-button-primary" type="submit">Lobby erstellen</button>
+      </form>
+    </header>
+
+    <div class="perfect-lobby-list">
+      {% for lobby in lobbies %}
+        {% set host_avatar = avatar_catalog[lobby.host_avatar_id] %}
+        <article class="perfect-lobby-card{% if lobby.status != 'waiting' %} is-running{% endif %}">
+          <div class="perfect-host-portrait">
+            <img src="{{ url_for('static', filename='avatars/' ~ host_avatar.stage_asset) }}" alt="Avatar von {{ lobby.host_name }}">
+          </div>
+          <div class="perfect-lobby-copy">
+            <span class="perfect-status">{% if lobby.status == 'playing' %}SPIELT GERADE{% elif lobby.status == 'countdown' %}STARTET GLEICH{% else %}OFFEN{% endif %}</span>
+            <h2>{{ lobby.name }}</h2>
+            <p>Gastgeber: {{ lobby.host_name }} · {{ lobby.member_count }}/{{ perfect_capacity }} Spieler · {% if lobby.goal_mode == 'time' %}{{ lobby.goal_value }} Minuten{% else %}bis {{ lobby.goal_value|points }} Punkte{% endif %}</p>
+          </div>
+          <div class="perfect-lobby-action">
+            {% if lobby.is_member %}
+              <a class="perfect-button perfect-button-primary" href="{{ url_for('nerd_lobby', lobby_id=lobby.id) }}">{% if lobby.status == 'waiting' %}Zur Lobby{% else %}Zurück ins Spiel{% endif %}</a>
+            {% elif lobby.status == 'waiting' and lobby.member_count < perfect_capacity %}
+              <form method="post" action="{{ url_for('nerd_join', lobby_id=lobby.id) }}">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                <button class="perfect-button perfect-button-primary" type="submit">Beitreten</button>
+              </form>
+            {% elif lobby.status == 'waiting' %}
+              <span class="perfect-running-label">Lobby voll</span>
+            {% else %}
+              <span class="perfect-running-label">Runde läuft</span>
+            {% endif %}
+          </div>
+        </article>
+      {% else %}
+        <div class="perfect-empty-lobbies">
+          <span>🎭</span>
+          <h2>Noch keine Lobby.</h2>
+          <p>Erstelle eine Lobby – sie erscheint sofort in dieser Liste.</p>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+  <a class="back-link" href="{{ url_for('tabletop_connection') }}">zurück zu tabletop connection</a>
+{% endblock %}

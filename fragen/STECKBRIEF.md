@@ -9,9 +9,23 @@ Reihenfolgefragen `items` und Schätzfragen `unit`. Diese vier Fragearten
 besitzen außerdem immer `primary_category`, `subtopic` und `tags`. Die
 Tags enthalten exakt `topics`, `entities`, `genres`, `regions` und `eras`.
 
+Die vorbereitete Zwei-Gruppen-Zuordnung ergänzt `groups` mit den Bezeichnungen
+`A` und `B` sowie genau sieben eindeutige `items`. `answer` ordnet jeden Begriff
+`A`, `B` oder `both` zu; jede Runde verwendet alle drei Antwortarten mindestens
+einmal. Auch diese Frageart besitzt die Themenfelder und den vollständigen
+Quellen-Steckbrief.
+
 Wahr-oder-falsch-Fragen enthalten bewusst keine Kategorien-, Unterthemen- oder
 Tag-Felder. Das ist ihr einheitlicher Steckbrief und keine Ausnahme einzelner
 Fragen.
+
+## Ausgeschlossene Themen
+
+Religionsfragen sind nicht Bestandteil von Guesstimate. Glaubenslehren,
+heilige Schriften, religiöse Ämter, Riten, Feste und Bekenntnisse dürfen nicht
+der Wissenskern einer Frage sein. Eine beiläufige Erwähnung in einer echten
+Geografie-, Kunst- oder Geschichtsfrage ist nur zulässig, wenn die Auflösung
+kein Religionswissen verlangt.
 
 ## Sprache
 

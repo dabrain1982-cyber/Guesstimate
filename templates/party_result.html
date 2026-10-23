@@ -1,13 +1,15 @@
 {% extends "base.html" %}
+{% from "_player_identity.html" import player_identity with context %}
 {% block title %}Party-Ergebnis · {{ game_name }}{% endblock %}
+{% block header %}{% endblock %}
 {% block content %}
-  <section class="party-head"><p class="eyebrow">PARTY BEENDET</p><h1>Das Podest</h1><p>Kein Einfluss auf Ikühe oder Liga – aber Ruhm ist bekanntlich unbezahlbar.</p></section>
+  <section class="party-head party-finale"><p class="eyebrow">PARTY BEENDET</p><h1>Konfetti für alle!</h1><span class="visually-hidden">Das Podest</span><p>Kein Einfluss auf iKühe oder Liga – aber Ruhm ist bekanntlich unbezahlbar.</p></section>
   {% set scores = members|sort(attribute='score', reverse=true) %}
   <ol class="party-podium">
     {% set rank = namespace(value=0, previous=None) %}
     {% for player in scores %}
       {% if rank.previous != player.score %}{% set rank.value = loop.index %}{% set rank.previous = player.score %}{% endif %}
-      <li class="podium-{{ rank.value }}"><span>{{ rank.value }}</span><strong>{{ player.display_name }}</strong><b>{{ player.score }} PKT</b></li>
+      <li class="podium-{{ rank.value }}"><span>{{ rank.value }}</span>{{ player_identity(player.display_name, player.avatar_id, player.plaque_id, 'podium', 'Platz ' ~ rank.value) }}<b>{{ player.score }} PKT</b></li>
     {% endfor %}
   </ol>
   <a class="primary-button" href="{{ url_for('party_index') }}">Zur Partyübersicht</a>

@@ -17,6 +17,7 @@ TYPE_FIELDS = {
     "match": {"left", "right"},
     "order": {"items"},
     "estimate": {"unit"},
+    "binary_sort": {"groups", "items"},
 }
 PREFIXES = {
     "multiple_choice": "mc",
@@ -24,6 +25,7 @@ PREFIXES = {
     "match": "ma",
     "order": "or",
     "estimate": "es",
+    "binary_sort": "bs",
 }
 COMMON_FIELDS = {"id", "question_type", "prompt", "answer", "explanation", "source"}
 TOPIC_FIELDS = {"primary_category", "subtopic", "tags"}
@@ -32,6 +34,7 @@ CURRENT_TRUE_FALSE_FIELDS = COMMON_FIELDS | {"subject_keys"}
 TAG_FIELDS = {"topics", "entities", "genres", "regions", "eras"}
 SOURCE_FIELDS = {"status", "verified_on", "references"}
 FORBIDDEN_TRUE_FALSE_FIELDS = TOPIC_FIELDS | {"knowledge_category", "category", "topics"}
+FORBIDDEN_RELIGION_CATEGORY = "faith_religion"
 
 
 def _number(question_id: str) -> int:
@@ -46,13 +49,19 @@ def validate_library() -> list[str]:
     seen_ids: set[str] = set()
     categories = set(MANIFEST["categories"])
 
-    for question_type in MANIFEST["round_order"]:
+    # Aktive Fragearten sind verpflichtend. Vorbereitete inaktive Fragearten
+    # werden geprüft, sobald ihr Fragenpaket nicht mehr leer ist.
+    for question_type in TYPE_FIELDS:
         definition = MANIFEST["question_types"][question_type]
         path = LIBRARY / definition["directory"] / "fragen.json"
         questions = json.loads(path.read_text(encoding="utf-8"))
 
-        if not isinstance(questions, list) or not questions:
+        if not isinstance(questions, list):
             errors.append(f"{path}: keine Fragenliste")
+            continue
+        if not questions:
+            if definition["active"]:
+                errors.append(f"{path}: keine Fragenliste")
             continue
 
         for question in questions:
@@ -96,6 +105,8 @@ def validate_library() -> list[str]:
                     errors.append(f"{prefix} fehlende Themenfelder: {sorted(missing_topics)}")
                 if question.get("primary_category") not in categories:
                     errors.append(f"{prefix} ungültige Themenkategorie")
+                if question.get("primary_category") == FORBIDDEN_RELIGION_CATEGORY:
+                    errors.append(f"{prefix} Religionsfragen sind ausgeschlossen")
                 if not isinstance(question.get("subtopic"), str) or not question.get("subtopic"):
                     errors.append(f"{prefix} Unterthema fehlt")
                 tags = question.get("tags")
@@ -118,6 +129,8 @@ def validate_library() -> list[str]:
                 subject_keys = question.get("subject_keys")
                 if not isinstance(subject_keys, list) or not subject_keys:
                     errors.append(f"{prefix} subject_keys fehlen")
+                elif any("faith_religion" in str(key) for key in subject_keys):
+                    errors.append(f"{prefix} Religionsfragen sind ausgeschlossen")
                 source = question.get("source")
                 if not isinstance(source, dict) or set(source) != SOURCE_FIELDS:
                     errors.append(f"{prefix} Quellen-Steckbrief weicht ab")
@@ -165,6 +178,29 @@ def validate_library() -> list[str]:
                     errors.append(f"{prefix} Schätzantwort muss numerisch sein")
                 if not isinstance(question.get("unit"), str) or not question.get("unit"):
                     errors.append(f"{prefix} Einheit fehlt")
+            elif question_type == "binary_sort":
+                groups = question.get("groups")
+                items = question.get("items")
+                answer = question.get("answer")
+                if (
+                    not isinstance(groups, dict)
+                    or set(groups) != {"A", "B"}
+                    or not all(isinstance(value, str) and value for value in groups.values())
+                ):
+                    errors.append(f"{prefix} Gruppen müssen A und B benennen")
+                if (
+                    not isinstance(items, list)
+                    or len(items) != 7
+                    or len(set(items)) != 7
+                    or not all(isinstance(item, str) and item for item in items)
+                ):
+                    errors.append(f"{prefix} Zuordnung benötigt sieben eindeutige Begriffe")
+                if not isinstance(answer, dict) or not isinstance(items, list) or set(answer) != set(items):
+                    errors.append(f"{prefix} Zuordnungslösung passt nicht zu den Begriffen")
+                elif not set(answer.values()) <= {"A", "B", "both"}:
+                    errors.append(f"{prefix} Zuordnung enthält einen ungültigen Gruppenwert")
+                elif not {"A", "B", "both"} <= set(answer.values()):
+                    errors.append(f"{prefix} Zuordnung muss A, B und Beides enthalten")
 
     return errors
 

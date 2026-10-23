@@ -1,0 +1,32 @@
+{% macro profile_window(cosmetics, trophies, show_edit=True, show_details=True, player_name=None, player_balance=None, instance_id='variant-profile-name', balance_link=True, game_points=None) %}
+  {% set avatar = avatar_catalog[cosmetics.avatar_id] %}
+  {% set plaque = plaque_catalog[cosmetics.plaque_id] %}
+  {% set background = background_catalog[cosmetics.background_id] %}
+  {% set phrase = phrase_catalog.get(cosmetics.phrase_id, {}).get('text', default_phrase) %}
+  {% set visible_name = player_name if player_name is not none else g.user.display_name %}
+  {% set visible_balance = player_balance if player_balance is not none else currency_balance %}
+  <section class="variant-a-profile variant-a-profile-canonical avatar-{{ cosmetics.avatar_id }} plaque-{{ cosmetics.plaque_id }}" aria-labelledby="{{ instance_id }}">
+    <div class="variant-a-profile-scene" style="--profile-window-background: url('{{ url_for('static', filename=background.asset) }}')">
+      <div class="variant-a-hanging-plaque{% if plaque.asset %} has-art{% endif %}">
+        <i aria-hidden="true"></i><i aria-hidden="true"></i>
+        {% if plaque.asset %}<img src="{{ url_for('static', filename='plaques/' ~ plaque.asset) }}" alt="">{% endif %}
+        <span>„{{ phrase }}“</span>
+      </div>
+      <div class="variant-a-avatar"><img src="{{ url_for('static', filename='avatars/' ~ avatar.stage_asset) }}" alt="Avatar {{ avatar.name }} von {{ visible_name }}"></div>
+      <div class="variant-a-podium">
+        <img src="{{ url_for('static', filename='podiums/' ~ plaque.perfect_podium_asset) }}" alt="Pult {{ plaque.name }} von {{ visible_name }}">
+        <strong id="{{ instance_id }}" data-fit-podium-text>{{ visible_name }}</strong>
+        <a class="variant-a-podium-balance"{% if balance_link %} href="{{ url_for('shop') }}"{% else %} aria-disabled="true" tabindex="-1"{% endif %} data-fit-podium-text>{% if game_points is none %}<span aria-hidden="true">🐮</span><span>{{ visible_balance|points }} iKühe</span>{% else %}<span>{{ game_points|points }} Punkte</span>{% endif %}</a>
+      </div>
+    </div>
+    {% if show_edit %}<a class="variant-a-edit" href="{{ url_for('profile') }}" aria-label="Avatar, Pult und Hintergrund im Profil ändern">✎</a>{% endif %}
+
+    {% if show_details %}<div class="variant-a-profile-details">
+      <div class="variant-a-trophies" aria-label="Deine Pokale">
+        <span><i aria-hidden="true">🏆</i><b>{{ trophies.daily }}</b><small>tagessiege</small></span>
+        <span><i aria-hidden="true">▥</i><b>{{ trophies.weekly }}</b><small>wochensiege</small></span>
+        <span><i aria-hidden="true">♛</i><b>{{ trophies.monthly }}</b><small>hall of fame</small></span>
+      </div>
+    </div>{% endif %}
+  </section>
+{% endmacro %}

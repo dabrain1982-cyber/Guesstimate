@@ -1,38 +1,88 @@
 {% extends "base.html" %}
-{% from "_icons.html" import category_icon %}
-{% block shell_class %}home-shell{% endblock %}
-{% block header %}
-  <header class="home-date"><span>{{ today_display }}</span></header>
-{% endblock %}
+{% from "_profile_window.html" import profile_window with context %}
+{% from "_game_flyers.html" import perfect_flyer_copy %}
+{% block shell_class %}home-shell home-variant-a{% endblock %}
+{% block header %}{% endblock %}
 {% block content %}
-  <section class="home-brand" aria-label="Stormseed´s Guesstimate">
-    <span>Stormseed´s</span>
-    <h1>Guesstimate</h1>
-  </section>
+  <div class="variant-a-stage">
+    {{ profile_window(player_cosmetics, trophies) }}
 
-  {% include "_leaderboard.html" %}
+    <section class="variant-a-showcase" aria-label="Unsere Spiele" data-game-carousel>
+      <header class="variant-a-title-screen">
+        <h1><span class="variant-a-title-brand"><small>stormseed´s</small><span>guesstimate</span></span></h1>
+        <strong>fünf fragen. ein versuch. jeden tag.</strong>
+        <p>Schätzen, kombinieren und mit gefährlichem Halbwissen ganz nach oben spielen.</p>
+      </header>
 
-  <section class="action-dock">
-    {% if active_round_date != today_iso_value %}
-      <p class="catchup-date">Nachholrunde vom <strong>{{ active_round_date[8:10] }}.{{ active_round_date[5:7] }}.{{ active_round_date[0:4] }}</strong></p>
-    {% endif %}
-    {% if attempt and attempt['status'] == 'completed' %}
-      <a class="primary-button completed home-action" href="{{ url_for('result') }}">{{ category_icon('estimate', 'button-art') }}<span>Schau dir dein Ergebnis an</span></a>
-      <p class="home-quip">{{ greeting }}</p>
-    {% else %}
-      <form method="post" action="{{ url_for('start_round') }}">
-        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-        <button class="primary-button home-action" type="submit">
-          {{ category_icon('multiple_choice', 'button-art') }}
-          <span>{% if attempt %}Runde fortsetzen{% else %}Heutige Runde starten{% endif %}</span>
-        </button>
-      </form>
-      <p class="home-quip">{{ greeting }}</p>
-      <small class="round-meta">5 Fragearten · 6 Wissensgebiete · etwa 3 Minuten</small>
-    {% endif %}
-    <a class="party-mode-link" href="{{ url_for('party_index') }}">🎉 Partymodus</a>
+      <div class="variant-a-slides">
+        <article class="variant-a-slide is-active slide-guesstimate" data-game-slide="0" aria-label="Das tägliche Quiz">
+          <div class="variant-a-flyer-copy">
+            <h2><small>stormseed´s</small>guesstimate</h2>
+            <p>Fünf Fragen um täglich deine Unwissenheit zu beweisen!</p>
+          </div>
+        </article>
+        <article class="variant-a-slide slide-party" data-game-slide="1" aria-label="Guesstimate Party Classic" hidden>
+          <div class="variant-a-flyer-copy">
+            <h2><small>guesstimate</small>party classic</h2>
+            <p>Das tägliche Quiz als Zeit-Stress-Partymodus</p>
+          </div>
+        </article>
+        <article class="variant-a-slide slide-perfect" data-game-slide="2" aria-label="Stormseed´s Perfect" hidden>
+          {{ perfect_flyer_copy() }}
+        </article>
+        <article class="variant-a-slide slide-playtable" data-game-slide="3" aria-label="Tabletop Connection" hidden>
+          <div class="variant-a-flyer-copy">
+            <h2>Tabletop Connection</h2>
+            <p>Ein Spieltisch, der täglich erweitert wird. Spiele Würfelspiele, Kartenspiele und Brettspiele mit deinen Freunden!</p>
+          </div>
+        </article>
+        <article class="variant-a-slide slide-birthday" data-game-slide="4" aria-label="Alles Gute zum Geburtstag, Jenny" hidden>
+          <div class="variant-a-flyer-copy">
+            <h2>Alles Gute, Jenny!</h2>
+            <p>Alles Gute auch zum Wochensieg in guesstimate!!!</p>
+          </div>
+        </article>
 
-  </section>
+        <button class="variant-a-carousel-arrow is-prev" type="button" data-carousel-prev aria-label="Vorheriges Spiel">‹</button>
+        <button class="variant-a-carousel-arrow is-next" type="button" data-carousel-next aria-label="Nächstes Spiel">›</button>
+      </div>
+
+      <div class="variant-a-actions">
+        <div class="variant-a-action is-active">
+          {% if attempt and attempt['status'] == 'completed' %}
+            <a class="primary-button" href="{{ url_for('result') }}">heutiges ergebnis <span aria-hidden="true">→</span></a>
+          {% else %}
+            <form method="post" action="{{ url_for('start_round') }}">
+              <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+              <button class="primary-button" type="submit">{% if attempt %}runde fortsetzen{% else %}spielen{% endif %} <span aria-hidden="true">→</span></button>
+            </form>
+          {% endif %}
+          {% if missed_week_days and active_round_date == today_iso_value %}
+            <form method="post" action="{{ url_for('choose_week_replay') }}" class="variant-a-catchup-launch">
+              <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+              <input type="hidden" name="choice" value="all">
+              <button class="secondary-button" type="submit">
+                {{ missed_week_days|length }} verpasste {{ 'Runde' if missed_week_days|length == 1 else 'Runden' }} nachholen
+              </button>
+            </form>
+          {% endif %}
+        </div>
+      </div>
+
+      {% if active_round_date != today_iso_value %}
+        <p class="variant-a-catchup">Nachholrunde vom <strong>{{ active_round_date[8:10] }}.{{ active_round_date[5:7] }}.{{ active_round_date[0:4] }}</strong></p>
+      {% endif %}
+    </section>
+
+    <aside class="variant-a-ranking">
+      {% include "_leaderboard.html" %}
+    </aside>
+  </div>
+
+  <form class="variant-a-logout" method="post" action="{{ url_for('logout') }}">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <button type="submit">abmelden</button>
+  </form>
 
   {% if show_catchup_prompt %}
     <dialog class="catchup-dialog" data-catchup-dialog aria-labelledby="catchup-title">
@@ -42,17 +92,22 @@
         <h2 id="catchup-title">Hi, du warst anscheinend ’ne Zeit lang HÖCHST UNTREU!!</h2>
         <p>Aber das macht MAL WIEDER ÜBERHAUPT NICHTS, WEIL DU NATÜRLICH ALLES EINFACH SO WIEDERHOLEN KANNST, wenn du magst :-)</p>
         <div class="catchup-actions">
-          <button class="primary-button" name="choice" value="all" type="submit">Ja</button>
+          <button class="primary-button" name="choice" value="all" type="submit">
+            Alle {{ missed_week_days|length }} verpassten {{ 'Runde' if missed_week_days|length == 1 else 'Runden' }} nachholen
+          </button>
           <button class="secondary-button" name="choice" value="today" type="submit">Lieber nur heute spielen</button>
         </div>
       </form>
     </dialog>
-    <script>document.querySelector('[data-catchup-dialog]')?.showModal();</script>
   {% endif %}
-
-  <form class="logout-form" method="post" action="{{ url_for('logout') }}">
-    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-    <button type="submit">Abmelden</button>
-  </form>
 {% endblock %}
 
+{% block scripts %}
+  <script src="{{ url_for('static', filename='home-variant-a.js', v='3') }}" defer></script>
+  <script>
+    (() => {
+      const catchup = document.querySelector('[data-catchup-dialog]');
+      catchup?.showModal();
+    })();
+  </script>
+{% endblock %}

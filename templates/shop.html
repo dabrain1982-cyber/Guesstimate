@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% from "_player_identity.html" import player_identity with context %}
+{% block title %}Shop · {{ game_name }}{% endblock %}
+{% block shell_class %}shop-shell{% endblock %}
+{% block header %}{% endblock %}
+{% block content %}
+  <nav class="shop-topbar" aria-label="Shop-Navigation">
+    <a href="{{ url_for('home') }}"><span aria-hidden="true">←</span> Zurück zur Quiz-Arena</a>
+    <span class="shop-top-balance">{{ currency_balance|points }} <small>iKühe</small></span>
+  </nav>
+  <section class="shop-hero">
+    <div>
+      <p class="eyebrow">DEIN LOOK. DEIN RUHM.</p>
+      <h1>Der iKuh-Shop</h1>
+      <p>Hier kaufst du neue Avatare, Pulte, Hintergründe und Sprüche. Was dir gehört, rüstest du anschließend in deinem Profil aus.</p>
+    </div>
+    <div class="shop-wallet"><span>Dein Guthaben</span><strong>{{ currency_balance|points }}</strong><small>iKühe</small></div>
+  </section>
+
+  <div class="shop-tabs" role="tablist" aria-label="Shop-Kategorien">
+    <button type="button" role="tab" aria-selected="true" data-shop-tab="avatars">Avatare</button>
+    <button type="button" role="tab" aria-selected="false" data-shop-tab="plaques">Pulte &amp; Plaketten</button>
+    <button type="button" role="tab" aria-selected="false" data-shop-tab="backgrounds">Hintergründe</button>
+    <button type="button" role="tab" aria-selected="false" data-shop-tab="phrases">Sprüche</button>
+  </div>
+
+  <section class="shop-panel" data-shop-panel="avatars">
+    <div class="shop-grid avatar-shop-grid">
+      {% for item in avatars %}
+        {% set owned = item.id in owned_avatars %}
+        <article class="shop-item {% if owned %}is-owned{% endif %}">
+          <div class="shop-avatar-preview"><img src="{{ url_for('static', filename='avatars/' ~ item.asset) }}" alt="{{ item.name }}"></div>
+          <div class="shop-item-copy"><h2>{{ item.name }}</h2><p>{{ item.trait }}</p></div>
+          {% if owned %}
+            <button class="shop-state" type="button" disabled>Gehört dir · im Profil ausrüsten</button>
+          {% elif item.price is not none %}
+            <form method="post" action="{{ url_for('shop_buy', item_type='avatar', item_id=item.id) }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit">{{ item.price|points }} iKühe</button></form>
+          {% else %}
+            <button class="shop-price-pending" type="button" disabled>Preis folgt</button>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="shop-panel" data-shop-panel="backgrounds" hidden>
+    <p class="shop-note"><strong>Deine Kulisse:</strong> Der ausgerüstete Hintergrund erscheint in deinem Fenster auf der Hauptseite und hinter deinem Guesstimate.</p>
+    <div class="shop-grid background-shop-grid">
+      {% for item in backgrounds %}
+        {% set owned = item.id in owned_backgrounds %}
+        <article class="shop-item background-shop-item {% if owned %}is-owned{% endif %}">
+          <div class="shop-background-preview"><img src="{{ url_for('static', filename=item.asset) }}" alt="Hintergrund {{ item.name }}"></div>
+          <div class="shop-item-copy"><h2>{{ item.name }}</h2><p>{{ item.mood }}</p></div>
+          {% if owned %}
+            <button class="shop-state" type="button" disabled>Gehört dir · im Profil ausrüsten</button>
+          {% else %}
+            <form method="post" action="{{ url_for('shop_buy', item_type='background', item_id=item.id) }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit">{{ item.price|points }} iKühe</button></form>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="shop-panel" data-shop-panel="plaques" hidden>
+    <p class="shop-note"><strong>Ein gemeinsames Set:</strong> Mit der Plakette erhältst du immer das dazugehörige Pult. Die Vorschau zeigt den ganzen Auftritt, nicht nur einen Materialausschnitt.</p>
+    <div class="shop-grid plaque-shop-grid">
+      {% for item in plaques %}
+        {% set owned = item.id in owned_plaques %}
+        <article class="shop-item {% if owned %}is-owned{% endif %}">
+          <div class="shop-set-preview plaque-only-preview" aria-label="Pult und Plakette {{ item.name }}">{{ player_identity(g.user.display_name, cosmetics.avatar_id, item.id, 'shopset', show_avatar=False) }}</div>
+          <div class="shop-item-copy"><h2>{{ item.name }}</h2><p>{{ item.material }}</p></div>
+          {% if owned %}
+            <button class="shop-state" type="button" disabled>Gehört dir · im Profil ausrüsten</button>
+          {% elif item.price is not none %}
+            <form method="post" action="{{ url_for('shop_buy', item_type='plaque', item_id=item.id) }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit">{{ item.price|points }} iKühe</button></form>
+          {% else %}
+            <button class="shop-price-pending" type="button" disabled>Preis folgt</button>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="shop-panel" data-shop-panel="phrases" hidden>
+    <p class="shop-note"><strong>Deine Stimme:</strong> Gekaufte Sprüche kannst du im Profil auswählen. Der aktive Spruch erscheint auf deiner Hauptseite und in deinem Spielauftritt.</p>
+    <div class="shop-grid phrase-shop-grid">
+      {% for item in phrases %}
+        {% set owned = item.id in owned_phrases %}
+        <article class="shop-item phrase-shop-item {% if owned %}is-owned{% endif %}">
+          <div class="phrase-only-bubble">„{{ item.text }}“</div>
+          <div class="shop-item-copy"><h2>{{ item.name }}</h2><p>Frech, ehrlich, möglicherweise taktisch.</p></div>
+          {% if owned %}
+            <button class="shop-state" type="button" disabled>Gehört dir · im Profil ausrüsten</button>
+          {% else %}
+            <form method="post" action="{{ url_for('shop_buy', item_type='phrase', item_id=item.id) }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit">{{ item.price|points }} iKühe</button></form>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <a class="back-link shop-back" href="{{ url_for('home') }}">← Zurück zur Quiz-Arena</a>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='shop.js', v='3') }}" defer></script>{% endblock %}
