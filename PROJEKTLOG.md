@@ -2524,3 +2524,19 @@ steckbriefkonform und live validiert sein.
   Brettverbesserungen werden einzeln, in begrenzter Auflösung und mit
   beobachteter Speichernutzung außerhalb des laufenden Dienstes vorbereitet;
   erst die geprüfte fertige Datei wird in einem kleinen Schritt eingebunden.
+
+## Sicherung vor lokaler Weiterarbeit (23.10.2026)
+
+- Den vollständigen nicht ignorierten Projektstand einschließlich Quellcode,
+  Fragen, Dokumentation und Bildassets im separaten Git-Zweig
+  `codex/server-snapshot-2026-10-23` gesichert. Laufzeitdaten, Konfigurationen,
+  Datenbanken und Umgebungsdateien bleiben durch `.gitignore` ausgeschlossen.
+- Nach dem Serverneustart zehn beschädigte beziehungsweise unreferenzierte
+  Git-Objektdateien festgestellt. Die defekten Dateien wurden in einen
+  temporären Sicherungsordner verschoben; sieben referenzierte Objekte wurden
+  bytegenau aus den unveränderten Projektdateien neu erzeugt. Anschließend lief
+  `git fsck --full --no-dangling` ohne Befund durch.
+- Der Snapshot-Commit `b475dae` wurde erfolgreich zu GitHub übertragen. Der
+  nächste vorgesehene Schritt ist ein lokales Codex-Projekt auf dem PC, das
+  diesen Zweig auscheckt. Rechenintensive Grafikarbeiten sollen dort und nicht
+  mehr im Live-Serverordner ausgeführt werden.
