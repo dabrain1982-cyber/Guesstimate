@@ -1,5 +1,6 @@
 <!doctype html>
 {% from "_icons.html" import category_icon %}
+{% from "_date_version.html" import date_version with context %}
 <html lang="de">
 <head>
   <meta charset="utf-8">
@@ -26,7 +27,7 @@
   <title>{% block title %}{{ game_name }}{% endblock %}{% if config.get('OFFLINE_VERSION') %} · offline {{ config.OFFLINE_VERSION }}{% endif %}</title>
   <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css', v='28') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='quiz-arena.css', v='72') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='quiz-arena.css', v='73') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='blackjack-flyer.css', v='1') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='conquest-flyer.css', v='1') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='typography-v1.css', v='3') }}">
@@ -36,7 +37,7 @@
   {% if config.get('BLACKJACK_SIMULATION') %}<link rel="stylesheet" href="{{ url_for('static', filename='blackjack-simulation.css') }}">{% endif %}
   <link rel="stylesheet" href="{{ url_for('static', filename='lobby.css', v='1') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='lobby-overview.css', v='2') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='ui-conventions.css', v='1') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='ui-conventions.css', v='2') }}">
 </head>
 <body{% if g.user %} class="has-player-background" style="--player-background-image: url('{{ url_for('static', filename=background_catalog[player_cosmetics.background_id].asset) }}')"{% endif %}>
   <div class="noise" aria-hidden="true"></div>
@@ -46,7 +47,7 @@
   {% set show_maexchen_rules = request.endpoint and request.endpoint.startswith('maexchen_') %}
   {% set show_conquest_rules = request.endpoint and request.endpoint.startswith('conquest_') %}
   {% set show_daily_rules = not (show_party_rules or show_perfect_rules or show_maexchen_rules or show_conquest_rules) %}
-  {% set rules_hidden = request.endpoint in ('mailbox', 'shop', 'shop_buy', 'profile', 'profile_equip', 'profile_developer_mode', 'public_profile', 'players') %}
+  {% set rules_hidden = request.endpoint in ('ikuhe_guide', 'mailbox', 'shop', 'shop_buy', 'profile', 'profile_equip', 'profile_developer_mode', 'public_profile', 'players') %}
   {% set is_collection = request.endpoint and (request.endpoint in ('tabletop_connection', 'card_tables', 'dice_tables', 'board_games') or request.endpoint.startswith(('card_table_', 'dice_table_', 'kniffel_', 'maexchen_', 'nerd_', 'conquest_'))) %}
   {% block rules %}
     {% if not rules_hidden and (show_daily_rules or show_party_rules or show_perfect_rules or show_maexchen_rules or show_conquest_rules) %}
@@ -119,14 +120,14 @@
         {% endif %}
       </div>
       {% if config.CARD_TABLE_ENABLED %}<a class="arena-nav-cards arena-nav-tabletop nav-two-line{% if is_collection %} is-active{% endif %}" href="{{ url_for('tabletop_connection') }}" aria-label="games collection"><span>games</span><span>collection</span></a>{% endif %}
-      <span class="arena-nav-date"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18"/></svg><span>{{ today_display }}</span></span>
+      {{ date_version(today_display) }}
     </nav>
   {% endif %}
   <main class="app-shell {% if g.user %}has-account-bar{% endif %} {% block shell_class %}{% endblock %}">
     {% block header %}
       <header class="game-header">
         <a class="wordmark" href="{{ url_for('home') }}" aria-label="Zur Startseite">{{ category_icon('true_false', 'brand-icon') }}<span>{{ game_name }}</span></a>
-        <span class="date-chip">{{ today_display }}</span>
+        {{ date_version(today_display, "date-chip") }}
       </header>
     {% endblock %}
 

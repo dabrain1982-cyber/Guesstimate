@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% from "_currency.html" import currency_unit, currency_wallet with context %}
+{% block title %}Der Wettstreit um iKühe · {{ game_name }}{% endblock %}
+{% block shell_class %}currency-guide-shell{% endblock %}
+{% block header %}{% endblock %}
+{% block extra_head %}<link rel="stylesheet" href="{{ url_for('static', filename='currency-guide.css', v='2') }}">{% endblock %}
+{% block content %}
+  {% include "_currency_guide_content.html" %}
+{% endblock %}

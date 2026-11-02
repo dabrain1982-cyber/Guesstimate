@@ -7,6 +7,7 @@ from pathlib import Path
 from flask import abort, current_app, g, jsonify, redirect, render_template, request, send_file, url_for
 from player_portrait import public_portrait
 import blackjack_game as game
+import blackjack_store as store
 
 
 def init_blackjack_db(get_db):
@@ -34,7 +35,7 @@ def seating_snapshot(database, viewer_id):
 
 
 def _snapshot(database, viewer_id):
-    state, balances, revision = game.load(database)
+    state, balances, revision = store.load(database)
     rows = {row['seat']: row for row in database.execute("""
         SELECT s.seat, s.user_id, u.display_name, COALESCE(c.avatar_id, 'a00') AS avatar_id
         FROM blackjack_seats s JOIN users u ON u.id = s.user_id
@@ -66,7 +67,7 @@ class SeatUnavailable(ValueError):
     pass
 
 
-def take_seat(database, user_id, seat):
+def take_seat(database, user_id, seat, *, risk_accepted=False):
     with database:
         database.execute('BEGIN IMMEDIATE')
         own = database.execute('SELECT seat FROM blackjack_seats WHERE user_id = ?', (user_id,)).fetchone()
@@ -76,14 +77,20 @@ def take_seat(database, user_id, seat):
             raise SeatUnavailable('Du hast bereits einen Platz. Verlasse ihn, bevor du wechselst.')
         if database.execute('SELECT 1 FROM blackjack_seats WHERE seat = ?', (seat,)).fetchone():
             raise SeatUnavailable('Dieser Platz ist inzwischen belegt. Wähle einen freien Platz.')
+        state, balances, _ = store.load(database)
+        if store.joining_blocked(state):
+            raise SeatUnavailable('Der bisherige Testtisch wird beendet. Bitte warte, bis alle aufgestanden sind.')
+        if store.account_mode(state) and not risk_accepted:
+            raise SeatUnavailable('Bestätige zuerst: Hier kannst du deine eingesetzten iKühe verlieren.')
         database.execute('INSERT INTO blackjack_seats (seat, user_id, joined_at) VALUES (?, ?, ?)',
                          (seat, user_id, datetime.now(timezone.utc).isoformat()))
-        database.execute('INSERT OR IGNORE INTO blackjack_balances VALUES (?, ?)',
-                         (user_id, current_app.config.get('BLACKJACK_TEST_START_BALANCE', 1000)))
-        state, balances, _ = game.load(database)
+        if not store.account_mode(state):
+            database.execute('INSERT OR IGNORE INTO blackjack_balances VALUES (?, ?)',
+                             (user_id, current_app.config.get('BLACKJACK_TEST_START_BALANCE', 1000)))
+        state, balances, _ = store.load(database)
         if state['phase']=='result' and database.execute('SELECT COUNT(*) FROM blackjack_seats').fetchone()[0]==1:
             game.begin_betting(state)
-        game.save(database, state, balances)
+        store.save(database, state, balances)
 
 
 def register_blackjack_routes(app, login_required, require_csrf):
@@ -122,7 +129,7 @@ def register_blackjack_routes(app, login_required, require_csrf):
         if seat not in ('1', '2', '3'):
             return reply('Bitte wähle einen der drei Plätze.', 400)
         try:
-            take_seat(database(), g.user['id'], int(seat))
+            take_seat(database(), g.user['id'], int(seat), risk_accepted=request.form.get('accept_risk') == '1')
         except (SeatUnavailable, sqlite3.IntegrityError) as error:
             return reply(str(error) if isinstance(error, SeatUnavailable) else 'Dieser Platz ist inzwischen belegt.', 409)
         return reply()
@@ -133,14 +140,14 @@ def register_blackjack_routes(app, login_required, require_csrf):
         require_csrf()
         with database():
             database().execute('BEGIN IMMEDIATE')
-            state, balances, _ = game.load(database())
+            state, balances, _ = store.load(database())
             uid = str(g.user['id'])
             seated = database().execute('SELECT 1 FROM blackjack_seats WHERE user_id=?', (g.user['id'],)).fetchone()
             if seated and uid in balances:
                 pending = game.leave_round(state, balances, uid)
                 if not pending:
                     database().execute('DELETE FROM blackjack_seats WHERE user_id = ?', (g.user['id'],))
-                game.save(database(), state, balances)
+                store.save(database(), state, balances, command='leave')
         if request.form.get('navigate') == 'card_tables':
             return redirect(url_for('card_tables'))
         return reply()
@@ -157,12 +164,15 @@ def register_blackjack_routes(app, login_required, require_csrf):
         try:
             with database():
                 database().execute('BEGIN IMMEDIATE')
-                state, balances, actual_revision = game.load(database())
+                state, balances, actual_revision = store.load(database())
                 if revision != actual_revision:
                     raise game.GameError('Der Tisch hat sich geändert. Die aktuelle Ansicht wurde geladen.')
                 seats = {str(r['user_id']):r['seat'] for r in database().execute('SELECT * FROM blackjack_seats')}
-                game.action(state, balances, seats, g.user['id'], request.form.get('action'), amount)
-                game.save(database(), state, balances)
+                command = request.form.get('action')
+                if store.joining_blocked(state) and command in ('bet','refill'):
+                    raise game.GameError('Der Testtisch wird beendet. Bitte stehe nach der laufenden Hand auf.')
+                game.action(state, balances, seats, g.user['id'], command, amount)
+                store.save(database(), state, balances, command=command)
         except game.GameError as error:
             return reply(str(error), 409)
         return reply()

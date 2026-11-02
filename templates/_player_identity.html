@@ -1,3 +1,4 @@
+{% from "_currency.html" import currency_unit %}
 {% macro player_identity(display_name, avatar_id, plaque_id, size='medium', subtitle=None, points=None, rank=None, show_avatar_action=False, speech=None, show_avatar=True, daily_points=None, weekly_points=None, avatar_action_url=None, weekly_rounds=None, points_unit='PKT', profile_url=None) %}
   {% set avatar = avatar_catalog[avatar_id] %}
   {% set portrait_asset = avatar.asset %}
@@ -30,7 +31,7 @@
                 <span>HEUTE <b>{{ (daily_points or 0)|points }} PKT</b></span>
                 <span>WOCHE <b>{{ (weekly_points or 0)|points }} PKT</b></span>
               </small>
-            {% elif points is not none %}<small>{{ points|points }} {{ points_unit }}</small>{% endif %}
+            {% elif points is not none %}<small>{{ points|points }} {% if points_unit == 'iKühe' %}{{ currency_unit() }}{% else %}{{ points_unit }}{% endif %}</small>{% endif %}
           </span>
         </div>
       {% elif plaque_id == 'p00' %}
@@ -47,7 +48,7 @@
                 <span>HEUTE <b>{{ (daily_points or 0)|points }} PKT</b></span>
                 <span>WOCHE <b>{{ (weekly_points or 0)|points }} PKT</b></span>
               </small>
-            {% elif points is not none %}<small>{{ points|points }} {{ points_unit }}</small>{% endif %}
+            {% elif points is not none %}<small>{{ points|points }} {% if points_unit == 'iKühe' %}{{ currency_unit() }}{% else %}{{ points_unit }}{% endif %}</small>{% endif %}
           </span>
         </div>
       {% else %}
@@ -80,7 +81,7 @@
             {% endif %}
           </span>
         {% endif %}
-        {% if points is not none %}<span class="identity-points"><b>{{ points|points }}</b><small>{{ points_unit }}</small></span>{% endif %}
+        {% if points is not none %}<span class="identity-points"><b>{{ points|points }}</b><small>{% if points_unit == 'iKühe' %}{{ currency_unit() }}{% else %}{{ points_unit }}{% endif %}</small></span>{% endif %}
       </div>
     </div>
   {% endif %}

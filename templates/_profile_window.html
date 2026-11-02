@@ -1,3 +1,4 @@
+{% from "_currency.html" import currency_unit %}
 {# Shared player window. Skin and geometry are always taken from the profile.
    podium_fields: optional {name, value, label, icon}; numeric values use the shared points format.
    player_status: text, or {text, tone}; tone is neutral, ready, active, waiting, or out.
@@ -36,7 +37,7 @@
       <div class="variant-a-podium">
         <img src="{{ url_for('static', filename='podiums/' ~ plaque.perfect_podium_asset) }}" alt="Pult {{ plaque.name }} von {{ visible_name }}">
         <strong id="{{ instance_id }}" data-profile-field="name" data-fit-podium-text>{{ field_name }}</strong>
-        <{{ value_tag }} class="variant-a-podium-balance"{% if value_link %} href="{{ url_for('shop') }}"{% endif %} data-profile-field="value" data-fit-podium-text>{% if field_icon %}<span aria-hidden="true">{{ field_icon }}</span>{% endif %}<span data-profile-value>{% if field_value is number %}{{ field_value|points }}{% else %}{{ field_value if field_value is not none else '' }}{% endif %}{% if field_label %} {{ field_label }}{% endif %}</span></{{ value_tag }}>
+        <{{ value_tag }} class="variant-a-podium-balance"{% if value_link %} href="{{ url_for('shop') }}"{% endif %} data-profile-field="value" data-fit-podium-text>{% if field_icon %}<span aria-hidden="true">{{ field_icon }}</span>{% endif %}<span data-profile-value>{% if field_value is number %}{{ field_value|points }}{% else %}{{ field_value if field_value is not none else '' }}{% endif %}{% if field_label %} {% if field_label == 'iKühe' %}{{ currency_unit() }}{% else %}{{ field_label }}{% endif %}{% endif %}</span></{{ value_tag }}>
       </div>
     </div>
     {% if show_edit %}<a class="variant-a-edit" href="{{ url_for('profile') }}" aria-label="Avatar, Pult und Hintergrund im Profil ändern">✎</a>{% endif %}

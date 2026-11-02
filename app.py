@@ -1,5 +1,8 @@
 from __future__ import annotations
 
+from release_info import PUBLIC_VERSION, register_release_display
+import account_wallet
+
 from lobby_overview import render_overview
 from leaderboard_views import currency_rankings, init_currency_peaks, record_currency_peak, winner_rows
 
@@ -260,6 +263,7 @@ def create_app(test_config: dict[str, Any] | None = None) -> Flask:
         CARD_TABLE_ENABLED=os.environ.get("QUIZ_ENABLE_CARD_TABLE", "1") == "1",
         LOCAL_DEVELOPMENT=os.environ.get("QUIZ_LOCAL_DEVELOPMENT", "0") == "1",
         OFFLINE_VERSION=os.environ.get("QUIZ_OFFLINE_VERSION", ""),
+        PUBLIC_RELEASE=PUBLIC_VERSION,
         SESSION_COOKIE_NAME=os.environ.get("QUIZ_SESSION_COOKIE_NAME", "session"),
         DAILY_CATCHUP_EXCLUDED_WEEKS=("2026-10-26",),
         DICE_TABLE_AVAILABLE=True,
@@ -271,10 +275,13 @@ def create_app(test_config: dict[str, Any] | None = None) -> Flask:
         app.config.update(test_config)
 
     Path(app.instance_path).mkdir(parents=True, exist_ok=True)
+    register_release_display(app)
     register_database(app)
     register_routes(app)
     from inbox import init_inbox, register_inbox
     register_inbox(app, login_required, require_csrf, is_owner_user)
+    from currency_intro import init_notices, register_currency_intro
+    register_currency_intro(app, login_required, require_csrf)
     from public_profiles import register_public_profiles
     register_public_profiles(app, login_required, player_cosmetics, player_total_points, player_trophy_counts, rank_rows)
     register_nerd_routes(app)
@@ -289,6 +296,7 @@ def create_app(test_config: dict[str, Any] | None = None) -> Flask:
     with app.app_context():
         init_db()
         init_inbox(get_db())
+        init_notices(get_db())
         init_nerd_db(get_db)
         if app.config["CARD_TABLE_ENABLED"]:
             init_card_table_db(get_db)
@@ -1183,16 +1191,8 @@ def player_total_points(user_id: int) -> int:
 
 
 def player_currency_balance(user_id: int) -> int:
-    spent = get_db().execute(
-        "SELECT COALESCE(SUM(price), 0) FROM shop_purchases WHERE user_id = ?",
-        (user_id,),
-    ).fetchone()[0]
-    return max(
-        0,
-        player_total_points(user_id)
-        - int(spent)
-        + int(current_app.config.get("PREVIEW_CURRENCY_BONUS", 0)),
-    )
+    return account_wallet.balance(get_db(), user_id,
+        current_app.config.get("PREVIEW_CURRENCY_BONUS", 0))
 
 
 def player_cosmetics(user_id: int) -> dict[str, Any]:
@@ -1787,6 +1787,11 @@ def advance_party_if_ready(lobby: sqlite3.Row) -> None:
 
 
 def register_routes(app: Flask) -> None:
+    @app.get("/ikuehe")
+    @login_required
+    def ikuhe_guide():
+        return render_template("ikuhe_guide.html")
+
     @app.errorhandler(QuestionPoolExhausted)
     def unavailable_round(error):
         # Also handle old tabs and direct round URLs after the last reservation.

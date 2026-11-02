@@ -10,7 +10,7 @@ const roundView=createRoundView(root,{onChange:()=>render(true)});
 const jetons=createJetonMotion(root,{onChange:()=>requestAnimationFrame(()=>render(true)),playSound:id=>roundView.playJetonSound(id)});
 let snapshot=JSON.parse(document.getElementById('blackjack-initial').textContent);
 let pending=false,polling=false,connected=true,stopped=false,soundEnabled=true;
-let timer,sequence=0,signature='',notice='';
+let timer,sequence=0,signature='',notice='',riskChoice=null,riskPending=false;
 const portraits=new Map();
 const prepareAction=createActionIntentGuard();
 const simulation=Boolean(document.querySelector('.blackjack-test-banner'));
@@ -45,7 +45,7 @@ function render(force=false){
       const gain=snapshot.game.phase==='result'&&!round.animating&&hand?hand.hands.reduce((sum,h)=>sum+(h.net||0),hand.insurance_net||0):null;
       portraits.get(host).update({name:tablePlayerName(seat.player.name,simulation),portrait:seat.player.portrait,
         current:Boolean(hand?.hands.some(h=>h.active)),kind:'player',layout:'table',color:'#80613e',
-        wallet:{balance,wager:onTable,gain,unit:snapshot.game.currency==='test-ikuehe'?'iKühe':'Tischpunkte'},
+        wallet:{balance,wager:onTable,gain,unit:snapshot.game.currency==='points'?'Tischpunkte':'iKühe'},
         status:''});
     }else{
       portraits.delete(host);
@@ -62,14 +62,14 @@ function render(force=false){
   q('[data-login]').hidden=!stopped;
   const betFocused=document.activeElement?.matches('[data-bet-amount]');
   const actions=q('[data-actions]');actions.replaceChildren();
-  q('[data-table-limits]').textContent=snapshot.game.fixed_bet?'500 Test-iKühe · fester Einsatz':'10–500 Tischpunkte';
+  q('[data-table-limits]').textContent=snapshot.game.fixed_bet?snapshot.game.fixed_bet+(snapshot.game.currency==='account-ikuehe'?' iKühe':' Test-iKühe')+' · fester Einsatz':'10–500 Tischpunkte';
   if(round.betting&&!snapshot.game.fixed_bet){
     const label=document.createElement('label'),input=document.createElement('input');
     label.className='bj-bet-choice';label.textContent=round.betLabel||'Einsatz in Tischpunkten';
     input.type='number';input.min='10';input.max='500';input.step='10';input.value=round.draft;input.className='bj-bet-input';input.dataset.betAmount='';input.setAttribute('aria-label','Einsatz in Tischpunkten');label.append(input);actions.append(label);if(betFocused)input.focus({preventScroll:true});
   }
   const choices=own?(snapshot.game.leaving?[]:round.choices):
-    snapshot.seats.filter(seat=>!seat.player).map(seat=>({label:'Platz '+seat.number+' nehmen',seat:seat.number,url:root.dataset.joinUrl,note:['Links','Mitte','Rechts'][seat.number-1]}));
+    (snapshot.game.currency_change_pending?[]:snapshot.seats.filter(seat=>!seat.player)).map(seat=>({label:'Platz '+seat.number+' nehmen',seat:seat.number,url:root.dataset.joinUrl,note:['Links','Mitte','Rechts'][seat.number-1]}));
   const room=q('.bj-room').getBoundingClientRect();
   const nativeWidth=recipe.settings.size*(recipe.base?recipe.base.width/23:12);
   const exitChoice=own&&!snapshot.game.leaving?{label:'Tisch verlassen',url:root.dataset.leaveUrl,note:round.leaveNote}:null;
@@ -85,7 +85,7 @@ function render(force=false){
     slot.className='bj-button-slot';host.className='bj-workshop-host';detail.className='bj-slot-note';
     detail.textContent=choice.note;slot.append(host,detail);(choice===exitChoice?exit:actions).append(slot);
     const dealing=round.animating&&['hit','stand','double','split','surrender','insurance','no-insurance','deal','next'].includes(choice.command);
-    const available=()=>connected&&!stopped&&!pending&&!dealing&&!choice.disabled;
+    const available=()=>connected&&!stopped&&!pending&&!riskChoice&&!dealing&&!choice.disabled;
     let acceptsPress;
     const view=renderButton(host,structuredClone(recipe),{label:choice.label,sound:selectedSound,
       size:recipe.settings.size*(choice===exitChoice?exitScale:scale),state:'normal',action:event=>{
@@ -96,6 +96,7 @@ function render(force=false){
     view.element.title=choice.note||choice.label;
     view.element.dataset.workshopRecipe=recipe.id;
     if(choice.command)view.element.dataset.gameAction=choice.command;
+    if(choice.seat)view.element.dataset.seatTarget=String(choice.seat);
     const buttonScale=choice===exitChoice?exitScale:scale;
     if(buttonScale>0)actionHeight=Math.max(actionHeight,view.element.getBoundingClientRect().height*exitScale/buttonScale);
   }
@@ -198,11 +199,34 @@ async function act(choice,element){
     // Keep the canonical press visible before replacing its button.
     await Promise.all((element.querySelector('.comic-button-face')?.getAnimations()||[]).map(animation=>animation.finished.catch(()=>{})));
     if(choice.unavailableReason){notice=choice.unavailableReason;return;}
-    const result=await requestState(choice.url,choice.data?choice.data():choice.seat?{seat:String(choice.seat)}:{});
+    if(choice.seat&&!choice.riskAccepted&&snapshot.game.currency==='account-ikuehe'){
+      riskChoice=choice;q('[data-risk]').hidden=false;q('[data-risk]').scrollTop=0;q('#bj-risk-heading').focus({preventScroll:true});return;
+    }
+    const result=await requestState(choice.url,choice.data?choice.data():choice.seat?{seat:String(choice.seat),...(choice.riskAccepted?{accept_risk:'1'}:{})}:{});
     if(result.snapshot)snapshot=result.snapshot;
     notice=result.error||'';connected=true;
   }catch{connected=false;}
   finally{pending=false;root.removeAttribute('aria-busy');render(true);schedule();}
+}
+
+const riskButtons={};
+function closeRisk(){
+  const seat=riskChoice?.seat;riskChoice=null;q('[data-risk]').hidden=true;
+  render(true);(q('[data-seat-target="'+seat+'"]')||q('[data-action="rules"]')).focus();
+}
+for(const [key,label] of [['cancel','Abbrechen'],['confirm','Platz nehmen']]){
+  const host=document.createElement('div');q('[data-risk-actions]').append(host);
+  let acceptsPress;
+  const view=renderButton(host,structuredClone(recipe),{label,sound:selectedSound,size:recipe.settings.size,state:'normal',action:async event=>{
+    if(!acceptsPress(event))return;
+    riskPending=true;
+    await Promise.all((view.element.querySelector('.comic-button-face')?.getAnimations()||[]).map(animation=>animation.finished.catch(()=>{})));
+    if(key==='cancel'){closeRisk();riskPending=false;return;}
+    const choice=riskChoice;riskChoice=null;q('[data-risk]').hidden=true;riskPending=false;
+    if(choice)await act({...choice,riskAccepted:true},view.element);
+  }});
+  acceptsPress=prepareAction(view.element,'risk-'+key,()=>Boolean(riskChoice)&&!riskPending&&!pending&&(key==='cancel'||(connected&&!stopped)));
+  riskButtons[key]=view.element;
 }
 
 root.addEventListener('click',event=>{
@@ -218,6 +242,11 @@ root.addEventListener('click',event=>{
   }
 });
 root.addEventListener('keydown',event=>{
+  if(!q('[data-risk]').hidden){
+    if(event.key==='Escape'){event.preventDefault();if(!riskPending)closeRisk();}
+    if(event.key==='Tab'){event.preventDefault();const buttons=[riskButtons.cancel,riskButtons.confirm],index=buttons.indexOf(document.activeElement);buttons[index<0?(event.shiftKey?1:0):(index+(event.shiftKey?-1:1)+2)%2].focus();}
+    return;
+  }
   if(event.key==='Escape'&&!q('[data-rules]').hidden){q('[data-rules]').hidden=true;q('[data-action="rules"]').focus();}
   if(event.key==='Tab'&&!q('[data-rules]').hidden){event.preventDefault();q('[data-action="close-rules"]').focus();}
 });

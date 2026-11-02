@@ -8,3 +8,9 @@
 .game-name * {
   text-transform: lowercase;
 }
+
+/* The currency name keeps its exact spelling in every control. */
+bdi.currency-unit { text-transform: none; font-style: normal; }
+.currency-guide-link { display: inline-block; color: #e0c785; font-size: 14px; font-weight: 600; line-height: 1.45; text-decoration: underline; text-decoration-color: #c9a95a77; text-underline-offset: 4px; }
+.currency-guide-link:hover { color: #f6df9e; text-decoration-color: currentColor; }
+.currency-guide-link:focus-visible { outline: 2px solid #e0c785; outline-offset: 5px; border-radius: 2px; }

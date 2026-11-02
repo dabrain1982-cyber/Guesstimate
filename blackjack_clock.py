@@ -5,6 +5,7 @@ from threading import Event, Thread
 import time
 
 import blackjack_game as game
+import blackjack_store as store
 
 BETTING_SECONDS = 20
 RESULT_SECONDS = 10
@@ -16,12 +17,12 @@ def tick_clock(app, now=None, *, betting_seconds=BETTING_SECONDS, result_seconds
         db = app.get_db()
         with db:
             db.execute('BEGIN IMMEDIATE')
-            state, balances, _ = game.load(db)
+            state, balances, revision = store.load(db)
             before = json.dumps(state, sort_keys=True)
-            if app.config.get('BLACKJACK_FIXED_STAKE'):
-                state['table_rules'] = dict(fixed_bet=app.config['BLACKJACK_FIXED_STAKE'],
-                    currency='test-ikuehe', test_refill=app.config.get('BLACKJACK_TEST_START_BALANCE', 10000),
-                    dealer_peek=app.config.get('BLACKJACK_DEALER_PEEK', True))
+            was_account = store.account_mode(state)
+            store.configure_rules(db,state)
+            if store.account_mode(state) != was_account:
+                balances = store.balances_for(db,state,revision)
             if not state.get('clock', {}).get('automatic'):
                 state['clock'] = dict(automatic=True, betting_seconds=betting_seconds,
                                       result_seconds=result_seconds)
@@ -43,7 +44,7 @@ def tick_clock(app, now=None, *, betting_seconds=BETTING_SECONDS, result_seconds
                 game.sync_clock(state, seats, now)
             changed = before != json.dumps(state, sort_keys=True)
             if changed:
-                game.save(db, state, balances)
+                store.save(db, state, balances)
             return changed
 
 

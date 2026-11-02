@@ -12060,5 +12060,2547 @@
       ],
       "eras": []
     }
+  },
+  {
+    "id": "or700",
+    "question_type": "order",
+    "primary_category": "gaming",
+    "subtopic": "Ränge in Rocket League",
+    "tags": {
+      "topics": [
+        "Ränge in Rocket League",
+        "Rangstufen"
+      ],
+      "entities": [
+        "Bronze",
+        "Gold",
+        "Diamant",
+        "Champion"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Rocket-League-Ränge vom niedrigsten zum höchsten.",
+    "items": [
+      "Gold",
+      "Diamant",
+      "Champion",
+      "Bronze"
+    ],
+    "answer": [
+      "Bronze",
+      "Gold",
+      "Diamant",
+      "Champion"
+    ],
+    "explanation": "Die Rangfolge führt unter anderem über Bronze, Silber, Gold, Platin und Diamant zum Champion. Gemeint sind die Ranggruppen, nicht ihre Unterteilungen.",
+    "subject_keys": [
+      "topic:gaming:range-in-rocket-league",
+      "fact:order:rocket"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "What are Rocket League Competitive Ranks? - Rocket League Support",
+          "url": "https://www.epicgames.com/help/c-CategoryRocketLeague/c-RocketLeagueGameplay/a20928700?lang=en-US"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or701",
+    "question_type": "order",
+    "primary_category": "gaming",
+    "subtopic": "Seltenheit von Magic-Karten",
+    "tags": {
+      "topics": [
+        "Seltenheit von Magic-Karten",
+        "Seltenheitsstufen"
+      ],
+      "entities": [
+        "Common",
+        "Uncommon",
+        "Rare",
+        "Mythic Rare"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese vier grundlegenden Seltenheitsstufen von Magic: The Gathering – von häufig bis besonders selten.",
+    "items": [
+      "Rare",
+      "Mythic Rare",
+      "Common",
+      "Uncommon"
+    ],
+    "answer": [
+      "Common",
+      "Uncommon",
+      "Rare",
+      "Mythic Rare"
+    ],
+    "explanation": "Die vier grundlegenden Stufen heißen Common, Uncommon, Rare und Mythic Rare. Die Aufgabe betrifft die Seltenheitsklassen, nicht die Spielstärke oder den Preis einzelner Karten.",
+    "subject_keys": [
+      "topic:gaming:seltenheit-von-magic-karten",
+      "fact:order:magic"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Quite the Rarity",
+          "url": "https://magic.wizards.com/en/news/making-magic/quite-rarity-2018-03-12"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or702",
+    "question_type": "order",
+    "primary_category": "gaming",
+    "subtopic": "Die Buben beim Skat",
+    "tags": {
+      "topics": [
+        "Die Buben beim Skat",
+        "Stichstärke"
+      ],
+      "entities": [
+        "Karo-Bube",
+        "Herz-Bube",
+        "Pik-Bube",
+        "Kreuz-Bube"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne die vier Buben beim Skat-Grand nach ihrer Stichstärke – vom schwächsten zum stärksten.",
+    "items": [
+      "Kreuz-Bube",
+      "Karo-Bube",
+      "Herz-Bube",
+      "Pik-Bube"
+    ],
+    "answer": [
+      "Karo-Bube",
+      "Herz-Bube",
+      "Pik-Bube",
+      "Kreuz-Bube"
+    ],
+    "explanation": "Beim Grand sind nur die Buben Trumpf. Von unten nach oben gilt Karo, Herz, Pik, Kreuz. Die Farbe des Buben entscheidet hier über die Stichstärke.",
+    "subject_keys": [
+      "topic:gaming:die-buben-beim-skat",
+      "fact:order:skat"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Skat – gewusst wie: Spielmöglichkeiten und Rangfolge der Buben",
+          "url": "https://dskv.de/app/uploads/2021/03/Skat_gewusst-wie.indd_.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or703",
+    "question_type": "order",
+    "primary_category": "gaming",
+    "subtopic": "Erste Ernte in Stardew Valley",
+    "tags": {
+      "topics": [
+        "Erste Ernte in Stardew Valley",
+        "Wachstumsdauer"
+      ],
+      "entities": [
+        "Pastinake",
+        "Kartoffel",
+        "Grüne Bohne",
+        "Blumenkohl"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Stardew-Valley-Pflanzen nach der Zeit bis zur ersten Ernte – ohne Wachstumsbeschleuniger.",
+    "items": [
+      "Kartoffel",
+      "Grüne Bohne",
+      "Blumenkohl",
+      "Pastinake"
+    ],
+    "answer": [
+      "Pastinake",
+      "Kartoffel",
+      "Grüne Bohne",
+      "Blumenkohl"
+    ],
+    "explanation": "Bei täglichem Gießen und ohne Beschleuniger brauchen Pastinaken 4, Kartoffeln 6, grüne Bohnen 10 und Blumenkohl 12 Spieltage. Bei der Bohne ist die erste Ernte gemeint.",
+    "subject_keys": [
+      "topic:gaming:erste-ernte-in-stardew-valley",
+      "fact:order:stardew"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Pierre's General Store - Stardew Valley Wiki",
+          "url": "https://www.stardewvalleywiki.com/Pierre%27s_General_Store"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or704",
+    "question_type": "order",
+    "primary_category": "gaming",
+    "subtopic": "Spitzhacken in Minecraft Java",
+    "tags": {
+      "topics": [
+        "Spitzhacken in Minecraft Java",
+        "Haltbarkeit"
+      ],
+      "entities": [
+        "Goldspitzhacke",
+        "Holzspitzhacke",
+        "Steinspitzhacke",
+        "Eisenspitzhacke"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese unverzauberten Minecraft-Java-Spitzhacken nach ihrer Haltbarkeit – von wenig bis viel.",
+    "items": [
+      "Steinspitzhacke",
+      "Eisenspitzhacke",
+      "Goldspitzhacke",
+      "Holzspitzhacke"
+    ],
+    "answer": [
+      "Goldspitzhacke",
+      "Holzspitzhacke",
+      "Steinspitzhacke",
+      "Eisenspitzhacke"
+    ],
+    "explanation": "In der Java Edition betragen die Haltbarkeiten 32, 59, 131 und 250 Nutzungen. Goldwerkzeuge sind damit trotz ihres Materials besonders kurzlebig. Zusätzliche Haltbarkeit durch Verzauberungen ist ausgeschlossen.",
+    "subject_keys": [
+      "topic:gaming:spitzhacken-in-minecraft-java",
+      "fact:order:minecraft"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Pickaxe – Minecraft Wiki",
+          "url": "https://minecraft.wiki/w/Pickaxe"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or705",
+    "question_type": "order",
+    "primary_category": "music",
+    "subtopic": "Dynamik in Noten",
+    "tags": {
+      "topics": [
+        "Dynamik in Noten",
+        "Lautstärke"
+      ],
+      "entities": [
+        "Pianissimo",
+        "Piano",
+        "Forte",
+        "Fortissimo"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese musikalischen Lautstärkeangaben – von leise bis laut.",
+    "items": [
+      "Fortissimo",
+      "Pianissimo",
+      "Piano",
+      "Forte"
+    ],
+    "answer": [
+      "Pianissimo",
+      "Piano",
+      "Forte",
+      "Fortissimo"
+    ],
+    "explanation": "Pianissimo bedeutet sehr leise, Piano leise, Forte laut und Fortissimo sehr laut. Das sind relative Spielanweisungen, keine festen Dezibelwerte.",
+    "subject_keys": [
+      "topic:music:dynamik-in-noten",
+      "fact:order:dynamics"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Yamaha Mallet Resource Guide 2 – Music Fundamentals: Dynamics",
+          "url": "https://usa.yamaha.com/files/download/other_assets/6/1165226/Mallet_Resource_Guide2.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or706",
+    "question_type": "order",
+    "primary_category": "music",
+    "subtopic": "Offene Gitarrensaiten",
+    "tags": {
+      "topics": [
+        "Offene Gitarrensaiten",
+        "Tonhöhe"
+      ],
+      "entities": [
+        "Tiefe E-Saite",
+        "A-Saite",
+        "D-Saite",
+        "G-Saite"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese offenen Gitarrensaiten in Standardstimmung nach Tonhöhe – von tief bis hoch.",
+    "items": [
+      "A-Saite",
+      "D-Saite",
+      "G-Saite",
+      "Tiefe E-Saite"
+    ],
+    "answer": [
+      "Tiefe E-Saite",
+      "A-Saite",
+      "D-Saite",
+      "G-Saite"
+    ],
+    "explanation": "Die übliche Gitarrenstimmung lautet von tief nach hoch E–A–D–G–H–E. Von den genannten Saiten ist die tiefe E-Saite die tiefste; danach folgen A, D und G.",
+    "subject_keys": [
+      "topic:music:offene-gitarrensaiten",
+      "fact:order:guitar"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "The Beginner’s Guide to Guitar Tunings",
+          "url": "https://hub.europe.yamaha.com/articles/the-beginners-guide-to-guitar-tunings-standard-drop-d-open-tunings-and-more"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or707",
+    "question_type": "order",
+    "primary_category": "music",
+    "subtopic": "Kreuze in Dur-Tonarten",
+    "tags": {
+      "topics": [
+        "Kreuze in Dur-Tonarten",
+        "Vorzeichenanzahl"
+      ],
+      "entities": [
+        "D-Dur",
+        "A-Dur",
+        "E-Dur",
+        "H-Dur"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Dur-Tonarten nach der Zahl ihrer Kreuzvorzeichen – von wenigen bis vielen.",
+    "items": [
+      "E-Dur",
+      "H-Dur",
+      "D-Dur",
+      "A-Dur"
+    ],
+    "answer": [
+      "D-Dur",
+      "A-Dur",
+      "E-Dur",
+      "H-Dur"
+    ],
+    "explanation": "D-Dur hat 2 Kreuze, A-Dur 3, E-Dur 4 und H-Dur 5. H-Dur heißt in englischsprachigen Tabellen B major; gemeint ist nicht das deutsche B-Dur.",
+    "subject_keys": [
+      "topic:music:kreuze-in-dur-tonarten",
+      "fact:order:keys"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "An introduction to music theory: 5.4 Major scales having key signatures with sharps | OpenLearn - Open University",
+          "url": "https://www.open.edu/openlearn/history-the-arts/music/an-introduction-music-theory/content-section-5.4"
+        },
+        {
+          "title": "Theorieheft D2/D3 – H-Dur-Aufgabe auf Seite 76",
+          "url": "https://www.musikschulen-bayern.de/assets/FLP/Lernhilfen/Theoriehefte/D2-D3-Theorie-Demo2012.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or708",
+    "question_type": "order",
+    "primary_category": "sport",
+    "subtopic": "Schwimmen im Einzellagenrennen",
+    "tags": {
+      "topics": [
+        "Schwimmen im Einzellagenrennen",
+        "Wettkampfabfolge"
+      ],
+      "entities": [
+        "Schmetterling",
+        "Rücken",
+        "Brust",
+        "Freistil"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne die vier Schwimmarten so, wie sie in einem Einzellagenrennen aufeinanderfolgen.",
+    "items": [
+      "Freistil",
+      "Schmetterling",
+      "Rücken",
+      "Brust"
+    ],
+    "answer": [
+      "Schmetterling",
+      "Rücken",
+      "Brust",
+      "Freistil"
+    ],
+    "explanation": "Im Einzelrennen ist die Reihenfolge Schmetterling, Rücken, Brust und Freistil. Jede Schwimmart macht ein Viertel der Strecke aus. Gemeint ist ausdrücklich das Einzelrennen.",
+    "subject_keys": [
+      "topic:sport:schwimmen-im-einzellagenrennen",
+      "fact:order:medley"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "World Aquatics Competition Regulations – Swimming Rules: Medley Swimming",
+          "url": "https://resources.fina.org/fina/document/2024/07/01/1d853a10-86c9-4c8a-9c85-431d2acd284e/Competition-Regulations-version-1st-July-2024-_track-changes_V1.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or709",
+    "question_type": "order",
+    "primary_category": "sport",
+    "subtopic": "Zweiter Tag des Zehnkampfs",
+    "tags": {
+      "topics": [
+        "Zweiter Tag des Zehnkampfs",
+        "Wettkampfabfolge"
+      ],
+      "entities": [
+        "Diskuswurf",
+        "Stabhochsprung",
+        "Speerwurf",
+        "1.500-Meter-Lauf"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Disziplinen nach ihrem Ablauf am zweiten Tag des Männer-Zehnkampfs.",
+    "items": [
+      "Stabhochsprung",
+      "Speerwurf",
+      "1.500-Meter-Lauf",
+      "Diskuswurf"
+    ],
+    "answer": [
+      "Diskuswurf",
+      "Stabhochsprung",
+      "Speerwurf",
+      "1.500-Meter-Lauf"
+    ],
+    "explanation": "Der zweite Tag beginnt mit 110 Meter Hürden. Anschließend folgen Diskuswurf, Stabhochsprung, Speerwurf und zum Abschluss der 1.500-Meter-Lauf.",
+    "subject_keys": [
+      "topic:sport:zweiter-tag-des-zehnkampfs",
+      "fact:order:decathlon"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Decathlon",
+          "url": "https://worldathletics.org/disciplines/combined/decathlon"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or710",
+    "question_type": "order",
+    "primary_category": "sport",
+    "subtopic": "Die Phasen des Dreisprungs",
+    "tags": {
+      "topics": [
+        "Die Phasen des Dreisprungs",
+        "Bewegungsablauf"
+      ],
+      "entities": [
+        "Anlauf",
+        "Hop: auf demselben Fuß landen",
+        "Step: auf dem anderen Fuß landen",
+        "Jump: in die Sandgrube springen"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Phasen eines Dreisprungs in ihrer Ausführungsreihenfolge.",
+    "items": [
+      "Step: auf dem anderen Fuß landen",
+      "Jump: in die Sandgrube springen",
+      "Anlauf",
+      "Hop: auf demselben Fuß landen"
+    ],
+    "answer": [
+      "Anlauf",
+      "Hop: auf demselben Fuß landen",
+      "Step: auf dem anderen Fuß landen",
+      "Jump: in die Sandgrube springen"
+    ],
+    "explanation": "Auf den Anlauf folgen Hop, Step und Jump. Beim Hop wird auf demselben Fuß gelandet, beim Step auf den anderen gewechselt und beim Jump in die Grube gesprungen.",
+    "subject_keys": [
+      "topic:sport:die-phasen-des-dreisprungs",
+      "fact:order:triple"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Triple Jump",
+          "url": "https://worldathletics.org/disciplines/jump/triple-jump"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or711",
+    "question_type": "order",
+    "primary_category": "sport",
+    "subtopic": "Olympische Ordnung im Frauenturnen",
+    "tags": {
+      "topics": [
+        "Olympische Ordnung im Frauenturnen",
+        "Gerätereihenfolge"
+      ],
+      "entities": [
+        "Sprung",
+        "Stufenbarren",
+        "Schwebebalken",
+        "Boden"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne die Geräte des Frauenturnens in olympischer Reihenfolge, beginnend mit dem Sprung.",
+    "items": [
+      "Boden",
+      "Sprung",
+      "Stufenbarren",
+      "Schwebebalken"
+    ],
+    "answer": [
+      "Sprung",
+      "Stufenbarren",
+      "Schwebebalken",
+      "Boden"
+    ],
+    "explanation": "Die festgelegte olympische Geräteordnung lautet Sprung, Stufenbarren, Schwebebalken und Boden. Wettkampfgruppen können an unterschiedlichen Geräten beginnen; die Aufgabe legt den Start fest.",
+    "subject_keys": [
+      "topic:sport:olympische-ordnung-im-frauenturnen",
+      "fact:order:gym"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "USA Gymnastics | Women's Artistic Gymnastics Event Descriptions",
+          "url": "https://members.usagym.org/pages/gymnastics101/women/events.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or712",
+    "question_type": "order",
+    "primary_category": "sport",
+    "subtopic": "Höhe verschiedener Sportnetze",
+    "tags": {
+      "topics": [
+        "Höhe verschiedener Sportnetze",
+        "Regelmaß"
+      ],
+      "entities": [
+        "Tischtennis",
+        "Badminton",
+        "Faustball der Männer (5er-Teams)",
+        "Hallenvolleyball der Männer"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Netze oder Leinen nach ihrer Höhe in der Mitte über der jeweiligen Spielfläche – von niedrig bis hoch.",
+    "items": [
+      "Badminton",
+      "Faustball der Männer (5er-Teams)",
+      "Hallenvolleyball der Männer",
+      "Tischtennis"
+    ],
+    "answer": [
+      "Tischtennis",
+      "Badminton",
+      "Faustball der Männer (5er-Teams)",
+      "Hallenvolleyball der Männer"
+    ],
+    "explanation": "Die Regelhöhen betragen 15,25 cm beim Tischtennis, 152,4 cm beim Badminton, 200 cm beim Männer-Faustball und 243 cm beim Männer-Hallenvolleyball. Beim Tischtennis ist die Tischplatte die Spielfläche; Faustball verwendet ein Netz oder eine Leine.",
+    "subject_keys": [
+      "topic:sport:hohe-verschiedener-sportnetze",
+      "fact:order:nets"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "ITTF Statutes 2026 – Laws of Table Tennis, 2.2: The Net Assembly",
+          "url": "https://db.ittf.com/sites/default/files/public/2026-02/2026_Statutes_v1_consolidated_clean.pdf"
+        },
+        {
+          "title": "BWF Equipment Certification Programme: Net – Laws of Badminton 1.10",
+          "url": "https://system.bwfbadminton.com/documents/folder_1_81/folder_1_140/folder_1_165/1%20Net%20Overview.pdf"
+        },
+        {
+          "title": "FIVB Official Volleyball Rules 2025-2028",
+          "url": "https://www.fivb.com/wp-content/uploads/2025/01/FIVB-Volleyball_Rules2025_2028-EN.pdf"
+        },
+        {
+          "title": "Anlage 2 Rahmendaten für alle Faustball-Altersklassen - Stand 11.06.2024",
+          "url": "https://faustball.de/wp-content/uploads/2024/06/Anlage-2-Rahmendaten-fuer-alle-Faustball-Altersklassen-Stand-11.06.2024.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or713",
+    "question_type": "order",
+    "primary_category": "sport",
+    "subtopic": "Judo-Schülergrade im DJB",
+    "tags": {
+      "topics": [
+        "Judo-Schülergrade im DJB",
+        "Graduierungsstufen"
+      ],
+      "entities": [
+        "Gelb",
+        "Orange",
+        "Grün",
+        "Braun"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Judo-Gürtel nach dem deutschen DJB-Schülerprogramm – vom früheren zum späteren Grad.",
+    "items": [
+      "Grün",
+      "Braun",
+      "Gelb",
+      "Orange"
+    ],
+    "answer": [
+      "Gelb",
+      "Orange",
+      "Grün",
+      "Braun"
+    ],
+    "explanation": "Die ausgewählten Farben entsprechen dem 7., 5., 3. und 1. Kyu. Dazwischen liegen weitere Gürtelfarben. Gemeint ist das Schülerprogramm des Deutschen Judo-Bundes.",
+    "subject_keys": [
+      "topic:sport:judo-schulergrade-im-djb",
+      "fact:order:judo"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Anforderungen an Kyu-Grade im DJB (Stand 10. Januar 2024)",
+          "url": "https://www.judobund.de/fileadmin/user_upload/judobund.de/Downloads/Downloadcenter/Kyu-Graduierungen/Kyu_Graduierungssystem_Kyu_Programm__Anforderungen_.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or714",
+    "question_type": "order",
+    "primary_category": "media_entertainment",
+    "subtopic": "Breite von Bildformaten",
+    "tags": {
+      "topics": [
+        "Breite von Bildformaten",
+        "Seitenverhältnis"
+      ],
+      "entities": [
+        "Quadratisches Bild",
+        "Klassisches TV-Bild (4:3)",
+        "Breitbild-TV (16:9)",
+        "Kino-Scope (2,39:1)"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Bildformate bei gleicher Bildhöhe – vom schmalsten zum breitesten.",
+    "items": [
+      "Kino-Scope (2,39:1)",
+      "Quadratisches Bild",
+      "Klassisches TV-Bild (4:3)",
+      "Breitbild-TV (16:9)"
+    ],
+    "answer": [
+      "Quadratisches Bild",
+      "Klassisches TV-Bild (4:3)",
+      "Breitbild-TV (16:9)",
+      "Kino-Scope (2,39:1)"
+    ],
+    "explanation": "Bei gleicher Höhe entscheidet das Verhältnis von Breite zu Höhe: 1:1, 4:3, 16:9 und 2,39:1. Scope ist hier ausdrücklich als das heutige 2,39:1-Format angegeben.",
+    "subject_keys": [
+      "topic:media_entertainment:breite-von-bildformaten",
+      "fact:order:aspect"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Video in Dynamic Media | Adobe Experience Manager",
+          "url": "https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/video?lang=en"
+        },
+        {
+          "title": "Master aspect ratios for every platform | Adobe India",
+          "url": "https://www.adobe.com/in/creativecloud/roc/blog/video/master-aspect-ratios-easily.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or715",
+    "question_type": "order",
+    "primary_category": "media_entertainment",
+    "subtopic": "Größenklassen von Kamerasensoren",
+    "tags": {
+      "topics": [
+        "Größenklassen von Kamerasensoren",
+        "Sensorfläche"
+      ],
+      "entities": [
+        "1-Zoll-Klasse",
+        "Micro Four Thirds",
+        "APS-C",
+        "Kleinbild-Vollformat"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Kamerasensor-Formate nach ihrer üblichen Fläche – von klein bis groß.",
+    "items": [
+      "Micro Four Thirds",
+      "APS-C",
+      "Kleinbild-Vollformat",
+      "1-Zoll-Klasse"
+    ],
+    "answer": [
+      "1-Zoll-Klasse",
+      "Micro Four Thirds",
+      "APS-C",
+      "Kleinbild-Vollformat"
+    ],
+    "explanation": "Die übliche 1-Zoll-Klasse ist kleiner als Micro Four Thirds mit rund 17,3 × 13 mm. Danach folgen APS-C und Kleinbild-Vollformat mit 36 × 24 mm. APS-C-Abmessungen variieren etwas je nach Hersteller, ohne diese Reihenfolge zu ändern.",
+    "subject_keys": [
+      "topic:media_entertainment:grossenklassen-von-kamerasensoren",
+      "fact:order:sensors"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "What Lens Do I Need? | Canon U.S.A., Inc.",
+          "url": "https://www.usa.canon.com/learning/training-articles/training-articles-list/what-lens-do-i-need"
+        },
+        {
+          "title": "Specifications | Products | Cinema Camera Global | Panasonic",
+          "url": "https://pro-av.panasonic.net/en/cinema_camera_varicam_eva/products/bgh1/spec/index.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or716",
+    "question_type": "order",
+    "primary_category": "media_entertainment",
+    "subtopic": "Vom 3D-Modell zur Filmfigur",
+    "tags": {
+      "topics": [
+        "Vom 3D-Modell zur Filmfigur",
+        "Produktionsablauf"
+      ],
+      "entities": [
+        "3D-Modell formen",
+        "Bewegungsgerüst einrichten",
+        "Figur animieren",
+        "Endgültige Bilder berechnen"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Schritte für eine computergenerierte Filmfigur – vom Aufbau bis zum fertigen Filmbild.",
+    "items": [
+      "Figur animieren",
+      "Endgültige Bilder berechnen",
+      "3D-Modell formen",
+      "Bewegungsgerüst einrichten"
+    ],
+    "answer": [
+      "3D-Modell formen",
+      "Bewegungsgerüst einrichten",
+      "Figur animieren",
+      "Endgültige Bilder berechnen"
+    ],
+    "explanation": "Im beschriebenen Produktionsablauf wird die Figur modelliert, mit einem Steuerungsgerüst versehen (Rigging), animiert und schließlich gerendert. Die letzte Karte meint die endgültigen Filmbilder, nicht frühe Testbilder.",
+    "subject_keys": [
+      "topic:media_entertainment:vom-3d-modell-zur-filmfigur",
+      "fact:order:animation"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Explore the Exhibit | The Science Behind Pixar",
+          "url": "https://sciencebehindpixar.org/explore"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or717",
+    "question_type": "order",
+    "primary_category": "media_entertainment",
+    "subtopic": "Schwarzweißfilm entwickeln",
+    "tags": {
+      "topics": [
+        "Schwarzweißfilm entwickeln",
+        "Chemischer Ablauf"
+      ],
+      "entities": [
+        "Entwicklerbad",
+        "Stoppbad",
+        "Fixierbad",
+        "Schlusswässerung"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Bäder bei der klassischen Schwarzweißfilm-Entwicklung mit Stoppbad.",
+    "items": [
+      "Schlusswässerung",
+      "Entwicklerbad",
+      "Stoppbad",
+      "Fixierbad"
+    ],
+    "answer": [
+      "Entwicklerbad",
+      "Stoppbad",
+      "Fixierbad",
+      "Schlusswässerung"
+    ],
+    "explanation": "Auf den Entwickler folgen Stoppbad, Fixierbad und die Schlusswässerung. Das Stoppbad beendet die Entwicklung; die Wässerung nach dem Fixieren entfernt verbliebene Chemikalien.",
+    "subject_keys": [
+      "topic:media_entertainment:schwarzweissfilm-entwickeln",
+      "fact:order:photo"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Processing Your First Black & White Film – ILFORD",
+          "url": "https://www.ilfordphoto.com/wp/wp-content/uploads/2017/04/Processing-your-first-black-and-white-film.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or718",
+    "question_type": "order",
+    "primary_category": "media_entertainment",
+    "subtopic": "Länge bekannter Kinofilme",
+    "tags": {
+      "topics": [
+        "Länge bekannter Kinofilme",
+        "Filmlaufzeit"
+      ],
+      "entities": [
+        "Shrek (2001)",
+        "Der weiße Hai (1975)",
+        "Matrix (1999)",
+        "Der Pate (1972)"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Filme nach der Laufzeit ihrer regulären Kinofassung – von kurz bis lang.",
+    "items": [
+      "Der weiße Hai (1975)",
+      "Matrix (1999)",
+      "Der Pate (1972)",
+      "Shrek (2001)"
+    ],
+    "answer": [
+      "Shrek (2001)",
+      "Der weiße Hai (1975)",
+      "Matrix (1999)",
+      "Der Pate (1972)"
+    ],
+    "explanation": "Die regulären Kinofassungen dauern ungefähr 90, 124, 136 und 175 Minuten. Gemeint sind die angegebenen Originalfilme, keine Fortsetzungen, TV-Schnitte oder Bonusprogramme.",
+    "subject_keys": [
+      "topic:media_entertainment:lange-bekannter-kinofilme",
+      "fact:order:runtime"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Shrek – BBFC: Kino- und Heimkino-Fassungen",
+          "url": "https://www.bbfc.co.uk/release/shrek-q29sbgvjdglvbjpwwc0zndmxnte"
+        },
+        {
+          "title": "JAWS | AFI Silver Theatre and Cultural Center",
+          "url": "https://silver.afi.com/movies/detail/0100000017/"
+        },
+        {
+          "title": "The Matrix – AFI Silver Theatre and Cultural Center",
+          "url": "https://silver.afi.com/movies/detail/0100000038/"
+        },
+        {
+          "title": "THE GODFATHER | AFI Silver Theatre and Cultural Center",
+          "url": "https://silver.afi.com/movies/detail/0100001483/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or719",
+    "question_type": "order",
+    "primary_category": "science_technology",
+    "subtopic": "Wie langsam Isotope zerfallen",
+    "tags": {
+      "topics": [
+        "Wie langsam Isotope zerfallen",
+        "Halbwertszeit"
+      ],
+      "entities": [
+        "Kobalt-60",
+        "Cäsium-137",
+        "Kohlenstoff-14",
+        "Uran-238"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Isotope nach ihrer physikalischen Halbwertszeit – von kurz bis lang.",
+    "items": [
+      "Kohlenstoff-14",
+      "Uran-238",
+      "Kobalt-60",
+      "Cäsium-137"
+    ],
+    "answer": [
+      "Kobalt-60",
+      "Cäsium-137",
+      "Kohlenstoff-14",
+      "Uran-238"
+    ],
+    "explanation": "Die Richtwerte liegen bei 5,3 Jahren, 30 Jahren, etwa 5.700 Jahren und 4,468 Milliarden Jahren. Physikalische Halbwertszeit bezeichnet die Zeit, in der die Hälfte der ursprünglichen radioaktiven Atomkerne zerfällt.",
+    "subject_keys": [
+      "topic:science_technology:wie-langsam-isotope-zerfallen",
+      "fact:order:halflife"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Atoms – Nuclides, isotopes and radioactivity",
+          "url": "https://www.cnsc-ccsn.gc.ca/eng/nuclear-safety-security/educational-resources/radiation/atoms-nuclides-radioisotopes/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or720",
+    "question_type": "order",
+    "primary_category": "music",
+    "subtopic": "Musicals am Broadway",
+    "tags": {
+      "topics": [
+        "Musicals am Broadway",
+        "Broadway-Premieren"
+      ],
+      "entities": [
+        "Cats",
+        "Das Phantom der Oper",
+        "Der König der Löwen",
+        "Wicked"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Musicals nach ihrer ersten Broadway-Premiere – von früh bis spät.",
+    "items": [
+      "Wicked",
+      "Cats",
+      "Das Phantom der Oper",
+      "Der König der Löwen"
+    ],
+    "answer": [
+      "Cats",
+      "Das Phantom der Oper",
+      "Der König der Löwen",
+      "Wicked"
+    ],
+    "explanation": "Die ersten Broadway-Premieren waren 1982, 1988, 1997 und 2003. Gemeint sind die New Yorker Broadway-Eröffnungen, nicht die teils früheren Weltpremieren oder erste Vorschauen.",
+    "subject_keys": [
+      "topic:music:musicals-am-broadway",
+      "fact:order:musicals"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Cats – Broadway Musical – Original | IBDB",
+          "url": "https://www.ibdb.com/broadway-production/cats-4186"
+        },
+        {
+          "title": "The Phantom of the Opera – Broadway Musical – Original | IBDB",
+          "url": "https://www.ibdb.com/broadway-production/the-phantom-of-the-opera-4491"
+        },
+        {
+          "title": "The Lion King – Broadway Musical – Original | IBDB",
+          "url": "https://www.ibdb.com/broadway-production/the-lion-king-4761"
+        },
+        {
+          "title": "Wicked – Broadway Musical – Original | IBDB",
+          "url": "https://www.ibdb.com/broadway-production/wicked-13485"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or721",
+    "question_type": "order",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Papier von Hand herstellen",
+    "tags": {
+      "topics": [
+        "Papier von Hand herstellen",
+        "Handwerksablauf"
+      ],
+      "entities": [
+        "Bogen mit dem Sieb schöpfen",
+        "Bogen vom Sieb auf ein Tuch ablegen",
+        "Nassen Bogen pressen",
+        "Bogen trocknen"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Schritte bei der traditionellen Herstellung eines Papierbogens von Hand.",
+    "items": [
+      "Bogen vom Sieb auf ein Tuch ablegen",
+      "Nassen Bogen pressen",
+      "Bogen trocknen",
+      "Bogen mit dem Sieb schöpfen"
+    ],
+    "answer": [
+      "Bogen mit dem Sieb schöpfen",
+      "Bogen vom Sieb auf ein Tuch ablegen",
+      "Nassen Bogen pressen",
+      "Bogen trocknen"
+    ],
+    "explanation": "Beim Schöpfen sammeln sich Fasern auf dem Sieb. Das Ablegen des nassen Bogens heißt Gautschen. Danach wird Wasser herausgepresst und der Bogen getrocknet.",
+    "subject_keys": [
+      "topic:witnesses_of_time:papier-von-hand-herstellen",
+      "fact:order:paper"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Museum » Museum Papiermühle Homburg am Main",
+          "url": "https://papiermuehle-homburg.de/museum/"
+        },
+        {
+          "title": "Fotodokumentation Papierschöpfen | Abfallwirtschaftsbetrieb des Landkreises Rastatt",
+          "url": "https://www.awb-landkreis-rastatt.de/de/Abfallvermeidung/Abfallberatung/Papierschoepfen"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or722",
+    "question_type": "order",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Ein Glasgefäß mundblasen",
+    "tags": {
+      "topics": [
+        "Ein Glasgefäß mundblasen",
+        "Handwerksablauf"
+      ],
+      "entities": [
+        "Glas an der Pfeife aufnehmen",
+        "Hohlkörper aufblasen",
+        "Gefäß von der Blaspfeife lösen",
+        "Im Kühlofen kontrolliert abkühlen"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Schritte beim Mundblasen eines Glasgefäßes – vom heißen Glas bis zur Abkühlung.",
+    "items": [
+      "Gefäß von der Blaspfeife lösen",
+      "Im Kühlofen kontrolliert abkühlen",
+      "Glas an der Pfeife aufnehmen",
+      "Hohlkörper aufblasen"
+    ],
+    "answer": [
+      "Glas an der Pfeife aufnehmen",
+      "Hohlkörper aufblasen",
+      "Gefäß von der Blaspfeife lösen",
+      "Im Kühlofen kontrolliert abkühlen"
+    ],
+    "explanation": "Glas wird an der Blaspfeife aufgenommen und aufgeblasen. Nach der Arbeit an der Pfeife wird das Gefäß davon gelöst; weitere Formarbeit kann an einer Haltestange erfolgen. Zum Schluss kühlt es kontrolliert im Kühlofen ab.",
+    "subject_keys": [
+      "topic:witnesses_of_time:ein-glasgefass-mundblasen",
+      "fact:order:glass"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Albarello | The Techniques of Renaissance Venetian-Style Glassworking",
+          "url": "https://renvenetianstyle.cmog.org/node/10"
+        },
+        {
+          "title": "Mirror to Discovery: The 200-Inch Disk and the Hale Reflecting Telescope at Palomar | Corning Museum of Glass",
+          "url": "https://whatson.cmog.org/exhibitions-galleries/mirror-discovery-200-inch-disk-and-hale-reflecting-telescope-palomar"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or723",
+    "question_type": "order",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Historischer Buchdruck",
+    "tags": {
+      "topics": [
+        "Historischer Buchdruck",
+        "Handwerksablauf"
+      ],
+      "entities": [
+        "Lettern zu Zeilen setzen",
+        "Zeilen zur Seitenform zusammenstellen",
+        "Druckform einfärben",
+        "Papier mit der Form bedrucken"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Schritte beim historischen Buchdruck mit beweglichen Lettern.",
+    "items": [
+      "Papier mit der Form bedrucken",
+      "Lettern zu Zeilen setzen",
+      "Zeilen zur Seitenform zusammenstellen",
+      "Druckform einfärben"
+    ],
+    "answer": [
+      "Lettern zu Zeilen setzen",
+      "Zeilen zur Seitenform zusammenstellen",
+      "Druckform einfärben",
+      "Papier mit der Form bedrucken"
+    ],
+    "explanation": "Im Handsatz werden Lettern zunächst zu Zeilen und diese zur Druckform zusammengefügt. Erst die eingefärbten Druckflächen übertragen unter Druck das Schriftbild auf das Papier.",
+    "subject_keys": [
+      "topic:witnesses_of_time:historischer-buchdruck",
+      "fact:order:printing"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Printing Materials | Museum Plantin-Moretus",
+          "url": "https://museumplantinmoretus.be/en/collection-research/de-collectie/printing-materials"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or724",
+    "question_type": "order",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Porzellan in der Meissener Manufaktur",
+    "tags": {
+      "topics": [
+        "Porzellan in der Meissener Manufaktur",
+        "Handwerksablauf"
+      ],
+      "entities": [
+        "Geformten Rohling trocknen",
+        "Erster Brand (Schrühbrand)",
+        "Glasur auftragen",
+        "Glasurbrand"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Schritte bei der Herstellung glasierten Meissener Porzellans.",
+    "items": [
+      "Erster Brand (Schrühbrand)",
+      "Glasur auftragen",
+      "Glasurbrand",
+      "Geformten Rohling trocknen"
+    ],
+    "answer": [
+      "Geformten Rohling trocknen",
+      "Erster Brand (Schrühbrand)",
+      "Glasur auftragen",
+      "Glasurbrand"
+    ],
+    "explanation": "Nach dem Trocknen wird der Rohling erstmals gebrannt. Der noch poröse Scherben nimmt anschließend die Glasur auf. Im folgenden heißen Glasurbrand verbinden sich Glasur und Porzellan.",
+    "subject_keys": [
+      "topic:witnesses_of_time:porzellan-in-der-meissener-manufaktur",
+      "fact:order:porcelain"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Bisque Firing & Glaze Firing in the MEISSEN Kiln Hall",
+          "url": "https://www.meissen.com/net/craft/firing"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or725",
+    "question_type": "order",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Große Momente der Wrackforschung",
+    "tags": {
+      "topics": [
+        "Große Momente der Wrackforschung",
+        "Bergungs- und Fundgeschichte"
+      ],
+      "entities": [
+        "Vasa wieder an die Oberfläche gehoben",
+        "Mary Rose gehoben",
+        "Titanic-Wrack entdeckt",
+        "Endurance-Wrack entdeckt"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Bergungen und Wrackfunde nach ihrem Datum – von früh bis spät.",
+    "items": [
+      "Titanic-Wrack entdeckt",
+      "Endurance-Wrack entdeckt",
+      "Vasa wieder an die Oberfläche gehoben",
+      "Mary Rose gehoben"
+    ],
+    "answer": [
+      "Vasa wieder an die Oberfläche gehoben",
+      "Mary Rose gehoben",
+      "Titanic-Wrack entdeckt",
+      "Endurance-Wrack entdeckt"
+    ],
+    "explanation": "Die Vasa kam 1961 an die Oberfläche, die Mary Rose wurde 1982 gehoben, das Titanic-Wrack 1985 entdeckt und die Endurance 2022 gefunden. Die Karten unterscheiden ausdrücklich Bergungen von Entdeckungen.",
+    "subject_keys": [
+      "topic:witnesses_of_time:grosse-momente-der-wrackforschung",
+      "fact:order:wrecks"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "The Salvaging",
+          "url": "https://www.vasamuseet.se/en/visit/exhibitions/salvaging"
+        },
+        {
+          "title": "Raising the Mary Rose - Mary Rose",
+          "url": "https://maryrose.org/discover/history/recovering-the-mary-rose/"
+        },
+        {
+          "title": "1985 discovery of RMS Titanic | Woods Hole Oceanographic Institution",
+          "url": "https://www.whoi.edu/ocean-learning-hub/ocean-topics/ocean-human-lives/underwater-archaeology/rms-titanic/1985-discovery-of-rms-titanic/"
+        },
+        {
+          "title": "Endurance22 Expedition Blog: 9 March 2022 -",
+          "url": "https://endurance22.org/expedition-blog/9-march-2022"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or726",
+    "question_type": "order",
+    "primary_category": "human_everyday",
+    "subtopic": "Vom Malz zum Bier",
+    "tags": {
+      "topics": [
+        "Vom Malz zum Bier",
+        "Herstellungsablauf"
+      ],
+      "entities": [
+        "Maischen",
+        "Läutern",
+        "Würze mit Hopfen kochen",
+        "Gären"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Schritte des klassischen Bierbrauens in ihrer üblichen Reihenfolge.",
+    "items": [
+      "Gären",
+      "Maischen",
+      "Läutern",
+      "Würze mit Hopfen kochen"
+    ],
+    "answer": [
+      "Maischen",
+      "Läutern",
+      "Würze mit Hopfen kochen",
+      "Gären"
+    ],
+    "explanation": "Beim Maischen werden Malzbestandteile gelöst und Stärke abgebaut. Das Läutern trennt die Würze vom Treber. Danach wird die Würze mit Hopfen gekocht, abgekühlt und schließlich vergoren.",
+    "subject_keys": [
+      "topic:human_everyday:vom-malz-zum-bier",
+      "fact:order:beer"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Bier - Bundesministerium für Land- und Forstwirtschaft, Klima- und Umweltschutz, Regionen und Wasserwirtschaft",
+          "url": "https://www.bmluk.gv.at/themen/lebensmittel/trad-lebensmittel/getraenke/bier.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or727",
+    "question_type": "order",
+    "primary_category": "human_everyday",
+    "subtopic": "Gewaschener Kaffee",
+    "tags": {
+      "topics": [
+        "Gewaschener Kaffee",
+        "Herstellungsablauf"
+      ],
+      "entities": [
+        "Fruchtfleisch mechanisch entfernen",
+        "Anhaftende Schleimschicht fermentieren",
+        "Bohnen waschen",
+        "Bohnen trocknen"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Schritte bei der klassischen nassen Kaffeeaufbereitung, beginnend nach der Ernte.",
+    "items": [
+      "Anhaftende Schleimschicht fermentieren",
+      "Bohnen waschen",
+      "Bohnen trocknen",
+      "Fruchtfleisch mechanisch entfernen"
+    ],
+    "answer": [
+      "Fruchtfleisch mechanisch entfernen",
+      "Anhaftende Schleimschicht fermentieren",
+      "Bohnen waschen",
+      "Bohnen trocknen"
+    ],
+    "explanation": "Bei der klassischen nassen Aufbereitung werden die Kirschen entpulpt. Danach wird die anhaftende Schleimschicht durch Fermentation abgebaut, abgewaschen und der Kaffee getrocknet. Andere Aufbereitungsweisen können anders ablaufen.",
+    "subject_keys": [
+      "topic:human_everyday:gewaschener-kaffee",
+      "fact:order:coffee"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Exposure Data - Drinking Coffee, Mate, and Very Hot Beverages - NCBI Bookshelf",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK543954/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or728",
+    "question_type": "order",
+    "primary_category": "human_everyday",
+    "subtopic": "Parmigiano Reggiano entsteht",
+    "tags": {
+      "topics": [
+        "Parmigiano Reggiano entsteht",
+        "Herstellungsablauf"
+      ],
+      "entities": [
+        "Milch mit Lab dicklegen",
+        "Käsebruch zerkleinern",
+        "Geformten Käse ins Salzbad geben",
+        "Käse reifen lassen"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese ausgewählten Schritte bei der Herstellung von Parmigiano Reggiano.",
+    "items": [
+      "Geformten Käse ins Salzbad geben",
+      "Käse reifen lassen",
+      "Milch mit Lab dicklegen",
+      "Käsebruch zerkleinern"
+    ],
+    "answer": [
+      "Milch mit Lab dicklegen",
+      "Käsebruch zerkleinern",
+      "Geformten Käse ins Salzbad geben",
+      "Käse reifen lassen"
+    ],
+    "explanation": "Nach dem Dicklegen wird die geronnene Masse mit dem Spino zerkleinert. Weitere Schritte formen den Laib, der anschließend gesalzen wird und danach reift. Gefragt ist die Reihenfolge der ausgewählten Schritte.",
+    "subject_keys": [
+      "topic:human_everyday:parmigiano-reggiano-entsteht",
+      "fact:order:cheese"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Production - Boselli",
+          "url": "https://www.parmigianoreggianoboselli.it/production/?lang=en"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or729",
+    "question_type": "order",
+    "primary_category": "human_everyday",
+    "subtopic": "Energie auf dem Lebensmitteletikett",
+    "tags": {
+      "topics": [
+        "Energie auf dem Lebensmitteletikett",
+        "Brennwert pro Masse"
+      ],
+      "entities": [
+        "Ballaststoffe",
+        "Eiweiß",
+        "Alkohol (Ethanol)",
+        "Fett"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Stoffgruppen nach dem EU-Kennzeichnungswert in Kilokalorien pro Gramm – von wenig bis viel.",
+    "items": [
+      "Fett",
+      "Ballaststoffe",
+      "Eiweiß",
+      "Alkohol (Ethanol)"
+    ],
+    "answer": [
+      "Ballaststoffe",
+      "Eiweiß",
+      "Alkohol (Ethanol)",
+      "Fett"
+    ],
+    "explanation": "Für die Nährwertkennzeichnung setzt die EU hier 2, 4, 7 und 9 kcal pro Gramm an. Alkohol liefert damit pro Gramm mehr Kennzeichnungsenergie als Eiweiß.",
+    "subject_keys": [
+      "topic:human_everyday:energie-auf-dem-lebensmitteletikett",
+      "fact:order:energy"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Regulation (EU) No 1169/2011 – Annex XIV: Conversion factors for the calculation of energy",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A02011R1169-20131206"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or730",
+    "question_type": "order",
+    "primary_category": "human_everyday",
+    "subtopic": "Flüssigkeiten auf der pH-Skala",
+    "tags": {
+      "topics": [
+        "Flüssigkeiten auf der pH-Skala",
+        "Säuregrad"
+      ],
+      "entities": [
+        "Wein",
+        "Schwarzer Kaffee",
+        "Milch",
+        "Meerwasser"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Flüssigkeiten nach ihrem typischen pH-Wert – von sauer bis basisch.",
+    "items": [
+      "Schwarzer Kaffee",
+      "Milch",
+      "Meerwasser",
+      "Wein"
+    ],
+    "answer": [
+      "Wein",
+      "Schwarzer Kaffee",
+      "Milch",
+      "Meerwasser"
+    ],
+    "explanation": "Die verwendete Lehrbuchtabelle nennt als typische pH-Werte 3,5, 5,0, 6,9 und 8,5. Zusammensetzung und Messbedingungen beeinflussen die Einzelwerte; verglichen werden die üblichen Richtbereiche dieser Flüssigkeiten.",
+    "subject_keys": [
+      "topic:human_everyday:flussigkeiten-auf-der-ph-skala",
+      "fact:order:ph"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "The pH Scale – Introductory Chemistry – 1st Canadian Edition",
+          "url": "https://opentextbc.ca/introductorychemistry/chapter/the-ph-scale/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or731",
+    "question_type": "order",
+    "primary_category": "human_everyday",
+    "subtopic": "Der Weg des Lichts im Auge",
+    "tags": {
+      "topics": [
+        "Der Weg des Lichts im Auge",
+        "Weg durch ein Organ"
+      ],
+      "entities": [
+        "Hornhaut",
+        "Pupille",
+        "Linse",
+        "Netzhaut"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Stationen auf dem Weg des Lichts durch das Auge – von außen bis zum lichtempfindlichen Ziel.",
+    "items": [
+      "Linse",
+      "Netzhaut",
+      "Hornhaut",
+      "Pupille"
+    ],
+    "answer": [
+      "Hornhaut",
+      "Pupille",
+      "Linse",
+      "Netzhaut"
+    ],
+    "explanation": "Licht passiert zuerst die Hornhaut und die Pupillenöffnung, dann die Linse und erreicht schließlich die Netzhaut. Dort wird es in elektrische Signale umgewandelt.",
+    "subject_keys": [
+      "topic:human_everyday:der-weg-des-lichts-im-auge",
+      "fact:order:eye"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Healthy Vision – How we see (National Eye Institute)",
+          "url": "https://www.nei.nih.gov/sites/default/files/2019-06/NEI_Healthy-Vision_booklet_WEB_508%20%281%29.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or732",
+    "question_type": "order",
+    "primary_category": "human_everyday",
+    "subtopic": "Vom Baustein zum Körpersystem",
+    "tags": {
+      "topics": [
+        "Vom Baustein zum Körpersystem",
+        "Verschachtelung"
+      ],
+      "entities": [
+        "Zelle",
+        "Gewebe",
+        "Organ",
+        "Organsystem"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Organisationsebenen des menschlichen Körpers – vom einzelnen Baustein zum größeren Verbund.",
+    "items": [
+      "Organsystem",
+      "Zelle",
+      "Gewebe",
+      "Organ"
+    ],
+    "answer": [
+      "Zelle",
+      "Gewebe",
+      "Organ",
+      "Organsystem"
+    ],
+    "explanation": "Gleichartige beziehungsweise zusammenarbeitende Zellen bilden Gewebe. Mehrere Gewebe bilden ein Organ, und zusammenarbeitende Organe bilden ein Organsystem. Das ist eine Ordnung nach Organisationsebenen.",
+    "subject_keys": [
+      "topic:human_everyday:vom-baustein-zum-korpersystem",
+      "fact:order:cells"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "1.2 Structural Organization of the Human Body - Anatomy and Physiology 2e | OpenStax",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-2-structural-organization-of-the-human-body"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or733",
+    "question_type": "order",
+    "primary_category": "plants_animals",
+    "subtopic": "Dauergebisse von Säugetieren",
+    "tags": {
+      "topics": [
+        "Dauergebisse von Säugetieren",
+        "Zahnanzahl"
+      ],
+      "entities": [
+        "Kaninchen",
+        "Hauskatze",
+        "Hausschaf",
+        "Hausschwein"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Tiere nach der üblichen Zahnzahl im vollständigen erwachsenen Gebiss – von wenigen bis vielen.",
+    "items": [
+      "Hauskatze",
+      "Hausschaf",
+      "Hausschwein",
+      "Kaninchen"
+    ],
+    "answer": [
+      "Kaninchen",
+      "Hauskatze",
+      "Hausschaf",
+      "Hausschwein"
+    ],
+    "explanation": "Im vollständigen Dauergebiss sind es beim Kaninchen 28, bei der Katze 30, beim Schaf 32 und beim Schwein 44 Zähne. Milchgebisse, Zahnverlust und individuelle Fehlbildungen sind nicht gemeint.",
+    "subject_keys": [
+      "topic:plants_animals:dauergebisse-von-saugetieren",
+      "fact:order:teeth"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Dental formulae and total number of teeth in mammals – Table 1.1 (University of Edinburgh)",
+          "url": "https://era.ed.ac.uk/server/api/core/bitstreams/839300d6-b9b9-473b-a339-bf3afdc7d2dc/content"
+        },
+        {
+          "title": "Sheep Facts | NC State Extension Publications",
+          "url": "https://content.ces.ncsu.edu/sheep-facts"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or734",
+    "question_type": "order",
+    "primary_category": "plants_animals",
+    "subtopic": "Chromosomensätze von Haustieren",
+    "tags": {
+      "topics": [
+        "Chromosomensätze von Haustieren",
+        "Chromosomenanzahl"
+      ],
+      "entities": [
+        "Hauskatze",
+        "Hausschaf",
+        "Hauspferd",
+        "Haushund"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Haustiere nach der üblichen Chromosomenzahl in Körperzellen – von wenigen bis vielen.",
+    "items": [
+      "Hauspferd",
+      "Haushund",
+      "Hauskatze",
+      "Hausschaf"
+    ],
+    "answer": [
+      "Hauskatze",
+      "Hausschaf",
+      "Hauspferd",
+      "Haushund"
+    ],
+    "explanation": "Die normalen diploiden Chromosomensätze umfassen 38, 54, 64 und 78 Chromosomen. Verglichen werden die vollständigen doppelten Chromosomensätze der jeweiligen Haustierart.",
+    "subject_keys": [
+      "topic:plants_animals:chromosomensatze-von-haustieren",
+      "fact:order:chromosomes"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Chromosomenzahl | embryology.ch",
+          "url": "https://embryology.ch/de/veterinaer-embryogenese/chromosomale-aberration-bei-den-haustieren/chromosomenzahl/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or735",
+    "question_type": "order",
+    "primary_category": "plants_animals",
+    "subtopic": "Wie hoch Tiere hören",
+    "tags": {
+      "topics": [
+        "Wie hoch Tiere hören",
+        "Obere Hörgrenze"
+      ],
+      "entities": [
+        "Elefant",
+        "Mensch",
+        "Hund",
+        "Schweinswal"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Lebewesen nach der ungefähren oberen Hörgrenze laut Louisiana State University – von niedrig bis hoch.",
+    "items": [
+      "Schweinswal",
+      "Elefant",
+      "Mensch",
+      "Hund"
+    ],
+    "answer": [
+      "Elefant",
+      "Mensch",
+      "Hund",
+      "Schweinswal"
+    ],
+    "explanation": "Die Übersicht der Louisiana State University nennt etwa 12, 23, 45 und 150 Kilohertz als obere Grenzen. Das sind vergleichende Richtwerte aus Studien; Alter, Individuum und Messverfahren beeinflussen Hörgrenzen.",
+    "subject_keys": [
+      "topic:plants_animals:wie-hoch-tiere-horen",
+      "fact:order:hearing"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "How Well Do Dogs and Other Animals Hear? | Deafness in Dogs & Cats",
+          "url": "https://lsu.glb.lsu.edu/vetmed/deafness/hearingrange.php"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or736",
+    "question_type": "order",
+    "primary_category": "plants_animals",
+    "subtopic": "Die besondere Entwicklung der Farne",
+    "tags": {
+      "topics": [
+        "Die besondere Entwicklung der Farne",
+        "Lebenszyklus"
+      ],
+      "entities": [
+        "Spore",
+        "Vorkeim mit Geschlechtsorganen",
+        "Befruchtete Eizelle",
+        "Junge Farnpflanze"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Stationen im Lebenszyklus eines Farns, beginnend mit einer Spore.",
+    "items": [
+      "Vorkeim mit Geschlechtsorganen",
+      "Befruchtete Eizelle",
+      "Junge Farnpflanze",
+      "Spore"
+    ],
+    "answer": [
+      "Spore",
+      "Vorkeim mit Geschlechtsorganen",
+      "Befruchtete Eizelle",
+      "Junge Farnpflanze"
+    ],
+    "explanation": "Aus der Spore wächst zunächst ein kleiner Vorkeim. Er bildet Geschlechtszellen; nach deren Verschmelzung entsteht aus der befruchteten Eizelle die neue Farnpflanze. Farne durchlaufen damit zwei unterschiedliche Generationen.",
+    "subject_keys": [
+      "topic:plants_animals:die-besondere-entwicklung-der-farne",
+      "fact:order:fern"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Native Plants for Georgia Part II: Ferns | CAES Field Report",
+          "url": "https://fieldreport.caes.uga.edu/publications/B987-2/native-plants-for-georgia-part-ii-ferns/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or737",
+    "question_type": "order",
+    "primary_category": "plants_animals",
+    "subtopic": "Wer frisst wen in der Antarktis",
+    "tags": {
+      "topics": [
+        "Wer frisst wen in der Antarktis",
+        "Nahrungskette"
+      ],
+      "entities": [
+        "Phytoplankton",
+        "Antarktischer Krill",
+        "Pinguin",
+        "Seeleopard"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Glieder zu einer möglichen antarktischen Nahrungskette – von der Nahrung zum jeweiligen Fresser.",
+    "items": [
+      "Pinguin",
+      "Seeleopard",
+      "Phytoplankton",
+      "Antarktischer Krill"
+    ],
+    "answer": [
+      "Phytoplankton",
+      "Antarktischer Krill",
+      "Pinguin",
+      "Seeleopard"
+    ],
+    "explanation": "Phytoplankton wird von Krill gefressen, Krill kann Pinguinen als Nahrung dienen und Pinguine können Seeleoparden zum Opfer fallen. Dies ist eine mögliche Kette innerhalb eines verzweigten Nahrungsnetzes.",
+    "subject_keys": [
+      "topic:plants_animals:wer-frisst-wen-in-der-antarktis",
+      "fact:order:foodchain"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Antarctic food web – Australian Antarctic Program",
+          "url": "https://www.antarctica.gov.au/about-antarctica/animals/food-web/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or738",
+    "question_type": "order",
+    "primary_category": "plants_animals",
+    "subtopic": "Artenreichtum bei Wirbeltieren",
+    "tags": {
+      "topics": [
+        "Artenreichtum bei Wirbeltieren",
+        "Beschriebene Arten"
+      ],
+      "entities": [
+        "Säugetiere",
+        "Amphibien",
+        "Vögel",
+        "Fische"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Tiergruppen nach der Zahl beschriebener Arten laut IUCN-Tabelle 2024-1 – von wenig bis viel.",
+    "items": [
+      "Fische",
+      "Säugetiere",
+      "Amphibien",
+      "Vögel"
+    ],
+    "answer": [
+      "Säugetiere",
+      "Amphibien",
+      "Vögel",
+      "Fische"
+    ],
+    "explanation": "Die Tabelle nennt 6.701 Säugetier-, 8.744 Amphibien-, 11.195 Vogel- und 36.863 Fischarten. Gemeint ist die damalige Zahl beschriebener Arten, nicht die Zahl bedrohter oder bereits bewerteter Arten.",
+    "subject_keys": [
+      "topic:plants_animals:artenreichtum-bei-wirbeltieren",
+      "fact:order:species"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "IUCN Red List version 2024-1: Table 1a",
+          "url": "https://nc.iucnredlist.org/redlist/content/attachment_files/2024-1_RL_Table_1a_v2.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or739",
+    "question_type": "order",
+    "primary_category": "geography_world",
+    "subtopic": "Windstärke ohne Messgerät erkennen",
+    "tags": {
+      "topics": [
+        "Windstärke ohne Messgerät erkennen",
+        "Windwirkungen"
+      ],
+      "entities": [
+        "Rauch steigt senkrecht auf",
+        "Blätter bewegen sich",
+        "Starke Äste schwanken",
+        "Bäume werden entwurzelt"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Windwirkungen nach der DWD-Beaufort-Übersicht – von schwachem bis starkem Wind.",
+    "items": [
+      "Blätter bewegen sich",
+      "Starke Äste schwanken",
+      "Bäume werden entwurzelt",
+      "Rauch steigt senkrecht auf"
+    ],
+    "answer": [
+      "Rauch steigt senkrecht auf",
+      "Blätter bewegen sich",
+      "Starke Äste schwanken",
+      "Bäume werden entwurzelt"
+    ],
+    "explanation": "Die ausgewählten Beobachtungen stehen in der DWD-Übersicht bei Beaufort 0, 2, 6 und 11. Solche Wirkungen helfen, Windstärke einzuordnen, wenn kein Windmesser bereitsteht.",
+    "subject_keys": [
+      "topic:geography_world:windstarke-ohne-messgerat-erkennen",
+      "fact:order:beaufort"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Deutscher Wetterdienst - Windwarnskala",
+          "url": "https://wettergefahren.de/warnungen/windwarnskala.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or740",
+    "question_type": "order",
+    "primary_category": "geography_world",
+    "subtopic": "Städte entlang der Donau",
+    "tags": {
+      "topics": [
+        "Städte entlang der Donau",
+        "Flussroute"
+      ],
+      "entities": [
+        "Passau",
+        "Linz",
+        "Wien",
+        "Bratislava"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Städte entlang der Donau flussabwärts, beginnend in Passau.",
+    "items": [
+      "Wien",
+      "Bratislava",
+      "Passau",
+      "Linz"
+    ],
+    "answer": [
+      "Passau",
+      "Linz",
+      "Wien",
+      "Bratislava"
+    ],
+    "explanation": "Von Passau führt die Donau flussabwärts zunächst über Linz und weiter über Wien nach Bratislava. Gemeint ist die Reihenfolge auf dem Fluss, nicht die Luftlinie zwischen den Städten.",
+    "subject_keys": [
+      "topic:geography_world:stadte-entlang-der-donau",
+      "fact:order:donau"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Fleet data of the Danube states – Bunkering map, slide 26 (Danube Commission, 2024)",
+          "url": "https://www.danubecommission.org/uploads/doc/2024/20241008_Fleet_workshop/Domokos_Ivanyi_DC_-_Fleet_data_of_the_Danube_states.pdf"
+        },
+        {
+          "title": "Rhine-Danube Core Network Corridor - Mobility and Transport",
+          "url": "https://transport.ec.europa.eu/other-pages/transport-basic-page/rhine-danube-core-network-corridor_en?prefLang=el"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or741",
+    "question_type": "order",
+    "primary_category": "geography_world",
+    "subtopic": "Von Europa nach Südostasien",
+    "tags": {
+      "topics": [
+        "Von Europa nach Südostasien",
+        "Schiffsroute"
+      ],
+      "entities": [
+        "Straße von Gibraltar",
+        "Suezkanal",
+        "Bab el-Mandeb",
+        "Straße von Malakka"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Durchfahrten auf einer Schiffsreise von Rotterdam nach Singapur über den Suezkanal.",
+    "items": [
+      "Straße von Malakka",
+      "Straße von Gibraltar",
+      "Suezkanal",
+      "Bab el-Mandeb"
+    ],
+    "answer": [
+      "Straße von Gibraltar",
+      "Suezkanal",
+      "Bab el-Mandeb",
+      "Straße von Malakka"
+    ],
+    "explanation": "Über Gibraltar gelangt das Schiff ins Mittelmeer, durch Suez ins Rote Meer und durch Bab el-Mandeb zum Golf von Aden. Auf dem weiteren Weg nach Singapur folgt die Straße von Malakka. Die Aufgabe legt die Suezroute fest.",
+    "subject_keys": [
+      "topic:geography_world:von-europa-nach-sudostasien",
+      "fact:order:shipping"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "The Strait of Gibraltar connects the Atlantic to the Mediterranean - NASA",
+          "url": "https://www.nasa.gov/image-article/strait-of-gibraltar-connects-atlantic-mediterranean/"
+        },
+        {
+          "title": "World Oil Transit Chokepoints – U.S. Energy Information Administration",
+          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or742",
+    "question_type": "order",
+    "primary_category": "geography_world",
+    "subtopic": "Wie salzig verschiedene Gewässer sind",
+    "tags": {
+      "topics": [
+        "Wie salzig verschiedene Gewässer sind",
+        "Salzgehalt"
+      ],
+      "entities": [
+        "Ostsee",
+        "Schwarzes Meer",
+        "Mittelmeer",
+        "Totes Meer"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Gewässer nach ihrem typischen Salzgehalt – vom salzärmsten zum salzreichsten.",
+    "items": [
+      "Schwarzes Meer",
+      "Mittelmeer",
+      "Totes Meer",
+      "Ostsee"
+    ],
+    "answer": [
+      "Ostsee",
+      "Schwarzes Meer",
+      "Mittelmeer",
+      "Totes Meer"
+    ],
+    "explanation": "Als typische Richtwerte werden etwa 8, 18 und 38 Gramm Salz pro Kilogramm für Ostsee, Schwarzes Meer und Mittelmeer genannt. Das Tote Meer ist noch um ein Mehrfaches salziger als gewöhnliches Meerwasser. Lokale Werte schwanken.",
+    "subject_keys": [
+      "topic:geography_world:wie-salzig-verschiedene-gewasser-sind",
+      "fact:order:salinity"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "CIR1500/FA128: The Role of Salinity in Hard Clam Aquaculture",
+          "url": "https://ask.ifas.ufl.edu/publication/FA128"
+        },
+        {
+          "title": "JetStream Max: \"A Funny Bath\" - The Dead Sea | National Oceanic and Atmospheric Administration",
+          "url": "https://www.noaa.gov/jetstream/dead-max"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or743",
+    "question_type": "order",
+    "primary_category": "geography_world",
+    "subtopic": "Aus Pflanzenresten wird Kohle",
+    "tags": {
+      "topics": [
+        "Aus Pflanzenresten wird Kohle",
+        "Inkohlungsgrad"
+      ],
+      "entities": [
+        "Torf",
+        "Braunkohle",
+        "Bituminöse Steinkohle",
+        "Anthrazit"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Stationen der Inkohlung – von wenig bis stark umgewandeltem Material.",
+    "items": [
+      "Bituminöse Steinkohle",
+      "Anthrazit",
+      "Torf",
+      "Braunkohle"
+    ],
+    "answer": [
+      "Torf",
+      "Braunkohle",
+      "Bituminöse Steinkohle",
+      "Anthrazit"
+    ],
+    "explanation": "Unter Druck und Wärme werden Pflanzenreste über Torf und verschiedene Kohleränge zu immer stärker umgewandeltem Material. Von den genannten Stufen ist Anthrazit die höchste; weitere Zwischenstufen wurden ausgelassen.",
+    "subject_keys": [
+      "topic:geography_world:aus-pflanzenresten-wird-kohle",
+      "fact:order:coal"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "What are the types of coal? | U.S. Geological Survey",
+          "url": "https://www.usgs.gov/faqs/what-are-types-coal"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or744",
+    "question_type": "order",
+    "primary_category": "geography_world",
+    "subtopic": "Aufbau des Erdinneren",
+    "tags": {
+      "topics": [
+        "Aufbau des Erdinneren",
+        "Räumliche Schichtung"
+      ],
+      "entities": [
+        "Erdkruste",
+        "Erdmantel",
+        "Äußerer Kern",
+        "Innerer Kern"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne die vier Hauptschichten der Erde – von außen nach innen.",
+    "items": [
+      "Innerer Kern",
+      "Erdkruste",
+      "Erdmantel",
+      "Äußerer Kern"
+    ],
+    "answer": [
+      "Erdkruste",
+      "Erdmantel",
+      "Äußerer Kern",
+      "Innerer Kern"
+    ],
+    "explanation": "Unter der Erdkruste liegt der Mantel, darunter der äußere und schließlich der innere Kern. Der äußere Kern ist flüssig, der innere fest.",
+    "subject_keys": [
+      "topic:geography_world:aufbau-des-erdinneren",
+      "fact:order:earth"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "The Science of Earthquakes | U.S. Geological Survey",
+          "url": "https://www.usgs.gov/programs/earthquake-hazards/science-earthquakes"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or745",
+    "question_type": "order",
+    "primary_category": "science_technology",
+    "subtopic": "Atmosphärendruck auf anderen Welten",
+    "tags": {
+      "topics": [
+        "Atmosphärendruck auf anderen Welten",
+        "Oberflächendruck"
+      ],
+      "entities": [
+        "Mars",
+        "Erde",
+        "Titan",
+        "Venus"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Himmelskörper nach dem typischen Luftdruck an ihrer Oberfläche – von niedrig bis hoch.",
+    "items": [
+      "Erde",
+      "Titan",
+      "Venus",
+      "Mars"
+    ],
+    "answer": [
+      "Mars",
+      "Erde",
+      "Titan",
+      "Venus"
+    ],
+    "explanation": "Die Vergleichswerte liegen ungefähr bei 0,006 bar auf Mars, 1 bar auf der Erde, rund 1,5 bis 1,6 bar auf Titan und 92 bar auf Venus. Druck schwankt mit Ort und Wetter; die grobe Reihenfolge bleibt eindeutig.",
+    "subject_keys": [
+      "topic:science_technology:atmospharendruck-auf-anderen-welten",
+      "fact:order:pressure"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Mars Fact Sheet",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html?level=1"
+        },
+        {
+          "title": "Venus-Earth-Sun Fact Sheet",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/ves.html"
+        },
+        {
+          "title": "Titan: Facts",
+          "url": "https://science.nasa.gov/saturn/moons/titan/facts/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or746",
+    "question_type": "order",
+    "primary_category": "science_technology",
+    "subtopic": "Welche Stoffe Wärme gut leiten",
+    "tags": {
+      "topics": [
+        "Welche Stoffe Wärme gut leiten",
+        "Wärmeleitfähigkeit"
+      ],
+      "entities": [
+        "Glas",
+        "Edelstahl",
+        "Kupfer",
+        "Diamant"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Stoffe nach typischer Wärmeleitfähigkeit nahe 0 °C – von schlecht bis gut leitend.",
+    "items": [
+      "Kupfer",
+      "Diamant",
+      "Glas",
+      "Edelstahl"
+    ],
+    "answer": [
+      "Glas",
+      "Edelstahl",
+      "Kupfer",
+      "Diamant"
+    ],
+    "explanation": "Die Lehrbuchtabelle nennt ungefähr 0,84, 14, 390 und 2.000 Watt pro Meter und Kelvin. Diamant leitet Wärme ausgesprochen gut. Gemeint ist Wärmeleitung, nicht elektrische Leitfähigkeit.",
+    "subject_keys": [
+      "topic:science_technology:welche-stoffe-warme-gut-leiten",
+      "fact:order:heat"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "1.6 Mechanisms of Heat Transfer - University Physics Volume 2 | OpenStax",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-6-mechanisms-of-heat-transfer"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or747",
+    "question_type": "order",
+    "primary_category": "gaming",
+    "subtopic": "Zwei Würfel und ihre Augensummen",
+    "tags": {
+      "topics": [
+        "Zwei Würfel und ihre Augensummen",
+        "Wahrscheinlichkeit"
+      ],
+      "entities": [
+        "Summe 12",
+        "Summe 3",
+        "Summe 9",
+        "Summe 7"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Augensummen beim Wurf mit zwei fairen sechsseitigen Würfeln – von selten bis häufig.",
+    "items": [
+      "Summe 7",
+      "Summe 12",
+      "Summe 3",
+      "Summe 9"
+    ],
+    "answer": [
+      "Summe 12",
+      "Summe 3",
+      "Summe 9",
+      "Summe 7"
+    ],
+    "explanation": "Von 36 gleich wahrscheinlichen geordneten Würfelpaaren ergeben 1 die Summe 12, 2 die Summe 3, 4 die Summe 9 und 6 die Summe 7. Die Größe einer Summe allein verrät also nicht ihre Wahrscheinlichkeit.",
+    "subject_keys": [
+      "topic:gaming:zwei-wurfel-und-ihre-augensummen",
+      "fact:order:dice"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Fair's Fair | NRICH",
+          "url": "https://nrich.maths.org/problems/fairs-fair"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or748",
+    "question_type": "order",
+    "primary_category": "science_technology",
+    "subtopic": "Licht in verschiedenen Stoffen",
+    "tags": {
+      "topics": [
+        "Licht in verschiedenen Stoffen",
+        "Lichtgeschwindigkeit"
+      ],
+      "entities": [
+        "Diamant",
+        "Optisches Kronglas",
+        "Wasser",
+        "Luft"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne diese Stoffe nach der Geschwindigkeit sichtbaren Lichts darin – von langsam bis schnell.",
+    "items": [
+      "Optisches Kronglas",
+      "Wasser",
+      "Luft",
+      "Diamant"
+    ],
+    "answer": [
+      "Diamant",
+      "Optisches Kronglas",
+      "Wasser",
+      "Luft"
+    ],
+    "explanation": "Die typischen Brechungsindizes sind etwa 2,419, 1,52, 1,333 und 1,0003. Je höher dieser Wert ist, desto langsamer breitet sich Licht aus. Der Vergleich gilt für sichtbares Licht und gewöhnliche Materialbedingungen.",
+    "subject_keys": [
+      "topic:science_technology:licht-in-verschiedenen-stoffen",
+      "fact:order:refraction"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "25.3 The Law of Refraction - College Physics 2e | OpenStax",
+          "url": "https://openstax.org/books/college-physics-2e/pages/25-3-the-law-of-refraction"
+        }
+      ]
+    }
+  },
+  {
+    "id": "or749",
+    "question_type": "order",
+    "primary_category": "science_technology",
+    "subtopic": "Gleich große Metallwürfel",
+    "tags": {
+      "topics": [
+        "Gleich große Metallwürfel",
+        "Dichte"
+      ],
+      "entities": [
+        "Aluminium",
+        "Eisen",
+        "Kupfer",
+        "Blei"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne gleich große massive Würfel aus diesen Metallen nach Gewicht – von leicht bis schwer.",
+    "items": [
+      "Kupfer",
+      "Blei",
+      "Aluminium",
+      "Eisen"
+    ],
+    "answer": [
+      "Aluminium",
+      "Eisen",
+      "Kupfer",
+      "Blei"
+    ],
+    "explanation": "Bei gleichem Volumen entscheidet die Dichte: ungefähr 2,70, 7,86, 8,92 und 11,3 Gramm pro Kubikzentimeter. Die Würfel sind massiv, also ohne Hohlräume.",
+    "subject_keys": [
+      "topic:science_technology:gleich-grosse-metallwurfel",
+      "fact:order:density"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "A Reference Tables - Physics | OpenStax",
+          "url": "https://openstax.org/books/physics/pages/a-reference-tables"
+        }
+      ]
+    }
   }
 ]

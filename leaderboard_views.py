@@ -1,5 +1,7 @@
 """Account currency peaks and finalized quiz victories; never change balances."""
 from collections import defaultdict
+import account_wallet
+from account_wallet import record_peak as record_currency_peak
 from datetime import date, datetime, timedelta
 
 
@@ -30,14 +32,9 @@ def currency_history(db, bonus=0):
     New exact peaks are captured at the credit/debit boundary as well.
     """
     movements = defaultdict(lambda: defaultdict(int))
-    for row in db.execute("""
-        SELECT user_id, COALESCE(completed_at, started_at) AS stamp, COALESCE(score, 0) AS delta
-        FROM attempts WHERE status = 'completed'
-        UNION ALL
-        SELECT user_id, purchased_at AS stamp, -price AS delta FROM shop_purchases
-    """):
+    for row in account_wallet.movements(db):
         movements[row['user_id']][row['stamp']] += int(row['delta'])
-    current, peaks = {}, {}
+    current, peaks = account_wallet.balances(db,bonus), {}
     for player in _players(db):
         user_id = player['id']
         balance = int(bonus)
@@ -45,20 +42,12 @@ def currency_history(db, bonus=0):
         for _, delta in sorted(movements[user_id].items()):
             balance += delta
             high = max(high, balance)
-        current[user_id] = max(0, balance)
         peaks[user_id] = max(high, current[user_id])
     return current, peaks
 
 
-def record_currency_peak(db, user_id, balance):
-    db.execute("""
-        INSERT INTO currency_peaks(user_id, peak, recorded_at) VALUES (?, ?, ?)
-        ON CONFLICT(user_id) DO UPDATE SET peak = excluded.peak, recorded_at = excluded.recorded_at
-        WHERE excluded.peak > currency_peaks.peak
-    """, (user_id, max(0, int(balance)), datetime.now().isoformat(timespec='seconds')))
-
-
 def init_currency_peaks(db, bonus=0):
+    account_wallet.init_wallet(db)
     db.execute("""
         CREATE TABLE IF NOT EXISTS currency_peaks (
             user_id INTEGER PRIMARY KEY REFERENCES users(id) ON DELETE CASCADE,

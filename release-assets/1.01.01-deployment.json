@@ -1,0 +1,234 @@
+{
+  "version": "1.01.01",
+  "base_tag": "v1.1-server.1",
+  "base_manifest_sha256": "17532a3d55a3da5cf37362bbbb7e64a73a6b907cd8cdb873f49d9da6b4500432",
+  "time_utc": "2026-11-02T07:52:27.707225+00:00",
+  "status": "ready_for_administrator_activation",
+  "local_tests": 42,
+  "server_targeted_tests": 9,
+  "wallet_recovery_checked": true,
+  "human_multiplayer_test": false,
+  "patchnotes_delivery": "chat_only",
+  "files": [
+    {
+      "path": "account_wallet.py",
+      "sha256": "214fd4002ec3c84fc5a480106ea046f8563211a5f847fe1b5145cac859f0cf79"
+    },
+    {
+      "path": "app.py",
+      "sha256": "cb70dcabe51eb1933daf65e7968f9ae85fdb6dfaabf0153adfc75bd10619b674"
+    },
+    {
+      "path": "blackjack.py",
+      "sha256": "beeb4703bc9343cfd7f5843b21dbccc2da4e478740dd82917f46bc2c9ceb82e5"
+    },
+    {
+      "path": "blackjack_clock.py",
+      "sha256": "305801e19624b940ba74873948d1f11d904662ab7f29bd618ed24ef67724f69a"
+    },
+    {
+      "path": "blackjack_game.py",
+      "sha256": "b80d02dbf71a232cefa76446a5c99d19792d872b65102cc7def1e0fb985d118c"
+    },
+    {
+      "path": "blackjack_store.py",
+      "sha256": "0343e9c86125ea54e44c2863f9ac17a1c09ba091fae7dc2204d4bfdbc720aa8a"
+    },
+    {
+      "path": "currency_intro.py",
+      "sha256": "e2905cbcb6161406be1a8b74d038843a7f07391f3f74001e56d5ebccaf59914b"
+    },
+    {
+      "path": "deploy/activate_update_1_01_01.py",
+      "sha256": "cd1575057587f92fe88db58cb0f5e0031300881f1c607446cd67ef2ce8c7047c"
+    },
+    {
+      "path": "deploy/check_wallet_recovery.py",
+      "sha256": "8593fe67ddd362c1314d8b025a0dbac69e8571b5ec3640c809fa4942ee377734"
+    },
+    {
+      "path": "deploy/question-refill-20261024/estimate.json",
+      "sha256": "3634d2ea321e19ccc790954b8b0cb4645888c19e50e24e028ab73db57bf58b76"
+    },
+    {
+      "path": "deploy/question-refill-20261024/import-plan.json",
+      "sha256": "5e617d23f28c600c3346d3a911f99e4d0f841b6606a168cbe646cb79fb66efe2"
+    },
+    {
+      "path": "deploy/question-refill-20261024/match.json",
+      "sha256": "57300aa904624444d2bef2c925c15c1a57394ed8e6875e07833b2cdb77f20047"
+    },
+    {
+      "path": "deploy/question-refill-20261024/multiple_choice.json",
+      "sha256": "477b9220160d513954c977c122eb01f8288deb42341f08e31fbcbbc838a0ffe0"
+    },
+    {
+      "path": "deploy/question-refill-20261024/order.json",
+      "sha256": "07bbad0970214f7d38e50dd829db0be7181a4d575ccdd585c49c024981bdd384"
+    },
+    {
+      "path": "deploy/question-refill-20261024/true_false.json",
+      "sha256": "473d71231ee722b7939e417d686d4721437f2fd3f2fdc0ee6abb7b5fcd2e2d4c"
+    },
+    {
+      "path": "deploy/validate_release.py",
+      "sha256": "0ceab1c9f27b0dfec21b1dda23509790a637eba8e31c26d9564e01a7fd24af49"
+    },
+    {
+      "path": "deploy/wallet_recovery_runtime.py",
+      "sha256": "2d767a478d1847e82018e9e19e34d69f8e4dfdcd77219663f3d0aff6f36fc082"
+    },
+    {
+      "path": "dice_table.py",
+      "sha256": "33248a928297935b1e1dfcc1d06e8beacd777c0b1f0d8ebf7ff0d11a208aeb80"
+    },
+    {
+      "path": "docs/BLACKJACK_ACCOUNT_WALLET.md",
+      "sha256": "b835fdae1a90b7085aa59fce5009accf391da0a3e6578e7973b5cb8755ab44ce"
+    },
+    {
+      "path": "fragen/multiplechoice/fragen.json",
+      "sha256": "2d22df2a47a68c43d66157f859bcf8737913462c2fd0e6c04bdffd79198c4af9"
+    },
+    {
+      "path": "fragen/paarebilden/fragen.json",
+      "sha256": "d279e14a586e54844fba987b22931a32cfe1f316b21c7b5f798472aa46752ca6"
+    },
+    {
+      "path": "fragen/reihenfolge/fragen.json",
+      "sha256": "f61ef8ea4dfdecc50a5232b17364eeff1d8d9298423ba4eed7686d5feee70332"
+    },
+    {
+      "path": "fragen/schaetzung/fragen.json",
+      "sha256": "b6573bedf9551cd73175e599cbd60d2df695283d50082c2e83e34b8b609be292"
+    },
+    {
+      "path": "fragen/wahroderunwahr/fragen.json",
+      "sha256": "4bb5ea2af69d0e239d9032d93726dd1006738664e114beaed47ecdc40f3c3dd6"
+    },
+    {
+      "path": "leaderboard_views.py",
+      "sha256": "47d112474dbe2ebfba37fba5bc497d0b6fa320d07b57ed03a66b44a0d0c2bce2"
+    },
+    {
+      "path": "nerd_mode.py",
+      "sha256": "1b7e35b6752971bafe8640d4b82f9b6f2cde582b2169adc593d3e0c33b39ab1a"
+    },
+    {
+      "path": "production_runtime.py",
+      "sha256": "439d365bf02bae8eebaf9cc99489cfcebf1868dc412a043407b97a4144d45092"
+    },
+    {
+      "path": "release-assets/1.01.01-question-import.json",
+      "sha256": "2da60a2888ed81ace08fb2d8d919ff3139840d8bc1b58237c40789d77f2a5497"
+    },
+    {
+      "path": "release-log.jsonl",
+      "sha256": "8c8d819434558b55ab42a7692bdfaf007b5f16f85b96a37bf9943e4c3bcab3d8"
+    },
+    {
+      "path": "release.json",
+      "sha256": "13822ff7aa278758b0ba49247a70635b6332891a1c062dbbbc7d43aa2a5f6529"
+    },
+    {
+      "path": "release_info.py",
+      "sha256": "2dcd9dae4076fe8711ce3bb661a9f2cede8a8e7a03dfa274c5833ff2416b4239"
+    },
+    {
+      "path": "static/blackjack-jeton-motion.js",
+      "sha256": "02e9a31616289242517a3776fda0a7c50409773b9ec72caf70ca9c9650d9bef1"
+    },
+    {
+      "path": "static/blackjack-round-view.js",
+      "sha256": "fcf112e568fa407182a98918ab80744fbdc8cd220d25010b734ab97d6a4605a5"
+    },
+    {
+      "path": "static/blackjack-seating.js",
+      "sha256": "0c1190995a4496d50a336866d0c319de61e34c4832ceba12e9d0dae0db4a4fcd"
+    },
+    {
+      "path": "static/blackjack-table.css",
+      "sha256": "ef309946fbb91029b395e0fdb23b2d71b4abbbe0ed684372743b3979aa9cbda1"
+    },
+    {
+      "path": "static/currency-guide.css",
+      "sha256": "35a657fc83f70f6d8fa54d41bde1c59268c63f59123efdcf503d566b653d3c01"
+    },
+    {
+      "path": "static/currency-intro.js",
+      "sha256": "f0142aa038300db2183de43f0db5ad8434d8e75878c95f1ef24d2eb78ec9fa81"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "sha256": "de456c32b11e3297a3b29ee75c91cf76110657025851311e64774581632222b4"
+    },
+    {
+      "path": "static/ui-conventions.css",
+      "sha256": "45f89009e6ca15fde6e7a7e9640569a4f7f21857a7e6a4f006585aac5aa5e728"
+    },
+    {
+      "path": "templates/_blackjack_table.html",
+      "sha256": "ba7e3c710c49440439f6d056575b914871e0409a2fcfc60b0304815d7f1996d9"
+    },
+    {
+      "path": "templates/_currency.html",
+      "sha256": "b04715ea9c3d7c8880d33a06762a545febe0b6ed23efcfe5ec58b192620b2e27"
+    },
+    {
+      "path": "templates/_currency_guide_content.html",
+      "sha256": "27f8a75fff4898c151067582ce72b67e157a2552aecb877d8a4e910ca71610e5"
+    },
+    {
+      "path": "templates/_date_version.html",
+      "sha256": "263250964ce9a5f7c8555869efee6017e54d0c1b627102b635bc8b20e3bdc5e0"
+    },
+    {
+      "path": "templates/_leaderboard.html",
+      "sha256": "2a3c0167dacf72cc300f0333ddb38c18e19e5dfec1ddf45db1620cf0225c334a"
+    },
+    {
+      "path": "templates/_player_identity.html",
+      "sha256": "30f78347ad602d6a460a3671bf6328d3c3bb0415024282468c71df0e23df57be"
+    },
+    {
+      "path": "templates/_profile_window.html",
+      "sha256": "202f66efd923450925386ea839e32cbe65e59de2e6400f080ea1c93dc32a1598"
+    },
+    {
+      "path": "templates/base.html",
+      "sha256": "10cff0036fad4426c8d68bec3e8eded8c34f71def94f01e05f88226fda428438"
+    },
+    {
+      "path": "templates/home.html",
+      "sha256": "6ca34212f6936550b671e7f99c6576b3b73637ad0a2d3d4c06cf6b36ddfdb7ad"
+    },
+    {
+      "path": "templates/ikuhe_guide.html",
+      "sha256": "bb772cee0f7b67b3011a1fca9089d9fe71bfad12a49fc6c75882bf09681557ea"
+    },
+    {
+      "path": "templates/shop.html",
+      "sha256": "dbc9af814b8afd247c3ae4d770ea506e34c5a08de2e12413ae4da9cfd47b8807"
+    },
+    {
+      "path": "templates/tabletop_connection.html",
+      "sha256": "5061987a7ad9f6381ab1e42faf752d8290204a32d08643bb0077cdba3c81250b"
+    },
+    {
+      "path": "tests/test_blackjack_account_wallet.py",
+      "sha256": "ed9cca9a74114e278c51ac0845be3b51ceecd703c74224845421e86049b1f119"
+    },
+    {
+      "path": "tests/test_currency_guide.py",
+      "sha256": "0ddb5550e79268e7cdcfa8bbb1b827c64ec6846438a5963dc8db4b24a159385a"
+    },
+    {
+      "path": "tests/test_profile_window.py",
+      "sha256": "52d37187bfdb86cfc324d53f5e717d3780b926a937a4dbce50672d4194b04051"
+    },
+    {
+      "path": "tests/test_release_refill_1_01_01.py",
+      "sha256": "4048aa3a94abec07af6e05ef343f23fe76bb355391a38a8c9cad55a50938f71c"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% from "_currency.html" import currency_unit %}
 {% from "_game_flyers.html" import blackjack_flyer, kniffel_flyer %}
 {% block title %}games collection · {{ game_name }}{% endblock %}
 {% block shell_class %}tabletop-connection-shell{% endblock %}
@@ -15,7 +16,8 @@
       <label><input type="checkbox" name="collection-mode" value="casino" data-collection-filter aria-controls="collection-groups collection-results"><span>casino</span></label>
       <label><input type="checkbox" name="collection-mode" value="singleplayer" data-collection-filter aria-controls="collection-groups collection-results"><span>singleplayer</span></label>
     </fieldset>
-    <p class="collection-mode-note" data-casino-note hidden>Black Jack spielt derzeit mit Test-iKühen.</p>
+    <p class="collection-mode-note" data-casino-note hidden>{% if config.get("BLACKJACK_CURRENCY") == "account-ikuehe" %}Black Jack spielt um die iKühe deines Spielerkontos. Du kannst deinen Einsatz verlieren.{% else %}Black Jack spielt derzeit mit Test-iKühen.{% endif %}</p>
+    <p><a class="currency-guide-link" href="{{ url_for('ikuhe_guide') }}">So funktioniert der Wettstreit um {{ currency_unit() }} →</a></p>
     <section class="tabletop-game-grid" id="collection-groups" data-collection-groups aria-label="Verfügbare Spielgruppen">
       <a class="tabletop-game-tile is-available" href="{{ url_for('card_tables') }}">
         <img src="{{ url_for('static', filename='tabletop-card-table-tile-v1.png') }}" alt="Standard-Spielkarten auf einem grünen Filztisch">

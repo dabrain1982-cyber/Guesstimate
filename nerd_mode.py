@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from account_wallet import balance as account_balance
+
 from lobby_overview import render_overview
 
 import hashlib
@@ -285,24 +287,9 @@ def _members(lobby_id: int, *, active_only: bool = True) -> list[dict[str, Any]]
     ).fetchall()
     members: list[dict[str, Any]] = []
     for row in rows:
-        spent = _db().execute(
-            "SELECT COALESCE(SUM(price), 0) FROM shop_purchases WHERE user_id = ?",
-            (row["user_id"],),
-        ).fetchone()[0]
-        earned = _db().execute(
-            """
-            SELECT COALESCE(SUM(score), 0) FROM attempts
-            WHERE user_id = ? AND status = 'completed'
-            """,
-            (row["user_id"],),
-        ).fetchone()[0]
         item = dict(row)
-        item["currency_balance"] = max(
-            0,
-            int(earned)
-            - int(spent)
-            + int(current_app.config.get("PREVIEW_CURRENCY_BONUS", 0)),
-        )
+        item["currency_balance"] = account_balance(_db(),row["user_id"],
+            current_app.config.get("PREVIEW_CURRENCY_BONUS",0))
         item["cosmetics"] = {
             "avatar_id": row["avatar_id"],
             "plaque_id": row["plaque_id"],

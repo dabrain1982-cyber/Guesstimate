@@ -1,20 +1,21 @@
 {% extends "base.html" %}
 {% from "_player_identity.html" import player_identity with context %}
+{% from "_currency.html" import currency_unit, currency_wallet with context %}
 {% block title %}Shop · {{ game_name }}{% endblock %}
 {% block shell_class %}shop-shell{% endblock %}
 {% block header %}{% endblock %}
 {% block content %}
   <nav class="shop-topbar" aria-label="Shop-Navigation">
     <a href="{{ url_for('home') }}"><span aria-hidden="true">←</span> Zurück zur Quiz-Arena</a>
-    <span class="shop-top-balance">{{ currency_balance|points }} <small>iKühe</small></span>
+    <span class="shop-top-balance">{{ currency_balance|points }} <small>{{ currency_unit() }}</small></span>
   </nav>
   <section class="shop-hero">
     <div>
       <p class="eyebrow">DEIN LOOK. DEIN RUHM.</p>
-      <h1>Der iKuh-Shop</h1>
-      <p>Hier kaufst du neue Avatare, Pulte, Hintergründe und Sprüche. Was dir gehört, rüstest du anschließend in deinem Profil aus.</p>
+      <h1>Der {{ currency_unit() }}-Shop</h1>
+      <p>Hier kaufst du neue Avatare, Pulte, Hintergründe und Sprüche. Was dir gehört, rüstest du anschließend in deinem Profil aus. <a class="currency-guide-link" href="{{ url_for('ikuhe_guide') }}">Der Wettstreit um {{ currency_unit() }} →</a></p>
     </div>
-    <div class="shop-wallet"><span>Dein Guthaben</span><strong>{{ currency_balance|points }}</strong><small>iKühe</small></div>
+    {{ currency_wallet(currency_balance) }}
   </section>
 
   <div class="shop-tabs" role="tablist" aria-label="Shop-Kategorien">
@@ -34,7 +35,7 @@
           {% if owned %}
             <button class="shop-state" type="button" disabled>gehört dir · im profil ausrüsten</button>
           {% elif item.price is not none %}
-            <form method="post" action="{{ url_for('shop_buy', item_type='avatar', item_id=item.id) }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit">{{ item.price|points }} ikühe</button></form>
+            <form method="post" action="{{ url_for('shop_buy', item_type='avatar', item_id=item.id) }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit">{{ item.price|points }} {{ currency_unit() }}</button></form>
           {% else %}
             <button class="shop-price-pending" type="button" disabled>preis folgt</button>
           {% endif %}
@@ -54,7 +55,7 @@
           {% if owned %}
             <button class="shop-state" type="button" disabled>gehört dir · im profil ausrüsten</button>
           {% else %}
-            <form method="post" action="{{ url_for('shop_buy', item_type='background', item_id=item.id) }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit">{{ item.price|points }} ikühe</button></form>
+            <form method="post" action="{{ url_for('shop_buy', item_type='background', item_id=item.id) }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit">{{ item.price|points }} {{ currency_unit() }}</button></form>
           {% endif %}
         </article>
       {% endfor %}
@@ -72,7 +73,7 @@
           {% if owned %}
             <button class="shop-state" type="button" disabled>gehört dir · im profil ausrüsten</button>
           {% elif item.price is not none %}
-            <form method="post" action="{{ url_for('shop_buy', item_type='plaque', item_id=item.id) }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit">{{ item.price|points }} ikühe</button></form>
+            <form method="post" action="{{ url_for('shop_buy', item_type='plaque', item_id=item.id) }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit">{{ item.price|points }} {{ currency_unit() }}</button></form>
           {% else %}
             <button class="shop-price-pending" type="button" disabled>preis folgt</button>
           {% endif %}
@@ -92,7 +93,7 @@
           {% if owned %}
             <button class="shop-state" type="button" disabled>gehört dir · im profil ausrüsten</button>
           {% else %}
-            <form method="post" action="{{ url_for('shop_buy', item_type='phrase', item_id=item.id) }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit">{{ item.price|points }} ikühe</button></form>
+            <form method="post" action="{{ url_for('shop_buy', item_type='phrase', item_id=item.id) }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit">{{ item.price|points }} {{ currency_unit() }}</button></form>
           {% endif %}
         </article>
       {% endfor %}

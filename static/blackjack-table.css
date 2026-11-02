@@ -83,16 +83,21 @@
 #stormseed-blackjack .bj-bet-input{width:78px;max-width:100%;border:1px solid #98794688;background:#1c130d;color:#efd8af;border-radius:4px;padding:5px;font:inherit;font-size:14px;text-align:center;justify-self:center}
 #stormseed-blackjack .bj-bet-choice{display:flex;flex:0 0 120px;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-size:11px;line-height:1.15;text-align:center;color:#dec59e}
 #stormseed-blackjack .bj-insurance-choice{display:flex;align-items:center;justify-content:center;gap:7px;flex-wrap:wrap;font-size:12px;color:#d6bd96}
-#stormseed-blackjack .bj-overlay{position:absolute;inset:0;z-index:50;display:flex;align-items:flex-start;justify-content:center;padding:30px 18px;background:#100b07df;backdrop-filter:blur(4px);overflow:auto;overscroll-behavior:contain}
-#stormseed-blackjack .bj-rules-sheet{width:min(100%,640px);padding:22px;border:1px solid #80653f;border-radius:8px;background:#2c2015;color:#ead7b5;box-shadow:0 20px 70px #0008}
+#stormseed-blackjack .bj-overlay{position:absolute;inset:0;z-index:50;display:flex;align-items:flex-start;justify-content:center;padding:24px 18px;background:transparent;overflow:auto;overscroll-behavior:contain}
+#stormseed-blackjack .bj-rules-sheet{width:min(100%,1000px);padding:28px;border:1px solid #80653f;border-radius:8px;background:#2c2015;color:#ead7b5;box-shadow:0 20px 70px #0008}
 #stormseed-blackjack .bj-sheet-head{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:20px}
-#stormseed-blackjack .bj-rules-sheet h3{font:500 24px/1.2 Georgia,serif;margin:5px 0 0}
-#stormseed-blackjack .bj-rules-sheet dl{margin:0;font-size:12px}
-#stormseed-blackjack .bj-rules-sheet dl>div{display:grid;grid-template-columns:105px 1fr;gap:12px;border-top:1px solid #b7985a33;padding:9px 0}
-#stormseed-blackjack .bj-rules-sheet dt{font-weight:500;color:#edd0a2}
-#stormseed-blackjack .bj-rules-sheet dd{margin:0;color:#c8b493}
-#stormseed-blackjack .bj-rules-sheet p{font-size:11px;color:#b29b7b;margin:15px 0 0}
+#stormseed-blackjack .bj-sheet-head [data-action="close-rules"]{min-width:44px;min-height:44px;font-size:22px!important}
+#stormseed-blackjack .bj-rules-sheet h3{font:500 32px/1.2 Georgia,serif;margin:5px 0 0}
+#stormseed-blackjack .bj-rules-sheet dl{margin:0;font-size:18px;line-height:1.55}
+#stormseed-blackjack .bj-rules-sheet dl>div{display:grid;grid-template-columns:128px 1fr;gap:20px;border-top:1px solid #b7985a33;padding:12px 0}
+#stormseed-blackjack .bj-rules-sheet dt{font-weight:600;color:#edd0a2}
+#stormseed-blackjack .bj-rules-sheet dd{margin:0;color:#ead7b5}
+#stormseed-blackjack .bj-rules-sheet p{font-size:16px;line-height:1.6;color:#dac4a2;margin:20px 0 0}
+#stormseed-blackjack .bj-risk-sheet{max-width:620px}
+#stormseed-blackjack .bj-risk-sheet h3:focus{outline:none}
+#stormseed-blackjack .bj-risk-sheet p{font-size:18px;color:#ead7b5}
+#stormseed-blackjack .bj-risk-actions{display:flex;justify-content:flex-end;gap:12px;flex-wrap:wrap;margin-top:24px}
 #stormseed-blackjack .bj-back-form{margin:0;padding:0}
 #stormseed-blackjack .bj-back-link{font-size:12px!important;color:#ead2a8;text-decoration:none;background:none;border:0;padding:0}
 #stormseed-blackjack .bj-back-link:hover{text-decoration:underline}
-@media(max-width:900px){.blackjack-page{display:block;background-image:none}#stormseed-blackjack{width:100%;height:auto;min-height:100dvh;overflow:visible}#stormseed-blackjack .bj-room{height:auto;min-height:100dvh}#stormseed-blackjack .bj-scene{position:relative;height:auto;aspect-ratio:1672/941}#stormseed-blackjack .bj-scene-art{object-fit:contain;mask-image:none}#stormseed-blackjack .bj-room-head{left:14px;right:14px;top:12px}#stormseed-blackjack .bj-room-head h2{font-size:18px}#stormseed-blackjack .bj-seats{position:relative;inset:auto;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;padding:12px 10px 8px;gap:10px}#stormseed-blackjack .bj-seat[data-seat][data-current]{--player-portrait-size:clamp(8.5px,1.2vw,10px);position:relative;left:auto;right:auto;top:auto;bottom:auto;transform:none}#stormseed-blackjack .bj-console{position:relative;padding:0 12px 12px}#stormseed-blackjack[data-seated="true"] .bj-console{padding-right:12px;padding-bottom:100px}#stormseed-blackjack .bj-status{flex-wrap:wrap;gap:2px 6px}#stormseed-blackjack .bj-bet-choice{font-size:11px}#stormseed-blackjack .bj-overlay{position:fixed;padding:12px 8px}#stormseed-blackjack .bj-rules-sheet{padding:16px}#stormseed-blackjack .bj-rules-sheet dl>div{grid-template-columns:80px 1fr;gap:8px}}
+@media(max-width:900px){.blackjack-page{display:block;background-image:none}#stormseed-blackjack{width:100%;height:auto;min-height:100dvh;overflow:visible}#stormseed-blackjack .bj-room{height:auto;min-height:100dvh}#stormseed-blackjack .bj-scene{position:relative;height:auto;aspect-ratio:1672/941}#stormseed-blackjack .bj-scene-art{object-fit:contain;mask-image:none}#stormseed-blackjack .bj-room-head{left:14px;right:14px;top:12px}#stormseed-blackjack .bj-room-head h2{font-size:18px}#stormseed-blackjack .bj-seats{position:relative;inset:auto;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;padding:12px 10px 8px;gap:10px}#stormseed-blackjack .bj-seat[data-seat][data-current]{--player-portrait-size:clamp(8.5px,1.2vw,10px);position:relative;left:auto;right:auto;top:auto;bottom:auto;transform:none}#stormseed-blackjack .bj-console{position:relative;padding:0 12px 12px}#stormseed-blackjack[data-seated="true"] .bj-console{padding-right:12px;padding-bottom:100px}#stormseed-blackjack .bj-status{flex-wrap:wrap;gap:2px 6px}#stormseed-blackjack .bj-bet-choice{font-size:11px}#stormseed-blackjack .bj-overlay{position:fixed;padding:12px 8px}#stormseed-blackjack .bj-rules-sheet{padding:16px}#stormseed-blackjack .bj-rules-sheet dl>div{grid-template-columns:1fr;gap:4px}}

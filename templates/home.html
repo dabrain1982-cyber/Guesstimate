@@ -1,8 +1,10 @@
 {% extends "base.html" %}
+{% from "_currency.html" import currency_unit %}
 {% from "_profile_window.html" import profile_window with context %}
 {% from "_game_flyers.html" import perfect_flyer_copy, blackjack_flyer_copy, conquest_flyer_copy %}
 {% block shell_class %}home-shell home-variant-a{% endblock %}
 {% block header %}{% endblock %}
+{% block extra_head %}{% if currency_intro_pending %}<link rel="stylesheet" href="{{ url_for('static', filename='currency-guide.css', v='2') }}">{% endif %}{% endblock %}
 {% block content %}
   <div class="variant-a-stage">
     {{ profile_window(player_cosmetics, trophies) }}
@@ -12,6 +14,7 @@
         <h1><span class="variant-a-title-brand"><small>stormseed´s</small><span>guesstimate</span></span></h1>
         <strong>fünf fragen. ein versuch. jeden tag.</strong>
         <p>Schätzen, kombinieren und mit gefährlichem Halbwissen ganz nach oben spielen.</p>
+        <a class="currency-guide-link" href="{{ url_for('ikuhe_guide') }}">Neu: Der Wettstreit um {{ currency_unit() }} →</a>
       </header>
 
       <div class="variant-a-slides">
@@ -84,6 +87,14 @@
     <button type="submit">abmelden</button>
   </form>
 
+  {% if currency_intro_pending %}
+    <dialog class="currency-intro-dialog" data-currency-intro data-claim-url="{{ url_for('claim_currency_intro') }}" data-csrf="{{ csrf_token() }}" aria-labelledby="currency-intro-title">
+      <div class="currency-intro-controls"><span>Neu in Guesstimate</span><button type="button" data-intro-close aria-label="Einführung schließen">×</button></div>
+      {% with intro_popup=true %}{% include "_currency_guide_content.html" %}{% endwith %}
+      <div class="currency-intro-ack"><button type="button" class="primary-button" data-intro-close>Verstanden</button></div>
+    </dialog>
+  {% endif %}
+
   {% if show_catchup_prompt %}
     <dialog class="catchup-dialog" data-catchup-dialog aria-labelledby="catchup-title">
       <form method="post" action="{{ url_for('choose_week_replay') }}" class="catchup-panel">
@@ -104,10 +115,5 @@
 
 {% block scripts %}
   <script src="{{ url_for('static', filename='home-variant-a.js', v='3') }}" defer></script>
-  <script>
-    (() => {
-      const catchup = document.querySelector('[data-catchup-dialog]');
-      catchup?.showModal();
-    })();
-  </script>
+  <script src="{{ url_for('static', filename='currency-intro.js', v='1') }}" defer></script>
 {% endblock %}

@@ -1,0 +1,4 @@
+{% macro currency_unit() -%}<bdi class="currency-unit">iKühe</bdi>{%- endmacro %}
+{% macro currency_wallet(balance) -%}
+<div class="shop-wallet"><span>Dein Guthaben</span><strong>{{ balance|points }}</strong><small>{{ currency_unit() }}</small></div>
+{%- endmacro %}

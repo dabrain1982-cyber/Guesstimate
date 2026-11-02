@@ -8700,5 +8700,1775 @@
         }
       ]
     }
+  },
+  {
+    "id": "es700",
+    "question_type": "estimate",
+    "primary_category": "gaming",
+    "subtopic": "Ein Spiel auf kleinstem Speicher",
+    "tags": {
+      "topics": [
+        "Ein Spiel auf kleinstem Speicher"
+      ],
+      "entities": [
+        "Super Mario Bros. (NES)"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Kilobyte standen für Programm und Grafik des ursprünglichen NES-Spiels „Super Mario Bros.“ zusammen zur Verfügung?",
+    "answer": 40,
+    "unit": "Kilobyte",
+    "explanation": "Nintendo nennt für Programm und Grafik zusammen nur 40 Kilobyte. Der knappe Speicher beeinflusste sogar die Gestaltung der Figuren. Gemeint ist das ursprüngliche NES-Spiel, nicht eine spätere Neuauflage.",
+    "subject_keys": [
+      "topic:gaming:ein-spiel-auf-kleinstem-speicher",
+      "fact:estimate:mario"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Iwata Asks - New Super Mario Bros: Volume 1 - Page 3",
+          "url": "https://iwataasks.nintendo.com/interviews/wii/nsmb/0/2/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es701",
+    "question_type": "estimate",
+    "primary_category": "gaming",
+    "subtopic": "Minecraft nach unten und oben",
+    "tags": {
+      "topics": [
+        "Minecraft nach unten und oben"
+      ],
+      "entities": [
+        "Minecraft: Java Edition 1.18"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Über wie viele Blockschichten erstreckt sich die Oberwelt seit „Minecraft: Java Edition 1.18“ insgesamt?",
+    "answer": 384,
+    "unit": "Blockschichten",
+    "explanation": "Version 1.18 erweiterte die Oberwelt nach oben und unten auf insgesamt 384 Blockschichten. Der Bereich beginnt bei Höhe −64 und reicht bis zur obersten bebaubaren Schicht 319. Gefragt ist die Gesamthöhe, nicht nur die Höhe über dem Meer.",
+    "subject_keys": [
+      "topic:gaming:minecraft-nach-unten-und-oben",
+      "fact:estimate:minecraft"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Minecraft: Java Edition - 1.18 – Minecraft Feedback",
+          "url": "https://feedback.minecraft.net/hc/en-us/articles/4415128577293-Minecraft-Java-Edition-1-18"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es702",
+    "question_type": "estimate",
+    "primary_category": "gaming",
+    "subtopic": "Stellungen des Zauberwürfels",
+    "tags": {
+      "topics": [
+        "Stellungen des Zauberwürfels"
+      ],
+      "entities": [
+        "3×3-Zauberwürfel"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Trillionen erreichbare Stellungen hat ein klassischer 3×3-Zauberwürfel ungefähr?",
+    "answer": 43,
+    "unit": "Trillionen (10^18)",
+    "explanation": "Der Hersteller nennt über 43 englische „quintillion“ mögliche Stellungen. Das entspricht über 43 deutschen Trillionen; als gerundeter Schätzwert gilt 43. Gezählt werden erreichbare Stellungen des gewöhnlichen 3×3-Würfels.",
+    "subject_keys": [
+      "topic:gaming:stellungen-des-zauberwurfels",
+      "fact:estimate:rubik"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "The Official Rubik’s Cube | Rubik's Sensory Cube",
+          "url": "https://www.rubiks.com/rubiks-sensory-cube"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es703",
+    "question_type": "estimate",
+    "primary_category": "music",
+    "subtopic": "Ein riesiges Konzertinstrument",
+    "tags": {
+      "topics": [
+        "Ein riesiges Konzertinstrument"
+      ],
+      "entities": [
+        "Orgel der Royal Albert Hall"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Pfeifen besitzt die große Orgel der Londoner Royal Albert Hall?",
+    "answer": 9999,
+    "unit": "Pfeifen",
+    "explanation": "Die Royal Albert Hall beschreibt ihre große Konzertorgel mit genau 9.999 Pfeifen. Die Angabe gilt für dieses konkrete Instrument im Londoner Konzerthaus.",
+    "subject_keys": [
+      "topic:music:ein-riesiges-konzertinstrument",
+      "fact:estimate:organ"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Grand Organ Celebration, 15 May 2018 – Royal Albert Hall Archives",
+          "url": "https://catalogue.royalalberthall.com/Record.aspx?id=PERF15512&pos=4&src=CalmView.Performance"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es704",
+    "question_type": "estimate",
+    "primary_category": "music",
+    "subtopic": "Das Gewicht eines Konzertflügels",
+    "tags": {
+      "topics": [
+        "Das Gewicht eines Konzertflügels"
+      ],
+      "entities": [
+        "Steinway D-274"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Kilogramm wiegt der Konzertflügel Steinway D-274 laut europäischer Herstellerangabe?",
+    "answer": 500,
+    "unit": "Kilogramm",
+    "explanation": "Der europäische Herstellerauftritt gibt für den 274 Zentimeter langen D-274 ein Gewicht von 500 Kilogramm an. Der Wert bezieht sich auf dieses konkrete Konzertflügelmodell, nicht auf Klaviere allgemein.",
+    "subject_keys": [
+      "topic:music:das-gewicht-eines-konzertflugels",
+      "fact:estimate:steinway"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Steinway Grand Piano D-274 - The Concert Piano - Details",
+          "url": "https://eu.steinway.com/en/dealer/saudi-arabia/pianos/steinway/grand-pianos/d-274/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es705",
+    "question_type": "estimate",
+    "primary_category": "music",
+    "subtopic": "Mehr Saiten als Tasten",
+    "tags": {
+      "topics": [
+        "Mehr Saiten als Tasten"
+      ],
+      "entities": [
+        "Akustisches Klavier"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Saiten besitzt ein gewöhnliches akustisches Klavier laut Yamaha ungefähr?",
+    "answer": 230,
+    "unit": "Saiten",
+    "explanation": "Yamaha nennt üblicherweise rund 230 Saiten, je nach Modell. Im höheren Tonbereich werden mehrere Saiten je Taste angeschlagen. Gefragt ist deshalb die Saitenzahl und nicht die Zahl der Tasten.",
+    "subject_keys": [
+      "topic:music:mehr-saiten-als-tasten",
+      "fact:estimate:piano-strings"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Design of the Strings Enriches the Sound - Yamaha - United States",
+          "url": "https://usa.yamaha.com/products/contents/musical_instrument_guide/piano/mechanism/mechanism004.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es706",
+    "question_type": "estimate",
+    "primary_category": "music",
+    "subtopic": "Die akustische Weiße Haut",
+    "tags": {
+      "topics": [
+        "Die akustische Weiße Haut"
+      ],
+      "entities": [
+        "Elbphilharmonie"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Aus rund wie vielen einzeln gefrästen Paneelen besteht die „Weiße Haut“ im Großen Saal der Elbphilharmonie?",
+    "answer": 10000,
+    "unit": "Paneele",
+    "explanation": "Die Elbphilharmonie nennt über 10.000 individuell gefräste Paneele aus Gipsfaserbeton. Ihre unterschiedlichen Vertiefungen helfen, den Schall gezielt zu reflektieren und zu streuen. 10.000 ist hier der gerundete Referenzwert.",
+    "subject_keys": [
+      "topic:music:die-akustische-weisse-haut",
+      "fact:estimate:elb"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Die Akustik in der Elbphilharmonie - Elbphilharmonie Mediathek",
+          "url": "https://www.elbphilharmonie.de/de/mediathek/die-akustik-in-der-elbphilharmonie/221"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es707",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "Ein Monster mit Millionen Haaren",
+    "tags": {
+      "topics": [
+        "Ein Monster mit Millionen Haaren"
+      ],
+      "entities": [
+        "Sulley (Die Monster AG)"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele einzelne computergenerierte Haare bedecken Sulley im Film „Die Monster AG“ von 2001?",
+    "answer": 2320413,
+    "unit": "Haare",
+    "explanation": "Sulley wurde mit 2.320.413 einzelnen Haaren ausgestattet. Für ihre Bewegung entwickelte Pixar eine besondere dynamische Simulation. Gezählt sind die digital erzeugten Haare des Filmcharakters, keine realen Fellhaare.",
+    "subject_keys": [
+      "topic:media_entertainment:ein-monster-mit-millionen-haaren",
+      "fact:estimate:sully"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "MONSTERS, INC. | AFI Silver Theatre and Cultural Center",
+          "url": "https://silver.afi.com/movies/detail/0100005604/"
+        },
+        {
+          "title": "Monster Mash | Computer Graphics World",
+          "url": "https://www.cgw.com/Publications/CGW/2001/Volume-24-Issue-10-October-2001-/Monster-Mash.aspx"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es708",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "Hogwarts als Handarbeit",
+    "tags": {
+      "topics": [
+        "Hogwarts als Handarbeit"
+      ],
+      "entities": [
+        "Hogwarts-Modellburg"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Künstler und weitere Teammitglieder bauten die erste Hogwarts-Modellburg für „Harry Potter und der Stein der Weisen“?",
+    "answer": 86,
+    "unit": "Personen",
+    "explanation": "Warner Bros. nennt ein Team aus 86 Künstlern und weiteren Mitarbeitern für die erste Modellfassung. Aufnahmen des detaillierten Modells wurden mit digitalen Effekten zu den Ansichten der Filmschule verbunden.",
+    "subject_keys": [
+      "topic:media_entertainment:hogwarts-als-handarbeit",
+      "fact:estimate:hogwarts"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Warner Bros. Studio Tour London – Press Pack: Hogwarts Castle Model",
+          "url": "https://www.wbstudiotour.co.uk/wp-content/uploads/2022/06/WBSTL-Press-Pack.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es709",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "Die Dächer des Opernhauses",
+    "tags": {
+      "topics": [
+        "Die Dächer des Opernhauses"
+      ],
+      "entities": [
+        "Sydney Opera House"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele einzelne Fliesen bedecken die berühmten Dachschalen des Sydney Opera House insgesamt?",
+    "answer": 1056006,
+    "unit": "Fliesen",
+    "explanation": "Das Opernhaus nennt insgesamt 1.056.006 Dachfliesen. Die keramische Oberfläche entstand aus eigens entwickelten Fliesen, die zu größeren, an die Dachkrümmung angepassten Elementen zusammengesetzt wurden.",
+    "subject_keys": [
+      "topic:media_entertainment:die-dacher-des-opernhauses",
+      "fact:estimate:sydney"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "The spherical solution | Sydney Opera House",
+          "url": "https://www.sydneyoperahouse.com/our-story/the-spherical-solution"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es710",
+    "question_type": "estimate",
+    "primary_category": "sport",
+    "subtopic": "Ein extrem schneller Federball",
+    "tags": {
+      "topics": [
+        "Ein extrem schneller Federball"
+      ],
+      "entities": [
+        "Badminton-Rekordversuch 2023"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie schnell war der Federball beim Guinness-Männerrekord von 2023 direkt nach dem Schlag?",
+    "answer": 565,
+    "unit": "Kilometer pro Stunde",
+    "explanation": "Die Hochgeschwindigkeitsmessung ergab unmittelbar nach dem Schlag 565 km/h. Der Versuch fand 2023 bei Yonex in Japan statt. Der Wert bezeichnet die Anfangsgeschwindigkeit im Test, nicht die Geschwindigkeit während eines ganzen Ballwechsels.",
+    "subject_keys": [
+      "topic:sport:ein-extrem-schneller-federball",
+      "fact:estimate:badminton"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Fastest badminton hit (male) | Guinness World Records",
+          "url": "https://www.guinnessworldrecords.com/world-records/92507-fastest-badminton-hit-male"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es711",
+    "question_type": "estimate",
+    "primary_category": "sport",
+    "subtopic": "Vertiefungen auf dem Golfball",
+    "tags": {
+      "topics": [
+        "Vertiefungen auf dem Golfball"
+      ],
+      "entities": [
+        "Titleist Pro V1 (2025)"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele kleine Vertiefungen hat der Golfball Titleist Pro V1 in der Modellfassung von 2025?",
+    "answer": 388,
+    "unit": "Vertiefungen",
+    "explanation": "Der Pro V1 des Modelljahrs 2025 besitzt 388 Vertiefungen, die sogenannten Dimples. Solche Vertiefungen beeinflussen die Flugbahn. Andere Golfballmodelle können eine andere Anzahl haben.",
+    "subject_keys": [
+      "topic:sport:vertiefungen-auf-dem-golfball",
+      "fact:estimate:golf"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Titleist Introduces New Pro V1 and Pro V1x Golf Balls",
+          "url": "https://www.titleist.com/teamtitleist/b/tourblog/posts/titleist-introduces-new-2025-pro-v1-and-pro-v1x-golf-balls"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es712",
+    "question_type": "estimate",
+    "primary_category": "sport",
+    "subtopic": "Ein leichtes Boot für eine große Mannschaft",
+    "tags": {
+      "topics": [
+        "Ein leichtes Boot für eine große Mannschaft"
+      ],
+      "entities": [
+        "Achter-Ruderboot"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Kilogramm muss ein Achter-Ruderboot ohne Mannschaft und Riemen nach dem World-Rowing-Regelwerk von 2025 mindestens wiegen?",
+    "answer": 96,
+    "unit": "Kilogramm",
+    "explanation": "Das Regelwerk legt für den Achter 96 Kilogramm Mindestgewicht fest. Wesentliche fest eingebaute Teile wie Ausleger, Sitze und Stemmbretter zählen mit; Mannschaft und Riemen zählen nicht zum hier gefragten Bootsgewicht.",
+    "subject_keys": [
+      "topic:sport:ein-leichtes-boot-fur-eine-grosse-mannschaft",
+      "fact:estimate:rowing"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "2025 World Rowing Rules of Racing – Appendix R3: Weight of Boats",
+          "url": "https://worldrowing.com/wp-content/uploads/2025/04/2025-World-Rowing-Rules-of-Racing-Overall-Classic-rowing-Related-byelaws_March2025.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es713",
+    "question_type": "estimate",
+    "primary_category": "sport",
+    "subtopic": "Ein Tennismatch über drei Tage",
+    "tags": {
+      "topics": [
+        "Ein Tennismatch über drei Tage"
+      ],
+      "entities": [
+        "Wimbledon-Rekordmatch 2010"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele reine Spielminuten dauerte das längste Tennismatch von Wimbledon 2010, das über drei Tage verteilt ausgetragen wurde?",
+    "answer": 665,
+    "unit": "Minuten",
+    "explanation": "Das Erstrundenspiel dauerte elf Stunden und fünf Minuten: 11 × 60 + 5 = 665 Minuten. Nächtliche Unterbrechungen zählen nicht als Spielzeit. Der letzte Satz allein endete erst bei 70:68 Spielen.",
+    "subject_keys": [
+      "topic:sport:ein-tennismatch-uber-drei-tage",
+      "fact:estimate:tennis"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "History - The Championships, Wimbledon",
+          "url": "https://www.wimbledon.com/en_GB/about/history"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es714",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Rechnen mit Elektronenröhren",
+    "tags": {
+      "topics": [
+        "Rechnen mit Elektronenröhren"
+      ],
+      "entities": [
+        "ENIAC"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Elektronenröhren steckten im frühen Großrechner ENIAC?",
+    "answer": 17468,
+    "unit": "Elektronenröhren",
+    "explanation": "Die Universität Michigan nennt 17.468 Elektronenröhren. Der ENIAC füllte einen großen Raum und arbeitete noch lange vor der Verbreitung moderner Mikroprozessoren.",
+    "subject_keys": [
+      "topic:witnesses_of_time:rechnen-mit-elektronenrohren",
+      "fact:estimate:eniac"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "ENIAC Display | Computer Science & Engineering at Michigan",
+          "url": "https://cse.engin.umich.edu/about/history/eniac-display/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es715",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Bahnhof auf mehreren Ebenen",
+    "tags": {
+      "topics": [
+        "Bahnhof auf mehreren Ebenen"
+      ],
+      "entities": [
+        "Grand Central Terminal"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Bahnsteige nennt die New Yorker Verkehrsbehörde MTA für das Metro-North-Terminal von Grand Central?",
+    "answer": 44,
+    "unit": "Bahnsteige",
+    "explanation": "Die MTA nennt 44 Bahnsteige und 67 Betriebsgleise in der zweistöckigen Anlage. Die Aufgabe meint Grand Central Terminal von Metro-North, nicht den später ergänzten Bahnhof Grand Central Madison.",
+    "subject_keys": [
+      "topic:witnesses_of_time:bahnhof-auf-mehreren-ebenen",
+      "fact:estimate:central"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "20-Year Needs Assessment – Metro-North Railroad: Grand Central Terminal and Grand Central Artery",
+          "url": "https://future.mta.info/documents/20-YearNeedsAssessment_Metro-NorthRailroad.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es716",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Die Luftbrücke nach Berlin",
+    "tags": {
+      "topics": [
+        "Die Luftbrücke nach Berlin"
+      ],
+      "entities": [
+        "Berliner Luftbrücke"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Versorgungsflüge führten die Alliierten während der Berliner Luftbrücke 1948/49 laut US-Air-Force-Dokumentation durch?",
+    "answer": 277264,
+    "unit": "Flüge",
+    "explanation": "Die US Air Force nennt insgesamt 277.264 Flüge. Die Versorgung lief nach dem Ende der Blockade noch weiter und wurde am 30. September 1949 offiziell beendet. Gefragt sind die Flüge aller beteiligten Alliierten zusammen.",
+    "subject_keys": [
+      "topic:witnesses_of_time:die-luftbrucke-nach-berlin",
+      "fact:estimate:airlift"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "September 29, 2016 – This Week in Air Force History",
+          "url": "https://www.af.mil/Portals/1/documents/cct/2016/CCT_29_SEPT_2016.pdf?ver=2016-09-29-172112-287"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es717",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Ein Luftschiff als fliegendes Hotel",
+    "tags": {
+      "topics": [
+        "Ein Luftschiff als fliegendes Hotel"
+      ],
+      "entities": [
+        "Luftschiff LZ 129 Hindenburg"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Meter lang war das Luftschiff LZ 129 „Hindenburg“?",
+    "answer": 245,
+    "unit": "Meter",
+    "explanation": "Das Zeppelin Museum gibt die Länge der Hindenburg mit 245 Metern an. Das Luftschiff verfügte über Passagierräume und konnte transatlantische Reisen durchführen.",
+    "subject_keys": [
+      "topic:witnesses_of_time:ein-luftschiff-als-fliegendes-hotel",
+      "fact:estimate:zeppelin"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Part I: LZ 129 “Hindenburg” - The largest zeppelin in the world in transatlantic traffic - Zeppelin Museum",
+          "url": "https://www.zeppelin-museum.de/en/digital-offers/part-l-lz-129-hindenburgl"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es718",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Millionen Verbindungen aus Metall",
+    "tags": {
+      "topics": [
+        "Millionen Verbindungen aus Metall"
+      ],
+      "entities": [
+        "Eiffelturm"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Nieten wurden zum Zusammenfügen des Eiffelturms verwendet?",
+    "answer": 2500000,
+    "unit": "Nieten",
+    "explanation": "Der Betreiber nennt 2,5 Millionen Nieten, die die Metallteile des Turms zusammenhalten. Sie wurden mit aufwendiger Handarbeit erhitzt, eingesetzt und verschlossen.",
+    "subject_keys": [
+      "topic:witnesses_of_time:millionen-verbindungen-aus-metall",
+      "fact:estimate:eiffel"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Eiffel Tower information : facts, height in feet, weight, ...",
+          "url": "https://www.toureiffel.paris/en/the-monument/key-figures"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es719",
+    "question_type": "estimate",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Das Gewicht von Big Ben",
+    "tags": {
+      "topics": [
+        "Das Gewicht von Big Ben"
+      ],
+      "entities": [
+        "Glocke Big Ben"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Tonnen wiegt die große Londoner Stundenglocke Big Ben laut britischem Parlament ungefähr?",
+    "answer": 13.7,
+    "unit": "Tonnen",
+    "explanation": "Die große Stundenglocke wiegt rund 13,7 Tonnen. Sie hängt fest und wird von außen mit einem Hammer angeschlagen. Gemeint ist die Glocke selbst, nicht der Turm oder das gesamte Uhrwerk.",
+    "subject_keys": [
+      "topic:witnesses_of_time:das-gewicht-von-big-ben",
+      "fact:estimate:bell"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "The Great Bell and the quarter bells - UK Parliament",
+          "url": "https://www.parliament.uk/about/living-heritage/building/palace/big-ben/facts-figures/great-bell/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es720",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Eine außergewöhnlich lange Küste",
+    "tags": {
+      "topics": [
+        "Eine außergewöhnlich lange Küste"
+      ],
+      "entities": [
+        "Küstenlinie Kanadas"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Kilometer Küstenlinie nennt Statistics Canada einschließlich der Inselküsten für Kanada?",
+    "answer": 243042,
+    "unit": "Kilometer",
+    "explanation": "Statistics Canada nennt 243.042 Kilometer einschließlich der Küsten vorgelagerter Inseln. Die Länge einer Küste hängt auch vom Messmaßstab und der Zählweise ab; deshalb ist die hier verwendete amtliche Angabe ausdrücklich festgelegt.",
+    "subject_keys": [
+      "topic:geography_world:eine-aussergewohnlich-lange-kuste",
+      "fact:estimate:canada"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Geography",
+          "url": "https://www150.statcan.gc.ca/n1/pub/11-402-x/2012000/chap/geo/geo-eng.htm"
+        },
+        {
+          "title": "Canada Year Book 2012 – Geography",
+          "url": "https://www150.statcan.gc.ca/n1/pub/11-402-x/2012000/pdf/geography-geographie-eng.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es721",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Das große Süßwasserlager",
+    "tags": {
+      "topics": [
+        "Das große Süßwasserlager"
+      ],
+      "entities": [
+        "Antarktischer Eisschild"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viel Prozent des weltweiten Süßwassers enthält der antarktische Eisschild laut British Antarctic Survey ungefähr?",
+    "answer": 60,
+    "unit": "Prozent",
+    "explanation": "Der British Antarctic Survey beziffert den Anteil auf etwa 60 Prozent des weltweiten Süßwassers. Gemeint ist gefrorenes Süßwasser im Eisschild, nicht ein Anteil am gesamten Wasser der Erde.",
+    "subject_keys": [
+      "topic:geography_world:das-grosse-susswasserlager",
+      "fact:estimate:antarctic"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Antarctica - British Antarctic Survey",
+          "url": "https://www.bas.ac.uk/about/where-we-work/antarctica/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es722",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Ein Loch tief in die Erdkruste",
+    "tags": {
+      "topics": [
+        "Ein Loch tief in die Erdkruste"
+      ],
+      "entities": [
+        "Kola-Tiefbohrung SG-3"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Meter senkrechte Tiefe erreichte die Kola-Tiefbohrung SG-3?",
+    "answer": 12262,
+    "unit": "Meter",
+    "explanation": "Die wissenschaftliche Rückschau nennt 12.262 Meter erreichte Tiefe. Diese Tiefe ist von der Länge schräg oder waagerecht geführter Bohrungen zu unterscheiden. Trotz des Rekords blieb die Bohrung in der Erdkruste.",
+    "subject_keys": [
+      "topic:geography_world:ein-loch-tief-in-die-erdkruste",
+      "fact:estimate:kola"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Anniversary of the commencement of the sg-3 Kola superdeep borehole drilling operations",
+          "url": "https://camjol.info/index.php/NEXO/article/download/12693/14709/46258"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es723",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Ein Foto aus vielen langen Blicken",
+    "tags": {
+      "topics": [
+        "Ein Foto aus vielen langen Blicken"
+      ],
+      "entities": [
+        "Hubble Ultra Deep Field"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Tage gesamte Belichtungszeit stecken im ursprünglichen „Hubble Ultra Deep Field“ aus den Aufnahmen von 2003/04?",
+    "answer": 11.3,
+    "unit": "Tage",
+    "explanation": "NASA nennt 11,3 Tage summierte Belichtungszeit. Das Bild wurde aus 800 Aufnahmen zusammengesetzt, die über mehrere Monate verteilt entstanden. Gefragt ist die addierte Belichtung, nicht die verstrichene Kalenderzeit.",
+    "subject_keys": [
+      "topic:science_technology:ein-foto-aus-vielen-langen-blicken",
+      "fact:estimate:deepfield"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "The Hubble Ultra Deep Field - NASA Science",
+          "url": "https://science.nasa.gov/asset/hubble/the-hubble-ultra-deep-field/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es724",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Eine vollgetankte Mondrakete",
+    "tags": {
+      "topics": [
+        "Eine vollgetankte Mondrakete"
+      ],
+      "entities": [
+        "Saturn-V-Rakete"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Tonnen wog eine vollständig betankte Saturn-V-Rakete beim Start ungefähr?",
+    "answer": 2800,
+    "unit": "Tonnen",
+    "explanation": "NASA nennt rund 2,8 Millionen Kilogramm Startmasse für die vollgetankte Saturn V. Das entspricht 2.800 Tonnen. Ein großer Teil dieser Masse entfiel auf die Treibstoffe.",
+    "subject_keys": [
+      "topic:science_technology:eine-vollgetankte-mondrakete",
+      "fact:estimate:saturnv"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "What Was the Saturn V? (Grades 5-8) - NASA",
+          "url": "https://www.nasa.gov/learning-resources/for-kids-and-students/what-was-the-saturn-v-grades-5-8/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es725",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Rasend schnell an der Sonne",
+    "tags": {
+      "topics": [
+        "Rasend schnell an der Sonne"
+      ],
+      "entities": [
+        "Parker Solar Probe"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Kilometer pro Stunde erreichte Parker Solar Probe bei ihrer Sonnennähe am 24. Dezember 2024 ungefähr?",
+    "answer": 692000,
+    "unit": "Kilometer pro Stunde",
+    "explanation": "NASA meldete 430.000 Meilen pro Stunde, entsprechend gerundet 692.000 km/h. Der Wert gilt für diese Sonnennähe und beschreibt die Geschwindigkeit relativ zur Sonne.",
+    "subject_keys": [
+      "topic:science_technology:rasend-schnell-an-der-sonne",
+      "fact:estimate:parker"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "NASA SVS | Parker Solar Probe: Humanity’s Closest Encounter with the Sun",
+          "url": "https://svs.gsfc.nasa.gov/14741/"
+        },
+        {
+          "title": "10 Things to Know About Parker Solar Probe - NASA Science",
+          "url": "https://science.nasa.gov/missions/parker-solar-probe/10-things-to-know-about-parker-solar-probe/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es726",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Der Takt des Wattenmeers",
+    "tags": {
+      "topics": [
+        "Der Takt des Wattenmeers"
+      ],
+      "entities": [
+        "Gezeiten der Nordsee"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Minuten dauert ein vollständiger Gezeitenzyklus von einem Hochwasser zum nächsten im vereinfachten Nordsee-Modell ungefähr?",
+    "answer": 745,
+    "unit": "Minuten",
+    "explanation": "Als vereinfachter Richtwert gelten zwölf Stunden und 25 Minuten, also 745 Minuten. An einem konkreten Ort verschieben Wetter, Küstenform und weitere Einflüsse die tatsächlichen Zeiten. Es geht nicht um die kürzere Zeit von Hochwasser zu Niedrigwasser.",
+    "subject_keys": [
+      "topic:geography_world:der-takt-des-wattenmeers",
+      "fact:estimate:tides"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Warum läuft das Wasser – Gezeiten",
+          "url": "https://www.nationalpark-wattenmeer.de/wp-content/uploads/2024/05/FB_Gezeiten-nlpv_202402_web.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es727",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Speicher in Kühlschrankgröße",
+    "tags": {
+      "topics": [
+        "Speicher in Kühlschrankgröße"
+      ],
+      "entities": [
+        "IBM RAMAC"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Zeichen konnte das ursprüngliche RAMAC-Festplattensystem von IBM aus dem Jahr 1956 speichern?",
+    "answer": 5000000,
+    "unit": "Zeichen",
+    "explanation": "IBM nennt fünf Millionen codierte Zeichen mit je sieben Bit. Die Aufgabe zählt Zeichen; sie setzt diese historische Zeichencodierung nicht unbesehen mit modernen Acht-Bit-Bytes gleich.",
+    "subject_keys": [
+      "topic:science_technology:speicher-in-kuhlschrankgrosse",
+      "fact:estimate:ramac"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "RAMAC | IBM",
+          "url": "https://www.ibm.com/history/ramac"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es728",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Arbeitsspeicher für den Mondflug",
+    "tags": {
+      "topics": [
+        "Arbeitsspeicher für den Mondflug"
+      ],
+      "entities": [
+        "Apollo Guidance Computer"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Kibibyte Arbeitsspeicher hatte der Navigationscomputer für die Apollo-Mondlandungen ungefähr?",
+    "answer": 4,
+    "unit": "Kibibyte (je 1.024 Byte)",
+    "explanation": "Die technische Tabelle nennt 2.048 löschbare Speicherwörter mit je 16 Bit einschließlich Parität. Das sind 4.096 Byte beziehungsweise 4 KiB. Ohne die Paritätsbits ist die reine Informationsmenge etwas kleiner. Fest gespeichertes Programm zählt nicht zum Arbeitsspeicher.",
+    "subject_keys": [
+      "topic:science_technology:arbeitsspeicher-fur-den-mondflug",
+      "fact:estimate:apollo"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Roving vehicle motion control – Final report (TR-67-60), Table 6-13",
+          "url": "https://ntrs.nasa.gov/api/citations/19680005777/downloads/19680005777.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es729",
+    "question_type": "estimate",
+    "primary_category": "plants_animals",
+    "subtopic": "Viele Flüge für ein Glas Honig",
+    "tags": {
+      "topics": [
+        "Viele Flüge für ein Glas Honig"
+      ],
+      "entities": [
+        "Honigbienen"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Sammelausflüge eines Bienenvolks veranschlagt der Deutsche Imkerbund für 500 Gramm Blütenhonig ungefähr?",
+    "answer": 40000,
+    "unit": "Ausflüge",
+    "explanation": "Der Deutsche Imkerbund nennt rund 40.000 Ausflüge zu den Blüten und zurück für 500 Gramm Blütenhonig. Das ist ein anschaulicher Richtwert; Ertrag und Wege unterscheiden sich je nach Tracht und Bedingungen.",
+    "subject_keys": [
+      "topic:plants_animals:viele-fluge-fur-ein-glas-honig",
+      "fact:estimate:honey"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Honig - Deutscher Imkerbund e. V.",
+          "url": "https://deutscherimkerbund.de/honig/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es730",
+    "question_type": "estimate",
+    "primary_category": "plants_animals",
+    "subtopic": "Das Volumen eines Baumriesen",
+    "tags": {
+      "topics": [
+        "Das Volumen eines Baumriesen"
+      ],
+      "entities": [
+        "General Sherman Tree"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Kubikmeter Stammvolumen hat der Riesenmammutbaum „General Sherman“ laut US-Nationalparkverwaltung ungefähr?",
+    "answer": 1487,
+    "unit": "Kubikmeter",
+    "explanation": "Der National Park Service nennt 1.487 Kubikmeter Holzvolumen. Der Vergleich bezieht sich auf den Stamm dieses konkreten Riesenmammutbaums; es geht nicht um seine Höhe oder um ein rechnerisches Gewicht.",
+    "subject_keys": [
+      "topic:plants_animals:das-volumen-eines-baumriesen",
+      "fact:estimate:sherman"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "The Largest Trees in the World - Sequoia & Kings Canyon National Parks (U.S. National Park Service)",
+          "url": "https://www.nps.gov/seki/learn/nature/largest-trees-in-world.htm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es731",
+    "question_type": "estimate",
+    "primary_category": "plants_animals",
+    "subtopic": "Ein Ei für viele Frühstücke",
+    "tags": {
+      "topics": [
+        "Ein Ei für viele Frühstücke"
+      ],
+      "entities": [
+        "Straußenei"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Gramm wiegt ein Straußenei nach dem Richtwert des San Diego Zoo ungefähr?",
+    "answer": 1500,
+    "unit": "Gramm",
+    "explanation": "Der Zoo nennt für ein durchschnittliches Straußenei ungefähr 1.500 Gramm. Das entspricht etwa dem Gewicht von zwei Dutzend Hühnereiern. Einzelne Eier können natürlich leichter oder schwerer sein.",
+    "subject_keys": [
+      "topic:plants_animals:ein-ei-fur-viele-fruhstucke",
+      "fact:estimate:ostrich"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Ostrich | San Diego Zoo Animals & Plants",
+          "url": "https://animals.sandiegozoo.org/animals/ostrich"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es732",
+    "question_type": "estimate",
+    "primary_category": "plants_animals",
+    "subtopic": "Ein überraschend schwerer Samen",
+    "tags": {
+      "topics": [
+        "Ein überraschend schwerer Samen"
+      ],
+      "entities": [
+        "Coco de mer"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Kilogramm kann ein Samen der Seychellenpalme „Coco de mer“ laut Kew erreichen?",
+    "answer": 25,
+    "unit": "Kilogramm",
+    "explanation": "Kew beschreibt die besonders großen Samen mit bis zu 25 Kilogramm. Gemeint ist der einzelne Samen dieser Palme, nicht eine gewöhnliche Kokosnuss oder das Gesamtgewicht eines Fruchtstandes.",
+    "subject_keys": [
+      "topic:plants_animals:ein-uberraschend-schwerer-samen",
+      "fact:estimate:coco"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Celebrating the Platinum Jubilee at Kew | Kew",
+          "url": "https://www.kew.org/read-and-watch/queen-platinum-jubilee-celebration"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es733",
+    "question_type": "estimate",
+    "primary_category": "plants_animals",
+    "subtopic": "Ein Vogel zwischen den Polen",
+    "tags": {
+      "topics": [
+        "Ein Vogel zwischen den Polen"
+      ],
+      "entities": [
+        "Küstenseeschwalbe"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Kilometer legten die in einer Studie von 2010 verfolgten Küstenseeschwalben auf ihrem jährlichen Zug im Mittel zurück?",
+    "answer": 70900,
+    "unit": "Kilometer",
+    "explanation": "Die untersuchten Vögel aus Grönland und Island kamen im Mittel auf 70.900 Kilometer. Darin steckt die weiträumige Hin- und Rückwanderung mit Umwegen. Es ist kein allgemeines jährliches Soll für jede Küstenseeschwalbe.",
+    "subject_keys": [
+      "topic:plants_animals:ein-vogel-zwischen-den-polen",
+      "fact:estimate:tern"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Tracking of Arctic terns Sterna paradisaea reveals longest animal migration",
+          "url": "https://www.arctictern.info/carsten/pdf/egevang_arte-migration_pnas.full.pdf"
+        },
+        {
+          "title": "PRESS RELEASE: Terns clock up the miles - British Antarctic Survey",
+          "url": "https://www.bas.ac.uk/news/arctic-terns-confirmed-to-have-the-longest-animal-migration-in-the-world/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es734",
+    "question_type": "estimate",
+    "primary_category": "plants_animals",
+    "subtopic": "Ein Herz auf Hochtouren",
+    "tags": {
+      "topics": [
+        "Ein Herz auf Hochtouren"
+      ],
+      "entities": [
+        "Kolibri"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Bis auf ungefähr wie viele Schläge pro Minute kann das Herz eines aktiven Kolibris laut Arizona-Sonora Desert Museum kommen?",
+    "answer": 1260,
+    "unit": "Schläge pro Minute",
+    "explanation": "Das Museum nennt für Aktivität bis zu 1.260 Herzschläge pro Minute. Der Wert ist eine hohe Aktivitätsrate und kein Ruhepuls; in Ruhe und während der nächtlichen Energiesparphase liegen die Werte viel niedriger.",
+    "subject_keys": [
+      "topic:plants_animals:ein-herz-auf-hochtouren",
+      "fact:estimate:hummingbird"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Printable Sonoran Desert Fact Sheet - Costa's Hummingbird",
+          "url": "https://www.desertmuseum.org/kids/facts/print.php?animal=Costa%27s+Hummingbird"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es735",
+    "question_type": "estimate",
+    "primary_category": "plants_animals",
+    "subtopic": "Eine Zunge für hohe Blätter",
+    "tags": {
+      "topics": [
+        "Eine Zunge für hohe Blätter"
+      ],
+      "entities": [
+        "Giraffe"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Bis zu ungefähr wie viele Zentimeter lang kann eine Giraffenzunge nach dem Zoobericht aus San Diego werden?",
+    "answer": 51,
+    "unit": "Zentimeter",
+    "explanation": "Der Bericht nennt 18 bis 20 Zoll. Die obere Angabe von 20 Zoll entspricht 50,8 Zentimetern und wird hier auf 51 Zentimeter gerundet. Mit ihrer langen Zunge erreicht die Giraffe Blätter an Zweigen.",
+    "subject_keys": [
+      "topic:plants_animals:eine-zunge-fur-hohe-blatter",
+      "fact:estimate:giraffe"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "The Longest Tongues in the Animal Kingdom – San Diego Zoo Wildlife Alliance Stories",
+          "url": "https://zoonooz.sandiegozoo.org/2015/12/03/the-longest-tongues-in-the-animal-kingdom/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es736",
+    "question_type": "estimate",
+    "primary_category": "plants_animals",
+    "subtopic": "Sehr viele Eier auf einmal",
+    "tags": {
+      "topics": [
+        "Sehr viele Eier auf einmal"
+      ],
+      "entities": [
+        "Rote Weihnachtsinselkrabbe"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Bis zu wie viele Eier kann ein Weibchen der roten Weihnachtsinselkrabbe bei einem Laichereignis ins Meer abgeben?",
+    "answer": 100000,
+    "unit": "Eier",
+    "explanation": "Parks Australia nennt bis zu 100.000 Eier pro Weibchen. Die Krabben wandern zum Laichen aus dem Wald zur Küste und geben die Eier dort ins Meer ab.",
+    "subject_keys": [
+      "topic:plants_animals:sehr-viele-eier-auf-einmal",
+      "fact:estimate:crabs"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Millions of crabs march on Christmas Island | Parks Australia | Parks Australia",
+          "url": "https://parksaustralia.gov.au/news/millions-of-crabs-march-on-christmas-island/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es737",
+    "question_type": "estimate",
+    "primary_category": "plants_animals",
+    "subtopic": "Ein großes Maul voller Zähne",
+    "tags": {
+      "topics": [
+        "Ein großes Maul voller Zähne"
+      ],
+      "entities": [
+        "Tyrannosaurus rex"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Zähne hatte ein Tyrannosaurus rex nach der Übersicht des Londoner Natural History Museum ungefähr?",
+    "answer": 60,
+    "unit": "Zähne",
+    "explanation": "Das Museum beschreibt das Gebiss mit etwa 60 kräftigen, gezackten Zähnen. Die genaue erhaltene Zahl kann sich bei einzelnen Fossilien unterscheiden; 60 ist der zoologische Referenzwert dieser Übersicht.",
+    "subject_keys": [
+      "topic:plants_animals:ein-grosses-maul-voller-zahne",
+      "fact:estimate:trex"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Tyrannosaurus | Natural History Museum",
+          "url": "https://www.nhm.ac.uk/discover/dino-directory/tyrannosaurus.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es738",
+    "question_type": "estimate",
+    "primary_category": "human_everyday",
+    "subtopic": "Die Lebensdauer roter Blutkörperchen",
+    "tags": {
+      "topics": [
+        "Die Lebensdauer roter Blutkörperchen"
+      ],
+      "entities": [
+        "Menschliche rote Blutkörperchen"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Nach ungefähr wie vielen Tagen endet die natürliche Lebensdauer eines roten Blutkörperchens beim gesunden Menschen üblicherweise?",
+    "answer": 120,
+    "unit": "Tage",
+    "explanation": "Das US-amerikanische National Heart, Lung, and Blood Institute nennt eine natürliche Lebensdauer von etwa 120 Tagen. Alte rote Blutkörperchen werden dann vor allem in der Milz abgebaut und laufend durch neue ersetzt.",
+    "subject_keys": [
+      "topic:human_everyday:die-lebensdauer-roter-blutkorperchen",
+      "fact:estimate:redcells"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Anemia - Hemolytic Anemia | NHLBI, NIH",
+          "url": "https://www.nhlbi.nih.gov/health/anemia/hemolytic-anemia"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es739",
+    "question_type": "estimate",
+    "primary_category": "human_everyday",
+    "subtopic": "Nervenzellen im Gehirn",
+    "tags": {
+      "topics": [
+        "Nervenzellen im Gehirn"
+      ],
+      "entities": [
+        "Menschliches Gehirn"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Milliarden Nervenzellen enthält ein erwachsenes menschliches Gehirn nach dem häufig verwendeten Forschungsschätzwert ungefähr?",
+    "answer": 86,
+    "unit": "Milliarden Nervenzellen",
+    "explanation": "Der auf Zellzählungen beruhende Mittelwert liegt bei rund 86 Milliarden Nervenzellen. Der Wert ist eine Größenordnung für das ganze Gehirn, keine feste Zahl für jeden einzelnen Menschen und keine Angabe über den gerade aktiven Anteil.",
+    "subject_keys": [
+      "topic:human_everyday:nervenzellen-im-gehirn",
+      "fact:estimate:neurons"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "How Many Neurons Are in the Brain?",
+          "url": "https://www.brainfacts.org/In-the-Lab/Meet-the-Researcher/2018/How-Many-Neurons-Are-In-The-Brain-120418"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es740",
+    "question_type": "estimate",
+    "primary_category": "human_everyday",
+    "subtopic": "Buchstabenpaare im Erbgut",
+    "tags": {
+      "topics": [
+        "Buchstabenpaare im Erbgut"
+      ],
+      "entities": [
+        "Menschliches Genom"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Milliarden DNA-Basenpaare umfasst eine einfache Kopie des menschlichen Erbguts ungefähr?",
+    "answer": 3,
+    "unit": "Milliarden Basenpaare",
+    "explanation": "Das National Human Genome Research Institute nennt etwa drei Milliarden Basenpaare pro einfacher Genomkopie. Ein einfacher Satz ist von den beiden elterlichen Kopien zusammen zu unterscheiden.",
+    "subject_keys": [
+      "topic:human_everyday:buchstabenpaare-im-erbgut",
+      "fact:estimate:genome"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Base Pair",
+          "url": "https://www.genome.gov/genetics-glossary/Base-Pair"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es741",
+    "question_type": "estimate",
+    "primary_category": "human_everyday",
+    "subtopic": "Speichel im Tageslauf",
+    "tags": {
+      "topics": [
+        "Speichel im Tageslauf"
+      ],
+      "entities": [
+        "Menschlicher Speichel"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Bis zu wie viele Milliliter Speichel bildet ein Erwachsener am Tag laut dem üblichen Richtbereich der Cleveland Clinic?",
+    "answer": 1500,
+    "unit": "Milliliter",
+    "explanation": "Die Klinik nennt als üblichen Tagesbereich etwa 0,5 bis 1,5 Liter. Das obere Ende dieses Richtbereichs sind 1.500 Milliliter. Das ist keine absolute biologische Höchstmenge für jeden Menschen und jede Situation.",
+    "subject_keys": [
+      "topic:human_everyday:speichel-im-tageslauf",
+      "fact:estimate:saliva"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Saliva (Spit): What To Know",
+          "url": "https://my.clevelandclinic.org/health/body/saliva"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es742",
+    "question_type": "estimate",
+    "primary_category": "human_everyday",
+    "subtopic": "Die Schärfe von Pepper X",
+    "tags": {
+      "topics": [
+        "Die Schärfe von Pepper X"
+      ],
+      "entities": [
+        "Pepper X"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Scoville-Einheiten betrug der 2023 von Guinness veröffentlichte mittlere Schärfewert von „Pepper X“?",
+    "answer": 2693000,
+    "unit": "Scoville-Einheiten",
+    "explanation": "Guinness veröffentlichte für Pepper X einen Durchschnitt von 2.693.000 Scoville Heat Units. Der Wert beruht auf Messungen der Winthrop University. Die Frage bezieht sich auf diesen veröffentlichten Mittelwert, nicht auf jede einzelne Schote.",
+    "subject_keys": [
+      "topic:human_everyday:die-scharfe-von-pepper-x",
+      "fact:estimate:pepper"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Pepper X dethrones Carolina Reaper as world’s hottest chilli pepper | Guinness World Records",
+          "url": "https://www.guinnessworldrecords.com/news/2023/10/pepper-x-dethrones-carolina-reaper-as-worlds-hottest-chilli-pepper-759706?gsid=7c1ee637-180a-4972-9916-f0f749ee0f73"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es743",
+    "question_type": "estimate",
+    "primary_category": "human_everyday",
+    "subtopic": "Milch in einem Stück Hartkäse",
+    "tags": {
+      "topics": [
+        "Milch in einem Stück Hartkäse"
+      ],
+      "entities": [
+        "Parmigiano Reggiano (La Grande)"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Liter Milch braucht die Käserei La Grande laut Herstellerangabe ungefähr für ein Kilogramm Parmigiano Reggiano?",
+    "answer": 16,
+    "unit": "Liter",
+    "explanation": "Die Käserei La Grande beschreibt im offiziellen Parmigiano-Reggiano-Shop ein Verhältnis von etwa 16 Litern Milch für ein Kilogramm des Hartkäses.",
+    "subject_keys": [
+      "topic:human_everyday:milch-in-einem-stuck-hartkase",
+      "fact:estimate:cheese"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Latteria La Grande – Shop Parmigiano Reggiano",
+          "url": "https://shop.parmigianoreggiano.com/fr-be/collections/lameria-le-grand"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es744",
+    "question_type": "estimate",
+    "primary_category": "human_everyday",
+    "subtopic": "Pizza bei großer Hitze",
+    "tags": {
+      "topics": [
+        "Pizza bei großer Hitze"
+      ],
+      "entities": [
+        "Neapolitanische Pizza"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Sekunden beträgt die obere reguläre Backzeit einer neapolitanischen Pizza nach dem AVPN-Regelwerk von 2024?",
+    "answer": 90,
+    "unit": "Sekunden",
+    "explanation": "Das Regelwerk nennt normalerweise 60 bis 90 Sekunden Backzeit auf dem heißen Ofenboden. Als obere Grenze gelten damit 90 Sekunden. Für gefüllte Pizza beziehungsweise Calzone nennt die Quelle ausdrücklich längere Zeiten.",
+    "subject_keys": [
+      "topic:human_everyday:pizza-bei-grosser-hitze",
+      "fact:estimate:pizza"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "AVPN International Regulations 2024",
+          "url": "https://www.pizzanapoletana.org/public/pdf/Disciplinare-2024-ENG.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es745",
+    "question_type": "estimate",
+    "primary_category": "human_everyday",
+    "subtopic": "Mehrweg statt Einschmelzen",
+    "tags": {
+      "topics": [
+        "Mehrweg statt Einschmelzen"
+      ],
+      "entities": [
+        "Mehrweg-Glasflasche"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Bis zu wie oft können Mehrwegflaschen aus Glas laut Umweltbundesamt wieder befüllt werden?",
+    "answer": 50,
+    "unit": "Wiederbefüllungen",
+    "explanation": "Das Umweltbundesamt nennt bis zu 50 Wiederbefüllungen, bevor die Glasflaschen wieder eingeschmolzen werden. Das betrifft echte Mehrwegflaschen, nicht gewöhnliche Einwegbehälter aus Glas.",
+    "subject_keys": [
+      "topic:human_everyday:mehrweg-statt-einschmelzen",
+      "fact:estimate:reuse"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Glas- und Mineralfaserindustrie | Umweltbundesamt",
+          "url": "https://www.umweltbundesamt.de/themen/wirtschaft-konsum/industriebranchen/mineralindustrie/glas-mineralfaserindustrie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es746",
+    "question_type": "estimate",
+    "primary_category": "media_entertainment",
+    "subtopic": "Kilometer im Miniaturformat",
+    "tags": {
+      "topics": [
+        "Kilometer im Miniaturformat"
+      ],
+      "entities": [
+        "Miniatur Wunderland Hamburg"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Kilometer Gleise nennt das Miniatur Wunderland Hamburg im Zahlenstand vom Oktober 2026 ungefähr?",
+    "answer": 16.491,
+    "unit": "Kilometer",
+    "explanation": "Die am 24. Oktober 2026 ausgelesene Zahlenübersicht nennt 16.491 Meter Gleislänge. Das entspricht 16,491 Kilometern. Die Anlage wächst weiter; deshalb gehört der Stand ausdrücklich zur Frage.",
+    "subject_keys": [
+      "topic:media_entertainment:kilometer-im-miniaturformat",
+      "fact:estimate:wunderland"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Zahlen & Fakten | Miniatur Wunderland Hamburg",
+          "url": "https://www.miniatur-wunderland.de/austausch/wunderland-informationen/zahlen-fakten/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es747",
+    "question_type": "estimate",
+    "primary_category": "geography_world",
+    "subtopic": "Der sichtbare Teil eines Eisbergs",
+    "tags": {
+      "topics": [
+        "Der sichtbare Teil eines Eisbergs"
+      ],
+      "entities": [
+        "Eisberg"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viel Prozent des Volumens eines typischen Eisbergs ragen nach dem groben USGS-Richtwert über die Wasserlinie?",
+    "answer": 10,
+    "unit": "Prozent",
+    "explanation": "Der US Geological Survey verwendet als anschaulichen Richtwert etwa zehn Prozent über Wasser. Der genaue Anteil hängt unter anderem von der Dichte des Eises, eingeschlossener Luft und dem umgebenden Wasser ab.",
+    "subject_keys": [
+      "topic:geography_world:der-sichtbare-teil-eines-eisbergs",
+      "fact:estimate:iceberg"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Water Density | U.S. Geological Survey",
+          "url": "https://www.usgs.gov/water-science-school/science/water-density"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es748",
+    "question_type": "estimate",
+    "primary_category": "science_technology",
+    "subtopic": "Die Geschwindigkeit des Donners",
+    "tags": {
+      "topics": [
+        "Die Geschwindigkeit des Donners"
+      ],
+      "entities": [
+        "Schall in Luft"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie viele Meter pro Sekunde legt Schall in Luft bei 20 Grad Celsius ungefähr zurück?",
+    "answer": 343,
+    "unit": "Meter pro Sekunde",
+    "explanation": "Das britische National Physical Laboratory nennt bei 20 °C einen Erwartungswert von 343 m/s. Die Schallgeschwindigkeit hängt von den Umgebungsbedingungen ab; der Vergleichswert gilt deshalb für die in der Frage genannte Temperatur.",
+    "subject_keys": [
+      "topic:science_technology:die-geschwindigkeit-des-donners",
+      "fact:estimate:sound"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Report on measuring the speed of sound with toilet rolls",
+          "url": "https://www.npl.co.uk/getattachment/19d0d4d3-5bd9-47d9-b392-01be4c8e453d/Speed-of-Sound-Toilet-Roll-Report.pdf?lang=en-GB"
+        }
+      ]
+    }
+  },
+  {
+    "id": "es749",
+    "question_type": "estimate",
+    "primary_category": "human_everyday",
+    "subtopic": "Denken mit kleinem Energiebudget",
+    "tags": {
+      "topics": [
+        "Denken mit kleinem Energiebudget"
+      ],
+      "entities": [
+        "Menschliches Gehirn"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Welcher gerundete Wert in Watt wird häufig für den gesamten Energieumsatz des erwachsenen menschlichen Gehirns angegeben?",
+    "answer": 20,
+    "unit": "Watt",
+    "explanation": "Ein häufig verwendeter Größenordnungswert ist rund 20 Watt. Gemeint ist der gesamte Stoffwechsel-Energieumsatz, nicht eine elektrische Leistung, die das Gehirn nach außen abgibt. Fachliche Energiebilanzen können je nach Ansatz etwas andere Werte ergeben.",
+    "subject_keys": [
+      "topic:human_everyday:denken-mit-kleinem-energiebudget",
+      "fact:estimate:brainpower"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "How Does the Brain Control Itself?",
+          "url": "https://www.brainfacts.org/thinking-sensing-and-behaving/thinking-and-awareness/2026/how-does-the-brain-control-itself-050626"
+        },
+        {
+          "title": "Brain vascular and hydrodynamic physiology",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3868010/"
+        }
+      ]
+    }
   }
 ]

@@ -1,0 +1,50 @@
+{
+  "package_sha256": "2670275e9b4cfe3ce0a57edd920d1f6b8020579693cceb0bb4ee1c434ab82831",
+  "added": {
+    "true_false": 50,
+    "multiple_choice": 50,
+    "match": 50,
+    "order": 50,
+    "estimate": 50
+  },
+  "total_added": 250,
+  "live_history_check": "required_again_at_activation_against_protected_live_database",
+  "files": [
+    {
+      "path": "fragen/wahroderunwahr/fragen.json",
+      "before_sha256": "abe84266edac631898b84e8c7eff3e143baa92f3c746467481dd11d152a26054",
+      "sha256": "4bb5ea2af69d0e239d9032d93726dd1006738664e114beaed47ecdc40f3c3dd6",
+      "before_count": 268,
+      "after_count": 318
+    },
+    {
+      "path": "fragen/multiplechoice/fragen.json",
+      "before_sha256": "15b9d17cb7b289cd634c1ddd72b0f5f6a284e4eb6cfb232ed05d1855d599d642",
+      "sha256": "2d22df2a47a68c43d66157f859bcf8737913462c2fd0e6c04bdffd79198c4af9",
+      "before_count": 266,
+      "after_count": 316
+    },
+    {
+      "path": "fragen/paarebilden/fragen.json",
+      "before_sha256": "0aaf627df947e51f1729a4d52b83cb6ffa779b0009ef6a431e4a582b1c442ffa",
+      "sha256": "d279e14a586e54844fba987b22931a32cfe1f316b21c7b5f798472aa46752ca6",
+      "before_count": 265,
+      "after_count": 315
+    },
+    {
+      "path": "fragen/reihenfolge/fragen.json",
+      "before_sha256": "a98d5671245a97b183254854ef36c91449dd49e35d3f2889d65c85b524187c43",
+      "sha256": "f61ef8ea4dfdecc50a5232b17364eeff1d8d9298423ba4eed7686d5feee70332",
+      "before_count": 269,
+      "after_count": 319
+    },
+    {
+      "path": "fragen/schaetzung/fragen.json",
+      "before_sha256": "44ae06081792c158c08c1845fdcb35f3f9f02dd4c2e9e66e489531a8732cf0dc",
+      "sha256": "b6573bedf9551cd73175e599cbd60d2df695283d50082c2e83e34b8b609be292",
+      "before_count": 275,
+      "after_count": 325
+    }
+  ],
+  "release": "1.01.01"
+}

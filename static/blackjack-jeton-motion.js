@@ -63,7 +63,7 @@ export function createJetonMotion(root,{onChange=()=>{},playSound=()=>{}}={}){
   let previous=null,latest=null,cardsBusy=false,serial=0,suspended=false;
   const reduced=()=>matchMedia('(prefers-reduced-motion: reduce)').matches;
   function show(slot,amount){
-    const unit=latest.currency==='test-ikuehe'?'iKühe':'Pkt.';
+    const unit=['test-ikuehe','account-ikuehe'].includes(latest.currency)?'iKühe':'Pkt.';
     paintJetonStack(slot.bet,amount,amount?'Einsatz: '+Number(amount).toLocaleString('de-DE')+' '+unit:'');
     slot.bet.style.removeProperty('visibility');
   }

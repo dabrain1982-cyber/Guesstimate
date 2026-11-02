@@ -37,7 +37,7 @@ class ProfileWindowTests(unittest.TestCase):
 
     def test_existing_profile_and_perfect_values_keep_their_meaning(self):
         profile = self.render_window()
-        self.assertIn('1.234 iKühe', profile)
+        self.assertIn('1.234 <bdi class="currency-unit">iKühe</bdi>', profile)
         self.assertIn('href="/shop"', profile)
         self.assertIn('Deine Pokale', profile)
         self.assertIn('<b>2</b>', profile)

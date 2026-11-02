@@ -32,7 +32,7 @@ export function createRoundView(root,{onChange=()=>{}}={}){
     updateCounter();
   }
   root.addEventListener('input',event=>{if(event.target.matches('[data-bet-amount]'))draft=event.target.value;});
-  const points=amount=>Number(amount).toLocaleString('de-DE')+(currency==='test-ikuehe'?' Test-iKühe':' Pkt.');
+  const points=amount=>Number(amount).toLocaleString('de-DE')+(currency==='account-ikuehe'?' iKühe':currency==='test-ikuehe'?' Test-iKühe':' Pkt.');
   const signed=amount=>(amount>0?'+':'')+points(amount);
   const node=(tag,cls,text)=>{const el=document.createElement(tag);if(cls)el.className=cls;if(text!=null)el.textContent=text;return el;};
   function cards(list){
@@ -141,6 +141,8 @@ export function createRoundView(root,{onChange=()=>{}}={}){
   function render(snapshot){
     const game=snapshot.game,own=snapshot.viewer_seat,player=game.players.find(p=>p.own),choices=[];
     currency=game.currency;
+    const walletRule=q("[data-wallet-rule]");
+    if(walletRule&&currency==="account-ikuehe")walletRule.textContent='Hier spielst du um die iKühe deines normalen Spielerkontos. Der Grundeinsatz beträgt fest 500 iKühe. Einsätze und Zusatzwetten können verloren gehen; Gewinne werden demselben Konto gutgeschrieben. Es gibt kein kostenloses Auffüllen am Tisch.';
     const dealerRule=q('[data-dealer-check-rule]'),surrenderRule=q('[data-surrender-rule]');
     if(dealerRule)dealerRule.textContent=game.dealer_peek===false?
       'Die verdeckte Karte wird erst nach Abschluss aller Spielerhände aufgedeckt. Bei Bank-Blackjack geht nur der Grundeinsatz verloren; Zusatzbeträge aus Teilen und Verdoppeln kommen zurück.':
@@ -210,7 +212,9 @@ export function createRoundView(root,{onChange=()=>{}}={}){
     if(player?.split_aces)message+=' Geteilte Asse erhalten je eine Zusatzkarte; beide Hände werden danach gehalten.';
     if(game.phase==='result'&&game.dealer.length===2&&game.dealer_total===21)message=(game.dealer_peek===false?'Blackjack der Bank nach Abschluss der Spielerhände. ':'Blackjack der Bank: Die Runde endet ohne weitere Spielerzüge. ')+message;
     if(!own&&game.prebet_supported&&game.phase!=='betting')note='Nimm einen freien Platz und lege deinen Einsatz für die nächste Runde.';
-    if(own&&game.bankroll<(game.min_bet||10)&&!game.own_bet&&['betting','result'].includes(game.phase))make('refill','Testguthaben auffüllen',points(game.test_refill||1000));
+    if(own&&currency!=='account-ikuehe'&&!game.currency_change_pending&&game.bankroll<(game.min_bet||10)&&!game.own_bet&&['betting','result'].includes(game.phase))make('refill','Testguthaben auffüllen',points(game.test_refill||1000));
+    if(own&&currency==='account-ikuehe'&&game.bankroll<(game.min_bet||500)&&!game.own_bet&&['betting','result'].includes(game.phase))message+=' Für einen Einsatz brauchst du '+points(game.min_bet||500)+'. Dein Kontostand: '+points(game.bankroll)+'.';
+    if(game.currency_change_pending){message='Der bisherige Testtisch wird beendet. Bitte stehe nach der laufenden Hand auf.';for(let i=choices.length-1;i>=0;i--)if(['bet','refill'].includes(choices[i].command))choices.splice(i,1);}
     if(game.leaving){message='Du hast den Tisch verlassen. Dein Einsatz ist verfallen.';note='Der Platz wird nach Rundenende freigegeben.';choices.length=0;}
     if(motion.busy)message=motionMessage;
     detail='Runde '+(game.phase==='betting'?game.round+1:game.round)+' · '+snapshot.occupied+' / 3 Plätze belegt · '+({betting:'Einsatzphase',insurance:'Versicherung',turn:'Spielzüge',result:'Ergebnis'}[game.phase]||game.phase);

@@ -3907,6 +3907,20 @@ body:has(.home-variant-a)::before {
   color: #d9e6fb;
   font-variant-numeric: tabular-nums;
 }
+.date-version { display: inline-flex; align-items: center; gap: 8px; }
+.date-version > span.date-version-copy {
+  display: grid;
+  gap: 4px;
+  text-align: left;
+  line-height: 1.1;
+}
+.date-version .release-version {
+  font-size: 12px;
+  font-weight: 600;
+  color: #b7cae8;
+  white-space: nowrap;
+}
+.date-version > .nav-icon { width: 19px; height: 19px; flex: 0 0 19px; }
 
 .app-shell.has-account-bar.home-variant-a {
   width: 100%;

@@ -4647,5 +4647,1037 @@
         }
       ]
     }
+  },
+  {
+    "id": "tf700",
+    "question_type": "true_false",
+    "prompt": "Die US-Luftwaffe baute einen Supercomputer aus PlayStation-3-Technik.",
+    "answer": true,
+    "explanation": "Der 2010 vorgestellte Condor Cluster verband mehr als 1.700 PlayStation-3-Prozessoren mit weiterer Rechnertechnik. Die Spielkonsolen-Technik wurde unter anderem für Bildauswertung und Forschung genutzt.",
+    "subject_keys": [
+      "topic:ps3-condor-supercomputer"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "AFRL to hold ribbon cutting for Condor supercomputer",
+          "url": "https://www.afmc.af.mil/News/Article-Display/Article/154044/afrl-to-hold-ribbon-cutting-for-condor-supercomputer/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf701",
+    "question_type": "true_false",
+    "prompt": "Nintendo-Switch-Spielkarten werden absichtlich mit einem Bitterstoff überzogen.",
+    "answer": true,
+    "explanation": "Nintendo bestätigt die Beschichtung mit Denatoniumbenzoat. Der extrem bittere Geschmack ist also kein zufälliger Nebeneffekt des Kunststoffs.",
+    "subject_keys": [
+      "topic:nintendo-switch-bittering-agent"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "[Switch] I licked my hand after touching a game card and noticed a strange, bitter taste. Is my health at risk?",
+          "url": "https://www.nintendo.com/sg/support/qa/detail/33863"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf702",
+    "question_type": "true_false",
+    "prompt": "Spieler von EVE Online haben im Spiel echte medizinische Forschungsdaten ausgewertet.",
+    "answer": true,
+    "explanation": "Project Discovery lässt Spieler Zellgruppen in Messdaten markieren. Damit unterstützen sie die Krebsforschung und das Training von Auswertungsmodellen.",
+    "subject_keys": [
+      "topic:eve-online-project-discovery-citizen-science"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Project Discovery - Citizen science begins with you",
+          "url": "https://www.eveonline.com/discovery"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf703",
+    "question_type": "true_false",
+    "prompt": "Manche Seegurken stoßen zur Verteidigung innere Organe aus und können sie später nachbilden.",
+    "answer": true,
+    "explanation": "Bestimmte Seegurken werfen klebrige innere Strukturen durch den After aus, um Angreifer abzuwehren. Diese können anschließend nachwachsen.",
+    "subject_keys": [
+      "topic:sea-cucumber-evisceration-regeneration"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Sea cucumbers: Weird and wacky natural recyclers",
+          "url": "https://www.nhm.ac.uk/discover/what-is-a-sea-cucumber.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf704",
+    "question_type": "true_false",
+    "prompt": "Auf dem Mond wurden Hinweise auf Rost gefunden.",
+    "answer": true,
+    "explanation": "Messdaten der Sonde Chandrayaan-1 zeigen an den Mondpolen die Signatur von Hämatit, einem Eisenoxid. Wie es dort entsteht, wird erforscht; Sauerstoff von der Erde könnte daran beteiligt sein.",
+    "subject_keys": [
+      "topic:moon-hematite-rust"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "The Moon Is Rusting, and Researchers Want to Know Why",
+          "url": "https://www.nasa.gov/solar-system/moon/the-moon-is-rusting-and-researchers-want-to-know-why/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf705",
+    "question_type": "true_false",
+    "prompt": "Der Schweif eines Kometen zeigt immer nach hinten entlang seiner Flugbahn.",
+    "answer": false,
+    "explanation": "Sonnenwind und Strahlungsdruck treiben das Schweifmaterial vor allem von der Sonne weg. Deshalb kann ein Komet bei seinem Weg von der Sonne fort seinem Schweif sogar folgen.",
+    "subject_keys": [
+      "topic:comet-tail-direction"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Structure of a comet",
+          "url": "https://www.esa.int/ESA_Multimedia/Images/2023/11/Structure_of_a_comet"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf706",
+    "question_type": "true_false",
+    "prompt": "Bei Olympischen Spielen wurden früher auch für Kunstwerke Medaillen vergeben.",
+    "answer": true,
+    "explanation": "Von 1912 bis 1948 gehörten Kunstwettbewerbe zum olympischen Programm. Ausgezeichnet wurden unter anderem Architektur, Literatur, Musik, Malerei und Bildhauerei.",
+    "subject_keys": [
+      "topic:olympic-art-competitions"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Olympedia – Art Competitions",
+          "url": "https://www.olympedia.org/sports/ART"
+        },
+        {
+          "title": "The Olympic Studies Centre: Art competitions at the Olympic Games",
+          "url": "https://library.olympics.com/digitalCollection/DigitalCollectionAttachmentDownloadHandler.ashx?documentId=211186&parentDocumentId=186412&skipCopyright=true&skipWatermark=true"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf707",
+    "question_type": "true_false",
+    "prompt": "Tauziehen war nie eine olympische Medaillendisziplin.",
+    "answer": false,
+    "explanation": "Tauziehen stand von 1900 bis 1920 bei mehreren Olympischen Spielen auf dem Programm. Damals wurden dafür reguläre olympische Medaillen vergeben.",
+    "subject_keys": [
+      "topic:olympic-tug-of-war"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Olympedia – Tug-Of-War",
+          "url": "https://www.olympedia.org/sports/TOW"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf708",
+    "question_type": "true_false",
+    "prompt": "Zerbricht ein Golfball nach einem Schlag in Stücke, zählt dieser Schlag nach den Golfregeln nicht.",
+    "answer": true,
+    "explanation": "Regel 4.2b sieht für diesen Fall keine Strafe vor. Der Spieler muss einen anderen Ball von der Stelle spielen, von der der ursprüngliche Schlag ausgeführt wurde.",
+    "subject_keys": [
+      "topic:golf-ball-breaks-pieces-rule"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "The Player’s Equipment",
+          "url": "https://www.randa.org/sw/rog/the-rules-of-golf/rule-4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf709",
+    "question_type": "true_false",
+    "prompt": "Die längste Gebirgskette der Erde verläuft überwiegend an Land.",
+    "answer": false,
+    "explanation": "Das weltweite System der mittelozeanischen Rücken ist rund 65.000 Kilometer lang. Etwa neun Zehntel davon liegen unter Wasser.",
+    "subject_keys": [
+      "topic:mid-ocean-ridge-longest-mountain-range"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "What is the longest mountain range on Earth?",
+          "url": "https://oceanservice.noaa.gov/facts/midoceanridge.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf710",
+    "question_type": "true_false",
+    "prompt": "Das schwedische Kriegsschiff Vasa sank bereits auf seiner Jungfernfahrt.",
+    "answer": true,
+    "explanation": "Die Vasa ging am 10. August 1628 im Hafen von Stockholm unter, nur wenige Minuten nach dem ersten Auslaufen. Das Schiff war zu instabil; durch offene Geschützpforten drang Wasser ein.",
+    "subject_keys": [
+      "topic:vasa-maiden-voyage-sinking"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "The Disaster",
+          "url": "https://www.vasamuseet.se/en/explore/vasa-history/disaster"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf711",
+    "question_type": "true_false",
+    "prompt": "Im Suezkanal werden Schiffe durch Schleusen auf eine höhere Wasserstufe gehoben.",
+    "answer": false,
+    "explanation": "Der Suezkanal besitzt keine Schleusen. Anders als etwa beim Panamakanal müssen Schiffe dort keine höher gelegene Kanalstrecke überwinden.",
+    "subject_keys": [
+      "topic:suez-canal-no-locks"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Suez Canal",
+          "url": "https://sis.gov.eg/en/economy-investment/economy/egyptian-economy-sectors/suez-canal/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf712",
+    "question_type": "true_false",
+    "prompt": "Grönlandhaie können nach wissenschaftlichen Altersschätzungen älter als 250 Jahre werden.",
+    "answer": true,
+    "explanation": "Forschende schätzten das Alter eines großen Weibchens auf 272 bis 512 Jahre. Die Methode liefert eine Spanne statt eines exakten Geburtsjahrs; die außergewöhnliche Langlebigkeit ist der entscheidende Befund.",
+    "subject_keys": [
+      "topic:greenland-shark-longevity"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "How long do Greenland sharks live?",
+          "url": "https://oceanservice.noaa.gov/facts/greenland-shark.html/1000"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf713",
+    "question_type": "true_false",
+    "prompt": "Bei einer Glasharmonika entstehen die Töne durch kleine Hämmerchen, die auf Glasschalen schlagen.",
+    "answer": false,
+    "explanation": "Die ineinandergesteckten Glasschalen drehen sich auf einer Achse. Mit angefeuchteten Fingern werden ihre Ränder berührt; die Schwingungen erzeugen die Töne.",
+    "subject_keys": [
+      "topic:glass-armonica-friction-bowls"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Benjamin Franklin's Glass Armonica",
+          "url": "https://fi.edu/en/science-and-education/collection/benjamin-franklins-glass-armonica"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf714",
+    "question_type": "true_false",
+    "prompt": "Ein Wiener Orchester spielt Konzerte auf Instrumenten aus echtem Gemüse.",
+    "answer": true,
+    "explanation": "Das Vegetable Orchestra baut unter anderem Flöten aus Karotten und Klangkörper aus Kürbissen, Sellerie oder Lauch. Viele Instrumente halten nur ein Konzert oder einen Studiotag.",
+    "subject_keys": [
+      "topic:vienna-vegetable-orchestra-instruments"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "The Vegetable Orchestra - instruments",
+          "url": "https://www.gemueseorchester.org/instruments.php"
+        },
+        {
+          "title": "The Vegetable Orchestra - about",
+          "url": "https://www.gemueseorchester.org/about.php"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf715",
+    "question_type": "true_false",
+    "prompt": "Stummfilme wurden im Kino grundsätzlich ohne Musikbegleitung gezeigt.",
+    "answer": false,
+    "explanation": "Viele Stummfilmvorführungen wurden von Pianisten, kleinen Ensembles oder Orchestern begleitet. „Stumm“ meint vor allem das Fehlen einer synchron aufgenommenen Tonspur, nicht ein stets schweigendes Kino.",
+    "subject_keys": [
+      "topic:silent-cinema-live-music"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "The ‘silent’ cinema - A History of Film Music",
+          "url": "https://www.cambridge.org/core/books/history-of-film-music/silent-cinema/273882E18D36DC112AD27BFA8342030B"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf716",
+    "question_type": "true_false",
+    "prompt": "Die Seen auf der Oberfläche des Saturnmonds Titan sind mit flüssigem Wasser gefüllt.",
+    "answer": false,
+    "explanation": "Titans Oberflächenseen enthalten vor allem flüssiges Methan und Ethan. Auf dem extrem kalten Mond ist Wassereis dagegen ein Bestandteil des festen Untergrunds.",
+    "subject_keys": [
+      "topic:titan-surface-lakes-hydrocarbons"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Titan: Facts",
+          "url": "https://science.nasa.gov/saturn/moons/titan/facts/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf717",
+    "question_type": "true_false",
+    "prompt": "Astronauten schweben in der ISS, weil dort praktisch keine Erdanziehung mehr wirkt.",
+    "answer": false,
+    "explanation": "Die Erdanziehung ist in dieser Höhe noch stark. Raumstation und Besatzung befinden sich gemeinsam im freien Fall um die Erde; dadurch entsteht die beobachtete Schwerelosigkeit.",
+    "subject_keys": [
+      "topic:iss-microgravity-free-fall"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Falling upwards: how to create microgravity",
+          "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Research/Falling_upwards_how_to_create_microgravity"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf718",
+    "question_type": "true_false",
+    "prompt": "Zwischen seiner Entdeckung 1930 und dem Jahr 2026 hat Pluto die Sonne bereits einmal vollständig umrundet.",
+    "answer": false,
+    "explanation": "Ein Plutojahr dauert etwa 248 Erdenjahre. Die 96 Jahre von 1930 bis 2026 reichen deshalb noch lange nicht für einen ganzen Umlauf.",
+    "subject_keys": [
+      "topic:pluto-first-orbit-since-discovery"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Pluto: Facts",
+          "url": "https://science.nasa.gov/dwarf-planets/pluto/facts/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf719",
+    "question_type": "true_false",
+    "prompt": "Krähen können sich menschliche Gesichter über Jahre merken.",
+    "answer": true,
+    "explanation": "In Versuchen erkannten Krähen Masken wieder, die Forschende beim Einfangen der Tiere getragen hatten. Sie reagierten noch Jahre später auf diese Gesichter.",
+    "subject_keys": [
+      "topic:crows-recognize-human-faces"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Etc: Campus News & Notes",
+          "url": "https://www.washington.edu/news/2010/10/21/etc-campus-news-notes-131/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf720",
+    "question_type": "true_false",
+    "prompt": "Das Papier von Eurobanknoten wird hauptsächlich aus Holz hergestellt.",
+    "answer": false,
+    "explanation": "Eurobanknoten bestehen aus Baumwollfaserpapier. Das gibt ihnen ihre besondere Griffigkeit und macht sie widerstandsfähiger gegen Abnutzung.",
+    "subject_keys": [
+      "topic:euro-banknote-cotton-paper"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Counterfeit detection",
+          "url": "https://www.bundesbank.de/en/tasks/cash-management/counterfeit-money/counterfeit-detection"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf721",
+    "question_type": "true_false",
+    "prompt": "Schwarzer, weißer und grüner Pfeffer stammen von drei verschiedenen Pflanzenarten.",
+    "answer": false,
+    "explanation": "Alle drei können von Piper nigrum stammen. Erntezeit und Verarbeitung bestimmen die Unterschiede; die Farbe allein steht also nicht für eine andere Pflanzenart.",
+    "subject_keys": [
+      "topic:piper-nigrum-black-white-green-pepper"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Piper nigrum - black pepper",
+          "url": "https://fairchild.gardenexplorer.org/taxon.aspx?t=2848"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf722",
+    "question_type": "true_false",
+    "prompt": "Die Kontinentalplatten schwimmen auf einem weltweiten Ozean aus flüssigem Magma.",
+    "answer": false,
+    "explanation": "Der Erdmantel ist überwiegend festes Gestein. Über sehr lange Zeiträume kann es sich dennoch langsam verformen und fließen; größere Schmelzen sind örtlich begrenzt.",
+    "subject_keys": [
+      "topic:tectonic-plates-mantle-not-magma-ocean"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Are the tectonic plates floating on magma?",
+          "url": "https://www.usgs.gov/faqs/are-tectonic-plates-floating-magma"
+        },
+        {
+          "title": "Inner Earth Model - U.S. National Park Service",
+          "url": "https://www.nps.gov/subjects/geology/plate-tectonics-inner-earth-model.htm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf723",
+    "question_type": "true_false",
+    "prompt": "Der Baumverbund Pando in den USA besteht aus Zehntausenden Stämmen eines einzigen Klons.",
+    "answer": true,
+    "explanation": "Was wie ein ganzer Espenwald aussieht, ist ein vegetativ gewachsener Klon mit gemeinsamem Wurzelsystem. Die vielen Stämme gehören genetisch zu einem einzigen Organismus.",
+    "subject_keys": [
+      "topic:pando-aspen-clone-shared-roots"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Pando FAQ: How Pando Works",
+          "url": "https://www.friendsofpando.org/faq-howpandoworks/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf724",
+    "question_type": "true_false",
+    "prompt": "Britische Briefkästen wurden seit ihrer Einführung durchgehend rot gestrichen.",
+    "answer": false,
+    "explanation": "Viele frühe britische Briefkästen waren dunkelgrün. 1874 entschied sich die Post für das auffälligere Rot; die historische Farbgebung war also nicht durchgehend einheitlich.",
+    "subject_keys": [
+      "topic:british-post-boxes-green-before-red"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Victorian postbox, University Road, Galway",
+          "url": "https://exhibitions.library.universityofgalway.ie/s/visual-history-retired-staff/item/14207"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf725",
+    "question_type": "true_false",
+    "prompt": "Frankreich und Brasilien haben eine gemeinsame Landgrenze.",
+    "answer": true,
+    "explanation": "Französisch-Guayana gehört zu Frankreich und grenzt an Brasilien. Die Staatsgrenze verläuft also in Südamerika, nicht auf dem europäischen Festland.",
+    "subject_keys": [
+      "topic:france-brazil-land-border-french-guiana"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Brésil - Relations bilatérales",
+          "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/bresil/relations-bilaterales"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf726",
+    "question_type": "true_false",
+    "prompt": "Der klassische Panamahut hat seinen Ursprung in Panama.",
+    "answer": false,
+    "explanation": "Der traditionelle, fein geflochtene Strohhut stammt aus Ecuador. Durch Handel und seine Verbindung mit dem Panamakanal wurde er unter dem Namen Panamahut bekannt.",
+    "subject_keys": [
+      "topic:panama-hat-ecuador-origin"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Panama hat",
+          "url": "https://www.metmuseum.org/art/collection/search/157745"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf727",
+    "question_type": "true_false",
+    "prompt": "Vor den ersten freien Ballonfahrten mit Menschen flogen bereits ein Schaf, eine Ente und ein Hahn mit.",
+    "answer": true,
+    "explanation": "Die drei Tiere starteten am 19. September 1783 in Versailles in einem Ballon. Alle überlebten; im November desselben Jahres folgte die erste freie Fahrt mit Menschen.",
+    "subject_keys": [
+      "topic:1783-balloon-first-animal-passengers"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "The first hot air balloon flight",
+          "url": "https://en.chateauversailles.fr/discover/history/key-dates/first-hot-air-balloon-flight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf728",
+    "question_type": "true_false",
+    "prompt": "Autoreifen sind schwarz, weil dem Gummi unter anderem industrieller Ruß zugesetzt wird.",
+    "answer": true,
+    "explanation": "Dieser Kohlenstoffzusatz färbt die Gummimischung und verbessert ihre Verschleißfestigkeit. Die schwarze Farbe ist also nicht bloß eine natürliche Eigenschaft von Kautschuk.",
+    "subject_keys": [
+      "topic:tire-carbon-black-color-reinforcement"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "An unknown object: the tire - Materials",
+          "url": "https://thetiredigest.michelin.com/an-unknown-object-the-tire-materials"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf729",
+    "question_type": "true_false",
+    "prompt": "Eine frühere London Bridge wurde abgebaut und in Arizona wiederaufgebaut.",
+    "answer": true,
+    "explanation": "Die im 19. Jahrhundert eröffnete London Bridge wurde nach ihrem Verkauf nach Lake Havasu City versetzt. Dort wurden ihre nummerierten Granitsteine um einen neuen Tragkern wiederverwendet; sie ist nicht die Tower Bridge.",
+    "subject_keys": [
+      "topic:london-bridge-relocated-arizona"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Image of the Week - London Bridge in Arizona",
+          "url": "https://www.usgs.gov/media/videos/image-week-london-bridge-arizona"
+        },
+        {
+          "title": "London Bridge - Historic American Engineering Record, HAER No. AZ-57",
+          "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/az/az0400/az0474/data/az0474data.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf730",
+    "question_type": "true_false",
+    "prompt": "Rostfreier Edelstahl wird grundsätzlich nicht von Magneten angezogen.",
+    "answer": false,
+    "explanation": "Das hängt von der Legierung und ihrem Gefüge ab. Es gibt rostfreie Stähle, die deutlich magnetisch sind; bei anderen ist die Anziehung gering und kann sich durch Verarbeitung verändern.",
+    "subject_keys": [
+      "topic:stainless-steel-magnetism"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Is stainless steel non-magnetic?",
+          "url": "https://bssa.org.uk/bssa_articles/is-stainless-steel-non-magnetic-2/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf731",
+    "question_type": "true_false",
+    "prompt": "Ketchup bestand von Anfang an hauptsächlich aus Tomaten.",
+    "answer": false,
+    "explanation": "Zu seinen Vorläufern gehören fermentierte Fischsaucen aus Asien. Spätere Ketchuprezepte verwendeten beispielsweise Pilze oder Walnüsse; Tomaten kamen erst später hinzu.",
+    "subject_keys": [
+      "topic:ketchup-fish-sauce-origins"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "There’s Something Fishy About the Ketchup You Put On Your Burgers",
+          "url": "https://www.smithsonianmag.com/smart-news/ketchup-fishy-origins-180963511/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf732",
+    "question_type": "true_false",
+    "prompt": "Ein Stück Papier lässt sich höchstens achtmal zur Hälfte falten.",
+    "answer": false,
+    "explanation": "Mit einem sehr langen, dünnen Papierstreifen wurden bereits zwölf Halbierungen geschafft. Die praktische Grenze hängt unter anderem von Länge, Dicke und Faltweise ab, nicht von einem allgemeinen Acht-Faltungen-Gesetz.",
+    "subject_keys": [
+      "topic:paper-folding-eight-times-myth"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Most times to fold a piece of paper",
+          "url": "https://www.guinnessworldrecords.com/world-records/494571-most-times-to-fold-a-piece-of-paper"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf733",
+    "question_type": "true_false",
+    "prompt": "Muskatnuss und Muskatblüte werden aus unterschiedlichen Teilen derselben Frucht gewonnen.",
+    "answer": true,
+    "explanation": "Die Muskatnuss ist der Samenkern. Die sogenannte Muskatblüte oder Macis ist keine Blüte, sondern der rote, netzartige Samenmantel derselben Frucht.",
+    "subject_keys": [
+      "topic:nutmeg-mace-same-fruit-aril"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Nutmeg and Mace – Myristica fragrans",
+          "url": "https://spices.res.in/products/spices/nutmeg-mace.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf734",
+    "question_type": "true_false",
+    "prompt": "Pilze sind evolutionär näher mit Tieren verwandt als mit Pflanzen.",
+    "answer": true,
+    "explanation": "Pilze bilden ein eigenes Reich. Ihr gemeinsamer Vorfahr mit Tieren liegt in der Stammesgeschichte näher als der gemeinsame Vorfahr mit Pflanzen.",
+    "subject_keys": [
+      "topic:fungi-closer-to-animals-than-plants"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "The wonderful world of fungi",
+          "url": "https://www.kew.org/read-and-watch/the-wonderful-world-of-fungi"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf735",
+    "question_type": "true_false",
+    "prompt": "Die BBC zeigte 1957 einen Aprilscherz über die Ernte von Spaghetti an Bäumen.",
+    "answer": true,
+    "explanation": "Die Sendung Panorama präsentierte eine vermeintliche Schweizer Spaghettiernte. Der ernst gesprochene Beitrag war ein inszenierter Aprilscherz und überzeugte dennoch manche Zuschauer.",
+    "subject_keys": [
+      "topic:bbc-1957-spaghetti-tree-hoax"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Prospero, October 2011: Spaghetti Harvest Hoaxer and Panorama Editor",
+          "url": "https://downloads.bbc.co.uk/mypension/en/prospero_oct_2011.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf736",
+    "question_type": "true_false",
+    "prompt": "Bärtierchen haben in Experimenten den direkten Kontakt mit dem Vakuum des Weltraums überlebt.",
+    "answer": true,
+    "explanation": "Getrocknete Bärtierchen wurden im Erdorbit dem Weltraum ausgesetzt und später wieder mit Wasser versorgt. Viele überstanden das Vakuum; ungefilterte Sonnenstrahlung war deutlich schädlicher. Das bedeutet keine unbegrenzte Überlebensfähigkeit.",
+    "subject_keys": [
+      "topic:tardigrades-survive-space-vacuum"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Tardigrades survive exposure to space in low Earth orbit",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0960982208008051"
+        },
+        {
+          "title": "How do microscopic creatures called tardigrades survive being completely dried out?",
+          "url": "https://www.nsf.gov/news/how-do-microscopic-creatures-called-tardigrades-survive"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf737",
+    "question_type": "true_false",
+    "prompt": "Die ersten Basketballkörbe hatten geschlossene Böden, aus denen der Ball wieder herausgeholt werden musste.",
+    "answer": true,
+    "explanation": "Am Springfield College wurden anfangs Pfirsichkörbe als Ziele benutzt. Erst später entfernte man deren Böden, damit der Ball nach einem Treffer hindurchfallen konnte.",
+    "subject_keys": [
+      "topic:basketball-peach-baskets-closed-bottoms"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Where Basketball was Invented: The History of Basketball",
+          "url": "https://springfield.edu/about/birthplace-of-basketball"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf738",
+    "question_type": "true_false",
+    "prompt": "Während des Zweiten Weltkriegs wurden Oscar-Statuetten zeitweise aus bemaltem Gips hergestellt.",
+    "answer": true,
+    "explanation": "Wegen des Metallmangels vergab die Academy drei Jahre lang Gipsfiguren. Nach dem Krieg konnten die Ausgezeichneten sie gegen vergoldete Metallstatuetten eintauschen.",
+    "subject_keys": [
+      "topic:oscar-statuettes-wartime-plaster"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Oscar Statuette",
+          "url": "https://www.oscars.org/oscars/statuette"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf739",
+    "question_type": "true_false",
+    "prompt": "Aluminium galt im 19. Jahrhundert zeitweise als wertvoller als Gold.",
+    "answer": true,
+    "explanation": "Das Metall ließ sich zunächst nur sehr aufwendig gewinnen und galt als kostbare Rarität. Erst verbesserte industrielle Verfahren machten Aluminium zum preiswerten Massenwerkstoff.",
+    "subject_keys": [
+      "topic:aluminium-historically-more-valuable-than-gold"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Aluminium — Departement Materiaalkunde",
+          "url": "https://www.mtm.kuleuven.be/periodic-table/data/fiches/info-al"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf740",
+    "question_type": "true_false",
+    "prompt": "Ratten können beim Kitzeln Ultraschallrufe ausstoßen, die Menschen ohne Hilfsmittel nicht hören.",
+    "answer": true,
+    "explanation": "In Versuchen entstehen dabei häufig Rufe um 50 Kilohertz, oberhalb des menschlichen Hörbereichs. Sie werden mit positivem Erleben in Verbindung gebracht und oft als eine Form von Rattenlachen beschrieben.",
+    "subject_keys": [
+      "topic:rats-tickling-ultrasonic-calls"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Psychologie - Bereiche mit Tierversuchen",
+          "url": "https://www.uni-marburg.de/de/universitaet/administration/verwaltung/stabsstellen/tierschutzbeauftragte/tierversuche/bereiche/psychologie"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf741",
+    "question_type": "true_false",
+    "prompt": "Geckos haften mit winzigen Saugnäpfen an glatten Wänden.",
+    "answer": false,
+    "explanation": "Ihre Zehen tragen extrem feine, vielfach verzweigte Härchen. Deren großer Oberflächenkontakt ermöglicht Haftkräfte zwischen Molekülen; Saugnäpfe sind dafür nicht nötig.",
+    "subject_keys": [
+      "topic:gecko-setae-adhesion-not-suction"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Evidence for van der Waals adhesion in gecko setae",
+          "url": "https://polypedal.berkeley.edu/publications/070_Autumn_EvidenceforVanDerWaalsAdhesion_ProcNatAcadSci_2002.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf742",
+    "question_type": "true_false",
+    "prompt": "Weiße Tennisbälle sind nach den allgemeinen Tennisregeln verboten; reguläre Bälle müssen gelb sein.",
+    "answer": false,
+    "explanation": "Die ITF erlaubt für die regulären Balltypen sowohl Weiß als auch Gelb. Dass im Fernsehen fast nur gelbe Bälle zu sehen sind, ist also kein allgemeines Verbot weißer Bälle.",
+    "subject_keys": [
+      "topic:tennis-ball-white-yellow-allowed"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "ITF Approved Tennis Balls, Classified Surfaces & Recognised Courts 2026",
+          "url": "https://www.itftennis.com/media/15639/2026-technical-booklet.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf743",
+    "question_type": "true_false",
+    "prompt": "Im bayerischen Reinheitsgebot von 1516 wird Hefe ausdrücklich als Bierzutat genannt.",
+    "answer": false,
+    "explanation": "Die damalige Vorschrift nennt Gerste, Hopfen und Wasser. Hefe wird in dieser Zutatenliste nicht ausdrücklich erwähnt, auch wenn sie beim Brauen natürlich eine Rolle spielte.",
+    "subject_keys": [
+      "topic:bavarian-1516-beer-ingredients-no-yeast-named"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Der Wortlaut des Reinheitsgebotes",
+          "url": "https://brauer-bund.de/reinheitsgebot/entstehung/wortlaut/"
+        },
+        {
+          "title": "Lebensmittelrechtliche Vorgaben für Bier seit 500 Jahren",
+          "url": "https://www.lgl.bayern.de/lebensmittel/warengruppen/wc_36_biere/et_biere_lebensmittelrechtliche_vorgaben.htm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf744",
+    "question_type": "true_false",
+    "prompt": "Die NASA gab Millionen aus, um den Space Pen zu erfinden, während die Sowjets einfach Bleistifte benutzten.",
+    "answer": false,
+    "explanation": "Die bekannte Geschichte ist ein Mythos. Der druckbetriebene Kugelschreiber wurde von einem Unternehmen entwickelt; die NASA testete und kaufte ihn. Auch sowjetische Raumfahrer nutzten später solche Stifte.",
+    "subject_keys": [
+      "topic:space-pen-nasa-millions-myth"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Space Pens, Pencils, and How NASA Takes Notes in Space",
+          "url": "https://www.nasa.gov/technology/tech-transfer-spinoffs/space-pens-pencils-and-how-nasa-takes-notes-in-space/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf745",
+    "question_type": "true_false",
+    "prompt": "Die erste Londoner Verkehrsampel wurde bereits elektrisch beleuchtet.",
+    "answer": false,
+    "explanation": "Die 1868 vor dem Parlament aufgestellte Anlage zeigte tagsüber Signalarme und nachts rote und grüne Gaslampen. Ein Gasunfall beendete ihren kurzen Betrieb.",
+    "subject_keys": [
+      "topic:first-london-traffic-signal-gas-lamps"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Motoring Firsts",
+          "url": "https://nationalmotormuseum.org.uk/help-centre/motoring-firsts/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf746",
+    "question_type": "true_false",
+    "prompt": "Beim Zuschnappen eines Knallkrebses kann ein winziger Lichtblitz entstehen.",
+    "answer": true,
+    "explanation": "Die Schere erzeugt einen schnellen Wasserstrahl und eine Blase. Beim heftigen Zusammenfallen dieser Blase entstehen der Knall und ein extrem kurzer Lichtblitz; es handelt sich nicht um eine leuchtende Schere.",
+    "subject_keys": [
+      "topic:snapping-shrimp-cavitation-light-flash"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Snapping shrimp make flashing bubbles",
+          "url": "https://www.nature.com/articles/35097152"
+        },
+        {
+          "title": "Snapping shrimp make flashing bubbles - PubMed, PMID 11586346",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11586346/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf747",
+    "question_type": "true_false",
+    "prompt": "Auch voll aufgeblühte Sonnenblumen drehen ihre Köpfe den ganzen Tag mit der Sonne mit.",
+    "answer": false,
+    "explanation": "Junge, wachsende Sonnenblumen folgen dem Sonnenlauf. Ausgereifte Blütenköpfe bleiben dagegen typischerweise nach Osten ausgerichtet; sie wärmen sich morgens schneller auf und ziehen Bestäuber an.",
+    "subject_keys": [
+      "topic:mature-sunflowers-face-east-not-tracking"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Sunflowers Move by the Clock",
+          "url": "https://www.ucdavis.edu/news/sunflowers-move-clock"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf748",
+    "question_type": "true_false",
+    "prompt": "Bei manchen Tiefsee-Anglerfischen verwächst das Männchen dauerhaft mit dem Körper des Weibchens.",
+    "answer": true,
+    "explanation": "Das winzige Männchen beißt sich am Weibchen fest. Bei bestimmten Arten verbinden sich später sogar die Blutkreisläufe; das Männchen erhält Nahrung und liefert Spermien.",
+    "subject_keys": [
+      "topic:deep-sea-anglerfish-male-fusion"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "The bizarre love life of the anglerfish",
+          "url": "https://www.nhm.ac.uk/discover/bizarre-love-life-of-the-anglerfish.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tf749",
+    "question_type": "true_false",
+    "prompt": "Von einem Flugzeug aus kann ein Regenbogen als vollständiger Kreis sichtbar sein.",
+    "answer": true,
+    "explanation": "Am Boden verdeckt der Horizont meist den unteren Teil. Von einem ausreichend hohen Standort können passende Regentropfen auch unterhalb des Beobachters liegen, sodass der ganze Kreis sichtbar wird.",
+    "subject_keys": [
+      "topic:full-circle-rainbow-aircraft"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Rainbows: optical wonders",
+          "url": "https://weather.metoffice.gov.uk/learn-about/weather/optical-effects/rainbows"
+        },
+        {
+          "title": "Primary rainbow - International Cloud Atlas",
+          "url": "https://cloudatlas.wmo.int/primary-rainbow.html"
+        }
+      ]
+    }
   }
 ]

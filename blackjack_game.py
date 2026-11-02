@@ -42,9 +42,11 @@ def init_game_db(db):
             id INTEGER PRIMARY KEY CHECK(id = 1), revision INTEGER NOT NULL,
             state_json TEXT NOT NULL
         );
-        INSERT OR IGNORE INTO blackjack_balances SELECT user_id, 1000 FROM blackjack_seats;
     ''')
     db.execute('INSERT OR IGNORE INTO blackjack_game VALUES (1, 0, ?)', (json.dumps(initial_state()),))
+    saved = json.loads(db.execute('SELECT state_json FROM blackjack_game WHERE id=1').fetchone()[0])
+    if table_rules(saved).get('currency') != 'account-ikuehe':
+        db.execute('INSERT OR IGNORE INTO blackjack_balances SELECT user_id,1000 FROM blackjack_seats')
     db.commit()
 
 
@@ -54,7 +56,7 @@ def load(db):
     return json.loads(row['state_json']), balances, row['revision']
 
 
-def save(db, state, balances):
+def save(db, state, balances, *, persist_balances=True):
     if state['phase'] == 'result':
         for uid in state['pending_leaves']:
             state['bets'].pop(uid, 0)
@@ -62,8 +64,9 @@ def save(db, state, balances):
         state['pending_leaves'] = []
     seats = {str(row['user_id']): row['seat'] for row in db.execute('SELECT * FROM blackjack_seats')}
     sync_clock(state, seats)
-    for uid, amount in balances.items():
-        db.execute('UPDATE blackjack_balances SET balance=? WHERE user_id=? AND balance<>?', (amount, int(uid), amount))
+    if persist_balances:
+        for uid, amount in balances.items():
+            db.execute('UPDATE blackjack_balances SET balance=? WHERE user_id=? AND balance<>?', (amount, int(uid), amount))
     db.execute('UPDATE blackjack_game SET revision=revision+1,state_json=? WHERE id=1', (json.dumps(state),))
 
 
@@ -283,12 +286,12 @@ def action(state, balances, seats, uid, command, amount=None):
             raise GameError('Dein Einsatz spielt bereits in der laufenden Hand. Setze erst nach Rundenende neu.')
         fixed = table_rules(state).get('fixed_bet')
         if fixed and (type(amount) is not int or amount != fixed):
-            raise GameError(f'Der Einsatz an diesem Tisch beträgt fest {fixed} Test-iKühe.')
+            raise GameError(f'Der Einsatz an diesem Tisch beträgt fest {fixed} '+('iKühe.' if table_rules(state).get('currency') == 'account-ikuehe' else 'Test-iKühe.'))
         if type(amount) is not int or not 10 <= amount <= 500 or amount % 10:
             raise GameError('Der Einsatz muss zwischen 10 und 500 liegen, in Zehnerschritten.')
         available = balances[uid] + state['bets'].get(uid, 0)
         if amount > available:
-            raise GameError('Dafür reicht dein Testguthaben nicht.')
+            raise GameError('Dafür reicht dein iKühe-Kontostand nicht.' if table_rules(state).get('currency') == 'account-ikuehe' else 'Dafür reicht dein Testguthaben nicht.')
         balances[uid] = available - amount
         state['bets'][uid] = amount
         if clock.get('automatic') and state['phase'] == 'result' and len(seats) == 1:
@@ -308,6 +311,8 @@ def action(state, balances, seats, uid, command, amount=None):
         begin_betting(state)
         return
     if command == 'refill':
+        if table_rules(state).get('currency') == 'account-ikuehe':
+            raise GameError('Dein iKühe-Konto kann am Tisch nicht kostenlos aufgefüllt werden.')
         if state['phase'] not in ('betting', 'result') or state['bets'].get(uid) or balances[uid] >= minimum_bet(state):
             raise GameError('Ein neuer Testvorrat ist erst möglich, wenn dein Guthaben für keinen Einsatz mehr reicht.')
         balances[uid] = table_rules(state).get('test_refill', 1000)
@@ -396,10 +401,11 @@ def public_game(state, balances, viewer_id, names, seats):
                 own_wager=sum(h['bet'] for h in own['hands']) if own else state['bets'].get(uid,0) if state['phase']=='betting' else 0,
                 next_bet=state['bets'].get(uid,0) if state['phase']!='betting' else 0,
                 bet_round=state['round']+1, prebet_supported=True,
-                can_bet=uid in seats and can_place_bet(state,uid) and balances.get(uid,0)>=minimum_bet(state),
+                can_bet=not state.get('currency_change_pending') and uid in seats and can_place_bet(state,uid) and balances.get(uid,0)>=minimum_bet(state),
                 fixed_bet=table_rules(state).get('fixed_bet'), min_bet=minimum_bet(state),
                 currency=table_rules(state).get('currency', 'points'),
                 test_refill=table_rules(state).get('test_refill', 1000),
+                currency_change_pending=bool(state.get('currency_change_pending')),
                 active_seat=turn[0]['seat'] if turn else None,
                 actions=legal_actions(state,balances,uid) if uid in balances else [],
                 blocked_actions=blocked_actions(state,balances,uid) if uid in balances else {},

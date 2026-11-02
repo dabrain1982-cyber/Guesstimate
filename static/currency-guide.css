@@ -1,0 +1,40 @@
+.currency-guide-shell { width: min(1200px, calc(100% - 40px)); max-width: none; margin-inline: auto; padding-inline: 0; padding-bottom: 44px; }
+.currency-guide-hero { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 32px; padding: 32px; border: 1px solid #c5a55b66; border-radius: 24px; background: radial-gradient(ellipse at top right, #b18a2929, transparent 65%), #08172bec; box-shadow: 0 22px 60px #0004; }
+.currency-guide-hero h1 { margin: 8px 0 16px; max-width: 16ch; color: #ebd18d; font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1.08; }
+.currency-guide-hero p:not(.eyebrow) { max-width: 65ch; margin: 0 0 20px; color: #c7d3e5; font-size: 18px; line-height: 1.6; }
+.currency-guide-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 22px; }
+.currency-guide-card { display: flex; flex-direction: column; align-items: flex-start; padding: 25px; border: 1px solid #7ba0d033; border-radius: 20px; background: #08172bf0; }
+.currency-guide-number { display: inline-grid; place-items: center; width: 36px; height: 36px; margin-bottom: 15px; border: 1px solid #d5b76d66; border-radius: 50%; color: #e3c97f; font-weight: 700; }
+.currency-guide-card h2 { margin: 0 0 12px; color: #e1e9f5; font-size: 25px; line-height: 1.2; }
+.currency-guide-card p, .currency-guide-ranking dd, .currency-guide-outlook p, .currency-guide-footer p { margin: 0 0 16px; color: #b9c9df; font-size: 16px; line-height: 1.65; }
+.currency-guide-card > .currency-guide-link { margin-top: auto; }
+.currency-guide-card .currency-guide-caution { padding-left: 12px; border-left: 2px solid #d4af61; color: #e5cf9d; font-size: 14px; }
+.currency-guide-ranking { margin-top: 22px; padding: 28px; border: 1px solid #7ba0d033; border-radius: 20px; background: #08172bf0; }
+.currency-guide-section-heading h2 { margin: 8px 0 22px; font-size: 27px; }
+.currency-guide-ranking dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; margin: 0; }
+.currency-guide-ranking dt { margin-bottom: 8px; color: #e6cf91; font-size: 20px; font-weight: 700; }
+.currency-guide-ranking dd { margin-bottom: 0; }
+.currency-guide-outlook { display: flex; align-items: flex-start; gap: 18px; margin-top: 22px; padding: 26px 28px; border: 1px dashed #c7a96199; border-radius: 20px; background: #211e19e8; }
+.currency-guide-planned { flex: 0 0 auto; padding: 5px 10px; border-radius: 20px; color: #ead49f; background: #d0ac4e26; font-size: 13px; font-weight: 700; }
+.currency-guide-outlook h2 { margin: 0 0 10px; color: #e5cf9e; font-size: 25px; }
+.currency-guide-outlook p { margin-bottom: 0; }
+.currency-guide-footer { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 26px; padding-inline: 10px; }
+.currency-guide-footer p { margin: 0; max-width: 70ch; }
+.currency-guide-footer a { flex: 0 0 auto; }
+.currency-intro-dialog { width: min(1240px, calc(100vw - 28px)); max-width: none; max-height: calc(100dvh - 32px); padding: 18px; overflow: auto; border: 1px solid #bda15e99; border-radius: 24px; color: #e1e9f5; background: #071427; }
+.currency-intro-dialog::backdrop { background: #020915b8; }
+.currency-intro-controls { position: sticky; top: -18px; z-index: 2; display: flex; align-items: center; justify-content: space-between; gap: 20px; margin: -1px 0 14px; padding: 8px 4px; color: #e6cf91; background: #071427; }
+.currency-intro-controls button { width: 40px; height: 40px; border: 1px solid #bda15e99; border-radius: 10px; color: #e6cf91; background: #132239; font-size: 26px; }
+.currency-intro-ack { display: flex; justify-content: flex-end; margin-top: 22px; }
+.currency-intro-ack button { min-width: 180px; }
+@media (max-width: 850px) {
+  .currency-guide-steps { grid-template-columns: 1fr; }
+  .currency-guide-hero { grid-template-columns: 1fr; padding: 24px; }
+  .currency-guide-hero .shop-wallet { justify-self: start; }
+  .currency-guide-outlook, .currency-guide-footer { flex-direction: column; }
+}
+@media (max-width: 520px) {
+  .currency-guide-shell { width: calc(100% - 24px); }
+  .currency-guide-ranking dl { grid-template-columns: 1fr; gap: 20px; }
+  .currency-guide-card, .currency-guide-ranking, .currency-guide-outlook { padding: 22px; }
+}

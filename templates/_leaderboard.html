@@ -1,18 +1,21 @@
+{% from "_currency.html" import currency_unit %}
 {% from "_player_identity.html" import player_identity with context %}
 {% set ranking_groups = [
   ('quiz', 'guesstimate', [('daily', 'tag', 'Tagesrangliste', 'PKT'), ('weekly', 'woche', 'Wochenrangliste', 'PKT')]),
   ('currency', 'iKühe', [('currency_current', 'aktuell', 'Aktuelle iKühe', 'iKühe'), ('currency_high', 'all time high', 'Höchster iKühe-Kontostand', 'iKühe')]),
   ('fame', 'hall of fame', [('daily_wins', 'tagessiege', 'Gewonnene Quiztage', 'SIEGE'), ('weekly_wins', 'wochensiege', 'Gewonnene Quizwochen', 'SIEGE')])
 ] %}
+{% set selected_group = "currency" if request.args.get("rangliste") == "ikuehe" else "quiz" %}
 <section class="leaderboard quiz-arena-board{% if request.endpoint == 'home' %} variant-a-leaderboard{% endif %}" aria-labelledby="leaderboard-heading" data-leaderboards>
   <div class="section-heading"><h2 id="leaderboard-heading"><span aria-hidden="true">🏆</span> ranglisten</h2></div>
   <div class="leaderboard-tabs leaderboard-groups" role="tablist" aria-label="Ranglisten">
     {% for group_key, group_label, boards in ranking_groups %}
-      <button type="button" role="tab" id="rank-group-{{ group_key }}" aria-controls="rank-group-panel-{{ group_key }}" aria-selected="{{ 'true' if loop.first else 'false' }}" tabindex="{{ 0 if loop.first else -1 }}" data-leaderboard-group="{{ group_key }}">{{ group_label }}</button>
+      <button type="button" role="tab" id="rank-group-{{ group_key }}" aria-controls="rank-group-panel-{{ group_key }}" aria-selected="{{ 'true' if group_key == selected_group else 'false' }}" tabindex="{{ 0 if group_key == selected_group else -1 }}" data-leaderboard-group="{{ group_key }}">{{ currency_unit() if group_key == 'currency' else group_label }}</button>
     {% endfor %}
   </div>
   {% for group_key, group_label, boards in ranking_groups %}
-    <div role="tabpanel" id="rank-group-panel-{{ group_key }}" aria-labelledby="rank-group-{{ group_key }}" data-leaderboard-group-panel="{{ group_key }}"{% if not loop.first %} hidden{% endif %}>
+    <div role="tabpanel" id="rank-group-panel-{{ group_key }}" aria-labelledby="rank-group-{{ group_key }}" data-leaderboard-group-panel="{{ group_key }}"{% if group_key != selected_group %} hidden{% endif %}>
+      {% if group_key == 'currency' %}<p class="leaderboard-note"><a class="currency-guide-link" href="{{ url_for('ikuhe_guide') }}">Der Wettstreit um {{ currency_unit() }} →</a></p>{% endif %}
       <div class="leaderboard-tabs leaderboard-subtabs" role="tablist" aria-label="{{ group_label }} – Ansicht">
         {% for board_key, label, board_label, unit in boards %}
           <button type="button" role="tab" id="tab-{{ board_key }}" aria-controls="panel-{{ board_key }}" aria-selected="{{ 'true' if loop.first else 'false' }}" tabindex="{{ 0 if loop.first else -1 }}" data-leaderboard-tab="{{ board_key }}">{{ label }}{% if board_key == 'weekly' %}<span class="week-tally visually-hidden" data-week-date="{{ today_iso_value }}" aria-hidden="true"></span>{% endif %}</button>
