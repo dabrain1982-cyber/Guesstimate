@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "version": "1.01.02",
-  "previous_version": "1.01.01",
+  "version": "1.01.03",
+  "previous_version": "1.01.02",
   "status": "ready",
   "patchnotes": {
     "delivery": "chat_only",
@@ -22,7 +22,8 @@
     "permanent_page": "/ikuehe"
   },
   "update": {
-    "scope": "Owner included in all-player broadcast; own latest missing receipt only",
-    "new_question_import": false
+    "scope": "Compact iKuehe introduction in shared Guesstimate style",
+    "new_question_import": false,
+    "notice_reset": false
   }
 }

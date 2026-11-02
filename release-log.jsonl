@@ -4,3 +4,4 @@
 {"time_utc": "2026-11-02T05:53:46.777847+00:00", "version": "1.01.01", "event": "step_4_wallet_and_warning_locally_verified", "activated": false, "normal_wallet": true, "warning_each_seating": true, "test_balances_converted": false, "human_multiplayer_acceptance": false}
 {"time_utc": "2026-11-02T07:12:04.517023+00:00", "version": "1.01.01", "event": "step_5_introduction_and_spelling_locally_verified", "activated": false, "guide": "/ikuehe", "future_rewards": "planned", "human_multiplayer_acceptance": false, "mail_sent": false}
 {"time_utc": "2026-11-02T08:47:17.748033+00:00", "version": "1.01.02", "event": "prepared_sender_in_all_players", "activated": false, "new_broadcasts_sent": false, "backfill": "own_latest_only"}
+{"time_utc": "2026-11-02T15:18:18.705637+00:00", "version": "1.01.03", "event": "prepared", "base": "1.01.02", "user_design_accepted": true, "scope": "compact currency introduction", "activated": false, "notice_reset": false}

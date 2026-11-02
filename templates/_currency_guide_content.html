@@ -1,59 +1,34 @@
 {% from "_currency.html" import currency_unit, currency_wallet with context %}
 <header class="currency-guide-hero">
-    <div>
-      <p class="eyebrow">DEIN SPIELGUTHABEN. DEIN NÄCHSTES ZIEL.</p>
-      <h1 id="currency-intro-title">Der Wettstreit um {{ currency_unit() }}</h1>
-      <p>Wie weit bringst du deinen Kontostand? Sammle {{ currency_unit() }} im Daily Quiz, vergleiche dich mit den anderen und entscheide selbst, was du am Blackjacktisch riskierst.</p>
-      {% if not intro_popup|default(false) %}<a class="currency-guide-link" href="{{ url_for('home') }}">← Zurück zur Hauptseite</a>{% endif %}
-    </div>
-    {{ currency_wallet(currency_balance) }}
-  </header>
+  <div>
+    <p class="eyebrow">MEHR SPIELE. EIN WETTSTREIT.</p>
+    <h1 id="currency-intro-title">Der Wettstreit um {{ currency_unit() }}</h1>
+    <p>Sammle im Quiz, spiele um dein Guthaben und klettere in der Rangliste nach oben.</p>
+    {% if not intro_popup|default(false) %}<a class="currency-guide-link" href="{{ url_for('home') }}">← Zurück zur Hauptseite</a>{% endif %}
+  </div>
+  {{ currency_wallet(currency_balance) }}
+</header>
 
-  <section class="currency-guide-steps" aria-label="So spielst du um iKühe">
-    <article class="currency-guide-card">
-      <span class="currency-guide-number" aria-hidden="true">01</span>
-      <h2>Sammeln</h2>
-      <p>Für abgeschlossene Daily-Quizrunden bekommst du {{ currency_unit() }} entsprechend deinen erspielten Punkten. Mit jeder Runde baust du dein Spielguthaben auf.</p>
-      <a class="currency-guide-link" href="{{ url_for('home') }}">Zum Daily Quiz →</a>
-    </article>
-    <article class="currency-guide-card">
-      <span class="currency-guide-number" aria-hidden="true">02</span>
-      <h2>Dein Einsatz. Deine Entscheidung.</h2>
-      {% if config.get('BLACKJACK_CURRENCY') == 'account-ikuehe' %}
-        <p>Bei Black Jack spielst du um die {{ currency_unit() }} deines normalen Kontos. Der Grundeinsatz beträgt 500 {{ currency_unit() }}. Gewinne kommen auf dein Konto; verlorene Einsätze sind weg.</p>
-        <p class="currency-guide-caution">Teilen, Verdoppeln und Versicherung kosten zusätzlich. Du setzt für jede Runde ausdrücklich neu.</p>
-      {% else %}
-        <p>Black Jack läuft in dieser Fassung noch mit getrenntem Testguthaben. Dieses verändert deinen normalen {{ currency_unit() }}-Kontostand nicht.</p>
-      {% endif %}
-      <a class="currency-guide-link" href="{{ url_for('blackjack_table') }}">Zum Blackjacktisch →</a>
-    </article>
-    <article class="currency-guide-card">
-      <span class="currency-guide-number" aria-hidden="true">03</span>
-      <h2>Deinen Platz behaupten</h2>
-      <p>Wer hat gerade die meisten {{ currency_unit() }}? Und wer hat den höchsten Kontostand erreicht? Die {{ currency_unit() }}-Rangliste macht euren Wettstreit sichtbar.</p>
-      <a class="currency-guide-link" href="{{ url_for('home', rangliste='ikuehe') }}">Zur {{ currency_unit() }}-Rangliste →</a>
-    </article>
-  </section>
+<section class="currency-guide-steps" aria-label="So spielst du um iKühe">
+  <article class="currency-guide-card">
+    <div class="currency-guide-card-heading"><span class="currency-guide-number" aria-hidden="true">01</span><h2>Im Quiz sammeln</h2></div>
+    <p>Jede abgeschlossene Daily-Runde bringt dir {{ currency_unit() }}. Dein Wissen wird zu deinem Spielguthaben.</p>
+    <a class="currency-guide-link" href="{{ url_for('home') }}">Zum Daily Quiz →</a>
+  </article>
+  <article class="currency-guide-card">
+    <div class="currency-guide-card-heading"><span class="currency-guide-number" aria-hidden="true">02</span><h2>Black Jack ist der Anfang</h2></div>
+    <p>Das erste von vielen geplanten Spielen um {{ currency_unit() }}. Hier kannst du Guthaben gewinnen und verlieren.</p>
+    <a class="currency-guide-link" href="{{ url_for('blackjack_table') }}">Zum Blackjacktisch →</a>
+  </article>
+  <article class="currency-guide-card">
+    <div class="currency-guide-card-heading"><span class="currency-guide-number" aria-hidden="true">03</span><h2>Die Spitze im Blick</h2></div>
+    <p>Vergleicht euren aktuellen Kontostand und euren All Time High – den bisher höchsten Stand.</p>
+    <a class="currency-guide-link" href="{{ url_for('home', rangliste='ikuehe') }}">Zur {{ currency_unit() }}-Rangliste →</a>
+  </article>
+</section>
 
-  <section class="currency-guide-ranking" aria-labelledby="currency-ranking-explained">
-    <div class="currency-guide-section-heading">
-      <span class="eyebrow">ZWEI BLICKE AUF EUREN WETTSTREIT</span>
-      <h2 id="currency-ranking-explained">Welchen Platz willst du erreichen?</h2>
-    </div>
-    <dl>
-      <div><dt>Aktuell</dt><dd>Hier zählt, wie viele {{ currency_unit() }} du jetzt besitzt. Quizgewinne, Einkäufe und Blackjack-Ergebnisse verändern diesen Stand.</dd></div>
-      <div><dt>All Time High</dt><dd>Hier zählt dein höchster erfasster Kontostand. Ein späterer Einkauf oder Verlust nimmt dir diesen bereits erreichten Höchststand nicht.</dd></div>
-    </dl>
-  </section>
-
-  <aside class="currency-guide-outlook" aria-labelledby="currency-outlook-title">
-    <span class="currency-guide-planned">Geplant</span>
-    <div><h2 id="currency-outlook-title">Erfolge und besondere Avatare</h2>
-      <p>Der Wettstreit soll eigene Erfolge rund um {{ currency_unit() }} und besondere Avatare bekommen. Diese Erweiterungen sind noch nicht freigeschaltet. Ziele und Vergaberegeln werden vor ihrer Einführung angekündigt.</p>
-    </div>
-  </aside>
-
-  <footer class="currency-guide-footer">
-    <p>Schon jetzt kannst du deine {{ currency_unit() }} im Shop für Avatare, Pulte, Hintergründe und Sprüche ausgeben und deinen eigenen Auftritt gestalten.</p>
-    <a class="secondary-button" href="{{ url_for('shop') }}">Zum {{ currency_unit() }}-Shop →</a>
-  </footer>
+<aside class="currency-guide-outlook" aria-label="Geplante Erweiterungen und Shop">
+  <span class="currency-guide-planned">Ausblick</span>
+  <p>Weitere Spiele, eigene Erfolge und besondere Avatare sind geplant.</p>
+  <a class="currency-guide-link" href="{{ url_for('shop') }}">Dein Look im Shop →</a>
+</aside>

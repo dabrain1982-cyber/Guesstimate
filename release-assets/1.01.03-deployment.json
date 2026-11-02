@@ -1,0 +1,61 @@
+{
+  "version": "1.01.03",
+  "base_version": "1.01.02",
+  "base_commit": "c0429c5bf364c3718709e94ebdf7c0ebdfd3715e",
+  "scope": "Accepted compact currency introduction",
+  "local_guide_tests": 5,
+  "notice_reset": false,
+  "new_question_import": false,
+  "files": [
+    {
+      "path": "deploy/activate_update_1_01_03.py",
+      "sha256": "0cd5b99511bf64780bb72ba0ca7cae6760eaf4a08d9dd5ad74d100d6e1e55349",
+      "before_sha256": null
+    },
+    {
+      "path": "release-log.jsonl",
+      "sha256": "e4040779ed6ea0eaaaa8dc1557ae6b7d1bb553bc57d7154561fc713cd4d6c0e5",
+      "before_sha256": "3f43662afe427f3024c1b621afbc29089c0d564deeb48b2dba7a8a5bce429761"
+    },
+    {
+      "path": "release.json",
+      "sha256": "a5e2c3763f9e518cb3fb39ec23729f435ed871fc0b9a6e0a6e1c00223f315dbe",
+      "before_sha256": "6b4479d0d1f16d6510d1267594953510d58cae3798247ff68814236a231461a5"
+    },
+    {
+      "path": "static/currency-guide.css",
+      "sha256": "d3436cb24d6ad8b9182f02d5032360aea88a58fd6d5a68df48215a1998e57271",
+      "before_sha256": "35a657fc83f70f6d8fa54d41bde1c59268c63f59123efdcf503d566b653d3c01"
+    },
+    {
+      "path": "static/ui-conventions.css",
+      "sha256": "7e2a47d3632f716ed50027b2aaef502af7e22b509edb9cb0782af154744b5f55",
+      "before_sha256": "45f89009e6ca15fde6e7a7e9640569a4f7f21857a7e6a4f006585aac5aa5e728"
+    },
+    {
+      "path": "templates/_currency_guide_content.html",
+      "sha256": "8af32460b626d2ddce0f482e7c28416758e5ed1fbe420cd3336f7b53d3a7144b",
+      "before_sha256": "27f8a75fff4898c151067582ce72b67e157a2552aecb877d8a4e910ca71610e5"
+    },
+    {
+      "path": "templates/base.html",
+      "sha256": "4822d727e85873c9f6428bdf31c928fb88727c4e1bffe26dc55f48a2d1b2dff6",
+      "before_sha256": "10cff0036fad4426c8d68bec3e8eded8c34f71def94f01e05f88226fda428438"
+    },
+    {
+      "path": "templates/home.html",
+      "sha256": "1dd5f04673a78386b52ade8d1601fd60bc070308c13aa8fdc67637e4e495b344",
+      "before_sha256": "6ca34212f6936550b671e7f99c6576b3b73637ad0a2d3d4c06cf6b36ddfdb7ad"
+    },
+    {
+      "path": "templates/ikuhe_guide.html",
+      "sha256": "638a2958e5eeb5ece11c9d9f0bb50a13386025a3adb973f2aee2af0d1249b406",
+      "before_sha256": "bb772cee0f7b67b3011a1fca9089d9fe71bfad12a49fc6c75882bf09681557ea"
+    },
+    {
+      "path": "tests/test_currency_guide.py",
+      "sha256": "204915582dcf3fd7efbabd5c62f1e82e26f21f9bc43d298c7f7191f8523a9f4f",
+      "before_sha256": "0ddb5550e79268e7cdcfa8bbb1b827c64ec6846438a5963dc8db4b24a159385a"
+    }
+  ]
+}

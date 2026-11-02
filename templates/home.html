@@ -4,7 +4,7 @@
 {% from "_game_flyers.html" import perfect_flyer_copy, blackjack_flyer_copy, conquest_flyer_copy %}
 {% block shell_class %}home-shell home-variant-a{% endblock %}
 {% block header %}{% endblock %}
-{% block extra_head %}{% if currency_intro_pending %}<link rel="stylesheet" href="{{ url_for('static', filename='currency-guide.css', v='2') }}">{% endif %}{% endblock %}
+{% block extra_head %}{% if currency_intro_pending %}<link rel="stylesheet" href="{{ url_for('static', filename='currency-guide.css', v='3') }}">{% endif %}{% endblock %}
 {% block content %}
   <div class="variant-a-stage">
     {{ profile_window(player_cosmetics, trophies) }}

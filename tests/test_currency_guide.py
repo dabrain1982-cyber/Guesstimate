@@ -53,10 +53,10 @@ class CurrencyGuideTests(unittest.TestCase):
         page=self.get('/ikuehe')
         self.assertIn('Der Wettstreit um iKühe',page.text)
         self.assertIn('900',page.text)
-        self.assertIn('500 iKühe',page.text)
-        self.assertIn('normalen Kontos',page.text)
+        self.assertIn('vielen geplanten Spielen',page.text)
+        self.assertIn('Guthaben gewinnen und verlieren',page.text)
         self.assertIn('All Time High',page.text)
-        self.assertIn('noch nicht freigeschaltet',page.text)
+        self.assertIn('besondere Avatare sind geplant',page.text)
         links={attrs.get('href') for tag,attrs in page.tags if tag=='a'}
         self.assertTrue({'/guesstimate/','/guesstimate/shop',
             '/guesstimate/karten/blackjack','/guesstimate/?rangliste=ikuehe'}<=links)
