@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% from "_profile_window.html" import profile_window with context %}
-{% from "_game_flyers.html" import perfect_flyer_copy %}
+{% from "_game_flyers.html" import perfect_flyer_copy, blackjack_flyer_copy, conquest_flyer_copy %}
 {% block shell_class %}home-shell home-variant-a{% endblock %}
 {% block header %}{% endblock %}
 {% block content %}
@@ -21,26 +21,26 @@
             <p>Fünf Fragen um täglich deine Unwissenheit zu beweisen!</p>
           </div>
         </article>
-        <article class="variant-a-slide slide-party" data-game-slide="1" aria-label="Guesstimate Party Classic" hidden>
+        <article class="variant-a-slide slide-party" data-game-slide="1" aria-label="guesstimate party classic" hidden>
           <div class="variant-a-flyer-copy">
             <h2><small>guesstimate</small>party classic</h2>
             <p>Das tägliche Quiz als Zeit-Stress-Partymodus</p>
           </div>
         </article>
-        <article class="variant-a-slide slide-perfect" data-game-slide="2" aria-label="Stormseed´s Perfect" hidden>
+        <article class="variant-a-slide slide-perfect" data-game-slide="2" aria-label="stormseed´s perfect" hidden>
           {{ perfect_flyer_copy() }}
         </article>
-        <article class="variant-a-slide slide-playtable" data-game-slide="3" aria-label="Tabletop Connection" hidden>
+        <article class="variant-a-slide slide-playtable" data-game-slide="3" aria-label="games collection" hidden>
           <div class="variant-a-flyer-copy">
-            <h2>Tabletop Connection</h2>
+            <h2>games collection</h2>
             <p>Ein Spieltisch, der täglich erweitert wird. Spiele Würfelspiele, Kartenspiele und Brettspiele mit deinen Freunden!</p>
           </div>
         </article>
-        <article class="variant-a-slide slide-birthday" data-game-slide="4" aria-label="Alles Gute zum Geburtstag, Jenny" hidden>
-          <div class="variant-a-flyer-copy">
-            <h2>Alles Gute, Jenny!</h2>
-            <p>Alles Gute auch zum Wochensieg in guesstimate!!!</p>
-          </div>
+        <article class="variant-a-slide slide-blackjack blackjack-flyer" data-game-slide="4" aria-label="Black Jack" hidden>
+          {{ blackjack_flyer_copy() }}
+        </article>
+        <article class="variant-a-slide slide-conquest conquest-flyer" data-game-slide="5" aria-label="stormseed’s conquest – Risiko" hidden>
+          {{ conquest_flyer_copy() }}
         </article>
 
         <button class="variant-a-carousel-arrow is-prev" type="button" data-carousel-prev aria-label="Vorheriges Spiel">‹</button>
@@ -62,7 +62,7 @@
               <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
               <input type="hidden" name="choice" value="all">
               <button class="secondary-button" type="submit">
-                {{ missed_week_days|length }} verpasste {{ 'Runde' if missed_week_days|length == 1 else 'Runden' }} nachholen
+                {{ missed_week_days|length }} verpasste {{ 'runde' if missed_week_days|length == 1 else 'runden' }} nachholen
               </button>
             </form>
           {% endif %}
@@ -93,9 +93,9 @@
         <p>Aber das macht MAL WIEDER ÜBERHAUPT NICHTS, WEIL DU NATÜRLICH ALLES EINFACH SO WIEDERHOLEN KANNST, wenn du magst :-)</p>
         <div class="catchup-actions">
           <button class="primary-button" name="choice" value="all" type="submit">
-            Alle {{ missed_week_days|length }} verpassten {{ 'Runde' if missed_week_days|length == 1 else 'Runden' }} nachholen
+            alle {{ missed_week_days|length }} verpassten {{ 'runde' if missed_week_days|length == 1 else 'runden' }} nachholen
           </button>
-          <button class="secondary-button" name="choice" value="today" type="submit">Lieber nur heute spielen</button>
+          <button class="secondary-button" name="choice" value="today" type="submit">lieber nur heute spielen</button>
         </div>
       </form>
     </dialog>

@@ -1,0 +1,17 @@
+{% from '_lobby_room.html' import lobby_room, lobby_summary with context %}
+<!doctype html><html lang="de"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lobby · Gestaltungsvorschau</title>
+<link rel="stylesheet" href="/shared/profile-window.css"><link rel="stylesheet" href="/shared/lobby.css">
+<link rel="stylesheet" href="/lobby-preview.css">
+<script defer src="/shared/profile-stage-v1.js"></script>
+<body style="--acid:{{ cfg.accent }};background-image:linear-gradient(#07151e77,#07151eaa),url('/shared/{{ background }}')">
+<p class="preview-note">Gestaltungsvorschau · Musterplätze</p>
+<main class="app-shell game-lobby-shell">
+{% call(slot, player=None) lobby_room(lobby, players, cfg.seats, 'workshop', 'Stormseed’s Spielewerkstatt', players|length) %}
+  {% if slot == 'settings' %}
+    {{ lobby_summary([('Spiel', 'Deine Spielidee'), ('Plätze', cfg.seats), ('Regeln', 'Mit der Projektübergabe ergänzen')]) }}
+    <p class="lobby-help">Hier erscheinen später die Einstellungen deines Spiels.</p>
+  {% elif slot == 'roster_note' %}Die Ausstattung der Beispielspieler dient nur zur Ansicht.
+  {% elif slot == 'footer' %}<p class="lobby-help">Gemeinsame Lobbykomponente · keine laufende Partie</p>{% endif %}
+{% endcall %}
+</main></body></html>

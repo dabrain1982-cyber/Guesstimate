@@ -1,0 +1,696 @@
+{
+  "schema": 1,
+  "description": "Original createPlayerPortrait and public_portrait; neutral local examples without game actions or DB.",
+  "captures": {
+    "avatar-a00": {
+      "label": "Avatar · Start-Avatar",
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"player\" data-layout=\"army\" data-current=\"false\" style=\"--player-color: #d8ff42; --portrait-scale: 1; --portrait-top: 0%;\"><div class=\"player-portrait-stats\"><span class=\"player-portrait-stat\" title=\"18 Truppen\" aria-label=\"18 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">18</strong></span><span class=\"player-portrait-stat\" title=\"6 Länder\" aria-label=\"6 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">6</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" src=\"/static/avatars/starter-neutral-public.svg\" alt=\"Avatar Start-Avatar von Musterperson\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\" hidden=\"\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\" hidden=\"\"></span><strong class=\"player-portrait-name\" title=\"Musterperson\">Musterperson</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" disabled=\"\" title=\"Musterperson: 3 Länderkarten\" aria-label=\"Musterperson: 3 Länderkarten\">3</button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "player_portrait.py",
+          "sha256": "97233b2f63814412f2b1c4c989c1f2e3644d6fcc538c1989ccb5578c7569a623"
+        },
+        {
+          "path": "app.py",
+          "sha256": "04bced1e8cdc85078fb04b661662b04e8bc719330b8b57348187d8721bcc34be"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        },
+        {
+          "path": "static/avatars/starter-neutral-public.svg",
+          "sha256": "474810edece62217cf1584aebe7b2b6edfc73ba727a0b91c34b6d2f9f72944a2"
+        }
+      ]
+    },
+    "avatar-a01": {
+      "label": "Avatar · Kea",
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"player\" data-layout=\"army\" data-current=\"false\" style=\"--player-color: #d8ff42; --portrait-scale: 1.7; --portrait-top: -48%;\"><div class=\"player-portrait-stats\"><span class=\"player-portrait-stat\" title=\"18 Truppen\" aria-label=\"18 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">18</strong></span><span class=\"player-portrait-stat\" title=\"6 Länder\" aria-label=\"6 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">6</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" src=\"/static/avatars/stage/a01-kea.webp\" alt=\"Avatar Kea von Musterperson\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\" hidden=\"\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\" hidden=\"\"></span><strong class=\"player-portrait-name\" title=\"Musterperson\">Musterperson</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" disabled=\"\" title=\"Musterperson: 3 Länderkarten\" aria-label=\"Musterperson: 3 Länderkarten\">3</button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "player_portrait.py",
+          "sha256": "97233b2f63814412f2b1c4c989c1f2e3644d6fcc538c1989ccb5578c7569a623"
+        },
+        {
+          "path": "app.py",
+          "sha256": "04bced1e8cdc85078fb04b661662b04e8bc719330b8b57348187d8721bcc34be"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        },
+        {
+          "path": "static/avatars/stage/a01-kea.webp",
+          "sha256": "7441345a8964ea65d6e103ea7ac69def99be5d0d8ac354e942d0b4fdd8aaa4a9"
+        }
+      ]
+    },
+    "avatar-a02": {
+      "label": "Avatar · Wasserschwein",
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"player\" data-layout=\"army\" data-current=\"false\" style=\"--player-color: #d8ff42; --portrait-scale: 1.7; --portrait-top: -48%;\"><div class=\"player-portrait-stats\"><span class=\"player-portrait-stat\" title=\"18 Truppen\" aria-label=\"18 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">18</strong></span><span class=\"player-portrait-stat\" title=\"6 Länder\" aria-label=\"6 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">6</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" src=\"/static/avatars/stage/a02-wasserschwein.webp\" alt=\"Avatar Wasserschwein von Musterperson\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\" hidden=\"\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\" hidden=\"\"></span><strong class=\"player-portrait-name\" title=\"Musterperson\">Musterperson</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" disabled=\"\" title=\"Musterperson: 3 Länderkarten\" aria-label=\"Musterperson: 3 Länderkarten\">3</button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "player_portrait.py",
+          "sha256": "97233b2f63814412f2b1c4c989c1f2e3644d6fcc538c1989ccb5578c7569a623"
+        },
+        {
+          "path": "app.py",
+          "sha256": "04bced1e8cdc85078fb04b661662b04e8bc719330b8b57348187d8721bcc34be"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        },
+        {
+          "path": "static/avatars/stage/a02-wasserschwein.webp",
+          "sha256": "133db2083c1a116a6b111904049c1b4272f2b18aefffa102b4d847412096f1ed"
+        }
+      ]
+    },
+    "avatar-a03": {
+      "label": "Avatar · Wanderfalke",
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"player\" data-layout=\"army\" data-current=\"false\" style=\"--player-color: #d8ff42; --portrait-scale: 1.7; --portrait-top: -48%;\"><div class=\"player-portrait-stats\"><span class=\"player-portrait-stat\" title=\"18 Truppen\" aria-label=\"18 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">18</strong></span><span class=\"player-portrait-stat\" title=\"6 Länder\" aria-label=\"6 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">6</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" src=\"/static/avatars/stage/a03-wanderfalke.webp\" alt=\"Avatar Wanderfalke von Musterperson\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\" hidden=\"\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\" hidden=\"\"></span><strong class=\"player-portrait-name\" title=\"Musterperson\">Musterperson</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" disabled=\"\" title=\"Musterperson: 3 Länderkarten\" aria-label=\"Musterperson: 3 Länderkarten\">3</button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "player_portrait.py",
+          "sha256": "97233b2f63814412f2b1c4c989c1f2e3644d6fcc538c1989ccb5578c7569a623"
+        },
+        {
+          "path": "app.py",
+          "sha256": "04bced1e8cdc85078fb04b661662b04e8bc719330b8b57348187d8721bcc34be"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        },
+        {
+          "path": "static/avatars/stage/a03-wanderfalke.webp",
+          "sha256": "3e7c0800cc68e56d20cad294afef9f545fb4506c7ff2541d05a7538f7ad1a060"
+        }
+      ]
+    },
+    "avatar-a04": {
+      "label": "Avatar · Faultier",
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"player\" data-layout=\"army\" data-current=\"false\" style=\"--player-color: #d8ff42; --portrait-scale: 1.7; --portrait-top: -48%;\"><div class=\"player-portrait-stats\"><span class=\"player-portrait-stat\" title=\"18 Truppen\" aria-label=\"18 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">18</strong></span><span class=\"player-portrait-stat\" title=\"6 Länder\" aria-label=\"6 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">6</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" src=\"/static/avatars/stage/a04-faultier.webp\" alt=\"Avatar Faultier von Musterperson\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\" hidden=\"\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\" hidden=\"\"></span><strong class=\"player-portrait-name\" title=\"Musterperson\">Musterperson</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" disabled=\"\" title=\"Musterperson: 3 Länderkarten\" aria-label=\"Musterperson: 3 Länderkarten\">3</button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "player_portrait.py",
+          "sha256": "97233b2f63814412f2b1c4c989c1f2e3644d6fcc538c1989ccb5578c7569a623"
+        },
+        {
+          "path": "app.py",
+          "sha256": "04bced1e8cdc85078fb04b661662b04e8bc719330b8b57348187d8721bcc34be"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        },
+        {
+          "path": "static/avatars/stage/a04-faultier.webp",
+          "sha256": "6cc64bfe5c17850036a6dd675abf5a8331198b46ce790fac52aafd873b9234d5"
+        }
+      ]
+    },
+    "avatar-a05": {
+      "label": "Avatar · Waschbär",
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"player\" data-layout=\"army\" data-current=\"false\" style=\"--player-color: #d8ff42; --portrait-scale: 1.7; --portrait-top: -48%;\"><div class=\"player-portrait-stats\"><span class=\"player-portrait-stat\" title=\"18 Truppen\" aria-label=\"18 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">18</strong></span><span class=\"player-portrait-stat\" title=\"6 Länder\" aria-label=\"6 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">6</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" src=\"/static/avatars/stage/a05-waschbaer.webp\" alt=\"Avatar Waschbär von Musterperson\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\" hidden=\"\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\" hidden=\"\"></span><strong class=\"player-portrait-name\" title=\"Musterperson\">Musterperson</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" disabled=\"\" title=\"Musterperson: 3 Länderkarten\" aria-label=\"Musterperson: 3 Länderkarten\">3</button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "player_portrait.py",
+          "sha256": "97233b2f63814412f2b1c4c989c1f2e3644d6fcc538c1989ccb5578c7569a623"
+        },
+        {
+          "path": "app.py",
+          "sha256": "04bced1e8cdc85078fb04b661662b04e8bc719330b8b57348187d8721bcc34be"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        },
+        {
+          "path": "static/avatars/stage/a05-waschbaer.webp",
+          "sha256": "a0ed40bdbe78bf54ed8ddadd854c86b59f2bc7c1f4db200dc6220ec15bf18e8c"
+        }
+      ]
+    },
+    "avatar-a06": {
+      "label": "Avatar · Oktopus",
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"player\" data-layout=\"army\" data-current=\"false\" style=\"--player-color: #d8ff42; --portrait-scale: 1.7; --portrait-top: -48%;\"><div class=\"player-portrait-stats\"><span class=\"player-portrait-stat\" title=\"18 Truppen\" aria-label=\"18 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">18</strong></span><span class=\"player-portrait-stat\" title=\"6 Länder\" aria-label=\"6 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">6</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" src=\"/static/avatars/stage/a06-oktopus.webp\" alt=\"Avatar Oktopus von Musterperson\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\" hidden=\"\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\" hidden=\"\"></span><strong class=\"player-portrait-name\" title=\"Musterperson\">Musterperson</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" disabled=\"\" title=\"Musterperson: 3 Länderkarten\" aria-label=\"Musterperson: 3 Länderkarten\">3</button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "player_portrait.py",
+          "sha256": "97233b2f63814412f2b1c4c989c1f2e3644d6fcc538c1989ccb5578c7569a623"
+        },
+        {
+          "path": "app.py",
+          "sha256": "04bced1e8cdc85078fb04b661662b04e8bc719330b8b57348187d8721bcc34be"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        },
+        {
+          "path": "static/avatars/stage/a06-oktopus.webp",
+          "sha256": "371a907abf314ef9048809bd55460f0dc53d53e5532bbef3a28a1a290c96d00d"
+        }
+      ]
+    },
+    "avatar-a07": {
+      "label": "Avatar · Ziege",
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"player\" data-layout=\"army\" data-current=\"false\" style=\"--player-color: #d8ff42; --portrait-scale: 1.7; --portrait-top: -48%;\"><div class=\"player-portrait-stats\"><span class=\"player-portrait-stat\" title=\"18 Truppen\" aria-label=\"18 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">18</strong></span><span class=\"player-portrait-stat\" title=\"6 Länder\" aria-label=\"6 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">6</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" src=\"/static/avatars/stage/a07-ziege.webp\" alt=\"Avatar Ziege von Musterperson\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\" hidden=\"\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\" hidden=\"\"></span><strong class=\"player-portrait-name\" title=\"Musterperson\">Musterperson</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" disabled=\"\" title=\"Musterperson: 3 Länderkarten\" aria-label=\"Musterperson: 3 Länderkarten\">3</button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "player_portrait.py",
+          "sha256": "97233b2f63814412f2b1c4c989c1f2e3644d6fcc538c1989ccb5578c7569a623"
+        },
+        {
+          "path": "app.py",
+          "sha256": "04bced1e8cdc85078fb04b661662b04e8bc719330b8b57348187d8721bcc34be"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        },
+        {
+          "path": "static/avatars/stage/a07-ziege.webp",
+          "sha256": "365779fef550df9f283eed3d5036a1dfee4e2b58d1a7f0ad837b132cab11bf06"
+        }
+      ]
+    },
+    "avatar-a08": {
+      "label": "Avatar · Krähe",
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"player\" data-layout=\"army\" data-current=\"false\" style=\"--player-color: #d8ff42; --portrait-scale: 1.7; --portrait-top: -48%;\"><div class=\"player-portrait-stats\"><span class=\"player-portrait-stat\" title=\"18 Truppen\" aria-label=\"18 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">18</strong></span><span class=\"player-portrait-stat\" title=\"6 Länder\" aria-label=\"6 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">6</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" src=\"/static/avatars/stage/a08-kraehe.webp\" alt=\"Avatar Krähe von Musterperson\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\" hidden=\"\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\" hidden=\"\"></span><strong class=\"player-portrait-name\" title=\"Musterperson\">Musterperson</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" disabled=\"\" title=\"Musterperson: 3 Länderkarten\" aria-label=\"Musterperson: 3 Länderkarten\">3</button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "player_portrait.py",
+          "sha256": "97233b2f63814412f2b1c4c989c1f2e3644d6fcc538c1989ccb5578c7569a623"
+        },
+        {
+          "path": "app.py",
+          "sha256": "04bced1e8cdc85078fb04b661662b04e8bc719330b8b57348187d8721bcc34be"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        },
+        {
+          "path": "static/avatars/stage/a08-kraehe.webp",
+          "sha256": "f7ff9b6f2c04c6b85d63fef6c2a780582f87d036c9a071044dc3ab8b5a90d298"
+        }
+      ]
+    },
+    "avatar-a09": {
+      "label": "Avatar · Fennek",
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"player\" data-layout=\"army\" data-current=\"false\" style=\"--player-color: #d8ff42; --portrait-scale: 1.7; --portrait-top: -48%;\"><div class=\"player-portrait-stats\"><span class=\"player-portrait-stat\" title=\"18 Truppen\" aria-label=\"18 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">18</strong></span><span class=\"player-portrait-stat\" title=\"6 Länder\" aria-label=\"6 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">6</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" src=\"/static/avatars/stage/a09-fennek.webp\" alt=\"Avatar Fennek von Musterperson\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\" hidden=\"\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\" hidden=\"\"></span><strong class=\"player-portrait-name\" title=\"Musterperson\">Musterperson</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" disabled=\"\" title=\"Musterperson: 3 Länderkarten\" aria-label=\"Musterperson: 3 Länderkarten\">3</button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "player_portrait.py",
+          "sha256": "97233b2f63814412f2b1c4c989c1f2e3644d6fcc538c1989ccb5578c7569a623"
+        },
+        {
+          "path": "app.py",
+          "sha256": "04bced1e8cdc85078fb04b661662b04e8bc719330b8b57348187d8721bcc34be"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        },
+        {
+          "path": "static/avatars/stage/a09-fennek.webp",
+          "sha256": "fbbc4184c96c4986a117b13b411ebdf4cd48924841f157382c97a7393c64c9b4"
+        }
+      ]
+    },
+    "avatar-a10": {
+      "label": "Avatar · Wombat",
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"player\" data-layout=\"army\" data-current=\"false\" style=\"--player-color: #d8ff42; --portrait-scale: 1.7; --portrait-top: -48%;\"><div class=\"player-portrait-stats\"><span class=\"player-portrait-stat\" title=\"18 Truppen\" aria-label=\"18 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">18</strong></span><span class=\"player-portrait-stat\" title=\"6 Länder\" aria-label=\"6 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">6</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" src=\"/static/avatars/stage/a10-wombat.webp\" alt=\"Avatar Wombat von Musterperson\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\" hidden=\"\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\" hidden=\"\"></span><strong class=\"player-portrait-name\" title=\"Musterperson\">Musterperson</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" disabled=\"\" title=\"Musterperson: 3 Länderkarten\" aria-label=\"Musterperson: 3 Länderkarten\">3</button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "player_portrait.py",
+          "sha256": "97233b2f63814412f2b1c4c989c1f2e3644d6fcc538c1989ccb5578c7569a623"
+        },
+        {
+          "path": "app.py",
+          "sha256": "04bced1e8cdc85078fb04b661662b04e8bc719330b8b57348187d8721bcc34be"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        },
+        {
+          "path": "static/avatars/stage/a10-wombat.webp",
+          "sha256": "86d987d6bce3ef52d9d860872f5509872147179fa26a6f2cf165382c6f7d88ed"
+        }
+      ]
+    },
+    "avatar-a11": {
+      "label": "Avatar · Gans",
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"player\" data-layout=\"army\" data-current=\"false\" style=\"--player-color: #d8ff42; --portrait-scale: 1.7; --portrait-top: -48%;\"><div class=\"player-portrait-stats\"><span class=\"player-portrait-stat\" title=\"18 Truppen\" aria-label=\"18 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">18</strong></span><span class=\"player-portrait-stat\" title=\"6 Länder\" aria-label=\"6 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">6</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" src=\"/static/avatars/stage/a11-gans.webp\" alt=\"Avatar Gans von Musterperson\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\" hidden=\"\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\" hidden=\"\"></span><strong class=\"player-portrait-name\" title=\"Musterperson\">Musterperson</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" disabled=\"\" title=\"Musterperson: 3 Länderkarten\" aria-label=\"Musterperson: 3 Länderkarten\">3</button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "player_portrait.py",
+          "sha256": "97233b2f63814412f2b1c4c989c1f2e3644d6fcc538c1989ccb5578c7569a623"
+        },
+        {
+          "path": "app.py",
+          "sha256": "04bced1e8cdc85078fb04b661662b04e8bc719330b8b57348187d8721bcc34be"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        },
+        {
+          "path": "static/avatars/stage/a11-gans.webp",
+          "sha256": "9c2d53bdf548aaff6753602c77c4caa6d6794442d36b8c80dcf85f88bd83e468"
+        }
+      ]
+    },
+    "avatar-a12": {
+      "label": "Avatar · Fangschreckenkrebs",
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"player\" data-layout=\"army\" data-current=\"false\" style=\"--player-color: #d8ff42; --portrait-scale: 1.7; --portrait-top: -48%;\"><div class=\"player-portrait-stats\"><span class=\"player-portrait-stat\" title=\"18 Truppen\" aria-label=\"18 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">18</strong></span><span class=\"player-portrait-stat\" title=\"6 Länder\" aria-label=\"6 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">6</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" src=\"/static/avatars/stage/a12-fangschreckenkrebs.webp\" alt=\"Avatar Fangschreckenkrebs von Musterperson\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\" hidden=\"\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\" hidden=\"\"></span><strong class=\"player-portrait-name\" title=\"Musterperson\">Musterperson</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" disabled=\"\" title=\"Musterperson: 3 Länderkarten\" aria-label=\"Musterperson: 3 Länderkarten\">3</button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "player_portrait.py",
+          "sha256": "97233b2f63814412f2b1c4c989c1f2e3644d6fcc538c1989ccb5578c7569a623"
+        },
+        {
+          "path": "app.py",
+          "sha256": "04bced1e8cdc85078fb04b661662b04e8bc719330b8b57348187d8721bcc34be"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        },
+        {
+          "path": "static/avatars/stage/a12-fangschreckenkrebs.webp",
+          "sha256": "9d805ba281df883a064e57f811c7035b78336b8611900835d5fbb7a72a8fd823"
+        }
+      ]
+    },
+    "avatar-a13": {
+      "label": "Avatar · Axolotl",
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"player\" data-layout=\"army\" data-current=\"false\" style=\"--player-color: #d8ff42; --portrait-scale: 1.7; --portrait-top: -48%;\"><div class=\"player-portrait-stats\"><span class=\"player-portrait-stat\" title=\"18 Truppen\" aria-label=\"18 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">18</strong></span><span class=\"player-portrait-stat\" title=\"6 Länder\" aria-label=\"6 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">6</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" src=\"/static/avatars/stage/a13-axolotl.webp\" alt=\"Avatar Axolotl von Musterperson\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\" hidden=\"\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\" hidden=\"\"></span><strong class=\"player-portrait-name\" title=\"Musterperson\">Musterperson</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" disabled=\"\" title=\"Musterperson: 3 Länderkarten\" aria-label=\"Musterperson: 3 Länderkarten\">3</button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "player_portrait.py",
+          "sha256": "97233b2f63814412f2b1c4c989c1f2e3644d6fcc538c1989ccb5578c7569a623"
+        },
+        {
+          "path": "app.py",
+          "sha256": "04bced1e8cdc85078fb04b661662b04e8bc719330b8b57348187d8721bcc34be"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        },
+        {
+          "path": "static/avatars/stage/a13-axolotl.webp",
+          "sha256": "85a528d033651d63ac19c192cc162911a15e278ba9718204c298d882551c70c1"
+        }
+      ]
+    },
+    "avatar-a14": {
+      "label": "Avatar · Somnus",
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"player\" data-layout=\"army\" data-current=\"false\" style=\"--player-color: #d8ff42; --portrait-scale: 1.7; --portrait-top: -48%;\"><div class=\"player-portrait-stats\"><span class=\"player-portrait-stat\" title=\"18 Truppen\" aria-label=\"18 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">18</strong></span><span class=\"player-portrait-stat\" title=\"6 Länder\" aria-label=\"6 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">6</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" src=\"/static/avatars/stage/a14-somnus-cutout-v2.png\" alt=\"Avatar Somnus von Musterperson\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\" hidden=\"\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\" hidden=\"\"></span><strong class=\"player-portrait-name\" title=\"Musterperson\">Musterperson</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" disabled=\"\" title=\"Musterperson: 3 Länderkarten\" aria-label=\"Musterperson: 3 Länderkarten\">3</button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "player_portrait.py",
+          "sha256": "97233b2f63814412f2b1c4c989c1f2e3644d6fcc538c1989ccb5578c7569a623"
+        },
+        {
+          "path": "app.py",
+          "sha256": "04bced1e8cdc85078fb04b661662b04e8bc719330b8b57348187d8721bcc34be"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        },
+        {
+          "path": "static/avatars/stage/a14-somnus-cutout-v2.png",
+          "sha256": "f9bdac096a9190796b688e6ea0cf4453bcf89a896b75d5c8887fb18813697206"
+        }
+      ]
+    },
+    "avatar-a15": {
+      "label": "Avatar · Ember",
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"player\" data-layout=\"army\" data-current=\"false\" style=\"--player-color: #d8ff42; --portrait-scale: 1.7; --portrait-top: -48%;\"><div class=\"player-portrait-stats\"><span class=\"player-portrait-stat\" title=\"18 Truppen\" aria-label=\"18 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">18</strong></span><span class=\"player-portrait-stat\" title=\"6 Länder\" aria-label=\"6 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">6</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" src=\"/static/avatars/stage/a15-ember-cutout-v2.png\" alt=\"Avatar Ember von Musterperson\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\" hidden=\"\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\" hidden=\"\"></span><strong class=\"player-portrait-name\" title=\"Musterperson\">Musterperson</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" disabled=\"\" title=\"Musterperson: 3 Länderkarten\" aria-label=\"Musterperson: 3 Länderkarten\">3</button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "player_portrait.py",
+          "sha256": "97233b2f63814412f2b1c4c989c1f2e3644d6fcc538c1989ccb5578c7569a623"
+        },
+        {
+          "path": "app.py",
+          "sha256": "04bced1e8cdc85078fb04b661662b04e8bc719330b8b57348187d8721bcc34be"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        },
+        {
+          "path": "static/avatars/stage/a15-ember-cutout-v2.png",
+          "sha256": "47a0f3e8317a9d79bf35bb3a01da78360d570fd282af2c26c5ad50dbf82a31eb"
+        }
+      ]
+    },
+    "avatar-a16": {
+      "label": "Avatar · Myrli",
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"player\" data-layout=\"army\" data-current=\"false\" style=\"--player-color: #d8ff42; --portrait-scale: 1.7; --portrait-top: -48%;\"><div class=\"player-portrait-stats\"><span class=\"player-portrait-stat\" title=\"18 Truppen\" aria-label=\"18 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">18</strong></span><span class=\"player-portrait-stat\" title=\"6 Länder\" aria-label=\"6 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">6</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" src=\"/static/avatars/stage/a16-myrli-cutout-v2.png\" alt=\"Avatar Myrli von Musterperson\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\" hidden=\"\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\" hidden=\"\"></span><strong class=\"player-portrait-name\" title=\"Musterperson\">Musterperson</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" disabled=\"\" title=\"Musterperson: 3 Länderkarten\" aria-label=\"Musterperson: 3 Länderkarten\">3</button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "player_portrait.py",
+          "sha256": "97233b2f63814412f2b1c4c989c1f2e3644d6fcc538c1989ccb5578c7569a623"
+        },
+        {
+          "path": "app.py",
+          "sha256": "04bced1e8cdc85078fb04b661662b04e8bc719330b8b57348187d8721bcc34be"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        },
+        {
+          "path": "static/avatars/stage/a16-myrli-cutout-v2.png",
+          "sha256": "0bcd23bcd422e44a034defdf3f2fe7090251a261b0d16442ad659402ab5b60bb"
+        }
+      ]
+    },
+    "avatar-a17": {
+      "label": "Avatar · Luno",
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"player\" data-layout=\"army\" data-current=\"false\" style=\"--player-color: #d8ff42; --portrait-scale: 1.7; --portrait-top: -48%;\"><div class=\"player-portrait-stats\"><span class=\"player-portrait-stat\" title=\"18 Truppen\" aria-label=\"18 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">18</strong></span><span class=\"player-portrait-stat\" title=\"6 Länder\" aria-label=\"6 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">6</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" src=\"/static/avatars/stage/a17-luno-cutout-v2.png\" alt=\"Avatar Luno von Musterperson\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\" hidden=\"\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\" hidden=\"\"></span><strong class=\"player-portrait-name\" title=\"Musterperson\">Musterperson</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" disabled=\"\" title=\"Musterperson: 3 Länderkarten\" aria-label=\"Musterperson: 3 Länderkarten\">3</button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "player_portrait.py",
+          "sha256": "97233b2f63814412f2b1c4c989c1f2e3644d6fcc538c1989ccb5578c7569a623"
+        },
+        {
+          "path": "app.py",
+          "sha256": "04bced1e8cdc85078fb04b661662b04e8bc719330b8b57348187d8721bcc34be"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        },
+        {
+          "path": "static/avatars/stage/a17-luno-cutout-v2.png",
+          "sha256": "a92f6eb848ab62c81e311f4db4236631cee422d21cbbcd522432626c369ef571"
+        }
+      ]
+    },
+    "avatar-a18": {
+      "label": "Avatar · Nimbus",
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"player\" data-layout=\"army\" data-current=\"false\" style=\"--player-color: #d8ff42; --portrait-scale: 1.7; --portrait-top: -48%;\"><div class=\"player-portrait-stats\"><span class=\"player-portrait-stat\" title=\"18 Truppen\" aria-label=\"18 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">18</strong></span><span class=\"player-portrait-stat\" title=\"6 Länder\" aria-label=\"6 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">6</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" src=\"/static/avatars/stage/a18-nimbus-cutout-v2.png\" alt=\"Avatar Nimbus von Musterperson\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\" hidden=\"\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\" hidden=\"\"></span><strong class=\"player-portrait-name\" title=\"Musterperson\">Musterperson</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" disabled=\"\" title=\"Musterperson: 3 Länderkarten\" aria-label=\"Musterperson: 3 Länderkarten\">3</button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "player_portrait.py",
+          "sha256": "97233b2f63814412f2b1c4c989c1f2e3644d6fcc538c1989ccb5578c7569a623"
+        },
+        {
+          "path": "app.py",
+          "sha256": "04bced1e8cdc85078fb04b661662b04e8bc719330b8b57348187d8721bcc34be"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        },
+        {
+          "path": "static/avatars/stage/a18-nimbus-cutout-v2.png",
+          "sha256": "431e095bb8c858b937cb978929e557838af817df1e4a255fb55a4e798c8503ea"
+        }
+      ]
+    },
+    "avatar-self": {
+      "label": "Avatar · Eigener Startavatar",
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"player\" data-layout=\"army\" data-current=\"false\" style=\"--player-color: #d8ff42; --portrait-scale: 1; --portrait-top: 0%;\"><div class=\"player-portrait-stats\"><span class=\"player-portrait-stat\" title=\"18 Truppen\" aria-label=\"18 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">18</strong></span><span class=\"player-portrait-stat\" title=\"6 Länder\" aria-label=\"6 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">6</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" src=\"/static/avatars/starter-neutral.svg\" alt=\"Avatar Start-Avatar von Musterperson\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\" hidden=\"\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\" hidden=\"\"></span><strong class=\"player-portrait-name\" title=\"Musterperson\">Musterperson</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" disabled=\"\" title=\"Musterperson: 3 Länderkarten\" aria-label=\"Musterperson: 3 Länderkarten\">3</button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "player_portrait.py",
+          "sha256": "97233b2f63814412f2b1c4c989c1f2e3644d6fcc538c1989ccb5578c7569a623"
+        },
+        {
+          "path": "app.py",
+          "sha256": "04bced1e8cdc85078fb04b661662b04e8bc719330b8b57348187d8721bcc34be"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        },
+        {
+          "path": "static/avatars/starter-neutral.svg",
+          "sha256": "6266ebd81e7e503d475baebe44deca7a0f513a9de54fdaf35d8e1577441bc7bf"
+        }
+      ]
+    },
+    "self-active": {
+      "label": "Eigener Platz · am Zug",
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"player\" data-layout=\"army\" data-current=\"true\" style=\"--player-color: #d8ff42; --portrait-scale: 1; --portrait-top: 0%;\"><div class=\"player-portrait-stats\"><span class=\"player-portrait-stat\" title=\"18 Truppen\" aria-label=\"18 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">18</strong></span><span class=\"player-portrait-stat\" title=\"6 Länder\" aria-label=\"6 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">6</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" src=\"/static/avatars/starter-neutral.svg\" alt=\"Avatar Start-Avatar von Musterperson\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\" hidden=\"\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\">du · am Zug</span><strong class=\"player-portrait-name\" title=\"Musterperson\">Musterperson</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" title=\"Musterperson: 3 Länderkarten\" aria-label=\"Musterperson: 3 Länderkarten · eigene Karten ansehen\">3</button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "player_portrait.py",
+          "sha256": "97233b2f63814412f2b1c4c989c1f2e3644d6fcc538c1989ccb5578c7569a623"
+        },
+        {
+          "path": "app.py",
+          "sha256": "04bced1e8cdc85078fb04b661662b04e8bc719330b8b57348187d8721bcc34be"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        },
+        {
+          "path": "static/avatars/starter-neutral.svg",
+          "sha256": "6266ebd81e7e503d475baebe44deca7a0f513a9de54fdaf35d8e1577441bc7bf"
+        }
+      ]
+    },
+    "other-waiting": {
+      "label": "Mitspieler · wartet",
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"player\" data-layout=\"army\" data-current=\"false\" style=\"--player-color: #d8ff42; --portrait-scale: 1; --portrait-top: 0%;\"><div class=\"player-portrait-stats\"><span class=\"player-portrait-stat\" title=\"18 Truppen\" aria-label=\"18 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">18</strong></span><span class=\"player-portrait-stat\" title=\"6 Länder\" aria-label=\"6 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">6</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" src=\"/static/avatars/starter-neutral-public.svg\" alt=\"Avatar Start-Avatar von Musterperson\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\" hidden=\"\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\" hidden=\"\"></span><strong class=\"player-portrait-name\" title=\"Musterperson\">Musterperson</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" disabled=\"\" title=\"Musterperson: 3 Länderkarten\" aria-label=\"Musterperson: 3 Länderkarten\">3</button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "player_portrait.py",
+          "sha256": "97233b2f63814412f2b1c4c989c1f2e3644d6fcc538c1989ccb5578c7569a623"
+        },
+        {
+          "path": "app.py",
+          "sha256": "04bced1e8cdc85078fb04b661662b04e8bc719330b8b57348187d8721bcc34be"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        },
+        {
+          "path": "static/avatars/starter-neutral-public.svg",
+          "sha256": "474810edece62217cf1584aebe7b2b6edfc73ba727a0b91c34b6d2f9f72944a2"
+        }
+      ]
+    },
+    "test": {
+      "label": "Testarmee",
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"test\" data-layout=\"army\" data-current=\"false\" style=\"--player-color: #82c3ff;\"><div class=\"player-portrait-stats\"><span class=\"player-portrait-stat\" title=\"18 Truppen\" aria-label=\"18 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">18</strong></span><span class=\"player-portrait-stat\" title=\"6 Länder\" aria-label=\"6 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">6</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" hidden=\"\" alt=\"\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\">Testarmee</span><strong class=\"player-portrait-name\" title=\"Musterarmee\">Musterarmee</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" disabled=\"\" title=\"Musterarmee: 3 Länderkarten\" aria-label=\"Musterarmee: 3 Länderkarten\">3</button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "player_portrait.py",
+          "sha256": "97233b2f63814412f2b1c4c989c1f2e3644d6fcc538c1989ccb5578c7569a623"
+        },
+        {
+          "path": "app.py",
+          "sha256": "04bced1e8cdc85078fb04b661662b04e8bc719330b8b57348187d8721bcc34be"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        }
+      ]
+    },
+    "neutral": {
+      "label": "Neutrale Armee",
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"neutral\" data-layout=\"army\" data-current=\"false\" style=\"--player-color: #aaaaaa;\"><div class=\"player-portrait-stats\"><span class=\"player-portrait-stat\" title=\"18 Truppen\" aria-label=\"18 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">18</strong></span><span class=\"player-portrait-stat\" title=\"6 Länder\" aria-label=\"6 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">6</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" hidden=\"\" alt=\"\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\">N</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\" hidden=\"\"></span><strong class=\"player-portrait-name\" title=\"Neutral\">Neutral</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" hidden=\"\" disabled=\"\" title=\"Neutral: null Länderkarten\" aria-label=\"Neutral: null Länderkarten\"></button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "player_portrait.py",
+          "sha256": "97233b2f63814412f2b1c4c989c1f2e3644d6fcc538c1989ccb5578c7569a623"
+        },
+        {
+          "path": "app.py",
+          "sha256": "04bced1e8cdc85078fb04b661662b04e8bc719330b8b57348187d8721bcc34be"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        }
+      ]
+    },
+    "out": {
+      "label": "Ausgeschieden",
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"player\" data-layout=\"army\" data-current=\"false\" style=\"--player-color: #d8ff42; --portrait-scale: 1; --portrait-top: 0%;\"><div class=\"player-portrait-stats\"><span class=\"player-portrait-stat\" title=\"0 Truppen\" aria-label=\"0 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">0</strong></span><span class=\"player-portrait-stat\" title=\"0 Länder\" aria-label=\"0 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">0</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" src=\"/static/avatars/starter-neutral-public.svg\" alt=\"Avatar Start-Avatar von Musterperson\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\" hidden=\"\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\">ausgeschieden</span><strong class=\"player-portrait-name\" title=\"Musterperson\">Musterperson</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" disabled=\"\" title=\"Musterperson: 0 Länderkarten\" aria-label=\"Musterperson: 0 Länderkarten\">0</button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "player_portrait.py",
+          "sha256": "97233b2f63814412f2b1c4c989c1f2e3644d6fcc538c1989ccb5578c7569a623"
+        },
+        {
+          "path": "app.py",
+          "sha256": "04bced1e8cdc85078fb04b661662b04e8bc719330b8b57348187d8721bcc34be"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        },
+        {
+          "path": "static/avatars/starter-neutral-public.svg",
+          "sha256": "474810edece62217cf1584aebe7b2b6edfc73ba727a0b91c34b6d2f9f72944a2"
+        }
+      ]
+    },
+    "winner-player": {
+      "label": "Sieger des Feldzugs",
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"player\" data-layout=\"default\" data-current=\"true\" style=\"--player-color: #d8ff42; --portrait-scale: 1; --portrait-top: 0%;\"><div class=\"player-portrait-stats\" hidden=\"\"><span class=\"player-portrait-stat\" title=\"0 Truppen\" aria-label=\"0 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">0</strong></span><span class=\"player-portrait-stat\" title=\"0 Länder\" aria-label=\"0 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">0</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" src=\"/static/avatars/starter-neutral-public.svg\" alt=\"Avatar Start-Avatar von Musterperson\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\" hidden=\"\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\">Sieger des Feldzugs</span><strong class=\"player-portrait-name\" title=\"Musterperson\">Musterperson</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" hidden=\"\" disabled=\"\" title=\"Musterperson: undefined Länderkarten\" aria-label=\"Musterperson: undefined Länderkarten\"></button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "player_portrait.py",
+          "sha256": "97233b2f63814412f2b1c4c989c1f2e3644d6fcc538c1989ccb5578c7569a623"
+        },
+        {
+          "path": "app.py",
+          "sha256": "04bced1e8cdc85078fb04b661662b04e8bc719330b8b57348187d8721bcc34be"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        },
+        {
+          "path": "static/avatars/starter-neutral-public.svg",
+          "sha256": "474810edece62217cf1584aebe7b2b6edfc73ba727a0b91c34b6d2f9f72944a2"
+        }
+      ]
+    },
+    "winner-test": {
+      "label": "Sieger · Testarmee",
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"test\" data-layout=\"default\" data-current=\"true\" style=\"--player-color: #82c3ff;\"><div class=\"player-portrait-stats\" hidden=\"\"><span class=\"player-portrait-stat\" title=\"0 Truppen\" aria-label=\"0 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">0</strong></span><span class=\"player-portrait-stat\" title=\"0 Länder\" aria-label=\"0 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">0</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" hidden=\"\" alt=\"\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\">Sieger des Feldzugs</span><strong class=\"player-portrait-name\" title=\"Musterarmee\">Musterarmee</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" hidden=\"\" disabled=\"\" title=\"Musterarmee: undefined Länderkarten\" aria-label=\"Musterarmee: undefined Länderkarten\"></button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "player_portrait.py",
+          "sha256": "97233b2f63814412f2b1c4c989c1f2e3644d6fcc538c1989ccb5578c7569a623"
+        },
+        {
+          "path": "app.py",
+          "sha256": "04bced1e8cdc85078fb04b661662b04e8bc719330b8b57348187d8721bcc34be"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Black Jack · stormseed´s</title>
+  <link rel="icon" href="{{ url_for('static', filename='favicon.svg') }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ url_for('static', filename='blackjack-workshop.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='player-portrait.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='blackjack-table.css') }}">
+  {% if config.get('BLACKJACK_SIMULATION') %}<link rel="stylesheet" href="{{ url_for('static', filename='blackjack-simulation.css') }}">{% endif %}
+</head>
+<body class="blackjack-page">
+  {% if config.get('BLACKJACK_SIMULATION') %}{% include '_blackjack_test_banner.html' %}{% endif %}
+  {% include '_blackjack_table.html' %}
+  <script type="application/json" id="blackjack-initial">{{ seating|tojson }}</script>
+  <script type="module" src="{{ url_for('static', filename='blackjack-seating.js') }}"></script>
+</body>
+</html>

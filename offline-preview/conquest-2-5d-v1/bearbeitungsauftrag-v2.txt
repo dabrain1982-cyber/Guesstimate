@@ -1,0 +1,24 @@
+Rückwand als eigene Ebene:
+Use case: precise-object-edit. Input image is the style and identity reference for a warm club-room background plate in a local 2.5D board-game prototype.
+Create a very wide panoramic FRONT WALL elevation, approximately 3:1 aspect ratio, from this same room. Preserve the central lit fireplace and its recognizable dark walnut mantel, the existing dark wooden wall panelling, bookshelves to the right, warm wall lights and rich old-club atmosphere. Extend the actual room architecture coherently to the left and right so the entire wide image contains finished room wall rather than generic wood grain or missing corners.
+Important layer separation: remove ALL foreground leather armchairs, ALL foreground side tables and floor lamps and ALL foreground floor/carpet. These furniture objects and the floor will be separate layers in the prototype. The wall meets a straight continuous baseboard along the very bottom edge of the image. No carpet, no floor plane, no foreground tabletop. Keep a natural straight-on architectural view of the wall, no fisheye, no perspective trapezoid. Make the fireplace proportional to a real room, not huge. Keep the fine illustrated-photorealistic style and warm light of the input. No people, no game board, no labels, no text, no blur patches.
+
+Möbel als getrennte Bildebenen:
+Use case: background-extraction. Reference image: the original warm club-room with dark brown leather armchairs and side tables. Create one transparent furniture sprite sheet for a 2.5D scene, with TWO fully separate furniture groups, each entirely inside its own half of the wide image, and a generous completely transparent gutter between them.
+LEFT HALF: the recognizable left-side dark brown tufted leather club armchair angled slightly toward the right, with its matching small wooden side table and warm shaded table lamp next to it.
+RIGHT HALF: the recognizable right-side dark brown tufted leather club armchair angled slightly toward the left, with its matching small wooden side table and warm shaded lamp next to it.
+Keep the old-fashioned polished wood, brass details, dark green cushions and warm illustrated-photorealistic rendering of the reference. Both groups must be complete, standing upright, seen from a seated person's front three-quarter view. Keep each group on a common ground line near the bottom of the sheet. Do not crop legs, backs, lamps or table edges. No wall, no fireplace, no carpet, no room, no floor plane, no background at all; use genuine transparent alpha around and between the objects. No words, no labels, no border. The two halves will be rendered as separate upright image cards, so do not connect them or let either group cross the center gutter.
+
+Beide Aufträge mit dem eingebauten image_gen-Werkzeug ausgeführt.
+Referenz: assets/raum-ohne-tisch.png.
+Ausgaben: assets/raum-wand-v2.png und assets/moebel-v2.png.
+
+Werkzeugmodus: Bildbearbeitung mit lokaler Bildreferenz, kein CLI-Aufruf.
+Rückwand: transparent_background=false.
+Möbel: transparent_background=true; RGBA mit transparenten Außenbereichen geprüft.
+Gespeicherte Arbeitsdateien:
+D:/Guesstimate/offline-preview/conquest-2-5d-v1/assets/raum-wand-v2.png
+D:/Guesstimate/offline-preview/conquest-2-5d-v1/assets/moebel-v2.png
+Unveränderte ursprüngliche Werkzeugausgaben:
+C:/Users/DaBra/.codex/generated_images/01a16d2c-b7bc-7582-9cda-5260fd32eaed/exec-1831892f-ae0e-4da0-8b5c-12caafdc6abd.png
+C:/Users/DaBra/.codex/generated_images/01a16d2c-b7bc-7582-9cda-5260fd32eaed/exec-7520e41b-88ce-4554-a858-f3a1872208ed.png

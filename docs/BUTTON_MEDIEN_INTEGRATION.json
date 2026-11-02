@@ -1,0 +1,544 @@
+{
+  "schema": 1,
+  "checked_on": "2026-10-28",
+  "scope": "Lokale opt-in-Auswahl im Button-Editor; keine Umstellung von Spielen oder gespeicherten Entwürfen.",
+  "fonts": [
+    {
+      "value": "media-chalk",
+      "style": "chalk",
+      "name": "Kreide auf Tafel",
+      "font": "Cabin Sketch",
+      "weight": 700,
+      "finish": "Tafel · raue Kreideschrift",
+      "source_id": "media-lettering-chalk"
+    },
+    {
+      "value": "media-stone",
+      "style": "stone",
+      "name": "In Stein gemeißelt",
+      "font": "Cinzel",
+      "weight": 700,
+      "finish": "Stein · vertiefte Inschrift",
+      "source_id": "media-lettering-stone"
+    },
+    {
+      "value": "media-iron",
+      "style": "iron",
+      "name": "In Eisen gestanzt",
+      "font": "Stardos Stencil",
+      "weight": 700,
+      "finish": "Metall · eingeprägte Industrieschrift",
+      "source_id": "media-lettering-iron"
+    },
+    {
+      "value": "media-stamp",
+      "style": "stamp",
+      "name": "Stempel & Schreibmaschine",
+      "font": "Special Elite",
+      "weight": 400,
+      "finish": "Papier · unregelmäßiger Farbauftrag",
+      "source_id": "media-lettering-stamp"
+    },
+    {
+      "value": "media-hand",
+      "style": "hand",
+      "name": "Handschrift auf Papier",
+      "font": "Kalam",
+      "weight": 400,
+      "finish": "Papier · lockere Handschrift",
+      "source_id": "media-lettering-hand"
+    },
+    {
+      "value": "media-comic",
+      "style": "comic",
+      "name": "Comic · kräftig & freundlich",
+      "font": "Fredoka",
+      "weight": 600,
+      "finish": "Klare Comic-Schrift mit kleinem Schatten",
+      "source_id": "media-lettering-comic"
+    },
+    {
+      "value": "media-clear",
+      "style": "clear",
+      "name": "Klar & gut lesbar",
+      "font": "Inter",
+      "weight": 600,
+      "finish": "Ruhige Grundschrift ohne Materialeffekt",
+      "source_id": "media-lettering-clear"
+    }
+  ],
+  "sounds": [
+    {
+      "id": "media-click",
+      "name": "Klick · kurz",
+      "group": "Klicks & Bedienung",
+      "description": "Menüs und normale Schaltflächen",
+      "file": "media-click.wav",
+      "author": "Kenney",
+      "source": "https://kenney.nl/assets/interface-sounds",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "duration": 0.1,
+      "button_offset": 0,
+      "button_duration": 0.1,
+      "media_short": true,
+      "sha256": "d56da114e16440ffa97e3966e70a36d469bcc0738d188f847fd415a461295bcd",
+      "source_id": "media-sound-click"
+    },
+    {
+      "id": "media-confirm",
+      "name": "Bestätigen",
+      "group": "Klicks & Bedienung",
+      "description": "Auswahl oder Eingabe übernommen",
+      "file": "media-confirm.wav",
+      "author": "Kenney",
+      "source": "https://kenney.nl/assets/interface-sounds",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "duration": 0.2898,
+      "button_offset": 0,
+      "button_duration": 0.2898,
+      "media_short": true,
+      "sha256": "782f7d56c43b58d15bbbba8e17498a8a5a43ad8d20a02beb2e7e2d0d758501dc",
+      "source_id": "media-sound-confirm"
+    },
+    {
+      "id": "media-back",
+      "name": "Zurück",
+      "group": "Klicks & Bedienung",
+      "description": "Ansicht verlassen oder Auswahl zurücknehmen",
+      "file": "media-back.wav",
+      "author": "Kenney",
+      "source": "https://kenney.nl/assets/interface-sounds",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "duration": 0.0639,
+      "button_offset": 0,
+      "button_duration": 0.0639,
+      "media_short": true,
+      "sha256": "6592e200077dffe3f03d38302e7bd1315fcbd176d867d9251c9a823a48010e51",
+      "source_id": "media-sound-back"
+    },
+    {
+      "id": "media-blocked",
+      "name": "Nicht möglich",
+      "group": "Klicks & Bedienung",
+      "description": "Ungültige Aktion oder Eingabe",
+      "file": "media-blocked.wav",
+      "author": "Kenney",
+      "source": "https://kenney.nl/assets/interface-sounds",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "duration": 0.1646,
+      "button_offset": 0,
+      "button_duration": 0.1646,
+      "media_short": true,
+      "sha256": "bcaba8d32fa57a0ad4d5cf763da2ab81dfe6134c966d1cf98bb74b96151d8816",
+      "source_id": "media-sound-blocked"
+    },
+    {
+      "id": "media-tick",
+      "name": "Timer · Ticken",
+      "group": "Klicks & Bedienung",
+      "description": "Einzelner Tick für einen Countdown",
+      "file": "media-tick.wav",
+      "author": "Kenney",
+      "source": "https://kenney.nl/assets/interface-sounds",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "duration": 0.0232,
+      "button_offset": 0,
+      "button_duration": 0.0232,
+      "media_short": true,
+      "sha256": "e776bacdfd56a113c120f4c140672a81151e0b99b4d62c117e74e5f52479ab65",
+      "source_id": "media-sound-tick"
+    },
+    {
+      "id": "media-card-move",
+      "name": "Karte bewegen",
+      "group": "Karten, Würfel & Spielsteine",
+      "description": "Karte ziehen oder verschieben",
+      "file": "media-card-move.wav",
+      "author": "Kenney",
+      "source": "https://kenney.nl/assets/casino-audio",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "duration": 0.6008,
+      "button_offset": 0,
+      "button_duration": 0.6008,
+      "media_short": true,
+      "sha256": "8cf06b55bedeb05ec0361c4b592ec5fb5425673f481bc69cd109ce9c03be1c95",
+      "source_id": "media-sound-card-move"
+    },
+    {
+      "id": "media-card-place",
+      "name": "Karte ablegen",
+      "group": "Karten, Würfel & Spielsteine",
+      "description": "Karte auf den Tisch legen",
+      "file": "media-card-place.wav",
+      "author": "Kenney",
+      "source": "https://kenney.nl/assets/casino-audio",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "duration": 0.6891,
+      "button_offset": 0,
+      "button_duration": 0.6891,
+      "media_short": true,
+      "sha256": "211de9edc8adad357ed946f6e6f91ec142beca9b8153ade5dfe457af9ef7026a",
+      "source_id": "media-sound-card-place"
+    },
+    {
+      "id": "media-shuffle",
+      "name": "Karten mischen",
+      "group": "Karten, Würfel & Spielsteine",
+      "description": "Kurzer Mischvorgang",
+      "file": "media-shuffle.wav",
+      "author": "Kenney",
+      "source": "https://kenney.nl/assets/casino-audio",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "duration": 3.0635,
+      "button_offset": 0,
+      "button_duration": 3.0635,
+      "media_short": true,
+      "sha256": "97e6ecc13a759e21dc552148f6b7cf827e986b12834c6516af4e8d47a1cc8b18",
+      "source_id": "media-sound-shuffle"
+    },
+    {
+      "id": "media-dice",
+      "name": "Würfeln",
+      "group": "Karten, Würfel & Spielsteine",
+      "description": "Mehrere Würfel auf dem Tisch",
+      "file": "media-dice.wav",
+      "author": "Kenney",
+      "source": "https://kenney.nl/assets/casino-audio",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "duration": 0.6325,
+      "button_offset": 0,
+      "button_duration": 0.6325,
+      "media_short": true,
+      "sha256": "c611f2e21be60edd5e539c2d3b3ed72085871d96dbac2c0139cdc94b16b15764",
+      "source_id": "media-sound-dice"
+    },
+    {
+      "id": "media-piece",
+      "name": "Spielstein setzen",
+      "group": "Karten, Würfel & Spielsteine",
+      "description": "Marke oder Chip ablegen",
+      "file": "media-piece.wav",
+      "author": "Kenney",
+      "source": "https://kenney.nl/assets/casino-audio",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "duration": 0.1725,
+      "button_offset": 0,
+      "button_duration": 0.1725,
+      "media_short": true,
+      "sha256": "9daa659417fc4edd3c864c170b258d2d3a299cd44cab8937ea796f4025785cd3",
+      "source_id": "media-sound-piece"
+    },
+    {
+      "id": "media-round",
+      "name": "Rundenbeginn",
+      "group": "Rundenbeginn, Sieg & Niederlage",
+      "description": "Kurzes Startsignal",
+      "file": "media-round.wav",
+      "author": "Kenney",
+      "source": "https://kenney.nl/assets/music-jingles",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "duration": 0.4615,
+      "button_offset": 0,
+      "button_duration": 0.4615,
+      "media_short": true,
+      "sha256": "828c762cd886d3c97e35abe68dd92f8c6225dbe9cc056bde6016b03780a025ee",
+      "source_id": "media-sound-round"
+    },
+    {
+      "id": "media-win",
+      "name": "Sieg",
+      "group": "Rundenbeginn, Sieg & Niederlage",
+      "description": "Aufsteigende kurze Pizzicato-Folge",
+      "file": "media-win.wav",
+      "author": "Kenney",
+      "source": "https://kenney.nl/assets/music-jingles",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "duration": 0.7972,
+      "button_offset": 0,
+      "button_duration": 0.7972,
+      "media_short": true,
+      "sha256": "6b15b399a0e8b312c0f242dbbf43fa9079b0f9f7422606b1d075abbaa5f2a079",
+      "source_id": "media-sound-win"
+    },
+    {
+      "id": "media-lose",
+      "name": "Niederlage",
+      "group": "Rundenbeginn, Sieg & Niederlage",
+      "description": "Absteigende passende Pizzicato-Folge",
+      "file": "media-lose.wav",
+      "author": "Kenney",
+      "source": "https://kenney.nl/assets/music-jingles",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "duration": 0.7925,
+      "button_offset": 0,
+      "button_duration": 0.7925,
+      "media_short": true,
+      "sha256": "e282c394d624745e7386f19ffbafa2ed5ca7ae6f437964a2d50dd7d0cdf9b020",
+      "source_id": "media-sound-lose"
+    }
+  ],
+  "existing_choices": {
+    "font": [
+      [
+        "fredoka",
+        "Fredoka · rund & markant"
+      ],
+      [
+        "inter",
+        "Inter · klar & ruhig"
+      ],
+      [
+        "cinzel",
+        "Cinzel · gemeißelt & graviert"
+      ],
+      [
+        "rocksalt",
+        "Rock Salt · rau geritzt"
+      ],
+      [
+        "kalam",
+        "Kalam · von Hand geschrieben"
+      ],
+      [
+        "sharetechmono",
+        "Share Tech Mono · technische Anzeige"
+      ],
+      [
+        "mono",
+        "Courier New · Schreibmaschine"
+      ],
+      [
+        "source",
+        "Schrift der gewählten Vorlage"
+      ]
+    ],
+    "sound": [
+      [
+        "off",
+        "Ohne Ton"
+      ],
+      [
+        "material",
+        "Material-Kandidat automatisch"
+      ],
+      [
+        "stone-scrape",
+        "Rauer Block · Reibung"
+      ],
+      [
+        "wood-plank",
+        "Holz · Plankenanschlag"
+      ],
+      [
+        "wood-light",
+        "Holz · leichter Anschlag"
+      ],
+      [
+        "robot-step",
+        "Metall · Robotertritt"
+      ],
+      [
+        "robot-stomp",
+        "Metall · schwerer Stampfer"
+      ],
+      [
+        "metal-plate",
+        "Metall · Plattenanschlag"
+      ],
+      [
+        "click",
+        "Schalter · trockener Klick"
+      ],
+      [
+        "switch",
+        "Mechanik · Einrasten"
+      ],
+      [
+        "drop",
+        "Comic · kurzer Drop"
+      ],
+      [
+        "confirm",
+        "Digital · Bestätigung"
+      ],
+      [
+        "wood",
+        "Alter Platzhalter · Synthese Holz"
+      ],
+      [
+        "stone",
+        "Alter Platzhalter · Synthese Stein"
+      ],
+      [
+        "metal",
+        "Alter Platzhalter · Synthese Metall"
+      ]
+    ]
+  },
+  "original_recipes": {
+    "checked": 144,
+    "different": []
+  },
+  "aliases": {
+    "/media-assets/fonts/cabinsketch/font.ttf": {
+      "file": "offline-preview/game-workshop-v1/assets/media/fonts/cabinsketch/font.ttf",
+      "sha256": "0961688037b97947495c2e35e6e5a93f2b234490514e33346605ffedf9c7e6be"
+    },
+    "/media-assets/fonts/cinzel/font.ttf": {
+      "file": "offline-preview/game-workshop-v1/assets/media/fonts/cinzel/font.ttf",
+      "sha256": "f4d83d34d1f6c741193e4acf4b3dff9531e5a67b6aa65228d00a7db72a4e0f34"
+    },
+    "/media-assets/fonts/stardosstencil/font.ttf": {
+      "file": "offline-preview/game-workshop-v1/assets/media/fonts/stardosstencil/font.ttf",
+      "sha256": "6b15f50b1b358512d922b5f11937af17e90704587e1d7fb009f1715d2d5dfa74"
+    },
+    "/media-assets/fonts/specialelite/font.ttf": {
+      "file": "offline-preview/game-workshop-v1/assets/media/fonts/specialelite/font.ttf",
+      "sha256": "a776fcb4ceb8bdf03e2967688ebdad42680de5b91a7e62c17e718ae212d14bc4"
+    },
+    "/media-assets/fonts/kalam/font.ttf": {
+      "file": "offline-preview/game-workshop-v1/assets/media/fonts/kalam/font.ttf",
+      "sha256": "57cecb63d4608019371954274ae1d8c397764debd5b19d4a33c1efa4dc923c0b"
+    },
+    "/media-assets/fonts/fredoka/font.ttf": {
+      "file": "offline-preview/game-workshop-v1/assets/media/fonts/fredoka/font.ttf",
+      "sha256": "2ba02e68b152868aef9ba28e24b3648c7d457fe6f25c761f2c2c53fb61a73fc8"
+    },
+    "/media-assets/fonts/inter/font.ttf": {
+      "file": "offline-preview/game-workshop-v1/assets/media/fonts/inter/font.ttf",
+      "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031"
+    },
+    "/assets/audio/media-click.wav": {
+      "file": "offline-preview/game-workshop-v1/assets/media/sounds/click.wav",
+      "sha256": "d56da114e16440ffa97e3966e70a36d469bcc0738d188f847fd415a461295bcd"
+    },
+    "/button-editor/assets/audio/media-click.wav": {
+      "file": "offline-preview/game-workshop-v1/assets/media/sounds/click.wav",
+      "sha256": "d56da114e16440ffa97e3966e70a36d469bcc0738d188f847fd415a461295bcd"
+    },
+    "/assets/audio/media-confirm.wav": {
+      "file": "offline-preview/game-workshop-v1/assets/media/sounds/confirm.wav",
+      "sha256": "782f7d56c43b58d15bbbba8e17498a8a5a43ad8d20a02beb2e7e2d0d758501dc"
+    },
+    "/button-editor/assets/audio/media-confirm.wav": {
+      "file": "offline-preview/game-workshop-v1/assets/media/sounds/confirm.wav",
+      "sha256": "782f7d56c43b58d15bbbba8e17498a8a5a43ad8d20a02beb2e7e2d0d758501dc"
+    },
+    "/assets/audio/media-back.wav": {
+      "file": "offline-preview/game-workshop-v1/assets/media/sounds/back.wav",
+      "sha256": "6592e200077dffe3f03d38302e7bd1315fcbd176d867d9251c9a823a48010e51"
+    },
+    "/button-editor/assets/audio/media-back.wav": {
+      "file": "offline-preview/game-workshop-v1/assets/media/sounds/back.wav",
+      "sha256": "6592e200077dffe3f03d38302e7bd1315fcbd176d867d9251c9a823a48010e51"
+    },
+    "/assets/audio/media-blocked.wav": {
+      "file": "offline-preview/game-workshop-v1/assets/media/sounds/blocked.wav",
+      "sha256": "bcaba8d32fa57a0ad4d5cf763da2ab81dfe6134c966d1cf98bb74b96151d8816"
+    },
+    "/button-editor/assets/audio/media-blocked.wav": {
+      "file": "offline-preview/game-workshop-v1/assets/media/sounds/blocked.wav",
+      "sha256": "bcaba8d32fa57a0ad4d5cf763da2ab81dfe6134c966d1cf98bb74b96151d8816"
+    },
+    "/assets/audio/media-tick.wav": {
+      "file": "offline-preview/game-workshop-v1/assets/media/sounds/tick.wav",
+      "sha256": "e776bacdfd56a113c120f4c140672a81151e0b99b4d62c117e74e5f52479ab65"
+    },
+    "/button-editor/assets/audio/media-tick.wav": {
+      "file": "offline-preview/game-workshop-v1/assets/media/sounds/tick.wav",
+      "sha256": "e776bacdfd56a113c120f4c140672a81151e0b99b4d62c117e74e5f52479ab65"
+    },
+    "/assets/audio/media-card-move.wav": {
+      "file": "offline-preview/game-workshop-v1/assets/media/sounds/card-move.wav",
+      "sha256": "8cf06b55bedeb05ec0361c4b592ec5fb5425673f481bc69cd109ce9c03be1c95"
+    },
+    "/button-editor/assets/audio/media-card-move.wav": {
+      "file": "offline-preview/game-workshop-v1/assets/media/sounds/card-move.wav",
+      "sha256": "8cf06b55bedeb05ec0361c4b592ec5fb5425673f481bc69cd109ce9c03be1c95"
+    },
+    "/assets/audio/media-card-place.wav": {
+      "file": "offline-preview/game-workshop-v1/assets/media/sounds/card-place.wav",
+      "sha256": "211de9edc8adad357ed946f6e6f91ec142beca9b8153ade5dfe457af9ef7026a"
+    },
+    "/button-editor/assets/audio/media-card-place.wav": {
+      "file": "offline-preview/game-workshop-v1/assets/media/sounds/card-place.wav",
+      "sha256": "211de9edc8adad357ed946f6e6f91ec142beca9b8153ade5dfe457af9ef7026a"
+    },
+    "/assets/audio/media-shuffle.wav": {
+      "file": "offline-preview/game-workshop-v1/assets/media/sounds/shuffle.wav",
+      "sha256": "97e6ecc13a759e21dc552148f6b7cf827e986b12834c6516af4e8d47a1cc8b18"
+    },
+    "/button-editor/assets/audio/media-shuffle.wav": {
+      "file": "offline-preview/game-workshop-v1/assets/media/sounds/shuffle.wav",
+      "sha256": "97e6ecc13a759e21dc552148f6b7cf827e986b12834c6516af4e8d47a1cc8b18"
+    },
+    "/assets/audio/media-dice.wav": {
+      "file": "offline-preview/game-workshop-v1/assets/media/sounds/dice.wav",
+      "sha256": "c611f2e21be60edd5e539c2d3b3ed72085871d96dbac2c0139cdc94b16b15764"
+    },
+    "/button-editor/assets/audio/media-dice.wav": {
+      "file": "offline-preview/game-workshop-v1/assets/media/sounds/dice.wav",
+      "sha256": "c611f2e21be60edd5e539c2d3b3ed72085871d96dbac2c0139cdc94b16b15764"
+    },
+    "/assets/audio/media-piece.wav": {
+      "file": "offline-preview/game-workshop-v1/assets/media/sounds/piece.wav",
+      "sha256": "9daa659417fc4edd3c864c170b258d2d3a299cd44cab8937ea796f4025785cd3"
+    },
+    "/button-editor/assets/audio/media-piece.wav": {
+      "file": "offline-preview/game-workshop-v1/assets/media/sounds/piece.wav",
+      "sha256": "9daa659417fc4edd3c864c170b258d2d3a299cd44cab8937ea796f4025785cd3"
+    },
+    "/assets/audio/media-round.wav": {
+      "file": "offline-preview/game-workshop-v1/assets/media/sounds/round.wav",
+      "sha256": "828c762cd886d3c97e35abe68dd92f8c6225dbe9cc056bde6016b03780a025ee"
+    },
+    "/button-editor/assets/audio/media-round.wav": {
+      "file": "offline-preview/game-workshop-v1/assets/media/sounds/round.wav",
+      "sha256": "828c762cd886d3c97e35abe68dd92f8c6225dbe9cc056bde6016b03780a025ee"
+    },
+    "/assets/audio/media-win.wav": {
+      "file": "offline-preview/game-workshop-v1/assets/media/sounds/win.wav",
+      "sha256": "6b15b399a0e8b312c0f242dbbf43fa9079b0f9f7422606b1d075abbaa5f2a079"
+    },
+    "/button-editor/assets/audio/media-win.wav": {
+      "file": "offline-preview/game-workshop-v1/assets/media/sounds/win.wav",
+      "sha256": "6b15b399a0e8b312c0f242dbbf43fa9079b0f9f7422606b1d075abbaa5f2a079"
+    },
+    "/assets/audio/media-lose.wav": {
+      "file": "offline-preview/game-workshop-v1/assets/media/sounds/lose.wav",
+      "sha256": "e282c394d624745e7386f19ffbafa2ed5ca7ae6f437964a2d50dd7d0cdf9b020"
+    },
+    "/button-editor/assets/audio/media-lose.wav": {
+      "file": "offline-preview/game-workshop-v1/assets/media/sounds/lose.wav",
+      "sha256": "e282c394d624745e7386f19ffbafa2ed5ca7ae6f437964a2d50dd7d0cdf9b020"
+    }
+  },
+  "source_files": {
+    "offline-preview/button-workshop-v1/media_selection.py": "3e203cd5079bf5856299c1942be436497c3bf335f90c52fa5a7014c27b71b5f5",
+    "offline-preview/button-workshop-v1/media-renderer.js": "6e24d2391416f265d7e2b7f2d14652649af6da84961ad1961515f9a51d2eeeea",
+    "offline-preview/button-workshop-v1/renderer.js": "22854cb2f1aa07ab09ab7e500fb744402a5978d8aa188a1e4afc8887a43868ef",
+    "offline-preview/button-workshop-v1/sound.js": "8499e1eec02c02315bf70f9d03e014589f008dfdb29e6dcaf60d766ccdc19187",
+    "offline-preview/button-workshop-v1/catalog.json": "bbb5764a4ae1792dd50dd1030a7c76d2872a4e4ad7f3a0401889398333e23397",
+    "offline-preview/game-workshop-v1/media_library.py": "344d4ff1d58c3dbc241b476290b738e77fb21f5b3d3d122af179ca32705ea4ff",
+    "offline-preview/game-workshop-v1/media-stage.css": "bc910b54dcd31b1a359316d6e5d523ca7effee02ec6d2457aa6b65432b8a567c"
+  },
+  "matched_css_sha256": "0f403ba8bfed13119c617d7698814b1d0b4a3dd914c416e8dc7588274ad38669",
+  "evidence": "runtime/button-media-20261028/",
+  "later": [
+    "Persönliche gestalterische und klangliche Abnahme.",
+    "Weitere Modelle, andere Baustein-Editoren und Spieleinbau gesondert prüfen."
+  ]
+}

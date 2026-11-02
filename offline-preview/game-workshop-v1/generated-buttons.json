@@ -1,0 +1,129 @@
+{
+  "schema": 1,
+  "description": "Inert captures from original DOM factories with neutral examples. Regenerate when evidence changes.",
+  "buttons": [
+    {
+      "key": "dice-held",
+      "path": "static/dice-table.js",
+      "line": 91,
+      "markup": "<button type=\"button\" data-die-id=\"example\" title=\"Zum erneuten Würfeln einsammeln\"><span class=\"dice-mini\" data-value=\"4\"></span></button>",
+      "evidence": [
+        {
+          "path": "static/dice-table.js",
+          "sha256": "0c791957b35c39d3e1e0278c370871c187454e52d5754ce3da504798e0faf79e"
+        }
+      ],
+      "factory_line": 92,
+      "game": "Würfelspiele",
+      "games": [
+        "Würfeltisch",
+        "Kniffel"
+      ],
+      "template": "dice_table_game.html",
+      "usage": "Würfel behalten / wieder einsammeln",
+      "shell": "dice-game-shell",
+      "context_token": "data-dice-held",
+      "ancestors": []
+    },
+    {
+      "key": "dice-tray",
+      "path": "static/dice-table.js",
+      "line": 91,
+      "markup": "<button type=\"button\" data-die-id=\"example\" title=\"Auswahl zurücknehmen\"><span class=\"dice-mini\" data-value=\"4\"></span></button>",
+      "evidence": [
+        {
+          "path": "static/dice-table.js",
+          "sha256": "0c791957b35c39d3e1e0278c370871c187454e52d5754ce3da504798e0faf79e"
+        }
+      ],
+      "factory_line": 92,
+      "game": "Würfelspiele",
+      "games": [
+        "Würfeltisch",
+        "Kniffel"
+      ],
+      "template": "dice_table_game.html",
+      "usage": "Würfelauswahl zurücknehmen",
+      "shell": "dice-game-shell",
+      "context_token": "data-dice-tray",
+      "ancestors": []
+    },
+    {
+      "key": "kniffel-score",
+      "path": "static/dice-table.js",
+      "line": 254,
+      "markup": "<button type=\"button\" title=\"Einser mit 4 Punkten eintragen\">4</button>",
+      "evidence": [
+        {
+          "path": "static/dice-table.js",
+          "sha256": "0c791957b35c39d3e1e0278c370871c187454e52d5754ce3da504798e0faf79e"
+        }
+      ],
+      "game": "Kniffel",
+      "games": [
+        "Kniffel"
+      ],
+      "template": "dice_table_game.html",
+      "usage": "Ergebnis in Kniffelblock eintragen",
+      "shell": "dice-game-shell",
+      "context_token": "data-kniffel-sheet",
+      "ancestors": [
+        [
+          "table",
+          "",
+          ""
+        ],
+        [
+          "tbody",
+          "",
+          ""
+        ],
+        [
+          "tr",
+          "",
+          ""
+        ],
+        [
+          "td",
+          "is-current",
+          ""
+        ]
+      ],
+      "cell_width": 52
+    },
+    {
+      "key": "conquest-card-badge",
+      "path": "static/player-portrait.js",
+      "line": 32,
+      "markup": "<button class=\"player-portrait-badge\" type=\"button\" title=\"Beispielarmee: 3 Länderkarten\" aria-label=\"Beispielarmee: 3 Länderkarten · eigene Karten ansehen\">3</button>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "0074da46e501bfd16110c3eb4dbee751609da1825cbe0647034f930d4a673d38"
+        }
+      ],
+      "game": "Conquest",
+      "games": [
+        "Conquest"
+      ],
+      "template": "conquest_table.html",
+      "usage": "Eigene Karten am Avatar öffnen",
+      "ancestors": [
+        [
+          "div",
+          "player-portrait",
+          ""
+        ]
+      ]
+    }
+  ],
+  "icons": {
+    "dice": "<span class=\"comic-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"4\"/><path d=\"M8 8h.01M16 8h.01M12 12h.01M8 16h.01M16 16h.01\"/></svg></span>",
+    "evidence": [
+      {
+        "path": "offline-preview/comic-ui-v1/components.js",
+        "sha256": "f25371e0cf650af41a59f50b869ce9fe64978801c0bf03046ea02e94fc7d6a96"
+      }
+    ]
+  }
+}

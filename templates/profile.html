@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% from "_player_identity.html" import player_identity with context %}
 {% from "_profile_window.html" import profile_window with context %}
+{% from "_profile_trophies.html" import profile_trophies %}
 {% block title %}Dein Profil · {{ game_name }}{% endblock %}
 {% block shell_class %}profile-shell{% endblock %}
 {% block header %}{% endblock %}
@@ -22,6 +23,8 @@
     </div>
   </header>
 
+  <nav class="profile-topbar" aria-label="Profilansichten"><a href="{{ url_for('public_profile', user_id=g.user.id) }}">Mein öffentliches Profil</a><a href="{{ url_for('players') }}">Spieler entdecken</a></nav>
+
   <div class="profile-workspace">
     <section class="profile-current" aria-label="Aktuell ausgerüstetes Profil">
       <div class="profile-window-copy">{{ profile_window(cosmetics, trophies, show_edit=False, show_details=False) }}</div>
@@ -33,10 +36,10 @@
       <a href="{{ url_for('shop') }}">Mehr im Shop kaufen ›</a>
     </div>
     <div class="profile-tabs" role="tablist" aria-label="Ausrüstungskategorien">
-      <button type="button" role="tab" aria-selected="true" data-profile-tab="avatar">Avatare</button>
-      <button type="button" role="tab" aria-selected="false" data-profile-tab="plaque">Pulte &amp; Plaketten</button>
-      <button type="button" role="tab" aria-selected="false" data-profile-tab="background">Hintergründe</button>
-      <button type="button" role="tab" aria-selected="false" data-profile-tab="phrase">Sprüche</button>
+      <button type="button" role="tab" aria-selected="true" data-profile-tab="avatar">avatare</button>
+      <button type="button" role="tab" aria-selected="false" data-profile-tab="plaque">pulte &amp; plaketten</button>
+      <button type="button" role="tab" aria-selected="false" data-profile-tab="background">hintergründe</button>
+      <button type="button" role="tab" aria-selected="false" data-profile-tab="phrase">sprüche</button>
     </div>
 
     <div class="profile-panel" data-profile-panel="avatar">
@@ -47,11 +50,11 @@
             <div class="profile-avatar-preview"><img src="{{ url_for('static', filename='avatars/' ~ preview_asset) }}" alt="{{ 'Start-Avatar' if item.id == 'a00' else item.name }}"></div>
             <div><h3>{{ 'Start-Avatar' if item.id == 'a00' else item.name }}</h3><p>{{ 'Neutraler Klassiker' if item.id == 'a00' else item.trait }}</p></div>
             {% if cosmetics.avatar_id == item.id %}
-              <button type="button" disabled>Ausgerüstet</button>
+              <button type="button" disabled>ausgerüstet</button>
             {% else %}
               <form method="post" action="{{ url_for('profile_equip', item_type='avatar', item_id=item.id) }}">
                 <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-                <button type="submit">Avatar anlegen</button>
+                <button type="submit">avatar anlegen</button>
               </form>
             {% endif %}
           </article>
@@ -66,11 +69,11 @@
             <div class="profile-plaque-preview">{{ player_identity(g.user.display_name, cosmetics.avatar_id, item.id, 'shopset', show_avatar=False) }}</div>
             <div><h3>{{ item.name }}</h3><p>{{ item.material }}</p></div>
             {% if cosmetics.plaque_id == item.id %}
-              <button type="button" disabled>Ausgerüstet</button>
+              <button type="button" disabled>ausgerüstet</button>
             {% else %}
               <form method="post" action="{{ url_for('profile_equip', item_type='plaque', item_id=item.id) }}">
                 <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-                <button type="submit">Pult aufstellen</button>
+                <button type="submit">pult aufstellen</button>
               </form>
             {% endif %}
           </article>
@@ -85,11 +88,11 @@
             <div class="profile-background-preview"><img src="{{ url_for('static', filename=item.asset) }}" alt="Hintergrund {{ item.name }}"></div>
             <div><h3>{{ item.name }}</h3><p>{{ item.mood }}</p></div>
             {% if cosmetics.background_id == item.id %}
-              <button type="button" disabled>Ausgerüstet</button>
+              <button type="button" disabled>ausgerüstet</button>
             {% else %}
               <form method="post" action="{{ url_for('profile_equip', item_type='background', item_id=item.id) }}">
                 <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-                <button type="submit">Hintergrund verwenden</button>
+                <button type="submit">hintergrund verwenden</button>
               </form>
             {% endif %}
           </article>
@@ -105,11 +108,11 @@
               <blockquote>„{{ item.text }}“</blockquote>
               <div><h3>{{ item.name }}</h3><p>Dein persönlicher Spielspruch</p></div>
               {% if cosmetics.phrase_id == item.id %}
-                <button type="button" disabled>Ausgerüstet</button>
+                <button type="button" disabled>ausgerüstet</button>
               {% else %}
                 <form method="post" action="{{ url_for('profile_equip', item_type='phrase', item_id=item.id) }}">
                   <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-                  <button type="submit">Spruch verwenden</button>
+                  <button type="submit">spruch verwenden</button>
                 </form>
               {% endif %}
             </article>
@@ -127,12 +130,7 @@
       <div><span>POKALSCHRANK</span><h2 id="profile-trophies-title">Deine Titel</h2></div>
       <small>Weitere Erfolge kommen später dazu</small>
     </div>
-    <div class="trophy-grid">
-      <article class="trophy-card trophy-daily"><i aria-hidden="true">★</i><div><strong>{{ trophies.daily }}</strong><span>Tagessieger</span></div></article>
-      <article class="trophy-card trophy-weekly"><i aria-hidden="true">W</i><div><strong>{{ trophies.weekly }}</strong><span>Wochensieger</span></div></article>
-      <article class="trophy-card trophy-monthly"><i aria-hidden="true">M</i><div><strong>{{ trophies.monthly }}</strong><span>Monatssieger</span></div></article>
-      <article class="trophy-card trophy-party"><i aria-hidden="true">♛</i><div><strong>{{ trophies.party }}</strong><span>Party-Meister</span></div></article>
-    </div>
+    {{ profile_trophies(trophies) }}
   </section>
 {% endblock %}
 {% block scripts %}<script src="{{ url_for('static', filename='profile.js', v='4') }}" defer></script>{% endblock %}

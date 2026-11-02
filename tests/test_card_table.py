@@ -92,7 +92,7 @@ class CardTableTests(unittest.TestCase):
         self.create_lobby(deck_size=110, guests=2)
         page = self.clients[0][0].get("/karten/1").get_data(as_text=True)
         self.assertIn("110 Karten + 6 Joker", page)
-        self.assertIn("Playtable starten", page)
+        self.assertIn("spiel starten", page)
         self.assertIn("Host", page)
         self.assertIn("Gast", page)
         self.assertIn("Dritter", page)
@@ -113,62 +113,78 @@ class CardTableTests(unittest.TestCase):
         self.assertGreater(after["revision"], before["revision"])
         self.assertEqual(len(after["members"]), 2)
 
-    def test_tabletop_connection_groups_card_and_dice_tables(self):
+    def test_collection_groups_cards_dice_and_board_games(self):
         page = self.clients[0][0].get("/karten").get_data(as_text=True)
-        self.assertIn("Tabletop Connection", page)
-        self.assertIn("tabletop-connection-shell", page)
-        self.assertNotIn('class="game-header"', page)
-        self.assertEqual(page.count('class="tabletop-game-tile'), 4)
-        self.assertIn("tabletop-perfect-flyer", page)
-        self.assertIn("carousel-stormseeds-perfect-v1.png", page)
-        self.assertIn("stormseed´s</small>perfect", page)
-        self.assertIn("Oder weißt du etwa, was eine Mansube ist?", page)
-        self.assertIn("Zu den Kartentischen", page)
-        self.assertIn("Zu den Würfeltischen", page)
-        self.assertIn("Stormseed’s Conquest", page)
-        self.assertEqual(page.count("is-available"), 4)
-        self.assertNotIn('class="tabletop-game-tile is-coming"', page)
+        self.assertIn("games collection", page)
+        groups = re.search(r'<section[^>]*id="collection-groups"[^>]*>.*?</section>', page, re.S).group(0)
+        self.assertEqual(groups.count('class="tabletop-game-tile'), 3)
+        results = re.search(r'<section[^>]*id="collection-results"[^>]*>.*?</section>', page, re.S).group(0)
+        self.assertIn(' hidden>', results)
+        self.assertEqual(results.count('class="tabletop-game-tile'), 2)
+        self.assertIn('data-collection-modes="casino singleplayer"', results)
+        self.assertIn('data-collection-modes="singleplayer"', results)
+        for group in ("kartentische", "wuerfeltische", "brettspiele"):
+            self.assertIn(f'href="/karten/{group}"', page)
+        self.assertNotIn('href="/nerd"', page)
+        self.assertNotIn('href="/karten/welteroberung"', page)
+
+    def test_board_games_group_links_existing_games_and_requires_login(self):
+        page = self.clients[0][0].get("/karten/brettspiele").get_data(as_text=True)
+        self.assertIn('<h1 class="game-name">brettspiele</h1>', page)
+        self.assertIn("tabletop-family-page is-boards", page)
+        self.assertEqual(page.count('class="tabletop-game-tile'), 2)
         self.assertIn('href="/nerd"', page)
-        self.assertIn('href="/karten/kartentische"', page)
-        self.assertIn('href="/karten/wuerfeltische"', page)
         self.assertIn('href="/karten/welteroberung"', page)
-        self.assertNotIn('href="/karten/kartentisch"', page)
-        self.assertNotIn('href="/karten/maexchen"', page)
-        self.assertNotIn('href="/karten/wuerfeltisch"', page)
+        self.assertIn("Oder weißt du etwa, was eine Mansube ist?", page)
+        self.assertIn("stormseed’s conquest", page)
+        anonymous = self.app.test_client().get("/karten/brettspiele")
+        self.assertEqual(anonymous.status_code, 302)
+        self.assertIn("/login", anonymous.headers["Location"])
+
+    def test_collection_stays_active_in_every_game_group(self):
+        for path in ("/karten", "/karten/kartentische", "/karten/wuerfeltische",
+                     "/karten/brettspiele", "/karten/kartentisch", "/karten/wuerfeltisch",
+                     "/karten/kniffel", "/karten/maexchen", "/nerd", "/karten/welteroberung"):
+            with self.subTest(path=path):
+                page = self.clients[0][0].get(path).get_data(as_text=True)
+                self.assertRegex(page, r'class="arena-nav-cards[^"\n]*is-active"[^>]*aria-label="games collection"')
 
     def test_conquest_entry_opens_lobby_browser(self):
         page = self.clients[0][0].get("/karten/welteroberung").get_data(as_text=True)
-        self.assertIn("Stormseed’s Conquest", page)
-        self.assertIn("Lobby erstellen", page)
+        self.assertIn("stormseed´s conquest", page)
+        self.assertIn('action="/karten/welteroberung/erstellen"', page)
         self.assertIn("conquest-lobby.css", page)
         self.assertTrue(Path("static/conquest-lobby-background-v1.png").is_file())
         self.assertNotIn("conquest-table.js", page)
 
     def test_card_tables_page_opens_free_standard_card_play(self):
         page = self.clients[0][0].get("/karten/kartentische").get_data(as_text=True)
-        self.assertIn("Kartentische", page)
+        self.assertIn("kartentische", page)
         self.assertIn("tabletop-family-page is-cards", page)
-        self.assertEqual(page.count('class="tabletop-game-tile'), 1)
+        self.assertEqual(page.count('class="tabletop-game-tile'), 2)
         self.assertIn('href="/karten/kartentisch"', page)
-        self.assertIn("Freies Spiel mit allen Standardkarten", page)
+        self.assertIn("freies spiel mit allen standardkarten", page)
         self.assertIn("tabletop-card-table-tile-v1.png", page)
+        self.assertIn("carousel-blackjack-v2.png", page)
+        self.assertIn('href="/karten/blackjack"', page)
+        self.assertIn("Direkt zum Tisch · 3 Plätze", page)
         self.assertIn(
-            '<a class="back-link" href="/karten">zurück zu tabletop connection</a>',
+            '<a class="back-link" href="/karten">zurück zu games collection</a>',
             page,
         )
 
     def test_dice_tables_page_lists_all_four_dice_tables(self):
         page = self.clients[0][0].get("/karten/wuerfeltische").get_data(as_text=True)
-        self.assertIn("Würfeltische", page)
+        self.assertIn("würfeltische", page)
         self.assertIn("tabletop-family-page is-dice", page)
         self.assertEqual(page.count('class="tabletop-game-tile'), 4)
         self.assertIn('href="/karten/wuerfeltisch"', page)
         self.assertIn('href="/karten/kniffel"', page)
         self.assertIn('href="/karten/maexchen"', page)
-        self.assertIn("Schweinchen", page)
+        self.assertIn("schweinchen", page)
         self.assertEqual(page.count('class="tabletop-game-tile is-coming"'), 1)
         self.assertIn(
-            '<a class="back-link" href="/karten">zurück zu tabletop connection</a>',
+            '<a class="back-link" href="/karten">zurück zu games collection</a>',
             page,
         )
 
@@ -185,11 +201,11 @@ class CardTableTests(unittest.TestCase):
 
     def test_card_table_tile_opens_the_existing_lobby_browser(self):
         page = self.clients[0][0].get("/karten/kartentisch").get_data(as_text=True)
-        self.assertIn("Aktive Playtables", page)
-        self.assertIn("Lobby erstellen", page)
+        self.assertIn("Spiellobbys", page)
+        self.assertIn("lobby erstellen", page)
         self.assertNotIn('class="game-header"', page)
         self.assertIn(
-            '<a class="back-link" href="/karten">zurück zu tabletop connection</a>',
+            '<a class="secondary-button lobby-browser-back" href="/karten/kartentische">zurück zu kartentischen</a>',
             page,
         )
         self.assertNotIn("Zurück zur Übersicht", page)
@@ -212,11 +228,11 @@ class CardTableTests(unittest.TestCase):
         self.start_lobby(guests=2)
         page = self.clients[0][0].get("/karten/1").get_data(as_text=True)
         for letter in "ABCDEFGHI":
-            self.assertIn(f">{letter}<", page)
+            self.assertIn(f">{letter.lower() if letter in ('C', 'D', 'H', 'I') else letter}<", page)
         self.assertIn("data-drop-zone=\"table\"", page)
         self.assertEqual(page.count("data-drop-zone=\"player:"), 3)
         self.assertIn('class="card-player-desk seat-self is-you"', page)
-        self.assertIn('data-call-button>Mitgehen</button>', page)
+        self.assertIn('data-call-button>mitgehen</button>', page)
         self.assertEqual(page.count("data-collect-pot="), 1)
         guest_page = self.clients[1][0].get("/karten/1").get_data(as_text=True)
         self.assertIn('data-drop-zone="player:2"', guest_page)

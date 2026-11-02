@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from lobby_overview import render_overview
+
 import json
 import secrets
 import sqlite3
@@ -8,6 +10,7 @@ from functools import wraps
 from typing import Any, Callable
 
 from flask import abort, current_app, flash, g, redirect, render_template, request, url_for
+from lobby_view import lobby_player_profiles
 
 
 DICE_TABLE_MAX_PLAYERS = 6
@@ -392,7 +395,7 @@ def register_dice_table_routes(
     @app.get("/karten/wuerfeltisch")
     @login_required
     def dice_table_index() -> Any:
-        return render_template(
+        return render_overview(
             "dice_table_index.html",
             lobbies=_lobby_rows(g.user["id"], "sandbox"),
             game_mode="sandbox",
@@ -404,7 +407,7 @@ def register_dice_table_routes(
     @app.get("/karten/kniffel")
     @login_required
     def kniffel_index() -> Any:
-        return render_template(
+        return render_overview(
             "dice_table_index.html",
             lobbies=_lobby_rows(g.user["id"], "kniffel"),
             game_mode="kniffel",
@@ -416,7 +419,7 @@ def register_dice_table_routes(
     @app.get("/karten/maexchen")
     @login_required
     def maexchen_index() -> Any:
-        return render_template(
+        return render_overview(
             "dice_table_index.html",
             lobbies=_lobby_rows(g.user["id"], "maexchen"),
             game_mode="maexchen",
@@ -674,6 +677,7 @@ def register_dice_table_routes(
             )
         return render_template(
             "dice_table_lobby.html",
+            lobby_players=lobby_player_profiles(members),
             lobby=lobby,
             members=members,
             game_mode="sandbox",
@@ -700,6 +704,7 @@ def register_dice_table_routes(
             )
         return render_template(
             "dice_table_lobby.html",
+            lobby_players=lobby_player_profiles(members),
             lobby=lobby,
             members=members,
             game_mode="kniffel",
@@ -727,6 +732,7 @@ def register_dice_table_routes(
             )
         return render_template(
             "dice_table_lobby.html",
+            lobby_players=lobby_player_profiles(members),
             lobby=lobby,
             members=members,
             game_mode="maexchen",

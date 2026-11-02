@@ -1,0 +1,1860 @@
+{
+  "schema": 1,
+  "models": {
+    "artwork": "Spielmotive",
+    "logo": "Mäxchen · Logo",
+    "carousel": "Startseiten-Flyer",
+    "tile": "Gemeinsame Spielkachel",
+    "perfect-tile": "Perfect · Spielkachel",
+    "quiz": "Quiz · Fragetypen",
+    "navigation": "Navigation",
+    "comic": "Comic · Aktionssymbole",
+    "equipment": "Conquest · Kartensymbole",
+    "stats": "Spieler · Statistikzeichen",
+    "favicon": "App-Symbol"
+  },
+  "areas": {
+    "titles": {
+      "configurations": 9,
+      "models": 2
+    },
+    "flyers": {
+      "configurations": 13,
+      "models": 3
+    },
+    "icons": {
+      "configurations": 6,
+      "models": 6
+    }
+  },
+  "assets": [
+    {
+      "id": "graphics-artwork-daily",
+      "kind": "titles",
+      "model": "graphics-artwork-v1",
+      "name": "Guesstimate · Bildmotiv",
+      "games": [
+        "Guesstimate"
+      ],
+      "members": 0,
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.css",
+          "sha256": "7649d45feff03c8d24d843bfec414af10c54aade5cd457b8032427191bb7b295"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.html",
+          "sha256": "0792a05af50872a4659e99515adb426d76dbf6c7b70f06d53eed1f5bf917b957"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.js",
+          "sha256": "464db7df239ad7bef774898f179d6ead039bb0be085e9616f7bc6ecc563ef434"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+        },
+        {
+          "path": "static/carousel-daily-quiz-v1.png",
+          "sha256": "41cce7f3bae9f1a5de34e0a2effac83f9114b1fad826e9ae96dedb5689733784"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "templates/_game_flyers.html",
+          "sha256": "7b9765d3217c39a097fcb2fd3b1f9b128064a844ebd891aae74d97c6329a3790"
+        },
+        {
+          "path": "templates/home.html",
+          "sha256": "611bb72ad2ee545c2299a7a2f4f9667127b0c40ccb90f5380776f3895370e49a"
+        },
+        {
+          "path": "templates/tabletop_connection.html",
+          "sha256": "063844e1411d45e8bee67989ffe5b41a20b5d916cfe49bdcc0575acdc5185eea"
+        },
+        {
+          "path": "templates/tabletop_family.html",
+          "sha256": "001b55640cef34c070662667a6244c0e7c7580765d1bdf8617662870ec4a5449"
+        }
+      ]
+    },
+    {
+      "id": "graphics-artwork-party",
+      "kind": "titles",
+      "model": "graphics-artwork-v1",
+      "name": "Guesstimate Party · Bildmotiv",
+      "games": [
+        "Guesstimate Party"
+      ],
+      "members": 0,
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.css",
+          "sha256": "7649d45feff03c8d24d843bfec414af10c54aade5cd457b8032427191bb7b295"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.html",
+          "sha256": "0792a05af50872a4659e99515adb426d76dbf6c7b70f06d53eed1f5bf917b957"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.js",
+          "sha256": "464db7df239ad7bef774898f179d6ead039bb0be085e9616f7bc6ecc563ef434"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+        },
+        {
+          "path": "static/carousel-party-classic-v1.png",
+          "sha256": "fd6f88b48d5a8765ddf9bf0b07c15b6f545e5dcadb94837a043cc5abb8d21f65"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "templates/_game_flyers.html",
+          "sha256": "7b9765d3217c39a097fcb2fd3b1f9b128064a844ebd891aae74d97c6329a3790"
+        },
+        {
+          "path": "templates/home.html",
+          "sha256": "611bb72ad2ee545c2299a7a2f4f9667127b0c40ccb90f5380776f3895370e49a"
+        },
+        {
+          "path": "templates/tabletop_connection.html",
+          "sha256": "063844e1411d45e8bee67989ffe5b41a20b5d916cfe49bdcc0575acdc5185eea"
+        },
+        {
+          "path": "templates/tabletop_family.html",
+          "sha256": "001b55640cef34c070662667a6244c0e7c7580765d1bdf8617662870ec4a5449"
+        }
+      ]
+    },
+    {
+      "id": "graphics-artwork-perfect",
+      "kind": "titles",
+      "model": "graphics-artwork-v1",
+      "name": "Perfect · Bildmotiv",
+      "games": [
+        "Perfect"
+      ],
+      "members": 0,
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.css",
+          "sha256": "7649d45feff03c8d24d843bfec414af10c54aade5cd457b8032427191bb7b295"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.html",
+          "sha256": "0792a05af50872a4659e99515adb426d76dbf6c7b70f06d53eed1f5bf917b957"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.js",
+          "sha256": "464db7df239ad7bef774898f179d6ead039bb0be085e9616f7bc6ecc563ef434"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+        },
+        {
+          "path": "static/carousel-stormseeds-perfect-v1.png",
+          "sha256": "842f6a7605973eba03804d2fd8b0b498fb0ec9e2fbd6d302fc6d15a1c2669a08"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "templates/_game_flyers.html",
+          "sha256": "7b9765d3217c39a097fcb2fd3b1f9b128064a844ebd891aae74d97c6329a3790"
+        },
+        {
+          "path": "templates/home.html",
+          "sha256": "611bb72ad2ee545c2299a7a2f4f9667127b0c40ccb90f5380776f3895370e49a"
+        },
+        {
+          "path": "templates/tabletop_connection.html",
+          "sha256": "063844e1411d45e8bee67989ffe5b41a20b5d916cfe49bdcc0575acdc5185eea"
+        },
+        {
+          "path": "templates/tabletop_family.html",
+          "sha256": "001b55640cef34c070662667a6244c0e7c7580765d1bdf8617662870ec4a5449"
+        }
+      ]
+    },
+    {
+      "id": "graphics-artwork-collection",
+      "kind": "titles",
+      "model": "graphics-artwork-v1",
+      "name": "Games collection · Bildmotiv",
+      "games": [
+        "Playtable",
+        "Würfeltisch",
+        "Kniffel",
+        "Mäxchen",
+        "Perfect",
+        "Conquest"
+      ],
+      "members": 0,
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.css",
+          "sha256": "7649d45feff03c8d24d843bfec414af10c54aade5cd457b8032427191bb7b295"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.html",
+          "sha256": "0792a05af50872a4659e99515adb426d76dbf6c7b70f06d53eed1f5bf917b957"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.js",
+          "sha256": "464db7df239ad7bef774898f179d6ead039bb0be085e9616f7bc6ecc563ef434"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+        },
+        {
+          "path": "static/carousel-playtable-v1.png",
+          "sha256": "248b49bae4afee750f75a25d0f2d0e89757e5249092049aab8a052c5a925c13d"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "templates/_game_flyers.html",
+          "sha256": "7b9765d3217c39a097fcb2fd3b1f9b128064a844ebd891aae74d97c6329a3790"
+        },
+        {
+          "path": "templates/home.html",
+          "sha256": "611bb72ad2ee545c2299a7a2f4f9667127b0c40ccb90f5380776f3895370e49a"
+        },
+        {
+          "path": "templates/tabletop_connection.html",
+          "sha256": "063844e1411d45e8bee67989ffe5b41a20b5d916cfe49bdcc0575acdc5185eea"
+        },
+        {
+          "path": "templates/tabletop_family.html",
+          "sha256": "001b55640cef34c070662667a6244c0e7c7580765d1bdf8617662870ec4a5449"
+        }
+      ]
+    },
+    {
+      "id": "graphics-artwork-cards",
+      "kind": "titles",
+      "model": "graphics-artwork-v1",
+      "name": "Playtable · Bildmotiv",
+      "games": [
+        "Playtable"
+      ],
+      "members": 0,
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.css",
+          "sha256": "7649d45feff03c8d24d843bfec414af10c54aade5cd457b8032427191bb7b295"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.html",
+          "sha256": "0792a05af50872a4659e99515adb426d76dbf6c7b70f06d53eed1f5bf917b957"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.js",
+          "sha256": "464db7df239ad7bef774898f179d6ead039bb0be085e9616f7bc6ecc563ef434"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/tabletop-card-table-tile-v1.png",
+          "sha256": "56fbe001388a623acc0e1799cad7dc4a068105394aa7900aea9e477915601154"
+        },
+        {
+          "path": "templates/_game_flyers.html",
+          "sha256": "7b9765d3217c39a097fcb2fd3b1f9b128064a844ebd891aae74d97c6329a3790"
+        },
+        {
+          "path": "templates/home.html",
+          "sha256": "611bb72ad2ee545c2299a7a2f4f9667127b0c40ccb90f5380776f3895370e49a"
+        },
+        {
+          "path": "templates/tabletop_connection.html",
+          "sha256": "063844e1411d45e8bee67989ffe5b41a20b5d916cfe49bdcc0575acdc5185eea"
+        },
+        {
+          "path": "templates/tabletop_family.html",
+          "sha256": "001b55640cef34c070662667a6244c0e7c7580765d1bdf8617662870ec4a5449"
+        }
+      ]
+    },
+    {
+      "id": "graphics-artwork-dice",
+      "kind": "titles",
+      "model": "graphics-artwork-v1",
+      "name": "Gemeinsames Würfelmotiv · Bildmotiv",
+      "games": [
+        "Würfeltisch",
+        "Mäxchen"
+      ],
+      "members": 0,
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.css",
+          "sha256": "7649d45feff03c8d24d843bfec414af10c54aade5cd457b8032427191bb7b295"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.html",
+          "sha256": "0792a05af50872a4659e99515adb426d76dbf6c7b70f06d53eed1f5bf917b957"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.js",
+          "sha256": "464db7df239ad7bef774898f179d6ead039bb0be085e9616f7bc6ecc563ef434"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/tabletop-dice-table-tile-v1.png",
+          "sha256": "107196fea820c0733861a21fec4de33bec2bc682d6f4babed94e70814bcb5b59"
+        },
+        {
+          "path": "templates/_game_flyers.html",
+          "sha256": "7b9765d3217c39a097fcb2fd3b1f9b128064a844ebd891aae74d97c6329a3790"
+        },
+        {
+          "path": "templates/home.html",
+          "sha256": "611bb72ad2ee545c2299a7a2f4f9667127b0c40ccb90f5380776f3895370e49a"
+        },
+        {
+          "path": "templates/tabletop_connection.html",
+          "sha256": "063844e1411d45e8bee67989ffe5b41a20b5d916cfe49bdcc0575acdc5185eea"
+        },
+        {
+          "path": "templates/tabletop_family.html",
+          "sha256": "001b55640cef34c070662667a6244c0e7c7580765d1bdf8617662870ec4a5449"
+        }
+      ]
+    },
+    {
+      "id": "graphics-artwork-kniffel",
+      "kind": "titles",
+      "model": "graphics-artwork-v1",
+      "name": "Kniffel · Bildmotiv",
+      "games": [
+        "Kniffel"
+      ],
+      "members": 0,
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.css",
+          "sha256": "7649d45feff03c8d24d843bfec414af10c54aade5cd457b8032427191bb7b295"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.html",
+          "sha256": "0792a05af50872a4659e99515adb426d76dbf6c7b70f06d53eed1f5bf917b957"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.js",
+          "sha256": "464db7df239ad7bef774898f179d6ead039bb0be085e9616f7bc6ecc563ef434"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/tabletop-kniffel-tile-v1.png",
+          "sha256": "4cf51299939ce7757577f2eed758879543e6421695e6395205d7d64aafc3ba5e"
+        },
+        {
+          "path": "templates/_game_flyers.html",
+          "sha256": "7b9765d3217c39a097fcb2fd3b1f9b128064a844ebd891aae74d97c6329a3790"
+        },
+        {
+          "path": "templates/home.html",
+          "sha256": "611bb72ad2ee545c2299a7a2f4f9667127b0c40ccb90f5380776f3895370e49a"
+        },
+        {
+          "path": "templates/tabletop_connection.html",
+          "sha256": "063844e1411d45e8bee67989ffe5b41a20b5d916cfe49bdcc0575acdc5185eea"
+        },
+        {
+          "path": "templates/tabletop_family.html",
+          "sha256": "001b55640cef34c070662667a6244c0e7c7580765d1bdf8617662870ec4a5449"
+        }
+      ]
+    },
+    {
+      "id": "graphics-artwork-conquest",
+      "kind": "titles",
+      "model": "graphics-artwork-v1",
+      "name": "Conquest · Bildmotiv",
+      "games": [
+        "Conquest"
+      ],
+      "members": 0,
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.css",
+          "sha256": "7649d45feff03c8d24d843bfec414af10c54aade5cd457b8032427191bb7b295"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.html",
+          "sha256": "0792a05af50872a4659e99515adb426d76dbf6c7b70f06d53eed1f5bf917b957"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.js",
+          "sha256": "464db7df239ad7bef774898f179d6ead039bb0be085e9616f7bc6ecc563ef434"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/tabletop-risk-tile-v1.png",
+          "sha256": "c3c040bc6900d79c1ec04fe0c4aa2752a7047220098427df11ed69c0455a6041"
+        },
+        {
+          "path": "templates/_game_flyers.html",
+          "sha256": "7b9765d3217c39a097fcb2fd3b1f9b128064a844ebd891aae74d97c6329a3790"
+        },
+        {
+          "path": "templates/home.html",
+          "sha256": "611bb72ad2ee545c2299a7a2f4f9667127b0c40ccb90f5380776f3895370e49a"
+        },
+        {
+          "path": "templates/tabletop_connection.html",
+          "sha256": "063844e1411d45e8bee67989ffe5b41a20b5d916cfe49bdcc0575acdc5185eea"
+        },
+        {
+          "path": "templates/tabletop_family.html",
+          "sha256": "001b55640cef34c070662667a6244c0e7c7580765d1bdf8617662870ec4a5449"
+        }
+      ]
+    },
+    {
+      "id": "graphics-maexchen-logo",
+      "kind": "titles",
+      "model": "graphics-logo-v1",
+      "name": "Mäxchen · vorhandenes Logo",
+      "games": [
+        "Mäxchen"
+      ],
+      "members": 0,
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.css",
+          "sha256": "7649d45feff03c8d24d843bfec414af10c54aade5cd457b8032427191bb7b295"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.html",
+          "sha256": "0792a05af50872a4659e99515adb426d76dbf6c7b70f06d53eed1f5bf917b957"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.js",
+          "sha256": "464db7df239ad7bef774898f179d6ead039bb0be085e9616f7bc6ecc563ef434"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+        },
+        {
+          "path": "static/dice-table.css",
+          "sha256": "68a8c5a4218124b2179e2b7afdaf7aa41a702bb430aae5bad4895fac2c6d268f"
+        },
+        {
+          "path": "static/maexchen-logo-v1.svg",
+          "sha256": "bc60a6c26841e3c3dbd67114d77d159aba2815651df4c3407105b406cfe13df6"
+        },
+        {
+          "path": "templates/dice_table_game.html",
+          "sha256": "338d84095c8ad4c0b24b7b6873388b0df671897062b0368930e85ffdaa09520b"
+        }
+      ]
+    },
+    {
+      "id": "graphics-flyer-daily",
+      "kind": "flyers",
+      "model": "graphics-carousel-v1",
+      "name": "Guesstimate · Startseiten-Flyer",
+      "games": [
+        "Guesstimate"
+      ],
+      "members": 0,
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.css",
+          "sha256": "7649d45feff03c8d24d843bfec414af10c54aade5cd457b8032427191bb7b295"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.html",
+          "sha256": "0792a05af50872a4659e99515adb426d76dbf6c7b70f06d53eed1f5bf917b957"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.js",
+          "sha256": "464db7df239ad7bef774898f179d6ead039bb0be085e9616f7bc6ecc563ef434"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+        },
+        {
+          "path": "static/carousel-daily-quiz-v1.png",
+          "sha256": "41cce7f3bae9f1a5de34e0a2effac83f9114b1fad826e9ae96dedb5689733784"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_game_flyers.html",
+          "sha256": "7b9765d3217c39a097fcb2fd3b1f9b128064a844ebd891aae74d97c6329a3790"
+        },
+        {
+          "path": "templates/home.html",
+          "sha256": "611bb72ad2ee545c2299a7a2f4f9667127b0c40ccb90f5380776f3895370e49a"
+        }
+      ]
+    },
+    {
+      "id": "graphics-flyer-party",
+      "kind": "flyers",
+      "model": "graphics-carousel-v1",
+      "name": "Guesstimate Party · Startseiten-Flyer",
+      "games": [
+        "Guesstimate Party"
+      ],
+      "members": 0,
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.css",
+          "sha256": "7649d45feff03c8d24d843bfec414af10c54aade5cd457b8032427191bb7b295"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.html",
+          "sha256": "0792a05af50872a4659e99515adb426d76dbf6c7b70f06d53eed1f5bf917b957"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.js",
+          "sha256": "464db7df239ad7bef774898f179d6ead039bb0be085e9616f7bc6ecc563ef434"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+        },
+        {
+          "path": "static/carousel-party-classic-v1.png",
+          "sha256": "fd6f88b48d5a8765ddf9bf0b07c15b6f545e5dcadb94837a043cc5abb8d21f65"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_game_flyers.html",
+          "sha256": "7b9765d3217c39a097fcb2fd3b1f9b128064a844ebd891aae74d97c6329a3790"
+        },
+        {
+          "path": "templates/home.html",
+          "sha256": "611bb72ad2ee545c2299a7a2f4f9667127b0c40ccb90f5380776f3895370e49a"
+        }
+      ]
+    },
+    {
+      "id": "graphics-flyer-perfect",
+      "kind": "flyers",
+      "model": "graphics-carousel-v1",
+      "name": "Perfect · Startseiten-Flyer",
+      "games": [
+        "Perfect"
+      ],
+      "members": 0,
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.css",
+          "sha256": "7649d45feff03c8d24d843bfec414af10c54aade5cd457b8032427191bb7b295"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.html",
+          "sha256": "0792a05af50872a4659e99515adb426d76dbf6c7b70f06d53eed1f5bf917b957"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.js",
+          "sha256": "464db7df239ad7bef774898f179d6ead039bb0be085e9616f7bc6ecc563ef434"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+        },
+        {
+          "path": "static/carousel-stormseeds-perfect-v1.png",
+          "sha256": "842f6a7605973eba03804d2fd8b0b498fb0ec9e2fbd6d302fc6d15a1c2669a08"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_game_flyers.html",
+          "sha256": "7b9765d3217c39a097fcb2fd3b1f9b128064a844ebd891aae74d97c6329a3790"
+        },
+        {
+          "path": "templates/home.html",
+          "sha256": "611bb72ad2ee545c2299a7a2f4f9667127b0c40ccb90f5380776f3895370e49a"
+        }
+      ]
+    },
+    {
+      "id": "graphics-flyer-collection",
+      "kind": "flyers",
+      "model": "graphics-carousel-v1",
+      "name": "Games collection · Startseiten-Flyer",
+      "games": [
+        "Perfect",
+        "Playtable",
+        "Würfeltisch",
+        "Kniffel",
+        "Mäxchen",
+        "Conquest"
+      ],
+      "members": 0,
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.css",
+          "sha256": "7649d45feff03c8d24d843bfec414af10c54aade5cd457b8032427191bb7b295"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.html",
+          "sha256": "0792a05af50872a4659e99515adb426d76dbf6c7b70f06d53eed1f5bf917b957"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.js",
+          "sha256": "464db7df239ad7bef774898f179d6ead039bb0be085e9616f7bc6ecc563ef434"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+        },
+        {
+          "path": "static/carousel-playtable-v1.png",
+          "sha256": "248b49bae4afee750f75a25d0f2d0e89757e5249092049aab8a052c5a925c13d"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_game_flyers.html",
+          "sha256": "7b9765d3217c39a097fcb2fd3b1f9b128064a844ebd891aae74d97c6329a3790"
+        },
+        {
+          "path": "templates/home.html",
+          "sha256": "611bb72ad2ee545c2299a7a2f4f9667127b0c40ccb90f5380776f3895370e49a"
+        }
+      ]
+    },
+    {
+      "id": "graphics-tile-perfect",
+      "kind": "flyers",
+      "model": "graphics-perfect-tile-v1",
+      "name": "Perfect · Spielkachel",
+      "games": [
+        "Perfect"
+      ],
+      "members": 0,
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.css",
+          "sha256": "7649d45feff03c8d24d843bfec414af10c54aade5cd457b8032427191bb7b295"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.html",
+          "sha256": "0792a05af50872a4659e99515adb426d76dbf6c7b70f06d53eed1f5bf917b957"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.js",
+          "sha256": "464db7df239ad7bef774898f179d6ead039bb0be085e9616f7bc6ecc563ef434"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+        },
+        {
+          "path": "static/card-table.css",
+          "sha256": "cd35aa6a639097e77723af9440824595bfeeb6fc363e3bc9901faea4a25c6680"
+        },
+        {
+          "path": "static/carousel-stormseeds-perfect-v1.png",
+          "sha256": "842f6a7605973eba03804d2fd8b0b498fb0ec9e2fbd6d302fc6d15a1c2669a08"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_game_flyers.html",
+          "sha256": "7b9765d3217c39a097fcb2fd3b1f9b128064a844ebd891aae74d97c6329a3790"
+        },
+        {
+          "path": "templates/tabletop_family.html",
+          "sha256": "001b55640cef34c070662667a6244c0e7c7580765d1bdf8617662870ec4a5449"
+        }
+      ]
+    },
+    {
+      "id": "graphics-tile-conquest",
+      "kind": "flyers",
+      "model": "graphics-tile-v1",
+      "name": "Conquest · Spielkachel",
+      "games": [
+        "Conquest"
+      ],
+      "members": 0,
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.css",
+          "sha256": "7649d45feff03c8d24d843bfec414af10c54aade5cd457b8032427191bb7b295"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.html",
+          "sha256": "0792a05af50872a4659e99515adb426d76dbf6c7b70f06d53eed1f5bf917b957"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.js",
+          "sha256": "464db7df239ad7bef774898f179d6ead039bb0be085e9616f7bc6ecc563ef434"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+        },
+        {
+          "path": "static/card-table.css",
+          "sha256": "cd35aa6a639097e77723af9440824595bfeeb6fc363e3bc9901faea4a25c6680"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/tabletop-risk-tile-v1.png",
+          "sha256": "c3c040bc6900d79c1ec04fe0c4aa2752a7047220098427df11ed69c0455a6041"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_game_flyers.html",
+          "sha256": "7b9765d3217c39a097fcb2fd3b1f9b128064a844ebd891aae74d97c6329a3790"
+        },
+        {
+          "path": "templates/tabletop_family.html",
+          "sha256": "001b55640cef34c070662667a6244c0e7c7580765d1bdf8617662870ec4a5449"
+        }
+      ]
+    },
+    {
+      "id": "graphics-tile-dice",
+      "kind": "flyers",
+      "model": "graphics-tile-v1",
+      "name": "Würfeltisch · Spielkachel",
+      "games": [
+        "Würfeltisch"
+      ],
+      "members": 0,
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.css",
+          "sha256": "7649d45feff03c8d24d843bfec414af10c54aade5cd457b8032427191bb7b295"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.html",
+          "sha256": "0792a05af50872a4659e99515adb426d76dbf6c7b70f06d53eed1f5bf917b957"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.js",
+          "sha256": "464db7df239ad7bef774898f179d6ead039bb0be085e9616f7bc6ecc563ef434"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+        },
+        {
+          "path": "static/card-table.css",
+          "sha256": "cd35aa6a639097e77723af9440824595bfeeb6fc363e3bc9901faea4a25c6680"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/tabletop-dice-table-tile-v1.png",
+          "sha256": "107196fea820c0733861a21fec4de33bec2bc682d6f4babed94e70814bcb5b59"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_game_flyers.html",
+          "sha256": "7b9765d3217c39a097fcb2fd3b1f9b128064a844ebd891aae74d97c6329a3790"
+        },
+        {
+          "path": "templates/tabletop_family.html",
+          "sha256": "001b55640cef34c070662667a6244c0e7c7580765d1bdf8617662870ec4a5449"
+        }
+      ]
+    },
+    {
+      "id": "graphics-tile-kniffel",
+      "kind": "flyers",
+      "model": "graphics-tile-v1",
+      "name": "Kniffel · Spielkachel",
+      "games": [
+        "Kniffel"
+      ],
+      "members": 0,
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.css",
+          "sha256": "7649d45feff03c8d24d843bfec414af10c54aade5cd457b8032427191bb7b295"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.html",
+          "sha256": "0792a05af50872a4659e99515adb426d76dbf6c7b70f06d53eed1f5bf917b957"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.js",
+          "sha256": "464db7df239ad7bef774898f179d6ead039bb0be085e9616f7bc6ecc563ef434"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+        },
+        {
+          "path": "static/card-table.css",
+          "sha256": "cd35aa6a639097e77723af9440824595bfeeb6fc363e3bc9901faea4a25c6680"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/tabletop-kniffel-tile-v1.png",
+          "sha256": "4cf51299939ce7757577f2eed758879543e6421695e6395205d7d64aafc3ba5e"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_game_flyers.html",
+          "sha256": "7b9765d3217c39a097fcb2fd3b1f9b128064a844ebd891aae74d97c6329a3790"
+        },
+        {
+          "path": "templates/tabletop_family.html",
+          "sha256": "001b55640cef34c070662667a6244c0e7c7580765d1bdf8617662870ec4a5449"
+        }
+      ]
+    },
+    {
+      "id": "graphics-tile-maexchen",
+      "kind": "flyers",
+      "model": "graphics-tile-v1",
+      "name": "Mäxchen · Spielkachel",
+      "games": [
+        "Mäxchen"
+      ],
+      "members": 0,
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.css",
+          "sha256": "7649d45feff03c8d24d843bfec414af10c54aade5cd457b8032427191bb7b295"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.html",
+          "sha256": "0792a05af50872a4659e99515adb426d76dbf6c7b70f06d53eed1f5bf917b957"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.js",
+          "sha256": "464db7df239ad7bef774898f179d6ead039bb0be085e9616f7bc6ecc563ef434"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+        },
+        {
+          "path": "static/card-table.css",
+          "sha256": "cd35aa6a639097e77723af9440824595bfeeb6fc363e3bc9901faea4a25c6680"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/tabletop-dice-table-tile-v1.png",
+          "sha256": "107196fea820c0733861a21fec4de33bec2bc682d6f4babed94e70814bcb5b59"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_game_flyers.html",
+          "sha256": "7b9765d3217c39a097fcb2fd3b1f9b128064a844ebd891aae74d97c6329a3790"
+        },
+        {
+          "path": "templates/tabletop_family.html",
+          "sha256": "001b55640cef34c070662667a6244c0e7c7580765d1bdf8617662870ec4a5449"
+        }
+      ]
+    },
+    {
+      "id": "graphics-tile-cards",
+      "kind": "flyers",
+      "model": "graphics-tile-v1",
+      "name": "Playtable · Spielkachel",
+      "games": [
+        "Playtable"
+      ],
+      "members": 0,
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.css",
+          "sha256": "7649d45feff03c8d24d843bfec414af10c54aade5cd457b8032427191bb7b295"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.html",
+          "sha256": "0792a05af50872a4659e99515adb426d76dbf6c7b70f06d53eed1f5bf917b957"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.js",
+          "sha256": "464db7df239ad7bef774898f179d6ead039bb0be085e9616f7bc6ecc563ef434"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+        },
+        {
+          "path": "static/card-table.css",
+          "sha256": "cd35aa6a639097e77723af9440824595bfeeb6fc363e3bc9901faea4a25c6680"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/tabletop-card-table-tile-v1.png",
+          "sha256": "56fbe001388a623acc0e1799cad7dc4a068105394aa7900aea9e477915601154"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_game_flyers.html",
+          "sha256": "7b9765d3217c39a097fcb2fd3b1f9b128064a844ebd891aae74d97c6329a3790"
+        },
+        {
+          "path": "templates/tabletop_family.html",
+          "sha256": "001b55640cef34c070662667a6244c0e7c7580765d1bdf8617662870ec4a5449"
+        }
+      ]
+    },
+    {
+      "id": "graphics-family-cards",
+      "kind": "flyers",
+      "model": "graphics-tile-v1",
+      "name": "Kartentische · Gruppenkachel",
+      "games": [
+        "Playtable"
+      ],
+      "members": 0,
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.css",
+          "sha256": "7649d45feff03c8d24d843bfec414af10c54aade5cd457b8032427191bb7b295"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.html",
+          "sha256": "0792a05af50872a4659e99515adb426d76dbf6c7b70f06d53eed1f5bf917b957"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.js",
+          "sha256": "464db7df239ad7bef774898f179d6ead039bb0be085e9616f7bc6ecc563ef434"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+        },
+        {
+          "path": "static/card-table.css",
+          "sha256": "cd35aa6a639097e77723af9440824595bfeeb6fc363e3bc9901faea4a25c6680"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/tabletop-card-table-tile-v1.png",
+          "sha256": "56fbe001388a623acc0e1799cad7dc4a068105394aa7900aea9e477915601154"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/tabletop_connection.html",
+          "sha256": "063844e1411d45e8bee67989ffe5b41a20b5d916cfe49bdcc0575acdc5185eea"
+        }
+      ]
+    },
+    {
+      "id": "graphics-family-dice",
+      "kind": "flyers",
+      "model": "graphics-tile-v1",
+      "name": "Würfeltische · Gruppenkachel",
+      "games": [
+        "Würfeltisch",
+        "Kniffel",
+        "Mäxchen"
+      ],
+      "members": 0,
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.css",
+          "sha256": "7649d45feff03c8d24d843bfec414af10c54aade5cd457b8032427191bb7b295"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.html",
+          "sha256": "0792a05af50872a4659e99515adb426d76dbf6c7b70f06d53eed1f5bf917b957"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.js",
+          "sha256": "464db7df239ad7bef774898f179d6ead039bb0be085e9616f7bc6ecc563ef434"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+        },
+        {
+          "path": "static/card-table.css",
+          "sha256": "cd35aa6a639097e77723af9440824595bfeeb6fc363e3bc9901faea4a25c6680"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/tabletop-dice-table-tile-v1.png",
+          "sha256": "107196fea820c0733861a21fec4de33bec2bc682d6f4babed94e70814bcb5b59"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/tabletop_connection.html",
+          "sha256": "063844e1411d45e8bee67989ffe5b41a20b5d916cfe49bdcc0575acdc5185eea"
+        }
+      ]
+    },
+    {
+      "id": "graphics-family-boards",
+      "kind": "flyers",
+      "model": "graphics-tile-v1",
+      "name": "Brettspiele · Gruppenkachel",
+      "games": [
+        "Perfect",
+        "Conquest"
+      ],
+      "members": 0,
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.css",
+          "sha256": "7649d45feff03c8d24d843bfec414af10c54aade5cd457b8032427191bb7b295"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.html",
+          "sha256": "0792a05af50872a4659e99515adb426d76dbf6c7b70f06d53eed1f5bf917b957"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.js",
+          "sha256": "464db7df239ad7bef774898f179d6ead039bb0be085e9616f7bc6ecc563ef434"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+        },
+        {
+          "path": "static/card-table.css",
+          "sha256": "cd35aa6a639097e77723af9440824595bfeeb6fc363e3bc9901faea4a25c6680"
+        },
+        {
+          "path": "static/carousel-playtable-v1.png",
+          "sha256": "248b49bae4afee750f75a25d0f2d0e89757e5249092049aab8a052c5a925c13d"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/tabletop_connection.html",
+          "sha256": "063844e1411d45e8bee67989ffe5b41a20b5d916cfe49bdcc0575acdc5185eea"
+        }
+      ]
+    },
+    {
+      "id": "graphics-icons-quiz",
+      "kind": "icons",
+      "model": "graphics-quiz-v1",
+      "name": "Quiz · fünf Fragetypen",
+      "games": [
+        "Guesstimate",
+        "Guesstimate Party"
+      ],
+      "members": 5,
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.css",
+          "sha256": "7649d45feff03c8d24d843bfec414af10c54aade5cd457b8032427191bb7b295"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.html",
+          "sha256": "0792a05af50872a4659e99515adb426d76dbf6c7b70f06d53eed1f5bf917b957"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.js",
+          "sha256": "464db7df239ad7bef774898f179d6ead039bb0be085e9616f7bc6ecc563ef434"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+        },
+        {
+          "path": "static/category-sprite.png",
+          "sha256": "b2128e8631f91671e5af467f2b1f162ef1a3cccb4643dc0c68024316d60510c7"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        }
+      ]
+    },
+    {
+      "id": "graphics-icons-navigation",
+      "kind": "icons",
+      "model": "graphics-navigation-v1",
+      "name": "Gemeinsame Navigation",
+      "games": [
+        "Guesstimate",
+        "Guesstimate Party",
+        "Perfect",
+        "Playtable",
+        "Würfeltisch",
+        "Kniffel",
+        "Mäxchen",
+        "Conquest"
+      ],
+      "members": 4,
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.css",
+          "sha256": "7649d45feff03c8d24d843bfec414af10c54aade5cd457b8032427191bb7b295"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.html",
+          "sha256": "0792a05af50872a4659e99515adb426d76dbf6c7b70f06d53eed1f5bf917b957"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.js",
+          "sha256": "464db7df239ad7bef774898f179d6ead039bb0be085e9616f7bc6ecc563ef434"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        }
+      ]
+    },
+    {
+      "id": "graphics-icons-comic",
+      "kind": "icons",
+      "model": "graphics-comic-v1",
+      "name": "Gemeinsame Comic-Symbole",
+      "games": [
+        "Conquest"
+      ],
+      "members": 15,
+      "evidence": [
+        {
+          "path": "offline-preview/comic-ui-v1/components.js",
+          "sha256": "f25371e0cf650af41a59f50b869ce9fe64978801c0bf03046ea02e94fc7d6a96"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/game-buttons.js",
+          "sha256": "990b203aef78606968b220965ca8f36d68ae4aa1afa63b94e13d86a79f5afe5d"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.css",
+          "sha256": "7649d45feff03c8d24d843bfec414af10c54aade5cd457b8032427191bb7b295"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.html",
+          "sha256": "0792a05af50872a4659e99515adb426d76dbf6c7b70f06d53eed1f5bf917b957"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.js",
+          "sha256": "464db7df239ad7bef774898f179d6ead039bb0be085e9616f7bc6ecc563ef434"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+        },
+        {
+          "path": "static/comic-button.css",
+          "sha256": "f79d3c15279b04ef0b47ec542d965168b874e40368cff03e11f57c93f9b8170e"
+        }
+      ]
+    },
+    {
+      "id": "graphics-icons-equipment",
+      "kind": "icons",
+      "model": "graphics-equipment-v1",
+      "name": "Conquest · Ausstattungszeichen",
+      "games": [
+        "Conquest"
+      ],
+      "members": 3,
+      "evidence": [
+        {
+          "path": "offline-preview/conquest-2-5d-v1/cards.js",
+          "sha256": "c0d5df1be01e92d37679ca68e31fba096598ac3279804c4d16207d4223a8ef02"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.css",
+          "sha256": "7649d45feff03c8d24d843bfec414af10c54aade5cd457b8032427191bb7b295"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.html",
+          "sha256": "0792a05af50872a4659e99515adb426d76dbf6c7b70f06d53eed1f5bf917b957"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.js",
+          "sha256": "464db7df239ad7bef774898f179d6ead039bb0be085e9616f7bc6ecc563ef434"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+        }
+      ]
+    },
+    {
+      "id": "graphics-icons-stats",
+      "kind": "icons",
+      "model": "graphics-stats-v1",
+      "name": "Spieler · Truppen und Länder",
+      "games": [
+        "Conquest"
+      ],
+      "members": 2,
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.css",
+          "sha256": "7649d45feff03c8d24d843bfec414af10c54aade5cd457b8032427191bb7b295"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.html",
+          "sha256": "0792a05af50872a4659e99515adb426d76dbf6c7b70f06d53eed1f5bf917b957"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.js",
+          "sha256": "464db7df239ad7bef774898f179d6ead039bb0be085e9616f7bc6ecc563ef434"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+        },
+        {
+          "path": "static/player-portrait.css",
+          "sha256": "0305820fc8c57afce072ed6e8df79fea5d8370f2b33107bb21eea64108e1e646"
+        },
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "0074da46e501bfd16110c3eb4dbee751609da1825cbe0647034f930d4a673d38"
+        }
+      ]
+    },
+    {
+      "id": "graphics-icons-favicon",
+      "kind": "icons",
+      "model": "graphics-favicon-v1",
+      "name": "Vorhandenes App-Symbol",
+      "games": [
+        "Guesstimate",
+        "Guesstimate Party",
+        "Perfect",
+        "Playtable",
+        "Würfeltisch",
+        "Kniffel",
+        "Mäxchen",
+        "Conquest"
+      ],
+      "members": 0,
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.css",
+          "sha256": "7649d45feff03c8d24d843bfec414af10c54aade5cd457b8032427191bb7b295"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.html",
+          "sha256": "0792a05af50872a4659e99515adb426d76dbf6c7b70f06d53eed1f5bf917b957"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic-stage.js",
+          "sha256": "464db7df239ad7bef774898f179d6ead039bb0be085e9616f7bc6ecc563ef434"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+        },
+        {
+          "path": "static/favicon.svg",
+          "sha256": "eccddd3da5aca240aac41db3f6def3a5431018653541a3d40fd0fc85c9bdcc14"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "game": "Guesstimate",
+      "assets": [
+        "graphics-artwork-daily",
+        "graphics-flyer-daily",
+        "graphics-icons-quiz",
+        "graphics-icons-navigation",
+        "graphics-icons-favicon"
+      ]
+    },
+    {
+      "game": "Guesstimate Party",
+      "assets": [
+        "graphics-artwork-party",
+        "graphics-flyer-party",
+        "graphics-icons-quiz",
+        "graphics-icons-navigation",
+        "graphics-icons-favicon"
+      ]
+    },
+    {
+      "game": "Perfect",
+      "assets": [
+        "graphics-artwork-perfect",
+        "graphics-artwork-collection",
+        "graphics-flyer-perfect",
+        "graphics-flyer-collection",
+        "graphics-tile-perfect",
+        "graphics-family-boards",
+        "graphics-icons-navigation",
+        "graphics-icons-favicon"
+      ]
+    },
+    {
+      "game": "Playtable",
+      "assets": [
+        "graphics-artwork-collection",
+        "graphics-artwork-cards",
+        "graphics-flyer-collection",
+        "graphics-tile-cards",
+        "graphics-family-cards",
+        "graphics-icons-navigation",
+        "graphics-icons-favicon"
+      ]
+    },
+    {
+      "game": "Würfeltisch",
+      "assets": [
+        "graphics-artwork-collection",
+        "graphics-artwork-dice",
+        "graphics-flyer-collection",
+        "graphics-tile-dice",
+        "graphics-family-dice",
+        "graphics-icons-navigation",
+        "graphics-icons-favicon"
+      ]
+    },
+    {
+      "game": "Kniffel",
+      "assets": [
+        "graphics-artwork-collection",
+        "graphics-artwork-kniffel",
+        "graphics-flyer-collection",
+        "graphics-tile-kniffel",
+        "graphics-family-dice",
+        "graphics-icons-navigation",
+        "graphics-icons-favicon"
+      ]
+    },
+    {
+      "game": "Mäxchen",
+      "assets": [
+        "graphics-artwork-collection",
+        "graphics-artwork-dice",
+        "graphics-maexchen-logo",
+        "graphics-flyer-collection",
+        "graphics-tile-maexchen",
+        "graphics-family-dice",
+        "graphics-icons-navigation",
+        "graphics-icons-favicon"
+      ]
+    },
+    {
+      "game": "Conquest",
+      "assets": [
+        "graphics-artwork-collection",
+        "graphics-artwork-conquest",
+        "graphics-flyer-collection",
+        "graphics-tile-conquest",
+        "graphics-family-boards",
+        "graphics-icons-navigation",
+        "graphics-icons-comic",
+        "graphics-icons-equipment",
+        "graphics-icons-stats",
+        "graphics-icons-favicon"
+      ]
+    }
+  ],
+  "rule": "Bildmotive, gemeinsame Kompositionen und endliche Symbolsätze. Kein Eintrag pro Spielstand, Inhalt oder Symbolverwendung.",
+  "exclusions": [
+    "Persönliche Geburtstagsfolie bleibt außerhalb des allgemeinen Katalogs.",
+    "Unveröffentlichte Schweinchen-Kachel bleibt außerhalb des Bestands aktiver Spiele.",
+    "Texttitel bleiben Bestandteil der ursprünglichen Titel-/Fenster-/Flyerkomposition, keine neuen Bitmapkopien.",
+    "Kartenbilder, Würfelseiten und dynamische Routen bleiben ihren vorhandenen Kategorien zugeordnet.",
+    "Editoroptionen und Spielintegration bleiben offen."
+  ]
+}

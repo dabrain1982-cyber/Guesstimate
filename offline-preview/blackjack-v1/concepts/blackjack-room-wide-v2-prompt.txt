@@ -1,0 +1,7 @@
+Built-in image_gen edit; 30.10.2026
+Input: runtime/blackjack-table-polish-20261030/outpaint-reference.png
+Output: static/blackjack-room-wide-v2.png
+
+Precise horizontal outpainting ONLY. The input canvas is 1984 x 941. It contains an approved 1672 x 941 game scene in the middle at x=156..1827, with two black vertical margins of 156 pixels each. Fill ONLY those two black margins by continuing the existing image seamlessly: antique dark wood card room, green felt table and worn leather edges. Keep the entire existing center photograph/painting pixel-for-pixel unchanged, same exact position, scale and original aspect ratio. Especially do not zoom, rescale, widen, squeeze, crop, redraw or move the raccoon dealer or the table. Do not reframe. Output exactly the same canvas dimensions 1984 x 941, with only the black side bars replaced by matching continuation, no seam at x156 or x1828. The added areas are narrow side extensions, not extra space elsewhere. No text, no new characters, no interface. Preserve every existing central detail and the original proportions.
+
+Integration: Generated image is only a backdrop outside the original scene. Original central scene is drawn over it with its original aspect ratio. Only the outer 1.5 percent of each image edge blends into the backdrop. No stretching.

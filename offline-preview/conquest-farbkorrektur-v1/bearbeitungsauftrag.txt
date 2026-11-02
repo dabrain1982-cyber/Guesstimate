@@ -1,0 +1,31 @@
+Werkzeug: integrierte Bildgenerierung, gezielte Bearbeitung einer vorhandenen
+farbigen Vorlage. Keine vollständige Neuzeichnung und keine Einbindung.
+
+Vorlage: exec-dac23aa8-3029-4b51-9932-e6aacc75e875.png
+Markierungen des Nutzers: Ostkanada, Skandinavien/Ukraine, zusätzliche obere
+Kamtschatka-Linie sowie Ägypten/Naher Osten. Zusätzlich galt weiterhin die
+vorherige Korrektur zur fehlenden Grenze Nordafrika/Zentralafrika.
+
+Erster Bearbeitungsauftrag:
+- Ostkanada im bislang unbenannten gelben Gebiet östlich von Ontario ergänzen.
+- Skandinavien auf der westlichen Halbinsel beschriften; den falsch auf dem
+  östlichen blauen Festland stehenden Namen durch Ukraine ersetzen.
+- Nur die zusätzliche obere gestrichelte Verbindung am rechten Asienrand
+  entfernen. Die eigentliche Kamtschatka-Verbindung darunter erhalten.
+- Die lange gestrichelte Linie im Roten Meer entfernen und die Küsten sowie
+  die kleine Verbindung bei Suez sauber erhalten.
+- Die fehlende durchgehende Grenze zwischen Nordafrika und Zentralafrika
+  oberhalb des Zentralafrika-Namens ergänzen. Afrika muss sechs geschlossene,
+  benannte Gebiete behalten.
+- Stil, Farben, Positionen, übrige Grenzen, Kompass, Rahmen, Titel und alle
+  Bonuswerte unverändert erhalten. Keine roten Markierungen übernehmen.
+
+Zweiter Bearbeitungsauftrag:
+Nur eine kurze gestrichelte Wasserverbindung an der südlichen Öffnung des
+Roten Meeres von Ostafrika zur arabischen Küste des Nahen Ostens ergänzen.
+Auf der 1284 x 1225 großen Vorlage wurden die ungefähren Endpunkte
+(784, 703) und (776, 685) angegeben. Keine lange Linie entlang des Roten
+Meeres und keine Änderungen außerhalb dieser kleinen Stelle.
+
+Ergebnis: stormseeds-conquest-korrigiert-v1.png
+Nur als lokale Prüffassung gespeichert, nicht in die Spielansicht eingebaut.

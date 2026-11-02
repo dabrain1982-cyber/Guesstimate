@@ -1,0 +1,64 @@
+/* One lobby composition for every standard game; Perfect retains its existing room. */
+.app-shell.game-lobby-shell { width: min(1540px, calc(100% - 40px)); max-width: 1540px; }
+.game-lobby { min-width: 0; padding: 24px 0 36px; color: #eef4ff; }
+.game-lobby-heading { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 18px; margin-bottom: 24px; text-shadow: 0 2px 8px #000; }
+.game-lobby-heading > div { min-width: 0; }
+.game-lobby-heading .game-name { margin: 0 0 6px; color: var(--acid, #d8ff42); font-weight: 750; }
+.game-lobby-heading h1 { margin: 0; font-size: clamp(1.7rem, 3vw, 2.8rem); line-height: 1.1; overflow-wrap: anywhere; }
+.game-lobby-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; font-size: .88rem; font-weight: 700; }
+.lobby-state { padding: 7px 12px; border: 1px solid #93adc966; border-radius: 999px; background: #10223bd9; }
+.game-lobby-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 350px); align-items: start; gap: 24px; }
+.game-lobby-panel { min-width: 0; padding: 22px; border: 1px solid #719ac866; border-radius: 20px; background: #081a30e8; box-shadow: 0 15px 40px #0005; }
+.game-lobby h2 { margin: 0 0 18px; color: #eef4ff; font: 700 1.25rem/1.2 var(--font-display, system-ui); }
+.game-lobby-players { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr)); align-items: start; gap: 18px; margin: 0; padding: 0; list-style: none; }
+.game-lobby-player { width: 100%; max-width: 230px; min-width: 0; justify-self: center; }
+.game-lobby-player > .variant-a-profile { width: 100%; }
+.game-lobby-player.is-host > .variant-a-profile { border-color: var(--acid, #d8ff42); }
+.game-lobby-player.is-away { opacity: .7; }
+.game-lobby-seat { display: flex; justify-content: space-between; gap: 8px; margin-bottom: 8px; padding-left: 8px; border-left: 4px solid var(--lobby-seat-color, #7b99be); color: #d4e2f5; font-size: .78rem; font-weight: 700; }
+.game-lobby-seat small { font: inherit; color: var(--acid, #d8ff42); }
+.game-lobby-player-actions { margin-top: 8px; text-align: center; }
+.game-lobby-player-actions button { min-height: 32px; padding: 5px 12px; border: 1px solid #98b5dc; border-radius: 8px; background: #152e4c; color: #eef4ff; cursor: pointer; font: inherit; font-size: .78rem; }
+.game-lobby-controls form { margin: 0; }
+.game-lobby-controls .lobby-field { display: grid; gap: 7px; margin: 0 0 18px; color: #c9d9ee; font-size: .86rem; font-weight: 650; }
+.game-lobby-controls :is(input:not([type="hidden"]), select) { box-sizing: border-box; width: 100%; min-width: 0; min-height: 44px; padding: 9px 11px; border: 1px solid #7596c1; border-radius: 9px; background: #101f35; color: #f2f6ff; font: inherit; }
+.game-lobby-controls :is(input, select):focus-visible { outline: 2px solid var(--acid, #d8ff42); outline-offset: 3px; }
+.lobby-choices { display: grid; gap: 8px; margin: 0 0 18px; padding: 0; border: 0; }
+.lobby-choices legend { margin-bottom: 8px; color: #c9d9ee; font-size: .86rem; font-weight: 650; }
+.lobby-choices label { display: flex; align-items: center; gap: 10px; padding: 10px; border: 1px solid #7596c177; border-radius: 9px; cursor: pointer; }
+.lobby-choices label:has(:checked) { border-color: var(--acid, #d8ff42); background: #d8ff4210; }
+.game-lobby-controls .lobby-choices input { width: 18px; min-height: 18px; padding: 0; flex: 0 0 18px; accent-color: var(--acid, #d8ff42); }
+.lobby-choices strong, .lobby-choices small { display: block; }
+.lobby-choices small { margin-top: 4px; color: #b1c5de; line-height: 1.4; }
+.lobby-save-hint, .lobby-help { margin: 12px 0; color: #b7cae3; font-size: .82rem; line-height: 1.5; }
+.game-lobby-roster-note { margin-bottom: 0; padding-top: 16px; border-top: 1px solid #719ac844; }
+.game-lobby .game-lobby-start, .game-lobby-controls > .primary-button { box-sizing: border-box; width: 100%; margin-top: 6px; }
+.game-lobby .primary-button { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 46px; padding: 10px 15px; border: 1px solid var(--acid, #d8ff42); border-radius: 10px; background: var(--acid, #d8ff42); color: #101d0d; box-shadow: 0 4px 0 #152230; font: 750 .92rem/1.3 var(--font-ui, system-ui); text-decoration: none; cursor: pointer; }
+.game-lobby .primary-button:disabled { border-color: #6f8199; background: #394c64; color: #bfccdc; box-shadow: none; cursor: not-allowed; }
+.game-lobby .secondary-button { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 9px 14px; border: 1px solid #99b4d5; border-radius: 9px; background: #142c48; color: #f2f6ff; font: 700 .84rem/1.3 var(--font-ui, system-ui); text-decoration: none; cursor: pointer; }
+.game-lobby .secondary-button.is-danger { border-color: #e28d91; color: #ffd5d7; }
+.lobby-summary { display: grid; gap: 12px; margin: 0 0 18px; }
+.lobby-summary > div { display: grid; gap: 4px; padding-bottom: 12px; border-bottom: 1px solid #719ac833; }
+.lobby-summary dt { color: #a9bed9; font-size: .82rem; }
+.lobby-summary dd { margin: 0; color: #f4f7ff; font-size: .95rem; font-weight: 700; overflow-wrap: anywhere; }
+.lobby-options { margin: 16px 0; padding-top: 12px; border-top: 1px solid #719ac844; }
+.game-lobby summary { cursor: pointer; font-size: .86rem; font-weight: 700; text-transform: lowercase; }
+.lobby-options > p { color: #b7cae3; font-size: .82rem; line-height: 1.5; }
+.lobby-notice { margin: 14px 0; padding: 12px; border-left: 3px solid var(--acid, #d8ff42); background: #172d49; color: #e0eafb; line-height: 1.5; }
+.lobby-actions { display: grid; gap: 12px; }
+.game-lobby-footer { display: flex; flex-wrap: wrap; align-items: start; justify-content: space-between; gap: 14px; margin-top: 20px; }
+.game-lobby-footer form { margin: 0; }
+.game-lobby-footer details { max-width: 360px; padding: 10px 14px; border: 1px solid #9e737d; border-radius: 9px; background: #261c2ae8; }
+.game-lobby-footer details p { color: #e8c7ce; font-size: .82rem; line-height: 1.5; }
+.lobby-closed { text-align: center; }
+@media (max-width: 900px) {
+  .game-lobby-layout { grid-template-columns: minmax(0, 1fr); }
+  .game-lobby-controls { width: 100%; box-sizing: border-box; }
+}
+@media (max-width: 520px) {
+  .app-shell.game-lobby-shell { width: calc(100% - 24px); }
+  .game-lobby-panel { padding: 14px; }
+  .game-lobby-players { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .game-lobby-player { max-width: none; }
+  .game-lobby-heading { margin-bottom: 18px; }
+}

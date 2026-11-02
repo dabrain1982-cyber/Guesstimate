@@ -7,11 +7,14 @@ from werkzeug.security import generate_password_hash
 
 from app import DEFAULT_PLAQUE, PLAQUE_CATALOG, create_app, get_or_create_round, today_iso
 from card_table import _build_deck
+from conquest import _prepare_automatic_state
 
 
+PREVIEW_DATABASE = Path(__file__).resolve().parent / "runtime" / "codex-preview.sqlite3"
+PREVIEW_DATABASE.parent.mkdir(parents=True, exist_ok=True)
 preview_app = create_app(
     {
-        "DATABASE": "/tmp/guesstimate-quiz-arena-v2.sqlite3",
+        "DATABASE": str(PREVIEW_DATABASE),
         "SECRET_KEY": "quiz-arena-preview",
         "PREVIEW_CURRENCY_BONUS": 0,
         "CARD_TABLE_ENABLED": True,
@@ -112,6 +115,49 @@ def ensure_card_table_preview():
     return lobby_id
 
 
+def ensure_conquest_preview():
+    database = preview_app.get_db()
+    existing = database.execute(
+        "SELECT id FROM conquest_lobbies WHERE name = 'Lokale Conquest-Vorschau'"
+    ).fetchone()
+    if existing:
+        database.execute("DELETE FROM conquest_members WHERE lobby_id = ?", (existing["id"],))
+        database.execute("DELETE FROM conquest_lobbies WHERE id = ?", (existing["id"],))
+    host_id = database.execute("SELECT id FROM users WHERE username='stormseed'").fetchone()[0]
+    guest_id = database.execute("SELECT id FROM users WHERE username='pearlyde'").fetchone()[0]
+    now = datetime.now().isoformat(timespec="microseconds")
+    lobby_id = database.execute(
+        """
+        INSERT INTO conquest_lobbies
+            (name, host_user_id, status, board_style, card_style, figure_style,
+             dice_style, victory_mode, setup_mode, created_at, started_at)
+        VALUES ('Lokale Conquest-Vorschau', ?, 'playing', 'klassisch', 'klassisch',
+                'klassisch', 'klassisch', 'missions', 'automatic', ?, ?)
+        """,
+        (host_id, now, now),
+    ).lastrowid
+    for offset, user_id in enumerate((host_id, guest_id)):
+        database.execute(
+            "INSERT INTO conquest_members (lobby_id, user_id, joined_at) VALUES (?, ?, ?)",
+            (lobby_id, user_id, f"{now}-{offset}"),
+        )
+    members = database.execute(
+        """
+        SELECT cm.*, u.display_name
+        FROM conquest_members cm JOIN users u ON u.id = cm.user_id
+        WHERE cm.lobby_id = ? ORDER BY cm.joined_at, cm.id
+        """,
+        (lobby_id,),
+    ).fetchall()
+    state = _prepare_automatic_state(members, "missions")
+    database.execute(
+        "UPDATE conquest_lobbies SET state_json = ? WHERE id = ?",
+        (json.dumps(state, ensure_ascii=False, separators=(",", ":")), lobby_id),
+    )
+    database.commit()
+    return lobby_id
+
+
 @preview_app.get("/preview/anmelden/stormseed")
 def preview_login():
     database = preview_app.get_db()
@@ -168,6 +214,21 @@ def preview_card_table():
     session["user_id"] = user_id
     session["csrf_token"] = "preview-token"
     return redirect(f"/karten/{ensure_card_table_preview()}")
+
+
+@preview_app.get("/preview/conquest")
+def preview_conquest():
+    database = preview_app.get_db()
+    user_id = database.execute("SELECT id FROM users WHERE username='stormseed'").fetchone()[0]
+    session.clear()
+    session["user_id"] = user_id
+    session["csrf_token"] = "preview-token"
+    return redirect(f"/karten/welteroberung/{ensure_conquest_preview()}")
+
+
+@preview_app.get("/preview/conquest/brett")
+def preview_conquest_board_surface():
+    return render_template("conquest_board_preview.html")
 
 
 @preview_app.get("/preview/nerdiger-modus")

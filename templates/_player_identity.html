@@ -1,4 +1,4 @@
-{% macro player_identity(display_name, avatar_id, plaque_id, size='medium', subtitle=None, points=None, rank=None, show_avatar_action=False, speech=None, show_avatar=True, daily_points=None, weekly_points=None, avatar_action_url=None, weekly_rounds=None, points_unit='PKT') %}
+{% macro player_identity(display_name, avatar_id, plaque_id, size='medium', subtitle=None, points=None, rank=None, show_avatar_action=False, speech=None, show_avatar=True, daily_points=None, weekly_points=None, avatar_action_url=None, weekly_rounds=None, points_unit='PKT', profile_url=None) %}
   {% set avatar = avatar_catalog[avatar_id] %}
   {% set portrait_asset = avatar.asset %}
   {% set stage_asset = avatar.stage_asset %}
@@ -65,7 +65,7 @@
           {% if avatar_id == 'a00' and avatar_action_url %}</a>{% endif %}
         </div>
         <span class="player-plaque-label">
-          <strong title="{{ display_name }}">{{ display_name }}</strong>
+          <strong title="{{ display_name }}">{% if profile_url %}<a href="{{ profile_url }}" aria-label="Profil von {{ display_name }} ansehen">{{ display_name }}</a>{% else %}{{ display_name }}{% endif %}</strong>
           {% if subtitle %}<small>{{ subtitle }}</small>{% endif %}
         </span>
         {% if weekly_rounds is not none %}

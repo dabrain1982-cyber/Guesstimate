@@ -1,0 +1,93 @@
+{
+  "schema_version": 2,
+  "renderer_version": "button-workshop-v7",
+  "contour": {
+    "template": "comic",
+    "points": [
+      {
+        "x": 8,
+        "y": 7,
+        "round": 30
+      },
+      {
+        "x": 34,
+        "y": 2,
+        "round": 30
+      },
+      {
+        "x": 91,
+        "y": 6,
+        "round": 28
+      },
+      {
+        "x": 99,
+        "y": 29,
+        "round": 38
+      },
+      {
+        "x": 95,
+        "y": 88,
+        "round": 28
+      },
+      {
+        "x": 64,
+        "y": 96,
+        "round": 35
+      },
+      {
+        "x": 5,
+        "y": 91,
+        "round": 26
+      },
+      {
+        "x": 1,
+        "y": 30,
+        "round": 35
+      }
+    ]
+  },
+  "name": "Black Jack",
+  "notes": "",
+  "settings": {
+    "style": "comic",
+    "material": "gradient",
+    "shape": "comic",
+    "edge": 0,
+    "finish": "matte",
+    "wear": 0,
+    "accent": "#d8ff42",
+    "font": "letter-iron",
+    "font_link": "manual",
+    "lettering": "plain",
+    "size": 20,
+    "label": "Mein Button",
+    "depth": 4,
+    "duration": 300,
+    "feel": "soft",
+    "sound": "media-piece",
+    "volume": 40,
+    "gradient_to": "#49561a",
+    "opacity": 30,
+    "font_scale": 150,
+    "shadow": 60,
+    "height_ratio": 80,
+    "ink_mode": "manual",
+    "ink_color": "#22280b",
+    "depth_mode": "manual",
+    "depth_color": "#333c10",
+    "depth_x": 3,
+    "font_italic": false
+  },
+  "kind": "button",
+  "review": {
+    "style": "open",
+    "motion": "open",
+    "shape": "open",
+    "surface": "open",
+    "lettering": "open",
+    "sound": "open"
+  },
+  "parent_id": "132b54b7b45b42ef9c4b9d6ad3375355",
+  "id": "e02a3071cc0941329fc9b8bfb3adcd0f",
+  "created_at": "2026-10-29T18:35:42.136582+00:00"
+}

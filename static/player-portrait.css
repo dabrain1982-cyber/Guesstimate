@@ -1,0 +1,90 @@
+/* spieler.portraet: scale the whole component through its font-size only. */
+.player-portrait, .player-portrait * { box-sizing: border-box; }
+.player-portrait {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: .7em;
+  min-width: 0;
+  font: 500 var(--player-portrait-size, 14px)/1.25 var(--font-ui, "Segoe UI", sans-serif);
+  color: #fff3d8;
+}
+.player-portrait-frame {
+  position: relative;
+  flex: 0 0 3.9em;
+  width: 3.9em;
+  height: 3.9em;
+  overflow: hidden;
+  border: .18em solid #17140f;
+  border-radius: 42% 49% 40% 46%;
+  background: radial-gradient(circle at 35% 25%, #fff6 0, transparent 65%), var(--player-color, #d8ff42);
+  box-shadow: 0 .21em 0 #14100c, inset 0 0 0 .15em #fff6;
+}
+.player-portrait-image {
+  position: absolute;
+  display: block;
+  top: var(--portrait-top, 0%);
+  left: 50%;
+  width: calc(100% * var(--portrait-scale, 1));
+  max-width: none;
+  height: auto;
+  transform: translateX(-50%);
+  filter: drop-shadow(0 .08em .03em #16110d88);
+}
+.player-portrait-fallback {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  color: #fff;
+  font: 650 2em/1 var(--font-display, "Segoe UI", sans-serif);
+  text-shadow: .03em .05em 0 #17140f;
+  -webkit-text-stroke: .02em #17140f;
+}
+.player-portrait-copy { display: grid; gap: .12em; min-width: 0; }
+.player-portrait-name {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font: 650 1.15em/1.25 var(--font-display, "Segoe UI", sans-serif);
+  letter-spacing: .01em;
+}
+.player-portrait-status { color: #e8d3ab; font-size: .72em; }
+.player-portrait-metrics { color: #fff0c9; font-size: .79em; font-variant-numeric: tabular-nums; }
+.player-portrait-wallet { display: grid; grid-template-columns: repeat(3, minmax(4.7em, auto)); column-gap: .7em; row-gap: .1em; margin-top: .3em; }
+.player-portrait-wallet-item { display: grid; gap: .14em; }
+.player-portrait-wallet-label { color: #cfbd9c; font-size: .72em; white-space: nowrap; }
+.player-portrait-wallet-value { color: #f7d58f; font: 700 1.7em/1.1 var(--font-ui, 'Segoe UI', sans-serif); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.player-portrait-wallet-value[data-sign='positive'] { color: #b9df9e; }
+.player-portrait-wallet-value[data-sign='negative'] { color: #eaa58c; }
+.player-portrait[data-wallet='true'] .player-portrait-copy { grid-template-columns: minmax(0, 1fr) auto; column-gap: .6em; }
+.player-portrait[data-wallet='true'] .player-portrait-name { grid-column: 1; grid-row: 1; }
+.player-portrait[data-wallet='true'] .player-portrait-status { grid-column: 2; grid-row: 1; align-self: center; }
+.player-portrait[data-wallet='true'] .player-portrait-wallet { grid-column: 1 / -1; }
+.player-portrait [hidden] { display: none; }
+
+/* Table variant: a larger head beside one compact name-and-wallet panel. */
+.player-portrait[data-layout="table"] { width: 23.7em; gap: .45em; }
+.player-portrait[data-layout="table"] .player-portrait-frame { flex-basis: 6.25em; width: 6.25em; height: 6.25em; border-radius: 50%; border-color: #322318; box-shadow: 0 .15em .5em #08050388, inset 0 0 0 .12em #cfb77b88; }
+.player-portrait[data-layout="table"] .player-portrait-copy { flex: 0 0 17em; width: 17em; padding: .45em .6em; border: .08em solid #af926369; border-radius: .55em; background: #21160dde; box-shadow: 0 .2em .5em #08050355; }
+.player-portrait[data-layout="table"] .player-portrait-wallet { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr) minmax(0, 1.1fr); column-gap: .5em; margin-top: .2em; }
+.player-portrait[data-layout="table"] .player-portrait-wallet-label { font-size: .68em; }
+.player-portrait[data-layout="table"] .player-portrait-wallet-value { font-size: 1.6em; }
+.player-portrait[data-layout="table"][data-current="true"] .player-portrait-copy { border-color: #e8c888; box-shadow: 0 0 .7em #d5a04b44; }
+
+/* Public army values and the card count share this compact portrait variant. */
+.player-portrait[data-layout="army"] { display: grid; grid-template-columns: 3.6em 3.9em; column-gap: .45em; row-gap: .25em; width: 7.95em; padding: .4em .35em .25em; border-radius: 1.7em .9em .8em 1.4em; background: #172c31d9; border: .12em solid var(--player-color); box-shadow: 0 .22em 0 #131c20; }
+.player-portrait[data-layout="army"][data-current="true"] { background: #213d38f2; outline: .16em solid #fff0b0; outline-offset: .12em; }
+.player-portrait-stats { display: grid; align-content: center; gap: .24em; grid-column: 1; grid-row: 1; }
+.player-portrait-stat { display: flex; align-items: center; justify-content: space-between; gap: .3em; }
+.player-portrait-stat-icon { display: inline-flex; width: 1.05em; height: 1.2em; color: #d1e1dd; flex-shrink: 0; }
+.player-portrait-stat-icon svg { width: 100%; height: 100%; }
+.player-portrait-stat-value { font: 650 1.08em/1 var(--font-display); font-variant-numeric: tabular-nums; }
+.player-portrait[data-layout="army"] .player-portrait-frame { grid-column: 2; grid-row: 1; }
+.player-portrait[data-layout="army"] .player-portrait-copy { grid-column: 1 / -1; text-align: center; gap: .12em; }
+.player-portrait[data-layout="army"] .player-portrait-name { font-size: .78em; }
+.player-portrait[data-layout="army"] .player-portrait-status { font-size: .65em; }
+.player-portrait-badge { position: absolute; z-index: 1; top: -.65em; right: -.65em; display: grid; place-items: center; min-width: 2em; height: 2em; min-height: 0; padding: 0 .3em; border: .14em solid #1a2526; border-radius: .45em .6em .4em .55em; background: #fff1ca; box-shadow: 0 .16em 0 #1a2526; color: #24302d; font: 650 .93em/1 var(--font-display); cursor: pointer; white-space: nowrap; }
+.player-portrait-badge:disabled { color: #24302d; opacity: 1; cursor: default; }
+.player-portrait-badge:hover:not(:disabled) { background: #e8ff9b; color: #24302d; }

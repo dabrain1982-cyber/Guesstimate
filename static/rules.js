@@ -1,15 +1,17 @@
 (() => {
   const dialog = document.querySelector("#rules-dialog");
-  const openButton = document.querySelector("[data-rules-open]");
+  const openButtons = document.querySelectorAll("[data-rules-open]");
 
-  if (!dialog || !openButton) return;
+  if (!dialog || !openButtons.length) return;
 
-  openButton.addEventListener("click", () => {
-    if (typeof dialog.showModal === "function") {
-      dialog.showModal();
-    } else {
-      dialog.setAttribute("open", "");
-    }
+  openButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      if (typeof dialog.showModal === "function") {
+        if (!dialog.open) dialog.showModal();
+      } else {
+        dialog.setAttribute("open", "");
+      }
+    });
   });
 
   dialog.addEventListener("click", (event) => {

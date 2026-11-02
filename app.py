@@ -1,5 +1,8 @@
 from __future__ import annotations
 
+from lobby_overview import render_overview
+from leaderboard_views import currency_rankings, init_currency_peaks, record_currency_peak, winner_rows
+
 import hashlib
 import json
 import math
@@ -28,6 +31,7 @@ from flask import (
     url_for,
 )
 from werkzeug.security import check_password_hash, generate_password_hash
+from lobby_view import lobby_player_profiles
 
 from questions import (
     CATEGORY_LABELS,
@@ -37,6 +41,7 @@ from questions import (
 )
 from nerd_mode import init_nerd_db, register_nerd_routes
 from card_table import init_card_table_db, register_card_table_routes
+from blackjack import init_blackjack_db, register_blackjack_routes
 from conquest import init_conquest_db, register_conquest_routes
 from dice_table import init_dice_table_db, register_dice_table_routes
 
@@ -56,7 +61,7 @@ MIN_ESTIMATE_POINTS = 10
 MIN_QUESTION_POINTS = 10
 MAX_QUESTION_POINTS = 100
 MAX_PLAYERS = 100
-DEFAULT_GAME_NAME = "Stormseed´s Guesstimate"
+DEFAULT_GAME_NAME = "stormseed´s guesstimate"
 RELEASE_VERSION = "2026.10.24-pool-home-mail-v1"
 QUESTION_FULL_TIME_SECONDS = (5.0, 5.0, 5.0, 8.0, 5.0)
 FEEDBACK_SECONDS = 4
@@ -253,6 +258,10 @@ def create_app(test_config: dict[str, Any] | None = None) -> Flask:
         PREVIEW_CURRENCY_BONUS=int(os.environ.get("QUIZ_PREVIEW_CURRENCY_BONUS", "0")),
         OWNER_USERNAME=normalize_username(os.environ.get("QUIZ_OWNER_USERNAME", "stormseed")),
         CARD_TABLE_ENABLED=os.environ.get("QUIZ_ENABLE_CARD_TABLE", "1") == "1",
+        LOCAL_DEVELOPMENT=os.environ.get("QUIZ_LOCAL_DEVELOPMENT", "0") == "1",
+        OFFLINE_VERSION=os.environ.get("QUIZ_OFFLINE_VERSION", ""),
+        SESSION_COOKIE_NAME=os.environ.get("QUIZ_SESSION_COOKIE_NAME", "session"),
+        DAILY_CATCHUP_EXCLUDED_WEEKS=("2026-10-26",),
         DICE_TABLE_AVAILABLE=True,
         KNIFFEL_AVAILABLE=True,
         MAEXCHEN_AVAILABLE=True,
@@ -264,9 +273,14 @@ def create_app(test_config: dict[str, Any] | None = None) -> Flask:
     Path(app.instance_path).mkdir(parents=True, exist_ok=True)
     register_database(app)
     register_routes(app)
+    from inbox import init_inbox, register_inbox
+    register_inbox(app, login_required, require_csrf, is_owner_user)
+    from public_profiles import register_public_profiles
+    register_public_profiles(app, login_required, player_cosmetics, player_total_points, player_trophy_counts, rank_rows)
     register_nerd_routes(app)
     if app.config["CARD_TABLE_ENABLED"]:
         register_card_table_routes(app, login_required, require_csrf)
+        register_blackjack_routes(app, login_required, require_csrf)
         register_conquest_routes(app, login_required, require_csrf)
     register_dice_table_routes(app, login_required, require_csrf)
     register_template_helpers(app)
@@ -274,11 +288,14 @@ def create_app(test_config: dict[str, Any] | None = None) -> Flask:
 
     with app.app_context():
         init_db()
+        init_inbox(get_db())
         init_nerd_db(get_db)
         if app.config["CARD_TABLE_ENABLED"]:
             init_card_table_db(get_db)
+            init_blackjack_db(get_db)
             init_conquest_db(get_db)
         init_dice_table_db(get_db)
+        init_currency_peaks(get_db(), app.config['PREVIEW_CURRENCY_BONUS'])
 
     return app
 
@@ -661,12 +678,25 @@ def today_iso() -> str:
 
 
 def active_round_date() -> str:
-    return session.get("active_round_date", today_iso())
+    today = today_iso()
+    selected = session.get("active_round_date", today)
+    if selected != today and catchup_week_excluded(date.fromisoformat(selected)):
+        session.pop("active_round_date", None)
+        session.pop("catchup_queue", None)
+        return today
+    return selected
+
+
+def catchup_week_excluded(day: date) -> bool:
+    monday = day - timedelta(days=day.weekday())
+    return monday.isoformat() in current_app.config["DAILY_CATCHUP_EXCLUDED_WEEKS"]
 
 
 def missed_current_week_dates(user_id: int, current_day: date | None = None) -> list[str]:
     today = current_day or date.today()
     monday = today - timedelta(days=today.weekday())
+    if catchup_week_excluded(today):
+        return []
     played = {
         row["round_date"]
         for row in get_db().execute(
@@ -1118,80 +1148,20 @@ def leaderboard_slice(user_id: int, visible: int = 5) -> tuple[list[dict], dict 
 
 
 def leaderboard_sets(reference_day: str | None = None) -> dict[str, list[dict[str, Any]]]:
+    current, peaks = currency_rankings(get_db(), current_app.config.get('PREVIEW_CURRENCY_BONUS', 0))
     return {
         "daily": rank_rows("daily", reference_day),
         "weekly": rank_rows("weekly", reference_day),
         "all": rank_rows("all"),
-        "weekly_wins": weekly_winner_rows(reference_day),
+        "weekly_wins": weekly_winner_rows(),
+        "daily_wins": winner_rows(get_db(), 'daily', today_iso()),
+        "currency_current": current,
+        "currency_high": peaks,
     }
 
 
 def weekly_winner_rows(reference_day: str | None = None) -> list[dict[str, Any]]:
-    """Rank players by completed weekly victories before the current week."""
-    current_day = date.fromisoformat(reference_day or today_iso())
-    current_week_start = current_day - timedelta(days=current_day.weekday())
-    database = get_db()
-    users = database.execute(
-        """
-        SELECT u.id, u.display_name,
-               COALESCE(uc.avatar_id, ?) AS avatar_id,
-               COALESCE(uc.plaque_id, ?) AS plaque_id
-        FROM users u
-        LEFT JOIN user_cosmetics uc ON uc.user_id = u.id
-        ORDER BY u.display_name COLLATE NOCASE ASC
-        """,
-        (DEFAULT_AVATAR_ID, DEFAULT_PLAQUE_ID),
-    ).fetchall()
-    attempts = database.execute(
-        """
-        SELECT r.round_date, a.user_id, COALESCE(a.score, 0) AS score
-        FROM attempts a
-        JOIN daily_rounds r ON r.id = a.round_id
-        WHERE a.status = 'completed' AND r.round_date < ?
-        """,
-        (current_week_start.isoformat(),),
-    ).fetchall()
-
-    weekly_scores: dict[tuple[int, int], dict[int, int]] = {}
-    for attempt in attempts:
-        week_key = date.fromisoformat(attempt["round_date"]).isocalendar()[:2]
-        scores = weekly_scores.setdefault(week_key, {})
-        user_id = int(attempt["user_id"])
-        scores[user_id] = scores.get(user_id, 0) + int(attempt["score"])
-
-    victories = {int(user["id"]): 0 for user in users}
-    for scores in weekly_scores.values():
-        if not scores:
-            continue
-        winning_score = max(scores.values())
-        for user_id, score in scores.items():
-            if score == winning_score:
-                victories[user_id] = victories.get(user_id, 0) + 1
-
-    ordered = sorted(
-        users,
-        key=lambda user: (-victories[int(user["id"])], user["display_name"].casefold()),
-    )
-    leaderboard: list[dict[str, Any]] = []
-    last_wins = None
-    last_rank = 0
-    for index, user in enumerate(ordered, 1):
-        wins = victories[int(user["id"])]
-        if wins != last_wins:
-            last_rank = index
-            last_wins = wins
-        leaderboard.append(
-            {
-                "id": user["id"],
-                "display_name": user["display_name"],
-                "avatar_id": user["avatar_id"],
-                "plaque_id": user["plaque_id"],
-                "points": wins,
-                "rounds": 0,
-                "rank": last_rank,
-            }
-        )
-    return leaderboard
+    return winner_rows(get_db(), "weekly", reference_day or today_iso())
 
 
 def previous_daily_winner(reference_day: date | None = None) -> dict[str, Any] | None:
@@ -1833,7 +1803,7 @@ def register_routes(app: Flask) -> None:
         )
         if (
             g.user is not None
-            and request.endpoint != "static"
+            and request.endpoint not in ("static", "players", "public_profile")
             and session.get("login_recorded_on") != today_iso()
         ):
             if record_daily_login(g.user["id"]):
@@ -2076,6 +2046,7 @@ def register_routes(app: Flask) -> None:
             database.rollback()
             flash("Dafür fehlen dir noch ein paar iKühe.", "error")
             return redirect(url_for("shop"))
+        record_currency_peak(database, g.user['id'], player_currency_balance(g.user['id']))
         database.execute(
             """
             INSERT INTO shop_purchases (user_id, item_type, item_id, price, purchased_at)
@@ -2428,6 +2399,7 @@ def register_routes(app: Flask) -> None:
                 """,
                 (next_index, score, datetime.now().isoformat(timespec="seconds"), attempt["id"]),
             )
+            record_currency_peak(database, g.user['id'], player_currency_balance(g.user['id']))
             database.commit()
             rank_after = current_rank(g.user["id"])
             database.execute(
@@ -2473,7 +2445,8 @@ def register_routes(app: Flask) -> None:
         get_db().execute("SELECT 1").fetchone()
         return {
             "status": "ok",
-            "release": RELEASE_VERSION,
+            "release": app.config.get('OFFLINE_VERSION') or RELEASE_VERSION,
+            "code_release": RELEASE_VERSION,
             "questions": question_pool_status(),
             "pool_mail_ready": pool_mail_ready(),
         }
@@ -2483,10 +2456,9 @@ def register_routes(app: Flask) -> None:
     def party_index():
         refresh_party_presence()
         lobbies = active_party_lobbies(g.user["id"])
-        return render_template(
+        return render_overview(
             "party_index.html",
             lobbies=lobbies,
-            party_signature=party_overview_signature(lobbies),
         )
 
     @app.get("/party/status")
@@ -2674,7 +2646,8 @@ def register_routes(app: Flask) -> None:
             return redirect(url_for("party_index"))
         members = party_members(lobby_id)
         if lobby["status"] == "waiting":
-            return render_template("party_lobby.html", lobby=lobby, members=members)
+            return render_template("party_lobby.html", lobby=lobby, members=members,
+                                   lobby_players=lobby_player_profiles(members))
         if lobby["status"] == "countdown":
             remaining_ms = max(
                 0,
@@ -2954,6 +2927,9 @@ def register_routes(app: Flask) -> None:
 
 
 def register_template_helpers(app: Flask) -> None:
+    from player_portrait import register_portraits
+    register_portraits(app, [DEFAULT_AVATAR, *AVATAR_CATALOG])
+
     @app.context_processor
     def inject_globals():
         user = getattr(g, "user", None)

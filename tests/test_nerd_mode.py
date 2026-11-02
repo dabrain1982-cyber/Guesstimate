@@ -155,15 +155,15 @@ class StormseedsPerfectTests(unittest.TestCase):
             spectator_session["csrf_token"] = "spectator-token"
             spectator_session["login_recorded_on"] = datetime.now().date().isoformat()
         browser_page = spectator.get("/nerd").data.decode()
-        self.assertIn("Beitreten", browser_page)
-        self.assertIn("Gastgeber: Host", browser_page)
+        self.assertIn("beitreten", browser_page)
+        self.assertIn("<dt>Host</dt><dd>Host</dd>", browser_page)
         self.assertNotIn('class="game-header"', browser_page)
         self.assertIn("was ein Apotropaion ist?", browser_page)
         self.assertNotIn("Welche Runde darf es sein?", browser_page)
         self.assertNotIn("8 Runden", browser_page)
         self.assertNotIn("Lobby-Code", browser_page)
         self.assertIn(
-            '<a class="back-link" href="/karten">zurück zu tabletop connection</a>',
+            '<a class="secondary-button lobby-browser-back" href="/karten/brettspiele">zurück zu brettspielen</a>',
             browser_page,
         )
 
@@ -171,7 +171,7 @@ class StormseedsPerfectTests(unittest.TestCase):
         page = response.data.decode()
         self.assertEqual(page.count('<article class="perfect-player-window'), 3)
         self.assertNotIn("Freier Platz", page)
-        self.assertIn("Stormseed´s Perfect", page)
+        self.assertIn("stormseed´s perfect", page)
 
     def test_lobby_accepts_eight_players_and_rejects_a_ninth(self):
         self.assertEqual(PERFECT_MAX_PLAYERS, 8)
@@ -312,7 +312,7 @@ class StormseedsPerfectTests(unittest.TestCase):
         self.assertIn("Host´s Runde", page)
         self.assertIn('class="perfect-settings-paper"', page)
         self.assertIn('class="perfect-buzzer"', page)
-        self.assertIn("Spiel starten", page)
+        self.assertIn("spiel starten", page)
         self.assertNotIn('class="perfect-podium-body"', page)
         self.assertIn("p00-startpult-tall-v2.png", page)
         self.assertIn("stormseeds-perfect-start-buzzer-v2.png", page)
@@ -334,7 +334,7 @@ class StormseedsPerfectTests(unittest.TestCase):
 
         guest_page = self.clients[1][0].get("/nerd/1").data.decode()
         self.assertIn('class="perfect-buzzer', guest_page)
-        self.assertIn("Bereit drücken", guest_page)
+        self.assertIn('bereit drücken', guest_page)
         self.assertIn("stormseeds-perfect-start-buzzer-v2.png", guest_page)
 
         response = host.post(
@@ -408,7 +408,7 @@ class StormseedsPerfectTests(unittest.TestCase):
         vote_page = self.clients[1][0].get("/nerd/1").data.decode()
         self.assertNotIn("Host hat diese Antwort eingeloggt", vote_page)
         self.assertIn('class="perfect-answer-options"', vote_page)
-        self.assertIn("Antwort einloggen", vote_page)
+        self.assertIn("antwort einloggen", vote_page)
 
         status = self.clients[1][0].get("/nerd/1/status").get_json()
         self.assertTrue(all("draft_vote_key" not in row for row in status["answers"]))
@@ -476,9 +476,9 @@ class StormseedsPerfectTests(unittest.TestCase):
         host, token = self.clients[0]
         host_page = host.get("/nerd/1").data.decode()
         guest_page = self.clients[1][0].get("/nerd/1").data.decode()
-        self.assertIn("Nächste Frage", host_page)
+        self.assertIn("nächste frage", host_page)
         self.assertIn("perfect-host-round-controls", host_page)
-        self.assertNotIn("Nächste Frage", guest_page)
+        self.assertNotIn("nächste frage", guest_page)
 
         with self.app.app_context():
             database = self.app.get_db()
@@ -666,7 +666,7 @@ class StormseedsPerfectTests(unittest.TestCase):
         host, host_token = self.clients[0]
         host.post("/nerd/1/host-pruefung", data={"csrf_token": host_token})
         points_page = host.get("/nerd/1").data.decode()
-        self.assertIn("Endergebnis zeigen", points_page)
+        self.assertIn("endergebnis zeigen", points_page)
         host.post("/nerd/1/weiter", data={"csrf_token": host_token})
         final_page = host.get("/nerd/1").data.decode()
         self.assertIn("ENDERGEBNIS", final_page)
@@ -684,8 +684,8 @@ class StormseedsPerfectTests(unittest.TestCase):
         host, host_token = self.clients[0]
         host.post("/nerd/1/host-pruefung", data={"csrf_token": host_token})
         points_page = host.get("/nerd/1").data.decode()
-        self.assertIn("Nächste Runde", points_page)
-        self.assertNotIn("Endergebnis zeigen", points_page)
+        self.assertIn("nächste runde", points_page)
+        self.assertNotIn("endergebnis zeigen", points_page)
         host.post("/nerd/1/weiter", data={"csrf_token": host_token})
         with self.app.app_context():
             lobby = self.app.get_db().execute(
@@ -760,7 +760,7 @@ class StormseedsPerfectTests(unittest.TestCase):
         host, host_token = self.clients[0]
         host.post("/nerd/1/host-pruefung", data={"csrf_token": host_token})
         points_page = host.get("/nerd/1").data.decode()
-        self.assertIn("Endergebnis zeigen", points_page)
+        self.assertIn("endergebnis zeigen", points_page)
         host.post("/nerd/1/weiter", data={"csrf_token": host_token})
         with self.app.app_context():
             status = self.app.get_db().execute(

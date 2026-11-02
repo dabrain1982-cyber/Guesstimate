@@ -1,0 +1,965 @@
+{
+  "schema_version": 2,
+  "renderer_version": "button-workshop-v7",
+  "defaults": {
+    "style": "comic",
+    "material": "stone",
+    "shape": "cut",
+    "edge": 3,
+    "finish": "matte",
+    "wear": 35,
+    "accent": "#66756d",
+    "font": "kalam",
+    "font_link": "auto",
+    "lettering": "chalk",
+    "size": 23,
+    "label": "spiel starten",
+    "depth": 4,
+    "duration": 300,
+    "feel": "direct",
+    "sound": "off",
+    "volume": 20,
+    "gradient_to": "#d9bc7e",
+    "opacity": 30,
+    "font_scale": 100,
+    "shadow": 25,
+    "height_ratio": 100,
+    "ink_mode": "auto",
+    "ink_color": "#071124",
+    "depth_mode": "auto",
+    "depth_color": "#7863df",
+    "depth_x": 0
+  },
+  "groups": [
+    {
+      "id": "style",
+      "name": "Stilrichtung",
+      "number": "00"
+    },
+    {
+      "id": "material",
+      "name": "Material & Oberfläche",
+      "number": "01"
+    },
+    {
+      "id": "form",
+      "name": "Form & Kontur",
+      "number": "02"
+    },
+    {
+      "id": "lettering",
+      "name": "Schrift & Wirkung",
+      "number": "03"
+    },
+    {
+      "id": "motion",
+      "name": "Tiefe & Bewegung",
+      "number": "04"
+    },
+    {
+      "id": "sound",
+      "name": "Klang",
+      "number": "05"
+    }
+  ],
+  "fields": [
+    {
+      "key": "style",
+      "group": "style",
+      "label": "Gestaltungsstil",
+      "type": "select",
+      "options": [
+        [
+          "comic",
+          "Comic · gemalt & kräftig"
+        ],
+        [
+          "natural",
+          "Natürlich · echte Materialstruktur"
+        ],
+        [
+          "minimal",
+          "Grafisch · flächig & reduziert"
+        ]
+      ]
+    },
+    {
+      "key": "material",
+      "group": "material",
+      "label": "Materialfamilie",
+      "type": "select",
+      "options": [
+        [
+          "wood",
+          "Bemaltes Holz"
+        ],
+        [
+          "wood-aged",
+          "Altes dunkles Nussbaumholz"
+        ],
+        [
+          "stone",
+          "Stein & Schiefer"
+        ],
+        [
+          "metal",
+          "Gebrauchtes Metall"
+        ],
+        [
+          "plain",
+          "Farbfläche · ohne Materialstruktur"
+        ],
+        [
+          "gradient",
+          "Farbverlauf · zwei Farben"
+        ],
+        [
+          "translucent",
+          "Durchscheinende Fläche"
+        ]
+      ]
+    },
+    {
+      "key": "finish",
+      "group": "material",
+      "label": "Oberfläche",
+      "type": "select",
+      "options": [
+        [
+          "matte",
+          "Matt"
+        ],
+        [
+          "satin",
+          "Seidenmatt"
+        ],
+        [
+          "gloss",
+          "Glänzend"
+        ]
+      ]
+    },
+    {
+      "key": "wear",
+      "group": "material",
+      "label": "Spuren & Struktur",
+      "type": "range",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": " %"
+    },
+    {
+      "key": "accent",
+      "group": "material",
+      "label": "Grundfarbe",
+      "type": "color"
+    },
+    {
+      "key": "gradient_to",
+      "group": "material",
+      "label": "Zweite Verlaufsfarbe",
+      "type": "color"
+    },
+    {
+      "key": "opacity",
+      "group": "material",
+      "label": "Deckkraft der Fläche",
+      "type": "range",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": " %"
+    },
+    {
+      "key": "shape",
+      "group": "form",
+      "label": "Grundform",
+      "type": "select",
+      "options": [
+        [
+          "rectangle",
+          "Rechteck & gerundete Ecken"
+        ],
+        [
+          "comic",
+          "Asymmetrisch & weich"
+        ],
+        [
+          "soft",
+          "Ruhig gerundet"
+        ],
+        [
+          "cut",
+          "Scharten & Abplatzungen"
+        ],
+        [
+          "custom",
+          "Eigene Kontur"
+        ]
+      ]
+    },
+    {
+      "key": "edge",
+      "group": "form",
+      "label": "Konturstärke",
+      "type": "range",
+      "min": 0,
+      "max": 5,
+      "step": 1,
+      "unit": ""
+    },
+    {
+      "key": "label",
+      "group": "lettering",
+      "label": "Beschriftung",
+      "type": "text",
+      "max": 90
+    },
+    {
+      "key": "font_link",
+      "group": "lettering",
+      "label": "Schriftzuordnung",
+      "type": "select",
+      "options": [
+        [
+          "auto",
+          "Passend zur Beschriftungswirkung"
+        ],
+        [
+          "manual",
+          "Schrift selbst wählen"
+        ]
+      ]
+    },
+    {
+      "key": "font",
+      "group": "lettering",
+      "label": "Schriftart",
+      "type": "select",
+      "options": [
+        [
+          "fredoka",
+          "Fredoka · rund & markant"
+        ],
+        [
+          "inter",
+          "Inter · klar & ruhig"
+        ],
+        [
+          "cinzel",
+          "Cinzel · Black Jack"
+        ],
+        [
+          "rocksalt",
+          "Rock Salt · rau geritzt"
+        ],
+        [
+          "kalam",
+          "Kalam · von Hand geschrieben"
+        ],
+        [
+          "sharetechmono",
+          "Share Tech Mono · technische Anzeige"
+        ],
+        [
+          "mono",
+          "Courier New · Schreibmaschine"
+        ],
+        [
+          "source",
+          "Schrift der gewählten Vorlage"
+        ]
+      ]
+    },
+    {
+      "key": "lettering",
+      "group": "lettering",
+      "label": "Beschriftungswirkung",
+      "type": "select",
+      "options": [
+        [
+          "plain",
+          "Klare Beschriftung"
+        ],
+        [
+          "paint",
+          "Aufgemalt"
+        ],
+        [
+          "chalk",
+          "Kreide"
+        ],
+        [
+          "carved",
+          "Gemeißelt"
+        ],
+        [
+          "etched",
+          "Geritzt"
+        ],
+        [
+          "screen",
+          "Leuchtende Anzeige"
+        ]
+      ]
+    },
+    {
+      "key": "size",
+      "group": "form",
+      "label": "Buttongröße",
+      "type": "range",
+      "min": 14,
+      "max": 32,
+      "step": 1,
+      "unit": ""
+    },
+    {
+      "key": "font_scale",
+      "group": "lettering",
+      "label": "Schriftgröße",
+      "type": "range",
+      "min": 50,
+      "max": 160,
+      "step": 5,
+      "unit": " %"
+    },
+    {
+      "key": "depth",
+      "group": "motion",
+      "label": "Tiefe",
+      "type": "range",
+      "min": 0,
+      "max": 20,
+      "step": 1,
+      "unit": ""
+    },
+    {
+      "key": "shadow",
+      "group": "motion",
+      "label": "Schlagschatten",
+      "type": "range",
+      "min": 0,
+      "max": 60,
+      "step": 5,
+      "unit": " %"
+    },
+    {
+      "key": "duration",
+      "group": "motion",
+      "label": "Dauer eines Klicks",
+      "type": "range",
+      "min": 180,
+      "max": 650,
+      "step": 10,
+      "unit": " ms"
+    },
+    {
+      "key": "feel",
+      "group": "motion",
+      "label": "Bewegungsgefühl",
+      "type": "select",
+      "options": [
+        [
+          "direct",
+          "Direkt"
+        ],
+        [
+          "soft",
+          "Weich"
+        ],
+        [
+          "spring",
+          "Federnd"
+        ]
+      ]
+    },
+    {
+      "key": "sound",
+      "group": "sound",
+      "label": "Buttonklang",
+      "type": "select",
+      "options": [
+        [
+          "off",
+          "Ohne Ton"
+        ],
+        [
+          "material",
+          "Material-Kandidat automatisch"
+        ],
+        [
+          "stone-scrape",
+          "Rauer Block · Reibung"
+        ],
+        [
+          "wood-plank",
+          "Holz · Plankenanschlag"
+        ],
+        [
+          "wood-light",
+          "Holz · leichter Anschlag"
+        ],
+        [
+          "robot-step",
+          "Metall · Robotertritt"
+        ],
+        [
+          "robot-stomp",
+          "Metall · schwerer Stampfer"
+        ],
+        [
+          "metal-plate",
+          "Metall · Plattenanschlag"
+        ],
+        [
+          "click",
+          "Schalter · trockener Klick"
+        ],
+        [
+          "switch",
+          "Mechanik · Einrasten"
+        ],
+        [
+          "drop",
+          "Comic · kurzer Drop"
+        ],
+        [
+          "confirm",
+          "Digital · Bestätigung"
+        ],
+        [
+          "wood",
+          "Alter Platzhalter · Synthese Holz"
+        ],
+        [
+          "stone",
+          "Alter Platzhalter · Synthese Stein"
+        ],
+        [
+          "metal",
+          "Alter Platzhalter · Synthese Metall"
+        ]
+      ]
+    },
+    {
+      "key": "volume",
+      "group": "sound",
+      "label": "Lautstärke",
+      "type": "range",
+      "min": 0,
+      "max": 60,
+      "step": 5,
+      "unit": " %"
+    },
+    {
+      "key": "height_ratio",
+      "group": "form",
+      "label": "Formhöhe",
+      "type": "range",
+      "min": 20,
+      "max": 250,
+      "step": 1,
+      "unit": " %"
+    },
+    {
+      "key": "ink_mode",
+      "group": "lettering",
+      "label": "Schriftfarbe",
+      "type": "select",
+      "options": [
+        [
+          "auto",
+          "Passend zur Fläche"
+        ],
+        [
+          "manual",
+          "Eigene Farbe"
+        ]
+      ]
+    },
+    {
+      "key": "ink_color",
+      "group": "lettering",
+      "label": "Farbe der Schrift",
+      "type": "color"
+    },
+    {
+      "key": "depth_mode",
+      "group": "motion",
+      "label": "Farbe der Tiefe",
+      "type": "select",
+      "options": [
+        [
+          "auto",
+          "Aus dem Material"
+        ],
+        [
+          "manual",
+          "Eigene Farbe"
+        ]
+      ]
+    },
+    {
+      "key": "depth_color",
+      "group": "motion",
+      "label": "Seitenwandfarbe",
+      "type": "color"
+    },
+    {
+      "key": "depth_x",
+      "group": "motion",
+      "label": "Seitlicher Versatz",
+      "type": "range",
+      "min": -20,
+      "max": 20,
+      "step": 1,
+      "unit": ""
+    }
+  ],
+  "presets": [
+    {
+      "id": "builtin-wood",
+      "name": "Werkstatt-Holz",
+      "description": "Warme Maserung · aufgemalt",
+      "settings": {
+        "material": "wood",
+        "shape": "comic",
+        "accent": "#b78047",
+        "finish": "satin",
+        "wear": 30,
+        "lettering": "paint",
+        "font": "fredoka"
+      }
+    },
+    {
+      "id": "builtin-stone",
+      "name": "Kreide auf Schiefer",
+      "description": "Mattes Gestein · gebrochene Kanten",
+      "settings": {
+        "material": "stone",
+        "shape": "cut",
+        "accent": "#66756d",
+        "finish": "matte",
+        "wear": 35,
+        "lettering": "chalk",
+        "font": "fredoka"
+      }
+    },
+    {
+      "id": "builtin-metal",
+      "name": "Das alte Metallschild",
+      "description": "Gebrauchte Oberfläche · geritzt",
+      "settings": {
+        "material": "metal",
+        "shape": "soft",
+        "accent": "#9aadb5",
+        "finish": "satin",
+        "wear": 65,
+        "lettering": "etched",
+        "font": "mono"
+      }
+    },
+    {
+      "id": "builtin-plain",
+      "name": "Farbfläche · Lobby",
+      "description": "An den vorhandenen farbigen Lobbyaktionen orientiert; kein übernommener Originalbutton.",
+      "settings": {
+        "style": "minimal",
+        "material": "plain",
+        "shape": "soft",
+        "accent": "#d8ff42",
+        "finish": "matte",
+        "wear": 0,
+        "lettering": "paint",
+        "font": "inter"
+      }
+    },
+    {
+      "id": "builtin-gradient",
+      "name": "Farbverlauf · Kartentisch",
+      "description": "Zwei Farben aus den vorhandenen Kartenaktionen; gemeinsame Werkstattform.",
+      "settings": {
+        "style": "minimal",
+        "material": "gradient",
+        "shape": "soft",
+        "accent": "#f8edcf",
+        "gradient_to": "#d9bc7e",
+        "finish": "matte",
+        "wear": 0,
+        "lettering": "paint",
+        "font": "inter"
+      }
+    },
+    {
+      "id": "builtin-translucent",
+      "name": "Durchscheinend · Nebenaktion",
+      "description": "An den durchscheinenden Nebenaktionen im Spielebestand orientiert.",
+      "settings": {
+        "style": "minimal",
+        "material": "translucent",
+        "shape": "soft",
+        "accent": "#120a05",
+        "opacity": 30,
+        "finish": "matte",
+        "wear": 0,
+        "lettering": "paint",
+        "font": "inter"
+      }
+    }
+  ],
+  "material_descriptions": {
+    "wood": "Holz mit Maserung, je nach Stil gemalt oder als Materialstruktur.",
+    "wood-aged": "Dunkles altes Nussbaumholz mit feiner Maserung, Patina und Gebrauchsspuren. Für den Black-Jack-Tisch entworfen.",
+    "stone": "Stein und Schiefer mit ihrer vorhandenen Materialstruktur.",
+    "metal": "Metall mit Gebrauchsspuren und Lichtwirkung.",
+    "plain": "Für die einfarbigen Aktionen auf der Startseite und in Lobbys. Die Grundfarbe bestimmt die Fläche; keine Holz-, Stein- oder Metallstruktur.",
+    "gradient": "Für die zweifarbigen Flächen der Karten- und Würfelaktionen. Grundfarbe und zweite Verlaufsfarbe bestimmen den Verlauf.",
+    "translucent": "Für durchscheinende Nebenaktionen. Deckkraft verändert nur die Fläche; die Beschriftung bleibt sichtbar. Das Aussehen hängt vom Hintergrund ab."
+  },
+  "style_descriptions": {
+    "comic": "Gemalte Farbflächen, vereinfachte Materialspuren und kräftige dunkle Konturen. Holz, Stein und Metall werden zeichnerisch interpretiert.",
+    "natural": "Die echte Holz-, Stein- oder Metallstruktur steht im Vordergrund, mit weicher Beleuchtung und feinen Materialkanten.",
+    "minimal": "Flächige Farben und einfache grafische Materialzeichen: Holzlinien, Steinflächen oder Metallstreifen. Ohne fotografische Textur."
+  },
+  "font_recommendations": {
+    "paint": "fredoka",
+    "chalk": "kalam",
+    "carved": "cinzel",
+    "etched": {
+      "wood": "rocksalt",
+      "wood-aged": "rocksalt",
+      "stone": "rocksalt",
+      "metal": "sharetechmono"
+    },
+    "screen": "sharetechmono"
+  },
+  "contours": {
+    "comic": [
+      [
+        8,
+        7,
+        30
+      ],
+      [
+        34,
+        2,
+        30
+      ],
+      [
+        91,
+        6,
+        28
+      ],
+      [
+        99,
+        29,
+        38
+      ],
+      [
+        95,
+        88,
+        28
+      ],
+      [
+        64,
+        96,
+        35
+      ],
+      [
+        5,
+        91,
+        26
+      ],
+      [
+        1,
+        30,
+        35
+      ]
+    ],
+    "soft": [
+      [
+        0,
+        0,
+        40
+      ],
+      [
+        100,
+        0,
+        40
+      ],
+      [
+        100,
+        100,
+        40
+      ],
+      [
+        0,
+        100,
+        40
+      ]
+    ],
+    "cut": [
+      [
+        6,
+        4,
+        0
+      ],
+      [
+        33,
+        2,
+        0
+      ],
+      [
+        35,
+        13,
+        0
+      ],
+      [
+        39,
+        1,
+        0
+      ],
+      [
+        91,
+        3,
+        0
+      ],
+      [
+        99,
+        23,
+        0
+      ],
+      [
+        94,
+        40,
+        0
+      ],
+      [
+        100,
+        46,
+        0
+      ],
+      [
+        96,
+        80,
+        0
+      ],
+      [
+        88,
+        98,
+        0
+      ],
+      [
+        63,
+        95,
+        0
+      ],
+      [
+        61,
+        84,
+        0
+      ],
+      [
+        57,
+        98,
+        0
+      ],
+      [
+        8,
+        95,
+        0
+      ],
+      [
+        1,
+        76,
+        0
+      ],
+      [
+        4,
+        51,
+        0
+      ],
+      [
+        0,
+        43,
+        0
+      ],
+      [
+        2,
+        21,
+        0
+      ]
+    ],
+    "rectangle": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        100,
+        0,
+        0
+      ],
+      [
+        100,
+        100,
+        0
+      ],
+      [
+        0,
+        100,
+        0
+      ]
+    ]
+  },
+  "legacy_contours": {
+    "comic": [
+      [
+        6,
+        3,
+        0
+      ],
+      [
+        93,
+        0,
+        0
+      ],
+      [
+        100,
+        20,
+        0
+      ],
+      [
+        98,
+        82,
+        0
+      ],
+      [
+        93,
+        96,
+        0
+      ],
+      [
+        8,
+        100,
+        0
+      ],
+      [
+        0,
+        80,
+        0
+      ],
+      [
+        2,
+        24,
+        0
+      ]
+    ],
+    "soft": [
+      [
+        0,
+        0,
+        40
+      ],
+      [
+        100,
+        0,
+        40
+      ],
+      [
+        100,
+        100,
+        40
+      ],
+      [
+        0,
+        100,
+        40
+      ]
+    ],
+    "cut": [
+      [
+        7,
+        0,
+        0
+      ],
+      [
+        91,
+        1,
+        0
+      ],
+      [
+        100,
+        23,
+        0
+      ],
+      [
+        97,
+        76,
+        0
+      ],
+      [
+        90,
+        100,
+        0
+      ],
+      [
+        8,
+        97,
+        0
+      ],
+      [
+        0,
+        78,
+        0
+      ],
+      [
+        2,
+        18,
+        0
+      ]
+    ]
+  },
+  "review_dimensions": [
+    [
+      "style",
+      "Stil"
+    ],
+    [
+      "motion",
+      "Bewegung"
+    ],
+    [
+      "shape",
+      "Form"
+    ],
+    [
+      "surface",
+      "Oberfläche"
+    ],
+    [
+      "lettering",
+      "Schriftwirkung"
+    ],
+    [
+      "sound",
+      "Klang"
+    ]
+  ],
+  "review_states": [
+    [
+      "open",
+      "offen"
+    ],
+    [
+      "like",
+      "gefällt"
+    ],
+    [
+      "refine",
+      "weiterarbeiten"
+    ]
+  ]
+}

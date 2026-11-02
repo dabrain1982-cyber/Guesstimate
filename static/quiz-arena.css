@@ -2183,11 +2183,6 @@ body:has(.home-shell) { padding-bottom: 0; }
   white-space: nowrap;
 }
 .arena-main-nav a:hover { background: rgba(114,221,255,.09); color: #fff; }
-.arena-main-nav a.is-active {
-  background: linear-gradient(180deg, #e1ff58, #b9ed27);
-  color: #0a1126;
-  box-shadow: 0 0 18px rgba(216,255,66,.18);
-}
 .arena-main-nav span { color: #66718a; cursor: not-allowed; }
 
 .has-podium-art .podium-render { aspect-ratio: 3 / 1; }
@@ -2881,9 +2876,7 @@ body:has(.profile-shell) { overflow-x: hidden; }
 .profile-window-copy { width: 100%; height: 100%; margin: 0; }
 .profile-window-copy > .variant-a-profile {
   width: 100%;
-  min-height: 620px;
-  height: 100%;
-  grid-template-rows: 1fr;
+  height: auto;
   border: 0;
   border-radius: 23px;
   box-shadow: none;
@@ -2930,16 +2923,6 @@ body:has(.profile-shell) { overflow-x: hidden; }
   width: min(100%, 430px);
   margin: 16px auto 0;
 }
-.profile-window-copy > .variant-a-profile {
-  width: 100%;
-  min-height: 780px;
-}
-.profile-window-copy .variant-a-profile-scene { min-height: 570px; }
-@media (max-width: 520px) {
-  .profile-window-copy > .variant-a-profile { min-height: 690px; }
-  .profile-window-copy .variant-a-profile-scene { min-height: 490px; }
-}
-
 .developer-toggle {
   display: flex;
   margin: 18px 0 0;
@@ -3451,8 +3434,6 @@ body:has(.profile-shell) { overflow-x: hidden; }
 
   .party-head { margin-bottom: 16px; }
   .party-head h1 { font-size: 3.35rem; }
-  .party-tile,
-  .party-members li { padding: 12px; }
   .party-countdown-card { min-height: min(58vh, 440px); padding: 32px; }
   .party-countdown-number { font-size: 7rem; }
 }
@@ -3770,7 +3751,7 @@ body:has(.profile-shell) { overflow-x: hidden; }
 :root {
   --variant-a-border: rgba(68, 144, 255, .58);
   --variant-a-panel: rgba(5, 17, 45, .9);
-  --variant-a-acid: #d8ff31;
+  --variant-a-acid: var(--acid);
 }
 
 body:has(.home-variant-a) {
@@ -3875,9 +3856,9 @@ body:has(.home-variant-a)::before {
 .arena-main-nav a:hover { background: rgba(25, 55, 105, .88); color: #fff; }
 .arena-main-nav a.is-active,
 .arena-main-nav button.is-active {
-  background: linear-gradient(180deg, #a8e18e, #64b96d);
-  color: #071a12;
-  box-shadow: 0 0 22px rgba(100, 185, 109, .24);
+  background: var(--acid);
+  color: #090b1d;
+  box-shadow: 0 0 22px rgba(216, 255, 66, .24);
 }
 .arena-main-nav .nav-icon {
   width: 19px;
@@ -3889,6 +3870,27 @@ body:has(.home-variant-a)::before {
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 1.8;
+}
+.arena-main-nav .arena-nav-mail-form { display: contents; }
+.arena-main-nav .arena-nav-mail { position: relative; }
+.arena-main-nav .nav-mail-badge {
+  min-width: 17px; padding: 2px 5px; border-radius: 20px;
+  background: #f3dfaa; color: #172c49; font-size: .65rem; line-height: 1.2;
+}
+.arena-main-nav .nav-mail-badge[hidden],
+.arena-main-nav button[hidden] { display: none; }
+.arena-nav-mail.is-waiting .nav-mail-envelope {
+  animation: mail-wiggle 1.8s ease-in-out infinite;
+  transform-origin: 50% 70%;
+}
+@keyframes mail-wiggle {
+  0%, 45%, 100% { transform: rotate(0); }
+  5%, 20% { transform: rotate(-15deg); }
+  12%, 28% { transform: rotate(15deg); }
+  36% { transform: rotate(-7deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .arena-nav-mail.is-waiting .nav-mail-envelope { animation: none; }
 }
 .arena-main-nav .arena-nav-tabletop {
   min-width: max-content;
@@ -3924,7 +3926,6 @@ body:has(.home-variant-a)::before {
   min-height: calc(100vh - 150px);
   margin: 0 auto;
 }
-.variant-a-profile,
 .variant-a-showcase,
 .variant-a-ranking {
   min-width: 0;
@@ -3934,172 +3935,6 @@ body:has(.home-variant-a)::before {
   background: var(--variant-a-panel);
   box-shadow: 0 24px 65px rgba(0, 0, 0, .32), inset 0 0 0 1px rgba(255, 255, 255, .025);
 }
-
-.variant-a-profile {
-  position: relative;
-  display: grid;
-  grid-template-rows: minmax(380px, 1fr) auto;
-}
-.variant-a-profile-scene {
-  position: relative;
-  isolation: isolate;
-  min-height: 0;
-  overflow: hidden;
-  border-radius: 23px 23px 0 0;
-  background:
-    linear-gradient(180deg, rgba(2, 8, 22, .16) 0%, rgba(2, 8, 22, .08) 50%, rgba(2, 8, 22, .78) 100%),
-    url("/static/stormseeds-perfect-clubroom-v1.png") center / cover;
-}
-.variant-a-profile-scene::after {
-  position: absolute;
-  inset: 0;
-  z-index: 5;
-  pointer-events: none;
-  box-shadow: inset 0 -45px 60px rgba(3, 12, 32, .78);
-  content: "";
-}
-.variant-a-hanging-plaque {
-  position: absolute;
-  top: 54px;
-  left: 50%;
-  z-index: 6;
-  display: grid;
-  width: min(70%, 300px);
-  aspect-ratio: 3.1 / 1;
-  place-items: center;
-  border: 2px solid #c59243;
-  border-radius: 17px;
-  background: linear-gradient(180deg, #523016, #241207);
-  box-shadow: 0 12px 22px rgba(0, 0, 0, .55), inset 0 0 18px rgba(255, 180, 67, .28);
-  transform: translateX(-50%);
-}
-.variant-a-hanging-plaque i {
-  position: absolute;
-  bottom: 96%;
-  width: 2px;
-  height: 64px;
-  background: linear-gradient(#19120d, #c2914b);
-  transform-origin: bottom;
-}
-.variant-a-hanging-plaque i:first-child { left: 23%; transform: rotate(11deg); }
-.variant-a-hanging-plaque i:nth-child(2) { right: 23%; transform: rotate(-11deg); }
-.variant-a-hanging-plaque img {
-  position: absolute;
-  inset: -10%;
-  width: 120%;
-  height: 120%;
-  object-fit: contain;
-  filter: drop-shadow(0 9px 8px rgba(0, 0, 0, .55));
-}
-.variant-a-hanging-plaque.has-art { border: 0; background: transparent; box-shadow: none; }
-.variant-a-hanging-plaque span {
-  position: relative;
-  z-index: 2;
-  min-height: 0;
-  padding: 0 12%;
-  color: #fff5d5;
-  font-size: clamp(.68rem, .95vw, .92rem);
-  font-weight: 950;
-  text-align: center;
-  text-shadow: 0 2px 4px #000;
-  white-space: nowrap;
-  cursor: default;
-}
-.variant-a-avatar {
-  position: absolute;
-  bottom: 27%;
-  left: 50%;
-  z-index: 2;
-  width: 65%;
-  height: 60%;
-  transform: translateX(-50%);
-}
-.variant-a-avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center bottom;
-  filter: drop-shadow(0 14px 12px rgba(0, 0, 0, .52));
-}
-.variant-a-podium {
-  position: absolute;
-  bottom: -1%;
-  left: 50%;
-  z-index: 4;
-  width: 88%;
-  aspect-ratio: 1.13 / 1;
-  transform: translateX(-50%);
-}
-.variant-a-podium img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  filter: drop-shadow(0 15px 13px rgba(0, 0, 0, .54));
-}
-.variant-a-podium strong {
-  position: absolute;
-  top: 47%;
-  left: 26%;
-  right: 26%;
-  overflow: hidden;
-  color: #fff8e8;
-  font-size: clamp(.8rem, 1.12vw, 1.12rem);
-  font-weight: 950;
-  text-align: center;
-  text-overflow: ellipsis;
-  text-shadow: 0 2px 4px #000;
-  white-space: nowrap;
-}
-.variant-a-edit {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  z-index: 8;
-  display: grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  border: 1px solid #7aa7e9;
-  border-radius: 50%;
-  background: rgba(4, 18, 48, .82);
-  color: white;
-  text-decoration: none;
-}
-.variant-a-profile-details { padding: 0 22px 18px; }
-.variant-a-balance {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 4px;
-  color: var(--variant-a-acid);
-  font-size: 1.1rem;
-  text-decoration: none;
-}
-.variant-a-profile-details blockquote {
-  min-height: 70px;
-  margin: 0;
-  padding: 15px 18px;
-  border: 1px solid rgba(91, 144, 223, .42);
-  border-radius: 14px;
-  background: rgba(5, 19, 48, .74);
-  color: #c9d8ef;
-  font-size: .88rem;
-  font-style: italic;
-  line-height: 1.45;
-  text-align: center;
-}
-.variant-a-trophies {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: 14px;
-  padding-top: 14px;
-  border-top: 1px solid rgba(111, 159, 226, .34);
-}
-.variant-a-trophies span { display: grid; place-items: center; gap: 2px; color: #eef5ff; }
-.variant-a-trophies span + span { border-left: 1px solid rgba(111, 159, 226, .27); }
-.variant-a-trophies i { color: #f9ca45; font-size: 1.1rem; font-style: normal; }
-.variant-a-trophies b { font-size: 1.15rem; }
-.variant-a-trophies small { color: #8fa6c9; font-size: .52rem; font-weight: 850; text-align: center; text-transform: lowercase; }
 
 .variant-a-showcase {
   display: grid;
@@ -4136,13 +3971,14 @@ body:has(.home-variant-a)::before {
 .variant-a-slide.slide-party { background-image: url("carousel-party-classic-v1.png"); }
 .variant-a-slide.slide-perfect { background-image: url("carousel-stormseeds-perfect-v1.png"); }
 .variant-a-slide.slide-playtable { background-image: url("carousel-playtable-v1.png"); }
-.variant-a-slide.slide-birthday {
+.variant-a-slide.slide-conquest { background-image: url("tabletop-risk-tile-v1.png"); }
+.variant-a-slide.slide-blackjack {
   background-color: #071633;
-  background-image: url("carousel-birthday-jenny-v1.png");
+  background-image: url("carousel-blackjack-v2.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
-.variant-a-slide.slide-birthday::before { background: rgba(2, 7, 20, .06); }
+.variant-a-slide.slide-blackjack::before { background: rgba(2, 7, 20, .06); }
 .variant-a-slide[hidden] { display: none; }
 @keyframes variant-a-fade { from { opacity: .4; transform: scale(1.012); } to { opacity: 1; transform: scale(1); } }
 .variant-a-slide-copy {
@@ -4256,10 +4092,13 @@ body:has(.home-variant-a)::before {
 .home-variant-a .variant-a-leaderboard .section-heading h2 { font-size: clamp(1.35rem, 1.65vw, 1.8rem); text-transform: lowercase; }
 .home-variant-a .variant-a-leaderboard .leaderboard-tabs {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 5px;
   padding: 0 0 14px;
 }
+.leaderboard .leaderboard-tabs.leaderboard-groups { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.leaderboard .leaderboard-tabs.leaderboard-subtabs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.leaderboard-note { margin: 0 4px 8px; color: #b4c5dd; font-size: .65rem; line-height: 1.4; }
 .home-variant-a .variant-a-leaderboard .leaderboard-tabs button {
   min-width: 0;
   min-height: 38px;
@@ -4305,19 +4144,18 @@ body:has(.home-variant-a)::before {
     position: sticky;
     top: 0;
     left: 0;
-    grid-template-columns: 130px 1fr max-content;
+    grid-template-columns: minmax(0, 1fr) max-content;
     width: 100%;
     border-radius: 0 0 18px 18px;
     transform: none;
   }
-  .arena-nav-home { overflow-x: auto; }
-  .arena-main-nav .arena-nav-tabletop { margin-left: 8px; }
-  .arena-main-nav .arena-nav-date { position: absolute; top: 10px; right: 10px; }
-  .arena-main-nav .arena-nav-brand { padding-right: 112px; }
+  .arena-nav-home { grid-column: 1; grid-row: 2; overflow-x: auto; }
+  .arena-main-nav .arena-nav-tabletop { grid-column: 2; grid-row: 2; margin-left: 8px; }
+  .arena-main-nav .arena-nav-date { position: static; grid-column: 2; grid-row: 1; }
+  .arena-main-nav .arena-nav-brand { grid-column: 1; grid-row: 1; justify-self: start; padding-right: 12px; }
   .app-shell.has-account-bar.home-variant-a { padding-top: 18px; }
   .app-shell.has-account-bar:not(.home-variant-a) { padding-top: 24px; }
   .variant-a-stage { grid-template-columns: 1fr 1fr; }
-  .variant-a-profile { min-height: 780px; }
   .variant-a-showcase { min-height: 720px; }
   .variant-a-ranking { grid-column: 1 / -1; }
   .home-variant-a .variant-a-leaderboard .rank-list,
@@ -4335,12 +4173,9 @@ body:has(.home-variant-a)::before {
   .arena-main-nav > .arena-nav-date { min-height: 42px; font-size: .59rem; }
   .app-shell.has-account-bar.home-variant-a { padding: 14px 10px 36px; }
   .variant-a-stage { display: flex; flex-direction: column; gap: 12px; }
-  .variant-a-profile { min-height: 730px; }
-  .variant-a-profile-scene { min-height: 500px; }
   .variant-a-showcase { min-height: 650px; }
   .variant-a-slides { min-height: 520px; }
   .variant-a-ranking { padding: 13px 9px; }
-  .home-variant-a .variant-a-leaderboard .leaderboard-tabs { grid-template-columns: repeat(2, 1fr); }
   .home-variant-a .variant-a-leaderboard .rank-list,
   .home-variant-a .variant-a-leaderboard .rank-list.is-scrollable { max-height: 620px; }
 }
@@ -4361,14 +4196,3 @@ body.has-player-background:has(.home-variant-a)::before {
     linear-gradient(rgba(3, 11, 29, .55), rgba(3, 10, 28, .78)),
     var(--player-background-image) center / cover !important;
 }
-.variant-a-profile-scene {
-  background-image:
-    linear-gradient(180deg, rgba(2, 8, 22, .14) 0%, rgba(2, 8, 22, .05) 50%, rgba(2, 8, 22, .8) 100%),
-    var(--profile-window-background) !important;
-  background-position: center !important;
-  background-size: cover !important;
-}
-
-/* Die Profilkopie benötigt eine eigene feste Szenenhöhe. */
-
-

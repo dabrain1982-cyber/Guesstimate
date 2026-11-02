@@ -15,7 +15,7 @@
         {% elif question.category == 'estimate' %}<div class="estimate-wrap"><label for="estimate">Deine Schätzung</label><div class="estimate-input"><input id="estimate" name="answer" type="text" inputmode="decimal" required><span>{{ question.unit }}</span></div></div>
         {% elif question.category == 'order' %}<p class="microcopy">Ordne von links nach rechts. Jeder Begriff auf der richtigen Position zählt.</p><input type="hidden" name="answer" id="order-answer"><ol class="order-list" id="order-list">{% for item in display_items %}<li data-value="{{ item }}" tabindex="0"><span class="order-position">{{ loop.index }}</span><strong>{{ item }}</strong><span class="drag-handle">↔</span></li>{% endfor %}</ol>
         {% elif question.category == 'match' %}<p class="microcopy">Tippe pro Begriff auf ein Gegenstück. Jede Antwort darf nur einmal vorkommen.</p><div class="match-list" data-match-buttons>{% for left in question.left %}<div class="match-row" data-match-row><strong>{{ left }}</strong><input type="hidden" name="pair_{{ loop.index0 }}" value=""><div class="match-options">{% for right in match_options %}<button type="button" class="match-option" data-match-value="{{ right }}" aria-pressed="false">{{ right }}</button>{% endfor %}</div></div>{% endfor %}</div>{% endif %}
-        <button class="primary-button answer-button" type="submit"{% if question.category == 'match' %} data-match-submit disabled{% endif %}>Antwort einloggen</button>
+        <button class="primary-button answer-button" type="submit"{% if question.category == 'match' %} data-match-submit disabled{% endif %}>antwort einloggen</button>
       </form>
     {% else %}
       <section class="feedback-panel {% if feedback.credit == 1 %}perfect{% elif feedback.credit > 0 %}partial{% else %}wrong{% endif %}"><div class="feedback-icon">{% if feedback.credit == 1 %}✓{% elif feedback.credit > 0 %}½{% else %}×{% endif %}</div><div><p class="feedback-title">{% if question.category == 'order' %}{{ feedback.order_correct_count }} {{ 'Begriff' if feedback.order_correct_count == 1 else 'Begriffe' }} richtig · {% endif %}{{ feedback.points }} Punkte</p>{% if question.category == 'estimate' %}<div class="estimate-comparison"><p><span>Deine Schätzung</span><strong>{{ feedback.submitted_display }}</strong></p><p><span>Richtiger Wert</span><strong>{{ feedback.correct_display }}</strong></p><p><span>Abweichung</span><strong>{{ feedback.difference_display }}</strong></p></div>{% endif %}<p>{{ question.explanation }}</p><span class="time-result">{{ '%.1f'|format(feedback.response_seconds) }} s</span></div></section>
@@ -38,5 +38,5 @@
       data-lobby-url="{{ url_for('party_lobby', lobby_id=lobby.id) }}"
     ></div>
   {% endif %}
-  <script src="{{ url_for('static', filename='party.js', v='2') }}" defer></script>
+  <script src="{{ url_for('static', filename='party.js', v='4') }}" defer></script>
 {% endblock %}

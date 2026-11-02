@@ -1,0 +1,4916 @@
+{
+  "schema": 1,
+  "uses": 58,
+  "models": 27,
+  "families": {
+    "text": "Text und Zahlen",
+    "selection": "Auswahlfelder",
+    "toggle": "Schalter",
+    "range": "Regler",
+    "compound": "Zusammengesetzte Auswahl"
+  },
+  "scope": "Local source controls and neutral examples; no game database, account or authentication action.",
+  "games": [
+    "Conquest",
+    "Guesstimate",
+    "Guesstimate Party",
+    "Kniffel",
+    "Mäxchen",
+    "Perfect",
+    "Playtable",
+    "Profil",
+    "Würfeltisch",
+    "Zugang"
+  ],
+  "assets": [
+    {
+      "kind": "inputs",
+      "id": "gameinput-28530cb9c4225e9faf3a8fe0",
+      "name": "Zugang · Spielername · Anmeldung",
+      "representation": "2d",
+      "source": {
+        "path": "templates/login.html",
+        "line": 13,
+        "target": {
+          "name": "username"
+        }
+      },
+      "variant": "source",
+      "family": "text",
+      "family_name": "Text und Zahlen",
+      "model_id": "input-auth-field",
+      "model_name": "Zugang · Eingabefeld",
+      "game": "Zugang",
+      "games": [
+        "Zugang"
+      ],
+      "usage": "Spielername",
+      "context_state": "Anmeldung",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/login.html",
+          "sha256": "133af3ab33e4f7ab2ed63e2a9deb4b9da75f70d98e0f0bd29ec9b91b5ae9268d"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-53ee58d224ad01d5e6b7d540",
+      "name": "Zugang · PIN · Anmeldung",
+      "representation": "2d",
+      "source": {
+        "path": "templates/login.html",
+        "line": 17,
+        "target": {
+          "name": "pin"
+        }
+      },
+      "variant": "source",
+      "family": "text",
+      "family_name": "Text und Zahlen",
+      "model_id": "input-auth-field",
+      "model_name": "Zugang · Eingabefeld",
+      "game": "Zugang",
+      "games": [
+        "Zugang"
+      ],
+      "usage": "PIN",
+      "context_state": "Anmeldung",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/login.html",
+          "sha256": "133af3ab33e4f7ab2ed63e2a9deb4b9da75f70d98e0f0bd29ec9b91b5ae9268d"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-add04c9b34a20989dec19c63",
+      "name": "Zugang · Spielername · Registrierung",
+      "representation": "2d",
+      "source": {
+        "path": "templates/register.html",
+        "line": 14,
+        "target": {
+          "name": "username"
+        }
+      },
+      "variant": "source",
+      "family": "text",
+      "family_name": "Text und Zahlen",
+      "model_id": "input-auth-field",
+      "model_name": "Zugang · Eingabefeld",
+      "game": "Zugang",
+      "games": [
+        "Zugang"
+      ],
+      "usage": "Spielername",
+      "context_state": "Registrierung",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/register.html",
+          "sha256": "e8228f360e5b49863c15ba2a38c2b03c31d9aae1f18c13f7e46e8a9d2781c1bb"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-f2bebede5a71be47355f2409",
+      "name": "Zugang · PIN · Registrierung",
+      "representation": "2d",
+      "source": {
+        "path": "templates/register.html",
+        "line": 18,
+        "target": {
+          "name": "pin"
+        }
+      },
+      "variant": "source",
+      "family": "text",
+      "family_name": "Text und Zahlen",
+      "model_id": "input-auth-field",
+      "model_name": "Zugang · Eingabefeld",
+      "game": "Zugang",
+      "games": [
+        "Zugang"
+      ],
+      "usage": "PIN",
+      "context_state": "Registrierung",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/register.html",
+          "sha256": "e8228f360e5b49863c15ba2a38c2b03c31d9aae1f18c13f7e46e8a9d2781c1bb"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-d24c623b912971b862c18cd8",
+      "name": "Zugang · PIN wiederholen · Registrierung",
+      "representation": "2d",
+      "source": {
+        "path": "templates/register.html",
+        "line": 22,
+        "target": {
+          "name": "pin_confirm"
+        }
+      },
+      "variant": "source",
+      "family": "text",
+      "family_name": "Text und Zahlen",
+      "model_id": "input-auth-field",
+      "model_name": "Zugang · Eingabefeld",
+      "game": "Zugang",
+      "games": [
+        "Zugang"
+      ],
+      "usage": "PIN wiederholen",
+      "context_state": "Registrierung",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/register.html",
+          "sha256": "e8228f360e5b49863c15ba2a38c2b03c31d9aae1f18c13f7e46e8a9d2781c1bb"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-8c0195e3e24dd4aa82fe0647",
+      "name": "Guesstimate Party · Lobbyname",
+      "representation": "2d",
+      "source": {
+        "path": "templates/party_lobby.html",
+        "line": 13,
+        "target": {
+          "name": "name"
+        }
+      },
+      "variant": "source",
+      "family": "text",
+      "family_name": "Text und Zahlen",
+      "model_id": "input-lobby-text",
+      "model_name": "Gemeinsames Lobbytextfeld",
+      "game": "Guesstimate Party",
+      "games": [
+        "Guesstimate Party"
+      ],
+      "usage": "Lobbyname",
+      "context_state": "",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/_lobby_room.html",
+          "sha256": "0a9bd5ae54abb911e564f521df459faae0be1a06275f436eefe2cfd604d7b588"
+        },
+        {
+          "path": "templates/_profile_window.html",
+          "sha256": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/party_lobby.html",
+          "sha256": "49107278398a587e41b4435a249a6339e4f20a1e482e288a28287a8bbad48c2e"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-bf0379f5d8702e1b2a72fa8e",
+      "name": "Guesstimate Party · Anzahl der Runden",
+      "representation": "2d",
+      "source": {
+        "path": "templates/party_lobby.html",
+        "line": 14,
+        "target": {
+          "name": "rounds"
+        }
+      },
+      "variant": "source",
+      "family": "selection",
+      "family_name": "Auswahlfelder",
+      "model_id": "input-lobby-select",
+      "model_name": "Gemeinsame Lobbyauswahl",
+      "game": "Guesstimate Party",
+      "games": [
+        "Guesstimate Party"
+      ],
+      "usage": "Anzahl der Runden",
+      "context_state": "",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/_lobby_room.html",
+          "sha256": "0a9bd5ae54abb911e564f521df459faae0be1a06275f436eefe2cfd604d7b588"
+        },
+        {
+          "path": "templates/_profile_window.html",
+          "sha256": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/party_lobby.html",
+          "sha256": "49107278398a587e41b4435a249a6339e4f20a1e482e288a28287a8bbad48c2e"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-01590839d616fe4dda45fa19",
+      "name": "Playtable · Kartensatz",
+      "representation": "2d",
+      "source": {
+        "path": "templates/card_table_lobby.html",
+        "line": 14,
+        "target": {
+          "name": "deck_size"
+        }
+      },
+      "variant": "source",
+      "family": "selection",
+      "family_name": "Auswahlfelder",
+      "model_id": "input-lobby-select",
+      "model_name": "Gemeinsame Lobbyauswahl",
+      "game": "Playtable",
+      "games": [
+        "Playtable"
+      ],
+      "usage": "Kartensatz",
+      "context_state": "",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/card-table.css",
+          "sha256": "cd35aa6a639097e77723af9440824595bfeeb6fc363e3bc9901faea4a25c6680"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/_lobby_room.html",
+          "sha256": "0a9bd5ae54abb911e564f521df459faae0be1a06275f436eefe2cfd604d7b588"
+        },
+        {
+          "path": "templates/_profile_window.html",
+          "sha256": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/card_table_lobby.html",
+          "sha256": "afa2aa3d8c15831de76fa589e30ad6c076882db065783e2df682c69a2dbe02c3"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-be36e3ff9cb658bfb47c9cc5",
+      "name": "Playtable · Startpunkte",
+      "representation": "2d",
+      "source": {
+        "path": "templates/card_table_lobby.html",
+        "line": 15,
+        "target": {
+          "name": "starting_points"
+        }
+      },
+      "variant": "source",
+      "family": "text",
+      "family_name": "Text und Zahlen",
+      "model_id": "input-lobby-number",
+      "model_name": "Lobby · Zahlenfeld",
+      "game": "Playtable",
+      "games": [
+        "Playtable"
+      ],
+      "usage": "Startpunkte",
+      "context_state": "",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/card-table.css",
+          "sha256": "cd35aa6a639097e77723af9440824595bfeeb6fc363e3bc9901faea4a25c6680"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/_lobby_room.html",
+          "sha256": "0a9bd5ae54abb911e564f521df459faae0be1a06275f436eefe2cfd604d7b588"
+        },
+        {
+          "path": "templates/_profile_window.html",
+          "sha256": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/card_table_lobby.html",
+          "sha256": "afa2aa3d8c15831de76fa589e30ad6c076882db065783e2df682c69a2dbe02c3"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-41de02feebea5f748f3dcee1",
+      "name": "Würfeltisch · Würfelanzahl",
+      "representation": "2d",
+      "source": {
+        "path": "templates/dice_table_lobby.html",
+        "line": 28,
+        "target": {
+          "name": "dice_count"
+        }
+      },
+      "variant": "source",
+      "family": "selection",
+      "family_name": "Auswahlfelder",
+      "model_id": "input-lobby-select",
+      "model_name": "Gemeinsame Lobbyauswahl",
+      "game": "Würfeltisch",
+      "games": [
+        "Würfeltisch"
+      ],
+      "usage": "Würfelanzahl",
+      "context_state": "",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/dice-table.css",
+          "sha256": "68a8c5a4218124b2179e2b7afdaf7aa41a702bb430aae5bad4895fac2c6d268f"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/_lobby_room.html",
+          "sha256": "0a9bd5ae54abb911e564f521df459faae0be1a06275f436eefe2cfd604d7b588"
+        },
+        {
+          "path": "templates/_profile_window.html",
+          "sha256": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/dice_table_lobby.html",
+          "sha256": "186cb6c20857d6b6c502df3c5e2fe3b84fe627fd4ad2abf5601160dc3a0a8720"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-81ac3f2e17ed878a13a9267c",
+      "name": "Würfeltisch · Verdecktes Würfeln",
+      "representation": "2d",
+      "source": {
+        "path": "templates/dice_table_lobby.html",
+        "line": 29,
+        "target": {
+          "name": "use_cup"
+        }
+      },
+      "variant": "source",
+      "family": "selection",
+      "family_name": "Auswahlfelder",
+      "model_id": "input-lobby-select",
+      "model_name": "Gemeinsame Lobbyauswahl",
+      "game": "Würfeltisch",
+      "games": [
+        "Würfeltisch"
+      ],
+      "usage": "Verdecktes Würfeln",
+      "context_state": "",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/dice-table.css",
+          "sha256": "68a8c5a4218124b2179e2b7afdaf7aa41a702bb430aae5bad4895fac2c6d268f"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/_lobby_room.html",
+          "sha256": "0a9bd5ae54abb911e564f521df459faae0be1a06275f436eefe2cfd604d7b588"
+        },
+        {
+          "path": "templates/_profile_window.html",
+          "sha256": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/dice_table_lobby.html",
+          "sha256": "186cb6c20857d6b6c502df3c5e2fe3b84fe627fd4ad2abf5601160dc3a0a8720"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-146f6c535b7e4ca8e3f2a1b3",
+      "name": "Conquest · Lobbyname",
+      "representation": "2d",
+      "source": {
+        "path": "templates/conquest_lobby.html",
+        "line": 22,
+        "target": {
+          "name": "name"
+        }
+      },
+      "variant": "source",
+      "family": "text",
+      "family_name": "Text und Zahlen",
+      "model_id": "input-lobby-text",
+      "model_name": "Gemeinsames Lobbytextfeld",
+      "game": "Conquest",
+      "games": [
+        "Conquest"
+      ],
+      "usage": "Lobbyname",
+      "context_state": "",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/conquest-lobby.css",
+          "sha256": "58695f14dcc2121d1a2826e44011dc29475beb5c09c216a81329d7ebcff714b5"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/_lobby_room.html",
+          "sha256": "0a9bd5ae54abb911e564f521df459faae0be1a06275f436eefe2cfd604d7b588"
+        },
+        {
+          "path": "templates/_profile_window.html",
+          "sha256": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/conquest_lobby.html",
+          "sha256": "f98d1481eac084a6fa1c46d958e5c054da19d62aa20ffaae2eb53c252b6c4070"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-c21e68f9a0a98890b11fadc6",
+      "name": "Conquest · Siegziel wählen",
+      "representation": "2d",
+      "source": {
+        "path": "templates/conquest_lobby.html",
+        "line": 23,
+        "target": {
+          "name": "victory_mode"
+        }
+      },
+      "variant": "source",
+      "family": "selection",
+      "family_name": "Auswahlfelder",
+      "model_id": "input-conquest-victory",
+      "model_name": "Conquest · Siegziel wählen",
+      "game": "Conquest",
+      "games": [
+        "Conquest"
+      ],
+      "usage": "Siegziel wählen",
+      "context_state": "",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/conquest-lobby.css",
+          "sha256": "58695f14dcc2121d1a2826e44011dc29475beb5c09c216a81329d7ebcff714b5"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/_lobby_room.html",
+          "sha256": "0a9bd5ae54abb911e564f521df459faae0be1a06275f436eefe2cfd604d7b588"
+        },
+        {
+          "path": "templates/_profile_window.html",
+          "sha256": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/conquest_lobby.html",
+          "sha256": "f98d1481eac084a6fa1c46d958e5c054da19d62aa20ffaae2eb53c252b6c4070"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-48fdc019c3a82ff3be0ba6a7",
+      "name": "Conquest · Armeefarben wählen",
+      "representation": "2d",
+      "source": {
+        "path": "templates/conquest_lobby.html",
+        "line": 27,
+        "target": {
+          "name": "color_1"
+        }
+      },
+      "variant": "source",
+      "family": "selection",
+      "family_name": "Auswahlfelder",
+      "model_id": "input-conquest-color",
+      "model_name": "Conquest · Armeefarben wählen",
+      "game": "Conquest",
+      "games": [
+        "Conquest"
+      ],
+      "usage": "Armeefarben wählen",
+      "context_state": "",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/conquest-lobby.css",
+          "sha256": "58695f14dcc2121d1a2826e44011dc29475beb5c09c216a81329d7ebcff714b5"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/_lobby_room.html",
+          "sha256": "0a9bd5ae54abb911e564f521df459faae0be1a06275f436eefe2cfd604d7b588"
+        },
+        {
+          "path": "templates/_profile_window.html",
+          "sha256": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/conquest_lobby.html",
+          "sha256": "f98d1481eac084a6fa1c46d958e5c054da19d62aa20ffaae2eb53c252b6c4070"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-4b4ccc790d4673a61231661f",
+      "name": "Perfect · Lobbyname",
+      "representation": "2d",
+      "source": {
+        "path": "templates/nerd_mode.html",
+        "line": 81,
+        "target": {
+          "class": "perfect-lobby-name-editor"
+        }
+      },
+      "variant": "source",
+      "family": "text",
+      "family_name": "Text und Zahlen",
+      "model_id": "input-perfect-name",
+      "model_name": "Perfect · Lobbyname",
+      "game": "Perfect",
+      "games": [
+        "Perfect"
+      ],
+      "usage": "Lobbyname",
+      "context_state": "",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/stormseeds-perfect.css",
+          "sha256": "f19e4f19bd8dbb85d5b8f52f58465b4b09fb022384a8f3c83bf47c3789b19e34"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_profile_window.html",
+          "sha256": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008"
+        },
+        {
+          "path": "templates/nerd_mode.html",
+          "sha256": "06c25dc654cdea6e3422aa4759f5e86f0c01802c26afd357923fbe8a32ed14bb"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-21da4094e43d1453fff406dd",
+      "name": "Perfect · Spielende wählen",
+      "representation": "2d",
+      "source": {
+        "path": "templates/nerd_mode.html",
+        "line": 83,
+        "target": {
+          "class": "perfect-goal-mode"
+        }
+      },
+      "variant": "source",
+      "family": "selection",
+      "family_name": "Auswahlfelder",
+      "model_id": "input-perfect-goal-mode",
+      "model_name": "Perfect · Spielende wählen",
+      "game": "Perfect",
+      "games": [
+        "Perfect"
+      ],
+      "usage": "Spielende wählen",
+      "context_state": "",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/stormseeds-perfect.css",
+          "sha256": "f19e4f19bd8dbb85d5b8f52f58465b4b09fb022384a8f3c83bf47c3789b19e34"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_profile_window.html",
+          "sha256": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008"
+        },
+        {
+          "path": "templates/nerd_mode.html",
+          "sha256": "06c25dc654cdea6e3422aa4759f5e86f0c01802c26afd357923fbe8a32ed14bb"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-877ae776311cbb708c0dc7cc",
+      "name": "Perfect · Zielpunktzahl",
+      "representation": "2d",
+      "source": {
+        "path": "templates/nerd_mode.html",
+        "line": 88,
+        "target": {
+          "data-goal-value-panel": "points"
+        }
+      },
+      "variant": "source",
+      "family": "selection",
+      "family_name": "Auswahlfelder",
+      "model_id": "input-perfect-goal-value",
+      "model_name": "Perfect · Zielwert auswählen",
+      "game": "Perfect",
+      "games": [
+        "Perfect"
+      ],
+      "usage": "Zielpunktzahl",
+      "context_state": "",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/stormseeds-perfect.css",
+          "sha256": "f19e4f19bd8dbb85d5b8f52f58465b4b09fb022384a8f3c83bf47c3789b19e34"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_profile_window.html",
+          "sha256": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008"
+        },
+        {
+          "path": "templates/nerd_mode.html",
+          "sha256": "06c25dc654cdea6e3422aa4759f5e86f0c01802c26afd357923fbe8a32ed14bb"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-871687e4c9ac92038077e251",
+      "name": "Perfect · Spielzeit",
+      "representation": "2d",
+      "source": {
+        "path": "templates/nerd_mode.html",
+        "line": 93,
+        "target": {
+          "data-goal-value-panel": "time"
+        }
+      },
+      "variant": "source",
+      "family": "selection",
+      "family_name": "Auswahlfelder",
+      "model_id": "input-perfect-goal-value",
+      "model_name": "Perfect · Zielwert auswählen",
+      "game": "Perfect",
+      "games": [
+        "Perfect"
+      ],
+      "usage": "Spielzeit",
+      "context_state": "",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/stormseeds-perfect.css",
+          "sha256": "f19e4f19bd8dbb85d5b8f52f58465b4b09fb022384a8f3c83bf47c3789b19e34"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_profile_window.html",
+          "sha256": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008"
+        },
+        {
+          "path": "templates/nerd_mode.html",
+          "sha256": "06c25dc654cdea6e3422aa4759f5e86f0c01802c26afd357923fbe8a32ed14bb"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-13373a171a363f6d087a19d2",
+      "name": "Guesstimate · Antwortauswahl · Ausgangszustand",
+      "representation": "2d",
+      "source": {
+        "path": "templates/question.html",
+        "line": 39,
+        "target": {
+          "class": "choice-grid"
+        }
+      },
+      "variant": "source",
+      "family": "selection",
+      "family_name": "Auswahlfelder",
+      "model_id": "input-quiz-choice",
+      "model_name": "Quiz · Antwortauswahl",
+      "game": "Guesstimate",
+      "games": [
+        "Guesstimate"
+      ],
+      "usage": "Antwortauswahl",
+      "context_state": "Ausgangszustand",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/question.html",
+          "sha256": "93c1eeea069024371d21c9694dd57c6e91c26ac9127b7b9c7a0b72713998d60c"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-988b7d64c3ac6d3b078a215c",
+      "name": "Guesstimate · Antwortauswahl · Beispielauswahl",
+      "representation": "2d",
+      "source": {
+        "path": "templates/question.html",
+        "line": 39,
+        "target": {
+          "class": "choice-grid"
+        }
+      },
+      "variant": "source",
+      "family": "selection",
+      "family_name": "Auswahlfelder",
+      "model_id": "input-quiz-choice",
+      "model_name": "Quiz · Antwortauswahl",
+      "game": "Guesstimate",
+      "games": [
+        "Guesstimate"
+      ],
+      "usage": "Antwortauswahl",
+      "context_state": "Beispielauswahl",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/question.html",
+          "sha256": "93c1eeea069024371d21c9694dd57c6e91c26ac9127b7b9c7a0b72713998d60c"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-2109f61491ffea518c639cf2",
+      "name": "Guesstimate · Wahr oder Falsch · Ausgangszustand",
+      "representation": "2d",
+      "source": {
+        "path": "templates/question.html",
+        "line": 45,
+        "target": {
+          "class": "binary-grid"
+        }
+      },
+      "variant": "source",
+      "family": "selection",
+      "family_name": "Auswahlfelder",
+      "model_id": "input-quiz-choice",
+      "model_name": "Quiz · Antwortauswahl",
+      "game": "Guesstimate",
+      "games": [
+        "Guesstimate"
+      ],
+      "usage": "Wahr oder Falsch",
+      "context_state": "Ausgangszustand",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/question.html",
+          "sha256": "93c1eeea069024371d21c9694dd57c6e91c26ac9127b7b9c7a0b72713998d60c"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-cb28f186b8b1b219d2362265",
+      "name": "Guesstimate · Wahr oder Falsch · Beispielauswahl",
+      "representation": "2d",
+      "source": {
+        "path": "templates/question.html",
+        "line": 45,
+        "target": {
+          "class": "binary-grid"
+        }
+      },
+      "variant": "source",
+      "family": "selection",
+      "family_name": "Auswahlfelder",
+      "model_id": "input-quiz-choice",
+      "model_name": "Quiz · Antwortauswahl",
+      "game": "Guesstimate",
+      "games": [
+        "Guesstimate"
+      ],
+      "usage": "Wahr oder Falsch",
+      "context_state": "Beispielauswahl",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/question.html",
+          "sha256": "93c1eeea069024371d21c9694dd57c6e91c26ac9127b7b9c7a0b72713998d60c"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-33adf1962501ca2a941fff11",
+      "name": "Guesstimate · Schätzwert mit Einheit · Ausgangszustand",
+      "representation": "2d",
+      "source": {
+        "path": "templates/question.html",
+        "line": 52,
+        "target": {
+          "class": "estimate-input"
+        }
+      },
+      "variant": "source",
+      "family": "text",
+      "family_name": "Text und Zahlen",
+      "model_id": "input-quiz-estimate",
+      "model_name": "Quiz · Schätzwert",
+      "game": "Guesstimate",
+      "games": [
+        "Guesstimate"
+      ],
+      "usage": "Schätzwert mit Einheit",
+      "context_state": "Ausgangszustand",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/question.html",
+          "sha256": "93c1eeea069024371d21c9694dd57c6e91c26ac9127b7b9c7a0b72713998d60c"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-10127c6b48d8d35ff04d7da0",
+      "name": "Guesstimate · Reihenfolge sortieren · Ausgangszustand",
+      "representation": "2d",
+      "source": {
+        "path": "templates/question.html",
+        "line": 58,
+        "target": {
+          "class": "order-list"
+        }
+      },
+      "variant": "source",
+      "family": "compound",
+      "family_name": "Zusammengesetzte Auswahl",
+      "model_id": "input-quiz-order",
+      "model_name": "Quiz · Reihenfolge",
+      "game": "Guesstimate",
+      "games": [
+        "Guesstimate"
+      ],
+      "usage": "Reihenfolge sortieren",
+      "context_state": "Ausgangszustand",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/question.html",
+          "sha256": "93c1eeea069024371d21c9694dd57c6e91c26ac9127b7b9c7a0b72713998d60c"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-71a3f454d7b29915284dbd9c",
+      "name": "Guesstimate · Begriffe zuordnen · Ausgangszustand",
+      "representation": "2d",
+      "source": {
+        "path": "templates/question.html",
+        "line": 66,
+        "target": {
+          "class": "match-list"
+        }
+      },
+      "variant": "source",
+      "family": "compound",
+      "family_name": "Zusammengesetzte Auswahl",
+      "model_id": "input-quiz-match",
+      "model_name": "Quiz · Zuordnung",
+      "game": "Guesstimate",
+      "games": [
+        "Guesstimate"
+      ],
+      "usage": "Begriffe zuordnen",
+      "context_state": "Ausgangszustand",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/question.html",
+          "sha256": "93c1eeea069024371d21c9694dd57c6e91c26ac9127b7b9c7a0b72713998d60c"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-c8abd73e8f67eb1fba0c549c",
+      "name": "Guesstimate Party · Antwortauswahl · Ausgangszustand",
+      "representation": "2d",
+      "source": {
+        "path": "templates/party_question.html",
+        "line": 13,
+        "target": {
+          "class": "choice-grid"
+        }
+      },
+      "variant": "source",
+      "family": "selection",
+      "family_name": "Auswahlfelder",
+      "model_id": "input-quiz-choice",
+      "model_name": "Quiz · Antwortauswahl",
+      "game": "Guesstimate Party",
+      "games": [
+        "Guesstimate Party"
+      ],
+      "usage": "Antwortauswahl",
+      "context_state": "Ausgangszustand",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/party_question.html",
+          "sha256": "60e68890b6868ad33d402bcd2c2ed4e1a2cfd3bc2a7f2dd5b8d62a7ef3f9a8bc"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-109255d68801b2e62f648f62",
+      "name": "Guesstimate Party · Antwortauswahl · Beispielauswahl",
+      "representation": "2d",
+      "source": {
+        "path": "templates/party_question.html",
+        "line": 13,
+        "target": {
+          "class": "choice-grid"
+        }
+      },
+      "variant": "source",
+      "family": "selection",
+      "family_name": "Auswahlfelder",
+      "model_id": "input-quiz-choice",
+      "model_name": "Quiz · Antwortauswahl",
+      "game": "Guesstimate Party",
+      "games": [
+        "Guesstimate Party"
+      ],
+      "usage": "Antwortauswahl",
+      "context_state": "Beispielauswahl",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/party_question.html",
+          "sha256": "60e68890b6868ad33d402bcd2c2ed4e1a2cfd3bc2a7f2dd5b8d62a7ef3f9a8bc"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-7d39f5230849a46498a4c096",
+      "name": "Guesstimate Party · Wahr oder Falsch · Ausgangszustand",
+      "representation": "2d",
+      "source": {
+        "path": "templates/party_question.html",
+        "line": 14,
+        "target": {
+          "class": "binary-grid"
+        }
+      },
+      "variant": "source",
+      "family": "selection",
+      "family_name": "Auswahlfelder",
+      "model_id": "input-quiz-choice",
+      "model_name": "Quiz · Antwortauswahl",
+      "game": "Guesstimate Party",
+      "games": [
+        "Guesstimate Party"
+      ],
+      "usage": "Wahr oder Falsch",
+      "context_state": "Ausgangszustand",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/party_question.html",
+          "sha256": "60e68890b6868ad33d402bcd2c2ed4e1a2cfd3bc2a7f2dd5b8d62a7ef3f9a8bc"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-af7e75793e9facf530c00539",
+      "name": "Guesstimate Party · Wahr oder Falsch · Beispielauswahl",
+      "representation": "2d",
+      "source": {
+        "path": "templates/party_question.html",
+        "line": 14,
+        "target": {
+          "class": "binary-grid"
+        }
+      },
+      "variant": "source",
+      "family": "selection",
+      "family_name": "Auswahlfelder",
+      "model_id": "input-quiz-choice",
+      "model_name": "Quiz · Antwortauswahl",
+      "game": "Guesstimate Party",
+      "games": [
+        "Guesstimate Party"
+      ],
+      "usage": "Wahr oder Falsch",
+      "context_state": "Beispielauswahl",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/party_question.html",
+          "sha256": "60e68890b6868ad33d402bcd2c2ed4e1a2cfd3bc2a7f2dd5b8d62a7ef3f9a8bc"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-580af88c85c06db875106a1f",
+      "name": "Guesstimate Party · Schätzwert mit Einheit · Ausgangszustand",
+      "representation": "2d",
+      "source": {
+        "path": "templates/party_question.html",
+        "line": 15,
+        "target": {
+          "class": "estimate-input"
+        }
+      },
+      "variant": "source",
+      "family": "text",
+      "family_name": "Text und Zahlen",
+      "model_id": "input-quiz-estimate",
+      "model_name": "Quiz · Schätzwert",
+      "game": "Guesstimate Party",
+      "games": [
+        "Guesstimate Party"
+      ],
+      "usage": "Schätzwert mit Einheit",
+      "context_state": "Ausgangszustand",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/party_question.html",
+          "sha256": "60e68890b6868ad33d402bcd2c2ed4e1a2cfd3bc2a7f2dd5b8d62a7ef3f9a8bc"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-c42b49e220fa667918e813f0",
+      "name": "Guesstimate Party · Reihenfolge sortieren · Ausgangszustand",
+      "representation": "2d",
+      "source": {
+        "path": "templates/party_question.html",
+        "line": 16,
+        "target": {
+          "class": "order-list"
+        }
+      },
+      "variant": "source",
+      "family": "compound",
+      "family_name": "Zusammengesetzte Auswahl",
+      "model_id": "input-quiz-order",
+      "model_name": "Quiz · Reihenfolge",
+      "game": "Guesstimate Party",
+      "games": [
+        "Guesstimate Party"
+      ],
+      "usage": "Reihenfolge sortieren",
+      "context_state": "Ausgangszustand",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/party_question.html",
+          "sha256": "60e68890b6868ad33d402bcd2c2ed4e1a2cfd3bc2a7f2dd5b8d62a7ef3f9a8bc"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-3750d99efb88d4746abed737",
+      "name": "Guesstimate Party · Begriffe zuordnen · Ausgangszustand",
+      "representation": "2d",
+      "source": {
+        "path": "templates/party_question.html",
+        "line": 17,
+        "target": {
+          "class": "match-list"
+        }
+      },
+      "variant": "source",
+      "family": "compound",
+      "family_name": "Zusammengesetzte Auswahl",
+      "model_id": "input-quiz-match",
+      "model_name": "Quiz · Zuordnung",
+      "game": "Guesstimate Party",
+      "games": [
+        "Guesstimate Party"
+      ],
+      "usage": "Begriffe zuordnen",
+      "context_state": "Ausgangszustand",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/party_question.html",
+          "sha256": "60e68890b6868ad33d402bcd2c2ed4e1a2cfd3bc2a7f2dd5b8d62a7ef3f9a8bc"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-dbc5db2594fb883d65ad388a",
+      "name": "Perfect · Antwort verfassen",
+      "representation": "2d",
+      "source": {
+        "path": "templates/nerd_mode.html",
+        "line": 137,
+        "target": {
+          "class": "perfect-answer-form"
+        }
+      },
+      "variant": "source",
+      "family": "text",
+      "family_name": "Text und Zahlen",
+      "model_id": "input-perfect-answer",
+      "model_name": "Perfect · Antwort verfassen",
+      "game": "Perfect",
+      "games": [
+        "Perfect"
+      ],
+      "usage": "Antwort verfassen",
+      "context_state": "",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/stormseeds-perfect.css",
+          "sha256": "f19e4f19bd8dbb85d5b8f52f58465b4b09fb022384a8f3c83bf47c3789b19e34"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_profile_window.html",
+          "sha256": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008"
+        },
+        {
+          "path": "templates/nerd_mode.html",
+          "sha256": "06c25dc654cdea6e3422aa4759f5e86f0c01802c26afd357923fbe8a32ed14bb"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-8c710d98111b29416791853f",
+      "name": "Perfect · Antwort wählen · Ungewählt",
+      "representation": "2d",
+      "source": {
+        "path": "templates/nerd_mode.html",
+        "line": 152,
+        "target": {
+          "class": "perfect-answer-options"
+        }
+      },
+      "variant": "source",
+      "family": "selection",
+      "family_name": "Auswahlfelder",
+      "model_id": "input-perfect-vote",
+      "model_name": "Perfect · Antwort wählen",
+      "game": "Perfect",
+      "games": [
+        "Perfect"
+      ],
+      "usage": "Antwort wählen",
+      "context_state": "Ungewählt",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/stormseeds-perfect.css",
+          "sha256": "f19e4f19bd8dbb85d5b8f52f58465b4b09fb022384a8f3c83bf47c3789b19e34"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_profile_window.html",
+          "sha256": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008"
+        },
+        {
+          "path": "templates/nerd_mode.html",
+          "sha256": "06c25dc654cdea6e3422aa4759f5e86f0c01802c26afd357923fbe8a32ed14bb"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-b7b0a3d6b5c05d6795a70c94",
+      "name": "Perfect · Antwort wählen · Beispielauswahl",
+      "representation": "2d",
+      "source": {
+        "path": "templates/nerd_mode.html",
+        "line": 152,
+        "target": {
+          "class": "perfect-answer-options"
+        }
+      },
+      "variant": "source",
+      "family": "selection",
+      "family_name": "Auswahlfelder",
+      "model_id": "input-perfect-vote",
+      "model_name": "Perfect · Antwort wählen",
+      "game": "Perfect",
+      "games": [
+        "Perfect"
+      ],
+      "usage": "Antwort wählen",
+      "context_state": "Beispielauswahl",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/stormseeds-perfect.css",
+          "sha256": "f19e4f19bd8dbb85d5b8f52f58465b4b09fb022384a8f3c83bf47c3789b19e34"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_profile_window.html",
+          "sha256": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008"
+        },
+        {
+          "path": "templates/nerd_mode.html",
+          "sha256": "06c25dc654cdea6e3422aa4759f5e86f0c01802c26afd357923fbe8a32ed14bb"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-6f1711be4f4e9bdc16a056d0",
+      "name": "Perfect · Weitere richtige Antworten anerkennen · Gastgeber",
+      "representation": "2d",
+      "source": {
+        "path": "templates/nerd_mode.html",
+        "line": 181,
+        "target": {
+          "class": "perfect-review-list"
+        }
+      },
+      "variant": "source",
+      "family": "selection",
+      "family_name": "Auswahlfelder",
+      "model_id": "input-perfect-review",
+      "model_name": "Perfect · Weitere richtige Antworten anerkennen",
+      "game": "Perfect",
+      "games": [
+        "Perfect"
+      ],
+      "usage": "Weitere richtige Antworten anerkennen",
+      "context_state": "Gastgeber",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/stormseeds-perfect.css",
+          "sha256": "f19e4f19bd8dbb85d5b8f52f58465b4b09fb022384a8f3c83bf47c3789b19e34"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_profile_window.html",
+          "sha256": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008"
+        },
+        {
+          "path": "templates/nerd_mode.html",
+          "sha256": "06c25dc654cdea6e3422aa4759f5e86f0c01802c26afd357923fbe8a32ed14bb"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-103ecec5589869b099cba447",
+      "name": "Perfect · Weitere richtige Antworten anerkennen · Mitspieler · gesperrt",
+      "representation": "2d",
+      "source": {
+        "path": "templates/nerd_mode.html",
+        "line": 189,
+        "target": {
+          "class": "perfect-review-list"
+        }
+      },
+      "variant": "source",
+      "family": "selection",
+      "family_name": "Auswahlfelder",
+      "model_id": "input-perfect-review",
+      "model_name": "Perfect · Weitere richtige Antworten anerkennen",
+      "game": "Perfect",
+      "games": [
+        "Perfect"
+      ],
+      "usage": "Weitere richtige Antworten anerkennen",
+      "context_state": "Mitspieler · gesperrt",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/stormseeds-perfect.css",
+          "sha256": "f19e4f19bd8dbb85d5b8f52f58465b4b09fb022384a8f3c83bf47c3789b19e34"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_profile_window.html",
+          "sha256": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008"
+        },
+        {
+          "path": "templates/nerd_mode.html",
+          "sha256": "06c25dc654cdea6e3422aa4759f5e86f0c01802c26afd357923fbe8a32ed14bb"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-efe576711c6e523fba041e68",
+      "name": "Playtable · Punkte bieten",
+      "representation": "2d",
+      "source": {
+        "path": "templates/card_table_game.html",
+        "line": 19,
+        "target": {
+          "data-bet-amount": null
+        }
+      },
+      "variant": "source",
+      "family": "range",
+      "family_name": "Regler",
+      "model_id": "input-card-bet-range",
+      "model_name": "Playtable · Punkte bieten",
+      "game": "Playtable",
+      "games": [
+        "Playtable"
+      ],
+      "usage": "Punkte bieten",
+      "context_state": "",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/card-table.css",
+          "sha256": "cd35aa6a639097e77723af9440824595bfeeb6fc363e3bc9901faea4a25c6680"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/card_table_game.html",
+          "sha256": "8867fe59fe0e924fce9287f963e8ab539634d7274e5b02c241f7291d94212a93"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-ad517cf3a42359ab10a52aa8",
+      "name": "Playtable · Karten pro Person",
+      "representation": "2d",
+      "source": {
+        "path": "templates/card_table_game.html",
+        "line": 45,
+        "target": {
+          "data-deal-count": null
+        }
+      },
+      "variant": "source",
+      "family": "range",
+      "family_name": "Regler",
+      "model_id": "input-card-deal-range",
+      "model_name": "Playtable · Karten pro Person",
+      "game": "Playtable",
+      "games": [
+        "Playtable"
+      ],
+      "usage": "Karten pro Person",
+      "context_state": "",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/card-table.css",
+          "sha256": "cd35aa6a639097e77723af9440824595bfeeb6fc363e3bc9901faea4a25c6680"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/card_table_game.html",
+          "sha256": "8867fe59fe0e924fce9287f963e8ab539634d7274e5b02c241f7291d94212a93"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-1115beb34436c2517ba7f63b",
+      "name": "Playtable · Gemeinsamer Notizzettel",
+      "representation": "2d",
+      "source": {
+        "path": "templates/card_table_game.html",
+        "line": 60,
+        "target": {
+          "class": "card-note"
+        }
+      },
+      "variant": "source",
+      "family": "text",
+      "family_name": "Text und Zahlen",
+      "model_id": "input-card-note-input",
+      "model_name": "Playtable · Gemeinsamer Notizzettel",
+      "game": "Playtable",
+      "games": [
+        "Playtable"
+      ],
+      "usage": "Gemeinsamer Notizzettel",
+      "context_state": "",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/card-table.css",
+          "sha256": "cd35aa6a639097e77723af9440824595bfeeb6fc363e3bc9901faea4a25c6680"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/card_table_game.html",
+          "sha256": "8867fe59fe0e924fce9287f963e8ab539634d7274e5b02c241f7291d94212a93"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-5474db5f1e2f93253e96db85",
+      "name": "Würfeltisch · Kamera fixieren · Ein",
+      "representation": "2d",
+      "source": {
+        "path": "templates/dice_table_game.html",
+        "line": 93,
+        "target": {
+          "class": "dice-camera-lock"
+        }
+      },
+      "variant": "source",
+      "family": "toggle",
+      "family_name": "Schalter",
+      "model_id": "input-dice-camera-lock",
+      "model_name": "Würfelspiele · Kameraschalter",
+      "game": "Würfeltisch",
+      "games": [
+        "Würfeltisch"
+      ],
+      "usage": "Kamera fixieren",
+      "context_state": "Ein",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/dice-table.css",
+          "sha256": "68a8c5a4218124b2179e2b7afdaf7aa41a702bb430aae5bad4895fac2c6d268f"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/_profile_window.html",
+          "sha256": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/dice_table_game.html",
+          "sha256": "338d84095c8ad4c0b24b7b6873388b0df671897062b0368930e85ffdaa09520b"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-30f27585218b0f3947eccce8",
+      "name": "Würfeltisch · Kamera fixieren · Aus",
+      "representation": "2d",
+      "source": {
+        "path": "templates/dice_table_game.html",
+        "line": 93,
+        "target": {
+          "class": "dice-camera-lock"
+        }
+      },
+      "variant": "source",
+      "family": "toggle",
+      "family_name": "Schalter",
+      "model_id": "input-dice-camera-lock",
+      "model_name": "Würfelspiele · Kameraschalter",
+      "game": "Würfeltisch",
+      "games": [
+        "Würfeltisch"
+      ],
+      "usage": "Kamera fixieren",
+      "context_state": "Aus",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/dice-table.css",
+          "sha256": "68a8c5a4218124b2179e2b7afdaf7aa41a702bb430aae5bad4895fac2c6d268f"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/_profile_window.html",
+          "sha256": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/dice_table_game.html",
+          "sha256": "338d84095c8ad4c0b24b7b6873388b0df671897062b0368930e85ffdaa09520b"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-04aa9a1808f6ab8d918463b5",
+      "name": "Kniffel · Kamera fixieren · Ein",
+      "representation": "2d",
+      "source": {
+        "path": "templates/dice_table_game.html",
+        "line": 93,
+        "target": {
+          "class": "dice-camera-lock"
+        }
+      },
+      "variant": "source",
+      "family": "toggle",
+      "family_name": "Schalter",
+      "model_id": "input-dice-camera-lock",
+      "model_name": "Würfelspiele · Kameraschalter",
+      "game": "Kniffel",
+      "games": [
+        "Kniffel"
+      ],
+      "usage": "Kamera fixieren",
+      "context_state": "Ein",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/dice-table.css",
+          "sha256": "68a8c5a4218124b2179e2b7afdaf7aa41a702bb430aae5bad4895fac2c6d268f"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/_profile_window.html",
+          "sha256": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/dice_table_game.html",
+          "sha256": "338d84095c8ad4c0b24b7b6873388b0df671897062b0368930e85ffdaa09520b"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-d9435a3a14139898f4a9b23f",
+      "name": "Kniffel · Kamera fixieren · Aus",
+      "representation": "2d",
+      "source": {
+        "path": "templates/dice_table_game.html",
+        "line": 93,
+        "target": {
+          "class": "dice-camera-lock"
+        }
+      },
+      "variant": "source",
+      "family": "toggle",
+      "family_name": "Schalter",
+      "model_id": "input-dice-camera-lock",
+      "model_name": "Würfelspiele · Kameraschalter",
+      "game": "Kniffel",
+      "games": [
+        "Kniffel"
+      ],
+      "usage": "Kamera fixieren",
+      "context_state": "Aus",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/dice-table.css",
+          "sha256": "68a8c5a4218124b2179e2b7afdaf7aa41a702bb430aae5bad4895fac2c6d268f"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/_profile_window.html",
+          "sha256": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/dice_table_game.html",
+          "sha256": "338d84095c8ad4c0b24b7b6873388b0df671897062b0368930e85ffdaa09520b"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-d7a19bec961bac0a9b0f62f2",
+      "name": "Mäxchen · Kamera fixieren · Ein",
+      "representation": "2d",
+      "source": {
+        "path": "templates/dice_table_game.html",
+        "line": 93,
+        "target": {
+          "class": "dice-camera-lock"
+        }
+      },
+      "variant": "source",
+      "family": "toggle",
+      "family_name": "Schalter",
+      "model_id": "input-dice-camera-lock",
+      "model_name": "Würfelspiele · Kameraschalter",
+      "game": "Mäxchen",
+      "games": [
+        "Mäxchen"
+      ],
+      "usage": "Kamera fixieren",
+      "context_state": "Ein",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/dice-table.css",
+          "sha256": "68a8c5a4218124b2179e2b7afdaf7aa41a702bb430aae5bad4895fac2c6d268f"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/_profile_window.html",
+          "sha256": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/dice_table_game.html",
+          "sha256": "338d84095c8ad4c0b24b7b6873388b0df671897062b0368930e85ffdaa09520b"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-c9858b969b728b1cfc4c14a2",
+      "name": "Mäxchen · Kamera fixieren · Aus",
+      "representation": "2d",
+      "source": {
+        "path": "templates/dice_table_game.html",
+        "line": 93,
+        "target": {
+          "class": "dice-camera-lock"
+        }
+      },
+      "variant": "source",
+      "family": "toggle",
+      "family_name": "Schalter",
+      "model_id": "input-dice-camera-lock",
+      "model_name": "Würfelspiele · Kameraschalter",
+      "game": "Mäxchen",
+      "games": [
+        "Mäxchen"
+      ],
+      "usage": "Kamera fixieren",
+      "context_state": "Aus",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/dice-table.css",
+          "sha256": "68a8c5a4218124b2179e2b7afdaf7aa41a702bb430aae5bad4895fac2c6d268f"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/_profile_window.html",
+          "sha256": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/dice_table_game.html",
+          "sha256": "338d84095c8ad4c0b24b7b6873388b0df671897062b0368930e85ffdaa09520b"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-11cbf17ca562cfa0241763a0",
+      "name": "Mäxchen · Ansage wählen",
+      "representation": "2d",
+      "source": {
+        "path": "templates/dice_table_game.html",
+        "line": 80,
+        "target": {
+          "class": "maexchen-claim-control"
+        }
+      },
+      "variant": "source",
+      "family": "selection",
+      "family_name": "Auswahlfelder",
+      "model_id": "input-maexchen-claim",
+      "model_name": "Mäxchen · Ansage wählen",
+      "game": "Mäxchen",
+      "games": [
+        "Mäxchen"
+      ],
+      "usage": "Ansage wählen",
+      "context_state": "",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/dice-table.css",
+          "sha256": "68a8c5a4218124b2179e2b7afdaf7aa41a702bb430aae5bad4895fac2c6d268f"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/_profile_window.html",
+          "sha256": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/dice_table_game.html",
+          "sha256": "338d84095c8ad4c0b24b7b6873388b0df671897062b0368930e85ffdaa09520b"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-d025a93c051a38395448c556",
+      "name": "Profil · Entwicklermodus · Aus",
+      "representation": "2d",
+      "source": {
+        "path": "templates/profile.html",
+        "line": 15,
+        "target": {
+          "name": "developer_enabled"
+        }
+      },
+      "variant": "source",
+      "family": "toggle",
+      "family_name": "Schalter",
+      "model_id": "input-profile-developer-toggle",
+      "model_name": "Profil · Schalter",
+      "game": "Profil",
+      "games": [
+        "Profil"
+      ],
+      "usage": "Entwicklermodus",
+      "context_state": "Aus",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/_player_identity.html",
+          "sha256": "57327f15b9533443467d7967d791627d7004d50b5027564d49c976f53e501434"
+        },
+        {
+          "path": "templates/_profile_window.html",
+          "sha256": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/profile.html",
+          "sha256": "5cf9a8d08769808ba5dd6988c51df14677f2ce5756f4805a6c870db389721b70"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-8fb82aa7c3537941778a677d",
+      "name": "Profil · Entwicklermodus · Ein",
+      "representation": "2d",
+      "source": {
+        "path": "templates/profile.html",
+        "line": 15,
+        "target": {
+          "name": "developer_enabled"
+        }
+      },
+      "variant": "source",
+      "family": "toggle",
+      "family_name": "Schalter",
+      "model_id": "input-profile-developer-toggle",
+      "model_name": "Profil · Schalter",
+      "game": "Profil",
+      "games": [
+        "Profil"
+      ],
+      "usage": "Entwicklermodus",
+      "context_state": "Ein",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/_conquest_rules.html",
+          "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+        },
+        {
+          "path": "templates/_icons.html",
+          "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+        },
+        {
+          "path": "templates/_player_identity.html",
+          "sha256": "57327f15b9533443467d7967d791627d7004d50b5027564d49c976f53e501434"
+        },
+        {
+          "path": "templates/_profile_window.html",
+          "sha256": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008"
+        },
+        {
+          "path": "templates/base.html",
+          "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+        },
+        {
+          "path": "templates/profile.html",
+          "sha256": "5cf9a8d08769808ba5dd6988c51df14677f2ce5756f4805a6c870db389721b70"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-7564f8309c05d8492b1353ea",
+      "name": "Conquest · Blickwinkel einstellen",
+      "representation": "2d",
+      "source": {
+        "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+        "line": 9,
+        "target": {
+          "id": "angle"
+        }
+      },
+      "variant": "source",
+      "family": "range",
+      "family_name": "Regler",
+      "model_id": "input-conquest-camera-angle",
+      "model_name": "Conquest · Blickwinkel einstellen",
+      "game": "Conquest",
+      "games": [
+        "Conquest"
+      ],
+      "usage": "Blickwinkel einstellen",
+      "context_state": "",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "offline-preview/button-workshop-v1/materials.css",
+          "sha256": "38ab08d74776b47aa6f8392e5c1e2eb734c6a81e3c3b9649e8d43698fc1f4acf"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/style.css",
+          "sha256": "bb8887b8770af520678933e6d138c72f55fe56802304c3e4ca43060c794c0e24"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+          "sha256": "1a64980e6f1b57318e819e03bdd5f796c4546cf75357336303fc658abf6f67ec"
+        },
+        {
+          "path": "static/comic-button.css",
+          "sha256": "f79d3c15279b04ef0b47ec542d965168b874e40368cff03e11f57c93f9b8170e"
+        },
+        {
+          "path": "static/player-portrait.css",
+          "sha256": "0305820fc8c57afce072ed6e8df79fea5d8370f2b33107bb21eea64108e1e646"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/conquest_table.html",
+          "sha256": "4d52a2327dd480ea9bc76c175ec860536330221b6d34992abff1aee42767b83f"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-4daff220f78dde73375bcbd9",
+      "name": "Conquest · Land mit Tastatur auswählen · Vorhandener Initialzustand · gesperrt",
+      "representation": "2d",
+      "source": {
+        "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+        "line": 16,
+        "target": {
+          "id": "territory-picker"
+        }
+      },
+      "variant": "source",
+      "family": "selection",
+      "family_name": "Auswahlfelder",
+      "model_id": "input-conquest-country-picker",
+      "model_name": "Conquest · Land mit Tastatur auswählen",
+      "game": "Conquest",
+      "games": [
+        "Conquest"
+      ],
+      "usage": "Land mit Tastatur auswählen",
+      "context_state": "Vorhandener Initialzustand · gesperrt",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "offline-preview/button-workshop-v1/materials.css",
+          "sha256": "38ab08d74776b47aa6f8392e5c1e2eb734c6a81e3c3b9649e8d43698fc1f4acf"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/style.css",
+          "sha256": "bb8887b8770af520678933e6d138c72f55fe56802304c3e4ca43060c794c0e24"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+          "sha256": "1a64980e6f1b57318e819e03bdd5f796c4546cf75357336303fc658abf6f67ec"
+        },
+        {
+          "path": "static/comic-button.css",
+          "sha256": "f79d3c15279b04ef0b47ec542d965168b874e40368cff03e11f57c93f9b8170e"
+        },
+        {
+          "path": "static/player-portrait.css",
+          "sha256": "0305820fc8c57afce072ed6e8df79fea5d8370f2b33107bb21eea64108e1e646"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/conquest_table.html",
+          "sha256": "4d52a2327dd480ea9bc76c175ec860536330221b6d34992abff1aee42767b83f"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-a3596aee01aa857c371afc71",
+      "name": "Conquest · Truppenanzahl mit Minus und Plus · Verstärken",
+      "representation": "2d",
+      "source": {
+        "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+        "line": 39,
+        "target": {
+          "class": "amount-control"
+        }
+      },
+      "variant": "source",
+      "family": "compound",
+      "family_name": "Zusammengesetzte Auswahl",
+      "model_id": "input-conquest-troop-amount",
+      "model_name": "Conquest · Truppenanzahl mit Minus und Plus",
+      "game": "Conquest",
+      "games": [
+        "Conquest"
+      ],
+      "usage": "Truppenanzahl mit Minus und Plus",
+      "context_state": "Verstärken",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "offline-preview/button-workshop-v1/materials.css",
+          "sha256": "38ab08d74776b47aa6f8392e5c1e2eb734c6a81e3c3b9649e8d43698fc1f4acf"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/style.css",
+          "sha256": "bb8887b8770af520678933e6d138c72f55fe56802304c3e4ca43060c794c0e24"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+          "sha256": "1a64980e6f1b57318e819e03bdd5f796c4546cf75357336303fc658abf6f67ec"
+        },
+        {
+          "path": "static/comic-button.css",
+          "sha256": "f79d3c15279b04ef0b47ec542d965168b874e40368cff03e11f57c93f9b8170e"
+        },
+        {
+          "path": "static/player-portrait.css",
+          "sha256": "0305820fc8c57afce072ed6e8df79fea5d8370f2b33107bb21eea64108e1e646"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/conquest_table.html",
+          "sha256": "4d52a2327dd480ea9bc76c175ec860536330221b6d34992abff1aee42767b83f"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-99ee3168e3b7a4bb2fdfb25f",
+      "name": "Conquest · Truppenanzahl mit Regler · Verstärken",
+      "representation": "2d",
+      "source": {
+        "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+        "line": 40,
+        "target": {
+          "id": "deployment-slider"
+        }
+      },
+      "variant": "source",
+      "family": "range",
+      "family_name": "Regler",
+      "model_id": "input-conquest-deployment-range",
+      "model_name": "Conquest · Truppenregler",
+      "game": "Conquest",
+      "games": [
+        "Conquest"
+      ],
+      "usage": "Truppenanzahl mit Regler",
+      "context_state": "Verstärken",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "offline-preview/button-workshop-v1/materials.css",
+          "sha256": "38ab08d74776b47aa6f8392e5c1e2eb734c6a81e3c3b9649e8d43698fc1f4acf"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/style.css",
+          "sha256": "bb8887b8770af520678933e6d138c72f55fe56802304c3e4ca43060c794c0e24"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+          "sha256": "1a64980e6f1b57318e819e03bdd5f796c4546cf75357336303fc658abf6f67ec"
+        },
+        {
+          "path": "static/comic-button.css",
+          "sha256": "f79d3c15279b04ef0b47ec542d965168b874e40368cff03e11f57c93f9b8170e"
+        },
+        {
+          "path": "static/player-portrait.css",
+          "sha256": "0305820fc8c57afce072ed6e8df79fea5d8370f2b33107bb21eea64108e1e646"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/conquest_table.html",
+          "sha256": "4d52a2327dd480ea9bc76c175ec860536330221b6d34992abff1aee42767b83f"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-e90b66158888cfbbff4b488e",
+      "name": "Conquest · Truppenanzahl mit Minus und Plus · Einrücken",
+      "representation": "2d",
+      "source": {
+        "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+        "line": 39,
+        "target": {
+          "class": "amount-control"
+        }
+      },
+      "variant": "source",
+      "family": "compound",
+      "family_name": "Zusammengesetzte Auswahl",
+      "model_id": "input-conquest-troop-amount",
+      "model_name": "Conquest · Truppenanzahl mit Minus und Plus",
+      "game": "Conquest",
+      "games": [
+        "Conquest"
+      ],
+      "usage": "Truppenanzahl mit Minus und Plus",
+      "context_state": "Einrücken",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "offline-preview/button-workshop-v1/materials.css",
+          "sha256": "38ab08d74776b47aa6f8392e5c1e2eb734c6a81e3c3b9649e8d43698fc1f4acf"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/style.css",
+          "sha256": "bb8887b8770af520678933e6d138c72f55fe56802304c3e4ca43060c794c0e24"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+          "sha256": "1a64980e6f1b57318e819e03bdd5f796c4546cf75357336303fc658abf6f67ec"
+        },
+        {
+          "path": "static/comic-button.css",
+          "sha256": "f79d3c15279b04ef0b47ec542d965168b874e40368cff03e11f57c93f9b8170e"
+        },
+        {
+          "path": "static/player-portrait.css",
+          "sha256": "0305820fc8c57afce072ed6e8df79fea5d8370f2b33107bb21eea64108e1e646"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/conquest_table.html",
+          "sha256": "4d52a2327dd480ea9bc76c175ec860536330221b6d34992abff1aee42767b83f"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-a05681217f028c808ef050d6",
+      "name": "Conquest · Truppenanzahl mit Regler · Einrücken",
+      "representation": "2d",
+      "source": {
+        "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+        "line": 40,
+        "target": {
+          "id": "deployment-slider"
+        }
+      },
+      "variant": "source",
+      "family": "range",
+      "family_name": "Regler",
+      "model_id": "input-conquest-deployment-range",
+      "model_name": "Conquest · Truppenregler",
+      "game": "Conquest",
+      "games": [
+        "Conquest"
+      ],
+      "usage": "Truppenanzahl mit Regler",
+      "context_state": "Einrücken",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "offline-preview/button-workshop-v1/materials.css",
+          "sha256": "38ab08d74776b47aa6f8392e5c1e2eb734c6a81e3c3b9649e8d43698fc1f4acf"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/style.css",
+          "sha256": "bb8887b8770af520678933e6d138c72f55fe56802304c3e4ca43060c794c0e24"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+          "sha256": "1a64980e6f1b57318e819e03bdd5f796c4546cf75357336303fc658abf6f67ec"
+        },
+        {
+          "path": "static/comic-button.css",
+          "sha256": "f79d3c15279b04ef0b47ec542d965168b874e40368cff03e11f57c93f9b8170e"
+        },
+        {
+          "path": "static/player-portrait.css",
+          "sha256": "0305820fc8c57afce072ed6e8df79fea5d8370f2b33107bb21eea64108e1e646"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/conquest_table.html",
+          "sha256": "4d52a2327dd480ea9bc76c175ec860536330221b6d34992abff1aee42767b83f"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-711a7bbab80ec24db7229b5a",
+      "name": "Conquest · Truppenanzahl mit Minus und Plus · Festigen",
+      "representation": "2d",
+      "source": {
+        "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+        "line": 39,
+        "target": {
+          "class": "amount-control"
+        }
+      },
+      "variant": "source",
+      "family": "compound",
+      "family_name": "Zusammengesetzte Auswahl",
+      "model_id": "input-conquest-troop-amount",
+      "model_name": "Conquest · Truppenanzahl mit Minus und Plus",
+      "game": "Conquest",
+      "games": [
+        "Conquest"
+      ],
+      "usage": "Truppenanzahl mit Minus und Plus",
+      "context_state": "Festigen",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "offline-preview/button-workshop-v1/materials.css",
+          "sha256": "38ab08d74776b47aa6f8392e5c1e2eb734c6a81e3c3b9649e8d43698fc1f4acf"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/style.css",
+          "sha256": "bb8887b8770af520678933e6d138c72f55fe56802304c3e4ca43060c794c0e24"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+          "sha256": "1a64980e6f1b57318e819e03bdd5f796c4546cf75357336303fc658abf6f67ec"
+        },
+        {
+          "path": "static/comic-button.css",
+          "sha256": "f79d3c15279b04ef0b47ec542d965168b874e40368cff03e11f57c93f9b8170e"
+        },
+        {
+          "path": "static/player-portrait.css",
+          "sha256": "0305820fc8c57afce072ed6e8df79fea5d8370f2b33107bb21eea64108e1e646"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/conquest_table.html",
+          "sha256": "4d52a2327dd480ea9bc76c175ec860536330221b6d34992abff1aee42767b83f"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-1128806f0be5520251e60960",
+      "name": "Conquest · Truppenanzahl mit Regler · Festigen",
+      "representation": "2d",
+      "source": {
+        "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+        "line": 40,
+        "target": {
+          "id": "deployment-slider"
+        }
+      },
+      "variant": "source",
+      "family": "range",
+      "family_name": "Regler",
+      "model_id": "input-conquest-deployment-range",
+      "model_name": "Conquest · Truppenregler",
+      "game": "Conquest",
+      "games": [
+        "Conquest"
+      ],
+      "usage": "Truppenanzahl mit Regler",
+      "context_state": "Festigen",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "offline-preview/button-workshop-v1/materials.css",
+          "sha256": "38ab08d74776b47aa6f8392e5c1e2eb734c6a81e3c3b9649e8d43698fc1f4acf"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/style.css",
+          "sha256": "bb8887b8770af520678933e6d138c72f55fe56802304c3e4ca43060c794c0e24"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+          "sha256": "1a64980e6f1b57318e819e03bdd5f796c4546cf75357336303fc658abf6f67ec"
+        },
+        {
+          "path": "static/comic-button.css",
+          "sha256": "f79d3c15279b04ef0b47ec542d965168b874e40368cff03e11f57c93f9b8170e"
+        },
+        {
+          "path": "static/player-portrait.css",
+          "sha256": "0305820fc8c57afce072ed6e8df79fea5d8370f2b33107bb21eea64108e1e646"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/conquest_table.html",
+          "sha256": "4d52a2327dd480ea9bc76c175ec860536330221b6d34992abff1aee42767b83f"
+        }
+      ]
+    },
+    {
+      "kind": "inputs",
+      "id": "gameinput-cda3b0df1c39706eaf838587",
+      "name": "Conquest · Angriffswürfel wählen",
+      "representation": "2d",
+      "source": {
+        "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+        "line": 23,
+        "target": {
+          "id": "attack-dice-choice"
+        }
+      },
+      "variant": "source",
+      "family": "selection",
+      "family_name": "Auswahlfelder",
+      "model_id": "input-conquest-dice-choice",
+      "model_name": "Conquest · Angriffswürfel wählen",
+      "game": "Conquest",
+      "games": [
+        "Conquest"
+      ],
+      "usage": "Angriffswürfel wählen",
+      "context_state": "",
+      "editable": false,
+      "preview_width": 640,
+      "preview_height": 360,
+      "evidence": [
+        {
+          "path": "offline-preview/button-workshop-v1/materials.css",
+          "sha256": "38ab08d74776b47aa6f8392e5c1e2eb734c6a81e3c3b9649e8d43698fc1f4acf"
+        },
+        {
+          "path": "offline-preview/comic-ui-v1/components.js",
+          "sha256": "f25371e0cf650af41a59f50b869ce9fe64978801c0bf03046ea02e94fc7d6a96"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/style.css",
+          "sha256": "bb8887b8770af520678933e6d138c72f55fe56802304c3e4ca43060c794c0e24"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+          "sha256": "1a64980e6f1b57318e819e03bdd5f796c4546cf75357336303fc658abf6f67ec"
+        },
+        {
+          "path": "static/comic-button.css",
+          "sha256": "f79d3c15279b04ef0b47ec542d965168b874e40368cff03e11f57c93f9b8170e"
+        },
+        {
+          "path": "static/player-portrait.css",
+          "sha256": "0305820fc8c57afce072ed6e8df79fea5d8370f2b33107bb21eea64108e1e646"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        },
+        {
+          "path": "templates/conquest_table.html",
+          "sha256": "4d52a2327dd480ea9bc76c175ec860536330221b6d34992abff1aee42767b83f"
+        }
+      ]
+    }
+  ],
+  "source_controls": [
+    {
+      "path": "templates/card_table_game.html",
+      "line": 19,
+      "tag": "input",
+      "type": "range",
+      "name": null,
+      "id": null,
+      "refs": [
+        "gameinput-efe576711c6e523fba041e68"
+      ]
+    },
+    {
+      "path": "templates/card_table_game.html",
+      "line": 47,
+      "tag": "input",
+      "type": "range",
+      "name": null,
+      "id": null,
+      "refs": [
+        "gameinput-ad517cf3a42359ab10a52aa8"
+      ]
+    },
+    {
+      "path": "templates/card_table_game.html",
+      "line": 60,
+      "tag": "textarea",
+      "type": null,
+      "name": null,
+      "id": null,
+      "refs": [
+        "gameinput-1115beb34436c2517ba7f63b"
+      ]
+    },
+    {
+      "path": "templates/card_table_lobby.html",
+      "line": 14,
+      "tag": "select",
+      "type": null,
+      "name": "deck_size",
+      "id": null,
+      "refs": [
+        "gameinput-01590839d616fe4dda45fa19"
+      ]
+    },
+    {
+      "path": "templates/card_table_lobby.html",
+      "line": 15,
+      "tag": "input",
+      "type": "number",
+      "name": "starting_points",
+      "id": null,
+      "refs": [
+        "gameinput-be36e3ff9cb658bfb47c9cc5"
+      ]
+    },
+    {
+      "path": "templates/conquest_lobby.html",
+      "line": 22,
+      "tag": "input",
+      "type": null,
+      "name": "name",
+      "id": null,
+      "refs": [
+        "gameinput-146f6c535b7e4ca8e3f2a1b3"
+      ]
+    },
+    {
+      "path": "templates/conquest_lobby.html",
+      "line": 23,
+      "tag": "input",
+      "type": "radio",
+      "name": "victory_mode",
+      "id": null,
+      "refs": [
+        "gameinput-c21e68f9a0a98890b11fadc6"
+      ]
+    },
+    {
+      "path": "templates/conquest_lobby.html",
+      "line": 27,
+      "tag": "select",
+      "type": null,
+      "name": "color_{{ player.id }}",
+      "id": null,
+      "refs": [
+        "gameinput-48fdc019c3a82ff3be0ba6a7"
+      ]
+    },
+    {
+      "path": "templates/dice_table_game.html",
+      "line": 81,
+      "tag": "select",
+      "type": null,
+      "name": null,
+      "id": null,
+      "refs": [
+        "gameinput-11cbf17ca562cfa0241763a0"
+      ]
+    },
+    {
+      "path": "templates/dice_table_game.html",
+      "line": 93,
+      "tag": "input",
+      "type": "checkbox",
+      "name": null,
+      "id": null,
+      "refs": [
+        "gameinput-5474db5f1e2f93253e96db85",
+        "gameinput-30f27585218b0f3947eccce8",
+        "gameinput-04aa9a1808f6ab8d918463b5",
+        "gameinput-d9435a3a14139898f4a9b23f",
+        "gameinput-d7a19bec961bac0a9b0f62f2",
+        "gameinput-c9858b969b728b1cfc4c14a2"
+      ]
+    },
+    {
+      "path": "templates/dice_table_lobby.html",
+      "line": 28,
+      "tag": "select",
+      "type": null,
+      "name": "dice_count",
+      "id": null,
+      "refs": [
+        "gameinput-41de02feebea5f748f3dcee1"
+      ]
+    },
+    {
+      "path": "templates/dice_table_lobby.html",
+      "line": 29,
+      "tag": "select",
+      "type": null,
+      "name": "use_cup",
+      "id": null,
+      "refs": [
+        "gameinput-81ac3f2e17ed878a13a9267c"
+      ]
+    },
+    {
+      "path": "templates/login.html",
+      "line": 15,
+      "tag": "input",
+      "type": null,
+      "name": "username",
+      "id": null,
+      "refs": [
+        "gameinput-28530cb9c4225e9faf3a8fe0"
+      ]
+    },
+    {
+      "path": "templates/login.html",
+      "line": 19,
+      "tag": "input",
+      "type": "password",
+      "name": "pin",
+      "id": null,
+      "refs": [
+        "gameinput-53ee58d224ad01d5e6b7d540"
+      ]
+    },
+    {
+      "path": "templates/nerd_mode.html",
+      "line": 81,
+      "tag": "input",
+      "type": null,
+      "name": "name",
+      "id": null,
+      "refs": [
+        "gameinput-4b4ccc790d4673a61231661f"
+      ]
+    },
+    {
+      "path": "templates/nerd_mode.html",
+      "line": 85,
+      "tag": "input",
+      "type": "radio",
+      "name": "goal_mode",
+      "id": null,
+      "refs": [
+        "gameinput-21da4094e43d1453fff406dd"
+      ]
+    },
+    {
+      "path": "templates/nerd_mode.html",
+      "line": 86,
+      "tag": "input",
+      "type": "radio",
+      "name": "goal_mode",
+      "id": null,
+      "refs": [
+        "gameinput-21da4094e43d1453fff406dd"
+      ]
+    },
+    {
+      "path": "templates/nerd_mode.html",
+      "line": 89,
+      "tag": "select",
+      "type": null,
+      "name": "goal_value",
+      "id": null,
+      "refs": [
+        "gameinput-877ae776311cbb708c0dc7cc"
+      ]
+    },
+    {
+      "path": "templates/nerd_mode.html",
+      "line": 94,
+      "tag": "select",
+      "type": null,
+      "name": "goal_value",
+      "id": null,
+      "refs": [
+        "gameinput-871687e4c9ac92038077e251"
+      ]
+    },
+    {
+      "path": "templates/nerd_mode.html",
+      "line": 140,
+      "tag": "textarea",
+      "type": null,
+      "name": "answer",
+      "id": "perfect-answer",
+      "refs": [
+        "gameinput-dbc5db2594fb883d65ad388a"
+      ]
+    },
+    {
+      "path": "templates/nerd_mode.html",
+      "line": 156,
+      "tag": "input",
+      "type": "radio",
+      "name": "vote_key",
+      "id": null,
+      "refs": [
+        "gameinput-8c710d98111b29416791853f",
+        "gameinput-b7b0a3d6b5c05d6795a70c94"
+      ]
+    },
+    {
+      "path": "templates/nerd_mode.html",
+      "line": 183,
+      "tag": "input",
+      "type": "checkbox",
+      "name": "equivalent_{{ item.id }}",
+      "id": null,
+      "refs": [
+        "gameinput-6f1711be4f4e9bdc16a056d0"
+      ]
+    },
+    {
+      "path": "templates/nerd_mode.html",
+      "line": 191,
+      "tag": "input",
+      "type": "checkbox",
+      "name": null,
+      "id": null,
+      "refs": [
+        "gameinput-103ecec5589869b099cba447"
+      ]
+    },
+    {
+      "path": "templates/party_lobby.html",
+      "line": 13,
+      "tag": "input",
+      "type": null,
+      "name": "name",
+      "id": null,
+      "refs": [
+        "gameinput-8c0195e3e24dd4aa82fe0647"
+      ]
+    },
+    {
+      "path": "templates/party_lobby.html",
+      "line": 14,
+      "tag": "select",
+      "type": null,
+      "name": "rounds",
+      "id": null,
+      "refs": [
+        "gameinput-bf0379f5d8702e1b2a72fa8e"
+      ]
+    },
+    {
+      "path": "templates/party_question.html",
+      "line": 13,
+      "tag": "input",
+      "type": "radio",
+      "name": "answer",
+      "id": null,
+      "refs": [
+        "gameinput-c8abd73e8f67eb1fba0c549c",
+        "gameinput-109255d68801b2e62f648f62"
+      ]
+    },
+    {
+      "path": "templates/party_question.html",
+      "line": 14,
+      "tag": "input",
+      "type": "radio",
+      "name": "answer",
+      "id": null,
+      "refs": [
+        "gameinput-7d39f5230849a46498a4c096",
+        "gameinput-af7e75793e9facf530c00539"
+      ]
+    },
+    {
+      "path": "templates/party_question.html",
+      "line": 14,
+      "tag": "input",
+      "type": "radio",
+      "name": "answer",
+      "id": null,
+      "refs": [
+        "gameinput-7d39f5230849a46498a4c096",
+        "gameinput-af7e75793e9facf530c00539"
+      ]
+    },
+    {
+      "path": "templates/party_question.html",
+      "line": 15,
+      "tag": "input",
+      "type": "text",
+      "name": "answer",
+      "id": "estimate",
+      "refs": [
+        "gameinput-580af88c85c06db875106a1f"
+      ]
+    },
+    {
+      "path": "templates/profile.html",
+      "line": 16,
+      "tag": "input",
+      "type": "checkbox",
+      "name": "developer_enabled",
+      "id": null,
+      "refs": [
+        "gameinput-d025a93c051a38395448c556",
+        "gameinput-8fb82aa7c3537941778a677d"
+      ]
+    },
+    {
+      "path": "templates/question.html",
+      "line": 41,
+      "tag": "input",
+      "type": "radio",
+      "name": "answer",
+      "id": null,
+      "refs": [
+        "gameinput-13373a171a363f6d087a19d2",
+        "gameinput-988b7d64c3ac6d3b078a215c"
+      ]
+    },
+    {
+      "path": "templates/question.html",
+      "line": 46,
+      "tag": "input",
+      "type": "radio",
+      "name": "answer",
+      "id": null,
+      "refs": [
+        "gameinput-2109f61491ffea518c639cf2",
+        "gameinput-cb28f186b8b1b219d2362265"
+      ]
+    },
+    {
+      "path": "templates/question.html",
+      "line": 47,
+      "tag": "input",
+      "type": "radio",
+      "name": "answer",
+      "id": null,
+      "refs": [
+        "gameinput-2109f61491ffea518c639cf2",
+        "gameinput-cb28f186b8b1b219d2362265"
+      ]
+    },
+    {
+      "path": "templates/question.html",
+      "line": 52,
+      "tag": "input",
+      "type": "text",
+      "name": "answer",
+      "id": "estimate",
+      "refs": [
+        "gameinput-33adf1962501ca2a941fff11"
+      ]
+    },
+    {
+      "path": "templates/register.html",
+      "line": 16,
+      "tag": "input",
+      "type": null,
+      "name": "username",
+      "id": null,
+      "refs": [
+        "gameinput-add04c9b34a20989dec19c63"
+      ]
+    },
+    {
+      "path": "templates/register.html",
+      "line": 20,
+      "tag": "input",
+      "type": "password",
+      "name": "pin",
+      "id": null,
+      "refs": [
+        "gameinput-f2bebede5a71be47355f2409"
+      ]
+    },
+    {
+      "path": "templates/register.html",
+      "line": 24,
+      "tag": "input",
+      "type": "password",
+      "name": "pin_confirm",
+      "id": null,
+      "refs": [
+        "gameinput-d24c623b912971b862c18cd8"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 9,
+      "tag": "input",
+      "type": "range",
+      "name": null,
+      "id": "angle",
+      "refs": [
+        "gameinput-7564f8309c05d8492b1353ea"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 16,
+      "tag": "select",
+      "type": null,
+      "name": null,
+      "id": "territory-picker",
+      "refs": [
+        "gameinput-4daff220f78dde73375bcbd9"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 24,
+      "tag": "button",
+      "type": "button",
+      "name": null,
+      "id": null,
+      "refs": [
+        "gameinput-cda3b0df1c39706eaf838587"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 24,
+      "tag": "button",
+      "type": "button",
+      "name": null,
+      "id": null,
+      "refs": [
+        "gameinput-cda3b0df1c39706eaf838587"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 24,
+      "tag": "button",
+      "type": "button",
+      "name": null,
+      "id": null,
+      "refs": [
+        "gameinput-cda3b0df1c39706eaf838587"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 23,
+      "tag": "div",
+      "type": null,
+      "name": null,
+      "id": "attack-dice-choice",
+      "refs": [
+        "gameinput-cda3b0df1c39706eaf838587"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 39,
+      "tag": "input",
+      "type": "number",
+      "name": null,
+      "id": "deployment-amount",
+      "refs": [
+        "gameinput-a3596aee01aa857c371afc71",
+        "gameinput-e90b66158888cfbbff4b488e",
+        "gameinput-711a7bbab80ec24db7229b5a"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 40,
+      "tag": "input",
+      "type": "range",
+      "name": null,
+      "id": "deployment-slider",
+      "refs": [
+        "gameinput-99ee3168e3b7a4bb2fdfb25f",
+        "gameinput-a05681217f028c808ef050d6",
+        "gameinput-1128806f0be5520251e60960"
+      ]
+    }
+  ],
+  "uncovered": [],
+  "grouping": "Shared existing component or base class; constraints, content and states remain separate variants.",
+  "limits": [
+    "Inert previews; no field interaction, validation, drag behavior, autosave or game actions run.",
+    "Password fields remain empty. No account, PIN, player input or game state is read.",
+    "Hidden transport fields are not design elements. Native browser controls retain platform appearance.",
+    "Source default bounds and disabled states are recorded as found; live game bounds may depend on state.",
+    "No input editor or editor-option approval is included."
+  ]
+}

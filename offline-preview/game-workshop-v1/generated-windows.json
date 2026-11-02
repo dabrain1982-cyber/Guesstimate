@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "description": "Neutral inert examples captured from the current original DOM factories.",
+  "captures": {
+    "dice-held": {
+      "markup": "<button type=\"button\" data-die-id=\"example\" title=\"Zum erneuten Würfeln einsammeln\"><span class=\"dice-mini\" data-value=\"4\"></span></button>",
+      "evidence": [
+        {
+          "path": "static/dice-table.js",
+          "sha256": "0c791957b35c39d3e1e0278c370871c187454e52d5754ce3da504798e0faf79e"
+        }
+      ]
+    },
+    "dice-tray": {
+      "markup": "<button type=\"button\" data-die-id=\"example\" title=\"Auswahl zurücknehmen\"><span class=\"dice-mini\" data-value=\"4\"></span></button>",
+      "evidence": [
+        {
+          "path": "static/dice-table.js",
+          "sha256": "0c791957b35c39d3e1e0278c370871c187454e52d5754ce3da504798e0faf79e"
+        }
+      ]
+    },
+    "kniffel": {
+      "markup": "<table style=\"width: 300px;\"><colgroup><col class=\"kniffel-category-column\"></col><col class=\"kniffel-rule-column\"></col><col class=\"kniffel-player-column\"></col><col class=\"kniffel-player-column\"></col></colgroup><thead><tr><th colSpan=\"2\">Erster Teil</th><th title=\"Musterplatz 1\" class=\"is-current\">Musterplatz 1</th><th title=\"Musterplatz 2\">Musterplatz 2</th></tr></thead><tbody><tr><th>1er</th><td class=\"kniffel-rule\">Nur Einser zählen</td><td class=\"is-current\"><button type=\"button\" title=\"ones mit 3 Punkten eintragen\">3</button></td><td></td></tr><tr><th>2er</th><td class=\"kniffel-rule\">Nur Zweier zählen</td><td class=\"is-current\"></td><td></td></tr><tr><th>3er</th><td class=\"kniffel-rule\">Nur Dreier zählen</td><td class=\"is-current\"></td><td></td></tr><tr><th>4er</th><td class=\"kniffel-rule\">Nur Vierer zählen</td><td class=\"is-current\"></td><td></td></tr><tr><th>5er</th><td class=\"kniffel-rule\">Nur Fünfer zählen</td><td class=\"is-current\"></td><td></td></tr><tr><th>6er</th><td class=\"kniffel-rule\">Nur Sechser zählen</td><td class=\"is-current\"></td><td></td></tr><tr class=\"kniffel-total-row \"><th>Zwischensumme</th><td class=\"kniffel-rule\"></td><td>0</td><td>0</td></tr><tr class=\"kniffel-total-row \"><th>Bonus bei 63 und mehr</th><td class=\"kniffel-rule\">+ 35 Punkte</td><td>0</td><td>0</td></tr><tr class=\"kniffel-total-row is-part-total\"><th>Summe Erster Teil</th><td class=\"kniffel-rule\"></td><td>0</td><td>0</td></tr><tr class=\"kniffel-section-row\"><th colSpan=\"4\">Zweiter Teil</th></tr><tr><th>Dreierpasch</th><td class=\"kniffel-rule\">Alle Augen zählen</td><td class=\"is-current\"></td><td></td></tr><tr><th>Viererpasch</th><td class=\"kniffel-rule\">Alle Augen zählen</td><td class=\"is-current\"></td><td></td></tr><tr><th>Full House</th><td class=\"kniffel-rule\">25 Punkte</td><td class=\"is-current\"></td><td></td></tr><tr><th>Kleine Straße</th><td class=\"kniffel-rule\">30 Punkte</td><td class=\"is-current\"></td><td></td></tr><tr><th>Große Straße</th><td class=\"kniffel-rule\">40 Punkte</td><td class=\"is-current\"></td><td></td></tr><tr><th>Kniffel</th><td class=\"kniffel-rule\">50 Punkte</td><td class=\"is-current\"></td><td></td></tr><tr><th>Chance</th><td class=\"kniffel-rule\">Alle Augen zählen</td><td class=\"is-current\"></td><td></td></tr><tr class=\"kniffel-total-row \"><th>Summe Zweiter Teil</th><td class=\"kniffel-rule\"></td><td>0</td><td>0</td></tr><tr class=\"kniffel-total-row \"><th>Summe Erster Teil</th><td class=\"kniffel-rule\"></td><td>0</td><td>0</td></tr><tr class=\"kniffel-total-row is-grand-total\"><th>Endsumme</th><td class=\"kniffel-rule\"></td><td>0</td><td>0</td></tr></tbody></table>",
+      "evidence": [
+        {
+          "path": "static/dice-table.js",
+          "sha256": "0c791957b35c39d3e1e0278c370871c187454e52d5754ce3da504798e0faf79e"
+        }
+      ]
+    },
+    "awarded-card": {
+      "markup": "<article class=\"country-card\" data-card-id=\"alaska\" data-symbol=\"infantry\" data-owned=\"true\" style=\"--card-owner: #d8ff42;\" aria-label=\"Alaska – Infanterie – Dein Gebiet – automatisch +2 Einheiten hier beim Eintausch\"><h3>Alaska</h3><div class=\"country-card-ownership\"><strong>Dein Gebiet</strong><span class=\"country-card-bonus\">+2 hier beim Eintausch</span></div><div class=\"country-card-symbol\"><svg viewBox=\"0 0 104 104\" role=\"img\" aria-label=\"Infanterie-Symbol\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M32 24Q32 9 48 9T64 24Z\" fill=\"currentColor\"/><circle cx=\"48\" cy=\"31\" r=\"10\" fill=\"currentColor\"/><path d=\"M33 49Q48 40 63 49L66 70H30Z\" fill=\"currentColor\"/><path d=\"M36 68L31 94M58 68L63 94M33 52L20 68M62 52L72 64M76 15V92M71 20H81M24 95H38M56 95H70\"/></svg></div><p class=\"country-card-type\">Infanterie</p><div class=\"country-card-map\"><img src=\"/conquest-source/assets/karte.png\" alt=\"\" style=\"left: calc(50% - 49.5px); top: calc(50% - 90px);\"></div><small>stormseed´s conquest</small></article>",
+      "evidence": [
+        {
+          "path": "offline-preview/conquest-2-5d-v1/territory-model.js",
+          "sha256": "575402dcd3031eb7ca4491c8c5beb459ee2f634ac5f89bebfb224c815a48f175"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/cards.js",
+          "sha256": "c0d5df1be01e92d37679ca68e31fba096598ac3279804c4d16207d4223a8ef02"
+        }
+      ]
+    },
+    "hand-collapsed": {
+      "markup": "<button type=\"button\" data-select-card=\"alaska\" style=\"--card-order: 1; --card-angle: -1.4deg; --card-nudge: 1px;\" class=\"hand-card\" aria-label=\"Länderkarten vergrößern · Alaska\" aria-pressed=\"false\"><article class=\"country-card\" data-card-id=\"alaska\" data-symbol=\"infantry\" data-owned=\"true\" style=\"--card-owner: #d8ff42;\" aria-label=\"Alaska – Infanterie – Dein Gebiet – automatisch +2 Einheiten hier beim Eintausch\"><h3>Alaska</h3><div class=\"country-card-ownership\"><strong>Dein Gebiet</strong><span class=\"country-card-bonus\">+2 hier beim Eintausch</span></div><div class=\"country-card-symbol\"><svg viewBox=\"0 0 104 104\" role=\"img\" aria-label=\"Infanterie-Symbol\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M32 24Q32 9 48 9T64 24Z\" fill=\"currentColor\"/><circle cx=\"48\" cy=\"31\" r=\"10\" fill=\"currentColor\"/><path d=\"M33 49Q48 40 63 49L66 70H30Z\" fill=\"currentColor\"/><path d=\"M36 68L31 94M58 68L63 94M33 52L20 68M62 52L72 64M76 15V92M71 20H81M24 95H38M56 95H70\"/></svg></div><p class=\"country-card-type\">Infanterie</p><div class=\"country-card-map\"><img src=\"/conquest-source/assets/karte.png\" alt=\"\" style=\"left: calc(50% - 49.5px); top: calc(50% - 90px);\"></div><small>stormseed´s conquest</small></article></button><button type=\"button\" data-select-card=\"ontario\" style=\"--card-order: 2; --card-angle: 0.7deg; --card-nudge: -1px;\" class=\"hand-card\" aria-label=\"Länderkarten vergrößern · Ontario\" aria-pressed=\"false\"><article class=\"country-card\" data-card-id=\"ontario\" data-symbol=\"cavalry\" data-owned=\"false\" style=\"--card-owner: #d8ff42;\" aria-label=\"Ontario – Reiter – Gebiet von Musterarmee\"><h3>Ontario</h3><div class=\"country-card-ownership\"><strong>Gebiet von Musterarmee</strong></div><div class=\"country-card-symbol\"><svg viewBox=\"0 0 104 104\" role=\"img\" aria-label=\"Reiter-Symbol\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"53\" cy=\"20\" r=\"9\" fill=\"currentColor\"/><path d=\"M48 32L46 52H63L59 35Z\" fill=\"currentColor\"/><path d=\"M48 36L68 44M55 52L61 72\"/><path d=\"M20 58Q22 46 44 49L69 49L76 28L85 34L91 50L81 55L77 67H29Z\" fill=\"currentColor\"/><path d=\"M30 64L24 90M44 65L40 91M67 64L72 90M76 60L85 81M20 55L11 72M78 30L77 18L85 28\"/></svg></div><p class=\"country-card-type\">Reiter</p><div class=\"country-card-map\"><img src=\"/conquest-source/assets/karte.png\" alt=\"\" style=\"left: calc(50% - 155.5px); top: calc(50% - 168px);\"></div><small>stormseed´s conquest</small></article></button><button type=\"button\" data-select-card=\"brasilien\" style=\"--card-order: 3; --card-angle: -0.8deg; --card-nudge: 2px;\" class=\"hand-card\" aria-label=\"Länderkarten vergrößern · Brasilien\" aria-pressed=\"false\"><article class=\"country-card\" data-card-id=\"brasilien\" data-symbol=\"artillery\" data-owned=\"false\" style=\"--card-owner: #d8ff42;\" aria-label=\"Brasilien – Geschütz – Gebiet von Musterarmee\"><h3>Brasilien</h3><div class=\"country-card-ownership\"><strong>Gebiet von Musterarmee</strong></div><div class=\"country-card-symbol\"><svg viewBox=\"0 0 104 104\" role=\"img\" aria-label=\"Geschütz-Symbol\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 57L14 39L78 17L85 35Z\" fill=\"currentColor\"/><path d=\"M80 19L88 16L94 31L86 35M46 53L34 72H73L88 88M15 90H90\"/><circle cx=\"37\" cy=\"76\" r=\"18\"/><circle cx=\"37\" cy=\"76\" r=\"4\" fill=\"currentColor\"/><path d=\"M37 58V94M19 76H55M24 63L50 89M24 89L50 63\"/></svg></div><p class=\"country-card-type\">Geschütz</p><div class=\"country-card-map\"><img src=\"/conquest-source/assets/karte.png\" alt=\"\" style=\"left: calc(50% - 166.5px); top: calc(50% - 390.5px);\"></div><small>stormseed´s conquest</small></article></button>",
+      "evidence": [
+        {
+          "path": "offline-preview/conquest-2-5d-v1/territory-model.js",
+          "sha256": "575402dcd3031eb7ca4491c8c5beb459ee2f634ac5f89bebfb224c815a48f175"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/cards.js",
+          "sha256": "c0d5df1be01e92d37679ca68e31fba096598ac3279804c4d16207d4223a8ef02"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        }
+      ]
+    },
+    "hand-expanded": {
+      "markup": "<button type=\"button\" data-select-card=\"alaska\" style=\"--card-order: 1; --card-angle: -1.4deg; --card-nudge: 1px;\" class=\"hand-card is-selected\" aria-label=\"Alaska abwählen\" aria-pressed=\"true\"><article class=\"country-card\" data-card-id=\"alaska\" data-symbol=\"infantry\" data-owned=\"true\" style=\"--card-owner: #d8ff42;\" aria-label=\"Alaska – Infanterie – Dein Gebiet – automatisch +2 Einheiten hier beim Eintausch\"><h3>Alaska</h3><div class=\"country-card-ownership\"><strong>Dein Gebiet</strong><span class=\"country-card-bonus\">+2 hier beim Eintausch</span></div><div class=\"country-card-symbol\"><svg viewBox=\"0 0 104 104\" role=\"img\" aria-label=\"Infanterie-Symbol\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M32 24Q32 9 48 9T64 24Z\" fill=\"currentColor\"/><circle cx=\"48\" cy=\"31\" r=\"10\" fill=\"currentColor\"/><path d=\"M33 49Q48 40 63 49L66 70H30Z\" fill=\"currentColor\"/><path d=\"M36 68L31 94M58 68L63 94M33 52L20 68M62 52L72 64M76 15V92M71 20H81M24 95H38M56 95H70\"/></svg></div><p class=\"country-card-type\">Infanterie</p><div class=\"country-card-map\"><img src=\"/conquest-source/assets/karte.png\" alt=\"\" style=\"left: calc(50% - 49.5px); top: calc(50% - 90px);\"></div><small>stormseed´s conquest</small></article></button><button type=\"button\" data-select-card=\"ontario\" style=\"--card-order: 2; --card-angle: 0.7deg; --card-nudge: -1px;\" class=\"hand-card is-selected\" aria-label=\"Ontario abwählen\" aria-pressed=\"true\"><article class=\"country-card\" data-card-id=\"ontario\" data-symbol=\"cavalry\" data-owned=\"false\" style=\"--card-owner: #d8ff42;\" aria-label=\"Ontario – Reiter – Gebiet von Musterarmee\"><h3>Ontario</h3><div class=\"country-card-ownership\"><strong>Gebiet von Musterarmee</strong></div><div class=\"country-card-symbol\"><svg viewBox=\"0 0 104 104\" role=\"img\" aria-label=\"Reiter-Symbol\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"53\" cy=\"20\" r=\"9\" fill=\"currentColor\"/><path d=\"M48 32L46 52H63L59 35Z\" fill=\"currentColor\"/><path d=\"M48 36L68 44M55 52L61 72\"/><path d=\"M20 58Q22 46 44 49L69 49L76 28L85 34L91 50L81 55L77 67H29Z\" fill=\"currentColor\"/><path d=\"M30 64L24 90M44 65L40 91M67 64L72 90M76 60L85 81M20 55L11 72M78 30L77 18L85 28\"/></svg></div><p class=\"country-card-type\">Reiter</p><div class=\"country-card-map\"><img src=\"/conquest-source/assets/karte.png\" alt=\"\" style=\"left: calc(50% - 155.5px); top: calc(50% - 168px);\"></div><small>stormseed´s conquest</small></article></button><button type=\"button\" data-select-card=\"brasilien\" style=\"--card-order: 3; --card-angle: -0.8deg; --card-nudge: 2px;\" class=\"hand-card is-selected\" aria-label=\"Brasilien abwählen\" aria-pressed=\"true\"><article class=\"country-card\" data-card-id=\"brasilien\" data-symbol=\"artillery\" data-owned=\"false\" style=\"--card-owner: #d8ff42;\" aria-label=\"Brasilien – Geschütz – Gebiet von Musterarmee\"><h3>Brasilien</h3><div class=\"country-card-ownership\"><strong>Gebiet von Musterarmee</strong></div><div class=\"country-card-symbol\"><svg viewBox=\"0 0 104 104\" role=\"img\" aria-label=\"Geschütz-Symbol\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 57L14 39L78 17L85 35Z\" fill=\"currentColor\"/><path d=\"M80 19L88 16L94 31L86 35M46 53L34 72H73L88 88M15 90H90\"/><circle cx=\"37\" cy=\"76\" r=\"18\"/><circle cx=\"37\" cy=\"76\" r=\"4\" fill=\"currentColor\"/><path d=\"M37 58V94M19 76H55M24 63L50 89M24 89L50 63\"/></svg></div><p class=\"country-card-type\">Geschütz</p><div class=\"country-card-map\"><img src=\"/conquest-source/assets/karte.png\" alt=\"\" style=\"left: calc(50% - 166.5px); top: calc(50% - 390.5px);\"></div><small>stormseed´s conquest</small></article></button>",
+      "evidence": [
+        {
+          "path": "offline-preview/conquest-2-5d-v1/territory-model.js",
+          "sha256": "575402dcd3031eb7ca4491c8c5beb459ee2f634ac5f89bebfb224c815a48f175"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/cards.js",
+          "sha256": "c0d5df1be01e92d37679ca68e31fba096598ac3279804c4d16207d4223a8ef02"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        }
+      ]
+    },
+    "playtable-card": {
+      "markup": "<div class=\"playing-card face-up\" data-card-id=\"example\" data-zone=\"player:1\" style=\"left: 45%; top: 40%; --card-z: 1; --card-r: -4deg;\"><div class=\"playing-card-inner\"><div class=\"playing-card-back\"></div><div class=\"playing-card-front black\"><span class=\"playing-card-corner\">A<i>♠</i></span><span class=\"playing-card-suit\">♠</span><span class=\"playing-card-corner bottom\">A<i>♠</i></span></div></div></div>",
+      "evidence": [
+        {
+          "path": "static/card-table.js",
+          "sha256": "8d8ffacf2e301fdf9d1ac6f0552390dfdaed56a89d3db1d35258b282f57cf1ba"
+        }
+      ]
+    }
+  }
+}

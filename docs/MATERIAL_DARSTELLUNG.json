@@ -1,0 +1,832 @@
+{
+  "schema": 1,
+  "checked_on": "2026-10-27",
+  "scope": "Nur lokale Projekteigenschaften; keine zusätzlichen Elementassets und keine Spiel-/Editorumstellung.",
+  "areas": 17,
+  "catalog": {
+    "schema": 1,
+    "materials": [
+      {
+        "id": "wood",
+        "name": "Holz",
+        "description": "Holzmaserung und warme Kanten.",
+        "usage": "Buttons; räumlicher Conquest-Tisch",
+        "note": "Farbe, Maserung und Glanz gehören zur jeweiligen Komponente.",
+        "preview": {
+          "type": "button",
+          "recipe": {
+            "schema_version": 2,
+            "settings": {
+              "style": "natural",
+              "material": "wood",
+              "shape": "cut",
+              "edge": 3,
+              "finish": "satin",
+              "wear": 12,
+              "accent": "#a36b38",
+              "font": "kalam",
+              "font_link": "auto",
+              "lettering": "plain",
+              "size": 23,
+              "label": "Holz",
+              "depth": 3,
+              "duration": 300,
+              "feel": "direct",
+              "sound": "off",
+              "volume": 20,
+              "gradient_to": "#d9bc7e",
+              "opacity": 30,
+              "font_scale": 100,
+              "shadow": 25,
+              "height_ratio": 100,
+              "ink_mode": "auto",
+              "ink_color": "#071124",
+              "depth_mode": "auto",
+              "depth_color": "#7863df",
+              "depth_x": 0
+            },
+            "contour": {
+              "template": "comic",
+              "points": [
+                {
+                  "x": 8,
+                  "y": 7,
+                  "round": 30
+                },
+                {
+                  "x": 34,
+                  "y": 2,
+                  "round": 30
+                },
+                {
+                  "x": 91,
+                  "y": 6,
+                  "round": 28
+                },
+                {
+                  "x": 99,
+                  "y": 29,
+                  "round": 38
+                },
+                {
+                  "x": 95,
+                  "y": 88,
+                  "round": 28
+                },
+                {
+                  "x": 64,
+                  "y": 96,
+                  "round": 35
+                },
+                {
+                  "x": 5,
+                  "y": 91,
+                  "round": 26
+                },
+                {
+                  "x": 1,
+                  "y": 30,
+                  "round": 35
+                }
+              ]
+            }
+          }
+        },
+        "lettering": [],
+        "evidence": [
+          {
+            "path": "offline-preview/button-workshop-v1/catalog.json",
+            "sha256": "bbb5764a4ae1792dd50dd1030a7c76d2872a4e4ad7f3a0401889398333e23397"
+          },
+          {
+            "path": "offline-preview/button-workshop-v1/geometry.js",
+            "sha256": "a0c22b4116cfdca6292decde499d8a029d58272ba013149c5d70a9846eb4a8c0"
+          },
+          {
+            "path": "offline-preview/button-workshop-v1/materials.css",
+            "sha256": "38ab08d74776b47aa6f8392e5c1e2eb734c6a81e3c3b9649e8d43698fc1f4acf"
+          },
+          {
+            "path": "offline-preview/button-workshop-v1/renderer.js",
+            "sha256": "22854cb2f1aa07ab09ab7e500fb744402a5978d8aa188a1e4afc8887a43868ef"
+          }
+        ]
+      },
+      {
+        "id": "stone",
+        "name": "Stein & Tafel",
+        "description": "Raue Stein- oder Schieferoberfläche.",
+        "usage": "Buttons; feste Stein-/Kreideschriftstile",
+        "note": "Kreide und Steininschrift sind passende feste Schriftstile.",
+        "preview": {
+          "type": "button",
+          "recipe": {
+            "schema_version": 2,
+            "settings": {
+              "style": "natural",
+              "material": "stone",
+              "shape": "cut",
+              "edge": 3,
+              "finish": "satin",
+              "wear": 12,
+              "accent": "#536460",
+              "font": "kalam",
+              "font_link": "auto",
+              "lettering": "plain",
+              "size": 23,
+              "label": "Stein & Tafel",
+              "depth": 3,
+              "duration": 300,
+              "feel": "direct",
+              "sound": "off",
+              "volume": 20,
+              "gradient_to": "#d9bc7e",
+              "opacity": 30,
+              "font_scale": 100,
+              "shadow": 25,
+              "height_ratio": 100,
+              "ink_mode": "auto",
+              "ink_color": "#071124",
+              "depth_mode": "auto",
+              "depth_color": "#7863df",
+              "depth_x": 0
+            },
+            "contour": {
+              "template": "comic",
+              "points": [
+                {
+                  "x": 8,
+                  "y": 7,
+                  "round": 30
+                },
+                {
+                  "x": 34,
+                  "y": 2,
+                  "round": 30
+                },
+                {
+                  "x": 91,
+                  "y": 6,
+                  "round": 28
+                },
+                {
+                  "x": 99,
+                  "y": 29,
+                  "round": 38
+                },
+                {
+                  "x": 95,
+                  "y": 88,
+                  "round": 28
+                },
+                {
+                  "x": 64,
+                  "y": 96,
+                  "round": 35
+                },
+                {
+                  "x": 5,
+                  "y": 91,
+                  "round": 26
+                },
+                {
+                  "x": 1,
+                  "y": 30,
+                  "round": 35
+                }
+              ]
+            }
+          }
+        },
+        "lettering": [
+          "media-lettering-chalk",
+          "media-lettering-stone"
+        ],
+        "evidence": [
+          {
+            "path": "offline-preview/button-workshop-v1/catalog.json",
+            "sha256": "bbb5764a4ae1792dd50dd1030a7c76d2872a4e4ad7f3a0401889398333e23397"
+          },
+          {
+            "path": "offline-preview/button-workshop-v1/geometry.js",
+            "sha256": "a0c22b4116cfdca6292decde499d8a029d58272ba013149c5d70a9846eb4a8c0"
+          },
+          {
+            "path": "offline-preview/button-workshop-v1/materials.css",
+            "sha256": "38ab08d74776b47aa6f8392e5c1e2eb734c6a81e3c3b9649e8d43698fc1f4acf"
+          },
+          {
+            "path": "offline-preview/button-workshop-v1/renderer.js",
+            "sha256": "22854cb2f1aa07ab09ab7e500fb744402a5978d8aa188a1e4afc8887a43868ef"
+          }
+        ]
+      },
+      {
+        "id": "metal",
+        "name": "Metall",
+        "description": "Metallstruktur mit zurückhaltenden Lichtkanten.",
+        "usage": "Buttons; fester Metall-Schriftstil",
+        "note": "Die eingeprägte Schrift verwendet ihren abgestimmten Metallstil.",
+        "preview": {
+          "type": "button",
+          "recipe": {
+            "schema_version": 2,
+            "settings": {
+              "style": "natural",
+              "material": "metal",
+              "shape": "cut",
+              "edge": 3,
+              "finish": "satin",
+              "wear": 12,
+              "accent": "#899ba2",
+              "font": "kalam",
+              "font_link": "auto",
+              "lettering": "plain",
+              "size": 23,
+              "label": "Metall",
+              "depth": 3,
+              "duration": 300,
+              "feel": "direct",
+              "sound": "off",
+              "volume": 20,
+              "gradient_to": "#d9bc7e",
+              "opacity": 30,
+              "font_scale": 100,
+              "shadow": 25,
+              "height_ratio": 100,
+              "ink_mode": "auto",
+              "ink_color": "#071124",
+              "depth_mode": "auto",
+              "depth_color": "#7863df",
+              "depth_x": 0
+            },
+            "contour": {
+              "template": "comic",
+              "points": [
+                {
+                  "x": 8,
+                  "y": 7,
+                  "round": 30
+                },
+                {
+                  "x": 34,
+                  "y": 2,
+                  "round": 30
+                },
+                {
+                  "x": 91,
+                  "y": 6,
+                  "round": 28
+                },
+                {
+                  "x": 99,
+                  "y": 29,
+                  "round": 38
+                },
+                {
+                  "x": 95,
+                  "y": 88,
+                  "round": 28
+                },
+                {
+                  "x": 64,
+                  "y": 96,
+                  "round": 35
+                },
+                {
+                  "x": 5,
+                  "y": 91,
+                  "round": 26
+                },
+                {
+                  "x": 1,
+                  "y": 30,
+                  "round": 35
+                }
+              ]
+            }
+          }
+        },
+        "lettering": [
+          "media-lettering-iron"
+        ],
+        "evidence": [
+          {
+            "path": "offline-preview/button-workshop-v1/catalog.json",
+            "sha256": "bbb5764a4ae1792dd50dd1030a7c76d2872a4e4ad7f3a0401889398333e23397"
+          },
+          {
+            "path": "offline-preview/button-workshop-v1/geometry.js",
+            "sha256": "a0c22b4116cfdca6292decde499d8a029d58272ba013149c5d70a9846eb4a8c0"
+          },
+          {
+            "path": "offline-preview/button-workshop-v1/materials.css",
+            "sha256": "38ab08d74776b47aa6f8392e5c1e2eb734c6a81e3c3b9649e8d43698fc1f4acf"
+          },
+          {
+            "path": "offline-preview/button-workshop-v1/renderer.js",
+            "sha256": "22854cb2f1aa07ab09ab7e500fb744402a5978d8aa188a1e4afc8887a43868ef"
+          }
+        ]
+      },
+      {
+        "id": "plain",
+        "name": "Farbfläche",
+        "description": "Ruhige Farbe ohne Materialstruktur.",
+        "usage": "Flächige Bedien- und Anzeigeflächen",
+        "note": "Farbe ist eine Eigenschaft; ein anderer Farbwert erzeugt kein neues Modell.",
+        "preview": {
+          "type": "button",
+          "recipe": {
+            "schema_version": 2,
+            "settings": {
+              "style": "natural",
+              "material": "plain",
+              "shape": "cut",
+              "edge": 3,
+              "finish": "satin",
+              "wear": 12,
+              "accent": "#315b47",
+              "font": "kalam",
+              "font_link": "auto",
+              "lettering": "plain",
+              "size": 23,
+              "label": "Farbfläche",
+              "depth": 3,
+              "duration": 300,
+              "feel": "direct",
+              "sound": "off",
+              "volume": 20,
+              "gradient_to": "#d9bc7e",
+              "opacity": 30,
+              "font_scale": 100,
+              "shadow": 25,
+              "height_ratio": 100,
+              "ink_mode": "auto",
+              "ink_color": "#071124",
+              "depth_mode": "auto",
+              "depth_color": "#7863df",
+              "depth_x": 0
+            },
+            "contour": {
+              "template": "comic",
+              "points": [
+                {
+                  "x": 8,
+                  "y": 7,
+                  "round": 30
+                },
+                {
+                  "x": 34,
+                  "y": 2,
+                  "round": 30
+                },
+                {
+                  "x": 91,
+                  "y": 6,
+                  "round": 28
+                },
+                {
+                  "x": 99,
+                  "y": 29,
+                  "round": 38
+                },
+                {
+                  "x": 95,
+                  "y": 88,
+                  "round": 28
+                },
+                {
+                  "x": 64,
+                  "y": 96,
+                  "round": 35
+                },
+                {
+                  "x": 5,
+                  "y": 91,
+                  "round": 26
+                },
+                {
+                  "x": 1,
+                  "y": 30,
+                  "round": 35
+                }
+              ]
+            }
+          }
+        },
+        "lettering": [],
+        "evidence": [
+          {
+            "path": "offline-preview/button-workshop-v1/catalog.json",
+            "sha256": "bbb5764a4ae1792dd50dd1030a7c76d2872a4e4ad7f3a0401889398333e23397"
+          },
+          {
+            "path": "offline-preview/button-workshop-v1/geometry.js",
+            "sha256": "a0c22b4116cfdca6292decde499d8a029d58272ba013149c5d70a9846eb4a8c0"
+          },
+          {
+            "path": "offline-preview/button-workshop-v1/materials.css",
+            "sha256": "38ab08d74776b47aa6f8392e5c1e2eb734c6a81e3c3b9649e8d43698fc1f4acf"
+          },
+          {
+            "path": "offline-preview/button-workshop-v1/renderer.js",
+            "sha256": "22854cb2f1aa07ab09ab7e500fb744402a5978d8aa188a1e4afc8887a43868ef"
+          }
+        ]
+      },
+      {
+        "id": "gradient",
+        "name": "Farbverlauf",
+        "description": "Zwei Farben auf derselben Fläche.",
+        "usage": "Grafische Buttons und Flächen",
+        "note": "Zweite Farbe ist eine Eigenschaft derselben Fläche.",
+        "preview": {
+          "type": "button",
+          "recipe": {
+            "schema_version": 2,
+            "settings": {
+              "style": "natural",
+              "material": "gradient",
+              "shape": "cut",
+              "edge": 3,
+              "finish": "satin",
+              "wear": 12,
+              "accent": "#315b47",
+              "font": "kalam",
+              "font_link": "auto",
+              "lettering": "plain",
+              "size": 23,
+              "label": "Farbverlauf",
+              "depth": 3,
+              "duration": 300,
+              "feel": "direct",
+              "sound": "off",
+              "volume": 20,
+              "gradient_to": "#d9bc7e",
+              "opacity": 30,
+              "font_scale": 100,
+              "shadow": 25,
+              "height_ratio": 100,
+              "ink_mode": "auto",
+              "ink_color": "#071124",
+              "depth_mode": "auto",
+              "depth_color": "#7863df",
+              "depth_x": 0
+            },
+            "contour": {
+              "template": "comic",
+              "points": [
+                {
+                  "x": 8,
+                  "y": 7,
+                  "round": 30
+                },
+                {
+                  "x": 34,
+                  "y": 2,
+                  "round": 30
+                },
+                {
+                  "x": 91,
+                  "y": 6,
+                  "round": 28
+                },
+                {
+                  "x": 99,
+                  "y": 29,
+                  "round": 38
+                },
+                {
+                  "x": 95,
+                  "y": 88,
+                  "round": 28
+                },
+                {
+                  "x": 64,
+                  "y": 96,
+                  "round": 35
+                },
+                {
+                  "x": 5,
+                  "y": 91,
+                  "round": 26
+                },
+                {
+                  "x": 1,
+                  "y": 30,
+                  "round": 35
+                }
+              ]
+            }
+          }
+        },
+        "lettering": [],
+        "evidence": [
+          {
+            "path": "offline-preview/button-workshop-v1/catalog.json",
+            "sha256": "bbb5764a4ae1792dd50dd1030a7c76d2872a4e4ad7f3a0401889398333e23397"
+          },
+          {
+            "path": "offline-preview/button-workshop-v1/geometry.js",
+            "sha256": "a0c22b4116cfdca6292decde499d8a029d58272ba013149c5d70a9846eb4a8c0"
+          },
+          {
+            "path": "offline-preview/button-workshop-v1/materials.css",
+            "sha256": "38ab08d74776b47aa6f8392e5c1e2eb734c6a81e3c3b9649e8d43698fc1f4acf"
+          },
+          {
+            "path": "offline-preview/button-workshop-v1/renderer.js",
+            "sha256": "22854cb2f1aa07ab09ab7e500fb744402a5978d8aa188a1e4afc8887a43868ef"
+          }
+        ]
+      },
+      {
+        "id": "translucent",
+        "name": "Durchscheinend",
+        "description": "Eine Fläche lässt ihren Hintergrund durchscheinen.",
+        "usage": "Überlagerte Bedienflächen",
+        "note": "Durchscheinen ist Deckkraft, keine zusätzliche Glassimulation.",
+        "preview": {
+          "type": "button",
+          "recipe": {
+            "schema_version": 2,
+            "settings": {
+              "style": "natural",
+              "material": "translucent",
+              "shape": "cut",
+              "edge": 3,
+              "finish": "satin",
+              "wear": 12,
+              "accent": "#365d6e",
+              "font": "kalam",
+              "font_link": "auto",
+              "lettering": "plain",
+              "size": 23,
+              "label": "Durchscheinend",
+              "depth": 3,
+              "duration": 300,
+              "feel": "direct",
+              "sound": "off",
+              "volume": 20,
+              "gradient_to": "#d9bc7e",
+              "opacity": 30,
+              "font_scale": 100,
+              "shadow": 25,
+              "height_ratio": 100,
+              "ink_mode": "auto",
+              "ink_color": "#071124",
+              "depth_mode": "auto",
+              "depth_color": "#7863df",
+              "depth_x": 0
+            },
+            "contour": {
+              "template": "comic",
+              "points": [
+                {
+                  "x": 8,
+                  "y": 7,
+                  "round": 30
+                },
+                {
+                  "x": 34,
+                  "y": 2,
+                  "round": 30
+                },
+                {
+                  "x": 91,
+                  "y": 6,
+                  "round": 28
+                },
+                {
+                  "x": 99,
+                  "y": 29,
+                  "round": 38
+                },
+                {
+                  "x": 95,
+                  "y": 88,
+                  "round": 28
+                },
+                {
+                  "x": 64,
+                  "y": 96,
+                  "round": 35
+                },
+                {
+                  "x": 5,
+                  "y": 91,
+                  "round": 26
+                },
+                {
+                  "x": 1,
+                  "y": 30,
+                  "round": 35
+                }
+              ]
+            }
+          }
+        },
+        "lettering": [],
+        "evidence": [
+          {
+            "path": "offline-preview/button-workshop-v1/catalog.json",
+            "sha256": "bbb5764a4ae1792dd50dd1030a7c76d2872a4e4ad7f3a0401889398333e23397"
+          },
+          {
+            "path": "offline-preview/button-workshop-v1/geometry.js",
+            "sha256": "a0c22b4116cfdca6292decde499d8a029d58272ba013149c5d70a9846eb4a8c0"
+          },
+          {
+            "path": "offline-preview/button-workshop-v1/materials.css",
+            "sha256": "38ab08d74776b47aa6f8392e5c1e2eb734c6a81e3c3b9649e8d43698fc1f4acf"
+          },
+          {
+            "path": "offline-preview/button-workshop-v1/renderer.js",
+            "sha256": "22854cb2f1aa07ab09ab7e500fb744402a5978d8aa188a1e4afc8887a43868ef"
+          }
+        ]
+      },
+      {
+        "id": "felt",
+        "name": "Filz",
+        "description": "Weiche Spielfläche für Karten und Würfel.",
+        "usage": "Vorhandene Playtable-Fläche",
+        "note": "Die Struktur gehört zum vorhandenen Tischbild; sie ist hier keine austauschbare 3D-Textur.",
+        "preview": {
+          "type": "asset",
+          "id": "boards-2d-playtable"
+        },
+        "lettering": [],
+        "evidence": [
+          {
+            "path": "static/card-table-felt-v1.png",
+            "sha256": "719ae19ec52ca91035b260227952c6226d3b82f39b0ff873506efa451c77660b"
+          },
+          {
+            "path": "static/card-table.css",
+            "sha256": "cd35aa6a639097e77723af9440824595bfeeb6fc363e3bc9901faea4a25c6680"
+          }
+        ]
+      },
+      {
+        "id": "paper",
+        "name": "Papier",
+        "description": "Papierartige Zettel für Einstellungen, Hinweise und Notizen.",
+        "usage": "Ursprünglicher Perfect-Einstellungszettel",
+        "note": "Schreibmaschine und Handschrift bleiben passende feste Schriftstile.",
+        "preview": {
+          "type": "model",
+          "model_id": "window-perfect-settings",
+          "id": "gamewindow-4d9b3fa307976d40e8f827ff"
+        },
+        "lettering": [
+          "media-lettering-hand",
+          "media-lettering-stamp"
+        ],
+        "evidence": [
+          {
+            "path": "static/stormseeds-perfect.css",
+            "sha256": "f19e4f19bd8dbb85d5b8f52f58465b4b09fb022384a8f3c83bf47c3789b19e34"
+          },
+          {
+            "path": "templates/nerd_mode.html",
+            "sha256": "06c25dc654cdea6e3422aa4759f5e86f0c01802c26afd357923fbe8a32ed14bb"
+          }
+        ]
+      },
+      {
+        "id": "cardstock",
+        "name": "Bedruckter Karton",
+        "description": "Bedruckte Kartenfläche mit Vorder- und Rückseite.",
+        "usage": "Freigegebener flacher Kartenbaustein",
+        "note": "Aufdruck und Kartensatz sind Eigenschaften; Fragen bleiben Daten an Fenstern.",
+        "preview": {
+          "type": "asset",
+          "id": "cards-component-display"
+        },
+        "lettering": [],
+        "evidence": [
+          {
+            "path": "offline-preview/card-comparison-v1/assets/kenney/cardHearts7.png",
+            "sha256": "494b7c5b237530418a6ede2503f817878611d651ca43d1fcd9702502c460ac9e"
+          },
+          {
+            "path": "offline-preview/game-workshop-v1/card_library.py",
+            "sha256": "a189a7021ffba2d0a50581db7002122bb546d44404ea50df2d74910099ab9ab4"
+          }
+        ]
+      }
+    ],
+    "views": [
+      {
+        "id": "flat",
+        "name": "2D · flache Oberfläche",
+        "description": "Ein fester Bildaufbau. Passend für Fragenfenster, Menüs und flache Spielflächen.",
+        "example": "boards-2d-playtable",
+        "note": "Originale Playtable-Fläche"
+      },
+      {
+        "id": "depth",
+        "name": "2,5D · fester räumlicher Blick",
+        "description": "Räumliche Elemente aus einem festen schrägen Blickwinkel. 2,5D ist eine Ansicht des 3D-Bausteins.",
+        "example": "boards-3d-conquest",
+        "note": "Dasselbe räumliche Conquest-Brett"
+      },
+      {
+        "id": "spatial",
+        "name": "3D · räumliche Ansicht",
+        "description": "Räumliche Elemente mit veränderbarer Kamera. Bewegung und Physik werden separat gewählt.",
+        "example": "rooms-conquest",
+        "note": "Originaler Conquest-Raum; Ansicht wechseln in der Vorschau"
+      }
+    ],
+    "rule": "Materialien und Ansicht sind Projekteigenschaften. Die Auswahl hält Wünsche fest und verändert keine Originaldarstellung.",
+    "motion": [
+      {
+        "id": "pieces",
+        "name": "Figuren",
+        "description": "Verschieben innerhalb derselben Figur; keine neue Figur pro Position."
+      },
+      {
+        "id": "dice",
+        "name": "Würfel",
+        "description": "Vorhandene Physikwürfel und flache Würfelanzeige bleiben zwei Varianten. Physik gehört zu den räumlichen Würfeln."
+      },
+      {
+        "id": "cards",
+        "name": "Karten",
+        "description": "Bewegliche 3D-Karten und flache Anzeigekarten bleiben zwei Grundbausteine."
+      }
+    ]
+  },
+  "project_decisions": {
+    "mode": {
+      "label": "Darstellung",
+      "options": {
+        "undecided": "Noch offen · im Interview klären",
+        "flat": "Flache Oberfläche · feste Ansicht",
+        "depth": "Feste Ansicht mit räumlicher Wirkung",
+        "spatial": "Räumliche Ansicht mit Kamera"
+      }
+    },
+    "shadows": {
+      "label": "Licht und Schatten",
+      "options": {
+        "undecided": "Noch offen",
+        "yes": "Gewünscht",
+        "no": "Nicht benötigt"
+      }
+    },
+    "pieces": {
+      "label": "Bewegung von Figuren",
+      "options": {
+        "undecided": "Noch offen",
+        "yes": "Gewünscht",
+        "no": "Nicht benötigt"
+      }
+    },
+    "dice": {
+      "label": "Bewegung von Würfeln",
+      "options": {
+        "undecided": "Noch offen",
+        "yes": "Gewünscht",
+        "no": "Nicht benötigt"
+      }
+    },
+    "cards": {
+      "label": "Bewegung von Karten",
+      "options": {
+        "undecided": "Noch offen",
+        "yes": "Gewünscht",
+        "no": "Nicht benötigt"
+      }
+    }
+  },
+  "source_files": {
+    "offline-preview/button-workshop-v1/catalog.json": "bbb5764a4ae1792dd50dd1030a7c76d2872a4e4ad7f3a0401889398333e23397",
+    "offline-preview/button-workshop-v1/geometry.js": "a0c22b4116cfdca6292decde499d8a029d58272ba013149c5d70a9846eb4a8c0",
+    "offline-preview/button-workshop-v1/materials.css": "38ab08d74776b47aa6f8392e5c1e2eb734c6a81e3c3b9649e8d43698fc1f4acf",
+    "offline-preview/button-workshop-v1/renderer.js": "22854cb2f1aa07ab09ab7e500fb744402a5978d8aa188a1e4afc8887a43868ef",
+    "static/card-table-felt-v1.png": "719ae19ec52ca91035b260227952c6226d3b82f39b0ff873506efa451c77660b",
+    "static/card-table.css": "cd35aa6a639097e77723af9440824595bfeeb6fc363e3bc9901faea4a25c6680",
+    "static/stormseeds-perfect.css": "f19e4f19bd8dbb85d5b8f52f58465b4b09fb022384a8f3c83bf47c3789b19e34",
+    "templates/nerd_mode.html": "06c25dc654cdea6e3422aa4759f5e86f0c01802c26afd357923fbe8a32ed14bb",
+    "offline-preview/card-comparison-v1/assets/kenney/cardHearts7.png": "494b7c5b237530418a6ede2503f817878611d651ca43d1fcd9702502c460ac9e",
+    "offline-preview/game-workshop-v1/card_library.py": "a189a7021ffba2d0a50581db7002122bb546d44404ea50df2d74910099ab9ab4"
+  },
+  "rule": "Materialwünsche werden an der Projektmappe gespeichert, Originalelemente und ihre Schnappschüsse bleiben exakt.",
+  "storage": {
+    "optional_field": "surfaces",
+    "project_schema": 2,
+    "old_maps": "Ohne neuen Schlüssel unverändert lesbar; keine automatische Migration.",
+    "handoff": "Materialdefinitionen und Herkunft eingefroren; bestehende Elementliste und Darstellung unverändert übernommen."
+  },
+  "limits": [
+    "Beispiele zeigen vorhandene Materialien, keine beliebige Beschichtung jedes Bausteins.",
+    "Kreide, Stein und Metall verweisen auf die passenden festen Schriftstile; keine freie Effektmatrix.",
+    "2,5D ist eine Ansicht räumlicher Elemente, kein drittes Brett- oder Würfelmodell.",
+    "Anzahl, Aufdruck, Farbe, Licht und Bewegung bleiben Eigenschaften. Physik wird nur für die vorhandenen räumlichen Würfel belegt.",
+    "Die Detailoptionen der einzelnen Editoren und eine spätere Spielintegration bleiben offen."
+  ]
+}

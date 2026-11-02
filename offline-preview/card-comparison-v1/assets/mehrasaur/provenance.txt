@@ -1,0 +1,17 @@
+Poker Pack · mehrasaur
+Source: https://opengameart.org/content/poker-pack
+Author listing checked: 2026-10-27
+License shown on the specific source page: CC0
+License reference: https://creativecommons.org/publicdomain/zero/1.0/
+
+Original data-only subset from poker_pack.zip:
+dist/obj_mtl/card.obj, dist/obj_mtl/card.mtl, dist/blend/card.blend
+
+No license text was included in this archive. This file records the verified
+author-page notice; it is not an additional license or a copy of an archive file.
+The original card mesh contains no branded artwork. It is paired with Kenney's
+CC0 card graphics for this isolated comparison.
+
+Adaptation: coordinate alignment, centering, uniform scaling, triangulation,
+planar face/back UV coordinates. Geometry is still the downloaded source mesh.
+See import-manifest.json for archive checksums and card-mesh.json for metadata.

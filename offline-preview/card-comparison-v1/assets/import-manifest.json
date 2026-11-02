@@ -1,0 +1,20 @@
+{
+  "downloaded": "2026-10-27",
+  "archives": {
+    "kenney_boardgame-pack.zip": "3b6a7dd5af658d1ffa0071429d5dde10ff63121e88bd06d4904e721e60b2c398",
+    "poker_pack.zip": "04f1281f413dd8b72ba5fbba2f33cfe683eed7fed6712240776b1a1e54a96bc4"
+  },
+  "model": {
+    "source": "https://opengameart.org/content/poker-pack",
+    "author": "mehrasaur",
+    "license": "CC0-1.0",
+    "source_vertices": 24,
+    "triangles": 44,
+    "dimensions": [
+      137.4542123629101,
+      192,
+      1.0937947965952062
+    ],
+    "changes": "Rigid axis alignment, centering, uniform scale, convex face triangulation and planar face/back UVs; original outline retained."
+  }
+}

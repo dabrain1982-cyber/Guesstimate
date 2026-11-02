@@ -1,6 +1,6 @@
 {% extends "base.html" %}
-{% block title %}{{ lobby.name }} · Playtable{% endblock %}
-{% block extra_head %}<link rel="stylesheet" href="{{ url_for('static', filename='card-table.css', v='13') }}">{% endblock %}
+{% block title %}{{ lobby.name }} · playtable{% endblock %}
+{% block extra_head %}<link rel="stylesheet" href="{{ url_for('static', filename='card-table.css', v='16') }}">{% endblock %}
 {% block shell_class %}card-game-shell{% endblock %}
 {% block header %}{% endblock %}
 {% block content %}
@@ -14,13 +14,13 @@
         <div class="card-layer" data-card-layer="player:{{ member.id }}"></div>
         <div class="card-bankroll" data-bankroll-for="{{ member.id }}" hidden>Bestand <output>0</output></div>
         <div class="card-player-bid" data-bid-for="{{ member.id }}" hidden>Geboten <output>0</output></div>
-        <button class="card-collect-pot" type="button" data-collect-pot="{{ member.id }}" hidden>Collect</button>
+        <button class="card-collect-pot" type="button" data-collect-pot="{{ member.id }}" hidden>collect</button>
         <div class="card-bet-control" data-bet-control hidden>
           <input type="range" min="1" max="1" value="1" step="1" data-bet-amount aria-label="Punkte bieten">
           <output class="poker-chip-display" data-bet-output>1</output>
           <div class="card-bet-buttons">
-            <button type="button" data-bid-button>Bieten</button>
-            <button type="button" data-call-button>Mitgehen</button>
+            <button type="button" data-bid-button>bieten</button>
+            <button type="button" data-call-button>mitgehen</button>
           </div>
         </div>
       </div>
@@ -48,10 +48,10 @@
         <output data-deal-count-output>1</output>
       </label>
       <div class="card-command-row">
-        <button type="button" data-table-action="deal" title="Jeder Person eine Karte vom Stapel geben"><span>♠</span> Austeilen</button>
-        <button type="button" data-table-action="clear_table" title="Nur die Kartenfläche F auf die Ablage B legen"><span>F→B</span> Tisch abräumen</button>
-        <button type="button" data-table-action="collect" title="Alle Karten aufdecken und einsammeln"><span>C</span> Einsammeln</button>
-        <button type="button" data-table-action="shuffle" title="Ablagestapel verdecken und mischen"><span>D</span> Mischen</button>
+        <button type="button" data-table-action="deal" title="Jeder Person eine Karte vom Stapel geben"><span>♠</span> austeilen</button>
+        <button type="button" data-table-action="clear_table" title="Nur die Kartenfläche F auf die Ablage B legen"><span>f→b</span> tisch abräumen</button>
+        <button type="button" data-table-action="collect" title="Alle Karten aufdecken und einsammeln"><span>c</span> einsammeln</button>
+        <button type="button" data-table-action="shuffle" title="Ablagestapel verdecken und mischen"><span>d</span> mischen</button>
       </div>
       <div class="card-pile deck-pile" data-drop-zone="deck"><span class="area-letter">A</span><output class="card-pile-count" data-deck-count aria-label="Karten im Stapel">0</output><b>Stapel</b><div class="card-layer" data-card-layer="deck"></div></div>
       <div class="card-pile discard-pile" data-drop-zone="discard"><span class="area-letter">B</span><output class="card-pile-count" data-discard-count aria-label="Karten auf der Ablage">0</output><b>Ablage</b><div class="card-layer" data-card-layer="discard"></div></div>
@@ -61,18 +61,18 @@
 
     <div class="card-room-actions">
       <form method="post" action="{{ url_for('card_table_leave', lobby_id=lobby.id) }}" data-leave-form>
-        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit"><span>H</span> Lobby verlassen</button>
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit"><span>h</span> lobby verlassen</button>
       </form>
       {% if lobby.host_user_id == g.user.id %}<form method="post" action="{{ url_for('card_table_end', lobby_id=lobby.id) }}" data-end-form>
-        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="danger" type="submit"><span>I</span> Lobby beenden</button>
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="danger" type="submit"><span>i</span> lobby beenden</button>
       </form>{% endif %}
     </div>
     <div class="card-action-banner" data-action-banner hidden></div>
     <div class="card-pot-request" data-pot-request hidden>
       <strong data-pot-request-text></strong>
-      <div><button type="button" data-pot-vote="approve">Bestätigen</button><button type="button" data-pot-vote="reject">Ablehnen</button></div>
+      <div><button type="button" data-pot-vote="approve">bestätigen</button><button type="button" data-pot-vote="reject">ablehnen</button></div>
     </div>
   </main>
   </div>
 {% endblock %}
-{% block scripts %}<script src="{{ url_for('static', filename='card-table.js', v='12') }}" defer></script>{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='card-table.js', v='13') }}" defer></script>{% endblock %}

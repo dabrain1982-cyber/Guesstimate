@@ -1,0 +1,5 @@
+@font-face{font-family:'Workshop Cinzel';src:url('/assets/fonts/Cinzel-Variable.ttf') format('truetype');font-style:normal;font-weight:400 900;font-display:swap}
+@font-face{font-family:'Workshop Rock Salt';src:url('/assets/fonts/RockSalt-Regular.ttf') format('truetype');font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:'Workshop Kalam';src:url('/assets/fonts/Kalam-Regular.ttf') format('truetype');font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:'Workshop Share Tech Mono';src:url('/assets/fonts/ShareTechMono-Regular.ttf') format('truetype');font-style:normal;font-weight:400;font-display:swap}
+.preview-button .comic-button-label{font-synthesis:none}

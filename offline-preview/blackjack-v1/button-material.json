@@ -1,0 +1,17 @@
+{
+  "tool": "Built-in image_gen",
+  "date": "2026-10-30",
+  "prompt": "Use case: photorealistic-natural. Asset type: raw material surface for the canonical workshop buttons in a vintage Blackjack game. Image 1 is a STYLE REFERENCE ONLY: match its genuinely old, very dark warm walnut table rim and aged bar furniture. Image 2 is the existing TOO LIGHT oak texture to replace in a new version. Generate a square, frame-filling orthographic close-up of a SINGLE solid piece of very dark brown antique walnut, near espresso and umber, understated warm amber worn edges/scratches, fine horizontal natural grain, aged wax/oil finish with small pores and restrained patina and fine irregular scuffs. Avoid light blond oak, honey orange wood, modern laminate, fresh lacquer, broad shiny highlights. This must look like 100-year-old furniture in a warmly lit dark card room. Low contrast across center for readable brass type. Rich nearly-black brown shadow details, gently visible grain, subdued lighting. RAW TEXTURE ONLY filling every pixel, no button silhouette, no bevel, no frame, no lettering, no ornaments, no logos, no transparency. No scene, raccoon, props or poker cards. Do not change the reference scene itself; produce only the dark wood surface.",
+  "references": [
+    "static/blackjack-tisch-sitzansicht-v1.webp",
+    "static/blackjack-button-oak-v1.webp"
+  ],
+  "generated_source": "C:\\Users\\DaBra\\.codex\\generated_images\\01a188b7-9d8c-7711-a9ef-0bac2ed63981\\exec-e77d38e3-78fb-4c0e-ac24-589ee42ede34.png",
+  "master": "offline-preview/blackjack-v1/concepts/blackjack-button-walnut-aged-v1.png",
+  "texture": "offline-preview/button-workshop-v1/assets/walnut-aged-v1.webp",
+  "recipe_id": "656dbd73ec9c45a1b86791b2e3a0fcb0",
+  "sha256": {
+    "master": "152508bc624a1f7e12364266f39dc2acfddd62d097ba5b637e9172fd31450d3d",
+    "texture": "b56b3f6b8cff385f6596e373016a2a412e09f961c75c6c29950891f961f9fa47"
+  }
+}

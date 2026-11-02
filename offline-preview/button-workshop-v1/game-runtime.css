@@ -1,0 +1,4 @@
+/* Runtime shell only; all visible button parts come from the canonical renderer. */
+.workshop-button-original{display:none!important}
+.workshop-bound-host{display:inline-flex;max-width:100%;vertical-align:middle;line-height:normal;min-width:0}
+.workshop-bound-host>.preview-button{max-width:100%;margin:0;flex-shrink:1;text-decoration:none}

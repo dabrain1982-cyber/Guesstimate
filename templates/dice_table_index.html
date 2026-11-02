@@ -1,42 +1,19 @@
 {% extends "base.html" %}
+{% from "_lobby_overview.html" import lobby_overview with context %}
 {% set resolved_game_mode = game_mode|default('sandbox', true) %}
 {% set resolved_lobby_endpoint = lobby_endpoint|default('dice_table_lobby', true) %}
 {% set resolved_join_endpoint = join_endpoint|default('dice_table_join', true) %}
 {% set resolved_create_endpoint = create_endpoint|default('dice_table_create', true) %}
 {% set is_kniffel = resolved_game_mode == 'kniffel' %}
 {% set is_maexchen = resolved_game_mode == 'maexchen' %}
-{% set table_title = 'Mäxchen' if is_maexchen else ('Kniffel' if is_kniffel else 'Würfeltisch') %}
+{% set table_title = 'mäxchen' if is_maexchen else ('kniffel' if is_kniffel else 'würfeltisch') %}
 {% block title %}{{ table_title }} · {{ game_name }}{% endblock %}
 {% block header %}{% endblock %}
-{% block extra_head %}<link rel="stylesheet" href="{{ url_for('static', filename='dice-table.css', v='2') }}">{% endblock %}
+{% block shell_class %}lobby-overview-shell{% endblock %}
+{% block extra_head %}<link rel="stylesheet" href="{{ url_for('static', filename='dice-table.css', v='11') }}">{% endblock %}
 {% block content %}
-  <section class="dice-lobby-browser">
-    <header class="dice-browser-head">
-      <p class="eyebrow">TABLETOP CONNECTION</p>
-      <h1>{{ table_title }}</h1>
-      <p>{% if is_maexchen %}Zwei Würfel, drei Leben und ein überzeugendes Pokerface.{% elif is_kniffel %}Fünf Würfel, drei Würfe und ein gemeinsamer Kniffelblock.{% else %}Erstellt einen Tisch oder setzt euch zu einer offenen Runde.{% endif %}</p>
-    </header>
-    <section class="party-list dice-party-list" aria-label="Offene Würfeltische">
-      {% for lobby in lobbies %}
-        <article class="party-tile">
-          <div><span>{{ 'IM SPIEL' if lobby.status == 'playing' else 'OFFEN' }}</span><h2>{{ lobby.name }}</h2><p>{{ lobby.member_count }}/6 Spieler</p></div>
-          {% if lobby.is_member %}
-            <a class="party-return" href="{{ url_for(resolved_lobby_endpoint, lobby_id=lobby.id) }}">{{ 'Zurück zum Tisch' if lobby.status == 'playing' else 'Zur Lobby' }}</a>
-          {% else %}
-            <form method="post" action="{{ url_for(resolved_join_endpoint, lobby_id=lobby.id) }}">
-              <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-              <button type="submit">Beitreten</button>
-            </form>
-          {% endif %}
-        </article>
-      {% else %}
-        <div class="party-empty">{% if is_maexchen %}Noch wartet keine Mäxchenrunde auf Mitspieler.{% else %}Noch wartet kein {{ 'Kniffeltisch' if is_kniffel else 'Würfeltisch' }} auf Mitspieler.{% endif %}</div>
-      {% endfor %}
-    </section>
-    <form method="post" action="{{ url_for(resolved_create_endpoint) }}" class="party-create">
-      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-      <button class="primary-button" type="submit">Lobby erstellen</button>
-    </form>
-    <a class="back-link" href="{{ url_for('tabletop_connection') }}">zurück zu tabletop connection</a>
-  </section>
+  {% set description = 'Zwei Würfel, drei Leben und ein überzeugendes Pokerface.' if is_maexchen else ('Fünf Würfel, drei Würfe und ein gemeinsamer Kniffelblock.' if is_kniffel else 'Erstellt einen Tisch oder setzt euch zu einer offenen Runde.') %}
+  {% call(lobby) lobby_overview(lobbies, resolved_game_mode, table_title, description, 6, resolved_create_endpoint, resolved_join_endpoint, resolved_lobby_endpoint, 'dice_tables', 'zurück zu würfeltischen', family='dice', signature=overview_signature|default(none), status_url=overview_status_url|default(none)) %}
+    {% if is_maexchen %}Würfel: 2 · Leben: 3{% elif is_kniffel %}Würfel: 5 · Würfe je Zug: 3{% else %}Würfel: {{ lobby.dice_count }} · Verdeckt: {{ 'Ja' if lobby.use_cup else 'Nein' }}{% endif %}
+  {% endcall %}
 {% endblock %}

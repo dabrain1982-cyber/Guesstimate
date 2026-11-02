@@ -1,0 +1,320 @@
+{
+  "name": "Black Jack – Elfenbein",
+  "date": "2026-10-31",
+  "approved_style": true,
+  "card_count": 52,
+  "dimensions": [
+    280,
+    380
+  ],
+  "delivery_format": "SVG",
+  "readability_revision": 3,
+  "corner_rank_size": 96,
+  "corner_suit_size": 36,
+  "ranks": [
+    "A",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "J",
+    "Q",
+    "K"
+  ],
+  "suits": [
+    "S",
+    "H",
+    "D",
+    "C"
+  ],
+  "cards": [
+    {
+      "code": "AS",
+      "file": "AS.svg",
+      "sha256": "19b21c5336688f73acbd03437309c5e6062af0e0a7ccbf64d9385bca12ad2ee6"
+    },
+    {
+      "code": "2S",
+      "file": "2S.svg",
+      "sha256": "f85b024217d6384fa6cbd2346e6c5f2b91f8a4a8e751ead906ab5a6ca0cd86b7"
+    },
+    {
+      "code": "3S",
+      "file": "3S.svg",
+      "sha256": "b97a59528c5981e9618b526bdbb29de10189cafa1a24946a3f0646872ae43c31"
+    },
+    {
+      "code": "4S",
+      "file": "4S.svg",
+      "sha256": "6bb16edd25ffed7c5bed1779f8a40948c9e7130190303fb5255eddfef598a0d0"
+    },
+    {
+      "code": "5S",
+      "file": "5S.svg",
+      "sha256": "7236855b09a524709fa67b6e8b05e296699e849d4a564fff954f187afac96c1b"
+    },
+    {
+      "code": "6S",
+      "file": "6S.svg",
+      "sha256": "b2eefe9a2be4b48463474573d472cb7ff9ea02350dee81a5213502426eb7bcd1"
+    },
+    {
+      "code": "7S",
+      "file": "7S.svg",
+      "sha256": "d4c21924374f7993e10038e7741ded916713c1dacc6aafa9e894d7dcb89e7462"
+    },
+    {
+      "code": "8S",
+      "file": "8S.svg",
+      "sha256": "a7ede0e869e5602993b763295d32f3cf469ba00180785e2928609eca1fad2313"
+    },
+    {
+      "code": "9S",
+      "file": "9S.svg",
+      "sha256": "8806619590d5938c00d7febfc388588ea597ef799e814f316485d1c3aa047c0d"
+    },
+    {
+      "code": "10S",
+      "file": "10S.svg",
+      "sha256": "cb29a3baf9dad48c61a858e0431a9ddeffbc105dd29cd33588ab5d290f123d84"
+    },
+    {
+      "code": "JS",
+      "file": "JS.svg",
+      "sha256": "bbb92bf4e541330d72f1e76fbac8119e8d1b230b79d147c7bcf71351219ec374"
+    },
+    {
+      "code": "QS",
+      "file": "QS.svg",
+      "sha256": "7616092e96c35b08dc522f970f9779b019a4fb6937412649864ee94a625fe393"
+    },
+    {
+      "code": "KS",
+      "file": "KS.svg",
+      "sha256": "21fa548c3ebc2ff55f2360962e9b2ca6d45e8040c461209ad786858c47676ca3"
+    },
+    {
+      "code": "AH",
+      "file": "AH.svg",
+      "sha256": "e7a7a4a2826713709c41c47d9b6d3bf8c56fe4adc3d066b139fdac261d0396b8"
+    },
+    {
+      "code": "2H",
+      "file": "2H.svg",
+      "sha256": "40f8e9b208b7d94e6e385b60d0d576d97fee4cedc8280410adb306fccbf7f5f2"
+    },
+    {
+      "code": "3H",
+      "file": "3H.svg",
+      "sha256": "e36f8d9b55e27b1cc18f06ac5270cff72f7e3c67f852d4f232b62453bc09c88e"
+    },
+    {
+      "code": "4H",
+      "file": "4H.svg",
+      "sha256": "362c9cbb62a97535e0654254955ab3e8a7f55a955c70d028dd5447759c9f3605"
+    },
+    {
+      "code": "5H",
+      "file": "5H.svg",
+      "sha256": "792edc04dc120c439c716fa7c4ac2ae240dfe1f5d88082a662fb8d1020bc644b"
+    },
+    {
+      "code": "6H",
+      "file": "6H.svg",
+      "sha256": "741c22be78a4d83e7f3a749e838c743528f2ce3a07c36c56f5daa001e534f664"
+    },
+    {
+      "code": "7H",
+      "file": "7H.svg",
+      "sha256": "5ed2f10c9dddeedc9198ad0c2baf4ac00716a706f8f843e52da18b96b6b06ad3"
+    },
+    {
+      "code": "8H",
+      "file": "8H.svg",
+      "sha256": "f3384ee17eeecdfa1d8201bd25a24561110927a27d10679805f21296c4d9348c"
+    },
+    {
+      "code": "9H",
+      "file": "9H.svg",
+      "sha256": "6cb663bdb0092945262977a40a3826fb6b67492d6d6e15fc1b0c05cb2250d7db"
+    },
+    {
+      "code": "10H",
+      "file": "10H.svg",
+      "sha256": "79c2f0786056453b3062dbb93a89628d4cd9df6af5896dc4c2bf9ff77a5f4b72"
+    },
+    {
+      "code": "JH",
+      "file": "JH.svg",
+      "sha256": "add5bbb0dd6ee6e3d6dfd45fb22c870ca527f1978276e4b5441223c00022c128"
+    },
+    {
+      "code": "QH",
+      "file": "QH.svg",
+      "sha256": "026b65f9c02aeabc5cc4d7e5d6ef5d4ed3b12007f1a259d63b0123de72e45df7"
+    },
+    {
+      "code": "KH",
+      "file": "KH.svg",
+      "sha256": "8a93d8153f10d2a37881bbd05099aec19da1675d6c308e5b7df4c23698aeb0bc"
+    },
+    {
+      "code": "AD",
+      "file": "AD.svg",
+      "sha256": "cbb059bfcafa94b7c18c55d4235da73323af5d00d11670c276b3ecae68be990f"
+    },
+    {
+      "code": "2D",
+      "file": "2D.svg",
+      "sha256": "0abad3280cb6b3cdc1057b2333f9805180f63cffea3363964efcaf37b4c2faee"
+    },
+    {
+      "code": "3D",
+      "file": "3D.svg",
+      "sha256": "f5003433de0dace799afb123ae7eef3e7b2261e74508b4d91c496f4bd330a9cb"
+    },
+    {
+      "code": "4D",
+      "file": "4D.svg",
+      "sha256": "016dc8ddaa1128fe820f51d37a9d3ecf0488c647d105ceb6ada2dea5de82fe25"
+    },
+    {
+      "code": "5D",
+      "file": "5D.svg",
+      "sha256": "a4cef274ff06b9a8b514864c4cd56938d96583a82514e702719d8abd9f3938f8"
+    },
+    {
+      "code": "6D",
+      "file": "6D.svg",
+      "sha256": "5122a949c283d810d1c9b67e6047efc8c42b12d016c881215c9d05813efd9ac8"
+    },
+    {
+      "code": "7D",
+      "file": "7D.svg",
+      "sha256": "cbc8dd6edee147dbfd40d1a0dd66a269962e040aa395041b25bebf6eb5ebdde1"
+    },
+    {
+      "code": "8D",
+      "file": "8D.svg",
+      "sha256": "25bb755d97a4e55d8f24db4f35c19cbf1a15132943d4f804e832584d97a10e1f"
+    },
+    {
+      "code": "9D",
+      "file": "9D.svg",
+      "sha256": "2488d483c0a8b61b64b37cf09fa76f59175970123ca02064419f36631ba11121"
+    },
+    {
+      "code": "10D",
+      "file": "10D.svg",
+      "sha256": "6ca1f515f766ce403ea7efbb34e9536792d40779588b115d73bf206554e2d56b"
+    },
+    {
+      "code": "JD",
+      "file": "JD.svg",
+      "sha256": "ea82af2890f7169aa072af17cfddf3f99951f0e3f059afe084ac282d8a6c9310"
+    },
+    {
+      "code": "QD",
+      "file": "QD.svg",
+      "sha256": "edad11fb632bcc028f9f19ca692e426342b032534d0810722f6bf4751a1f0161"
+    },
+    {
+      "code": "KD",
+      "file": "KD.svg",
+      "sha256": "feca947ee78f3f5dc5658c16a24ed24698966b78f31d4ba10d81cd305512b2c5"
+    },
+    {
+      "code": "AC",
+      "file": "AC.svg",
+      "sha256": "c6ea8e547b03c425d5d038ee8a23452aa4ae6b0f97353b567ffeafda8d0cd3e0"
+    },
+    {
+      "code": "2C",
+      "file": "2C.svg",
+      "sha256": "091f2ec8d18a3bd9c8e90ea9aaa1e40c708756014829b0a24cf6f9d80873a48e"
+    },
+    {
+      "code": "3C",
+      "file": "3C.svg",
+      "sha256": "5cf7cdd6fea8fcf3726338ca62695a47cba22e0d2d734ce7e3bb50d840ad9f87"
+    },
+    {
+      "code": "4C",
+      "file": "4C.svg",
+      "sha256": "eac273e31f76744342a98afb3a70c49e37d886593945924fd3d15f5f3cf5cd85"
+    },
+    {
+      "code": "5C",
+      "file": "5C.svg",
+      "sha256": "fac416bb6556702cec2f89a002212416162ccdc80d72e2ba6e8a65892371222c"
+    },
+    {
+      "code": "6C",
+      "file": "6C.svg",
+      "sha256": "6b872244b56869b9da3aa059489f0edbcca6f457909bcbdfc4f376887b061a85"
+    },
+    {
+      "code": "7C",
+      "file": "7C.svg",
+      "sha256": "c02ecd857f19abe28caafada14f693c03d17c6cfa58ed0491243b0fec523b9b9"
+    },
+    {
+      "code": "8C",
+      "file": "8C.svg",
+      "sha256": "328c39dd7548af68fd8f011cdf662c146fb0bd03e34fbf9075561f8cdc5e9184"
+    },
+    {
+      "code": "9C",
+      "file": "9C.svg",
+      "sha256": "7800eb3ec5bff854b6547470b9cd69efdbad8cc1cd4362f09b3036976e97549a"
+    },
+    {
+      "code": "10C",
+      "file": "10C.svg",
+      "sha256": "65d5b8b501afb2637c731921cd05cf01c16e7de364a39b09c446be18f23b4098"
+    },
+    {
+      "code": "JC",
+      "file": "JC.svg",
+      "sha256": "66feeba9078a4bfc5ae80647454239d49edbbca8a40a776eb66469be686e5c4e"
+    },
+    {
+      "code": "QC",
+      "file": "QC.svg",
+      "sha256": "d8179bee6c7898fe8ea51300ec4b6a4be046cf0cde74ca2f13f5d58eb58568cb"
+    },
+    {
+      "code": "KC",
+      "file": "KC.svg",
+      "sha256": "9523aa253f4e317e8779f756c71e0d5a586eff51f66a07ef54487ef423cc5c8b"
+    }
+  ],
+  "canonical_renderer": "offline-preview/blackjack-v1/card-fronts/render_deck.py",
+  "approved_samples": [
+    "AS",
+    "7D",
+    "KC"
+  ],
+  "court_art": "three unchanged generated RGBA originals; same court per rank across all suits; SVG reuses the same half without duplicating the portrait",
+  "back": "samtgruen-gold-140.webp unchanged",
+  "previous_deck": "offline-preview/card-comparison-v1/assets/kenney retained",
+  "prompts": [
+    "offline-preview/blackjack-v1/card-front-drafts/king-art-prompt.txt",
+    "offline-preview/blackjack-v1/card-front-drafts/queen-art-prompt.txt",
+    "offline-preview/blackjack-v1/card-front-drafts/jack-art-prompt.txt"
+  ],
+  "generation": {
+    "mode": "built-in image_gen",
+    "originals_unmodified": true,
+    "prompts": {
+      "king": "Use case: illustration-story. Asset: transparent central court illustration for a custom King of Clubs playing card in an old, cosy Blackjack tavern. Create ONE upright half-length human king, from crown to waist, as an exquisite traditionally painted playing-card illustration. Mature face with character, neat grey beard, antique brass crown, dark forest-green and oxblood robes, muted gold embroidery, a traditional ceremonial sword beside the torso. Rich restrained old-world craftsmanship, fine etched contours and painterly pigment, warm ivory highlights, realistic materials. Face and silhouette clear at small card size. Centered upright, balanced composition, crown and shoulders safely inside the canvas. Like a cherished high-quality old playing-card print, gently aged, not dirty or damaged. Flat front-on printed illustration, not a photograph, not a 3D card. Genuine transparent alpha background. Isolated illustration only: NO card rectangle, NO paper background, NO frame, NO text, NO letters, NO rank, NO suit symbols, NO grey panel, NO cast shadow, NO additional character. Single upper-body illustration only; do not mirror or duplicate it. The renderer will arrange it twice for a traditional double-ended King. Transparent breathing room around subject, vertical format.\n",
+      "queen": "Use case: illustration-story. Asset: transparent central court illustration for a custom Queen playing card in an old, cosy Blackjack tavern. Create ONE upright half-length human queen, from crown to waist, as an exquisite traditionally painted playing-card illustration. A regal adult woman with a dignified expressive face, softly styled dark hair, antique brass crown, dark forest-green and oxblood robes, muted gold embroidery, holding a small traditional flower by the torso. Match a traditional painted king with grey beard, green velvet robes, red tunic, gilded ornament and realistic warm materials. Rich restrained old-world craftsmanship, fine etched contours and painterly pigment, warm ivory highlights. Face and silhouette clear at small card size. Centered upright balanced composition, crown and shoulders safely inside the canvas. Like a cherished high-quality old playing-card print, gently aged, not dirty or damaged. Flat front-on printed illustration, not a photograph or a 3D card. Genuine transparent alpha background. Isolated illustration only: NO card rectangle, NO paper or scenic background, NO frame, NO letters, NO text, NO rank, NO suit symbols, NO grey panel, NO cast shadow, NO additional character. Single upper-body illustration only; do not mirror or duplicate. The renderer arranges it twice as a traditional double-ended Queen. Transparent breathing room around subject, vertical 2:3 canvas.\n",
+      "jack": "Use case: illustration-story. Asset: transparent central court illustration for a custom Jack playing card in an old, cosy Blackjack tavern. Create ONE upright half-length human jack, from feathered cap to waist, as an exquisite traditionally painted playing-card illustration. A young adult court page with a distinctive clean-shaven face, short wavy brown hair, antique forest-green feathered cap with brass brooch (NO crown), dark forest-green and oxblood doublet, muted gold embroidery, holding a traditional ceremonial pike beside the torso. Match a traditional painted king with grey beard, green velvet robes, red tunic, gilded ornament and realistic warm materials. Rich restrained old-world craftsmanship, fine etched contours and painterly pigment, warm ivory highlights. Face and silhouette clear at small card size. Centered upright balanced composition, cap, feather and shoulders safely inside the canvas. Like a cherished high-quality old playing-card print, gently aged, not dirty or damaged. Flat front-on printed illustration, not a photograph or a 3D card. Genuine transparent alpha background. Isolated illustration only: NO card rectangle, NO paper or scenic background, NO frame, NO letters, NO text, NO rank, NO suit symbols, NO grey panel, NO cast shadow, NO additional character. Single upper-body illustration only; do not mirror or duplicate. The renderer arranges it twice as a traditional double-ended Jack. Transparent breathing room around subject, vertical 2:3 canvas.\n"
+    }
+  }
+}

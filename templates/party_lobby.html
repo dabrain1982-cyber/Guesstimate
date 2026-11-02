@@ -1,38 +1,27 @@
 {% extends "base.html" %}
-{% from "_player_identity.html" import player_identity with context %}
+{% from "_lobby_room.html" import lobby_room, lobby_start_button, lobby_summary with context %}
 {% block title %}{{ lobby.name }} · {{ game_name }}{% endblock %}
 {% block header %}{% endblock %}
+{% block shell_class %}game-lobby-shell{% endblock %}
 {% block content %}
-  <section
-    class="party-head"
-    data-party-lobby
-    data-status-url="{{ url_for('party_status', lobby_id=lobby.id) }}"
-    data-member-signature="{{ members|map(attribute='id')|join(',') }}"
-    data-host-user-id="{{ lobby.host_user_id }}"
-    data-lobby-name="{{ lobby.name }}"
-    data-rounds="{{ lobby.rounds }}"
-  ><p class="eyebrow">LOBBY OFFEN</p><h1>{{ lobby.name }}</h1><p>{{ members|length }}/10 Plätze belegt</p></section>
-  {% if lobby.host_user_id == g.user['id'] %}
-    <form class="party-settings" method="post" action="{{ url_for('party_start', lobby_id=lobby.id) }}" data-party-settings data-settings-url="{{ url_for('party_settings', lobby_id=lobby.id) }}">
-      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-      <label>Lobbyname<input name="name" value="{{ lobby.name }}" maxlength="36"></label>
-      <label>Anzahl der Runden<select name="rounds">{% for count in range(1, 6) %}<option value="{{ count }}" {% if count == lobby.rounds %}selected{% endif %}>{{ count }}</option>{% endfor %}</select></label>
-      <p class="party-autosave" data-party-autosave>Wird automatisch übernommen.<span class="visually-hidden"> Einstellungen speichern ist nicht nötig.</span></p>
-      <button class="primary-button" type="submit">Classic-Quiz starten</button>
-    </form>
-  {% endif %}
-  <ol class="party-members">
-    {% for player in members %}
-      <li><span>{{ loop.index }}</span>{{ player_identity(player.display_name, player.avatar_id, player.plaque_id, 'party', 'Host' if player.user_id == lobby.host_user_id else 'Mitspieler') }}
-      {% if lobby.host_user_id == g.user['id'] and player.user_id != lobby.host_user_id %}<form method="post" action="{{ url_for('party_remove_member', lobby_id=lobby.id, member_id=player.id) }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit">Entfernen</button></form>{% endif %}</li>
-    {% endfor %}
-  </ol>
-  {% if lobby.host_user_id != g.user['id'] %}<p class="party-wait">Der Host startet die Party, sobald alle da sind.</p>{% endif %}
-  <form class="party-leave" method="post" action="{{ url_for('party_leave', lobby_id=lobby.id) }}">
-    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-    <button class="secondary-button" type="submit">Lobby verlassen</button>
-  </form>
+  {% set attributes = {'data-overview-url': url_for('party_index'), 'data-party-lobby': '', 'data-member-count': members|length, 'data-status-url': url_for('party_status', lobby_id=lobby.id), 'data-member-signature': members|map(attribute='id')|join(','), 'data-host-user-id': lobby.host_user_id, 'data-rounds': lobby.rounds} %}
+  {% call(slot, player=None) lobby_room(lobby, lobby_players, 10, 'party', 'guesstimate party · classic-quiz', members|length, leave_url=url_for('party_leave', lobby_id=lobby.id), attributes=attributes) %}
+    {% if slot == 'settings' %}
+      {% if lobby.host_user_id == g.user.id %}
+        <form method="post" action="{{ url_for('party_start', lobby_id=lobby.id) }}" data-lobby-settings data-party-settings data-settings-url="{{ url_for('party_settings', lobby_id=lobby.id) }}">
+          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+          <label class="lobby-field">Lobbyname<input name="name" value="{{ lobby.name }}" maxlength="36"></label>
+          <label class="lobby-field">Anzahl der Runden<select name="rounds">{% for count in range(1, 6) %}<option value="{{ count }}" {% if count == lobby.rounds %}selected{% endif %}>{{ count }}</option>{% endfor %}</select></label>
+          <p class="lobby-save-hint" data-lobby-autosave data-party-autosave>Wird automatisch übernommen.<span class="visually-hidden"> Einstellungen speichern ist nicht nötig.</span></p>
+          {{ lobby_start_button() }}
+        </form>
+      {% else %}
+        {{ lobby_summary([('Lobbyname', lobby.name), ('Anzahl der Runden', lobby.rounds)]) }}
+        <p class="lobby-help">Der Host startet das Spiel, sobald alle da sind.</p>
+      {% endif %}
+    {% elif slot == 'player_actions' and lobby.host_user_id == g.user.id and player.user_id != lobby.host_user_id %}
+      <form method="post" action="{{ url_for('party_remove_member', lobby_id=lobby.id, member_id=player.id) }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit">entfernen</button></form>
+    {% endif %}
+  {% endcall %}
 {% endblock %}
-{% block scripts %}
-  <script src="{{ url_for('static', filename='party.js', v='2', rev='autosave') }}" defer></script>
-{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='party.js', v='4', rev='autosave') }}" defer></script>{% endblock %}

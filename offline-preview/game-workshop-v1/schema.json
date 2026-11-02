@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "kinds": {
+    "board": {
+      "title": "Brett", "icon": "▦", "description": "Felder, Maße, Farben und Rahmen. Dasselbe Brett lässt sich für Schach oder Dame verwenden.",
+      "fields": [
+        {"key":"columns","label":"Spalten","type":"number","min":4,"max":12,"step":1,"default":8},
+        {"key":"rows","label":"Reihen","type":"number","min":4,"max":12,"step":1,"default":8},
+        {"key":"pattern","label":"Felder","type":"select","options":{"checker":"Abwechselnd hell / dunkel","grid":"Einfarbig mit Linien"},"default":"checker"},
+        {"key":"square","label":"Feldgröße","type":"range","min":0.5,"max":1,"step":0.05,"default":0.75},
+        {"key":"light","label":"Helle Felder","type":"color","default":"#e9d8b3"},
+        {"key":"dark","label":"Dunkle Felder","type":"color","default":"#527568"},
+        {"key":"frame","label":"Rahmenfarbe","type":"color","default":"#634530"},
+        {"key":"border","label":"Rahmenbreite","type":"range","min":0.05,"max":0.6,"step":0.05,"default":0.25},
+        {"key":"thickness","label":"Brettdicke","type":"range","min":0.06,"max":0.45,"step":0.01,"default":0.18}
+      ]
+    },
+    "pieces": {
+      "title": "Figuren", "icon": "♞", "description": "Ein eigener Figurensatz. Proportionen und Material gelten für beide Seiten; Schachrollen bleiben unterscheidbar.",
+      "fields": [
+        {"key":"set","label":"Figurensatz","type":"select","options":{"chess":"Schach · sechs Figurentypen","checkers":"Dame · Spielsteine"},"default":"chess"},
+        {"key":"arrangement","label":"Aufstellung in der Vorschau","type":"select","options":{"start":"Startaufstellung","samples":"Einzelstücke zum Betrachten"},"default":"start"},
+        {"key":"style","label":"Formensprache","type":"select","options":{"classic":"Gedrechselt","geometric":"Geometrisch"},"default":"classic"},
+        {"key":"height","label":"Höhe","type":"range","min":0.6,"max":1.5,"step":0.05,"default":1},
+        {"key":"base","label":"Fußbreite","type":"range","min":0.65,"max":1.2,"step":0.05,"default":1},
+        {"key":"stem","label":"Körperbreite","type":"range","min":0.6,"max":1.5,"step":0.05,"default":1},
+        {"key":"head","label":"Kopfgröße","type":"range","min":0.7,"max":1.3,"step":0.05,"default":1},
+        {"key":"light","label":"Helle Figuren","type":"color","default":"#fff0d2"},
+        {"key":"dark","label":"Dunkle Figuren","type":"color","default":"#253e3a"},
+        {"key":"roughness","label":"Mattheit","type":"range","min":0.15,"max":1,"step":0.05,"default":0.4},
+        {"key":"metallic","label":"Metallwirkung","type":"range","min":0,"max":1,"step":0.05,"default":0.1}
+      ]
+    },
+    "background": {
+      "title":"Hintergrund", "icon":"◒", "description":"Raumkulisse und Tischfläche unabhängig vom Brett wählen. Bildkulissen bleiben flach; Brett und Objekte sind räumlich.",
+      "fields":[
+        {"key":"image","label":"Kulisse","type":"select","options":{"studio":"Farbfläche","room":"Vorhandener Raum ohne Tisch","club":"Perfect · Clubraum","cards":"Kartenraum"},"default":"studio"},
+        {"key":"color","label":"Hintergrundfarbe","type":"color","default":"#d4dacc"},
+        {"key":"table","label":"Tischoberfläche","type":"select","options":{"plain":"Einfarbig","wood":"Holz","slate":"Schiefer"},"default":"wood"},
+        {"key":"tint","label":"Tischfarbe","type":"color","default":"#9b7657"}
+      ]
+    },
+    "camera": {
+      "title":"Darstellung & Kamera", "icon":"◉", "description":"Flache Draufsicht, räumlich ohne Perspektive oder frei einstellbare Perspektive. Kamera gehört zur Ausstattung, nicht zu den Spielregeln.",
+      "fields":[
+        {"key":"mode","label":"Darstellungsart","type":"select","options":{"2d":"2D · flache Draufsicht","2.5d":"2,5D · räumlich, parallel","3d":"3D · Perspektive"},"default":"3d"},
+        {"key":"elevation","label":"Blick von oben · Grad","type":"range","min":20,"max":85,"step":1,"default":48},
+        {"key":"rotation","label":"Blickrichtung · Grad","type":"range","min":-180,"max":180,"step":1,"default":0},
+        {"key":"distance","label":"Abstand / Bildausschnitt","type":"range","min":8,"max":25,"step":0.5,"default":14},
+        {"key":"fov","label":"Brennweite · Bildwinkel","type":"range","min":25,"max":65,"step":1,"default":42}
+      ]
+    },
+    "room": {
+      "title":"Licht & Verhalten", "icon":"☀", "description":"Licht und Schatten sowie einfache Bewegungsproben. Würfel fallen und prallen am Tisch ab; eine vollständige Physik-Engine ist noch kein Bestandteil.",
+      "fields":[
+        {"key":"ambient","label":"Grundlicht","type":"range","min":0.1,"max":3,"step":0.1,"default":1.5},
+        {"key":"light","label":"Gerichtetes Licht","type":"range","min":0,"max":6,"step":0.1,"default":3},
+        {"key":"angle","label":"Lichtrichtung · Grad","type":"range","min":-180,"max":180,"step":5,"default":-45},
+        {"key":"shadows","label":"Schatten","type":"checkbox","default":true},
+        {"key":"pieces","label":"Figuren bewegen","type":"select","options":{"off":"Nicht beweglich","snap":"Sofort auf das Zielfeld","glide":"Zum Zielfeld gleiten"},"default":"glide"},
+        {"key":"cards","label":"Karten aufdecken","type":"select","options":{"off":"Nicht beweglich","snap":"Sofort wenden","flip":"Mit Wendebewegung"},"default":"flip"},
+        {"key":"dice","label":"Würfel mit Fallbewegung","type":"checkbox","default":true},
+        {"key":"gravity","label":"Schwerkraft","type":"range","min":2,"max":20,"step":0.5,"default":10},
+        {"key":"bounce","label":"Rückprall am Tisch","type":"range","min":0,"max":0.8,"step":0.05,"default":0.35}
+      ]
+    },
+    "lobby": {
+      "title":"Lobby", "icon":"♧", "description":"Die vorhandene gemeinsame Guesstimate-Lobby als Ganzes verwenden. Hier gestaltest du ihre Ausstattung; Spieler und Konten sind nur Musterdaten.",
+      "fields":[
+        {"key":"title","label":"Lobbyname","type":"text","maxLength":80,"default":"Eine Partie Schach"},
+        {"key":"seats","label":"Plätze","type":"number","min":2,"max":8,"step":1,"default":2},
+        {"key":"background","label":"Raum der Lobby","type":"select","options":{"club":"Perfect · Clubraum","cards":"Kartenraum","conquest":"Conquest-Raum"},"default":"club"},
+        {"key":"accent","label":"Akzentfarbe","type":"color","default":"#d8e88a"},
+        {"key":"avatar","label":"Beispielavatar","type":"select","options":{"a00":"Neutral","a01":"Kea","a04":"Faultier","a05":"Waschbär"},"default":"a01"},
+        {"key":"plaque","label":"Beispielpult","type":"select","options":{"p00":"Startpult","p01":"Tavernenschild","p02":"Schiefer","p12":"Wurzelholz"},"default":"p01"}
+      ]
+    },
+    "dice": {
+      "title":"Würfel", "icon":"⚄", "description":"Eigene sechsseitige Würfel mit Größe, Farbe und Augen. Die Wurfprobe testet Bewegung und Aussehen, keine Spielregel.",
+      "fields":[
+        {"key":"count","label":"Anzahl in der Vorschau","type":"number","min":1,"max":5,"step":1,"default":2},
+        {"key":"size","label":"Größe","type":"range","min":0.35,"max":0.8,"step":0.05,"default":0.55},
+        {"key":"color","label":"Würfelfarbe","type":"color","default":"#f2e5c7"},
+        {"key":"pips","label":"Augenfarbe","type":"color","default":"#263e37"},
+        {"key":"roughness","label":"Mattheit","type":"range","min":0.15,"max":1,"step":0.05,"default":0.35}
+      ]
+    },
+    "cards": {
+      "title":"Karten", "icon":"▱", "description":"Eine eigene Musterkarte mit Vorderseite, Rückseite und frei formulierbarem Text. Kartensatz und Regeln können später daraus entstehen.",
+      "fields":[
+        {"key":"title","label":"Kartentitel","type":"text","maxLength":55,"default":"Dein nächster Zug"},
+        {"key":"text","label":"Kartentext","type":"textarea","maxLength":500,"default":"Hier beginnt eine neue Spielidee."},
+        {"key":"symbol","label":"Zeichen","type":"select","options":{"crown":"Krone","diamond":"Raute","star":"Stern","leaf":"Blatt"},"default":"crown"},
+        {"key":"front","label":"Vorderseite","type":"color","default":"#fff2d5"},
+        {"key":"back","label":"Rückseite","type":"color","default":"#315c50"},
+        {"key":"ink","label":"Schrift & Zeichen","type":"color","default":"#263d35"},
+        {"key":"accent","label":"Schmuckfarbe","type":"color","default":"#c59b4e"},
+        {"key":"ratio","label":"Breite / Höhe","type":"range","min":0.55,"max":1,"step":0.05,"default":0.7},
+        {"key":"size","label":"Kartengröße","type":"range","min":0.8,"max":1.6,"step":0.05,"default":1.15}
+      ]
+    }
+  }
+}

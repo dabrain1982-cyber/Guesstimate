@@ -1,0 +1,27 @@
+@font-face{font-family:'Media Chalk';src:url('/media-assets/fonts/cabinsketch/font.ttf');font-weight:700;font-display:block}
+@font-face{font-family:'Media Stone';src:url('/media-assets/fonts/cinzel/font.ttf');font-weight:400 900;font-display:block}
+@font-face{font-family:'Media Iron';src:url('/media-assets/fonts/stardosstencil/font.ttf');font-weight:700;font-display:block}
+@font-face{font-family:'Media Stamp';src:url('/media-assets/fonts/specialelite/font.ttf');font-weight:400;font-display:block}
+@font-face{font-family:'Media Hand';src:url('/media-assets/fonts/kalam/font.ttf');font-weight:400;font-display:block}
+@font-face{font-family:'Media Comic';src:url('/media-assets/fonts/fredoka/font.ttf');font-weight:300 700;font-display:block}
+@font-face{font-family:'Media Clear';src:url('/media-assets/fonts/inter/font.ttf');font-weight:100 900;font-display:block}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:transparent;font:16px/1.4 system-ui,sans-serif;font-synthesis:none}
+#media-stage{height:100%;padding:18px}
+.lettering{height:100%;padding:30px 26px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:17px;text-align:center;border:2px solid;border-radius:12px}
+.lettering h1{margin:0;font-size:54px;line-height:1.1;font-weight:inherit}
+.lettering p{margin:0;font-size:23px;line-height:1.35}.lettering .glyphs{font-size:20px;letter-spacing:.045em}
+.lettering small{font:13px/1.3 system-ui,sans-serif;opacity:.8;margin-top:9px}
+.finish-chalk{font-family:'Media Chalk',sans-serif;font-weight:700;color:#f4f0da;border-color:#685642;background:radial-gradient(ellipse at 28% 30%,#c1d0b515,transparent 60%),repeating-radial-gradient(circle at 12% 30%,#ffffff04 0 1px,transparent 1px 4px),#17362e;box-shadow:inset 0 0 28px #071e1b88}
+.finish-stone{font-family:'Media Stone',serif;font-weight:700;color:#353d3a;text-shadow:0 1px 0 #eff2e0cc,0 -1px 1px #0a171bbb;border-color:#68716c;background:repeating-radial-gradient(circle at 22% 19%,#233d3909 0 1px,transparent 1px 4px),linear-gradient(135deg,#b1b5a7,#8f998e 70%,#a4afa0);box-shadow:inset 2px 2px 0 #e1e5d277,inset -2px -2px 0 #3f4d42aa}
+.finish-iron{font-family:'Media Iron',serif;font-weight:700;color:#293638;text-shadow:0 1px 1px #e2e9e3,0 -2px 1px #101b1de6;border-color:#566569;background:repeating-linear-gradient(0deg,#ffffff09 0 1px,#0a171c08 1px 3px),linear-gradient(115deg,#75888a,#b9c5c1 42%,#7f9697);box-shadow:inset 2px 2px 0 #e0eeea99,inset -2px -2px 0 #253b40aa}
+.finish-stamp{font-family:'Media Stamp',serif;color:#873c36;border-color:#c4ae86;background:radial-gradient(ellipse at 10% 60%,#b68c4b1f,transparent 60%),#e6d9b9}
+.finish-stamp h1{transform:rotate(-1deg)}
+.finish-hand{font-family:'Media Hand',cursive;color:#354844;border-color:#c7b894;background:repeating-linear-gradient(0deg,transparent 0 33px,#8d9a7c28 33px 34px),#efe4c8}
+.finish-comic{font-family:'Media Comic',sans-serif;font-weight:600;color:#ffe7a5;border-color:#1d3f38;background:#367266;text-shadow:2px 2px 0 #153c34}
+.finish-comic h1{text-shadow:3px 4px 0 #153c34}
+.finish-clear{font-family:'Media Clear',sans-serif;font-weight:600;color:#29483d;border-color:#bac9b0;background:#f0f0df}
+.sound-card{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:24px;border:2px solid #789782;border-radius:12px;background:linear-gradient(145deg,#1d3c35,#132b29);color:#f3e8cd;text-align:center}
+.sound-card h1{margin:0;font-size:30px}.sound-card p{margin:0}.waveform{width:82%;height:64px;display:flex;align-items:center;gap:4px}.waveform span{flex:1;min-height:3px;background:#c7d89d;border-radius:3px}
+.sound-actions{display:flex;align-items:center;justify-content:center;gap:12px}.sound-actions button{border:1px solid #a4b494;background:#e8e6cc;color:#244237;border-radius:7px;padding:10px 18px;font:600 16px system-ui,sans-serif;cursor:pointer}.sound-actions button:disabled{opacity:.5;cursor:default}
+.sound-volume{display:flex;gap:10px;align-items:center;font-size:14px}.sound-volume input{accent-color:#d8dca8;width:145px}
+#sound-state{font-size:14px;min-height:20px;color:#d5ddca}#media-status{position:absolute;inset:44% 15px auto;text-align:center;color:#e9e1c5;background:#18342e}#media-status:empty{display:none}

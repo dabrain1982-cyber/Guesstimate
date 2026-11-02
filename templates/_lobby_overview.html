@@ -1,0 +1,31 @@
+{% macro lobby_overview(lobbies, game, title, description, capacity, create_endpoint, join_endpoint, lobby_endpoint, back_endpoint, back_label, family=None, completed_endpoint=None, signature=None, status_url=None) -%}
+<section class="lobby-browser" data-lobby-overview data-overview-game="{{ game }}" data-overview-family="{{ family or game }}"{% if status_url %} data-status-url="{{ status_url }}" data-signature="{{ signature }}"{% endif %}>
+  <header class="lobby-browser-heading"><p class="game-name">{{ 'guesstimate' if game == 'party' else 'games collection' }}</p><h1 class="game-name">{{ title }}</h1><p>{{ description }}</p></header>
+  <section class="lobby-browser-panel" aria-labelledby="lobby-browser-title">
+    <header class="lobby-browser-toolbar"><div><h2 id="lobby-browser-title">Spiellobbys</h2><p>Eröffne eine Lobby oder tritt einer offenen Runde bei.</p></div><form method="post" action="{{ url_for(create_endpoint) }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="primary-button" type="submit">lobby erstellen</button></form></header>
+    <div class="lobby-overview-error" role="status" aria-live="polite" data-overview-error hidden><p>Die Übersicht konnte gerade nicht aktualisiert werden. Die zuletzt geladenen Lobbys bleiben sichtbar.</p><button class="secondary-button" type="button" data-overview-retry>erneut prüfen</button></div>
+    <div class="lobby-browser-list">
+    {% for lobby in lobbies %}
+      {% set own = lobby.is_member|default(false) %}
+      {% set reserved = lobby.is_reserved|default(false) %}
+      {% set room_capacity = lobby.player_limit|default(capacity) %}
+      {% set full = lobby.member_count >= room_capacity %}
+      {% set state = 'full' if lobby.status == 'waiting' and full else lobby.status %}
+      <article class="lobby-browser-row{% if own or reserved %} is-own{% endif %}" data-overview-lobby="{{ lobby.id }}" aria-labelledby="overview-{{ game }}-{{ lobby.id }}">
+        <div class="lobby-browser-copy"><h3 id="overview-{{ game }}-{{ lobby.id }}">{{ lobby.name }}</h3>
+          <dl class="lobby-browser-facts"><div><dt>Host</dt><dd>{{ lobby.host_name|default('Unbekannt', true) }}</dd></div><div><dt>Belegung</dt><dd>{{ lobby.member_count }}/{{ room_capacity }} Spieler</dd></div><div><dt>Status</dt><dd><span class="lobby-browser-state is-{{ state }}">{{ {'waiting': 'Offen', 'full': 'Lobby voll', 'countdown': 'Startet gleich', 'playing': 'Partie läuft', 'completed': 'Beendet', 'closed': 'Geschlossen', 'abandoned': 'Geschlossen'}.get(state, 'Nicht verfügbar') }}</span></dd></div></dl>
+          <p class="lobby-browser-setting">{{ caller(lobby) }}</p>
+          {% if reserved %}<p class="lobby-browser-own">Dein Platz ist reserviert.</p>{% elif own %}<p class="lobby-browser-own">Deine Lobby</p>{% endif %}
+        </div>
+        <div class="lobby-browser-action">
+          {% if own %}<a class="primary-button" href="{{ url_for(completed_endpoint if lobby.status == 'completed' and completed_endpoint else lobby_endpoint, lobby_id=lobby.id) }}">{{ 'ergebnis ansehen' if lobby.status == 'completed' else 'zur lobby' if lobby.status == 'waiting' else 'zurück ins spiel' }}</a>
+          {% elif reserved or (lobby.status == 'waiting' and not full) %}<form method="post" action="{{ url_for(join_endpoint, lobby_id=lobby.id) }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="primary-button" type="submit">{{ 'zurückkehren' if reserved else 'beitreten' }}</button></form>
+          {% else %}<span class="lobby-browser-unavailable">{{ 'Lobby voll' if full and lobby.status == 'waiting' else 'Bereits gestartet' if lobby.status in ('countdown', 'playing') else 'Nicht verfügbar' }}</span>{% endif %}
+        </div>
+      </article>
+    {% else %}<div class="lobby-browser-empty"><h3>Noch keine Lobby.</h3><p>Erstelle eine Lobby – deine Freunde können hier direkt beitreten.</p></div>{% endfor %}
+    </div>
+  </section>
+  <a class="secondary-button lobby-browser-back" href="{{ url_for(back_endpoint) }}">{{ back_label }}</a>
+</section>
+{%- endmacro %}

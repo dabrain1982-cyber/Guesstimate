@@ -1,0 +1,6 @@
+Built-in image_gen edit; 30.10.2026
+Input: static/blackjack-tisch-sitzansicht-v1.webp
+Output: static/blackjack-room-wide-v1.png
+
+Outpaint horizontally to a wide 21:9 dark cozy antique card room. Preserve centered raccoon dealer, original dark walnut table, three betting rings, green felt, warm lighting. No text/UI.
+Status: saved unused draft. Visible edge mismatches in browser; not integrated. The approved original remains the game asset and fills the viewport through the canonical scene layout.

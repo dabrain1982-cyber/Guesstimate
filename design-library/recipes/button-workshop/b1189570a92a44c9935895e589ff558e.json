@@ -1,0 +1,188 @@
+{
+  "schema_version": 4,
+  "renderer_version": "button-workshop-v7",
+  "contour": {
+    "template": "rectangle",
+    "points": [
+      {
+        "x": 0,
+        "y": 0,
+        "round": 29.310344827586203
+      },
+      {
+        "x": 100,
+        "y": 0,
+        "round": 29.310344827586203
+      },
+      {
+        "x": 100,
+        "y": 100,
+        "round": 29.310344827586203
+      },
+      {
+        "x": 0,
+        "y": 100,
+        "round": 29.310344827586203
+      }
+    ]
+  },
+  "name": "Guesstimate · Startseite · spielen → Test 1",
+  "notes": "Eigener Entwurf aus Guesstimate · Startseite · spielen →",
+  "settings": {
+    "style": "minimal",
+    "material": "gradient",
+    "shape": "custom",
+    "edge": 0,
+    "finish": "matte",
+    "wear": 0,
+    "accent": "#e5ff53",
+    "font": "source",
+    "font_link": "manual",
+    "lettering": "plain",
+    "size": 23,
+    "label": "spielen",
+    "depth": 4,
+    "duration": 300,
+    "feel": "direct",
+    "sound": "media-piece",
+    "volume": 20,
+    "gradient_to": "#b9ed22",
+    "opacity": 0,
+    "font_scale": 150,
+    "shadow": 25,
+    "height_ratio": 100,
+    "ink_mode": "manual",
+    "ink_color": "#071124",
+    "depth_mode": "manual",
+    "depth_color": "#7863df",
+    "depth_x": 0
+  },
+  "kind": "button",
+  "review": {
+    "style": "open",
+    "motion": "open",
+    "shape": "open",
+    "surface": "open",
+    "lettering": "open",
+    "sound": "open"
+  },
+  "parent_id": null,
+  "base": {
+    "width": 430,
+    "height": 58,
+    "font_size": 15.3,
+    "font_family": "\"Guesstimate Inter\", Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "font_weight": "800",
+    "letter_spacing": "normal",
+    "line_height": "normal",
+    "text_transform": "lowercase",
+    "text_shadow": "none",
+    "ink": "#071124",
+    "background": "linear-gradient(rgb(229, 255, 83), rgb(185, 237, 34))",
+    "background_size": "auto",
+    "background_position": "0% 0%",
+    "surface": "#000000",
+    "opacity": 0,
+    "accent": "#e5ff53",
+    "gradient_to": "#b9ed22",
+    "gradient_angle": 180,
+    "material": "gradient",
+    "edge": 0,
+    "border_color": "rgb(7, 17, 36)",
+    "depth": {
+      "x": 0,
+      "y": 0,
+      "color": "#7863df"
+    },
+    "soft_shadow": "rgba(216, 255, 49, 0.34) 0px 0px 25px 0px, rgba(0, 0, 0, 0.3) 0px 12px 28px 0px",
+    "image": "",
+    "image_fit": "contain",
+    "text": "spielen",
+    "contour": {
+      "template": "rectangle",
+      "points": [
+        {
+          "x": 0,
+          "y": 0,
+          "round": 29.310344827586203
+        },
+        {
+          "x": 100,
+          "y": 0,
+          "round": 29.310344827586203
+        },
+        {
+          "x": 100,
+          "y": 100,
+          "round": 29.310344827586203
+        },
+        {
+          "x": 0,
+          "y": 100,
+          "round": 29.310344827586203
+        }
+      ]
+    },
+    "symbol": "→",
+    "svg": "",
+    "label_position": null,
+    "initial": {
+      "material": "gradient",
+      "accent": "#e5ff53",
+      "gradient_to": "#b9ed22",
+      "opacity": 0,
+      "shadow": 25
+    }
+  },
+  "source_button": {
+    "id": "gamebutton-daf9582f22eb8307d5d153",
+    "name": "Guesstimate · Startseite · spielen →",
+    "snapshot": {
+      "type": "game-button",
+      "source": {
+        "path": "templates/home.html",
+        "line": 57,
+        "ordinal": 3
+      },
+      "markup": "<button class=\"primary-button\" type=\"submit\"{% if not round_available|default(true) %} disabled title=\"Momentan sind keine neuen Fragen verfügbar.\"{% endif %}>{% if attempt %}runde fortsetzen{% else %}spielen{% endif %} <span aria-hidden=\"true\">→</span></button>",
+      "styles": [
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        }
+      ],
+      "source_sha256": "611bb72ad2ee545c2299a7a2f4f9667127b0c40ccb90f5380776f3895370e49a",
+      "example_values": true
+    }
+  },
+  "id": "b1189570a92a44c9935895e589ff558e",
+  "created_at": "2026-10-28T14:57:19.130054+00:00"
+}

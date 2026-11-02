@@ -1,0 +1,7 @@
+html,body{margin:0!important;padding:0!important;width:100%!important;height:100%!important;min-width:0!important;min-height:0!important;overflow:hidden!important}
+#room-stage{position:absolute;inset:0;overflow:hidden}
+#room-stage>.card-room,#room-stage>.dice-game-room,#room-stage>.perfect-room{position:relative!important;inset:auto!important;margin:0!important;width:100%!important;height:100%!important;min-height:0!important;max-width:none!important}
+#room-stage canvas{display:block;width:100%;height:100%}
+#room-status{position:absolute;inset:42% 20px auto;text-align:center;color:#fff0cc;text-shadow:0 2px 3px #000;font:20px system-ui,sans-serif;pointer-events:none}
+#room-status:empty{display:none}
+#room-view{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);padding:8px 16px;border:1px solid #cfb77c;border-radius:7px;background:#152c25;color:#fff0ca;font:16px system-ui,sans-serif;cursor:pointer}

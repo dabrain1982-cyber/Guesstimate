@@ -1,79 +1,41 @@
 {% extends "base.html" %}
-{% from "_profile_window.html" import profile_window with context %}
+{% from "_lobby_room.html" import lobby_room, lobby_start_button, lobby_summary with context %}
 {% set resolved_game_mode = game_mode|default('sandbox', true) %}
 {% set is_kniffel = resolved_game_mode == 'kniffel' %}
 {% set is_maexchen = resolved_game_mode == 'maexchen' %}
-{% block title %}{{ lobby.name }} · {{ 'Mäxchen' if is_maexchen else ('Kniffel' if is_kniffel else 'Würfeltisch') }}{% endblock %}
+{% set lobby_game_title = 'mäxchen' if is_maexchen else ('kniffel' if is_kniffel else 'würfeltisch') %}
+{% block title %}{{ lobby.name }} · {{ lobby_game_title }}{% endblock %}
 {% block header %}{% endblock %}
-{% block extra_head %}<link rel="stylesheet" href="{{ url_for('static', filename='dice-table.css', v='2') }}">{% endblock %}
+{% block shell_class %}game-lobby-shell{% endblock %}
+{% block extra_head %}<link rel="stylesheet" href="{{ url_for('static', filename='dice-table.css', v='11') }}">{% endblock %}
 {% block content %}
-  <section class="dice-lobby-room" data-dice-lobby data-status-url="{{ url_for('dice_table_status', lobby_id=lobby.id) }}" data-revision="{{ lobby.revision }}" data-member-count="{{ members|length }}">
-    <header class="dice-room-head">
-      <p class="eyebrow">LOBBY OFFEN</p>
-      <h1>{{ lobby.name }}</h1>
-      <p>{{ members|length }}/6 Plätze belegt</p>
-    </header>
-    <section class="dice-lobby-players" aria-label="Mitspieler">
-      {% for player in members %}
-        <article class="dice-lobby-player{% if player.user_id == lobby.host_user_id %} is-host{% endif %}">
-          {{ profile_window(player.cosmetics, {}, show_edit=False, show_details=False, player_name=player.display_name, player_balance=player.currency_balance, instance_id='dice-player-' ~ player.id, balance_link=False) }}
-          <span>{{ 'Host' if player.user_id == lobby.host_user_id else 'Mitspieler' }}</span>
-        </article>
-      {% endfor %}
-    </section>
-    {% if is_maexchen and lobby.host_user_id == g.user.id %}
-      <form class="dice-lobby-next dice-lobby-settings" method="post" action="{{ url_for('maexchen_start', lobby_id=lobby.id) }}">
-        <div class="dice-option-summary"><span>Würfel</span><strong>2</strong><span>Leben</span><strong>3</strong></div>
-        <p>Strikt höhere Ansagen. Nach der zweiten Niederlage schwimmt man, nach der dritten scheidet man aus.</p>
-        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-        <button type="submit" class="primary-button" {% if members|length < 2 %}disabled{% endif %}>Mäxchen starten</button>
-      </form>
-    {% elif is_maexchen %}
-      <section class="dice-lobby-next dice-lobby-settings" aria-label="Mäxchenregeln">
-        <div class="dice-option-summary"><span>Würfel</span><strong>2</strong><span>Leben</span><strong>3</strong></div>
-        <p>Der Host startet, sobald mindestens zwei Personen am Tisch sitzen.</p>
-      </section>
-    {% elif lobby.host_user_id == g.user.id and not is_kniffel %}
-      <form class="dice-lobby-next dice-lobby-settings" method="post" action="{{ url_for('dice_table_start', lobby_id=lobby.id) }}" data-dice-settings data-settings-url="{{ url_for('dice_table_settings', lobby_id=lobby.id) }}">
-        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-        <div class="dice-option-row">
-          <label>Anzahl der Würfel
-            <select name="dice_count">
-              {% for count in range(1, 6) %}<option value="{{ count }}" {% if count == lobby.dice_count %}selected{% endif %}>{{ count }}</option>{% endfor %}
-            </select>
-          </label>
-          <label>Verdecktes Würfeln
-            <select name="use_cup">
-              <option value="0" {% if not lobby.use_cup %}selected{% endif %}>Nein</option>
-              <option value="1" {% if lobby.use_cup %}selected{% endif %}>Ja</option>
-            </select>
-          </label>
-        </div>
-        <p class="dice-settings-status" data-dice-autosave>Wird automatisch übernommen.</p>
-        <button type="submit" class="primary-button">Würfeltisch starten</button>
-      </form>
-    {% elif not is_kniffel %}
-      <section class="dice-lobby-next dice-lobby-settings" aria-label="Gewählte Würfeltischoptionen">
-        <div class="dice-option-summary"><span>Würfel</span><strong>{{ lobby.dice_count }}</strong><span>Verdeckt</span><strong>{{ 'Ja' if lobby.use_cup else 'Nein' }}</strong></div>
-        <p>Der Host startet den Würfeltisch, sobald alle da sind.</p>
-      </section>
-    {% elif lobby.host_user_id == g.user.id %}
-      <form class="dice-lobby-next dice-lobby-settings" method="post" action="{{ url_for('kniffel_start', lobby_id=lobby.id) }}">
-        <div class="dice-option-summary"><span>Würfel</span><strong>5</strong><span>Würfe je Zug</span><strong>3</strong></div>
-        <p>Der Kniffelblock erhält automatisch eine Spalte für jede Person in der Lobby.</p>
-        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-        <button type="submit" class="primary-button">Kniffeltisch starten</button>
-      </form>
-    {% else %}
-      <section class="dice-lobby-next dice-lobby-settings" aria-label="Kniffelregeln">
-        <div class="dice-option-summary"><span>Würfel</span><strong>5</strong><span>Würfe je Zug</span><strong>3</strong></div>
-        <p>Der Host startet den Kniffeltisch, sobald alle da sind.</p>
-      </section>
+  {% set attributes = {'data-overview-url': url_for('maexchen_index' if is_maexchen else 'kniffel_index' if is_kniffel else 'dice_table_index'), 'data-dice-lobby': '', 'data-status-url': url_for('dice_table_status', lobby_id=lobby.id), 'data-revision': lobby.revision, 'data-member-count': members|length, 'data-member-signature': members|map(attribute='id')|join(','), 'data-lobby-mode': resolved_game_mode} %}
+  {% call(slot, player=None) lobby_room(lobby, lobby_players, 6, 'dice', lobby_game_title, members|length, leave_url=url_for('dice_table_leave', lobby_id=lobby.id), attributes=attributes) %}
+    {% if slot == 'settings' %}
+      {% if is_maexchen %}
+        {{ lobby_summary([('Würfel', 2), ('Leben', 3)]) }}
+        <p class="lobby-help">Strikt höhere Ansagen. Nach der zweiten Niederlage schwimmt man, nach der dritten scheidet man aus.</p>
+      {% elif is_kniffel %}
+        {{ lobby_summary([('Würfel', 5), ('Würfe je Zug', 3)]) }}
+        <p class="lobby-help">Der Kniffelblock erhält automatisch eine Spalte für jede Person in der Lobby.</p>
+      {% elif lobby.host_user_id != g.user.id %}
+        {{ lobby_summary([('Würfel', lobby.dice_count), ('Verdeckt', 'Ja' if lobby.use_cup else 'Nein')]) }}
+      {% endif %}
+      {% if lobby.host_user_id == g.user.id %}
+        <form method="post" action="{{ url_for('maexchen_start' if is_maexchen else 'kniffel_start' if is_kniffel else 'dice_table_start', lobby_id=lobby.id) }}"{% if not is_kniffel and not is_maexchen %} data-lobby-settings data-dice-settings data-settings-url="{{ url_for('dice_table_settings', lobby_id=lobby.id) }}"{% endif %}>
+          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+          {% if not is_kniffel and not is_maexchen %}
+            <label class="lobby-field">Anzahl der Würfel<select name="dice_count">{% for count in range(1, 6) %}<option value="{{ count }}" {% if count == lobby.dice_count %}selected{% endif %}>{{ count }}</option>{% endfor %}</select></label>
+            <label class="lobby-field">Verdecktes Würfeln<select name="use_cup"><option value="0" {% if not lobby.use_cup %}selected{% endif %}>Nein</option><option value="1" {% if lobby.use_cup %}selected{% endif %}>Ja</option></select></label>
+            <p class="lobby-save-hint" data-lobby-autosave data-dice-autosave>Wird automatisch übernommen.</p>
+          {% endif %}
+          {{ lobby_start_button(is_maexchen and members|length < 2) }}
+          {% if is_maexchen and members|length < 2 %}<p class="lobby-help">Zum Starten müssen mindestens zwei Personen am Tisch sitzen.</p>{% endif %}
+        </form>
+      {% else %}
+        <p class="lobby-help">{{ 'Der Host startet, sobald mindestens zwei Personen am Tisch sitzen.' if is_maexchen else 'Der Host startet das Spiel, sobald alle da sind.' }}</p>
+      {% endif %}
     {% endif %}
-    <form class="dice-lobby-leave" method="post" action="{{ url_for('dice_table_leave', lobby_id=lobby.id) }}">
-      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-      <button class="secondary-button" type="submit">Lobby verlassen</button>
-    </form>
-  </section>
+  {% endcall %}
 {% endblock %}
-{% block scripts %}<script src="{{ url_for('static', filename='dice-table.js', v='8') }}" defer></script>{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='dice-table.js', v='10') }}" defer></script>{% endblock %}

@@ -1,0 +1,363 @@
+{
+  "checked_on": "2026-10-24",
+  "status": "local_candidates_only",
+  "source_library_count": 1403,
+  "candidate_count": 50,
+  "true": 27,
+  "false": 23,
+  "baseline_files": {
+    "fragen/multiplechoice/fragen.json": {
+      "sha256": "15b9d17cb7b289cd634c1ddd72b0f5f6a284e4eb6cfb232ed05d1855d599d642",
+      "sha256_lf": "cab124afe6382921bebfd81ca0f97aeb336a2c1c216e52e1db0e7d9289a06329"
+    },
+    "fragen/wahroderunwahr/fragen.json": {
+      "sha256": "abe84266edac631898b84e8c7eff3e143baa92f3c746467481dd11d152a26054",
+      "sha256_lf": "04ac863634b66fe40d0516329205281942e777ed5134a02e0f42ca98a47c3192"
+    },
+    "fragen/paarebilden/fragen.json": {
+      "sha256": "0aaf627df947e51f1729a4d52b83cb6ffa779b0009ef6a431e4a582b1c442ffa",
+      "sha256_lf": "830b6c2e7eec3b2a288c49058f65e19815679e8aaa7bc88ea3a9091ad254ce49"
+    },
+    "fragen/reihenfolge/fragen.json": {
+      "sha256": "a98d5671245a97b183254854ef36c91449dd49e35d3f2889d65c85b524187c43",
+      "sha256_lf": "07922d5b9e9e697cb7eacdc1b541faef40725b59ee8b703e5050e568c789176b"
+    },
+    "fragen/schaetzung/fragen.json": {
+      "sha256": "44ae06081792c158c08c1845fdcb35f3f9f02dd4c2e9e66e489531a8732cf0dc",
+      "sha256_lf": "e5a79ffd48b5f4813f8185066e74d2ac34e3cf4202ead51af9ce8ce4fb46bf2c"
+    },
+    "fragen/zweigruppenzuordnen/fragen.json": {
+      "sha256": "8fa5173dcfb7408c7bd9f40b24c6173c22611460d0782b11ca32c35d1522f9c7",
+      "sha256_lf": "21fc935fe304fb690dd9ef0127ca420e54f6bfc61bc03ffb9a78aa6697a87964"
+    }
+  },
+  "rejected_candidates": [
+    {
+      "key": "pinguin",
+      "prompt": "In freier Wildbahn leben Pinguine auch nördlich des Äquators.",
+      "reason": "Starke Nähe zur Verbreitungsfrage tf18; dessen Erklärung ist außerdem fachlich zu prüfen."
+    },
+    {
+      "key": "dose",
+      "prompt": "Der Dosenöffner wurde erst Jahrzehnte nach der Konservendose erfunden.",
+      "reason": "Derselbe Wissenskern bereits in tf186."
+    },
+    {
+      "key": "voyager",
+      "prompt": "Die „Golden Records“ an Bord der Voyager-Sonden bestehen aus massivem Gold.",
+      "reason": "Zu nah an es225; dort wird die vergoldete Voyager-Schallplatte bereits erklärt."
+    },
+    {
+      "key": "faxalt",
+      "prompt": "Ein Vorläufer des Faxgeräts wurde bereits vor dem Telefon patentiert.",
+      "reason": "Derselbe Wissenskern bereits in tf187."
+    }
+  ],
+  "source_checks": [
+    {
+      "proposed_id": "tf700",
+      "research_key": "ps3",
+      "evidence_summary": "Die Ankündigung des Air Force Research Laboratory beschreibt den Condor Cluster aus PS3-Prozessoren und weiterer Hardware.",
+      "access_note": "Vollständiger inhaltlicher Suchindex des Originalartikels gelesen; direkter Aufruf im Recherchewerkzeug mit HTTP 403 abgewiesen."
+    },
+    {
+      "proposed_id": "tf701",
+      "research_key": "switch",
+      "evidence_summary": "Nintendos Support nennt ausdrücklich die Beschichtung der Switch-Spielkarten mit Denatoniumbenzoat.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf702",
+      "research_key": "eve",
+      "evidence_summary": "Der Spielehersteller erklärt die Auswertung von Durchflusszytometrie-Daten für die Krebs- und Immunforschung.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf703",
+      "research_key": "seegurke",
+      "evidence_summary": "Das Natural History Museum beschreibt das Ausstoßen und Nachwachsen der Cuvier-Schläuche bei Seeäpfeln.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf704",
+      "research_key": "mondrost",
+      "evidence_summary": "NASA beschreibt Spektraldaten als Hinweise auf Hämatit. Der vorgeschlagene Entstehungsweg ist ein Modell, kein gesicherter Nachweis.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf705",
+      "research_key": "komet",
+      "evidence_summary": "ESA unterscheidet Staub- und Plasmaschweif und beschreibt deren von der Sonne weg gerichtete Ausrichtung.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf706",
+      "research_key": "olympkunst",
+      "evidence_summary": "Das Olympic Studies Centre dokumentiert die Kunstwettbewerbe von 1912 bis 1948 und ihre Medaillengewinner.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf707",
+      "research_key": "tauziehen",
+      "evidence_summary": "Olympedia führt die olympischen Austragungen und Medaillen des Tauziehens auf.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf708",
+      "research_key": "golfbruch",
+      "evidence_summary": "Die zuständige Regelorganisation R&A legt in Regel 4.2b ausdrücklich fest, dass der Schlag nicht zählt.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf709",
+      "research_key": "gebirge",
+      "evidence_summary": "NOAA nennt die mittelozeanischen Rücken als längstes Gebirgssystem und einen Unterwasseranteil von etwa 90 Prozent.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf710",
+      "research_key": "vasa",
+      "evidence_summary": "Das zuständige Vasa-Museum beschreibt das Sinken beim ersten Auslaufen am 10. August 1628.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf711",
+      "research_key": "suez",
+      "evidence_summary": "Der ägyptische State Information Service nennt den Suezkanal ausdrücklich als Kanal ohne Schleusen.",
+      "access_note": "Inhaltlicher Suchindex des ägyptischen State Information Service gelesen; direkter Aufruf zeitweise mit Timeout."
+    },
+    {
+      "proposed_id": "tf712",
+      "research_key": "hai",
+      "evidence_summary": "NOAA nennt das geschätzte Altersintervall von 272 bis 512 Jahren und weist auf die Unsicherheit der Radiokarbondatierung hin.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf713",
+      "research_key": "glasorgel",
+      "evidence_summary": "Das Franklin Institute beschreibt rotierende Glasschalen und angefeuchtete Finger als Klangerzeugung.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf714",
+      "research_key": "gemuese",
+      "evidence_summary": "Die eigene Instrumentenübersicht des Orchesters erläutert Material, Bauweise und begrenzte Haltbarkeit.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf715",
+      "research_key": "stummfilm",
+      "evidence_summary": "Der filmhistorische Fachtext erläutert musikalische und andere akustische Begleitung; einzelne frühe Vorführungen konnten tatsächlich ohne organisierten Ton auskommen.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf716",
+      "research_key": "titan",
+      "evidence_summary": "NASA unterscheidet Methan- und Ethan-Seen an der Oberfläche ausdrücklich von Wassereis.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf717",
+      "research_key": "issgrav",
+      "evidence_summary": "ESA erklärt ausdrücklich, dass Mikrogravitation nicht eine entsprechend verringerte Gravitation bedeutet, sondern den gemeinsamen freien Fall.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf718",
+      "research_key": "plutojahr",
+      "evidence_summary": "NASA nennt Entdeckung 1930 und 248-jährige Umlaufzeit. Die Aussage folgt aus dem Vergleich mit dem ausdrücklich genannten Bezugsjahr 2026.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf719",
+      "research_key": "kraehen",
+      "evidence_summary": "Die University of Washington beschreibt das Wiedererkennen der beim Fang benutzten Masken bis zu zwei Jahre später.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf720",
+      "research_key": "eurobaumwolle",
+      "evidence_summary": "Die Deutsche Bundesbank nennt Baumwolle als Material des Banknotenpapiers.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf721",
+      "research_key": "pfeffer",
+      "evidence_summary": "Der botanische Garten Fairchild beschreibt schwarze, weiße, grüne und rote Pfefferkörner von derselben Pflanze, je nach Erntezeit und Verarbeitung.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf722",
+      "research_key": "magma",
+      "evidence_summary": "Der US Geological Survey widerlegt genau diese Vorstellung und erläutert den auf kurzen Zeitskalen festen Mantel.",
+      "access_note": "Inhaltlicher Suchindex des USGS gelesen; direkter Aufruf mit HTTP 403. Zusätzliche zugängliche NPS-Darstellung bestätigt den überwiegend festen Mantel."
+    },
+    {
+      "proposed_id": "tf723",
+      "research_key": "pando",
+      "evidence_summary": "Die Schutz- und Forschungsorganisation Friends of Pando erläutert den genetisch einheitlichen Espenklon und das gemeinsame Wurzelsystem.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf724",
+      "research_key": "briefkasten",
+      "evidence_summary": "Die Universität Galway dokumentiert frühe dunkelgrüne Briefkästen und den Wechsel zu Rot 1874.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf725",
+      "research_key": "frankreichbrasilien",
+      "evidence_summary": "Das französische Außenministerium bestätigt die gemeinsame Grenze Frankreichs mit Brasilien.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf726",
+      "research_key": "panamahut",
+      "evidence_summary": "Das Metropolitan Museum of Art nennt Ecuador als Herkunftsland und erläutert die spätere Verbindung des Namens mit Panama.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf727",
+      "research_key": "ballontiere",
+      "evidence_summary": "Die Schlossverwaltung von Versailles dokumentiert die Tiere an Bord und die zeitlich spätere freie Fahrt mit Menschen.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf728",
+      "research_key": "reifen",
+      "evidence_summary": "Michelin erklärt ausdrücklich, dass Carbon Black die charakteristische Farbe und erhöhte Verschleißfestigkeit bewirkt.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf729",
+      "research_key": "londonbruecke",
+      "evidence_summary": "USGS dokumentiert Verkauf, Transport und Wiederaufbau. Der technische Bericht HAER AZ-57 erläutert die Wiederverwendung der Verkleidungssteine.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf730",
+      "research_key": "edelstahl",
+      "evidence_summary": "Der Fachverband erklärt, welche Edelstahlgefüge magnetisch sind und warum die pauschale Behauptung falsch ist.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf731",
+      "research_key": "ketchup",
+      "evidence_summary": "Smithsonian beschreibt Fischsauce und frühe tomatenfreie Rezepturen als Vorgeschichte des heutigen Tomatenketchups.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf732",
+      "research_key": "papier",
+      "evidence_summary": "Guinness dokumentiert zwölf Halbierungen eines einzelnen Papierstreifens am 27. Januar 2002.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf733",
+      "research_key": "muskat",
+      "evidence_summary": "Das Indian Institute of Spices Research unterscheidet ausdrücklich Samenkern und roten Arillus als zwei Gewürze derselben Frucht.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf734",
+      "research_key": "pilze",
+      "evidence_summary": "Die Royal Botanic Gardens, Kew nennen die engere Verwandtschaft der Pilze mit Tieren ausdrücklich.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf735",
+      "research_key": "bbcpasta",
+      "evidence_summary": "Der BBC-Nachruf auf David Wheeler in Prospero, PDF-Seite 10, beschreibt den am 1. April 1957 gesendeten Panorama-Beitrag und die inszenierte Schweizer Spaghettiernte.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf736",
+      "research_key": "baertier",
+      "evidence_summary": "Die Originalstudie dokumentiert das Überleben nach Vakuumexposition und die stark verringerte Überlebensrate bei zusätzlicher UV-Strahlung.",
+      "access_note": "Originaltext über den ausgelesenen Verlagsindex geprüft; direkter Verlagsabruf mit HTTP 403. Zusätzliche NSF-Quelle zugänglich."
+    },
+    {
+      "proposed_id": "tf737",
+      "research_key": "basketballkorb",
+      "evidence_summary": "Das Springfield College beschreibt seine eigenen ersten Basketballkörbe und das spätere Entfernen der Böden.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf738",
+      "research_key": "oscargips",
+      "evidence_summary": "Die Academy bestätigt Gipsfiguren während dreier Kriegsjahre und die spätere Umtauschmöglichkeit.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf739",
+      "research_key": "aluminium",
+      "evidence_summary": "Der materialwissenschaftliche Fachbereich der KU Leuven nennt die anfänglich höhere Wertschätzung als Gold und den späteren Durchbruch der Massenproduktion.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf740",
+      "research_key": "ratten",
+      "evidence_summary": "Die Universität Marburg erläutert unhörbare Ultraschallvokalisationen und ihre Auslösung durch Kitzeln.",
+      "access_note": "Inhaltlicher Suchindex der Universität Marburg gelesen; direkter Aufruf im Werkzeug ohne Cacheantwort."
+    },
+    {
+      "proposed_id": "tf741",
+      "research_key": "gecko",
+      "evidence_summary": "Die Originalarbeit belegt trockene Van-der-Waals-Haftung der Zehenhärchen und prüft konkurrierende Haftmechanismen.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf742",
+      "research_key": "tennisweiss",
+      "evidence_summary": "Die ITF-Tabelle zu den regulären Balltypen nennt als zulässige Farben Weiß oder Gelb.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf743",
+      "research_key": "bierhefe",
+      "evidence_summary": "Das Bayerische Landesamt zitiert die Zutatenliste Gerste, Hopfen und Wasser; der vollständige historische Wortlaut enthält dort keine Hefe.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf744",
+      "research_key": "spacepen",
+      "evidence_summary": "NASA widerlegt die millionenschwere staatliche Entwicklung ausdrücklich und beschreibt die privat entwickelte Technik sowie die Nutzung auf beiden Seiten.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf745",
+      "research_key": "ampelgas",
+      "evidence_summary": "Das National Motor Museum nennt 1868, Signalarme und Gaslampen sowie die Explosion Anfang 1869.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf746",
+      "research_key": "knallkrebs",
+      "evidence_summary": "Die Originalstudie weist Lichtemission beim Kollaps einer vom Knallkrebs erzeugten Kavitationsblase nach.",
+      "access_note": "Originalabstract über Nature und PubMed inhaltlich gelesen; Nature-Direktabruf durch technische Anmeldeseite blockiert."
+    },
+    {
+      "proposed_id": "tf747",
+      "research_key": "sonnenblume",
+      "evidence_summary": "UC Davis unterscheidet nachführende wachsende Pflanzen und nach Osten gerichtete reife Sonnenblumen.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf748",
+      "research_key": "anglerfisch",
+      "evidence_summary": "Das Natural History Museum beschreibt die dauerhafte Verschmelzung einschließlich der Kreislaufverbindung bei bestimmten Tiefseearten.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    },
+    {
+      "proposed_id": "tf749",
+      "research_key": "regenbogen",
+      "evidence_summary": "Der Met Office erläutert vollständige Kreisregenbögen aus großer Höhe; der Internationale Wolkenatlas der WMO bestätigt dies.",
+      "access_note": "Quellseite direkt abgerufen; maßgeblicher Inhalt geprüft."
+    }
+  ],
+  "remaining_before_activation": [
+    "ID-Vorschläge und Inhaltsfingerabdrücke gegen die historische Live-Tabelle question_usage prüfen.",
+    "Weitere gewünschte Fragearten vor dem gemeinsamen Live-Update vorbereiten.",
+    "Vor der späteren Aktivierung aktuelle Bibliotheksprüfung, relevante Tests und sichtbare Live-Prüfung ausführen."
+  ]
+}

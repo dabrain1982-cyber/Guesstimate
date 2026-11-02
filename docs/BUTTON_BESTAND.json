@@ -1,0 +1,1306 @@
+{
+  "schema": 1,
+  "scope": "Aktuell lokal verbundene Seitenvorlagen, eigene Skripte und gespeicherte Conquest-Oberfläche; keine Live-Server-Prüfung.",
+  "registered_uses": 144,
+  "models": 85,
+  "games": {
+    "Conquest": {
+      "uses": 48,
+      "models": 34,
+      "includes_shared": true
+    },
+    "Gemeinsam": {
+      "uses": 24,
+      "models": 20,
+      "includes_shared": true
+    },
+    "Guesstimate": {
+      "uses": 29,
+      "models": 22,
+      "includes_shared": true
+    },
+    "Guesstimate Party": {
+      "uses": 20,
+      "models": 17,
+      "includes_shared": true
+    },
+    "Kniffel": {
+      "uses": 22,
+      "models": 20,
+      "includes_shared": true
+    },
+    "Mäxchen": {
+      "uses": 23,
+      "models": 19,
+      "includes_shared": true
+    },
+    "Perfect": {
+      "uses": 25,
+      "models": 21,
+      "includes_shared": true
+    },
+    "Playtable": {
+      "uses": 26,
+      "models": 22,
+      "includes_shared": true
+    },
+    "Profil": {
+      "uses": 35,
+      "models": 17,
+      "includes_shared": true
+    },
+    "Würfelspiele": {
+      "uses": 28,
+      "models": 21,
+      "includes_shared": true
+    },
+    "Würfeltisch": {
+      "uses": 21,
+      "models": 19,
+      "includes_shared": true
+    },
+    "Zugang": {
+      "uses": 2,
+      "models": 1,
+      "includes_shared": true
+    }
+  },
+  "native_coverage": [
+    {
+      "path": "templates/_leaderboard.html",
+      "line": 9,
+      "registered": [
+        "gamebutton-9eab99cf9b56cd5ef7deb1"
+      ]
+    },
+    {
+      "path": "templates/_leaderboard.html",
+      "line": 10,
+      "registered": [
+        "gamebutton-ec701f9975d1fa22b8205b"
+      ]
+    },
+    {
+      "path": "templates/_leaderboard.html",
+      "line": 11,
+      "registered": [
+        "gamebutton-05bb6db6bf8a3fbf28b3df"
+      ]
+    },
+    {
+      "path": "templates/_leaderboard.html",
+      "line": 12,
+      "registered": [
+        "gamebutton-fac5fd401213ac394a2386"
+      ]
+    },
+    {
+      "path": "templates/_leaderboard.html",
+      "line": 45,
+      "registered": [
+        "gamebutton-381920e7cba5721d6a8eea"
+      ]
+    },
+    {
+      "path": "templates/_leaderboard.html",
+      "line": 46,
+      "registered": [
+        "gamebutton-d47bf56c8e1d9cdf83eb68"
+      ]
+    },
+    {
+      "path": "templates/_leaderboard.html",
+      "line": 50,
+      "registered": [
+        "gamebutton-befde293bd489fd87c3123"
+      ]
+    },
+    {
+      "path": "templates/_lobby_overview.html",
+      "line": 5,
+      "registered": [
+        "gamebutton-efd048501edd4a9a794af7"
+      ]
+    },
+    {
+      "path": "templates/_lobby_overview.html",
+      "line": 6,
+      "registered": [
+        "gamebutton-871e2152a05439270e8b5c"
+      ]
+    },
+    {
+      "path": "templates/_lobby_overview.html",
+      "line": 21,
+      "registered": [
+        "gamebutton-09f5af8ddd7ad93c2cb973"
+      ]
+    },
+    {
+      "path": "templates/_lobby_overview.html",
+      "line": 22,
+      "registered": [
+        "gamebutton-7362f146cf58d441bcf312"
+      ]
+    },
+    {
+      "path": "templates/_lobby_overview.html",
+      "line": 29,
+      "registered": [
+        "gamebutton-3d50dc08c989f53d24d043"
+      ]
+    },
+    {
+      "path": "templates/_lobby_room.html",
+      "line": 4,
+      "registered": [
+        "gamebutton-e1c7a24c73db05708c4436"
+      ]
+    },
+    {
+      "path": "templates/_lobby_room.html",
+      "line": 41,
+      "registered": [
+        "gamebutton-4bde9ec44295def443cf8f"
+      ]
+    },
+    {
+      "path": "templates/_profile_window.html",
+      "line": 42,
+      "registered": [
+        "gamebutton-65e88e20145bad7f166252"
+      ]
+    },
+    {
+      "path": "templates/base.html",
+      "line": 48,
+      "registered": [
+        "gamebutton-8d8170e8981ce9f7e971ec"
+      ]
+    },
+    {
+      "path": "templates/base.html",
+      "line": 56,
+      "registered": [
+        "gamebutton-09ed3678ce32fcd7cda35f"
+      ]
+    },
+    {
+      "path": "templates/base.html",
+      "line": 95,
+      "registered": [
+        "gamebutton-d7a7eb1cc2c64edef7a6b9"
+      ]
+    },
+    {
+      "path": "templates/base.html",
+      "line": 96,
+      "registered": [
+        "gamebutton-470d1ffadc36522f69ad04"
+      ]
+    },
+    {
+      "path": "templates/base.html",
+      "line": 97,
+      "registered": [
+        "gamebutton-d4c42b0d22c1383a96fb2c"
+      ]
+    },
+    {
+      "path": "templates/base.html",
+      "line": 100,
+      "registered": [
+        "gamebutton-749507264d1909a6b2ef18"
+      ]
+    },
+    {
+      "path": "templates/base.html",
+      "line": 103,
+      "registered": [
+        "gamebutton-e25ad8d17c896627d1f7f8"
+      ]
+    },
+    {
+      "path": "templates/base.html",
+      "line": 107,
+      "registered": [
+        "gamebutton-54d9ac8f84b82532799ae7"
+      ]
+    },
+    {
+      "path": "templates/card_table_game.html",
+      "line": 17,
+      "registered": [
+        "gamebutton-3ba9f345260e04d3b8d8c7"
+      ]
+    },
+    {
+      "path": "templates/card_table_game.html",
+      "line": 22,
+      "registered": [
+        "gamebutton-bf40f174c00704e720e152"
+      ]
+    },
+    {
+      "path": "templates/card_table_game.html",
+      "line": 23,
+      "registered": [
+        "gamebutton-fe32f1aec448b37645861f"
+      ]
+    },
+    {
+      "path": "templates/card_table_game.html",
+      "line": 51,
+      "registered": [
+        "gamebutton-6ed860eb8e84ee963796bc"
+      ]
+    },
+    {
+      "path": "templates/card_table_game.html",
+      "line": 52,
+      "registered": [
+        "gamebutton-22b202d3a9f5f85ae22770"
+      ]
+    },
+    {
+      "path": "templates/card_table_game.html",
+      "line": 53,
+      "registered": [
+        "gamebutton-022a1237c89815d0487e2f"
+      ]
+    },
+    {
+      "path": "templates/card_table_game.html",
+      "line": 54,
+      "registered": [
+        "gamebutton-c1697e8399a63251cc5617"
+      ]
+    },
+    {
+      "path": "templates/card_table_game.html",
+      "line": 64,
+      "registered": [
+        "gamebutton-280fd3056276a59bb8da48"
+      ]
+    },
+    {
+      "path": "templates/card_table_game.html",
+      "line": 67,
+      "registered": [
+        "gamebutton-42858cd97ef6b55966b0ec"
+      ]
+    },
+    {
+      "path": "templates/card_table_game.html",
+      "line": 73,
+      "registered": [
+        "gamebutton-e2e61df2ab23a1beba393e",
+        "gamebutton-598d9af60704e1c1ffdc19"
+      ]
+    },
+    {
+      "path": "templates/card_table_game.html",
+      "line": 73,
+      "registered": [
+        "gamebutton-e2e61df2ab23a1beba393e",
+        "gamebutton-598d9af60704e1c1ffdc19"
+      ]
+    },
+    {
+      "path": "templates/conquest_lobby.html",
+      "line": 14,
+      "registered": [
+        "gamebutton-24ae115d763e32d3b9373d",
+        "gamebutton-389da6aead0573a2f0bd57"
+      ]
+    },
+    {
+      "path": "templates/conquest_lobby.html",
+      "line": 14,
+      "registered": [
+        "gamebutton-24ae115d763e32d3b9373d",
+        "gamebutton-389da6aead0573a2f0bd57"
+      ]
+    },
+    {
+      "path": "templates/conquest_lobby.html",
+      "line": 15,
+      "registered": [
+        "gamebutton-69f7a37a2f4ce5b987ba51"
+      ]
+    },
+    {
+      "path": "templates/conquest_lobby.html",
+      "line": 16,
+      "registered": [
+        "gamebutton-64af46d2aa6747c6000f9b",
+        "gamebutton-69eff15f783a4cc9f86719"
+      ]
+    },
+    {
+      "path": "templates/conquest_lobby.html",
+      "line": 16,
+      "registered": [
+        "gamebutton-64af46d2aa6747c6000f9b",
+        "gamebutton-69eff15f783a4cc9f86719"
+      ]
+    },
+    {
+      "path": "templates/conquest_lobby.html",
+      "line": 29,
+      "registered": [
+        "gamebutton-b2be813e4c4c3544266a7a"
+      ]
+    },
+    {
+      "path": "templates/conquest_lobby.html",
+      "line": 39,
+      "registered": [
+        "gamebutton-b8c87bfee94b64d4557d05"
+      ]
+    },
+    {
+      "path": "templates/conquest_lobby.html",
+      "line": 41,
+      "registered": [
+        "gamebutton-12918439eed0a1bbdbc74f"
+      ]
+    },
+    {
+      "path": "templates/dice_table_game.html",
+      "line": 31,
+      "registered": [
+        "gamebutton-d7c39e7ea175575e6f76ce"
+      ]
+    },
+    {
+      "path": "templates/dice_table_game.html",
+      "line": 79,
+      "registered": [
+        "gamebutton-9efb348103ca26117ef050"
+      ]
+    },
+    {
+      "path": "templates/dice_table_game.html",
+      "line": 83,
+      "registered": [
+        "gamebutton-c98f5bdcbdcaf8480eac96"
+      ]
+    },
+    {
+      "path": "templates/dice_table_game.html",
+      "line": 84,
+      "registered": [
+        "gamebutton-257bc70052b56ed98c9612"
+      ]
+    },
+    {
+      "path": "templates/dice_table_game.html",
+      "line": 85,
+      "registered": [
+        "gamebutton-5443bd610ae71d6d8fc65e"
+      ]
+    },
+    {
+      "path": "templates/dice_table_game.html",
+      "line": 86,
+      "registered": [
+        "gamebutton-6c708f8b02d8adeaf5b872"
+      ]
+    },
+    {
+      "path": "templates/dice_table_game.html",
+      "line": 87,
+      "registered": [
+        "gamebutton-13dd9b79ec082889a40d0e"
+      ]
+    },
+    {
+      "path": "templates/dice_table_game.html",
+      "line": 89,
+      "registered": [
+        "gamebutton-2ae006630109b56a84fdd2",
+        "gamebutton-20d7cd131b28407d43c4c2"
+      ]
+    },
+    {
+      "path": "templates/dice_table_game.html",
+      "line": 90,
+      "registered": [
+        "gamebutton-30709d28c3bd9dd65f9d58",
+        "gamebutton-de90591fbc258e8df526d8"
+      ]
+    },
+    {
+      "path": "templates/dice_table_game.html",
+      "line": 91,
+      "registered": [
+        "gamebutton-5efd43712a767ec08fe8d3",
+        "gamebutton-b5ef50b37243ae08d9b536"
+      ]
+    },
+    {
+      "path": "templates/dice_table_game.html",
+      "line": 101,
+      "registered": [
+        "gamebutton-ee5b4b13b9453c0e6d9edc"
+      ]
+    },
+    {
+      "path": "templates/home.html",
+      "line": 46,
+      "registered": [
+        "gamebutton-302dccacd6f9755186d623"
+      ]
+    },
+    {
+      "path": "templates/home.html",
+      "line": 47,
+      "registered": [
+        "gamebutton-fe75568005694b608fe129"
+      ]
+    },
+    {
+      "path": "templates/home.html",
+      "line": 53,
+      "registered": [
+        "gamebutton-de36d3e59197a113df5578"
+      ]
+    },
+    {
+      "path": "templates/home.html",
+      "line": 57,
+      "registered": [
+        "gamebutton-daf9582f22eb8307d5d153"
+      ]
+    },
+    {
+      "path": "templates/home.html",
+      "line": 64,
+      "registered": [
+        "gamebutton-4a657d675ec814262aec29"
+      ]
+    },
+    {
+      "path": "templates/home.html",
+      "line": 84,
+      "registered": [
+        "gamebutton-c43c104aca1a327ba26f07"
+      ]
+    },
+    {
+      "path": "templates/home.html",
+      "line": 95,
+      "registered": [
+        "gamebutton-593bcf8218f96de6adc6d5"
+      ]
+    },
+    {
+      "path": "templates/home.html",
+      "line": 98,
+      "registered": [
+        "gamebutton-3459dbb6b920ea8a96768a"
+      ]
+    },
+    {
+      "path": "templates/login.html",
+      "line": 21,
+      "registered": [
+        "gamebutton-26341f18cd1d4d4fc1e4df"
+      ]
+    },
+    {
+      "path": "templates/nerd_mode.html",
+      "line": 31,
+      "registered": [
+        "gamebutton-befaf4b84a6f3790c31a28"
+      ]
+    },
+    {
+      "path": "templates/nerd_mode.html",
+      "line": 35,
+      "registered": [
+        "gamebutton-961fb1e6663c8e63061432"
+      ]
+    },
+    {
+      "path": "templates/nerd_mode.html",
+      "line": 44,
+      "registered": [
+        "gamebutton-2a49cfbe737f4e84424808"
+      ]
+    },
+    {
+      "path": "templates/nerd_mode.html",
+      "line": 49,
+      "registered": [
+        "gamebutton-47b4177c9c0864d152bcff"
+      ]
+    },
+    {
+      "path": "templates/nerd_mode.html",
+      "line": 100,
+      "registered": [
+        "gamebutton-87002d4013b3fdf81ea3c2"
+      ]
+    },
+    {
+      "path": "templates/nerd_mode.html",
+      "line": 106,
+      "registered": [
+        "gamebutton-a705def26d691d3c916979"
+      ]
+    },
+    {
+      "path": "templates/nerd_mode.html",
+      "line": 116,
+      "registered": [
+        "gamebutton-5d8734c9aefbb13b5b6a28"
+      ]
+    },
+    {
+      "path": "templates/nerd_mode.html",
+      "line": 141,
+      "registered": [
+        "gamebutton-a3bfa5b11d75da2452c3b5"
+      ]
+    },
+    {
+      "path": "templates/nerd_mode.html",
+      "line": 167,
+      "registered": [
+        "gamebutton-336a19d9606cb4ec932c49"
+      ]
+    },
+    {
+      "path": "templates/nerd_mode.html",
+      "line": 186,
+      "registered": [
+        "gamebutton-0233188e2a20c05375fb0f"
+      ]
+    },
+    {
+      "path": "templates/nerd_mode.html",
+      "line": 223,
+      "registered": [
+        "gamebutton-44462811780a84417e8e39"
+      ]
+    },
+    {
+      "path": "templates/nerd_mode.html",
+      "line": 237,
+      "registered": [
+        "gamebutton-1b180e85ca96168ecbbc1f"
+      ]
+    },
+    {
+      "path": "templates/party_lobby.html",
+      "line": 23,
+      "registered": [
+        "gamebutton-c10c16951300f1a2385b9a"
+      ]
+    },
+    {
+      "path": "templates/party_question.html",
+      "line": 17,
+      "registered": [
+        "gamebutton-89c875197f803bd86f16e8"
+      ]
+    },
+    {
+      "path": "templates/party_question.html",
+      "line": 18,
+      "registered": [
+        "gamebutton-2979b0ddd5f2ad78cab75c"
+      ]
+    },
+    {
+      "path": "templates/party_question.html",
+      "line": 22,
+      "registered": [
+        "gamebutton-60b994a02335347bfb5fa8"
+      ]
+    },
+    {
+      "path": "templates/party_result.html",
+      "line": 15,
+      "registered": [
+        "gamebutton-0927bd8557f608a9420a46"
+      ]
+    },
+    {
+      "path": "templates/profile.html",
+      "line": 36,
+      "registered": [
+        "gamebutton-e84d78e3578b865b3b5681"
+      ]
+    },
+    {
+      "path": "templates/profile.html",
+      "line": 37,
+      "registered": [
+        "gamebutton-5d909e7004993fd175c160"
+      ]
+    },
+    {
+      "path": "templates/profile.html",
+      "line": 38,
+      "registered": [
+        "gamebutton-81655a4bf481a0d5af67a8"
+      ]
+    },
+    {
+      "path": "templates/profile.html",
+      "line": 39,
+      "registered": [
+        "gamebutton-0d925c971f0f048800c301"
+      ]
+    },
+    {
+      "path": "templates/profile.html",
+      "line": 50,
+      "registered": [
+        "gamebutton-ea5128ca6c2559a8bfd5ca"
+      ]
+    },
+    {
+      "path": "templates/profile.html",
+      "line": 54,
+      "registered": [
+        "gamebutton-8c45bec08f9d20d8429dad"
+      ]
+    },
+    {
+      "path": "templates/profile.html",
+      "line": 69,
+      "registered": [
+        "gamebutton-2784bafd6d83482c358a9f"
+      ]
+    },
+    {
+      "path": "templates/profile.html",
+      "line": 73,
+      "registered": [
+        "gamebutton-a26b09d38fdef259ac3d0b"
+      ]
+    },
+    {
+      "path": "templates/profile.html",
+      "line": 88,
+      "registered": [
+        "gamebutton-a68d57f101144a3bf872e6"
+      ]
+    },
+    {
+      "path": "templates/profile.html",
+      "line": 92,
+      "registered": [
+        "gamebutton-1cf8ec227a1acbc48eb7ad"
+      ]
+    },
+    {
+      "path": "templates/profile.html",
+      "line": 108,
+      "registered": [
+        "gamebutton-d664eb9fc799bc1a135e75"
+      ]
+    },
+    {
+      "path": "templates/profile.html",
+      "line": 112,
+      "registered": [
+        "gamebutton-e3728be8b8d9795fad9830"
+      ]
+    },
+    {
+      "path": "templates/question.html",
+      "line": 72,
+      "registered": [
+        "gamebutton-dec1d07da8a1970c5de4bf"
+      ]
+    },
+    {
+      "path": "templates/question.html",
+      "line": 79,
+      "registered": [
+        "gamebutton-338c4b5f3693af6b3531e2"
+      ]
+    },
+    {
+      "path": "templates/question.html",
+      "line": 121,
+      "registered": [
+        "gamebutton-9f4be869942052f69d7456"
+      ]
+    },
+    {
+      "path": "templates/register.html",
+      "line": 26,
+      "registered": [
+        "gamebutton-11732aa02f299b86154093"
+      ]
+    },
+    {
+      "path": "templates/result.html",
+      "line": 74,
+      "registered": [
+        "gamebutton-8a5993b55666f460b37d08"
+      ]
+    },
+    {
+      "path": "templates/result.html",
+      "line": 77,
+      "registered": [
+        "gamebutton-84394cc37ba195de716614"
+      ]
+    },
+    {
+      "path": "templates/shop.html",
+      "line": 21,
+      "registered": [
+        "gamebutton-3c7b1c9eae76c5a9196e19"
+      ]
+    },
+    {
+      "path": "templates/shop.html",
+      "line": 22,
+      "registered": [
+        "gamebutton-984649b0e5c4801ab48c57"
+      ]
+    },
+    {
+      "path": "templates/shop.html",
+      "line": 23,
+      "registered": [
+        "gamebutton-650e6048a89fe2d966b202"
+      ]
+    },
+    {
+      "path": "templates/shop.html",
+      "line": 24,
+      "registered": [
+        "gamebutton-4858743baaef2c04bcb120"
+      ]
+    },
+    {
+      "path": "templates/shop.html",
+      "line": 35,
+      "registered": [
+        "gamebutton-90356dc73646f88036750e"
+      ]
+    },
+    {
+      "path": "templates/shop.html",
+      "line": 37,
+      "registered": [
+        "gamebutton-870265e8cf294dc2c5b7ce"
+      ]
+    },
+    {
+      "path": "templates/shop.html",
+      "line": 39,
+      "registered": [
+        "gamebutton-42b0d081b1f59ee454e6fa"
+      ]
+    },
+    {
+      "path": "templates/shop.html",
+      "line": 55,
+      "registered": [
+        "gamebutton-f732fd7cdc8140e410b1ff"
+      ]
+    },
+    {
+      "path": "templates/shop.html",
+      "line": 57,
+      "registered": [
+        "gamebutton-742ccf9a0722e9ef3afa42"
+      ]
+    },
+    {
+      "path": "templates/shop.html",
+      "line": 73,
+      "registered": [
+        "gamebutton-8d2341c09723e9af42be3a"
+      ]
+    },
+    {
+      "path": "templates/shop.html",
+      "line": 75,
+      "registered": [
+        "gamebutton-8aed3c84efa7192ce49f76"
+      ]
+    },
+    {
+      "path": "templates/shop.html",
+      "line": 77,
+      "registered": [
+        "gamebutton-94a750a9b68f8a69f0aff9"
+      ]
+    },
+    {
+      "path": "templates/shop.html",
+      "line": 93,
+      "registered": [
+        "gamebutton-4ead3db8b116eabcbd14a0"
+      ]
+    },
+    {
+      "path": "templates/shop.html",
+      "line": 95,
+      "registered": [
+        "gamebutton-c574671ebec7a95ee4f781"
+      ]
+    },
+    {
+      "path": "templates/shop.html",
+      "line": 102,
+      "registered": [
+        "gamebutton-f8c416c7cf89ba18c34b7f"
+      ]
+    },
+    {
+      "path": "templates/tabletop_family.html",
+      "line": 48,
+      "registered": [
+        "gamebutton-882f6cba4d64f2fad03232"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 6,
+      "element_id": "table-back",
+      "registered": [
+        "gamebutton-b2d88cab69bbb7206f6644"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 8,
+      "element_id": null,
+      "registered": [
+        "gamebutton-fa1f59da25f4a4302ec679"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 10,
+      "element_id": null,
+      "registered": [
+        "gamebutton-75185f21e41d0062eb5037"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 17,
+      "element_id": "clear-selection",
+      "registered": [
+        "gamebutton-c09ab8df701573d644ac3b"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 24,
+      "element_id": null,
+      "registered": [
+        "gamebutton-d3353f320cccb4e6fe1b82"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 24,
+      "element_id": null,
+      "registered": [
+        "gamebutton-d296d60097e215c573fd25"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 24,
+      "element_id": null,
+      "registered": [
+        "gamebutton-15d4b1f0b3ad4f78017fda"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 31,
+      "element_id": "attack-clear",
+      "registered": [
+        "gamebutton-5eaa4651d5aa3572731a91"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 39,
+      "element_id": "deployment-less",
+      "registered": [
+        "gamebutton-1ef4562e46e595ee18c43a"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 39,
+      "element_id": "deployment-more",
+      "registered": [
+        "gamebutton-0f14d3f92921c02ea65d7c"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 42,
+      "element_id": "cancel-deployment",
+      "registered": [
+        "gamebutton-f1cde888590841d4869c67"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 42,
+      "element_id": "confirm-deployment",
+      "registered": [
+        "gamebutton-40ebd30458c89c4add8f30"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 45,
+      "element_id": "next-phase",
+      "registered": [
+        "gamebutton-21390220b91be5cde044b1"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 45,
+      "element_id": "roll-attack",
+      "registered": [
+        "gamebutton-6e45ef462db518f26deb8b"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 47,
+      "element_id": "reset-turn",
+      "registered": [],
+      "disposition": "Nur Offline-Demo; gespeichertes Spiel blendet diesen Testknopf ausdrücklich aus."
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 55,
+      "element_id": "notice-open-cards",
+      "registered": [
+        "gamebutton-be4a55b778b51e29c7bcc1"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 58,
+      "element_id": "dismiss-turn-receipt",
+      "registered": [
+        "gamebutton-3292cfa0fe41323a5c17d1"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 59,
+      "element_id": "awarded-card",
+      "registered": [],
+      "disposition": "Kartenkomponente mit Klickfläche; gehört zur Elementart Karten."
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 62,
+      "element_id": "close-victory",
+      "registered": [
+        "gamebutton-2cac5310eecf703012a3fe"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 69,
+      "element_id": "finish-game",
+      "registered": [
+        "gamebutton-f56562f1455bca67091d9c"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 69,
+      "element_id": "play-again",
+      "registered": [
+        "gamebutton-59fb4007ca766a713c5b49"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 72,
+      "element_id": "cards-toggle",
+      "registered": [
+        "gamebutton-b64c5710d85a648e43b1ea"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 74,
+      "element_id": "review-mission",
+      "registered": [
+        "gamebutton-49faa588d079b675ccd276"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 76,
+      "element_id": "trade-cards",
+      "registered": [
+        "gamebutton-67e9ddf0ece95c7b312ec8"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 84,
+      "element_id": "accept-mission",
+      "registered": [
+        "gamebutton-a0740a0dbb39090d14ff29"
+      ]
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 87,
+      "element_id": "reload",
+      "registered": [
+        "gamebutton-2c85aefbcfd1915db1b5bd"
+      ]
+    }
+  ],
+  "dynamic_factories": [
+    {
+      "path": "offline-preview/comic-ui-v1/components.js",
+      "line": 29,
+      "disposition": "Gemeinsamer Renderer; sieben registrierte Conquest-Aktionen."
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/territories.js",
+      "line": 74,
+      "disposition": "Truppenmarke mit Klickfläche; gehört zu Figuren/Spielsteinen."
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+      "line": 64,
+      "disposition": "Auswählbare Länderkarte; gehört zu Karten."
+    },
+    {
+      "path": "static/dice-table.js",
+      "line": 92,
+      "disposition": "registered",
+      "capture_keys": [
+        "dice-held",
+        "dice-tray"
+      ]
+    },
+    {
+      "path": "static/dice-table.js",
+      "line": 254,
+      "disposition": "registered",
+      "capture_keys": [
+        "kniffel-score"
+      ]
+    },
+    {
+      "path": "static/player-portrait.js",
+      "line": 32,
+      "disposition": "registered",
+      "capture_keys": [
+        "conquest-card-badge"
+      ]
+    }
+  ],
+  "other_element_bindings": [
+    {
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 59,
+      "element_id": "awarded-card",
+      "registered": [],
+      "disposition": "Kartenkomponente mit Klickfläche; gehört zur Elementart Karten."
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/territories.js",
+      "line": 74,
+      "disposition": "Truppenmarke mit Klickfläche; gehört zu Figuren/Spielsteinen."
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+      "line": 64,
+      "disposition": "Auswählbare Länderkarte; gehört zu Karten."
+    }
+  ],
+  "active_templates": [
+    "_conquest_board_surface.html",
+    "_conquest_rules.html",
+    "_game_flyers.html",
+    "_icons.html",
+    "_leaderboard.html",
+    "_lobby_overview.html",
+    "_lobby_room.html",
+    "_player_identity.html",
+    "_profile_window.html",
+    "base.html",
+    "card_table_game.html",
+    "card_table_index.html",
+    "card_table_lobby.html",
+    "conquest_board_preview.html",
+    "conquest_index.html",
+    "conquest_lobby.html",
+    "conquest_table.html",
+    "dice_table_game.html",
+    "dice_table_index.html",
+    "dice_table_lobby.html",
+    "home.html",
+    "login.html",
+    "nerd_index.html",
+    "nerd_mode.html",
+    "party_countdown.html",
+    "party_index.html",
+    "party_lobby.html",
+    "party_question.html",
+    "party_result.html",
+    "profile.html",
+    "question.html",
+    "register.html",
+    "result.html",
+    "shop.html",
+    "tabletop_connection.html",
+    "tabletop_family.html"
+  ],
+  "active_scripts": [
+    "offline-preview/button-workshop-v1/geometry.js",
+    "offline-preview/button-workshop-v1/renderer.js",
+    "offline-preview/button-workshop-v1/sound.js",
+    "offline-preview/comic-ui-v1/components.js",
+    "offline-preview/conquest-2-5d-v1/attack.js",
+    "offline-preview/conquest-2-5d-v1/camera.js",
+    "offline-preview/conquest-2-5d-v1/cards.js",
+    "offline-preview/conquest-2-5d-v1/fortify.js",
+    "offline-preview/conquest-2-5d-v1/game-buttons.js",
+    "offline-preview/conquest-2-5d-v1/player-portrait.js",
+    "offline-preview/conquest-2-5d-v1/remote-turn.js",
+    "offline-preview/conquest-2-5d-v1/scene.js",
+    "offline-preview/conquest-2-5d-v1/table-surface.js",
+    "offline-preview/conquest-2-5d-v1/territories.js",
+    "offline-preview/conquest-2-5d-v1/territory-model.js",
+    "offline-preview/conquest-2-5d-v1/turn-controls.js",
+    "offline-preview/conquest-2-5d-v1/turn-model.js",
+    "static/card-table.js",
+    "static/dice-table.js",
+    "static/feedback.js",
+    "static/game.js",
+    "static/home-variant-a.js",
+    "static/leaderboards.js",
+    "static/lobby-overview.js",
+    "static/lobby.js",
+    "static/match.js",
+    "static/party.js",
+    "static/player-portrait.js",
+    "static/profile-stage-v1.js",
+    "static/profile.js",
+    "static/rules.js",
+    "static/shop.js",
+    "static/stormseeds-perfect.js",
+    "static/timer.js"
+  ],
+  "vendor_scripts": [
+    "offline-preview/conquest-2-5d-v1/vendor/three/three.module.js",
+    "static/vendor/dddice-0.21.8.js"
+  ],
+  "unmounted_legacy": [
+    "static/conquest-table.js"
+  ],
+  "missing": [],
+  "stale_captures": [],
+  "evidence": {
+    "offline-preview/button-workshop-v1/geometry.js": "a0c22b4116cfdca6292decde499d8a029d58272ba013149c5d70a9846eb4a8c0",
+    "offline-preview/button-workshop-v1/renderer.js": "22854cb2f1aa07ab09ab7e500fb744402a5978d8aa188a1e4afc8887a43868ef",
+    "offline-preview/button-workshop-v1/sound.js": "8499e1eec02c02315bf70f9d03e014589f008dfdb29e6dcaf60d766ccdc19187",
+    "offline-preview/comic-ui-v1/components.js": "f25371e0cf650af41a59f50b869ce9fe64978801c0bf03046ea02e94fc7d6a96",
+    "offline-preview/conquest-2-5d-v1/attack.js": "c5641ad6a0e6812baf6b5b82c1e6f7a8366900b94dac818817266e24af284a17",
+    "offline-preview/conquest-2-5d-v1/camera.js": "c6de8f7941f7936be0d50b3ac02dd6065bd95bd8eb3dfbd39c16b515153f73a7",
+    "offline-preview/conquest-2-5d-v1/cards.js": "c0d5df1be01e92d37679ca68e31fba096598ac3279804c4d16207d4223a8ef02",
+    "offline-preview/conquest-2-5d-v1/fortify.js": "ac49ab7f802e753b94468f3f0d779348ff168278b8a57d5677695ec3330c2e1c",
+    "offline-preview/conquest-2-5d-v1/game-buttons.js": "990b203aef78606968b220965ca8f36d68ae4aa1afa63b94e13d86a79f5afe5d",
+    "offline-preview/conquest-2-5d-v1/player-portrait.js": "0351b0ca8ff42cb8dcded552a8e547c1c694e611c04e3fab8b31ddc270287246",
+    "offline-preview/conquest-2-5d-v1/remote-turn.js": "ae9003f85e0e19db9c7f00f266f686ad8a6a5bf8ceb6928b7ca9f093ba97efeb",
+    "offline-preview/conquest-2-5d-v1/scene.js": "67bb89dcecfc11cac4e6e25901c59e2a60a30f4cb42f7401f5363eddf726bb5e",
+    "offline-preview/conquest-2-5d-v1/table-surface.js": "1a64980e6f1b57318e819e03bdd5f796c4546cf75357336303fc658abf6f67ec",
+    "offline-preview/conquest-2-5d-v1/territories.js": "a9c9c58bac1c85a3e124f3418dec2cceb334cf609eee8af47154bd7bdab09227",
+    "offline-preview/conquest-2-5d-v1/territory-model.js": "575402dcd3031eb7ca4491c8c5beb459ee2f634ac5f89bebfb224c815a48f175",
+    "offline-preview/conquest-2-5d-v1/turn-controls.js": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe",
+    "offline-preview/conquest-2-5d-v1/turn-model.js": "439bc224cb8a6e4878baf44d6699a20e4ff476d82ef3c2fabb8f8235050ff7d3",
+    "static/card-table.js": "8d8ffacf2e301fdf9d1ac6f0552390dfdaed56a89d3db1d35258b282f57cf1ba",
+    "static/dice-table.js": "0c791957b35c39d3e1e0278c370871c187454e52d5754ce3da504798e0faf79e",
+    "static/feedback.js": "de1d917a8b482cb6f30d079abd656fba3183195ce56dfe79e78c587b421bdddb",
+    "static/game.js": "f931e01fc4979309eb4a03b4fe0c29b590648b49572b338a63891905bcccf3e3",
+    "static/home-variant-a.js": "f9107ae8716ef390ca3988ae02cfd32deb52870513605783c50c63d90da5f56c",
+    "static/leaderboards.js": "a74f584db79ab8b60f27905fcdbe5bd591837a9243d4bd67cde6f502ebc89141",
+    "static/lobby-overview.js": "0e2a20f15c720a9080f463a60bf1cfb1d032c29f78e008ed7b614d90d256df4b",
+    "static/lobby.js": "0536aacfd07db777d919324fae88ad19f800037d80d82556a5e6a9a3f4a34aab",
+    "static/match.js": "b338a3e34b283f0057500da5cb5b7548f79d522a7f26f508eb501aef8b0c4bf3",
+    "static/party.js": "b37659ff10c9708a6341500b18c60ed035df439cecab4b207d69243d4c823150",
+    "static/player-portrait.js": "0074da46e501bfd16110c3eb4dbee751609da1825cbe0647034f930d4a673d38",
+    "static/profile-stage-v1.js": "0fbd0c858289b21d912a5cd0cb845bd5ef7f7f12ebfe63c533c75f8a369b7f07",
+    "static/profile.js": "2d8577067e5a7e04820e465504e411fcfceed14f381a3134a57b435bcbdfb47b",
+    "static/rules.js": "3f0b2aa1b3c19f0b63990ecf1ae8dfa03192b0d66248f6f90b2f6408a592d4da",
+    "static/shop.js": "2826d6499c551b3b3c950434e67ac2431bb4a909633936fe7e5d3f8ecddc5b6f",
+    "static/stormseeds-perfect.js": "bbb6e1e3fb757cc5af7c85cd338a1db28b13854664fa2deef4380c0c6bc59620",
+    "static/timer.js": "aa081d7880e21f3d6404aca8dd53fdf346805a0c5b836a5a499d6f42ded819a9",
+    "templates/_conquest_board_surface.html": "0e470bbdb4f1b83cd662baa458631e2b80cfe97543b43e489e66752222b2b3c4",
+    "templates/_conquest_rules.html": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad",
+    "templates/_game_flyers.html": "7b9765d3217c39a097fcb2fd3b1f9b128064a844ebd891aae74d97c6329a3790",
+    "templates/_icons.html": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d",
+    "templates/_leaderboard.html": "135642dafe78aefc05b15d6cb124c180425cf30c193d5ff921dd9a4e43c2572b",
+    "templates/_lobby_overview.html": "5e3b9dd609407c52c8a0d5a0470eadd535ec8f2bd928773c5ef393784b0aaac4",
+    "templates/_lobby_room.html": "0a9bd5ae54abb911e564f521df459faae0be1a06275f436eefe2cfd604d7b588",
+    "templates/_player_identity.html": "57327f15b9533443467d7967d791627d7004d50b5027564d49c976f53e501434",
+    "templates/_profile_window.html": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008",
+    "templates/base.html": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3",
+    "templates/card_table_game.html": "8867fe59fe0e924fce9287f963e8ab539634d7274e5b02c241f7291d94212a93",
+    "templates/card_table_index.html": "6e3cb4988e7eb3340d2277beace0b8f209a450f54971c97b02123601b2031438",
+    "templates/card_table_lobby.html": "afa2aa3d8c15831de76fa589e30ad6c076882db065783e2df682c69a2dbe02c3",
+    "templates/conquest_board_preview.html": "f52a156ac1dd28bd78fbb3ca09205b54ddba6c2ed32ad79dd55fe737e787fdd0",
+    "templates/conquest_index.html": "5c54c80996905259ae515ac0b25db68a318225b694eb38cde5b3115c23a22f3c",
+    "templates/conquest_lobby.html": "f98d1481eac084a6fa1c46d958e5c054da19d62aa20ffaae2eb53c252b6c4070",
+    "templates/conquest_table.html": "4d52a2327dd480ea9bc76c175ec860536330221b6d34992abff1aee42767b83f",
+    "templates/dice_table_game.html": "338d84095c8ad4c0b24b7b6873388b0df671897062b0368930e85ffdaa09520b",
+    "templates/dice_table_index.html": "f5c480b244af7c34aeb05c1e00ecf2fe3c675066ee3a25007c47ae4bc4812b78",
+    "templates/dice_table_lobby.html": "186cb6c20857d6b6c502df3c5e2fe3b84fe627fd4ad2abf5601160dc3a0a8720",
+    "templates/home.html": "611bb72ad2ee545c2299a7a2f4f9667127b0c40ccb90f5380776f3895370e49a",
+    "templates/login.html": "133af3ab33e4f7ab2ed63e2a9deb4b9da75f70d98e0f0bd29ec9b91b5ae9268d",
+    "templates/nerd_index.html": "c364a33aa832d0c334e96ef578fd0fa908ea5cbff4458d04e989c7415f12e479",
+    "templates/nerd_mode.html": "06c25dc654cdea6e3422aa4759f5e86f0c01802c26afd357923fbe8a32ed14bb",
+    "templates/party_countdown.html": "91f6666ff267a164332e3a93d3220b6b6f39c288deb0ecf3cef9498183211707",
+    "templates/party_index.html": "93ad15bd18ded563a1131933d875c49195a4ec8653575747b0b911e810100669",
+    "templates/party_lobby.html": "49107278398a587e41b4435a249a6339e4f20a1e482e288a28287a8bbad48c2e",
+    "templates/party_question.html": "60e68890b6868ad33d402bcd2c2ed4e1a2cfd3bc2a7f2dd5b8d62a7ef3f9a8bc",
+    "templates/party_result.html": "8b54e637283cc96f3c9835233b6258b1f497c077fda2da4d291ce8b65f0d0d14",
+    "templates/profile.html": "5cf9a8d08769808ba5dd6988c51df14677f2ce5756f4805a6c870db389721b70",
+    "templates/question.html": "93c1eeea069024371d21c9694dd57c6e91c26ac9127b7b9c7a0b72713998d60c",
+    "templates/register.html": "e8228f360e5b49863c15ba2a38c2b03c31d9aae1f18c13f7e46e8a9d2781c1bb",
+    "templates/result.html": "0d6550d77e6089bd6c7cdb77305943190ae20b62d7c5c1b8aa13eb9d2ff18163",
+    "templates/shop.html": "fed90f23c7e205be37cbaecfb18545bbbd046472ee31bf2627c089b8f7edb5d5",
+    "templates/tabletop_connection.html": "063844e1411d45e8bee67989ffe5b41a20b5d916cfe49bdcc0575acdc5185eea",
+    "templates/tabletop_family.html": "001b55640cef34c070662667a6244c0e7c7580765d1bdf8617662870ec4a5449"
+  },
+  "design_candidates": [
+    {
+      "name": "Startseitenaktion und Nachholen",
+      "status": "Zielstil besprochen; Nachholbutton bleibt für den persönlichen Editortest unverändert."
+    },
+    {
+      "name": "Würfelauswahl: behalten / Ablage",
+      "status": "Eine Quellfunktion, kontextabhängig unterschiedliche Maße und Bewegung. Kandidat für Modelloptionen, keine Angleichung ausgeführt."
+    },
+    {
+      "name": "Conquest: Schließen / Auswahl aufheben",
+      "status": "Gleiche Aufgabe mit unterschiedlichen Größen und Kontexten. Kandidat zur gemeinsamen Optionsprüfung, keine Angleichung ausgeführt."
+    }
+  ]
+}

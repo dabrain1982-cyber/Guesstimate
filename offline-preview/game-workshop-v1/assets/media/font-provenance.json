@@ -1,0 +1,205 @@
+{
+  "cabinsketch": {
+    "source": "https://github.com/google/fonts/tree/main/ofl/cabinsketch",
+    "files": [
+      {
+        "file": "offline-preview/game-workshop-v1/assets/media/fonts/cabinsketch/font.ttf",
+        "original": "CabinSketch-Bold.ttf",
+        "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/cabinsketch/CabinSketch-Bold.ttf",
+        "git_blob": "4fb6f10f3089aa5cd0735303938e3d17d30e38ca",
+        "sha256": "0961688037b97947495c2e35e6e5a93f2b234490514e33346605ffedf9c7e6be",
+        "bytes": 271012
+      },
+      {
+        "file": "offline-preview/game-workshop-v1/assets/media/fonts/cabinsketch/DESCRIPTION.en_us.html",
+        "original": "DESCRIPTION.en_us.html",
+        "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/cabinsketch/DESCRIPTION.en_us.html",
+        "git_blob": "964e623320e269aa7e7137233fdcc10dc5ea7913",
+        "sha256": "13b182d4ac09e0c78ce5eabfa692bbde1ad98685d7eb617a18ede0c14f95b3dc",
+        "bytes": 307
+      },
+      {
+        "file": "offline-preview/game-workshop-v1/assets/media/fonts/cabinsketch/OFL.txt",
+        "original": "OFL.txt",
+        "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/cabinsketch/OFL.txt",
+        "git_blob": "9c2112136a6b4c851f36dcdba8387e1d19460f19",
+        "sha256": "f6fc9fbae062e4efc1b0306e27715d43cd64a48b8ffba81c22034b8efee4fce2",
+        "bytes": 4416
+      }
+    ]
+  },
+  "cinzel": {
+    "source": "https://github.com/google/fonts/tree/main/ofl/cinzel",
+    "files": [
+      {
+        "file": "offline-preview/game-workshop-v1/assets/media/fonts/cinzel/font.ttf",
+        "original": "Cinzel[wght].ttf",
+        "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/cinzel/Cinzel%5Bwght%5D.ttf",
+        "git_blob": "d218a0b9c8879fd5a708872cc0ef357e507b35ca",
+        "sha256": "f4d83d34d1f6c741193e4acf4b3dff9531e5a67b6aa65228d00a7db72a4e0f34",
+        "bytes": 125468
+      },
+      {
+        "file": "offline-preview/game-workshop-v1/assets/media/fonts/cinzel/DESCRIPTION.en_us.html",
+        "original": "DESCRIPTION.en_us.html",
+        "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/cinzel/DESCRIPTION.en_us.html",
+        "git_blob": "b12c423c9408e84ac74291972b04e8750e4e6525",
+        "sha256": "4d33bb82ceb6f220c605df142f20807e2f4ce2d9b6580dc93da30aef585fe0bf",
+        "bytes": 363
+      },
+      {
+        "file": "offline-preview/game-workshop-v1/assets/media/fonts/cinzel/OFL.txt",
+        "original": "OFL.txt",
+        "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/cinzel/OFL.txt",
+        "git_blob": "afdfd1412be934fe7cc40a5a2c5e06e354c44dcf",
+        "sha256": "f2b3029aba64c378bf0963b62945eee15e564fe4330b934c8f2eb058282b5e83",
+        "bytes": 4383
+      }
+    ]
+  },
+  "stardosstencil": {
+    "source": "https://github.com/google/fonts/tree/main/ofl/stardosstencil",
+    "files": [
+      {
+        "file": "offline-preview/game-workshop-v1/assets/media/fonts/stardosstencil/DESCRIPTION.en_us.html",
+        "original": "DESCRIPTION.en_us.html",
+        "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/stardosstencil/DESCRIPTION.en_us.html",
+        "git_blob": "d452bd62876f0405f4f4491a61e17f46aebc84a6",
+        "sha256": "2397a21c580ec71428862def6ebc8f45979023387c052a236ca9354e2f6a3de4",
+        "bytes": 487
+      },
+      {
+        "file": "offline-preview/game-workshop-v1/assets/media/fonts/stardosstencil/OFL.txt",
+        "original": "OFL.txt",
+        "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/stardosstencil/OFL.txt",
+        "git_blob": "fc6f2d6135b6388be368cb5e90953ebbd6e09544",
+        "sha256": "88d3abd47414e7912d0d2eb44ca89e0b1bd7c43cc2ebe58a8a75281ad75a0f60",
+        "bytes": 4424
+      },
+      {
+        "file": "offline-preview/game-workshop-v1/assets/media/fonts/stardosstencil/font.ttf",
+        "original": "StardosStencil-Bold.ttf",
+        "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/stardosstencil/StardosStencil-Bold.ttf",
+        "git_blob": "1605f8f25a64d7811c89b92b0e69d536f84cd418",
+        "sha256": "6b15f50b1b358512d922b5f11937af17e90704587e1d7fb009f1715d2d5dfa74",
+        "bytes": 33044
+      }
+    ]
+  },
+  "specialelite": {
+    "source": "https://github.com/google/fonts/tree/main/apache/specialelite",
+    "files": [
+      {
+        "file": "offline-preview/game-workshop-v1/assets/media/fonts/specialelite/DESCRIPTION.en_us.html",
+        "original": "DESCRIPTION.en_us.html",
+        "url": "https://raw.githubusercontent.com/google/fonts/main/apache/specialelite/DESCRIPTION.en_us.html",
+        "git_blob": "40ce721d0356b3e11573102e38c4fd5649d8d9f1",
+        "sha256": "2f3c60590adfad4637ef58abf46c2b466830f1920e4832647909ae55b261e1c6",
+        "bytes": 285
+      },
+      {
+        "file": "offline-preview/game-workshop-v1/assets/media/fonts/specialelite/LICENSE.txt",
+        "original": "LICENSE.txt",
+        "url": "https://raw.githubusercontent.com/google/fonts/main/apache/specialelite/LICENSE.txt",
+        "git_blob": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "bytes": 11358
+      },
+      {
+        "file": "offline-preview/game-workshop-v1/assets/media/fonts/specialelite/font.ttf",
+        "original": "SpecialElite-Regular.ttf",
+        "url": "https://raw.githubusercontent.com/google/fonts/main/apache/specialelite/SpecialElite-Regular.ttf",
+        "git_blob": "6654876f95f11cb2b55c7c4254727ef68dbea74c",
+        "sha256": "a776fcb4ceb8bdf03e2967688ebdad42680de5b91a7e62c17e718ae212d14bc4",
+        "bytes": 166180
+      }
+    ]
+  },
+  "kalam": {
+    "source": "https://github.com/google/fonts/tree/main/ofl/kalam",
+    "files": [
+      {
+        "file": "offline-preview/game-workshop-v1/assets/media/fonts/kalam/DESCRIPTION.en_us.html",
+        "original": "DESCRIPTION.en_us.html",
+        "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/kalam/DESCRIPTION.en_us.html",
+        "git_blob": "8613b09942dbbfe3e4a58e3e71bc60d3ba8d6b48",
+        "sha256": "2bb47fcbefbdc559d62de69d1b639143dfd198b22f6eb37773a12646d4b6e405",
+        "bytes": 1768
+      },
+      {
+        "file": "offline-preview/game-workshop-v1/assets/media/fonts/kalam/font.ttf",
+        "original": "Kalam-Regular.ttf",
+        "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/kalam/Kalam-Regular.ttf",
+        "git_blob": "0c956a29348e69bff24a1ae8952fd0b42569311c",
+        "sha256": "57cecb63d4608019371954274ae1d8c397764debd5b19d4a33c1efa4dc923c0b",
+        "bytes": 427360
+      },
+      {
+        "file": "offline-preview/game-workshop-v1/assets/media/fonts/kalam/OFL.txt",
+        "original": "OFL.txt",
+        "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/kalam/OFL.txt",
+        "git_blob": "6dd809659a8ccace7ccee108d024d33cd4f936da",
+        "sha256": "f62ef357d3a1c3d27edd35a6e1ba350e8a8d13499797964eeadefbf0b3b15d1f",
+        "bytes": 4373
+      }
+    ]
+  },
+  "fredoka": {
+    "source": "https://github.com/google/fonts/tree/main/ofl/fredoka",
+    "files": [
+      {
+        "file": "offline-preview/game-workshop-v1/assets/media/fonts/fredoka/DESCRIPTION.en_us.html",
+        "original": "DESCRIPTION.en_us.html",
+        "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/fredoka/DESCRIPTION.en_us.html",
+        "git_blob": "4baeeb755e75bb27b69d6a4536775ab40d1e4e12",
+        "sha256": "9a39301c57e30be2e79fec4bafdf3f53057931caee324c9eb4a4830cfdd5fba6",
+        "bytes": 505
+      },
+      {
+        "file": "offline-preview/game-workshop-v1/assets/media/fonts/fredoka/font.ttf",
+        "original": "Fredoka[wdth,wght].ttf",
+        "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/fredoka/Fredoka%5Bwdth%2Cwght%5D.ttf",
+        "git_blob": "349b6ecef8a358ede29b7bf74a08196be5d71b25",
+        "sha256": "2ba02e68b152868aef9ba28e24b3648c7d457fe6f25c761f2c2c53fb61a73fc8",
+        "bytes": 159184
+      },
+      {
+        "file": "offline-preview/game-workshop-v1/assets/media/fonts/fredoka/OFL.txt",
+        "original": "OFL.txt",
+        "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/fredoka/OFL.txt",
+        "git_blob": "791a98de7893b9bb62d06729745d00655e791a40",
+        "sha256": "5c9e7eee5c6b25f4b05b8d53b2e470ea4962f9ced742d044a98f7d95d1375bab",
+        "bytes": 4388
+      }
+    ]
+  },
+  "inter": {
+    "source": "https://github.com/google/fonts/tree/main/ofl/inter",
+    "files": [
+      {
+        "file": "offline-preview/game-workshop-v1/assets/media/fonts/inter/DESCRIPTION.en_us.html",
+        "original": "DESCRIPTION.en_us.html",
+        "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/DESCRIPTION.en_us.html",
+        "git_blob": "038192be31729a7460ca9acf12a9f94da9817d2f",
+        "sha256": "09f457d2dc12647db32b984cbddbbfabd7ef006603d93fbae42a3e5b30a11897",
+        "bytes": 627
+      },
+      {
+        "file": "offline-preview/game-workshop-v1/assets/media/fonts/inter/font.ttf",
+        "original": "Inter[opsz,wght].ttf",
+        "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/Inter%5Bopsz%2Cwght%5D.ttf",
+        "git_blob": "047c92f6e2212473dc436020afed689527076d44",
+        "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+        "bytes": 876576
+      },
+      {
+        "file": "offline-preview/game-workshop-v1/assets/media/fonts/inter/OFL.txt",
+        "original": "OFL.txt",
+        "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/OFL.txt",
+        "git_blob": "21f6aff961064c2e429f570995e446bcdd555422",
+        "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+        "bytes": 4377
+      }
+    ]
+  }
+}

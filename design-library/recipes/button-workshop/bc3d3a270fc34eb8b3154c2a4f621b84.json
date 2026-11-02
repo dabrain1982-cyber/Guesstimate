@@ -1,0 +1,92 @@
+{
+  "schema_version": 2,
+  "renderer_version": "button-workshop-v3",
+  "contour": {
+    "template": "comic",
+    "points": [
+      {
+        "x": 8,
+        "y": 7,
+        "round": 30
+      },
+      {
+        "x": 21,
+        "y": 4.5,
+        "round": 0
+      },
+      {
+        "x": 27.5,
+        "y": 3.25,
+        "round": 0
+      },
+      {
+        "x": 34,
+        "y": 2,
+        "round": 30
+      },
+      {
+        "x": 91,
+        "y": 6,
+        "round": 28
+      },
+      {
+        "x": 99,
+        "y": 29,
+        "round": 38
+      },
+      {
+        "x": 95,
+        "y": 88,
+        "round": 28
+      },
+      {
+        "x": 64,
+        "y": 96,
+        "round": 35
+      },
+      {
+        "x": 5,
+        "y": 91,
+        "round": 26
+      },
+      {
+        "x": 1,
+        "y": 30,
+        "round": 35
+      }
+    ]
+  },
+  "name": "Werkstatt-Holz",
+  "notes": "",
+  "settings": {
+    "style": "comic",
+    "material": "wood",
+    "shape": "custom",
+    "edge": 3,
+    "finish": "satin",
+    "wear": 30,
+    "accent": "#b78047",
+    "font": "fredoka",
+    "lettering": "paint",
+    "size": 23,
+    "label": "spiel starten",
+    "depth": 4,
+    "duration": 300,
+    "feel": "direct",
+    "sound": "stone",
+    "volume": 30,
+    "font_link": "manual"
+  },
+  "kind": "button",
+  "review": {
+    "style": "open",
+    "motion": "like",
+    "shape": "open",
+    "surface": "open",
+    "lettering": "open",
+    "sound": "open"
+  },
+  "parent_id": null,
+  "id": "bc3d3a270fc34eb8b3154c2a4f621b84",
+  "created_at": "2026-10-25T15:53:30.298726+00:00"
+}

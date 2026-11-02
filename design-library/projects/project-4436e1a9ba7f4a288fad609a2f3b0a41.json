@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "name": "Schach",
+  "notes": "Schach dient als erstes Beispiel für den Baukasten. Figuren, Brett, Hintergrund, Darstellung und Kamera, Licht und Objektverhalten sowie eine Lobby sollen gestaltbar und wiederverwendbar sein. Würfel und Karten sollen zusätzlich als optionale Bausteine bereitstehen.\n\nIch sammle die gewünschten Elemente in dieser Mappe und übergebe sie anschließend an Codex. Weitere Informationen und Regeln folgen im Gespräch.",
+  "elements": {
+    "board": {
+      "columns": 8,
+      "rows": 8,
+      "pattern": "checker",
+      "square": 0.75,
+      "light": "#e9d8b3",
+      "dark": "#527568",
+      "frame": "#634530",
+      "border": 0.25,
+      "thickness": 0.18
+    },
+    "pieces": {
+      "set": "chess",
+      "arrangement": "start",
+      "style": "classic",
+      "height": 1,
+      "base": 1,
+      "stem": 1,
+      "head": 1,
+      "light": "#fff0d2",
+      "dark": "#253e3a",
+      "roughness": 0.4,
+      "metallic": 0.1
+    },
+    "background": {
+      "image": "studio",
+      "color": "#d4dacc",
+      "table": "wood",
+      "tint": "#9b7657"
+    },
+    "camera": {
+      "mode": "3d",
+      "elevation": 48,
+      "rotation": 0,
+      "distance": 14,
+      "fov": 42
+    },
+    "room": {
+      "ambient": 1.5,
+      "light": 3,
+      "angle": -45,
+      "shadows": true,
+      "pieces": "glide",
+      "cards": "flip",
+      "dice": true,
+      "gravity": 10,
+      "bounce": 0.35
+    },
+    "lobby": {
+      "title": "Eine Partie Schach",
+      "seats": 2,
+      "background": "club",
+      "accent": "#d8e88a",
+      "avatar": "a01",
+      "plaque": "p01"
+    },
+    "dice": {
+      "count": 2,
+      "size": 0.55,
+      "color": "#f2e5c7",
+      "pips": "#263e37",
+      "roughness": 0.35
+    },
+    "cards": {
+      "title": "Dein nächster Zug",
+      "text": "Hier beginnt eine neue Spielidee.",
+      "symbol": "crown",
+      "front": "#fff2d5",
+      "back": "#315c50",
+      "ink": "#263d35",
+      "accent": "#c59b4e",
+      "ratio": 0.7,
+      "size": 1.15
+    }
+  },
+  "included": {
+    "board": true,
+    "pieces": true,
+    "background": true,
+    "camera": true,
+    "room": true,
+    "lobby": true,
+    "dice": false,
+    "cards": false
+  },
+  "sources": {
+    "board": null,
+    "pieces": null,
+    "background": null,
+    "camera": null,
+    "room": null,
+    "lobby": null,
+    "dice": null,
+    "cards": null
+  },
+  "buttons": [],
+  "button_snapshots": [],
+  "id": "project-4436e1a9ba7f4a288fad609a2f3b0a41",
+  "created": "2026-10-26T11:08:44.764418+00:00"
+}

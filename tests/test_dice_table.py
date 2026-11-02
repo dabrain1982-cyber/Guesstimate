@@ -54,14 +54,14 @@ class DiceTableLobbyTests(unittest.TestCase):
 
     def test_tabletop_dice_family_tile_is_clickable(self):
         page = self.clients[0][0].get("/karten").get_data(as_text=True)
-        self.assertEqual(page.count('class="tabletop-game-tile'), 4)
+        self.assertEqual(page.count('class="tabletop-game-tile'), 3)
         self.assertIn('href="/karten/wuerfeltische"', page)
         self.assertNotIn('href="/karten/wuerfeltisch"', page)
 
         dice_page = self.clients[0][0].get("/karten/wuerfeltische").get_data(as_text=True)
         self.assertIn('href="/karten/wuerfeltisch"', dice_page)
         self.assertIn('href="/karten/maexchen"', dice_page)
-        self.assertIn("Schweinchen", dice_page)
+        self.assertIn("schweinchen", dice_page)
         self.assertIn('href="/karten/kniffel"', dice_page)
 
     def test_maexchen_private_roll_challenge_and_double_life_loss(self):
@@ -74,7 +74,7 @@ class DiceTableLobbyTests(unittest.TestCase):
             data={"csrf_token": guest_token},
         )
         waiting = host.get(f"/karten/maexchen/{lobby_id}").get_data(as_text=True)
-        self.assertIn("Mäxchen starten", waiting)
+        self.assertIn("spiel starten", waiting)
         self.assertIn("3", waiting)
         host.post(
             f"/karten/maexchen/{lobby_id}/starten",
@@ -83,7 +83,7 @@ class DiceTableLobbyTests(unittest.TestCase):
         game_page = host.get(f"/karten/maexchen/{lobby_id}").get_data(as_text=True)
         self.assertIn('data-game-mode="maexchen"', game_page)
         self.assertIn("maexchen-logo-v1.svg", game_page)
-        self.assertIn("Mäxchen glauben · 1 Leben", game_page)
+        self.assertIn('mäxchen glauben · 1 leben', game_page)
         self.assertIn("Spielregeln", game_page)
 
         host.post(
@@ -191,8 +191,8 @@ class DiceTableLobbyTests(unittest.TestCase):
             self.assertEqual(page_response.status_code, 200)
             page = page_response.get_data(as_text=True)
             self.assertNotIn('href="/karten/kniffel"', page)
-            self.assertIn('href="/karten/wuerfeltisch"', page)
-            self.assertNotIn('href="/karten/wuerfeltische"', page)
+            self.assertNotIn('href="/karten/wuerfeltisch"', page)
+            self.assertIn('href="/karten/wuerfeltische"', page)
         finally:
             if old_flag is not None:
                 self.app.config["KNIFFEL_AVAILABLE"] = old_flag
@@ -205,10 +205,10 @@ class DiceTableLobbyTests(unittest.TestCase):
             session["csrf_token"] = "old-process-token"
             self.app.preprocess_request()
             page = render_template("dice_table_index.html", lobbies=[])
-        self.assertIn("Würfeltisch", page)
+        self.assertIn("würfeltisch", page)
         self.assertIn('action="/karten/wuerfeltisch/erstellen"', page)
         self.assertIn(
-            '<a class="back-link" href="/karten">zurück zu tabletop connection</a>',
+            '<a class="secondary-button lobby-browser-back" href="/karten/wuerfeltische">zurück zu würfeltischen</a>',
             page,
         )
 
@@ -219,7 +219,7 @@ class DiceTableLobbyTests(unittest.TestCase):
         guest, guest_token = self.clients[1]
         browser = guest.get("/karten/wuerfeltisch").get_data(as_text=True)
         self.assertIn("Host´s Würfeltisch", browser)
-        self.assertIn("Beitreten", browser)
+        self.assertIn("beitreten", browser)
         guest.post(
             f"/karten/wuerfeltisch/{lobby_id}/beitreten",
             data={"csrf_token": guest_token},
@@ -230,7 +230,7 @@ class DiceTableLobbyTests(unittest.TestCase):
         self.assertIn("Host", room)
         self.assertIn("Gast", room)
         self.assertIn("Anzahl der Würfel", room)
-        self.assertIn("Würfeltisch starten", room)
+        self.assertIn('spiel starten', room)
         with host.get("/static/dice-table.css") as response:
             stylesheet = response.get_data(as_text=True)
         self.assertIn("dice-table-background-v2.png", stylesheet)
@@ -449,7 +449,7 @@ class DiceTableLobbyTests(unittest.TestCase):
             data={"csrf_token": guest_token},
         )
         waiting = host.get(f"/karten/kniffel/{lobby_id}").get_data(as_text=True)
-        self.assertIn("Kniffeltisch starten", waiting)
+        self.assertIn("spiel starten", waiting)
         self.assertIn("5", waiting)
         self.assertIn("3", waiting)
 

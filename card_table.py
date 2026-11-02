@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from lobby_overview import render_overview
+
 import json
 import secrets
 import sqlite3
@@ -8,6 +10,7 @@ from functools import wraps
 from typing import Any, Callable
 
 from flask import abort, current_app, flash, g, redirect, render_template, request, url_for
+from lobby_view import lobby_player_profiles
 
 
 CARD_TABLE_MAX_PLAYERS = 6
@@ -330,11 +333,16 @@ def register_card_table_routes(
     def card_tables() -> Any:
         return render_template("tabletop_family.html", family="cards")
 
+    @app.get("/karten/brettspiele")
+    @login_required
+    def board_games() -> Any:
+        return render_template("tabletop_family.html", family="boards")
+
     @app.get("/karten/kartentisch")
     @login_required
     def card_table_index() -> Any:
         _refresh_presence()
-        return render_template("card_table_index.html", lobbies=_lobby_rows(g.user["id"]))
+        return render_overview("card_table_index.html", lobbies=_lobby_rows(g.user["id"]), deck_choices=CARD_TABLE_DECKS)
 
     @app.post("/karten/erstellen")
     @login_required
@@ -478,6 +486,7 @@ def register_card_table_routes(
         if lobby["status"] == "waiting":
             return render_template(
                 "card_table_lobby.html",
+                lobby_players=lobby_player_profiles(members),
                 lobby=lobby,
                 members=members,
                 deck_choices=CARD_TABLE_DECKS,

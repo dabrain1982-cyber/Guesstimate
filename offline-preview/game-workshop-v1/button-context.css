@@ -1,0 +1,3 @@
+/* Identify the original control without changing its composition or colours. */
+[data-usage-target]{outline:4px solid #ffb52e!important;outline-offset:7px!important}
+html{scroll-behavior:auto!important}

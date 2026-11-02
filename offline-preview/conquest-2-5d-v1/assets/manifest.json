@@ -1,0 +1,47 @@
+[
+  {
+    "file": "karte.png",
+    "sha256": "7d239294d81561a8d66f6a703995f48704fdfe73340989520fd53bfb181cea23",
+    "bytes": 2544596,
+    "width": 1284,
+    "height": 1225,
+    "mode": "RGB",
+    "active": true
+  },
+  {
+    "file": "raum-ohne-tisch.png",
+    "sha256": "baae7bba7f6ceaecdd293d9c96260db8e3a64af21a42560a20fc88a1b7b0684c",
+    "bytes": 3086907,
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "active": false
+  },
+  {
+    "file": "teppich.png",
+    "sha256": "30c6b7413470d7362dbb83c1047d038c1fdbdb78f128fa543ea61856a23ca5ed",
+    "bytes": 3990796,
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB",
+    "active": true
+  },
+  {
+    "file": "raum-wand-v2.png",
+    "sha256": "cda535a2fcab5094215cbc3250a9699860547ecb7770149f8e636584888c605d",
+    "bytes": 2109497,
+    "width": 2172,
+    "height": 724,
+    "mode": "RGB",
+    "active": true
+  },
+  {
+    "file": "moebel-v2.png",
+    "sha256": "19a582f68da4730c5650cd7c7e6559e1b1860b2d6cf681d8bdda161680ff9b91",
+    "bytes": 1943423,
+    "width": 2048,
+    "height": 768,
+    "mode": "RGBA",
+    "active": true
+  }
+]

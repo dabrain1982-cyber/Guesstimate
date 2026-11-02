@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "models": {
+    "chess": "Schachfiguren",
+    "checkers": "Damesteine",
+    "conquest": "Conquest · Truppenmarke"
+  },
+  "configurations": [
+    {
+      "id": "pieces-preset-2-2d",
+      "name": "Gedrechseltes Schach · 2D",
+      "model": "chess",
+      "representation": "2d",
+      "games": []
+    },
+    {
+      "id": "pieces-preset-2-3d",
+      "name": "Gedrechseltes Schach · 3D",
+      "model": "chess",
+      "representation": "3d",
+      "games": []
+    },
+    {
+      "id": "pieces-preset-3-2d",
+      "name": "Dame · gleicher Baukasten · 2D",
+      "model": "checkers",
+      "representation": "2d",
+      "games": []
+    },
+    {
+      "id": "pieces-preset-3-3d",
+      "name": "Dame · gleicher Baukasten · 3D",
+      "model": "checkers",
+      "representation": "3d",
+      "games": []
+    },
+    {
+      "id": "pieces-preset-4-2d",
+      "name": "Geometrischer Figurensatz · 2D",
+      "model": "chess",
+      "representation": "2d",
+      "games": []
+    },
+    {
+      "id": "pieces-preset-4-3d",
+      "name": "Geometrischer Figurensatz · 3D",
+      "model": "chess",
+      "representation": "3d",
+      "games": []
+    },
+    {
+      "id": "pieces-conquest",
+      "name": "Conquest · vorhandene Truppenmarke",
+      "model": "conquest",
+      "representation": "3d",
+      "games": [
+        "Conquest"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "game": "Guesstimate",
+      "source": "templates/question.html",
+      "model": null,
+      "finding": "Fragenfenster und Anzeigen; keine Spielsteine."
+    },
+    {
+      "game": "Guesstimate Party",
+      "source": "templates/party_question.html",
+      "model": null,
+      "finding": "Spieleranzeigen und Pulte; keine Spielsteine."
+    },
+    {
+      "game": "Perfect",
+      "source": "templates/nerd_mode.html",
+      "model": null,
+      "finding": "Fragenfenster, Pulte und Buzzer; keine Spielsteine."
+    },
+    {
+      "game": "Playtable",
+      "source": "templates/card_table_game.html",
+      "model": null,
+      "finding": "Karten als eigener Bereich. Pokerchip-Motiv ist die bestehende Einsatzanzeige im Regler, kein beweglicher Spielstein."
+    },
+    {
+      "game": "Würfeltisch",
+      "source": "templates/dice_table_game.html",
+      "model": null,
+      "finding": "Würfel und Anzeigen; keine zusätzlichen Spielsteine."
+    },
+    {
+      "game": "Kniffel",
+      "source": "templates/dice_table_game.html",
+      "model": null,
+      "finding": "Würfel und Ergebnisblock; keine zusätzlichen Spielsteine."
+    },
+    {
+      "game": "Mäxchen",
+      "source": "templates/dice_table_game.html",
+      "model": null,
+      "finding": "Würfel und Statusanzeigen; keine zusätzlichen Spielsteine."
+    },
+    {
+      "game": "Conquest",
+      "source": "offline-preview/conquest-2-5d-v1/territories.js",
+      "model": "conquest",
+      "finding": "Ein gemeinsamer Sockel mit farbiger Zahlenfläche und Auswahlring; keine eigene Marke je Land oder Truppenzahl."
+    }
+  ],
+  "rule": "Formfamilien als Bausteine. Rollen, Stil, Farben, Anzahl und Zustände als Eigenschaften; keine Bestände pro Land, Partie oder Spieler.",
+  "limits": [
+    "Schach und Dame sind vorhandene Werkstattvorlagen, keine zusätzlichen aktiven Spiele.",
+    "Conquest-Marke ist ein zusammengesetzter räumlicher Baustein mit flacher Zahlenfläche.",
+    "Karten, Würfel, Spielerporträts und reine Einsatzanzeigen bleiben in ihren Kategorien.",
+    "Editoroptionen und Spielintegration bleiben offen."
+  ]
+}

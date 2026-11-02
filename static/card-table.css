@@ -5,38 +5,23 @@
   --table-cream: #f3ead2;
 }
 
-body.has-player-background:has(.tabletop-connection),
-body:has(.tabletop-connection) {
+body:has(.tabletop-connection),
+body:has(.tabletop-family-page.is-boards) { --tabletop-background: url("carousel-playtable-v1.png"); }
+body:has(.tabletop-family-page.is-dice) { --tabletop-background: url("dice-table-background-v2.png"); }
+body:has(.tabletop-family-page.is-cards),
+body:has(.lobby-browser[data-overview-game="cards"]),
+body:has(.card-table-lobby-shell) { --tabletop-background: url("card-tables-background-v1.png"); }
+body.has-player-background:has(:is(.tabletop-connection, .tabletop-family-page, .lobby-browser[data-overview-game="cards"], .card-table-lobby-shell)),
+body:has(:is(.tabletop-connection, .tabletop-family-page, .lobby-browser[data-overview-game="cards"], .card-table-lobby-shell)) {
   min-height: 100vh;
   background-color: #071711 !important;
-  background-image: url("carousel-playtable-v1.png") !important;
+  background-image: var(--tabletop-background) !important;
   background-position: center center !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-attachment: fixed !important;
 }
-body.has-player-background:has(.tabletop-family-page.is-dice),
-body:has(.tabletop-family-page.is-dice) {
-  min-height: 100vh;
-  background-color: #071711 !important;
-  background-image: url("dice-table-background-v2.png") !important;
-  background-position: center center !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  background-attachment: fixed !important;
-}
-body.has-player-background:has(.tabletop-family-page.is-cards),
-body:has(.tabletop-family-page.is-cards) {
-  min-height: 100vh;
-  background-color: #071711 !important;
-  background-image: url("card-tables-background-v1.png") !important;
-  background-position: center center !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  background-attachment: fixed !important;
-}
-body:has(.tabletop-connection) .noise,
-body:has(.tabletop-family-page) .noise { display: none; }
+body:has(:is(.tabletop-connection, .tabletop-family-page, .lobby-browser[data-overview-game="cards"], .card-table-lobby-shell)) .noise { display: none; }
 .app-shell.tabletop-connection-shell { width: min(1540px, calc(100% - 38px)); max-width: 1540px; margin-inline: auto; }
 .app-shell.tabletop-family-shell { width: min(1540px, calc(100% - 38px)); max-width: 1540px; margin-inline: auto; }
 .tabletop-connection {
@@ -64,9 +49,26 @@ body:has(.tabletop-family-page) .noise { display: none; }
 .tabletop-connection-head h1,
 .tabletop-family-head h1 { margin: 5px 0 0; color: #fff2c4; font-size: clamp(2.2rem, 5vw, 5rem); line-height: .95; text-shadow: 0 4px 18px rgba(0,0,0,.7); }
 .tabletop-game-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(12px, 1.6vw, 24px); }
+.collection-filters {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;
+  margin: 0 0 28px; padding: 0; border: 0;
+}
+.collection-filters label {
+  display: flex; align-items: center; gap: 10px; padding: 12px 18px;
+  border: 1px solid #c3ad726b; border-radius: 12px;
+  background: #071711dc; color: #fff2c4; font-weight: 700; cursor: pointer;
+}
+.collection-filters label:has(input:checked) { border-color: #f2c86e; background: #334329; }
+.collection-filters input[type="checkbox"] { width: 20px; height: 20px; margin: 0; accent-color: #f2c86e; cursor: pointer; }
+.collection-filters input:focus-visible { outline: 3px solid #fff2c4; outline-offset: 4px; }
+.collection-mode-note { margin: -8px 0 24px; color: #fff2c4; text-align: center; text-shadow: 0 2px 5px #000; }
+.tabletop-connection .collection-results { width: min(684px, 100%); margin-inline: auto; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.tabletop-connection .collection-results[data-mode="casino"] { width: min(342px, 100%); grid-template-columns: minmax(0, 1fr); }
+.collection-result { display: contents; }
+.tabletop-game-grid[hidden], .collection-result[hidden], .collection-mode-note[hidden] { display: none; }
 .tabletop-family-grid { margin-inline: auto; }
 .tabletop-family-page.is-dice .tabletop-family-grid { width: 100%; }
-.tabletop-family-page.is-cards .tabletop-family-grid { width: min(330px, 100%); grid-template-columns: 1fr; }
+.tabletop-family-page.is-cards .tabletop-family-grid { width: min(684px, 100%); grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .tabletop-game-tile {
   position: relative;
   display: flex;
@@ -85,8 +87,8 @@ body:has(.tabletop-family-page) .noise { display: none; }
 }
 .tabletop-game-tile::after { position: absolute; z-index: -1; inset: 34% 0 0; background: linear-gradient(transparent, rgba(2,10,8,.9) 70%); content: ""; }
 .tabletop-game-tile img { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .25s ease, filter .25s ease; }
-.tabletop-game-tile:not(.tabletop-perfect-flyer) span { margin: 0 18px 5px; color: #f2c86e; font-size: .7rem; font-weight: 950; letter-spacing: .13em; text-transform: uppercase; }
-.tabletop-game-tile:not(.tabletop-perfect-flyer) h2 { margin: 0; padding: 0 18px 20px; color: inherit; font-size: clamp(1rem, 1.45vw, 1.45rem); line-height: 1.08; text-shadow: 0 2px 6px rgba(0,0,0,.85); }
+.tabletop-game-tile:not(.tabletop-perfect-flyer, .tabletop-blackjack-flyer) span { margin: 0 18px 5px; color: #f2c86e; font-size: .7rem; font-weight: 950; letter-spacing: .13em; }
+.tabletop-game-tile:not(.tabletop-perfect-flyer, .tabletop-blackjack-flyer) h2 { margin: 0; padding: 0 18px 20px; color: inherit; font-size: clamp(1rem, 1.45vw, 1.45rem); line-height: 1.08; text-shadow: 0 2px 6px rgba(0,0,0,.85); }
 .tabletop-game-tile.is-available:hover { box-shadow: 0 18px 38px rgba(0,0,0,.5), 0 0 0 3px rgba(255,220,125,.16); transform: translateY(-4px); }
 .tabletop-game-tile.is-available:hover img { transform: scale(1.045); }
 .tabletop-game-tile.is-coming { cursor: default; }
@@ -121,13 +123,12 @@ body:has(.tabletop-family-page) .noise { display: none; }
 
 @media (max-width: 1180px) { .tabletop-game-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (max-width: 760px) { .tabletop-game-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 520px) { .tabletop-game-grid { grid-template-columns: 1fr; } }
+@media (max-width: 520px) {
+  .tabletop-game-grid, .tabletop-family-page.is-cards .tabletop-family-grid { grid-template-columns: 1fr; }
+  .tabletop-connection .collection-results { width: min(342px, 100%); grid-template-columns: 1fr; }
+}
 
-.card-table-head h1 { color: var(--sky); }
-.card-lobby-settings { max-width: 620px; margin-inline: auto; }
-.card-lobby-settings input[type="number"] { width: 100%; margin-top: 8px; }
-.card-lobby-choice { display: flex; justify-content: space-between; margin: 0 0 20px; padding: 17px; border: 1px solid rgba(255,255,255,.12); border-radius: 17px; background: rgba(17,21,49,.72); color: #9da6ba; }
-.card-lobby-choice strong { color: #fff; }
+
 
 body:has(.card-game-shell) { min-width: 0; overflow: hidden; background: #07120f; }
 body:has(.card-game-shell) .account-bar,

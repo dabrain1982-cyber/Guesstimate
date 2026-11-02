@@ -1,0 +1,1933 @@
+{
+  "checked_on": "2026-10-24",
+  "status": "local_candidates_only",
+  "wording": "Selbst formulierte Auswahlfragen aus recherchierten Sachverhalten; keine ungeprüften Quizkopien.",
+  "active_daily_count": 1343,
+  "full_daily_count": 1403,
+  "previously_staged_true_false": 50,
+  "multiple_choice_candidates": 50,
+  "combined_isolated_count": 1503,
+  "answer_distribution": {
+    "A": 13,
+    "B": 13,
+    "C": 12,
+    "D": 12
+  },
+  "category_distribution": {
+    "gaming": 4,
+    "media_entertainment": 2,
+    "music": 5,
+    "plants_animals": 9,
+    "geography_world": 6,
+    "sport": 5,
+    "witnesses_of_time": 6,
+    "science_technology": 6,
+    "human_everyday": 7
+  },
+  "reference_count": 60,
+  "baseline_unchanged": true,
+  "isolated_library_validation": "passed",
+  "person_checks": [
+    {
+      "name": "Warren Robinett",
+      "existing_question_ids": [],
+      "existing_count": 0,
+      "new_count": 1
+    },
+    {
+      "name": "Delia Derbyshire",
+      "existing_question_ids": [],
+      "existing_count": 0,
+      "new_count": 1
+    }
+  ],
+  "baseline_files": {
+    "fragen/multiplechoice/fragen.json": {
+      "sha256": "15b9d17cb7b289cd634c1ddd72b0f5f6a284e4eb6cfb232ed05d1855d599d642",
+      "sha256_lf": "cab124afe6382921bebfd81ca0f97aeb336a2c1c216e52e1db0e7d9289a06329"
+    },
+    "fragen/wahroderunwahr/fragen.json": {
+      "sha256": "abe84266edac631898b84e8c7eff3e143baa92f3c746467481dd11d152a26054",
+      "sha256_lf": "04ac863634b66fe40d0516329205281942e777ed5134a02e0f42ca98a47c3192"
+    },
+    "fragen/paarebilden/fragen.json": {
+      "sha256": "0aaf627df947e51f1729a4d52b83cb6ffa779b0009ef6a431e4a582b1c442ffa",
+      "sha256_lf": "830b6c2e7eec3b2a288c49058f65e19815679e8aaa7bc88ea3a9091ad254ce49"
+    },
+    "fragen/reihenfolge/fragen.json": {
+      "sha256": "a98d5671245a97b183254854ef36c91449dd49e35d3f2889d65c85b524187c43",
+      "sha256_lf": "07922d5b9e9e697cb7eacdc1b541faef40725b59ee8b703e5050e568c789176b"
+    },
+    "fragen/schaetzung/fragen.json": {
+      "sha256": "44ae06081792c158c08c1845fdcb35f3f9f02dd4c2e9e66e489531a8732cf0dc",
+      "sha256_lf": "e5a79ffd48b5f4813f8185066e74d2ac34e3cf4202ead51af9ce8ce4fb46bf2c"
+    },
+    "fragen/zweigruppenzuordnen/fragen.json": {
+      "sha256": "8fa5173dcfb7408c7bd9f40b24c6173c22611460d0782b11ca32c35d1522f9c7",
+      "sha256_lf": "21fc935fe304fb690dd9ef0127ca420e54f6bfc61bc03ffb9a78aa6697a87964"
+    }
+  },
+  "previous_pack": {
+    "path": "fragen/vormerkungen/2026-10-24-wahr-falsch-50/kandidaten.json",
+    "sha256": "473d71231ee722b7939e417d686d4721437f2fd3f2fdc0ee6abb7b5fcd2e2d4c"
+  },
+  "rejected_candidates": [
+    {
+      "key": "tonic",
+      "reason": "Chinin und UV-Fluoreszenz bereits in mc190."
+    },
+    {
+      "key": "beaver_color",
+      "reason": "Die verbreitete Erklärung der Biberzahnfarbe durch Eisen wurde von neuerer Forschung differenziert widerlegt. Stattdessen wird nur die belegte Schutzfunktion eisenreichen Zahnschmelzes abgefragt. Belege: Max-Planck-Institut und ACS Nano 2024."
+    },
+    {
+      "key": "butterfly",
+      "reason": "Geschmackssinn an den Füßen bereits in mc202."
+    },
+    {
+      "key": "gallium",
+      "reason": "Schmelzen in der Hand bereits in tf190."
+    },
+    {
+      "key": "barcode",
+      "reason": "Erster Barcode-Kassenscan bereits in mc604 und es604."
+    },
+    {
+      "key": "moon_distance",
+      "reason": "Entfernung des Mondes von der Erde pro Jahr bereits in mc197."
+    },
+    {
+      "key": "sargasso",
+      "reason": "Meer ohne Landgrenzen bereits in mc189 und tf535."
+    },
+    {
+      "key": "theremin",
+      "reason": "Berührungsloses Spielen bereits in tf512; Herkunft des Namens in mc512."
+    }
+  ],
+  "source_checks": [
+    {
+      "proposed_id": "mc700",
+      "research_key": "wow",
+      "evidence_summary": "Ein ansteckender Spieleffekt gelangte aus einem begrenzten Gebiet in die Städte von World of Warcraft. Epidemiologen untersuchten den Vorfall später als Beispiel für menschliches Verhalten bei Ausbrüchen.",
+      "access_note": "Ein Direktabruf war technisch gesperrt oder ohne Fachtext. Maßgeblicher Inhalt der Originalquelle wurde tatsächlich im Suchindex gelesen; ergänzende hinterlegte Belege ebenfalls inhaltlich geprüft."
+    },
+    {
+      "proposed_id": "mc701",
+      "research_key": "foldit",
+      "evidence_summary": "In Foldit werden Proteinmodelle räumlich gefaltet und verbessert. Spieler lieferten unter anderem ein Modell, mit dem sich die Struktur eines viralen Enzyms bestimmen ließ.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc702",
+      "research_key": "adventure",
+      "evidence_summary": "Atari nannte einzelne Entwickler damals nicht. In Adventure versteckte Warren Robinett deshalb seinen Namen in einem geheimen Raum als persönlichen Urheberhinweis.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc703",
+      "research_key": "gameboy",
+      "evidence_summary": "Das 1998 veröffentlichte Pocket Sonar machte den Game Boy zum echten Fischfinder. Ein Sonargerät lieferte die dafür benötigten Unterwasserdaten.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc704",
+      "research_key": "starwars",
+      "evidence_summary": "Chewbaccas Stimme wurde aus verschiedenen Tieraufnahmen zusammengesetzt. Dazu gehören Bären, Dachse und Walrosse; passende Ausschnitte vermittelten jeweils eine andere Stimmung.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc705",
+      "research_key": "apollofilm",
+      "evidence_summary": "Die Filmcrew drehte an Bord eines NASA-Trainingsflugzeugs. Bei dessen Parabelflügen herrschte jeweils für kurze Zeit echte Schwerelosigkeit; weitere Einstellungen entstanden am Boden.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc706",
+      "research_key": "doctor",
+      "evidence_summary": "Delia Derbyshire bearbeitete aufgenommene Klänge auf Tonband. Andere Bandgeschwindigkeiten veränderten die Tonhöhe, wiederholte Bandstücke erzeugten Rhythmen.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc707",
+      "research_key": "bone",
+      "evidence_summary": "Für die sogenannten Bone Records wurden Rillen in ausrangierte Röntgenfilme geschnitten. So ließen sich nicht genehmigte Musikaufnahmen trotz knappen Plattenmaterials verbreiten.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc708",
+      "research_key": "organ",
+      "evidence_summary": "Unter den Stufen der Promenade liegen unterschiedlich gebaute Pfeifen. Die Energie des bewegten Meerwassers lässt die Installation erklingen.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc709",
+      "research_key": "steelpan",
+      "evidence_summary": "Aus Ölfässern entwickelte sich ein gestimmtes Instrument mit mehreren Tonfeldern. Formung, Bearbeitung und Stimmung der Stahlfläche erzeugen die verschiedenen Töne.",
+      "access_note": "Ein Direktabruf war technisch gesperrt oder ohne Fachtext. Maßgeblicher Inhalt der Originalquelle wurde tatsächlich im Suchindex gelesen; ergänzende hinterlegte Belege ebenfalls inhaltlich geprüft."
+    },
+    {
+      "proposed_id": "mc710",
+      "research_key": "flute",
+      "evidence_summary": "Die Flöte wurde aus dem Flügelknochen eines Gänsegeiers gefertigt. Sie besitzt fünf Grifflöcher und belegt, wie weit die Herstellung von Musikinstrumenten zurückreicht.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc711",
+      "research_key": "scallop",
+      "evidence_summary": "Kammmuscheln besitzen viele kleine Augen. In jedem bündelt ein gekrümmter Spiegel das Licht auf lichtempfindliche Zellen – ein Prinzip, das auch Spiegelteleskope nutzen.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc712",
+      "research_key": "slug",
+      "evidence_summary": "Die Schnecke lagert funktionsfähige Chloroplasten in Zellen ihres Verdauungssystems ein. Diese aus Algen stammenden Zellbauteile können dort weiter Fotosynthese betreiben.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc713",
+      "research_key": "beaver",
+      "evidence_summary": "Eisenreiches Material liegt in winzigen Zwischenräumen des Zahnschmelzes. Diese besondere Struktur trägt zur Festigkeit und zur Widerstandsfähigkeit gegen Säure bei.",
+      "access_note": "Mindestens ein Direktabruf war technisch gesperrt; zusätzlich zugängliche institutionelle Quelle beziehungsweise Originalartikelinhalt im Suchindex geprüft."
+    },
+    {
+      "proposed_id": "mc714",
+      "research_key": "archer",
+      "evidence_summary": "Schützenfische schießen Wasser aus dem Maul und können den Strahl an die Entfernung anpassen. Die getroffene Beute fällt ins Wasser und wird gefressen.",
+      "access_note": "Ein Direktabruf war technisch gesperrt oder ohne Fachtext. Maßgeblicher Inhalt der Originalquelle wurde tatsächlich im Suchindex gelesen; ergänzende hinterlegte Belege ebenfalls inhaltlich geprüft."
+    },
+    {
+      "proposed_id": "mc715",
+      "research_key": "ant",
+      "evidence_summary": "Die Ameisen verarbeiten die Blattstücke zu Material für ihre unterirdischen Pilzgärten. Der gezüchtete Pilz dient ihnen als Nahrung.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc716",
+      "research_key": "hagfish",
+      "evidence_summary": "Der abgesonderte Schleim kann Maul und Kiemen des Angreifers zusetzen. Gefilmte Angriffe zeigen Raubfische, die daraufhin vom Schleimaal ablassen.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc717",
+      "research_key": "lyrebird",
+      "evidence_summary": "Prachtleierschwänze sind hervorragende Lautimitatoren. Sie können sowohl andere Tiere als auch mechanische Geräusche aus ihrer Umgebung nachahmen.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc718",
+      "research_key": "welwitschia",
+      "evidence_summary": "Nach den Keimblättern entstehen zwei bleibende Laubblätter, die zeitlebens weiterwachsen. Wind und Alter können sie in Streifen zerreißen, sodass es nach mehr Blättern aussieht.",
+      "access_note": "Mindestens ein Direktabruf war technisch gesperrt; zusätzlich zugängliche institutionelle Quelle beziehungsweise Originalartikelinhalt im Suchindex geprüft."
+    },
+    {
+      "proposed_id": "mc719",
+      "research_key": "vampire",
+      "evidence_summary": "Vampirfledermäuse teilen aufgenommene Blutnahrung durch Hochwürgen. Die Hilfe erfolgt auch zwischen nicht verwandten Tieren und hängt mit ihren sozialen Beziehungen zusammen.",
+      "access_note": "Ein Direktabruf war technisch gesperrt oder ohne Fachtext. Maßgeblicher Inhalt der Originalquelle wurde tatsächlich im Suchindex gelesen; ergänzende hinterlegte Belege ebenfalls inhaltlich geprüft."
+    },
+    {
+      "proposed_id": "mc720",
+      "research_key": "kiribati",
+      "evidence_summary": "Kiribatis weit verstreute Inselgruppen liegen in allen vier geografischen Halbkugeln. Gemeint sind Nord- und Südhalbkugel sowie die durch Null- und 180. Längengrad getrennte Ost- und Westhalbkugel.",
+      "access_note": "Ein Direktabruf war technisch gesperrt oder ohne Fachtext. Maßgeblicher Inhalt der Originalquelle wurde tatsächlich im Suchindex gelesen; ergänzende hinterlegte Belege ebenfalls inhaltlich geprüft."
+    },
+    {
+      "proposed_id": "mc721",
+      "research_key": "baarle",
+      "evidence_summary": "In Baarle sind belgische und niederländische Gebiete ineinander verschachtelt. Nach der Haustürregel gibt der Eingang grundsätzlich den Ausschlag; eine Tür genau auf der Grenze bildet einen Sonderfall.",
+      "access_note": "Ein Direktabruf war technisch gesperrt oder ohne Fachtext. Maßgeblicher Inhalt der Originalquelle wurde tatsächlich im Suchindex gelesen; ergänzende hinterlegte Belege ebenfalls inhaltlich geprüft."
+    },
+    {
+      "proposed_id": "mc722",
+      "research_key": "denmark",
+      "evidence_summary": "Kanada und das Königreich Dänemark einigten sich zusammen mit Grönland über Tartupaluk, auch Hans-Insel genannt. Die Grenze folgt einer natürlichen Schlucht auf der kleinen Insel.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc723",
+      "research_key": "nemo",
+      "evidence_summary": "Point Nemo ist der ozeanische Pol der Unzugänglichkeit. Selbst die nächstgelegenen Inseln und Küsten sind ungefähr 2.688 Kilometer entfernt.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc724",
+      "research_key": "stones",
+      "evidence_summary": "Auf einer flachen Wasserfläche entstanden dünne Eisschollen. Leichter Wind bewegte die Schollen, die Steine über den nassen Schlamm schoben und so lange Spuren hinterließen.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc725",
+      "research_key": "waterfall",
+      "evidence_summary": "Kaltes, dichtes Wasser aus den nordischen Meeren strömt unter wärmeres Wasser und über eine unterseeische Geländestufe. Dieser gewaltige Abwärtsstrom wird als Unterwasserwasserfall bezeichnet.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc726",
+      "research_key": "curling",
+      "evidence_summary": "Der Granit stammt von der schottischen Insel Ailsa Craig. Für die Lauffläche und den Körper werden unterschiedliche Granitarten der Insel eingesetzt, die Wasser beziehungsweise Stößen gut widerstehen.",
+      "access_note": "Ein Direktabruf war technisch gesperrt oder ohne Fachtext. Maßgeblicher Inhalt der Originalquelle wurde tatsächlich im Suchindex gelesen; ergänzende hinterlegte Belege ebenfalls inhaltlich geprüft."
+    },
+    {
+      "proposed_id": "mc727",
+      "research_key": "squash",
+      "evidence_summary": "Ein warmer Squashball springt anders und höher als ein kalter. Deshalb gehört das Aufwärmen des Balls zur Vorbereitung einer Partie.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc728",
+      "research_key": "hockey",
+      "evidence_summary": "Pucks bestehen aus vulkanisiertem Gummi. Die Kühlung verringert übermäßiges Springen und verbessert ihre Handhabung auf dem Eis.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc729",
+      "research_key": "football",
+      "evidence_summary": "Aus einem Einwurf darf kein direktes Tor erzielt werden. Gelangt der Ball ohne weitere Berührung ins gegnerische Tor, erhält die verteidigende Mannschaft einen Abstoß.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc730",
+      "research_key": "cycling",
+      "evidence_summary": "Beim Keirin gibt zunächst ein motorisierter Schrittmacher das Tempo vor. Erst nachdem er die Bahn verlassen hat, fällt die Entscheidung im Sprint.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc731",
+      "research_key": "stink",
+      "evidence_summary": "Die mit Abfällen und Fäkalien belastete Themse stank bis ins Parlament. Unter diesem Druck wurde die Finanzierung eines großen neuen Kanalisationssystems beschlossen.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc732",
+      "research_key": "pneumatic",
+      "evidence_summary": "Bei der Rohrpost wurden gefüllte Behälter durch Druckluft oder Sog durch unterirdische Röhren bewegt. Solche Netze gab es unter anderem in Philadelphia und New York.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc733",
+      "research_key": "purple",
+      "evidence_summary": "Verschiedene Meeresschnecken lieferten das Ausgangssekret für den aufwendig hergestellten Farbstoff. Seine Kostbarkeit machte Purpur zum Zeichen von Reichtum und Macht.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc734",
+      "research_key": "ostracism",
+      "evidence_summary": "Die beschrifteten Keramikscherben heißen Ostraka und gaben dem Ostrakismos, dem Scherbengericht, seinen Namen. Viele dieser Stimmzettel aus Ton sind in Athen ausgegraben worden.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc735",
+      "research_key": "summer",
+      "evidence_summary": "Der Tambora brach 1815 gewaltig aus. Das in die Atmosphäre eingetragene Material trug zur Abkühlung bei; 1816 folgten in vielen Regionen ungewöhnliche Kälte und schlechte Ernten.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc736",
+      "research_key": "antikythera",
+      "evidence_summary": "Das komplexe Zahnradgerät bildete unter anderem Sonnen- und Mondzyklen ab. Auch die Wiederkehr von Finsternissen konnte damit angezeigt werden.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc737",
+      "research_key": "concrete",
+      "evidence_summary": "Entstehen Risse, können sich Bestandteile eingeschlossener Kalkstückchen lösen. Daraus können sich neue Ablagerungen bilden, die den Riss wieder verschließen.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc738",
+      "research_key": "rupert",
+      "evidence_summary": "Diese schnell in Wasser abgekühlten Glastropfen stehen unter starken inneren Spannungen. Ihr dicker Kopf ist sehr widerstandsfähig, doch eine Beschädigung am dünnen Ende kann den ganzen Tropfen zertrümmern.",
+      "access_note": "Mindestens ein Direktabruf war technisch gesperrt; zusätzlich zugängliche institutionelle Quelle beziehungsweise Originalartikelinhalt im Suchindex geprüft."
+    },
+    {
+      "proposed_id": "mc739",
+      "research_key": "coldweld",
+      "evidence_summary": "Unter passenden Kontaktbedingungen können Metalloberflächen im Vakuum fest aneinanderhaften. Dieser Effekt kann Raumfahrtmechanismen stören; er tritt nicht automatisch bei jeder Metallberührung auf.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc740",
+      "research_key": "hexagon",
+      "evidence_summary": "Das Hexagon ist ein großräumiges Muster in Saturns Atmosphäre, das mit einem polaren Jetstream verbunden ist. Schon die Voyager-Sonden beobachteten es.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc741",
+      "research_key": "carrington",
+      "evidence_summary": "Ein gewaltiger Sonnenausbruch löste einen geomagnetischen Sturm aus. Telegrafensysteme wurden gestört, und Polarlichter waren bis weit in südliche Breiten sichtbar.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc742",
+      "research_key": "juno",
+      "evidence_summary": "NASA und LEGO entwickelten die Aktion, um Interesse an Wissenschaft und Technik zu wecken. Die drei Minifiguren wurden für den Flug aus Aluminium gefertigt und an der Sonde befestigt.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc743",
+      "research_key": "metal",
+      "evidence_summary": "Bei Hautkontakt kann Eisen Reaktionen von Hautfetten auslösen. Die dabei entstehenden organischen Verbindungen erzeugen den vertrauten Geruch.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc744",
+      "research_key": "glue",
+      "evidence_summary": "Das Verfahren heißt Cyanoacrylatbedampfung. Klebstoffbestandteile bilden an latenten Fingerabdruckspuren ein Polymer und machen die Muster sichtbar.",
+      "access_note": "Ein Direktabruf war technisch gesperrt oder ohne Fachtext. Maßgeblicher Inhalt der Originalquelle wurde tatsächlich im Suchindex gelesen; ergänzende hinterlegte Belege ebenfalls inhaltlich geprüft."
+    },
+    {
+      "proposed_id": "mc745",
+      "research_key": "pineapple",
+      "evidence_summary": "Frische Ananas enthält das eiweißspaltende Enzym Bromelain. Es kann die Gelatinestruktur abbauen; ausreichendes Erhitzen inaktiviert das Enzym.",
+      "access_note": "Ein Direktabruf war technisch gesperrt oder ohne Fachtext. Maßgeblicher Inhalt der Originalquelle wurde tatsächlich im Suchindex gelesen; ergänzende hinterlegte Belege ebenfalls inhaltlich geprüft."
+    },
+    {
+      "proposed_id": "mc746",
+      "research_key": "popcorn",
+      "evidence_summary": "Ein Popcornkorn enthält etwas Wasser unter einer widerstandsfähigen Hülle. Beim Erhitzen steigt der Druck, bis die Hülle nachgibt und die Stärke aufschäumt.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc747",
+      "research_key": "mint",
+      "evidence_summary": "Menthol kann einen kälteempfindlichen Ionenkanal aktivieren. Die Nerven melden dadurch einen Kältereiz, ohne dass dafür eine entsprechende Abkühlung nötig ist.",
+      "access_note": "Mindestens ein Direktabruf war technisch gesperrt; zusätzlich zugängliche institutionelle Quelle beziehungsweise Originalartikelinhalt im Suchindex geprüft."
+    },
+    {
+      "proposed_id": "mc748",
+      "research_key": "coffee",
+      "evidence_summary": "Kohlendioxid kann unter hohem Druck als Extraktionsmittel dienen. Es löst Koffein aus den noch ungerösteten Bohnen; Kaffee lässt sich also auch mit CO₂ entkoffeinieren.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    },
+    {
+      "proposed_id": "mc749",
+      "research_key": "jeans",
+      "evidence_summary": "Die Nieten sollten verhindern, dass Taschen bei starker Belastung ausreißen. Diese Verstärkung wurde 1873 als Verbesserung der Taschenbefestigung patentiert.",
+      "access_note": "Maßgeblichen Inhalt der Originalquelle direkt abgerufen und geprüft."
+    }
+  ],
+  "duplicate_review": {
+    "scope": "Sämtliche sechs Daily-Dateien, alle Antwortoptionen, Zuordnungen, Auflösungen, Metadaten; zusätzlich 50 vorgemerkte Wahr/Falsch-Fragen.",
+    "method": "Volltext- und Stichwortsuche sowie gewichteter Wortabgleich; die ähnlichsten Bestandseinträge pro Kandidat anschließend redaktionell nach Wissenskern beurteilt.",
+    "result": "Keine identische Frage, bloße Umformulierung desselben Sachverhalts oder starke inhaltliche Überschneidung festgestellt.",
+    "notes": [
+      "mc701 Foldit prüft die konkrete Arbeit an Proteinformen; tf702 EVE Online behandelt die Auswertung medizinischer Zellmessdaten. Verschiedene Tätigkeiten und Sachverhalte.",
+      "mc703 Pocket Sonar prüft reale Fischortung; bestehende Game-Boy-Fragen behandeln Erscheinungsdaten, technische Daten und Hersteller.",
+      "mc711 Spiegelaugen der Kammmuscheln unterscheiden sich vom jahreszeitlichen Farbwechsel der reflektierenden Schicht in Rentieraugen (mc203).",
+      "mc742 LEGO-Figuren an Juno sind ein anderer Wissenskern als die Zuordnung der Raumsonde zu Jupiter (ma195). Die Figurenidentitäten und Mythologie werden nicht abgefragt.",
+      "mc748 CO2-Entkoffeinierung unterscheidet sich vom botanischen Samenstatus der Kaffeebohne (mc205/tf533).",
+      "mc727 und mc728 betreffen verschiedene Sportgeräte und entgegengesetzte Temperaturbehandlung; sie wiederholen keinen identischen Sachverhalt."
+    ],
+    "nearest_matches": [
+      {
+        "id": "mc700",
+        "prompt": "In welchem Spiel brach 2005 die ungeplante virtuelle Epidemie „Corrupted Blood“ aus?",
+        "nearest": [
+          {
+            "id": "tf702",
+            "score": 0.1083,
+            "prompt": "Spieler von EVE Online haben im Spiel echte medizinische Forschungsdaten ausgewertet.",
+            "explanation": "Project Discovery lässt Spieler Zellgruppen in Messdaten markieren. Damit unterstützen sie die Krebsforschung und das Training von Auswertungsmodellen."
+          },
+          {
+            "id": "mc12",
+            "score": 0.0895,
+            "prompt": "Welche Plattform ging zuerst online?",
+            "explanation": "Wikipedia startete 2001, Facebook 2004, YouTube 2005 und Twitter 2006."
+          },
+          {
+            "id": "or181",
+            "score": 0.0888,
+            "prompt": "Ordne diese PC-Spiele nach ihrer Erstveröffentlichung – vom ältesten zum jüngsten.",
+            "explanation": "DOOM (1993) → Half-Life (1998) → The Sims (2000) → World of Warcraft (2004)."
+          },
+          {
+            "id": "or151",
+            "score": 0.075,
+            "prompt": "Ordne die Xbox-Konsolen nach ihrem Erscheinen.",
+            "explanation": "Xbox (2001) → Xbox 360 (2005) → Xbox One (2013) → Xbox Series X|S (2020)."
+          }
+        ]
+      },
+      {
+        "id": "mc701",
+        "prompt": "Was bearbeiten Spieler im Forschungsspiel „Foldit“, um Wissenschaftlern zu helfen?",
+        "nearest": [
+          {
+            "id": "tf700",
+            "score": 0.0712,
+            "prompt": "Die US-Luftwaffe baute einen Supercomputer aus PlayStation-3-Technik.",
+            "explanation": "Der 2010 vorgestellte Condor Cluster verband mehr als 1.700 PlayStation-3-Prozessoren mit weiterer Rechnertechnik. Die Spielkonsolen-Technik wurde unter anderem für Bildauswertung und Forschung genutzt."
+          },
+          {
+            "id": "mc178",
+            "score": 0.0668,
+            "prompt": "Wie viele Spieler darf eine Fußballmannschaft höchstens gleichzeitig auf dem Feld haben?",
+            "explanation": "Nach IFAB-Regel 3 spielen höchstens elf Personen je Mannschaft, darunter ein Torwart."
+          },
+          {
+            "id": "tf728",
+            "score": 0.0658,
+            "prompt": "Autoreifen sind schwarz, weil dem Gummi unter anderem industrieller Ruß zugesetzt wird.",
+            "explanation": "Dieser Kohlenstoffzusatz färbt die Gummimischung und verbessert ihre Verschleißfestigkeit. Die schwarze Farbe ist also nicht bloß eine natürliche Eigenschaft von Kautschuk."
+          },
+          {
+            "id": "tf706",
+            "score": 0.0657,
+            "prompt": "Bei Olympischen Spielen wurden früher auch für Kunstwerke Medaillen vergeben.",
+            "explanation": "Von 1912 bis 1948 gehörten Kunstwettbewerbe zum olympischen Programm. Ausgezeichnet wurden unter anderem Architektur, Literatur, Musik, Malerei und Bildhauerei."
+          }
+        ]
+      },
+      {
+        "id": "mc702",
+        "prompt": "Was versteckte der Entwickler des Atari-Spiels „Adventure“ in einem geheimen Raum?",
+        "nearest": [
+          {
+            "id": "ma503",
+            "score": 0.1643,
+            "prompt": "Ordne das Arcade-Spiel seinem Entwickler zu.",
+            "explanation": "Pac-Man – Namco; Donkey Kong – Nintendo; Asteroids – Atari."
+          },
+          {
+            "id": "mc223",
+            "score": 0.0774,
+            "prompt": "Welche Aussage zu den Farben der olympischen Ringe ist richtig?",
+            "explanation": "Die Ringe stehen gemeinsam für die fünf Kontinente, aber keine einzelne Farbe ist fest einem Kontinent zugeordnet. Zusammen mit Weiß kamen die Farben damals in allen Nationalflaggen vor."
+          },
+          {
+            "id": "tf148",
+            "score": 0.0756,
+            "prompt": "„Baldur’s Gate 3“ wurde von Larian Studios entwickelt.",
+            "explanation": "Das Rollenspiel stammt vom belgischen Entwickler Larian Studios."
+          },
+          {
+            "id": "mc512",
+            "score": 0.0708,
+            "prompt": "Nach wem ist das elektronische Instrument Theremin benannt?",
+            "explanation": "Der Erfinder Leon Theremin gab dem Instrument seinen Namen."
+          }
+        ]
+      },
+      {
+        "id": "mc703",
+        "prompt": "Was konnten Angler mit dem Zubehör „Pocket Sonar“ an einem Game Boy tatsächlich tun?",
+        "nearest": [
+          {
+            "id": "es153",
+            "score": 0.1083,
+            "prompt": "Wie viele Pixel hoch ist der Bildschirm des ursprünglichen Game Boy?",
+            "explanation": "Der Bildschirm ist 144 Pixel hoch."
+          },
+          {
+            "id": "or154",
+            "score": 0.0987,
+            "prompt": "Ordne diese Nintendo-Systeme chronologisch.",
+            "explanation": "Game Boy (1989) → Nintendo 64 (1996) → Nintendo DS (2004) → Nintendo Switch (2017)."
+          },
+          {
+            "id": "es154",
+            "score": 0.0986,
+            "prompt": "Wie viele Stunden Batterielaufzeit nennt Nintendo ungefähr für den ursprünglichen Game Boy?",
+            "explanation": "Nintendo nennt ungefähr 15 Stunden mit vier AA-Batterien."
+          },
+          {
+            "id": "ma152",
+            "score": 0.0981,
+            "prompt": "Ordne die Konsole ihrem Hersteller zu.",
+            "explanation": "PlayStation – Sony; Xbox – Microsoft; Game Boy – Nintendo."
+          }
+        ]
+      },
+      {
+        "id": "mc704",
+        "prompt": "Welche Tonaufnahmen stecken unter anderem in Chewbaccas Stimme aus „Star Wars“?",
+        "nearest": [
+          {
+            "id": "mc144",
+            "score": 0.0966,
+            "prompt": "Zu welchem Universum gehört die Serie „The Mandalorian“?",
+            "explanation": "„The Mandalorian“ spielt im Star-Wars-Universum."
+          },
+          {
+            "id": "ma150",
+            "score": 0.0891,
+            "prompt": "Ordne das Franchise seinem bekannten Ort zu.",
+            "explanation": "Star Wars – Tatooine; Harry Potter – Hogwarts; The Last of Us – Jackson."
+          },
+          {
+            "id": "tf206",
+            "score": 0.0873,
+            "prompt": "Delfine schlafen mit ihrem ganzen Gehirn gleichzeitig.",
+            "explanation": "Delfine lassen beim Schlafen jeweils nur eine Gehirnhälfte ruhen. Die andere Hälfte bleibt aktiv, damit sie weiter schwimmen, atmen und ihre Umgebung beobachten können."
+          },
+          {
+            "id": "es182",
+            "score": 0.0824,
+            "prompt": "Wie viele Teile hat das LEGO-Set „Millennium Falcon“ 75192 aus dem Jahr 2017?",
+            "explanation": "Der offizielle LEGO-Bauanleitungseintrag nennt exakt 7.541 Teile. In der allgemeinen Produktbeschreibung rundet LEGO die Anzahl stellenweise auf 7.500 ab; als Referenzwert wird deshalb die präzise Stückzahl aus dem Bauanleitungsverzeichnis verwendet."
+          }
+        ]
+      },
+      {
+        "id": "mc705",
+        "prompt": "Wie entstanden viele der schwerelosen Aufnahmen für den Film „Apollo 13“ von 1995?",
+        "nearest": [
+          {
+            "id": "es206",
+            "score": 0.0992,
+            "prompt": "Wie viele offizielle James-Bond-Filme produzierte Eon Productions bis einschließlich „Keine Zeit zu sterben“?",
+            "explanation": "„Keine Zeit zu sterben“ ist der 25. James-Bond-Film von Eon Productions. Die Reihe begann 1962 mit „James Bond jagt Dr. No“."
+          },
+          {
+            "id": "mc525",
+            "score": 0.0883,
+            "prompt": "Welcher Film war Pixars erster abendfüllender Kinofilm?",
+            "explanation": "Toy Story erschien 1995 als Pixars erster Langfilm."
+          },
+          {
+            "id": "es191",
+            "score": 0.08,
+            "prompt": "Wie viele Menschen haben bislang den Mond betreten?",
+            "explanation": "Zwölf Menschen betraten zwischen 1969 und 1972 die Mondoberfläche. Sie gehörten zu den Apollo-Missionen 11, 12, 14, 15, 16 und 17."
+          },
+          {
+            "id": "or527",
+            "score": 0.0795,
+            "prompt": "Ordne diese Bond-Filme nach ihrem Kinostart – von früh nach spät.",
+            "explanation": "Dr. No (1962 Jahr) → Goldfinger (1964 Jahr) → GoldenEye (1995 Jahr) → Skyfall (2012 Jahr)."
+          }
+        ]
+      },
+      {
+        "id": "mc706",
+        "prompt": "Mit welcher Technik entstand 1963 der elektronische Klang der ursprünglichen „Doctor Who“-Titelmusik?",
+        "nearest": [
+          {
+            "id": "tf175",
+            "score": 0.0849,
+            "prompt": "Bei einem „präparierten Klavier“ verändern Schrauben, Filz oder andere Gegenstände an den Saiten den Klang.",
+            "explanation": "Schrauben, Filz, Holz oder andere Materialien verändern das Schwingungsverhalten der Saiten."
+          },
+          {
+            "id": "mc172",
+            "score": 0.0744,
+            "prompt": "In welcher deutschen Stadt wurde Kraftwerk gegründet?",
+            "explanation": "Ralf Hütter und Florian Schneider gründeten Kraftwerk 1970 in Düsseldorf."
+          },
+          {
+            "id": "ma11",
+            "score": 0.0647,
+            "prompt": "Ordne die App ihrer ursprünglichen Kernidee zu.",
+            "explanation": "Musik erkennen, Sprachen üben und sportliche Aktivitäten aufzeichnen."
+          },
+          {
+            "id": "es175",
+            "score": 0.06,
+            "prompt": "Wie viele nummerierte Sinfonien vollendete Beethoven?",
+            "explanation": "Beethoven vollendete neun nummerierte Sinfonien."
+          }
+        ]
+      },
+      {
+        "id": "mc707",
+        "prompt": "Worauf schnitten sowjetische Musikliebhaber heimliche Aufnahmen, die als „Knochenmusik“ bekannt wurden?",
+        "nearest": [
+          {
+            "id": "es175",
+            "score": 0.0673,
+            "prompt": "Wie viele nummerierte Sinfonien vollendete Beethoven?",
+            "explanation": "Beethoven vollendete neun nummerierte Sinfonien."
+          },
+          {
+            "id": "ma174",
+            "score": 0.0652,
+            "prompt": "Ordne den Komponisten dem Werk zu.",
+            "explanation": "Beethoven – 9. Sinfonie; Mozart – Die Zauberflöte; Vivaldi – Die vier Jahreszeiten."
+          },
+          {
+            "id": "or174",
+            "score": 0.0644,
+            "prompt": "Ordne diese musikalischen Epochen chronologisch.",
+            "explanation": "Barock → Klassik → Romantik → Moderne."
+          },
+          {
+            "id": "or23",
+            "score": 0.0562,
+            "prompt": "Ordne diese Musikepochen von früher nach später.",
+            "explanation": "Renaissance, Barock, Klassik und Romantik folgen zeitlich aufeinander."
+          }
+        ]
+      },
+      {
+        "id": "mc708",
+        "prompt": "Was bringt die Meeresorgel an der Uferpromenade von Zadar zum Klingen?",
+        "nearest": [
+          {
+            "id": "mc190",
+            "score": 0.0775,
+            "prompt": "Welcher Inhaltsstoff lässt Tonic Water unter UV-Licht blau leuchten?",
+            "explanation": "Chinin absorbiert ultraviolettes Licht und gibt einen Teil der Energie als sichtbares blaues Licht wieder ab. Dieser Vorgang heißt Fluoreszenz."
+          },
+          {
+            "id": "tf084",
+            "score": 0.0731,
+            "prompt": "Energie wird in Pascal gemessen.",
+            "explanation": "Die passende Einheit ist Joule."
+          },
+          {
+            "id": "mc084",
+            "score": 0.0713,
+            "prompt": "In welcher Einheit wird Energie gemessen?",
+            "explanation": "Energie wird in Joule gemessen."
+          },
+          {
+            "id": "ma082",
+            "score": 0.065,
+            "prompt": "Ordne die Messgröße ihrer Einheit zu.",
+            "explanation": "Energie – Joule; Druck – Pascal; Lichtstärke – Candela."
+          }
+        ]
+      },
+      {
+        "id": "mc709",
+        "prompt": "Welche Alltagsgegenstände wurden in Trinidad und Tobago zur Grundlage der bekannten Steelpans?",
+        "nearest": [
+          {
+            "id": "ma175",
+            "score": 0.0787,
+            "prompt": "Ordne das Instrument seiner Instrumentenfamilie zu.",
+            "explanation": "Violine – Streichinstrument; Trompete – Blechblasinstrument; Klavier – Tasteninstrument."
+          },
+          {
+            "id": "mc33",
+            "score": 0.0738,
+            "prompt": "Welches Instrument besitzt normalerweise sechs Saiten?",
+            "explanation": "Die Standardgitarre besitzt sechs Saiten."
+          },
+          {
+            "id": "tf713",
+            "score": 0.0704,
+            "prompt": "Bei einer Glasharmonika entstehen die Töne durch kleine Hämmerchen, die auf Glasschalen schlagen.",
+            "explanation": "Die ineinandergesteckten Glasschalen drehen sich auf einer Achse. Mit angefeuchteten Fingern werden ihre Ränder berührt; die Schwingungen erzeugen die Töne."
+          },
+          {
+            "id": "ma171",
+            "score": 0.067,
+            "prompt": "Ordne den deutschen Act dem bekannten Titel zu.",
+            "explanation": "Nena – 99 Luftballons; Scorpions – Wind of Change; Kraftwerk – Das Model."
+          }
+        ]
+      },
+      {
+        "id": "mc710",
+        "prompt": "Woraus besteht die 2008 im Hohle Fels entdeckte, besonders gut erhaltene steinzeitliche Flöte?",
+        "nearest": [
+          {
+            "id": "es176",
+            "score": 0.1094,
+            "prompt": "Aus wie vielen Violinkonzerten besteht Vivaldis Zyklus „Die vier Jahreszeiten“?",
+            "explanation": "Jede der vier Jahreszeiten besitzt ein eigenes Konzert."
+          },
+          {
+            "id": "es149",
+            "score": 0.0917,
+            "prompt": "Wie viele Episoden umfasst die Miniserie „Chernobyl“?",
+            "explanation": "Die Miniserie besteht aus fünf Episoden."
+          },
+          {
+            "id": "es177",
+            "score": 0.0817,
+            "prompt": "Wie viele Saiten besitzt eine Standardvioline?",
+            "explanation": "Eine Standardvioline hat vier Saiten."
+          },
+          {
+            "id": "mc11",
+            "score": 0.0771,
+            "prompt": "Woraus besteht Glas hauptsächlich?",
+            "explanation": "Gewöhnliches Glas basiert vor allem auf Siliziumdioxid aus Quarzsand."
+          }
+        ]
+      },
+      {
+        "id": "mc711",
+        "prompt": "Welche Tiere besitzen zahlreiche kleine Augen, in denen Hohlspiegel das Licht bündeln?",
+        "nearest": [
+          {
+            "id": "es530",
+            "score": 0.1099,
+            "prompt": "Wie viele Arme besitzt ein Krake?",
+            "explanation": "Kraken gehören zu den Achtarmigen Tintenfischen und besitzen acht Arme."
+          },
+          {
+            "id": "mc202",
+            "score": 0.1054,
+            "prompt": "Mit welchem Körperteil prüfen Schmetterlinge beim Landen den Geschmack eines Blattes?",
+            "explanation": "An den Füßen von Schmetterlingen sitzen Geschmackssensoren. So können sie schon beim Landen prüfen, ob eine Pflanze geeignet ist."
+          },
+          {
+            "id": "mc203",
+            "score": 0.1051,
+            "prompt": "Welche Farbe hat die reflektierende Schicht in Rentieraugen typischerweise im arktischen Winter?",
+            "explanation": "Im Sommer reflektiert diese Schicht goldfarbenes Licht. Im dunklen arktischen Winter wird sie tiefblau und erhöht damit die Empfindlichkeit des Auges."
+          },
+          {
+            "id": "es34",
+            "score": 0.079,
+            "prompt": "Wie viele Inseln gehören ungefähr zu Griechenland?",
+            "explanation": "Griechenland umfasst ungefähr 6.000 Inseln und Inselchen, von denen nur ein kleiner Teil bewohnt ist."
+          }
+        ]
+      },
+      {
+        "id": "mc712",
+        "prompt": "Was übernimmt die Meeresschnecke Elysia chlorotica aus gefressenen Algen und nutzt es weiter?",
+        "nearest": [
+          {
+            "id": "mc35",
+            "score": 0.1004,
+            "prompt": "Welcher Teil einer Pflanze betreibt hauptsächlich Fotosynthese?",
+            "explanation": "Die meisten Chloroplasten und damit die Hauptarbeit der Fotosynthese sitzen in den Blättern."
+          },
+          {
+            "id": "tf149",
+            "score": 0.0585,
+            "prompt": "In „The Bear“ übernimmt Carmy ein Restaurant in Chicago.",
+            "explanation": "Carmy kehrt nach Chicago zurück und übernimmt den Familienbetrieb."
+          },
+          {
+            "id": "ma533",
+            "score": 0.058,
+            "prompt": "Ordne das Tier seiner ungefähren Tragzeit zu.",
+            "explanation": "Hauskatze – 2 Monate; Pferd – 11 Monate; Elefant – 22 Monate."
+          },
+          {
+            "id": "mc180",
+            "score": 0.0574,
+            "prompt": "Wie lang ist ein olympisches Wettkampfbecken normalerweise?",
+            "explanation": "Olympische Wettkampfbecken besitzen eine Länge von 50 Metern."
+          }
+        ]
+      },
+      {
+        "id": "mc713",
+        "prompt": "Welches Metall trägt zur Widerstandsfähigkeit des Zahnschmelzes von Bibern und anderen Nagern bei?",
+        "nearest": [
+          {
+            "id": "mc16",
+            "score": 0.1436,
+            "prompt": "Welches Metall ist bei Raumtemperatur flüssig?",
+            "explanation": "Quecksilber ist unter normalen Raumbedingungen flüssig."
+          },
+          {
+            "id": "tf055",
+            "score": 0.1384,
+            "prompt": "Das chemische Symbol von Kupfer lautet He.",
+            "explanation": "Kupfer trägt das Symbol Cu."
+          },
+          {
+            "id": "or101",
+            "score": 0.1165,
+            "prompt": "Ordne die Stoffe nach Schmelzpunkt – von niedrig zu hoch.",
+            "explanation": "Richtig: Quecksilber → Schokolade → Aluminium → Eisen."
+          },
+          {
+            "id": "or108",
+            "score": 0.1164,
+            "prompt": "Ordne die Stoffe nach Schmelzpunkt – von niedrig zu hoch.",
+            "explanation": "Richtig: Schokolade → Blei → Aluminium → Eisen."
+          }
+        ]
+      },
+      {
+        "id": "mc714",
+        "prompt": "Wie holen Schützenfische Beute von Ästen über der Wasseroberfläche?",
+        "nearest": [
+          {
+            "id": "mc534",
+            "score": 0.0767,
+            "prompt": "Womit orientieren sich viele Fledermäuse in der Dunkelheit?",
+            "explanation": "Sie senden Ultraschallrufe aus und werten deren Echos aus."
+          },
+          {
+            "id": "tf132",
+            "score": 0.0761,
+            "prompt": "Für elektrische Entladungen zur Verteidigung ist der Zitteraal bekannt.",
+            "explanation": "Das gesuchte Tier ist der Zitteraal."
+          },
+          {
+            "id": "or209",
+            "score": 0.073,
+            "prompt": "Ordne diese Schritte im Wasserkreislauf – beginnend mit der Verdunstung von Oberflächenwasser.",
+            "explanation": "Verdunstung (Wasser wird zu Dampf) → Kondensation (Wolken entstehen) → Niederschlag (Wasser fällt) → Oberflächenabfluss (Wasser fließt zurück)."
+          },
+          {
+            "id": "mc132",
+            "score": 0.0692,
+            "prompt": "Welches Tier ist für elektrische Entladungen zur Verteidigung bekannt?",
+            "explanation": "der Zitteraal ist dafür bekannt."
+          }
+        ]
+      },
+      {
+        "id": "mc715",
+        "prompt": "Wofür tragen Blattschneiderameisen große Mengen Blattstücke in ihre Nester?",
+        "nearest": [
+          {
+            "id": "tf199",
+            "score": 0.0804,
+            "prompt": "Kamele speichern in ihren Höckern vor allem Fett.",
+            "explanation": "Kamelhöcker enthalten Fett und kein Wasser. Das Fett dient als Energiereserve, wenn Nahrung knapp ist."
+          },
+          {
+            "id": "tf193",
+            "score": 0.0657,
+            "prompt": "Ein Waldfrosch kann überleben, obwohl sein Herz im Winter monatelang nicht schlägt.",
+            "explanation": "Waldfrosch-Arten können während der Winterstarre weitgehend gefrieren. Dabei setzen Herzschlag und Atmung aus. Große Mengen Glukose schützen ihre Zellen vor Frostschäden. Beim Auftauen im Frühjahr beginnt zuerst das Herz wieder zu schlagen."
+          },
+          {
+            "id": "ma533",
+            "score": 0.0589,
+            "prompt": "Ordne das Tier seiner ungefähren Tragzeit zu.",
+            "explanation": "Hauskatze – 2 Monate; Pferd – 11 Monate; Elefant – 22 Monate."
+          },
+          {
+            "id": "tf720",
+            "score": 0.0565,
+            "prompt": "Das Papier von Eurobanknoten wird hauptsächlich aus Holz hergestellt.",
+            "explanation": "Eurobanknoten bestehen aus Baumwollfaserpapier. Das gibt ihnen ihre besondere Griffigkeit und macht sie widerstandsfähiger gegen Abnutzung."
+          }
+        ]
+      },
+      {
+        "id": "mc716",
+        "prompt": "Wie kann der Schleim eines Schleimaals einen angreifenden Raubfisch zum Loslassen bringen?",
+        "nearest": [
+          {
+            "id": "tf132",
+            "score": 0.0637,
+            "prompt": "Für elektrische Entladungen zur Verteidigung ist der Zitteraal bekannt.",
+            "explanation": "Das gesuchte Tier ist der Zitteraal."
+          },
+          {
+            "id": "mc205",
+            "score": 0.063,
+            "prompt": "Was ist die sogenannte Kaffeebohne botanisch?",
+            "explanation": "Kaffeebohnen sind die Samen der Früchte einer Kaffeepflanze. Eine Frucht enthält meist zwei dieser Samen."
+          },
+          {
+            "id": "mc214",
+            "score": 0.0597,
+            "prompt": "Durch wie viele Staaten fließt die Donau oder bildet deren Grenze?",
+            "explanation": "Vom Schwarzwald bis zum Schwarzen Meer berührt die Donau zehn Staaten. Ihr Einzugsgebiet reicht sogar in neunzehn Staaten."
+          },
+          {
+            "id": "mc192",
+            "score": 0.0594,
+            "prompt": "Welche Tiergruppe ist evolutionär am engsten mit Flusspferden verwandt?",
+            "explanation": "Genetische Untersuchungen und Fossilien zeigen, dass Flusspferde und Wale die engsten heute lebenden Verwandten voneinander sind. Ihr gemeinsamer Vorfahr lebte vor ungefähr 55 Millionen Jahren."
+          }
+        ]
+      },
+      {
+        "id": "mc717",
+        "prompt": "Welcher australische Vogel kann Geräusche wie Kettensägen oder Motoren in seinen Gesang einbauen?",
+        "nearest": [
+          {
+            "id": "mc204",
+            "score": 0.1083,
+            "prompt": "Welche Säugetiere können als einzige aus eigener Kraft dauerhaft fliegen?",
+            "explanation": "Nur Fledermäuse beherrschen einen echten, angetriebenen Flug. Flughörnchen und andere sogenannte Flugtiere unter den Säugetieren können lediglich gleiten."
+          },
+          {
+            "id": "mc23",
+            "score": 0.0769,
+            "prompt": "Welcher Vogel kann rückwärts fliegen?",
+            "explanation": "Kolibris können durch ihre besondere Flügelbewegung kontrolliert rückwärts fliegen."
+          },
+          {
+            "id": "mc220",
+            "score": 0.074,
+            "prompt": "Was hören die Zuhörer in John Cages Stück „4′33″“ hauptsächlich?",
+            "explanation": "Die Ausführenden erzeugen während der drei Sätze keine beabsichtigten Klänge. Dadurch werden zufällige Geräusche im Raum und in der Umgebung zum hörbaren Inhalt."
+          },
+          {
+            "id": "or530",
+            "score": 0.0716,
+            "prompt": "Ordne diese Tiere nach typischer Körpermasse – von leicht nach schwer.",
+            "explanation": "Honigbiene (0.0001 Kilogramm ungefähr) → Hauskatze (4 Kilogramm ungefähr) → Afrikanischer Elefant (6000 Kilogramm ungefähr) → Blauwal (120000 Kilogramm ungefähr)."
+          }
+        ]
+      },
+      {
+        "id": "mc718",
+        "prompt": "Was ist an den Laubblättern der Wüstenpflanze Welwitschia so ungewöhnlich?",
+        "nearest": [
+          {
+            "id": "mc35",
+            "score": 0.1278,
+            "prompt": "Welcher Teil einer Pflanze betreibt hauptsächlich Fotosynthese?",
+            "explanation": "Die meisten Chloroplasten und damit die Hauptarbeit der Fotosynthese sitzen in den Blättern."
+          },
+          {
+            "id": "mc205",
+            "score": 0.0937,
+            "prompt": "Was ist die sogenannte Kaffeebohne botanisch?",
+            "explanation": "Kaffeebohnen sind die Samen der Früchte einer Kaffeepflanze. Eine Frucht enthält meist zwei dieser Samen."
+          },
+          {
+            "id": "ma217",
+            "score": 0.0672,
+            "prompt": "Ordne den Pflanzentyp seinem Lebenszyklus zu.",
+            "explanation": "Einjährige Pflanzen vollenden ihren Zyklus in einer Saison. Zweijährige wachsen zunächst und blühen meist im Folgejahr; mehrjährige Pflanzen leben länger als zwei Jahre."
+          },
+          {
+            "id": "tf04",
+            "score": 0.0643,
+            "prompt": "Oxford University ist älter als das Aztekenreich.",
+            "explanation": "In Oxford wurde spätestens 1096 gelehrt; das Aztekenreich entstand erst 1428."
+          }
+        ]
+      },
+      {
+        "id": "mc719",
+        "prompt": "Wie helfen Gemeine Vampirfledermäuse Artgenossen, die bei der Nahrungssuche erfolglos waren?",
+        "nearest": [
+          {
+            "id": "es531",
+            "score": 0.1406,
+            "prompt": "Wie viele Arme hat ein gewöhnlicher Gemeiner Seestern typischerweise?",
+            "explanation": "Der Gemeine Seestern besitzt typischerweise fünf Arme."
+          },
+          {
+            "id": "tf734",
+            "score": 0.0684,
+            "prompt": "Pilze sind evolutionär näher mit Tieren verwandt als mit Pflanzen.",
+            "explanation": "Pilze bilden ein eigenes Reich. Ihr gemeinsamer Vorfahr mit Tieren liegt in der Stammesgeschichte näher als der gemeinsame Vorfahr mit Pflanzen."
+          },
+          {
+            "id": "mc532",
+            "score": 0.0668,
+            "prompt": "Welche Tiere sind die nächsten heute lebenden Verwandten der Wale?",
+            "explanation": "Molekulare und fossile Befunde ordnen Wale und Flusspferde derselben Verwandtschaftsgruppe zu."
+          },
+          {
+            "id": "mc203",
+            "score": 0.0625,
+            "prompt": "Welche Farbe hat die reflektierende Schicht in Rentieraugen typischerweise im arktischen Winter?",
+            "explanation": "Im Sommer reflektiert diese Schicht goldfarbenes Licht. Im dunklen arktischen Winter wird sie tiefblau und erhöht damit die Empfindlichkeit des Auges."
+          }
+        ]
+      },
+      {
+        "id": "mc720",
+        "prompt": "Welcher Inselstaat besitzt Land nördlich und südlich des Äquators sowie östlich und westlich des 180. Längengrads?",
+        "nearest": [
+          {
+            "id": "mc02",
+            "score": 0.0991,
+            "prompt": "Welche Stadt liegt am weitesten nördlich?",
+            "explanation": "Edinburgh liegt bei rund 56° Nord und damit knapp nördlicher als Moskau und Kopenhagen."
+          },
+          {
+            "id": "es177",
+            "score": 0.0863,
+            "prompt": "Wie viele Saiten besitzt eine Standardvioline?",
+            "explanation": "Eine Standardvioline hat vier Saiten."
+          },
+          {
+            "id": "or539",
+            "score": 0.0819,
+            "prompt": "Ordne diese Städte geografisch – von Süden nach Norden.",
+            "explanation": "Kapstadt (-33.9 Grad Nord) → Singapur (1.3 Grad Nord) → Berlin (52.5 Grad Nord) → Reykjavík (64.1 Grad Nord)."
+          },
+          {
+            "id": "es17",
+            "score": 0.076,
+            "prompt": "Wie viele Liter fasst eine durchschnittliche Badewanne ungefähr?",
+            "explanation": "Übliche Wannen liegen grob zwischen 140 und 180 Litern."
+          }
+        ]
+      },
+      {
+        "id": "mc721",
+        "prompt": "Was bestimmt in Baarle grundsätzlich die Landeszuordnung eines Hauses, durch das die Grenze verläuft?",
+        "nearest": [
+          {
+            "id": "mc214",
+            "score": 0.1374,
+            "prompt": "Durch wie viele Staaten fließt die Donau oder bildet deren Grenze?",
+            "explanation": "Vom Schwarzwald bis zum Schwarzen Meer berührt die Donau zehn Staaten. Ihr Einzugsgebiet reicht sogar in neunzehn Staaten."
+          },
+          {
+            "id": "tf157",
+            "score": 0.0749,
+            "prompt": "Minecraft unterscheidet Mobs grundsätzlich in passive, neutrale und feindliche Gruppen.",
+            "explanation": "Die offizielle Übersicht beschreibt genau diese drei Verhaltenskategorien."
+          },
+          {
+            "id": "mc189",
+            "score": 0.0707,
+            "prompt": "Welches Meer ist nicht von Land, sondern nur von Meeresströmungen begrenzt?",
+            "explanation": "Die Sargassosee liegt mitten im Nordatlantik. Ihre Grenzen werden unter anderem vom Golfstrom, Kanarenstrom und Nordatlantikstrom gebildet und verändern sich mit diesen Strömungen."
+          },
+          {
+            "id": "es131",
+            "score": 0.0631,
+            "prompt": "Wie lang ist Basketballfeld genau oder ungefähr?",
+            "explanation": "Der gesuchte Richtwert beträgt 28 Meter."
+          }
+        ]
+      },
+      {
+        "id": "mc722",
+        "prompt": "Welches Königreich vereinbarte 2022 mit Kanada die Teilung der Hans-Insel und damit eine gemeinsame Landgrenze?",
+        "nearest": [
+          {
+            "id": "or071",
+            "score": 0.1619,
+            "prompt": "Ordne die Länder nach Fläche – vom kleinsten zum größten.",
+            "explanation": "Richtig: Island → Nepal → Vereinigtes Königreich → Schweden."
+          },
+          {
+            "id": "or078",
+            "score": 0.1613,
+            "prompt": "Ordne die Länder nach Fläche – vom kleinsten zum größten.",
+            "explanation": "Richtig: Nepal → Uruguay → Vereinigtes Königreich → Schweden."
+          },
+          {
+            "id": "es076",
+            "score": 0.117,
+            "prompt": "Wie groß ist die Fläche von Vereinigtes Königreich ungefähr?",
+            "explanation": "Der gesuchte Richtwert beträgt 244000 km²."
+          },
+          {
+            "id": "ma04",
+            "score": 0.1133,
+            "prompt": "Ordne die Marke ihrem Ursprungsland zu.",
+            "explanation": "LEGO–Dänemark, Samsung–Südkorea, IKEA–Schweden."
+          }
+        ]
+      },
+      {
+        "id": "mc723",
+        "prompt": "Was macht den „Point Nemo“ im Pazifik geografisch besonders?",
+        "nearest": [
+          {
+            "id": "or18",
+            "score": 0.117,
+            "prompt": "Ordne die Ozeane nach Fläche – vom kleinsten zum größten.",
+            "explanation": "Arktisch, Indisch, Atlantisch, Pazifisch."
+          },
+          {
+            "id": "es02",
+            "score": 0.1157,
+            "prompt": "Wie viele Kilometer lang ist der Äquator ungefähr?",
+            "explanation": "Der Erdumfang am Äquator beträgt etwa 40.075 Kilometer."
+          },
+          {
+            "id": "es535",
+            "score": 0.103,
+            "prompt": "Wie viele Kilometer beträgt der Erdumfang über die Pole ungefähr?",
+            "explanation": "Der meridionale Erdumfang liegt bei rund 40.008 Kilometern."
+          },
+          {
+            "id": "or223",
+            "score": 0.1026,
+            "prompt": "Ordne diese Ozeane nach ihrer mittleren Tiefe – von flach nach tief.",
+            "explanation": "Arktischer Ozean (1.205 m) → Atlantischer Ozean (3.926 m) → Indischer Ozean (3.963 m) → Pazifischer Ozean (4.282 m)."
+          }
+        ]
+      },
+      {
+        "id": "mc724",
+        "prompt": "Was schob bei direkten Beobachtungen die „wandernden Steine“ im kalifornischen Death Valley über den Boden?",
+        "nearest": [
+          {
+            "id": "es536",
+            "score": 0.0907,
+            "prompt": "Wie viele Kilometer lang ist der Marianengraben ungefähr?",
+            "explanation": "Der bogenförmige Tiefseegraben erstreckt sich über ungefähr 2.550 Kilometer."
+          },
+          {
+            "id": "ma136",
+            "score": 0.0748,
+            "prompt": "Ordne die Besonderheit dem Tier zu.",
+            "explanation": "Werkzeuggebrauch mit Steinen – der Seeotter; extrem langsamen Stoffwechsel – das Faultier; eine sehr lange klebrige Zunge – der Ameisenbär."
+          },
+          {
+            "id": "tf122",
+            "score": 0.066,
+            "prompt": "Der Fachbegriff für die Wissenschaft von Erdbeben lautet Ornithologie.",
+            "explanation": "Richtig ist Seismologie."
+          },
+          {
+            "id": "tf089",
+            "score": 0.0653,
+            "prompt": "Magnetische flussdichte wird in Tesla gemessen.",
+            "explanation": "Die passende Einheit ist Tesla."
+          }
+        ]
+      },
+      {
+        "id": "mc725",
+        "prompt": "Warum kann es in der Dänemarkstraße zwischen Grönland und Island einen riesigen „Wasserfall“ unter Wasser geben?",
+        "nearest": [
+          {
+            "id": "or536",
+            "score": 0.1063,
+            "prompt": "Ordne diese Inseln nach Fläche – von klein nach groß.",
+            "explanation": "Malta (316 Quadratkilometer ungefähr) → Kreta (8336 Quadratkilometer ungefähr) → Island (103000 Quadratkilometer ungefähr) → Grönland (2.16609e+06 Quadratkilometer ungefähr)."
+          },
+          {
+            "id": "es28",
+            "score": 0.0823,
+            "prompt": "Wie viele Liter Wasser verbraucht eine durchschnittliche Person in Deutschland im Haushalt ungefähr pro Tag?",
+            "explanation": "Der tägliche Haushaltsverbrauch liegt grob bei 120 bis 130 Litern pro Person."
+          },
+          {
+            "id": "ma536",
+            "score": 0.074,
+            "prompt": "Ordne den Fluss dem Meer zu, in das er mündet.",
+            "explanation": "Po – Adriatisches Meer; Weichsel – Ostsee; Orinoco – Atlantik."
+          },
+          {
+            "id": "es195",
+            "score": 0.0712,
+            "prompt": "Wie viele Meter breit sind die Victoriafälle am Sambesi laut UNESCO?",
+            "explanation": "Die Victoriafälle erstrecken sich über 1.708 Meter. Die UNESCO bezeichnet sie wegen dieser Breite und der Wassermenge als größten zusammenhängenden Wasservorhang der Welt."
+          }
+        ]
+      },
+      {
+        "id": "mc726",
+        "prompt": "Aus welcher Region stammt der Granit der Curlingsteine bei den Olympischen Winterspielen 2026?",
+        "nearest": [
+          {
+            "id": "tf184",
+            "score": 0.1073,
+            "prompt": "An den Winterspielen von Chamonix 1924 nahmen mehr als 100 Nationen teil.",
+            "explanation": "Es waren 16 nationale Mannschaften beziehungsweise NOKs vertreten."
+          },
+          {
+            "id": "tf178",
+            "score": 0.0914,
+            "prompt": "Ein olympisches Schwimmbecken ist normalerweise 50 Meter lang.",
+            "explanation": "Die dokumentierten olympischen Wettkampfbecken sind 50 Meter lang."
+          },
+          {
+            "id": "es524",
+            "score": 0.0827,
+            "prompt": "Wie viele Stunden dauerte die Apollo-11-Mission ungefähr?",
+            "explanation": "Vom Start bis zur Wasserung vergingen gut acht Tage beziehungsweise rund 195 Stunden."
+          },
+          {
+            "id": "ma177",
+            "score": 0.0818,
+            "prompt": "Ordne dem Sport die passende Wettkampfumgebung beziehungsweise Anzeige zu.",
+            "explanation": "Schwimmen – 50-Meter-Wettkampfbecken; Formel-Rennsport – karierte Zielflagge; Skispringen – Schanze."
+          }
+        ]
+      },
+      {
+        "id": "mc727",
+        "prompt": "Warum wird ein Squashball vor einer Partie durch kräftige Schläge aufgewärmt?",
+        "nearest": [
+          {
+            "id": "tf10",
+            "score": 0.0758,
+            "prompt": "Der Eiffelturm kann im Sommer durch Wärme mehr als zehn Zentimeter höher sein.",
+            "explanation": "Wärmeausdehnung lässt die Eisenkonstruktion um ungefähr 15 Zentimeter wachsen."
+          },
+          {
+            "id": "tf711",
+            "score": 0.0702,
+            "prompt": "Im Suezkanal werden Schiffe durch Schleusen auf eine höhere Wasserstufe gehoben.",
+            "explanation": "Der Suezkanal besitzt keine Schleusen. Anders als etwa beim Panamakanal müssen Schiffe dort keine höher gelegene Kanalstrecke überwinden."
+          },
+          {
+            "id": "mc519",
+            "score": 0.0593,
+            "prompt": "Was bezeichnet Par beim Golf?",
+            "explanation": "Par ist die festgelegte Schlagzahl, die ein sehr guter Spieler für ein Loch erwarten lässt."
+          },
+          {
+            "id": "mc055",
+            "score": 0.0589,
+            "prompt": "Welches chemische Symbol gehört zu Kupfer?",
+            "explanation": "Das Elementsymbol von Kupfer ist Cu."
+          }
+        ]
+      },
+      {
+        "id": "mc728",
+        "prompt": "Warum werden Eishockeypucks vor dem Einsatz gekühlt beziehungsweise gefroren?",
+        "nearest": [
+          {
+            "id": "ma518",
+            "score": 0.1322,
+            "prompt": "Ordne das Gerät seiner Sportart zu.",
+            "explanation": "Puck – Eishockey; Federball – Badminton; Florett – Fechten."
+          },
+          {
+            "id": "tf728",
+            "score": 0.0859,
+            "prompt": "Autoreifen sind schwarz, weil dem Gummi unter anderem industrieller Ruß zugesetzt wird.",
+            "explanation": "Dieser Kohlenstoffzusatz färbt die Gummimischung und verbessert ihre Verschleißfestigkeit. Die schwarze Farbe ist also nicht bloß eine natürliche Eigenschaft von Kautschuk."
+          },
+          {
+            "id": "mc191",
+            "score": 0.0845,
+            "prompt": "Warum haben moderne Passagierflugzeuge meist abgerundete statt eckige Fenster?",
+            "explanation": "Scharfe Fensterecken erzeugen in einer wiederholt unter Druck gesetzten Flugzeugkabine hohe örtliche Materialspannungen. Abgerundete Kanten verteilen diese Belastungen gleichmäßiger und verringern das Risiko von Ermüdungsrissen."
+          },
+          {
+            "id": "ma515",
+            "score": 0.0736,
+            "prompt": "Ordne den Pokal seiner Sportart zu.",
+            "explanation": "Davis Cup – Tennis; Ryder Cup – Golf; Stanley Cup – Eishockey."
+          }
+        ]
+      },
+      {
+        "id": "mc729",
+        "prompt": "Ein korrekt ausgeführter Einwurf landet ohne jede weitere Berührung im gegnerischen Tor. Wie geht es weiter?",
+        "nearest": [
+          {
+            "id": "tf518",
+            "score": 0.1563,
+            "prompt": "Beim Tennis ist der Ball bei einem Aufschlag, der das Netz berührt und korrekt landet, sofort aus.",
+            "explanation": "Ein solcher Netzaufschlag wird ohne Punktwertung wiederholt."
+          },
+          {
+            "id": "mc182",
+            "score": 0.1304,
+            "prompt": "Wie viele Schritte darf ein Feldspieler im Handball mit dem Ball höchstens machen, ohne zu dribbeln?",
+            "explanation": "Im Handball sind ohne Dribbling höchstens drei Schritte erlaubt."
+          },
+          {
+            "id": "tf181",
+            "score": 0.1278,
+            "prompt": "Ein Handball-Feldspieler darf den Ball ohne Dribbling beliebig viele Schritte tragen.",
+            "explanation": "Ohne Dribbling sind höchstens drei Schritte erlaubt."
+          },
+          {
+            "id": "tf177",
+            "score": 0.1261,
+            "prompt": "Ein Fußballspiel darf nicht beginnen, wenn eine Mannschaft weniger als sieben Spieler hat.",
+            "explanation": "IFAB verlangt zum Beginn mindestens sieben Spieler pro Mannschaft."
+          }
+        ]
+      },
+      {
+        "id": "mc730",
+        "prompt": "Bei welcher Bahnraddisziplin folgt das Feld zunächst einem motorisierten Schrittmacher?",
+        "nearest": [
+          {
+            "id": "mc177",
+            "score": 0.1137,
+            "prompt": "Wie viele Hürden stehen in einem 400-Meter-Hürdenlauf pro Bahn?",
+            "explanation": "Beim 400-Meter-Hürdenlauf werden zehn gleichmäßig verteilte Hürden überquert."
+          },
+          {
+            "id": "es083",
+            "score": 0.0998,
+            "prompt": "Welche Spitzengeschwindigkeit erreicht Mensch im Sprint ungefähr?",
+            "explanation": "Der gesuchte Richtwert beträgt 45 km/h."
+          },
+          {
+            "id": "ma517",
+            "score": 0.0925,
+            "prompt": "Ordne die Sportart ihrer typischen Wettkampffläche zu.",
+            "explanation": "Bahnradsport – Velodrom; Judo – Tatami; Fechten – Planche."
+          },
+          {
+            "id": "mc179",
+            "score": 0.0921,
+            "prompt": "Wie viele Spieler einer Basketballmannschaft stehen regulär gleichzeitig auf dem Feld?",
+            "explanation": "Im Basketball stehen fünf Spieler je Mannschaft gleichzeitig auf dem Feld."
+          }
+        ]
+      },
+      {
+        "id": "mc731",
+        "prompt": "Welches große Bauvorhaben brachte Londons „Great Stink“ von 1858 entscheidend voran?",
+        "nearest": [
+          {
+            "id": "es061",
+            "score": 0.0733,
+            "prompt": "Wie lang ist Themse ungefähr?",
+            "explanation": "Der gesuchte Richtwert beträgt 346 km."
+          },
+          {
+            "id": "es04",
+            "score": 0.0701,
+            "prompt": "Wie viele Minuten braucht das Licht von der Sonne bis zur Erde?",
+            "explanation": "Im Mittel sind es etwa 8 Minuten und 20 Sekunden."
+          },
+          {
+            "id": "or177",
+            "score": 0.0674,
+            "prompt": "Ordne diese U-Bahn-Systeme nach ihrem Betriebsstart – vom ältesten zum jüngsten.",
+            "explanation": "London Underground (1863) → Budapester Metro (1896) → Pariser Métro (1900) → Berliner U-Bahn (1902)."
+          },
+          {
+            "id": "tf085",
+            "score": 0.0656,
+            "prompt": "Druck wird in Pascal gemessen.",
+            "explanation": "Die passende Einheit ist Pascal."
+          }
+        ]
+      },
+      {
+        "id": "mc732",
+        "prompt": "Wie bewegte sich Briefpost um 1900 durch Rohrnetze unter mehreren US-Großstädten?",
+        "nearest": [
+          {
+            "id": "or197",
+            "score": 0.0856,
+            "prompt": "Ordne diese Museen nach ihrer Öffnung für das Publikum – vom frühesten zum spätesten.",
+            "explanation": "British Museum (1759) → Louvre (1793) → Museo del Prado (1819) → Museum of Modern Art (1929)."
+          },
+          {
+            "id": "es522",
+            "score": 0.0824,
+            "prompt": "Wie viele Meter lang ist die gedruckte Rolle des Diamant-Sutra ungefähr?",
+            "explanation": "Die aus mehreren Papierblättern geklebte Rolle ist etwa fünf Meter lang."
+          },
+          {
+            "id": "or177",
+            "score": 0.0669,
+            "prompt": "Ordne diese U-Bahn-Systeme nach ihrem Betriebsstart – vom ältesten zum jüngsten.",
+            "explanation": "London Underground (1863) → Budapester Metro (1896) → Pariser Métro (1900) → Berliner U-Bahn (1902)."
+          },
+          {
+            "id": "tf707",
+            "score": 0.0634,
+            "prompt": "Tauziehen war nie eine olympische Medaillendisziplin.",
+            "explanation": "Tauziehen stand von 1900 bis 1920 bei mehreren Olympischen Spielen auf dem Programm. Damals wurden dafür reguläre olympische Medaillen vergeben."
+          }
+        ]
+      },
+      {
+        "id": "mc733",
+        "prompt": "Woraus wurde der kostbare tyrische Purpur in der Antike gewonnen?",
+        "nearest": [
+          {
+            "id": "ma520",
+            "score": 0.0983,
+            "prompt": "Ordne die historische Stätte ihrer Kultur zu.",
+            "explanation": "Machu Picchu – Inka; Chichén Itzá – Maya; Persepolis – Achämeniden."
+          },
+          {
+            "id": "mc530",
+            "score": 0.0872,
+            "prompt": "Aus welchem Pflanzenteil wird Zimt gewonnen?",
+            "explanation": "Zimt entsteht aus der getrockneten inneren Rinde von Zimtbäumen."
+          },
+          {
+            "id": "tf739",
+            "score": 0.0757,
+            "prompt": "Aluminium galt im 19. Jahrhundert zeitweise als wertvoller als Gold.",
+            "explanation": "Das Metall ließ sich zunächst nur sehr aufwendig gewinnen und galt als kostbare Rarität. Erst verbesserte industrielle Verfahren machten Aluminium zum preiswerten Massenwerkstoff."
+          },
+          {
+            "id": "es204",
+            "score": 0.0687,
+            "prompt": "Wie viele Hektar der antiken Stadt Pompeji sind laut UNESCO ausgegraben?",
+            "explanation": "Die UNESCO beziffert die ausgegrabene Fläche von Pompeji auf 44 Hektar. Die gesamte antike Stadt erstreckte sich über ungefähr 66 Hektar."
+          }
+        ]
+      },
+      {
+        "id": "mc734",
+        "prompt": "Worauf schrieben Bürger im antiken Athen bei der Abstimmung über eine Verbannung die Namen ihrer Kandidaten?",
+        "nearest": [
+          {
+            "id": "es204",
+            "score": 0.1678,
+            "prompt": "Wie viele Hektar der antiken Stadt Pompeji sind laut UNESCO ausgegraben?",
+            "explanation": "Die UNESCO beziffert die ausgegrabene Fläche von Pompeji auf 44 Hektar. Die gesamte antike Stadt erstreckte sich über ungefähr 66 Hektar."
+          },
+          {
+            "id": "ma520",
+            "score": 0.0903,
+            "prompt": "Ordne die historische Stätte ihrer Kultur zu.",
+            "explanation": "Machu Picchu – Inka; Chichén Itzá – Maya; Persepolis – Achämeniden."
+          },
+          {
+            "id": "es523",
+            "score": 0.0834,
+            "prompt": "Wie viele Kilometer lang waren die Grenzanlagen um West-Berlin ungefähr?",
+            "explanation": "Die Anlagen um West-Berlin erstreckten sich über rund 155 Kilometer."
+          },
+          {
+            "id": "ma524",
+            "score": 0.083,
+            "prompt": "Ordne das Schreibmedium dem typischen Material zu.",
+            "explanation": "Papyrus – Pflanzenmark; Pergament – Tierhaut; Keilschrifttafel – Ton."
+          }
+        ]
+      },
+      {
+        "id": "mc735",
+        "prompt": "Welcher Vulkanausbruch trug wesentlich zum „Jahr ohne Sommer“ 1816 bei?",
+        "nearest": [
+          {
+            "id": "or523",
+            "score": 0.0921,
+            "prompt": "Ordne diese Verträge – von früh nach spät.",
+            "explanation": "Westfälischer Friede (1648 Jahr) → Wiener Kongress (1815 Jahr) → Versailler Vertrag (1919 Jahr) → Dayton-Abkommen (1995 Jahr)."
+          },
+          {
+            "id": "mc31",
+            "score": 0.0915,
+            "prompt": "Welches Land besitzt die längste Küstenlinie der Welt?",
+            "explanation": "Durch seine vielen Inseln und Buchten hat Kanada die längste Küstenlinie."
+          },
+          {
+            "id": "mc523",
+            "score": 0.0905,
+            "prompt": "In welchem Jahr wurde der Westfälische Friede geschlossen?",
+            "explanation": "Die Verträge von Münster und Osnabrück beendeten 1648 den Dreißigjährigen Krieg."
+          },
+          {
+            "id": "ma524",
+            "score": 0.0788,
+            "prompt": "Ordne das Schreibmedium dem typischen Material zu.",
+            "explanation": "Papyrus – Pflanzenmark; Pergament – Tierhaut; Keilschrifttafel – Ton."
+          }
+        ]
+      },
+      {
+        "id": "mc736",
+        "prompt": "Was konnte der antike Mechanismus von Antikythera mithilfe seiner Zahnräder berechnen?",
+        "nearest": [
+          {
+            "id": "es25",
+            "score": 0.0848,
+            "prompt": "Wie viele Kilometer beträgt die mittlere Entfernung der Erde zur Sonne?",
+            "explanation": "Eine Astronomische Einheit entspricht ungefähr 149,6 Millionen Kilometern."
+          },
+          {
+            "id": "ma520",
+            "score": 0.0775,
+            "prompt": "Ordne die historische Stätte ihrer Kultur zu.",
+            "explanation": "Machu Picchu – Inka; Chichén Itzá – Maya; Persepolis – Achämeniden."
+          },
+          {
+            "id": "mc154",
+            "score": 0.0693,
+            "prompt": "Wie viele AA-Batterien benötigte der ursprüngliche Game Boy?",
+            "explanation": "Der ursprüngliche Game Boy wurde mit vier AA-Batterien betrieben."
+          },
+          {
+            "id": "es204",
+            "score": 0.0684,
+            "prompt": "Wie viele Hektar der antiken Stadt Pompeji sind laut UNESCO ausgegraben?",
+            "explanation": "Die UNESCO beziffert die ausgegrabene Fläche von Pompeji auf 44 Hektar. Die gesamte antike Stadt erstreckte sich über ungefähr 66 Hektar."
+          }
+        ]
+      },
+      {
+        "id": "mc737",
+        "prompt": "Welche Bestandteile können laut Forschung zur Selbstheilung mancher antiken römischen Betone beitragen?",
+        "nearest": [
+          {
+            "id": "or206",
+            "score": 0.0941,
+            "prompt": "Ordne diese Phasen der Mitose – von der frühesten zur spätesten.",
+            "explanation": "Prophase (Chromosomen werden sichtbar) → Metaphase (Anordnung in der Zellmitte) → Anaphase (Trennung) → Telophase (neue Kernhüllen entstehen)."
+          },
+          {
+            "id": "es204",
+            "score": 0.0685,
+            "prompt": "Wie viele Hektar der antiken Stadt Pompeji sind laut UNESCO ausgegraben?",
+            "explanation": "Die UNESCO beziffert die ausgegrabene Fläche von Pompeji auf 44 Hektar. Die gesamte antike Stadt erstreckte sich über ungefähr 66 Hektar."
+          },
+          {
+            "id": "or209",
+            "score": 0.0641,
+            "prompt": "Ordne diese Schritte im Wasserkreislauf – beginnend mit der Verdunstung von Oberflächenwasser.",
+            "explanation": "Verdunstung (Wasser wird zu Dampf) → Kondensation (Wolken entstehen) → Niederschlag (Wasser fällt) → Oberflächenabfluss (Wasser fließt zurück)."
+          },
+          {
+            "id": "or38",
+            "score": 0.0628,
+            "prompt": "Ordne die Bestandteile des Verdauungswegs in ihrer üblichen Reihenfolge.",
+            "explanation": "Nach der Speiseröhre folgen Magen, Dünndarm und Dickdarm."
+          }
+        ]
+      },
+      {
+        "id": "mc738",
+        "prompt": "Was passiert bei einem sogenannten Prince-Rupert-Tropfen aus Glas, wenn seine dünne Spitze abbricht?",
+        "nearest": [
+          {
+            "id": "tf732",
+            "score": 0.0798,
+            "prompt": "Ein Stück Papier lässt sich höchstens achtmal zur Hälfte falten.",
+            "explanation": "Mit einem sehr langen, dünnen Papierstreifen wurden bereits zwölf Halbierungen geschafft. Die praktische Grenze hängt unter anderem von Länge, Dicke und Faltweise ab, nicht von einem allgemeinen Acht-Faltungen-Gesetz."
+          },
+          {
+            "id": "or187",
+            "score": 0.0649,
+            "prompt": "Ordne diese Minerale nach ihrer Härte auf der Mohs-Skala – von weich nach hart.",
+            "explanation": "Gips (Mohshärte 2) → Calcit (3) → Quarz (7) → Diamant (10)."
+          },
+          {
+            "id": "ma184",
+            "score": 0.0648,
+            "prompt": "Ordne das Vitamin der klassischen Folge eines schweren Mangels zu.",
+            "explanation": "Ein ausgeprägter Vitamin-C-Mangel verursacht Skorbut und kann unter anderem zu Zahnfleischbluten und schlechter Wundheilung führen. Vitamin-D-Mangel kann bei Kindern Rachitis auslösen, bei der die Knochen weich und verformbar werden. Ein schwerer Mangel an Vitamin B1, auch Thiamin genannt, führt zur Krankheit Beriberi, die Nerven, Muskeln und Herz betreffen kann."
+          },
+          {
+            "id": "mc198",
+            "score": 0.0618,
+            "prompt": "An welchem besonderen Punkt existiert Wasser gleichzeitig als Eis, Flüssigkeit und Dampf?",
+            "explanation": "Am Tripelpunkt stehen die feste, flüssige und gasförmige Form von Wasser gleichzeitig im Gleichgewicht."
+          }
+        ]
+      },
+      {
+        "id": "mc739",
+        "prompt": "Welches Problem bezeichnet „Kaltschweißen“ bei beweglichen Metallteilen im Vakuum?",
+        "nearest": [
+          {
+            "id": "mc16",
+            "score": 0.0927,
+            "prompt": "Welches Metall ist bei Raumtemperatur flüssig?",
+            "explanation": "Quecksilber ist unter normalen Raumbedingungen flüssig."
+          },
+          {
+            "id": "mc223",
+            "score": 0.0723,
+            "prompt": "Welche Aussage zu den Farben der olympischen Ringe ist richtig?",
+            "explanation": "Die Ringe stehen gemeinsam für die fünf Kontinente, aber keine einzelne Farbe ist fest einem Kontinent zugeordnet. Zusammen mit Weiß kamen die Farben damals in allen Nationalflaggen vor."
+          },
+          {
+            "id": "es29",
+            "score": 0.0716,
+            "prompt": "Wie viele Kilometer legt Licht in einer Sekunde ungefähr zurück?",
+            "explanation": "Im Vakuum bewegt sich Licht mit rund 299.792 Kilometern pro Sekunde."
+          },
+          {
+            "id": "mc11",
+            "score": 0.071,
+            "prompt": "Woraus besteht Glas hauptsächlich?",
+            "explanation": "Gewöhnliches Glas basiert vor allem auf Siliziumdioxid aus Quarzsand."
+          }
+        ]
+      },
+      {
+        "id": "mc740",
+        "prompt": "Was ist das berühmte „Hexagon“ nahe dem Nordpol des Saturn?",
+        "nearest": [
+          {
+            "id": "ma542",
+            "score": 0.1124,
+            "prompt": "Ordne den Planeten seinem größten Mond zu.",
+            "explanation": "Jupiter – Ganymed; Saturn – Titan; Neptun – Triton."
+          },
+          {
+            "id": "or205",
+            "score": 0.0994,
+            "prompt": "Ordne diese Planeten nach ihrer mittleren Dichte – von niedrig nach hoch.",
+            "explanation": "Saturn (687 kg/m³) → Uranus (1.270 kg/m³) → Neptun (1.638 kg/m³) → Erde (5.514 kg/m³)."
+          },
+          {
+            "id": "or100",
+            "score": 0.0957,
+            "prompt": "Ordne die Entfernungen von klein nach groß.",
+            "explanation": "Richtig: Erde–Mond → Sonne–Merkur → Sonne–Mars → Sonne–Saturn."
+          },
+          {
+            "id": "or093",
+            "score": 0.0942,
+            "prompt": "Ordne die Entfernungen von klein nach groß.",
+            "explanation": "Richtig: Erde–ISS → Sonne–Merkur → Sonne–Mars → Sonne–Saturn."
+          }
+        ]
+      },
+      {
+        "id": "mc741",
+        "prompt": "Was verursachte 1859 beim „Carrington-Ereignis“ weltweite Störungen von Telegrafenanlagen?",
+        "nearest": [
+          {
+            "id": "or206",
+            "score": 0.0688,
+            "prompt": "Ordne diese Phasen der Mitose – von der frühesten zur spätesten.",
+            "explanation": "Prophase (Chromosomen werden sichtbar) → Metaphase (Anordnung in der Zellmitte) → Anaphase (Trennung) → Telophase (neue Kernhüllen entstehen)."
+          },
+          {
+            "id": "mc197",
+            "score": 0.0671,
+            "prompt": "Wie weit entfernt sich der Mond derzeit ungefähr pro Jahr von der Erde?",
+            "explanation": "Der Mond entfernt sich im Mittel um rund 3,8 Zentimeter pro Jahr von der Erde. Gemessen wird das unter anderem mit Laserreflektoren auf dem Mond."
+          },
+          {
+            "id": "es188",
+            "score": 0.0608,
+            "prompt": "Wie viele chemische Elemente umfasst das von der IUPAC anerkannte Periodensystem?",
+            "explanation": "Das anerkannte Periodensystem umfasst 118 chemische Elemente. Es reicht von Wasserstoff mit der Ordnungszahl 1 bis Oganesson mit der Ordnungszahl 118."
+          },
+          {
+            "id": "es542",
+            "score": 0.0606,
+            "prompt": "Wie viele offizielle SI-Präfixe gibt es seit der Ergänzung um quetta bis quecto?",
+            "explanation": "Seit 2022 reichen 24 Präfixe von quecto bis quetta."
+          }
+        ]
+      },
+      {
+        "id": "mc742",
+        "prompt": "Welche Spielzeugmarke steuerte drei speziell aus Aluminium gefertigte Figuren für die Raumsonde Juno bei?",
+        "nearest": [
+          {
+            "id": "ma195",
+            "score": 0.1128,
+            "prompt": "Ordne die Raumsonde ihrem wichtigsten Ziel zu.",
+            "explanation": "Juno erforscht Jupiter. Cassini untersuchte Saturn und seine Monde, während New Horizons an Pluto vorbeiflog und den Kuipergürtel erkundet."
+          },
+          {
+            "id": "ma603",
+            "score": 0.1059,
+            "prompt": "Ordne das NASA-Projekt seiner Aufgabe zu.",
+            "explanation": "DART – Asteroid ablenken; Ingenuity – Flug auf dem Mars testen; Perseverance – Marsgestein untersuchen."
+          },
+          {
+            "id": "mc16",
+            "score": 0.1018,
+            "prompt": "Welches Metall ist bei Raumtemperatur flüssig?",
+            "explanation": "Quecksilber ist unter normalen Raumbedingungen flüssig."
+          },
+          {
+            "id": "or541",
+            "score": 0.0933,
+            "prompt": "Ordne diese Elemente nach ihrer Ordnungszahl – aufsteigend.",
+            "explanation": "Kohlenstoff (6 Ordnungszahl) → Aluminium (13 Ordnungszahl) → Eisen (26 Ordnungszahl) → Gold (79 Ordnungszahl)."
+          }
+        ]
+      },
+      {
+        "id": "mc743",
+        "prompt": "Woher kommt der typische „Metallgeruch“ an der Hand nach dem Anfassen eines eisernen Geländers?",
+        "nearest": [
+          {
+            "id": "tf19",
+            "score": 0.0761,
+            "prompt": "Der Geruch von frisch gemähtem Gras ist ein chemisches Notsignal der Pflanze.",
+            "explanation": "Verletztes Gras setzt flüchtige Stoffe frei, die unter anderem Abwehrreaktionen auslösen."
+          },
+          {
+            "id": "or222",
+            "score": 0.0738,
+            "prompt": "Ordne diese chemischen Elemente nach ihrer Ordnungszahl – von niedrig nach hoch.",
+            "explanation": "Wasserstoff (1) → Kohlenstoff (6) → Sauerstoff (8) → Eisen (26)."
+          },
+          {
+            "id": "or216",
+            "score": 0.0729,
+            "prompt": "Ordne diese Pokerhände nach ihrer Stärke – von schwach nach stark.",
+            "explanation": "Ein Paar → Straße → Full House → Vierling. In der üblichen Rangfolge schlägt jede Hand die davor genannte."
+          },
+          {
+            "id": "mc055",
+            "score": 0.061,
+            "prompt": "Welches chemische Symbol gehört zu Kupfer?",
+            "explanation": "Das Elementsymbol von Kupfer ist Cu."
+          }
+        ]
+      },
+      {
+        "id": "mc744",
+        "prompt": "Wozu verwendet die Spurensicherung Dämpfe von Sekundenkleber?",
+        "nearest": [
+          {
+            "id": "mc128",
+            "score": 0.0907,
+            "prompt": "Wie heißt der Fachbegriff für die Erforschung alter Kulturen durch Funde?",
+            "explanation": "Der Fachbegriff lautet Archäologie."
+          },
+          {
+            "id": "ma545",
+            "score": 0.0834,
+            "prompt": "Ordne das Organ seiner Hauptaufgabe zu.",
+            "explanation": "Niere – Blut filtern; Lunge – Gasaustausch; Bauchspeicheldrüse – Verdauungsenzyme und Hormone bilden."
+          },
+          {
+            "id": "mc182",
+            "score": 0.0652,
+            "prompt": "Wie viele Schritte darf ein Feldspieler im Handball mit dem Ball höchstens machen, ohne zu dribbeln?",
+            "explanation": "Im Handball sind ohne Dribbling höchstens drei Schritte erlaubt."
+          },
+          {
+            "id": "or183",
+            "score": 0.0598,
+            "prompt": "Ordne diese Euromünzen nach ihrem Durchmesser – von klein nach groß.",
+            "explanation": "10-Cent-Münze (19,75 mm) → 5-Cent-Münze (21,25 mm) → 20-Cent-Münze (22,25 mm) → 1-Euro-Münze (23,25 mm)."
+          }
+        ]
+      },
+      {
+        "id": "mc745",
+        "prompt": "Welcher Inhaltsstoff frischer Ananas kann verhindern, dass ein Gelatinedessert fest wird?",
+        "nearest": [
+          {
+            "id": "or183",
+            "score": 0.0649,
+            "prompt": "Ordne diese Euromünzen nach ihrem Durchmesser – von klein nach groß.",
+            "explanation": "10-Cent-Münze (19,75 mm) → 5-Cent-Münze (21,25 mm) → 20-Cent-Münze (22,25 mm) → 1-Euro-Münze (23,25 mm)."
+          },
+          {
+            "id": "es545",
+            "score": 0.0641,
+            "prompt": "Wie viele Rippenpaare besitzt ein Mensch gewöhnlich?",
+            "explanation": "Der menschliche Brustkorb besitzt gewöhnlich zwölf Rippenpaare."
+          },
+          {
+            "id": "or220",
+            "score": 0.063,
+            "prompt": "Ordne diese Euromünzen nach ihrem Gewicht – von leicht nach schwer.",
+            "explanation": "1-Cent-Münze (2,30 g) → 10-Cent-Münze (4,10 g) → 20-Cent-Münze (5,74 g) → 2-Euro-Münze (8,50 g)."
+          },
+          {
+            "id": "ma549",
+            "score": 0.0589,
+            "prompt": "Ordne den Kunststoff seinem Resin-Code zu.",
+            "explanation": "PET – 1; HDPE – 2; PVC – 3."
+          }
+        ]
+      },
+      {
+        "id": "mc746",
+        "prompt": "Was erzeugt im Maiskorn den Druck, durch den Popcorn aufplatzt?",
+        "nearest": [
+          {
+            "id": "tf540",
+            "score": 0.1071,
+            "prompt": "Helium hat eine geringere Dichte als Luft.",
+            "explanation": "Helium ist ein sehr leichtes Edelgas und steigt in Luft auf."
+          },
+          {
+            "id": "mc198",
+            "score": 0.1033,
+            "prompt": "An welchem besonderen Punkt existiert Wasser gleichzeitig als Eis, Flüssigkeit und Dampf?",
+            "explanation": "Am Tripelpunkt stehen die feste, flüssige und gasförmige Form von Wasser gleichzeitig im Gleichgewicht."
+          },
+          {
+            "id": "or547",
+            "score": 0.0979,
+            "prompt": "Ordne diese Vorgänge bei Normaldruck nach Temperatur – von niedrig nach hoch.",
+            "explanation": "Schokolade schmilzt (32 Grad Celsius ungefähr) → Eiweiß gerinnt (62 Grad Celsius ungefähr) → Wasser siedet (100 Grad Celsius ungefähr) → Zucker karamellisiert (170 Grad Celsius ungefähr)."
+          },
+          {
+            "id": "tf28",
+            "score": 0.0963,
+            "prompt": "Schall breitet sich im Wasser schneller aus als in der Luft.",
+            "explanation": "In Wasser ist Schall ungefähr viermal schneller als in Luft."
+          }
+        ]
+      },
+      {
+        "id": "mc747",
+        "prompt": "Warum fühlt sich Menthol im Mund kühl an?",
+        "nearest": [
+          {
+            "id": "mc140",
+            "score": 0.0909,
+            "prompt": "Welches Tier ist für eine sehr lange klebrige Zunge bekannt?",
+            "explanation": "der Ameisenbär ist dafür bekannt."
+          },
+          {
+            "id": "es547",
+            "score": 0.0876,
+            "prompt": "Wie viel Prozent des Körpergewichts eines Erwachsenen bestehen ungefähr aus Wasser?",
+            "explanation": "Als grober Mittelwert werden für Erwachsene rund 60 Prozent genannt."
+          },
+          {
+            "id": "or209",
+            "score": 0.0698,
+            "prompt": "Ordne diese Schritte im Wasserkreislauf – beginnend mit der Verdunstung von Oberflächenwasser.",
+            "explanation": "Verdunstung (Wasser wird zu Dampf) → Kondensation (Wolken entstehen) → Niederschlag (Wasser fällt) → Oberflächenabfluss (Wasser fließt zurück)."
+          },
+          {
+            "id": "es102",
+            "score": 0.0695,
+            "prompt": "Bei wie viel Kelvin gefriert reines Wasser ungefähr?",
+            "explanation": "Der gesuchte Richtwert beträgt 273.15 Kelvin."
+          }
+        ]
+      },
+      {
+        "id": "mc748",
+        "prompt": "Welches Gas wird in einem Verfahren unter hohem Druck eingesetzt, um Kaffeebohnen Koffein zu entziehen?",
+        "nearest": [
+          {
+            "id": "mc25",
+            "score": 0.1691,
+            "prompt": "Welches Gas macht den größten Anteil der Erdatmosphäre aus?",
+            "explanation": "Die Atmosphäre besteht zu etwa 78 Prozent aus Stickstoff."
+          },
+          {
+            "id": "tf533",
+            "score": 0.1271,
+            "prompt": "Kaffeebohnen sind botanisch die Samen der Kaffeefrucht.",
+            "explanation": "Die sogenannten Bohnen sind die Samen in den Kaffeekirschen."
+          },
+          {
+            "id": "mc205",
+            "score": 0.0975,
+            "prompt": "Was ist die sogenannte Kaffeebohne botanisch?",
+            "explanation": "Kaffeebohnen sind die Samen der Früchte einer Kaffeepflanze. Eine Frucht enthält meist zwei dieser Samen."
+          },
+          {
+            "id": "mc056",
+            "score": 0.0962,
+            "prompt": "Welches chemische Symbol gehört zu Helium?",
+            "explanation": "Das Elementsymbol von Helium ist He."
+          }
+        ]
+      },
+      {
+        "id": "mc749",
+        "prompt": "Wozu dienten die Kupfernieten an den Taschen früher Jeans ursprünglich?",
+        "nearest": [
+          {
+            "id": "mc546",
+            "score": 0.0705,
+            "prompt": "Welche Mineralstoffaufnahme unterstützt Vitamin D besonders?",
+            "explanation": "Vitamin D fördert die Calciumaufnahme und unterstützt Knochen."
+          },
+          {
+            "id": "tf186",
+            "score": 0.0598,
+            "prompt": "Der erste Dosenöffner wurde früher patentiert als die Konservendose aus Metall.",
+            "explanation": "Die ersten mit Zinn beschichteten Eisendosen wurden bereits 1810 patentiert. Ezra J. Warners erster Dosenöffner folgte erst 1858; zuvor öffnete man Dosen mit Hammer und Meißel."
+          },
+          {
+            "id": "or183",
+            "score": 0.0551,
+            "prompt": "Ordne diese Euromünzen nach ihrem Durchmesser – von klein nach groß.",
+            "explanation": "10-Cent-Münze (19,75 mm) → 5-Cent-Münze (21,25 mm) → 20-Cent-Münze (22,25 mm) → 1-Euro-Münze (23,25 mm)."
+          },
+          {
+            "id": "ma219",
+            "score": 0.0548,
+            "prompt": "Ordne die Schlafphase ihrem typischen Merkmal zu.",
+            "explanation": "N1 ist die leichte Übergangsphase. N3 ist der tiefe Schlaf mit langsamen Wellen; im REM-Schlaf treten schnelle Augenbewegungen und besonders lebhafte Träume auf."
+          }
+        ]
+      }
+    ]
+  },
+  "activation": {
+    "questions_uploaded": false,
+    "active_files_changed": false,
+    "restart_performed": false,
+    "historical_id_check": "pending_read_only_access_to_question_usage",
+    "proposed_ids": "mc700-mc749",
+    "user_requested_live_hold": true
+  }
+}

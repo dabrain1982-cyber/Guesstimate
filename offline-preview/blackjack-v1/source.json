@@ -1,0 +1,393 @@
+{
+  "source": "offline-preview/blackjack-v1/blackjack-tisch.html",
+  "served_preview": "static/blackjack-vorschau.html",
+  "response_copy": "C:\\Users\\DaBra\\.codex\\visualizations\\2026\\10\\29\\01a188b7-9d8c-7711-a9ef-0bac2ed63981\\blackjack-tisch.html",
+  "source_sha256": "67527fcfdd042f1af0d49d68843377df0bd0fff7af523eb947ba9ea81918870b",
+  "flyer_image": "static/carousel-blackjack-v2.png",
+  "flyer_style": "static/blackjack-flyer.css",
+  "flyer_copy": "templates/_game_flyers.html:blackjack_flyer_copy",
+  "flyer_preview": "static/blackjack-flyer-vorschau.html",
+  "button_recipe": "design-library/recipes/button-workshop/17476727364949609038305dee84e91f.json",
+  "status": "Archived browser example retained; actual local table uses fixed 500 test stake, explicit one-round bets, forfeiting exits and proportional original scene with side extension",
+  "button_parent": "656dbd73ec9c45a1b86791b2e3a0fcb0",
+  "button_font": "cinzel",
+  "flyer_status": "Nutzerfreigabe 29.10.2026: Der Flyer ist ok",
+  "button_recipe_sha256": "124fdae1955c74b9028c8c27f7738654882eece4deafebe9accd94f96ee113b7",
+  "shared_sources": {
+    "static/comic-button.css": "f79d3c15279b04ef0b47ec542d965168b874e40368cff03e11f57c93f9b8170e",
+    "offline-preview/comic-ui-v1/components.js": "f25371e0cf650af41a59f50b869ce9fe64978801c0bf03046ea02e94fc7d6a96",
+    "offline-preview/button-workshop-v1/materials.css": "56d8f08abf6d755452205da66697e2d8cada7bec224b4c02bb0c109e8d00fc8c",
+    "offline-preview/button-workshop-v1/geometry.js": "a0c22b4116cfdca6292decde499d8a029d58272ba013149c5d70a9846eb4a8c0",
+    "offline-preview/button-workshop-v1/renderer.js": "22854cb2f1aa07ab09ab7e500fb744402a5978d8aa188a1e4afc8887a43868ef",
+    "offline-preview/button-workshop-v1/media-renderer.js": "02d9c7dce474e68375269a4039ad383a91e044908600623e9f0d71de1b6060fc",
+    "offline-preview/button-workshop-v1/sound.js": "0638a92583f34e2fabcbf2c84d7e0480dc881b0b6696cb1c5f8b3cbf06917cf8"
+  },
+  "button_audio_sources": {
+    "media-piece.wav": "9daa659417fc4edd3c864c170b258d2d3a299cd44cab8937ea796f4025785cd3"
+  },
+  "build_script": "offline-preview/blackjack-v1/build_preview.py",
+  "button_overrides": [
+    "action label and disabled state only"
+  ],
+  "scene_image": "static/blackjack-tisch-sitzansicht-v1.webp",
+  "scene_image_sha256": "1585284abc0f54dce3f833904a66e2607407add4d58ace46aa0dae36a23ddf02",
+  "approved_scene_original": "offline-preview/blackjack-v1/concepts/blackjack-tisch-45grad-v1.png",
+  "scene_sources": {
+    "templates/_blackjack_table.html": "f63bcb96f36ef0154c55301915531c9d7887ce897d2f99418e835642724a5eb5",
+    "static/blackjack-table.css": "a1ebd04b872cff57c3690577f19da406fda643cea24c6c1e3a41a0b961ceac29"
+  },
+  "card_perspective_degrees": 45,
+  "view": "close seated view; fixed painted environment with interactive card layer",
+  "portrait_component": {
+    "static/player-portrait.js": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630",
+    "static/player-portrait.css": "a334ad608bbede0358ad7fe2df7e4070be21088cbebdf689d9820935b7a540a3",
+    "player_portrait.py": "97233b2f63814412f2b1c4c989c1f2e3644d6fcc538c1989ccb5578c7569a623"
+  },
+  "portrait_assets": {
+    "static/avatars/stage/a01-kea.webp": "7441345a8964ea65d6e103ea7ac69def99be5d0d8ac354e942d0b4fdd8aaa4a9",
+    "static/avatars/stage/a05-waschbaer.webp": "a0ed40bdbe78bf54ed8ddadd854c86b59f2bc7c1f4db200dc6220ec15bf18e8c",
+    "static/avatars/stage/a09-fennek.webp": "fbbc4184c96c4986a117b13b411ebdf4cd48924841f157382c97a7393c64c9b4"
+  },
+  "seat_roles": [
+    "marked example",
+    "existing local profile",
+    "marked example"
+  ],
+  "card_back_library": [
+    "image-86e2940ff66e4d328f0a2401ef30faff",
+    "image-a214df2705cd407ab48812ae913c4305",
+    "image-c6db34ea93f34ec1bec4bc4bce0ecb22"
+  ],
+  "selected_card_back": {
+    "name": "Samtgrün & Gold",
+    "library_id": "image-86e2940ff66e4d328f0a2401ef30faff",
+    "asset": "static/cards/blackjack/samtgruen-gold-v1.png",
+    "sha256": "24f82ff7ac5fdf2a4a3f7b25a55c8aeb4a296a70ca85703557b0abb98b8cb05a"
+  },
+  "button_texture": {
+    "path": "offline-preview/button-workshop-v1/assets/walnut-aged-v1.webp",
+    "sha256": "b56b3f6b8cff385f6596e373016a2a412e09f961c75c6c29950891f961f9fa47"
+  },
+  "seating_table": {
+    "route": "/karten/blackjack",
+    "component": "templates/_blackjack_table.html",
+    "styles": "static/blackjack-table.css",
+    "script": "static/blackjack-seating.js",
+    "runtime": {
+      "static/blackjack-workshop.js": "f137db8a7f9d309ef1fcc90ec9186a64550205893fb843de7c4d9fcaac8ca8cf",
+      "static/blackjack-workshop.css": "5997aa6e0131b1cdbd0fe3ca4241fb9d92272cf1747d1c52fcb3232325c07df7"
+    }
+  },
+  "live_table": {
+    "route": "/karten/blackjack",
+    "phase": "next-round wagers in any phase; immediate solo/all-ready deal",
+    "automatic_round_rhythm": true,
+    "sources": {
+      "blackjack.py": "db95a2abc0926c950619427c5217c3f745c732c3bbe20713889103369dbf88e4",
+      "blackjack_clock.py": "901537ab8d105d4daae58dda92dd51cd31cee7b81ba40563fc89f89991d575f6",
+      "blackjack_game.py": "7d51143aca5b76468e282f49517bec7138312a70dcaab3c82138de108180acb8",
+      "deploy/run_local.py": "ccce6cd03768a2184f0b2f21880a03058c195f83590529dcfafb0e453045ed85",
+      "static/blackjack-round-clips.js": "43997a626f703b77ec7ea0b6f31419f8f50dee21ee33eb4899a6dfcb8026d3fd",
+      "static/blackjack-round-sound.js": "935118fba257579a6704ace8431c789ffff53c8416c2fdc585c872abb7b74a58",
+      "static/blackjack-round-view.js": "018e2b4ea0f140a9db5489e910cf7d60a0201b3d4f39b9d51d94dde30070b9b2",
+      "static/blackjack-seating.js": "9f99d289ea1f44b1c0726485c4f0a0d9ceb7bbb432313e832d5ac81055b2bfe5",
+      "static/blackjack-table.css": "a1ebd04b872cff57c3690577f19da406fda643cea24c6c1e3a41a0b961ceac29",
+      "templates/_blackjack_table.html": "f63bcb96f36ef0154c55301915531c9d7887ce897d2f99418e835642724a5eb5",
+      "deploy/preview_blackjack_join.py": "2d7d216760ed8715ab9617da4c9e29fc6e4355802f824f7fea55c933b049ec4a",
+      "templates/blackjack_table.html": "0bd8e36d004e5a2e31e6e2bdabbec3e0b27b4ff74f39bf01ff0271560cf407b0",
+      "templates/_blackjack_test_banner.html": "ba3feff8962ea958682817a3d47cb625b913288b715bd3dd51337c1dd6a1f3cb",
+      "static/blackjack-simulation.css": "ce2f80934db95230a5f36ae618b194daee1e19f0fba75cd4f2a642c92b2c4d18",
+      "static/blackjack-card-motion.js": "bd047b9c361437af48a7ba994f28c95be7399f5c51dc4a385fc30e62b14904fb"
+    },
+    "card_asset_directory": "offline-preview/card-comparison-v1/assets/kenney",
+    "card_back": {
+      "name": "Samtgrün & Gold",
+      "library_id": "image-86e2940ff66e4d328f0a2401ef30faff",
+      "asset": "static/cards/blackjack/samtgruen-gold-v1.png",
+      "sha256": "24f82ff7ac5fdf2a4a3f7b25a55c8aeb4a296a70ca85703557b0abb98b8cb05a"
+    },
+    "betting_seconds": 20,
+    "result_seconds": 10,
+    "turn_timeouts": false,
+    "prebet_supported": true,
+    "solo_immediate_deal": true,
+    "all_seated_ready_deal": true,
+    "join_simulation": {
+      "url": "http://127.0.0.1:8780/",
+      "database": "runtime/blackjack-join-simulation/quiz.sqlite3",
+      "player": "Hugo · simuliert",
+      "separate_test_identity": true,
+      "wait_for_visitor_wager": true
+    },
+    "layout": {
+      "desktop": "whole image fitted within viewport; transparent action overlay",
+      "verified_sizes": [
+        [
+          1280,
+          720
+        ],
+        [
+          1911,
+          910
+        ],
+        [
+          1140,
+          884
+        ]
+      ],
+      "avatar_values": [
+        "table_points",
+        "wager",
+        "next_bet"
+      ],
+      "button_scaling": "canonical renderer size; whole proportions preserved",
+      "exit_button": {
+        "position": "fixed at viewport bottom right",
+        "gap_px": 16,
+        "separate_from_game_actions": true,
+        "phase_independent_size": true
+      }
+    },
+    "card_animation": {
+      "sequence": "occupied seats in order, then bank; two laps",
+      "card_flight_ms": 270,
+      "pause_ms": 85,
+      "hole_reveal_ms": 240,
+      "server_draws_unchanged": true,
+      "hydrate_without_replay": true,
+      "reduced_motion_supported": true
+    },
+    "wager_policy": {
+      "button": "Einsatz",
+      "explicit_each_round": true,
+      "automatic_repeat": false,
+      "locked_after_placement": true,
+      "edit_or_cancel_buttons": false,
+      "hide_during_own_hand": true,
+      "newcomer_can_bet_during_running_hand": true,
+      "server_permission": "can_bet"
+    }
+  },
+  "current_table_policy": {
+    "fixed_stake": 500,
+    "currency": "separate test iKuehe",
+    "new_test_balance": 10000,
+    "exit": "unsettled stakes and insurance forfeit",
+    "repeat": "explicit stake each round"
+  },
+  "room_extension": {
+    "image": "static/blackjack-room-wide-v2.png",
+    "sha256": "8fefbfed99bf30c008768d5c2a258ba40a9ab1714c34f3395a9e234a8846f034",
+    "prompt": "offline-preview/blackjack-v1/concepts/blackjack-room-wide-v2-prompt.txt",
+    "mode": "built-in image_gen",
+    "integration": "backdrop behind original proportional scene; 1.5 percent edge blend"
+  },
+  "chip_audio": {
+    "static/audio/blackjack/chips-place.ogg": "48cc0f01e2b62be7677f2e8c02177906cab80e96fa8176fa05b3ced35bc2a9c2",
+    "static/audio/blackjack/chips-payout.ogg": "0d171ea00224709cbe31ef95a111eabaf1382606a4836c5717043b339cbed8e9",
+    "static/audio/blackjack/Kenney-CC0.txt": "3d9c53acb6e236d760da14030f54bc53e1d8c2599f78470c36b96fddcde09221"
+  },
+  "card_deal_audio": {
+    "file": "static/audio/blackjack/card-deal-slide.ogg",
+    "sha256": "b9c82bcdbe6b7d00a06e2546bd2683a9ab082ca5fd090a42882f33eddd925b7f",
+    "source": "Kenney Casino Audio 1.1 / Audio/card-slide-4.ogg",
+    "seconds": 0.459,
+    "play": "start of card movement, normalized alongside chips"
+  },
+  "rules_explanation": {
+    "split_aces": "one card per ace; split21 is no natural",
+    "dealer_blackjack": "ends round before further player actions; insurance first if ace up",
+    "verified_tests": 57
+  },
+  "table_layout_stability": {
+    "reserved_actions": "height measured from canonical button recipe, independent of action count",
+    "initial_layout": "measured synchronously before first visible frame",
+    "result": "uses existing hand caption, no added row",
+    "evidence": "runtime/blackjack-circle-alignment-20261030/",
+    "card_anchor": "projected card bottom follows each painted bet circle upper rim plus 2 percent scene height, independent of avatars and console",
+    "avatars": "own portrait left of own wager, or below wager at leftmost seat; other portraits near their hands; canonical table component unchanged",
+    "wagers": "unlabelled stacks: green500, temporary black250 on top; actual values remain at avatar; placed insurance included"
+  },
+  "cleanup_step_1": {
+    "empty_seats": "hidden; joining actions retained",
+    "player_labels": "names and balances only; simulation name suffixes removed in UI",
+    "table_status": "round, occupancy and phase above leave button",
+    "workshop_button": "original preserved at step 1; compact successor completed in compact_button_step_2",
+    "evidence": "runtime/blackjack-cleanup-step1-20261030/"
+  },
+  "compact_button_step_2": {
+    "recipe_id": "17476727364949609038305dee84e91f",
+    "name": "vorschlag black Jack button – kompakt",
+    "parent_recipe": "656dbd73ec9c45a1b86791b2e3a0fcb0",
+    "native_width": 204,
+    "native_height": 71.375,
+    "native_font": 20.4,
+    "settings_changes": {
+      "size": 17,
+      "height_ratio": 104,
+      "font_scale": 120
+    },
+    "original_preserved": true,
+    "verification": "runtime/blackjack-compact-button-20261030/",
+    "running_table": "8780, round 252, all five play actions and outer leave button"
+  },
+  "action_intent_guard": {
+    "source": "static/blackjack-action-intent.js",
+    "sha256": "4696a04dbae33c879b3e77f8d2ca3e4e3b97d23c387e03d98aad063cfacfa72a",
+    "evidence": "runtime/blackjack-round260-20261030/",
+    "round_260_cause": "unconfirmed; prior round not retained",
+    "protection": "logical availability gate; feedback stays normal while busy or dealing; mounted press animation is retained",
+    "feedback_evidence": "runtime/blackjack-button-feedback-20261030/"
+  },
+  "avatar_step_3": {
+    "date": "2026-10-31",
+    "component": "player-portrait, layout=table",
+    "native_head_px": 75,
+    "native_copy_px": [
+      204,
+      66.8125
+    ],
+    "placement": "head aligned with outer physical hand; middle portrait beside bank row, limited horizontal displacement and upward clearance for long bank hands",
+    "wallet": "same balance, wager and round gain display for each occupied seat",
+    "scope": "local display only; original scene, workshop recipes and game rules preserved",
+    "verification": "runtime/blackjack-avatar-step3-20261030/verification.json",
+    "running_table": "8765, round 32, existing Stormseed seat; read-only visible check after user login",
+    "live_verification": "runtime/blackjack-avatar-step3-20261030/live-verification.json",
+    "next": "step 4: assess dealer card size",
+    "review": "implemented and visibly checked; user screenshot concerned unaffordable insurance, corrected separately"
+  },
+  "insurance_funds_feedback": {
+    "date": "2026-10-31",
+    "button": "always shown while insurance decision is open, including insufficient funds",
+    "unaffordable_click": "local reason with required and available balance; no wager request",
+    "feedback": "canonical normal button press and sound retained",
+    "fixture": "15 available, 250 required; no insurance POST; decline and affordable insurance still post normally",
+    "evidence": "runtime/blackjack-avatar-step3-20261030/insurance-verification.json",
+    "running_table": "8765 refreshed, round 38 own turn; reported insurance situation not replayed in user game"
+  },
+  "dealer_cards_step_4": {
+    "date": "2026-10-31",
+    "card_width_css": "clamp(30px,5.2cqw,80px), formerly clamp(28px,4.6cqw,70px)",
+    "native_css_width_before_after": [
+      70,
+      80
+    ],
+    "visible_width_at_1911": [
+      72.72,
+      83.24
+    ],
+    "player_visible_width_at_1911": 96.74,
+    "perspective_degrees": 45,
+    "bank_anchor_unchanged": "50% x, 52% y",
+    "caption_clearance": "on desktop, affected labels prefer felt between cards and wagers; approved side fallback if obstructed; no movement of cards",
+    "own_avatar": "left of jetons; leftmost seat below jetons, approved test option 1",
+    "evidence": "runtime/blackjack-avatar-and-dealer-step4-20261031/",
+    "running_table": "8765, round 72, read-only; normal Stormseed profile and new layout visible",
+    "scope": "desktop table; narrow portrait flow retained; narrow table caption density remains outside this change",
+    "next": "step 5: design proper jetons"
+  },
+  "jetons_step_5": {
+    "date": "2026-10-31",
+    "assets": "offline-preview/blackjack-v1/jeton-assets.json",
+    "active": "static/jetons/blackjack/jeton-green-v1.png",
+    "sprite_width": "clamp(40px,4.2cqw,70px)",
+    "measured_at_1911": [
+      67.90625,
+      49.6875
+    ],
+    "reference": "chips in original dealer tray",
+    "gameplay": "display only; no new denomination, payout, animation or ledger logic",
+    "verification": "runtime/blackjack-jetons-step5-20261031/verification.json",
+    "running_table": "8765, round80, real Stormseed profile, 500 wager, visible new green image",
+    "next": "step6: jeton payout and clearing presentation",
+    "workshop_status": "red and black explicitly approved and imported; green draft remains outside workshop"
+  },
+  "jeton_stacks": {
+    "date": "2026-10-31",
+    "green": 500,
+    "black": 250,
+    "black_temporary": true,
+    "printed_labels": false,
+    "all_black_on_top": true,
+    "red": "stored library alternative, unused in game",
+    "insurance": "included in displayed money on table",
+    "verification": "runtime/blackjack-stacks-research-20261031/verification.json",
+    "user_table_check": "8765 reloaded, real Stormseed profile round88; component loaded, no personal wager made; real-engine motion cases verified separately on8783",
+    "motion": "implemented and user-approved; short placement, payout addition then avatar, loss toward bank"
+  },
+  "no_peek_transition": {
+    "choice": "user chose reveal after player hands and official published rule, no invented exception",
+    "active": true,
+    "scope": "normal offline8765 and future optional Hugo8780 starts; no remote deployment",
+    "activated": "2026-10-31",
+    "policy": {
+      "bank_blackjack": "lose original wager once, return added split/double wagers",
+      "surrender": "half returned only without bank blackjack; otherwise full original lost",
+      "insurance": "decision before player turns; payout at final bank reveal",
+      "legacy_round": "previous dealt rounds keep Peek until finished"
+    },
+    "source": "https://massgaming.com/wp-content/uploads/RULES-Blackjack-4-9-26.pdf",
+    "sections": [
+      "6(i)",
+      "8",
+      "10(b)",
+      "11(d)"
+    ],
+    "tests": "219 Blackjack Python tests; 13 input and 9 card-presentation checks",
+    "visible_verification": "real engine isolated fixture: ten-up double, ace-up decline then play, split and double both hands; normal profile round84 preserved with next-rule notice",
+    "evidence": "runtime/blackjack-no-peek-activation-20261031"
+  },
+  "jeton_motion": {
+    "date": "2026-10-31",
+    "component": "static/blackjack-jeton-motion.js",
+    "distance_max_px": 48,
+    "in_ms": 260,
+    "out_ms": 290,
+    "win_rest_ms": 140,
+    "canonical_stack": true,
+    "result_after_cards": true,
+    "replays_on_poll_or_reload": false,
+    "reduced_motion": true,
+    "partial_payouts": "per-hand and insurance loss/refund/profit, black250 on top",
+    "next_bet": "queued behind payout; no blocking or extra debits",
+    "tests": "22 new planning checks;13 input,9 card-presentation; real-engine browser cases on8783",
+    "evidence": "runtime/blackjack-jeton-motion-20261031/verification.json",
+    "protected_files": 60
+  },
+  "card_front_drafts": {
+    "date": "2026-10-31",
+    "status": "approved; full deck active; jumbo indices requested afterwards",
+    "preview": "/static/blackjack-kartenmuster-v1.html",
+    "samples": [
+      "AS",
+      "7D",
+      "KC"
+    ],
+    "source": "offline-preview/blackjack-v1/card-front-drafts/source.json",
+    "live_card_replacement": true,
+    "library_import": false
+  },
+  "card_fronts": {
+    "date": "2026-10-31",
+    "name": "Black Jack – Elfenbein",
+    "cards": 52,
+    "delivery": "SVG; no clipped canvas export used",
+    "manifest": "static/cards/blackjack/fronts-ivory-v1/deck.json",
+    "selector": "static/blackjack-card-art.js",
+    "canonical_renderer": "offline-preview/blackjack-v1/card-fronts/render_deck.py",
+    "corner_rank_size": [
+      42,
+      96
+    ],
+    "corner_suit_size": [
+      25,
+      36
+    ],
+    "figures": "same three original generated court portraits, mirrored natively in shared card layout",
+    "geometry_unchanged": true,
+    "back_unchanged": "samtgruen-gold-140.webp",
+    "original_kenney": "preserved",
+    "preview": "/static/blackjack-kartensatz-v1.html",
+    "evidence": "runtime/blackjack-full-deck-20261031/"
+  }
+}

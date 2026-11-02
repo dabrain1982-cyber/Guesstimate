@@ -1,288 +1,248 @@
 (() => {
   const app = document.querySelector("[data-conquest-app]");
   if (!app) return;
-
   const stage = app.querySelector("[data-stage]");
   const scene = app.querySelector("[data-scene]");
-  const board = app.querySelector("[data-board]");
+  const room = app.querySelector(".conquest-room");
+  const toolbar = app.querySelector(".conquest-toolbar");
+  const opening = app.querySelector("[data-board-opening]");
+  const surface = app.querySelector("[data-board-surface]");
   const territoryLayer = app.querySelector("[data-territories]");
-  const floatingLayer = app.querySelector("[data-floating-cards]");
   const info = app.querySelector("[data-info]");
-  const assetRoot = app.dataset.assetsRoot;
-  const continentColors = {
-    nordamerika: "#d9bd3f", suedamerika: "#d96b3f", europa: "#506bb7",
-    afrika: "#bd4961", asien: "#5b9f62", australien: "#71518f",
+  const inventory = app.querySelector("[data-inventory]");
+  const boardImageWidth = 1284;
+  const boardImageHeight = 1225;
+  const boardWidth = 1000;
+  const boardHeight = boardWidth * boardImageHeight / boardImageWidth;
+  const sceneWidth = 1672;
+  const sceneHeight = 941;
+  // The photographed opening has bevelled corners. Its side rails continue
+  // beyond the front corners of the felt, so a four-point inset leaves wedges.
+  const tableOpening = [[332, 267], [1342, 267], [1369, 277], [1665, 634], [1611, 677], [61, 677], [8, 634], [305, 277]];
+  const tablePlane = [[313, 267], [1361, 267], [1708, 678], [-30, 678]];
+  // Pixel positions on welt-conquest-farbkarte-v2.png. Both views project
+  // these same points together with the single shared board surface.
+  const boardPositions = {
+    alaska: [99, 180], "nordwest-territorium": [219, 207], groenland: [566, 152],
+    alberta: [196, 321], ontario: [311, 336], ostkanada: [439, 373],
+    weststaaten: [164, 478], oststaaten: [333, 459], mittelamerika: [197, 573],
+    venezuela: [220, 674], peru: [210, 872], brasilien: [333, 781], argentinien: [190, 1033],
+    island: [592, 350], grossbritannien: [559, 494], skandinavien: [657, 388],
+    nordeuropa: [626, 531], westeuropa: [548, 620], suedeuropa: [648, 599], russland: [744, 431],
+    nordafrika: [529, 694], aegypten: [652, 665], ostafrika: [719, 780],
+    zentralafrika: [647, 846], suedafrika: [666, 937], madagaskar: [765, 949],
+    ural: [885, 348], sibirien: [958, 308], jakutien: [1103, 246], kamtschatka: [1157, 363],
+    irkutsk: [1040, 384], mongolei: [1020, 467], japan: [1134, 546], afghanistan: [855, 512],
+    china: [974, 600], "naher-osten": [762, 683], indien: [884, 682], suedostasien: [997, 677],
+    indonesien: [1049, 754], neuguinea: [1195, 785], westaustralien: [1114, 917], ostaustralien: [1204, 918],
   };
-  const camera = { x: 0, y: 28, zoom: 0.88, tilt: 52, turn: 0 };
-  let activeStyle = app.dataset.boardStyle || "klassisch";
-  let activeCardStyle = app.dataset.cardStyle || activeStyle;
+  const armyColors = ["#e0b43c", "#c44b40", "#3e78b8", "#43875b", "#925eaf", "#d17c36"];
+  const initialLean = innerWidth < 720 ? 1 : 0;
+  const camera = { lean: initialLean };
+  let boardTransform = null;
   let world = null;
   let gameState = null;
-  let stageDrag = null;
-  let territoryPile = [];
-  let missionPile = [];
-  let cardSerial = 0;
-  let diceEngine = null;
+  let selectedId = null;
+  let pollTimer = null;
+  let stopped = false;
+  let inventorySignature = null;
+  const clamp = (value, low, high) => Math.max(low, Math.min(high, value));
 
-  const asset = (path) => `${assetRoot}${path}`;
-  const clamp = (value, minimum, maximum) => Math.max(minimum, Math.min(maximum, value));
-  const shuffledRange = (length) => {
-    const values = Array.from({ length }, (_, index) => index);
-    for (let index = values.length - 1; index > 0; index -= 1) {
-      const swap = Math.floor(Math.random() * (index + 1));
-      [values[index], values[swap]] = [values[swap], values[index]];
-    }
-    return values;
-  };
-
-  const applyCamera = (animate = true) => {
-    stage.classList.toggle("is-dragging", !animate);
-    app.style.setProperty("--scene-x", `${camera.x}px`);
-    app.style.setProperty("--scene-y", `${camera.y}px`);
-    app.style.setProperty("--scene-zoom", camera.zoom.toFixed(3));
-    app.style.setProperty("--scene-tilt", `${camera.tilt}deg`);
-    app.style.setProperty("--scene-turn", `${camera.turn}deg`);
-    if (animate) window.setTimeout(() => stage.classList.remove("is-dragging"), 300);
-  };
-
-  const resetCamera = (view = "center") => {
-    camera.x = 0;
-    camera.y = view === "top" ? 30 : 28;
-    camera.zoom = view === "top" ? 0.82 : 0.88;
-    camera.tilt = view === "top" ? 0 : 52;
-    camera.turn = 0;
-    applyCamera(true);
-  };
-
-  const stylePaths = (boardStyle, cardStyle = boardStyle) => ({
-    board: asset(`boards/welt-${boardStyle}.webp`),
-    territorySheet: asset(`decks/laender-${cardStyle}/sheet-1.webp`),
-    territoryBack: asset(`decks/laender-${cardStyle}/back.webp`),
-    missionSheet: asset(`decks/missionen-${cardStyle}/sheet-1.webp`),
-    missionBack: asset(`decks/missionen-${cardStyle}/back.webp`),
-  });
-
-  const applyStyle = (style, cardStyle = style) => {
-    activeStyle = style;
-    activeCardStyle = cardStyle;
-    const paths = stylePaths(style, cardStyle);
-    board.src = paths.board;
-    app.style.setProperty("--territory-back", `url("${paths.territoryBack}")`);
-    app.style.setProperty("--mission-back", `url("${paths.missionBack}")`);
-    app.querySelector("[data-deck='territory'] .conquest-card-back").style.setProperty("--deck-back", `url("${paths.territoryBack}")`);
-    app.querySelector("[data-deck='mission'] .conquest-card-back").style.setProperty("--deck-back", `url("${paths.missionBack}")`);
-    app.querySelectorAll("[data-style]").forEach((button) => button.classList.toggle("is-active", button.dataset.style === style));
-    app.querySelectorAll(".conquest-drawn-card").forEach((card) => {
-      const mission = card.dataset.kind === "mission";
-      card.dataset.sheet = mission ? paths.missionSheet : paths.territorySheet;
-      card.style.backgroundImage = `url("${card.dataset.sheet}")`;
-      card.style.setProperty("--card-back", `url("${mission ? paths.missionBack : paths.territoryBack}")`);
+  // One planar projective transform fits the surface inside the photographed
+  // copper rail. There is no second tabletop, extrusion or independent frame.
+  const boardCorners = [[0, 0], [boardWidth, 0], [boardWidth, boardHeight], [0, boardHeight]];
+  const transformForCorners = (source, corners) => {
+    const rows = source.flatMap(([x, y], index) => {
+      const [u, v] = corners[index];
+      return [[x, y, 1, 0, 0, 0, -u * x, -u * y, u], [0, 0, 0, x, y, 1, -v * x, -v * y, v]];
     });
+    for (let column = 0; column < 8; column += 1) {
+      let pivot = column;
+      for (let row = column + 1; row < 8; row += 1) if (Math.abs(rows[row][column]) > Math.abs(rows[pivot][column])) pivot = row;
+      [rows[column], rows[pivot]] = [rows[pivot], rows[column]];
+      const divisor = rows[column][column];
+      for (let entry = column; entry < 9; entry += 1) rows[column][entry] /= divisor;
+      for (let row = 0; row < 8; row += 1) {
+        if (row === column) continue;
+        const factor = rows[row][column];
+        for (let entry = column; entry < 9; entry += 1) rows[row][entry] -= factor * rows[column][entry];
+      }
+    }
+    return rows.map((row) => row[8]);
   };
 
-  const projectedPosition = ([longitude, latitude]) => ({
-    x: (70 + (longitude + 180) / 360 * (2048 - 140)) / 2048 * 100,
-    y: (105 + (85 - latitude) / 145 * (1280 - 220)) / 1280 * 100,
-  });
+  const project = (transform, x, y) => {
+    const [a, b, c, d, e, f, g, h] = transform;
+    const divisor = g * x + h * y + 1;
+    return [(a * x + b * y + c) / divisor, (d * x + e * y + f) / divisor];
+  };
+
+  const cssMatrix = ([a, b, c, d, e, f, g, h]) =>
+    "matrix3d(" + [a, d, 0, g, b, e, 0, h, 0, 0, 1, 0, c, f, 0, 1].join(",") + ")";
+
+  const applyView = () => {
+    // Automatic framing depends only on the window, never on wheel zoom or
+    // dragging. Keep the whole board between the toolbar and the lower hint.
+    const fit = stage.clientWidth / sceneWidth;
+    const visibleTop = (sceneHeight - stage.clientHeight / fit) / 2;
+    const safeTop = visibleTop + (toolbar.offsetTop + toolbar.offsetHeight + 16) / fit;
+    const safeBottom = visibleTop + (stage.clientHeight - 48) / fit;
+    const availableHeight = Math.max(80, safeBottom - safeTop);
+    const topWidth = Math.min(sceneWidth - 48 / fit, availableHeight * boardWidth / boardHeight);
+    const topHeight = topWidth * boardHeight / boardWidth;
+    const topLeft = (sceneWidth - topWidth) / 2;
+    const topY = (safeTop + safeBottom - topHeight) / 2;
+    const topPlane = [[topLeft, topY], [topLeft + topWidth, topY],
+      [topLeft + topWidth, topY + topHeight], [topLeft, topY + topHeight]];
+    const lean = camera.lean;
+    const corners = tablePlane.map(([x, y], index) => [
+      x + (topPlane[index][0] - x) * lean,
+      y + (topPlane[index][1] - y) * lean,
+    ]);
+    const roomTransform = transformForCorners(tablePlane, corners);
+    // The photographed table and its copper opening follow the same plane
+    // as the map. Keep the room visible throughout the entire movement.
+    room.style.transform = cssMatrix(roomTransform);
+    opening.style.clipPath = "polygon(" + tableOpening.map(([x, y]) => {
+      const point = project(roomTransform, x, y);
+      return point[0] + "px " + point[1] + "px";
+    }).join(",") + ")";
+    boardTransform = transformForCorners(boardCorners, corners);
+    surface.style.transform = cssMatrix(boardTransform);
+    territoryLayer.querySelectorAll("[data-territory]").forEach((button) => {
+      const point = boardPositions[button.dataset.territory];
+      const [x, y] = project(boardTransform, point[0] / boardImageWidth * boardWidth, point[1] / boardImageHeight * boardHeight);
+      button.style.left = x + "px";
+      button.style.top = y + "px";
+    });
+    app.querySelectorAll("[data-view]").forEach((button) => {
+      const active = button.dataset.view === "top" ? lean > .999 : lean < .001;
+      button.setAttribute("aria-pressed", String(active));
+    });
+    scene.style.transform = "translate(-50%, -50%) scale(" + fit + ")";
+  };
+
+  const setLean = (value) => {
+    camera.lean = clamp(value, 0, 1);
+    applyView();
+  };
+
+  const showInfo = (heading, title, detail) => {
+    const small = document.createElement("small");
+    const strong = document.createElement("strong");
+    const span = document.createElement("span");
+    small.textContent = heading;
+    strong.textContent = title;
+    span.textContent = detail;
+    info.replaceChildren(small, strong, span);
+  };
 
   const selectTerritory = (territory) => {
+    selectedId = territory.id;
     const neighbors = new Set(territory.neighbors);
     territoryLayer.querySelectorAll("button").forEach((button) => {
-      button.classList.toggle("is-selected", button.dataset.territory === territory.id);
+      button.classList.toggle("is-selected", button.dataset.territory === selectedId);
       button.classList.toggle("is-neighbor", neighbors.has(button.dataset.territory));
     });
     const names = territory.neighbors.map((id) => world.territories.find((item) => item.id === id)?.name).filter(Boolean);
     const continent = world.continents.find((item) => item.id === territory.continent);
-    info.innerHTML = `<small>${continent.name.toUpperCase()} · BONUS ${continent.bonus}</small><strong>${territory.name}</strong><span>Nachbarn: ${names.join(", ")}</span>`;
+    const armies = gameState?.game?.territories[territory.id]?.armies;
+    showInfo(continent.name + " · BONUS +" + continent.bonus, territory.name + (armies ? " · " + armies + " Truppen" : ""), "Nachbarn: " + names.join(", "));
+  };
+
+  const renderArmies = () => {
+    if (!gameState?.game) return;
+    const colors = new Map(gameState.members.map((member, index) => [String(member.id), armyColors[index % armyColors.length]]));
+    territoryLayer.querySelectorAll("[data-territory]").forEach((button) => {
+      const territory = gameState.game.territories[button.dataset.territory];
+      if (!territory) return;
+      const owner = String(territory.owner);
+      const name = world.territories.find((item) => item.id === button.dataset.territory).name;
+      button.textContent = String(territory.armies);
+      button.style.setProperty("--army-color", owner === "neutral" ? "#87918a" : colors.get(owner) || "#87918a");
+      button.dataset.owner = owner;
+      button.setAttribute("aria-label", name + ", " + territory.armies + " Truppen");
+    });
+  };
+
+  const renderInventory = () => {
+    const own = gameState?.game?.inventory;
+    if (!own) return;
+    app.querySelector("[data-inventory-count]").textContent = String(own.territory_cards.length);
+    const signature = JSON.stringify(own);
+    if (signature === inventorySignature) return;
+    inventorySignature = signature;
+    app.querySelector("[data-own-mission]").textContent = own.mission?.text || "Welteroberung – du hast keine geheime Missionskarte.";
+    app.querySelector("[data-inventory-cards]").replaceChildren(...own.territory_cards.map((entry) => {
+      const card = document.createElement("article");
+      card.className = "conquest-inventory-card";
+      card.dataset.cardId = entry.id;
+      card.textContent = entry.name;
+      return card;
+    }));
+    app.querySelector("[data-inventory-empty]").hidden = own.territory_cards.length > 0;
   };
 
   const renderTerritories = () => {
     territoryLayer.replaceChildren(...world.territories.map((territory) => {
-      const point = projectedPosition(territory.label);
+      if (!boardPositions[territory.id]) throw new Error("Brettposition fehlt: " + territory.id);
       const button = document.createElement("button");
       button.type = "button";
       button.className = "conquest-territory";
       button.dataset.territory = territory.id;
       button.title = territory.name;
       button.setAttribute("aria-label", territory.name);
-      button.style.left = `${point.x}%`;
-      button.style.top = `${point.y}%`;
-      button.style.setProperty("--territory-color", continentColors[territory.continent]);
       button.addEventListener("click", (event) => { event.stopPropagation(); selectTerritory(territory); });
       return button;
     }));
     renderArmies();
+    applyView();
   };
 
-  const armyColors = ["#f0c548", "#dd5e50", "#4e8bd8", "#55ad70", "#b668c7", "#ef8e3f"];
-  const renderArmies = () => {
-    if (!gameState) return;
-    const colorByMember = new Map(gameState.members.map((member, index) => [String(member.id), armyColors[index % armyColors.length]]));
-    territoryLayer.querySelectorAll("[data-territory]").forEach((button) => {
-      const territory = gameState.game.territories[button.dataset.territory];
-      if (!territory) return;
-      const owner = String(territory.owner);
-      button.textContent = String(territory.armies);
-      button.style.setProperty("--army-color", owner === "neutral" ? "#a7aca9" : colorByMember.get(owner) || "#ddd");
-      button.dataset.owner = owner;
-    });
-  };
-
-  const placeCard = (card, x, y) => {
-    card.style.left = `${x}px`;
-    card.style.top = `${y}px`;
-    card.dataset.x = String(x);
-    card.dataset.y = String(y);
-  };
-
-  const makeCardDraggable = (card) => {
-    let drag = null;
-    card.addEventListener("pointerdown", (event) => {
-      if (event.button !== 0) return;
-      event.stopPropagation();
-      drag = { pointer: event.pointerId, x: event.clientX, y: event.clientY, cardX: Number(card.dataset.x), cardY: Number(card.dataset.y) };
-      card.classList.add("is-dragging");
-      card.setPointerCapture(event.pointerId);
-    });
-    card.addEventListener("pointermove", (event) => {
-      if (!drag || drag.pointer !== event.pointerId) return;
-      const scale = Math.max(camera.zoom, 0.45);
-      placeCard(card, clamp(drag.cardX + (event.clientX - drag.x) / scale, 55, 1195), clamp(drag.cardY + (event.clientY - drag.y) / scale, 70, 650));
-    });
-    card.addEventListener("pointerup", (event) => {
-      if (!drag || drag.pointer !== event.pointerId) return;
-      drag = null;
-      card.classList.remove("is-dragging");
-    });
-    card.addEventListener("dblclick", (event) => { event.stopPropagation(); card.classList.toggle("is-face-down"); });
-    card.addEventListener("contextmenu", (event) => { event.preventDefault(); event.stopPropagation(); card.classList.toggle("is-face-down"); });
-  };
-
-  const drawCard = (kind) => {
-    const mission = kind === "mission";
-    const pile = mission ? missionPile : territoryPile;
-    const count = mission ? 12 : 42;
-    if (!pile.length) pile.push(...shuffledRange(count));
-    const index = pile.pop();
-    const columns = mission ? 4 : 7;
-    const rows = mission ? 3 : 6;
-    const column = index % columns;
-    const row = Math.floor(index / columns);
-    const paths = stylePaths(activeStyle, activeCardStyle);
-    const card = document.createElement("button");
-    card.type = "button";
-    card.className = "conquest-drawn-card";
-    card.dataset.kind = kind;
-    card.dataset.index = String(index);
-    card.dataset.sheet = mission ? paths.missionSheet : paths.territorySheet;
-    card.title = "Doppelklick oder Rechtsklick: umdrehen";
-    card.style.backgroundImage = `url("${card.dataset.sheet}")`;
-    card.style.backgroundSize = `${columns * 100}% ${rows * 100}%`;
-    card.style.backgroundPosition = `${columns === 1 ? 0 : column / (columns - 1) * 100}% ${rows === 1 ? 0 : row / (rows - 1) * 100}%`;
-    card.style.setProperty("--card-back", `url("${mission ? paths.missionBack : paths.territoryBack}")`);
-    card.style.setProperty("--card-turn", `${(cardSerial % 7 - 3) * 1.7}deg`);
-    cardSerial += 1;
-    placeCard(card, mission ? 1005 : 900, mission ? 530 : 225);
-    makeCardDraggable(card);
-    floatingLayer.append(card);
-  };
-
-  stage.addEventListener("pointerdown", (event) => {
-    if (event.button !== 0 || event.target.closest("button, canvas")) return;
-    stageDrag = { pointer: event.pointerId, x: event.clientX, y: event.clientY, cameraX: camera.x, cameraY: camera.y, turn: camera.turn, rotate: event.shiftKey };
-    stage.classList.add("is-dragging");
-    stage.setPointerCapture(event.pointerId);
-  });
-  stage.addEventListener("pointermove", (event) => {
-    if (!stageDrag || stageDrag.pointer !== event.pointerId) return;
-    if (stageDrag.rotate || event.shiftKey) {
-      camera.turn = clamp(stageDrag.turn + (event.clientX - stageDrag.x) * 0.18, -32, 32);
-    } else {
-      camera.x = clamp(stageDrag.cameraX + event.clientX - stageDrag.x, -420, 420);
-      camera.y = clamp(stageDrag.cameraY + event.clientY - stageDrag.y, -260, 300);
-    }
-    applyCamera(false);
-  });
-  const endStageDrag = (event) => {
-    if (!stageDrag || stageDrag.pointer !== event.pointerId) return;
-    stageDrag = null;
-    stage.classList.remove("is-dragging");
-  };
-  stage.addEventListener("pointerup", endStageDrag);
-  stage.addEventListener("pointercancel", endStageDrag);
-  stage.addEventListener("wheel", (event) => {
-    event.preventDefault();
-    camera.zoom = clamp(camera.zoom * Math.exp(-event.deltaY * 0.0011), 0.46, 1.55);
-    applyCamera(false);
-  }, { passive: false });
-  stage.addEventListener("contextmenu", (event) => event.preventDefault());
-
-  app.querySelectorAll("[data-style]").forEach((button) => button.addEventListener("click", () => applyStyle(button.dataset.style)));
-  app.querySelectorAll("[data-view]").forEach((button) => button.addEventListener("click", () => resetCamera(button.dataset.view)));
-  app.querySelectorAll("[data-deck]").forEach((button) => button.addEventListener("click", (event) => { event.stopPropagation(); drawCard(button.dataset.deck); }));
-
-  const localizeThemeAssets = (value) => {
-    if (Array.isArray(value)) return value.map(localizeThemeAssets);
-    if (value && typeof value === "object") return Object.fromEntries(Object.entries(value).map(([key, item]) => [key, localizeThemeAssets(item)]));
-    if (typeof value === "string" && value.startsWith("https://cdn.dddice.com/")) return `${app.dataset.themeAssetsUrl}${new URL(value).pathname.split("/").pop()}`;
-    return value;
-  };
-
-  const initDice = async () => {
-    const canvas = app.querySelector("[data-conquest-dice]");
-    const status = app.querySelector("[data-dice-status]");
-    if (!window.ThreeDDice) { status.textContent = "Würfeltechnik konnte nicht geladen werden."; return; }
+  const loadState = async () => {
     try {
-      diceEngine = new window.ThreeDDice(canvas, undefined, {
-        bgColor: 0x000000, bgOpacity: 0, persistRolls: true,
-        camera: { fov: 26, distance: 20, position: { x: 4, y: 15, z: 20 }, rotation: null, quaternion: null },
-        dice: { size: .78, allowPlayerMoveDice: false, defaultClickBehavior: "nothing" },
-        light: { castShadows: true },
-      });
-      diceEngine.start();
-      const response = await fetch(app.dataset.themeUrl, { cache: "force-cache" });
-      if (!response.ok) throw new Error("theme");
-      const payload = await response.json();
-      diceEngine.loadTheme(localizeThemeAssets(payload.data || payload));
-      diceEngine.loadThemeResources("outgunned-reimagined-ma8o1nit");
-      diceEngine.resize(canvas.clientWidth, canvas.clientHeight);
-      status.textContent = "3D-Würfel bereit.";
+      const response = await fetch(app.dataset.statusUrl, { cache: "no-store", headers: { Accept: "application/json" } });
+      if (!response.ok || !response.headers.get("content-type")?.includes("application/json")) throw new Error("state");
+      const next = await response.json();
+      if (!gameState || next.revision >= gameState.revision) {
+        gameState = next;
+        if (world) renderArmies();
+        renderInventory();
+        const current = next.members.find((member) => member.id === next.game?.current_member_id);
+        if (next.game && current) app.querySelector("[data-turn-summary]").textContent = "RUNDE " + next.game.round + " · " + current.name + " IST DRAN";
+      }
     } catch (_) {
-      status.textContent = "Würfeltechnik konnte nicht geladen werden.";
-      diceEngine = null;
+      app.querySelector("[data-turn-summary]").textContent = "Verbindung unterbrochen · erneuter Versuch …";
+      if (!gameState) app.querySelector("[data-own-mission]").textContent = "Dein Inventar konnte noch nicht geladen werden.";
+    } finally {
+      if (!stopped) pollTimer = window.setTimeout(loadState, 2000);
     }
   };
 
-  app.querySelector("[data-roll]").addEventListener("click", async () => {
-    if (!diceEngine) return;
-    const status = app.querySelector("[data-dice-status]");
-    diceEngine.clear();
-    status.textContent = "Würfel rollen …";
-    try {
-      await diceEngine.rollLocal(Array.from({ length: 5 }, () => ({ type: app.dataset.dieType, theme: "outgunned-reimagined-ma8o1nit" })));
-      status.textContent = "Rot: Angriff · Dunkel: Verteidigung (Farbvarianten folgen).";
-    } catch (_) { status.textContent = "Der Wurf konnte nicht gestartet werden."; }
+  stage.addEventListener("wheel", (event) => {
+    if (event.ctrlKey || !event.deltaY) return;
+    event.preventDefault();
+    const unit = event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? stage.clientHeight : 1;
+    setLean(camera.lean - event.deltaY * unit / 2400);
+  }, { passive: false });
+  app.querySelectorAll("[data-view]").forEach((button) => button.addEventListener("click", () => {
+    setLean(button.dataset.view === "top" ? 1 : 0);
+  }));
+  app.querySelector("[data-inventory-open]").addEventListener("click", () => inventory.showModal());
+  app.querySelector("[data-inventory-close]").addEventListener("click", () => inventory.close());
+  inventory.addEventListener("click", (event) => {
+    const bounds = inventory.getBoundingClientRect();
+    if (event.target === inventory && (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom)) inventory.close();
   });
-
+  window.addEventListener("resize", applyView);
+  window.addEventListener("pagehide", () => {
+    stopped = true;
+    clearTimeout(pollTimer);
+  });
   fetch(app.dataset.worldUrl, { cache: "no-store" })
     .then((response) => { if (!response.ok) throw new Error("world"); return response.json(); })
-    .then((payload) => {
-      world = payload;
-      territoryPile = shuffledRange(world.territories.length);
-      missionPile = shuffledRange(world.missions.length);
-      renderTerritories();
-      applyStyle(activeStyle, activeCardStyle);
-      resetCamera("center");
-    })
-    .catch(() => { info.innerHTML = "<small>FEHLER</small><strong>Spieldaten fehlen</strong><span>Die 42 Gebiete konnten nicht geladen werden.</span>"; });
-
-  window.addEventListener("resize", () => {
-    const canvas = app.querySelector("[data-conquest-dice]");
-    if (diceEngine) diceEngine.resize(canvas.clientWidth, canvas.clientHeight);
-  });
-  initDice();
-  fetch(app.dataset.statusUrl, { cache: "no-store", headers: { Accept: "application/json" } })
-    .then((response) => { if (!response.ok) throw new Error("state"); return response.json(); })
-    .then((payload) => { gameState = payload; renderArmies(); })
-    .catch(() => {});
+    .then((payload) => { world = payload; renderTerritories(); })
+    .catch(() => showInfo("FEHLER", "Spieldaten fehlen", "Die 42 Gebiete konnten nicht geladen werden."));
+  applyView();
+  loadState();
 })();

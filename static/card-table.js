@@ -1,34 +1,4 @@
 (() => {
-  const lobby = document.querySelector("[data-card-lobby]");
-  const settings = document.querySelector("[data-card-settings]");
-  if (lobby) {
-    const pollLobby = async () => {
-      try {
-        const response = await fetch(lobby.dataset.statusUrl, { cache: "no-store", headers: { Accept: "application/json" } });
-        if (!response.ok) return window.location.reload();
-        const state = await response.json();
-        if (state.status !== "waiting" || String(state.revision) !== lobby.dataset.revision || String(state.members.length) !== lobby.dataset.memberCount) return window.location.reload();
-      } catch (_) {}
-      window.setTimeout(pollLobby, 900);
-    };
-    window.setTimeout(pollLobby, 900);
-  }
-  if (settings) {
-    const select = settings.querySelector("select[name='deck_size']");
-    const points = settings.querySelector("input[name='starting_points']");
-    const label = settings.querySelector("[data-card-autosave]");
-    const saveSettings = async () => {
-      label.textContent = "Speichert …";
-      try {
-        const response = await fetch(settings.dataset.settingsUrl, { method: "POST", body: new FormData(settings) });
-        if (!response.ok) throw new Error("save");
-        label.textContent = "Gespeichert.";
-      } catch (_) { label.textContent = "Konnte nicht gespeichert werden."; }
-    };
-    select?.addEventListener("change", saveSettings);
-    points?.addEventListener("change", saveSettings);
-  }
-
   const room = document.querySelector("[data-card-room]");
   if (!room) return;
   const csrf = room.querySelector("[data-csrf]").value;

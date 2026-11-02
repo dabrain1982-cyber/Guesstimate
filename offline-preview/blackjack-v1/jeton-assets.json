@@ -1,0 +1,54 @@
+{
+  "method": "built-in image_gen, original RGBA files preserved",
+  "reference": "static/blackjack-tisch-sitzansicht-v1.webp",
+  "active": "green",
+  "variants": [
+    {
+      "color": "green",
+      "asset": "static/jetons/blackjack/jeton-green-v1.png",
+      "sha256": "6270a34762c536880931bc0d08f0a4fab713ad1e3b790f4b3a4b24bc650437cc",
+      "name": "Black Jack - Jeton - Waldgruen",
+      "generated_source": "C:/Users/DaBra/.codex/generated_images/01a188b7-9d8c-7711-a9ef-0bac2ed63981/exec-4e037778-5339-4abc-98e2-86888f2c6075.png",
+      "pending_library_id": "image-1f9cb8f0c2d14026aa6fd703b62c5ca1",
+      "active_use": true,
+      "denomination": 500,
+      "printed_label": false
+    },
+    {
+      "color": "red",
+      "asset": "static/jetons/blackjack/jeton-red-v1.png",
+      "sha256": "fd9f947103710f27197894d64461fa9deafa6a193ad66dfa3e69836df6f42b90",
+      "name": "Black Jack - Jeton - Burgunder",
+      "generated_source": "C:/Users/DaBra/.codex/generated_images/01a188b7-9d8c-7711-a9ef-0bac2ed63981/exec-bebb95a2-efae-4bf4-869a-42e88de7bb4f.png",
+      "library_id": "image-951f5c820ce64c9a8fb735ca79f68cf5",
+      "library_approval": "explicit user request 2026-10-31",
+      "active_use": false,
+      "printed_label": false
+    },
+    {
+      "color": "black",
+      "asset": "static/jetons/blackjack/jeton-black-v1.png",
+      "sha256": "122db21151cc7453b1ada2a8f4257ff67962e005acdc3e2fca3c20f68759341c",
+      "name": "Black Jack - Jeton - Anthrazit",
+      "generated_source": "C:/Users/DaBra/.codex/generated_images/01a188b7-9d8c-7711-a9ef-0bac2ed63981/exec-60d9b1e1-f21c-4ec5-8a2c-838e3e3072bb.png",
+      "library_id": "image-99cae58293974d888fd3e959cfec7d1b",
+      "library_approval": "explicit user request 2026-10-31",
+      "active_use": true,
+      "denomination": 250,
+      "temporary_denomination": true,
+      "printed_label": false,
+      "stack_position": "top"
+    }
+  ],
+  "prompt": "One standalone vintage clay-composite poker chip, lying flat, camera about45 degrees above the table. Match the raccoon table reference lighting and materials. Ivory edge inlays, concentric engraving, blank central inset for live game amount, warm amber upper-left light, gently worn matte material. Tight centered transparent-alpha sprite, no numbers, text, logos, felt, table, hands or extra objects.",
+  "color_prompts": {
+    "green": "deep forest green with mellow ivory edge inlays",
+    "red": "dark oxblood burgundy red with mellow ivory edge inlays",
+    "black": "near-black charcoal with mellow ivory edge inlays"
+  },
+  "active_use": "unlabelled green500 stacks; optional black250 chip on top; red stored only",
+  "library_category": "icons: read-only raster originals",
+  "originals_preserved": true,
+  "library_status": "red and black approved and imported; green remains outside workshop",
+  "pending_import": "runtime/blackjack-jetons-step5-20261031/pending-library-import/"
+}

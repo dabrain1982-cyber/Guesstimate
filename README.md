@@ -2,6 +2,21 @@
 
 Ein mobil optimiertes Quiz für bis zu 100 Personen: Login, eine tägliche Runde mit fünf Kategorien, normiertes Scoring und eine fortlaufende Gesamtrangliste.
 
+## Auf diesem PC starten
+
+**Guesstimate-starten.cmd** öffnet das lokale Spiel, **Werkstaetten-starten.cmd**
+die Sammlung der Gestaltungswerkzeuge. Beide Dateien per Doppelklick öffnen.
+Laufende passende Dienste werden weiterverwendet. Anleitung und Datenablage:
+[LOKAL_STARTEN.md](LOKAL_STARTEN.md). Der Zugriff bleibt auf diesen PC begrenzt.
+
+## Gestaltung und wiederverwendbare Bausteine
+
+Der [gemeinsame Baukasten](docs/BAUKASTEN.md) legt die vorgesehenen Varianten und
+ihre Einsatzorte fest. Der [geprüfte Bestand](docs/BAUKASTEN_BESTAND.md) erfasst
+Komponenten, Avatare, Pulte, Hintergründe, Spielmaterial und Werkzeuge.
+Festgelegte nächste Varianten sind dort von bereits eingebauten Bausteinen
+getrennt. Dieser Dokumentationsstand wurde ausschließlich offline erstellt.
+
 ## Was bereits funktioniert
 
 - freie Registrierung: Jeder Link-Empfänger wählt Spielername und PIN selbst
@@ -109,6 +124,52 @@ Projektstand, überschreibt aber weder Spielstände noch die Konfiguration des
 gemeinsamen HTTPS-Proxys.
 
 ## Tests
+
+### Lokale Windows-Version
+
+Im Windows-Arbeitsordner kann `Guesstimate-starten.cmd` per Doppelklick
+gestartet werden. Danach im Browser `http://127.0.0.1:8765/` aufrufen.
+Das Fenster muss beim Spielen offen bleiben; Strg+C beendet die Anwendung.
+Bei der ersten Einrichtung werden die lokalen Abhängigkeiten mit
+`python -m pip install --target .deps -r requirements-local.txt` installiert.
+
+Dies ist die normale Anwendung mit Registrierung, Daily Quiz und den bereits
+implementierten Mehrspielermodi. Der eigene dauerhafte PC-Spielstand liegt
+unter `runtime/pc-local/quiz.sqlite3`, der Sitzungsschlüssel daneben.
+Beide bleiben von Git ausgeschlossen. Es werden keine Vorschaukonten,
+Bonuspunkte oder Beispielergebnisse angelegt und keine Mails verschickt.
+Vorhandene Testdatenbanken und Server-Sicherungen werden nicht eingelesen.
+Die Anwendung lauscht ausschließlich auf diesem PC; ein öffentlicher Zugang
+ist damit noch nicht eingerichtet.
+
+Die weiterentwickelte Conquest-Tischfassung ist hinter der normalen Lobby
+eingebunden. `Feldzug starten` öffnet am selben Ort den räumlichen Tisch mit
+gespeicherter Aufstellung und Zugaktionen. Ein zusätzlicher Tischserver ist
+nicht erforderlich. Der lokale Besitzer mit aktivem Entwicklermodus kann eine
+Einpersonen-Lobby über `Entwickler-Test starten` mit zwei virtuellen Testarmeen
+starten und alle drei Armeen abwechselnd steuern. Dafür entstehen keine weiteren
+Benutzerkonten. Normale Partien benötigen weiterhin mindestens zwei Personen.
+
+Darstellung und Bedienung liegen gemeinsam unter
+`offline-preview/conquest-2-5d-v1/`; die App liefert ausschließlich die benötigten
+Dateien über ihre eigene Adresse aus. Die frühere isolierte Vorschau nutzt
+dieselben Komponenten, behält aber ihren ausdrücklich ungespeicherten Beispielzug.
+Gespeicherte Partien verwenden die Python-Zugregeln und bleiben beim Neuladen
+erhalten. Der Kartentausch folgt der gemeinsamen steigenden Folge
+4, 6, 8, 10, 12, 15, danach jeweils +5. Zwei Joker ergänzen die 42
+Gebietskarten. Ein passendes eigenes Gebiet erhält beim Tausch direkt +2,
+höchstens einmal je Zug. Im Inventar drei Karten auswählen und den Satz
+mit der Bank tauschen; bei fünf oder mehr Karten ist dies vor dem Platzieren
+Pflicht. Große Symbole zeigen Infanterie, Reiter und Geschütz.
+Automatische Sieg-/Missionsprüfung und klassische Gebietswahl fehlen noch.
+
+Für Freunde braucht es einen getrennten stabilen Spielbetrieb und einen
+öffentlichen HTTPS-Zugang. Für die Fortsetzung vorhandener Konten, Punkte und
+Fragenverbräuche ist zusätzlich eine aktuelle konsistente Server-Datenbank
+erforderlich. Git allein enthält diese Daten nicht. Ein neuer PC-Spielstand
+wird später nicht automatisch mit dem Server zusammengeführt.
+
+### Prüfungen
 
 ```bash
 cd /srv/guesstimate

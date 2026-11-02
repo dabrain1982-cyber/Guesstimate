@@ -1,0 +1,13 @@
+Use case: precise-object-edit.
+Input image: edit target, the original warm club-room image used in Stormseed's Conquest.
+Primary request: remove ONLY the huge green-felt gaming table in the entire foreground, including its wooden top, brass trim, legs, aprons and shadows. Reconstruct the room floor naturally where the table was.
+Preserve the original fireplace in the middle, leather armchairs on both sides, side tables, lamps, bookshelves, wall panels, warm firelight, camera framing and the original cozy illustrated photorealistic style. Keep the back wall and all existing furniture recognizable and in the same locations and scale.
+The newly revealed foreground must be a continuous detailed dark red/brown Persian carpet on the wooden room floor, in physically coherent perspective, unobstructed across the middle. No foreground gaming table, no replacement table, no board, no map, no figures, no UI, no letters, no logos. Keep the wide approximately 16:9 composition and complete sharp photographic detail across the foreground. This is a background plate for a separately rendered 3D table, so the central floor must be completely empty.
+
+Werkzeug: eingebautes image_gen, Bearbeitung des vorhandenen Raumhintergrunds.
+Ausgabe: assets/raum-ohne-tisch.png. Originalbild und Originalausgabe bleiben erhalten.
+
+Zweiter Auftrag, Bodenmaterial:
+Use case: stylized-concept. Reference image: the newly prepared warm club-room with its dark red/brown Persian carpet. Generate a material texture for the floor of the same local 2.5D game prototype. A completely flat orthographic straight-down close view of a richly detailed worn Persian carpet, dark russet brown and near-black field with small muted gold and beige floral vine and medallion motifs matching the reference carpet. Fine woven textile detail, warm subdued colors, evenly lit, no perspective, no room, no table, no floorboards, no frame, no large outer border, no text. Fill a square image edge to edge with a repeatable all-over rug pattern; motifs should remain small rather than one enormous center medallion. This will be a floor material around the separately rendered game table.
+Werkzeug: eingebautes image_gen. Referenz: assets/raum-ohne-tisch.png.
+Ausgabe: assets/teppich.png. Originalausgabe bleibt erhalten.

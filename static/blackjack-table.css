@@ -1,0 +1,98 @@
+#stormseed-blackjack{--font-ui:Inter,'Segoe UI',sans-serif;--font-display:Fredoka,sans-serif;--bj-gold:#d1ad6d;--bj-cream:#f4e8cc;--bj-muted:#b8a991;--bj-ink:#23190f;font-family:var(--font-ui);background:transparent;color:var(--bj-cream);overflow:hidden;position:relative;isolation:isolate;text-align:left;width:min(100%,calc(100dvh * 1672 / 941));height:min(100dvh,calc(100vw * 941 / 1672));margin-inline:auto;font-size:14px;line-height:1.45;color-scheme:dark}
+.blackjack-page{margin:0;padding:0;min-height:100dvh;background:#100b08 url('./blackjack-room-wide-v2.png') center/auto min(100dvh,calc(100vw * 941 / 1672)) no-repeat;display:grid;place-items:center}
+#stormseed-blackjack *{box-sizing:border-box}
+#stormseed-blackjack button:not(.preview-button){font:inherit;cursor:inherit}
+#stormseed-blackjack button:not(.preview-button):focus-visible{outline:3px solid #e2c18b;outline-offset:4px}
+#stormseed-blackjack button:not(.preview-button):disabled{cursor:not-allowed;opacity:.4}
+#stormseed-blackjack [hidden]{display:none!important}
+#stormseed-blackjack .bj-room{position:relative;width:100%;height:100%;padding:0}
+#stormseed-blackjack .bj-room-head{position:absolute;z-index:12;top:var(--bj-hud-top,18px);left:24px;right:24px;display:flex;align-items:flex-start;justify-content:space-between;gap:18px;background:none;text-shadow:0 2px 5px #000}
+#stormseed-blackjack .bj-eyebrow{display:block;font-size:10px;letter-spacing:.15em;color:#bc9d70}
+#stormseed-blackjack .bj-room-head h2{font:500 clamp(18px,2vw,26px)/1.1 Georgia,serif;margin:4px 0 0;color:#ead2a8}
+#stormseed-blackjack .bj-head-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+#stormseed-blackjack .bj-back-choice{display:flex;align-items:center;gap:7px;font-size:11px;color:#c7aa7d}
+#stormseed-blackjack .bj-back-choice select{max-width:100%;padding:6px;border:1px solid #9f7c454d;border-radius:4px;background:#312218;color:#ead6af;font:12px var(--font-ui)}
+#stormseed-blackjack .bj-quiet{border:1px solid #b3946259;color:#f0dcb9;background:#21160ea6;padding:7px 11px;border-radius:5px;font-size:12px!important;backdrop-filter:blur(4px)}
+#stormseed-blackjack .bj-sound-status{position:absolute;z-index:12;top:70px;right:24px;font-size:11px;color:#e5ba72;text-shadow:0 1px 4px #000}
+#stormseed-blackjack .bj-scene{position:absolute;inset:0;width:100%;height:100%;overflow:hidden;perspective:1000px;perspective-origin:50% 35%;container-type:inline-size;--bj-card-width:clamp(32px,5.6cqw,88px)}
+#stormseed-blackjack .bj-scene-art{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:contain;user-select:none;mask-image:linear-gradient(to right,transparent,#000 1.5%,#000 98.5%,transparent)}
+#stormseed-blackjack .bj-dealer{position:absolute;right:3%;top:11%;display:flex;flex-direction:column;align-items:flex-end;color:#f4dfb7;text-shadow:0 2px 4px #000;pointer-events:none}
+#stormseed-blackjack .bj-dealer strong{font:500 18px/1.2 Georgia,serif}
+#stormseed-blackjack .bj-dealer small{font-size:11px;margin-top:3px;color:#d3b78b}
+#stormseed-blackjack .bj-table-limits{position:absolute;left:3%;top:12%;font-size:12px;color:#e2c99f;text-shadow:0 2px 4px #000}
+#stormseed-blackjack .bj-table-limits small{display:block;font-size:11px;color:#bba884}
+#stormseed-blackjack .bj-bank-hand{position:absolute;left:50%;top:52%;width:45%;display:flex;align-items:center;justify-content:center;gap:10px;transform:translateX(-50%);text-align:center;transform-style:preserve-3d}
+#stormseed-blackjack .bj-cards{display:flex;align-items:center;justify-content:center;height:calc(var(--bj-card-width)*190/140*.72);transform:rotateX(45deg);transform-origin:50% 50%;transform-style:preserve-3d;position:relative;z-index:2}
+#stormseed-blackjack .bj-card{width:var(--bj-card-width);aspect-ratio:140/190;min-width:18px;flex:0 1 var(--bj-card-width);position:relative;background:transparent;border:0;border-radius:4px;transform:rotateZ(-4deg);filter:drop-shadow(1px 4px 2px #08060399);overflow:hidden}
+#stormseed-blackjack .bj-card+.bj-card{margin-left:calc(var(--bj-card-width)*-.25)}
+#stormseed-blackjack .bj-card:nth-child(2n){transform:rotateZ(4deg)}
+#stormseed-blackjack .bj-card img{display:block;width:100%;height:100%;object-fit:contain;user-select:none;mask-image:linear-gradient(to right,transparent,#000 1.5%,#000 98.5%,transparent)}
+#stormseed-blackjack .bj-deal-layer{position:absolute;inset:0;z-index:6;pointer-events:none}
+#stormseed-blackjack .bj-flight-card{position:absolute;border-radius:4px;overflow:hidden;filter:drop-shadow(2px 7px 4px #08060388);will-change:transform,opacity}
+#stormseed-blackjack .bj-flight-card img{display:block;width:100%;height:100%;object-fit:fill}
+#stormseed-blackjack [data-card-pending] .bj-hand-label b,#stormseed-blackjack [data-card-pending] .bj-score,#stormseed-blackjack[data-card-motion] [data-hand-result] span{visibility:hidden}
+#stormseed-blackjack .bj-bank-hand .bj-cards{--bj-card-width:clamp(30px,5.2cqw,80px)}
+#stormseed-blackjack .bj-score{position:relative;display:inline-block;flex:0 0 auto;white-space:nowrap;padding:2px 9px;font-size:12px;background:#20170ccc;color:#f2d59c;border:1px solid #ae8a454d;border-radius:12px;z-index:3}
+#stormseed-blackjack .bj-place-left{--bj-seat-x:16.4%;--bj-ring-top:68.1%;--bj-ring-y:74.9%}
+#stormseed-blackjack .bj-place-self{--bj-seat-x:50%;--bj-ring-top:72.9%;--bj-ring-y:80.7%}
+#stormseed-blackjack .bj-place-right{--bj-seat-x:83.6%;--bj-ring-top:68.1%;--bj-ring-y:74.9%}
+#stormseed-blackjack .bj-guest{position:absolute;left:var(--bj-seat-x);top:calc(var(--bj-ring-top) - 100px);width:26%;text-align:center;transform:translateX(-50%);transform-style:preserve-3d}
+#stormseed-blackjack .bj-guest-head{font-size:11px;display:flex;justify-content:center;align-items:baseline;gap:7px;color:#f0dfb9;text-shadow:0 2px 3px #000;margin-bottom:5px}
+#stormseed-blackjack .bj-guest-head span{font-size:11px;color:#c8bc9c}
+#stormseed-blackjack .bj-guest .bj-cards{--bj-card-width:clamp(32px,5.6cqw,88px)}
+#stormseed-blackjack .bj-your-spot{position:absolute;left:var(--bj-seat-x);top:calc(var(--bj-ring-top) - 100px);width:44%;transform:translateX(-50%);transform-style:preserve-3d}
+#stormseed-blackjack .bj-your-hands{display:flex;justify-content:center;gap:10px;transform-style:preserve-3d}
+#stormseed-blackjack .bj-own-hand{flex:1;min-width:0;max-width:310px;text-align:center;transform-style:preserve-3d}
+#stormseed-blackjack .bj-hand-label{display:flex;justify-content:center;align-items:center;gap:8px;font-size:11px;color:#ddcfb4;text-shadow:0 2px 3px #000;margin-bottom:4px}
+#stormseed-blackjack .bj-hand-label span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#stormseed-blackjack .bj-hand-label b{flex:0 0 auto;font-size:14px;color:#f5d89e;font-weight:600}
+#stormseed-blackjack .bj-own-hand.is-current .bj-hand-label{color:#ffe4ac}
+#stormseed-blackjack .bj-bet-spot{--bj-jeton-width:clamp(40px,4.2cqw,70px);--bj-jeton-height:calc(var(--bj-jeton-width) * 1073 / 1466);--bj-stack-step:clamp(2px,.22cqw,4px);--bj-stack-height:calc(var(--bj-stack-lift,0) * var(--bj-stack-step));position:absolute;left:var(--bj-seat-x);top:calc(var(--bj-ring-y) - var(--bj-stack-height) / 2);transform:translate(-50%,-50%);z-index:4;width:var(--bj-jeton-width);height:calc(var(--bj-jeton-height) + var(--bj-stack-height));display:block;padding:0;border:0;background:none;pointer-events:none}
+#stormseed-blackjack .bj-bet-spot [data-bet-value]{position:absolute;inset:0;display:block}
+#stormseed-blackjack .bj-jeton{position:absolute;left:0;bottom:calc(var(--bj-jeton-index) * var(--bj-stack-step));display:block;width:100%;height:var(--bj-jeton-height);background:url('./jetons/blackjack/jeton-green-v1.png') center/contain no-repeat}
+#stormseed-blackjack .bj-jeton[data-value="250"]{background-image:url('./jetons/blackjack/jeton-black-v1.png')}
+#stormseed-blackjack .bj-jeton-layer{position:absolute;inset:0;z-index:5;pointer-events:none}
+#stormseed-blackjack .bj-jeton-flight{will-change:transform,opacity}
+#stormseed-blackjack .bj-seats{position:absolute;inset:0;z-index:5;pointer-events:none}
+#stormseed-blackjack .bj-seat{--player-portrait-size:clamp(7px,.78vw,12px);font-size:var(--player-portrait-size);position:absolute;left:var(--bj-seat-x);top:calc(var(--bj-ring-top) - 12%);width:max-content;max-width:100%;transform:translate(-3.125em,-100%);pointer-events:auto}
+#stormseed-blackjack .bj-seat[data-seat="self"]{left:57%;top:calc(var(--bj-ring-top) - 17%);transform:translateY(-100%)}
+#stormseed-blackjack .bj-seat[data-current="true"]{left:calc(var(--bj-seat-x) - 60px);top:calc(var(--bj-ring-y) + 20px);transform:translate(-100%,-50%)}
+#stormseed-blackjack .bj-seat[data-current="true"][data-seat="left"]{left:var(--bj-seat-x);top:calc(var(--bj-ring-y) + 20px);transform:translate(-50%,0)}
+#stormseed-blackjack .bj-empty-hand{display:flex;align-items:center;justify-content:center;width:var(--bj-card-width);aspect-ratio:140/190;color:#e3d0a5a6;font-size:11px;border:1px dashed #c6af7855;border-radius:4px}
+#stormseed-blackjack .bj-console{position:absolute;z-index:8;left:0;right:0;bottom:0;margin:0;padding:0 24px 10px;background:transparent;border:0;text-shadow:0 1px 4px #000,0 1px 8px #000}
+#stormseed-blackjack[data-seated="true"] .bj-console{padding-right:calc(var(--bj-exit-width) + 48px)}
+#stormseed-blackjack .bj-exit{position:fixed;right:16px;bottom:16px;z-index:20;display:flex;flex-direction:column;align-items:flex-end;gap:8px;width:var(--bj-exit-width,240px);max-width:calc(100vw - 32px)}
+#stormseed-blackjack .bj-table-info{max-width:100%;font-size:11px;line-height:1.45;text-align:right;color:#d6c09c;text-shadow:0 1px 4px #000,0 1px 8px #000}
+#stormseed-blackjack .bj-status{display:flex;align-items:center;gap:8px;padding-left:var(--bj-status-inset,0px);max-width:var(--bj-status-width,none);min-height:28px;margin-bottom:5px;font-size:12px}
+#stormseed-blackjack .bj-status strong{font-weight:500;color:#f5d7a5}
+#stormseed-blackjack .bj-status-light{width:5px;height:5px;flex:0 0 5px;background:#dab978;border-radius:50%;box-shadow:0 0 8px #ce934b66}
+#stormseed-blackjack .bj-console-main{display:flex;align-items:center;gap:12px;min-height:var(--bj-action-height,74px)}
+#stormseed-blackjack .bj-money{display:flex;gap:16px;padding:9px 16px 0 0;border-right:1px solid #c29a5b33;flex-shrink:0}
+#stormseed-blackjack .bj-money small{display:block;font-size:11px;color:#bca787;margin-bottom:4px}
+#stormseed-blackjack .bj-money strong{font-size:18px;line-height:1.2;font-weight:500;font-variant-numeric:tabular-nums;color:#f0d6aa;white-space:nowrap}
+#stormseed-blackjack .bj-money em{font-size:10px;font-weight:400;font-style:normal;color:#baa283}
+#stormseed-blackjack .bj-actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:7px 10px;flex:1;min-width:0}
+#stormseed-blackjack .bj-button-slot{min-width:0;display:flex;flex-direction:column;align-items:center}
+#stormseed-blackjack .bj-workshop-host{width:max-content;min-width:0;display:block}
+#stormseed-blackjack .bj-slot-note{display:none}
+#stormseed-blackjack .bj-seating-note{position:absolute;width:1px;height:1px;margin:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+#stormseed-blackjack .bj-button-slot[data-disabled="true"] .bj-slot-note{opacity:.6}
+#stormseed-blackjack .bj-chip{width:40px;height:40px;border:3px dashed #e6c692;border-radius:50%;background:radial-gradient(#4d7551,#1e432a);box-shadow:0 2px 0 #132c1c,0 4px 0 #0b170f,1px 5px 4px #0008;color:#f4e6bf;font-size:12px!important;justify-self:center}
+#stormseed-blackjack .bj-chip:nth-child(2){background:radial-gradient(#976348,#583322)}
+#stormseed-blackjack .bj-chip:nth-child(3){background:radial-gradient(#4e6c86,#263b4e)}
+#stormseed-blackjack .bj-bet-input{width:78px;max-width:100%;border:1px solid #98794688;background:#1c130d;color:#efd8af;border-radius:4px;padding:5px;font:inherit;font-size:14px;text-align:center;justify-self:center}
+#stormseed-blackjack .bj-bet-choice{display:flex;flex:0 0 120px;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-size:11px;line-height:1.15;text-align:center;color:#dec59e}
+#stormseed-blackjack .bj-insurance-choice{display:flex;align-items:center;justify-content:center;gap:7px;flex-wrap:wrap;font-size:12px;color:#d6bd96}
+#stormseed-blackjack .bj-overlay{position:absolute;inset:0;z-index:50;display:flex;align-items:flex-start;justify-content:center;padding:30px 18px;background:#100b07df;backdrop-filter:blur(4px);overflow:auto;overscroll-behavior:contain}
+#stormseed-blackjack .bj-rules-sheet{width:min(100%,640px);padding:22px;border:1px solid #80653f;border-radius:8px;background:#2c2015;color:#ead7b5;box-shadow:0 20px 70px #0008}
+#stormseed-blackjack .bj-sheet-head{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:20px}
+#stormseed-blackjack .bj-rules-sheet h3{font:500 24px/1.2 Georgia,serif;margin:5px 0 0}
+#stormseed-blackjack .bj-rules-sheet dl{margin:0;font-size:12px}
+#stormseed-blackjack .bj-rules-sheet dl>div{display:grid;grid-template-columns:105px 1fr;gap:12px;border-top:1px solid #b7985a33;padding:9px 0}
+#stormseed-blackjack .bj-rules-sheet dt{font-weight:500;color:#edd0a2}
+#stormseed-blackjack .bj-rules-sheet dd{margin:0;color:#c8b493}
+#stormseed-blackjack .bj-rules-sheet p{font-size:11px;color:#b29b7b;margin:15px 0 0}
+#stormseed-blackjack .bj-back-form{margin:0;padding:0}
+#stormseed-blackjack .bj-back-link{font-size:12px!important;color:#ead2a8;text-decoration:none;background:none;border:0;padding:0}
+#stormseed-blackjack .bj-back-link:hover{text-decoration:underline}
+@media(max-width:900px){.blackjack-page{display:block;background-image:none}#stormseed-blackjack{width:100%;height:auto;min-height:100dvh;overflow:visible}#stormseed-blackjack .bj-room{height:auto;min-height:100dvh}#stormseed-blackjack .bj-scene{position:relative;height:auto;aspect-ratio:1672/941}#stormseed-blackjack .bj-scene-art{object-fit:contain;mask-image:none}#stormseed-blackjack .bj-room-head{left:14px;right:14px;top:12px}#stormseed-blackjack .bj-room-head h2{font-size:18px}#stormseed-blackjack .bj-seats{position:relative;inset:auto;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;padding:12px 10px 8px;gap:10px}#stormseed-blackjack .bj-seat[data-seat][data-current]{--player-portrait-size:clamp(8.5px,1.2vw,10px);position:relative;left:auto;right:auto;top:auto;bottom:auto;transform:none}#stormseed-blackjack .bj-console{position:relative;padding:0 12px 12px}#stormseed-blackjack[data-seated="true"] .bj-console{padding-right:12px;padding-bottom:100px}#stormseed-blackjack .bj-status{flex-wrap:wrap;gap:2px 6px}#stormseed-blackjack .bj-bet-choice{font-size:11px}#stormseed-blackjack .bj-overlay{position:fixed;padding:12px 8px}#stormseed-blackjack .bj-rules-sheet{padding:16px}#stormseed-blackjack .bj-rules-sheet dl>div{grid-template-columns:80px 1fr;gap:8px}}

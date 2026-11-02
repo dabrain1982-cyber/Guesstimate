@@ -1,0 +1,2 @@
+@font-face{font-family:Inter;src:url('/shared/fonts/Inter-Variable.ttf')}
+*{box-sizing:border-box}body{margin:0;padding:16px;color:#eef4ff;background:#172d30 center/cover fixed;font:14px/1.5 Inter,sans-serif}.app-shell{margin:auto}.preview-note{margin:0;color:#e1eaca;font-size:12px}.game-lobby{padding-top:14px}

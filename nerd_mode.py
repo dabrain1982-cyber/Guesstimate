@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from lobby_overview import render_overview
+
 import hashlib
 import json
 import secrets
@@ -885,10 +887,7 @@ def register_nerd_routes(app) -> None:
         for lobby in lobbies:
             refresh_nerd_lobby(lobby["id"])
         lobbies = _active_lobbies(g.user["id"])
-        own = next((row for row in lobbies if row["is_member"]), None)
-        if own:
-            return redirect(url_for("nerd_lobby", lobby_id=own["id"]))
-        return render_template("nerd_index.html", lobbies=lobbies)
+        return render_overview("nerd_index.html", lobbies=lobbies)
 
     @app.post("/nerd/erstellen")
     @_login_required

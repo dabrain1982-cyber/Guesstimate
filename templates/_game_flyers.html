@@ -4,3 +4,46 @@
     <p>Oder weißt du etwa, was eine Mansube ist?</p>
   </div>
 {%- endmacro %}
+
+{% macro perfect_flyer() -%}
+  <a class="tabletop-game-tile tabletop-perfect-flyer is-available" href="{{ url_for('nerd_index') }}" aria-label="stormseed´s perfect öffnen">
+    <img src="{{ url_for('static', filename='carousel-stormseeds-perfect-v1.png') }}" alt="stormseed´s perfect im warmen Clubzimmer">
+    {{ perfect_flyer_copy() }}
+  </a>
+{%- endmacro %}
+
+{% macro conquest_flyer() -%}
+  <a class="tabletop-game-tile conquest-flyer is-available" href="{{ url_for('conquest_index') }}" aria-label="stormseed’s conquest öffnen">
+    <img src="{{ url_for('static', filename='tabletop-risk-tile-v1.png') }}" alt="Strategisches Weltkartenspiel mit farbigen Spielfiguren auf einem grünen Filztisch">
+    {{ conquest_flyer_copy() }}
+  </a>
+{%- endmacro %}
+
+{% macro conquest_flyer_copy() -%}
+  <div class="conquest-flyer-copy">
+    <h2 class="game-name"><small>stormseed’s</small>conquest</h2>
+    <p>Deine Armee. Deine Mission. Die ganze Welt.<br>Gemeinsam spielen · 2–6 Personen</p>
+  </div>
+{%- endmacro %}
+
+{% macro blackjack_flyer_copy() -%}
+  <div class="variant-a-flyer-copy blackjack-flyer-copy">
+    <h2 class="blackjack-flyer-title"><small>stormseed´s</small><span>Black Jack</span></h2>
+  </div>
+{%- endmacro %}
+
+{% macro kniffel_flyer() -%}
+  <a class="tabletop-game-tile is-available" href="{{ url_for('kniffel_index') }}">
+    <img src="{{ url_for('static', filename='tabletop-kniffel-tile-v1.png') }}" alt="Fünf Würfel, Würfelbecher und Wertungsblock auf einem grünen Filztisch">
+    <span>Lobby geöffnet</span>
+    <h2 class="game-name">kniffel</h2>
+  </a>
+{%- endmacro %}
+
+{% macro blackjack_flyer() -%}
+  <a class="tabletop-game-tile tabletop-blackjack-flyer blackjack-flyer is-available" href="{{ url_for('blackjack_table') }}" aria-label="Black Jack – direkt zum Tisch">
+    <img src="{{ url_for('static', filename='carousel-blackjack-v2.png') }}" alt="Waschbär als Geber am Blackjacktisch, mit Geldscheinen und Chip-Vorrat auf dem grünen Filz">
+    {{ blackjack_flyer_copy() }}
+    <span class="blackjack-preview-label">Direkt zum Tisch · 3 Plätze</span>
+  </a>
+{%- endmacro %}

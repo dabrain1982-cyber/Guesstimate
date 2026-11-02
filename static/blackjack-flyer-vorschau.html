@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Black Jack · Flyer und Schrift</title>
+  <link rel="stylesheet" href="blackjack-flyer.css?v=1">
+  <style>
+    @font-face{font-family:"Guesstimate Inter";src:url("fonts/Inter-Variable.ttf") format("truetype");font-weight:100 900;font-display:swap}
+    *{box-sizing:border-box}
+    html,body{margin:0;background:#102018}
+    main{width:min(1200px,100%);margin:0 auto}
+    .flyer-stage{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:#102018}
+    .flyer-stage>img{display:block;width:100%;height:100%;object-fit:cover}
+  </style>
+</head>
+<body>
+  <main aria-label="Freigegebenes Black-Jack-Motiv mit der aktuellen goldenen Titelschrift">
+    <section class="flyer-stage blackjack-flyer" aria-label="Black Jack Flyer">
+      <img src="carousel-blackjack-v2.png" alt="Waschbär als Geber, Geldscheine links und Chip-Vorrat rechts auf dem grünen Blackjacktisch">
+      <div class="variant-a-flyer-copy blackjack-flyer-copy">
+    <h2 class="blackjack-flyer-title"><small>stormseed´s</small><span>Black Jack</span></h2>
+  </div>
+    </section>
+  </main>
+</body>
+</html>

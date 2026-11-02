@@ -1,0 +1,3646 @@
+{
+  "schema": 1,
+  "scope": "Nur lokaler Katalog; keine Spiele, Fragenbanken, Konten oder persönlichen Entwürfe geändert.",
+  "rule": "Wiederverwendbarer Baustein / endlicher Satz / verknüpfter wachsender Datenbestand.",
+  "families": [
+    {
+      "kind": "fonts",
+      "title": "Schriften",
+      "entries": 7,
+      "source_examples": 0,
+      "source_models": 0,
+      "roles": {
+        "matched_lettering_style": 7
+      },
+      "finding": "Sieben recherchierte freie Schrift-/Oberflächenkombinationen: Kreide, Stein, Metall, Stempel, Handschrift, Comic, Klar. Passende feste Stile statt beliebiger Effektmatrix; lokal, Editoroptionen später."
+    },
+    {
+      "kind": "sounds",
+      "title": "Klänge",
+      "entries": 13,
+      "source_examples": 0,
+      "source_models": 0,
+      "roles": {
+        "sound_cue": 13
+      },
+      "finding": "13 kurze Kenney-CC0-Klänge nach Bedienung, Tischaktionen und Spielereignissen; drei Zweckgruppen. Originale erhalten, lokale Pegelangleichung; keine Spielereignisse als Datenkopien."
+    },
+    {
+      "kind": "buttons",
+      "title": "Buttons",
+      "entries": 144,
+      "source_examples": 144,
+      "source_models": 85,
+      "roles": {
+        "component_example": 144
+      },
+      "finding": "Beschriftungen und feste Einsatzorte derselben Modelle; keine Klickereignisse als Elemente."
+    },
+    {
+      "kind": "windows",
+      "title": "Fenster",
+      "entries": 114,
+      "source_examples": 114,
+      "source_models": 35,
+      "roles": {
+        "component_example": 114
+      },
+      "finding": "35 gemeinsame Modelle, 114 feste Beispiele einschließlich vollständiger Quizfragen-/Ergebnisfenster, Antwortübersicht, Ranglistenrahmen und Leerzustand. Fragen nach Feldvertrag verknüpft, keine Fragenkopien."
+    },
+    {
+      "kind": "inputs",
+      "title": "Eingaben",
+      "entries": 58,
+      "source_examples": 58,
+      "source_models": 27,
+      "roles": {
+        "component_example": 58
+      },
+      "finding": "Feldtypen, Grenzen und feste Auswahlzustände; keine Eingaben oder Antwortdatensätze."
+    },
+    {
+      "kind": "indicators",
+      "title": "Anzeigen",
+      "entries": 210,
+      "source_examples": 210,
+      "source_models": 63,
+      "roles": {
+        "component_example": 210
+      },
+      "finding": "Anzeigeformen mit eingefrorenen Beispielwerten; keine laufenden Zeiten oder Punktestände."
+    },
+    {
+      "kind": "players",
+      "title": "Spieleranzeigen & Pulte",
+      "entries": 146,
+      "source_examples": 146,
+      "source_models": 13,
+      "roles": {
+        "component_example": 146
+      },
+      "finding": "Profil-/Pultmodelle, feste Rollen und endliche Ausstattungsmotive; keine realen Konten."
+    },
+    {
+      "kind": "board",
+      "title": "Bretter",
+      "entries": 6,
+      "source_examples": 4,
+      "source_models": 2,
+      "roles": {
+        "component": 2,
+        "component_example": 4
+      },
+      "finding": "Zwei Grundvarianten 2D/3D; Größe, Form und Bild als Eigenschaften. Conquest, Playtable und gemeinsame Würfelfläche aufgenommen; acht Spiele auf vorhandene Bretter geprüft."
+    },
+    {
+      "kind": "pieces",
+      "title": "Figuren & Spielsteine",
+      "entries": 7,
+      "source_examples": 1,
+      "source_models": 1,
+      "roles": {
+        "component_example": 7
+      },
+      "finding": "Drei wiederverwendbare Formfamilien mit sieben Konfigurationen: vorhandene Schach-/Damevorlagen und ursprüngliche Conquest-Truppenmarke. Rollen, Stil, Farben, Anzahl und Zustände als Eigenschaften; keine Bestände je Land oder Partie. Acht Spiele geprüft."
+    },
+    {
+      "kind": "background",
+      "title": "Hintergründe",
+      "entries": 24,
+      "source_examples": 9,
+      "source_models": 2,
+      "roles": {
+        "finite_artwork": 15,
+        "component_example": 9
+      },
+      "finding": "15 endliche Bildmotive und neun ganze Raumkonfigurationen in den beiden Grundvarianten 2D/3D. Conquests Wand, Möbel und Teppich als ein Raum; keine Zustands- oder Spielstandkopien."
+    },
+    {
+      "kind": "titles",
+      "title": "Titelbilder",
+      "entries": 9,
+      "source_examples": 9,
+      "source_models": 2,
+      "roles": {
+        "component_example": 9
+      },
+      "finding": "Acht vorhandene Spielmotive und Mäxchen-Logo, zwei gemeinsame Bildfamilien. Reine Texttitel bleiben Teil ihrer vorhandenen Kompositionen."
+    },
+    {
+      "kind": "icons",
+      "title": "Icons",
+      "entries": 6,
+      "source_examples": 6,
+      "source_models": 6,
+      "roles": {
+        "component_example": 6
+      },
+      "finding": "Fünf endliche Symbolsätze (5/4/15/3/2 Motive) und App-Symbol. Satz als Ganzes, Motivwahl nur in der Vorschau."
+    },
+    {
+      "kind": "flyers",
+      "title": "Flyer",
+      "entries": 13,
+      "source_examples": 13,
+      "source_models": 3,
+      "roles": {
+        "component_example": 13
+      },
+      "finding": "13 feste Konfigurationen in drei gemeinsamen Kompositionen: Startseiten-Flyer, Spiel-/Gruppenkachel und Perfect-Kachel. Persönliche Grußfolie ausgeschlossen."
+    },
+    {
+      "kind": "lobby",
+      "title": "Lobbys & Übersichten",
+      "entries": 135,
+      "source_examples": 134,
+      "source_models": 7,
+      "roles": {
+        "component_example": 134,
+        "component": 1
+      },
+      "finding": "Gemeinsame Raum-/Listenmodelle mit neutralen Rollen und Zuständen; keine echten Räume."
+    },
+    {
+      "kind": "dice",
+      "title": "Würfel",
+      "entries": 2,
+      "source_examples": 0,
+      "source_models": 0,
+      "roles": {
+        "component": 2
+      },
+      "finding": "Genau zwei vorhandene Umsetzungen: Würfeltisch mit Physik und flache Conquest-Anzeige. Anzahl, Aufdrucke und Farben sind Parameter; keine einzelnen Würfelergebnisse."
+    },
+    {
+      "kind": "cards",
+      "title": "Karten",
+      "entries": 16,
+      "source_examples": 0,
+      "source_models": 0,
+      "roles": {
+        "component": 4,
+        "finite_set": 12
+      },
+      "finding": "Zwei Grundbausteine, zwölf ganze Sätze. Einzelkarten sind Satzmitglieder, Fragen sind Daten."
+    },
+    {
+      "kind": "avatars",
+      "title": "Avatare",
+      "entries": 19,
+      "source_examples": 0,
+      "source_models": 0,
+      "roles": {
+        "finite_artwork": 19
+      },
+      "finding": "Endlicher Motivkatalog; keine Aufnahme einzelner Personen."
+    }
+  ],
+  "question_entries": 0,
+  "question_windows": [
+    {
+      "id": "gamewindow-8d81782f7a43ebdb3b562112",
+      "game": "Perfect",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "nerd_mode.py",
+        "sources": [
+          {
+            "type": "term",
+            "label": "Begriffe",
+            "path": "fragen/stormseedsperfekt/begriffe/fragen.json"
+          },
+          {
+            "type": "curiosity",
+            "label": "Kuriositäten",
+            "path": "fragen/stormseedsperfekt/kuriositaeten/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "term": [
+            "card_type",
+            "term"
+          ],
+          "curiosity": [
+            "card_type",
+            "explanation"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "gamewindow-7a144260e76907f3ef24aeb9",
+      "game": "Perfect",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "nerd_mode.py",
+        "sources": [
+          {
+            "type": "term",
+            "label": "Begriffe",
+            "path": "fragen/stormseedsperfekt/begriffe/fragen.json"
+          },
+          {
+            "type": "curiosity",
+            "label": "Kuriositäten",
+            "path": "fragen/stormseedsperfekt/kuriositaeten/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "term": [
+            "card_type",
+            "term"
+          ],
+          "curiosity": [
+            "card_type",
+            "explanation"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "gamewindow-fddde123e95c3c52fedc0ae4",
+      "game": "Perfect",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "nerd_mode.py",
+        "sources": [
+          {
+            "type": "term",
+            "label": "Begriffe",
+            "path": "fragen/stormseedsperfekt/begriffe/fragen.json"
+          },
+          {
+            "type": "curiosity",
+            "label": "Kuriositäten",
+            "path": "fragen/stormseedsperfekt/kuriositaeten/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "term": [
+            "card_type",
+            "term"
+          ],
+          "curiosity": [
+            "card_type",
+            "explanation"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "gamewindow-7049cceaeeac3ae38b61492b",
+      "game": "Perfect",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "nerd_mode.py",
+        "sources": [
+          {
+            "type": "term",
+            "label": "Begriffe",
+            "path": "fragen/stormseedsperfekt/begriffe/fragen.json"
+          },
+          {
+            "type": "curiosity",
+            "label": "Kuriositäten",
+            "path": "fragen/stormseedsperfekt/kuriositaeten/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "term": [
+            "card_type",
+            "term"
+          ],
+          "curiosity": [
+            "card_type",
+            "explanation"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "gamewindow-ca050d711356934fe6c26ea8",
+      "game": "Perfect",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "nerd_mode.py",
+        "sources": [
+          {
+            "type": "term",
+            "label": "Begriffe",
+            "path": "fragen/stormseedsperfekt/begriffe/fragen.json"
+          },
+          {
+            "type": "curiosity",
+            "label": "Kuriositäten",
+            "path": "fragen/stormseedsperfekt/kuriositaeten/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "term": [
+            "card_type",
+            "term"
+          ],
+          "curiosity": [
+            "card_type",
+            "explanation"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "gamewindow-74281ff6ca4bfbdd210532a6",
+      "game": "Guesstimate",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "gamewindow-7b2abdbc867eb5e2a8be72c1",
+      "game": "Guesstimate",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "gamewindow-98e45245bcd245a7c3790f68",
+      "game": "Guesstimate",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "gamewindow-d3d3506130fb495e1613e398",
+      "game": "Guesstimate",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "gamewindow-048bf704de0a400c5b8bb857",
+      "game": "Guesstimate",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "gamewindow-ee62f479ebf51778d6914429",
+      "game": "Guesstimate",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "gamewindow-5e23e353c74f6ab2790a8887",
+      "game": "Guesstimate",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "gamewindow-fee912f007f153222c7c39c6",
+      "game": "Guesstimate",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "gamewindow-277fd2e486f7f7384ac426bd",
+      "game": "Guesstimate Party",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "gamewindow-e6f1cea7ab7e1f6f0e30a547",
+      "game": "Guesstimate Party",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "gamewindow-257480c6612c18af1668549f",
+      "game": "Guesstimate Party",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "gamewindow-e5ae161c6ff42dfd9438f96c",
+      "game": "Guesstimate Party",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "gamewindow-c14bfe29c4cca9f4357833dc",
+      "game": "Guesstimate Party",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "gamewindow-ff3d8d97c31a2723dca8ef5f",
+      "game": "Guesstimate Party",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "gamewindow-41bb2fdc2b34cc7d6a7ab3a4",
+      "game": "Guesstimate Party",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "gamewindow-b034ff10444a1e42e24c866b",
+      "game": "Guesstimate Party",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "source-completion-22b85f17ef3d42e772daa5dd",
+      "game": "Guesstimate",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "source-completion-705ebcd09aaedf979c4f3901",
+      "game": "Guesstimate",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "source-completion-6076a3535cab637f5265c23d",
+      "game": "Guesstimate",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "source-completion-d6f573c895187253ccf4559c",
+      "game": "Guesstimate",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "source-completion-4ac7e6e9002cf0f5622be373",
+      "game": "Guesstimate",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "source-completion-5fdc86ecd5c7e271a7faeca4",
+      "game": "Guesstimate",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "source-completion-e73cc7b6bb300cb309a32d34",
+      "game": "Guesstimate",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "source-completion-33847286ae90dd7cc4069337",
+      "game": "Guesstimate",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "source-completion-eaa7355259ae691b59d2d367",
+      "game": "Guesstimate Party",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "source-completion-4c3c108d10ce4058d378a354",
+      "game": "Guesstimate Party",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "source-completion-08f0be35d42014a17d23526d",
+      "game": "Guesstimate Party",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "source-completion-3001ae72270e12e7763deda4",
+      "game": "Guesstimate Party",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "source-completion-cdbbad3f59e65556316e51e7",
+      "game": "Guesstimate Party",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "source-completion-d57b4e04ba18359567e73539",
+      "game": "Guesstimate Party",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "source-completion-1607169e122dd9ca99b85600",
+      "game": "Guesstimate Party",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "source-completion-efb5308f908e19bb0b06fd5f",
+      "game": "Guesstimate Party",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "source-completion-ff12b133a980ffb4a4627989",
+      "game": "Guesstimate",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "source-completion-ece40aaf4c308b72280d4600",
+      "game": "Guesstimate",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    },
+    {
+      "id": "source-completion-533dba1f5925036381a1a41c",
+      "game": "Guesstimate",
+      "binding": {
+        "schema": 1,
+        "kind": "question_bank_reference",
+        "contract": "fragen/STECKBRIEF.md",
+        "loader": "questions.py",
+        "sources": [
+          {
+            "type": "multiple_choice",
+            "label": "Auswahl",
+            "path": "fragen/multiplechoice/fragen.json"
+          },
+          {
+            "type": "true_false",
+            "label": "Wahr oder falsch",
+            "path": "fragen/wahroderunwahr/fragen.json"
+          },
+          {
+            "type": "match",
+            "label": "Paare bilden",
+            "path": "fragen/paarebilden/fragen.json"
+          },
+          {
+            "type": "order",
+            "label": "Reihenfolge",
+            "path": "fragen/reihenfolge/fragen.json"
+          },
+          {
+            "type": "estimate",
+            "label": "Schätzung",
+            "path": "fragen/schaetzung/fragen.json"
+          }
+        ],
+        "fields": [
+          "id",
+          "prompt",
+          "answer",
+          "source"
+        ],
+        "type_fields": {
+          "common": [
+            "question_type",
+            "explanation",
+            "subject_keys"
+          ],
+          "multiple_choice": [
+            "options"
+          ],
+          "true_false": [],
+          "match": [
+            "left",
+            "right"
+          ],
+          "order": [
+            "items"
+          ],
+          "estimate": [
+            "unit"
+          ]
+        },
+        "preview": "Neutraler Platzhalter aus der bestehenden Fensterkomponente",
+        "growth": "Neue Fragen verändern weder Bausteinzahl noch Bausteinkennungen."
+      }
+    }
+  ],
+  "cards": {
+    "schema": 2,
+    "models": 2,
+    "library_entries": 14,
+    "finite_sets": 12,
+    "question_entries": 0,
+    "sets": [
+      {
+        "id": "cards-set-movable-standard-32",
+        "name": "32 Karten",
+        "representation": "3d",
+        "members": 32,
+        "supplements": 0
+      },
+      {
+        "id": "cards-set-movable-standard-52",
+        "name": "52 Karten",
+        "representation": "3d",
+        "members": 52,
+        "supplements": 0
+      },
+      {
+        "id": "cards-set-movable-standard-55",
+        "name": "52 Karten + 3 Joker",
+        "representation": "3d",
+        "members": 55,
+        "supplements": 0
+      },
+      {
+        "id": "cards-set-movable-standard-104",
+        "name": "104 Karten",
+        "representation": "3d",
+        "members": 104,
+        "supplements": 0
+      },
+      {
+        "id": "cards-set-movable-standard-110",
+        "name": "104 Karten + 6 Joker",
+        "representation": "3d",
+        "members": 110,
+        "supplements": 0
+      },
+      {
+        "id": "cards-set-display-standard-32",
+        "name": "32 Karten",
+        "representation": "2d",
+        "members": 32,
+        "supplements": 0
+      },
+      {
+        "id": "cards-set-display-standard-52",
+        "name": "52 Karten",
+        "representation": "2d",
+        "members": 52,
+        "supplements": 0
+      },
+      {
+        "id": "cards-set-display-standard-55",
+        "name": "52 Karten + 3 Joker",
+        "representation": "2d",
+        "members": 55,
+        "supplements": 0
+      },
+      {
+        "id": "cards-set-display-standard-104",
+        "name": "104 Karten",
+        "representation": "2d",
+        "members": 104,
+        "supplements": 0
+      },
+      {
+        "id": "cards-set-display-standard-110",
+        "name": "104 Karten + 6 Joker",
+        "representation": "2d",
+        "members": 110,
+        "supplements": 0
+      },
+      {
+        "id": "cards-set-display-conquest-countries",
+        "name": "Conquest · 42 Länderkarten",
+        "representation": "2d",
+        "members": 42,
+        "supplements": 2
+      },
+      {
+        "id": "cards-set-display-conquest-missions",
+        "name": "Conquest · 12 Aufträge",
+        "representation": "2d",
+        "members": 12,
+        "supplements": 0
+      }
+    ],
+    "distinction": "Reusable component -> finite equipment set -> members inside the set. Questions bind to windows by schema reference.",
+    "limits": [
+      "No game changes.",
+      "Question banks and private drafts are not rewritten.",
+      "Editor options remain deferred."
+    ]
+  },
+  "catalog_ids": {
+    "buttons": [
+      "gamebutton-022a1237c89815d0487e2f",
+      "gamebutton-0233188e2a20c05375fb0f",
+      "gamebutton-05bb6db6bf8a3fbf28b3df",
+      "gamebutton-0927bd8557f608a9420a46",
+      "gamebutton-09ed3678ce32fcd7cda35f",
+      "gamebutton-09f5af8ddd7ad93c2cb973",
+      "gamebutton-0d925c971f0f048800c301",
+      "gamebutton-0f14d3f92921c02ea65d7c",
+      "gamebutton-11732aa02f299b86154093",
+      "gamebutton-12918439eed0a1bbdbc74f",
+      "gamebutton-13dd9b79ec082889a40d0e",
+      "gamebutton-15d4b1f0b3ad4f78017fda",
+      "gamebutton-1b180e85ca96168ecbbc1f",
+      "gamebutton-1cf8ec227a1acbc48eb7ad",
+      "gamebutton-1ef4562e46e595ee18c43a",
+      "gamebutton-20315d7a9ec1708de3b3d4",
+      "gamebutton-20d7cd131b28407d43c4c2",
+      "gamebutton-21390220b91be5cde044b1",
+      "gamebutton-22b202d3a9f5f85ae22770",
+      "gamebutton-24ae115d763e32d3b9373d",
+      "gamebutton-257bc70052b56ed98c9612",
+      "gamebutton-26341f18cd1d4d4fc1e4df",
+      "gamebutton-2784bafd6d83482c358a9f",
+      "gamebutton-280fd3056276a59bb8da48",
+      "gamebutton-2979b0ddd5f2ad78cab75c",
+      "gamebutton-2a49cfbe737f4e84424808",
+      "gamebutton-2ae006630109b56a84fdd2",
+      "gamebutton-2c85aefbcfd1915db1b5bd",
+      "gamebutton-2cac5310eecf703012a3fe",
+      "gamebutton-302dccacd6f9755186d623",
+      "gamebutton-30709d28c3bd9dd65f9d58",
+      "gamebutton-3292cfa0fe41323a5c17d1",
+      "gamebutton-32daee1cbde2dcf26779cf",
+      "gamebutton-336a19d9606cb4ec932c49",
+      "gamebutton-338c4b5f3693af6b3531e2",
+      "gamebutton-3459dbb6b920ea8a96768a",
+      "gamebutton-381920e7cba5721d6a8eea",
+      "gamebutton-389da6aead0573a2f0bd57",
+      "gamebutton-3ba9f345260e04d3b8d8c7",
+      "gamebutton-3c7b1c9eae76c5a9196e19",
+      "gamebutton-3d50dc08c989f53d24d043",
+      "gamebutton-40ebd30458c89c4add8f30",
+      "gamebutton-419ee8f0096e5bae67c591",
+      "gamebutton-42858cd97ef6b55966b0ec",
+      "gamebutton-42b0d081b1f59ee454e6fa",
+      "gamebutton-44462811780a84417e8e39",
+      "gamebutton-470d1ffadc36522f69ad04",
+      "gamebutton-47b4177c9c0864d152bcff",
+      "gamebutton-4858743baaef2c04bcb120",
+      "gamebutton-49faa588d079b675ccd276",
+      "gamebutton-4a657d675ec814262aec29",
+      "gamebutton-4bde9ec44295def443cf8f",
+      "gamebutton-4ead3db8b116eabcbd14a0",
+      "gamebutton-5443bd610ae71d6d8fc65e",
+      "gamebutton-54d9ac8f84b82532799ae7",
+      "gamebutton-593bcf8218f96de6adc6d5",
+      "gamebutton-598d9af60704e1c1ffdc19",
+      "gamebutton-59fb4007ca766a713c5b49",
+      "gamebutton-5d8734c9aefbb13b5b6a28",
+      "gamebutton-5d909e7004993fd175c160",
+      "gamebutton-5eaa4651d5aa3572731a91",
+      "gamebutton-5efd43712a767ec08fe8d3",
+      "gamebutton-60b994a02335347bfb5fa8",
+      "gamebutton-64af46d2aa6747c6000f9b",
+      "gamebutton-650e6048a89fe2d966b202",
+      "gamebutton-65e88e20145bad7f166252",
+      "gamebutton-67e9ddf0ece95c7b312ec8",
+      "gamebutton-69eff15f783a4cc9f86719",
+      "gamebutton-69f7a37a2f4ce5b987ba51",
+      "gamebutton-6c708f8b02d8adeaf5b872",
+      "gamebutton-6e45ef462db518f26deb8b",
+      "gamebutton-6ed860eb8e84ee963796bc",
+      "gamebutton-7362f146cf58d441bcf312",
+      "gamebutton-742ccf9a0722e9ef3afa42",
+      "gamebutton-749507264d1909a6b2ef18",
+      "gamebutton-75185f21e41d0062eb5037",
+      "gamebutton-7d0e7378f6155151c02b97",
+      "gamebutton-81655a4bf481a0d5af67a8",
+      "gamebutton-84394cc37ba195de716614",
+      "gamebutton-87002d4013b3fdf81ea3c2",
+      "gamebutton-870265e8cf294dc2c5b7ce",
+      "gamebutton-871e2152a05439270e8b5c",
+      "gamebutton-882f6cba4d64f2fad03232",
+      "gamebutton-89c875197f803bd86f16e8",
+      "gamebutton-8a5993b55666f460b37d08",
+      "gamebutton-8aed3c84efa7192ce49f76",
+      "gamebutton-8c45bec08f9d20d8429dad",
+      "gamebutton-8d2341c09723e9af42be3a",
+      "gamebutton-8d8170e8981ce9f7e971ec",
+      "gamebutton-90356dc73646f88036750e",
+      "gamebutton-94a750a9b68f8a69f0aff9",
+      "gamebutton-961fb1e6663c8e63061432",
+      "gamebutton-984649b0e5c4801ab48c57",
+      "gamebutton-9eab99cf9b56cd5ef7deb1",
+      "gamebutton-9efb348103ca26117ef050",
+      "gamebutton-9f4be869942052f69d7456",
+      "gamebutton-a0740a0dbb39090d14ff29",
+      "gamebutton-a26b09d38fdef259ac3d0b",
+      "gamebutton-a3bfa5b11d75da2452c3b5",
+      "gamebutton-a68d57f101144a3bf872e6",
+      "gamebutton-a705def26d691d3c916979",
+      "gamebutton-b2be813e4c4c3544266a7a",
+      "gamebutton-b2d88cab69bbb7206f6644",
+      "gamebutton-b5ef50b37243ae08d9b536",
+      "gamebutton-b64c5710d85a648e43b1ea",
+      "gamebutton-b8c87bfee94b64d4557d05",
+      "gamebutton-be4a55b778b51e29c7bcc1",
+      "gamebutton-befaf4b84a6f3790c31a28",
+      "gamebutton-befde293bd489fd87c3123",
+      "gamebutton-bf40f174c00704e720e152",
+      "gamebutton-c09ab8df701573d644ac3b",
+      "gamebutton-c10c16951300f1a2385b9a",
+      "gamebutton-c1697e8399a63251cc5617",
+      "gamebutton-c43c104aca1a327ba26f07",
+      "gamebutton-c574671ebec7a95ee4f781",
+      "gamebutton-c98f5bdcbdcaf8480eac96",
+      "gamebutton-d296d60097e215c573fd25",
+      "gamebutton-d3353f320cccb4e6fe1b82",
+      "gamebutton-d47bf56c8e1d9cdf83eb68",
+      "gamebutton-d4c42b0d22c1383a96fb2c",
+      "gamebutton-d664eb9fc799bc1a135e75",
+      "gamebutton-d7a7eb1cc2c64edef7a6b9",
+      "gamebutton-d7c39e7ea175575e6f76ce",
+      "gamebutton-daf9582f22eb8307d5d153",
+      "gamebutton-de36d3e59197a113df5578",
+      "gamebutton-de90591fbc258e8df526d8",
+      "gamebutton-dec1d07da8a1970c5de4bf",
+      "gamebutton-e1c7a24c73db05708c4436",
+      "gamebutton-e25ad8d17c896627d1f7f8",
+      "gamebutton-e2e61df2ab23a1beba393e",
+      "gamebutton-e3728be8b8d9795fad9830",
+      "gamebutton-e84d78e3578b865b3b5681",
+      "gamebutton-ea5128ca6c2559a8bfd5ca",
+      "gamebutton-ec701f9975d1fa22b8205b",
+      "gamebutton-ee5b4b13b9453c0e6d9edc",
+      "gamebutton-efd048501edd4a9a794af7",
+      "gamebutton-f1cde888590841d4869c67",
+      "gamebutton-f56562f1455bca67091d9c",
+      "gamebutton-f732fd7cdc8140e410b1ff",
+      "gamebutton-f8c416c7cf89ba18c34b7f",
+      "gamebutton-fa1f59da25f4a4302ec679",
+      "gamebutton-fac5fd401213ac394a2386",
+      "gamebutton-fe32f1aec448b37645861f",
+      "gamebutton-fe75568005694b608fe129"
+    ],
+    "windows": [
+      "gamewindow-02d2656dcfac3036f59b3e70",
+      "gamewindow-02d7e19981cbbb959f15360b",
+      "gamewindow-048bf704de0a400c5b8bb857",
+      "gamewindow-08b4d7462485494ae46b498d",
+      "gamewindow-0e2b2d30f9e0ced83d80fd2a",
+      "gamewindow-10205a4663db54b44e07631e",
+      "gamewindow-19142707e86373620545cf93",
+      "gamewindow-20d1b2ed85cd182c4df0f08a",
+      "gamewindow-24d645c442570b94206d9603",
+      "gamewindow-257480c6612c18af1668549f",
+      "gamewindow-277fd2e486f7f7384ac426bd",
+      "gamewindow-2a5cfb5e52150e23edb22220",
+      "gamewindow-2fc1fa56b0e6ce3920299a52",
+      "gamewindow-2fff0353ef43a5e29c855a4b",
+      "gamewindow-31ed7d62d87a8b049881df4b",
+      "gamewindow-3310bc4c98a471a020fe3766",
+      "gamewindow-3bf5f7f2bbf2b079ccddc071",
+      "gamewindow-41bb2fdc2b34cc7d6a7ab3a4",
+      "gamewindow-458ead05ac36f96116d053b7",
+      "gamewindow-4cd89a85840285b28c6ee24d",
+      "gamewindow-4d9b3fa307976d40e8f827ff",
+      "gamewindow-4fd55b8075c27d517c699a5c",
+      "gamewindow-56393116c7b6968fcf8ef8fb",
+      "gamewindow-59b262adbca680bfbfb94e05",
+      "gamewindow-5e23e353c74f6ab2790a8887",
+      "gamewindow-62328cbd4e1e31fe5719865d",
+      "gamewindow-7049cceaeeac3ae38b61492b",
+      "gamewindow-71857f6025370636727f8cf5",
+      "gamewindow-74281ff6ca4bfbdd210532a6",
+      "gamewindow-745aeae9dc7b9d28fd61f478",
+      "gamewindow-76942efcd8ce278b79b2285c",
+      "gamewindow-7774e93961a341a246563241",
+      "gamewindow-78238a6156801c0db6890210",
+      "gamewindow-790f9739543537942b0e761b",
+      "gamewindow-79219b759c9968505e6c3471",
+      "gamewindow-7a144260e76907f3ef24aeb9",
+      "gamewindow-7a360e100f917bcb16988538",
+      "gamewindow-7a70f3ee2d7e4e1397896fea",
+      "gamewindow-7b2abdbc867eb5e2a8be72c1",
+      "gamewindow-84bcf25fb710eb329110143d",
+      "gamewindow-84ddb6a82bbe8e25103c9a04",
+      "gamewindow-8b9eb679362fe3c27fa316b0",
+      "gamewindow-8d81782f7a43ebdb3b562112",
+      "gamewindow-8e8c6d004b6002799b616f3c",
+      "gamewindow-8f6ebfc836341d313e706c73",
+      "gamewindow-951a7d703f3c8ee37592a627",
+      "gamewindow-9548d5e9010a7a0f7ffba2e6",
+      "gamewindow-98e45245bcd245a7c3790f68",
+      "gamewindow-99df55dc698351f304ed9e36",
+      "gamewindow-9a180b9f6fbef75485750658",
+      "gamewindow-a92a6d8556bcf31e05581970",
+      "gamewindow-b034ff10444a1e42e24c866b",
+      "gamewindow-b24771bbd98aa05f2964a675",
+      "gamewindow-b3cdc35b1e00820aa959e857",
+      "gamewindow-ba8a94e3329f004fbdd2bc1b",
+      "gamewindow-beed4b1c755acdec4e866ef7",
+      "gamewindow-c14bfe29c4cca9f4357833dc",
+      "gamewindow-c490f9907871e1d08fea5721",
+      "gamewindow-c4a64c708fe1e644eb5c0ab7",
+      "gamewindow-c4e5d6813a806d23e39ee028",
+      "gamewindow-c4fa5693bd25c78c3b3418b9",
+      "gamewindow-c8a6dbafc42d4bbc48241caa",
+      "gamewindow-ca050d711356934fe6c26ea8",
+      "gamewindow-ccc38b766f8b5bb335a5df96",
+      "gamewindow-cd27032b031d3db62608e447",
+      "gamewindow-d3d3506130fb495e1613e398",
+      "gamewindow-d75e63edcd19ee5a817cd3c3",
+      "gamewindow-d979e0d8a8651d8f9c04777d",
+      "gamewindow-daebab5e41e2b7dbb98ce0b3",
+      "gamewindow-dc80401d8d629afc557a2847",
+      "gamewindow-dccfff72441a8c8f76b47b27",
+      "gamewindow-e4bcfc94923e2752b3a22499",
+      "gamewindow-e5ae161c6ff42dfd9438f96c",
+      "gamewindow-e5ffc49eb33a7c7b2635fecd",
+      "gamewindow-e6f1cea7ab7e1f6f0e30a547",
+      "gamewindow-ea1c660c654754a764388003",
+      "gamewindow-ee62f479ebf51778d6914429",
+      "gamewindow-ee8fb51170c137d1c0764ef1",
+      "gamewindow-ef3dcb74c52be8cb24eefc2c",
+      "gamewindow-f0c99cff90cbbf584ae16111",
+      "gamewindow-f775c0786004aba2c758ea00",
+      "gamewindow-fddde123e95c3c52fedc0ae4",
+      "gamewindow-fee912f007f153222c7c39c6",
+      "gamewindow-ff3d8d97c31a2723dca8ef5f",
+      "source-completion-06e922d053456ff8e859495f",
+      "source-completion-08f0be35d42014a17d23526d",
+      "source-completion-0bb40264ac4efedc2a2364ee",
+      "source-completion-1607169e122dd9ca99b85600",
+      "source-completion-22b85f17ef3d42e772daa5dd",
+      "source-completion-26b97fbc77fd772464a8089d",
+      "source-completion-3001ae72270e12e7763deda4",
+      "source-completion-33847286ae90dd7cc4069337",
+      "source-completion-4226a44eb8eba6ede358f5d9",
+      "source-completion-44e21c588edecc18474d6b52",
+      "source-completion-4ac7e6e9002cf0f5622be373",
+      "source-completion-4c3c108d10ce4058d378a354",
+      "source-completion-533dba1f5925036381a1a41c",
+      "source-completion-5a577b3efb6911471f33d3b2",
+      "source-completion-5fdc86ecd5c7e271a7faeca4",
+      "source-completion-6076a3535cab637f5265c23d",
+      "source-completion-705ebcd09aaedf979c4f3901",
+      "source-completion-94f2a8d600870d1810611a3a",
+      "source-completion-9818745389d870faedf6d8a0",
+      "source-completion-af9073ce0af36ba780ec14d9",
+      "source-completion-cdbbad3f59e65556316e51e7",
+      "source-completion-d13541ab8700e01ab202fe11",
+      "source-completion-d57b4e04ba18359567e73539",
+      "source-completion-d6f573c895187253ccf4559c",
+      "source-completion-e73cc7b6bb300cb309a32d34",
+      "source-completion-eaa7355259ae691b59d2d367",
+      "source-completion-ece40aaf4c308b72280d4600",
+      "source-completion-ed262a6cc19c8db67638a4e6",
+      "source-completion-efb5308f908e19bb0b06fd5f",
+      "source-completion-ff12b133a980ffb4a4627989"
+    ],
+    "inputs": [
+      "gameinput-01590839d616fe4dda45fa19",
+      "gameinput-04aa9a1808f6ab8d918463b5",
+      "gameinput-10127c6b48d8d35ff04d7da0",
+      "gameinput-103ecec5589869b099cba447",
+      "gameinput-109255d68801b2e62f648f62",
+      "gameinput-1115beb34436c2517ba7f63b",
+      "gameinput-1128806f0be5520251e60960",
+      "gameinput-11cbf17ca562cfa0241763a0",
+      "gameinput-13373a171a363f6d087a19d2",
+      "gameinput-146f6c535b7e4ca8e3f2a1b3",
+      "gameinput-2109f61491ffea518c639cf2",
+      "gameinput-21da4094e43d1453fff406dd",
+      "gameinput-28530cb9c4225e9faf3a8fe0",
+      "gameinput-30f27585218b0f3947eccce8",
+      "gameinput-33adf1962501ca2a941fff11",
+      "gameinput-3750d99efb88d4746abed737",
+      "gameinput-41de02feebea5f748f3dcee1",
+      "gameinput-48fdc019c3a82ff3be0ba6a7",
+      "gameinput-4b4ccc790d4673a61231661f",
+      "gameinput-4daff220f78dde73375bcbd9",
+      "gameinput-53ee58d224ad01d5e6b7d540",
+      "gameinput-5474db5f1e2f93253e96db85",
+      "gameinput-580af88c85c06db875106a1f",
+      "gameinput-6f1711be4f4e9bdc16a056d0",
+      "gameinput-711a7bbab80ec24db7229b5a",
+      "gameinput-71a3f454d7b29915284dbd9c",
+      "gameinput-7564f8309c05d8492b1353ea",
+      "gameinput-7d39f5230849a46498a4c096",
+      "gameinput-81ac3f2e17ed878a13a9267c",
+      "gameinput-871687e4c9ac92038077e251",
+      "gameinput-877ae776311cbb708c0dc7cc",
+      "gameinput-8c0195e3e24dd4aa82fe0647",
+      "gameinput-8c710d98111b29416791853f",
+      "gameinput-8fb82aa7c3537941778a677d",
+      "gameinput-988b7d64c3ac6d3b078a215c",
+      "gameinput-99ee3168e3b7a4bb2fdfb25f",
+      "gameinput-a05681217f028c808ef050d6",
+      "gameinput-a3596aee01aa857c371afc71",
+      "gameinput-ad517cf3a42359ab10a52aa8",
+      "gameinput-add04c9b34a20989dec19c63",
+      "gameinput-af7e75793e9facf530c00539",
+      "gameinput-b7b0a3d6b5c05d6795a70c94",
+      "gameinput-be36e3ff9cb658bfb47c9cc5",
+      "gameinput-bf0379f5d8702e1b2a72fa8e",
+      "gameinput-c21e68f9a0a98890b11fadc6",
+      "gameinput-c42b49e220fa667918e813f0",
+      "gameinput-c8abd73e8f67eb1fba0c549c",
+      "gameinput-c9858b969b728b1cfc4c14a2",
+      "gameinput-cb28f186b8b1b219d2362265",
+      "gameinput-cda3b0df1c39706eaf838587",
+      "gameinput-d025a93c051a38395448c556",
+      "gameinput-d24c623b912971b862c18cd8",
+      "gameinput-d7a19bec961bac0a9b0f62f2",
+      "gameinput-d9435a3a14139898f4a9b23f",
+      "gameinput-dbc5db2594fb883d65ad388a",
+      "gameinput-e90b66158888cfbbff4b488e",
+      "gameinput-efe576711c6e523fba041e68",
+      "gameinput-f2bebede5a71be47355f2409"
+    ],
+    "indicators": [
+      "gameindicator-015ca3475f2a56424210901a",
+      "gameindicator-01922fd30032e320f9fbfdae",
+      "gameindicator-0421719f54df2988dad76bcd",
+      "gameindicator-08521d059b730204b66c94d4",
+      "gameindicator-08e639ec940df04dbc224209",
+      "gameindicator-0a3cf19ba3774a49d52e64fa",
+      "gameindicator-0b1e76097799fa72c892a602",
+      "gameindicator-0cf0e920536e6fbefceba043",
+      "gameindicator-0d6a419321109cd9a9c25e6f",
+      "gameindicator-0d7387bfcdc06fe774dd3c6c",
+      "gameindicator-0dd4766726f31061113190aa",
+      "gameindicator-0f18deedfacf0426c454ec13",
+      "gameindicator-10776b4c2eb9b614ab4e2778",
+      "gameindicator-107cf9f959f8c2af09fcb1e4",
+      "gameindicator-128816cb107d630e51937444",
+      "gameindicator-1366ea73054319fb5bbc091b",
+      "gameindicator-140fc4d5d427fa127cb4a972",
+      "gameindicator-1620650bcf2061df444c09e6",
+      "gameindicator-16e2d5944ac361ba57af3f4a",
+      "gameindicator-17017a83069cea7ebc1f0642",
+      "gameindicator-170f5337751565b62c83a10a",
+      "gameindicator-1733d96eaea05242b7a491e4",
+      "gameindicator-1a9f6b63c3c84bf309e6916c",
+      "gameindicator-1b0f9431378c5ffff9f46170",
+      "gameindicator-1defa9a14007a7cd98d92a03",
+      "gameindicator-1e4acc411a4aabf06e1a1488",
+      "gameindicator-1e74f73c65e133e521f8af7f",
+      "gameindicator-1ec80678a18d515f806f94d4",
+      "gameindicator-1ec93ae221bf1004c617fd81",
+      "gameindicator-2002a23f64c074ae861ff4bb",
+      "gameindicator-209c4ea8db8069ac03828378",
+      "gameindicator-2140c54016557ebd6a867868",
+      "gameindicator-21572a22dfffbc1e27529a9e",
+      "gameindicator-21fdc4ba3a891554da03e202",
+      "gameindicator-24a254363b3042afc24525f7",
+      "gameindicator-2519dae2ce0b9621f0c651db",
+      "gameindicator-262b21f56ea5f1b533031ec5",
+      "gameindicator-28b7afbf98b72aec7393f710",
+      "gameindicator-296d968cb07d735c6577495f",
+      "gameindicator-2cfbe3f9641927b89d6521b9",
+      "gameindicator-2d0aaf85ffcb096c6ddcacb5",
+      "gameindicator-2e332b18812a9e09124b5b21",
+      "gameindicator-2ea66b759d9b53feca6b9298",
+      "gameindicator-2ec0a4639c3de5c190933043",
+      "gameindicator-314e7cedb06a9d393ae8a0b8",
+      "gameindicator-31bf0ec3ffb77cf9575f471f",
+      "gameindicator-3478dc1494db4fb2e5e06241",
+      "gameindicator-37e0550b18e2b229e619da8c",
+      "gameindicator-3a952a89ca7fac3166586950",
+      "gameindicator-3ae26cec16aac1c31892fcd8",
+      "gameindicator-3b4e34e85d82a97bc0c8db1f",
+      "gameindicator-3f0046b210797fe12a356f59",
+      "gameindicator-3fb02d3a23cd478d8f4d8c44",
+      "gameindicator-4105bc5ff71144836868070d",
+      "gameindicator-43364d3cde2f1e049af3b8f1",
+      "gameindicator-45cec2221288b37661c2b9aa",
+      "gameindicator-4697091f720009d9e3c65c8a",
+      "gameindicator-48408d02d81188f97f64cbf4",
+      "gameindicator-48512bd9b566999cde8d5773",
+      "gameindicator-48882a9955549381b34498e9",
+      "gameindicator-497b568a5388012f7e917981",
+      "gameindicator-498fcd78b23b64e5a6384637",
+      "gameindicator-4abc92c6ea8cf59257193841",
+      "gameindicator-4acb69fb80de3db7327a4e90",
+      "gameindicator-4c784915f3e540c7a3e70590",
+      "gameindicator-4c7b3f152682ec5024d8922a",
+      "gameindicator-4e49f9b9ce2dd31a6d77dc88",
+      "gameindicator-4e67c821ea88f83a6a7f1a66",
+      "gameindicator-4f1ec2b90e30607d8b041f20",
+      "gameindicator-503f4b3b167c309cf7143349",
+      "gameindicator-533c854d0486b8f025f95cc2",
+      "gameindicator-53fa0dd97aa00b0a09ecbddc",
+      "gameindicator-54477a1998b391852abafa8c",
+      "gameindicator-56f40c58be8fed050a689832",
+      "gameindicator-572a8f203d492a253088cd62",
+      "gameindicator-57519a32bcda5f377090871c",
+      "gameindicator-5ac0dccc6562a5fd07df5476",
+      "gameindicator-5bc2830fdb2ddcf9895d8da6",
+      "gameindicator-5c7660795cd778f82344bc8c",
+      "gameindicator-5d357c8bffe2b6ee69f29f31",
+      "gameindicator-606308184eb51767183b7271",
+      "gameindicator-6068cba09090506e6c3a2fe4",
+      "gameindicator-6169d3b399d97eb196a155f5",
+      "gameindicator-6254fa07904bb90ca1b4deef",
+      "gameindicator-6303642b86e68d746ca8021d",
+      "gameindicator-6564f6c35086e0c508d0b44a",
+      "gameindicator-6a7eb1d8b0756210c141f118",
+      "gameindicator-6c40386cef0b09f2b3b3e7c0",
+      "gameindicator-6e1dfaf51b488e6fe39af448",
+      "gameindicator-73bb7997ccfdee6794e1d997",
+      "gameindicator-744767a2102f66c7f3eb5a54",
+      "gameindicator-77b309d5be30497dd1fcf5d8",
+      "gameindicator-78154bb99d39b3a59c6a4686",
+      "gameindicator-79de01ad983dde7bf3591c74",
+      "gameindicator-7a2ca13934b2367c37d5a43d",
+      "gameindicator-7a8bf65e1b04e41c07a44ffa",
+      "gameindicator-7b8b29b37eef298879c42e94",
+      "gameindicator-7e201ccd214d162a328f480e",
+      "gameindicator-7fba14909b533262bc6ddc2d",
+      "gameindicator-806779672f8c958cc171f93e",
+      "gameindicator-80944198f18bf04c47ff408f",
+      "gameindicator-80fa7474fb092d75e9add620",
+      "gameindicator-81a1665b0bfc3eaff7c5bdfa",
+      "gameindicator-824727ea08f5650060fb9277",
+      "gameindicator-8248069c4e6cd08c8cfd0fc2",
+      "gameindicator-863a4ad355699ecc390e8ee3",
+      "gameindicator-867005ac8c46e825e3ca641a",
+      "gameindicator-86b58944524ad01e85a7500c",
+      "gameindicator-86caf6045d5075deafb15ad5",
+      "gameindicator-8917a86fa187b50e5ef864e8",
+      "gameindicator-8a36f736c5ffcee64e5233dc",
+      "gameindicator-8a83b07ed1fd8bfdf333020d",
+      "gameindicator-8e809e2501ec5d4a34cdb52c",
+      "gameindicator-8f5c6d566b8ff0dd8420807a",
+      "gameindicator-8ffa6575cdd937a0113a116a",
+      "gameindicator-91cc6b2f2dd848b724158cf2",
+      "gameindicator-92db9814ea0342f247c6f372",
+      "gameindicator-9411d1c17cca537654587452",
+      "gameindicator-94dedfecf8fc4c5b54a41a56",
+      "gameindicator-950a4326afe002212b49f5e4",
+      "gameindicator-950c5b19bfbaf1c2107ac267",
+      "gameindicator-96c8e9ffa581a16cad2646a1",
+      "gameindicator-9786a83fd10426d1828c2a40",
+      "gameindicator-97e4b07d2f70a3c3779dcdef",
+      "gameindicator-987ab8a41732eb823f556125",
+      "gameindicator-987cdcf8a90ac012958fd8b8",
+      "gameindicator-98faf6470eb86f8845c682f0",
+      "gameindicator-99b24f39022355a50dd21959",
+      "gameindicator-99f4922dfb10bef0c1cc13a3",
+      "gameindicator-9bab0085af5af502a907adb3",
+      "gameindicator-9c7c650f10ae9c4a53033eae",
+      "gameindicator-9d2790bf0ab355a365a222d1",
+      "gameindicator-9eb7048887c79b8b8a72f683",
+      "gameindicator-a063bca7ec0f841ad5550d02",
+      "gameindicator-a24f659bc4dc779491356acf",
+      "gameindicator-a39928ad248fee229380860b",
+      "gameindicator-a5274ac43eddac237eecf401",
+      "gameindicator-a5796f3c991761cf685c090f",
+      "gameindicator-a5908e04c4db815bb50483a8",
+      "gameindicator-a62113188e2c78c55ad9b67e",
+      "gameindicator-a75344f12c11699efdb05acd",
+      "gameindicator-a794753307043b04e337bb97",
+      "gameindicator-a99f2defdd93d3f01061aab9",
+      "gameindicator-abf263438d432f7c13c2928a",
+      "gameindicator-ac37183325f9f143d7fb5f56",
+      "gameindicator-b078e6f5dda5a25f8233dec6",
+      "gameindicator-b18b4a3e21155b2b22873df5",
+      "gameindicator-b2a5605125b138a96e676fa0",
+      "gameindicator-b2a60c16a210637a1289bddc",
+      "gameindicator-b3df51de3f094cce2f5e042b",
+      "gameindicator-b46ed3dff6478f8b0b6e220f",
+      "gameindicator-b7335a9d6a58857e964bf927",
+      "gameindicator-b79f327f26e0b0125367edf3",
+      "gameindicator-b82845b4e2341b7773db159a",
+      "gameindicator-b91514dc5391a23d94475927",
+      "gameindicator-b98ab0a86a047a85e1a2938a",
+      "gameindicator-bb6c67c06fe43e70702e1997",
+      "gameindicator-bcc487362d9f84fd986e8e87",
+      "gameindicator-bd1f6e918d47d2495054675a",
+      "gameindicator-bd5ff9cce90e8ee5b78ab41c",
+      "gameindicator-bee85c6974419169eb8c91ee",
+      "gameindicator-c07fac19dddec27ca6f1671d",
+      "gameindicator-c4899e876048a0a9eaa48588",
+      "gameindicator-c496afcff78c8310a30cb6c9",
+      "gameindicator-c532b7d0926991d2ee1a8e31",
+      "gameindicator-c7318bdc85fa25e96adffe8d",
+      "gameindicator-c795dd94956906bfb2ef667f",
+      "gameindicator-c9e8be89953f626e8ed12bb6",
+      "gameindicator-cd9360bc86684b5e515bf605",
+      "gameindicator-d07114925620cc3e5186686c",
+      "gameindicator-d62b8a98ab5933402dd77d5c",
+      "gameindicator-d770e0a98b264d41297bfb29",
+      "gameindicator-d81923f7d4a6b5a289b84cca",
+      "gameindicator-d903476d3fb9e75af1cb3f2e",
+      "gameindicator-da7296d8b9890c3486127873",
+      "gameindicator-db550323cc01de374120c0c7",
+      "gameindicator-dd58862a8e6743a6a062f47f",
+      "gameindicator-ddfc44b2ceba648a4e25fd59",
+      "gameindicator-de29e020b75dd8af7a8ffee1",
+      "gameindicator-de39a9a62336dca7490b86f6",
+      "gameindicator-df23a0ddcb25bc573a7d5d7e",
+      "gameindicator-df28d9d12f2e8dfe2159ecb8",
+      "gameindicator-dfb247bc0a5c5c8860c78012",
+      "gameindicator-dfca4f291d83df5fc7618d61",
+      "gameindicator-e070196b4aa078fae33c0b7a",
+      "gameindicator-e0fc0b04e689efce6674a175",
+      "gameindicator-e1cf8cfb0be1eb2ba5951a8f",
+      "gameindicator-e1d7762225614ec0c4ad575d",
+      "gameindicator-e465d25374e70907ddf55805",
+      "gameindicator-e47ed5f09d2c7216f2c51fb3",
+      "gameindicator-e61c40d1eadc3fef388286a9",
+      "gameindicator-e6c4928105291ff7fc7ca68d",
+      "gameindicator-e88a8804d49ae7daa435d931",
+      "gameindicator-ea48a4e8c7c7e7659a9af269",
+      "gameindicator-ebfae931dad40765ac2bb023",
+      "gameindicator-ed22e3e94a0ae0a83f6e1b4d",
+      "gameindicator-ee45ba44da73d45b8b7145fa",
+      "gameindicator-f145d85c4bfc6eeca4b4d791",
+      "gameindicator-f16d2498d245731194612e1f",
+      "gameindicator-f1eebafd7d5354083618986d",
+      "gameindicator-f3374f6c5923d4683a8ddd3f",
+      "gameindicator-f3418be5083fe3e1a45ab76a",
+      "gameindicator-f3703bf3a461c55c6eaa19ce",
+      "gameindicator-f5a940c15248a9ea5fe8f964",
+      "gameindicator-f9a40cc8f633e4015b6efb71",
+      "gameindicator-fa9a35e75705db6e73e629bf",
+      "gameindicator-fc2b0483a6ee000ec3e6776b",
+      "gameindicator-fda14e330b97659841f4817d",
+      "gameindicator-fe4a4665416ec9d775b28201",
+      "gameindicator-ffdbfd97f28d68bb6c699a2a"
+    ],
+    "players": [
+      "gameplayer-02211bbea1421cbb079b7af1",
+      "gameplayer-024dc258bc4df04d2e81ac0c",
+      "gameplayer-029199cf7d5769341ac9c28a",
+      "gameplayer-0722481fc1b2c9d8a642abb6",
+      "gameplayer-097e0b74514b4f6624ac4a8b",
+      "gameplayer-0b302eb9fa8292b47dbc63cd",
+      "gameplayer-0b91cee21152262f70b99b81",
+      "gameplayer-0d86856439d0ca95800c3299",
+      "gameplayer-0e08a498c78d2a41284279d0",
+      "gameplayer-0e6e7613dee4bc22e192d945",
+      "gameplayer-0e9cacb301da64cf30155ae6",
+      "gameplayer-13286f410ed5229118217eb5",
+      "gameplayer-145c135790df1e8fa710d4f5",
+      "gameplayer-1a25cc7afa518f20e2929b8a",
+      "gameplayer-1b28256bc9c9009f1ea6fa6a",
+      "gameplayer-1c9ede93a80a5ab97009cfae",
+      "gameplayer-1d61557969b3fd6dd7a3a967",
+      "gameplayer-1f6171ce825df2afa9ab8ebf",
+      "gameplayer-239ec47d8207f94337a67ed0",
+      "gameplayer-24327cbd31adfcce8f768793",
+      "gameplayer-252eff4c3a65f9fa80f6b179",
+      "gameplayer-2581d2940660b28a86d3a028",
+      "gameplayer-26882900c7c9824d94c1aa87",
+      "gameplayer-2795acec87924b2a6f233d96",
+      "gameplayer-2a514d420719d7ab345bd3f6",
+      "gameplayer-2a5e560a4bb6c156c1128439",
+      "gameplayer-2ba96343951e743b861b5a11",
+      "gameplayer-2d4dc2907910a26ef2dfdde9",
+      "gameplayer-2df68a70ac385f4eb8bcb739",
+      "gameplayer-2f70a9d11dbe3fccd9c90743",
+      "gameplayer-2f9a620c64363dfd57344fdb",
+      "gameplayer-301811187e1f27ac98719037",
+      "gameplayer-3146374cf66f740b3aebde87",
+      "gameplayer-3274a36a313f506377c2cb81",
+      "gameplayer-34b3d3e945490ea495713b21",
+      "gameplayer-3a0278f61b48b4d3f9390743",
+      "gameplayer-3aa903ef4365224aafa7b2ae",
+      "gameplayer-417b70994b3e9cb137318575",
+      "gameplayer-42a2e9fcb8e8e49276e61f41",
+      "gameplayer-442087715ed99b52eecf0eda",
+      "gameplayer-463998c2d489e9bdd91d5958",
+      "gameplayer-467b0ca20a9c32cc4dbd3332",
+      "gameplayer-473eba493645a042d33302cb",
+      "gameplayer-4f20a948188ecdff2a12a319",
+      "gameplayer-5560590b8d2b29af549beb5b",
+      "gameplayer-5c3ab4eb2cc2c91c0cc07ae1",
+      "gameplayer-5c91c7ccba43b6162efd2c04",
+      "gameplayer-5e3e8697f6be2b636279cd65",
+      "gameplayer-5f299f308270521fa3e2dc8b",
+      "gameplayer-622d9e3676b5a01907454cc0",
+      "gameplayer-630d6387529cfe8dfa0e6f6e",
+      "gameplayer-650981e69fe18562c43e0476",
+      "gameplayer-653cedbabd073d56e09aa206",
+      "gameplayer-65587ac9993cb41b40238ab5",
+      "gameplayer-683ec0e678708f97a911576d",
+      "gameplayer-68fbe988920bf2a94703f3ef",
+      "gameplayer-69d3a04bab0bb01ecd1f4cd8",
+      "gameplayer-6baf30b38b9ac38fd0f0b10b",
+      "gameplayer-6c2a1c1a9b697a56cb594e00",
+      "gameplayer-6d961b28e2bcb1c2e4407342",
+      "gameplayer-71f90b5d095770ef1e9d38fa",
+      "gameplayer-73858a0ad42d7164aeb6a974",
+      "gameplayer-74032a2aef9eab1a9bd8c157",
+      "gameplayer-77c224558381f1005473e0f0",
+      "gameplayer-7dde2199aefab7d664e56155",
+      "gameplayer-7ebe4adb788b2e96f4a69522",
+      "gameplayer-7f81ecc0c1255101db195c61",
+      "gameplayer-7fbcb70e95602bebd0959e0e",
+      "gameplayer-81d4ec77dda2cc2f7b0c7041",
+      "gameplayer-85b779ec54bd82f26006c550",
+      "gameplayer-873b48d04724e8e57aa7babb",
+      "gameplayer-8843e10ea0a325e290150bf6",
+      "gameplayer-88c06c501716b7fa90805585",
+      "gameplayer-8b6e85789c416186fa0603a0",
+      "gameplayer-8c7c35f987e6bf166dd4f06b",
+      "gameplayer-8d6d2d345055505a4a6cc049",
+      "gameplayer-8f49f100f2765772d32661aa",
+      "gameplayer-90f1cd2d7d53749030c4f739",
+      "gameplayer-91304564bf1b679106231cf5",
+      "gameplayer-927dae802b397449e58fe421",
+      "gameplayer-92831438ce1d535431df4093",
+      "gameplayer-937352aa65713fe731578153",
+      "gameplayer-93bcb9efc47bc700e2893717",
+      "gameplayer-9613e9b4b0754b7419b37275",
+      "gameplayer-9857a45e9faa964591d9801c",
+      "gameplayer-9bb4554d4b1f025a71ba792a",
+      "gameplayer-a00d0ea03f073223e60de4d0",
+      "gameplayer-a033653152ff48326b12cbcc",
+      "gameplayer-a0771cea7230fd6712c18aa3",
+      "gameplayer-a3957a63fc2587146700c315",
+      "gameplayer-a6fe8e01aab6b9747b31615c",
+      "gameplayer-a8857ab3809cc86efe565a46",
+      "gameplayer-aad8695711272e5da72b915c",
+      "gameplayer-ab23b9badca74abbd7117f48",
+      "gameplayer-abee341852216b9385f3172b",
+      "gameplayer-ad16b6e1ab38c90c4f944198",
+      "gameplayer-af4a2f79d5796df8583ecd64",
+      "gameplayer-b0de50ae0f426af083dbdab5",
+      "gameplayer-b0eecd35697b63ba9352f3b4",
+      "gameplayer-b20981e6cfb7aceee1e8ec60",
+      "gameplayer-b587c116a17107b5dfcc6714",
+      "gameplayer-b792cbe04c0d2a6be23856f3",
+      "gameplayer-b908130d682ce937a06baa02",
+      "gameplayer-ba3b07bf32ce75bf6c5ee47b",
+      "gameplayer-ba726ff9dd6dc8ee58661fe0",
+      "gameplayer-bbec7f132814dde582000d4e",
+      "gameplayer-bc23d8743ddb77b4874e2ca9",
+      "gameplayer-bea62a22e93b27aa287ad122",
+      "gameplayer-c0ec28ef0ca2f73fa30fda9a",
+      "gameplayer-c172fc036777162d795d8916",
+      "gameplayer-c2c2890ff4bfd0529594ca70",
+      "gameplayer-c45552a8701452aa72ccc17d",
+      "gameplayer-c477b68f8849414058a5c20e",
+      "gameplayer-c48cb63c2bcfe57c4981798c",
+      "gameplayer-c5e160f093d2fa2263df15bb",
+      "gameplayer-c630c402508cce1121264133",
+      "gameplayer-c6ad01cb1a1a3277c23b4223",
+      "gameplayer-c6d93a4751971286f1e5d581",
+      "gameplayer-c8a64c947a4a7e0e286d785a",
+      "gameplayer-d18e6ddba67548d13aaece2c",
+      "gameplayer-d19aedd3faea4aa31c6f8c16",
+      "gameplayer-d2165abe9d6a88c4a6976a02",
+      "gameplayer-d42c023735f39eedea45ac56",
+      "gameplayer-d7c4ed20185d46063a9d77fe",
+      "gameplayer-d8c12f634ec0845402431ca9",
+      "gameplayer-d93c64c7bcf804d8cfbee067",
+      "gameplayer-d9de3a11ee5f76d1efbdeb69",
+      "gameplayer-dd9102b46ad2b544a263cfcb",
+      "gameplayer-dfcdaffc0ea78c9cd663fef8",
+      "gameplayer-e353c6cf366f3794bd450411",
+      "gameplayer-e492b871b5be1b8b6253da9c",
+      "gameplayer-e5770ae7154c90cbfb4b66a2",
+      "gameplayer-e69b13c3d6dc2d25ede855bd",
+      "gameplayer-ed89edecd0a97e3bc4742ede",
+      "gameplayer-ee77756253dfdfbbd8f35160",
+      "gameplayer-f11b5f6937c0e6ba08b06666",
+      "gameplayer-f3ae53d4bc20637a7bd3d5e9",
+      "gameplayer-f49f2c549566550ae633365a",
+      "gameplayer-f4fdc37b82ac9b1ac6ab2131",
+      "gameplayer-f52c04acf66037f428c05e78",
+      "gameplayer-f593dff90928edce1c63fff8",
+      "gameplayer-f77f470e19c6ab6d0395afb2",
+      "gameplayer-f9cea128b07729a677c512fb",
+      "gameplayer-fceecbc73ba4110977e14a95",
+      "gameplayer-fedb0aad263952594145a1e5",
+      "gameplayer-ff24dab027e821f9fbf3ea02"
+    ],
+    "lobby": [
+      "gamelobby-00371de5dfef50deb10e4146",
+      "gamelobby-00c3cd88152e55313650ab23",
+      "gamelobby-011ef6df3b4ae55b5aaf0b2d",
+      "gamelobby-02333490cd76bb4ca80e73ba",
+      "gamelobby-03e91bbb8089747904f8ecd9",
+      "gamelobby-0793aa412099a41bc6d353f7",
+      "gamelobby-09631a753c746473afe09a51",
+      "gamelobby-0c0566472f289a824b85f1f4",
+      "gamelobby-0c0873843b1a81b72f4ec8c2",
+      "gamelobby-0d938e85d8bb4076b94bee28",
+      "gamelobby-10d0b7bd75a5d1340dfaf7f5",
+      "gamelobby-11c0bae006ee424129e4cd95",
+      "gamelobby-1317444863c3ff430c3db988",
+      "gamelobby-13f1a6d5f38ec9ba2e6d2596",
+      "gamelobby-14a6cb924287ae91042d51bf",
+      "gamelobby-15b7a55686c60813fd4c06ac",
+      "gamelobby-169b3c550970d8e7c41b1e90",
+      "gamelobby-18f1b5967170b925806bc567",
+      "gamelobby-19e600abe03701022d345fdb",
+      "gamelobby-1a19003081e267077d9d79c2",
+      "gamelobby-1dd0019ab79452efe7d11886",
+      "gamelobby-1dead59158d10a638f31da40",
+      "gamelobby-1f12a877294337dc3d28a26a",
+      "gamelobby-1fc5fe22e9a8de180c293bc9",
+      "gamelobby-21d48ba07a3a75a8a74bc6ac",
+      "gamelobby-26c04c04996cfbfeb7bfa8b5",
+      "gamelobby-274cf4f06400631bb563caf3",
+      "gamelobby-29bd4a5fb3699e429e09efdc",
+      "gamelobby-2a69618113452a76044c4e7b",
+      "gamelobby-369114ee91384fbaaa0bbb81",
+      "gamelobby-3759defc5f51fde067b2a2a1",
+      "gamelobby-37d8f5634c11327717bb801b",
+      "gamelobby-394ae904357e6c6d96e37f96",
+      "gamelobby-3a569ff824c97c8325d7106d",
+      "gamelobby-3b2cd3b9dbb8730431fd3b60",
+      "gamelobby-3cfd170d49bd5894f164435a",
+      "gamelobby-40bac19cad11d9ba286d70b8",
+      "gamelobby-40c098235d9bb865d08b4bad",
+      "gamelobby-466df3acbae4c1973412a0ab",
+      "gamelobby-47c6ff345867e96b1a1a60af",
+      "gamelobby-4b87a5032378d713e286ea28",
+      "gamelobby-4b9b8e0937350155ab686ee4",
+      "gamelobby-4e4c39904c5e70d5c2de00e8",
+      "gamelobby-502ceca6a9d38954ef067161",
+      "gamelobby-503e8e39d68f31890d18860e",
+      "gamelobby-51a28ba7d8197f036ca1d15c",
+      "gamelobby-52d34eb23e3da91bf04acbe0",
+      "gamelobby-54f476660fd7181e8c4e2719",
+      "gamelobby-558a3c085080b6c7b3deeafa",
+      "gamelobby-57613d2d19648b0edf1406c7",
+      "gamelobby-57624a6f62ac116de1cab403",
+      "gamelobby-60caf8e73241fd9c638f360e",
+      "gamelobby-61469567de72184b807c4c46",
+      "gamelobby-65d73e71a21a8ce3508f8618",
+      "gamelobby-699e57e62cceaf3a9a006bc8",
+      "gamelobby-6a0787b31e9c2a549c989cb9",
+      "gamelobby-6c999a220627b9d5e7ef46a0",
+      "gamelobby-6f570173fcdfd1663338746c",
+      "gamelobby-70a5e77fc95864564f55b35c",
+      "gamelobby-70a679963c3ea7c5c7027d25",
+      "gamelobby-76cc4329165196d4d443e476",
+      "gamelobby-7a4575ff55bd250aad884aae",
+      "gamelobby-7b27091803300619fc82d13c",
+      "gamelobby-7c6e35c447c77c5a160d4277",
+      "gamelobby-7e22931c0fd7b2a7fa6c4d4d",
+      "gamelobby-7ed100b809dd320ccd6aff42",
+      "gamelobby-8238623c21345efa0ee3a8ac",
+      "gamelobby-82aa985862be5f5f6cb27a3a",
+      "gamelobby-83043a88a95a1d815f760fc2",
+      "gamelobby-83ea0a1134689386814e9885",
+      "gamelobby-83f5eb088e51de9f47b23c08",
+      "gamelobby-841eedfb9288bb81f49e413a",
+      "gamelobby-87e84c8f5d97808f9e4b78fe",
+      "gamelobby-8a543e3ea321d96f92a35910",
+      "gamelobby-8beafe13ab519b5c2b096728",
+      "gamelobby-8c68fb4e2476183eb117243b",
+      "gamelobby-8fa29308e14298c46ff5d122",
+      "gamelobby-90fa2c0404b61a0921a0c95c",
+      "gamelobby-90fac2bb246926aec7847d05",
+      "gamelobby-91a71db2bdf7b4666d104bdc",
+      "gamelobby-9299479142b0c9c1a8061dd5",
+      "gamelobby-934ea34687735fdcb1ea6dc6",
+      "gamelobby-937f0465193b615904a3d988",
+      "gamelobby-93e8372a2ff8a464e056a962",
+      "gamelobby-94366050d5f2f9c338e1de6e",
+      "gamelobby-971be68c741273a95eaaf9dc",
+      "gamelobby-98ad9c352274ef754fe99c88",
+      "gamelobby-9be5803d56de23c0784fe462",
+      "gamelobby-9c46f4013e2efc1724432f4a",
+      "gamelobby-9cef7b251c7a97a95b0f4f5d",
+      "gamelobby-9d0e1725fa0abed1e4f3dc8b",
+      "gamelobby-a6cd790741e9f182e4b5ff4e",
+      "gamelobby-aa9e356e6d188fe7ab677c95",
+      "gamelobby-ab4c948d8308fbae156b8a2d",
+      "gamelobby-b23c6cc45a8f539a86395860",
+      "gamelobby-b8e2b8a6bf50f96227ed283c",
+      "gamelobby-ba366823f3119af024ebfeba",
+      "gamelobby-bac7c48d7f5d2db64b8ed493",
+      "gamelobby-bb10d9b2944c8c6e2bf28a90",
+      "gamelobby-bbd44743256b1aaaa0d9c843",
+      "gamelobby-bd0534011717ccb568e5dbf2",
+      "gamelobby-bf71c2fb0800ed8a8aa5317c",
+      "gamelobby-c01a5fbc6ef5d5fa979daef4",
+      "gamelobby-c343458989cc68c35d8e6834",
+      "gamelobby-c5d937dc0b79825ce8d3c28a",
+      "gamelobby-c64792d8b1f41ba8252f61c6",
+      "gamelobby-c92c4bfcfe70ad1b5eeffddf",
+      "gamelobby-c9b241fecba4246899f2f502",
+      "gamelobby-cc9c735582ac1f77c6143c39",
+      "gamelobby-cdffecde4b737c2436094c3f",
+      "gamelobby-ce71ff11b92714f3a2bb5f8e",
+      "gamelobby-d231e9fc5f472b0538c83bc3",
+      "gamelobby-d5b30b766edb82fc7ca90978",
+      "gamelobby-dbf8bd27ead962938c1bdef7",
+      "gamelobby-dc99e0d5dca33cd9789cadc1",
+      "gamelobby-dcd424b72c3597b3da167afd",
+      "gamelobby-ddcbd09cac361214cac5c26c",
+      "gamelobby-ddfe26eb1d6a07d234e62c78",
+      "gamelobby-de9745582f641f91b11972f6",
+      "gamelobby-e113944497cda362854085fb",
+      "gamelobby-e6c6ba6ccbf17d1d4c09b807",
+      "gamelobby-e75f8578ff08ea3cd4d37276",
+      "gamelobby-e88c4cb13e70784e289b33f1",
+      "gamelobby-edb67e58ecee7d6717c032e5",
+      "gamelobby-ee3c1a517492db1cd3d1dec8",
+      "gamelobby-ef75de8968ccf9a331997402",
+      "gamelobby-efd2a0f700c5df7a8ab0bfd9",
+      "gamelobby-f624fb9ccb98c3be62d83993",
+      "gamelobby-fa5a516306d33fd941f1d6e3",
+      "gamelobby-fb8d4a0d9b489a9254ce8d4d",
+      "gamelobby-fc2a80a6c3a37e066537a06a",
+      "gamelobby-fd9321c18f50c545673a42fc",
+      "gamelobby-fe1c8486d7e3eb3cf93f9603",
+      "gamelobby-ff22cc332506b6bf2ab5f9ae",
+      "preset-12"
+    ]
+  },
+  "further_families": [
+    {
+      "kind": "materials",
+      "finding": "Gemeinsame Palette mit neun Materialfamilien und Originalbeispielen. Wünsche als Projekteigenschaft; keine zusätzlichen Elementassets. Editoroptionen später."
+    },
+    {
+      "kind": "presentation",
+      "finding": "Drei Originalansichten erläutern die bestehenden Projektentscheidungen. Kamera, Licht und Bewegung als Eigenschaften; keine einzelnen Frames oder dritten Brett-/Würfelmodelle."
+    }
+  ],
+  "limits": [
+    "Logikprüfung der Aufnahme; gesonderter Abschlussabgleich aller acht Spiele in WERKSTATT_ABSCHLUSSPRUEFUNG.json.",
+    "Feste Zustandsbeispiele bleiben als Einsatzvarianten der gemeinsamen Modelle erhalten.",
+    "Editoroptionen und Spielintegration bleiben offen."
+  ]
+}

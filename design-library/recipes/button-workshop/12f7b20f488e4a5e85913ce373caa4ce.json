@@ -1,0 +1,82 @@
+{
+  "schema_version": 2,
+  "renderer_version": "button-workshop-v3",
+  "contour": {
+    "template": "comic",
+    "points": [
+      {
+        "x": 8,
+        "y": 7,
+        "round": 30
+      },
+      {
+        "x": 34,
+        "y": 2,
+        "round": 30
+      },
+      {
+        "x": 91,
+        "y": 6,
+        "round": 28
+      },
+      {
+        "x": 99,
+        "y": 29,
+        "round": 38
+      },
+      {
+        "x": 95,
+        "y": 88,
+        "round": 28
+      },
+      {
+        "x": 64,
+        "y": 96,
+        "round": 35
+      },
+      {
+        "x": 5,
+        "y": 91,
+        "round": 26
+      },
+      {
+        "x": 1,
+        "y": 30,
+        "round": 35
+      }
+    ]
+  },
+  "name": "Stormseed´s conquest",
+  "notes": "",
+  "settings": {
+    "style": "comic",
+    "material": "stone",
+    "shape": "comic",
+    "edge": 2,
+    "finish": "satin",
+    "wear": 0,
+    "accent": "#31fe16",
+    "font": "fredoka",
+    "font_link": "manual",
+    "lettering": "etched",
+    "size": 32,
+    "label": "spiel starten",
+    "depth": 4,
+    "duration": 300,
+    "feel": "direct",
+    "sound": "wood-light",
+    "volume": 20
+  },
+  "kind": "shape",
+  "review": {
+    "style": "open",
+    "motion": "open",
+    "shape": "open",
+    "surface": "open",
+    "lettering": "open",
+    "sound": "open"
+  },
+  "parent_id": "84c91c21887444b7bcaa141f6790fbec",
+  "id": "12f7b20f488e4a5e85913ce373caa4ce",
+  "created_at": "2026-10-25T17:33:01.361011+00:00"
+}

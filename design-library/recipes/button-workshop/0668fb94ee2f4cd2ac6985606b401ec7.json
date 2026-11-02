@@ -1,0 +1,142 @@
+{
+  "schema_version": 2,
+  "renderer_version": "button-workshop-v7",
+  "contour": {
+    "template": "cut",
+    "points": [
+      {
+        "x": 6,
+        "y": 4,
+        "round": 0
+      },
+      {
+        "x": 33,
+        "y": 2,
+        "round": 0
+      },
+      {
+        "x": 35,
+        "y": 13,
+        "round": 0
+      },
+      {
+        "x": 39,
+        "y": 1,
+        "round": 0
+      },
+      {
+        "x": 91,
+        "y": 3,
+        "round": 0
+      },
+      {
+        "x": 99,
+        "y": 23,
+        "round": 0
+      },
+      {
+        "x": 94,
+        "y": 40,
+        "round": 0
+      },
+      {
+        "x": 100,
+        "y": 46,
+        "round": 0
+      },
+      {
+        "x": 96,
+        "y": 80,
+        "round": 0
+      },
+      {
+        "x": 88,
+        "y": 98,
+        "round": 0
+      },
+      {
+        "x": 63,
+        "y": 95,
+        "round": 0
+      },
+      {
+        "x": 61,
+        "y": 84,
+        "round": 0
+      },
+      {
+        "x": 57,
+        "y": 98,
+        "round": 0
+      },
+      {
+        "x": 8,
+        "y": 95,
+        "round": 0
+      },
+      {
+        "x": 1,
+        "y": 76,
+        "round": 0
+      },
+      {
+        "x": 4,
+        "y": 51,
+        "round": 0
+      },
+      {
+        "x": 0,
+        "y": 43,
+        "round": 0
+      },
+      {
+        "x": 2,
+        "y": 21,
+        "round": 0
+      }
+    ]
+  },
+  "name": "Mein neuer Button",
+  "notes": "",
+  "settings": {
+    "style": "natural",
+    "material": "gradient",
+    "shape": "cut",
+    "edge": 1,
+    "finish": "matte",
+    "wear": 0,
+    "accent": "#41906b",
+    "font": "letter-chalk",
+    "font_link": "manual",
+    "lettering": "plain",
+    "size": 20,
+    "label": "Mein erster Button",
+    "depth": 5,
+    "duration": 240,
+    "feel": "soft",
+    "sound": "media-piece",
+    "volume": 50,
+    "gradient_to": "#4f754d",
+    "opacity": 30,
+    "font_scale": 130,
+    "shadow": 0,
+    "height_ratio": 80,
+    "ink_mode": "manual",
+    "ink_color": "#f1efea",
+    "depth_mode": "manual",
+    "depth_color": "#162a0e",
+    "depth_x": -2
+  },
+  "kind": "button",
+  "review": {
+    "style": "open",
+    "motion": "open",
+    "shape": "open",
+    "surface": "open",
+    "lettering": "open",
+    "sound": "open"
+  },
+  "parent_id": null,
+  "id": "0668fb94ee2f4cd2ac6985606b401ec7",
+  "created_at": "2026-10-28T14:54:22.825394+00:00"
+}

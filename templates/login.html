@@ -5,7 +5,7 @@
 {% block content %}
   <section class="login-card">
     <div class="hero-art"><img src="{{ url_for('static', filename='stormseed-hero.png') }}" alt="Eine elektrische Gewitterwolke lässt Wissen aus einem Samen sprießen"></div>
-    <h1 class="brand-title"><span>Stormseed´s</span><strong>Guesstimate</strong></h1>
+    <h1 class="brand-title game-name"><span>stormseed´s</span><strong>guesstimate</strong></h1>
     <p class="login-intro">Fünf Fragen. Ein Versuch. Und morgen wissen alle, wer wirklich Ahnung hatte.</p>
 
     <form method="post" class="stack-form" autocomplete="off">
@@ -18,7 +18,7 @@
         <span>PIN</span>
         <input name="pin" type="password" inputmode="numeric" autocomplete="off" maxlength="12" required placeholder="••••">
       </label>
-      <button class="primary-button" type="submit">Rein ins Quiz</button>
+      <button class="primary-button" type="submit">rein ins quiz</button>
     </form>
     <div class="auth-switch"><span>Neu hier?</span><a href="{{ url_for('register') }}">Eigenen Login erstellen</a></div>
   </section>

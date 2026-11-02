@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f0e4">
+  <title>Comic mit Tiefgang · stormseed´s</title>
+  <link rel="icon" href="/shared/favicon.svg">
+  <link rel="stylesheet" href="/shared/typography-v1.css">
+  <link rel="stylesheet" href="/shared/player-portrait.css">
+  <link rel="stylesheet" href="comic-ui.css">
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="page-nav">
+      <a class="wordmark" href="#"><span>stormseed´s</span><strong>games collection</strong></a>
+      <span class="draft-tag"><i></i> lokaler gestaltungsentwurf <b>01</b></span>
+    </header>
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div><p class="eyebrow">Ein gemeinsamer Look für unsere Spiele</p><h1 id="page-title">Comic mit <span>Tiefgang.</span></h1></div>
+        <p class="intro-copy">Griffige Buttons. Klare Ansagen. <br>Und ein Druck, den man sieht.<small>Alles hier ist eine Vorschau mit Beispielwerten.</small></p>
+      </section>
+
+      <div class="showcase-grid">
+        <section class="playground" aria-label="Interaktive Conquest-Zugleiste">
+          <div class="scene-caption"><span class="section-number">01</span><span>So könnte es sich im Spiel anfühlen</span><span class="sample-label">Beispiel: conquest</span></div>
+          <div class="demo-scene">
+            <img class="map-art" src="/shared/conquest-map.png" alt="Vorhandene farbige Conquest-Weltkarte als Hintergrund des Entwurfs">
+            <div class="scene-grain" aria-hidden="true"></div>
+            <div class="scene-heading"><span>stormseed´s</span><strong>conquest</strong></div>
+            <div class="phase-sticker"><span>JETZT WIRD'S</span><b id="phase-sticker">spannend!</b><i aria-hidden="true">✦</i></div>
+            <div class="sample-pin pin-one" aria-hidden="true">5</div><div class="sample-pin pin-two" aria-hidden="true">3</div><div class="sample-pin pin-three" aria-hidden="true">8</div>
+
+            <section class="turn-console comic-panel" aria-label="Beispielzug">
+              <div class="console-topline"><span class="caption-tab">dein zug</span><span class="round-caption">Feldzug <b>04</b></span></div>
+              <div class="console-player-row">
+                <div id="demo-player" class="demo-player"></div>
+                <div class="stat-strip" aria-label="Spielwerte">
+                  <div class="stat-token"><span data-icon="flag"></span><strong>14</strong><small>Länder</small></div>
+                  <div class="stat-token"><span data-icon="army"></span><strong>42</strong><small>Truppen</small></div>
+                </div>
+              </div>
+              <div class="phase-keys" role="tablist" aria-label="Beispielphase wählen">
+                <div data-button="phase-reinforce"></div><div data-button="phase-attack"></div><div data-button="phase-fortify"></div>
+              </div>
+              <div class="console-action-row">
+                <div class="phase-callout"><span class="phase-emblem" id="phase-emblem" aria-hidden="true"></span><div class="phase-copy"><h2 id="phase-title">Angreifen oder sichern?</h2><p id="phase-description" role="tabpanel" tabindex="0" aria-labelledby="phase-tab-attack"></p></div></div>
+                <div class="console-actions"><div data-button="inventory"></div><div data-button="next-phase"></div></div>
+              </div>
+              <p id="demo-feedback" class="console-feedback" role="status">Wähle eine Phase oder drücke den grünen Button.</p>
+            </section>
+          </div>
+        </section>
+
+        <aside class="touch-panel comic-paper" aria-labelledby="touch-title">
+          <div class="panel-heading"><span class="section-number">02</span><span>Zum Anfassen</span><i data-icon="hand"></i></div>
+          <h2 id="touch-title">Einmal drücken, <br>bitte.</h2>
+          <p>Die dunkle Kante bleibt stehen.<br>Die Oberfläche gibt nach.</p>
+          <div class="button-samples">
+            <div class="sample-slot"><div data-button="sample-primary"></div><small>Hauptaktion</small></div>
+            <div class="sample-slot"><div data-button="sample-secondary"></div><small>Nebenaktion</small></div>
+            <div class="sample-slot"><div data-button="sample-pressed"></div><small>Druck zum Vergleichen festhalten</small></div>
+            <div class="sample-slot"><div data-button="sample-disabled"></div><small>Nicht verfügbar</small></div>
+          </div>
+          <div class="depth-control"><label for="depth">Wie viel Druckweg?</label><output for="depth" id="depth-label">dezent</output><input id="depth" type="range" min="4" max="12" step="2" value="4"><div><span>dezent</span><span>extra plastisch</span></div></div>
+          <div class="focus-row"><span data-icon="keyboard"></span><p>Auch per Tastatur.<small>Mit Tab und Leertaste ausprobieren.</small></p><div data-button="sample-focus"></div></div>
+        </aside>
+      </div>
+
+      <section class="secondary-section" aria-labelledby="display-title">
+        <div class="section-heading"><div><p class="eyebrow">Dieselbe Familie. Andere Spielsituationen.</p><h2 id="display-title">Anzeigen mit Ansage.</h2></div><p>Zustände erkennt man an Farbe, <br>Form und einer klaren Beschriftung.</p></div>
+        <div class="display-grid">
+          <article class="dice-panel comic-panel">
+            <div class="panel-heading"><span class="section-number">03</span><span class="game-name">kniffel</span><span class="status-badge status-active" id="dice-status">du bist dran</span></div>
+            <div class="display-title"><h3 id="dice-heading">Da geht noch was!</h3><span class="count-badge"><b id="roll-count">2</b><small>/ 3</small></span></div>
+            <p id="dice-description">Ein Wurf ist noch übrig.</p>
+            <div class="dice-tray" id="dice-tray" role="img" aria-label="Beispielwurf: 2, 5, 3, 6 und 1"></div>
+            <div class="display-actions"><div data-button="roll"></div><div data-button="reset-roll"></div></div>
+          </article>
+
+          <article class="timer-panel comic-paper">
+            <div class="panel-heading"><span class="section-number">04</span><span class="game-name">guesstimate</span><span class="status-badge" id="timer-status">deine antwort zählt</span></div>
+            <div class="display-title"><h3 id="timer-heading">Deine Zeit läuft.</h3><span class="timer-bolt" data-icon="bolt"></span></div>
+            <div class="timer-readout"><strong id="timer-value">00:18</strong><span>Sekunden<br>zum Entscheiden</span></div>
+            <div class="time-track" role="progressbar" aria-label="Verbleibende Beispielzeit" aria-valuemin="0" aria-valuemax="30" aria-valuenow="18" id="time-track"><span id="time-fill"></span></div>
+            <div class="display-actions"><div data-button="timer"></div><div data-button="reset-timer"></div></div>
+          </article>
+
+          <article class="reference-panel comic-paper">
+            <div class="panel-heading"><span class="section-number">05</span><span>Deine Vorlage</span><span class="reference-spark" aria-hidden="true">✦</span></div>
+            <img class="reference-image" src="/reference.png" alt="Dein Beispiel mit dunkler Unterkante unter dem grünen End-Attack-Phase-Button">
+            <h3>Die Tiefe als Ausgangspunkt.</h3>
+            <p>Kräftige Konturen, kleine Lichtkanten und lebendige Ecken geben dem Entwurf seinen Comic-Charakter.</p>
+            <div class="status-examples"><span class="status-badge status-ready">bereit</span><span class="status-badge status-waiting">wartet</span><span class="status-badge status-warning">aufgepasst!</span></div>
+            <div class="danger-example" data-button="sample-danger"></div>
+          </article>
+        </div>
+      </section>
+
+      <footer class="page-footer"><span><b>Ein Entwurf, ein Baukasten.</b> Buttons und Anzeigen stammen aus denselben Vorschau-Bausteinen.</span><span>Nur lokal · Keine gespeicherten Spielzüge</span></footer>
+    </main>
+  </div>
+
+  <dialog id="inventory-dialog" class="comic-dialog" aria-labelledby="inventory-title">
+    <span class="dialog-kicker">Alles an einem Platz</span><h2 id="inventory-title">Dein Inventar.</h2>
+    <p>Karten und Mission bleiben bei dir.</p>
+    <div class="inventory-preview"><div><span data-icon="cards"></span><strong>3</strong><small>Beispielkarten</small></div><div><span data-icon="flag"></span><strong>1</strong><small>Beispielmission</small></div></div>
+    <p class="dialog-note">Diese Designvorschau enthält keine echten Spielinhalte.</p><div data-button="close-inventory"></div>
+  </dialog>
+  <div id="toast" class="preview-toast" role="status" hidden></div>
+  <script type="module" src="preview.js"></script>
+</body>
+</html>

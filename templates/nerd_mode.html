@@ -5,12 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#24100c">
-  <title>{{ lobby.name }} · Stormseed´s Perfect</title>
+  <title>{{ lobby.name }} · stormseed´s perfect</title>
   <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='quiz-arena.css', v='66') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='typography-v1.css', v='2') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='profile-stage-v1.css', v='20') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='stormseeds-perfect.css', v='20') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='quiz-arena.css', v='71') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='typography-v1.css', v='3') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='profile-stage-v1.css', v='21') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='profile-window.css', v='1') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='stormseeds-perfect.css', v='22') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='ui-conventions.css', v='1') }}">
 </head>
 {% set phase = 'finale' if lobby.status == 'completed' else ('lobby' if lobby.status == 'waiting' else (round.phase if round else lobby.status)) %}
 {% set is_host = lobby.host_user_id == g.user.id %}
@@ -30,21 +32,21 @@
     {% else %}
       <form method="post" action="{{ url_for('nerd_leave', lobby_id=lobby.id) }}" class="perfect-home-form" data-leave-form data-member-count="{{ members|length }}">
         <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-        <button class="perfect-home-link" type="submit">← Lobbys</button>
+        <button class="perfect-home-link" type="submit">← lobbys</button>
       </form>
     {% endif %}
-    <div class="perfect-logo perfect-logo-small"><span>Stormseed´s</span><strong>Perfect</strong></div>
+    <div class="perfect-logo perfect-logo-small game-name"><span>stormseed´s</span><strong>perfect</strong></div>
     <div class="perfect-topmeta">
       {% if is_host and phase not in ('lobby', 'finale', 'resolution', 'review') %}
         <div class="perfect-host-round-controls">
           <form method="post" action="{{ url_for('nerd_pause', lobby_id=lobby.id) }}" class="perfect-pause-form">
             <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-            <button type="submit" class="perfect-pause-button" aria-label="{{ 'Spiel fortsetzen' if is_paused else 'Spiel pausieren' }}"><span>{{ '▶' if is_paused else 'Ⅱ' }}</span>{{ 'Play' if is_paused else 'Pause' }}</button>
+            <button type="submit" class="perfect-pause-button" aria-label="{{ 'Spiel fortsetzen' if is_paused else 'Spiel pausieren' }}"><span>{{ '▶' if is_paused else 'ⅱ' }}</span>{{ 'play' if is_paused else 'pause' }}</button>
           </form>
           {% if phase == 'question' %}
             <form method="post" action="{{ url_for('nerd_next_question', lobby_id=lobby.id) }}" class="perfect-next-question-form">
               <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-              <button type="submit" class="perfect-next-question-button" aria-label="Diese Frage überspringen"><span>»</span>Nächste Frage</button>
+              <button type="submit" class="perfect-next-question-button" aria-label="Diese Frage überspringen"><span>»</span>nächste frage</button>
             </form>
           {% endif %}
         </div>
@@ -95,13 +97,13 @@
               </label>
               <small data-perfect-autosave>Wird automatisch übernommen.</small>
             </section>
-            <button class="perfect-visually-hidden" type="submit" tabindex="-1">Übernehmen</button>
+            <button class="perfect-visually-hidden" type="submit" tabindex="-1">übernehmen</button>
           </form>
           {% set guests = members|rejectattr('user_id', 'equalto', g.user.id)|list %}
           {% set ready_guests = guests|selectattr('ready')|list %}
           <form method="post" action="{{ url_for('nerd_start', lobby_id=lobby.id) }}" class="perfect-start-form">
             <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-            <button class="perfect-buzzer" type="submit" {% if not guests or ready_guests|length != guests|length %}disabled{% endif %}><img src="{{ url_for('static', filename='stormseeds-perfect-start-buzzer-v2.png') }}" alt=""><b>Spiel starten</b></button>
+            <button class="perfect-buzzer" type="submit" {% if not guests or ready_guests|length != guests|length %}disabled{% endif %}><img src="{{ url_for('static', filename='stormseeds-perfect-start-buzzer-v2.png') }}" alt=""><b>spiel starten</b></button>
             <small>{% if not guests %}Warte auf mindestens einen Mitspieler.{% elif ready_guests|length != guests|length %}Noch nicht alle sind bereit.{% else %}Alle sind bereit.{% endif %}</small>
           </form>
         {% else %}
@@ -111,7 +113,7 @@
           </section>
           <form method="post" action="{{ url_for('nerd_ready', lobby_id=lobby.id) }}" class="perfect-start-form perfect-ready-form">
             <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-            <button class="perfect-buzzer{% if member.ready %} is-ready{% endif %}" type="submit"><img src="{{ url_for('static', filename='stormseeds-perfect-start-buzzer-v2.png') }}" alt=""><b>{{ 'Bereit ✓' if member.ready else 'Bereit drücken' }}</b></button>
+            <button class="perfect-buzzer{% if member.ready %} is-ready{% endif %}" type="submit"><img src="{{ url_for('static', filename='stormseeds-perfect-start-buzzer-v2.png') }}" alt=""><b>{{ 'bereit ✓' if member.ready else 'bereit drücken' }}</b></button>
             <small>Du kannst deinen Status bis zum Start ändern.</small>
           </form>
         {% endif %}
@@ -136,7 +138,7 @@
               <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
               <label for="perfect-answer">Deine Antwort</label>
               <textarea id="perfect-answer" name="answer" maxlength="220" rows="4" required placeholder="Klingt das glaubwürdig genug?" data-answer-input>{{ answer_text or '' }}</textarea>
-              <div><span data-char-count>0 / 220</span><button class="perfect-button perfect-button-primary" type="submit">Antwort abgeben</button></div>
+              <div><span data-char-count>0 / 220</span><button class="perfect-button perfect-button-primary" type="submit">antwort abgeben</button></div>
             </form>
           {% endif %}
         </div>
@@ -162,7 +164,7 @@
             {% if answer and answer.vote_locked_at %}
               <div class="perfect-vote-locked-note"><span>✓</span><strong>Deine Wahl ist eingeloggt.</strong><small>Alle Entscheidungen bleiben bis zur Auflösung geheim.</small></div>
             {% else %}
-              <button class="perfect-button perfect-button-primary perfect-main-action" type="submit">Antwort einloggen</button>
+              <button class="perfect-button perfect-button-primary perfect-main-action" type="submit">antwort einloggen</button>
             {% endif %}
           </form>
         </div>
@@ -181,7 +183,7 @@
                   <label><input type="checkbox" name="equivalent_{{ item.id }}"><span><b>{{ item.answer_text }}</b><small>Antwort von {{ item.display_name }}</small></span></label>
                 {% else %}<p>Niemand hat eine eigene Antwort abgegeben.</p>{% endfor %}
               </div>
-              <button class="perfect-button perfect-button-primary perfect-main-action" type="submit">Entscheidung bestätigen</button>
+              <button class="perfect-button perfect-button-primary perfect-main-action" type="submit">entscheidung bestätigen</button>
             </form>
           {% else %}
             <div class="perfect-review-list is-readonly">
@@ -218,7 +220,7 @@
           {% if is_host %}
             <form method="post" action="{{ url_for('nerd_continue', lobby_id=lobby.id) }}">
               <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-              <button class="perfect-button perfect-button-primary perfect-main-action" type="submit">{{ 'Endergebnis zeigen' if goal_reached else 'Nächste Runde' }}</button>
+              <button class="perfect-button perfect-button-primary perfect-main-action" type="submit">{{ 'endergebnis zeigen' if goal_reached else 'nächste runde' }}</button>
             </form>
           {% else %}<small class="perfect-help">Der Gastgeber startet gleich die nächste Runde.</small>{% endif %}
         </div>
@@ -247,7 +249,7 @@
     </section>
 
   </main>
-  <script src="{{ url_for('static', filename='profile-stage-v1.js', v='3') }}" defer></script>
+  <script src="{{ url_for('static', filename='profile-stage-v1.js', v='4') }}" defer></script>
   <script src="{{ url_for('static', filename='stormseeds-perfect.js', v='10') }}" defer></script>
 </body>
 </html>

@@ -61,18 +61,6 @@ h3 { letter-spacing: -.025em; }
 .variant-a-carousel-tabs button { font-size: .74rem; font-weight: 700; }
 .variant-a-action .primary-button { font-size: 1.02rem; font-weight: 800; }
 
-.variant-a-hanging-plaque span,
-.variant-a-podium strong { font-weight: 800; }
-.variant-a-balance { font-weight: 700; }
-.variant-a-profile-details blockquote {
-  color: #d9e5f6;
-  font-size: clamp(.92rem, .82vw, 1rem);
-  font-style: normal;
-  font-weight: 500;
-}
-.variant-a-trophies b { font-weight: 700; font-variant-numeric: tabular-nums; }
-.variant-a-trophies small { font-size: .6rem; font-weight: 600; }
-
 .home-variant-a .variant-a-leaderboard .section-heading h2 { font-weight: 700; letter-spacing: -.025em; }
 .home-variant-a .variant-a-leaderboard .leaderboard-tabs button {
   font-size: clamp(.61rem, .69vw, .74rem);

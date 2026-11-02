@@ -1,0 +1,73 @@
+{
+  "schema_version": 2,
+  "renderer_version": "button-workshop-v7",
+  "contour": {
+    "template": "soft",
+    "points": [
+      {
+        "x": 0,
+        "y": 0,
+        "round": 40
+      },
+      {
+        "x": 100,
+        "y": 0,
+        "round": 40
+      },
+      {
+        "x": 100,
+        "y": 100,
+        "round": 40
+      },
+      {
+        "x": 0,
+        "y": 100,
+        "round": 40
+      }
+    ]
+  },
+  "name": "vorschlag black Jack button",
+  "notes": "Überarbeiteter Vorschlag: altes dunkles Nussbaumholz passend zur Tischkante, matte Patina, gedämpftes Messing. Persönliche Black-Jack-Buttons bleiben erhalten.",
+  "settings": {
+    "style": "natural",
+    "material": "wood-aged",
+    "shape": "soft",
+    "edge": 2,
+    "finish": "matte",
+    "wear": 30,
+    "accent": "#23150e",
+    "font": "cinzel",
+    "font_link": "manual",
+    "lettering": "plain",
+    "size": 20,
+    "label": "Neue Runde",
+    "depth": 3,
+    "duration": 180,
+    "feel": "direct",
+    "sound": "media-piece",
+    "volume": 25,
+    "gradient_to": "#b68b4c",
+    "opacity": 100,
+    "font_scale": 100,
+    "shadow": 25,
+    "height_ratio": 90,
+    "ink_mode": "manual",
+    "ink_color": "#d2b779",
+    "depth_mode": "manual",
+    "depth_color": "#160e09",
+    "depth_x": 1,
+    "font_italic": false
+  },
+  "kind": "button",
+  "review": {
+    "style": "open",
+    "motion": "open",
+    "shape": "open",
+    "surface": "open",
+    "lettering": "open",
+    "sound": "open"
+  },
+  "parent_id": "ce5b017b432b478893fd4b52a2163dac",
+  "id": "656dbd73ec9c45a1b86791b2e3a0fcb0",
+  "created_at": "2026-10-30T05:40:48.994708+00:00"
+}

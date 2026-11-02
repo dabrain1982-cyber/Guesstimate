@@ -1,0 +1,191 @@
+{
+  "schema_version": 4,
+  "renderer_version": "button-workshop-v7",
+  "contour": {
+    "template": "rectangle",
+    "points": [
+      {
+        "x": 0,
+        "y": 0,
+        "round": 34.119544966084966
+      },
+      {
+        "x": 100,
+        "y": 0,
+        "round": 34.119544966084966
+      },
+      {
+        "x": 100,
+        "y": 100,
+        "round": 34.119544966084966
+      },
+      {
+        "x": 0,
+        "y": 100,
+        "round": 34.119544966084966
+      }
+    ]
+  },
+  "name": "Gemeinsam · Rangliste · tag",
+  "notes": "Eigener Entwurf aus Gemeinsam · Rangliste · tag",
+  "settings": {
+    "style": "minimal",
+    "material": "plain",
+    "shape": "custom",
+    "edge": 1,
+    "finish": "satin",
+    "wear": 0,
+    "accent": "#d8ff42",
+    "font": "letter-comic",
+    "font_link": "manual",
+    "lettering": "plain",
+    "size": 23,
+    "label": "tag",
+    "depth": 3,
+    "duration": 300,
+    "feel": "soft",
+    "sound": "media-piece",
+    "volume": 20,
+    "gradient_to": "#d8ff42",
+    "opacity": 100,
+    "font_scale": 125,
+    "shadow": 0,
+    "height_ratio": 100,
+    "ink_mode": "manual",
+    "ink_color": "#090b1d",
+    "depth_mode": "manual",
+    "depth_color": "#353f0d",
+    "depth_x": -1,
+    "font_bold": false
+  },
+  "kind": "button",
+  "review": {
+    "style": "open",
+    "motion": "open",
+    "shape": "open",
+    "surface": "open",
+    "lettering": "open",
+    "sound": "open"
+  },
+  "parent_id": null,
+  "base": {
+    "width": 32.239585876464844,
+    "height": 35.55555725097656,
+    "font_size": 11.4,
+    "font_family": "\"Guesstimate Inter\", Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "font_weight": "700",
+    "letter_spacing": "normal",
+    "line_height": "normal",
+    "text_transform": "lowercase",
+    "text_shadow": "none",
+    "ink": "#090b1d",
+    "background": "none",
+    "background_size": "auto",
+    "background_position": "0% 0%",
+    "surface": "#d8ff42",
+    "opacity": 100,
+    "accent": "#d8ff42",
+    "gradient_to": "#d8ff42",
+    "gradient_angle": 180,
+    "material": "plain",
+    "edge": 1.11111,
+    "border_color": "rgb(216, 255, 66)",
+    "depth": {
+      "x": 0,
+      "y": 0,
+      "color": "#7863df"
+    },
+    "soft_shadow": "none",
+    "image": "",
+    "image_fit": "contain",
+    "text": "tag",
+    "label_visible": 1,
+    "contour": {
+      "template": "rectangle",
+      "points": [
+        {
+          "x": 0,
+          "y": 0,
+          "round": 34.119544966084966
+        },
+        {
+          "x": 100,
+          "y": 0,
+          "round": 34.119544966084966
+        },
+        {
+          "x": 100,
+          "y": 100,
+          "round": 34.119544966084966
+        },
+        {
+          "x": 0,
+          "y": 100,
+          "round": 34.119544966084966
+        }
+      ]
+    },
+    "symbol": "",
+    "svg": "",
+    "label_position": null,
+    "initial": {
+      "material": "plain",
+      "accent": "#d8ff42",
+      "gradient_to": "#d8ff42",
+      "opacity": 100,
+      "shadow": 0
+    },
+    "surface_mode": "custom"
+  },
+  "source_button": {
+    "id": "gamebutton-4cdc9823e8168da2a96d2d",
+    "name": "Gemeinsam · Rangliste · tag",
+    "snapshot": {
+      "type": "game-button",
+      "source": {
+        "path": "templates/_leaderboard.html",
+        "line": 9,
+        "ordinal": 0
+      },
+      "markup": "<button type=\"button\" role=\"tab\" id=\"tab-daily\" aria-controls=\"panel-daily\" aria-selected=\"true\" data-leaderboard-tab=\"daily\">tag</button>",
+      "styles": [
+        {
+          "path": "static/style.css",
+          "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+        },
+        {
+          "path": "static/quiz-arena.css",
+          "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+        },
+        {
+          "path": "static/typography-v1.css",
+          "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+        },
+        {
+          "path": "static/profile-stage-v1.css",
+          "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+        },
+        {
+          "path": "static/profile-window.css",
+          "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+        },
+        {
+          "path": "static/lobby.css",
+          "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+        },
+        {
+          "path": "static/lobby-overview.css",
+          "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+        },
+        {
+          "path": "static/ui-conventions.css",
+          "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+        }
+      ],
+      "source_sha256": "bb8901946aa63422f80ab5ca8d98c89bc6568e7d7538138344126daff8228d8e",
+      "example_values": true
+    }
+  },
+  "id": "9dbf91d83ac34588a82ac9e9f54443ae",
+  "created_at": "2026-10-29T16:47:34.700229+00:00"
+}

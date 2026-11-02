@@ -1,0 +1,52 @@
+/* zugang.liste: one shared frame, row, actions, empty state and narrow layout. */
+.app-shell.lobby-overview-shell { width: min(1180px, calc(100% - 40px)); max-width: 1180px; }
+.lobby-browser { min-width: 0; padding: 32px 0 44px; color: #eef4ff; }
+.lobby-browser-heading { margin-bottom: 26px; text-shadow: 0 2px 8px #000; }
+.lobby-browser-heading > p.game-name { margin: 0 0 9px; color: var(--acid, #d8ff42); font-size: .84rem; font-weight: 750; }
+.lobby-browser-heading h1 { margin: 0; font: 700 clamp(2rem, 5vw, 3.8rem)/1.08 var(--font-display, system-ui); overflow-wrap: anywhere; }
+.lobby-browser-heading > p:last-child { max-width: 780px; margin: 14px 0 0; color: #d6e2f4; line-height: 1.6; }
+.lobby-browser-panel { overflow: hidden; min-width: 0; border: 1px solid #719ac866; border-radius: 20px; background: #081a30ed; box-shadow: 0 15px 40px #0005; }
+.lobby-browser-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 24px; border-bottom: 1px solid #719ac844; }
+.lobby-browser-toolbar > div { min-width: 0; }
+.lobby-browser h2 { margin: 0; color: #eef4ff; font: 700 1.4rem/1.2 var(--font-display, system-ui); }
+.lobby-browser-toolbar p { margin: 7px 0 0; color: #b7cae3; font-size: .86rem; line-height: 1.5; }
+.lobby-browser form { margin: 0; }
+.lobby-browser-toolbar form, .lobby-browser-action { flex-shrink: 0; }
+.lobby-browser .primary-button, .lobby-browser .secondary-button { box-sizing: border-box; display: inline-flex; justify-content: center; align-items: center; min-height: 44px; padding: 11px 17px; border-radius: 10px; font: 750 .88rem/1.3 var(--font-ui, system-ui); text-decoration: none; cursor: pointer; text-align: center; }
+.lobby-browser .primary-button { border: 1px solid var(--acid, #d8ff42); background: var(--acid, #d8ff42); color: #101d0d; box-shadow: 0 3px 0 #152230; }
+.lobby-browser .secondary-button { border: 1px solid #99b4d5; background: #142c48; color: #f2f6ff; box-shadow: none; }
+.lobby-browser :is(a,button):focus-visible { outline: 2px solid var(--acid, #d8ff42); outline-offset: 4px; }
+.lobby-browser .primary-button:hover { filter: brightness(1.05); }
+.lobby-browser-list { display: grid; gap: 14px; padding: 20px; }
+.lobby-browser-row { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px; border: 1px solid #719ac855; border-radius: 14px; background: #152d487a; }
+.lobby-browser-row.is-own { border-color: #d8ff4277; }
+.lobby-browser-copy { min-width: 0; flex: 1; }
+.lobby-browser h3 { margin: 0 0 14px; color: #f2f6ff; font: 700 1.25rem/1.25 var(--font-display, system-ui); overflow-wrap: anywhere; }
+.lobby-browser-facts { display: flex; flex-wrap: wrap; gap: 14px 32px; margin: 0; }
+.lobby-browser-facts > div { display: grid; align-content: start; gap: 5px; min-width: 0; }
+.lobby-browser-facts dt { color: #a9bed9; font-size: .75rem; }
+.lobby-browser-facts dd { margin: 0; color: #eef4ff; font-size: .86rem; font-weight: 650; overflow-wrap: anywhere; }
+.lobby-browser-state { display: inline-block; color: #c8e3c0; }
+.lobby-browser-state:is(.is-playing,.is-countdown) { color: #ffe2a9; }
+.lobby-browser-state:is(.is-full,.is-completed,.is-closed,.is-abandoned) { color: #becbde; }
+.lobby-browser-setting { margin: 14px 0 0; color: #b7cae3; font-size: .84rem; line-height: 1.5; overflow-wrap: anywhere; }
+.lobby-browser-own { margin: 8px 0 0; color: var(--acid, #d8ff42); font-size: .8rem; }
+.lobby-browser-action { min-width: 150px; text-align: center; }
+.lobby-browser-action .primary-button { width: 100%; }
+.lobby-browser-unavailable { color: #b7cae3; font-size: .86rem; }
+.lobby-browser-empty { padding: 38px 18px; text-align: center; }
+.lobby-browser-empty p { margin: 0; color: #b7cae3; line-height: 1.5; }
+.lobby-browser .lobby-browser-back { margin-top: 22px; }
+.lobby-overview-error { margin: 20px 20px 0; padding: 14px; border: 1px solid #d4ab60; border-radius: 10px; background: #3a2f1c; color: #ffedbf; }
+.lobby-overview-error[hidden] { display: none; }
+.lobby-overview-error p { margin: 0 0 12px; line-height: 1.5; }
+@media (max-width: 680px) {
+  .app-shell.lobby-overview-shell { width: calc(100% - 24px); }
+  .lobby-browser { padding-top: 24px; }
+  .lobby-browser-toolbar { align-items: stretch; flex-direction: column; padding: 18px; }
+  .lobby-browser-toolbar .primary-button { width: 100%; }
+  .lobby-browser-list { padding: 14px; }
+  .lobby-browser-row { align-items: stretch; flex-direction: column; gap: 18px; padding: 16px; }
+  .lobby-browser-action { min-width: 0; text-align: left; }
+  .lobby-browser-facts { gap: 14px 22px; }
+}

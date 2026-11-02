@@ -1,0 +1,45 @@
+{% from "_profile_window.html" import profile_window with context %}
+
+{% macro lobby_start_button(disabled=False) -%}
+  <button class="primary-button game-lobby-start" type="submit" data-lobby-start{% if disabled %} disabled{% endif %}>spiel starten</button>
+{%- endmacro %}
+
+{% macro lobby_summary(items) -%}
+  <dl class="lobby-summary">{% for label, value in items %}<div><dt>{{ label }}</dt><dd>{{ value }}</dd></div>{% endfor %}</dl>
+{%- endmacro %}
+
+{% macro lobby_room(lobby, players, capacity, game, game_title, active_count, leave_url=None, leave_label='lobby verlassen', attributes={}, controls_title='Spieleinstellungen', closed=False) -%}
+  <section class="game-lobby" data-lobby-game="{{ game }}" data-lobby-state="{{ lobby.status }}" data-lobby-host="{{ lobby.host_user_id }}" data-lobby-name="{{ lobby.name }}"{{ attributes|xmlattr }}>
+    <header class="game-lobby-heading">
+      <div><p class="game-name">{{ game_title }}</p><h1 data-lobby-title>{{ lobby.name }}</h1></div>
+      <div class="game-lobby-meta"><span class="lobby-state">{{ 'Lobby geschlossen' if closed else 'Partie läuft' if lobby.status == 'playing' else 'Partie beendet' if lobby.status == 'completed' else 'Lobby offen' }}</span><span data-lobby-occupancy>{{ active_count }}/{{ capacity }} Plätze belegt</span></div>
+    </header>
+    {% if closed %}<div class="game-lobby-panel lobby-closed">{{ caller('closed') }}</div>{% else %}
+    <div class="game-lobby-layout">
+      <section class="game-lobby-panel game-lobby-roster" aria-label="Mitspieler">
+        <h2>Mitspieler</h2>
+        <ol class="game-lobby-players">
+          {% for player in players %}
+            {% set virtual = player.virtual|default(false) %}
+            {% set away = player.status|default('active') != 'active' %}
+            {% set host = player.user_id == lobby.host_user_id %}
+            {% set role = 'Testarmee' if virtual else 'Host' if host else 'Mitspieler' %}
+            {% set appearance = player.cosmetics|default({'avatar_id': player.avatar_id|default('a00'), 'plaque_id': player.plaque_id|default('p00'), 'background_id': 'b00', 'phrase_id': ''}) %}
+            <li class="game-lobby-player{% if host %} is-host{% endif %}{% if away %} is-away{% endif %}" data-lobby-member="{{ player.id }}">
+              <div class="game-lobby-seat"{% if player.color|default('') %} style="--lobby-seat-color: {{ player.color }}"{% endif %}><span data-lobby-seat-label>{{ player.seat|default(loop.index) }}{% if player.army_name|default('') %} · {{ player.army_name }}{% endif %}</span>{% if player.user_id == g.user.id %}<small>Du</small>{% endif %}</div>
+              {{ profile_window(appearance, {}, show_edit=False, show_details=False, player_name=player.display_name, instance_id='lobby-' ~ game ~ '-' ~ lobby.id ~ '-' ~ player.id, balance_link=False, podium_fields={'value': role}, player_status={'text': 'Platz reserviert · kommt zurück' if away else 'Virtuelle Armee im lokalen Entwicklertest' if virtual else 'Am Tisch', 'tone': 'waiting' if away else 'neutral'}) }}
+              {% set actions = caller('player_actions', player) %}{% if actions|trim or (player.user_id and not virtual) %}<div class="game-lobby-player-actions">{% if player.user_id and not virtual %}<a href="{{ url_for('public_profile', user_id=player.user_id) }}" aria-label="Profil von {{ player.display_name }} ansehen">Profil ansehen</a>{% endif %}{{ actions }}</div>{% endif %}
+            </li>
+          {% endfor %}
+        </ol>
+        {% set note = caller('roster_note') %}{% if note|trim %}<div class="lobby-help game-lobby-roster-note">{{ note }}</div>{% endif %}
+      </section>
+      <aside class="game-lobby-panel game-lobby-controls" aria-label="{{ controls_title }}"><h2>{{ controls_title }}</h2>{{ caller('settings') }}</aside>
+    </div>
+    {% endif %}
+    <footer class="game-lobby-footer">
+      {% if leave_url %}<form method="post" action="{{ leave_url }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="secondary-button" type="submit">{{ leave_label }}</button></form>{% endif %}
+      {{ caller('footer') }}
+    </footer>
+  </section>
+{%- endmacro %}

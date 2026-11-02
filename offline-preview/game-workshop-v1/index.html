@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stormseed · Werkstatt</title><link rel="icon" href="/shared/favicon.svg">
+<link rel="stylesheet" href="/button-editor/materials.css"><link rel="stylesheet" href="/button-editor/fonts.css"><link rel="stylesheet" href="/button-editor/matched-media.css">
+<link rel="stylesheet" href="/workshop.css"><link rel="stylesheet" href="/properties.css"><script type="module" src="/workshop.js"></script></head>
+<body>
+<header class="masthead"><a class="brand" href="#editor/buttons"><span class="brand-mark">S</span><span>Stormseed<small>Deine Ideen. Deine Bausteine.</small></span></a>
+<nav aria-label="Werkstatt"><a href="#editor/buttons" data-view="editor">Editor</a><a href="#library/buttons" data-view="library">Bibliothek</a><a href="#properties" data-view="properties">Material &amp; Ansicht</a></nav><span class="local">Auf deinem PC</span></header>
+<main><div class="page-heading"><div><p class="eyebrow">Ein Ort für deine Spielideen</p><h1>Werkstatt</h1><p id="page-description">Buttons entwerfen, ausprobieren und speichern.</p></div></div>
+<div id="scope-row" class="scope-row"><p id="family-count" class="rail-note"></p><details id="inventory-more" class="rail-inventory"><summary id="inventory-more-title">Weitere Eigenschaften</summary><p>Material und Darstellung sind Eigenschaften deiner Bausteine.</p><a href="#properties">Material &amp; Ansicht ansehen →</a><ul id="inventory-more-items"></ul></details></div>
+<p id="notice" role="status" aria-live="polite">Deine Werkstatt wird geladen …</p>
+<div id="work-area" class="work-area"><aside id="element-rail" class="element-rail"><p class="eyebrow">Elemente</p><nav id="element-nav" aria-label="Elementarten"></nav></aside>
+<div class="work-content">
+
+<section id="editor-view" aria-label="Button-Editor">
+<div class="section-heading"><div><p class="eyebrow">Editor</p><h2>Button-Editor</h2><p>Form, Farbe, Beschriftung, Bewegung und Ton gestalten.</p></div><a href="#library/buttons">Eigene und Spielbuttons ansehen →</a></div>
+<iframe id="button-editor" title="Button-Editor"></iframe>
+</section>
+<section id="library-view" hidden><div class="section-heading"><div><p class="eyebrow">Ansehen. Vergleichen. Recherchieren.</p><h2 id="library-title">Buttons</h2><p id="library-description"></p></div><a id="library-editor-link" href="#editor/buttons">Im Button-Editor öffnen →</a></div>
+<button id="compare-buttons" type="button" hidden>Guesstimate-Modelle vergleichen</button><div class="library-tools" id="library-tools"><label>Suchen<input type="search" id="library-search" placeholder="Nach einem Namen suchen"></label><label>Sammlung<select id="library-source"><option value="all">Alle</option><option value="saved">Meine Entwürfe</option><option value="game">Originale aus den Spielen</option><option value="preset">Vorlagen</option><option value="set" hidden>Kartensätze</option><option value="existing">Vorhandene Bilder</option></select></label><label id="library-game-label" hidden>Spiel / Einsatz<select id="library-game"><option value="all">Alle Spiele</option></select></label><label id="library-family-label" hidden><span id="library-family-title">Fensterart</span><select id="library-family"><option value="all">Alle Fensterarten</option><option value="rules">Regeldialoge</option><option value="decisions">Entscheidungsfenster</option><option value="inventory">Inventare</option><option value="actions">Aktionsflächen</option></select></label></div>
+<section id="button-review" class="button-review" aria-label="Guesstimate-Buttonmodelle vergleichen" hidden></section><div id="library-items" class="asset-grid"></div></section>
+</div></div>
+<section id="properties-view" aria-label="Material und Ansicht" hidden></section>
+<footer>Button-Editor und Bibliotheken bleiben auf diesem PC.</footer>
+</main>
+<dialog id="inspect-dialog" class="inspect-dialog"><div class="section-heading"><div><p id="inspect-kind" class="eyebrow"></p><h2 id="inspect-title"></h2></div><button id="close-inspect" aria-label="Vorschau schließen">Schließen</button></div><div id="inspect-variants" class="inspect-variants" hidden></div><div id="inspect-set-members" class="inspect-variants" hidden></div><div id="inspect-preview"></div><p id="inspect-description"></p><div id="inspect-card-content" hidden></div><div class="dialog-actions"><button id="edit-inspected">Im Button-Editor öffnen</button><button type="button" id="usage-inspected" hidden>Verwendungen verwalten</button></div></dialog>
+</body></html>

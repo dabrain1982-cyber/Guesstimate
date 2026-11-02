@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import os
 from pathlib import Path
 
 from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageFont
@@ -14,21 +15,41 @@ from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageFo
 WIDTH, HEIGHT = 4096, 2560
 MAP_BOX = (130, 245, WIDTH - 130, HEIGHT - 245)
 MASK_SCALE = 4
-FONT_ROOT = Path("/usr/share/fonts/truetype/dejavu")
 ROOT = Path(__file__).resolve().parents[1]
+
+FONT_FILES = {
+    ("serif", False): (
+        Path("/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf"),
+        Path(os.environ.get("WINDIR", "C:/Windows")) / "Fonts/georgia.ttf",
+    ),
+    ("serif", True): (
+        Path("/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf"),
+        Path(os.environ.get("WINDIR", "C:/Windows")) / "Fonts/georgiab.ttf",
+    ),
+    ("sans", False): (
+        Path("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"),
+        Path(os.environ.get("WINDIR", "C:/Windows")) / "Fonts/arial.ttf",
+        ROOT / "static/fonts/Inter-VariableFont_opsz,wght.ttf",
+    ),
+    ("sans", True): (
+        Path("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"),
+        Path(os.environ.get("WINDIR", "C:/Windows")) / "Fonts/arialbd.ttf",
+        ROOT / "static/fonts/Inter-VariableFont_opsz,wght.ttf",
+    ),
+}
 
 STYLES = {
     "klassisch": {
         "paper": (229, 218, 190), "ocean": (220, 213, 194), "ink": (52, 43, 33),
-        "border": (74, 57, 40), "fine": (113, 96, 73), "font": "DejaVuSerif.ttf",
+        "border": (74, 57, 40), "fine": (113, 96, 73), "font": "serif",
     },
     "taktisch": {
         "paper": (5, 20, 36), "ocean": (5, 37, 58), "ink": (223, 246, 251),
-        "border": (76, 217, 235), "fine": (55, 129, 151), "font": "DejaVuSans.ttf",
+        "border": (76, 217, 235), "fine": (55, 129, 151), "font": "sans",
     },
     "farbenfroh": {
         "paper": (235, 243, 246), "ocean": (104, 199, 222), "ink": (25, 38, 53),
-        "border": (255, 255, 255), "fine": (70, 128, 144), "font": "DejaVuSans.ttf",
+        "border": (255, 255, 255), "fine": (70, 128, 144), "font": "sans",
     },
 }
 
@@ -43,10 +64,14 @@ def mix(a, b, amount):
 
 
 def font(style, size, bold=False):
-    name = style["font"]
-    if bold:
-        name = name.replace(".ttf", "-Bold.ttf")
-    return ImageFont.truetype(str(FONT_ROOT / name), size)
+    candidates = FONT_FILES[(style["font"], bold)]
+    for candidate in candidates:
+        if candidate.is_file():
+            return ImageFont.truetype(str(candidate), size)
+    raise FileNotFoundError(
+        f"No local {style['font']} font found. Checked: "
+        + ", ".join(str(candidate) for candidate in candidates)
+    )
 
 
 def project(lon: float, lat: float, scale: int = 1) -> tuple[int, int]:
@@ -114,11 +139,10 @@ def territory_masks(world, geojson):
                 output[winner][offset + x] = 255
         for local_index, global_index in enumerate(candidate_indices):
             small_masks[global_index] = Image.frombytes("L", small, bytes(output[local_index]))
-    masks = [mask.resize((WIDTH, HEIGHT), Image.Resampling.LANCZOS) for mask in small_masks]
-    land = Image.new("L", (WIDTH, HEIGHT), 0)
-    for mask in masks:
+    land = Image.new("L", small, 0)
+    for mask in small_masks:
         land = ImageChops.lighter(land, mask)
-    return masks, land
+    return small_masks, land
 
 
 def dotted_line(draw, start, end, color, width=5, dash=18):
@@ -169,15 +193,18 @@ def background(style_name, style):
     return image
 
 
-def render(style_name, world, geojson, masks, land, output):
+def render(style_name, world, geojson, small_masks, small_land, output):
     style = STYLES[style_name]
     image = background(style_name, style)
     continent_colors = {row["id"]: rgb(row["color"]) for row in world["continents"]}
 
+    land = small_land.resize((WIDTH, HEIGHT), Image.Resampling.LANCZOS)
     coast_shadow = land.filter(ImageFilter.GaussianBlur(13))
     coast_shadow = ImageChops.subtract(coast_shadow, land)
     image.paste(Image.new("RGB", image.size, (0, 0, 0)), mask=coast_shadow.point(lambda value: min(130, value * 2)))
+    boundary = Image.new("L", (WIDTH, HEIGHT), 0)
     for index, territory in enumerate(world["territories"]):
+        mask = small_masks[index].resize((WIDTH, HEIGHT), Image.Resampling.LANCZOS)
         color = continent_colors[territory["continent"]]
         if style_name == "klassisch":
             color = mix(color, (226, 210, 172), .17)
@@ -187,7 +214,9 @@ def render(style_name, world, geojson, masks, land, output):
             color = mix(color, (255, 255, 255), .06)
         if index % 2:
             color = mix(color, (255, 255, 255), .055)
-        image.paste(Image.new("RGB", image.size, color), mask=masks[index])
+        image.paste(Image.new("RGB", image.size, color), mask=mask)
+        edge = ImageChops.difference(mask.filter(ImageFilter.MaxFilter(13)), mask.filter(ImageFilter.MinFilter(13)))
+        boundary = ImageChops.lighter(boundary, edge)
 
     draw = ImageDraw.Draw(image)
     country_color = mix(style["fine"], style["ocean"], .42)
@@ -197,11 +226,6 @@ def render(style_name, world, geojson, masks, land, output):
             if len(points) >= 3:
                 draw.line(points + [points[0]], fill=country_color, width=2)
 
-    boundary = Image.new("L", (WIDTH, HEIGHT), 0)
-    boundary_draw = ImageDraw.Draw(boundary)
-    for mask in masks:
-        edge = ImageChops.difference(mask.filter(ImageFilter.MaxFilter(13)), mask.filter(ImageFilter.MinFilter(13)))
-        boundary = ImageChops.lighter(boundary, edge)
     boundary = boundary.filter(ImageFilter.GaussianBlur(.65))
     image.paste(Image.new("RGB", image.size, style["border"]), mask=boundary)
     draw = ImageDraw.Draw(image)
@@ -264,12 +288,15 @@ def render(style_name, world, geojson, masks, land, output):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--geojson", required=True, type=Path)
+    parser.add_argument("--style", required=True, choices=tuple(STYLES), help="Render exactly one board per process.")
+    parser.add_argument("--output", type=Path, help="Optional output path; defaults to the versioned board directory.")
     args = parser.parse_args()
     world = json.loads((ROOT / "static/conquest/world.json").read_text(encoding="utf-8"))
     geojson = json.loads(args.geojson.read_text(encoding="utf-8"))
     masks, land = territory_masks(world, geojson)
-    for style_name in STYLES:
-        render(style_name, world, geojson, masks, land, ROOT / f"static/conquest/boards/welt-{style_name}-hd.webp")
+    output = args.output or ROOT / f"static/conquest/boards/welt-{args.style}-hd.webp"
+    render(args.style, world, geojson, masks, land, output)
+    print(f"Rendered {args.style}: {output} ({output.stat().st_size:,} bytes)")
 
 
 if __name__ == "__main__":

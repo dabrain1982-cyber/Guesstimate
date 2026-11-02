@@ -1,0 +1,202 @@
+{
+  "schema": 1,
+  "description": "Neutral frozen examples from canonical DOM factories and timer function; no game handlers, timers or network.",
+  "captures": {
+    "dice-history": {
+      "markup": "<div class=\"dice-history-row\"><b>Musterplatz 1</b><span>3 · 4 · 5</span></div><div class=\"dice-history-row\"><b>Musterplatz 2</b><span>verdeckt</span></div>",
+      "evidence": [
+        {
+          "path": "static/dice-table.js",
+          "sha256": "0c791957b35c39d3e1e0278c370871c187454e52d5754ce3da504798e0faf79e"
+        }
+      ]
+    },
+    "kniffel-lights-1": {
+      "markup": "<i class=\"is-lit\"></i><i class=\"\"></i><i class=\"\"></i>",
+      "evidence": [
+        {
+          "path": "static/dice-table.js",
+          "sha256": "0c791957b35c39d3e1e0278c370871c187454e52d5754ce3da504798e0faf79e"
+        }
+      ]
+    },
+    "kniffel-lights-2": {
+      "markup": "<i class=\"is-lit\"></i><i class=\"is-lit\"></i><i class=\"\"></i>",
+      "evidence": [
+        {
+          "path": "static/dice-table.js",
+          "sha256": "0c791957b35c39d3e1e0278c370871c187454e52d5754ce3da504798e0faf79e"
+        }
+      ]
+    },
+    "kniffel-lights-3": {
+      "markup": "<i class=\"is-lit\"></i><i class=\"is-lit\"></i><i class=\"is-lit\"></i>",
+      "evidence": [
+        {
+          "path": "static/dice-table.js",
+          "sha256": "0c791957b35c39d3e1e0278c370871c187454e52d5754ce3da504798e0faf79e"
+        }
+      ]
+    },
+    "kniffel-table": {
+      "markup": "<table style=\"width: 300px;\"><colgroup><col class=\"kniffel-category-column\"></col><col class=\"kniffel-rule-column\"></col><col class=\"kniffel-player-column\"></col><col class=\"kniffel-player-column\"></col></colgroup><thead><tr><th colSpan=\"2\">Erster Teil</th><th title=\"Musterplatz 1\" class=\"is-current\">Musterplatz 1</th><th title=\"Musterplatz 2\">Musterplatz 2</th></tr></thead><tbody><tr><th>1er</th><td class=\"kniffel-rule\">Nur Einser zählen</td><td class=\"is-filled is-current\">3</td><td class=\"is-filled\">3</td></tr><tr><th>2er</th><td class=\"kniffel-rule\">Nur Zweier zählen</td><td class=\"is-current\"><button type=\"button\" title=\"twos mit 4 Punkten eintragen\">4</button></td><td></td></tr><tr><th>3er</th><td class=\"kniffel-rule\">Nur Dreier zählen</td><td class=\"is-current\"></td><td></td></tr><tr><th>4er</th><td class=\"kniffel-rule\">Nur Vierer zählen</td><td class=\"is-current\"></td><td></td></tr><tr><th>5er</th><td class=\"kniffel-rule\">Nur Fünfer zählen</td><td class=\"is-current\"></td><td></td></tr><tr><th>6er</th><td class=\"kniffel-rule\">Nur Sechser zählen</td><td class=\"is-current\"></td><td></td></tr><tr class=\"kniffel-total-row \"><th>Zwischensumme</th><td class=\"kniffel-rule\"></td><td>3</td><td>3</td></tr><tr class=\"kniffel-total-row \"><th>Bonus bei 63 und mehr</th><td class=\"kniffel-rule\">+ 35 Punkte</td><td>0</td><td>0</td></tr><tr class=\"kniffel-total-row is-part-total\"><th>Summe Erster Teil</th><td class=\"kniffel-rule\"></td><td>3</td><td>3</td></tr><tr class=\"kniffel-section-row\"><th colSpan=\"4\">Zweiter Teil</th></tr><tr><th>Dreierpasch</th><td class=\"kniffel-rule\">Alle Augen zählen</td><td class=\"is-current\"></td><td></td></tr><tr><th>Viererpasch</th><td class=\"kniffel-rule\">Alle Augen zählen</td><td class=\"is-current\"></td><td></td></tr><tr><th>Full House</th><td class=\"kniffel-rule\">25 Punkte</td><td class=\"is-current\"></td><td></td></tr><tr><th>Kleine Straße</th><td class=\"kniffel-rule\">30 Punkte</td><td class=\"is-current\"></td><td></td></tr><tr><th>Große Straße</th><td class=\"kniffel-rule\">40 Punkte</td><td class=\"is-current\"></td><td></td></tr><tr><th>Kniffel</th><td class=\"kniffel-rule\">50 Punkte</td><td class=\"is-current\"></td><td></td></tr><tr><th>Chance</th><td class=\"kniffel-rule\">Alle Augen zählen</td><td class=\"is-current\"></td><td></td></tr><tr class=\"kniffel-total-row \"><th>Summe Zweiter Teil</th><td class=\"kniffel-rule\"></td><td>0</td><td>0</td></tr><tr class=\"kniffel-total-row \"><th>Summe Erster Teil</th><td class=\"kniffel-rule\"></td><td>3</td><td>3</td></tr><tr class=\"kniffel-total-row is-grand-total\"><th>Endsumme</th><td class=\"kniffel-rule\"></td><td>3</td><td>3</td></tr></tbody></table>",
+      "evidence": [
+        {
+          "path": "static/dice-table.js",
+          "sha256": "0c791957b35c39d3e1e0278c370871c187454e52d5754ce3da504798e0faf79e"
+        }
+      ]
+    },
+    "maexchen-life-three": {
+      "markup": "♥ ♥ ♥",
+      "evidence": [
+        {
+          "path": "static/dice-table.js",
+          "sha256": "0c791957b35c39d3e1e0278c370871c187454e52d5754ce3da504798e0faf79e"
+        }
+      ],
+      "values": {
+        "text": "♥ ♥ ♥"
+      }
+    },
+    "maexchen-life-two": {
+      "markup": "♥ ♥ ♡",
+      "evidence": [
+        {
+          "path": "static/dice-table.js",
+          "sha256": "0c791957b35c39d3e1e0278c370871c187454e52d5754ce3da504798e0faf79e"
+        }
+      ],
+      "values": {
+        "text": "♥ ♥ ♡"
+      }
+    },
+    "maexchen-life-swimming": {
+      "markup": "♥ ♡ ♡ · schwimmt",
+      "evidence": [
+        {
+          "path": "static/dice-table.js",
+          "sha256": "0c791957b35c39d3e1e0278c370871c187454e52d5754ce3da504798e0faf79e"
+        }
+      ],
+      "values": {
+        "text": "♥ ♡ ♡ · schwimmt"
+      }
+    },
+    "maexchen-life-out": {
+      "markup": "Ausgeschieden",
+      "evidence": [
+        {
+          "path": "static/dice-table.js",
+          "sha256": "0c791957b35c39d3e1e0278c370871c187454e52d5754ce3da504798e0faf79e"
+        }
+      ],
+      "values": {
+        "text": "Ausgeschieden"
+      }
+    },
+    "conquest-portrait-active": {
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"player\" data-layout=\"army\" data-current=\"true\" style=\"--player-color: #d8ff42;\"><div class=\"player-portrait-stats\"><span class=\"player-portrait-stat\" title=\"18 Truppen\" aria-label=\"18 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">18</strong></span><span class=\"player-portrait-stat\" title=\"6 Länder\" aria-label=\"6 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">6</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" hidden=\"\" alt=\"\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\">am Zug</span><strong class=\"player-portrait-name\" title=\"Musterarmee\">Musterarmee</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" disabled=\"\" title=\"Musterarmee: 3 Länderkarten\" aria-label=\"Musterarmee: 3 Länderkarten\">3</button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        }
+      ]
+    },
+    "conquest-portrait-waiting": {
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"player\" data-layout=\"army\" data-current=\"false\" style=\"--player-color: #d8ff42;\"><div class=\"player-portrait-stats\"><span class=\"player-portrait-stat\" title=\"18 Truppen\" aria-label=\"18 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">18</strong></span><span class=\"player-portrait-stat\" title=\"6 Länder\" aria-label=\"6 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">6</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" hidden=\"\" alt=\"\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\" hidden=\"\"></span><strong class=\"player-portrait-name\" title=\"Musterarmee\">Musterarmee</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" disabled=\"\" title=\"Musterarmee: 3 Länderkarten\" aria-label=\"Musterarmee: 3 Länderkarten\">3</button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        }
+      ]
+    },
+    "conquest-portrait-out": {
+      "markup": "<div class=\"player-portrait\" data-wallet=\"false\" data-kind=\"player\" data-layout=\"army\" data-current=\"false\" style=\"--player-color: #d8ff42;\"><div class=\"player-portrait-stats\"><span class=\"player-portrait-stat\" title=\"0 Truppen\" aria-label=\"0 Truppen\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"4\" r=\"2\"/><path d=\"m8 9 4-2 4 2m-4-2v8m-4 6 4-6 4 6M8 9l-2 5m10-5 2 5\"/></svg></span><strong class=\"player-portrait-stat-value\">0</strong></span><span class=\"player-portrait-stat\" title=\"0 Länder\" aria-label=\"0 Länder\"><span class=\"player-portrait-stat-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 8 6-4 6 3 6-3v15l-6 3-6-3-6 3zm6-4v15m6-12v15\"/></svg></span><strong class=\"player-portrait-stat-value\">0</strong></span></div><span class=\"player-portrait-frame\"><img class=\"player-portrait-image\" hidden=\"\" alt=\"\"><span class=\"player-portrait-fallback\" aria-hidden=\"true\">M</span></span><div class=\"player-portrait-copy\"><span class=\"player-portrait-status\">ausgeschieden</span><strong class=\"player-portrait-name\" title=\"Musterarmee\">Musterarmee</strong><span class=\"player-portrait-metrics\" hidden=\"\" title=\"\"></span><div class=\"player-portrait-wallet\" hidden=\"\"><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Bestand</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Einsatz</small><strong class=\"player-portrait-wallet-value\"></strong></span><span class=\"player-portrait-wallet-item\"><small class=\"player-portrait-wallet-label\">Gewinn</small><strong class=\"player-portrait-wallet-value\"></strong></span></div></div><button class=\"player-portrait-badge\" type=\"button\" disabled=\"\" title=\"Musterarmee: 0 Länderkarten\" aria-label=\"Musterarmee: 0 Länderkarten\">0</button></div>",
+      "evidence": [
+        {
+          "path": "static/player-portrait.js",
+          "sha256": "a1669c8f7ebc26727534ff6cc7bdd6033698af4760da2a90e8b9890e859b2630"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+        }
+      ]
+    },
+    "quiz-time-0": {
+      "markup": "",
+      "evidence": [
+        {
+          "path": "static/timer.js",
+          "sha256": "aa081d7880e21f3d6404aca8dd53fdf346805a0c5b836a5a499d6f42ded819a9"
+        }
+      ],
+      "values": {
+        "points": 100,
+        "percent": 100,
+        "hue": 74
+      }
+    },
+    "quiz-time-60": {
+      "markup": "",
+      "evidence": [
+        {
+          "path": "static/timer.js",
+          "sha256": "aa081d7880e21f3d6404aca8dd53fdf346805a0c5b836a5a499d6f42ded819a9"
+        }
+      ],
+      "values": {
+        "points": 50,
+        "percent": 50,
+        "hue": 8
+      }
+    },
+    "dice-result-5": {
+      "markup": "<span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>",
+      "evidence": [
+        {
+          "path": "static/dice-table.js",
+          "sha256": "0c791957b35c39d3e1e0278c370871c187454e52d5754ce3da504798e0faf79e"
+        }
+      ]
+    },
+    "dice-result-2": {
+      "markup": "<span>4</span><span>2</span>",
+      "evidence": [
+        {
+          "path": "static/dice-table.js",
+          "sha256": "0c791957b35c39d3e1e0278c370871c187454e52d5754ce3da504798e0faf79e"
+        }
+      ]
+    },
+    "conquest-roll-attack": {
+      "markup": "<span class=\"battle-die\">6</span><span class=\"battle-die\">3</span><span class=\"battle-die\">2</span>",
+      "evidence": [
+        {
+          "path": "offline-preview/conquest-2-5d-v1/attack.js",
+          "sha256": "c5641ad6a0e6812baf6b5b82c1e6f7a8366900b94dac818817266e24af284a17"
+        }
+      ]
+    },
+    "conquest-roll-defense": {
+      "markup": "<span class=\"battle-die\">5</span><span class=\"battle-die\">4</span>",
+      "evidence": [
+        {
+          "path": "offline-preview/conquest-2-5d-v1/attack.js",
+          "sha256": "c5641ad6a0e6812baf6b5b82c1e6f7a8366900b94dac818817266e24af284a17"
+        }
+      ]
+    }
+  }
+}

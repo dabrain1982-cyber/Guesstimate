@@ -1,0 +1,30 @@
+{
+  "id": "UI-001",
+  "name": "Comic-Buttons und Spielanzeigen – dezenter Druckweg",
+  "recorded_on": "2026-10-25",
+  "scope": "Lokale Gestaltungs- und Einstelltafel",
+  "overall_status": "Entwurf, keine allgemeine Gestaltungsfreigabe",
+  "preference": {
+    "depth_label": "dezent",
+    "depth_slider_value": 4,
+    "button_depth_em": 0.25,
+    "action_click_duration_ms": 300,
+    "selected_buttons_stay_pressed": true
+  },
+  "review": {
+    "movement": "Gefällt dem Nutzer mit Druckweg dezent",
+    "shape": "Noch offen, möglicherweise noch nicht passend",
+    "surface": "Noch offen; aktuell glatt und glänzend wahrgenommen",
+    "lettering": "Weitere Ideen: gemeißelt, Bildschirm, Kreide, geritzt",
+    "sound": "Als Gestaltungsdimension vorgemerkt; derzeit ohne Ton"
+  },
+  "future_workshop_dimensions": [
+    "Form und Kontur",
+    "Material und Oberfläche",
+    "Schriftform und Beschriftungswirkung",
+    "Körper, Drucktiefe und Bewegung",
+    "Sound"
+  ],
+  "generator_implemented": false,
+  "used_by_normal_games": false
+}

@@ -1,26 +1,29 @@
 document.querySelectorAll("[data-leaderboards]").forEach((leaderboard) => {
-  const tabs = [...leaderboard.querySelectorAll("[data-leaderboard-tab]")];
-  const panels = [...leaderboard.querySelectorAll("[data-leaderboard-panel]")];
-
-  const select = (selectedTab) => {
-    const selectedKey = selectedTab.dataset.leaderboardTab;
-    tabs.forEach((tab) => tab.setAttribute("aria-selected", String(tab === selectedTab)));
-    panels.forEach((panel) => {
-      panel.hidden = panel.dataset.leaderboardPanel !== selectedKey;
+  const bindTabs = (container, tabSelector, panelSelector, tabKey, panelKey) => {
+    const tabs = [...container.querySelectorAll(tabSelector)];
+    const panels = [...container.querySelectorAll(panelSelector)];
+    const select = (selected) => {
+      tabs.forEach(tab => {
+        tab.setAttribute('aria-selected', String(tab === selected));
+        tab.tabIndex = tab === selected ? 0 : -1;
+      });
+      panels.forEach(panel => { panel.hidden = panel.dataset[panelKey] !== selected.dataset[tabKey]; });
+    };
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => select(tab));
+      tab.addEventListener('keydown', event => {
+        if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+        event.preventDefault();
+        const nextIndex = event.key === 'Home' ? 0 : event.key === 'End' ? tabs.length - 1 :
+          (index + (event.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length;
+        tabs[nextIndex].focus();
+        select(tabs[nextIndex]);
+      });
     });
   };
-
-  tabs.forEach((tab, index) => {
-    tab.addEventListener("click", () => select(tab));
-    tab.addEventListener("keydown", (event) => {
-      if (!["ArrowLeft", "ArrowRight"].includes(event.key)) return;
-      event.preventDefault();
-      const step = event.key === "ArrowRight" ? 1 : -1;
-      const next = tabs[(index + step + tabs.length) % tabs.length];
-      next.focus();
-      select(next);
-    });
-  });
+  bindTabs(leaderboard, '[data-leaderboard-group]', '[data-leaderboard-group-panel]', 'leaderboardGroup', 'leaderboardGroupPanel');
+  leaderboard.querySelectorAll('[data-leaderboard-group-panel]').forEach(group =>
+    bindTabs(group, '[data-leaderboard-tab]', '[data-leaderboard-panel]', 'leaderboardTab', 'leaderboardPanel'));
 });
 
 document.querySelectorAll("[data-week-date]").forEach((tally) => {

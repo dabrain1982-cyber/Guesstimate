@@ -1,38 +1,4 @@
 (() => {
-  const initLobby = () => {
-    const lobby = document.querySelector("[data-dice-lobby]");
-    if (!lobby) return false;
-    const settings = lobby.querySelector("[data-dice-settings]");
-    const autosave = lobby.querySelector("[data-dice-autosave]");
-    let revision = String(lobby.dataset.revision);
-    let saving = false;
-    if (settings) settings.addEventListener("change", async () => {
-      saving = true;
-      if (autosave) autosave.textContent = "Wird übernommen …";
-      try {
-        const response = await fetch(settings.dataset.settingsUrl, { method: "POST", body: new FormData(settings), headers: { Accept: "application/json" } });
-        if (!response.ok) throw new Error("settings");
-        if (autosave) autosave.textContent = "Einstellung übernommen.";
-        const stateResponse = await fetch(lobby.dataset.statusUrl, { cache: "no-store" });
-        if (stateResponse.ok) revision = String((await stateResponse.json()).revision);
-      } catch (_) {
-        if (autosave) autosave.textContent = "Konnte nicht gespeichert werden.";
-      } finally { saving = false; }
-    });
-    const poll = async () => {
-      try {
-        const response = await fetch(lobby.dataset.statusUrl, { cache: "no-store", headers: { Accept: "application/json" } });
-        if (!response.ok) return window.location.reload();
-        const state = await response.json();
-        if (state.status !== "waiting") return window.location.reload();
-        if (!saving && (String(state.revision) !== revision || String(state.members.length) !== lobby.dataset.memberCount)) return window.location.reload();
-      } catch (_) {}
-      window.setTimeout(poll, 1000);
-    };
-    window.setTimeout(poll, 1000);
-    return true;
-  };
-
   const initGame = () => {
     const room = document.querySelector("[data-dice-room]");
     if (!room) return;
@@ -577,5 +543,5 @@
     };
     poll();
   };
-  if (!initLobby()) initGame();
+  initGame();
 })();

@@ -1,0 +1,12 @@
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:transparent;color:#f6e7c8;font:14px/1.4 system-ui,sans-serif}
+#piece-stage{position:relative;width:100%;height:100%;overflow:hidden}
+#piece-stage canvas{display:block}
+.piece-source-frame{position:absolute;transform-origin:0 0;width:160px;height:120px}
+.piece-marker-layer{position:absolute;inset:0}
+#piece-status{position:absolute;inset:42% 10px auto;text-align:center;pointer-events:none}
+#piece-status:empty{display:none}
+.piece-view-tools{position:absolute;bottom:8px;left:0;right:0;display:flex;justify-content:center;gap:8px}.piece-view-tools button{padding:5px 12px;border:1px solid #b89b65;border-radius:5px;background:#1c332d;color:#fff0ca;font:13px system-ui,sans-serif;cursor:pointer}
+.piece-design-preview{background:radial-gradient(ellipse at center,#f3f0e7,#d8ddd8 85%);color:#263d35}
+.piece-design-preview .piece-view-tools button{background:#eee2ba;color:#233f37}
+.piece-dimensions{position:absolute;top:10px;left:10px;right:10px;margin:0;text-align:center;font:11px/1.4 system-ui,sans-serif;pointer-events:none}
+.piece-comparison-caption{position:absolute;bottom:43px;left:8px;right:8px;margin:0;text-align:center;font:11px/1.4 system-ui,sans-serif;pointer-events:none}

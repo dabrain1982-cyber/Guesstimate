@@ -97,118 +97,6 @@
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .018);
   backdrop-filter: none;
 }
-.home-variant-a .variant-a-profile-details {
-  padding: 0 18px 14px;
-  background: transparent;
-}
-.home-variant-a .variant-a-profile-details .variant-a-trophies { margin-top: 0; }
-/* Einzige verbindliche Innenkomposition für Profil und Hauptseitenkopie. */
-.variant-a-profile-canonical {
-  align-content: start;
-  grid-template-rows: auto auto;
-}
-.variant-a-profile-canonical .variant-a-profile-scene {
-  container-type: inline-size;
-  width: 100%;
-  height: auto !important;
-  min-height: 0 !important;
-  aspect-ratio: 43 / 57;
-}
-.profile-window-copy > .variant-a-profile.variant-a-profile-canonical {
-  height: auto;
-  min-height: 0;
-}
-.variant-a-profile-canonical .variant-a-profile-scene::after { box-shadow: inset 0 -24px 42px rgba(3, 12, 32, .48); }
-.variant-a-profile-canonical .variant-a-hanging-plaque {
-  top: .5%;
-  width: min(84%, 500px);
-  aspect-ratio: 3.1 / 1;
-}
-.variant-a-profile-canonical .variant-a-hanging-plaque i { height: 13cqw; }
-.variant-a-profile-canonical .variant-a-hanging-plaque img { inset: -7%; width: 114%; height: 114%; }
-.variant-a-profile-canonical .variant-a-hanging-plaque span {
-  max-width: 88%;
-  padding: 0 5%;
-  font-family: var(--font-display);
-  font-size: clamp(.72rem, 3.65cqw, 1.16rem);
-  font-weight: 700;
-  line-height: 1.08;
-  white-space: normal;
-}
-.variant-a-profile-canonical .variant-a-avatar {
-  top: 20%;
-  bottom: auto;
-  width: 58%;
-  height: 49%;
-}
-.variant-a-profile-canonical .variant-a-podium {
-  bottom: 0;
-  width: 79%;
-  aspect-ratio: 8 / 7;
-}
-.variant-a-profile-canonical .variant-a-podium strong {
-  top: var(--profile-name-y, 42%);
-  right: var(--profile-name-r, 25%);
-  left: var(--profile-name-l, 25%);
-  transform: translateY(-50%);
-  font-family: var(--font-display);
-  font-size: clamp(.88rem, 4.15cqw, 1.55rem);
-  font-weight: 700;
-  line-height: 1;
-}
-.variant-a-profile-canonical .variant-a-podium-balance { font-size: clamp(.72rem, 3.1cqw, 1.12rem); }
-
-.variant-a-podium-balance {
-  position: absolute;
-  top: var(--profile-balance-y, 68%);
-  right: var(--profile-balance-r, 25%);
-  left: var(--profile-balance-l, 25%);
-  z-index: 2;
-  display: flex;
-  height: var(--profile-balance-h, 12%);
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: center;
-  gap: .28em;
-  padding-inline: 2%;
-  overflow: hidden;
-  transform: translateY(-50%);
-  color: var(--variant-a-acid);
-  font-weight: 850;
-  line-height: 1;
-  text-align: center;
-  text-decoration: none;
-  text-overflow: ellipsis;
-  text-shadow: 0 2px 4px #000;
-  white-space: nowrap;
-}
-.variant-a-podium-balance > span { flex: 0 0 auto; white-space: nowrap; }
-.variant-a-profile .variant-a-podium > strong {
-  display: flex;
-  height: var(--profile-name-h, 14%);
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: center;
-  padding-inline: 2%;
-  line-height: 1;
-}
-
-/* Feldlagen sämtlicher hoher Pulte gelten auf Profil und Hauptseite identisch. */
-.variant-a-profile.plaque-p00 { --profile-name-y: 40.76%; --profile-name-h: 12.02%; --profile-balance-y: 71.67%; --profile-name-l: 28.21%; --profile-name-r: 26.97%; --profile-balance-l: 28.21%; --profile-balance-r: 26.97%; }
-.variant-a-profile.plaque-p01 { --profile-name-y: 51.92%; --profile-name-h: 15.46%; --profile-balance-y: 77.68%; --profile-name-l: 28.92%; --profile-name-r: 27.48%; --profile-balance-l: 28.92%; --profile-balance-r: 27.48%; }
-.variant-a-profile.plaque-p02 { --profile-name-y: 40.86%; --profile-name-h: 12%; --profile-balance-y: 65.71%; --profile-name-l: 30.89%; --profile-name-r: 30.54%; --profile-balance-l: 30.89%; --profile-balance-r: 30.54%; }
-.variant-a-profile.plaque-p03 { --profile-name-y: 38.29%; --profile-name-h: 12%; --profile-balance-y: 68.29%; --profile-name-l: 31.66%; --profile-name-r: 30.84%; --profile-balance-l: 32.41%; --profile-balance-r: 31.59%; }
-.variant-a-profile.plaque-p04 { --profile-name-y: 42.20%; --profile-name-h: 12.08%; --profile-balance-y: 67.22%; --profile-name-l: 29.70%; --profile-name-r: 29.54%; --profile-balance-l: 29.70%; --profile-balance-r: 29.54%; }
-.variant-a-profile.plaque-p05 { --profile-name-y: 48.30%; --profile-name-h: 12.52%; --profile-balance-y: 75.13%; --profile-name-l: 27.74%; --profile-name-r: 26.87%; --profile-balance-l: 29.31%; --profile-balance-r: 28.44%; }
-.variant-a-profile.plaque-p06 { --profile-name-y: 42.64%; --profile-name-h: 12.35%; --profile-balance-y: 68.23%; --profile-name-l: 29.23%; --profile-name-r: 29.07%; --profile-balance-l: 30.77%; --profile-balance-r: 30.62%; }
-.variant-a-profile.plaque-p07 { --profile-name-y: 46.64%; --profile-name-h: 12.05%; --profile-balance-y: 72.46%; --profile-name-l: 30.13%; --profile-name-r: 27.70%; --profile-balance-l: 30.13%; --profile-balance-r: 27.70%; }
-.variant-a-profile.plaque-p08 { --profile-name-y: 45.73%; --profile-name-h: 12.63%; --profile-balance-y: 73.71%; --profile-name-l: 28.75%; --profile-name-r: 27.03%; --profile-balance-l: 30.33%; --profile-balance-r: 28.61%; }
-.variant-a-profile.plaque-p09 { --profile-name-y: 46.86%; --profile-name-h: 12%; --profile-balance-y: 72.57%; --profile-name-l: 30.29%; --profile-name-r: 28.24%; --profile-balance-l: 31.77%; --profile-balance-r: 29.72%; }
-.variant-a-profile.plaque-p10 { --profile-name-y: 41.20%; --profile-name-h: 12.16%; --profile-balance-y: 71.59%; --profile-name-l: 29.74%; --profile-name-r: 27.71%; --profile-balance-l: 31.26%; --profile-balance-r: 29.23%; }
-.variant-a-profile.plaque-p11 { --profile-name-y: 37.23%; --profile-name-h: 12.20%; --profile-balance-y: 64.26%; --profile-name-l: 31.54%; --profile-name-r: 30.32%; --profile-balance-l: 31.54%; --profile-balance-r: 30.32%; }
-.variant-a-profile.plaque-p12 { --profile-name-y: 43.43%; --profile-name-h: 12%; --profile-balance-y: 69.14%; --profile-name-l: 31.47%; --profile-name-r: 29.53%; --profile-balance-l: 32.22%; --profile-balance-r: 30.28%; }
-.variant-a-profile.plaque-p13 { --profile-name-y: 45.34%; --profile-name-h: 12.79%; --profile-balance-y: 73.64%; --profile-name-l: 31.04%; --profile-name-r: 29.01%; --profile-balance-l: 33.44%; --profile-balance-r: 31.40%; }
-
 /* Ranglisten dürfen vertikal scrollen, aber nie eine horizontale Leiste bilden. */
 .home-variant-a .variant-a-leaderboard .rank-list,
 .home-variant-a .variant-a-leaderboard .rank-list.is-scrollable {
@@ -391,8 +279,10 @@
     min-height: 0;
   }
 
+  .home-variant-a .variant-a-leaderboard [data-leaderboard-group-panel]:not([hidden]),
   .home-variant-a .variant-a-leaderboard .leaderboard-panel:not([hidden]) {
     display: flex;
+    flex-direction: column;
     flex: 1 1 auto;
     min-height: 0;
   }
@@ -442,27 +332,4 @@
   .phrase-shop-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
-}
-
-/* Classic-Lobby: Plaketten-Endstücke behalten ihre Originalproportionen;
-   ausschließlich das dafür vorgesehene Mittelstück wächst in die Breite. */
-.party-members .identity-party:not(.plaque-p00) .player-card-surface {
-  overflow: visible;
-  border-radius: 0;
-  background: transparent;
-  box-shadow: none;
-}
-.party-members .identity-party:not(.plaque-p00) .player-card-surface::after { display: none; }
-.party-members .identity-party:not(.plaque-p00) .player-plaque-art {
-  inset: 0;
-  width: auto;
-  height: auto;
-  border-style: solid;
-  border-width: 0 52px;
-  border-image-source: var(--plaque-source);
-  border-image-slice: 0 225 0 225 fill;
-  border-image-width: 0 52px;
-  border-image-repeat: stretch;
-  background: none;
-  filter: drop-shadow(0 5px 4px rgba(0, 0, 0, .5));
 }

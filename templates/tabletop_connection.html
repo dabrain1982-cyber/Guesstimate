@@ -1,74 +1,42 @@
 {% extends "base.html" %}
-{% from "_game_flyers.html" import perfect_flyer_copy %}
-{% block title %}Tabletop Connection · {{ game_name }}{% endblock %}
+{% from "_game_flyers.html" import blackjack_flyer, kniffel_flyer %}
+{% block title %}games collection · {{ game_name }}{% endblock %}
 {% block shell_class %}tabletop-connection-shell{% endblock %}
 {% block header %}{% endblock %}
-{% block extra_head %}<link rel="stylesheet" href="{{ url_for('static', filename='card-table.css', v='13') }}">{% endblock %}
+{% block extra_head %}<link rel="stylesheet" href="{{ url_for('static', filename='card-table.css', v='16') }}">{% endblock %}
 {% block content %}
-  <main class="tabletop-connection">
+  <main class="tabletop-connection" data-game-collection>
     <header class="tabletop-connection-head">
       <p class="eyebrow">SPIELTISCHE FÜR EUREN ABEND</p>
-      <h1>Tabletop Connection</h1>
+      <h1 class="game-name">games collection</h1>
     </header>
-    <section class="tabletop-game-grid" aria-label="Verfügbare Spieltische">
-      <a class="tabletop-game-tile tabletop-perfect-flyer is-available" href="{{ request.script_root }}/nerd" aria-label="stormseed´s perfect öffnen">
-        <img src="{{ url_for('static', filename='carousel-stormseeds-perfect-v1.png') }}" alt="Stormseed´s Perfect im warmen Clubzimmer">
-        {{ perfect_flyer_copy() }}
+    <fieldset class="collection-filters">
+      <legend class="visually-hidden">Spielauswahl · höchstens einen Haken setzen</legend>
+      <label><input type="checkbox" name="collection-mode" value="casino" data-collection-filter aria-controls="collection-groups collection-results"><span>casino</span></label>
+      <label><input type="checkbox" name="collection-mode" value="singleplayer" data-collection-filter aria-controls="collection-groups collection-results"><span>singleplayer</span></label>
+    </fieldset>
+    <p class="collection-mode-note" data-casino-note hidden>Black Jack spielt derzeit mit Test-iKühen.</p>
+    <section class="tabletop-game-grid" id="collection-groups" data-collection-groups aria-label="Verfügbare Spielgruppen">
+      <a class="tabletop-game-tile is-available" href="{{ url_for('card_tables') }}">
+        <img src="{{ url_for('static', filename='tabletop-card-table-tile-v1.png') }}" alt="Standard-Spielkarten auf einem grünen Filztisch">
+        <span>Kartenspiele</span>
+        <h2>zu den kartentischen</h2>
       </a>
-      {% if config.get('TABLETOP_FAMILY_HUBS_AVAILABLE', false) %}
-        <a class="tabletop-game-tile is-available" href="{{ url_for('card_tables') }}">
-          <img src="{{ url_for('static', filename='tabletop-card-table-tile-v1.png') }}" alt="Standard-Spielkarten auf einem grünen Filztisch">
-          <span>Kartenspiele</span>
-          <h2>Zu den Kartentischen</h2>
-        </a>
-        <a class="tabletop-game-tile is-available" href="{{ url_for('dice_tables') }}">
-          <img src="{{ url_for('static', filename='tabletop-dice-table-tile-v1.png') }}" alt="Würfel und Würfelbecher auf einem grünen Filztisch">
-          <span>Würfelspiele</span>
-          <h2>Zu den Würfeltischen</h2>
-        </a>
-        <a class="tabletop-game-tile is-available" href="{{ url_for('conquest_index') }}">
-          <img src="{{ url_for('static', filename='tabletop-risk-tile-v1.png') }}" alt="Strategisches Weltkartenspiel mit farbigen Spielfiguren auf einem grünen Filztisch">
-          <span>Eigene Spielwerkbank</span>
-          <h2>Stormseed’s Conquest</h2>
-        </a>
-      {% else %}
-        <a class="tabletop-game-tile is-available" href="{{ url_for('card_table_index') }}">
-          <img src="{{ url_for('static', filename='tabletop-card-table-tile-v1.png') }}" alt="Standard-Spielkarten auf einem grünen Filztisch">
-          <span>Kartentisch</span>
-          <h2>Spiel mit den Standard-Karten</h2>
-        </a>
-        {% if config.get('DICE_TABLE_AVAILABLE', false) %}
-          <a class="tabletop-game-tile is-available" href="{{ url_for('dice_table_index') }}">
-            <img src="{{ url_for('static', filename='tabletop-dice-table-tile-v1.png') }}" alt="Würfel und Würfelbecher auf einem grünen Filztisch">
-            <span>Lobby geöffnet</span>
-            <h2>Würfeltisch</h2>
-          </a>
-        {% endif %}
-        {% if config.get('KNIFFEL_AVAILABLE', false) %}
-          <a class="tabletop-game-tile is-available" href="{{ url_for('kniffel_index') }}">
-            <img src="{{ url_for('static', filename='tabletop-kniffel-tile-v1.png') }}" alt="Fünf Würfel, Würfelbecher und Wertungsblock auf einem grünen Filztisch">
-            <span>Lobby geöffnet</span>
-            <h2>Kniffel</h2>
-          </a>
-        {% endif %}
-        <a class="tabletop-game-tile is-available" href="{{ url_for('conquest_index') }}">
-          <img src="{{ url_for('static', filename='tabletop-risk-tile-v1.png') }}" alt="Strategisches Weltkartenspiel mit farbigen Spielfiguren auf einem grünen Filztisch">
-          <span>Eigene Spielwerkbank</span>
-          <h2>Stormseed’s Conquest</h2>
-        </a>
-        {% if config.get('MAEXCHEN_AVAILABLE', false) %}
-          <a class="tabletop-game-tile is-available" href="{{ url_for('maexchen_index') }}">
-            <img src="{{ url_for('static', filename='tabletop-dice-table-tile-v1.png') }}" alt="Zwei Würfel auf einem grünen Filztisch">
-            <span>Lobby geöffnet</span>
-            <h2>Mäxchen</h2>
-          </a>
-        {% endif %}
-        <article class="tabletop-game-tile is-coming" aria-disabled="true">
-          <img src="{{ url_for('static', filename='tabletop-dice-table-tile-v1.png') }}" alt="Würfel auf einem grünen Filztisch">
-          <span>Demnächst</span>
-          <h2>Schweinchen</h2>
-        </article>
-      {% endif %}
+      <a class="tabletop-game-tile is-available" href="{{ url_for('dice_tables') }}">
+        <img src="{{ url_for('static', filename='tabletop-dice-table-tile-v1.png') }}" alt="Würfel und Würfelbecher auf einem grünen Filztisch">
+        <span>Würfelspiele</span>
+        <h2>zu den würfeltischen</h2>
+      </a>
+      <a class="tabletop-game-tile is-available" href="{{ url_for('board_games') }}">
+        <img src="{{ url_for('static', filename='carousel-playtable-v1.png') }}" alt="Spielbretter, Karten und Würfel im gemeinsamen Spielzimmer">
+        <span>Brettspiele</span>
+        <h2>zu den brettspielen</h2>
+      </a>
+    </section>
+    <section class="tabletop-game-grid collection-results" id="collection-results" data-collection-results aria-label="Ausgewählte Spiele" hidden>
+      <div class="collection-result" data-collection-modes="casino singleplayer">{{ blackjack_flyer() }}</div>
+      <div class="collection-result" data-collection-modes="singleplayer">{{ kniffel_flyer() }}</div>
     </section>
   </main>
 {% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='game-collection.js', v='1') }}" defer></script>{% endblock %}

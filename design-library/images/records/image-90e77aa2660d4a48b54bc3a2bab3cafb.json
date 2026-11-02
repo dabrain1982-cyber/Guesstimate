@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "image-90e77aa2660d4a48b54bc3a2bab3cafb",
+  "role": "variant",
+  "name": "Black Jack · Freigegebenes Tischmotiv · Flyervorlage",
+  "kind": "flyers",
+  "created": "2026-10-29T19:35:03.405508+00:00",
+  "filename": "Black Jack · Freigegebenes Tischmotiv · Flyervorlage.png",
+  "file": "images/variants/image-90e77aa2660d4a48b54bc3a2bab3cafb.png",
+  "format": "PNG",
+  "width": 1672,
+  "height": 941,
+  "sha256": "7caf9f26408480c9d81a37724f3e13650901eb70828cd5acf6038085b75e1049",
+  "source_id": "image-074e7c3530364c7a82a2c51735c5b5cf",
+  "source_sha256": "db12feee38e159f796879e4f69c8600a1773aae54baf72638c48aa324ce77cda",
+  "recipe": {
+    "x": 0,
+    "y": 0,
+    "width": 1672,
+    "height": 941,
+    "output_width": 1672
+  }
+}

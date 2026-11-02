@@ -1,0 +1,70 @@
+{
+  "schema_version": 2,
+  "name": "Stormseed´s conquest",
+  "settings": {
+    "style": "comic",
+    "material": "stone",
+    "shape": "comic",
+    "edge": 2,
+    "finish": "satin",
+    "wear": 0,
+    "accent": "#31fe16",
+    "font": "fredoka",
+    "font_link": "manual",
+    "lettering": "etched",
+    "size": 32,
+    "label": "spiel starten",
+    "depth": 4,
+    "duration": 300,
+    "feel": "direct",
+    "sound": "wood-light",
+    "volume": 20
+  },
+  "contour": {
+    "template": "comic",
+    "points": [
+      {
+        "x": 8,
+        "y": 7,
+        "round": 30
+      },
+      {
+        "x": 34,
+        "y": 2,
+        "round": 30
+      },
+      {
+        "x": 91,
+        "y": 6,
+        "round": 28
+      },
+      {
+        "x": 99,
+        "y": 29,
+        "round": 38
+      },
+      {
+        "x": 95,
+        "y": 88,
+        "round": 28
+      },
+      {
+        "x": 64,
+        "y": 96,
+        "round": 35
+      },
+      {
+        "x": 5,
+        "y": 91,
+        "round": 26
+      },
+      {
+        "x": 1,
+        "y": 30,
+        "round": 35
+      }
+    ]
+  },
+  "source_id": "12f7b20f488e4a5e85913ce373caa4ce",
+  "source_kind": "shape"
+}

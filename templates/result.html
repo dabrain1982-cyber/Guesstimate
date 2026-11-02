@@ -71,10 +71,10 @@
     {% if has_next_catchup %}
       <form method="post" action="{{ url_for('next_catchup_round') }}">
         <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-        <button class="primary-button" type="submit">Nächsten Tag nachholen</button>
+        <button class="primary-button" type="submit">nächsten tag nachholen</button>
       </form>
     {% else %}
-      <button class="primary-button completed" disabled>Schau morgen wieder rein</button>
+      <button class="primary-button completed" disabled>schau morgen wieder rein</button>
     {% endif %}
     <p class="idea-note">Hast du Ideen für weitere Kategorien, die du bei <strong>{{ game_name }}</strong> gerne sehen würdest?<br>Schreib mir: <a href="mailto:DaBrain@gmx.net">DaBrain@gmx.net</a></p>
     <a href="{{ url_for('home') }}">Zurück zur Übersicht</a>

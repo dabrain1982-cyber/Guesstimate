@@ -1,0 +1,28 @@
+.button-review{min-width:0}
+.button-review .review-intro{font-size:13px;max-width:850px;margin:0 0 26px;color:var(--muted)}
+.button-review .review-section{margin:0 0 38px;scroll-margin-top:20px}
+.button-review .review-section>h3{margin:0 0 16px;font-size:25px}
+.button-review .review-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:16px}
+.button-review .review-card{min-width:0;overflow:hidden;border:1px solid var(--line);border-radius:12px;background:var(--paper);display:flex;flex-direction:column}
+.button-review .review-card-heading{display:flex;gap:12px;align-items:center;padding:17px;min-height:76px}
+.button-review .review-card-heading h4{font-size:15px;line-height:1.4;margin:0;font-weight:650}
+.button-review .review-number{display:grid;place-items:center;flex:0 0 32px;height:32px;border-radius:50%;background:#e4ead6;color:var(--green);font-weight:700;font-size:12px}
+.button-review .review-card .review-original{border-radius:0;padding:0}
+.button-review .review-original iframe{height:600px}
+.button-review .review-card-body{display:flex;flex-direction:column;flex:1;gap:12px;padding:17px}
+.button-review .review-role{font-size:12px;font-weight:700;margin:0;color:var(--green)}
+.button-review .review-purpose{font-size:13px;margin:0;line-height:1.6}
+.button-review .review-facts{display:grid;grid-template-columns:1fr 1fr;gap:9px 12px;margin:0;padding:12px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.button-review .review-facts>div{min-width:0}
+.button-review .review-facts dt{font-size:11px;color:var(--muted)}
+.button-review .review-facts dd{font-size:12px;margin:2px 0 0;overflow-wrap:anywhere;line-height:1.5}
+.button-review .review-uses{margin:0}
+.button-review .review-uses summary{font-size:12px;line-height:1.5}
+.button-review .review-uses ul{padding-left:18px;font-size:12px;line-height:1.6;overflow-wrap:anywhere}
+.button-review .review-inspect{align-self:start;margin-top:auto;font-size:12px}
+.button-review .review-selection{align-self:start;font-size:12px}
+.button-review .review-selection[aria-pressed=true]{background:var(--green);color:var(--paper)}
+.button-review .review-findings{font-size:13px;margin:14px 0 8px;line-height:1.6}
+.button-review .review-proposal{font-size:13px;margin:0;padding:14px 16px;border-radius:8px;background:#e5ead9;line-height:1.6}
+#compare-buttons{margin:0 0 22px}
+@media(max-width:700px){.button-review .review-grid{grid-template-columns:1fr}.button-review .review-section>h3{font-size:23px}}

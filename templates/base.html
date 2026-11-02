@@ -9,7 +9,7 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_DE">
   <meta property="og:site_name" content="Stormseed´s">
-  <meta property="og:title" content="Guesstimate">
+  <meta property="og:title" content="guesstimate">
   <meta property="og:description" content="Fünf Fragen. Ein Versuch. Und morgen wissen alle, wer wirklich Ahnung hatte.">
   <meta property="og:url" content="{{ public_url }}/">
   <meta property="og:image" content="{{ share_image_url }}">
@@ -17,41 +17,53 @@
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1729">
   <meta property="og:image:height" content="910">
-  <meta property="og:image:alt" content="Stormseed´s Guesstimate – das tägliche Quiz">
+  <meta property="og:image:alt" content="stormseed´s guesstimate – das tägliche Quiz">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Guesstimate">
+  <meta name="twitter:title" content="guesstimate">
   <meta name="twitter:description" content="Das tägliche Quiz für Leute mit gefährlichem Halbwissen.">
   <meta name="twitter:image" content="{{ share_image_url }}">
   <link rel="canonical" href="{{ public_url }}/">
-  <title>{% block title %}{{ game_name }}{% endblock %}</title>
+  <title>{% block title %}{{ game_name }}{% endblock %}{% if config.get('OFFLINE_VERSION') %} · offline {{ config.OFFLINE_VERSION }}{% endif %}</title>
   <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css', v='26') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='quiz-arena.css', v='68') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='typography-v1.css', v='2') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='profile-stage-v1.css', v='20') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css', v='28') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='quiz-arena.css', v='72') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='blackjack-flyer.css', v='1') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='conquest-flyer.css', v='1') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='typography-v1.css', v='3') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='profile-stage-v1.css', v='22') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='profile-window.css', v='1') }}">
   {% block extra_head %}{% endblock %}
+  {% if config.get('BLACKJACK_SIMULATION') %}<link rel="stylesheet" href="{{ url_for('static', filename='blackjack-simulation.css') }}">{% endif %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='lobby.css', v='1') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='lobby-overview.css', v='2') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='ui-conventions.css', v='1') }}">
 </head>
 <body{% if g.user %} class="has-player-background" style="--player-background-image: url('{{ url_for('static', filename=background_catalog[player_cosmetics.background_id].asset) }}')"{% endif %}>
   <div class="noise" aria-hidden="true"></div>
-  {% set daily_rule_endpoints = ('login', 'register', 'home', 'question', 'result') %}
-  {% set show_daily_rules = request.endpoint in daily_rule_endpoints %}
+  {% if config.get('BLACKJACK_SIMULATION') %}{% include '_blackjack_test_banner.html' %}{% endif %}
   {% set show_party_rules = request.endpoint and request.endpoint.startswith('party_') %}
   {% set show_perfect_rules = request.endpoint and request.endpoint.startswith('nerd_') %}
   {% set show_maexchen_rules = request.endpoint and request.endpoint.startswith('maexchen_') %}
+  {% set show_conquest_rules = request.endpoint and request.endpoint.startswith('conquest_') %}
+  {% set show_daily_rules = not (show_party_rules or show_perfect_rules or show_maexchen_rules or show_conquest_rules) %}
+  {% set rules_hidden = request.endpoint in ('mailbox', 'shop', 'shop_buy', 'profile', 'profile_equip', 'profile_developer_mode', 'public_profile', 'players') %}
+  {% set is_collection = request.endpoint and (request.endpoint in ('tabletop_connection', 'card_tables', 'dice_tables', 'board_games') or request.endpoint.startswith(('card_table_', 'dice_table_', 'kniffel_', 'maexchen_', 'nerd_', 'conquest_'))) %}
   {% block rules %}
-    {% if show_daily_rules or show_party_rules or show_perfect_rules or show_maexchen_rules %}
-      {% if not g.user %}<button class="rules-button" type="button" data-rules-open>Spielregeln – So wird gespielt</button>{% endif %}
+    {% if not rules_hidden and (show_daily_rules or show_party_rules or show_perfect_rules or show_maexchen_rules or show_conquest_rules) %}
+      {% if not g.user %}<button class="rules-button" type="button" data-rules-open>spielregeln – so wird gespielt</button>{% endif %}
       <dialog class="rules-dialog" id="rules-dialog" aria-labelledby="rules-title">
         <form method="dialog" class="rules-panel">
           <div class="rules-heading">
             <div>
               <span class="eyebrow">SO LÄUFT ES</span>
-              <h2 id="rules-title">{% if show_maexchen_rules %}Mäxchen{% elif show_party_rules %}Partymodus-Classic{% elif show_perfect_rules %}Stormseed´s Perfect{% else %}Spielregeln{% endif %}</h2>
+              <h2 id="rules-title" class="game-name">{% if show_conquest_rules %}stormseed´s conquest{% elif show_maexchen_rules %}mäxchen{% elif show_party_rules %}guesstimate party{% elif show_perfect_rules %}stormseed´s perfect{% else %}guesstimate{% endif %}</h2>
             </div>
             <button class="rules-close" type="submit" value="close" aria-label="Spielregeln schließen">×</button>
           </div>
           <ul>
-            {% if show_maexchen_rules %}
+            {% if show_conquest_rules %}
+              {% include '_conquest_rules.html' %}
+            {% elif show_maexchen_rules %}
               <li>Zwei Würfel bilden einen Wert: Die größere Augenzahl steht vorne. Normale Werte steigen von 31 bis 65, danach folgen die Pasche von 11 bis 66; am höchsten ist das Mäxchen 21.</li>
               <li>Nur der Würfler sieht seinen Wurf. Er muss einen strikt höheren Wert als zuvor ansagen und darf dabei bluffen.</li>
               <li>Der Nächste glaubt und würfelt weiter oder deckt für alle auf. Deckt der echte Wurf die Ansage, verliert der Zweifler ein Leben; andernfalls verliert der Bluffende.</li>
@@ -67,7 +79,7 @@
             {% elif show_party_rules %}
               <li>Erstelle eine Lobby oder tritt der Lobby deiner Freunde bei. Bis zu 10 Personen können gemeinsam spielen.</li>
               <li>Der Host gibt der Lobby einen Namen, wählt 1 bis 5 Runden und startet das Spiel, sobald alle da sind.</li>
-              <li>Jede Runde besteht aus den fünf bekannten Guesstimate-Fragearten. Alle beantworten dieselben Fragen gleichzeitig.</li>
+              <li>Jede Runde besteht aus den fünf bekannten guesstimate-Fragearten. Alle beantworten dieselben Fragen gleichzeitig.</li>
               <li>Richtige Antworten bringen Punkte – und wer schneller antwortet, kann mehr Punkte holen. Nach der letzten Frage gewinnt die höchste Gesamtpunktzahl.</li>
               <li>Der Partymodus ist nur für den gemeinsamen Ruhm: Das Ergebnis verändert weder iKühe noch die regulären Ranglisten.</li>
             {% else %}
@@ -84,8 +96,8 @@
   {% if g.user %}
     <nav class="arena-main-nav" aria-label="Hauptbereiche">
       <a class="arena-nav-brand" href="{{ url_for('home') }}" aria-label="stormseed´s guesstimate – Startseite"><span class="arena-brand-word"><small>stormseed´s</small><strong>guesstimate</strong></span></a>
-      <div class="arena-nav-cluster arena-nav-home" aria-label="Guesstimate">
-        <a class="{% if request.endpoint == 'home' %}is-active{% endif %}" href="{{ url_for('home') }}">guesstimate</a>
+      <div class="arena-nav-cluster arena-nav-home" aria-label="guesstimate">
+        <a class="{% if request.endpoint in ('home', 'question', 'result') %}is-active{% endif %}" href="{{ url_for('home') }}">guesstimate</a>
         <a class="arena-nav-party nav-two-line{% if request.endpoint and request.endpoint.startswith('party_') %} is-active{% endif %}" href="{{ url_for('party_index') }}" aria-label="guesstimate party"><span>guesstimate</span><span>party</span></a>
         <a class="{% if request.endpoint in ('profile', 'profile_equip') %}is-active{% endif %}" href="{{ url_for('profile') }}">
           <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M4 21c0-5 3.2-8 8-8s8 3 8 8"/></svg><span>profil</span>
@@ -93,17 +105,20 @@
         <a class="{% if request.endpoint in ('shop', 'shop_buy') %}is-active{% endif %}" href="{{ url_for('shop') }}">
           <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16l-1 13H5L4 8Z"/><path d="M8 9V6a4 4 0 0 1 8 0v3"/></svg><span>shop</span>
         </a>
-        {% if show_daily_rules or show_party_rules or show_perfect_rules or show_maexchen_rules %}
+        <form class="arena-nav-mail-form" method="post" action="{{ url_for('mail_open') }}">
+          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+          <input type="hidden" name="through" value="{{ mail_status.latest }}">
+          <button class="arena-nav-mail{% if request.endpoint == 'mailbox' %} is-active{% endif %}{% if mail_status.attention %} is-waiting{% endif %}" type="submit" data-mail-button data-status-url="{{ url_for('mail_status') }}" aria-label="Mail{% if mail_status.unread %} · {{ mail_status.unread }} ungelesen{% endif %}">
+            <svg class="nav-icon nav-mail-envelope" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4.5" width="20" height="15" rx="2"/><path d="m3 6 9 7 9-7M3 18l6-6m12 6-6-6"/></svg><span>mail</span><span class="nav-mail-badge" data-mail-count{% if not mail_status.unread %} hidden{% endif %}>{{ mail_status.unread }}</span>
+          </button>
+        </form>
+        {% if not rules_hidden %}
           <button class="arena-nav-rules" type="button" data-rules-open aria-label="Spielregeln – So wird gespielt">
             <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5c3-1.5 6-1.3 9 .7v14c-3-2-6-2.2-9-.7v-14Zm18 0c-3-1.5-6-1.3-9 .7v14c3-2 6-2.2 9-.7v-14Z"/></svg><span>regeln</span>
           </button>
-        {% else %}
-          <a href="{{ url_for('home', regeln=1) }}">
-            <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5c3-1.5 6-1.3 9 .7v14c-3-2-6-2.2-9-.7v-14Zm18 0c-3-1.5-6-1.3-9 .7v14c3-2 6-2.2 9-.7v-14Z"/></svg><span>regeln</span>
-          </a>
         {% endif %}
       </div>
-      {% if config.CARD_TABLE_ENABLED %}<a class="arena-nav-cards arena-nav-tabletop nav-two-line{% if request.endpoint and (request.endpoint.startswith('card_table_') or request.endpoint.startswith('conquest_') or request.endpoint == 'tabletop_connection') %} is-active{% endif %}" href="{{ url_for('tabletop_connection') }}" aria-label="tabletop connection"><span>tabletop</span><span>connection</span></a>{% endif %}
+      {% if config.CARD_TABLE_ENABLED %}<a class="arena-nav-cards arena-nav-tabletop nav-two-line{% if is_collection %} is-active{% endif %}" href="{{ url_for('tabletop_connection') }}" aria-label="games collection"><span>games</span><span>collection</span></a>{% endif %}
       <span class="arena-nav-date"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18"/></svg><span>{{ today_display }}</span></span>
     </nav>
   {% endif %}
@@ -127,9 +142,12 @@
 
     {% block content %}{% endblock %}
   </main>
-  <script src="{{ url_for('static', filename='rules.js', v='1') }}" defer></script>
+  <script src="{{ url_for('static', filename='rules.js', v='2') }}" defer></script>
   <script src="{{ url_for('static', filename='leaderboards.js', v='2') }}" defer></script>
-  <script src="{{ url_for('static', filename='profile-stage-v1.js', v='3') }}" defer></script>
+  <script src="{{ url_for('static', filename='profile-stage-v1.js', v='4') }}" defer></script>
+  <script src="{{ url_for('static', filename='lobby.js', v='3') }}" defer></script>
+  <script src="{{ url_for('static', filename='lobby-overview.js', v='2') }}" defer></script>
+  {% if g.user %}<script src="{{ url_for('static', filename='mail.js', v='1') }}" defer></script>{% endif %}
   {% block scripts %}{% endblock %}
 </body>
 </html>

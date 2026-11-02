@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "name": "Schachbrett Simpel",
+  "kind": "board",
+  "settings": {
+    "columns": 8,
+    "rows": 8,
+    "pattern": "checker",
+    "square": 0.75,
+    "light": "#e9d8b3",
+    "dark": "#000000",
+    "frame": "#844d01",
+    "border": 0.25,
+    "thickness": 0.18
+  },
+  "representation": "3d",
+  "id": "element-56675fbd558f4e66a61469774c38f550",
+  "created": "2026-10-26T12:53:19.141285+00:00"
+}

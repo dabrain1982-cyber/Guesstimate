@@ -1,11 +1,31 @@
-{% macro profile_window(cosmetics, trophies, show_edit=True, show_details=True, player_name=None, player_balance=None, instance_id='variant-profile-name', balance_link=True, game_points=None) %}
+{# Shared player window. Skin and geometry are always taken from the profile.
+   podium_fields: optional {name, value, label, icon}; numeric values use the shared points format.
+   player_status: text, or {text, tone}; tone is neutral, ready, active, waiting, or out.
+   content_items: optional list of {key, label, value, unit}; a Jinja caller supplies richer content.
+   content_size: auto, compact, standard, expanded; content_height optionally fixes the lower area in px.
+   show_details retains the legacy trophy default; explicit content also works with show_details=False.
+#}
+{% macro profile_window(cosmetics, trophies, show_edit=True, show_details=True, player_name=None, player_balance=None, instance_id='variant-profile-name', balance_link=True, game_points=None, podium_fields=None, player_status=None, content_items=None, content_size='auto', content_height=None, content_label='Spielinformationen') %}
   {% set avatar = avatar_catalog[cosmetics.avatar_id] %}
   {% set plaque = plaque_catalog[cosmetics.plaque_id] %}
   {% set background = background_catalog[cosmetics.background_id] %}
   {% set phrase = phrase_catalog.get(cosmetics.phrase_id, {}).get('text', default_phrase) %}
   {% set visible_name = player_name if player_name is not none else g.user.display_name %}
   {% set visible_balance = player_balance if player_balance is not none else currency_balance %}
-  <section class="variant-a-profile variant-a-profile-canonical avatar-{{ cosmetics.avatar_id }} plaque-{{ cosmetics.plaque_id }}" aria-labelledby="{{ instance_id }}">
+  {% set fields = podium_fields if podium_fields is mapping else {} %}
+  {% set field_name = fields.get('name', visible_name) %}
+  {% set field_value = fields.get('value', game_points if game_points is not none else visible_balance) %}
+  {% set field_label = fields.get('label', 'Punkte' if game_points is not none else ('iKühe' if podium_fields is none else '')) %}
+  {% set field_icon = fields.get('icon', '🐮' if podium_fields is none and game_points is none else '') %}
+  {% set value_link = balance_link and podium_fields is none and game_points is none %}
+  {% set value_tag = 'a' if value_link else 'span' %}
+  {% set status_text = player_status.get('text', '') if player_status is mapping else player_status %}
+  {% set requested_tone = player_status.get('tone', 'neutral') if player_status is mapping else 'neutral' %}
+  {% set status_tone = requested_tone if requested_tone in ('neutral', 'ready', 'active', 'waiting', 'out') else 'neutral' %}
+  {% set size = content_size if content_size in ('auto', 'compact', 'standard', 'expanded') else 'auto' %}
+  {% set lower_height = content_height if content_height is number and content_height >= 0 else none %}
+  {% set custom_content = player_status is not none or content_items is not none or caller is defined or size != 'auto' or lower_height is not none %}
+  <section class="variant-a-profile variant-a-profile-canonical avatar-{{ cosmetics.avatar_id }} plaque-{{ cosmetics.plaque_id }}" aria-labelledby="{{ instance_id }}" data-profile-window>
     <div class="variant-a-profile-scene" style="--profile-window-background: url('{{ url_for('static', filename=background.asset) }}')">
       <div class="variant-a-hanging-plaque{% if plaque.asset %} has-art{% endif %}">
         <i aria-hidden="true"></i><i aria-hidden="true"></i>
@@ -15,18 +35,25 @@
       <div class="variant-a-avatar"><img src="{{ url_for('static', filename='avatars/' ~ avatar.stage_asset) }}" alt="Avatar {{ avatar.name }} von {{ visible_name }}"></div>
       <div class="variant-a-podium">
         <img src="{{ url_for('static', filename='podiums/' ~ plaque.perfect_podium_asset) }}" alt="Pult {{ plaque.name }} von {{ visible_name }}">
-        <strong id="{{ instance_id }}" data-fit-podium-text>{{ visible_name }}</strong>
-        <a class="variant-a-podium-balance"{% if balance_link %} href="{{ url_for('shop') }}"{% else %} aria-disabled="true" tabindex="-1"{% endif %} data-fit-podium-text>{% if game_points is none %}<span aria-hidden="true">🐮</span><span>{{ visible_balance|points }} iKühe</span>{% else %}<span>{{ game_points|points }} Punkte</span>{% endif %}</a>
+        <strong id="{{ instance_id }}" data-profile-field="name" data-fit-podium-text>{{ field_name }}</strong>
+        <{{ value_tag }} class="variant-a-podium-balance"{% if value_link %} href="{{ url_for('shop') }}"{% endif %} data-profile-field="value" data-fit-podium-text>{% if field_icon %}<span aria-hidden="true">{{ field_icon }}</span>{% endif %}<span data-profile-value>{% if field_value is number %}{{ field_value|points }}{% else %}{{ field_value if field_value is not none else '' }}{% endif %}{% if field_label %} {{ field_label }}{% endif %}</span></{{ value_tag }}>
       </div>
     </div>
     {% if show_edit %}<a class="variant-a-edit" href="{{ url_for('profile') }}" aria-label="Avatar, Pult und Hintergrund im Profil ändern">✎</a>{% endif %}
 
-    {% if show_details %}<div class="variant-a-profile-details">
-      <div class="variant-a-trophies" aria-label="Deine Pokale">
-        <span><i aria-hidden="true">🏆</i><b>{{ trophies.daily }}</b><small>tagessiege</small></span>
-        <span><i aria-hidden="true">▥</i><b>{{ trophies.weekly }}</b><small>wochensiege</small></span>
-        <span><i aria-hidden="true">♛</i><b>{{ trophies.monthly }}</b><small>hall of fame</small></span>
+    {% if (show_details or custom_content) and lower_height != 0 %}
+      <div class="variant-a-profile-details profile-window-content profile-content-{{ size }}{% if not custom_content %} is-trophies{% endif %}"{% if lower_height is not none %} style="--profile-content-height: {{ lower_height }}px"{% endif %} aria-label="{{ content_label if custom_content else 'Deine Pokale' }}" data-profile-content>
+        {% if status_text %}<p class="profile-window-status is-{{ status_tone }}" role="status" data-profile-status>{{ status_text }}</p>{% endif %}
+        {% if content_items %}<dl class="profile-window-stats">
+          {% for item in content_items %}<div data-profile-stat="{{ item.get('key', loop.index) }}"><dt>{{ item.label }}</dt><dd>{% if item.value is number %}{{ item.value|points }}{% else %}{{ item.value if item.value is not none else '—' }}{% endif %}{% if item.unit|default('') %} <small>{{ item.unit }}</small>{% endif %}</dd></div>{% endfor %}
+        </dl>{% endif %}
+        {% if caller is defined %}<div class="profile-window-slot" data-profile-slot>{{ caller() }}</div>{% endif %}
+        {% if not custom_content %}<div class="variant-a-trophies" aria-label="Deine Pokale">
+          <span><i aria-hidden="true">🏆</i><b>{{ trophies.daily|default(0) }}</b><small>tagessiege</small></span>
+          <span><i aria-hidden="true">▥</i><b>{{ trophies.weekly|default(0) }}</b><small>wochensiege</small></span>
+          <span><i aria-hidden="true">♛</i><b>{{ trophies.monthly|default(0) }}</b><small>monatssiege</small></span>
+        </div>{% endif %}
       </div>
-    </div>{% endif %}
+    {% endif %}
   </section>
 {% endmacro %}

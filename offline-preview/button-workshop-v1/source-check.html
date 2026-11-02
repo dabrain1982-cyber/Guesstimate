@@ -1,0 +1,49 @@
+<!doctype html><html lang="de"><meta charset="utf-8"><title>Originalbutton-Prüfung</title>
+<style>body{font:16px system-ui;margin:24px}#stage{width:620px}iframe{border:0}pre{white-space:pre-wrap;max-width:1100px}</style>
+<h1>Originalbutton-Prüfung</h1><p id="status">Prüfung läuft …</p><pre id="results"></pre><textarea id="model-manifest" aria-label="Geprüfte Modellzuordnung" rows="8" cols="100"></textarea><div id="stage"></div>
+<script type="module">
+import {renderSourceButton,settleSourceMotion} from './source-renderer.js';
+const results={checked:0,failures:[],models:{}},stage=document.getElementById('stage');
+const settle=()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
+function snapshot(root){return [root,...root.querySelectorAll('*')].map(el=>{
+  const style=getComputedStyle(el);return Object.fromEntries([...style].filter(k=>!k.startsWith('--')).map(k=>[k,style.getPropertyValue(k)]));
+});}
+async function check(asset){
+  const original=document.createElement('iframe');original.sandbox='allow-same-origin';original.style.cssText='width:1000px;height:600px';
+  const loaded=new Promise(resolve=>original.onload=resolve);original.src=asset.preview;stage.append(original);await loaded;await original.contentDocument.fonts.ready;
+  settleSourceMotion(original.contentDocument);
+  const originalRoot=original.contentDocument.querySelector('#source-context button,#source-context a,#source-context input');
+  const host=document.createElement('div');host.style.width='620px';stage.append(host);
+  const recipe={schema_version:3,source_button:{id:asset.id,name:asset.name},appearance:{}};
+  const ctx=await new Promise(resolve=>renderSourceButton(host,recipe,{onReady:resolve}));await settle();
+  const before=snapshot(originalRoot),after=snapshot(ctx.root);
+  const diffs=[];for(let i=0;i<before.length;i++)for(const [key,value]of Object.entries(before[i]))if(value!==after[i]?.[key])diffs.push([i,key,value,after[i]?.[key]]);
+  if(diffs.length)results.failures.push({id:asset.id,name:asset.name,diffs});
+  // Only text is neutralized, inside the isolated copy. Real game files and actions are untouched.
+  const walker=ctx.root.ownerDocument.createTreeWalker(ctx.root,NodeFilter.SHOW_TEXT);let text;while(text=walker.nextNode())if(text.nodeValue.trim())text.nodeValue='Aa';
+  const sheet=ctx.root.ownerDocument.createElement('style');sheet.textContent='*,*::before,*::after{transition:none!important;animation:none!important}';ctx.root.ownerDocument.head.append(sheet);
+  const states=[];
+  const anatomy=[ctx.root,...ctx.root.querySelectorAll('*')].map(el=>Object.fromEntries([...el.attributes].filter(a=>['src','d','viewBox','points','cx','cy','r','rx','ry','x1','x2','y1','y2'].includes(a.name)).map(a=>[a.name,a.value])));
+  for(const width of [1000,390]){
+    ctx.frame.style.width=width+'px';
+    for(const state of ['normal','hover','active','focus','disabled']){
+      ctx.setState(state);await settle();
+      const elements=[ctx.root,...ctx.root.querySelectorAll('*')];
+      const values=elements.map(el=>[getComputedStyle(el),getComputedStyle(el,'::before'),getComputedStyle(el,'::after')].map(css=>Object.fromEntries([...css].filter(k=>!k.startsWith('--')).map(k=>[k,css.getPropertyValue(k)]))));
+      states.push({width,state,values});
+    }
+  }
+  const motion=before.map(css=>Object.fromEntries(Object.entries(css).filter(([key])=>key.startsWith('animation-')||key.startsWith('transition-'))));
+  const bytes=new TextEncoder().encode(JSON.stringify({anatomy,states,motion}));const digest=await crypto.subtle.digest('SHA-256',bytes);
+  results.models[asset.id]=[...new Uint8Array(digest)].map(n=>n.toString(16).padStart(2,'0')).join('');
+  original.remove();host.remove();results.checked++;document.getElementById('status').textContent=results.checked+' Originale geprüft; '+results.failures.length+' Abweichungen.';
+}
+try{
+  const library=await fetch('/api/library').then(r=>r.json());
+  const only=new Set((new URLSearchParams(location.search).get('only')||'').split(',').filter(Boolean));
+  for(const asset of library.assets.filter(a=>a.source==='game'&&!a.canonical&&(!only.size||only.has(a.id))))await check(asset);
+  document.getElementById('results').textContent=JSON.stringify({checked:results.checked,failures:results.failures,appearance_models:new Set(Object.values(results.models)).size},null,2);
+  document.getElementById('model-manifest').value=JSON.stringify({schema:1,viewports:[1000,390],states:['normal','hover','active','focus','disabled'],models:results.models});
+  document.body.dataset.complete='true';
+}catch(error){document.getElementById('results').textContent=error.stack;document.body.dataset.complete='error';}
+</script></html>

@@ -76,7 +76,7 @@
           </div>
         {% endif %}
 
-        <button class="primary-button answer-button" type="submit"{% if question.category == 'match' %} data-match-submit disabled{% endif %}>Antwort einloggen</button>
+        <button class="primary-button answer-button" type="submit"{% if question.category == 'match' %} data-match-submit disabled{% endif %}>antwort einloggen</button>
       </form>
     {% else %}
       <section class="feedback-panel {% if feedback.credit == 1 %}perfect{% elif feedback.credit > 0 %}partial{% else %}wrong{% endif %}" aria-live="polite">
@@ -119,7 +119,7 @@
       >
         <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
         <button class="primary-button" type="submit"{% if feedback_remaining_ms > 0 %} disabled{% endif %}>
-          <span data-feedback-button-label{% if feedback_remaining_ms > 0 %} hidden{% endif %}>{% if index + 1 == total %}Ergebnis ansehen{% else %}Weiter zu Frage {{ index + 2 }}{% endif %}</span>
+          <span data-feedback-button-label{% if feedback_remaining_ms > 0 %} hidden{% endif %}>{% if index + 1 == total %}ergebnis ansehen{% else %}weiter zu frage {{ index + 2 }}{% endif %}</span>
           <span data-feedback-countdown{% if feedback_remaining_ms <= 0 %} hidden{% endif %}></span>
         </button>
       </form>

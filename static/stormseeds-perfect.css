@@ -130,67 +130,7 @@
   -webkit-text-stroke: 1.5px #71180e;
 }
 
-/* Lobby browser */
-.perfect-index-shell { max-width: 1120px; }
-
-.perfect-index-head { margin-bottom: 24px; }
-.perfect-index-head .eyebrow {
-  color: #fff0bd;
-  font-size: clamp(.9rem, 1.35vw, 1.15rem);
-  font-weight: 950;
-  letter-spacing: .15em;
-  text-shadow: 0 2px 4px rgba(35, 10, 5, .98), 0 0 14px rgba(35, 10, 5, .9);
-}
-.perfect-index-head h1 {
-  color: #ffd33f;
-  font-size: clamp(3.1rem, 10vw, 5.2rem);
-  text-shadow: 5px 6px 0 #71180e;
-}
-.perfect-index-head > p:last-child {
-  color: #fff4dc;
-  font-size: clamp(1.08rem, 1.75vw, 1.42rem);
-  font-weight: 850;
-  line-height: 1.35;
-  text-shadow: 0 2px 5px rgba(35, 10, 5, .98), 0 0 16px rgba(35, 10, 5, .88);
-}
-
-.perfect-lobby-browser {
-  overflow: hidden;
-  border: 1px solid rgba(242, 169, 56, .42);
-  border-radius: 24px;
-  color: #f9e9c4;
-  background: linear-gradient(150deg, rgba(52,23,17,.98), rgba(24,13,13,.99));
-  box-shadow: var(--perfect-shadow);
-}
-
-.perfect-lobby-browser > header { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 24px 26px; border-bottom: 1px solid rgba(240,179,70,.2); }
-.perfect-kicker, .perfect-status { color: #f5a735; font-size: 11px; font-weight: 900; letter-spacing: .18em; }
-.perfect-lobby-browser h1 { margin: 5px 0 0; color: #fff5d7; font: 800 clamp(23px,4vw,34px)/1.1 Georgia, serif; }
-.perfect-lobby-list { display: grid; gap: 12px; padding: 18px; }
-
-.perfect-lobby-card {
-  display: grid;
-  grid-template-columns: 88px minmax(0, 1fr) auto;
-  align-items: center;
-  gap: 18px;
-  min-height: 116px;
-  padding: 12px 18px;
-  border: 1px solid rgba(239,178,69,.3);
-  border-radius: 18px;
-  background: linear-gradient(105deg, rgba(112,46,25,.58), rgba(58,25,19,.88));
-}
-.perfect-lobby-card.is-running { filter: saturate(.75); }
-.perfect-host-portrait { position: relative; align-self: stretch; min-height: 92px; }
-.perfect-host-portrait img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: bottom center; }
-.perfect-host-crown { position: absolute; z-index: 1; top: -7px; left: 50%; color: #ffd04d; font-size: 22px; transform: translateX(-50%); filter: drop-shadow(0 2px 2px #511); }
-.perfect-lobby-copy h2 { margin: 5px 0 6px; color: #fff0c8; font: 800 24px/1.1 Georgia, serif; }
-.perfect-lobby-copy p { margin: 0; color: #d7b999; font-size: 14px; }
-.perfect-running-label { display: block; min-width: 120px; text-align: center; color: #bfa383; font-size: 13px; font-weight: 800; }
-
-.perfect-empty-lobbies { padding: 52px 22px; text-align: center; color: #d8b99a; }
-.perfect-empty-lobbies > span { display: block; font-size: 44px; }
-.perfect-empty-lobbies h2 { margin: 12px 0 6px; color: #fff0c8; font-family: Georgia, serif; }
-.perfect-empty-lobbies p { margin: 0; }
+.perfect-kicker { color: #f5a735; font-size: 11px; font-weight: 900; letter-spacing: .18em; }
 
 /* Live room */
 .perfect-live { min-width: 320px; margin: 0; color: var(--perfect-ink); background: #180b09; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
@@ -295,9 +235,6 @@
   min-height: 0;
   border-radius: clamp(7px, .7vw, 13px);
   box-shadow: 0 8px 18px rgba(12, 3, 2, .56);
-}
-.perfect-player-window > .variant-a-profile-canonical .variant-a-profile-scene {
-  height: 100% !important;
 }
 .perfect-player-window.is-you > .variant-a-profile-canonical {
   box-shadow: 0 0 0 3px #ffdb64, 0 0 18px rgba(255, 191, 55, .82), 0 8px 18px rgba(12, 3, 2, .56);
@@ -527,13 +464,6 @@
 }
 
 @media (max-width: 650px) {
-  .perfect-lobby-browser > header { align-items:stretch; flex-direction:column; }
-  .perfect-lobby-browser > header .perfect-button { width:100%; }
-  .perfect-lobby-card { grid-template-columns:65px 1fr; padding:10px 12px; }
-  .perfect-host-portrait { min-height:76px; }
-  .perfect-lobby-copy h2 { font-size:19px; }
-  .perfect-lobby-action { grid-column:1 / -1; }
-  .perfect-lobby-action .perfect-button,.perfect-lobby-action form { width:100%; }
 
   .perfect-topbar { grid-template-columns:auto 1fr auto; min-height:62px; padding:6px 11px; }
   .perfect-logo-small span { font-size:8px; }
@@ -571,9 +501,7 @@
   .perfect-button { transition:none; }
 }
 
-/* Warm clubroom stage, rebuilt from the selected visual direction. */
-.perfect-lobby-browser > header { padding-block: 20px; }
-.perfect-lobby-browser > header h1 { margin: 0; }
+/* Warm clubroom stage{ padding-block: 20px; }
 
 .perfect-room {
   min-height: calc(100vh - 72px);

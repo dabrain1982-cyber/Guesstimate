@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stormseed · Kartenvergleich</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="comparison.css">
+  <script type="module" src="comparison.js"></script>
+</head>
+<body>
+<main>
+  <header>
+    <a class="back" href="http://127.0.0.1:8776/#library/cards">← Zur Werkstatt</a>
+    <span class="local">Lokale Erprobung · kostenlos</span>
+    <p class="eyebrow">Stormseed’s Guesstimate / Karten</p>
+    <h1>Drei Wege zur Spielkarte.</h1>
+    <p class="intro">Vergleiche Grafik, Lesbarkeit und räumliches Gefühl. Alle drei zeigen dieselben Karten in derselben Größe. Du kannst sie greifen und verschieben.</p>
+  </header>
+
+  <section class="controls" aria-label="Vergleich einstellen">
+    <div class="field"><label for="card">Beispielkarte</label><select id="card"><option value="Hearts7">Herz 7</option><option value="SpadesA">Pik Ass</option><option value="ClubsK">Kreuz König</option><option value="Diamonds10">Karo 10</option></select></div>
+    <div class="field"><label for="layout">Anordnung</label><select id="layout"><option value="single">Einzelkarte</option><option value="hand" selected>Kartenhand</option><option value="stack">Stapel</option><option value="deck">Ganzes Deck · 52 Karten</option></select></div>
+    <div class="field range"><label for="angle">Blickwinkel <output id="angle-value">0°</output></label><input id="angle" type="range" min="0" max="72" value="0" step="1"></div>
+    <div class="field range"><label for="zoom">Vergrößerung <output id="zoom-value">100 %</output></label><input id="zoom" type="range" min="75" max="150" value="100" step="5"></div>
+    <div class="actions"><button id="flip" type="button">Karten umdrehen</button><button id="reset" class="quiet" type="button">Zurücksetzen</button></div>
+  </section>
+
+  <section class="comparison" aria-label="Drei Kartenvarianten">
+    <article class="option" data-option="original">
+      <div class="option-head"><span class="number">01</span><span class="tag">Unser Bestand</span><h2>Bisherige Karte</h2><p>Die Darstellung vom Kartentisch.</p></div>
+      <iframe src="stage.html?mode=original" title="Bisherige Karten ausprobieren"></iframe>
+      <div class="option-foot"><p>Klare Zahlen und Symbole, eigene Rückseite. Der bekannte Grundaufbau bleibt erhalten.</p><span class="credit">Original aus Guesstimate</span></div>
+    </article>
+    <article class="option" data-option="graphic">
+      <div class="option-head"><span class="number">02</span><span class="tag">Neue Grafik</span><h2>Grafisch verfeinert</h2><p>Mehr Kartenspiel, gleicher flacher Aufbau.</p></div>
+      <iframe src="stage.html?mode=graphic" title="Grafisch verfeinerte Karten ausprobieren"></iframe>
+      <div class="option-foot"><p>Ausgearbeitete Bildkarten und verteilte Farbsymbole. Neue Vorder- und Rückseiten ohne 3D-Körper.</p><a class="credit" href="https://kenney.nl/assets/boardgame-pack" target="_blank" rel="noreferrer">Kenney · Board Game Pack · CC0 ↗</a></div>
+    </article>
+    <article class="option" data-option="model">
+      <div class="option-head"><span class="number">03</span><span class="tag">Echtes 3D-Modell</span><h2>Räumliche Karte</h2><p>Dieselbe Grafik auf einem Kartenkörper.</p></div>
+      <iframe src="stage.html?mode=model" title="Räumliche Karten ausprobieren"></iframe>
+      <div class="option-foot"><p>Abgerundeter Umriss, echte Dicke, Licht und Schatten. Kippe den Blickwinkel, um die Kanten zu sehen.</p><a class="credit" href="https://opengameart.org/content/poker-pack" target="_blank" rel="noreferrer">mehrasaur · Poker Pack + Kenney · CC0 ↗</a></div>
+    </article>
+  </section>
+  <p class="hint">Ziehen: Karte bewegen · Doppelklick oder Rechtsklick: einzelne Karte wenden · Tab + Pfeiltasten: Karte bewegen · Leertaste: wenden</p>
+  <p class="status" id="comparison-status" role="status">Karten werden vorbereitet …</p>
+
+  <section class="decision">
+    <div><p class="eyebrow">Worauf wir achten</p><h2>Welche Grundlage passt zu uns?</h2></div>
+    <div><p><strong>Für Anzeige und Auswahl</strong> zählt vor allem die Lesbarkeit. Eine gute Kartengrafik kann dafür völlig ausreichen.</p><p><strong>Zum Anfassen und Bewegen</strong> bietet der räumliche Körper mehr Spielraum für Stapel, Kippen und Beleuchtung. Mischen, Austeilen und Spielregeln bleiben Aufgaben des Spiels.</p></div>
+    <div><p><strong>Meine Empfehlung</strong> ist ein gemeinsamer Karteninhalt mit austauschbaren Bildern: flach für Anzeigen, räumlich für den Spieltisch. Die Grafik kann in beiden Ansichten dieselbe sein.</p><p class="muted">Dies ist ein Vergleich zur Auswahl der Grundlage. Es wurde noch keine Variante in ein Spiel oder in den Editor übernommen. Biegeverformung und Kartenphysik sind hier nicht enthalten.</p></div>
+  </section>
+
+  <section class="resources" id="quellen">
+    <p class="eyebrow">Werkzeugkiste</p><h2>Gute Quellen über itch.io hinaus.</h2>
+    <p class="resources-intro">Gezielt ausgewählte kostenlose Quellen und Werkzeuge. Die Vergleichsseite lädt alle benötigten Dateien von deinem PC. Die folgenden Links öffnen nur bei einem Klick externe Seiten.</p>
+    <div class="resource-grid">
+      <article><h3>Grafik &amp; Spielobjekte</h3><a href="https://kenney.nl/assets" target="_blank" rel="noreferrer">Kenney ↗</a><p>Zusammenpassende 2D- und 3D-Pakete, Bediengrafiken und Klänge. Die einzelnen Assetpakete sind CC0.</p><a href="https://opengameart.org/" target="_blank" rel="noreferrer">OpenGameArt ↗</a><p>Auch Spezialfunde wie unser Kartenmodell. Lizenz jeweils am konkreten Werk prüfen.</p><a href="https://quaternius.com/" target="_blank" rel="noreferrer">Quaternius ↗</a><p>Kostenlose CC0-Grundpakete für Figuren und Spielwelt. Zusatzpakete können kostenpflichtig sein.</p></article>
+      <article><h3>Oberfläche &amp; Licht</h3><a href="https://polyhaven.com/" target="_blank" rel="noreferrer">Poly Haven ↗</a><p>CC0-Modelle, Holz- und Stoffoberflächen sowie Umgebungslicht für glaubwürdige Tische.</p><a href="https://ambientcg.com/" target="_blank" rel="noreferrer">ambientCG ↗</a><p>CC0-Materialien, etwa Papier, Filz und Holz. Für den Browser passende kleine Auflösungen wählen.</p><a href="https://www.materialmaker.org/" target="_blank" rel="noreferrer">Material Maker ↗</a><p>Kostenloses offenes Werkzeug, um eigene Oberflächen zu erzeugen.</p></article>
+      <article><h3>Bearbeiten &amp; prüfen</h3><a href="https://www.blender.org/" target="_blank" rel="noreferrer">Blender ↗</a><p>Kostenlose Modellbearbeitung, Animation und Export. Sinnvoll für Kanten, Kartenstapel und spätere Figuren.</p><a href="https://inkscape.org/" target="_blank" rel="noreferrer">Inkscape ↗</a><p>Kostenlose Vektorgrafik für scharfe Kartenmotive und Symbole.</p><a href="https://gltf-transform.dev/cli" target="_blank" rel="noreferrer">glTF Transform ↗</a><p>Modelle untersuchen und für die Darstellung im Browser verkleinern.</p></article>
+      <article><h3>Klänge &amp; Schriften</h3><a href="https://kenney.nl/assets/casino-audio" target="_blank" rel="noreferrer">Kenney Casino Audio ↗</a><p>CC0-Grundlage für Karten-, Würfel- und Chipgeräusche.</p><a href="https://freesound.org/" target="_blank" rel="noreferrer">Freesound ↗</a><p>Für echte Tischgeräusche recherchieren; CC0 oder passende Namensnennung gezielt prüfen.</p><a href="https://www.audacityteam.org/" target="_blank" rel="noreferrer">Audacity ↗</a><p>Klänge kostenlos schneiden und in ihrer Lautstärke anpassen.</p><a href="https://fonts.google.com/" target="_blank" rel="noreferrer">Google Fonts ↗</a><p>Offene Schriften zum lokalen Einbinden. Auswahl nach Lesbarkeit und Spielcharakter bleibt eine eigene Aufgabe.</p></article>
+    </div>
+  </section>
+  <footer>Alle drei Varianten kostenfrei. Quelldateien und Lizenznachweise sind lokal abgelegt. Bestehende Spiele, Bibliothek und persönliche Entwürfe bleiben unverändert. <a href="README.md">Details zum Vergleich</a></footer>
+</main>
+</body>
+</html>

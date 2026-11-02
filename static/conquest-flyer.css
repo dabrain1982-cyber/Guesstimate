@@ -1,0 +1,19 @@
+.conquest-flyer { container-type: inline-size; }
+.conquest-flyer .conquest-flyer-copy {
+  position: absolute; z-index: 1; right: 5%; bottom: 7%; left: 5%;
+  display: grid; justify-items: center; gap: 2cqw;
+  padding: 4cqw 3cqw; border: .25cqw solid #efcf845c; border-radius: 3cqw;
+  background: #101b15de; color: #ffe1a1; text-align: center;
+  box-shadow: 0 2cqw 5cqw #0008; text-shadow: 0 .5cqw 1.5cqw #000;
+}
+.conquest-flyer .conquest-flyer-copy h2 {
+  margin: 0; padding: 0; color: inherit; font: 700 11cqw/.95 var(--font-display);
+  letter-spacing: -.045em;
+}
+.conquest-flyer .conquest-flyer-copy h2 small {
+  display: block; margin-bottom: 1cqw; color: #fff5d8; font-size: .32em;
+  line-height: 1; letter-spacing: 0;
+}
+.conquest-flyer .conquest-flyer-copy p {
+  margin: 0; color: #fff0cb; font-size: 3.3cqw; line-height: 1.45;
+}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% from "_player_identity.html" import player_identity with context %}
+{% block title %}Spieler entdecken · {{ game_name }}{% endblock %}
+{% block shell_class %}profile-shell{% endblock %}
+{% block header %}{% endblock %}
+{% block extra_head %}<link rel="stylesheet" href="{{ url_for('static', filename='public-profiles.css', v='1') }}">{% endblock %}
+{% block content %}
+  <header class="profile-hero public-profile-heading"><div><p class="eyebrow">UNSERE SPIELRUNDE</p><h1>Spieler entdecken</h1><p>Schau dir den Auftritt und die Erfolge deiner Mitspieler an.</p></div><a href="{{ url_for('profile') }}">Zu deinem Profil</a></header>
+  <form class="public-player-search" method="get" action="{{ url_for('players') }}"><label for="player-search">Spielername</label><div><input id="player-search" type="search" name="q" value="{{ query }}" maxlength="100" placeholder="Nach Namen suchen"><button type="submit" class="primary-button">Suchen</button>{% if query %}<a href="{{ url_for('players') }}">Alle anzeigen</a>{% endif %}</div></form>
+  <p>{% if query %}{{ players|length }} von {{ player_count }} Spielern{% else %}{{ players|length }} Spieler{% endif %}</p>
+  <ul class="public-player-list">
+    {% for player in players %}<li><a class="public-player-card" href="{{ url_for('public_profile', user_id=player.id) }}" aria-label="Profil von {{ player.display_name }} ansehen">{{ player_identity(player.display_name, player.avatar_id, player.plaque_id, 'ranking', 'Dein öffentliches Profil' if player.id == g.user.id else 'Profil ansehen', points=player.points, rank=player.rank) }}</a></li>{% else %}<li>Kein Spieler mit diesem Namen gefunden.</li>{% endfor %}
+  </ul>
+{% endblock %}

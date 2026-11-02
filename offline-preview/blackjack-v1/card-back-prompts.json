@@ -1,0 +1,40 @@
+{
+  "method": "Built-in image_gen",
+  "variants": [
+    {
+      "id": "samtgruen-gold",
+      "prompt": "Use case: stylized-concept. Create ONE beautiful finished PLAYING CARD BACK artwork for a realistic old wood-and-green-felt Blackjack table in a cozy dark Victorian card room. Portrait, exact card proportion 14:19. Single card only, orthographic straight-on, completely FLAT, no perspective or tilt. The card fills the canvas edge-to-edge except genuinely transparent rounded corners. Deep forest green with warm antique gold hot-foil filigree, interlaced diamond lattice and a small paired raccoon-mask crest in the center. Restrained, rich, tactile printed paper with fine metallic ink, convincing antique craftsmanship, exquisite but readable small-scale detail. Classic two-way design: exact 180-degree rotational symmetry, balanced inner and outer border with generous safe margins, the same ornamentation at both ends. No card face, no numbers, no words, no logo, no watermark, no surrounding scene, no floor, no hands, no mockup shadows. Opaque artwork within the card, transparent background only outside its rounded rectangular silhouette.",
+      "source": "C:\\Users\\DaBra\\.codex\\generated_images\\01a188b7-9d8c-7711-a9ef-0bac2ed63981\\exec-7ee1b95f-8e21-42df-9183-28fd6f042609.png",
+      "name": "Samtgrün & Gold",
+      "asset": "static/cards/blackjack/samtgruen-gold-v1.png",
+      "thumbnail": "static/cards/blackjack/samtgruen-gold-140.webp",
+      "library_id": "image-86e2940ff66e4d328f0a2401ef30faff",
+      "sha256": "24f82ff7ac5fdf2a4a3f7b25a55c8aeb4a296a70ca85703557b0abb98b8cb05a",
+      "selection_status": "Vom Nutzer für Black Jack gewählt"
+    },
+    {
+      "id": "nachtblau-messing",
+      "prompt": "Use case: stylized-concept. Create ONE beautiful finished PLAYING CARD BACK artwork for a realistic old wood-and-green-felt Blackjack table in a cozy dark Victorian card room. Portrait, exact card proportion 14:19. Single card only, orthographic straight-on, completely FLAT, no perspective or tilt. The card fills the canvas edge-to-edge except genuinely transparent rounded corners. Very dark midnight blue with aged brass fine-line compass rosette, woven geometric guilloche and delicate corner ornaments. Restrained, rich, tactile printed paper with fine metallic ink, convincing antique craftsmanship, exquisite but readable small-scale detail. Classic two-way design: exact 180-degree rotational symmetry, balanced inner and outer border with generous safe margins, the same ornamentation at both ends. No card face, no numbers, no words, no logo, no watermark, no surrounding scene, no floor, no hands, no mockup shadows. Opaque artwork within the card, transparent background only outside its rounded rectangular silhouette.",
+      "source": "C:\\Users\\DaBra\\.codex\\generated_images\\01a188b7-9d8c-7711-a9ef-0bac2ed63981\\exec-419ac330-0e95-4bc9-bc03-377477120ddd.png",
+      "name": "Nachtblau & Messing",
+      "asset": "static/cards/blackjack/nachtblau-messing-v1.png",
+      "thumbnail": "static/cards/blackjack/nachtblau-messing-140.webp",
+      "library_id": "image-a214df2705cd407ab48812ae913c4305",
+      "sha256": "cd4805c2d9ec9ed839467a3e73a84e070f1b165ceb486a8a10d4a74ce7390d55",
+      "selection_status": "Gesicherte Alternative"
+    },
+    {
+      "id": "burgunder-kupfer",
+      "prompt": "Use case: stylized-concept. Create ONE beautiful finished PLAYING CARD BACK artwork for a realistic old wood-and-green-felt Blackjack table in a cozy dark Victorian card room. Portrait, exact card proportion 14:19. Single card only, orthographic straight-on, completely FLAT, no perspective or tilt. The card fills the canvas edge-to-edge except genuinely transparent rounded corners. Rich dark burgundy with muted copper acanthus scrollwork, a finely engraved central oval rosette and a subtle tiny diamond lattice. Restrained, rich, tactile printed paper with fine metallic ink, convincing antique craftsmanship, exquisite but readable small-scale detail. Classic two-way design: exact 180-degree rotational symmetry, balanced inner and outer border with generous safe margins, the same ornamentation at both ends. No card face, no numbers, no words, no logo, no watermark, no surrounding scene, no floor, no hands, no mockup shadows. Opaque artwork within the card, transparent background only outside its rounded rectangular silhouette.",
+      "source": "C:\\Users\\DaBra\\.codex\\generated_images\\01a188b7-9d8c-7711-a9ef-0bac2ed63981\\exec-3096ba04-da4b-4e8a-8834-73b5d566c354.png",
+      "name": "Burgunder & Kupfer",
+      "asset": "static/cards/blackjack/burgunder-kupfer-v1.png",
+      "thumbnail": "static/cards/blackjack/burgunder-kupfer-140.webp",
+      "library_id": "image-c6db34ea93f34ec1bec4bc4bce0ecb22",
+      "sha256": "52d6292f6ee35c21be311b7addb191c2feff07cf8966f17838d303841572c493",
+      "selection_status": "Gesicherte Alternative"
+    }
+  ],
+  "selected_default": "Samtgrün & Gold",
+  "selected_library_id": "image-86e2940ff66e4d328f0a2401ef30faff"
+}

@@ -1,0 +1,231 @@
+{
+  "schema": 1,
+  "models": {
+    "2d": "Brett · 2D",
+    "3d": "Brett · 3D"
+  },
+  "configurations": [
+    {
+      "id": "boards-2d-base",
+      "name": "Schach-/Damebrett · Grundkonfiguration",
+      "representation": "2d",
+      "games": [],
+      "settings": {
+        "renderer": "grid",
+        "size": {
+          "width": 6.5,
+          "depth": 6.5,
+          "unit": "Szeneneinheit"
+        },
+        "shape": {
+          "type": "rectangle"
+        },
+        "image": {
+          "type": "generated",
+          "pattern": "checker"
+        },
+        "grid": {
+          "columns": 8,
+          "rows": 8,
+          "pattern": "checker",
+          "square": 0.75,
+          "light": "#e9d8b3",
+          "dark": "#527568",
+          "frame": "#634530",
+          "border": 0.25,
+          "thickness": 0.18
+        }
+      }
+    },
+    {
+      "id": "boards-3d-base",
+      "name": "Schach-/Damebrett · Grundkonfiguration",
+      "representation": "3d",
+      "games": [],
+      "settings": {
+        "renderer": "grid",
+        "size": {
+          "width": 6.5,
+          "depth": 6.5,
+          "unit": "Szeneneinheit"
+        },
+        "shape": {
+          "type": "rectangle"
+        },
+        "image": {
+          "type": "generated",
+          "pattern": "checker"
+        },
+        "grid": {
+          "columns": 8,
+          "rows": 8,
+          "pattern": "checker",
+          "square": 0.75,
+          "light": "#e9d8b3",
+          "dark": "#527568",
+          "frame": "#634530",
+          "border": 0.25,
+          "thickness": 0.18
+        }
+      }
+    },
+    {
+      "id": "boards-2d-conquest",
+      "name": "Conquest · Weltbrett",
+      "representation": "2d",
+      "games": [
+        "Conquest"
+      ],
+      "settings": {
+        "renderer": "image",
+        "size": {
+          "width": 12.0,
+          "depth": 11.448598130841122,
+          "unit": "Szeneneinheit"
+        },
+        "shape": {
+          "type": "rectangle",
+          "support": null
+        },
+        "image": {
+          "type": "file",
+          "path": "offline-preview/conquest-2-5d-v1/assets/karte.png",
+          "url": "/board-source/map.png",
+          "width": 1284.0,
+          "height": 1225.0
+        }
+      }
+    },
+    {
+      "id": "boards-3d-conquest",
+      "name": "Conquest · Weltbrett",
+      "representation": "3d",
+      "games": [
+        "Conquest"
+      ],
+      "settings": {
+        "renderer": "conquest",
+        "size": {
+          "width": 12.0,
+          "depth": 11.448598130841122,
+          "unit": "Szeneneinheit"
+        },
+        "shape": {
+          "type": "rectangle",
+          "support": "Tisch mit abgeschrägten Ecken"
+        },
+        "image": {
+          "type": "file",
+          "path": "offline-preview/conquest-2-5d-v1/assets/karte.png",
+          "url": "/board-source/map.png",
+          "width": 1284.0,
+          "height": 1225.0
+        }
+      }
+    },
+    {
+      "id": "boards-2d-playtable",
+      "name": "Playtable · gemeinsame Kartenfläche",
+      "representation": "2d",
+      "games": [
+        "Playtable"
+      ],
+      "settings": {
+        "renderer": "playtable",
+        "size": {
+          "width": 1920.0,
+          "depth": 900.0,
+          "unit": "Quellpixel"
+        },
+        "shape": {
+          "type": "rectangle"
+        },
+        "image": {
+          "type": "file",
+          "path": "static/card-table-felt-v1.png"
+        }
+      }
+    },
+    {
+      "id": "boards-2d-dice-table",
+      "name": "Würfeltisch · gemeinsame Würfelfläche",
+      "representation": "2d",
+      "games": [
+        "Würfeltisch",
+        "Kniffel",
+        "Mäxchen"
+      ],
+      "settings": {
+        "renderer": "dice-table",
+        "size": {
+          "width": 1290.0,
+          "depth": 685.0,
+          "unit": "Quellpixel"
+        },
+        "shape": {
+          "type": "rectangle"
+        },
+        "image": {
+          "type": "file",
+          "path": "static/dice-table-background-v2.png",
+          "crop": {
+            "x": 315.0,
+            "y": 135.0,
+            "room_width": 1920.0,
+            "room_height": 1080.0
+          }
+        }
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "game": "Guesstimate",
+      "status": "Kein eigenes Brett; Fragenfenster",
+      "source": "templates/question.html"
+    },
+    {
+      "game": "Guesstimate Party",
+      "status": "Kein eigenes Brett; Fragenfenster",
+      "source": "templates/party_question.html"
+    },
+    {
+      "game": "Perfect",
+      "status": "Kein eigenes Brett; Fragenfenster und Raumkulisse",
+      "source": "templates/nerd_mode.html"
+    },
+    {
+      "game": "Playtable",
+      "status": "Gemeinsame Kartenfläche · 2D",
+      "source": "templates/card_table_game.html"
+    },
+    {
+      "game": "Würfeltisch",
+      "status": "Eine gemeinsame Würfelfläche · 2D",
+      "source": "templates/dice_table_game.html"
+    },
+    {
+      "game": "Kniffel",
+      "status": "Eine gemeinsame Würfelfläche · 2D",
+      "source": "templates/dice_table_game.html"
+    },
+    {
+      "game": "Mäxchen",
+      "status": "Eine gemeinsame Würfelfläche · 2D",
+      "source": "templates/dice_table_game.html"
+    },
+    {
+      "game": "Conquest",
+      "status": "Ein Brettbild · 2D und vorhandener 3D-Tisch",
+      "source": "templates/conquest_table.html"
+    }
+  ],
+  "rule": "Zwei Grundvarianten. Größe, Form und Bild sind Eigenschaften. Keine Partien, Länder oder Felder als eigene Brettbausteine.",
+  "limits": [
+    "2,5D ist eine Ansicht der räumlichen Grundvariante.",
+    "Keine neuen 3D-Tische für reine 2D-Spielflächen erfunden.",
+    "Fragenfenster und vollständige Raumkulissen sind keine zusätzlichen Bretter.",
+    "Ältere Entwurfsbilder bleiben außerhalb der aktuellen Spielkonfigurationen.",
+    "Editoroptionen und Spielumstellung bleiben offen."
+  ]
+}

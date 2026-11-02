@@ -1,0 +1,8 @@
+{% macro profile_trophies(trophies) %}
+  <div class="trophy-grid">
+    <article class="trophy-card trophy-daily"><i aria-hidden="true">★</i><div><strong>{{ trophies.daily }}</strong><span>Tagessieger</span></div></article>
+    <article class="trophy-card trophy-weekly"><i aria-hidden="true">W</i><div><strong>{{ trophies.weekly }}</strong><span>Wochensieger</span></div></article>
+    <article class="trophy-card trophy-monthly"><i aria-hidden="true">M</i><div><strong>{{ trophies.monthly }}</strong><span>Monatssieger</span></div></article>
+    <article class="trophy-card trophy-party"><i aria-hidden="true">♛</i><div><strong>{{ trophies.party }}</strong><span>Party-Meister</span></div></article>
+  </div>
+{% endmacro %}

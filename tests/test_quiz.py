@@ -323,11 +323,11 @@ class GameFlowTests(unittest.TestCase):
     def test_shop_uses_fixed_prices_and_rejects_insufficient_balance(self):
         self.register("Stormseed")
         response = self.client.get("/shop")
-        self.assertIn(b"2.000 iK\xc3\xbche", response.data)
-        self.assertIn(b"3.000 iK\xc3\xbche", response.data)
-        self.assertIn(b"1.000 iK\xc3\xbche", response.data)
-        self.assertIn(b"250 iK\xc3\xbche", response.data)
-        self.assertIn(b">Spr\xc3\xbcche<", response.data)
+        self.assertIn(b'2.000 ik\xc3\xbche', response.data)
+        self.assertIn(b'3.000 ik\xc3\xbche', response.data)
+        self.assertIn(b'1.000 ik\xc3\xbche', response.data)
+        self.assertIn(b'250 ik\xc3\xbche', response.data)
+        self.assertIn(b">spr\xc3\xbcche<", response.data)
         self.assertNotIn(b">A01<", response.data)
         self.assertNotIn(b">P01<", response.data)
         self.assertNotIn("Noch nicht gewählt".encode(), response.data)
@@ -356,7 +356,7 @@ class GameFlowTests(unittest.TestCase):
         self.assertIn("Hintergründe".encode(), response.data)
         self.assertIn(b"Neon-Arena", response.data)
         self.assertIn(b"background-papierlandschaft-v1.png", response.data)
-        self.assertIn("Gehört dir · im Profil ausrüsten".encode(), response.data)
+        self.assertIn("gehört dir · im profil ausrüsten".encode(), response.data)
 
         with self.app.app_context():
             self.app.config["PREVIEW_CURRENCY_BONUS"] = 3000
@@ -374,7 +374,7 @@ class GameFlowTests(unittest.TestCase):
             follow_redirects=True,
         )
         self.assertEqual(response.status_code, 200)
-        self.assertIn(b"Ausger\xc3\xbcstet", response.data)
+        self.assertIn(b'ausger\xc3\xbcstet', response.data)
 
         response = self.client.get("/")
         self.assertIn(b"background-papierlandschaft-v1.png", response.data)
@@ -411,7 +411,7 @@ class GameFlowTests(unittest.TestCase):
             data={"csrf_token": self.csrf()},
             follow_redirects=True,
         )
-        self.assertIn(b"Ausger\xc3\xbcstet", response.data)
+        self.assertIn(b'ausger\xc3\xbcstet', response.data)
         self.assertIn("Ich rate nicht. Ich interpretiere Fakten kreativ.".encode(), response.data)
 
         response = self.client.post(
@@ -491,8 +491,8 @@ class GameFlowTests(unittest.TestCase):
         self.assertNotIn("request.endpoint", shared)
         self.assertNotIn("variant-a-profile-editor", shared)
         self.assertIn("variant-a-podium-balance", shared)
-        self.assertIn("if game_points is none", shared)
-        self.assertIn("{{ visible_balance|points }} iKühe", shared)
+        self.assertIn('data-profile-field="value"', shared)
+        self.assertIn("podium_fields", shared)
         self.assertNotIn("willkommen zurück", shared)
         self.assertNotIn('class="variant-a-balance"', shared)
         self.assertNotIn("<blockquote>", shared)
@@ -501,10 +501,10 @@ class GameFlowTests(unittest.TestCase):
             "profile-current-window",
             (root / "static" / "quiz-arena.css").read_text(),
         )
-        stage_stylesheet = (root / "static" / "profile-stage-v1.css").read_text()
+        stage_stylesheet = (root / "static" / "profile-window.css").read_text()
         self.assertIn(".variant-a-profile-canonical .variant-a-profile-scene", stage_stylesheet)
         self.assertIn("aspect-ratio: 43 / 57", stage_stylesheet)
-        self.assertIn("height: auto !important", stage_stylesheet)
+        self.assertIn("height: auto", stage_stylesheet)
         self.assertIn("top: 20%", stage_stylesheet)
         self.assertIn("bottom: 0", stage_stylesheet)
         self.assertIn("aspect-ratio: 8 / 7", stage_stylesheet)
@@ -515,7 +515,7 @@ class GameFlowTests(unittest.TestCase):
         root = Path(__file__).parents[1]
         base = (root / "templates" / "base.html").read_text()
         shared = (root / "templates" / "_profile_window.html").read_text()
-        stylesheet = (root / "static" / "profile-stage-v1.css").read_text()
+        stylesheet = (root / "static" / "profile-window.css").read_text()
         fitter = (root / "static" / "profile-stage-v1.js").read_text()
         self.assertGreater(base.index("profile-stage-v1.css"), base.index("typography-v1.css"))
         self.assertIn("profile-stage-v1.js", base)
@@ -587,7 +587,7 @@ class GameFlowTests(unittest.TestCase):
         self.assertEqual(equipped, "a01")
 
         response = self.client.get("/shop")
-        self.assertIn("Gehört dir · im Profil ausrüsten".encode(), response.data)
+        self.assertIn("gehört dir · im profil ausrüsten".encode(), response.data)
         self.assertNotIn(b"/profil/ausruesten/", response.data)
 
     def test_trophy_counts_use_only_finalized_periods_and_completed_parties(self):
@@ -747,17 +747,17 @@ class GameFlowTests(unittest.TestCase):
 
     def test_login_uses_requested_branding_and_registration_copy(self):
         response = self.client.get("/login")
-        self.assertIn("Stormseed´s".encode(), response.data)
-        self.assertIn(b"<strong>Guesstimate</strong>", response.data)
+        self.assertIn("stormseed´s".encode(), response.data)
+        self.assertIn(b"<strong>guesstimate</strong>", response.data)
         self.assertNotIn(b"<em>daily</em>", response.data)
         self.assertIn(b'placeholder="Dein Name"', response.data)
         self.assertIn('placeholder="••••"'.encode(), response.data)
         self.assertNotIn(b'placeholder="z. B. jan"', response.data)
         self.assertIn(b"Neu hier?", response.data)
-        self.assertIn("Spielregeln – So wird gespielt".encode(), response.data)
+        self.assertIn("spielregeln – so wird gespielt".encode(), response.data)
         self.assertIn("Verpasste Runden der laufenden Woche".encode(), response.data)
         self.assertNotIn(b"Urlaub", response.data)
-        self.assertIn(b'<meta property="og:title" content="Guesstimate">', response.data)
+        self.assertIn(b'<meta property="og:title" content="guesstimate">', response.data)
         self.assertIn(
             b'<meta property="og:image" content="https://example.test/guesstimate/static/guesstimate-share.jpg">',
             response.data,
@@ -777,20 +777,25 @@ class GameFlowTests(unittest.TestCase):
         shop = self.client.get("/shop")
         self.assertNotIn(b"data-rules-open", shop.data)
         self.assertNotIn(b'class="game-header"', shop.data)
+        for page in (profile, shop):
+            self.assertNotIn("Verpasste Runden der laufenden Woche".encode(), page.data)
+            self.assertNotIn(b"?regeln=1", page.data)
         perfect = self.client.get("/nerd")
         self.assertIn(b"data-rules-open", perfect.data)
-        self.assertIn("Stormseed´s Perfect".encode(), perfect.data)
+        self.assertIn("stormseed´s perfect".encode(), perfect.data)
         self.assertIn("der Host legt Zielpunktzahl oder Spielzeit fest".encode(), perfect.data)
         self.assertNotIn("Verpasste Runden der laufenden Woche".encode(), perfect.data)
 
         party = self.client.get("/party")
         self.assertNotIn(b'class="game-header"', party.data)
         self.assertIn("Spielregeln – So wird gespielt".encode(), party.data)
-        self.assertIn(b"Partymodus-Classic", party.data)
+        self.assertIn(b"guesstimate party", party.data)
         self.assertIn("wählt 1 bis 5 Runden".encode(), party.data)
         self.assertNotIn("Verpasste Runden der laufenden Woche".encode(), party.data)
 
     def test_login_offers_every_missed_day_of_the_current_week(self):
+        # This exercises normal operation, independently of the reopening exception.
+        self.app.config["DAILY_CATCHUP_EXCLUDED_WEEKS"] = ()
         self.register()
         self.client.post("/logout", data={"csrf_token": self.csrf()})
         self.client.get("/login")
@@ -820,18 +825,18 @@ class GameFlowTests(unittest.TestCase):
 
             first_home = self.client.get("/")
             self.assertIn(b'<dialog class="catchup-dialog"', first_home.data)
-            self.assertIn(b"2 verpasste Runden nachholen", first_home.data)
+            self.assertIn(b"2 verpasste runden nachholen", first_home.data)
 
             later_home = self.client.get("/")
             self.assertNotIn(b'<dialog class="catchup-dialog"', later_home.data)
-            self.assertIn(b"2 verpasste Runden nachholen", later_home.data)
+            self.assertIn(b"2 verpasste runden nachholen", later_home.data)
 
             today_only = self.client.post(
                 "/woche/auswahl",
                 data={"choice": "today", "csrf_token": self.csrf()},
                 follow_redirects=True,
             )
-            self.assertIn(b"2 verpasste Runden nachholen", today_only.data)
+            self.assertIn(b"2 verpasste runden nachholen", today_only.data)
 
             catchup = self.client.post(
                 "/woche/auswahl",
@@ -911,15 +916,16 @@ class GameFlowTests(unittest.TestCase):
         self.assertIn(b"Deine Antworten", response.data)
         self.assertIn("Du hast <strong>500 Ikühe</strong> verdient".encode(), response.data)
         self.assertIn(b"<span>shop</span>", response.data)
-        self.assertIn(b"Tagessieger", response.data)
-        self.assertIn(b"Wochenliga", response.data)
+        self.assertIn(b'data-leaderboard-tab="daily"', response.data)
+        self.assertIn(b'data-leaderboard-tab="weekly"', response.data)
         self.assertIn(b"player-week-tally", response.data)
         self.assertIn(b"1 gespielte Runde", response.data)
-        self.assertIn(b"Hall of Fame", response.data)
+        self.assertIn(b'hall of fame', response.data)
         self.assertIn("Punkte nach Zeitabzug".encode(), response.data)
         self.assertIn(str(escape(questions[0]["prompt"])).encode(), response.data)
 
         with self.app.app_context():
+            self.assertEqual(self.app.get_db().execute('SELECT MAX(peak) FROM currency_peaks').fetchone()[0],500)
             self.app.get_db().execute("UPDATE attempts SET rank_after = 99")
             self.app.get_db().commit()
         response = self.client.get("/ergebnis")
@@ -1213,13 +1219,17 @@ class GameFlowTests(unittest.TestCase):
         self.assertIn(b'class="variant-a-ranking"', response.data)
         self.assertIn(b'data-game-slide="3"', response.data)
         self.assertIn(b'data-game-slide="4"', response.data)
+        self.assertIn(b'data-game-slide="5"', response.data)
+        self.assertIn(b'conquest-flyer-copy', response.data)
         self.assertEqual(response.data.count(b"variant-a-flyer-copy"), 5)
         self.assertIn("Fünf Fragen um täglich deine Unwissenheit zu beweisen!".encode(), response.data)
         self.assertIn("Das tägliche Quiz als Zeit-Stress-Partymodus".encode(), response.data)
         self.assertIn("Oder weißt du etwa, was eine Mansube ist?".encode(), response.data)
         self.assertIn("Ein Spieltisch, der täglich erweitert wird.".encode(), response.data)
-        self.assertIn(b"Tabletop Connection", response.data)
-        self.assertIn("Alles Gute auch zum Wochensieg in guesstimate!!!".encode(), response.data)
+        self.assertIn(b"games collection", response.data)
+        self.assertIn(b"slide-blackjack", response.data)
+        self.assertIn(b"Black Jack", response.data)
+        self.assertNotIn(b"Alles Gute, Jenny!", response.data)
         self.assertIn(b'class="variant-a-title-screen"', response.data)
         self.assertNotIn(b"data-carousel-tab", response.data)
         self.assertNotIn(b"data-carousel-action", response.data)
@@ -1242,11 +1252,11 @@ class GameFlowTests(unittest.TestCase):
         self.assertNotIn("multiplayer", navigation.lower())
         self.assertNotIn("arena-nav-perfect", navigation)
         self.assertNotIn("stormseed´s perfect", navigation.lower())
-        self.assertIn('aria-label="tabletop connection"', navigation)
-        self.assertIn("<span>tabletop</span><span>connection</span>", navigation)
+        self.assertIn('aria-label="games collection"', navigation)
+        self.assertIn("<span>games</span><span>collection</span>", navigation)
         self.assertLess(navigation.index(">guesstimate</a>"), navigation.index('aria-label="guesstimate party"'))
         self.assertLess(navigation.index('aria-label="guesstimate party"'), navigation.index(">profil</span>"))
-        self.assertLess(navigation.index(">regeln</span>"), navigation.index('aria-label="tabletop connection"'))
+        self.assertLess(navigation.index(">regeln</span>"), navigation.index('aria-label="games collection"'))
 
     def test_party_lobby_reserves_questions_without_affecting_regular_scores(self):
         self.register("Partyhost")
@@ -1334,7 +1344,7 @@ class GameFlowTests(unittest.TestCase):
         )
         waiting_lobby = self.client.get(f"/party/{lobby_id}")
         self.assertIn(b"data-party-lobby", waiting_lobby.data)
-        self.assertIn(b"party.js?v=2", waiting_lobby.data)
+        self.assertIn(b"/static/lobby.js?v=", waiting_lobby.data)
         self.client.post(
             f"/party/{lobby_id}/starten", data={"csrf_token": self.csrf()}
         )
@@ -1459,7 +1469,7 @@ class GameFlowTests(unittest.TestCase):
             f"/party/{first_id}/starten", data={"csrf_token": self.csrf()}
         )
         party_overview = self.client.get("/party")
-        self.assertIn("Zurück ins Spiel".encode(), party_overview.data)
+        self.assertIn("zurück ins spiel".encode(), party_overview.data)
         self.assertIn(f'href="/party/{first_id}"'.encode(), party_overview.data)
         guest = self.app.test_client()
         _, guest_csrf = self.register_client(guest, "Zu spät", "4004")
@@ -1608,7 +1618,7 @@ class GameFlowTests(unittest.TestCase):
             data={"csrf_token": self.csrf()},
             follow_redirects=True,
         )
-        self.assertIn("Noch keine Party".encode(), response.data)
+        self.assertIn("Noch keine Lobby.".encode(), response.data)
         with self.app.app_context():
             status = self.app.get_db().execute(
                 "SELECT status FROM party_lobbies WHERE id = ?", (lobby_id,)
@@ -1759,7 +1769,7 @@ class GameFlowTests(unittest.TestCase):
             "app.missed_current_week_dates", return_value=["2026-10-19", "2026-10-20"]
         ):
             response = self.client.get("/")
-            self.assertIn(b"1 verpasste Runde", response.data)
+            self.assertIn(b"1 verpasste runde", response.data)
             self.assertIn(b'type="submit" disabled', response.data)
             self.client.post("/woche/auswahl", data={"csrf_token": self.csrf(), "choice": "all"})
             with self.client.session_transaction() as session:

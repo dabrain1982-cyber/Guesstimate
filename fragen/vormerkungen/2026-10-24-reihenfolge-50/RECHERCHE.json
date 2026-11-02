@@ -1,0 +1,2704 @@
+{
+  "checked_on": "2026-10-24",
+  "status": "local_candidates_only",
+  "variant": 1,
+  "questions": 50,
+  "comparison_entries": 1603,
+  "combined_validation_entries": 1653,
+  "cards": 200,
+  "reference_count": 73,
+  "unique_reference_urls": 73,
+  "category_counts": {
+    "gaming": 6,
+    "music": 4,
+    "sport": 6,
+    "media_entertainment": 5,
+    "science_technology": 5,
+    "witnesses_of_time": 5,
+    "human_everyday": 7,
+    "plants_animals": 6,
+    "geography_world": 6
+  },
+  "principles": {
+    "Rangstufen": 1,
+    "Seltenheitsstufen": 1,
+    "Stichstärke": 1,
+    "Wachstumsdauer": 1,
+    "Haltbarkeit": 1,
+    "Lautstärke": 1,
+    "Tonhöhe": 1,
+    "Vorzeichenanzahl": 1,
+    "Wettkampfabfolge": 2,
+    "Bewegungsablauf": 1,
+    "Gerätereihenfolge": 1,
+    "Regelmaß": 1,
+    "Graduierungsstufen": 1,
+    "Seitenverhältnis": 1,
+    "Sensorfläche": 1,
+    "Produktionsablauf": 1,
+    "Chemischer Ablauf": 1,
+    "Filmlaufzeit": 1,
+    "Halbwertszeit": 1,
+    "Broadway-Premieren": 1,
+    "Handwerksablauf": 4,
+    "Bergungs- und Fundgeschichte": 1,
+    "Herstellungsablauf": 3,
+    "Brennwert pro Masse": 1,
+    "Säuregrad": 1,
+    "Weg durch ein Organ": 1,
+    "Verschachtelung": 1,
+    "Zahnanzahl": 1,
+    "Chromosomenanzahl": 1,
+    "Obere Hörgrenze": 1,
+    "Lebenszyklus": 1,
+    "Nahrungskette": 1,
+    "Beschriebene Arten": 1,
+    "Windwirkungen": 1,
+    "Flussroute": 1,
+    "Schiffsroute": 1,
+    "Salzgehalt": 1,
+    "Inkohlungsgrad": 1,
+    "Räumliche Schichtung": 1,
+    "Oberflächendruck": 1,
+    "Wärmeleitfähigkeit": 1,
+    "Wahrscheinlichkeit": 1,
+    "Lichtgeschwindigkeit": 1,
+    "Dichte": 1
+  },
+  "isolated_library_validation": "passed",
+  "active_loader_counts": {
+    "true_false": 268,
+    "multiple_choice": 266,
+    "match": 265,
+    "order": 269,
+    "estimate": 275
+  },
+  "total_staged_questions": 250,
+  "wording": "Selbst formulierte Aufgaben anhand tatsächlich recherchierter Sachverhalte; keine ungeprüften Quizkopien.",
+  "mechanics": "Vier Karten, eine eindeutige Reihenfolge; bestehendes Format und vorhandene Wertung unverändert. Keine Variante 2 umgesetzt.",
+  "duplicate_method": "1.403 lokale Daily-Einträge einschließlich 60 inaktiver Zwei-Gruppen-Aufgaben plus 200 frühere Vormerkungen. Frage, Begriffe, Optionen, Zuordnungen, Lösung, Erklärung und Metadaten im Volltext berücksichtigt; gewichtete Wortähnlichkeit als Suchhilfe, nächste Treffer redaktionell nach Wissenskern bewertet. Neue Aufgaben auch untereinander geprüft.",
+  "duplicate_result": "Keine Dublette im geprüften lokalen Vergleichsbestand festgestellt; kein Ersatz für einen frischen Server-/Historienabgleich vor Aktivierung.",
+  "internal_duplicate_review": {
+    "closest_pairs": [
+      {
+        "left": "or733",
+        "right": "or734",
+        "score": 0.2629
+      },
+      {
+        "left": "or721",
+        "right": "or727",
+        "score": 0.1477
+      },
+      {
+        "left": "or747",
+        "right": "or749",
+        "score": 0.1402
+      },
+      {
+        "left": "or700",
+        "right": "or746",
+        "score": 0.1123
+      },
+      {
+        "left": "or746",
+        "right": "or748",
+        "score": 0.1071
+      },
+      {
+        "left": "or724",
+        "right": "or728",
+        "score": 0.103
+      },
+      {
+        "left": "or730",
+        "right": "or742",
+        "score": 0.0972
+      },
+      {
+        "left": "or731",
+        "right": "or748",
+        "score": 0.0947
+      },
+      {
+        "left": "or721",
+        "right": "or724",
+        "score": 0.0831
+      },
+      {
+        "left": "or729",
+        "right": "or749",
+        "score": 0.083
+      },
+      {
+        "left": "or741",
+        "right": "or742",
+        "score": 0.0803
+      },
+      {
+        "left": "or703",
+        "right": "or727",
+        "score": 0.0783
+      },
+      {
+        "left": "or746",
+        "right": "or749",
+        "score": 0.0747
+      },
+      {
+        "left": "or707",
+        "right": "or733",
+        "score": 0.0737
+      },
+      {
+        "left": "or700",
+        "right": "or748",
+        "score": 0.0714
+      },
+      {
+        "left": "or722",
+        "right": "or746",
+        "score": 0.0672
+      },
+      {
+        "left": "or726",
+        "right": "or727",
+        "score": 0.0672
+      },
+      {
+        "left": "or724",
+        "right": "or727",
+        "score": 0.0671
+      },
+      {
+        "left": "or706",
+        "right": "or715",
+        "score": 0.0614
+      },
+      {
+        "left": "or707",
+        "right": "or738",
+        "score": 0.0605
+      },
+      {
+        "left": "or729",
+        "right": "or742",
+        "score": 0.0586
+      },
+      {
+        "left": "or730",
+        "right": "or734",
+        "score": 0.0586
+      },
+      {
+        "left": "or713",
+        "right": "or728",
+        "score": 0.0568
+      },
+      {
+        "left": "or730",
+        "right": "or746",
+        "score": 0.0566
+      },
+      {
+        "left": "or726",
+        "right": "or728",
+        "score": 0.0557
+      },
+      {
+        "left": "or707",
+        "right": "or734",
+        "score": 0.0555
+      },
+      {
+        "left": "or721",
+        "right": "or723",
+        "score": 0.0539
+      },
+      {
+        "left": "or727",
+        "right": "or730",
+        "score": 0.0529
+      },
+      {
+        "left": "or700",
+        "right": "or740",
+        "score": 0.0517
+      },
+      {
+        "left": "or721",
+        "right": "or728",
+        "score": 0.0517
+      },
+      {
+        "left": "or735",
+        "right": "or745",
+        "score": 0.0515
+      },
+      {
+        "left": "or701",
+        "right": "or747",
+        "score": 0.0509
+      },
+      {
+        "left": "or728",
+        "right": "or730",
+        "score": 0.0507
+      },
+      {
+        "left": "or712",
+        "right": "or733",
+        "score": 0.0498
+      },
+      {
+        "left": "or721",
+        "right": "or726",
+        "score": 0.0486
+      },
+      {
+        "left": "or716",
+        "right": "or726",
+        "score": 0.0479
+      },
+      {
+        "left": "or715",
+        "right": "or726",
+        "score": 0.0478
+      },
+      {
+        "left": "or730",
+        "right": "or735",
+        "score": 0.0478
+      },
+      {
+        "left": "or716",
+        "right": "or728",
+        "score": 0.0476
+      },
+      {
+        "left": "or725",
+        "right": "or745",
+        "score": 0.0476
+      }
+    ],
+    "assessment": "Die stärkste neue Überschneidung sind or733/or734 mit teils denselben Tieren, aber unterschiedlichen Fakten (Zähne/Chromosomen). Auch Prozessaufgaben wurden produkt- und ablaufbezogen geprüft."
+  },
+  "excluded_or_replaced_candidates": [
+    {
+      "subject": "Tonlagen der Singstimme",
+      "reason": "Bestehende Zuordnungen in ma514; verworfen."
+    },
+    {
+      "subject": "Largo/Andante/Presto als Temporeihe",
+      "reason": "Bestehende Zuordnungen in ma209; verworfen."
+    },
+    {
+      "subject": "Anteile der vier Hauptbestandteile der Luft",
+      "reason": "mc25 prüft Stickstoffanteil mit denselben Vergleichsbegriffen; verworfen."
+    },
+    {
+      "subject": "Mensch/Hund: Zahnzahl",
+      "reason": "Schon in tf34; diese Tiere für or733 verworfen."
+    },
+    {
+      "subject": "Mensch: 46 Chromosomen",
+      "reason": "Schon in es189; nicht für or734 verwendet."
+    },
+    {
+      "subject": "Tennisnetzhöhe",
+      "reason": "Schon in es517; in or712 durch Faustball ersetzt."
+    },
+    {
+      "subject": "Zitronensaft und reines Wasser auf der pH-Skala",
+      "reason": "Schon in ma33; für or730 durch andere Flüssigkeiten ersetzt."
+    }
+  ],
+  "source_access_policy": "Verified bezieht sich auf die inhaltliche Stützung von Aufgabe und Lösung, nicht auf garantierte HTTP-Erreichbarkeit. Teils war der Originalinhalt über den Suchindex zugänglich, während der direkte Neuabruf eingeschränkt war. Solche Fälle stehen pro Aufgabe. Defekte 404-Verweise wurden ersetzt oder entfernt.",
+  "source_repairs": [
+    "Veralteten Panasonic-Katalog durch aktuelle Hersteller-Spezifikation ersetzt.",
+    "Zusätzliche Glas-Annealing-Quelle durch Corning-Museumsinhalt ersetzt.",
+    "Redundanten Bier-PDF-Link mit 404 entfernt; Ministeriumsquelle belegt den Ablauf.",
+    "Umgeleitete Titan-PDF durch drei direkt gelesene NASA-Faktseiten ersetzt.",
+    "Faustball-Altlink mit 404 durch öffentliches deutsches Verbands-Rahmendatenblatt ersetzt."
+  ],
+  "religion_review": "Alle 50 Aufgaben redaktionell geprüft; kein religiöser Wissenskern.",
+  "real_person_questions": 0,
+  "numeric_order_audits": [
+    {
+      "id": "or703",
+      "ordered_items": [
+        "Pastinake",
+        "Kartoffel",
+        "Grüne Bohne",
+        "Blumenkohl"
+      ],
+      "values": [
+        4,
+        6,
+        10,
+        12
+      ],
+      "unit_or_basis": "Spieltage bis zur ersten Ernte",
+      "strict_order": "passed"
+    },
+    {
+      "id": "or704",
+      "ordered_items": [
+        "Goldspitzhacke",
+        "Holzspitzhacke",
+        "Steinspitzhacke",
+        "Eisenspitzhacke"
+      ],
+      "values": [
+        32,
+        59,
+        131,
+        250
+      ],
+      "unit_or_basis": "Nutzungen in Minecraft Java",
+      "strict_order": "passed"
+    },
+    {
+      "id": "or707",
+      "ordered_items": [
+        "D-Dur",
+        "A-Dur",
+        "E-Dur",
+        "H-Dur"
+      ],
+      "values": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "unit_or_basis": "Kreuzvorzeichen",
+      "strict_order": "passed"
+    },
+    {
+      "id": "or712",
+      "ordered_items": [
+        "Tischtennis",
+        "Badminton",
+        "Faustball der Männer (5er-Teams)",
+        "Hallenvolleyball der Männer"
+      ],
+      "values": [
+        15.25,
+        152.4,
+        200,
+        243
+      ],
+      "unit_or_basis": "Zentimeter über der Spielfläche",
+      "strict_order": "passed"
+    },
+    {
+      "id": "or714",
+      "ordered_items": [
+        "Quadratisches Bild",
+        "Klassisches TV-Bild (4:3)",
+        "Breitbild-TV (16:9)",
+        "Kino-Scope (2,39:1)"
+      ],
+      "values": [
+        1,
+        1.3333333333333333,
+        1.7777777777777777,
+        2.39
+      ],
+      "unit_or_basis": "Breite geteilt durch Höhe",
+      "strict_order": "passed"
+    },
+    {
+      "id": "or715",
+      "ordered_items": [
+        "1-Zoll-Klasse",
+        "Micro Four Thirds",
+        "APS-C",
+        "Kleinbild-Vollformat"
+      ],
+      "values": [
+        116.16,
+        224.9,
+        332.27000000000004,
+        864
+      ],
+      "unit_or_basis": "repräsentative Sensorflächen in Quadratmillimetern",
+      "strict_order": "passed"
+    },
+    {
+      "id": "or718",
+      "ordered_items": [
+        "Shrek (2001)",
+        "Der weiße Hai (1975)",
+        "Matrix (1999)",
+        "Der Pate (1972)"
+      ],
+      "values": [
+        90,
+        124,
+        136,
+        175
+      ],
+      "unit_or_basis": "Minuten, reguläre Kinofassung",
+      "strict_order": "passed"
+    },
+    {
+      "id": "or719",
+      "ordered_items": [
+        "Kobalt-60",
+        "Cäsium-137",
+        "Kohlenstoff-14",
+        "Uran-238"
+      ],
+      "values": [
+        5.3,
+        30,
+        5700,
+        4468000000
+      ],
+      "unit_or_basis": "Jahre, physikalische Halbwertszeit",
+      "strict_order": "passed"
+    },
+    {
+      "id": "or720",
+      "ordered_items": [
+        "Cats",
+        "Das Phantom der Oper",
+        "Der König der Löwen",
+        "Wicked"
+      ],
+      "values": [
+        1982,
+        1988,
+        1997,
+        2003
+      ],
+      "unit_or_basis": "erste Broadway-Eröffnung",
+      "strict_order": "passed"
+    },
+    {
+      "id": "or725",
+      "ordered_items": [
+        "Vasa wieder an die Oberfläche gehoben",
+        "Mary Rose gehoben",
+        "Titanic-Wrack entdeckt",
+        "Endurance-Wrack entdeckt"
+      ],
+      "values": [
+        1961,
+        1982,
+        1985,
+        2022
+      ],
+      "unit_or_basis": "Jahr des genannten Bergungs- bzw. Fundereignisses",
+      "strict_order": "passed"
+    },
+    {
+      "id": "or729",
+      "ordered_items": [
+        "Ballaststoffe",
+        "Eiweiß",
+        "Alkohol (Ethanol)",
+        "Fett"
+      ],
+      "values": [
+        2,
+        4,
+        7,
+        9
+      ],
+      "unit_or_basis": "Kilokalorien pro Gramm nach EU-Anhang XIV",
+      "strict_order": "passed"
+    },
+    {
+      "id": "or730",
+      "ordered_items": [
+        "Wein",
+        "Schwarzer Kaffee",
+        "Milch",
+        "Meerwasser"
+      ],
+      "values": [
+        3.5,
+        5,
+        6.9,
+        8.5
+      ],
+      "unit_or_basis": "typischer pH nach der verwendeten Tabelle",
+      "strict_order": "passed"
+    },
+    {
+      "id": "or733",
+      "ordered_items": [
+        "Kaninchen",
+        "Hauskatze",
+        "Hausschaf",
+        "Hausschwein"
+      ],
+      "values": [
+        28,
+        30,
+        32,
+        44
+      ],
+      "unit_or_basis": "Zähne im vollständigen Dauergebiss",
+      "strict_order": "passed"
+    },
+    {
+      "id": "or734",
+      "ordered_items": [
+        "Hauskatze",
+        "Hausschaf",
+        "Hauspferd",
+        "Haushund"
+      ],
+      "values": [
+        38,
+        54,
+        64,
+        78
+      ],
+      "unit_or_basis": "diploide Chromosomenzahl",
+      "strict_order": "passed"
+    },
+    {
+      "id": "or735",
+      "ordered_items": [
+        "Elefant",
+        "Mensch",
+        "Hund",
+        "Schweinswal"
+      ],
+      "values": [
+        12,
+        23,
+        45,
+        150
+      ],
+      "unit_or_basis": "obere Hörgrenze in Kilohertz laut LSU-Tabelle",
+      "strict_order": "passed"
+    },
+    {
+      "id": "or738",
+      "ordered_items": [
+        "Säugetiere",
+        "Amphibien",
+        "Vögel",
+        "Fische"
+      ],
+      "values": [
+        6701,
+        8744,
+        11195,
+        36863
+      ],
+      "unit_or_basis": "beschriebene Arten, IUCN 2024-1",
+      "strict_order": "passed"
+    },
+    {
+      "id": "or739",
+      "ordered_items": [
+        "Rauch steigt senkrecht auf",
+        "Blätter bewegen sich",
+        "Starke Äste schwanken",
+        "Bäume werden entwurzelt"
+      ],
+      "values": [
+        0,
+        2,
+        6,
+        11
+      ],
+      "unit_or_basis": "Beaufort-Stufe laut DWD-Tabelle",
+      "strict_order": "passed"
+    },
+    {
+      "id": "or745",
+      "ordered_items": [
+        "Mars",
+        "Erde",
+        "Titan",
+        "Venus"
+      ],
+      "values": [
+        0.006,
+        1,
+        1.5,
+        92
+      ],
+      "unit_or_basis": "ungefähre bar an der Oberfläche",
+      "strict_order": "passed"
+    },
+    {
+      "id": "or746",
+      "ordered_items": [
+        "Glas",
+        "Edelstahl",
+        "Kupfer",
+        "Diamant"
+      ],
+      "values": [
+        0.84,
+        14,
+        390,
+        2000
+      ],
+      "unit_or_basis": "Watt pro Meter und Kelvin nahe 0 Grad Celsius",
+      "strict_order": "passed"
+    },
+    {
+      "id": "or748",
+      "ordered_items": [
+        "Diamant",
+        "Optisches Kronglas",
+        "Wasser",
+        "Luft"
+      ],
+      "values": [
+        0.41339396444811904,
+        0.6578947368421053,
+        0.7501875468867217,
+        0.9997000899730081
+      ],
+      "unit_or_basis": "Lichtgeschwindigkeit relativ zur Vakuumlichtgeschwindigkeit",
+      "strict_order": "passed"
+    },
+    {
+      "id": "or749",
+      "ordered_items": [
+        "Aluminium",
+        "Eisen",
+        "Kupfer",
+        "Blei"
+      ],
+      "values": [
+        2.7,
+        7.86,
+        8.92,
+        11.3
+      ],
+      "unit_or_basis": "Gramm pro Kubikzentimeter",
+      "strict_order": "passed"
+    },
+    {
+      "id": "or747",
+      "ordered_sums": [
+        12,
+        3,
+        9,
+        7
+      ],
+      "favourable_outcomes": [
+        1,
+        2,
+        4,
+        6
+      ],
+      "equally_likely_outcomes": 36,
+      "enumerated_independently": true
+    }
+  ],
+  "baseline_files_sha256": {
+    ".codex-preview.py": "2b3e96bef4779253420fc0056b02959b0fe612a237fb0edfa2558f30cc10fd9c",
+    "app.py": "d3820143352e4f63ca834293e2612f2dcad5e9ca5ed42916965ab2c96aef5bc0",
+    "conquest.py": "03ac5c98b1580f7f74a85ef13255d8d4ed8330053eca9b4119324b8e414c8689",
+    "CONQUEST_RULESET.md": "c04f2653314e7436dffe08b6e4e411a57e69562f6c7a9f4df9e9d66977f81acc",
+    "deploy/render_conquest_boards_hd.py": "e033c5f3fc8d3972a9ce797b63fbe7cdd859395aa46a630cb578810d50f11211",
+    "fragen/manifest.json": "760521f8345736afb5be41744642c1588d27e34c213e643b038c2d34c8ba3725",
+    "fragen/multiplechoice/fragen.json": "15b9d17cb7b289cd634c1ddd72b0f5f6a284e4eb6cfb232ed05d1855d599d642",
+    "fragen/paarebilden/fragen.json": "0aaf627df947e51f1729a4d52b83cb6ffa779b0009ef6a431e4a582b1c442ffa",
+    "fragen/reihenfolge/fragen.json": "a98d5671245a97b183254854ef36c91449dd49e35d3f2889d65c85b524187c43",
+    "fragen/schaetzung/fragen.json": "44ae06081792c158c08c1845fdcb35f3f9f02dd4c2e9e66e489531a8732cf0dc",
+    "fragen/vormerkungen/2026-10-24-multiple-choice-50/kandidaten.json": "477b9220160d513954c977c122eb01f8288deb42341f08e31fbcbbc838a0ffe0",
+    "fragen/vormerkungen/2026-10-24-multiple-choice-50/LESELISTE.md": "5c5bb4008b2ba55e6227744ea6f63b7b7ece16ced9ef7fd585e7e80a25598509",
+    "fragen/vormerkungen/2026-10-24-multiple-choice-50/PRUEFBERICHT.md": "48490d51bd1e0553fef6e57f225b34a970df29fddcce5b359065b12d63755af0",
+    "fragen/vormerkungen/2026-10-24-multiple-choice-50/RECHERCHE.json": "a6c848a0fd565e7e950681ae117826e5e83a9d3f80d197415b0bb1a5472897cc",
+    "fragen/vormerkungen/2026-10-24-paare-bilden-50/kandidaten.json": "57300aa904624444d2bef2c925c15c1a57394ed8e6875e07833b2cdb77f20047",
+    "fragen/vormerkungen/2026-10-24-paare-bilden-50/LESELISTE.md": "4fa71ae36215cf3372a047d65f429053ac62127a2312e328e8914c2003d821d6",
+    "fragen/vormerkungen/2026-10-24-paare-bilden-50/PRUEFBERICHT.md": "fc496d6208d9b7de42a55fa755abb08ff5fb04101a4b692e2af4cd6468e66181",
+    "fragen/vormerkungen/2026-10-24-paare-bilden-50/RECHERCHE.json": "4ca314ec1332197fe0fc2ff4cebbf7c4dfda7ac137e23336354e6c192670da7c",
+    "fragen/vormerkungen/2026-10-24-schaetzfragen-50/kandidaten.json": "3634d2ea321e19ccc790954b8b0cb4645888c19e50e24e028ab73db57bf58b76",
+    "fragen/vormerkungen/2026-10-24-schaetzfragen-50/LESELISTE.md": "6b2037a60c6a44ef418616426f2bbe02bd5f4c494c2b7588b16e1a4e739a0032",
+    "fragen/vormerkungen/2026-10-24-schaetzfragen-50/PRUEFBERICHT.md": "5f9d8eefc6435a3ddafc969f7e4fe63674fc603e13ebd91b0ed536c3bacaf2a3",
+    "fragen/vormerkungen/2026-10-24-schaetzfragen-50/RECHERCHE.json": "0f34b41335b50f8177c817008ed22bf8fb6cd7b5ccf5facf68625a096b85387a",
+    "fragen/vormerkungen/2026-10-24-wahr-falsch-50/kandidaten.json": "473d71231ee722b7939e417d686d4721437f2fd3f2fdc0ee6abb7b5fcd2e2d4c",
+    "fragen/vormerkungen/2026-10-24-wahr-falsch-50/LESELISTE.md": "4996514a1140b8eea86f10ba223f2908517202e0e58768360e53bc8698195425",
+    "fragen/vormerkungen/2026-10-24-wahr-falsch-50/PRUEFBERICHT.md": "3e4e30641d2ffdeda01d625eb67a465cae29308556c6e6f4d5bfe1667aa489e5",
+    "fragen/vormerkungen/2026-10-24-wahr-falsch-50/RECHERCHE.json": "1600cbd4711c6e90f1f369842d1941a495b784372af210aa3fd991b61f23a3fa",
+    "fragen/wahroderunwahr/fragen.json": "abe84266edac631898b84e8c7eff3e143baa92f3c746467481dd11d152a26054",
+    "fragen/zweigruppenzuordnen/fragen.json": "8fa5173dcfb7408c7bd9f40b24c6173c22611460d0782b11ca32c35d1522f9c7",
+    "questions.py": "e6e98c616a14fe11b30f68c85e2c36156c1e958458a8c660511fe48bdbfff0a1",
+    "static/conquest/world.json": "902060e409963fa268df297b7b83112f9e14ad85bf2a3db48c02771827a56698",
+    "static/conquest-lobby.css": "db7fcd95a8eeb0ea30ba37c2abfa0707670570bd2da46022042ec08441913ca4",
+    "static/conquest-table.css": "27126bd08444eefca11030124e04f074586e546341d6547cabd0b81be23442cb",
+    "static/conquest-table.js": "a5fabd46e5b330f62f794467857d1bb1eb8972d83f9c2f914dcb93968ab665a3",
+    "static/quiz-arena.css": "e8e8210ce4730eb087fca84e2ae7dd2f663b9607e8722a2a18421cfdd5417559",
+    "templates/base.html": "40ede25699dda29a8e49fa0340344bd38fb943fbf50eba39a0b397655ae26543",
+    "templates/conquest_lobby.html": "9b1431894d3b53072a180e3547ce03f3da91409226ad26366d7fb3475dd9051d",
+    "templates/conquest_table.html": "b319456a9980d0ca7806fd2fb1f926856e8330385ad9a702665cbbf7eb768e80",
+    "templates/home.html": "52e5b138fe0c3bc83025050aa36b6459d91d0a5f6b82cd08df404cbd79f3731b",
+    "tests/test_conquest.py": "4fe38a02b06cc47d19f979dd365cca4f879a38b03c5ed17e446d39641696da74",
+    "tests/test_quiz.py": "da1bffbe13590ae2548188bb1187969468b4e60662e23b6a9b206c04b2290016"
+  },
+  "server_status": "SSH-Verbindung zu igroup-server bei diesem Arbeitsschritt mit Timeout gescheitert; maßgebliches Serverlog und dortige Änderungen nicht neu abgleichbar. Nur lokale Vormerkung.",
+  "before_future_activation": [
+    "Frisches vollständiges Serverlog und aktuellen Fragenbestand lesen.",
+    "Erneut gegen aktuellen Daily-Bestand und weitere Vormerkungen prüfen.",
+    "Vorläufige IDs or700 bis or749 sowie Inhaltsfingerabdrücke gegen question_usage abgleichen.",
+    "Verbindliche Bibliotheksprüfung und relevante Tests durchführen; Aktivierung erst im späteren autorisierten Live-Schritt."
+  ],
+  "checks": {
+    "active_library_validation": "passed",
+    "isolated_combined_library_validation": "passed",
+    "unique_questions": 50,
+    "unique_cards_per_question": 4,
+    "max_prompt_length": 114,
+    "protected_files_unchanged": 40,
+    "staged_ids_loaded_by_active_loader": 0
+  },
+  "questions_detail": [
+    {
+      "id": "or700",
+      "principle": "Rangstufen",
+      "correct_order": [
+        "Bronze",
+        "Gold",
+        "Diamant",
+        "Champion"
+      ],
+      "fact_check": "Die Rangfolge führt unter anderem über Bronze, Silber, Gold, Platin und Diamant zum Champion. Gemeint sind die Ranggruppen, nicht ihre Unterteilungen.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "What are Rocket League Competitive Ranks? - Rocket League Support",
+          "url": "https://www.epicgames.com/help/c-CategoryRocketLeague/c-RocketLeagueGameplay/a20928700?lang=en-US"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "mc222",
+          "score": 0.2151,
+          "content": "Aus welchem Metall besteht der größte Teil einer modernen olympischen Goldmedaille? | B | Eine olympische Goldmedaille besteht überwiegend aus Silber und trägt nur eine Goldauflage. Die IOC-Vorgaben verlangen mindestens 92,5 Prozent Silber und mindestens sechs Gramm Gold. | A Gold B Silber C Bronze D Platin | Olympische Spiele"
+        },
+        {
+          "id": "or107",
+          "score": 0.1779,
+          "content": "Ordne die Stoffe nach Schmelzpunkt – von niedrig zu hoch. | Silber Eis Schokolade Gold | Eis Schokolade Silber Gold | Richtig: Eis → Schokolade → Silber → Gold. | Schmelzpunkte"
+        },
+        {
+          "id": "or32",
+          "score": 0.1567,
+          "content": "Ordne diese Stoffe nach ihrem Schmelzpunkt – vom niedrigsten zum höchsten. | Eisen Eis Gold Schokolade | Eis Schokolade Gold Eisen | Eis schmilzt bei 0 °C, Schokolade etwas darüber, Gold bei 1.064 °C und Eisen bei 1.538 °C. | Wissenschaft und Technik allgemein"
+        }
+      ]
+    },
+    {
+      "id": "or701",
+      "principle": "Seltenheitsstufen",
+      "correct_order": [
+        "Common",
+        "Uncommon",
+        "Rare",
+        "Mythic Rare"
+      ],
+      "fact_check": "Die vier grundlegenden Stufen heißen Common, Uncommon, Rare und Mythic Rare. Die Aufgabe betrifft die Seltenheitsklassen, nicht die Spielstärke oder den Preis einzelner Karten.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Quite the Rarity",
+          "url": "https://magic.wizards.com/en/news/making-magic/quite-rarity-2018-03-12"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "tf125",
+          "score": 0.0832,
+          "content": "Der Fachbegriff für die Lehre von Karten lautet Kartografie. | True | Richtig ist Kartografie."
+        },
+        {
+          "id": "ma124",
+          "score": 0.0728,
+          "content": "Ordne das Forschungsgebiet seinem Fachbegriff zu. | die Lehre von Meeren die Lehre von Pilzen die Lehre von Karten | Ozeanografie Mykologie Kartografie | die Lehre von Meeren Ozeanografie die Lehre von Pilzen Mykologie die Lehre von Karten Kartografie | die Lehre von Meeren – Ozeanografie; die Lehre von Pilzen – Mykologie; die Lehre von Karten – Kartografie. | Forschungsgebiete"
+        },
+        {
+          "id": "ma128",
+          "score": 0.0724,
+          "content": "Ordne das Forschungsgebiet seinem Fachbegriff zu. | die Wissenschaft von Erdbeben die Lehre von Karten die Lehre von Meeren | Seismologie Kartografie Ozeanografie | die Wissenschaft von Erdbeben Seismologie die Lehre von Karten Kartografie die Lehre von Meeren Ozeanografie | die Wissenschaft von Erdbeben – Seismologie; die Lehre von Karten – Kartografie; die Lehre von Meeren – Ozeanografie. | Forschungsgebiete"
+        }
+      ]
+    },
+    {
+      "id": "or702",
+      "principle": "Stichstärke",
+      "correct_order": [
+        "Karo-Bube",
+        "Herz-Bube",
+        "Pik-Bube",
+        "Kreuz-Bube"
+      ],
+      "fact_check": "Beim Grand sind nur die Buben Trumpf. Von unten nach oben gilt Karo, Herz, Pik, Kreuz. Die Farbe des Buben entscheidet hier über die Stichstärke.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Skat – gewusst wie: Spielmöglichkeiten und Rangfolge der Buben",
+          "url": "https://dskv.de/app/uploads/2021/03/Skat_gewusst-wie.indd_.pdf"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "ma511",
+          "score": 0.1204,
+          "content": "Verbinde die Dur-Tonart mit ihrer Zahl an Vorzeichen. | C-Dur G-Dur F-Dur | ein Be ein Kreuz keine Vorzeichen | C-Dur keine Vorzeichen G-Dur ein Kreuz F-Dur ein Be | C-Dur – keine Vorzeichen; G-Dur – ein Kreuz; F-Dur – ein Be. | Tonarten"
+        },
+        {
+          "id": "es701",
+          "score": 0.0911,
+          "content": "Über wie viele Blockschichten erstreckt sich die Oberwelt seit „Minecraft: Java Edition 1.18“ insgesamt? | 384 | Version 1.18 erweiterte die Oberwelt nach oben und unten auf insgesamt 384 Blockschichten. Der Bereich beginnt bei Höhe −64 und reicht bis zur obersten bebaubaren Schicht 319. Gefragt ist die Gesamthöhe, nicht nur die Höhe über dem Meer. | Minecraft nach unten und oben"
+        },
+        {
+          "id": "or546",
+          "score": 0.0808,
+          "content": "Ordne diese Organe nach typischer Masse – von leicht nach schwer. | Gehirn Leber Schilddrüse Herz | Schilddrüse Herz Gehirn Leber | Schilddrüse (25 Gramm ungefähr) → Herz (300 Gramm ungefähr) → Gehirn (1400 Gramm ungefähr) → Leber (1500 Gramm ungefähr). | Körperorgane"
+        }
+      ]
+    },
+    {
+      "id": "or703",
+      "principle": "Wachstumsdauer",
+      "correct_order": [
+        "Pastinake",
+        "Kartoffel",
+        "Grüne Bohne",
+        "Blumenkohl"
+      ],
+      "fact_check": "Bei täglichem Gießen und ohne Beschleuniger brauchen Pastinaken 4, Kartoffeln 6, grüne Bohnen 10 und Blumenkohl 12 Spieltage. Bei der Bohne ist die erste Ernte gemeint.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Pierre's General Store - Stardew Valley Wiki",
+          "url": "https://www.stardewvalleywiki.com/Pierre%27s_General_Store"
+        }
+      ],
+      "source_access_note": "Wachstumszeiten im ausgelesenen Inhalt der Original-Wikiseite geprüft; direkter Neuabruf scheiterte nach Weiterleitung mit HTTP 500.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "tf27",
+          "score": 0.0783,
+          "content": "Die Freiheitsstatue war bei ihrer Einweihung bereits grün. | False | Ihre Kupferhaut war zunächst braun und entwickelte erst später die grüne Patina."
+        },
+        {
+          "id": "tf745",
+          "score": 0.0782,
+          "content": "Die erste Londoner Verkehrsampel wurde bereits elektrisch beleuchtet. | False | Die 1868 vor dem Parlament aufgestellte Anlage zeigte tagsüber Signalarme und nachts rote und grüne Gaslampen. Ein Gasunfall beendete ihren kurzen Betrieb."
+        },
+        {
+          "id": "ma187",
+          "score": 0.0745,
+          "content": "Ordne das auffällige Symbol auf der Nationalflagge dem Land zu. | Kanada Mexiko Libanon | grüne Zeder rotes Ahornblatt Adler mit Schlange | Kanada rotes Ahornblatt Mexiko Adler mit Schlange Libanon grüne Zeder | In der Mitte der kanadischen Flagge steht ein stilisiertes rotes Ahornblatt mit elf Spitzen. Die mexikanische Flagge trägt das Staatswappen mit einem Adler, der auf einem Kaktus sitzt und eine Schlange hält. Auf dem weißen Streifen der libanesischen Flagge befindet sich eine grüne Zeder. | Flaggen & Staatssymbole"
+        }
+      ]
+    },
+    {
+      "id": "or704",
+      "principle": "Haltbarkeit",
+      "correct_order": [
+        "Goldspitzhacke",
+        "Holzspitzhacke",
+        "Steinspitzhacke",
+        "Eisenspitzhacke"
+      ],
+      "fact_check": "In der Java Edition betragen die Haltbarkeiten 32, 59, 131 und 250 Nutzungen. Goldwerkzeuge sind damit trotz ihres Materials besonders kurzlebig. Zusätzliche Haltbarkeit durch Verzauberungen ist ausgeschlossen.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Pickaxe – Minecraft Wiki",
+          "url": "https://minecraft.wiki/w/Pickaxe"
+        }
+      ],
+      "source_access_note": "Java-Haltbarkeiten im ausgelesenen Originalartikel geprüft; Direktabruf durch robots.txt eingeschränkt.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "or198",
+          "score": 0.1209,
+          "content": "Ordne diese Programmiersprachen nach ihrem Entstehungsjahr – vom frühesten zum spätesten. | Python Lisp Java C | Lisp C Python Java | Lisp (1959) → C (1972) → Python (1991) → Java (1995). | Softwaregeschichte"
+        },
+        {
+          "id": "es701",
+          "score": 0.1148,
+          "content": "Über wie viele Blockschichten erstreckt sich die Oberwelt seit „Minecraft: Java Edition 1.18“ insgesamt? | 384 | Version 1.18 erweiterte die Oberwelt nach oben und unten auf insgesamt 384 Blockschichten. Der Bereich beginnt bei Höhe −64 und reicht bis zur obersten bebaubaren Schicht 319. Gefragt ist die Gesamthöhe, nicht nur die Höhe über dem Meer. | Minecraft nach unten und oben"
+        },
+        {
+          "id": "tf155",
+          "score": 0.0697,
+          "content": "Ein Creeper gilt in Minecraft als friedliche Kreatur. | False | Minecraft führt den Creeper als feindlichen Mob."
+        }
+      ]
+    },
+    {
+      "id": "or705",
+      "principle": "Lautstärke",
+      "correct_order": [
+        "Pianissimo",
+        "Piano",
+        "Forte",
+        "Fortissimo"
+      ],
+      "fact_check": "Pianissimo bedeutet sehr leise, Piano leise, Forte laut und Fortissimo sehr laut. Das sind relative Spielanweisungen, keine festen Dezibelwerte.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Yamaha Mallet Resource Guide 2 – Music Fundamentals: Dynamics",
+          "url": "https://usa.yamaha.com/files/download/other_assets/6/1165226/Mallet_Resource_Guide2.pdf"
+        }
+      ],
+      "source_access_note": "Die sechs Dynamikstufen stehen im ausgelesenen Original-PDF von Yamaha; Direktabruf HTTP 403.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "ma709",
+          "score": 0.0738,
+          "content": "Ordne dem klassischen Tasteninstrument seine Tonquelle zu. | Mellotron Hammond-Orgel (elektromechanisch) Rhodes-E-Piano | Rotierende Tonräder Von Hämmern angeschlagene Metallzungen Aufnahmen auf Magnetbändern | Mellotron Aufnahmen auf Magnetbändern Hammond-Orgel (elektromechanisch) Rotierende Tonräder Rhodes-E-Piano Von Hämmern angeschlagene Metallzungen | Ein Mellotron spielt beim Tastendruck kurze Bandaufnahmen ab. Eine klassische elektromechanische Hammond-Orgel erzeugt ihre Signale mit rotierenden Tonrädern. Beim Rhodes schlagen Hämmer Metallzungen an, deren Schwingungen elektrisch abgenommen werden. | Klang aus Tasteninstrumenten"
+        },
+        {
+          "id": "tf140",
+          "score": 0.0516,
+          "content": "Für eine sehr lange klebrige Zunge ist der Ameisenbär bekannt. | True | Das gesuchte Tier ist der Ameisenbär."
+        },
+        {
+          "id": "ma209",
+          "score": 0.0503,
+          "content": "Ordne die musikalische Tempoangabe ihrer üblichen Bedeutung zu. | Largo Andante Presto | mäßig, etwa im Gehtempo sehr schnell breit und sehr langsam | Largo breit und sehr langsam Andante mäßig, etwa im Gehtempo Presto sehr schnell | Largo bezeichnet ein breites, sehr langsames Tempo. Andante erinnert an ein ruhiges Gehtempo, Presto verlangt ein sehr schnelles Spiel. | Tempoangaben"
+        }
+      ]
+    },
+    {
+      "id": "or706",
+      "principle": "Tonhöhe",
+      "correct_order": [
+        "Tiefe E-Saite",
+        "A-Saite",
+        "D-Saite",
+        "G-Saite"
+      ],
+      "fact_check": "Die übliche Gitarrenstimmung lautet von tief nach hoch E–A–D–G–H–E. Von den genannten Saiten ist die tiefe E-Saite die tiefste; danach folgen A, D und G.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "The Beginner’s Guide to Guitar Tunings",
+          "url": "https://hub.europe.yamaha.com/articles/the-beginners-guide-to-guitar-tunings-standard-drop-d-open-tunings-and-more"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "Gegen tf514 (Bratschenstimmung) geprüft: andere Instrumentenstimmung und anderer Wissenskern.",
+      "nearest_existing_entries": [
+        {
+          "id": "tf514",
+          "score": 0.2967,
+          "content": "Eine Bratsche ist üblicherweise höher gestimmt als eine Violine. | False | Die Bratsche ist tiefer gestimmt; ihre tiefste Saite ist die C-Saite."
+        },
+        {
+          "id": "es538",
+          "score": 0.2054,
+          "content": "Wie viele Meter tief ist der Baikalsee maximal? | 1642 | Die maximale Tiefe des Baikalsees beträgt 1.642 Meter. | Baikalsee-Tiefe"
+        },
+        {
+          "id": "tf537",
+          "score": 0.1609,
+          "content": "Der Baikalsee ist der tiefste See der Erde. | True | Seine größte Tiefe beträgt rund 1.642 Meter."
+        }
+      ]
+    },
+    {
+      "id": "or707",
+      "principle": "Vorzeichenanzahl",
+      "correct_order": [
+        "D-Dur",
+        "A-Dur",
+        "E-Dur",
+        "H-Dur"
+      ],
+      "fact_check": "D-Dur hat 2 Kreuze, A-Dur 3, E-Dur 4 und H-Dur 5. H-Dur heißt in englischsprachigen Tabellen B major; gemeint ist nicht das deutsche B-Dur.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "An introduction to music theory: 5.4 Major scales having key signatures with sharps | OpenLearn - Open University",
+          "url": "https://www.open.edu/openlearn/history-the-arts/music/an-introduction-music-theory/content-section-5.4"
+        },
+        {
+          "title": "Theorieheft D2/D3 – H-Dur-Aufgabe auf Seite 76",
+          "url": "https://www.musikschulen-bayern.de/assets/FLP/Lernhilfen/Theoriehefte/D2-D3-Theorie-Demo2012.pdf"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "ma511 fragt C-/G-/F-Dur ab. Hier ausschließlich D-/A-/E-/H-Dur und deren 2/3/4/5 Kreuze; keine dort abgefragte Zuordnung wiederholt.",
+      "nearest_existing_entries": [
+        {
+          "id": "ma511",
+          "score": 0.533,
+          "content": "Verbinde die Dur-Tonart mit ihrer Zahl an Vorzeichen. | C-Dur G-Dur F-Dur | ein Be ein Kreuz keine Vorzeichen | C-Dur keine Vorzeichen G-Dur ein Kreuz F-Dur ein Be | C-Dur – keine Vorzeichen; G-Dur – ein Kreuz; F-Dur – ein Be. | Tonarten"
+        },
+        {
+          "id": "or517",
+          "score": 0.055,
+          "content": "Ordne die Sportarten nach Spielern pro Team auf dem Feld – von wenigen nach vielen. | Handball Fußball Beachvolleyball Basketball | Beachvolleyball Basketball Handball Fußball | Beachvolleyball (2 Spieler) → Basketball (5 Spieler) → Handball (7 Spieler) → Fußball (11 Spieler). | Teamgrößen"
+        },
+        {
+          "id": "mc173",
+          "score": 0.0509,
+          "content": "Welcher Bewegung wird Nenas „99 Luftballons“ zugeordnet? | D | Nena wurde zu einem der international bekanntesten Acts der Neuen Deutschen Welle. | A Hamburger Schule B Krautrock C Neue Deutsche Härte D Neue Deutsche Welle | Deutsche Musikgeschichte"
+        }
+      ]
+    },
+    {
+      "id": "or708",
+      "principle": "Wettkampfabfolge",
+      "correct_order": [
+        "Schmetterling",
+        "Rücken",
+        "Brust",
+        "Freistil"
+      ],
+      "fact_check": "Im Einzelrennen ist die Reihenfolge Schmetterling, Rücken, Brust und Freistil. Jede Schwimmart macht ein Viertel der Strecke aus. Gemeint ist ausdrücklich das Einzelrennen.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "World Aquatics Competition Regulations – Swimming Rules: Medley Swimming",
+          "url": "https://resources.fina.org/fina/document/2024/07/01/1d853a10-86c9-4c8a-9c85-431d2acd284e/Competition-Regulations-version-1st-July-2024-_track-changes_V1.pdf"
+        }
+      ],
+      "source_access_note": "Originalregel 9.1 mit allen vier Schwimmarten über den PDF-Suchindex geprüft; Direktabruf wegen PDF-Größe begrenzt. Regel zusätzlich mit neueren World-Aquatics-Unterlagen abgeglichen.",
+      "duplicate_review": "or516 sortiert Schwimmstrecken nach Distanz; hier wird die Wettkampfabfolge beim Einzellagen geprüft.",
+      "nearest_existing_entries": [
+        {
+          "id": "or516",
+          "score": 0.3895,
+          "content": "Ordne diese Beckenschwimm-Strecken – von kurz nach lang. | 200 Meter Schmetterling 1.500 Meter Freistil 50 Meter Freistil 100 Meter Rücken | 50 Meter Freistil 100 Meter Rücken 200 Meter Schmetterling 1.500 Meter Freistil | 50 Meter Freistil (50 Meter) → 100 Meter Rücken (100 Meter) → 200 Meter Schmetterling (200 Meter) → 1.500 Meter Freistil (1500 Meter). | Schwimmstrecken"
+        },
+        {
+          "id": "or34",
+          "score": 0.168,
+          "content": "Ordne diese Altersstufen eines Schmetterlings. | Puppe Ei Schmetterling Raupe | Ei Raupe Puppe Schmetterling | Aus dem Ei schlüpft die Raupe, sie verpuppt sich und wird zum Schmetterling. | Pflanzen und Tiere allgemein"
+        },
+        {
+          "id": "tf180",
+          "score": 0.087,
+          "content": "Ein Basketballspiel nach FIBA-Regeln ist in vier Viertel gegliedert. | True | FIBA-Basketball wird in vier Vierteln gespielt."
+        }
+      ]
+    },
+    {
+      "id": "or709",
+      "principle": "Wettkampfabfolge",
+      "correct_order": [
+        "Diskuswurf",
+        "Stabhochsprung",
+        "Speerwurf",
+        "1.500-Meter-Lauf"
+      ],
+      "fact_check": "Der zweite Tag beginnt mit 110 Meter Hürden. Anschließend folgen Diskuswurf, Stabhochsprung, Speerwurf und zum Abschluss der 1.500-Meter-Lauf.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Decathlon",
+          "url": "https://worldathletics.org/disciplines/combined/decathlon"
+        }
+      ],
+      "source_access_note": "Disziplinfolge im ausgelesenen World-Athletics-Originalinhalt geprüft; Direktabruf HTTP 403.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "or519",
+          "score": 0.2103,
+          "content": "Ordne diese Hürden nach ihrer Höhe – von niedrig nach hoch. | 400 m Hürden Männer 110 m Hürden Männer 400 m Hürden Frauen 100 m Hürden Frauen | 400 m Hürden Frauen 100 m Hürden Frauen 400 m Hürden Männer 110 m Hürden Männer | 400 m Hürden Frauen (0.762 Meter) → 100 m Hürden Frauen (0.838 Meter) → 400 m Hürden Männer (0.914 Meter) → 110 m Hürden Männer (1.067 Meter). | Hürdenhöhen"
+        },
+        {
+          "id": "or516",
+          "score": 0.1517,
+          "content": "Ordne diese Beckenschwimm-Strecken – von kurz nach lang. | 200 Meter Schmetterling 1.500 Meter Freistil 50 Meter Freistil 100 Meter Rücken | 50 Meter Freistil 100 Meter Rücken 200 Meter Schmetterling 1.500 Meter Freistil | 50 Meter Freistil (50 Meter) → 100 Meter Rücken (100 Meter) → 200 Meter Schmetterling (200 Meter) → 1.500 Meter Freistil (1500 Meter). | Schwimmstrecken"
+        },
+        {
+          "id": "es01",
+          "score": 0.1449,
+          "content": "Wie viele Liter Blut pumpt ein menschliches Herz ungefähr pro Tag? | 7500 | Bei rund fünf Litern pro Minute kommen ungefähr 7.500 Liter am Tag zusammen. | Mensch und Alltag allgemein"
+        }
+      ]
+    },
+    {
+      "id": "or710",
+      "principle": "Bewegungsablauf",
+      "correct_order": [
+        "Anlauf",
+        "Hop: auf demselben Fuß landen",
+        "Step: auf dem anderen Fuß landen",
+        "Jump: in die Sandgrube springen"
+      ],
+      "fact_check": "Auf den Anlauf folgen Hop, Step und Jump. Beim Hop wird auf demselben Fuß gelandet, beim Step auf den anderen gewechselt und beim Jump in die Grube gesprungen.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Triple Jump",
+          "url": "https://worldathletics.org/disciplines/jump/triple-jump"
+        }
+      ],
+      "source_access_note": "Hop, Step und Jump im ausgelesenen World-Athletics-Originalinhalt geprüft; Direktabruf HTTP 403.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "mc202",
+          "score": 0.1354,
+          "content": "Mit welchem Körperteil prüfen Schmetterlinge beim Landen den Geschmack eines Blattes? | B | An den Füßen von Schmetterlingen sitzen Geschmackssensoren. So können sie schon beim Landen prüfen, ob eine Pflanze geeignet ist. | A Mit den Flügeln B Mit den Füßen C Mit den Augen D Mit dem Hinterleib | Sinne der Tiere"
+        },
+        {
+          "id": "es179",
+          "score": 0.0635,
+          "content": "Wie groß ist die Spannweite der Solaranlagen der ISS ungefähr? | 109 | Die NASA gibt die Spannweite mit 356 Fuß beziehungsweise 109 Metern an. Der metrische Wert wird von der Quelle auf ganze Meter angegeben. Damit übertrifft die ISS sogar die dort zum Vergleich genannten 80 Meter Spannweite eines Airbus A380. | Raumfahrt & Astronomie"
+        },
+        {
+          "id": "ma738",
+          "score": 0.0619,
+          "content": "Ordne dem Raumfahrtbegriff seine Bedeutung zu. | Geostationäre Bahn Lagrange-Punkt Terminator | Besondere Gleichgewichtsposition im System zweier Himmelskörper Ein Satellit bleibt über demselben Punkt des Äquators Grenze zwischen beleuchteter und dunkler Seite | Geostationäre Bahn Ein Satellit bleibt über demselben Punkt des Äquators Lagrange-Punkt Besondere Gleichgewichtsposition im System zweier Himmelskörper Terminator Grenze zwischen beleuchteter und dunkler Seite | Ein geostationärer Satellit erscheint über demselben Äquatorpunkt zu stehen. An Lagrange-Punkten können kleine Körper im mitrotierenden System zweier großer Körper eine Gleichgewichtsposition einnehmen. Der Terminator trennt die beleuchtete von der unbeleuchteten Seite eines Himmelskörpers. | Orientierung im All"
+        }
+      ]
+    },
+    {
+      "id": "or711",
+      "principle": "Gerätereihenfolge",
+      "correct_order": [
+        "Sprung",
+        "Stufenbarren",
+        "Schwebebalken",
+        "Boden"
+      ],
+      "fact_check": "Die festgelegte olympische Geräteordnung lautet Sprung, Stufenbarren, Schwebebalken und Boden. Wettkampfgruppen können an unterschiedlichen Geräten beginnen; die Aufgabe legt den Start fest.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "USA Gymnastics | Women's Artistic Gymnastics Event Descriptions",
+          "url": "https://members.usagym.org/pages/gymnastics101/women/events.html"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "tf197",
+          "score": 0.0774,
+          "content": "Der typische Geruch nach einem Regenschauer stammt vor allem aus dem Boden. | True | Regentropfen setzen Duftstoffe aus trockenem Boden frei. Dazu gehören Pflanzenöle und Stoffe von Bodenbakterien. Die Tropfen schleudern diese Stoffe als winzige Teilchen in die Luft. Der Geruch heißt Petrichor."
+        },
+        {
+          "id": "tf737",
+          "score": 0.0765,
+          "content": "Die ersten Basketballkörbe hatten geschlossene Böden, aus denen der Ball wieder herausgeholt werden musste. | True | Am Springfield College wurden anfangs Pfirsichkörbe als Ziele benutzt. Erst später entfernte man deren Böden, damit der Ball nach einem Treffer hindurchfallen konnte."
+        },
+        {
+          "id": "mc184",
+          "score": 0.063,
+          "content": "Wo fanden 1924 die später als erste Olympische Winterspiele anerkannten Wettbewerbe statt? | A | Die Wintersportwoche von Chamonix 1924 wurde später als erste Olympische Winterspiele anerkannt. | A Chamonix B St. Moritz C Oslo D Innsbruck | Olympische Geschichte & Meilensteine"
+        }
+      ]
+    },
+    {
+      "id": "or712",
+      "principle": "Regelmaß",
+      "correct_order": [
+        "Tischtennis",
+        "Badminton",
+        "Faustball der Männer (5er-Teams)",
+        "Hallenvolleyball der Männer"
+      ],
+      "fact_check": "Die Regelhöhen betragen 15,25 cm beim Tischtennis, 152,4 cm beim Badminton, 200 cm beim Männer-Faustball und 243 cm beim Männer-Hallenvolleyball. Beim Tischtennis ist die Tischplatte die Spielfläche; Faustball verwendet ein Netz oder eine Leine.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "ITTF Statutes 2026 – Laws of Table Tennis, 2.2: The Net Assembly",
+          "url": "https://db.ittf.com/sites/default/files/public/2026-02/2026_Statutes_v1_consolidated_clean.pdf"
+        },
+        {
+          "title": "BWF Equipment Certification Programme: Net – Laws of Badminton 1.10",
+          "url": "https://system.bwfbadminton.com/documents/folder_1_81/folder_1_140/folder_1_165/1%20Net%20Overview.pdf"
+        },
+        {
+          "title": "FIVB Official Volleyball Rules 2025-2028",
+          "url": "https://www.fivb.com/wp-content/uploads/2025/01/FIVB-Volleyball_Rules2025_2028-EN.pdf"
+        },
+        {
+          "title": "Anlage 2 Rahmendaten für alle Faustball-Altersklassen - Stand 11.06.2024",
+          "url": "https://faustball.de/wp-content/uploads/2024/06/Anlage-2-Rahmendaten-fuer-alle-Faustball-Altersklassen-Stand-11.06.2024.pdf"
+        }
+      ],
+      "source_access_note": "ITTF 2.2.3, FIVB und deutsches Faustball-Rahmendatenblatt direkt gelesen; BWF-Regel 1.10 im ausgelesenen Original-PDF, direkter Abruf HTTP 402. Faustball-Altlink mit 404 durch die aktuell verlinkte Verbands-PDF ersetzt.",
+      "duplicate_review": "Die bereits in es517 genannte Tennisnetzhöhe vollständig aus dem neuen Aufgabenkern entfernt; Faustball ersetzt Tennis.",
+      "nearest_existing_entries": [
+        {
+          "id": "or519",
+          "score": 0.1523,
+          "content": "Ordne diese Hürden nach ihrer Höhe – von niedrig nach hoch. | 400 m Hürden Männer 110 m Hürden Männer 400 m Hürden Frauen 100 m Hürden Frauen | 400 m Hürden Frauen 100 m Hürden Frauen 400 m Hürden Männer 110 m Hürden Männer | 400 m Hürden Frauen (0.762 Meter) → 100 m Hürden Frauen (0.838 Meter) → 400 m Hürden Männer (0.914 Meter) → 110 m Hürden Männer (1.067 Meter). | Hürdenhöhen"
+        },
+        {
+          "id": "ma15",
+          "score": 0.122,
+          "content": "Ordne den Sport seinem Spielgerät zu. | Curling Badminton Lacrosse | Granitstein Federball Schläger mit Netz | Curling Granitstein Badminton Federball Lacrosse Schläger mit Netz | Stein, Federball und ein Netz am Schläger. | Regeln & Ausrüstung"
+        },
+        {
+          "id": "or515",
+          "score": 0.1177,
+          "content": "Ordne diese Leichtathletik-Wurfgeräte nach Regelgewicht – von leicht nach schwer. | Männer-Diskus Männer-Kugel Frauen-Speer Frauen-Diskus | Frauen-Speer Frauen-Diskus Männer-Diskus Männer-Kugel | Frauen-Speer (0.6 Kilogramm) → Frauen-Diskus (1 Kilogramm) → Männer-Diskus (2 Kilogramm) → Männer-Kugel (7.26 Kilogramm). | Wurfgeräte"
+        }
+      ]
+    },
+    {
+      "id": "or713",
+      "principle": "Graduierungsstufen",
+      "correct_order": [
+        "Gelb",
+        "Orange",
+        "Grün",
+        "Braun"
+      ],
+      "fact_check": "Die ausgewählten Farben entsprechen dem 7., 5., 3. und 1. Kyu. Dazwischen liegen weitere Gürtelfarben. Gemeint ist das Schülerprogramm des Deutschen Judo-Bundes.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Anforderungen an Kyu-Grade im DJB (Stand 10. Januar 2024)",
+          "url": "https://www.judobund.de/fileadmin/user_upload/judobund.de/Downloads/Downloadcenter/Kyu-Graduierungen/Kyu_Graduierungssystem_Kyu_Programm__Anforderungen_.pdf"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "tf27",
+          "score": 0.1566,
+          "content": "Die Freiheitsstatue war bei ihrer Einweihung bereits grün. | False | Ihre Kupferhaut war zunächst braun und entwickelte erst später die grüne Patina."
+        },
+        {
+          "id": "or217",
+          "score": 0.1267,
+          "content": "Ordne diese Sportarten nach ihrem olympischen Debüt – vom frühesten zum spätesten. | BMX Basketball Skateboarden Judo | Basketball Judo BMX Skateboarden | Basketball (1936) → Judo (1964) → BMX (2008) → Skateboarden (bei den Spielen Tokio 2020, ausgetragen 2021). | Olympische Sportgeschichte"
+        },
+        {
+          "id": "ma517",
+          "score": 0.1153,
+          "content": "Ordne die Sportart ihrer typischen Wettkampffläche zu. | Bahnradsport Judo Fechten | Planche Tatami Velodrom | Bahnradsport Velodrom Judo Tatami Fechten Planche | Bahnradsport – Velodrom; Judo – Tatami; Fechten – Planche. | Sportstätten"
+        }
+      ]
+    },
+    {
+      "id": "or714",
+      "principle": "Seitenverhältnis",
+      "correct_order": [
+        "Quadratisches Bild",
+        "Klassisches TV-Bild (4:3)",
+        "Breitbild-TV (16:9)",
+        "Kino-Scope (2,39:1)"
+      ],
+      "fact_check": "Bei gleicher Höhe entscheidet das Verhältnis von Breite zu Höhe: 1:1, 4:3, 16:9 und 2,39:1. Scope ist hier ausdrücklich als das heutige 2,39:1-Format angegeben.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Video in Dynamic Media | Adobe Experience Manager",
+          "url": "https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/video?lang=en"
+        },
+        {
+          "title": "Master aspect ratios for every platform | Adobe India",
+          "url": "https://www.adobe.com/in/creativecloud/roc/blog/video/master-aspect-ratios-easily.html"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "es03",
+          "score": 0.092,
+          "content": "Wie viele Tasten hat ein klassisches Klavier? | 88 | Ein Standardklavier besitzt 52 weiße und 36 schwarze Tasten. | Instrumente & Musiktheorie"
+        },
+        {
+          "id": "ma705",
+          "score": 0.088,
+          "content": "Ordne der Animationstechnik ihre Arbeitsweise zu. | Rotoskopie Pixilation Legetrick | Gefilmte Bewegungen Bild für Bild nachzeichnen Flache Figuren oder Formen schrittweise verschieben Menschen in Einzelbildern animieren | Rotoskopie Gefilmte Bewegungen Bild für Bild nachzeichnen Pixilation Menschen in Einzelbildern animieren Legetrick Flache Figuren oder Formen schrittweise verschieben | Bei Rotoskopie werden Bewegungen aus Filmaufnahmen nachgezeichnet. Pixilation nutzt echte Menschen als schrittweise bewegte Stop-Motion-Figuren. Beim Legetrick werden flache ausgeschnittene Elemente zwischen den einzelnen Aufnahmen versetzt. | Wie Animation entsteht"
+        },
+        {
+          "id": "tf715",
+          "score": 0.0757,
+          "content": "Stummfilme wurden im Kino grundsätzlich ohne Musikbegleitung gezeigt. | False | Viele Stummfilmvorführungen wurden von Pianisten, kleinen Ensembles oder Orchestern begleitet. „Stumm“ meint vor allem das Fehlen einer synchron aufgenommenen Tonspur, nicht ein stets schweigendes Kino."
+        }
+      ]
+    },
+    {
+      "id": "or715",
+      "principle": "Sensorfläche",
+      "correct_order": [
+        "1-Zoll-Klasse",
+        "Micro Four Thirds",
+        "APS-C",
+        "Kleinbild-Vollformat"
+      ],
+      "fact_check": "Die übliche 1-Zoll-Klasse ist kleiner als Micro Four Thirds mit rund 17,3 × 13 mm. Danach folgen APS-C und Kleinbild-Vollformat mit 36 × 24 mm. APS-C-Abmessungen variieren etwas je nach Hersteller, ohne diese Reihenfolge zu ändern.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "What Lens Do I Need? | Canon U.S.A., Inc.",
+          "url": "https://www.usa.canon.com/learning/training-articles/training-articles-list/what-lens-do-i-need"
+        },
+        {
+          "title": "Specifications | Products | Cinema Camera Global | Panasonic",
+          "url": "https://pro-av.panasonic.net/en/cinema_camera_varicam_eva/products/bgh1/spec/index.html"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "es735",
+          "score": 0.1099,
+          "content": "Bis zu ungefähr wie viele Zentimeter lang kann eine Giraffenzunge nach dem Zoobericht aus San Diego werden? | 51 | Der Bericht nennt 18 bis 20 Zoll. Die obere Angabe von 20 Zoll entspricht 50,8 Zentimetern und wird hier auf 51 Zentimeter gerundet. Mit ihrer langen Zunge erreicht die Giraffe Blätter an Zweigen. | Eine Zunge für hohe Blätter"
+        },
+        {
+          "id": "tf169",
+          "score": 0.0855,
+          "content": "Radiohead wurde bereits in der ersten Hall-of-Fame-Klasse von 1986 aufgenommen. | False | Radiohead wurde 2019 aufgenommen; die erste Klasse stammt von 1986."
+        },
+        {
+          "id": "es525",
+          "score": 0.0841,
+          "content": "Wie hoch ist eine Oscar-Statuette ungefähr? | 34.3 | Die Academy nennt eine Höhe von 13,5 Zoll, also etwa 34,3 Zentimetern. | Oscar-Statuette"
+        }
+      ]
+    },
+    {
+      "id": "or716",
+      "principle": "Produktionsablauf",
+      "correct_order": [
+        "3D-Modell formen",
+        "Bewegungsgerüst einrichten",
+        "Figur animieren",
+        "Endgültige Bilder berechnen"
+      ],
+      "fact_check": "Im beschriebenen Produktionsablauf wird die Figur modelliert, mit einem Steuerungsgerüst versehen (Rigging), animiert und schließlich gerendert. Die letzte Karte meint die endgültigen Filmbilder, nicht frühe Testbilder.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Explore the Exhibit | The Science Behind Pixar",
+          "url": "https://sciencebehindpixar.org/explore"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "es528",
+          "score": 0.0934,
+          "content": "Wie viele Bilder pro Sekunde sind im Tonfilm-Kino traditionell Standard? | 24 | Mit dem Tonfilm setzte sich 24 Bilder pro Sekunde als Kinostandard durch. | Kinobildrate"
+        },
+        {
+          "id": "ma705",
+          "score": 0.0883,
+          "content": "Ordne der Animationstechnik ihre Arbeitsweise zu. | Rotoskopie Pixilation Legetrick | Gefilmte Bewegungen Bild für Bild nachzeichnen Flache Figuren oder Formen schrittweise verschieben Menschen in Einzelbildern animieren | Rotoskopie Gefilmte Bewegungen Bild für Bild nachzeichnen Pixilation Menschen in Einzelbildern animieren Legetrick Flache Figuren oder Formen schrittweise verschieben | Bei Rotoskopie werden Bewegungen aus Filmaufnahmen nachgezeichnet. Pixilation nutzt echte Menschen als schrittweise bewegte Stop-Motion-Figuren. Beim Legetrick werden flache ausgeschnittene Elemente zwischen den einzelnen Aufnahmen versetzt. | Wie Animation entsteht"
+        },
+        {
+          "id": "mc701",
+          "score": 0.0739,
+          "content": "Was bearbeiten Spieler im Forschungsspiel „Foldit“, um Wissenschaftlern zu helfen? | B | In Foldit werden Proteinmodelle räumlich gefaltet und verbessert. Spieler lieferten unter anderem ein Modell, mit dem sich die Struktur eines viralen Enzyms bestimmen ließ. | A Flugbahnen gefährlicher Asteroiden B Dreidimensionale Formen von Proteinen C Verzweigungen unterirdischer Höhlennetze D Rekonstruktionen zerbrochener Keramik | Spielen für die Forschung"
+        }
+      ]
+    },
+    {
+      "id": "or717",
+      "principle": "Chemischer Ablauf",
+      "correct_order": [
+        "Entwicklerbad",
+        "Stoppbad",
+        "Fixierbad",
+        "Schlusswässerung"
+      ],
+      "fact_check": "Auf den Entwickler folgen Stoppbad, Fixierbad und die Schlusswässerung. Das Stoppbad beendet die Entwicklung; die Wässerung nach dem Fixieren entfernt verbliebene Chemikalien.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Processing Your First Black & White Film – ILFORD",
+          "url": "https://www.ilfordphoto.com/wp/wp-content/uploads/2017/04/Processing-your-first-black-and-white-film.pdf"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "es515",
+          "score": 0.0558,
+          "content": "Wie viele Meter ist der Strafstoßpunkt im Fußball von der Torlinie entfernt? | 11 | Der Strafstoßpunkt liegt elf Meter von der Mitte der Torlinie entfernt. | Elfmeterpunkt"
+        },
+        {
+          "id": "tf21",
+          "score": 0.0497,
+          "content": "Seepferdchen-Männchen tragen die Jungen aus. | True | Das Weibchen legt die Eier in die Bruttasche des Männchens, wo sie sich entwickeln."
+        },
+        {
+          "id": "mc197",
+          "score": 0.0467,
+          "content": "Wie weit entfernt sich der Mond derzeit ungefähr pro Jahr von der Erde? | B | Der Mond entfernt sich im Mittel um rund 3,8 Zentimeter pro Jahr von der Erde. Gemessen wird das unter anderem mit Laserreflektoren auf dem Mond. | A 3,8 Millimeter B 3,8 Zentimeter C 38 Zentimeter D 3,8 Meter | Astronomie & Raumfahrt"
+        }
+      ]
+    },
+    {
+      "id": "or718",
+      "principle": "Filmlaufzeit",
+      "correct_order": [
+        "Shrek (2001)",
+        "Der weiße Hai (1975)",
+        "Matrix (1999)",
+        "Der Pate (1972)"
+      ],
+      "fact_check": "Die regulären Kinofassungen dauern ungefähr 90, 124, 136 und 175 Minuten. Gemeint sind die angegebenen Originalfilme, keine Fortsetzungen, TV-Schnitte oder Bonusprogramme.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Shrek – BBFC: Kino- und Heimkino-Fassungen",
+          "url": "https://www.bbfc.co.uk/release/shrek-q29sbgvjdglvbjpwwc0zndmxnte"
+        },
+        {
+          "title": "JAWS | AFI Silver Theatre and Cultural Center",
+          "url": "https://silver.afi.com/movies/detail/0100000017/"
+        },
+        {
+          "title": "The Matrix – AFI Silver Theatre and Cultural Center",
+          "url": "https://silver.afi.com/movies/detail/0100000038/"
+        },
+        {
+          "title": "THE GODFATHER | AFI Silver Theatre and Cultural Center",
+          "url": "https://silver.afi.com/movies/detail/0100001483/"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "or03",
+          "score": 0.1611,
+          "content": "Ordne diese Filme nach Kinostart – vom ältesten zum jüngsten. | Titanic Jurassic Park Avatar Matrix | Jurassic Park Titanic Matrix Avatar | 1993, 1997, 1999 und 2009. | Medien und Unterhaltung allgemein"
+        },
+        {
+          "id": "or525",
+          "score": 0.1263,
+          "content": "Ordne diese Filme nach ihrem Kinostart – von früh nach spät. | Der Pate Pulp Fiction Metropolis Citizen Kane | Metropolis Citizen Kane Der Pate Pulp Fiction | Metropolis (1927 Jahr) → Citizen Kane (1941 Jahr) → Der Pate (1972 Jahr) → Pulp Fiction (1994 Jahr). | Filmklassiker"
+        },
+        {
+          "id": "es527",
+          "score": 0.1209,
+          "content": "Wie viele Minuten dauert der erste Toy Story ungefähr? | 81 | Der Kinofilm hat eine Laufzeit von rund 81 Minuten. | Toy-Story-Laufzeit"
+        }
+      ]
+    },
+    {
+      "id": "or719",
+      "principle": "Halbwertszeit",
+      "correct_order": [
+        "Kobalt-60",
+        "Cäsium-137",
+        "Kohlenstoff-14",
+        "Uran-238"
+      ],
+      "fact_check": "Die Richtwerte liegen bei 5,3 Jahren, 30 Jahren, etwa 5.700 Jahren und 4,468 Milliarden Jahren. Physikalische Halbwertszeit bezeichnet die Zeit, in der die Hälfte der ursprünglichen radioaktiven Atomkerne zerfällt.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Atoms – Nuclides, isotopes and radioactivity",
+          "url": "https://www.cnsc-ccsn.gc.ca/eng/nuclear-safety-security/educational-resources/radiation/atoms-nuclides-radioisotopes/"
+        }
+      ],
+      "source_access_note": "Alle vier Halbwertszeiten aus der Tabelle der kanadischen Nuklearsicherheitsbehörde im Original-Suchindex geprüft; direkter Abruf mit Timeout.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "mc060",
+          "score": 0.1457,
+          "content": "Welches chemische Symbol gehört zu Kobalt? | D | Das Elementsymbol von Kobalt ist Co. | A Pb B W C He D Co | Chemie"
+        },
+        {
+          "id": "tf060",
+          "score": 0.1399,
+          "content": "Das chemische Symbol von Kobalt lautet Co. | True | Kobalt trägt das Symbol Co."
+        },
+        {
+          "id": "ma058",
+          "score": 0.1223,
+          "content": "Ordne das Element seinem Symbol zu. | Silber Kupfer Kobalt | Ag Cu Co | Silber Ag Kupfer Cu Kobalt Co | Silber – Ag; Kupfer – Cu; Kobalt – Co. | Chemie"
+        }
+      ]
+    },
+    {
+      "id": "or720",
+      "principle": "Broadway-Premieren",
+      "correct_order": [
+        "Cats",
+        "Das Phantom der Oper",
+        "Der König der Löwen",
+        "Wicked"
+      ],
+      "fact_check": "Die ersten Broadway-Premieren waren 1982, 1988, 1997 und 2003. Gemeint sind die New Yorker Broadway-Eröffnungen, nicht die teils früheren Weltpremieren oder erste Vorschauen.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Cats – Broadway Musical – Original | IBDB",
+          "url": "https://www.ibdb.com/broadway-production/cats-4186"
+        },
+        {
+          "title": "The Phantom of the Opera – Broadway Musical – Original | IBDB",
+          "url": "https://www.ibdb.com/broadway-production/the-phantom-of-the-opera-4491"
+        },
+        {
+          "title": "The Lion King – Broadway Musical – Original | IBDB",
+          "url": "https://www.ibdb.com/broadway-production/the-lion-king-4761"
+        },
+        {
+          "title": "Wicked – Broadway Musical – Original | IBDB",
+          "url": "https://www.ibdb.com/broadway-production/wicked-13485"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "or518",
+          "score": 0.0797,
+          "content": "Ordne diese Sportarten nach ihrer ersten olympischen Austragung – von früh nach spät. | Triathlon Skateboard Leichtathletik Basketball | Leichtathletik Basketball Triathlon Skateboard | Leichtathletik (1896 Jahr) → Basketball (1936 Jahr) → Triathlon (2000 Jahr) → Skateboard (2021 Jahr). | Olympische Premieren"
+        },
+        {
+          "id": "ma181",
+          "score": 0.0663,
+          "content": "Ordne die olympische Persönlichkeit ihrer Leistung zu. | James Connolly Spyridon Louis König Georg I. | erster Olympiasieger der Neuzeit Marathonsieger 1896 Eröffnung der Spiele 1896 | James Connolly erster Olympiasieger der Neuzeit Spyridon Louis Marathonsieger 1896 König Georg I. Eröffnung der Spiele 1896 | James Connolly – erster Olympiasieger der Neuzeit; Spyridon Louis – Marathonsieger 1896; König Georg I. – Eröffnung der Spiele 1896. | Olympische Geschichte & Meilensteine"
+        },
+        {
+          "id": "es130",
+          "score": 0.0657,
+          "content": "In welchem Jahr erschien Harry Potter Band 1 erstmals? | 1997 | Der gesuchte Richtwert beträgt 1997 Jahr. | Literaturgeschichte"
+        }
+      ]
+    },
+    {
+      "id": "or721",
+      "principle": "Handwerksablauf",
+      "correct_order": [
+        "Bogen mit dem Sieb schöpfen",
+        "Bogen vom Sieb auf ein Tuch ablegen",
+        "Nassen Bogen pressen",
+        "Bogen trocknen"
+      ],
+      "fact_check": "Beim Schöpfen sammeln sich Fasern auf dem Sieb. Das Ablegen des nassen Bogens heißt Gautschen. Danach wird Wasser herausgepresst und der Bogen getrocknet.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Museum » Museum Papiermühle Homburg am Main",
+          "url": "https://papiermuehle-homburg.de/museum/"
+        },
+        {
+          "title": "Fotodokumentation Papierschöpfen | Abfallwirtschaftsbetrieb des Landkreises Rastatt",
+          "url": "https://www.awb-landkreis-rastatt.de/de/Abfallvermeidung/Abfallberatung/Papierschoepfen"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "ma547",
+          "score": 0.1287,
+          "content": "Ordne das Werkzeug seiner Hauptanwendung zu. | Schneebesen Mörser Sieb | Trennen nach Größe Zerstoßen Aufschlagen | Schneebesen Aufschlagen Mörser Zerstoßen Sieb Trennen nach Größe | Schneebesen – Aufschlagen; Mörser – Zerstoßen; Sieb – Trennen nach Größe. | Küchenwerkzeuge"
+        },
+        {
+          "id": "ma708",
+          "score": 0.1036,
+          "content": "Ordne dem Instrument seinen besonderen Spielmechanismus zu. | Drehleier Nyckelharpa Uilleann Pipes | Ein kurbelgetriebenes Rad streicht die Saiten Ein Blasebalg liefert die Luft für den Dudelsack Tasten verkürzen die mit einem Bogen gestrichenen Saiten | Drehleier Ein kurbelgetriebenes Rad streicht die Saiten Nyckelharpa Tasten verkürzen die mit einem Bogen gestrichenen Saiten Uilleann Pipes Ein Blasebalg liefert die Luft für den Dudelsack | Bei der Drehleier übernimmt ein gedrehtes Rad die Reibung an den Saiten. Die Nyckelharpa wird mit dem Bogen gespielt, während Tasten die schwingende Saitenlänge verändern. Uilleann Pipes werden über einen unter dem Arm betätigten Blasebalg mit Luft versorgt. | Ungewöhnliche Tonerzeugung"
+        },
+        {
+          "id": "or178",
+          "score": 0.0828,
+          "content": "Ordne diese Schritte der Kakaoverarbeitung vom frühesten zum spätesten Schritt. | Kakaobohnen rösten Kakaonibs mahlen Kakaobohnen fermentieren Kakaobohnen trocknen | Kakaobohnen fermentieren Kakaobohnen trocknen Kakaobohnen rösten Kakaonibs mahlen | Kakaobohnen fermentieren (Schritt 2) → Kakaobohnen trocknen (Schritt 3) → Kakaobohnen rösten (Schritt 4) → Kakaonibs mahlen (Schritt 6). Dazwischen werden in Schritt 5 die Schalen von den Nibs getrennt. | Lebensmittelherstellung"
+        }
+      ]
+    },
+    {
+      "id": "or722",
+      "principle": "Handwerksablauf",
+      "correct_order": [
+        "Glas an der Pfeife aufnehmen",
+        "Hohlkörper aufblasen",
+        "Gefäß von der Blaspfeife lösen",
+        "Im Kühlofen kontrolliert abkühlen"
+      ],
+      "fact_check": "Glas wird an der Blaspfeife aufgenommen und aufgeblasen. Nach der Arbeit an der Pfeife wird das Gefäß davon gelöst; weitere Formarbeit kann an einer Haltestange erfolgen. Zum Schluss kühlt es kontrolliert im Kühlofen ab.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Albarello | The Techniques of Renaissance Venetian-Style Glassworking",
+          "url": "https://renvenetianstyle.cmog.org/node/10"
+        },
+        {
+          "title": "Mirror to Discovery: The 200-Inch Disk and the Hale Reflecting Telescope at Palomar | Corning Museum of Glass",
+          "url": "https://whatson.cmog.org/exhibitions-galleries/mirror-discovery-200-inch-disk-and-hale-reflecting-telescope-palomar"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "tf20",
+          "score": 0.0929,
+          "content": "Glas ist bei Raumtemperatur eine extrem langsam fließende Flüssigkeit. | False | Glas ist ein amorpher Feststoff; alte Scheiben sind wegen früher Fertigungstechniken ungleich dick."
+        },
+        {
+          "id": "mc11",
+          "score": 0.0912,
+          "content": "Woraus besteht Glas hauptsächlich? | A | Gewöhnliches Glas basiert vor allem auf Siliziumdioxid aus Quarzsand. | A Quarzsand B Kalkstein C Kohle D Ton | Wissenschaft und Technik allgemein"
+        },
+        {
+          "id": "es745",
+          "score": 0.0862,
+          "content": "Bis zu wie oft können Mehrwegflaschen aus Glas laut Umweltbundesamt wieder befüllt werden? | 50 | Das Umweltbundesamt nennt bis zu 50 Wiederbefüllungen, bevor die Glasflaschen wieder eingeschmolzen werden. Das betrifft echte Mehrwegflaschen, nicht gewöhnliche Einwegbehälter aus Glas. | Mehrweg statt Einschmelzen"
+        }
+      ]
+    },
+    {
+      "id": "or723",
+      "principle": "Handwerksablauf",
+      "correct_order": [
+        "Lettern zu Zeilen setzen",
+        "Zeilen zur Seitenform zusammenstellen",
+        "Druckform einfärben",
+        "Papier mit der Form bedrucken"
+      ],
+      "fact_check": "Im Handsatz werden Lettern zunächst zu Zeilen und diese zur Druckform zusammengefügt. Erst die eingefärbten Druckflächen übertragen unter Druck das Schriftbild auf das Papier.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Printing Materials | Museum Plantin-Moretus",
+          "url": "https://museumplantinmoretus.be/en/collection-research/de-collectie/printing-materials"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "or116",
+          "score": 0.1945,
+          "content": "Ordne die Erfindungen von früher nach später. | World Wide Web Telefon von Bell Fernsehen von Baird Buchdruck mit beweglichen Lettern | Buchdruck mit beweglichen Lettern Telefon von Bell Fernsehen von Baird World Wide Web | Richtig: Buchdruck mit beweglichen Lettern → Telefon von Bell → Fernsehen von Baird → World Wide Web. | Erfindungsgeschichte"
+        },
+        {
+          "id": "or111",
+          "score": 0.1938,
+          "content": "Ordne die Erfindungen von früher nach später. | Buchdruck mit beweglichen Lettern Automobil von Benz Fotografie von Daguerre erstes iPhone | Buchdruck mit beweglichen Lettern Fotografie von Daguerre Automobil von Benz erstes iPhone | Richtig: Buchdruck mit beweglichen Lettern → Fotografie von Daguerre → Automobil von Benz → erstes iPhone. | Erfindungsgeschichte"
+        },
+        {
+          "id": "or119",
+          "score": 0.1908,
+          "content": "Ordne die Erfindungen von früher nach später. | World Wide Web Buchdruck mit beweglichen Lettern Dampfmaschine von Watt Automobil von Benz | Buchdruck mit beweglichen Lettern Dampfmaschine von Watt Automobil von Benz World Wide Web | Richtig: Buchdruck mit beweglichen Lettern → Dampfmaschine von Watt → Automobil von Benz → World Wide Web. | Erfindungsgeschichte"
+        }
+      ]
+    },
+    {
+      "id": "or724",
+      "principle": "Handwerksablauf",
+      "correct_order": [
+        "Geformten Rohling trocknen",
+        "Erster Brand (Schrühbrand)",
+        "Glasur auftragen",
+        "Glasurbrand"
+      ],
+      "fact_check": "Nach dem Trocknen wird der Rohling erstmals gebrannt. Der noch poröse Scherben nimmt anschließend die Glasur auf. Im folgenden heißen Glasurbrand verbinden sich Glasur und Porzellan.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Bisque Firing & Glaze Firing in the MEISSEN Kiln Hall",
+          "url": "https://www.meissen.com/net/craft/firing"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "or178",
+          "score": 0.0902,
+          "content": "Ordne diese Schritte der Kakaoverarbeitung vom frühesten zum spätesten Schritt. | Kakaobohnen rösten Kakaonibs mahlen Kakaobohnen fermentieren Kakaobohnen trocknen | Kakaobohnen fermentieren Kakaobohnen trocknen Kakaobohnen rösten Kakaonibs mahlen | Kakaobohnen fermentieren (Schritt 2) → Kakaobohnen trocknen (Schritt 3) → Kakaobohnen rösten (Schritt 4) → Kakaonibs mahlen (Schritt 6). Dazwischen werden in Schritt 5 die Schalen von den Nibs getrennt. | Lebensmittelherstellung"
+        },
+        {
+          "id": "ma745",
+          "score": 0.0797,
+          "content": "Ordne der Grundform auf dem Pflegeetikett ihren Bereich zu. | Dreieck Quadrat Kreis | Professionelle Textilpflege Bleichen Trocknen | Dreieck Bleichen Quadrat Trocknen Kreis Professionelle Textilpflege | Auf Pflegeetiketten steht das Dreieck für Bleichen, das Quadrat für Trocknen und der Kreis für professionelle Textilpflege. Die konkrete Erlaubnis oder Einschränkung wird erst durch Zusätze wie Punkte, Striche oder Durchkreuzen festgelegt. | Wäschezeichen verstehen"
+        },
+        {
+          "id": "or601",
+          "score": 0.0474,
+          "content": "Ordne diese Web-Meilensteine – von früh nach spät. | Line-Mode-Browser Web-Software gemeinfrei erster Web-Vorschlag erster Browser und Server | erster Web-Vorschlag erster Browser und Server Line-Mode-Browser Web-Software gemeinfrei | erster Web-Vorschlag (1989 Jahr) → erster Browser und Server (1990 Jahr) → Line-Mode-Browser (1992 Jahr) → Web-Software gemeinfrei (1993 Jahr). | Geburt des Web"
+        }
+      ]
+    },
+    {
+      "id": "or725",
+      "principle": "Bergungs- und Fundgeschichte",
+      "correct_order": [
+        "Vasa wieder an die Oberfläche gehoben",
+        "Mary Rose gehoben",
+        "Titanic-Wrack entdeckt",
+        "Endurance-Wrack entdeckt"
+      ],
+      "fact_check": "Die Vasa kam 1961 an die Oberfläche, die Mary Rose wurde 1982 gehoben, das Titanic-Wrack 1985 entdeckt und die Endurance 2022 gefunden. Die Karten unterscheiden ausdrücklich Bergungen von Entdeckungen.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "The Salvaging",
+          "url": "https://www.vasamuseet.se/en/visit/exhibitions/salvaging"
+        },
+        {
+          "title": "Raising the Mary Rose - Mary Rose",
+          "url": "https://maryrose.org/discover/history/recovering-the-mary-rose/"
+        },
+        {
+          "title": "1985 discovery of RMS Titanic | Woods Hole Oceanographic Institution",
+          "url": "https://www.whoi.edu/ocean-learning-hub/ocean-topics/ocean-human-lives/underwater-archaeology/rms-titanic/1985-discovery-of-rms-titanic/"
+        },
+        {
+          "title": "Endurance22 Expedition Blog: 9 March 2022 -",
+          "url": "https://endurance22.org/expedition-blog/9-march-2022"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "ma063",
+          "score": 0.1278,
+          "content": "Ordne das Werk seinem Autor oder seiner Autorin zu. | Frankenstein Der Name der Rose Die Schatzinsel | Mary Shelley Umberto Eco Robert Louis Stevenson | Frankenstein Mary Shelley Der Name der Rose Umberto Eco Die Schatzinsel Robert Louis Stevenson | Frankenstein – Mary Shelley; Der Name der Rose – Umberto Eco; Die Schatzinsel – Robert Louis Stevenson. | Literatur"
+        },
+        {
+          "id": "tf067",
+          "score": 0.1259,
+          "content": "„Frankenstein“ wurde von Mary Shelley geschrieben. | True | Das Werk stammt von Mary Shelley."
+        },
+        {
+          "id": "tf710",
+          "score": 0.0964,
+          "content": "Das schwedische Kriegsschiff Vasa sank bereits auf seiner Jungfernfahrt. | True | Die Vasa ging am 10. August 1628 im Hafen von Stockholm unter, nur wenige Minuten nach dem ersten Auslaufen. Das Schiff war zu instabil; durch offene Geschützpforten drang Wasser ein."
+        }
+      ]
+    },
+    {
+      "id": "or726",
+      "principle": "Herstellungsablauf",
+      "correct_order": [
+        "Maischen",
+        "Läutern",
+        "Würze mit Hopfen kochen",
+        "Gären"
+      ],
+      "fact_check": "Beim Maischen werden Malzbestandteile gelöst und Stärke abgebaut. Das Läutern trennt die Würze vom Treber. Danach wird die Würze mit Hopfen gekocht, abgekühlt und schließlich vergoren.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Bier - Bundesministerium für Land- und Forstwirtschaft, Klima- und Umweltschutz, Regionen und Wasserwirtschaft",
+          "url": "https://www.bmluk.gv.at/themen/lebensmittel/trad-lebensmittel/getraenke/bier.html"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "ma35",
+          "score": 0.1325,
+          "content": "Ordne die Küchentechnik ihrer Beschreibung zu. | Blanchieren Pochieren Flambieren | kurz in kochendem Wasser garen sanft unter dem Siedepunkt garen mit brennendem Alkohol aromatisieren | Blanchieren kurz in kochendem Wasser garen Pochieren sanft unter dem Siedepunkt garen Flambieren mit brennendem Alkohol aromatisieren | Kurz kochen, sanft ziehen lassen und kontrolliert abbrennen. | Mensch und Alltag allgemein"
+        },
+        {
+          "id": "tf743",
+          "score": 0.0779,
+          "content": "Im bayerischen Reinheitsgebot von 1516 wird Hefe ausdrücklich als Bierzutat genannt. | False | Die damalige Vorschrift nennt Gerste, Hopfen und Wasser. Hefe wird in dieser Zutatenliste nicht ausdrücklich erwähnt, auch wenn sie beim Brauen natürlich eine Rolle spielte."
+        },
+        {
+          "id": "or38",
+          "score": 0.0521,
+          "content": "Ordne die Bestandteile des Verdauungswegs in ihrer üblichen Reihenfolge. | Magen Speiseröhre Dickdarm Dünndarm | Speiseröhre Magen Dünndarm Dickdarm | Nach der Speiseröhre folgen Magen, Dünndarm und Dickdarm. | Mensch und Alltag allgemein"
+        }
+      ]
+    },
+    {
+      "id": "or727",
+      "principle": "Herstellungsablauf",
+      "correct_order": [
+        "Fruchtfleisch mechanisch entfernen",
+        "Anhaftende Schleimschicht fermentieren",
+        "Bohnen waschen",
+        "Bohnen trocknen"
+      ],
+      "fact_check": "Bei der klassischen nassen Aufbereitung werden die Kirschen entpulpt. Danach wird die anhaftende Schleimschicht durch Fermentation abgebaut, abgewaschen und der Kaffee getrocknet. Andere Aufbereitungsweisen können anders ablaufen.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Exposure Data - Drinking Coffee, Mate, and Very Hot Beverages - NCBI Bookshelf",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK543954/"
+        }
+      ],
+      "source_access_note": "Klassische nasse Aufbereitung im ausgelesenen IARC-Originalkapitel bei NCBI geprüft; Direktansicht verlangte eine Zugangsprüfung.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "or178",
+          "score": 0.1428,
+          "content": "Ordne diese Schritte der Kakaoverarbeitung vom frühesten zum spätesten Schritt. | Kakaobohnen rösten Kakaonibs mahlen Kakaobohnen fermentieren Kakaobohnen trocknen | Kakaobohnen fermentieren Kakaobohnen trocknen Kakaobohnen rösten Kakaonibs mahlen | Kakaobohnen fermentieren (Schritt 2) → Kakaobohnen trocknen (Schritt 3) → Kakaobohnen rösten (Schritt 4) → Kakaonibs mahlen (Schritt 6). Dazwischen werden in Schritt 5 die Schalen von den Nibs getrennt. | Lebensmittelherstellung"
+        },
+        {
+          "id": "or20",
+          "score": 0.1363,
+          "content": "Ordne die Schritte eines klassischen Espresso-Bezugs. | Mahlen Extrahieren Tampern Bohnen abwiegen | Bohnen abwiegen Mahlen Tampern Extrahieren | Abwiegen, mahlen, das Kaffeebett verdichten und dann extrahieren. | Mensch und Alltag allgemein"
+        },
+        {
+          "id": "tf533",
+          "score": 0.095,
+          "content": "Kaffeebohnen sind botanisch die Samen der Kaffeefrucht. | True | Die sogenannten Bohnen sind die Samen in den Kaffeekirschen."
+        }
+      ]
+    },
+    {
+      "id": "or728",
+      "principle": "Herstellungsablauf",
+      "correct_order": [
+        "Milch mit Lab dicklegen",
+        "Käsebruch zerkleinern",
+        "Geformten Käse ins Salzbad geben",
+        "Käse reifen lassen"
+      ],
+      "fact_check": "Nach dem Dicklegen wird die geronnene Masse mit dem Spino zerkleinert. Weitere Schritte formen den Laib, der anschließend gesalzen wird und danach reift. Gefragt ist die Reihenfolge der ausgewählten Schritte.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Production - Boselli",
+          "url": "https://www.parmigianoreggianoboselli.it/production/?lang=en"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "es223 und es743 prüfen Milchmenge bzw. Reifedauer; hier Herstellungsabfolge ohne diese Zahlen.",
+      "nearest_existing_entries": [
+        {
+          "id": "es223",
+          "score": 0.2036,
+          "content": "Wie viele Monate muss Parmigiano Reggiano mindestens reifen? | 12 | Parmigiano Reggiano muss mindestens zwölf Monate reifen. Viele im Handel angebotene Laibe sind 24 bis 36 Monate alt; eine festgelegte Höchstreifezeit gibt es nicht. | Lebensmittelherstellung"
+        },
+        {
+          "id": "es743",
+          "score": 0.2002,
+          "content": "Wie viele Liter Milch braucht die Käserei La Grande laut Herstellerangabe ungefähr für ein Kilogramm Parmigiano Reggiano? | 16 | Die Käserei La Grande beschreibt im offiziellen Parmigiano-Reggiano-Shop ein Verhältnis von etwa 16 Litern Milch für ein Kilogramm des Hartkäses. | Milch in einem Stück Hartkäse"
+        },
+        {
+          "id": "bs154",
+          "score": 0.0906,
+          "content": "Italienischer Käse, Ort in Italien oder beides? | Asiago Gorgonzola Taleggio Fontina Burrata Verona Matera | Asiago both Gorgonzola both Taleggio both Fontina A Burrata A Verona B Matera B | Beides: Asiago, Gorgonzola, Taleggio. Nur Italienischer Käse: Fontina, Burrata. Nur Ort in Italien: Verona, Matera. | A Italienischer Käse B Ort in Italien | Italienische Käse und Orte"
+        }
+      ]
+    },
+    {
+      "id": "or729",
+      "principle": "Brennwert pro Masse",
+      "correct_order": [
+        "Ballaststoffe",
+        "Eiweiß",
+        "Alkohol (Ethanol)",
+        "Fett"
+      ],
+      "fact_check": "Für die Nährwertkennzeichnung setzt die EU hier 2, 4, 7 und 9 kcal pro Gramm an. Alkohol liefert damit pro Gramm mehr Kennzeichnungsenergie als Eiweiß.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Regulation (EU) No 1169/2011 – Annex XIV: Conversion factors for the calculation of energy",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A02011R1169-20131206"
+        }
+      ],
+      "source_access_note": "Umrechnungsfaktoren 2/4/7/9 in Anhang XIV des Originalrechtsakts über den Suchindex geprüft; direkter PDF-Aufruf lieferte nur JavaScript-Zugangshinweis.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "tf199",
+          "score": 0.1282,
+          "content": "Kamele speichern in ihren Höckern vor allem Fett. | True | Kamelhöcker enthalten Fett und kein Wasser. Das Fett dient als Energiereserve, wenn Nahrung knapp ist."
+        },
+        {
+          "id": "or546",
+          "score": 0.119,
+          "content": "Ordne diese Organe nach typischer Masse – von leicht nach schwer. | Gehirn Leber Schilddrüse Herz | Schilddrüse Herz Gehirn Leber | Schilddrüse (25 Gramm ungefähr) → Herz (300 Gramm ungefähr) → Gehirn (1400 Gramm ungefähr) → Leber (1500 Gramm ungefähr). | Körperorgane"
+        },
+        {
+          "id": "or547",
+          "score": 0.1158,
+          "content": "Ordne diese Vorgänge bei Normaldruck nach Temperatur – von niedrig nach hoch. | Wasser siedet Zucker karamellisiert Schokolade schmilzt Eiweiß gerinnt | Schokolade schmilzt Eiweiß gerinnt Wasser siedet Zucker karamellisiert | Schokolade schmilzt (32 Grad Celsius ungefähr) → Eiweiß gerinnt (62 Grad Celsius ungefähr) → Wasser siedet (100 Grad Celsius ungefähr) → Zucker karamellisiert (170 Grad Celsius ungefähr). | Kochtemperaturen"
+        }
+      ]
+    },
+    {
+      "id": "or730",
+      "principle": "Säuregrad",
+      "correct_order": [
+        "Wein",
+        "Schwarzer Kaffee",
+        "Milch",
+        "Meerwasser"
+      ],
+      "fact_check": "Die verwendete Lehrbuchtabelle nennt als typische pH-Werte 3,5, 5,0, 6,9 und 8,5. Zusammensetzung und Messbedingungen beeinflussen die Einzelwerte; verglichen werden die üblichen Richtbereiche dieser Flüssigkeiten.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "The pH Scale – Introductory Chemistry – 1st Canadian Edition",
+          "url": "https://opentextbc.ca/introductorychemistry/chapter/the-ph-scale/"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "ma33 enthält Zitronensaft und reines Wasser. Beide entfernt; die vier verbliebenen Flüssigkeiten und ihre pH-Vergleiche sind neu.",
+      "nearest_existing_entries": [
+        {
+          "id": "ma33",
+          "score": 0.142,
+          "content": "Ordne die Substanz ihrem pH-Bereich zu. | Zitronensaft reines Wasser Seifenlauge | sauer neutral basisch | Zitronensaft sauer reines Wasser neutral Seifenlauge basisch | Zitronensaft ist sauer, reines Wasser neutral und Seifenlauge basisch. | Wissenschaft und Technik allgemein"
+        },
+        {
+          "id": "or14",
+          "score": 0.1034,
+          "content": "Ordne diese Getränke nach durchschnittlichem Koffeingehalt pro typischer Portion – von wenig zu viel. | Espresso Cola Filterkaffee entkoffeinierter Kaffee | entkoffeinierter Kaffee Cola Espresso Filterkaffee | Typische Portionen enthalten grob wenige mg, etwa 30–40 mg, etwa 60 mg und 80–120 mg. | Mensch und Alltag allgemein"
+        },
+        {
+          "id": "es743",
+          "score": 0.0993,
+          "content": "Wie viele Liter Milch braucht die Käserei La Grande laut Herstellerangabe ungefähr für ein Kilogramm Parmigiano Reggiano? | 16 | Die Käserei La Grande beschreibt im offiziellen Parmigiano-Reggiano-Shop ein Verhältnis von etwa 16 Litern Milch für ein Kilogramm des Hartkäses. | Milch in einem Stück Hartkäse"
+        }
+      ]
+    },
+    {
+      "id": "or731",
+      "principle": "Weg durch ein Organ",
+      "correct_order": [
+        "Hornhaut",
+        "Pupille",
+        "Linse",
+        "Netzhaut"
+      ],
+      "fact_check": "Licht passiert zuerst die Hornhaut und die Pupillenöffnung, dann die Linse und erreicht schließlich die Netzhaut. Dort wird es in elektrische Signale umgewandelt.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Healthy Vision – How we see (National Eye Institute)",
+          "url": "https://www.nei.nih.gov/sites/default/files/2019-06/NEI_Healthy-Vision_booklet_WEB_508%20%281%29.pdf"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "mc200 fragt die Gefäßfreiheit der Hornhaut ab; hier Lichtweg und anatomische Abfolge.",
+      "nearest_existing_entries": [
+        {
+          "id": "mc200",
+          "score": 0.2555,
+          "content": "Welcher durchsichtige Teil des Auges besitzt keine eigenen Blutgefäße? | C | Die Hornhaut ist durchsichtig und frei von Blutgefäßen. Nährstoffe erhält sie vor allem aus der Tränenflüssigkeit und dem Kammerwasser im Auge. | A Netzhaut B Iris C Hornhaut D Aderhaut | Körper & Gesundheit"
+        },
+        {
+          "id": "tf705",
+          "score": 0.0842,
+          "content": "Der Schweif eines Kometen zeigt immer nach hinten entlang seiner Flugbahn. | False | Sonnenwind und Strahlungsdruck treiben das Schweifmaterial vor allem von der Sonne weg. Deshalb kann ein Komet bei seinem Weg von der Sonne fort seinem Schweif sogar folgen."
+        },
+        {
+          "id": "tf07",
+          "score": 0.0782,
+          "content": "Die Chinesische Mauer ist mit bloßem Auge vom Mond aus sichtbar. | False | Vom Mond aus ist sie ohne Hilfsmittel nicht zu erkennen."
+        }
+      ]
+    },
+    {
+      "id": "or732",
+      "principle": "Verschachtelung",
+      "correct_order": [
+        "Zelle",
+        "Gewebe",
+        "Organ",
+        "Organsystem"
+      ],
+      "fact_check": "Gleichartige beziehungsweise zusammenarbeitende Zellen bilden Gewebe. Mehrere Gewebe bilden ein Organ, und zusammenarbeitende Organe bilden ein Organsystem. Das ist eine Ordnung nach Organisationsebenen.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "1.2 Structural Organization of the Human Body - Anatomy and Physiology 2e | OpenStax",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-2-structural-organization-of-the-human-body"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "Bestehende taxonomische Hierarchien prüfen andere Begriffe und andere Beziehungen als Zelle/Gewebe/Organ/Organsystem.",
+      "nearest_existing_entries": [
+        {
+          "id": "tf25",
+          "score": 0.2183,
+          "content": "Die Haut ist das größte Organ des menschlichen Körpers. | True | Nach Fläche und Gewicht ist die Haut das größte Organ des Menschen."
+        },
+        {
+          "id": "ma545",
+          "score": 0.1399,
+          "content": "Ordne das Organ seiner Hauptaufgabe zu. | Niere Lunge Bauchspeicheldrüse | Verdauungsenzyme und Hormone bilden Gasaustausch Blut filtern | Niere Blut filtern Lunge Gasaustausch Bauchspeicheldrüse Verdauungsenzyme und Hormone bilden | Niere – Blut filtern; Lunge – Gasaustausch; Bauchspeicheldrüse – Verdauungsenzyme und Hormone bilden. | Organe"
+        },
+        {
+          "id": "tf546",
+          "score": 0.1313,
+          "content": "Die Leber kann nach einem Teilverlust Gewebe nachbilden. | True | Sie besitzt eine außergewöhnliche Regenerationsfähigkeit."
+        }
+      ]
+    },
+    {
+      "id": "or733",
+      "principle": "Zahnanzahl",
+      "correct_order": [
+        "Kaninchen",
+        "Hauskatze",
+        "Hausschaf",
+        "Hausschwein"
+      ],
+      "fact_check": "Im vollständigen Dauergebiss sind es beim Kaninchen 28, bei der Katze 30, beim Schaf 32 und beim Schwein 44 Zähne. Milchgebisse, Zahnverlust und individuelle Fehlbildungen sind nicht gemeint.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Dental formulae and total number of teeth in mammals – Table 1.1 (University of Edinburgh)",
+          "url": "https://era.ed.ac.uk/server/api/core/bitstreams/839300d6-b9b9-473b-a339-bf3afdc7d2dc/content"
+        },
+        {
+          "title": "Sheep Facts | NC State Extension Publications",
+          "url": "https://content.ces.ncsu.edu/sheep-facts"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "Bereits vorhandene Zahnzahlen von Mensch/Hund nicht übernommen. Neu Kaninchen, Katze, Schaf, Schwein.",
+      "nearest_existing_entries": [
+        {
+          "id": "tf200",
+          "score": 0.1427,
+          "content": "Kaninchen können sich nicht erbrechen. | True | Kaninchen können wegen ihrer sehr kräftigen Schließmuskeln an der Speiseröhre nicht erbrechen. Deshalb können Haarballen oder andere Blockaden in ihrem Verdauungstrakt besonders gefährlich werden."
+        },
+        {
+          "id": "or09",
+          "score": 0.1198,
+          "content": "Ordne diese Tiere nach typischem Gewicht – vom leichtesten zum schwersten. | Hauskatze Blauwal Elefant Goldhamster | Goldhamster Hauskatze Elefant Blauwal | Hamster, Katze, Elefant, Blauwal – der Abstand am Ende ist eher deutlich. | Pflanzen und Tiere allgemein"
+        },
+        {
+          "id": "or28",
+          "score": 0.1147,
+          "content": "Ordne diese Tiere nach ihrer Höchstgeschwindigkeit an Land – von langsamer zu schneller. | Gepard Elefant Mensch Hauskatze | Mensch Elefant Hauskatze Gepard | Grob folgen Mensch, Elefant, Hauskatze und der besonders schnelle Gepard. | Pflanzen und Tiere allgemein"
+        }
+      ]
+    },
+    {
+      "id": "or734",
+      "principle": "Chromosomenanzahl",
+      "correct_order": [
+        "Hauskatze",
+        "Hausschaf",
+        "Hauspferd",
+        "Haushund"
+      ],
+      "fact_check": "Die normalen diploiden Chromosomensätze umfassen 38, 54, 64 und 78 Chromosomen. Verglichen werden die vollständigen doppelten Chromosomensätze der jeweiligen Haustierart.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Chromosomenzahl | embryology.ch",
+          "url": "https://embryology.ch/de/veterinaer-embryogenese/chromosomale-aberration-bei-den-haustieren/chromosomenzahl/"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "Mensch mit 46 Chromosomen aus es189 nicht übernommen; ausschließlich vier Haustierarten.",
+      "nearest_existing_entries": [
+        {
+          "id": "es189",
+          "score": 0.1135,
+          "content": "Wie viele Chromosomen enthält eine typische menschliche Körperzelle? | 46 | Die meisten menschlichen Körperzellen enthalten 23 Chromosomenpaare und damit insgesamt 46 Chromosomen. Ei- und Samenzellen besitzen dagegen nur einen einfachen Satz mit 23. | Genetik"
+        },
+        {
+          "id": "es085",
+          "score": 0.1071,
+          "content": "Welche Spitzengeschwindigkeit erreicht Hauskatze ungefähr? | 48 | Der gesuchte Richtwert beträgt 48 km/h. | Tiergeschwindigkeiten"
+        },
+        {
+          "id": "or083",
+          "score": 0.0918,
+          "content": "Ordne die Tiere nach Spitzengeschwindigkeit – von langsamer zu schneller. | Wanderfalke im Sturzflug Faultier Löwe Hauskatze | Faultier Hauskatze Löwe Wanderfalke im Sturzflug | Richtig: Faultier → Hauskatze → Löwe → Wanderfalke im Sturzflug. | Tiergeschwindigkeiten"
+        }
+      ]
+    },
+    {
+      "id": "or735",
+      "principle": "Obere Hörgrenze",
+      "correct_order": [
+        "Elefant",
+        "Mensch",
+        "Hund",
+        "Schweinswal"
+      ],
+      "fact_check": "Die Übersicht der Louisiana State University nennt etwa 12, 23, 45 und 150 Kilohertz als obere Grenzen. Das sind vergleichende Richtwerte aus Studien; Alter, Individuum und Messverfahren beeinflussen Hörgrenzen.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "How Well Do Dogs and Other Animals Hear? | Deafness in Dogs & Cats",
+          "url": "https://lsu.glb.lsu.edu/vetmed/deafness/hearingrange.php"
+        }
+      ],
+      "source_access_note": "Die vollständige Originaltabelle der Louisiana State University enthält alle vier Hörgrenzen; direkter Neuabruf mit Timeout.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "or186",
+          "score": 0.1824,
+          "content": "Ordne diese Säugetiere nach ihrer typischen Trächtigkeitsdauer – von kurz nach lang. | Elefant Hund Rind Hauskaninchen | Hauskaninchen Hund Rind Elefant | Hauskaninchen (31 Tage) → Hund (62–64 Tage) → Rind (9 Monate) → Elefant (660 Tage). | Tierbiologie"
+        },
+        {
+          "id": "or28",
+          "score": 0.1668,
+          "content": "Ordne diese Tiere nach ihrer Höchstgeschwindigkeit an Land – von langsamer zu schneller. | Gepard Elefant Mensch Hauskatze | Mensch Elefant Hauskatze Gepard | Grob folgen Mensch, Elefant, Hauskatze und der besonders schnelle Gepard. | Pflanzen und Tiere allgemein"
+        },
+        {
+          "id": "or084",
+          "score": 0.1634,
+          "content": "Ordne die Tiere nach Spitzengeschwindigkeit – von langsamer zu schneller. | Elefant Giraffe Gepard Mensch im Sprint | Elefant Mensch im Sprint Giraffe Gepard | Richtig: Elefant → Mensch im Sprint → Giraffe → Gepard. | Tiergeschwindigkeiten"
+        }
+      ]
+    },
+    {
+      "id": "or736",
+      "principle": "Lebenszyklus",
+      "correct_order": [
+        "Spore",
+        "Vorkeim mit Geschlechtsorganen",
+        "Befruchtete Eizelle",
+        "Junge Farnpflanze"
+      ],
+      "fact_check": "Aus der Spore wächst zunächst ein kleiner Vorkeim. Er bildet Geschlechtszellen; nach deren Verschmelzung entsteht aus der befruchteten Eizelle die neue Farnpflanze. Farne durchlaufen damit zwei unterschiedliche Generationen.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Native Plants for Georgia Part II: Ferns | CAES Field Report",
+          "url": "https://fieldreport.caes.uga.edu/publications/B987-2/native-plants-for-georgia-part-ii-ferns/"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "ma217",
+          "score": 0.0681,
+          "content": "Ordne den Pflanzentyp seinem Lebenszyklus zu. | Einjährige Pflanze Zweijährige Pflanze Mehrjährige Pflanze | wächst zunächst und blüht meist erst im zweiten Jahr lebt und blüht über mehrere Jahre keimt, blüht und stirbt in einer Saison | Einjährige Pflanze keimt, blüht und stirbt in einer Saison Zweijährige Pflanze wächst zunächst und blüht meist erst im zweiten Jahr Mehrjährige Pflanze lebt und blüht über mehrere Jahre | Einjährige Pflanzen vollenden ihren Zyklus in einer Saison. Zweijährige wachsen zunächst und blühen meist im Folgejahr; mehrjährige Pflanzen leben länger als zwei Jahre. | Lebensdauer von Pflanzen"
+        },
+        {
+          "id": "tf24",
+          "score": 0.0649,
+          "content": "Alle Säugetiere bringen lebende Junge zur Welt. | False | Kloakentiere wie Schnabeltier und Ameisenigel legen Eier."
+        },
+        {
+          "id": "es532",
+          "score": 0.0564,
+          "content": "Wie viele Tage dauert die Tragzeit eines Roten Riesenkängurus ungefähr? | 33 | Nach etwa 33 Tagen wird das winzige Junge geboren und kriecht in den Beutel. | Känguru-Tragzeit"
+        }
+      ]
+    },
+    {
+      "id": "or737",
+      "principle": "Nahrungskette",
+      "correct_order": [
+        "Phytoplankton",
+        "Antarktischer Krill",
+        "Pinguin",
+        "Seeleopard"
+      ],
+      "fact_check": "Phytoplankton wird von Krill gefressen, Krill kann Pinguinen als Nahrung dienen und Pinguine können Seeleoparden zum Opfer fallen. Dies ist eine mögliche Kette innerhalb eines verzweigten Nahrungsnetzes.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Antarctic food web – Australian Antarctic Program",
+          "url": "https://www.antarctica.gov.au/about-antarctica/animals/food-web/"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "mc23",
+          "score": 0.0842,
+          "content": "Welcher Vogel kann rückwärts fliegen? | A | Kolibris können durch ihre besondere Flügelbewegung kontrolliert rückwärts fliegen. | A Kolibri B Falke C Albatros D Pinguin | Pflanzen und Tiere allgemein"
+        },
+        {
+          "id": "ma207",
+          "score": 0.0763,
+          "content": "Ordne die Zahnart ihrer Hauptaufgabe beim Kauen zu. | Schneidezähne Eckzähne Backenzähne | Nahrung festhalten und zerreißen Nahrung zermahlen Nahrung abbeißen und schneiden | Schneidezähne Nahrung abbeißen und schneiden Eckzähne Nahrung festhalten und zerreißen Backenzähne Nahrung zermahlen | Schneidezähne teilen Nahrung ab, Eckzähne greifen und zerreißen sie. Die breiteren Backenzähne zerquetschen und zermahlen sie. | Zahnarten"
+        },
+        {
+          "id": "tf18",
+          "score": 0.0739,
+          "content": "Pinguine leben in freier Wildbahn auch am Nordpol. | False | Wildlebende Pinguine kommen ausschließlich auf der Südhalbkugel vor."
+        }
+      ]
+    },
+    {
+      "id": "or738",
+      "principle": "Beschriebene Arten",
+      "correct_order": [
+        "Säugetiere",
+        "Amphibien",
+        "Vögel",
+        "Fische"
+      ],
+      "fact_check": "Die Tabelle nennt 6.701 Säugetier-, 8.744 Amphibien-, 11.195 Vogel- und 36.863 Fischarten. Gemeint ist die damalige Zahl beschriebener Arten, nicht die Zahl bedrohter oder bereits bewerteter Arten.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "IUCN Red List version 2024-1: Table 1a",
+          "url": "https://nc.iucnredlist.org/redlist/content/attachment_files/2024-1_RL_Table_1a_v2.pdf"
+        }
+      ],
+      "source_access_note": "Alle vier Werte in Spalte Estimated number of described species des Original-PDFs IUCN 2024-1 geprüft; direkter Abruf HTTP 403. Die Jahresfassung wird in der Frage genannt.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "ma530",
+          "score": 0.1952,
+          "content": "Ordne das Tier seiner Wirbeltierklasse zu. | Axolotl Komodowaran Schnabeltier | Säugetiere Reptilien Amphibien | Axolotl Amphibien Komodowaran Reptilien Schnabeltier Säugetiere | Axolotl – Amphibien; Komodowaran – Reptilien; Schnabeltier – Säugetiere. | Tierklassen"
+        },
+        {
+          "id": "ma23",
+          "score": 0.1903,
+          "content": "Ordne das Tier seiner Tierklasse zu. | Salamander Delfin Forelle | Amphibium Säugetier Fisch | Salamander Amphibium Delfin Säugetier Forelle Fisch | Salamander sind Amphibien, Delfine Säugetiere und Forellen Fische. | Pflanzen und Tiere allgemein"
+        },
+        {
+          "id": "tf531",
+          "score": 0.095,
+          "content": "Fledermäuse sind die einzigen Säugetiere mit aktivem Dauerflug. | True | Andere gleitende Säugetiere können nicht aus eigener Kraft dauerhaft fliegen."
+        }
+      ]
+    },
+    {
+      "id": "or739",
+      "principle": "Windwirkungen",
+      "correct_order": [
+        "Rauch steigt senkrecht auf",
+        "Blätter bewegen sich",
+        "Starke Äste schwanken",
+        "Bäume werden entwurzelt"
+      ],
+      "fact_check": "Die ausgewählten Beobachtungen stehen in der DWD-Übersicht bei Beaufort 0, 2, 6 und 11. Solche Wirkungen helfen, Windstärke einzuordnen, wenn kein Windmesser bereitsteht.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Deutscher Wetterdienst - Windwarnskala",
+          "url": "https://wettergefahren.de/warnungen/windwarnskala.html"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "es735",
+          "score": 0.0792,
+          "content": "Bis zu ungefähr wie viele Zentimeter lang kann eine Giraffenzunge nach dem Zoobericht aus San Diego werden? | 51 | Der Bericht nennt 18 bis 20 Zoll. Die obere Angabe von 20 Zoll entspricht 50,8 Zentimetern und wird hier auf 51 Zentimeter gerundet. Mit ihrer langen Zunge erreicht die Giraffe Blätter an Zweigen. | Eine Zunge für hohe Blätter"
+        },
+        {
+          "id": "tf196",
+          "score": 0.0704,
+          "content": "Auf der Erde gibt es mehr Bäume als Sterne in der Milchstraße. | True | Eine globale Studie schätzt die Zahl der Bäume auf rund 3,04 Billionen. Für die Milchstraße geht die NASA von etwa 100 bis 400 Milliarden Sternen aus. Selbst die obere Schätzung liegt damit deutlich unter der geschätzten Baumzahl."
+        },
+        {
+          "id": "mc724",
+          "score": 0.0692,
+          "content": "Was schob bei direkten Beobachtungen die „wandernden Steine“ im kalifornischen Death Valley über den Boden? | A | Auf einer flachen Wasserfläche entstanden dünne Eisschollen. Leichter Wind bewegte die Schollen, die Steine über den nassen Schlamm schoben und so lange Spuren hinterließen. | A Vom Wind bewegte dünne Eisschollen B Starke Erdbeben in kurzen Abständen C Magnetische Kräfte im Untergrund D Unter den Steinen wachsende Salzkristalle | Rätsel der Landschaft"
+        }
+      ]
+    },
+    {
+      "id": "or740",
+      "principle": "Flussroute",
+      "correct_order": [
+        "Passau",
+        "Linz",
+        "Wien",
+        "Bratislava"
+      ],
+      "fact_check": "Von Passau führt die Donau flussabwärts zunächst über Linz und weiter über Wien nach Bratislava. Gemeint ist die Reihenfolge auf dem Fluss, nicht die Luftlinie zwischen den Städten.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Fleet data of the Danube states – Bunkering map, slide 26 (Danube Commission, 2024)",
+          "url": "https://www.danubecommission.org/uploads/doc/2024/20241008_Fleet_workshop/Domokos_Ivanyi_DC_-_Fleet_data_of_the_Danube_states.pdf"
+        },
+        {
+          "title": "Rhine-Danube Core Network Corridor - Mobility and Transport",
+          "url": "https://transport.ec.europa.eu/other-pages/transport-basic-page/rhine-danube-core-network-corridor_en?prefLang=el"
+        }
+      ],
+      "source_access_note": "Donaukommission: Karte auf Folie 26 sowie ausgelesene Ortsbeschriftungen; ergänzende EU-Korridorbeschreibung aus dem Original-Suchindex, direkter Abruf HTTP 429. Keine erfolgreiche visuelle Screenshotprüfung behauptet.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "or02",
+          "score": 0.1859,
+          "content": "Ordne die Städte von Norden nach Süden. | Rom Berlin Oslo Wien | Oslo Berlin Wien Rom | Oslo liegt am nördlichsten, danach folgen Berlin, Wien und Rom. | Geografie und Welt allgemein"
+        },
+        {
+          "id": "or31",
+          "score": 0.1393,
+          "content": "Ordne diese Flüsse nach Länge – vom kürzesten zum längsten. | Nil Rhein Donau Jangtsekiang | Rhein Donau Jangtsekiang Nil | Rhein, Donau, Jangtsekiang und Nil werden in dieser Reihenfolge länger. | Geografie und Welt allgemein"
+        },
+        {
+          "id": "or182",
+          "score": 0.1228,
+          "content": "Ordne diese Städte entlang des Rheins – flussabwärts von Basel in Richtung Nordsee. | Duisburg Basel Köln Mainz | Basel Mainz Köln Duisburg | Basel (Pegel Basel-Rheinhalle, Rhein-km 164,3) → Mainz (Rhein-km 498,27) → Köln (Rhein-km 688,0) → Duisburg (Pegel Duisburg-Ruhrort, Rhein-km 780,8). | Flüsse & Städte"
+        }
+      ]
+    },
+    {
+      "id": "or741",
+      "principle": "Schiffsroute",
+      "correct_order": [
+        "Straße von Gibraltar",
+        "Suezkanal",
+        "Bab el-Mandeb",
+        "Straße von Malakka"
+      ],
+      "fact_check": "Über Gibraltar gelangt das Schiff ins Mittelmeer, durch Suez ins Rote Meer und durch Bab el-Mandeb zum Golf von Aden. Auf dem weiteren Weg nach Singapur folgt die Straße von Malakka. Die Aufgabe legt die Suezroute fest.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "The Strait of Gibraltar connects the Atlantic to the Mediterranean - NASA",
+          "url": "https://www.nasa.gov/image-article/strait-of-gibraltar-connects-atlantic-mediterranean/"
+        },
+        {
+          "title": "World Oil Transit Chokepoints – U.S. Energy Information Administration",
+          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "or216",
+          "score": 0.1195,
+          "content": "Ordne diese Pokerhände nach ihrer Stärke – von schwach nach stark. | Full House Ein Paar Vierling Straße | Ein Paar Straße Full House Vierling | Ein Paar → Straße → Full House → Vierling. In der üblichen Rangfolge schlägt jede Hand die davor genannte. | Kartenspiele"
+        },
+        {
+          "id": "tf711",
+          "score": 0.0954,
+          "content": "Im Suezkanal werden Schiffe durch Schleusen auf eine höhere Wasserstufe gehoben. | False | Der Suezkanal besitzt keine Schleusen. Anders als etwa beim Panamakanal müssen Schiffe dort keine höher gelegene Kanalstrecke überwinden."
+        },
+        {
+          "id": "or539",
+          "score": 0.0942,
+          "content": "Ordne diese Städte geografisch – von Süden nach Norden. | Berlin Reykjavík Kapstadt Singapur | Kapstadt Singapur Berlin Reykjavík | Kapstadt (-33.9 Grad Nord) → Singapur (1.3 Grad Nord) → Berlin (52.5 Grad Nord) → Reykjavík (64.1 Grad Nord). | Breitengrade"
+        }
+      ]
+    },
+    {
+      "id": "or742",
+      "principle": "Salzgehalt",
+      "correct_order": [
+        "Ostsee",
+        "Schwarzes Meer",
+        "Mittelmeer",
+        "Totes Meer"
+      ],
+      "fact_check": "Als typische Richtwerte werden etwa 8, 18 und 38 Gramm Salz pro Kilogramm für Ostsee, Schwarzes Meer und Mittelmeer genannt. Das Tote Meer ist noch um ein Mehrfaches salziger als gewöhnliches Meerwasser. Lokale Werte schwanken.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "CIR1500/FA128: The Role of Salinity in Hard Clam Aquaculture",
+          "url": "https://ask.ifas.ufl.edu/publication/FA128"
+        },
+        {
+          "title": "JetStream Max: \"A Funny Bath\" - The Dead Sea | National Oceanic and Atmospheric Administration",
+          "url": "https://www.noaa.gov/jetstream/dead-max"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "ma536",
+          "score": 0.2122,
+          "content": "Ordne den Fluss dem Meer zu, in das er mündet. | Po Weichsel Orinoco | Atlantik Ostsee Adriatisches Meer | Po Adriatisches Meer Weichsel Ostsee Orinoco Atlantik | Po – Adriatisches Meer; Weichsel – Ostsee; Orinoco – Atlantik. | Flussmündungen"
+        },
+        {
+          "id": "ma31",
+          "score": 0.1955,
+          "content": "Ordne das Gewässer seiner Lage zu. | Totes Meer Gardasee Titicacasee | Israel und Jordanien Italien Peru und Bolivien | Totes Meer Israel und Jordanien Gardasee Italien Titicacasee Peru und Bolivien | Naher Osten, Norditalien und die Anden. | Geografie und Welt allgemein"
+        },
+        {
+          "id": "tf538",
+          "score": 0.1699,
+          "content": "Die Donau mündet in die Ostsee. | False | Die Donau fließt durch ihr Delta ins Schwarze Meer."
+        }
+      ]
+    },
+    {
+      "id": "or743",
+      "principle": "Inkohlungsgrad",
+      "correct_order": [
+        "Torf",
+        "Braunkohle",
+        "Bituminöse Steinkohle",
+        "Anthrazit"
+      ],
+      "fact_check": "Unter Druck und Wärme werden Pflanzenreste über Torf und verschiedene Kohleränge zu immer stärker umgewandeltem Material. Von den genannten Stufen ist Anthrazit die höchste; weitere Zwischenstufen wurden ausgelassen.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "What are the types of coal? | U.S. Geological Survey",
+          "url": "https://www.usgs.gov/faqs/what-are-types-coal"
+        }
+      ],
+      "source_access_note": "Die Rangfolge der Kohlearten wurde im ausgelesenen USGS-Originalinhalt geprüft; Direktabruf HTTP 405.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "mc37",
+          "score": 0.0771,
+          "content": "Aus welchem Material besteht die Mine eines Bleistifts hauptsächlich? | B | Bleistiftminen bestehen aus einer Mischung aus Graphit und Ton. | A Blei B Graphit C Kohle D Zinn | Wissenschaft und Technik allgemein"
+        },
+        {
+          "id": "ma739",
+          "score": 0.0572,
+          "content": "Ordne dem Material seine charakteristische Eigenschaft zu. | Nitinol Aerogel Kevlar | Sehr zugfeste Aramidfasern Formgedächtnis einer Metalllegierung Extrem poröses und leichtes Feststoffgerüst | Nitinol Formgedächtnis einer Metalllegierung Aerogel Extrem poröses und leichtes Feststoffgerüst Kevlar Sehr zugfeste Aramidfasern | Nitinol ist eine Nickel-Titan-Legierung mit Formgedächtnis. Aerogele besitzen ein stark poröses und deshalb sehr leichtes Feststoffgerüst. Kevlar bezeichnet besonders zugfeste Aramidfasern. Nicht jedes Material zeigt diese Eigenschaften unter beliebigen Bedingungen gleich stark. | Materialien mit besonderen Eigenschaften"
+        },
+        {
+          "id": "mc085",
+          "score": 0.0552,
+          "content": "In welcher Einheit wird Druck gemessen? | A | Druck wird in Pascal gemessen. | A Pascal B Ohm C Coulomb D Newton | Physik und Maßeinheiten"
+        }
+      ]
+    },
+    {
+      "id": "or744",
+      "principle": "Räumliche Schichtung",
+      "correct_order": [
+        "Erdkruste",
+        "Erdmantel",
+        "Äußerer Kern",
+        "Innerer Kern"
+      ],
+      "fact_check": "Unter der Erdkruste liegt der Mantel, darunter der äußere und schließlich der innere Kern. Der äußere Kern ist flüssig, der innere fest.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "The Science of Earthquakes | U.S. Geological Survey",
+          "url": "https://www.usgs.gov/programs/earthquake-hazards/science-earthquakes"
+        }
+      ],
+      "source_access_note": "Die vier Schichten und die Zustände des inneren/äußeren Kerns im ausgelesenen USGS-Originalinhalt geprüft; direkter Neuabruf mit Timeout.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "es722",
+          "score": 0.1075,
+          "content": "Wie viele Meter senkrechte Tiefe erreichte die Kola-Tiefbohrung SG-3? | 12262 | Die wissenschaftliche Rückschau nennt 12.262 Meter erreichte Tiefe. Diese Tiefe ist von der Länge schräg oder waagerecht geführter Bohrungen zu unterscheiden. Trotz des Rekords blieb die Bohrung in der Erdkruste. | Ein Loch tief in die Erdkruste"
+        },
+        {
+          "id": "or04",
+          "score": 0.1029,
+          "content": "Ordne die Planeten nach ihrer Entfernung zur Sonne. | Mars Venus Jupiter Erde | Venus Erde Mars Jupiter | Von innen nach außen: Venus, Erde, Mars, Jupiter. | Wissenschaft und Technik allgemein"
+        },
+        {
+          "id": "tf703",
+          "score": 0.0923,
+          "content": "Manche Seegurken stoßen zur Verteidigung innere Organe aus und können sie später nachbilden. | True | Bestimmte Seegurken werfen klebrige innere Strukturen durch den After aus, um Angreifer abzuwehren. Diese können anschließend nachwachsen."
+        }
+      ]
+    },
+    {
+      "id": "or745",
+      "principle": "Oberflächendruck",
+      "correct_order": [
+        "Mars",
+        "Erde",
+        "Titan",
+        "Venus"
+      ],
+      "fact_check": "Die Vergleichswerte liegen ungefähr bei 0,006 bar auf Mars, 1 bar auf der Erde, rund 1,5 bis 1,6 bar auf Titan und 92 bar auf Venus. Druck schwankt mit Ort und Wetter; die grobe Reihenfolge bleibt eindeutig.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Mars Fact Sheet",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html?level=1"
+        },
+        {
+          "title": "Venus-Earth-Sun Fact Sheet",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/ves.html"
+        },
+        {
+          "title": "Titan: Facts",
+          "url": "https://science.nasa.gov/saturn/moons/titan/facts/"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "or04 ordnet nach Abstand von der Sonne, hier nach atmosphärischem Oberflächendruck; anderes Vergleichsmerkmal und andere Reihenfolge.",
+      "nearest_existing_entries": [
+        {
+          "id": "or04",
+          "score": 0.3227,
+          "content": "Ordne die Planeten nach ihrer Entfernung zur Sonne. | Mars Venus Jupiter Erde | Venus Erde Mars Jupiter | Von innen nach außen: Venus, Erde, Mars, Jupiter. | Wissenschaft und Technik allgemein"
+        },
+        {
+          "id": "ma37",
+          "score": 0.2002,
+          "content": "Ordne den Mond seinem Planeten zu. | Titan Europa Phobos | Saturn Jupiter Mars | Titan Saturn Europa Jupiter Phobos Mars | Titan kreist um Saturn, Europa um Jupiter und Phobos um Mars. | Wissenschaft und Technik allgemein"
+        },
+        {
+          "id": "bs196",
+          "score": 0.1987,
+          "content": "Englischer Elementname, Himmelskörper oder beides? | Mercury Helium Uranium Neon Mars Ceres Titan | Mercury both Helium A Uranium A Neon A Mars B Ceres B Titan B | Beides: Mercury. Nur Englischer Elementname: Helium, Uranium, Neon. Nur Himmelskörper: Mars, Ceres, Titan. | A Englischer Elementname B Himmelskörper | Elemente und Himmelskörper"
+        }
+      ]
+    },
+    {
+      "id": "or746",
+      "principle": "Wärmeleitfähigkeit",
+      "correct_order": [
+        "Glas",
+        "Edelstahl",
+        "Kupfer",
+        "Diamant"
+      ],
+      "fact_check": "Die Lehrbuchtabelle nennt ungefähr 0,84, 14, 390 und 2.000 Watt pro Meter und Kelvin. Diamant leitet Wärme ausgesprochen gut. Gemeint ist Wärmeleitung, nicht elektrische Leitfähigkeit.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "1.6 Mechanisms of Heat Transfer - University Physics Volume 2 | OpenStax",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-6-mechanisms-of-heat-transfer"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "es522",
+          "score": 0.1474,
+          "content": "Wie viele Meter lang ist die gedruckte Rolle des Diamant-Sutra ungefähr? | 5 | Die aus mehreren Papierblättern geklebte Rolle ist etwa fünf Meter lang. | Diamant-Sutra"
+        },
+        {
+          "id": "tf208",
+          "score": 0.1426,
+          "content": "Chemisch reines Wasser leitet elektrischen Strom besonders gut. | False | Chemisch reines Wasser leitet Strom nur sehr schlecht. Alltagswasser wird vor allem durch gelöste Salze und andere geladene Teilchen leitfähig."
+        },
+        {
+          "id": "or106",
+          "score": 0.1377,
+          "content": "Ordne die Stoffe nach Schmelzpunkt – von niedrig zu hoch. | Gold Kupfer Zinn Quecksilber | Quecksilber Zinn Gold Kupfer | Richtig: Quecksilber → Zinn → Gold → Kupfer. | Schmelzpunkte"
+        }
+      ]
+    },
+    {
+      "id": "or747",
+      "principle": "Wahrscheinlichkeit",
+      "correct_order": [
+        "Summe 12",
+        "Summe 3",
+        "Summe 9",
+        "Summe 7"
+      ],
+      "fact_check": "Von 36 gleich wahrscheinlichen geordneten Würfelpaaren ergeben 1 die Summe 12, 2 die Summe 3, 4 die Summe 9 und 6 die Summe 7. Die Größe einer Summe allein verrät also nicht ihre Wahrscheinlichkeit.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "Fair's Fair | NRICH",
+          "url": "https://nrich.maths.org/problems/fairs-fair"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "Volltext, Vergleichsbegriffe, Lösungen und nächste Treffer redaktionell auf denselben Wissenskern geprüft; keine Dublette festgestellt.",
+      "nearest_existing_entries": [
+        {
+          "id": "es32",
+          "score": 0.0731,
+          "content": "Wie viele Minuten dauert ein Fußballspiel regulär ohne Nachspielzeit und Verlängerung? | 90 | Zwei Halbzeiten zu je 45 Minuten ergeben 90 Minuten. | Mannschafts- & Ballsport"
+        },
+        {
+          "id": "tf37",
+          "score": 0.0592,
+          "content": "Ein Jahr auf dem Mars dauert länger als zwei Erdenjahre. | False | Ein Marsjahr dauert rund 687 Tage und damit etwas weniger als zwei Erdenjahre."
+        },
+        {
+          "id": "mc208",
+          "score": 0.0571,
+          "content": "Wie viele Sprachen stehen auf dem Stein von Rosette? | B | Der Text steht in zwei Sprachen: Ägyptisch und Altgriechisch. Für das Ägyptische wurden zwei Schriften verwendet, sodass insgesamt drei Schriftarten zu sehen sind. | A Eine B Zwei C Drei D Vier | Schriften & Entzifferung"
+        }
+      ]
+    },
+    {
+      "id": "or748",
+      "principle": "Lichtgeschwindigkeit",
+      "correct_order": [
+        "Diamant",
+        "Optisches Kronglas",
+        "Wasser",
+        "Luft"
+      ],
+      "fact_check": "Die typischen Brechungsindizes sind etwa 2,419, 1,52, 1,333 und 1,0003. Je höher dieser Wert ist, desto langsamer breitet sich Licht aus. Der Vergleich gilt für sichtbares Licht und gewöhnliche Materialbedingungen.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "25.3 The Law of Refraction - College Physics 2e | OpenStax",
+          "url": "https://openstax.org/books/college-physics-2e/pages/25-3-the-law-of-refraction"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "tf28 behandelt Schallgeschwindigkeit in Wasser/Luft; hier Lichtausbreitung und Brechungsindex, anderer physikalischer Wissenskern.",
+      "nearest_existing_entries": [
+        {
+          "id": "tf28",
+          "score": 0.2224,
+          "content": "Schall breitet sich im Wasser schneller aus als in der Luft. | True | In Wasser ist Schall ungefähr viermal schneller als in Luft."
+        },
+        {
+          "id": "or189",
+          "score": 0.1392,
+          "content": "Ordne diese Strahlungsarten nach ihrer Frequenz – von niedrig nach hoch. | Sichtbares Licht Radiowellen Röntgenstrahlung Mikrowellen | Radiowellen Mikrowellen Sichtbares Licht Röntgenstrahlung | Radiowellen (unter 3 × 10⁹ Hz) → Mikrowellen (bis 3 × 10¹¹ Hz) → sichtbares Licht (etwa 4 × 10¹⁴ bis 7,5 × 10¹⁴ Hz) → Röntgenstrahlung (ab etwa 3 × 10¹⁶ Hz). | Physik & Strahlung"
+        },
+        {
+          "id": "tf540",
+          "score": 0.108,
+          "content": "Helium hat eine geringere Dichte als Luft. | True | Helium ist ein sehr leichtes Edelgas und steigt in Luft auf."
+        }
+      ]
+    },
+    {
+      "id": "or749",
+      "principle": "Dichte",
+      "correct_order": [
+        "Aluminium",
+        "Eisen",
+        "Kupfer",
+        "Blei"
+      ],
+      "fact_check": "Bei gleichem Volumen entscheidet die Dichte: ungefähr 2,70, 7,86, 8,92 und 11,3 Gramm pro Kubikzentimeter. Die Würfel sind massiv, also ohne Hohlräume.",
+      "source_status": "verified",
+      "references": [
+        {
+          "title": "A Reference Tables - Physics | OpenStax",
+          "url": "https://openstax.org/books/physics/pages/a-reference-tables"
+        }
+      ],
+      "source_access_note": "Originalseiten/PDFs beziehungsweise deren ausgelesene Originalinhalte bei der Recherche geprüft; kein reiner Quellenlink ohne inhaltlichen Abgleich.",
+      "duplicate_review": "or108 behandelt Schmelztemperaturen; hier Dichten und gleich große Metallwürfel, anderer Wissenskern und andere Lösung.",
+      "nearest_existing_entries": [
+        {
+          "id": "or108",
+          "score": 0.313,
+          "content": "Ordne die Stoffe nach Schmelzpunkt – von niedrig zu hoch. | Blei Schokolade Aluminium Eisen | Schokolade Blei Aluminium Eisen | Richtig: Schokolade → Blei → Aluminium → Eisen. | Schmelzpunkte"
+        },
+        {
+          "id": "or110",
+          "score": 0.2112,
+          "content": "Ordne die Stoffe nach Schmelzpunkt – von niedrig zu hoch. | Gold Zinn Eisen Blei | Zinn Blei Gold Eisen | Richtig: Zinn → Blei → Gold → Eisen. | Schmelzpunkte"
+        },
+        {
+          "id": "or103",
+          "score": 0.2107,
+          "content": "Ordne die Stoffe nach Schmelzpunkt – von niedrig zu hoch. | Quecksilber Blei Gold Eisen | Quecksilber Blei Gold Eisen | Richtig: Quecksilber → Blei → Gold → Eisen. | Schmelzpunkte"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "schema": 2,
+  "models": 2,
+  "library_entries": 14,
+  "finite_sets": 12,
+  "question_entries": 0,
+  "sets": [
+    {
+      "id": "cards-set-movable-standard-32",
+      "name": "32 Karten",
+      "representation": "3d",
+      "members": 32,
+      "supplements": 0
+    },
+    {
+      "id": "cards-set-movable-standard-52",
+      "name": "52 Karten",
+      "representation": "3d",
+      "members": 52,
+      "supplements": 0
+    },
+    {
+      "id": "cards-set-movable-standard-55",
+      "name": "52 Karten + 3 Joker",
+      "representation": "3d",
+      "members": 55,
+      "supplements": 0
+    },
+    {
+      "id": "cards-set-movable-standard-104",
+      "name": "104 Karten",
+      "representation": "3d",
+      "members": 104,
+      "supplements": 0
+    },
+    {
+      "id": "cards-set-movable-standard-110",
+      "name": "104 Karten + 6 Joker",
+      "representation": "3d",
+      "members": 110,
+      "supplements": 0
+    },
+    {
+      "id": "cards-set-display-standard-32",
+      "name": "32 Karten",
+      "representation": "2d",
+      "members": 32,
+      "supplements": 0
+    },
+    {
+      "id": "cards-set-display-standard-52",
+      "name": "52 Karten",
+      "representation": "2d",
+      "members": 52,
+      "supplements": 0
+    },
+    {
+      "id": "cards-set-display-standard-55",
+      "name": "52 Karten + 3 Joker",
+      "representation": "2d",
+      "members": 55,
+      "supplements": 0
+    },
+    {
+      "id": "cards-set-display-standard-104",
+      "name": "104 Karten",
+      "representation": "2d",
+      "members": 104,
+      "supplements": 0
+    },
+    {
+      "id": "cards-set-display-standard-110",
+      "name": "104 Karten + 6 Joker",
+      "representation": "2d",
+      "members": 110,
+      "supplements": 0
+    },
+    {
+      "id": "cards-set-display-conquest-countries",
+      "name": "Conquest · 42 Länderkarten",
+      "representation": "2d",
+      "members": 42,
+      "supplements": 2
+    },
+    {
+      "id": "cards-set-display-conquest-missions",
+      "name": "Conquest · 12 Aufträge",
+      "representation": "2d",
+      "members": 12,
+      "supplements": 0
+    }
+  ],
+  "distinction": "Reusable component -> finite equipment set -> members inside the set. Questions bind to windows by schema reference.",
+  "limits": [
+    "No game changes.",
+    "Question banks and private drafts are not rewritten.",
+    "Editor options remain deferred."
+  ]
+}

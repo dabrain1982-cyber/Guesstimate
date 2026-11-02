@@ -1,0 +1,37 @@
+import assert from 'node:assert/strict';
+import {createActionIntentGuard} from '../static/blackjack-action-intent.js';
+
+const button=()=>({disabled:false,listeners:{},addEventListener(name,fn){this.listeners[name]=fn;}});
+let clock=100;
+const prepare=createActionIntentGuard({now:()=>clock});
+const click=(target,accept,time,{detail=1,x=50,y=50}={})=>{
+  const event={timeStamp:time,detail,clientX:x,clientY:y};
+  target.listeners.pointerdown(event);return accept(event);
+};
+const bet=button(),betAccept=prepare(bet,'bet');
+assert.equal(click(bet,betAccept,110),true);
+clock=150;
+const stand=button(),standAccept=prepare(stand,'stand');
+assert.equal(standAccept({timeStamp:180,detail:1}),false,'an old press cannot activate the replacement control');
+assert.equal(click(stand,standAccept,210),false,'a second tap at the bet position cannot become stand');
+assert.equal(click(stand,standAccept,750),true,'a deliberate later stand remains available');
+assert.equal(click(stand,standAccept,780,{detail:2}),false,'double-click tail is ignored');
+assert.equal(standAccept({timeStamp:800,detail:0}),true,'keyboard and assistive activation remain available');
+stand.disabled=true;
+stand.listeners.pointerdown({timeStamp:900,clientX:50,clientY:50});
+stand.disabled=false;
+assert.equal(standAccept({timeStamp:950,detail:1}),false,'a press begun while disabled cannot fire after dealing');
+clock=1000;
+const hit=button(),hitAccept=prepare(hit,'hit');
+assert.equal(click(hit,hitAccept,900),false,'queued input older than the new control is ignored');
+assert.equal(click(hit,hitAccept,1050,{x:150}),true,'a separate intentional target can be used immediately');
+let ready=false;
+clock=1100;
+const responsive=button(),responsiveAccept=prepare(responsive,'hit',()=>ready);
+assert.equal(click(responsive,responsiveAccept,1110),false,'processing blocks only the action, without disabling the button');
+assert.equal(responsive.disabled,false,'the workshop button retains its normal feedback');
+responsive.listeners.pointerdown({timeStamp:1200,clientX:200,clientY:50});
+ready=true;
+assert.equal(responsiveAccept({timeStamp:1250,detail:1}),false,'a press begun during processing cannot become an action afterwards');
+assert.equal(click(responsive,responsiveAccept,1300,{x:200}),true,'a fresh press after processing remains available');
+console.log('13 action-intent checks passed.');

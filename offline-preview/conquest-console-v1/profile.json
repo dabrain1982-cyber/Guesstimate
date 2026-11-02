@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "created": "2026-10-25",
+  "source_button": {
+    "id": "c75db2c680364ca1bd3ff5f39b1d8851",
+    "name": "Werkstatt-Holz"
+  },
+  "source_shape": {
+    "id": "84c91c21887444b7bcaa141f6790fbec",
+    "name": "Werkstatt-Holz · Form"
+  },
+  "recipe": {
+    "schema_version": 2,
+    "settings": {
+      "style": "comic",
+      "material": "wood",
+      "shape": "custom",
+      "edge": 3,
+      "finish": "satin",
+      "wear": 30,
+      "accent": "#b78047",
+      "font": "fredoka",
+      "lettering": "paint",
+      "size": 23,
+      "label": "spiel starten",
+      "depth": 4,
+      "duration": 300,
+      "feel": "direct",
+      "sound": "wood-plank",
+      "volume": 30,
+      "font_link": "auto"
+    },
+    "contour": {
+      "template": "comic",
+      "points": [
+        {
+          "x": 8,
+          "y": 7,
+          "round": 30
+        },
+        {
+          "x": 21,
+          "y": 4.5,
+          "round": 0
+        },
+        {
+          "x": 27.5,
+          "y": 3.25,
+          "round": 0
+        },
+        {
+          "x": 34,
+          "y": 2,
+          "round": 30
+        },
+        {
+          "x": 91,
+          "y": 6,
+          "round": 28
+        },
+        {
+          "x": 99,
+          "y": 29,
+          "round": 38
+        },
+        {
+          "x": 95,
+          "y": 88,
+          "round": 28
+        },
+        {
+          "x": 64,
+          "y": 96,
+          "round": 35
+        },
+        {
+          "x": 5,
+          "y": 91,
+          "round": 26
+        },
+        {
+          "x": 1,
+          "y": 30,
+          "round": 35
+        }
+      ]
+    },
+    "name": "Conquest · Holzstudie",
+    "notes": "Arbeitsentwurf, keine gestalterische Abnahme.",
+    "kind": "button"
+  }
+}

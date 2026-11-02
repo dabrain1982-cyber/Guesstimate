@@ -1,0 +1,15 @@
+{
+  "created": "2026-10-25",
+  "tool": "Built-in image_gen",
+  "purpose": "Original neutral material surfaces for selectable styles in the local button workshop",
+  "prompts": {
+    "wood": "Use case: photorealistic-natural. Asset type: albedo surface texture for a local button design editor. Create a square, frame-filling orthographic close-up of a single continuous warm medium oak surface. Believable irregular horizontal growth rings, fine pores, subtle fibers, two understated small knots toward the edges, a few worn fibers. Even diffuse neutral illumination with very restrained relief, no cast shadows, no broad glossy highlight. Medium-low contrast across the center so text remains readable. The material fills every pixel to every edge, absolutely no border, no bevel, no cutout, no object silhouette, no scene, no text, no watermark. It is the raw material surface only, not a finished button. Naturalistic detail, not cartoon, not a repeating line pattern.",
+    "stone": "Use case: photorealistic-natural. Asset type: albedo surface texture for a local button design editor. Create a square frame-filling orthographic close-up of one continuous dark grey-green slate stone surface. Believable fine mineral pores, small uneven layered cleavages, shallow natural scars and occasional subdued pale flecks, restrained variations in roughness. Natural matte stone rather than concrete or marble. Even diffuse neutral lighting with extremely subtle relief; no cast shadows, no dramatic directional highlights. Medium-low contrast at center for readable text. The surface fills every pixel to every edge. No border, bevel, object silhouette, scene, lettering, logos, watermark. Raw material surface only, not a finished button. Naturalistic detail, not cartoon, not a repeating line pattern.",
+    "metal": "Use case: photorealistic-natural. Asset type: albedo surface texture for a local button design editor. Create a square frame-filling orthographic close-up of a single continuous lightly aged brushed steel surface. Cool grey medium tone, dense fine horizontal brushing with irregular fine hairline scratches, subtly mottled oxidized patina and very sparse dark wear, restrained believable metallic material. Soft diffuse neutral studio lighting without broad hot highlights or cast shadows. Low to medium contrast center suitable for text. Surface fills every pixel to all edges. No border, bevel, screws, rivets, object silhouette, scene, text, logos, watermark. Raw material surface only, not a button. Naturalistic detail, not cartoon, not a repeating line pattern."
+  },
+  "files": {
+    "wood": "oak-v1.png",
+    "stone": "slate-v1.png",
+    "metal": "steel-v1.png"
+  }
+}

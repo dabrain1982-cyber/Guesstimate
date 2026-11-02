@@ -1,0 +1,6 @@
+/* Only the surrounding tool chrome changes; the button and its editor are shared. */
+body.embedded{background:#f0f0e5}
+.embedded .workshop-header,.embedded .studio-intro,.embedded .workshop-nav,.embedded .studio-footer{display:none}
+.embedded .studio-wrap{max-width:none;margin:0;padding:0 0 18px}
+.embedded .settings-panel{position:static;max-height:none;overflow:visible}
+@media(max-width:680px){.embedded .studio-wrap{padding:0 0 16px}}

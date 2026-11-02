@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}Mail · {{ game_name }}{% endblock %}
+{% block shell_class %}mail-shell{% endblock %}
+{% block header %}{% endblock %}
+{% block rules %}{% endblock %}
+{% block extra_head %}<link rel="stylesheet" href="{{ url_for('static', filename='mail.css', v='1') }}">{% endblock %}
+{% block content %}
+  <header class="mail-heading"><div><p class="eyebrow">EIN KLEINER ZETTEL FÜR DICH</p><h1>Deine Post</h1><p>Neuigkeiten, Fragen und ein paar persönliche Zeilen.</p></div></header>
+  <div class="mail-layout">
+    <aside class="mail-list-panel" aria-label="Deine Nachrichten">
+      <nav class="mail-folders" aria-label="Postfach"><a href="{{ url_for('mailbox') }}"{% if not sent %} aria-current="page"{% endif %}>Posteingang{% if mail_status.unread %} ({{ mail_status.unread }}){% endif %}</a><a href="{{ url_for('mailbox', folder='sent') }}"{% if sent %} aria-current="page"{% endif %}>Gesendet</a></nav>
+      <ul class="mail-list">
+        {% for note in notes %}
+          <li class="{% if selected and selected.id == note.id %}is-selected{% endif %}">
+            <form method="{{ 'get' if sent else 'post' }}" action="{{ url_for('mailbox') if sent else url_for('mail_read', message_id=note.id) }}">
+              {% if sent %}<input type="hidden" name="folder" value="sent"><input type="hidden" name="note" value="{{ note.id }}">{% else %}<input type="hidden" name="csrf_token" value="{{ csrf_token() }}">{% endif %}
+              <button class="mail-list-note" type="submit">
+              <span class="mail-list-meta">{% if sent %}An {{ note.recipient_name }}{% else %}Von {{ note.sender_name }}{% endif %}<time datetime="{{ note.created_at }}">{{ note.created_at[8:10] }}.{{ note.created_at[5:7] }}.{{ note.created_at[:4] }}</time></span>
+              <strong>{{ note.subject }}</strong>
+              {% if not sent %}<span class="mail-read-state{% if not note.read_at %} is-unread{% endif %}">{{ 'Gelesen' if note.read_at else 'Ungelesen' }}</span>{% endif %}
+              </button>
+            </form>
+          </li>
+        {% else %}<li class="mail-empty">{{ 'Noch keine Zettel verschickt.' if sent else 'Hier ist noch kein Zettel angekommen.' }}</li>{% endfor %}
+      </ul>
+    </aside>
+    <section class="mail-desk" aria-label="Zettel lesen und schreiben">
+      {% if selected %}
+        <article class="mail-paper mail-letter" aria-labelledby="mail-letter-title">
+          <div class="mail-paper-meta"><span>Von {{ selected.sender_name }} · an {{ selected.recipient_name }}</span><time datetime="{{ selected.created_at }}">{{ selected.created_at[8:10] }}.{{ selected.created_at[5:7] }}.{{ selected.created_at[:4] }} · {{ selected.created_at[11:16] }}</time></div>
+          <h2 id="mail-letter-title">{{ selected.subject }}</h2>
+          <div class="mail-handwriting">{{ selected.body }}</div>
+          <p class="mail-signature">{{ selected.sender_name }}</p>
+        </article>
+      {% endif %}
+      <form class="mail-paper mail-compose" method="post" action="{{ url_for('mail_send') }}" aria-labelledby="mail-compose-title">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <h2 id="mail-compose-title">Einen Zettel schreiben</h2>
+        {% if mail_error %}<p class="mail-error" role="alert">{{ mail_error }}</p>{% endif %}
+        {% if owner_mode %}
+          <label for="mail-recipient">An</label><select id="mail-recipient" name="recipient" required><option value="">Empfänger wählen</option><option value="all"{% if mail_form.get('recipient') == 'all' %} selected{% endif %}>Alle Spieler</option>{% for recipient in recipients %}<option value="{{ recipient.id }}"{% if mail_form.get('recipient') == recipient.id|string %} selected{% endif %}>{{ recipient.display_name }}</option>{% endfor %}</select>
+        {% else %}<p class="mail-to">An <strong>{{ owner_user.display_name if owner_user else 'Stormseed' }}</strong></p>{% endif %}
+        <label for="mail-subject">Betreff</label><input id="mail-subject" name="subject" value="{{ mail_form.get('subject', '') }}" maxlength="120" required placeholder="Worum geht’s?">
+        <label for="mail-body">Dein Zettel</label><textarea id="mail-body" name="body" rows="7" maxlength="12000" required placeholder="Schreib einfach los …">{{ mail_form.get('body', '') }}</textarea>
+        <button class="mail-send" type="submit"{% if not owner_user %} disabled{% endif %}>Zettel abschicken <span aria-hidden="true">↗</span></button>
+      </form>
+    </section>
+  </div>
+{% endblock %}

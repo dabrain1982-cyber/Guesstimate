@@ -1,41 +1,45 @@
 {% extends "base.html" %}
-{% block title %}{{ lobby.name }} · Stormseed’s Conquest{% endblock %}
-{% block shell_class %}conquest-lobby-shell{% endblock %}
+{% from "_lobby_room.html" import lobby_room, lobby_start_button with context %}
+{% block title %}{{ lobby.name }} · conquest{% endblock %}
+{% block shell_class %}game-lobby-shell{% endblock %}
 {% block header %}{% endblock %}
-{% block extra_head %}<link rel="stylesheet" href="{{ url_for('static', filename='conquest-lobby.css', v='1') }}">{% endblock %}
+{% block extra_head %}<link rel="stylesheet" href="{{ url_for('static', filename='conquest-lobby.css', v='7') }}">{% endblock %}
 {% block content %}
-  <section class="conquest-lobby-page conquest-waiting" data-conquest-lobby data-status-url="{{ url_for('conquest_status', lobby_id=lobby.id) }}" data-revision="{{ lobby.revision }}" data-member-count="{{ members|length }}">
-    <section class="conquest-lobby-hero compact"><p class="eyebrow">LOBBY OFFEN</p><h1>{{ lobby.name }}</h1><p>{{ members|length }}/6 Plätze belegt · ab 2 Personen startbereit</p></section>
-    <div class="conquest-waiting-grid">
-      <section class="conquest-lobby-panel conquest-roster">
-        <div class="conquest-panel-heading"><span>AM TISCH</span><strong>{{ members|length }}/6</strong></div>
-        <ol>{% for player in members %}<li><span>{{ loop.index }}</span><strong>{{ player.display_name }}</strong><small>{{ 'Host' if player.user_id == lobby.host_user_id else 'Mitspieler' }}</small></li>{% endfor %}</ol>
-      </section>
-      <section class="conquest-lobby-panel conquest-setup">
-        <div class="conquest-panel-heading"><span>SPIEL EINSTELLEN</span><strong>frei kombinierbar</strong></div>
-        {% if lobby.host_user_id == g.user.id %}
-          <form method="post" action="{{ url_for('conquest_start', lobby_id=lobby.id) }}" data-conquest-settings data-settings-url="{{ url_for('conquest_settings', lobby_id=lobby.id) }}">
-            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-            <label>Brett<select name="board_style">{% for value, label in styles.items() %}<option value="{{ value }}" {% if value == lobby.board_style %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label>
-            <label>Karten<select name="card_style">{% for value, label in styles.items() %}<option value="{{ value }}" {% if value == lobby.card_style %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label>
-            <label>Figuren<select name="figure_style">{% for value, label in figures.items() %}<option value="{{ value }}" {% if value == lobby.figure_style %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label>
-            <label>Würfel<select name="dice_style">{% for value, label in dice_choices.items() %}<option value="{{ value }}" {% if value == lobby.dice_style %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label>
-            <label>Siegziel<select name="victory_mode">{% for value, label in victories.items() %}<option value="{{ value }}" {% if value == lobby.victory_mode %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label>
-            <label>Startverteilung<select name="setup_mode">{% for value, label in setups.items() %}<option value="{{ value }}" {% if value == lobby.setup_mode %}selected{% endif %}>{{ label }}{% if value == 'classic' %} · folgt{% endif %}</option>{% endfor %}</select></label>
-            <p data-conquest-autosave>Änderungen werden automatisch gespeichert.</p>
-            <button class="conquest-start" type="submit" {% if members|length < 2 %}disabled{% endif %}>Feldzug starten</button>
-          </form>
-        {% else %}
-          <dl class="conquest-choice-list"><div><dt>Brett</dt><dd>{{ styles[lobby.board_style] }}</dd></div><div><dt>Karten</dt><dd>{{ styles[lobby.card_style] }}</dd></div><div><dt>Figuren</dt><dd>{{ figures[lobby.figure_style] }}</dd></div><div><dt>Würfel</dt><dd>{{ dice_choices[lobby.dice_style] }}</dd></div><div><dt>Siegziel</dt><dd>{{ victories[lobby.victory_mode] }}</dd></div><div><dt>Verteilung</dt><dd>{{ setups[lobby.setup_mode] }}</dd></div></dl>
-          <p class="conquest-wait">Der Host startet, sobald alle am Tisch sind.</p>
-        {% endif %}
-      </section>
-    </div>
-    <section class="conquest-start-guide">
-      <h2>So beginnt die Runde</h2>
-      <ol><li>Farben und Skins werden festgelegt.</li><li>Alle 42 Gebiete erhalten Besitzer und mindestens eine Truppe.</li><li>Die übrigen Starttruppen werden verteilt; bei zwei Personen spielt zusätzlich eine neutrale Armee mit.</li><li>Ein verdeckter Würfelentscheid bestimmt die erste Person.</li><li>Der erste Zug beginnt mit Verstärken, danach Angriff und einmaligem Verschieben.</li></ol>
-    </section>
-    <form method="post" action="{{ url_for('conquest_leave', lobby_id=lobby.id) }}" class="conquest-leave"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit">Lobby verlassen</button></form>
-  </section>
+  <nav class="conquest-breadcrumb" aria-label="Spielweg"><a href="{{ url_for('home') }}">guesstimate</a><span>›</span><a href="{{ url_for('tabletop_connection') }}">games collection</a><span>›</span><a href="{{ url_for('board_games') }}">brettspiele</a><span>›</span><a href="{{ url_for('conquest_index') }}">conquest</a><span>›</span><span>Lobby</span></nav>
+  {% set closed = lobby.status in ('closed', 'abandoned') %}
+  {% set attributes = {'data-conquest-lobby': '', 'data-status-url': url_for('conquest_status', lobby_id=lobby.id), 'data-revision': lobby.revision, 'data-member-count': members|length, 'data-member-signature': members|map(attribute='id')|join(','), 'data-host-user-id': lobby.host_user_id, 'data-state': lobby.status, 'data-overview-url': url_for('conquest_index'), 'data-active': '1' if is_active else '0'} %}
+  {% call(slot, player=None) lobby_room(lobby, lobby_players, 6, 'conquest', 'stormseed´s conquest', members|length, leave_url=url_for('conquest_leave', lobby_id=lobby.id) if is_active and not closed else None, leave_label='beenden' if lobby.status == 'completed' else 'lobby verlassen', attributes=attributes, controls_title='Spieleinstellungen' if lobby.status == 'waiting' else 'Deine Partie', closed=closed) %}
+    {% if slot == 'settings' %}
+
+      {% if not is_active %}<h3>{{ 'Bis zur nächsten Runde.' if lobby.status == 'completed' else 'Zurück an den Tisch' }}</h3>{% if lobby.status == 'completed' %}<a class="primary-button" href="{{ url_for('conquest_index') }}">zu den feldzügen →</a>{% else %}<p>{{ 'Deine Armee und deine Karten sind erhalten.' if lobby.status == 'playing' else 'Die Lobby ist noch offen. Du kannst wieder beitreten.' }}</p><form method="post" action="{{ url_for('conquest_join', lobby_id=lobby.id) }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="primary-button" type="submit">{{ 'partie fortsetzen' if lobby.status == 'playing' else 'wieder beitreten' }} →</button></form>{% endif %}
+      {% elif lobby.status == 'playing' %}<h3>Die Welt wartet auf euch.</h3><p>{{ victories[lobby.victory_mode] }} · Startaufstellung und Züge sind gespeichert.</p>{% if waiting_for %}<p class="lobby-notice">Warten auf {{ waiting_for }}. Der Platz und die Armee bleiben für die Rückkehr erhalten.</p>{% endif %}<a class="primary-button game-lobby-start" href="{{ url_for('conquest_lobby', lobby_id=lobby.id) }}">zurück an den spieltisch →</a>
+      {% elif lobby.status == 'completed' %}<h3>{{ winner.name if winner else 'Die Runde ist vorbei' }}{% if winner %} gewinnt!{% endif %}</h3>{% if winner %}<p>{{ winner.reason }}</p>{% endif %}<div class="lobby-actions"><a class="secondary-button" href="{{ url_for('conquest_lobby', lobby_id=lobby.id) }}">ergebnis ansehen</a>{% if lobby.host_user_id == g.user.id %}<form method="post" action="{{ url_for('conquest_rematch', lobby_id=lobby.id) }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><input type="hidden" name="revision" value="{{ lobby.revision }}"><button class="primary-button" type="submit">nochmal spielen</button></form>{% else %}<p>Der Host kann hier die nächste Partie vorbereiten.</p>{% endif %}</div>
+      {% else %}
+      <h3>So spielt ihr heute.</h3>
+      {% if lobby.host_user_id == g.user.id %}
+      <form method="post" action="{{ url_for('conquest_start', lobby_id=lobby.id) }}" data-lobby-settings data-conquest-settings data-settings-url="{{ url_for('conquest_settings', lobby_id=lobby.id) }}">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><input type="hidden" name="board_style" value="{{ lobby.board_style }}">
+        <label class="lobby-field">Name eurer Lobby<input name="name" value="{{ lobby.name }}" maxlength="40" required autocomplete="off"></label>
+        <fieldset class="lobby-choices"><legend>Siegziel</legend>{% for value, label in victories.items() %}<label><input type="radio" name="victory_mode" value="{{ value }}"{% if value == lobby.victory_mode %} checked{% endif %}><span><strong>{{ label }}</strong><small>{{ 'Jeder verfolgt einen privaten Auftrag.' if value == 'missions' else 'Erobert alle gegnerischen Länder.' }}</small></span></label>{% endfor %}</fieldset>
+        <input type="hidden" name="setup_mode" value="automatic">
+        <dl class="lobby-summary"><div><dt>Spielbrett</dt><dd>Welt · 42 Länder</dd></div><div><dt>Würfeln</dt><dd>Automatische Auswertung</dd></div><div><dt>Armeen</dt><dd>Truppenpunkte auf dem Brett</dd></div></dl>
+        <p class="lobby-help">Ein Spielbrett ist verfügbar. Würfel zum selbst Rollen und Armeefiguren kommen später.</p>
+        <fieldset class="lobby-choices"><legend>Armeefarben · jede Farbe nur einmal</legend>{% for player in roster %}<label class="lobby-field">{{ player.display_name }}<select name="color_{{ player.id }}">{% for caption in color_names %}<option value="{{ loop.index0 }}"{% if loop.index0 == player.color_index %} selected{% endif %}>{{ caption }}</option>{% endfor %}</select></label>{% endfor %}</fieldset>
+        <p class="lobby-save-hint" data-lobby-autosave data-conquest-autosave role="status">Änderungen werden automatisch gespeichert.</p>{{ lobby_start_button(members|length < 2) }}{% if members|length < 2 %}<p class="lobby-help">Sobald ein Freund beitritt, könnt ihr starten.</p>{% endif %}
+        {% if can_develop %}<details class="lobby-options"><summary>Lokaler Entwicklertest</summary><p>Du steuerst Stormseed und zwei virtuelle Armeen.</p><button class="secondary-button" type="submit" name="developer_test" value="1">entwickler-test starten</button></details>{% endif %}
+      </form>
+      {% else %}<dl class="lobby-summary"><div><dt>Siegziel</dt><dd>{{ victories[lobby.victory_mode] }}</dd></div><div><dt>Mitspieler</dt><dd>{{ members|length }}</dd></div><div><dt>Spielbrett</dt><dd>Welt · 42 Länder</dd></div><div><dt>Würfeln</dt><dd>Automatische Auswertung</dd></div></dl><p class="lobby-notice">Der Host startet, sobald eure Runde vollständig ist. Änderungen erscheinen hier automatisch.</p>{% endif %}
+      {% endif %}
+
+    {% elif slot == 'roster_note' %}
+      <p>Die Reihenfolge am Tisch bleibt eure Zugreihenfolge. Verlässt der Host die Lobby, übernimmt der nächste anwesende Spieler.</p>
+      {% if history_count %}<p>{{ history_count }} {{ 'Partie gespielt' if history_count == 1 else 'Partien gespielt' }}</p>{% endif %}
+      <p>Länder werden zugeteilt. Starttruppen setzt ihr einzeln reihum. Danach: Verstärken, angreifen, einmal festigen. Erfüllt eure Mission oder erobert die Welt.</p>
+    {% elif slot == 'footer' and is_active and not closed and lobby.host_user_id == g.user.id %}
+      <details><summary>lobby beenden</summary><p>Die Lobby wird für alle geschlossen.</p><form method="post" action="{{ url_for('conquest_close', lobby_id=lobby.id) }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="secondary-button is-danger" type="submit">lobby für alle beenden</button></form></details>
+    {% elif slot == 'closed' %}
+      <h2>Für heute ist der Tisch geschlossen.</h2><p>In der Feldzugübersicht findet ihr euren nächsten Spielabend.</p><a class="primary-button" href="{{ url_for('conquest_index') }}">zu den feldzügen →</a>
+    {% endif %}
+  {% endcall %}
 {% endblock %}
-{% block scripts %}<script src="{{ url_for('static', filename='conquest-lobby.js', v='1') }}" defer></script>{% endblock %}
+{% block scripts %}{% endblock %}

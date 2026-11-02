@@ -1,0 +1,35 @@
+{
+  "status": "style approved by user; active full deck with user-requested jumbo indices",
+  "date": "2026-10-31",
+  "shared_renderer": "render_samples.py",
+  "samples": [
+    "AS",
+    "7D",
+    "KC"
+  ],
+  "art": "king-court-v1.png",
+  "generation": "built-in image_gen, transparent PNG unchanged",
+  "prompt": "king-art-prompt.txt",
+  "card_size": [
+    280,
+    380
+  ],
+  "paper": "warm ivory, restrained wear",
+  "ink": "near-black and oxblood",
+  "preview": "/static/blackjack-kartenmuster-v1.html",
+  "original_generated_path": "C:\\Users\\DaBra\\.codex\\generated_images\\01a188b7-9d8c-7711-a9ef-0bac2ed63981\\exec-ad61c27f-f4a6-4dc4-a288-c8b096220b17.png",
+  "king_sha256": "22da37e113912363cdca760d1e5b23ecbb3480e0dc8d0e1e5124c36fa89a4650",
+  "raster_original_unmodified": true,
+  "verification": "all six browser images loaded; seven main diamond pips; no browser warnings/errors",
+  "screenshot": "kartenmuster-v1.png",
+  "active_deck": "static/cards/blackjack/fronts-ivory-v1/deck.json",
+  "corner_rank_size_before_after": [
+    42,
+    96
+  ],
+  "original_sample_assets": "preserved in static/cards/blackjack/front-drafts-v1; current preview uses canonical active deck",
+  "additional_court_art": [
+    "queen-court-v1.png",
+    "jack-court-v1.png"
+  ]
+}

@@ -1,0 +1,10 @@
+:root { --acid: #d8ff42; }
+
+/* Shared display conventions for controls and game names, including standalone tables. */
+:is(button, input[type="submit"], input[type="button"], [role="button"], .primary-button, .secondary-button, .perfect-button, .party-return, .back-link, .conquest-button, .perfect-home-link, .conquest-text-button),
+:is(button, [role="button"]) :is(span, strong, b, small, em),
+.tabletop-game-tile :is(h2, span),
+.game-name,
+.game-name * {
+  text-transform: lowercase;
+}

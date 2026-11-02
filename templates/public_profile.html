@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% from "_profile_trophies.html" import profile_trophies %}
+{% block title %}{{ profile.display_name }} · Spielerprofil · {{ game_name }}{% endblock %}
+{% block shell_class %}profile-shell{% endblock %}
+{% block header %}{% endblock %}
+{% block extra_head %}<link rel="stylesheet" href="{{ url_for('static', filename='public-profiles.css', v='1') }}">{% endblock %}
+{% block content %}
+  <header class="profile-hero public-profile-heading">
+    <div><p class="eyebrow">SPIELERPROFIL</p><h1>{{ profile.display_name }}</h1><p>Auftritt und Erfolge · für angemeldete Mitspieler sichtbar</p></div>
+    <div class="public-profile-links"><a href="{{ url_for('players') }}">Alle Spieler ansehen</a>{% if is_self %}<a href="{{ url_for('profile') }}">Eigenes Profil bearbeiten</a>{% endif %}</div>
+  </header>
+  <div class="public-profile-layout">
+    <section class="profile-current" aria-label="Auftritt von {{ profile.display_name }}">
+      {% set avatar_catalog = dict(avatar_catalog) %}
+      {% set public_starter = dict(avatar_catalog.a00, stage_asset=avatar_catalog.a00.public_asset) %}
+      {% set _ = avatar_catalog.update({'a00': public_starter}) %}
+      {% from "_profile_window.html" import profile_window with context %}
+      {{ profile_window(cosmetics, trophies, show_edit=False, show_details=False, player_name=profile.display_name, player_balance=0, game_points=profile.points, balance_link=False, instance_id='public-profile-name') }}
+    </section>
+    <section class="public-profile-results" aria-labelledby="public-results-heading">
+      <p class="eyebrow">DAILY QUIZ</p><h2 id="public-results-heading">Erspielte Erfolge</h2>
+      <dl><div><dt>Gesamtpunkte</dt><dd>{{ profile.points|points }}</dd></div><div><dt>Rang · Gesamtpunkte</dt><dd>{{ profile.rank }}</dd></div><div><dt>Quizrunden beendet</dt><dd>{{ profile.stats.rounds|points }}</dd></div><div><dt>Bester Tageswert</dt><dd>{{ profile.stats.best|points }} Punkte</dd></div><div><dt>Durchschnitt pro Runde</dt><dd>{% if profile.stats.rounds %}{{ profile.stats.average|points }} Punkte{% else %}—{% endif %}</dd></div></dl>
+      {% if not profile.stats.rounds %}<p>Noch keine Daily-Quizrunde abgeschlossen.</p>{% endif %}
+    </section>
+  </div>
+  <section class="profile-trophies" aria-labelledby="public-trophies-heading"><div class="profile-section-heading"><div><span>POKALSCHRANK</span><h2 id="public-trophies-heading">Titel von {{ profile.display_name }}</h2></div></div>{{ profile_trophies(trophies) }}</section>
+{% endblock %}

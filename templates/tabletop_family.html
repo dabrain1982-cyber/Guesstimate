@@ -1,46 +1,47 @@
 {% extends "base.html" %}
+{% from "_game_flyers.html" import perfect_flyer, conquest_flyer, blackjack_flyer, kniffel_flyer %}
 {% set is_dice = family == 'dice' %}
-{% set family_title = 'Würfeltische' if is_dice else 'Kartentische' %}
+{% set family_title = {'dice': 'würfeltische', 'cards': 'kartentische', 'boards': 'brettspiele'}[family] %}
 {% block title %}{{ family_title }} · {{ game_name }}{% endblock %}
 {% block shell_class %}tabletop-family-shell{% endblock %}
 {% block header %}{% endblock %}
-{% block extra_head %}<link rel="stylesheet" href="{{ url_for('static', filename='card-table.css', v='13') }}">{% endblock %}
+{% block extra_head %}<link rel="stylesheet" href="{{ url_for('static', filename='card-table.css', v='16') }}">{% endblock %}
 {% block content %}
   <main class="tabletop-family-page is-{{ family }}">
     <header class="tabletop-family-head">
-      <p class="eyebrow">TABLETOP CONNECTION</p>
-      <h1>{{ family_title }}</h1>
+      <p class="eyebrow game-name">games collection</p>
+      <h1 class="game-name">{{ family_title }}</h1>
     </header>
     <section class="tabletop-game-grid tabletop-family-grid" aria-label="{{ family_title }}">
-      {% if is_dice %}
+      {% if family == 'boards' %}
+        {{ perfect_flyer() }}
+        {{ conquest_flyer() }}
+      {% elif is_dice %}
         <a class="tabletop-game-tile is-available" href="{{ url_for('dice_table_index') }}">
           <img src="{{ url_for('static', filename='tabletop-dice-table-tile-v1.png') }}" alt="Würfel und Würfelbecher auf einem grünen Filztisch">
           <span>Freies Würfeln</span>
-          <h2>Würfeltisch</h2>
+          <h2 class="game-name">würfeltisch</h2>
         </a>
-        <a class="tabletop-game-tile is-available" href="{{ url_for('kniffel_index') }}">
-          <img src="{{ url_for('static', filename='tabletop-kniffel-tile-v1.png') }}" alt="Fünf Würfel, Würfelbecher und Wertungsblock auf einem grünen Filztisch">
-          <span>Lobby geöffnet</span>
-          <h2>Kniffel</h2>
-        </a>
+        {{ kniffel_flyer() }}
         <a class="tabletop-game-tile is-available" href="{{ url_for('maexchen_index') }}">
           <img src="{{ url_for('static', filename='tabletop-dice-table-tile-v1.png') }}" alt="Zwei Würfel auf einem grünen Filztisch">
           <span>Lobby geöffnet</span>
-          <h2>Mäxchen</h2>
+          <h2 class="game-name">mäxchen</h2>
         </a>
         <article class="tabletop-game-tile is-coming" aria-disabled="true">
           <img src="{{ url_for('static', filename='tabletop-dice-table-tile-v1.png') }}" alt="Würfel auf einem grünen Filztisch">
           <span>Demnächst</span>
-          <h2>Schweinchen</h2>
+          <h2 class="game-name">schweinchen</h2>
         </article>
       {% else %}
         <a class="tabletop-game-tile is-available" href="{{ url_for('card_table_index') }}">
           <img src="{{ url_for('static', filename='tabletop-card-table-tile-v1.png') }}" alt="Standard-Spielkarten auf einem grünen Filztisch">
           <span>Lobby geöffnet</span>
-          <h2>Freies Spiel mit allen Standardkarten</h2>
+          <h2>freies spiel mit allen standardkarten</h2>
         </a>
+        {{ blackjack_flyer() }}
       {% endif %}
     </section>
-    <a class="back-link" href="{{ url_for('tabletop_connection') }}">zurück zu tabletop connection</a>
+    <a class="back-link" href="{{ url_for('tabletop_connection') }}">zurück zu games collection</a>
   </main>
 {% endblock %}

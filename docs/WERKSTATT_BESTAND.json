@@ -1,0 +1,4576 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-27T20:24:13.920699+00:00",
+  "scope": "Current local source inventory; no running game or remote server inspected; no application/DB import.",
+  "coverage": [
+    "Daily Quiz",
+    "Party",
+    "Perfect",
+    "Playtable",
+    "Würfeltisch",
+    "Kniffel",
+    "Mäxchen",
+    "Conquest",
+    "Startseite/Profil/Sammlung"
+  ],
+  "limits": [
+    "Source occurrences can be conditional, repeated, or legacy.",
+    "CSS selectors are evidence locations, not resolved browser styling.",
+    "createElement locations count factories, not generated instances.",
+    "Only registered workshop records are saved editable assets; this report creates none.",
+    "Conquest table-surface.js is used by the current game despite its offline-preview directory.",
+    "static/conquest-table.js is retained legacy source; conquest_table.html loads scene.js instead."
+  ],
+  "source_files": {
+    "offline-preview/conquest-2-5d-v1/attack.js": {
+      "sha256": "c5641ad6a0e6812baf6b5b82c1e6f7a8366900b94dac818817266e24af284a17"
+    },
+    "offline-preview/conquest-2-5d-v1/camera.js": {
+      "sha256": "c6de8f7941f7936be0d50b3ac02dd6065bd95bd8eb3dfbd39c16b515153f73a7"
+    },
+    "offline-preview/conquest-2-5d-v1/cards.js": {
+      "sha256": "c0d5df1be01e92d37679ca68e31fba096598ac3279804c4d16207d4223a8ef02"
+    },
+    "offline-preview/conquest-2-5d-v1/fortify.js": {
+      "sha256": "ac49ab7f802e753b94468f3f0d779348ff168278b8a57d5677695ec3330c2e1c"
+    },
+    "offline-preview/conquest-2-5d-v1/game-buttons.js": {
+      "sha256": "990b203aef78606968b220965ca8f36d68ae4aa1afa63b94e13d86a79f5afe5d"
+    },
+    "offline-preview/conquest-2-5d-v1/player-portrait.js": {
+      "sha256": "0351b0ca8ff42cb8dcded552a8e547c1c694e611c04e3fab8b31ddc270287246"
+    },
+    "offline-preview/conquest-2-5d-v1/remote-turn.js": {
+      "sha256": "ae9003f85e0e19db9c7f00f266f686ad8a6a5bf8ceb6928b7ca9f093ba97efeb"
+    },
+    "offline-preview/conquest-2-5d-v1/scene.js": {
+      "sha256": "67bb89dcecfc11cac4e6e25901c59e2a60a30f4cb42f7401f5363eddf726bb5e"
+    },
+    "offline-preview/conquest-2-5d-v1/style.css": {
+      "sha256": "bb8887b8770af520678933e6d138c72f55fe56802304c3e4ca43060c794c0e24"
+    },
+    "offline-preview/conquest-2-5d-v1/table-surface.js": {
+      "sha256": "1a64980e6f1b57318e819e03bdd5f796c4546cf75357336303fc658abf6f67ec"
+    },
+    "offline-preview/conquest-2-5d-v1/territories.js": {
+      "sha256": "a9c9c58bac1c85a3e124f3418dec2cceb334cf609eee8af47154bd7bdab09227"
+    },
+    "offline-preview/conquest-2-5d-v1/territory-model.js": {
+      "sha256": "575402dcd3031eb7ca4491c8c5beb459ee2f634ac5f89bebfb224c815a48f175"
+    },
+    "offline-preview/conquest-2-5d-v1/turn-controls.js": {
+      "sha256": "c0fe9a9d273d3f628ab05b14e9290293f19790f5762769f767da17dacd185ebe"
+    },
+    "offline-preview/conquest-2-5d-v1/turn-model.js": {
+      "sha256": "439bc224cb8a6e4878baf44d6699a20e4ff476d82ef3c2fabb8f8235050ff7d3"
+    },
+    "static/card-table.css": {
+      "sha256": "cd35aa6a639097e77723af9440824595bfeeb6fc363e3bc9901faea4a25c6680"
+    },
+    "static/card-table.js": {
+      "sha256": "8d8ffacf2e301fdf9d1ac6f0552390dfdaed56a89d3db1d35258b282f57cf1ba"
+    },
+    "static/comic-button.css": {
+      "sha256": "f79d3c15279b04ef0b47ec542d965168b874e40368cff03e11f57c93f9b8170e"
+    },
+    "static/conquest-lobby.css": {
+      "sha256": "58695f14dcc2121d1a2826e44011dc29475beb5c09c216a81329d7ebcff714b5"
+    },
+    "static/conquest-lobby.js": {
+      "sha256": "20711d22ad89cbc94057acc5ee2631c46c80ac7cb142e66da02091a87d6e3310"
+    },
+    "static/conquest-table.css": {
+      "sha256": "7cf7f9ce00ffcc6dbbeccd56b5fa414c8f7da109c8853c07bbe211516dead03e"
+    },
+    "static/conquest-table.js": {
+      "sha256": "ce5ba8648666effb669a2211e97750170fbd3ff727837c9d5722742b78469466"
+    },
+    "static/dice-table.css": {
+      "sha256": "68a8c5a4218124b2179e2b7afdaf7aa41a702bb430aae5bad4895fac2c6d268f"
+    },
+    "static/dice-table.js": {
+      "sha256": "0c791957b35c39d3e1e0278c370871c187454e52d5754ce3da504798e0faf79e"
+    },
+    "static/feedback.js": {
+      "sha256": "de1d917a8b482cb6f30d079abd656fba3183195ce56dfe79e78c587b421bdddb"
+    },
+    "static/game.js": {
+      "sha256": "f931e01fc4979309eb4a03b4fe0c29b590648b49572b338a63891905bcccf3e3"
+    },
+    "static/home-variant-a.js": {
+      "sha256": "f9107ae8716ef390ca3988ae02cfd32deb52870513605783c50c63d90da5f56c"
+    },
+    "static/leaderboards.js": {
+      "sha256": "a74f584db79ab8b60f27905fcdbe5bd591837a9243d4bd67cde6f502ebc89141"
+    },
+    "static/lobby-overview.css": {
+      "sha256": "8577c5e96ee00c53a69f9c3ad83e2d58bd5f48b5707c22311f2021770a7098db"
+    },
+    "static/lobby-overview.js": {
+      "sha256": "0e2a20f15c720a9080f463a60bf1cfb1d032c29f78e008ed7b614d90d256df4b"
+    },
+    "static/lobby.css": {
+      "sha256": "2463f0086a06b467a63769fc11674361904c4bfcb63e8b034fcc581c95aec2de"
+    },
+    "static/lobby.js": {
+      "sha256": "0536aacfd07db777d919324fae88ad19f800037d80d82556a5e6a9a3f4a34aab"
+    },
+    "static/match.js": {
+      "sha256": "b338a3e34b283f0057500da5cb5b7548f79d522a7f26f508eb501aef8b0c4bf3"
+    },
+    "static/party.js": {
+      "sha256": "b37659ff10c9708a6341500b18c60ed035df439cecab4b207d69243d4c823150"
+    },
+    "static/player-portrait.css": {
+      "sha256": "0305820fc8c57afce072ed6e8df79fea5d8370f2b33107bb21eea64108e1e646"
+    },
+    "static/player-portrait.js": {
+      "sha256": "0074da46e501bfd16110c3eb4dbee751609da1825cbe0647034f930d4a673d38"
+    },
+    "static/profile-stage-v1.css": {
+      "sha256": "eca8a108a919ace6290ae4c37d0390feab5d6eb570deec839c5a4239113eb09f"
+    },
+    "static/profile-stage-v1.js": {
+      "sha256": "0fbd0c858289b21d912a5cd0cb845bd5ef7f7f12ebfe63c533c75f8a369b7f07"
+    },
+    "static/profile-window.css": {
+      "sha256": "00de414224f63c2afd08547e31c85e7fc7c79117dd12f55984ea3a802d912b8c"
+    },
+    "static/profile.js": {
+      "sha256": "2d8577067e5a7e04820e465504e411fcfceed14f381a3134a57b435bcbdfb47b"
+    },
+    "static/quiz-arena.css": {
+      "sha256": "9c4656ce3195714aa7c8d81e8c339b8e48fff1fb824f91d40d886b104aa20e76"
+    },
+    "static/rules.js": {
+      "sha256": "3f0b2aa1b3c19f0b63990ecf1ae8dfa03192b0d66248f6f90b2f6408a592d4da"
+    },
+    "static/shop.js": {
+      "sha256": "2826d6499c551b3b3c950434e67ac2431bb4a909633936fe7e5d3f8ecddc5b6f"
+    },
+    "static/stormseeds-perfect.css": {
+      "sha256": "f19e4f19bd8dbb85d5b8f52f58465b4b09fb022384a8f3c83bf47c3789b19e34"
+    },
+    "static/stormseeds-perfect.js": {
+      "sha256": "bbb6e1e3fb757cc5af7c85cd338a1db28b13854664fa2deef4380c0c6bc59620"
+    },
+    "static/style.css": {
+      "sha256": "88e597415d771f2daf82665ea936f32d0d553de0c0fca05cf4cdcd2d83c3fec9"
+    },
+    "static/timer.js": {
+      "sha256": "aa081d7880e21f3d6404aca8dd53fdf346805a0c5b836a5a499d6f42ded819a9"
+    },
+    "static/typography-v1.css": {
+      "sha256": "e00d00722fb3caf95c7ac662edd02519ce7c4d189b2d04133e783f6797230e2e"
+    },
+    "static/ui-conventions.css": {
+      "sha256": "2fc17c5e017a7ec5bb4b068cede9e8339fbf901b1c057348e5301985ba55993e"
+    },
+    "templates/_conquest_board_surface.html": {
+      "sha256": "0e470bbdb4f1b83cd662baa458631e2b80cfe97543b43e489e66752222b2b3c4"
+    },
+    "templates/_conquest_rules.html": {
+      "sha256": "9770b5db6651e1159630f47128203c3ea2b57c3165677dd7b5b1e0c61caf07ad"
+    },
+    "templates/_game_flyers.html": {
+      "sha256": "7b9765d3217c39a097fcb2fd3b1f9b128064a844ebd891aae74d97c6329a3790"
+    },
+    "templates/_icons.html": {
+      "sha256": "0dc3c8ca616e67f1afdb1ac9c1c38325d52709661ff1478dd3b412b59e465f9d"
+    },
+    "templates/_leaderboard.html": {
+      "sha256": "135642dafe78aefc05b15d6cb124c180425cf30c193d5ff921dd9a4e43c2572b"
+    },
+    "templates/_lobby_overview.html": {
+      "sha256": "5e3b9dd609407c52c8a0d5a0470eadd535ec8f2bd928773c5ef393784b0aaac4"
+    },
+    "templates/_lobby_room.html": {
+      "sha256": "0a9bd5ae54abb911e564f521df459faae0be1a06275f436eefe2cfd604d7b588"
+    },
+    "templates/_player_identity.html": {
+      "sha256": "57327f15b9533443467d7967d791627d7004d50b5027564d49c976f53e501434"
+    },
+    "templates/_profile_window.html": {
+      "sha256": "0dea9fd9e95295f80545036baace07b41e8dcc9954d0ec01d250a5530c12c008"
+    },
+    "templates/base.html": {
+      "sha256": "9625c0e2e51e709a52722d43e1ab97532b3fab73a993c7fbf46627468b4b93d3"
+    },
+    "templates/card_table_game.html": {
+      "sha256": "8867fe59fe0e924fce9287f963e8ab539634d7274e5b02c241f7291d94212a93"
+    },
+    "templates/card_table_index.html": {
+      "sha256": "6e3cb4988e7eb3340d2277beace0b8f209a450f54971c97b02123601b2031438"
+    },
+    "templates/card_table_lobby.html": {
+      "sha256": "afa2aa3d8c15831de76fa589e30ad6c076882db065783e2df682c69a2dbe02c3"
+    },
+    "templates/conquest_board_preview.html": {
+      "sha256": "f52a156ac1dd28bd78fbb3ca09205b54ddba6c2ed32ad79dd55fe737e787fdd0"
+    },
+    "templates/conquest_index.html": {
+      "sha256": "5c54c80996905259ae515ac0b25db68a318225b694eb38cde5b3115c23a22f3c"
+    },
+    "templates/conquest_lobby.html": {
+      "sha256": "f98d1481eac084a6fa1c46d958e5c054da19d62aa20ffaae2eb53c252b6c4070"
+    },
+    "templates/conquest_table.html": {
+      "sha256": "4d52a2327dd480ea9bc76c175ec860536330221b6d34992abff1aee42767b83f"
+    },
+    "templates/dice_table_game.html": {
+      "sha256": "338d84095c8ad4c0b24b7b6873388b0df671897062b0368930e85ffdaa09520b"
+    },
+    "templates/dice_table_index.html": {
+      "sha256": "f5c480b244af7c34aeb05c1e00ecf2fe3c675066ee3a25007c47ae4bc4812b78"
+    },
+    "templates/dice_table_lobby.html": {
+      "sha256": "186cb6c20857d6b6c502df3c5e2fe3b84fe627fd4ad2abf5601160dc3a0a8720"
+    },
+    "templates/home.html": {
+      "sha256": "611bb72ad2ee545c2299a7a2f4f9667127b0c40ccb90f5380776f3895370e49a"
+    },
+    "templates/login.html": {
+      "sha256": "133af3ab33e4f7ab2ed63e2a9deb4b9da75f70d98e0f0bd29ec9b91b5ae9268d"
+    },
+    "templates/nerd_index.html": {
+      "sha256": "c364a33aa832d0c334e96ef578fd0fa908ea5cbff4458d04e989c7415f12e479"
+    },
+    "templates/nerd_mode.html": {
+      "sha256": "06c25dc654cdea6e3422aa4759f5e86f0c01802c26afd357923fbe8a32ed14bb"
+    },
+    "templates/party_countdown.html": {
+      "sha256": "91f6666ff267a164332e3a93d3220b6b6f39c288deb0ecf3cef9498183211707"
+    },
+    "templates/party_index.html": {
+      "sha256": "93ad15bd18ded563a1131933d875c49195a4ec8653575747b0b911e810100669"
+    },
+    "templates/party_lobby.html": {
+      "sha256": "49107278398a587e41b4435a249a6339e4f20a1e482e288a28287a8bbad48c2e"
+    },
+    "templates/party_question.html": {
+      "sha256": "60e68890b6868ad33d402bcd2c2ed4e1a2cfd3bc2a7f2dd5b8d62a7ef3f9a8bc"
+    },
+    "templates/party_result.html": {
+      "sha256": "8b54e637283cc96f3c9835233b6258b1f497c077fda2da4d291ce8b65f0d0d14"
+    },
+    "templates/pool_exhausted.html": {
+      "sha256": "163e375def57ee2dc14607d672be526cae4729501d00b28f52bbf6f25798c920"
+    },
+    "templates/profile.html": {
+      "sha256": "5cf9a8d08769808ba5dd6988c51df14677f2ce5756f4805a6c870db389721b70"
+    },
+    "templates/question.html": {
+      "sha256": "93c1eeea069024371d21c9694dd57c6e91c26ac9127b7b9c7a0b72713998d60c"
+    },
+    "templates/register.html": {
+      "sha256": "e8228f360e5b49863c15ba2a38c2b03c31d9aae1f18c13f7e46e8a9d2781c1bb"
+    },
+    "templates/result.html": {
+      "sha256": "0d6550d77e6089bd6c7cdb77305943190ae20b62d7c5c1b8aa13eb9d2ff18163"
+    },
+    "templates/shop.html": {
+      "sha256": "fed90f23c7e205be37cbaecfb18545bbbd046472ee31bf2627c089b8f7edb5d5"
+    },
+    "templates/tabletop_connection.html": {
+      "sha256": "063844e1411d45e8bee67989ffe5b41a20b5d916cfe49bdcc0575acdc5185eea"
+    },
+    "templates/tabletop_family.html": {
+      "sha256": "001b55640cef34c070662667a6244c0e7c7580765d1bdf8617662870ec4a5449"
+    },
+    "offline-preview/button-workshop-v1/renderer.js": {
+      "sha256": "22854cb2f1aa07ab09ab7e500fb744402a5978d8aa188a1e4afc8887a43868ef"
+    },
+    "offline-preview/game-workshop-v1/source_windows.py": {
+      "sha256": "b8ad6f9c20b5fd33da9f56c726919014b29994be8544db0751c85a74639950ef"
+    },
+    "offline-preview/game-workshop-v1/source_inputs.py": {
+      "sha256": "62cb77c5149543b945340467415bd77b9d5cbff7fb654b26c6f726dc5e8b8a41"
+    },
+    "offline-preview/game-workshop-v1/source_indicators.py": {
+      "sha256": "4aa8706a91a48d59f650ba85ae3549ef659b942037883686929c9b9348cf49d9"
+    },
+    "offline-preview/game-workshop-v1/source_players.py": {
+      "sha256": "1a087beba51f2192387c5854163ca6345ac7bf2c595c4219f59aa43180ee15d8"
+    },
+    "offline-preview/game-workshop-v1/source_lobbies.py": {
+      "sha256": "8a3ba2f5e5ed54f9c3f752a04998f93a4a73a519865415faade6b6f85f5473c2"
+    },
+    "offline-preview/game-workshop-v1/models.js": {
+      "sha256": "46ca05c3f5709db51fe764f15ba05c078cd951399403b1c0acd2b0f55d20010c"
+    },
+    "offline-preview/game-workshop-v1/piece_library.py": {
+      "sha256": "2d576b6859375463cf5bf703e403d6874efca2d421ec926e81e212db863d7c07"
+    },
+    "offline-preview/comic-ui-v1/components.js": {
+      "sha256": "f25371e0cf650af41a59f50b869ce9fe64978801c0bf03046ea02e94fc7d6a96"
+    },
+    "offline-preview/game-workshop-v1/card_library.py": {
+      "sha256": "a189a7021ffba2d0a50581db7002122bb546d44404ea50df2d74910099ab9ab4"
+    },
+    "offline-preview/game-workshop-v1/room_library.py": {
+      "sha256": "f1ed4e6235dfd573cca59533a32218473285fc28b7c3498354668789316b45d5"
+    },
+    "app.py": {
+      "sha256": "fe31bd87b1674bb9e49f8650fc6c5ee9a194ef1a5a49f9a001bba96927a0b78d"
+    },
+    "offline-preview/game-workshop-v1/workshop_catalog.py": {
+      "sha256": "337152ca28b9054532794351b417feaf5ae1972d4ef1679f27fea4aac2733997"
+    },
+    "offline-preview/game-workshop-v1/graphic_library.py": {
+      "sha256": "949486ce8fbcbebfab783b12edf58badacc1002a11dca3622a631fca2f66b206"
+    },
+    "offline-preview/game-workshop-v1/media_library.py": {
+      "sha256": "344d4ff1d58c3dbc241b476290b738e77fb21f5b3d3d122af179ca32705ea4ff"
+    },
+    "offline-preview/button-workshop-v1/assets/audio/catalog.json": {
+      "sha256": "7ff27b41468ff0ad6f120859aab8d7587da2532e1e1325287d7827f923ddf3de"
+    },
+    "offline-preview/button-workshop-v1/sound.js": {
+      "sha256": "8499e1eec02c02315bf70f9d03e014589f008dfdb29e6dcaf60d766ccdc19187"
+    },
+    "static/vendor/dddice-outgunned/theme.json": {
+      "sha256": "d7b2886bd8c83aa6ff7306d22ec1c6114e0b85ad6b8aeb094bb4bb405c5c39b4"
+    },
+    "offline-preview/button-workshop-v1/fonts.css": {
+      "sha256": "4ac771b21597d7ef85b7a0f846faecfd47e4bbb5ca290980a4df4855da3df902"
+    },
+    "offline-preview/game-workshop-v1/property_catalog.py": {
+      "sha256": "aaf01447f485a5db710bc6c4cf4fbd72a76f90a431cce2693858287d1549391a"
+    },
+    "offline-preview/button-workshop-v1/catalog.json": {
+      "sha256": "bbb5764a4ae1792dd50dd1030a7c76d2872a4e4ad7f3a0401889398333e23397"
+    },
+    "offline-preview/button-workshop-v1/materials.css": {
+      "sha256": "38ab08d74776b47aa6f8392e5c1e2eb734c6a81e3c3b9649e8d43698fc1f4acf"
+    },
+    "offline-preview/game-workshop-v1/motion.js": {
+      "sha256": "69a613846dc5cdf3e994584aa5591c48d5d7568da8590c03901e17ac220b6465"
+    }
+  },
+  "template_entries": [
+    "card_table_game.html",
+    "card_table_lobby.html",
+    "conquest_board_preview.html",
+    "conquest_lobby.html",
+    "conquest_table.html",
+    "dice_table_game.html",
+    "dice_table_lobby.html",
+    "home.html",
+    "login.html",
+    "nerd_mode.html",
+    "nerd_preview.html",
+    "party_countdown.html",
+    "party_lobby.html",
+    "party_question.html",
+    "party_result.html",
+    "profile.html",
+    "question.html",
+    "register.html",
+    "result.html",
+    "shop.html",
+    "tabletop_connection.html",
+    "tabletop_family.html"
+  ],
+  "families": [
+    {
+      "id": "buttons",
+      "name": "Buttons",
+      "capability": "gestaltbar",
+      "finding": "Mehrere Grundlagen; Spieleinbindungen noch nicht vollständig registriert",
+      "evidence": [
+        {
+          "path": "templates/home.html",
+          "line": 53,
+          "match": "<a class=\"primary-button\" href=\"{{ url_for('result') }}\">heutiges ergebnis <span aria-hidden=\"true\">→</span></a>"
+        },
+        {
+          "path": "static/style.css",
+          "line": 198,
+          "match": ".primary-button {"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/game-buttons.js",
+          "line": 25,
+          "match": "view.element.dataset.recipe=recipe.source_id;"
+        },
+        {
+          "path": "offline-preview/button-workshop-v1/renderer.js",
+          "line": 91,
+          "match": "export function renderButton(host, recipe, {state='normal',label,symbol,action=()=>{},sound=null,size=null,tintStrength=null,textureUrl=null}={}) {"
+        },
+        {
+          "path": "templates/nerd_mode.html",
+          "line": 106,
+          "match": "<button class=\"perfect-buzzer\" type=\"submit\" {% if not guests or ready_guests|length != guests|length %}disabled{% endif %}><img src=\"{{ url_for('static', filename='stormseeds-perfect-start-buzzer-v2.png') }}\" alt=\"\"><b>"
+        },
+        {
+          "path": "templates/card_table_game.html",
+          "line": 51,
+          "match": "<button type=\"button\" data-table-action=\"deal\" title=\"Jeder Person eine Karte vom Stapel geben\"><span>♠</span> austeilen</button>"
+        },
+        {
+          "path": "templates/dice_table_game.html",
+          "line": 79,
+          "match": "<button class=\"is-primary\" type=\"button\" data-dice-action=\"roll\">würfeln</button>"
+        }
+      ]
+    },
+    {
+      "id": "windows",
+      "name": "Fenster und Inhaltsflächen",
+      "capability": "ansehen und Projekten zuordnen; Editor später",
+      "finding": "Fensterbibliothek mit gemeinsamen Modellen und getrennten Spiel-/Inhalts-/Zustandsvarianten",
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/source_windows.py",
+          "line": 227,
+          "match": "class SourceWindows:"
+        },
+        {
+          "path": "templates/base.html",
+          "line": 49,
+          "match": "<dialog class=\"rules-dialog\" id=\"rules-dialog\" aria-labelledby=\"rules-title\">"
+        },
+        {
+          "path": "static/rules.js",
+          "line": 9,
+          "match": "if (typeof dialog.showModal === \"function\") {"
+        },
+        {
+          "path": "templates/home.html",
+          "line": 88,
+          "match": "<dialog class=\"catchup-dialog\" data-catchup-dialog aria-labelledby=\"catchup-title\">"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+          "line": 80,
+          "match": "<dialog id=\"mission-reveal\" class=\"mission-reveal\" aria-labelledby=\"mission-title\">"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+          "line": 35,
+          "match": "<section id=\"deployment-controls\" class=\"deployment-controls\" hidden aria-labelledby=\"deployment-land\">"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+          "line": 71,
+          "match": "<section id=\"card-hand\" class=\"card-hand\" aria-label=\"Deine Länderkarten\" data-expanded=\"false\">"
+        },
+        {
+          "path": "templates/profile.html",
+          "line": 43,
+          "match": "<div class=\"profile-inventory avatar-inventory\">"
+        }
+      ]
+    },
+    {
+      "id": "inputs",
+      "name": "Eingaben und Auswahlfelder",
+      "capability": "ansehen und Projekten zuordnen; Editor später",
+      "finding": "Eingabebibliothek mit gemeinsamen Modellen und getrennten Beschriftungs-/Grenzwert-/Zustandsvarianten",
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/source_inputs.py",
+          "line": 89,
+          "match": "class SourceInputs(SourceWindows):"
+        },
+        {
+          "path": "templates/question.html",
+          "line": 36,
+          "match": "<input type=\"hidden\" name=\"csrf_token\" value=\"{{ csrf_token() }}\">"
+        },
+        {
+          "path": "templates/nerd_mode.html",
+          "line": 140,
+          "match": "<textarea id=\"perfect-answer\" name=\"answer\" maxlength=\"220\" rows=\"4\" required placeholder=\"Klingt das glaubwürdig genug?\" data-answer-input>{{ answer_text or '' }}</textarea>"
+        },
+        {
+          "path": "templates/card_table_lobby.html",
+          "line": 14,
+          "match": "<label class=\"lobby-field\">Kartensatz<select name=\"deck_size\">{% for value, label in deck_choices.items() %}<option value=\"{{ value }}\" {% if value == lobby.deck_size %}selected{% endif %}>{{ label }}</option>{% endfor %"
+        }
+      ]
+    },
+    {
+      "id": "indicators",
+      "name": "Punkte, Timer und Zustandsanzeigen",
+      "capability": "ansehen und Projekten zuordnen; Editor später",
+      "finding": "Anzeigenbibliothek mit gemeinsamen Modellen und getrennten Spiel-/Wert-/Zustandsvarianten; Zeitwerte sind eingefroren",
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/source_indicators.py",
+          "line": 194,
+          "match": "class SourceIndicators(SourceWindows):"
+        },
+        {
+          "path": "templates/nerd_mode.html",
+          "line": 131,
+          "match": "<div class=\"perfect-card-head\"><span class=\"perfect-card-label\">{{ 'BEGRIFF' if round.category == 'term' else 'KURIOSITÄT' }}</span><span class=\"perfect-timer\" data-timer>–:––</span></div>"
+        },
+        {
+          "path": "templates/dice_table_game.html",
+          "line": 57,
+          "match": "<aside class=\"dice-score-note is-kniffel-sheet\" aria-label=\"Kniffelblock\">"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+          "line": 46,
+          "match": "<div class=\"reinforcement-reserve\"><strong id=\"reinforcements-left\">6</strong><span id=\"reserve-caption\">zu verteilen</span></div>"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+          "line": 34,
+          "match": "<section id=\"battle-result\" class=\"battle-result\" hidden aria-label=\"Kampfergebnis\" role=\"status\"><div id=\"attack-roll-row\" class=\"dice-row\"><span>Angriff</span><div id=\"attacker-rolls\" class=\"dice-values\"></div></div><d"
+        }
+      ]
+    },
+    {
+      "id": "players",
+      "name": "Spieleranzeigen und Pulte",
+      "capability": "ansehen und Projekten zuordnen; Editor später",
+      "finding": "Spielerbibliothek mit Profilfenstern, Lobbyplätzen, Porträts, Ranglisten, Namenspulten und allen registrierten Pultfamilien",
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/source_players.py",
+          "line": 101,
+          "match": "class SourcePlayers(SourceIndicators):"
+        },
+        {
+          "path": "templates/_profile_window.html",
+          "line": 8,
+          "match": "{% macro profile_window(cosmetics, trophies, show_edit=True, show_details=True, player_name=None, player_balance=None, instance_id='variant-profile-name', balance_link=True, game_points=None, podium_fields=None, player_s"
+        },
+        {
+          "path": "static/player-portrait.js",
+          "line": 2,
+          "match": "export function createPlayerPortrait(host) {"
+        },
+        {
+          "path": "templates/_leaderboard.html",
+          "line": 3,
+          "match": "<section class=\"leaderboard quiz-arena-board variant-a-leaderboard\" aria-labelledby=\"leaderboard-heading\" data-leaderboards>"
+        }
+      ]
+    },
+    {
+      "id": "lobby",
+      "name": "Lobbys und Lobbyübersichten",
+      "capability": "ansehen und zuordnen; bisheriger allgemeiner Entwurf bleibt gestaltbar",
+      "finding": "134 Quellvarianten in sieben gemeinsamen Modellen aus allen sieben Mehrspielerspielen; Perfect behält seinen eigenen Raum",
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/source_lobbies.py",
+          "line": 75,
+          "match": "class SourceLobbies(SourceIndicators):"
+        },
+        {
+          "path": "templates/_lobby_room.html",
+          "line": 11,
+          "match": "{% macro lobby_room(lobby, players, capacity, game, game_title, active_count, leave_url=None, leave_label='lobby verlassen', attributes={}, controls_title='Spieleinstellungen', closed=False) -%}"
+        },
+        {
+          "path": "templates/_lobby_overview.html",
+          "line": 1,
+          "match": "{% macro lobby_overview(lobbies, game, title, description, capacity, create_endpoint, join_endpoint, lobby_endpoint, back_endpoint, back_label, family=None, completed_endpoint=None, signature=None, status_url=None) -%}"
+        },
+        {
+          "path": "templates/nerd_mode.html",
+          "line": 106,
+          "match": "<button class=\"perfect-buzzer\" type=\"submit\" {% if not guests or ready_guests|length != guests|length %}disabled{% endif %}><img src=\"{{ url_for('static', filename='stormseeds-perfect-start-buzzer-v2.png') }}\" alt=\"\"><b>"
+        }
+      ]
+    },
+    {
+      "id": "board",
+      "name": "Bretter und Spielflächen",
+      "capability": "2D/3D zuordenbar; Editoroptionen später",
+      "finding": "Zwei Grundvarianten mit Größe, Form und Bild; Conquest, Playtable und gemeinsame Würfelfläche aufgenommen",
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/models.js",
+          "line": 15,
+          "match": "export function buildBoard(cfg, flat=false) {"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+          "line": 5,
+          "match": "<div id=\"territories\" class=\"territory-layer\" role=\"group\" aria-label=\"42 Länder – Truppenmarke zum Auswählen anklicken\"></div>"
+        },
+        {
+          "path": "templates/card_table_game.html",
+          "line": 3,
+          "match": "{% block extra_head %}<link rel=\"stylesheet\" href=\"{{ url_for('static', filename='card-table.css', v='16') }}\">{% endblock %}"
+        },
+        {
+          "path": "templates/dice_table_game.html",
+          "line": 7,
+          "match": "{% block extra_head %}<link rel=\"stylesheet\" href=\"{{ url_for('static', filename='dice-table.css', v='11') }}\">{% endblock %}"
+        }
+      ]
+    },
+    {
+      "id": "pieces",
+      "name": "Figuren, Spielsteine und Truppenmarken",
+      "capability": "ansehen und zuordnen; Editoroptionen später",
+      "finding": "Drei Formfamilien mit sieben Konfigurationen: Schach, Dame und vorhandene Conquest-Truppenmarke; Eigenschaften statt einzelner Bestände",
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/piece_library.py",
+          "line": 22,
+          "match": "class PieceLibrary:"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/models.js",
+          "line": 32,
+          "match": "export function buildPiece(role, cfg, side, square, flat=false) {"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/territories.js",
+          "line": 51,
+          "match": "const optgroup = document.createElement('optgroup');"
+        }
+      ]
+    },
+    {
+      "id": "dice",
+      "name": "Würfel",
+      "capability": "zwei Varianten zuordenbar; Editoroptionen später",
+      "finding": "Vorhandene Würfeltisch-Physik und flache Conquest-Anzeige; Anzahl und Aufdrucke als Parameter",
+      "evidence": [
+        {
+          "path": "static/dice-table.js",
+          "line": 5,
+          "match": "const canvas = room.querySelector(\"[data-dddice-canvas]\");"
+        },
+        {
+          "path": "offline-preview/comic-ui-v1/components.js",
+          "line": 17,
+          "match": "dice: '<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"4\"/><path d=\"M8 8h.01M16 8h.01M12 12h.01M8 16h.01M16 16h.01\"/>',"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/models.js",
+          "line": 81,
+          "match": "export function buildDie(cfg, flat=false) {"
+        }
+      ]
+    },
+    {
+      "id": "cards",
+      "name": "Karten und Kartenhände",
+      "capability": "Grundmodelle zuordenbar; neue Editoroptionen später",
+      "finding": "Zwei Grundbausteine und zwölf ganze Kartensätze; Fragen nur als Datenquellen der Fenster; keine Spielumstellung",
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/card_library.py",
+          "line": 13,
+          "match": "MODELS={'movable':dict(name='Bewegliche Karten · 3D',representation='3d',mode='model',interaction='move'),'display':dict(name='Anzeige- und Auswahlkarten · flach',representation='2d',mode='graphic',interaction='select')}"
+        },
+        {
+          "path": "static/card-table.js",
+          "line": 56,
+          "match": "const element = document.createElement(\"div\");"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/cards.js",
+          "line": 41,
+          "match": "export function createCountryCard(card, { owned = false, ownerName = null, ownerColor = null } = {}) {"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+          "line": 4,
+          "match": "import { createCountryCard, isCardSet } from './cards.js';"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/models.js",
+          "line": 119,
+          "match": "export function buildCard(cfg, flat=false, back=false) {"
+        }
+      ]
+    },
+    {
+      "id": "background",
+      "name": "Hintergründe",
+      "capability": "Bildmotive und ganze Räume ansehen und zuordnen; Editoroptionen später",
+      "finding": "15 bestehende Bildmotive plus neun ganze Raumkonfigurationen in 2D/3D; ursprüngliche Raumkompositionen aus allen acht Spielen zugeordnet",
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/room_library.py",
+          "line": 13,
+          "match": "class RoomLibrary:"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/scene.js",
+          "line": 162,
+          "match": "function buildRoom(wallTexture, furnitureTexture, rugTexture) {"
+        },
+        {
+          "path": "app.py",
+          "line": 124,
+          "match": "BACKGROUND_CATALOG = ["
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/workshop_catalog.py",
+          "line": 51,
+          "match": "add('background','background-room-'+key,name,path)"
+        }
+      ]
+    },
+    {
+      "id": "titles",
+      "name": "Titelbilder",
+      "capability": "ansehen und zuordnen; eigene Bilder importieren",
+      "finding": "Acht vorhandene Bildmotive und Mäxchen-Logo als Konfigurationen zweier Bildfamilien; Editoroptionen später",
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "line": 50,
+          "match": "def capture_artwork(self):"
+        },
+        {
+          "path": "templates/_game_flyers.html",
+          "line": 2,
+          "match": "<div class=\"variant-a-flyer-copy\">"
+        }
+      ]
+    },
+    {
+      "id": "flyers",
+      "name": "Flyer und Spielpräsentation",
+      "capability": "ansehen und zuordnen; eigene Bilder importieren",
+      "finding": "13 Konfigurationen in drei gemeinsamen Kompositionen aufgenommen; Bildmotive getrennt verwendbar; Editoroptionen später",
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "line": 70,
+          "match": "def capture_flyers(self):"
+        },
+        {
+          "path": "templates/_game_flyers.html",
+          "line": 1,
+          "match": "{% macro perfect_flyer_copy() -%}"
+        },
+        {
+          "path": "templates/tabletop_family.html",
+          "line": 8,
+          "match": "{% block extra_head %}<link rel=\"stylesheet\" href=\"{{ url_for('static', filename='card-table.css', v='16') }}\">{% endblock %}"
+        },
+        {
+          "path": "templates/tabletop_connection.html",
+          "line": 5,
+          "match": "{% block extra_head %}<link rel=\"stylesheet\" href=\"{{ url_for('static', filename='card-table.css', v='16') }}\">{% endblock %}"
+        }
+      ]
+    },
+    {
+      "id": "icons",
+      "name": "Icons und Symbole",
+      "capability": "Symbolsätze ansehen und zuordnen; eigener Bildeditor bleibt",
+      "finding": "Fünf endliche Symbolsätze und App-Symbol aus Originalquellen aufgenommen; keine Einträge je Einsatz; Editoroptionen später",
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/graphic_library.py",
+          "line": 104,
+          "match": "def capture_icons(self):"
+        },
+        {
+          "path": "templates/_icons.html",
+          "line": 1,
+          "match": "{% macro category_icon(name, extra_class='') -%}"
+        },
+        {
+          "path": "offline-preview/comic-ui-v1/components.js",
+          "line": 20,
+          "match": "export function icon(name) {"
+        }
+      ]
+    },
+    {
+      "id": "avatars",
+      "name": "Avatare",
+      "capability": "vorhandener Bildeditor",
+      "finding": "Bildvarianten; kein freier Figureneditor; Profilausrüstung erhalten",
+      "evidence": [
+        {
+          "path": "app.py",
+          "line": 87,
+          "match": "AVATAR_CATALOG = ["
+        },
+        {
+          "path": "static/player-portrait.js",
+          "line": 2,
+          "match": "export function createPlayerPortrait(host) {"
+        }
+      ]
+    },
+    {
+      "id": "sounds",
+      "name": "Geräusche und Musik",
+      "capability": "lokal probehören und zuordnen; Editor später",
+      "finding": "13 neu recherchierte kurze CC0-Klänge für Bedienung, Tischaktionen, Rundenbeginn, Sieg und Niederlage; bestehende Zuordnungen unverändert",
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/media_library.py",
+          "line": 17,
+          "match": "SOUND_FAMILIES={'ui':'Klicks & Bedienung','table':'Karten, Würfel & Spielsteine','result':'Rundenbeginn, Sieg & Niederlage'}"
+        },
+        {
+          "path": "offline-preview/button-workshop-v1/assets/audio/catalog.json",
+          "line": 4,
+          "match": "\"sounds\": ["
+        },
+        {
+          "path": "offline-preview/button-workshop-v1/sound.js",
+          "line": 45,
+          "match": "export function createSound(onState,onPlay=()=>{},assetBase='/assets/audio/'){"
+        },
+        {
+          "path": "static/vendor/dddice-outgunned/theme.json",
+          "line": 1,
+          "match": "{\"data\":{\"meshes\":{\"d6\":\"https:\\/\\/cdn.dddice.com\\/mesh\\/v2\\/d6.fbx\",\"65d8ad5d-ed69-4c48-8ac6-8ff0a1636979\":\"https:\\/\\/cdn.dddice.com\\/mesh\\/v2\\/d6.fbx\",\"d3f0b12f-ad5e-47e1-959f-43441319d82c\":\"https:\\/\\/cdn.dddice.com\\/m"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/game-buttons.js",
+          "line": 13,
+          "match": "const [{renderButton},{createSound}]=await Promise.all([import('./button-renderer.js'),import('./button-sound.js')]);"
+        }
+      ]
+    },
+    {
+      "id": "fonts",
+      "name": "Schriften",
+      "capability": "passende Stilvorlagen ansehen und zuordnen; Editor später",
+      "finding": "Sieben freie lokale Schrift-/Oberflächenkombinationen einschließlich Kreide, Stein und Metall; keine universelle Effektmatrix",
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/media_library.py",
+          "line": 9,
+          "match": "FONT_STYLES=["
+        },
+        {
+          "path": "static/typography-v1.css",
+          "line": 5,
+          "match": "@font-face {"
+        },
+        {
+          "path": "offline-preview/button-workshop-v1/fonts.css",
+          "line": 1,
+          "match": "@font-face{font-family:'Workshop Cinzel';src:url('/assets/fonts/Cinzel-Variable.ttf') format('truetype');font-style:normal;font-weight:400 900;font-display:swap}"
+        }
+      ]
+    },
+    {
+      "id": "materials",
+      "name": "Materialien und Stile",
+      "capability": "gemeinsame Projekteigenschaft",
+      "finding": "Neun Materialfamilien mit Originalbeispielen; Projektwünsche ohne Änderung der Originalelemente, Editoroptionen später",
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/property_catalog.py",
+          "line": 10,
+          "match": "class PropertyCatalog:"
+        },
+        {
+          "path": "offline-preview/button-workshop-v1/catalog.json",
+          "line": 40,
+          "match": "\"id\": \"material\","
+        },
+        {
+          "path": "offline-preview/button-workshop-v1/materials.css",
+          "line": 1,
+          "match": "/* One physical composition and one contour plane for every material and style. */"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/scene.js",
+          "line": 110,
+          "match": "const wood = new THREE.MeshStandardMaterial({ map: woodTexture, roughness: .6, metalness: .04 });"
+        }
+      ]
+    },
+    {
+      "id": "presentation",
+      "name": "Kamera, Licht und Bewegung",
+      "capability": "gemeinsame Projektentscheidungen und Originalbeispiele",
+      "finding": "Drei Ansichtsbeispiele, Licht und Bewegung separat; 2,5D als Ansicht räumlicher Elemente, keine neuen Einzelobjekte",
+      "evidence": [
+        {
+          "path": "offline-preview/game-workshop-v1/property_catalog.py",
+          "line": 13,
+          "match": "self.views=["
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/workshop_catalog.py",
+          "line": 25,
+          "match": "PRESENTATION = {"
+        },
+        {
+          "path": "offline-preview/conquest-2-5d-v1/camera.js",
+          "line": 23,
+          "match": "export function placeCamera(camera, target, degrees, distance) {"
+        },
+        {
+          "path": "offline-preview/game-workshop-v1/motion.js",
+          "line": 2,
+          "match": "export function fallStep(body, dt, gravity, bounce, floor) {"
+        }
+      ]
+    }
+  ],
+  "button_surface_coverage": [
+    {
+      "surface": "plain",
+      "available": "shared_workshop_renderer",
+      "evidence": [
+        {
+          "path": "static/lobby-overview.css",
+          "line": 16,
+          "match": ".lobby-browser .primary-button { border: 1px solid var(--acid, #d8ff42); background: var(--acid, #d8ff42); color: #101d0d; box-shadow: 0 3px 0 #152230; }"
+        }
+      ]
+    },
+    {
+      "surface": "gradient",
+      "available": "shared_workshop_renderer",
+      "evidence": [
+        {
+          "path": "static/card-table.css",
+          "line": 199,
+          "match": ".card-command-row button, .card-room-actions button {"
+        },
+        {
+          "path": "static/dice-table.css",
+          "line": 150,
+          "match": ".dice-console-actions button.is-danger { border-color: #ff9d8f; background: linear-gradient(#d9574f,#9c272e); color: #fff; }"
+        }
+      ]
+    },
+    {
+      "surface": "translucent",
+      "available": "shared_workshop_renderer",
+      "evidence": [
+        {
+          "path": "static/dice-table.css",
+          "line": 181,
+          "match": ".dice-console-actions button,.dice-game-leave button { min-height: 48px; padding: 9px 18px; border: 2px solid #d7a34d; border-radius: 11px; background: #101c37; color: #fff1c8; font: inherit; font-weight: 900; box-shadow"
+        }
+      ]
+    },
+    {
+      "surface": "image_button",
+      "available": "existing_asset_not_yet_registered_as_button_recipe",
+      "evidence": [
+        {
+          "path": "templates/nerd_mode.html",
+          "line": 106,
+          "match": "<button class=\"perfect-buzzer\" type=\"submit\" {% if not guests or ready_guests|length != guests|length %}disabled{% endif %}><img src=\"{{ url_for('static', filename='stormseeds-perfect-start-buzzer-v2.png') }}\" alt=\"\"><b>"
+        }
+      ]
+    }
+  ],
+  "occurrences": [
+    {
+      "kind": "buttons",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 8,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "Sitzposition",
+      "attributes": {
+        "type": "button",
+        "data-pose": "sit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 9,
+      "tag": "input",
+      "id": "angle",
+      "classes": "",
+      "label": "Blickwinkel einstellen",
+      "attributes": {
+        "type": "range"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 10,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "Überblick",
+      "attributes": {
+        "type": "button",
+        "data-pose": "over"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 16,
+      "tag": "select",
+      "id": "territory-picker",
+      "classes": "",
+      "label": "Land auswählen …",
+      "attributes": {},
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 17,
+      "tag": "button",
+      "id": "clear-selection",
+      "classes": "",
+      "label": "Auswahl aufheben",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 24,
+      "tag": "button",
+      "id": null,
+      "classes": "dice-choice",
+      "label": "Mit 1 Angriffswürfel",
+      "attributes": {
+        "type": "button",
+        "role": "radio",
+        "data-dice-count": "1"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 24,
+      "tag": "button",
+      "id": null,
+      "classes": "dice-choice",
+      "label": "Mit 2 Angriffswürfeln",
+      "attributes": {
+        "type": "button",
+        "role": "radio",
+        "data-dice-count": "2"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 24,
+      "tag": "button",
+      "id": null,
+      "classes": "dice-choice",
+      "label": "Mit 3 Angriffswürfeln",
+      "attributes": {
+        "type": "button",
+        "role": "radio",
+        "data-dice-count": "3"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 31,
+      "tag": "button",
+      "id": "attack-clear",
+      "classes": "",
+      "label": "Angriffsziel abwählen",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 39,
+      "tag": "button",
+      "id": "deployment-less",
+      "classes": "",
+      "label": "Eine Truppe weniger",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 39,
+      "tag": "input",
+      "id": "deployment-amount",
+      "classes": "",
+      "label": "",
+      "attributes": {
+        "type": "number"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 39,
+      "tag": "button",
+      "id": "deployment-more",
+      "classes": "",
+      "label": "Eine Truppe mehr",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 40,
+      "tag": "input",
+      "id": "deployment-slider",
+      "classes": "",
+      "label": "",
+      "attributes": {
+        "type": "range"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 42,
+      "tag": "button",
+      "id": "cancel-deployment",
+      "classes": "",
+      "label": "Abbrechen",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 42,
+      "tag": "button",
+      "id": "confirm-deployment",
+      "classes": "primary-action",
+      "label": "1 Truppe setzen",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 45,
+      "tag": "button",
+      "id": "next-phase",
+      "classes": "",
+      "label": "Weiter zum Angriff",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 45,
+      "tag": "button",
+      "id": "roll-attack",
+      "classes": "",
+      "label": "Angreifen",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 47,
+      "tag": "button",
+      "id": "reset-turn",
+      "classes": "reset-turn",
+      "label": "Offline-Beispiel neu starten",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 55,
+      "tag": "button",
+      "id": "notice-open-cards",
+      "classes": "",
+      "label": "Zu den Karten",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 58,
+      "tag": "button",
+      "id": "dismiss-turn-receipt",
+      "classes": "",
+      "label": "Kartenhinweis ausblenden",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 59,
+      "tag": "button",
+      "id": "awarded-card",
+      "classes": "awarded-card",
+      "label": "Erhaltene Karte und Kartenhand vergrößern",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 62,
+      "tag": "button",
+      "id": "close-victory",
+      "classes": "result-close",
+      "label": "Endstand einklappen",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 69,
+      "tag": "button",
+      "id": "finish-game",
+      "classes": "",
+      "label": "Zur Übersicht",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 69,
+      "tag": "button",
+      "id": "play-again",
+      "classes": "primary-action",
+      "label": "Nochmal spielen",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 72,
+      "tag": "button",
+      "id": "cards-toggle",
+      "classes": "",
+      "label": "Karten einklappen",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 74,
+      "tag": "button",
+      "id": "review-mission",
+      "classes": "",
+      "label": "Deine Auftragskarte ansehen",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 76,
+      "tag": "button",
+      "id": "trade-cards",
+      "classes": "primary-action",
+      "label": "Drei Karten auswählen",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "windows",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 80,
+      "tag": "dialog",
+      "id": "mission-reveal",
+      "classes": "mission-reveal",
+      "label": "✦ Nur für dich · streng geheim Dein Auftrag Dein Auftrag bleibt am Stern neben deinem Avatar erreichbar. Auftrag merken",
+      "attributes": {},
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 84,
+      "tag": "button",
+      "id": "accept-mission",
+      "classes": "",
+      "label": "Auftrag merken",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "offline-preview/conquest-2-5d-v1/table-surface.js",
+      "line": 87,
+      "tag": "button",
+      "id": "reload",
+      "classes": "",
+      "label": "Erneut laden",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/_leaderboard.html",
+      "line": 9,
+      "tag": "button",
+      "id": "tab-daily",
+      "classes": "",
+      "label": "tag",
+      "attributes": {
+        "type": "button",
+        "role": "tab",
+        "data-leaderboard-tab": "daily"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/_leaderboard.html",
+      "line": 10,
+      "tag": "button",
+      "id": "tab-weekly",
+      "classes": "",
+      "label": "woche",
+      "attributes": {
+        "type": "button",
+        "role": "tab",
+        "data-leaderboard-tab": "weekly"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/_leaderboard.html",
+      "line": 11,
+      "tag": "button",
+      "id": "tab-all",
+      "classes": "",
+      "label": "hall of fame",
+      "attributes": {
+        "type": "button",
+        "role": "tab",
+        "data-leaderboard-tab": "all"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/_leaderboard.html",
+      "line": 12,
+      "tag": "button",
+      "id": "tab-weekly-wins",
+      "classes": "",
+      "label": "wochensiege",
+      "attributes": {
+        "type": "button",
+        "role": "tab",
+        "data-leaderboard-tab": "weekly_wins"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/_leaderboard.html",
+      "line": 45,
+      "tag": "button",
+      "id": "tab-daily",
+      "classes": "",
+      "label": "tagessieger",
+      "attributes": {
+        "type": "button",
+        "role": "tab",
+        "data-leaderboard-tab": "daily"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/_leaderboard.html",
+      "line": 46,
+      "tag": "button",
+      "id": "tab-weekly",
+      "classes": "",
+      "label": "wochenliga",
+      "attributes": {
+        "type": "button",
+        "role": "tab",
+        "data-leaderboard-tab": "weekly"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/_leaderboard.html",
+      "line": 50,
+      "tag": "button",
+      "id": "tab-all",
+      "classes": "",
+      "label": "hall of fame",
+      "attributes": {
+        "type": "button",
+        "role": "tab",
+        "data-leaderboard-tab": "all"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/_lobby_overview.html",
+      "line": 5,
+      "tag": "button",
+      "id": null,
+      "classes": "primary-button",
+      "label": "lobby erstellen",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/_lobby_overview.html",
+      "line": 6,
+      "tag": "button",
+      "id": null,
+      "classes": "secondary-button",
+      "label": "erneut prüfen",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/_lobby_overview.html",
+      "line": 21,
+      "tag": "a",
+      "id": null,
+      "classes": "primary-button",
+      "label": "{{ 'ergebnis ansehen' if lobby.status == 'completed' else 'zur lobby' if lobby.status == 'waiting' else 'zurück ins spiel' }}",
+      "attributes": {},
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/_lobby_overview.html",
+      "line": 22,
+      "tag": "button",
+      "id": null,
+      "classes": "primary-button",
+      "label": "{{ 'zurückkehren' if reserved else 'beitreten' }}",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/_lobby_overview.html",
+      "line": 29,
+      "tag": "a",
+      "id": null,
+      "classes": "secondary-button lobby-browser-back",
+      "label": "{{ back_label }}",
+      "attributes": {},
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/_lobby_room.html",
+      "line": 4,
+      "tag": "button",
+      "id": null,
+      "classes": "primary-button game-lobby-start",
+      "label": "spiel starten",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/_lobby_room.html",
+      "line": 41,
+      "tag": "button",
+      "id": null,
+      "classes": "secondary-button",
+      "label": "{{ leave_label }}",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/base.html",
+      "line": 48,
+      "tag": "button",
+      "id": null,
+      "classes": "rules-button",
+      "label": "spielregeln – so wird gespielt",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "windows",
+      "path": "templates/base.html",
+      "line": 49,
+      "tag": "dialog",
+      "id": "rules-dialog",
+      "classes": "rules-dialog",
+      "label": "SO LÄUFT ES {% if show_conquest_rules %}stormseed´s conquest{% elif show_maexchen_rules %}mäxchen{% elif show_party_rules %}guesstimate part",
+      "attributes": {},
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/base.html",
+      "line": 56,
+      "tag": "button",
+      "id": null,
+      "classes": "rules-close",
+      "label": "Spielregeln schließen",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/base.html",
+      "line": 103,
+      "tag": "button",
+      "id": null,
+      "classes": "arena-nav-rules",
+      "label": "Spielregeln – So wird gespielt",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/card_table_game.html",
+      "line": 17,
+      "tag": "button",
+      "id": null,
+      "classes": "card-collect-pot",
+      "label": "collect",
+      "attributes": {
+        "type": "button",
+        "data-collect-pot": "{{ member.id }}"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/card_table_game.html",
+      "line": 19,
+      "tag": "input",
+      "id": null,
+      "classes": "",
+      "label": "Punkte bieten",
+      "attributes": {
+        "type": "range"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/card_table_game.html",
+      "line": 22,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "bieten",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/card_table_game.html",
+      "line": 23,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "mitgehen",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/card_table_game.html",
+      "line": 47,
+      "tag": "input",
+      "id": null,
+      "classes": "",
+      "label": "",
+      "attributes": {
+        "type": "range"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/card_table_game.html",
+      "line": 51,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "♠ austeilen",
+      "attributes": {
+        "type": "button",
+        "data-table-action": "deal"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/card_table_game.html",
+      "line": 52,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "f→b tisch abräumen",
+      "attributes": {
+        "type": "button",
+        "data-table-action": "clear_table"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/card_table_game.html",
+      "line": 53,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "c einsammeln",
+      "attributes": {
+        "type": "button",
+        "data-table-action": "collect"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/card_table_game.html",
+      "line": 54,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "d mischen",
+      "attributes": {
+        "type": "button",
+        "data-table-action": "shuffle"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/card_table_game.html",
+      "line": 60,
+      "tag": "textarea",
+      "id": null,
+      "classes": "",
+      "label": "Gemeinsamer Notizzettel mit acht anklickbaren Zeilen",
+      "attributes": {},
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/card_table_game.html",
+      "line": 64,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "h lobby verlassen",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/card_table_game.html",
+      "line": 67,
+      "tag": "button",
+      "id": null,
+      "classes": "danger",
+      "label": "i lobby beenden",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/card_table_game.html",
+      "line": 73,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "bestätigen",
+      "attributes": {
+        "type": "button",
+        "data-pot-vote": "approve"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/card_table_game.html",
+      "line": 73,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "ablehnen",
+      "attributes": {
+        "type": "button",
+        "data-pot-vote": "reject"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/card_table_lobby.html",
+      "line": 14,
+      "tag": "select",
+      "id": null,
+      "classes": "",
+      "label": "{% for value, label in deck_choices.items() %} {{ label }} {% endfor %}",
+      "attributes": {
+        "name": "deck_size"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/card_table_lobby.html",
+      "line": 15,
+      "tag": "input",
+      "id": null,
+      "classes": "",
+      "label": "",
+      "attributes": {
+        "type": "number",
+        "name": "starting_points"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/conquest_lobby.html",
+      "line": 14,
+      "tag": "a",
+      "id": null,
+      "classes": "primary-button",
+      "label": "zu den feldzügen →",
+      "attributes": {},
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/conquest_lobby.html",
+      "line": 14,
+      "tag": "button",
+      "id": null,
+      "classes": "primary-button",
+      "label": "{{ 'partie fortsetzen' if lobby.status == 'playing' else 'wieder beitreten' }} →",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/conquest_lobby.html",
+      "line": 15,
+      "tag": "a",
+      "id": null,
+      "classes": "primary-button game-lobby-start",
+      "label": "zurück an den spieltisch →",
+      "attributes": {},
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/conquest_lobby.html",
+      "line": 16,
+      "tag": "a",
+      "id": null,
+      "classes": "secondary-button",
+      "label": "ergebnis ansehen",
+      "attributes": {},
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/conquest_lobby.html",
+      "line": 16,
+      "tag": "button",
+      "id": null,
+      "classes": "primary-button",
+      "label": "nochmal spielen",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/conquest_lobby.html",
+      "line": 22,
+      "tag": "input",
+      "id": null,
+      "classes": "",
+      "label": "",
+      "attributes": {
+        "name": "name"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/conquest_lobby.html",
+      "line": 23,
+      "tag": "input",
+      "id": null,
+      "classes": "",
+      "label": "",
+      "attributes": {
+        "type": "radio",
+        "name": "victory_mode"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/conquest_lobby.html",
+      "line": 27,
+      "tag": "select",
+      "id": null,
+      "classes": "",
+      "label": "{% for caption in color_names %} {{ caption }} {% endfor %}",
+      "attributes": {
+        "name": "color_{{ player.id }}"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/conquest_lobby.html",
+      "line": 29,
+      "tag": "button",
+      "id": null,
+      "classes": "secondary-button",
+      "label": "entwickler-test starten",
+      "attributes": {
+        "type": "submit",
+        "name": "developer_test"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/conquest_lobby.html",
+      "line": 39,
+      "tag": "button",
+      "id": null,
+      "classes": "secondary-button is-danger",
+      "label": "lobby für alle beenden",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/conquest_lobby.html",
+      "line": 41,
+      "tag": "a",
+      "id": null,
+      "classes": "primary-button",
+      "label": "zu den feldzügen →",
+      "attributes": {},
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/dice_table_game.html",
+      "line": 31,
+      "tag": "button",
+      "id": null,
+      "classes": "maexchen-rules-open",
+      "label": "spielregeln",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/dice_table_game.html",
+      "line": 79,
+      "tag": "button",
+      "id": null,
+      "classes": "is-primary",
+      "label": "würfeln",
+      "attributes": {
+        "type": "button",
+        "data-dice-action": "roll"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/dice_table_game.html",
+      "line": 81,
+      "tag": "select",
+      "id": null,
+      "classes": "",
+      "label": "{% for value in maexchen_values %} {{ 'Mäxchen · 21' if value == '21' else (value[0] ~ 'er-Pasch' if value[0] == value[1] else value) }} {% ",
+      "attributes": {},
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/dice_table_game.html",
+      "line": 83,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "ansagen",
+      "attributes": {
+        "type": "button",
+        "data-dice-action": "claim"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/dice_table_game.html",
+      "line": 84,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "glauben & würfeln",
+      "attributes": {
+        "type": "button",
+        "data-dice-action": "believe"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/dice_table_game.html",
+      "line": 85,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "mäxchen glauben · 1 leben",
+      "attributes": {
+        "type": "button",
+        "data-dice-action": "believe_maexchen"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/dice_table_game.html",
+      "line": 86,
+      "tag": "button",
+      "id": null,
+      "classes": "is-danger",
+      "label": "aufdecken",
+      "attributes": {
+        "type": "button",
+        "data-dice-action": "reveal"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/dice_table_game.html",
+      "line": 87,
+      "tag": "button",
+      "id": null,
+      "classes": "is-primary",
+      "label": "nächste runde vorlegen",
+      "attributes": {
+        "type": "button",
+        "data-dice-action": "next_round"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/dice_table_game.html",
+      "line": 89,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "alle einsammeln",
+      "attributes": {
+        "type": "button",
+        "data-dice-action": "collect"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/dice_table_game.html",
+      "line": 90,
+      "tag": "button",
+      "id": null,
+      "classes": "is-primary",
+      "label": "{{ lobby.dice_count }} würfel würfeln",
+      "attributes": {
+        "type": "button",
+        "data-dice-action": "roll"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/dice_table_game.html",
+      "line": 91,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "aufdecken",
+      "attributes": {
+        "type": "button",
+        "data-dice-action": "reveal"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/dice_table_game.html",
+      "line": 93,
+      "tag": "input",
+      "id": null,
+      "classes": "",
+      "label": "",
+      "attributes": {
+        "type": "checkbox"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/dice_table_game.html",
+      "line": 101,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "lobby verlassen",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/dice_table_lobby.html",
+      "line": 28,
+      "tag": "select",
+      "id": null,
+      "classes": "",
+      "label": "{% for count in range(1, 6) %} {{ count }} {% endfor %}",
+      "attributes": {
+        "name": "dice_count"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/dice_table_lobby.html",
+      "line": 29,
+      "tag": "select",
+      "id": null,
+      "classes": "",
+      "label": "Nein Ja",
+      "attributes": {
+        "name": "use_cup"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/home.html",
+      "line": 46,
+      "tag": "button",
+      "id": null,
+      "classes": "variant-a-carousel-arrow is-prev",
+      "label": "Vorheriges Spiel",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/home.html",
+      "line": 47,
+      "tag": "button",
+      "id": null,
+      "classes": "variant-a-carousel-arrow is-next",
+      "label": "Nächstes Spiel",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/home.html",
+      "line": 53,
+      "tag": "a",
+      "id": null,
+      "classes": "primary-button",
+      "label": "heutiges ergebnis →",
+      "attributes": {},
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/home.html",
+      "line": 57,
+      "tag": "button",
+      "id": null,
+      "classes": "primary-button",
+      "label": "{% if attempt %}runde fortsetzen{% else %}spielen{% endif %} →",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/home.html",
+      "line": 64,
+      "tag": "button",
+      "id": null,
+      "classes": "secondary-button",
+      "label": "{{ missed_week_days|length }} verpasste {{ 'runde' if missed_week_days|length == 1 else 'runden' }} nachholen",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/home.html",
+      "line": 84,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "abmelden",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "windows",
+      "path": "templates/home.html",
+      "line": 88,
+      "tag": "dialog",
+      "id": null,
+      "classes": "catchup-dialog",
+      "label": "WILLKOMMEN ZURÜCK Hi, du warst anscheinend ’ne Zeit lang HÖCHST UNTREU!! Aber das macht MAL WIEDER ÜBERHAUPT NICHTS, WEIL DU NATÜRLICH ALLES",
+      "attributes": {},
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/home.html",
+      "line": 95,
+      "tag": "button",
+      "id": null,
+      "classes": "primary-button",
+      "label": "alle {{ missed_week_days|length }} verpassten {{ 'runde' if missed_week_days|length == 1 else 'runden' }} nachholen",
+      "attributes": {
+        "name": "choice",
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/home.html",
+      "line": 98,
+      "tag": "button",
+      "id": null,
+      "classes": "secondary-button",
+      "label": "lieber nur heute spielen",
+      "attributes": {
+        "name": "choice",
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/login.html",
+      "line": 15,
+      "tag": "input",
+      "id": null,
+      "classes": "",
+      "label": "",
+      "attributes": {
+        "name": "username"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/login.html",
+      "line": 19,
+      "tag": "input",
+      "id": null,
+      "classes": "",
+      "label": "",
+      "attributes": {
+        "name": "pin",
+        "type": "password"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/login.html",
+      "line": 21,
+      "tag": "button",
+      "id": null,
+      "classes": "primary-button",
+      "label": "rein ins quiz",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/nerd_mode.html",
+      "line": 35,
+      "tag": "button",
+      "id": null,
+      "classes": "perfect-home-link",
+      "label": "← lobbys",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/nerd_mode.html",
+      "line": 44,
+      "tag": "button",
+      "id": null,
+      "classes": "perfect-pause-button",
+      "label": "{{ 'Spiel fortsetzen' if is_paused else 'Spiel pausieren' }}",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/nerd_mode.html",
+      "line": 49,
+      "tag": "button",
+      "id": null,
+      "classes": "perfect-next-question-button",
+      "label": "Diese Frage überspringen",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/nerd_mode.html",
+      "line": 81,
+      "tag": "input",
+      "id": null,
+      "classes": "",
+      "label": "Lobbyname",
+      "attributes": {
+        "name": "name"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/nerd_mode.html",
+      "line": 85,
+      "tag": "input",
+      "id": null,
+      "classes": "",
+      "label": "",
+      "attributes": {
+        "type": "radio",
+        "name": "goal_mode"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/nerd_mode.html",
+      "line": 86,
+      "tag": "input",
+      "id": null,
+      "classes": "",
+      "label": "",
+      "attributes": {
+        "type": "radio",
+        "name": "goal_mode"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/nerd_mode.html",
+      "line": 89,
+      "tag": "select",
+      "id": null,
+      "classes": "",
+      "label": "{% for value in (500, 1000, 1500, 2000, 2500, 3000, 4000, 5000) %} {{ value|points }} Punkte {% endfor %}",
+      "attributes": {
+        "name": "goal_value",
+        "data-goal-value": "points"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/nerd_mode.html",
+      "line": 94,
+      "tag": "select",
+      "id": null,
+      "classes": "",
+      "label": "{% for value in (5, 10, 15, 20, 30, 45, 60, 90, 120) %} {{ value }} Minuten {% endfor %}",
+      "attributes": {
+        "name": "goal_value",
+        "data-goal-value": "time"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/nerd_mode.html",
+      "line": 100,
+      "tag": "button",
+      "id": null,
+      "classes": "perfect-visually-hidden",
+      "label": "übernehmen",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/nerd_mode.html",
+      "line": 106,
+      "tag": "button",
+      "id": null,
+      "classes": "perfect-buzzer",
+      "label": "spiel starten",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/nerd_mode.html",
+      "line": 116,
+      "tag": "button",
+      "id": null,
+      "classes": "perfect-buzzer{% if member.ready %} is-ready{% endif %}",
+      "label": "{{ 'bereit ✓' if member.ready else 'bereit drücken' }}",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/nerd_mode.html",
+      "line": 140,
+      "tag": "textarea",
+      "id": "perfect-answer",
+      "classes": "",
+      "label": "{{ answer_text or '' }}",
+      "attributes": {
+        "name": "answer"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/nerd_mode.html",
+      "line": 141,
+      "tag": "button",
+      "id": null,
+      "classes": "perfect-button perfect-button-primary",
+      "label": "antwort abgeben",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/nerd_mode.html",
+      "line": 156,
+      "tag": "input",
+      "id": null,
+      "classes": "",
+      "label": "",
+      "attributes": {
+        "type": "radio",
+        "name": "vote_key"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/nerd_mode.html",
+      "line": 167,
+      "tag": "button",
+      "id": null,
+      "classes": "perfect-button perfect-button-primary perfect-main-action",
+      "label": "antwort einloggen",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/nerd_mode.html",
+      "line": 183,
+      "tag": "input",
+      "id": null,
+      "classes": "",
+      "label": "",
+      "attributes": {
+        "type": "checkbox",
+        "name": "equivalent_{{ item.id }}"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/nerd_mode.html",
+      "line": 186,
+      "tag": "button",
+      "id": null,
+      "classes": "perfect-button perfect-button-primary perfect-main-action",
+      "label": "entscheidung bestätigen",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/nerd_mode.html",
+      "line": 191,
+      "tag": "input",
+      "id": null,
+      "classes": "",
+      "label": "",
+      "attributes": {
+        "type": "checkbox"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/nerd_mode.html",
+      "line": 223,
+      "tag": "button",
+      "id": null,
+      "classes": "perfect-button perfect-button-primary perfect-main-action",
+      "label": "{{ 'endergebnis zeigen' if goal_reached else 'nächste runde' }}",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/nerd_mode.html",
+      "line": 237,
+      "tag": "a",
+      "id": null,
+      "classes": "perfect-button perfect-button-primary perfect-main-action",
+      "label": "Zurück zu den Lobbys",
+      "attributes": {},
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/party_lobby.html",
+      "line": 13,
+      "tag": "input",
+      "id": null,
+      "classes": "",
+      "label": "",
+      "attributes": {
+        "name": "name"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/party_lobby.html",
+      "line": 14,
+      "tag": "select",
+      "id": null,
+      "classes": "",
+      "label": "{% for count in range(1, 6) %} {{ count }} {% endfor %}",
+      "attributes": {
+        "name": "rounds"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/party_lobby.html",
+      "line": 23,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "entfernen",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/party_question.html",
+      "line": 13,
+      "tag": "input",
+      "id": null,
+      "classes": "",
+      "label": "",
+      "attributes": {
+        "type": "radio",
+        "name": "answer"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/party_question.html",
+      "line": 14,
+      "tag": "input",
+      "id": null,
+      "classes": "",
+      "label": "",
+      "attributes": {
+        "type": "radio",
+        "name": "answer"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/party_question.html",
+      "line": 14,
+      "tag": "input",
+      "id": null,
+      "classes": "",
+      "label": "",
+      "attributes": {
+        "type": "radio",
+        "name": "answer"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/party_question.html",
+      "line": 15,
+      "tag": "input",
+      "id": "estimate",
+      "classes": "",
+      "label": "",
+      "attributes": {
+        "name": "answer",
+        "type": "text"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/party_question.html",
+      "line": 17,
+      "tag": "button",
+      "id": null,
+      "classes": "match-option",
+      "label": "{{ right }}",
+      "attributes": {
+        "type": "button",
+        "data-match-value": "{{ right }}"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/party_question.html",
+      "line": 18,
+      "tag": "button",
+      "id": null,
+      "classes": "primary-button answer-button",
+      "label": "antwort einloggen",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/party_question.html",
+      "line": 22,
+      "tag": "a",
+      "id": null,
+      "classes": "primary-button",
+      "label": "Endergebnis jetzt ansehen",
+      "attributes": {},
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/party_result.html",
+      "line": 15,
+      "tag": "a",
+      "id": null,
+      "classes": "primary-button",
+      "label": "Zur Partyübersicht",
+      "attributes": {},
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/profile.html",
+      "line": 16,
+      "tag": "input",
+      "id": null,
+      "classes": "",
+      "label": "",
+      "attributes": {
+        "type": "checkbox",
+        "name": "developer_enabled"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/profile.html",
+      "line": 36,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "avatare",
+      "attributes": {
+        "type": "button",
+        "role": "tab",
+        "data-profile-tab": "avatar"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/profile.html",
+      "line": 37,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "pulte &amp; plaketten",
+      "attributes": {
+        "type": "button",
+        "role": "tab",
+        "data-profile-tab": "plaque"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/profile.html",
+      "line": 38,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "hintergründe",
+      "attributes": {
+        "type": "button",
+        "role": "tab",
+        "data-profile-tab": "background"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/profile.html",
+      "line": 39,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "sprüche",
+      "attributes": {
+        "type": "button",
+        "role": "tab",
+        "data-profile-tab": "phrase"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/profile.html",
+      "line": 50,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "ausgerüstet",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/profile.html",
+      "line": 54,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "avatar anlegen",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/profile.html",
+      "line": 69,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "ausgerüstet",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/profile.html",
+      "line": 73,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "pult aufstellen",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/profile.html",
+      "line": 88,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "ausgerüstet",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/profile.html",
+      "line": 92,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "hintergrund verwenden",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/profile.html",
+      "line": 108,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "ausgerüstet",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/profile.html",
+      "line": 112,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "spruch verwenden",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/question.html",
+      "line": 41,
+      "tag": "input",
+      "id": null,
+      "classes": "",
+      "label": "",
+      "attributes": {
+        "type": "radio",
+        "name": "answer"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/question.html",
+      "line": 46,
+      "tag": "input",
+      "id": null,
+      "classes": "",
+      "label": "",
+      "attributes": {
+        "type": "radio",
+        "name": "answer"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/question.html",
+      "line": 47,
+      "tag": "input",
+      "id": null,
+      "classes": "",
+      "label": "",
+      "attributes": {
+        "type": "radio",
+        "name": "answer"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/question.html",
+      "line": 52,
+      "tag": "input",
+      "id": "estimate",
+      "classes": "",
+      "label": "",
+      "attributes": {
+        "name": "answer",
+        "type": "text"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/question.html",
+      "line": 72,
+      "tag": "button",
+      "id": null,
+      "classes": "match-option",
+      "label": "{{ right }}",
+      "attributes": {
+        "type": "button",
+        "data-match-value": "{{ right }}"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/question.html",
+      "line": 79,
+      "tag": "button",
+      "id": null,
+      "classes": "primary-button answer-button",
+      "label": "antwort einloggen",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/question.html",
+      "line": 121,
+      "tag": "button",
+      "id": null,
+      "classes": "primary-button",
+      "label": "0 %} disabled{% endif %}> 0 %} hidden{% endif %}>{% if index + 1 == total %}ergebnis ansehen{% else %}weiter zu frage {{ index + 2 }}{% endi",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/register.html",
+      "line": 16,
+      "tag": "input",
+      "id": null,
+      "classes": "",
+      "label": "",
+      "attributes": {
+        "name": "username"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/register.html",
+      "line": 20,
+      "tag": "input",
+      "id": null,
+      "classes": "",
+      "label": "",
+      "attributes": {
+        "name": "pin",
+        "type": "password"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "inputs",
+      "path": "templates/register.html",
+      "line": 24,
+      "tag": "input",
+      "id": null,
+      "classes": "",
+      "label": "",
+      "attributes": {
+        "name": "pin_confirm",
+        "type": "password"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/register.html",
+      "line": 26,
+      "tag": "button",
+      "id": null,
+      "classes": "primary-button",
+      "label": "konto anlegen & mitspielen",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/result.html",
+      "line": 74,
+      "tag": "button",
+      "id": null,
+      "classes": "primary-button",
+      "label": "nächsten tag nachholen",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/result.html",
+      "line": 77,
+      "tag": "button",
+      "id": null,
+      "classes": "primary-button completed",
+      "label": "schau morgen wieder rein",
+      "attributes": {},
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/shop.html",
+      "line": 21,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "avatare",
+      "attributes": {
+        "type": "button",
+        "role": "tab",
+        "data-shop-tab": "avatars"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/shop.html",
+      "line": 22,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "pulte &amp; plaketten",
+      "attributes": {
+        "type": "button",
+        "role": "tab",
+        "data-shop-tab": "plaques"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/shop.html",
+      "line": 23,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "hintergründe",
+      "attributes": {
+        "type": "button",
+        "role": "tab",
+        "data-shop-tab": "backgrounds"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/shop.html",
+      "line": 24,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "sprüche",
+      "attributes": {
+        "type": "button",
+        "role": "tab",
+        "data-shop-tab": "phrases"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/shop.html",
+      "line": 35,
+      "tag": "button",
+      "id": null,
+      "classes": "shop-state",
+      "label": "gehört dir · im profil ausrüsten",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/shop.html",
+      "line": 37,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "{{ item.price|points }} ikühe",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/shop.html",
+      "line": 39,
+      "tag": "button",
+      "id": null,
+      "classes": "shop-price-pending",
+      "label": "preis folgt",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/shop.html",
+      "line": 55,
+      "tag": "button",
+      "id": null,
+      "classes": "shop-state",
+      "label": "gehört dir · im profil ausrüsten",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/shop.html",
+      "line": 57,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "{{ item.price|points }} ikühe",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/shop.html",
+      "line": 73,
+      "tag": "button",
+      "id": null,
+      "classes": "shop-state",
+      "label": "gehört dir · im profil ausrüsten",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/shop.html",
+      "line": 75,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "{{ item.price|points }} ikühe",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/shop.html",
+      "line": 77,
+      "tag": "button",
+      "id": null,
+      "classes": "shop-price-pending",
+      "label": "preis folgt",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/shop.html",
+      "line": 93,
+      "tag": "button",
+      "id": null,
+      "classes": "shop-state",
+      "label": "gehört dir · im profil ausrüsten",
+      "attributes": {
+        "type": "button"
+      },
+      "status": "source_occurrence_not_library_asset"
+    },
+    {
+      "kind": "buttons",
+      "path": "templates/shop.html",
+      "line": 95,
+      "tag": "button",
+      "id": null,
+      "classes": "",
+      "label": "{{ item.price|points }} ikühe",
+      "attributes": {
+        "type": "submit"
+      },
+      "status": "source_occurrence_not_library_asset"
+    }
+  ],
+  "factories": [
+    {
+      "path": "offline-preview/conquest-2-5d-v1/territories.js",
+      "line": 74,
+      "tag": "button"
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/turn-controls.js",
+      "line": 64,
+      "tag": "button"
+    },
+    {
+      "path": "static/conquest-table.js",
+      "line": 189,
+      "tag": "button"
+    },
+    {
+      "path": "static/dice-table.js",
+      "line": 92,
+      "tag": "button"
+    },
+    {
+      "path": "static/dice-table.js",
+      "line": 254,
+      "tag": "button"
+    }
+  ],
+  "style_definitions": [
+    {
+      "path": "offline-preview/conquest-2-5d-v1/style.css",
+      "line": 7,
+      "selector": ".camera-controls button"
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/style.css",
+      "line": 13,
+      "selector": "button"
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/style.css",
+      "line": 14,
+      "selector": ":where(button:not(.comic-button):not(.dice-choice)):hover, :where(button:not(.comic-button):not(.dice-choice))[aria-pressed=\"true\"]"
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/style.css",
+      "line": 15,
+      "selector": "button:disabled"
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/style.css",
+      "line": 16,
+      "selector": "button:focus-visible, input:focus-visible"
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/style.css",
+      "line": 83,
+      "selector": ".dialog-eyebrow"
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/style.css",
+      "line": 106,
+      "selector": ".deployment-controls .dialog-eyebrow"
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/style.css",
+      "line": 110,
+      "selector": ".amount-control button"
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/style.css",
+      "line": 116,
+      "selector": ".deployment-controls .dialog-actions"
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/style.css",
+      "line": 119,
+      "selector": ".dialog-actions"
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/style.css",
+      "line": 179,
+      "selector": ".trade-panel button"
+    },
+    {
+      "path": "offline-preview/conquest-2-5d-v1/style.css",
+      "line": 187,
+      "selector": "button"
+    },
+    {
+      "path": "static/card-table.css",
+      "line": 198,
+      "selector": ".card-command-row button, .card-room-actions button"
+    },
+    {
+      "path": "static/card-table.css",
+      "line": 208,
+      "selector": ".card-command-row button:active, .card-room-actions button:active"
+    },
+    {
+      "path": "static/card-table.css",
+      "line": 209,
+      "selector": ".card-command-row button:disabled"
+    },
+    {
+      "path": "static/card-table.css",
+      "line": 210,
+      "selector": ".card-command-row button > span, .card-room-actions button span"
+    },
+    {
+      "path": "static/card-table.css",
+      "line": 211,
+      "selector": ".card-command-row button[data-table-action=\"clear_table\"] span"
+    },
+    {
+      "path": "static/card-table.css",
+      "line": 322,
+      "selector": ".card-bet-control button"
+    },
+    {
+      "path": "static/card-table.css",
+      "line": 323,
+      "selector": ".card-bet-control button:disabled"
+    },
+    {
+      "path": "static/card-table.css",
+      "line": 324,
+      "selector": ".card-bet-buttons"
+    },
+    {
+      "path": "static/card-table.css",
+      "line": 325,
+      "selector": ".card-bet-buttons button"
+    },
+    {
+      "path": "static/card-table.css",
+      "line": 357,
+      "selector": ".card-pot-request button"
+    },
+    {
+      "path": "static/card-table.css",
+      "line": 358,
+      "selector": ".card-pot-request button[data-pot-vote=\"reject\"]"
+    },
+    {
+      "path": "static/card-table.css",
+      "line": 359,
+      "selector": ".card-pot-request[hidden], .card-pot-request button[hidden]"
+    },
+    {
+      "path": "static/card-table.css",
+      "line": 363,
+      "selector": ".card-room-actions button"
+    },
+    {
+      "path": "static/card-table.css",
+      "line": 364,
+      "selector": ".card-room-actions button.danger"
+    },
+    {
+      "path": "static/comic-button.css",
+      "line": 4,
+      "selector": ".phase-keys .comic-button"
+    },
+    {
+      "path": "static/comic-button.css",
+      "line": 13,
+      "selector": ".console-actions .comic-button"
+    },
+    {
+      "path": "static/comic-button.css",
+      "line": 20,
+      "selector": ".button-samples"
+    },
+    {
+      "path": "static/comic-button.css",
+      "line": 22,
+      "selector": ".sample-slot .comic-button"
+    },
+    {
+      "path": "static/comic-button.css",
+      "line": 33,
+      "selector": ".focus-row .comic-button"
+    },
+    {
+      "path": "static/comic-button.css",
+      "line": 36,
+      "selector": ".comic-button"
+    },
+    {
+      "path": "static/comic-button.css",
+      "line": 39,
+      "selector": ".comic-button::before"
+    },
+    {
+      "path": "static/comic-button.css",
+      "line": 40,
+      "selector": ".comic-button-face"
+    },
+    {
+      "path": "static/comic-button.css",
+      "line": 41,
+      "selector": ".comic-button-face::before"
+    },
+    {
+      "path": "static/comic-button.css",
+      "line": 42,
+      "selector": ".comic-button-face>.comic-icon,.comic-button-label"
+    },
+    {
+      "path": "static/comic-button.css",
+      "line": 43,
+      "selector": ".comic-button-face::after"
+    },
+    {
+      "path": "static/comic-button.css",
+      "line": 44,
+      "selector": ".comic-button-label"
+    },
+    {
+      "path": "static/comic-button.css",
+      "line": 45,
+      "selector": ".comic-button:hover:not(:disabled):not([aria-pressed=\"true\"]):not([aria-selected=\"true\"]) .comic-button-face"
+    },
+    {
+      "path": "static/comic-button.css",
+      "line": 46,
+      "selector": ".comic-button:active:not(:disabled) .comic-button-face,.comic-button[aria-pressed=\"true\"] .comic-button-face,.comic-button[aria-selected=\"true\"] .comic-button-face"
+    },
+    {
+      "path": "static/comic-button.css",
+      "line": 47,
+      "selector": ".comic-button:focus-visible,.comic-button[data-show-focus=\"true\"]"
+    },
+    {
+      "path": "static/comic-button.css",
+      "line": 48,
+      "selector": ".comic-button:focus-visible .comic-button-face,.comic-button[data-show-focus=\"true\"] .comic-button-face"
+    },
+    {
+      "path": "static/comic-button.css",
+      "line": 49,
+      "selector": ".comic-button.tone-secondary"
+    },
+    {
+      "path": "static/comic-button.css",
+      "line": 50,
+      "selector": ".comic-button.tone-blue"
+    },
+    {
+      "path": "static/comic-button.css",
+      "line": 51,
+      "selector": ".comic-button.tone-danger"
+    },
+    {
+      "path": "static/comic-button.css",
+      "line": 52,
+      "selector": ".comic-button[role=\"tab\"][aria-selected=\"true\"]"
+    },
+    {
+      "path": "static/comic-button.css",
+      "line": 53,
+      "selector": ".comic-button:disabled"
+    },
+    {
+      "path": "static/comic-button.css",
+      "line": 54,
+      "selector": ".comic-button:disabled::before"
+    },
+    {
+      "path": "static/comic-button.css",
+      "line": 55,
+      "selector": ".comic-button:disabled .comic-button-face"
+    },
+    {
+      "path": "static/comic-button.css",
+      "line": 56,
+      "selector": ".comic-button.size-small"
+    },
+    {
+      "path": "static/conquest-table.css",
+      "line": 26,
+      "selector": ".conquest-toolbar button"
+    },
+    {
+      "path": "static/conquest-table.css",
+      "line": 31,
+      "selector": ".conquest-toolbar button:hover, .conquest-toolbar button[aria-pressed=\"true\"]"
+    },
+    {
+      "path": "static/conquest-table.css",
+      "line": 32,
+      "selector": ".conquest-toolbar .conquest-inventory-open"
+    },
+    {
+      "path": "static/conquest-table.css",
+      "line": 33,
+      "selector": ".conquest-inventory-open span"
+    },
+    {
+      "path": "static/conquest-table.css",
+      "line": 76,
+      "selector": ".conquest-territory:focus-visible, .conquest-toolbar button:focus-visible"
+    },
+    {
+      "path": "static/conquest-table.css",
+      "line": 91,
+      "selector": ".conquest-inventory"
+    },
+    {
+      "path": "static/conquest-table.css",
+      "line": 96,
+      "selector": ".conquest-inventory::backdrop"
+    },
+    {
+      "path": "static/conquest-table.css",
+      "line": 97,
+      "selector": ".conquest-inventory header"
+    },
+    {
+      "path": "static/conquest-table.css",
+      "line": 98,
+      "selector": ".conquest-inventory header small"
+    },
+    {
+      "path": "static/conquest-table.css",
+      "line": 99,
+      "selector": ".conquest-inventory h2"
+    },
+    {
+      "path": "static/conquest-table.css",
+      "line": 100,
+      "selector": ".conquest-inventory header button"
+    },
+    {
+      "path": "static/conquest-table.css",
+      "line": 101,
+      "selector": ".conquest-inventory section"
+    },
+    {
+      "path": "static/conquest-table.css",
+      "line": 102,
+      "selector": ".conquest-inventory h3"
+    },
+    {
+      "path": "static/conquest-table.css",
+      "line": 106,
+      "selector": ".conquest-inventory-cards"
+    },
+    {
+      "path": "static/conquest-table.css",
+      "line": 107,
+      "selector": ".conquest-inventory-card"
+    },
+    {
+      "path": "static/conquest-table.css",
+      "line": 108,
+      "selector": ".conquest-inventory-empty"
+    },
+    {
+      "path": "static/conquest-table.css",
+      "line": 109,
+      "selector": ".conquest-inventory-empty[hidden]"
+    },
+    {
+      "path": "static/conquest-table.css",
+      "line": 110,
+      "selector": ".conquest-inventory-rule"
+    },
+    {
+      "path": "static/conquest-table.css",
+      "line": 114,
+      "selector": ".conquest-camera-actions button"
+    },
+    {
+      "path": "static/conquest-table.css",
+      "line": 115,
+      "selector": ".conquest-toolbar .conquest-inventory-open"
+    },
+    {
+      "path": "static/conquest-table.css",
+      "line": 125,
+      "selector": ".conquest-inventory"
+    },
+    {
+      "path": "static/dice-table.css",
+      "line": 93,
+      "selector": ".dice-held-zone button,.dice-tray button"
+    },
+    {
+      "path": "static/dice-table.css",
+      "line": 149,
+      "selector": ".dice-console-actions button.is-danger"
+    },
+    {
+      "path": "static/dice-table.css",
+      "line": 168,
+      "selector": ".kniffel-sheet td button"
+    },
+    {
+      "path": "static/dice-table.css",
+      "line": 169,
+      "selector": ".kniffel-sheet td button:hover"
+    },
+    {
+      "path": "static/dice-table.css",
+      "line": 180,
+      "selector": ".dice-console-actions button,.dice-game-leave button"
+    },
+    {
+      "path": "static/dice-table.css",
+      "line": 181,
+      "selector": ".dice-console-actions button.is-primary"
+    },
+    {
+      "path": "static/dice-table.css",
+      "line": 182,
+      "selector": ".is-kniffel-console .dice-console-actions > button"
+    },
+    {
+      "path": "static/dice-table.css",
+      "line": 193,
+      "selector": ".is-kniffel-console .dice-console-actions > button.is-primary"
+    },
+    {
+      "path": "static/dice-table.css",
+      "line": 200,
+      "selector": ".is-kniffel-console .dice-console-actions > button:not(:disabled):hover"
+    },
+    {
+      "path": "static/dice-table.css",
+      "line": 201,
+      "selector": ".is-kniffel-console .dice-console-actions > button:not(:disabled):active"
+    },
+    {
+      "path": "static/dice-table.css",
+      "line": 202,
+      "selector": ".dice-console-actions button:disabled"
+    },
+    {
+      "path": "static/dice-table.css",
+      "line": 213,
+      "selector": ".dice-game-leave button"
+    },
+    {
+      "path": "static/lobby-overview.css",
+      "line": 14,
+      "selector": ".lobby-browser .primary-button, .lobby-browser .secondary-button"
+    },
+    {
+      "path": "static/lobby-overview.css",
+      "line": 15,
+      "selector": ".lobby-browser .primary-button"
+    },
+    {
+      "path": "static/lobby-overview.css",
+      "line": 16,
+      "selector": ".lobby-browser .secondary-button"
+    },
+    {
+      "path": "static/lobby-overview.css",
+      "line": 17,
+      "selector": ".lobby-browser :is(a,button):focus-visible"
+    },
+    {
+      "path": "static/lobby-overview.css",
+      "line": 18,
+      "selector": ".lobby-browser .primary-button:hover"
+    },
+    {
+      "path": "static/lobby-overview.css",
+      "line": 34,
+      "selector": ".lobby-browser-action .primary-button"
+    },
+    {
+      "path": "static/lobby-overview.css",
+      "line": 46,
+      "selector": ".lobby-browser-toolbar .primary-button"
+    },
+    {
+      "path": "static/lobby.css",
+      "line": 20,
+      "selector": ".game-lobby-player-actions button"
+    },
+    {
+      "path": "static/lobby.css",
+      "line": 34,
+      "selector": ".game-lobby .game-lobby-start, .game-lobby-controls > .primary-button"
+    },
+    {
+      "path": "static/lobby.css",
+      "line": 35,
+      "selector": ".game-lobby .primary-button"
+    },
+    {
+      "path": "static/lobby.css",
+      "line": 36,
+      "selector": ".game-lobby .primary-button:disabled"
+    },
+    {
+      "path": "static/lobby.css",
+      "line": 37,
+      "selector": ".game-lobby .secondary-button"
+    },
+    {
+      "path": "static/lobby.css",
+      "line": 38,
+      "selector": ".game-lobby .secondary-button.is-danger"
+    },
+    {
+      "path": "static/profile-stage-v1.css",
+      "line": 65,
+      "selector": ".arena-main-nav a,\n  .arena-main-nav button,\n  .arena-main-nav > .arena-nav-date"
+    },
+    {
+      "path": "static/profile-stage-v1.css",
+      "line": 73,
+      "selector": ".arena-main-nav .arena-nav-home > a,\n  .arena-main-nav .arena-nav-home > button"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 249,
+      "selector": ".profile-tabs button"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 250,
+      "selector": ".profile-tabs button[aria-selected=\"true\"]"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 252,
+      "selector": ".profile-inventory"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 253,
+      "selector": ".avatar-inventory"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 254,
+      "selector": ".plaque-inventory"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 260,
+      "selector": ".profile-item button"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 261,
+      "selector": ".profile-item button:disabled"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 306,
+      "selector": ".avatar-inventory, .plaque-inventory"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 322,
+      "selector": ".avatar-inventory, .plaque-inventory"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 449,
+      "selector": ".home-shell .leaderboard-tabs button"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 450,
+      "selector": ".home-shell .leaderboard-tabs button[aria-selected=\"true\"]"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 657,
+      "selector": ".profile-console-actions a,\n.profile-console-actions button"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 660,
+      "selector": ".profile-console-actions button"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 690,
+      "selector": ".shop-tabs button"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 691,
+      "selector": ".shop-tabs button[aria-selected=\"true\"]"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 700,
+      "selector": ".shop-item button"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 701,
+      "selector": ".shop-item button.shop-price-pending"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 736,
+      "selector": ".rules-button.is-secondary"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 747,
+      "selector": ".home-shell .leaderboard-tabs button"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 768,
+      "selector": ".profile-console-actions a, .profile-console-actions button"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 776,
+      "selector": ".shop-tabs button"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 931,
+      "selector": ".console-logout button"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 940,
+      "selector": ".console-logout button:hover"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 987,
+      "selector": ".phrase-preview-card > button"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 988,
+      "selector": ".winner-dialog"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 1002,
+      "selector": ".winner-dialog::backdrop"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 1030,
+      "selector": ".phrase-preview-card > button"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 1209,
+      "selector": ".console-round-action .button-art"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 1210,
+      "selector": ".winner-dialog"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 1222,
+      "selector": ".winner-dialog::backdrop"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 1301,
+      "selector": ".console-round-action .button-art"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 1380,
+      "selector": ".winner-dialog::backdrop"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 1680,
+      "selector": "body:has(.home-shell) .rules-button.is-secondary"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 1838,
+      "selector": ".home-shell .leaderboard-tabs button"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 1845,
+      "selector": ".home-shell .leaderboard-tabs button[aria-selected=\"true\"]"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 2087,
+      "selector": ".arena-buzzer"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 2832,
+      "selector": ".arena-main-nav a,\n  .arena-main-nav button,\n  .arena-main-nav > .arena-nav-date"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 2835,
+      "selector": ".arena-nav-home > a,\n  .arena-nav-home > button"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 2884,
+      "selector": ".profile-wardrobe .avatar-inventory,\n.profile-wardrobe .plaque-inventory"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 2890,
+      "selector": ".profile-wardrobe .background-inventory"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 2891,
+      "selector": ".profile-wardrobe .phrase-inventory"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 2900,
+      "selector": ".profile-wardrobe .avatar-inventory,\n  .profile-wardrobe .plaque-inventory"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 2914,
+      "selector": ".profile-wardrobe .avatar-inventory,\n  .profile-wardrobe .plaque-inventory,\n  .profile-wardrobe .background-inventory,\n  .profile-wardrobe .phrase-inventory"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 2993,
+      "selector": ".background-inventory"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 2996,
+      "selector": ".phrase-inventory"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 3008,
+      "selector": ".background-inventory,\n  .background-shop-grid,\n  .phrase-inventory,\n  .phrase-shop-grid"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 3234,
+      "selector": "body:has(.home-shell) .rules-button.is-secondary"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 3275,
+      "selector": ".home-shell .leaderboard-tabs button"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 3411,
+      "selector": ".shop-tabs button"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 3415,
+      "selector": ".shop-item button"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 3423,
+      "selector": ".primary-button"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 3820,
+      "selector": ".arena-main-nav a,\n.arena-main-nav button,\n.arena-main-nav > .arena-nav-date"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 3843,
+      "selector": ".arena-main-nav a > span,\n.arena-main-nav button > span,\n.arena-main-nav .arena-nav-date > span"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 3854,
+      "selector": ".arena-main-nav button:hover,\n.arena-main-nav a:hover"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 3856,
+      "selector": ".arena-main-nav a.is-active,\n.arena-main-nav button.is-active"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 4009,
+      "selector": ".variant-a-carousel-tabs button"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 4021,
+      "selector": ".variant-a-carousel-tabs button.is-active"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 4026,
+      "selector": ".variant-a-action .primary-button"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 4039,
+      "selector": ".variant-a-action .primary-button span"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 4040,
+      "selector": ".variant-a-action .primary-button:disabled"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 4048,
+      "selector": ".variant-a-catchup-launch .secondary-button"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 4076,
+      "selector": ".home-variant-a .variant-a-leaderboard .leaderboard-tabs button"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 4102,
+      "selector": ".variant-a-logout button"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 4109,
+      "selector": ".arena-main-nav a,\n  .arena-main-nav button,\n  .arena-main-nav > .arena-nav-date"
+    },
+    {
+      "path": "static/quiz-arena.css",
+      "line": 4145,
+      "selector": ".arena-main-nav a,\n  .arena-main-nav button,\n  .arena-main-nav > .arena-nav-date"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 54,
+      "selector": ".perfect-buzzer.is-ready"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 68,
+      "selector": ".perfect-buzzer"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 78,
+      "selector": ".perfect-buzzer"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 79,
+      "selector": ".perfect-buzzer > b"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 83,
+      "selector": ".perfect-button"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 98,
+      "selector": ".perfect-button:hover:not(:disabled)"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 100,
+      "selector": ".perfect-button:active:not(:disabled)"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 101,
+      "selector": ".perfect-button:disabled"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 102,
+      "selector": ".perfect-button-primary"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 136,
+      "selector": ".perfect-live button, .perfect-live input, .perfect-live textarea"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 161,
+      "selector": ".perfect-pause-button"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 162,
+      "selector": ".perfect-pause-button span"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 163,
+      "selector": ".perfect-next-question-button"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 164,
+      "selector": ".perfect-next-question-button span"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 165,
+      "selector": ".perfect-next-question-button:hover,\n.perfect-next-question-button:focus-visible"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 328,
+      "selector": ".perfect-name-form button"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 450,
+      "selector": ".perfect-leave-form button"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 484,
+      "selector": ".perfect-name-form button"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 500,
+      "selector": ".perfect-button"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 806,
+      "selector": ".perfect-buzzer"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 819,
+      "selector": ".perfect-buzzer > img"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 828,
+      "selector": ".perfect-buzzer > b"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 838,
+      "selector": ".perfect-buzzer:hover:not(:disabled)"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 839,
+      "selector": ".perfect-buzzer:active:not(:disabled) > img"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 840,
+      "selector": ".perfect-buzzer:disabled"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 864,
+      "selector": ".perfect-ready-button"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 876,
+      "selector": ".perfect-ready-button.is-ready"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 1035,
+      "selector": ".perfect-buzzer"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 1036,
+      "selector": ".perfect-buzzer > b"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 1065,
+      "selector": "body.perfect-live .perfect-buzzer"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 1074,
+      "selector": "body.perfect-live .perfect-buzzer"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 1139,
+      "selector": "body.perfect-live.phase-lobby .perfect-buzzer"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 1140,
+      "selector": "body.perfect-live.phase-lobby .perfect-buzzer > b"
+    },
+    {
+      "path": "static/stormseeds-perfect.css",
+      "line": 1153,
+      "selector": "body.perfect-live.phase-lobby .perfect-buzzer"
+    },
+    {
+      "path": "static/style.css",
+      "line": 31,
+      "selector": "button, input, select"
+    },
+    {
+      "path": "static/style.css",
+      "line": 33,
+      "selector": "button, a, label"
+    },
+    {
+      "path": "static/style.css",
+      "line": 139,
+      "selector": ".leaderboard-tabs button"
+    },
+    {
+      "path": "static/style.css",
+      "line": 151,
+      "selector": ".leaderboard-tabs button[aria-selected=\"true\"]"
+    },
+    {
+      "path": "static/style.css",
+      "line": 196,
+      "selector": ".primary-button"
+    },
+    {
+      "path": "static/style.css",
+      "line": 213,
+      "selector": ".primary-button:hover"
+    },
+    {
+      "path": "static/style.css",
+      "line": 215,
+      "selector": ".primary-button:active"
+    },
+    {
+      "path": "static/style.css",
+      "line": 216,
+      "selector": ".primary-button.completed"
+    },
+    {
+      "path": "static/style.css",
+      "line": 217,
+      "selector": ".primary-button:disabled"
+    },
+    {
+      "path": "static/style.css",
+      "line": 219,
+      "selector": ".logout-form button, .result-dock a"
+    },
+    {
+      "path": "static/style.css",
+      "line": 319,
+      "selector": ".answer-button"
+    },
+    {
+      "path": "static/style.css",
+      "line": 409,
+      "selector": ".order-controls button"
+    },
+    {
+      "path": "static/style.css",
+      "line": 444,
+      "selector": ".action-dock p, .logout-form button, .result-dock a"
+    },
+    {
+      "path": "static/style.css",
+      "line": 445,
+      "selector": ".primary-button"
+    },
+    {
+      "path": "static/style.css",
+      "line": 447,
+      "selector": ".primary-button.completed"
+    },
+    {
+      "path": "static/style.css",
+      "line": 473,
+      "selector": ".order-controls button"
+    },
+    {
+      "path": "static/style.css",
+      "line": 523,
+      "selector": ".date-chip, .action-dock p, .logout-form button, .result-dock a,\n.rank-number, .rank-row strong small, .own-belt strong small,\n.estimate-input span, .estimate-wrap p, .microcopy, .score-equation"
+    },
+    {
+      "path": "static/style.css",
+      "line": 539,
+      "selector": ".choice-key, .choice-symbol, .order-controls button"
+    },
+    {
+      "path": "static/style.css",
+      "line": 556,
+      "selector": ".primary-button"
+    },
+    {
+      "path": "static/style.css",
+      "line": 763,
+      "selector": ".home-action .button-art"
+    },
+    {
+      "path": "static/style.css",
+      "line": 772,
+      "selector": ".home-action .button-art"
+    },
+    {
+      "path": "static/style.css",
+      "line": 985,
+      "selector": ".home-shell .leaderboard-tabs button"
+    },
+    {
+      "path": "static/style.css",
+      "line": 986,
+      "selector": ".home-shell .leaderboard-tabs button[aria-selected=\"true\"]"
+    },
+    {
+      "path": "static/style.css",
+      "line": 1171,
+      "selector": ".profile-console-actions a,\n.profile-console-actions button"
+    },
+    {
+      "path": "static/style.css",
+      "line": 1174,
+      "selector": ".profile-console-actions button"
+    },
+    {
+      "path": "static/style.css",
+      "line": 1203,
+      "selector": ".shop-tabs button"
+    },
+    {
+      "path": "static/style.css",
+      "line": 1204,
+      "selector": ".shop-tabs button[aria-selected=\"true\"]"
+    },
+    {
+      "path": "static/style.css",
+      "line": 1213,
+      "selector": ".shop-item button"
+    },
+    {
+      "path": "static/style.css",
+      "line": 1214,
+      "selector": ".shop-item button.shop-price-pending"
+    },
+    {
+      "path": "static/style.css",
+      "line": 1249,
+      "selector": ".rules-button.is-secondary"
+    },
+    {
+      "path": "static/style.css",
+      "line": 1260,
+      "selector": ".home-shell .leaderboard-tabs button"
+    },
+    {
+      "path": "static/style.css",
+      "line": 1281,
+      "selector": ".profile-console-actions a, .profile-console-actions button"
+    },
+    {
+      "path": "static/style.css",
+      "line": 1289,
+      "selector": ".shop-tabs button"
+    },
+    {
+      "path": "static/style.css",
+      "line": 1307,
+      "selector": ".rules-button"
+    },
+    {
+      "path": "static/style.css",
+      "line": 1325,
+      "selector": ".rules-button.is-secondary"
+    },
+    {
+      "path": "static/style.css",
+      "line": 1326,
+      "selector": ".rules-button:hover"
+    },
+    {
+      "path": "static/style.css",
+      "line": 1346,
+      "selector": ".rules-button.is-secondary"
+    },
+    {
+      "path": "static/style.css",
+      "line": 1441,
+      "selector": ".shop-tabs button"
+    },
+    {
+      "path": "static/style.css",
+      "line": 1442,
+      "selector": ".shop-tabs button[aria-selected=\"true\"]"
+    },
+    {
+      "path": "static/style.css",
+      "line": 1443,
+      "selector": ".shop-tabs button:disabled"
+    },
+    {
+      "path": "static/style.css",
+      "line": 1455,
+      "selector": ".shop-item button"
+    },
+    {
+      "path": "static/style.css",
+      "line": 1456,
+      "selector": ".shop-item button.shop-state"
+    },
+    {
+      "path": "static/style.css",
+      "line": 1504,
+      "selector": ".shop-tabs button"
+    },
+    {
+      "path": "static/style.css",
+      "line": 1509,
+      "selector": ".catchup-dialog"
+    },
+    {
+      "path": "static/style.css",
+      "line": 1518,
+      "selector": ".catchup-dialog::backdrop"
+    },
+    {
+      "path": "static/style.css",
+      "line": 1523,
+      "selector": ".secondary-button"
+    },
+    {
+      "path": "static/style.css",
+      "line": 1551,
+      "selector": ".rules-dialog"
+    },
+    {
+      "path": "static/style.css",
+      "line": 1562,
+      "selector": ".rules-dialog::backdrop"
+    },
+    {
+      "path": "static/style.css",
+      "line": 1610,
+      "selector": ".rules-button"
+    },
+    {
+      "path": "static/typography-v1.css",
+      "line": 26,
+      "selector": "body,\nbutton,\ninput,\nselect,\ntextarea"
+    },
+    {
+      "path": "static/typography-v1.css",
+      "line": 52,
+      "selector": ".arena-main-nav a,\n.arena-main-nav button,\n.arena-main-nav > .arena-nav-date"
+    },
+    {
+      "path": "static/typography-v1.css",
+      "line": 60,
+      "selector": ".variant-a-carousel-tabs button"
+    },
+    {
+      "path": "static/typography-v1.css",
+      "line": 61,
+      "selector": ".variant-a-action .primary-button"
+    },
+    {
+      "path": "static/typography-v1.css",
+      "line": 64,
+      "selector": ".home-variant-a .variant-a-leaderboard .leaderboard-tabs button"
+    },
+    {
+      "path": "static/typography-v1.css",
+      "line": 74,
+      "selector": ".primary-button,\n.secondary-button,\n.shop-item button,\n.profile-item button,\n.leaderboard-tabs button"
+    },
+    {
+      "path": "static/typography-v1.css",
+      "line": 81,
+      "selector": ".arena-main-nav a,\n  .arena-main-nav button,\n  .arena-main-nav > .arena-nav-date"
+    },
+    {
+      "path": "static/ui-conventions.css",
+      "line": 1,
+      "selector": ":is(button, input[type=\"submit\"], input[type=\"button\"], [role=\"button\"], .primary-button, .secondary-button, .perfect-button, .party-return, .back-link, .conquest-button, .perfect-home-link, .conquest-text-button),\n:is(button, [role=\"button\"]) :is(span, strong, b, small, em),\n.tabletop-game-tile :is(h2, span),\n.game-name,\n.game-name *"
+    }
+  ],
+  "summary": {
+    "scanned_ui_files": 85,
+    "evidence_files": 108,
+    "families": 19,
+    "source_occurrences": {
+      "buttons": 126,
+      "inputs": 44,
+      "windows": 3
+    },
+    "dynamic_factories": 5,
+    "style_definitions": 254
+  }
+}

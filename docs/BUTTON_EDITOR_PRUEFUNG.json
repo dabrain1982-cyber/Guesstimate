@@ -1,0 +1,250 @@
+{
+  "schema": 1,
+  "checked_on": "2026-10-27",
+  "scope": "27 vorhandene Felder an einer Kernaktion sowie Größe/Schrift/Tiefe/Verfügbarkeit an neun Guesstimate-Kernmodellen. Keine vollständige Prüfung aller 85 Modelle.",
+  "fields": [
+    {
+      "key": "style",
+      "label": "Gestaltungsstil",
+      "group": "style"
+    },
+    {
+      "key": "material",
+      "label": "Materialfamilie",
+      "group": "material"
+    },
+    {
+      "key": "finish",
+      "label": "Oberfläche",
+      "group": "material"
+    },
+    {
+      "key": "wear",
+      "label": "Spuren & Struktur",
+      "group": "material"
+    },
+    {
+      "key": "accent",
+      "label": "Grundfarbe",
+      "group": "material"
+    },
+    {
+      "key": "gradient_to",
+      "label": "Zweite Verlaufsfarbe",
+      "group": "material"
+    },
+    {
+      "key": "opacity",
+      "label": "Deckkraft der Fläche",
+      "group": "material"
+    },
+    {
+      "key": "shape",
+      "label": "Grundform",
+      "group": "form"
+    },
+    {
+      "key": "edge",
+      "label": "Konturstärke",
+      "group": "form"
+    },
+    {
+      "key": "label",
+      "label": "Beschriftung",
+      "group": "lettering"
+    },
+    {
+      "key": "font_link",
+      "label": "Schriftzuordnung",
+      "group": "lettering"
+    },
+    {
+      "key": "font",
+      "label": "Schriftart",
+      "group": "lettering"
+    },
+    {
+      "key": "lettering",
+      "label": "Beschriftungswirkung",
+      "group": "lettering"
+    },
+    {
+      "key": "size",
+      "label": "Buttongröße",
+      "group": "form"
+    },
+    {
+      "key": "font_scale",
+      "label": "Schriftgröße",
+      "group": "lettering"
+    },
+    {
+      "key": "depth",
+      "label": "Tiefe",
+      "group": "motion"
+    },
+    {
+      "key": "shadow",
+      "label": "Schlagschatten",
+      "group": "motion"
+    },
+    {
+      "key": "duration",
+      "label": "Dauer eines Klicks",
+      "group": "motion"
+    },
+    {
+      "key": "feel",
+      "label": "Bewegungsgefühl",
+      "group": "motion"
+    },
+    {
+      "key": "sound",
+      "label": "Buttonklang",
+      "group": "sound"
+    },
+    {
+      "key": "volume",
+      "label": "Lautstärke",
+      "group": "sound"
+    },
+    {
+      "key": "height_ratio",
+      "label": "Formhöhe",
+      "group": "form"
+    },
+    {
+      "key": "ink_mode",
+      "label": "Schriftfarbe",
+      "group": "lettering"
+    },
+    {
+      "key": "ink_color",
+      "label": "Farbe der Schrift",
+      "group": "lettering"
+    },
+    {
+      "key": "depth_mode",
+      "label": "Farbe der Tiefe",
+      "group": "motion"
+    },
+    {
+      "key": "depth_color",
+      "label": "Seitenwandfarbe",
+      "group": "motion"
+    },
+    {
+      "key": "depth_x",
+      "label": "Seitlicher Versatz",
+      "group": "motion"
+    }
+  ],
+  "reviewed_uses": [
+    {
+      "number": "01",
+      "id": "gamebutton-daf9582f22eb8307d5d153",
+      "label": "spielen →",
+      "model": "approved-guesstimate-start-action"
+    },
+    {
+      "number": "02",
+      "id": "gamebutton-de36d3e59197a113df5578",
+      "label": "heutiges ergebnis →",
+      "model": "approved-guesstimate-start-action"
+    },
+    {
+      "number": "03",
+      "id": "gamebutton-593bcf8218f96de6adc6d5",
+      "label": "alle 3 verpassten runden nachholen",
+      "model": "original-07ef31ec11cc7574dc9e115860b45a777ff4568cf1555af3829cd6373e0c2373"
+    },
+    {
+      "number": "04",
+      "id": "gamebutton-9f4be869942052f69d7456",
+      "label": "weiter zu frage 2",
+      "model": "original-8306499169354237702b6fbd3dd33b377a4a2aa2741627f4241eac9adbd6798b"
+    },
+    {
+      "number": "05",
+      "id": "gamebutton-84394cc37ba195de716614",
+      "label": "schau morgen wieder rein",
+      "model": "original-9b354ef7bf485958c59c2360b66b9c150347854cc8e5f3281b422e948a75b782"
+    },
+    {
+      "number": "06",
+      "id": "gamebutton-3459dbb6b920ea8a96768a",
+      "label": "lieber nur heute spielen",
+      "model": "original-c1c9c241a34ac4236bbd32d829e669416cbf07647ed4a9845243e5f8a32f6637"
+    },
+    {
+      "number": "07",
+      "id": "gamebutton-4a657d675ec814262aec29",
+      "label": "3 verpasste runden nachholen",
+      "model": "original-492af1576dd3d8d706124814f8c8177f9a6fc5a3e6b5eb2247b58d478312e6b5"
+    },
+    {
+      "number": "08",
+      "id": "gamebutton-302dccacd6f9755186d623",
+      "label": "Vorheriges Spiel",
+      "model": "original-31846a30d2d68f5277f572ac0b402ba99aa767cd7b9987f209b3e8920c04625a"
+    },
+    {
+      "number": "09",
+      "id": "gamebutton-dec1d07da8a1970c5de4bf",
+      "label": "Beispielantwort",
+      "model": "original-c1f7f4cba72b387e337c3d5f398c5318ed87a736039922181dc97099e1c07806"
+    },
+    {
+      "number": "10",
+      "id": "gamebutton-c43c104aca1a327ba26f07",
+      "label": "abmelden",
+      "model": "original-e46cabf483cfcda1ecef54ca40850171def07b32070582adad8174242ff5f3d4"
+    }
+  ],
+  "reviewed_models": 9,
+  "catalog": {
+    "uses": 144,
+    "models": 85,
+    "validated_recipes": 144,
+    "failed": []
+  },
+  "changes": [
+    {
+      "field": "finish",
+      "result": "Bei bewahrter Originalfläche deaktiviert und erklärt; bei eigenem Material/Farbe/Stil verfügbar. Keine gespeicherten Werte verändert."
+    },
+    {
+      "field": "wear",
+      "result": "Im reduzierten Stil und bei reinen Farb-/durchscheinenden Flächen verborgen; sonst erhalten."
+    },
+    {
+      "field": "volume",
+      "result": "Nur bei gewähltem Klang sichtbar; bisheriger Wert bleibt erhalten."
+    },
+    {
+      "field": "depth",
+      "result": "Status benennt 0 als ohne Tiefe, 1–4 als dezent; keine Änderung der Bewegung."
+    }
+  ],
+  "source_files": {
+    "offline-preview/button-workshop-v1/workshop.js": "d6993488fce9f1fc0c6a038ea2885244434665d8add82ddda751e555d00c05af",
+    "offline-preview/button-workshop-v1/renderer.js": "22854cb2f1aa07ab09ab7e500fb744402a5978d8aa188a1e4afc8887a43868ef",
+    "offline-preview/button-workshop-v1/materials.css": "38ab08d74776b47aa6f8392e5c1e2eb734c6a81e3c3b9649e8d43698fc1f4acf",
+    "offline-preview/button-workshop-v1/catalog.json": "bbb5764a4ae1792dd50dd1030a7c76d2872a4e4ad7f3a0401889398333e23397",
+    "offline-preview/button-workshop-v1/font-matching.js": "3344c6859f401384f1494a8435471c0f70da9ef579f3257c6cb9b8b91dab07ef",
+    "offline-preview/button-workshop-v1/sound.js": "8499e1eec02c02315bf70f9d03e014589f008dfdb29e6dcaf60d766ccdc19187",
+    "offline-preview/button-workshop-v1/geometry.js": "a0c22b4116cfdca6292decde499d8a029d58272ba013149c5d70a9846eb4a8c0",
+    "offline-preview/game-workshop-v1/button-review.js": "e65cbaef86ec919adc21bfd8309ab2669d566ced671c128b37b61965db7de322"
+  },
+  "evidence": "runtime/button-options-20261027/",
+  "media_integration": {
+    "added_on": "2026-10-28",
+    "report": "docs/BUTTON_MEDIEN_INTEGRATION.json",
+    "fonts": 7,
+    "sounds": 13
+  },
+  "later": [
+    "Persönliche gestalterische Abnahme; keine optische Angleichung oder Zusammenführung weiterer Modelle.",
+    "Die übrigen Spiele/Modelle und anderen Baustein-Editoren bleiben gesondert zu prüfen."
+  ]
+}

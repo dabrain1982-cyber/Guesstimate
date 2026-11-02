@@ -1,0 +1,4 @@
+.blackjack-test-banner{position:relative;z-index:210;display:flex;align-items:center;justify-content:center;gap:8px 20px;flex-wrap:wrap;padding:10px 16px;background:#382916;color:#f2d9a8;font:14px/1.35 "Segoe UI",sans-serif;text-align:center}
+.blackjack-page>.blackjack-test-banner{display:none}
+.blackjack-test-banner strong{font-weight:600}
+.blackjack-test-banner span{color:#dec39a}

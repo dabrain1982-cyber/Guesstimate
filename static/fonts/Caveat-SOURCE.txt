@@ -1,0 +1,5 @@
+Handwritten in-game notes: Caveat, Google Fonts.
+Source: https://github.com/google/fonts/tree/main/ofl/caveat
+Downloaded 2026-11-01, unchanged Caveat[wght].ttf renamed Caveat-Variable.ttf.
+License: SIL Open Font License 1.1, included as Caveat-OFL.txt.
+Served locally; browsers do not contact a font service.

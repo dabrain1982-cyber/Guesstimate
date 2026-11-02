@@ -1,0 +1,21 @@
+<!doctype html><html lang="de"><head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#eee8d9">
+  <title>Dein Zug · conquest · stormseed´s</title><link rel="icon" href="/shared/favicon.svg">
+  <link rel="stylesheet" href="/shared/typography-v1.css"><link rel="stylesheet" href="/shared/player-portrait.css">
+  <link rel="stylesheet" href="/workshop/materials.css"><link rel="stylesheet" href="/workshop/fonts.css"><link rel="stylesheet" href="console.css">
+</head><body>
+  <header class="draft-header"><a class="draft-brand" href="#"><small>stormseed´s</small><strong>conquest</strong></a><span class="draft-tag"><i></i> UI-003 · lokale Tafel</span><nav aria-label="Entwurfssammlung"><a href="http://127.0.0.1:8770/" target="_blank" rel="noopener">erste Tafel ↗</a><a href="http://127.0.0.1:8771/" target="_blank" rel="noopener">Button-Werkstatt ↗</a></nav></header>
+  <main class="draft-wrap">
+    <section class="draft-intro"><div><p class="eyebrow">Spielanzeigen aus einem Guss</p><h1>Ein Zug. Drei Entscheidungen.</h1></div><p>Deine gespeicherte Form im Spielkontext.<br>Ein Entwurf zum Ansehen und Ausprobieren.</p></section>
+    <section class="preview-controls" aria-label="Tafel ausprobieren"><div><label for="scenario">Beispielsituation</label><select id="scenario"><option value="reinforce">1 · Truppen verstärken</option><option value="attack">2 · Angriff vorbereiten</option><option value="fortify">3 · Grenzen festigen</option><option value="ended">Zugende & Übergabe</option><option value="waiting">Auf den nächsten Zug warten</option></select></div><label class="sound-toggle"><input type="checkbox" id="sound-enabled"> Materialklang testen</label><div id="reset-example"></div><span class="example-note">Beispielrunde · Änderungen gelten nur auf dieser Tafel.</span></section>
+    <p id="startup-error" class="startup-error" role="alert" hidden></p>
+    <div class="play-layout">
+      <section class="board-card" aria-label="Weltkarte mit Beispieltruppen"><div class="board-topline"><span class="board-title">der feldzug</span><span class="board-turn">Runde <b id="board-round">04</b></span></div><div class="board-art"><img src="/shared/conquest-map.png" alt="Vorhandene farbige Conquest-Weltkarte mit Kontinenten und Ländern"><div id="board-pins"></div></div><div class="board-selection"><span class="country-dot"></span><strong id="board-selection">Westeuropa</strong><span id="board-selection-detail">8 Truppen · Gold</span></div><p class="board-caption">Markierte Truppen und Spielwerte gehören zur Beispielrunde. Die Karte ist unverändert dargestellt.</p></section>
+      <div id="turn-console-host"></div>
+    </div>
+    <div class="detail-rail"><section class="paper-card"><p class="eyebrow">Was gerade passiert ist</p><h2>Dein Zugprotokoll.</h2><ol id="turn-log" class="turn-log"></ol></section><section class="paper-card design-note"><p class="eyebrow">Deine Form, ein gemeinsamer Look</p><h2>Holz. Kontur. Druckgefühl.</h2><p id="recipe-description"></p><div class="role-colors"><span><i class="action-color"></i> nächste Hauptaktion</span><span><i class="army-color"></i> Armeefarbe</span></div><p>Grün zeigt die nächste Hauptaktion. Die Armeefarbe kennzeichnet die Person am Zug.</p><a href="http://127.0.0.1:8771/#shape-library" target="_blank" rel="noopener">deine Form in der Werkstatt ansehen ↗</a></section></div>
+    <footer class="draft-footer"><span>Gestaltungsentwurf · Vorhandene Tafeln bleiben in der Sammlung.</span><span id="sound-state" role="status">Ohne Ton</span></footer>
+  </main>
+  <dialog id="action-dialog" class="action-dialog" aria-labelledby="dialog-title"><div class="dialog-inner"><p class="eyebrow" id="dialog-kicker">Deine Entscheidung</p><h2 id="dialog-title"></h2><div id="dialog-body"></div><p id="dialog-status" class="dialog-status" role="status"></p><div class="dialog-actions"><div id="dialog-confirm"></div><div id="dialog-cancel"></div></div></div></dialog>
+  <script type="module" src="console.js"></script>
+</body></html>

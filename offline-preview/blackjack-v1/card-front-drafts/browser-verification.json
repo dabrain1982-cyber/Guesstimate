@@ -1,0 +1,48 @@
+{
+  "images": [
+    {
+      "alt": "Pik-Ass auf warmem Elfenbeinpapier",
+      "height": 380,
+      "loaded": true,
+      "width": 280
+    },
+    {
+      "alt": "Karo-Sieben mit sieben roten Karo-Symbolen",
+      "height": 380,
+      "loaded": true,
+      "width": 280
+    },
+    {
+      "alt": "Kreuz-König mit gemaltem Doppelbild",
+      "height": 380,
+      "loaded": true,
+      "width": 280
+    },
+    {
+      "alt": "Kleines Pik-Ass",
+      "height": 380,
+      "loaded": true,
+      "width": 280
+    },
+    {
+      "alt": "Kleine Karo-Sieben",
+      "height": 380,
+      "loaded": true,
+      "width": 280
+    },
+    {
+      "alt": "Kleiner Kreuz-König",
+      "height": 380,
+      "loaded": true,
+      "width": 280
+    }
+  ],
+  "main": {
+    "height": 682,
+    "width": 1100,
+    "x": 109,
+    "y": 0
+  },
+  "title": "Black Jack · Kartenmuster",
+  "logs": []
+}

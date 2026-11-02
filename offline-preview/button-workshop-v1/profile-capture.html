@@ -1,0 +1,11 @@
+<!doctype html><html lang="de"><meta charset="utf-8"><title>Button-Bausteine übernehmen</title><style>body{font:16px system-ui;padding:24px}#stage{width:620px}textarea{width:90%;height:100px}</style>
+<h1>Button-Bausteine übernehmen</h1><p id="status">Start …</p><textarea id="profiles" aria-label="Erfasste Buttonbausteine"></textarea><div id="stage"></div>
+<script type="module">
+import {renderSourceButton} from './source-renderer.js';import {captureButton} from './unified-import.js';
+const profiles={},data=await fetch('/api/library').then(r=>r.json()),only=new Set((new URLSearchParams(location.search).get('only')||'').split(',').filter(Boolean));
+for(const asset of data.assets.filter(a=>a.source==='game'&&!a.canonical&&(!only.size||only.has(a.id)))){
+ const context=await new Promise(resolve=>renderSourceButton(document.getElementById('stage'),{schema_version:3,source_button:{id:asset.id,name:asset.name},appearance:{}},{onReady:resolve}));
+ profiles[asset.id]=captureButton(context.root);document.getElementById('status').textContent=Object.keys(profiles).length+' Buttons in Form, Fläche, Tiefe und Beschriftung zerlegt.';
+}
+document.getElementById('profiles').value=JSON.stringify({schema:1,profiles});document.body.dataset.complete='true';
+</script></html>

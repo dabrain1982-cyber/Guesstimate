@@ -1,0 +1,73 @@
+{
+  "schema_version": 2,
+  "renderer_version": "button-workshop-v7",
+  "contour": {
+    "template": "soft",
+    "points": [
+      {
+        "x": 0,
+        "y": 0,
+        "round": 40
+      },
+      {
+        "x": 100,
+        "y": 0,
+        "round": 40
+      },
+      {
+        "x": 100,
+        "y": 100,
+        "round": 40
+      },
+      {
+        "x": 0,
+        "y": 100,
+        "round": 40
+      }
+    ]
+  },
+  "name": "vorschlag black Jack button",
+  "notes": "Separater Vorschlag: dunkles Holz, warmes Gold, Cinzel, kurze direkte Druckbewegung. Persönliche Black-Jack-Entwürfe bleiben erhalten.",
+  "settings": {
+    "style": "natural",
+    "material": "wood",
+    "shape": "soft",
+    "edge": 2,
+    "finish": "satin",
+    "wear": 15,
+    "accent": "#352014",
+    "font": "cinzel",
+    "font_link": "manual",
+    "lettering": "plain",
+    "size": 20,
+    "label": "Neue Runde",
+    "depth": 3,
+    "duration": 180,
+    "feel": "direct",
+    "sound": "media-piece",
+    "volume": 25,
+    "gradient_to": "#b68b4c",
+    "opacity": 100,
+    "font_scale": 100,
+    "shadow": 35,
+    "height_ratio": 90,
+    "ink_mode": "manual",
+    "ink_color": "#f1d49a",
+    "depth_mode": "manual",
+    "depth_color": "#2d1b11",
+    "depth_x": 1,
+    "font_italic": false
+  },
+  "kind": "button",
+  "review": {
+    "style": "open",
+    "motion": "open",
+    "shape": "open",
+    "surface": "open",
+    "lettering": "open",
+    "sound": "open"
+  },
+  "parent_id": "763e945ed29b4b65a65a32197843775f",
+  "id": "ce5b017b432b478893fd4b52a2163dac",
+  "created_at": "2026-10-29T20:08:05.121233+00:00"
+}
