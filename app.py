@@ -57,7 +57,7 @@ MIN_QUESTION_POINTS = 10
 MAX_QUESTION_POINTS = 100
 MAX_PLAYERS = 100
 DEFAULT_GAME_NAME = "Stormseed´s Guesstimate"
-RELEASE_VERSION = "2026.10.23-daily-catchup-access-v1"
+RELEASE_VERSION = "2026.10.24-pool-home-mail-v1"
 QUESTION_FULL_TIME_SECONDS = (5.0, 5.0, 5.0, 8.0, 5.0)
 FEEDBACK_SECONDS = 4
 QUESTION_DECAY_SECONDS = (5.0, 7.0, 10.0, 12.0, 20.0)
@@ -875,6 +875,15 @@ def reserve_question_sets(
                         now,
                     ),
                 )
+        # A successful reservation proves that a new complete set was available.
+        # Rearm the warning for this supply, including after an earlier refill.
+        database.execute(
+            """
+            UPDATE system_notifications SET created_at = ?, sent_at = NULL
+            WHERE kind = 'question_pool_exhausted'
+            """,
+            (now,),
+        )
         if manage_transaction:
             database.commit()
         return sets
@@ -895,9 +904,9 @@ def record_pool_exhausted() -> None:
     get_db().commit()
     try:
         send_pool_exhausted_email()
-    except (OSError, smtplib.SMTPException):
+    except (OSError, smtplib.SMTPException) as error:
         # The pending row remains unsent and can be retried after mail setup is fixed.
-        pass
+        current_app.logger.warning("Fragenvorrat-Mail nicht versendet: %s", error)
 
 
 def pool_mail_ready() -> bool:
@@ -925,16 +934,23 @@ def send_pool_exhausted_email() -> bool:
     recipient = current_app.config.get("MAIL_TO", "")
     password_file = current_app.config.get("MAIL_PASSWORD_FILE", "")
     if not pool_mail_ready():
+        current_app.logger.warning("Fragenvorrat-Mail: Mailkonfiguration unvollständig")
         return False
     password = Path(password_file).read_text(encoding="utf-8").strip()
     message = EmailMessage()
     message["From"] = user
     message["To"] = recipient
     message["Subject"] = "Stormseed´s Guesstimate: Neue Fragen werden benötigt"
+    pool = question_pool_status()
+    remaining = "\n".join(
+        f"- {CATEGORY_LABELS[category]}: {pool['remaining'][category]}"
+        for category in CATEGORY_ORDER
+    )
     message.set_content(
-        "Der unverbrauchte Fragenvorrat von Stormseed´s Guesstimate ist aufgebraucht.\n\n"
-        "Es werden keine alten Fragen automatisch wiederverwendet. Bitte entscheide, "
-        "ob der benutzte Vorrat erneut freigegeben oder ein neuer Fragenblock ergänzt werden soll."
+        "Für Stormseed´s Guesstimate ist keine neue vollständige Fragerunde mehr verfügbar.\n\n"
+        f"Unverbrauchte Fragen je Frageart:\n{remaining}\n\n"
+        "Die normale Startseite bleibt sichtbar; nur nicht verfügbare Spielrunden sind gesperrt.\n"
+        "Es werden keine alten Fragen automatisch wiederverwendet. Neuer Fragen-Nachschub wird benötigt."
     )
     context = ssl.create_default_context()
     with smtplib.SMTP("mail.gmx.net", 587, timeout=15) as smtp:
@@ -1801,6 +1817,12 @@ def advance_party_if_ready(lobby: sqlite3.Row) -> None:
 
 
 def register_routes(app: Flask) -> None:
+    @app.errorhandler(QuestionPoolExhausted)
+    def unavailable_round(error):
+        # Also handle old tabs and direct round URLs after the last reservation.
+        record_pool_exhausted()
+        return redirect(url_for("home"))
+
     @app.before_request
     def load_user() -> None:
         user_id = session.get("user_id")
@@ -2132,28 +2154,34 @@ def register_routes(app: Flask) -> None:
         try:
             daily_round = get_or_create_round(active_round_date())
         except QuestionPoolExhausted:
+            daily_round = None
+        round_day = daily_round["round_date"] if daily_round else active_round_date()
+        attempt = get_attempt(daily_round["id"]) if daily_round else None
+        available_replays = missed_days
+        if question_pool_status()["exhausted"]:
             record_pool_exhausted()
-            return render_template(
-                "pool_exhausted.html",
-                leaderboards=leaderboard_sets(active_round_date()),
-            ), 503
-        attempt = get_attempt(daily_round["id"])
+            reserved_days = {
+                row["round_date"]
+                for row in get_db().execute("SELECT round_date FROM daily_rounds")
+            }
+            available_replays = [day for day in missed_days if day in reserved_days]
         greeting_index = int(hashlib.sha256(f"{today_iso()}:{g.user['id']}".encode()).hexdigest()[:8], 16)
         return render_template(
             "home.html",
             daily_round=daily_round,
+            round_available=daily_round is not None,
             attempt=attempt,
-            leaderboards=leaderboard_sets(daily_round["round_date"]),
+            leaderboards=leaderboard_sets(round_day),
             greeting=GREETINGS[greeting_index % len(GREETINGS)],
             default_phrase=DEFAULT_PHRASE,
             yesterday_winner=(
                 previous_daily_winner() if should_greet_with_winner else None
             ),
             show_catchup_prompt=(
-                session.pop("show_catchup_prompt", False) and bool(missed_days)
+                session.pop("show_catchup_prompt", False) and bool(available_replays)
             ),
-            missed_week_days=missed_days,
-            active_round_date=daily_round["round_date"],
+            missed_week_days=available_replays,
+            active_round_date=round_day,
             trophies=player_trophy_counts(g.user["id"]),
         )
 
@@ -2163,6 +2191,12 @@ def register_routes(app: Flask) -> None:
         require_csrf()
         choice = request.form.get("choice")
         missed_days = missed_current_week_dates(g.user["id"])
+        if question_pool_status()["exhausted"]:
+            reserved_days = {
+                row["round_date"]
+                for row in get_db().execute("SELECT round_date FROM daily_rounds")
+            }
+            missed_days = [day for day in missed_days if day in reserved_days]
         queue = missed_days + [today_iso()] if choice == "all" else [today_iso()]
         session["catchup_queue"] = list(dict.fromkeys(queue))
         session["active_round_date"] = session["catchup_queue"][0]
@@ -2604,7 +2638,8 @@ def register_routes(app: Flask) -> None:
             )
         except QuestionPoolExhausted as error:
             database.rollback()
-            record_pool_exhausted()
+            if question_pool_status()["exhausted"]:
+                record_pool_exhausted()
             flash(str(error), "error")
             return redirect(url_for("party_lobby", lobby_id=lobby_id))
         questions = [question for question_set in question_sets for question in question_set]

@@ -54,7 +54,7 @@
           {% else %}
             <form method="post" action="{{ url_for('start_round') }}">
               <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-              <button class="primary-button" type="submit">{% if attempt %}runde fortsetzen{% else %}spielen{% endif %} <span aria-hidden="true">→</span></button>
+              <button class="primary-button" type="submit"{% if not round_available|default(true) %} disabled title="Momentan sind keine neuen Fragen verfügbar."{% endif %}>{% if attempt %}runde fortsetzen{% else %}spielen{% endif %} <span aria-hidden="true">→</span></button>
             </form>
           {% endif %}
           {% if missed_week_days and active_round_date == today_iso_value %}

@@ -2540,3 +2540,145 @@ steckbriefkonform und live validiert sein.
   nächste vorgesehene Schritt ist ein lokales Codex-Projekt auf dem PC, das
   diesen Zweig auscheckt. Rechenintensive Grafikarbeiten sollen dort und nicht
   mehr im Live-Serverordner ausgeführt werden.
+
+## Daily Quiz – Startseite bei Fragenmangel und Mailwarnung (24.10.2026)
+
+- Öffentlich beobachteter Ausgangsstand: Der laufende Dienst liefert Release
+  `2026.10.23-daily-catchup-access-v1`; die angemeldete Hauptseite wird bei
+  fehlender neuer Tagesrunde durch `pool_exhausted.html` und HTTP 503 ersetzt.
+  Der Nutzer hat ausdrücklich festgelegt, dass die normale Hauptseite erhalten
+  bleibt und ausschließlich der nicht verfügbare Spielknopf ausgegraut wird.
+- Aktueller Live-Pool vor Aktivierung der Korrektur: 11 Wahr/Falsch,
+  1 Auswahl, 0 Paare, 0 Reihenfolgen, 1 Schätzung; keine neue vollständige
+  Runde. `pool_mail_ready: true` belegt lediglich vorhandene Konfiguration,
+  keinen erfolgreichen SMTP-Versand. Die geschützte Live-Datenbank und
+  Maildatei sind für das Arbeitskonto `igroup` nicht lesbar; die Anzahl
+  tatsächlich abgeschlossener Runden und der aktuelle Benachrichtigungseintrag
+  sind deshalb zu diesem Zeitpunkt nicht verifiziert.
+- Die Hauptseitenroute rendert nun in allen Fällen dieselbe `home.html` mit
+  Profilfenster, Karussell und Rangliste. Ohne reservierten Fragensatz ist nur
+  `spielen` deaktiviert und grau. Bereits reservierte Tagesrunden bleiben
+  start-/fortsetzbar und fertige Ergebnisse erreichbar. Nachholzugänge lassen
+  bei leerem Vorrat nur bereits reservierte Tage zu. Alte direkte Rundenaufrufe
+  kehren bei Fragenmangel zur Hauptseite zurück, statt einen Serverfehler
+  auszulösen. Die neue CSS-Regel steht an der zuständigen Aktionskomponente.
+- Die bisherige Mailwarnung besitzt nur einen dauerhaften `sent_at`-Wert und
+  wurde nach Nachschub nicht erneut scharfgeschaltet. Erfolgreiche neue
+  Reservierungen setzen nun ausschließlich diese Benachrichtigungsmetadaten
+  zurück. Versandfehler bleiben ungesendet und werden protokolliert; weitere
+  Hauptseitenaufrufe bei leerem Pool versuchen eine noch offene Warnung erneut.
+  Die Mail nennt die verbliebenen Fragen je Frageart. Ein für fünf Partyrunden
+  zu kleiner, aber nicht leerer Vorrat löst keine falsche Leerstandsmail aus.
+- Neues Wartungswerkzeug `deploy/report_question_pool.py`: Standardbetrieb
+  liest ausschließlich über eine SQLite-Verbindung mit `mode=ro` aggregierte
+  Rundenzähler, Reservierungen, Perfect-Zyklusbestände und den Versandvermerk.
+  Nur `--notify` verwendet den normalen SMTP-Absender; `--resend` erlaubt
+  ausdrücklich einen erneuten Versand. Zugangsdaten werden nicht ausgegeben.
+  Der Anwendungsimport wird dabei zunächst mit einer isolierten temporären
+  Datenbank ausgeführt, damit keine Startmigration an der Live-Datenbank läuft.
+- `deploy/activate_pool_fix.sh` ist für den einmaligen administrativen
+  Aktivierungsschritt vorbereitet: Fragenprüfung, kontrollierter Neustart,
+  Healthcheck, aggregierter Bericht und erneuter Versandversuch als
+  Dienstkonto `guesstimate`. Der Bericht wird ohne Geheimnisse unter
+  `deploy/pool-fix-result.log` abgelegt. Spielergebnisse, Konten, Antworten und
+  Fragen-Nutzungshistorie werden durch das Werkzeug nicht verändert.
+- Prüfung: Fragenbibliothek erfolgreich; alle 135 lokalen Projekttests
+  bestanden. Nach Übertragung der sieben gezielt betroffenen Dateien außerdem
+  alle 65 Quiztests in einer isolierten Server-Prüfdatenbank bestanden;
+  Shellsyntax und `git diff --check` ohne Fehler. Nur die sieben geprüften
+  Dateien wurden übertragen; lokale Conquest-Arbeiten bleiben auf dem PC.
+- Die isolierte PC-Vorschau unter `127.0.0.1:54507` wurde tatsächlich im
+  Browser geöffnet: vollständige normale Startseite, grauer gesperrter
+  Spielknopf, bedienbares Karussell und funktionierender Ranglistenwechsel.
+  Prüfbild lokal: `runtime/pool-fix/startseite-leerer-pool.png`.
+- Offener Aktivierungsschritt: `sudo` verlangt das dem Arbeitskonto nicht
+  verfügbare Administratorkennwort. Der Nutzer wurde um Ausführung von
+  `sudo bash /srv/guesstimate/deploy/activate_pool_fix.sh` gebeten.
+  Produktionsneustart, tatsächliche Mailannahme und authentifizierte sichtbare
+  Live-Funktionsprüfung stehen noch aus. Live-Status: **nicht getan**.
+
+## 50 Wahr/Falsch-Fragen lokal vorgemerkt; Live-Update zurückgestellt (24.10.2026)
+
+- Auf ausdrücklichen Nutzerwunsch das gemeinsame Live-Update zurückgestellt,
+  bis die weiteren Fragenpakete vorbereitet sind. Zunächst ausschließlich
+  50 spannende Wahr-oder-falsch-Fragen recherchiert und lokal unter
+  `D:\Guesstimate\fragen\vormerkungen\2026-10-24-wahr-falsch-50\`
+  vorgemerkt. Das Fragenpaket wurde nicht zum Live-Server übertragen und
+  gehört nicht zum aktiven Manifest.
+- `kandidaten.json` enthält genau 50 steckbriefkonforme Einträge mit
+  27 wahren und 23 falschen Aussagen, kurzen Auflösungen und insgesamt
+  58 Quellenreferenzen. `LESELISTE.md` zeigt alle Karten lesbar mit Quellen;
+  `RECHERCHE.json` dokumentiert Belegprüfung und Prüfsummen;
+  `PRUEFBERICHT.md` hält Dublettenentscheidungen und offene Grenzen fest.
+- Die Fakten tatsächlich in institutionellen Veröffentlichungen, Fachquellen
+  beziehungsweise Originalstudien recherchiert und für das Quiz eigenständig
+  formuliert. Keine Religionsfrage und keine Frage über eine einzelne Person
+  in den neuen Kandidaten. Einzelne technisch gesperrte Direktaufrufe wurden
+  anhand tatsächlich ausgelesener Originalseiteninhalte im Suchindex geprüft;
+  zusätzliche zugängliche Belege sind, wo erforderlich, mitgeführt.
+- Gegen alle 1.403 Daily-Bestandseinträge einschließlich der 60 vorbereiteten
+  Zwei-Gruppen-Fragen geprüft. Die bereits vorhandenen Kerne Dosenöffner/
+  Konservendose (`tf186`) und Fax vor Telefon (`tf187`) wurden als Dubletten
+  ausgeschlossen und ersetzt. Auch Kandidaten zur Pinguinverbreitung und zur
+  Voyager-Schallplatte wegen zu starker Bestandsnähe nicht übernommen.
+- Die IDs `tf700` bis `tf749` sind vorläufige Vorschläge und in den aktuellen
+  Fragendateien frei. Vor einer späteren Aktivierung ist die historische
+  Live-Nutzung in `question_usage` zusätzlich zu prüfen. Kein vorhandener
+  Eintrag, keine bestehende ID und keine Nutzungshistorie wurden verändert.
+- Aktueller Altbestandsbefund: `tf18` verneint korrekt wildlebende Pinguine am
+  Nordpol, behauptet in der Erklärung aber unzutreffend eine ausschließlich
+  südliche Verbreitung. Galápagos Conservancy belegt Vorkommen knapp nördlich
+  des Äquators. Der Eintrag wurde in diesem Auftrag nicht verändert;
+  eine spätere redaktionelle Korrektur ist offen.
+- Prüfungen: Bibliotheksprüfung für den unveränderten aktiven Bestand
+  erfolgreich; dieselbe verbindliche Prüfung außerdem für eine isolierte
+  Bibliothekskopie mit den 50 Kandidaten erfolgreich. Alle aktiven
+  Fragendateien bytegenau unverändert und kein Kandidat vom aktuellen
+  Fragenlader eingelesen. Keine Aktivierung und kein Neustart ausgeführt.
+- Die Zahl tatsächlich gespielter Runden bleibt offen. Für `igroup` ist die
+  Live-Datenbank weiterhin nicht lesbar. Der Nutzer erhielt einen gesonderten
+  rein lesenden Administrationsbefehl für `deploy/report_question_pool.py`,
+  der weder neu startet noch eine Mail sendet. Der öffentliche Dienst meldet
+  unverändert Release `2026.10.23-daily-catchup-access-v1` und 0 neue
+  vollständige Runden. Startseiten-/Mailkorrektur weiterhin vorbereitet;
+  vollständige Live-Aktivierung und SMTP-Nachweis stehen aus.
+
+### 24.10.2026 – 50 Multiple-Choice-Fragen lokal vorgemerkt
+
+- Auf Nutzerwunsch weitere 50 recherchierte Auswahlfragen mit jeweils vier
+  Antworten, eindeutiger Lösung, Erklärung und insgesamt 60 Quellenverweisen
+  vorbereitet. Ablage ausschließlich lokal:
+  `fragen/vormerkungen/2026-10-24-multiple-choice-50/` mit
+  `kandidaten.json`, `LESELISTE.md`, `RECHERCHE.json` und
+  `PRUEFBERICHT.md`.
+- Wortlaut selbst formuliert und Sachverhalte tatsächlich recherchiert.
+  Belege überwiegend von Institutionen, Museen, Hochschulen,
+  Forschungsstellen und zuständigen Sportverbänden. Technische Sperren
+  einzelner Direktabrufe und die Prüfung über Originalseiteninhalte im
+  Suchindex sind pro Karte dokumentiert.
+- Abgleich gegen sämtliche 1.403 Daily-Einträge einschließlich der
+  vorbereiteten Zwei-Gruppen-Fragen und zusätzlich gegen die 50 bereits
+  vorgemerkten Wahr/Falsch-Fragen: 1.453 Vergleichseinträge. Optionen,
+  Zuordnungen, Erklärungen und Metadaten einbezogen; Ähnlichkeitshinweise
+  nach Wissenskern redaktionell geprüft. Keine Dublette festgestellt.
+- Religion ausgeschlossen. Kein weiterer Schwerpunkt auf bereits häufig
+  vertretenen Personen. Warren Robinett und Delia Derbyshire kommen im
+  Vergleichsbestand nicht vor und werden jeweils einmal erwähnt.
+- Bei der Biberfrage die verbreitete Erklärung der Zahnfarbe durch Eisen
+  anhand neuerer Max-Planck-/ACS-Forschung verworfen. Der Kandidat fragt
+  stattdessen die belegte Schutzfunktion eisenreichen Zahnschmelzes ab.
+- IDs `mc700` bis `mc749` sind vorläufig und in aktuellen Dateien frei.
+  Historische Verwendung in `question_usage` vor Aktivierung noch lesend
+  abzugleichen; geschützte Nutzungshistorie und Rundenzähler nicht geändert.
+- Prüfungen erfolgreich: bestehende Bibliotheksprüfung des aktiven Bestands,
+  dieselbe Prüfung in einer isolierten Kopie mit beiden neuen Paketen
+  zusammen (1.503 Einträge einschließlich inaktiver Zwei-Gruppen-Fragen),
+  vier unterschiedliche Optionen je Frage, Fragetexte höchstens 160 Zeichen,
+  ID-Prüfung und unveränderte Prüfsummen sämtlicher aktiver Fragendateien.
+  Aktueller Fragenlader weiterhin 266 Auswahl- und 268 Wahr/Falsch-Fragen;
+  keine Vormerkung wird eingelesen.
+- Keine Fragen übertragen, keine Aktivierung und kein Neustart. Beide
+  Vormerkungspakete bleiben lokal. Gemeinsames Live-Update einschließlich
+  vorbereiteter Startseiten-/Mailkorrektur auf Nutzerwunsch bis zur
+  Vorbereitung der übrigen Fragearten zurückgestellt.
+

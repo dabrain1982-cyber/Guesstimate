@@ -1,0 +1,2918 @@
+[
+  {
+    "id": "ma700",
+    "question_type": "match",
+    "primary_category": "gaming",
+    "subtopic": "Ungewöhnliche Spielberufe",
+    "tags": {
+      "topics": [
+        "Ungewöhnliche Spielberufe"
+      ],
+      "entities": [
+        "Papers, Please",
+        "Return of the Obra Dinn",
+        "Firewatch"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem Spiel den Beruf zu, den du darin ausübst.",
+    "left": [
+      "Papers, Please",
+      "Return of the Obra Dinn",
+      "Firewatch"
+    ],
+    "right": [
+      "Versicherungsermittler",
+      "Grenzkontrolleur",
+      "Brandwächter im Wald"
+    ],
+    "answer": {
+      "Papers, Please": "Grenzkontrolleur",
+      "Return of the Obra Dinn": "Versicherungsermittler",
+      "Firewatch": "Brandwächter im Wald"
+    },
+    "explanation": "In Papers, Please kontrollierst du Einreisepapiere. In Return of the Obra Dinn rekonstruierst du als Versicherungsermittler die Schicksale einer Schiffsbesatzung. Firewatch versetzt dich dagegen in den Arbeitsalltag einer Waldbrandwache.",
+    "subject_keys": [
+      "topic:gaming:ungewohnliche-spielberufe",
+      "entity:papers-please",
+      "entity:return-of-the-obra-dinn",
+      "entity:firewatch"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Papers, Please - Presskit",
+          "url": "https://www.papersplea.se/presskit/"
+        },
+        {
+          "title": "Return of the Obra Dinn",
+          "url": "https://www.playstation.com/en-us/games/return-of-the-obra-dinn/"
+        },
+        {
+          "title": "Campo Santo - Firewatch - About & FAQ",
+          "url": "https://www.firewatchgame.com/about/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma701",
+    "question_type": "match",
+    "primary_category": "gaming",
+    "subtopic": "Grafikstile mit Vorbildern",
+    "tags": {
+      "topics": [
+        "Grafikstile mit Vorbildern"
+      ],
+      "entities": [
+        "Cuphead",
+        "Ōkami",
+        "BioShock (Stadt Rapture)"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem Spiel seinen prägenden gestalterischen Einfluss zu.",
+    "left": [
+      "Cuphead",
+      "Ōkami",
+      "BioShock (Stadt Rapture)"
+    ],
+    "right": [
+      "Japanische Tuschemalerei",
+      "Zeichentrickfilme der 1930er-Jahre",
+      "Art-déco-Architektur"
+    ],
+    "answer": {
+      "Cuphead": "Zeichentrickfilme der 1930er-Jahre",
+      "Ōkami": "Japanische Tuschemalerei",
+      "BioShock (Stadt Rapture)": "Art-déco-Architektur"
+    },
+    "explanation": "Cuphead greift den Stil früher Zeichentrickfilme der 1930er-Jahre auf. Ōkami orientiert sich an japanischer Tuschemalerei. Die Unterwasserstadt Rapture aus BioShock ist deutlich von Art déco geprägt.",
+    "subject_keys": [
+      "topic:gaming:grafikstile-mit-vorbildern",
+      "entity:cuphead",
+      "entity:okami",
+      "entity:bioshock-stadt-rapture"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "A great slam and then some — Cuphead is out today on PS4 – PlayStation.Blog",
+          "url": "https://blog.playstation.com/2020/07/28/a-great-slam-and-then-some-cuphead-is-out-today-on-ps4/"
+        },
+        {
+          "title": "Okami | Capcom Productions | 2012 | ACMI collection | ACMI: Your museum of screen culture",
+          "url": "https://www.acmi.net.au/works/117892--okami/"
+        },
+        {
+          "title": "BioShock gameplay video: Rapture | NFSA",
+          "url": "https://www.nfsa.gov.au/collection/item/bioshock-gameplay-video-rapture"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma702",
+    "question_type": "match",
+    "primary_category": "gaming",
+    "subtopic": "Ungewöhnliche Spielmodule",
+    "tags": {
+      "topics": [
+        "Ungewöhnliche Spielmodule"
+      ],
+      "entities": [
+        "Boktai 2",
+        "WarioWare: Twisted!",
+        "Game Boy Camera"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem Spiel oder Zubehör seine besondere eingebaute Funktion zu.",
+    "left": [
+      "Boktai 2",
+      "WarioWare: Twisted!",
+      "Game Boy Camera"
+    ],
+    "right": [
+      "Echte Fotos aufnehmen",
+      "Sonnenlicht über einen Sensor nutzen",
+      "Drehbewegungen des Geräts erkennen"
+    ],
+    "answer": {
+      "Boktai 2": "Sonnenlicht über einen Sensor nutzen",
+      "WarioWare: Twisted!": "Drehbewegungen des Geräts erkennen",
+      "Game Boy Camera": "Echte Fotos aufnehmen"
+    },
+    "explanation": "Das Modul von Boktai 2 reagiert auf echtes Sonnenlicht. WarioWare: Twisted! erkennt über einen eingebauten Sensor Drehungen des Handhelds. Die Game Boy Camera ergänzt den Game Boy um eine kleine Digitalkamera.",
+    "subject_keys": [
+      "topic:gaming:ungewohnliche-spielmodule",
+      "entity:boktai-2",
+      "entity:warioware-twisted",
+      "entity:game-boy-camera"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Boktai 2 – Spielanleitung",
+          "url": "https://boktai.info/img/media/manuals/manual_boktai2.pdf"
+        },
+        {
+          "title": "Wario Ware: Twisted! - JAPAN MEDIA ARTS FESTIVAL",
+          "url": "https://www.bunka.go.jp/j-mediaarts-festival/en/award/single/wario-ware-twisted/index.html"
+        },
+        {
+          "title": "Game Boy Camera | Support | Nintendo UK",
+          "url": "https://www.nintendo.com/en-gb/Support/Legacy-system/Game-Boy-Camera-619598.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma703",
+    "question_type": "match",
+    "primary_category": "gaming",
+    "subtopic": "Rhythmuscontroller",
+    "tags": {
+      "topics": [
+        "Rhythmuscontroller"
+      ],
+      "entities": [
+        "Donkey Konga",
+        "Taiko no Tatsujin",
+        "Samba de Amigo"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem Rhythmusspiel die dafür angebotene Instrumentensteuerung zu.",
+    "left": [
+      "Donkey Konga",
+      "Taiko no Tatsujin",
+      "Samba de Amigo"
+    ],
+    "right": [
+      "Taiko-Trommel",
+      "Maracas",
+      "Bongos"
+    ],
+    "answer": {
+      "Donkey Konga": "Bongos",
+      "Taiko no Tatsujin": "Taiko-Trommel",
+      "Samba de Amigo": "Maracas"
+    },
+    "explanation": "Donkey Konga wurde mit Bongo-Controllern gespielt. Bei Taiko no Tatsujin ahmt der Trommelcontroller eine Taiko nach. Samba de Amigo verwendet passend zum Rhythmus Maracas; die genaue Steuerung unterscheidet sich je nach Geräteversion.",
+    "subject_keys": [
+      "topic:gaming:rhythmuscontroller",
+      "entity:donkey-konga",
+      "entity:taiko-no-tatsujin",
+      "entity:samba-de-amigo"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Donkey Konga | Nintendo GameCube | Games | Nintendo UK",
+          "url": "https://www.nintendo.com/en-gb/Games/Nintendo-GameCube/Donkey-Konga-267906.html"
+        },
+        {
+          "title": "Taiko no Tatsujin Drum Controller | Bandai Namco Entertainment America Official Store",
+          "url": "https://store.bandainamcoent.com/merchandise/taiko-no-tatsujin/taiko-no-tatsujin-rhythm-festival/taiko-no-tatsujin-drum-controller-ps5"
+        },
+        {
+          "title": "Samba de Amigo: Party Central　Online Manual",
+          "url": "https://manual.sega.jp/sambadeamigo/en/index.html?pid=1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma704",
+    "question_type": "match",
+    "primary_category": "media_entertainment",
+    "subtopic": "Geräusche aus Star Wars",
+    "tags": {
+      "topics": [
+        "Geräusche aus Star Wars"
+      ],
+      "entities": [
+        "Darth Vaders Atmen",
+        "Lichtschwert-Brummen",
+        "R2-D2s Stimme"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem Star-Wars-Geräusch eine tatsächlich verwendete Aufnahmequelle zu.",
+    "left": [
+      "Darth Vaders Atmen",
+      "Lichtschwert-Brummen",
+      "R2-D2s Stimme"
+    ],
+    "right": [
+      "Motor eines Filmprojektors",
+      "Atemregler einer Tauchausrüstung",
+      "Menschliche Laute mit Synthesizerklängen"
+    ],
+    "answer": {
+      "Darth Vaders Atmen": "Atemregler einer Tauchausrüstung",
+      "Lichtschwert-Brummen": "Motor eines Filmprojektors",
+      "R2-D2s Stimme": "Menschliche Laute mit Synthesizerklängen"
+    },
+    "explanation": "Für Vaders Atmung wurde ein Atemregler aufgenommen. Ein Projektormotor lieferte einen Bestandteil des Lichtschwert-Brummens. R2-D2s Stimme verbindet menschliche Laute mit elektronisch erzeugten Klängen. Gemeint sind jeweils verwendete Bausteine, nicht die vollständigen Tonmischungen.",
+    "subject_keys": [
+      "topic:media_entertainment:gerausche-aus-star-wars",
+      "entity:darth-vaders-atmen",
+      "entity:lichtschwert-brummen",
+      "entity:r2-d2s-stimme"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "5 Iconic Star Wars Sound Effects and How They Were Made | StarWars.com",
+          "url": "https://www.starwars.com/news/5-iconic-star-wars-sound-effects-and-how-they-were-made-starwars-com"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma705",
+    "question_type": "match",
+    "primary_category": "media_entertainment",
+    "subtopic": "Wie Animation entsteht",
+    "tags": {
+      "topics": [
+        "Wie Animation entsteht"
+      ],
+      "entities": [
+        "Rotoskopie",
+        "Pixilation",
+        "Legetrick"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne der Animationstechnik ihre Arbeitsweise zu.",
+    "left": [
+      "Rotoskopie",
+      "Pixilation",
+      "Legetrick"
+    ],
+    "right": [
+      "Gefilmte Bewegungen Bild für Bild nachzeichnen",
+      "Flache Figuren oder Formen schrittweise verschieben",
+      "Menschen in Einzelbildern animieren"
+    ],
+    "answer": {
+      "Rotoskopie": "Gefilmte Bewegungen Bild für Bild nachzeichnen",
+      "Pixilation": "Menschen in Einzelbildern animieren",
+      "Legetrick": "Flache Figuren oder Formen schrittweise verschieben"
+    },
+    "explanation": "Bei Rotoskopie werden Bewegungen aus Filmaufnahmen nachgezeichnet. Pixilation nutzt echte Menschen als schrittweise bewegte Stop-Motion-Figuren. Beim Legetrick werden flache ausgeschnittene Elemente zwischen den einzelnen Aufnahmen versetzt.",
+    "subject_keys": [
+      "topic:media_entertainment:wie-animation-entsteht",
+      "entity:rotoskopie",
+      "entity:pixilation",
+      "entity:legetrick"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Glossary – Selected Film and Animation Terminology with NFB Animated Examples",
+          "url": "https://publications.gc.ca/collections/collection_2025/onf-nfb/NF4-49-2023-eng.pdf"
+        },
+        {
+          "title": "STUDY GUIDE",
+          "url": "https://www3.nfb.ca/sg/100651.pdf"
+        },
+        {
+          "title": "Animation Techniques: Stop-Motion - NFB Blog",
+          "url": "https://blog.nfb.ca/blog/2018/08/13/animation-stop-motion/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma706",
+    "question_type": "match",
+    "primary_category": "media_entertainment",
+    "subtopic": "Filmillusionen",
+    "tags": {
+      "topics": [
+        "Filmillusionen"
+      ],
+      "entities": [
+        "Chroma Key",
+        "Forced Perspective",
+        "Matte Painting"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem Filmtrick sein Grundprinzip zu.",
+    "left": [
+      "Chroma Key",
+      "Forced Perspective",
+      "Matte Painting"
+    ],
+    "right": [
+      "Eine Kulisse durch gemalte Bildteile erweitern",
+      "Eine bestimmte Bildfarbe durch einen anderen Hintergrund ersetzen",
+      "Größen durch geschickte Abstände zur Kamera vortäuschen"
+    ],
+    "answer": {
+      "Chroma Key": "Eine bestimmte Bildfarbe durch einen anderen Hintergrund ersetzen",
+      "Forced Perspective": "Größen durch geschickte Abstände zur Kamera vortäuschen",
+      "Matte Painting": "Eine Kulisse durch gemalte Bildteile erweitern"
+    },
+    "explanation": "Chroma Key entfernt eine ausgewählte Bildfarbe und ermöglicht einen neuen Hintergrund. Forced Perspective täuscht Größenverhältnisse über Aufstellung und Blickwinkel vor. Matte Painting ergänzt eine reale oder digitale Szene um gemalte Kulissenteile.",
+    "subject_keys": [
+      "topic:media_entertainment:filmillusionen",
+      "entity:chroma-key",
+      "entity:forced-perspective",
+      "entity:matte-painting"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Glossary of terms used for Adobe Premiere Elements | Premiere Elements",
+          "url": "https://helpx.adobe.com/nz/premiere-elements/desktop/using/glossary.html"
+        },
+        {
+          "title": "What is forced perspective in photography & how to do it | Adobe",
+          "url": "https://www.adobe.com/creativecloud/photography/discover/forced-perspective.html"
+        },
+        {
+          "title": "Beginner’s guide to matte paintings | Adobe",
+          "url": "https://www.adobe.com/uk/creativecloud/design/discover/matte-painting.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma707",
+    "question_type": "match",
+    "primary_category": "media_entertainment",
+    "subtopic": "Bewegte Bilder vor dem Kino",
+    "tags": {
+      "topics": [
+        "Bewegte Bilder vor dem Kino"
+      ],
+      "entities": [
+        "Zoetrop",
+        "Praxinoskop",
+        "Phenakistiskop"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem historischen Bildgerät seinen Aufbau zu.",
+    "left": [
+      "Zoetrop",
+      "Praxinoskop",
+      "Phenakistiskop"
+    ],
+    "right": [
+      "Drehende Bildscheibe vor einem Spiegel",
+      "Bildertrommel mit einem Spiegelkranz im Inneren",
+      "Bilderstreifen in einer Trommel mit Sehschlitzen"
+    ],
+    "answer": {
+      "Zoetrop": "Bilderstreifen in einer Trommel mit Sehschlitzen",
+      "Praxinoskop": "Bildertrommel mit einem Spiegelkranz im Inneren",
+      "Phenakistiskop": "Drehende Bildscheibe vor einem Spiegel"
+    },
+    "explanation": "Beim Zoetrop blickt man durch Schlitze auf einen Bilderstreifen in der Trommel. Das Praxinoskop ersetzt diese Betrachtung durch Spiegel im Inneren. Beim Phenakistiskop erscheinen die Bilder einer rotierenden Scheibe beim Blick in einen Spiegel bewegt.",
+    "subject_keys": [
+      "topic:media_entertainment:bewegte-bilder-vor-dem-kino",
+      "entity:zoetrop",
+      "entity:praxinoskop",
+      "entity:phenakistiskop"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Zoetrope | Science Museum Group Collection",
+          "url": "https://collection.sciencemuseumgroup.org.uk/objects/co18312"
+        },
+        {
+          "title": "Le Praxinoscope | Science Museum Group Collection",
+          "url": "https://collection.sciencemuseumgroup.org.uk/objects/co8210894/le-praxinoscope-optical-toy-praxinoscope"
+        },
+        {
+          "title": "Phenakistoscope disc | Science Museum Group Collection",
+          "url": "https://collection.sciencemuseumgroup.org.uk/objects/co8084522"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma708",
+    "question_type": "match",
+    "primary_category": "music",
+    "subtopic": "Ungewöhnliche Tonerzeugung",
+    "tags": {
+      "topics": [
+        "Ungewöhnliche Tonerzeugung"
+      ],
+      "entities": [
+        "Drehleier",
+        "Nyckelharpa",
+        "Uilleann Pipes"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem Instrument seinen besonderen Spielmechanismus zu.",
+    "left": [
+      "Drehleier",
+      "Nyckelharpa",
+      "Uilleann Pipes"
+    ],
+    "right": [
+      "Ein kurbelgetriebenes Rad streicht die Saiten",
+      "Ein Blasebalg liefert die Luft für den Dudelsack",
+      "Tasten verkürzen die mit einem Bogen gestrichenen Saiten"
+    ],
+    "answer": {
+      "Drehleier": "Ein kurbelgetriebenes Rad streicht die Saiten",
+      "Nyckelharpa": "Tasten verkürzen die mit einem Bogen gestrichenen Saiten",
+      "Uilleann Pipes": "Ein Blasebalg liefert die Luft für den Dudelsack"
+    },
+    "explanation": "Bei der Drehleier übernimmt ein gedrehtes Rad die Reibung an den Saiten. Die Nyckelharpa wird mit dem Bogen gespielt, während Tasten die schwingende Saitenlänge verändern. Uilleann Pipes werden über einen unter dem Arm betätigten Blasebalg mit Luft versorgt.",
+    "subject_keys": [
+      "topic:music:ungewohnliche-tonerzeugung",
+      "entity:drehleier",
+      "entity:nyckelharpa",
+      "entity:uilleann-pipes"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Hurdy gurdy - French - The Metropolitan Museum of Art",
+          "url": "https://www.metmuseum.org/art/collection/search/902422"
+        },
+        {
+          "title": "Nyckelharpa | National Museum of American History",
+          "url": "https://americanhistory.si.edu/collections/object/nmah_605640"
+        },
+        {
+          "title": "Instrument - Na Piobairi Uilleann",
+          "url": "https://pipers.ie/about/instrument/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma709",
+    "question_type": "match",
+    "primary_category": "music",
+    "subtopic": "Klang aus Tasteninstrumenten",
+    "tags": {
+      "topics": [
+        "Klang aus Tasteninstrumenten"
+      ],
+      "entities": [
+        "Mellotron",
+        "Hammond-Orgel (elektromechanisch)",
+        "Rhodes-E-Piano"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem klassischen Tasteninstrument seine Tonquelle zu.",
+    "left": [
+      "Mellotron",
+      "Hammond-Orgel (elektromechanisch)",
+      "Rhodes-E-Piano"
+    ],
+    "right": [
+      "Rotierende Tonräder",
+      "Von Hämmern angeschlagene Metallzungen",
+      "Aufnahmen auf Magnetbändern"
+    ],
+    "answer": {
+      "Mellotron": "Aufnahmen auf Magnetbändern",
+      "Hammond-Orgel (elektromechanisch)": "Rotierende Tonräder",
+      "Rhodes-E-Piano": "Von Hämmern angeschlagene Metallzungen"
+    },
+    "explanation": "Ein Mellotron spielt beim Tastendruck kurze Bandaufnahmen ab. Eine klassische elektromechanische Hammond-Orgel erzeugt ihre Signale mit rotierenden Tonrädern. Beim Rhodes schlagen Hämmer Metallzungen an, deren Schwingungen elektrisch abgenommen werden.",
+    "subject_keys": [
+      "topic:music:klang-aus-tasteninstrumenten",
+      "entity:mellotron",
+      "entity:hammond-orgel-elektromechanisch",
+      "entity:rhodes-e-piano"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Mellotron FX Sound Effects Console | Science Museum Group Collection",
+          "url": "https://collection.sciencemuseumgroup.org.uk/objects/co8094212"
+        },
+        {
+          "title": "Hammond Electric Organ | Smithsonian Music",
+          "url": "https://music.si.edu/object-day/hammond-electric-organ"
+        },
+        {
+          "title": "Chapter One: The Rhodes Tone Source",
+          "url": "https://fenderrhodes.com/org/manual/ch1.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma710",
+    "question_type": "match",
+    "primary_category": "music",
+    "subtopic": "Klangverwandlung im Studio",
+    "tags": {
+      "topics": [
+        "Klangverwandlung im Studio"
+      ],
+      "entities": [
+        "Vocoder",
+        "Wah-Wah",
+        "Flanger"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem Klangeffekt seine typische Wirkung zu.",
+    "left": [
+      "Vocoder",
+      "Wah-Wah",
+      "Flanger"
+    ],
+    "right": [
+      "Sprachmerkmale prägen einen Instrumentenklang",
+      "Ein schwebender Klang, der an ein Düsenflugzeug erinnert",
+      "Vokalähnliche Klangänderung durch einen bewegten Filter"
+    ],
+    "answer": {
+      "Vocoder": "Sprachmerkmale prägen einen Instrumentenklang",
+      "Wah-Wah": "Vokalähnliche Klangänderung durch einen bewegten Filter",
+      "Flanger": "Ein schwebender Klang, der an ein Düsenflugzeug erinnert"
+    },
+    "explanation": "Der Vocoder überträgt Merkmale eines Signals, oft Sprache, auf einen Trägerklang. Wah-Wah bewegt einen Filter und erinnert dadurch an wechselnde Vokale. Beim Flanger wird ein kurz verzögertes Signal zugemischt; so entsteht der charakteristische schwebende Jet-Klang.",
+    "subject_keys": [
+      "topic:music:klangverwandlung-im-studio",
+      "entity:vocoder",
+      "entity:wah-wah",
+      "entity:flanger"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Roland VS-840 / VS-840S – Owner’s Manual",
+          "url": "https://cdn.roland.com/assets/media/pdf/VS-840_840S_OM.pdf"
+        },
+        {
+          "title": "BOSS - BF-2 | Flanger",
+          "url": "https://www.boss.info/us/products/bf-2/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma711",
+    "question_type": "match",
+    "primary_category": "music",
+    "subtopic": "Regionale Musikstile",
+    "tags": {
+      "topics": [
+        "Regionale Musikstile"
+      ],
+      "entities": [
+        "Ska",
+        "Highlife",
+        "Zydeco"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem Musikstil seinen prägenden Herkunftsraum zu.",
+    "left": [
+      "Ska",
+      "Highlife",
+      "Zydeco"
+    ],
+    "right": [
+      "Jamaika",
+      "Louisiana in den USA",
+      "Ghana"
+    ],
+    "answer": {
+      "Ska": "Jamaika",
+      "Highlife": "Ghana",
+      "Zydeco": "Louisiana in den USA"
+    },
+    "explanation": "Ska entstand in Jamaika. Highlife ist besonders mit Ghana verbunden. Zydeco entwickelte sich in den kreolischen Gemeinschaften im Südwesten Louisianas. Die Aufgabe fragt nach den prägenden Herkunftsräumen, nicht nach exklusiven heutigen Verbreitungsgebieten.",
+    "subject_keys": [
+      "topic:music:regionale-musikstile",
+      "entity:ska",
+      "entity:highlife",
+      "entity:zydeco"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Black History in Roots Reggae Music – Jamaica Information Service",
+          "url": "https://jis.gov.jm/jamaica/black-history-in-roots-reggae-music/"
+        },
+        {
+          "title": "Highlife music and dance - UNESCO Intangible Cultural Heritage",
+          "url": "https://ich.unesco.org/en/RL/highlife-music-and-dance-02141"
+        },
+        {
+          "title": "King of Louisiana Blues and Zydeco | Smithsonian Folkways Recordings",
+          "url": "https://folkways.si.edu/clifton-chenier/king-of-louisiana-blues-and-zydeco"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma712",
+    "question_type": "match",
+    "primary_category": "music",
+    "subtopic": "Klangfarben der Streicher",
+    "tags": {
+      "topics": [
+        "Klangfarben der Streicher"
+      ],
+      "entities": [
+        "Pizzicato",
+        "Col legno battuto",
+        "Con sordino"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne der Spielanweisung für Streichinstrumente ihre Bedeutung zu.",
+    "left": [
+      "Pizzicato",
+      "Col legno battuto",
+      "Con sordino"
+    ],
+    "right": [
+      "Mit dem Holz des Bogens auf die Saite schlagen",
+      "Mit aufgesetztem Dämpfer spielen",
+      "Die Saite zupfen"
+    ],
+    "answer": {
+      "Pizzicato": "Die Saite zupfen",
+      "Col legno battuto": "Mit dem Holz des Bogens auf die Saite schlagen",
+      "Con sordino": "Mit aufgesetztem Dämpfer spielen"
+    },
+    "explanation": "Pizzicato bedeutet Zupfen statt Streichen. Col legno battuto verlangt Schläge mit dem Bogenholz. Con sordino weist an, einen Dämpfer zu verwenden. So können dieselben Saiteninstrumente sehr unterschiedliche Klangfarben erzeugen.",
+    "subject_keys": [
+      "topic:music:klangfarben-der-streicher",
+      "entity:pizzicato",
+      "entity:col-legno-battuto",
+      "entity:con-sordino"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Composing for Violin - Learning Resources Hub | Birmingham Contemporary Music Group Composing activities for young people and resources for teachers",
+          "url": "https://resources.bcmg.org.uk/composing-for/composing-for-violin"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma713",
+    "question_type": "match",
+    "primary_category": "sport",
+    "subtopic": "Sport jenseits der Klassiker",
+    "tags": {
+      "topics": [
+        "Sport jenseits der Klassiker"
+      ],
+      "entities": [
+        "Bossaball",
+        "Sepak Takraw",
+        "Unterwasserhockey"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne der Sportart ihre auffällige Spielweise zu.",
+    "left": [
+      "Bossaball",
+      "Sepak Takraw",
+      "Unterwasserhockey"
+    ],
+    "right": [
+      "Einen Puck über den Boden eines Schwimmbeckens spielen",
+      "Ballspiel mit Netz, Luftkissen und Trampolinen",
+      "Ball über ein Netz spielen, ohne Arme oder Hände zu nutzen"
+    ],
+    "answer": {
+      "Bossaball": "Ballspiel mit Netz, Luftkissen und Trampolinen",
+      "Sepak Takraw": "Ball über ein Netz spielen, ohne Arme oder Hände zu nutzen",
+      "Unterwasserhockey": "Einen Puck über den Boden eines Schwimmbeckens spielen"
+    },
+    "explanation": "Bossaball verbindet Ballspiel und Netz mit einer aufblasbaren Spielfläche und Trampolinen. Sepak Takraw wird über ein Netz ohne Hand- und Armeinsatz gespielt. Beim Unterwasserhockey wird ein Puck mit kurzen Schlägern am Beckenboden bewegt.",
+    "subject_keys": [
+      "topic:sport:sport-jenseits-der-klassiker",
+      "entity:bossaball",
+      "entity:sepak-takraw",
+      "entity:unterwasserhockey"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Bossaball Rules Bossaball is a relatively new sport",
+          "url": "https://www.bossaballsports.com/portfolio-item/rules-of-sport/"
+        },
+        {
+          "title": "Rules and regulations of Sepak Takraw - ActiveSG",
+          "url": "https://www.activesgcircle.gov.sg/learn/sepak-takraw/rules-and-regulations-of-sepak-takraw?tab=how_to_play"
+        },
+        {
+          "title": "HOW TO/REGULATIONS",
+          "url": "https://www.cmas.org/hockey/how-to-regulations.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma714",
+    "question_type": "match",
+    "primary_category": "sport",
+    "subtopic": "Angepasste Sportausrüstung",
+    "tags": {
+      "topics": [
+        "Angepasste Sportausrüstung"
+      ],
+      "entities": [
+        "Goalball",
+        "Boccia",
+        "Rollstuhlrugby"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne der paralympischen Sportart ein charakteristisches Merkmal zu.",
+    "left": [
+      "Goalball",
+      "Boccia",
+      "Rollstuhlrugby"
+    ],
+    "right": [
+      "Kontakt zwischen speziellen Sportrollstühlen ist erlaubt",
+      "Eine Abrollrampe ist für bestimmte Klassen erlaubt",
+      "Klingelball und lichtdichte Augenmasken"
+    ],
+    "answer": {
+      "Goalball": "Klingelball und lichtdichte Augenmasken",
+      "Boccia": "Eine Abrollrampe ist für bestimmte Klassen erlaubt",
+      "Rollstuhlrugby": "Kontakt zwischen speziellen Sportrollstühlen ist erlaubt"
+    },
+    "explanation": "Beim Goalball sind die Augen verdeckt und der Ball ist hörbar. In der Boccia-Klasse BC3 darf eine Rampe verwendet werden. Rollstuhlrugby erlaubt Kontakt zwischen den dafür gebauten Rollstühlen; direkter Körperkontakt ist verboten.",
+    "subject_keys": [
+      "topic:sport:angepasste-sportausrustung",
+      "entity:goalball",
+      "entity:boccia",
+      "entity:rollstuhlrugby"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "ParalympicsGB | Goalball",
+          "url": "https://www.paralympics.org.uk/sports/goalball"
+        },
+        {
+          "title": "ParalympicsGB | Boccia",
+          "url": "https://paralympics.org.uk/sports/boccia"
+        },
+        {
+          "title": "ParalympicsGB | Wheelchair rugby",
+          "url": "https://paralympics.org.uk/sports/wheelchair-rugby"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma715",
+    "question_type": "match",
+    "primary_category": "sport",
+    "subtopic": "Trefferflächen im Fechten",
+    "tags": {
+      "topics": [
+        "Trefferflächen im Fechten"
+      ],
+      "entities": [
+        "Florett",
+        "Degen",
+        "Säbel"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne der Fechtwaffe ihre gültige Trefferfläche zu.",
+    "left": [
+      "Florett",
+      "Degen",
+      "Säbel"
+    ],
+    "right": [
+      "Gesamter Körper",
+      "Rumpf",
+      "Oberhalb der Hüfte, mit Kopf und Armen, ohne Hände"
+    ],
+    "answer": {
+      "Florett": "Rumpf",
+      "Degen": "Gesamter Körper",
+      "Säbel": "Oberhalb der Hüfte, mit Kopf und Armen, ohne Hände"
+    },
+    "explanation": "Beim Florett ist im Wesentlichen der Rumpf die gültige Trefferfläche. Beim Degen zählt der ganze Körper. Beim Säbel liegt die Trefferfläche oberhalb der Hüfte einschließlich Kopf und Armen, aber ohne die Hände; zusätzliche Regelgrenzen bleiben im Regelwerk festgelegt.",
+    "subject_keys": [
+      "topic:sport:trefferflachen-im-fechten",
+      "entity:florett",
+      "entity:degen",
+      "entity:sabel"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "OLYMPIC FENCING FACTS AND FAQS - BRITISH FENCING",
+          "url": "https://www.britishfencing.com/olympic-fencing-facts-and-faqs/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma716",
+    "question_type": "match",
+    "primary_category": "sport",
+    "subtopic": "Kletterdisziplinen",
+    "tags": {
+      "topics": [
+        "Kletterdisziplinen"
+      ],
+      "entities": [
+        "Speed",
+        "Lead",
+        "Bouldern"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne der Kletterdisziplin ihre typische Wettkampfaufgabe zu.",
+    "left": [
+      "Speed",
+      "Lead",
+      "Bouldern"
+    ],
+    "right": [
+      "Kurze schwierige Probleme ohne Seil über Matten lösen",
+      "Seilgesichert an einer hohen Route möglichst weit kommen",
+      "Eine standardisierte Route möglichst schnell erklettern"
+    ],
+    "answer": {
+      "Speed": "Eine standardisierte Route möglichst schnell erklettern",
+      "Lead": "Seilgesichert an einer hohen Route möglichst weit kommen",
+      "Bouldern": "Kurze schwierige Probleme ohne Seil über Matten lösen"
+    },
+    "explanation": "Beim Speedklettern entscheidet die Zeit auf einer standardisierten Route. Im Lead zählt, wie weit die seilgesicherte Person an der hohen Route kommt. Beim Bouldern werden kurze schwierige Bewegungsprobleme ohne Seil und mit Fallschutzmatten gelöst.",
+    "subject_keys": [
+      "topic:sport:kletterdisziplinen",
+      "entity:speed",
+      "entity:lead",
+      "entity:bouldern"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Kletter ABC",
+          "url": "https://www.alpenverein.de/verband/wettkampf/wettkampfklettern/kletter-abc"
+        },
+        {
+          "title": "Klettern – Nationales Regelwerk 24.1",
+          "url": "https://www.alpenverein.de/files/2024-nationales-regelwerk-klettern-24.1-1712240583-1714370915.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma717",
+    "question_type": "match",
+    "primary_category": "sport",
+    "subtopic": "Besondere Schachzüge",
+    "tags": {
+      "topics": [
+        "Besondere Schachzüge"
+      ],
+      "entities": [
+        "Rochade",
+        "En passant",
+        "Umwandlung"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem Schachbegriff die dazugehörige besondere Zugregel zu.",
+    "left": [
+      "Rochade",
+      "En passant",
+      "Umwandlung"
+    ],
+    "right": [
+      "Ein Bauer erreicht die letzte Reihe und wird ersetzt",
+      "Einen gerade doppelt gezogenen Bauern im Vorbeigehen schlagen",
+      "König und Turm ziehen in einem gemeinsamen Zug"
+    ],
+    "answer": {
+      "Rochade": "König und Turm ziehen in einem gemeinsamen Zug",
+      "En passant": "Einen gerade doppelt gezogenen Bauern im Vorbeigehen schlagen",
+      "Umwandlung": "Ein Bauer erreicht die letzte Reihe und wird ersetzt"
+    },
+    "explanation": "Die Rochade verbindet einen Königszug mit dem Versetzen eines Turms. En passant erlaubt unter festgelegten Bedingungen das Schlagen unmittelbar nach einem gegnerischen Bauerndoppelschritt. Erreicht ein Bauer die letzte Reihe, wird er in Dame, Turm, Läufer oder Springer umgewandelt.",
+    "subject_keys": [
+      "topic:sport:besondere-schachzuge",
+      "entity:rochade",
+      "entity:en-passant",
+      "entity:umwandlung"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "E. MISCELLANEOUS / 01. Laws of Chess / FIDE Laws of Chess taking effect from 1 January 2023 /  FIDE Handbook",
+          "url": "https://handbook.fide.com/chapter/e012023"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma718",
+    "question_type": "match",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Information ohne Bildschirm",
+    "tags": {
+      "topics": [
+        "Information ohne Bildschirm"
+      ],
+      "entities": [
+        "Quipu",
+        "Flaggensemaphore",
+        "Skytale"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem historischen Informationssystem seinen Träger zu.",
+    "left": [
+      "Quipu",
+      "Flaggensemaphore",
+      "Skytale"
+    ],
+    "right": [
+      "Stellungen zweier Signalflaggen",
+      "Beschrifteter Streifen um einen passenden Stab",
+      "Geknotete Schnüre"
+    ],
+    "answer": {
+      "Quipu": "Geknotete Schnüre",
+      "Flaggensemaphore": "Stellungen zweier Signalflaggen",
+      "Skytale": "Beschrifteter Streifen um einen passenden Stab"
+    },
+    "explanation": "Quipus speichern Informationen in geknüpften Schnüren. Flaggensemaphore codieren Zeichen über unterschiedliche Stellungen zweier Flaggen. Bei der Skytale muss ein beschrifteter Streifen um einen passenden Stab gewickelt werden, damit die Zeichen in der richtigen Ordnung lesbar sind.",
+    "subject_keys": [
+      "topic:witnesses_of_time:information-ohne-bildschirm",
+      "entity:quipu",
+      "entity:flaggensemaphore",
+      "entity:skytale"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Book, The Ancient Quipu or Peruvian Knot Record | Smithsonian Institution",
+          "url": "https://www.si.edu/object/nmah_1590977"
+        },
+        {
+          "title": "Pack of semaphore cards | Royal Museums Greenwich",
+          "url": "https://www.rmg.co.uk/collections/objects/rmgc-object-6140"
+        },
+        {
+          "title": "Transposition Ciphers",
+          "url": "https://mathcenter.oxford.emory.edu/site/math125/transpositionCiphers/"
+        },
+        {
+          "title": "Semaphore flag | Royal Museums Greenwich",
+          "url": "https://www.rmg.co.uk/collections/objects/rmgc-object-605"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma719",
+    "question_type": "match",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Berühmte Täuschungen",
+    "tags": {
+      "topics": [
+        "Berühmte Täuschungen"
+      ],
+      "entities": [
+        "Piltdown-Mensch",
+        "Cardiff Giant",
+        "Great Moon Hoax"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne der historischen Fälschung ihre erfundene Entdeckung zu.",
+    "left": [
+      "Piltdown-Mensch",
+      "Cardiff Giant",
+      "Great Moon Hoax"
+    ],
+    "right": [
+      "Angeblich versteinerter Riese aus Gips",
+      "Angebliche Mondbewohner in Zeitungsberichten",
+      "Angeblicher Urmensch aus Menschen- und Affenknochen"
+    ],
+    "answer": {
+      "Piltdown-Mensch": "Angeblicher Urmensch aus Menschen- und Affenknochen",
+      "Cardiff Giant": "Angeblich versteinerter Riese aus Gips",
+      "Great Moon Hoax": "Angebliche Mondbewohner in Zeitungsberichten"
+    },
+    "explanation": "Beim Piltdown-Fund wurden menschliche Schädelteile mit einem manipulierten Affenkiefer kombiniert. Der Cardiff Giant war eine als versteinerter Mensch ausgegebene Gipsfigur. Der Great Moon Hoax verbreitete erfundene Beobachtungen von Lebewesen auf dem Mond.",
+    "subject_keys": [
+      "topic:witnesses_of_time:beruhmte-tauschungen",
+      "entity:piltdown-mensch",
+      "entity:cardiff-giant",
+      "entity:great-moon-hoax"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Piltdown Man | Natural History Museum",
+          "url": "https://www.nhm.ac.uk/our-science/services/library/collections/piltdown-man.html"
+        },
+        {
+          "title": "Highlights – The Farmer's Museum 2019 Annual Report",
+          "url": "https://www.farmersmuseum.org/annualreport/2019/highlights/"
+        },
+        {
+          "title": "Peoples & Creatures of the Moon | Life on Other Worlds | Articles and Essays | Finding Our Place in the Cosmos: From Galileo to Sagan and Beyond | Digital Collections | Library of Congress",
+          "url": "https://www.loc.gov/collections/finding-our-place-in-the-cosmos-with-carl-sagan/articles-and-essays/life-on-other-worlds/peoples-and-creatures-of-the-moon/?loclr=blogloc"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma720",
+    "question_type": "match",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Historische Künstlerfarben",
+    "tags": {
+      "topics": [
+        "Historische Künstlerfarben"
+      ],
+      "entities": [
+        "Natürliches Ultramarin",
+        "Grünspan",
+        "Ocker"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem historischen Pigment seinen wesentlichen Ausgangsstoff zu.",
+    "left": [
+      "Natürliches Ultramarin",
+      "Grünspan",
+      "Ocker"
+    ],
+    "right": [
+      "Lapislazuli",
+      "Eisenhaltige Erdpigmente",
+      "Kupferverbindungen"
+    ],
+    "answer": {
+      "Natürliches Ultramarin": "Lapislazuli",
+      "Grünspan": "Kupferverbindungen",
+      "Ocker": "Eisenhaltige Erdpigmente"
+    },
+    "explanation": "Natürliches Ultramarin wurde aus Lapislazuli gewonnen. Historischer Grünspan umfasst kupferhaltige Pigmente, etwa Kupferacetate. Ocker sind Erdpigmente, deren gelbe bis rötliche Färbung auf eisenhaltige Minerale zurückgeht.",
+    "subject_keys": [
+      "topic:witnesses_of_time:historische-kunstlerfarben",
+      "entity:naturliches-ultramarin",
+      "entity:grunspan",
+      "entity:ocker"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Domenico Ghirlandaio | The Virgin and Child | NG3937 | National Gallery, London",
+          "url": "https://www.nationalgallery.org.uk/paintings/domenico-ghirlandaio-the-virgin-and-child"
+        },
+        {
+          "title": "The Painter's Trade in the Seventeenth Century: Theory and Practice",
+          "url": "https://www.nationalgallery.org.uk/upload/pdf/kirby1999.pdf"
+        },
+        {
+          "title": "Colour Stories Orange | Podcast | National Gallery, London",
+          "url": "https://www.nationalgallery.org.uk/podcast/colour-stories-orange"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma721",
+    "question_type": "match",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Funde mit Überraschungswert",
+    "tags": {
+      "topics": [
+        "Funde mit Überraschungswert"
+      ],
+      "entities": [
+        "Himmelsscheibe von Nebra",
+        "Lykurgusbecher",
+        "Vindolanda-Täfelchen"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem historischen Fund seine besondere Eigenschaft zu.",
+    "left": [
+      "Himmelsscheibe von Nebra",
+      "Lykurgusbecher",
+      "Vindolanda-Täfelchen"
+    ],
+    "right": [
+      "Glas erscheint je nach Beleuchtung grün oder rot",
+      "Alltagsbriefe auf dünnem Holz",
+      "Darstellung von Himmelserscheinungen auf Bronze"
+    ],
+    "answer": {
+      "Himmelsscheibe von Nebra": "Darstellung von Himmelserscheinungen auf Bronze",
+      "Lykurgusbecher": "Glas erscheint je nach Beleuchtung grün oder rot",
+      "Vindolanda-Täfelchen": "Alltagsbriefe auf dünnem Holz"
+    },
+    "explanation": "Die Himmelsscheibe von Nebra zeigt Himmelserscheinungen als Goldauflagen auf Bronze. Der Lykurgusbecher wirkt im reflektierten Licht grün und im durchscheinenden Licht rot. Die Vindolanda-Täfelchen bewahren mit Tinte geschriebene Alltagsnachrichten auf dünnem Holz.",
+    "subject_keys": [
+      "topic:witnesses_of_time:funde-mit-uberraschungswert",
+      "entity:himmelsscheibe-von-nebra",
+      "entity:lykurgusbecher",
+      "entity:vindolanda-tafelchen"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "State Museum of Prehistory  -  Temporary exhibitions  -  Exhibitions archive  -  The World of the Nebra Sky Disc – New Horizons  -  Audio tour",
+          "url": "https://www.landesmuseum-vorgeschichte.de/en/temporary-exhibitions/exhibitions-archive/the-world-of-the-nebra-sky-disc-new-horizons/audio-tour"
+        },
+        {
+          "title": "Large Print Guide – Room 41 Sutton Hoo and Europe",
+          "url": "https://www.britishmuseum.org/sites/default/files/2021-05/large_print_guide_room_41.pdf"
+        },
+        {
+          "title": "FAQs | The Vindolanda Trust",
+          "url": "https://www.vindolanda.com/Pages/FAQs/default.aspx"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma722",
+    "question_type": "match",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Frühere Dienstleistungen",
+    "tags": {
+      "topics": [
+        "Frühere Dienstleistungen"
+      ],
+      "entities": [
+        "Knocker-up",
+        "Lamplighter",
+        "Iceman"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem früheren Beruf seine typische Aufgabe zu.",
+    "left": [
+      "Knocker-up",
+      "Lamplighter",
+      "Iceman"
+    ],
+    "right": [
+      "Eisblöcke für häusliche Kühlkästen liefern",
+      "Kunden an ihren Fenstern rechtzeitig wecken",
+      "Straßenlaternen von Hand anzünden"
+    ],
+    "answer": {
+      "Knocker-up": "Kunden an ihren Fenstern rechtzeitig wecken",
+      "Lamplighter": "Straßenlaternen von Hand anzünden",
+      "Iceman": "Eisblöcke für häusliche Kühlkästen liefern"
+    },
+    "explanation": "Knocker-ups weckten ihre Kunden durch Klopfen an Fenstern. Lamplighters zündeten Straßenlaternen von Hand an. Icemen lieferten Eis für Kühlkästen, bevor elektrische Kühlschränke verbreitet waren. Die englischen Berufsbezeichnungen sind historische Namen dieser Dienstleistungen.",
+    "subject_keys": [
+      "topic:witnesses_of_time:fruhere-dienstleistungen",
+      "entity:knocker-up",
+      "entity:lamplighter",
+      "entity:iceman"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Amgueddfa Wreyddu'r Drenewydd / Newtown Textile Museum",
+          "url": "https://newtowntextilemuseum.co.uk/ws/media-library/f2bff8f9598f401da6dd31454b3d8a8c/knocker-upper.pdf"
+        },
+        {
+          "title": "The Lamplighter | London Museum",
+          "url": "https://www.londonmuseum.org.uk/collections/v/object-99386/the-lamplighter/"
+        },
+        {
+          "title": "Keeping your (food) cool: From ice harvesting to electric refrigeration | National Museum of American History",
+          "url": "https://americanhistory.si.edu/explore/stories/keeping-your-food-cool-ice-harvesting-electric-refrigeration"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma723",
+    "question_type": "match",
+    "primary_category": "geography_world",
+    "subtopic": "Ungewöhnliche Seen",
+    "tags": {
+      "topics": [
+        "Ungewöhnliche Seen"
+      ],
+      "entities": [
+        "Lake Nyos",
+        "Pitch Lake",
+        "Boiling Lake"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem See seine besondere natürliche Eigenschaft zu.",
+    "left": [
+      "Lake Nyos",
+      "Pitch Lake",
+      "Boiling Lake"
+    ],
+    "right": [
+      "Vulkanisch erhitztes, aktiv siedendes Wasser",
+      "Besteht aus natürlichem Asphalt",
+      "Kann große Mengen gelöstes Kohlendioxid freisetzen"
+    ],
+    "answer": {
+      "Lake Nyos": "Kann große Mengen gelöstes Kohlendioxid freisetzen",
+      "Pitch Lake": "Besteht aus natürlichem Asphalt",
+      "Boiling Lake": "Vulkanisch erhitztes, aktiv siedendes Wasser"
+    },
+    "explanation": "Im tiefen Wasser des Lake Nyos kann sich viel Kohlendioxid lösen und plötzlich freigesetzt werden. Der Pitch Lake ist eine natürliche Asphaltlagerstätte. Der Boiling Lake auf Dominica wird durch vulkanische Wärme erhitzt und kann in der Mitte sichtbar sieden.",
+    "subject_keys": [
+      "topic:geography_world:ungewohnliche-seen",
+      "entity:lake-nyos",
+      "entity:pitch-lake",
+      "entity:boiling-lake"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Lake Nyos, Cameroon - NASA Science",
+          "url": "https://science.nasa.gov/earth-science/programs/research-analysis/lake-nyos-cameroon/"
+        },
+        {
+          "title": "Visit Trinidad's Pitch Lake: A Natural Wonder",
+          "url": "https://visittrinidad.com/trinidad-and-tobago/travel-guides/adventure-and-outdoors/the-pitch-lake-trinidads-natural-wonder-and-how-to-visit"
+        },
+        {
+          "title": "Boiling Lake and Valley of Desolation",
+          "url": "https://tourism.gov.dm/images/brochures/BoilingLake%2018Aug14.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma724",
+    "question_type": "match",
+    "primary_category": "geography_world",
+    "subtopic": "Ungewöhnliche Flaggenmotive",
+    "tags": {
+      "topics": [
+        "Ungewöhnliche Flaggenmotive"
+      ],
+      "entities": [
+        "Mosambik",
+        "Zypern",
+        "Belize"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem Staat das auffällige Motiv auf seiner Nationalflagge zu.",
+    "left": [
+      "Mosambik",
+      "Zypern",
+      "Belize"
+    ],
+    "right": [
+      "Zwei menschliche Figuren als Schildhalter",
+      "Gewehr und Hacke über einem Buch",
+      "Umriss der eigenen Insel"
+    ],
+    "answer": {
+      "Mosambik": "Gewehr und Hacke über einem Buch",
+      "Zypern": "Umriss der eigenen Insel",
+      "Belize": "Zwei menschliche Figuren als Schildhalter"
+    },
+    "explanation": "Die Flagge Mosambiks zeigt unter anderem ein Gewehr und eine Hacke über einem Buch. Auf Zyperns Flagge erscheint der Inselumriss. In der Flaggenmitte von Belize tragen zwei Holzarbeiter den Wappenschild.",
+    "subject_keys": [
+      "topic:geography_world:ungewohnliche-flaggenmotive",
+      "entity:mosambik",
+      "entity:zypern",
+      "entity:belize"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "National Symbols – Embaixada de Moçambique junto a Santa Sé",
+          "url": "https://www.embamocsantase.org/en/national-symbols/"
+        },
+        {
+          "title": "State Symbols - Presidency of the Republic - Gov.cy",
+          "url": "https://www.gov.cy/presidency/en/about/state-symbols/"
+        },
+        {
+          "title": "National Symbols of Belize | Belize National Library Service and Information System (BNLSIS)",
+          "url": "https://www.bnlsis.org/nationalsymbolsofbelize"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma725",
+    "question_type": "match",
+    "primary_category": "geography_world",
+    "subtopic": "Getrennte Landesteile",
+    "tags": {
+      "topics": [
+        "Getrennte Landesteile"
+      ],
+      "entities": [
+        "Cabinda",
+        "Nachitschewan",
+        "Gebiet Kaliningrad"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne der Exklave den Staat zu, zu dem sie gehört.",
+    "left": [
+      "Cabinda",
+      "Nachitschewan",
+      "Gebiet Kaliningrad"
+    ],
+    "right": [
+      "Aserbaidschan",
+      "Angola",
+      "Russland"
+    ],
+    "answer": {
+      "Cabinda": "Angola",
+      "Nachitschewan": "Aserbaidschan",
+      "Gebiet Kaliningrad": "Russland"
+    },
+    "explanation": "Cabinda ist durch fremdes Staatsgebiet vom übrigen Angola getrennt. Nachitschewan gehört zu Aserbaidschan. Das Gebiet Kaliningrad gehört zu Russland. Alle drei sind vom jeweiligen Hauptterritorium getrennte Landesteile.",
+    "subject_keys": [
+      "topic:geography_world:getrennte-landesteile",
+      "entity:cabinda",
+      "entity:nachitschewan",
+      "entity:gebiet-kaliningrad"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Spatial characteristics of economic security for enclave (exclave) territories | The Baltic region Journal | IKBFU",
+          "url": "https://balticregion.kantiana.ru/en/jour/16091/95263/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma726",
+    "question_type": "match",
+    "primary_category": "geography_world",
+    "subtopic": "Geologische Landschaften",
+    "tags": {
+      "topics": [
+        "Geologische Landschaften"
+      ],
+      "entities": [
+        "Giant’s Causeway",
+        "Moeraki Boulders",
+        "Chocolate Hills"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne der Landschaft ihre charakteristische Form zu.",
+    "left": [
+      "Giant’s Causeway",
+      "Moeraki Boulders",
+      "Chocolate Hills"
+    ],
+    "right": [
+      "Große kugelförmige Gesteinsknollen am Strand",
+      "Zahlreiche ähnlich geformte Kegelhügel",
+      "Vieleckige Basaltsäulen"
+    ],
+    "answer": {
+      "Giant’s Causeway": "Vieleckige Basaltsäulen",
+      "Moeraki Boulders": "Große kugelförmige Gesteinsknollen am Strand",
+      "Chocolate Hills": "Zahlreiche ähnlich geformte Kegelhügel"
+    },
+    "explanation": "Der Giant’s Causeway ist für seine meist vieleckigen Basaltsäulen bekannt. Die Moeraki Boulders sind große rundliche Konkretionen am Strand. Die Chocolate Hills bilden eine Landschaft aus vielen ähnlich geformten Hügeln.",
+    "subject_keys": [
+      "topic:geography_world:geologische-landschaften",
+      "entity:giant-s-causeway",
+      "entity:moeraki-boulders",
+      "entity:chocolate-hills"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Giant's Causeway and Causeway Coast - UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/369"
+        },
+        {
+          "title": "Moeraki area: Places to go in Otago",
+          "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/otago/places/moeraki-area/?epslanguage=en"
+        },
+        {
+          "title": "Chocolate Hills Natural Monument - UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/tentativelists/5024/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma727",
+    "question_type": "match",
+    "primary_category": "geography_world",
+    "subtopic": "Ungewöhnliche Verkehrswege",
+    "tags": {
+      "topics": [
+        "Ungewöhnliche Verkehrswege"
+      ],
+      "entities": [
+        "Falkirk Wheel",
+        "Magdeburger Trogbrücke",
+        "Elstertalbrücke im Vogtland"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem Bauwerk seine technische Besonderheit zu.",
+    "left": [
+      "Falkirk Wheel",
+      "Magdeburger Trogbrücke",
+      "Elstertalbrücke im Vogtland"
+    ],
+    "right": [
+      "Großes Eisenbahnviadukt aus Ziegelmauerwerk",
+      "Schiffe fahren in einem Wasserbecken über die Elbe",
+      "Drehbares Schiffshebewerk"
+    ],
+    "answer": {
+      "Falkirk Wheel": "Drehbares Schiffshebewerk",
+      "Magdeburger Trogbrücke": "Schiffe fahren in einem Wasserbecken über die Elbe",
+      "Elstertalbrücke im Vogtland": "Großes Eisenbahnviadukt aus Ziegelmauerwerk"
+    },
+    "explanation": "Das Falkirk Wheel hebt Boote durch Drehung zwischen zwei Kanalhöhen. Die Magdeburger Trogbrücke führt den Mittellandkanal über die Elbe. Die Elstertalbrücke im Vogtland ist ein großes, weiterhin für den Eisenbahnverkehr genutztes Ziegelviadukt.",
+    "subject_keys": [
+      "topic:geography_world:ungewohnliche-verkehrswege",
+      "entity:falkirk-wheel",
+      "entity:magdeburger-trogbrucke",
+      "entity:elstertalbrucke-im-vogtland"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Scottish Canals | The Falkirk Wheel Forth & Clyde",
+          "url": "https://www.scottishcanals.co.uk/visit/canals/visit-the-forth-clyde-canal/attractions/the-falkirk-wheel"
+        },
+        {
+          "title": "Wasserstraßenkreuz / Landeshauptstadt Magdeburg - magdeburg.de",
+          "url": "https://www.magdeburg.de/B%C3%BCrger-Stadt/System/Wasserstra%C3%9Fenkreuz.php?object=tx%2C115.3397.1"
+        },
+        {
+          "title": "Echte Handarbeit: Wie die Ziegel für die Elstertalbrücke entstehen",
+          "url": "https://www.deutschebahn.com/de/konzern/Im-Fokus/Echte-Handarbeit-Wie-die-Ziegel-fuer-die-Elstertalbruecke-entstehen-10046122"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma728",
+    "question_type": "match",
+    "primary_category": "geography_world",
+    "subtopic": "Formen der Erdoberfläche",
+    "tags": {
+      "topics": [
+        "Formen der Erdoberfläche"
+      ],
+      "entities": [
+        "Cenote",
+        "Tombolo",
+        "Yardang"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem Landschaftsbegriff seine Bedeutung zu.",
+    "left": [
+      "Cenote",
+      "Tombolo",
+      "Yardang"
+    ],
+    "right": [
+      "Sand- oder Kiesverbindung zwischen Insel und anderem Land",
+      "Wassergefüllte Einbruchöffnung in Kalkgestein",
+      "Vom Wind herausgearbeiteter länglicher Gesteinsrücken"
+    ],
+    "answer": {
+      "Cenote": "Wassergefüllte Einbruchöffnung in Kalkgestein",
+      "Tombolo": "Sand- oder Kiesverbindung zwischen Insel und anderem Land",
+      "Yardang": "Vom Wind herausgearbeiteter länglicher Gesteinsrücken"
+    },
+    "explanation": "Eine Cenote entsteht in Kalkgebieten, wenn eine Einbruchöffnung Grundwasser freilegt. Ein Tombolo verbindet eine Insel über abgelagerten Sand oder Kies mit anderem Land. Ein Yardang ist ein länglicher, durch Winderosion modellierter Rücken.",
+    "subject_keys": [
+      "topic:geography_world:formen-der-erdoberflache",
+      "entity:cenote",
+      "entity:tombolo",
+      "entity:yardang"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "World Heritage Papers 42 - Human Origin Sites and the World Heritage Convention in the Americas",
+          "url": "https://whc.unesco.org/document/142605"
+        },
+        {
+          "title": "Stockton Island (U.S. National Park Service)",
+          "url": "https://www.nps.gov/places/stockton-island-apis.htm"
+        },
+        {
+          "title": "Aeolian (Dunes) Landforms - Geology (U.S. National Park Service)",
+          "url": "https://home.nps.gov/subjects/geology/aeolian-landforms.htm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma729",
+    "question_type": "match",
+    "primary_category": "plants_animals",
+    "subtopic": "Fallen fleischfressender Pflanzen",
+    "tags": {
+      "topics": [
+        "Fallen fleischfressender Pflanzen"
+      ],
+      "entities": [
+        "Venusfliegenfalle",
+        "Sonnentau",
+        "Wasserschlauch"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne der fleischfressenden Pflanze ihren Fangmechanismus zu.",
+    "left": [
+      "Venusfliegenfalle",
+      "Sonnentau",
+      "Wasserschlauch"
+    ],
+    "right": [
+      "Klebrige Sekrettropfen",
+      "Unterdruck saugt Beute in Fangbläschen",
+      "Zuklappende Fangblätter"
+    ],
+    "answer": {
+      "Venusfliegenfalle": "Zuklappende Fangblätter",
+      "Sonnentau": "Klebrige Sekrettropfen",
+      "Wasserschlauch": "Unterdruck saugt Beute in Fangbläschen"
+    },
+    "explanation": "Die Venusfliegenfalle klappt ihre Fangblätter zusammen. Sonnentau hält kleine Tiere mit klebrigen Tropfen fest. Wasserschlauch erzeugt in seinen Bläschen Unterdruck und saugt Beutetiere beim Auslösen rasch ein.",
+    "subject_keys": [
+      "topic:plants_animals:fallen-fleischfressender-pflanzen",
+      "entity:venusfliegenfalle",
+      "entity:sonnentau",
+      "entity:wasserschlauch"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Carnivorous plants — Botanic Gardens",
+          "url": "https://www.botgart.uni-bonn.de/en/collections/carnivorous_plants"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma730",
+    "question_type": "match",
+    "primary_category": "plants_animals",
+    "subtopic": "Auftrieb im Tierreich",
+    "tags": {
+      "topics": [
+        "Auftrieb im Tierreich"
+      ],
+      "entities": [
+        "Viele Knochenfische",
+        "Haie",
+        "Sepien"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem Meerestier eine wichtige Auftriebshilfe zu.",
+    "left": [
+      "Viele Knochenfische",
+      "Haie",
+      "Sepien"
+    ],
+    "right": [
+      "Ölreiche Leber",
+      "Gasgefüllte Schwimmblase",
+      "Gas und Flüssigkeit im porösen inneren Schulp"
+    ],
+    "answer": {
+      "Viele Knochenfische": "Gasgefüllte Schwimmblase",
+      "Haie": "Ölreiche Leber",
+      "Sepien": "Gas und Flüssigkeit im porösen inneren Schulp"
+    },
+    "explanation": "Viele Knochenfische regulieren ihren Auftrieb mit einer gasgefüllten Schwimmblase. Haien hilft dagegen unter anderem ihre ölreiche Leber. Sepien besitzen einen inneren porösen Schulp, in dem Gas und Flüssigkeit zur Auftriebsregulierung beitragen.",
+    "subject_keys": [
+      "topic:plants_animals:auftrieb-im-tierreich",
+      "entity:viele-knochenfische",
+      "entity:haie",
+      "entity:sepien"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Skeleton & Buoyancy – Hawaiʻi Sharks",
+          "url": "https://dlnr.hawaii.gov/sharks/anatomy/skeleton-and-buoyancy/"
+        },
+        {
+          "title": "Broadclub cuttlefish | Monterey Bay Aquarium",
+          "url": "https://www.montereybayaquarium.org/animals-the-ocean/animals-a-to-z/broadclub-cuttlefish"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma731",
+    "question_type": "match",
+    "primary_category": "plants_animals",
+    "subtopic": "Sinne jenseits des Menschen",
+    "tags": {
+      "topics": [
+        "Sinne jenseits des Menschen"
+      ],
+      "entities": [
+        "Lorenzinische Ampullen bei Haien",
+        "Seitenlinienorgan vieler Fische",
+        "Grubenorgane von Grubenottern"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem tierischen Sinnesorgan den passenden Reiz zu.",
+    "left": [
+      "Lorenzinische Ampullen bei Haien",
+      "Seitenlinienorgan vieler Fische",
+      "Grubenorgane von Grubenottern"
+    ],
+    "right": [
+      "Infrarotstrahlung warmer Körper",
+      "Schwache elektrische Felder",
+      "Wasserbewegungen und Druckschwankungen"
+    ],
+    "answer": {
+      "Lorenzinische Ampullen bei Haien": "Schwache elektrische Felder",
+      "Seitenlinienorgan vieler Fische": "Wasserbewegungen und Druckschwankungen",
+      "Grubenorgane von Grubenottern": "Infrarotstrahlung warmer Körper"
+    },
+    "explanation": "Lorenzinische Ampullen reagieren auf schwache elektrische Felder. Das Seitenlinienorgan vieler Fische registriert Wasserbewegungen und Druckänderungen. Grubenottern erkennen über ihre Grubenorgane Infrarotstrahlung und können so warme Körper orten.",
+    "subject_keys": [
+      "topic:plants_animals:sinne-jenseits-des-menschen",
+      "entity:lorenzinische-ampullen-bei-haien",
+      "entity:seitenlinienorgan-vieler-fische",
+      "entity:grubenorgane-von-grubenottern"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Shark Biology – Discover Fishes",
+          "url": "https://www.floridamuseum.ufl.edu/discover-fish/sharks/shark-biology/"
+        },
+        {
+          "title": "Molecular basis of infrared detection by snakes | Nature",
+          "url": "https://www.nature.com/articles/nature08943"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma732",
+    "question_type": "match",
+    "primary_category": "plants_animals",
+    "subtopic": "Ungewöhnliche Bestäuber",
+    "tags": {
+      "topics": [
+        "Ungewöhnliche Bestäuber"
+      ],
+      "entities": [
+        "Kakao",
+        "Echte Feige",
+        "Viele Agaven"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne der Pflanze einen besonders wichtigen natürlichen Bestäuber zu.",
+    "left": [
+      "Kakao",
+      "Echte Feige",
+      "Viele Agaven"
+    ],
+    "right": [
+      "Nektarfressende Fledermäuse",
+      "Winzige Gnitzen",
+      "Feigenwespen"
+    ],
+    "answer": {
+      "Kakao": "Winzige Gnitzen",
+      "Echte Feige": "Feigenwespen",
+      "Viele Agaven": "Nektarfressende Fledermäuse"
+    },
+    "explanation": "Winzige Gnitzen sind wichtige Bestäuber des Kakaos. Feigenwespen ermöglichen die natürliche Bestäubung der Echten Feige. Viele Agaven werden von nektarfressenden Fledermäusen bestäubt. Andere Bestäuber oder Kulturformen werden damit nicht pauschal ausgeschlossen.",
+    "subject_keys": [
+      "topic:plants_animals:ungewohnliche-bestauber",
+      "entity:kakao",
+      "entity:echte-feige",
+      "entity:viele-agaven"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Revisiting cacao pollination: new behavioural and pollen-based evidence for the key role of Ceratopogonidae - ScienceDirect",
+          "url": "https://www.sciencedirect.com/science/article/pii/S143917912600037X"
+        },
+        {
+          "title": "Edible fig - Ficus carica | Kew",
+          "url": "https://www.kew.org/plants/fig"
+        },
+        {
+          "title": "Nocturnal Pollinators | U.S. Fish & Wildlife Service",
+          "url": "https://www.fws.gov/our-work/pollinators/nocturnal-pollinators"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma733",
+    "question_type": "match",
+    "primary_category": "plants_animals",
+    "subtopic": "Partnerschaften in der Natur",
+    "tags": {
+      "topics": [
+        "Partnerschaften in der Natur"
+      ],
+      "entities": [
+        "Wächtergrundel",
+        "Bestimmte Akazien",
+        "Viele riffbildende Korallen"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem Lebewesen einen bekannten Partner in einer wechselseitig nützlichen Lebensgemeinschaft zu.",
+    "left": [
+      "Wächtergrundel",
+      "Bestimmte Akazien",
+      "Viele riffbildende Korallen"
+    ],
+    "right": [
+      "Schützende Ameisen",
+      "Fotosynthetisch aktive Mikroalgen",
+      "Pistolenkrebs"
+    ],
+    "answer": {
+      "Wächtergrundel": "Pistolenkrebs",
+      "Bestimmte Akazien": "Schützende Ameisen",
+      "Viele riffbildende Korallen": "Fotosynthetisch aktive Mikroalgen"
+    },
+    "explanation": "Wächtergrundeln warnen ihren grabenden Pistolenkrebs-Partner vor Gefahren. Bestimmte Akazien bieten Ameisen Unterkunft und Nahrung und erhalten dafür Schutz. Viele riffbildende Korallen beherbergen photosynthetisch aktive Mikroalgen, die zur Ernährung der Koralle beitragen.",
+    "subject_keys": [
+      "topic:plants_animals:partnerschaften-in-der-natur",
+      "entity:wachtergrundel",
+      "entity:bestimmte-akazien",
+      "entity:viele-riffbildende-korallen"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Special relationships: Keeping pistol shrimps and gobies - Practical Fishkeeping",
+          "url": "https://www.practicalfishkeeping.co.uk/features/special-relationships-keeping-pistol-shrimps-and-gobies/"
+        },
+        {
+          "title": "Insect Zoo Audio Description Tour | Smithsonian National Museum of Natural History",
+          "url": "https://naturalhistory.si.edu/visit/accessibility/audio-and-visual-description/insect-zoo-audio-description-tour"
+        },
+        {
+          "title": "Corals Tutorial: What is Zooxanthellae?",
+          "url": "https://oceanservice.noaa.gov/education/tutorial_corals/coral02_zooxanthellae.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma734",
+    "question_type": "match",
+    "primary_category": "plants_animals",
+    "subtopic": "Ungewöhnliche Tierabwehr",
+    "tags": {
+      "topics": [
+        "Ungewöhnliche Tierabwehr"
+      ],
+      "entities": [
+        "Bombardierkäfer",
+        "Einige Krötenechsen",
+        "Eissturmvögel"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem Tier seine ungewöhnliche Abwehrmethode zu.",
+    "left": [
+      "Bombardierkäfer",
+      "Einige Krötenechsen",
+      "Eissturmvögel"
+    ],
+    "right": [
+      "Ölige Magenflüssigkeit auf Angreifer speien",
+      "Heißes Reizsekret heraussprühen",
+      "Blut aus der Augengegend spritzen"
+    ],
+    "answer": {
+      "Bombardierkäfer": "Heißes Reizsekret heraussprühen",
+      "Einige Krötenechsen": "Blut aus der Augengegend spritzen",
+      "Eissturmvögel": "Ölige Magenflüssigkeit auf Angreifer speien"
+    },
+    "explanation": "Bombardierkäfer geben ein heißes reizendes Sekret ab. Einige Krötenechsen können Blut aus der Augengegend spritzen. Eissturmvögel verteidigen sich am Nest mit ausgespiener öliger Magenflüssigkeit. Die Methoden dienen jeweils der Abschreckung von Angreifern.",
+    "subject_keys": [
+      "topic:plants_animals:ungewohnliche-tierabwehr",
+      "entity:bombardierkafer",
+      "entity:einige-krotenechsen",
+      "entity:eissturmvogel"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Bombardier beetles and their caustic chemical cannon | Natural History Museum",
+          "url": "https://www.nhm.ac.uk/discover/bombardier-beetles-and-their-caustic-chemical-cannon.html"
+        },
+        {
+          "title": "Lizard | San Diego Zoo Animals & Plants",
+          "url": "https://animals.sandiegozoo.org/animals/lizard"
+        },
+        {
+          "title": "Fulmar Bird Facts | Fulmarus Glacialis",
+          "url": "https://www.rspb.org.uk/birds-and-wildlife/fulmar"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma735",
+    "question_type": "match",
+    "primary_category": "plants_animals",
+    "subtopic": "Pflanzen unter schwierigen Bedingungen",
+    "tags": {
+      "topics": [
+        "Pflanzen unter schwierigen Bedingungen"
+      ],
+      "entities": [
+        "Mangroven mit Atemwurzeln",
+        "Spanisches Moos (Tillandsie)",
+        "Affenbrotbäume"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne der Pflanze eine besondere Anpassung an ihren Standort zu.",
+    "left": [
+      "Mangroven mit Atemwurzeln",
+      "Spanisches Moos (Tillandsie)",
+      "Affenbrotbäume"
+    ],
+    "right": [
+      "Wasser über Schuppenhaare der Blätter aufnehmen",
+      "Wasser im mächtigen Stamm speichern",
+      "Sauerstoff über aus dem Boden ragende Wurzeln aufnehmen"
+    ],
+    "answer": {
+      "Mangroven mit Atemwurzeln": "Sauerstoff über aus dem Boden ragende Wurzeln aufnehmen",
+      "Spanisches Moos (Tillandsie)": "Wasser über Schuppenhaare der Blätter aufnehmen",
+      "Affenbrotbäume": "Wasser im mächtigen Stamm speichern"
+    },
+    "explanation": "Atemwurzeln bestimmter Mangroven verbessern die Sauerstoffversorgung im schlecht belüfteten Boden. Spanisches Moos nimmt Wasser über spezialisierte Schuppenhaare auf. Affenbrotbäume können in ihrem massigen Stamm Wasser speichern.",
+    "subject_keys": [
+      "topic:plants_animals:pflanzen-unter-schwierigen-bedingungen",
+      "entity:mangroven-mit-atemwurzeln",
+      "entity:spanisches-moos-tillandsie",
+      "entity:affenbrotbaume"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "What's a Mangrove? And What Does It Do? | AMNH",
+          "url": "https://www.amnh.org/explore/videos/biodiversity/mangroves/what-is-a-mangrove"
+        },
+        {
+          "title": "Tillandsia usneoides (L.) L. | Colombian Plants made accessible",
+          "url": "https://plantsforhealth-api.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A1169665-2/general-information"
+        },
+        {
+          "title": "These Madagascan plants have the power to save lives | Kew",
+          "url": "https://www.kew.org/read-and-watch/madagascar-native-plants-medicine"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma736",
+    "question_type": "match",
+    "primary_category": "plants_animals",
+    "subtopic": "Tierische Stoffe im Alltag",
+    "tags": {
+      "topics": [
+        "Tierische Stoffe im Alltag"
+      ],
+      "entities": [
+        "Schellack",
+        "Karmin",
+        "Ambra"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem Naturstoff seine tierische Herkunft zu.",
+    "left": [
+      "Schellack",
+      "Karmin",
+      "Ambra"
+    ],
+    "right": [
+      "Cochenille-Schildläuse",
+      "Im Verdauungstrakt von Pottwalen entstanden",
+      "Harzige Ausscheidung von Lackschildläusen"
+    ],
+    "answer": {
+      "Schellack": "Harzige Ausscheidung von Lackschildläusen",
+      "Karmin": "Cochenille-Schildläuse",
+      "Ambra": "Im Verdauungstrakt von Pottwalen entstanden"
+    },
+    "explanation": "Schellack ist das harzige Sekret von Lackschildläusen. Karmin wird aus Cochenille-Schildläusen gewonnen. Ambra entsteht im Verdauungstrakt von Pottwalen. Die Zuordnungen betreffen die Herkunft, nicht die jeweilige heutige Verwendung.",
+    "subject_keys": [
+      "topic:plants_animals:tierische-stoffe-im-alltag",
+      "entity:schellack",
+      "entity:karmin",
+      "entity:ambra"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Shellac",
+          "url": "https://doi.usp.org/USPNF/USPNF_M75170_05_01.html"
+        },
+        {
+          "title": "A guide to the Marianne North Gallery",
+          "url": "https://www.kew.org/sites/default/files/2024-02/15404%20MNG%20Gallery%20Guide%20Pick%20up%20and%20return_A4_V10_KB_AC%20%281%29.pdf"
+        },
+        {
+          "title": "What is ambergris? | Natural History Museum",
+          "url": "https://www.nhm.ac.uk/discover/what-is-ambergris.html?pubDate=20250222"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma737",
+    "question_type": "match",
+    "primary_category": "science_technology",
+    "subtopic": "Technik lernt von der Natur",
+    "tags": {
+      "topics": [
+        "Technik lernt von der Natur"
+      ],
+      "entities": [
+        "Eisvogelschnabel",
+        "Lotusblatt",
+        "Buckelwalflosse"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem Naturvorbild eine davon inspirierte technische Idee zu.",
+    "left": [
+      "Eisvogelschnabel",
+      "Lotusblatt",
+      "Buckelwalflosse"
+    ],
+    "right": [
+      "Selbstreinigende, wasserabweisende Oberflächen",
+      "Strömungsgünstige Nase eines Hochgeschwindigkeitszuges",
+      "Gewellte Vorderkanten von Rotorblättern"
+    ],
+    "answer": {
+      "Eisvogelschnabel": "Strömungsgünstige Nase eines Hochgeschwindigkeitszuges",
+      "Lotusblatt": "Selbstreinigende, wasserabweisende Oberflächen",
+      "Buckelwalflosse": "Gewellte Vorderkanten von Rotorblättern"
+    },
+    "explanation": "Der Eisvogelschnabel inspirierte die Nasenform eines Shinkansen-Zuges. Die wasserabweisende Struktur von Lotusblättern wurde zum Vorbild selbstreinigender Oberflächen. Die Buckelwalflosse regte gewellte Vorderkanten an Rotorblättern an.",
+    "subject_keys": [
+      "topic:science_technology:technik-lernt-von-der-natur",
+      "entity:eisvogelschnabel",
+      "entity:lotusblatt",
+      "entity:buckelwalflosse"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "High Speed Train Inspired by the Kingfisher — Innovation — AskNature",
+          "url": "https://asknature.org/innovation/high-speed-train-inspired-by-the-kingfisher/"
+        },
+        {
+          "title": "The purity of sacred lotus: superhydrophobic self-cleaning plant surfaces and the consequences revisited",
+          "url": "https://bonndoc.ulb.uni-bonn.de/xmlui/bitstream/handle/20.500.11811/14009/2026_Barthlott_Sacred-Lotus.pdf?isAllowed=y&sequence=1"
+        },
+        {
+          "title": "Whale-inspired wind turbines",
+          "url": "https://seas.harvard.edu/news/whale-inspired-wind-turbines"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma738",
+    "question_type": "match",
+    "primary_category": "science_technology",
+    "subtopic": "Orientierung im All",
+    "tags": {
+      "topics": [
+        "Orientierung im All"
+      ],
+      "entities": [
+        "Geostationäre Bahn",
+        "Lagrange-Punkt",
+        "Terminator"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem Raumfahrtbegriff seine Bedeutung zu.",
+    "left": [
+      "Geostationäre Bahn",
+      "Lagrange-Punkt",
+      "Terminator"
+    ],
+    "right": [
+      "Besondere Gleichgewichtsposition im System zweier Himmelskörper",
+      "Ein Satellit bleibt über demselben Punkt des Äquators",
+      "Grenze zwischen beleuchteter und dunkler Seite"
+    ],
+    "answer": {
+      "Geostationäre Bahn": "Ein Satellit bleibt über demselben Punkt des Äquators",
+      "Lagrange-Punkt": "Besondere Gleichgewichtsposition im System zweier Himmelskörper",
+      "Terminator": "Grenze zwischen beleuchteter und dunkler Seite"
+    },
+    "explanation": "Ein geostationärer Satellit erscheint über demselben Äquatorpunkt zu stehen. An Lagrange-Punkten können kleine Körper im mitrotierenden System zweier großer Körper eine Gleichgewichtsposition einnehmen. Der Terminator trennt die beleuchtete von der unbeleuchteten Seite eines Himmelskörpers.",
+    "subject_keys": [
+      "topic:science_technology:orientierung-im-all",
+      "entity:geostationare-bahn",
+      "entity:lagrange-punkt",
+      "entity:terminator"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "What Is a Satellite? (Grades 5-8) - NASA",
+          "url": "https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-a-satellite-grades-5-8/"
+        },
+        {
+          "title": "Universe glossary - NASA Science",
+          "url": "https://science.nasa.gov/universe/glossary/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma739",
+    "question_type": "match",
+    "primary_category": "science_technology",
+    "subtopic": "Materialien mit besonderen Eigenschaften",
+    "tags": {
+      "topics": [
+        "Materialien mit besonderen Eigenschaften"
+      ],
+      "entities": [
+        "Nitinol",
+        "Aerogel",
+        "Kevlar"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem Material seine charakteristische Eigenschaft zu.",
+    "left": [
+      "Nitinol",
+      "Aerogel",
+      "Kevlar"
+    ],
+    "right": [
+      "Sehr zugfeste Aramidfasern",
+      "Formgedächtnis einer Metalllegierung",
+      "Extrem poröses und leichtes Feststoffgerüst"
+    ],
+    "answer": {
+      "Nitinol": "Formgedächtnis einer Metalllegierung",
+      "Aerogel": "Extrem poröses und leichtes Feststoffgerüst",
+      "Kevlar": "Sehr zugfeste Aramidfasern"
+    },
+    "explanation": "Nitinol ist eine Nickel-Titan-Legierung mit Formgedächtnis. Aerogele besitzen ein stark poröses und deshalb sehr leichtes Feststoffgerüst. Kevlar bezeichnet besonders zugfeste Aramidfasern. Nicht jedes Material zeigt diese Eigenschaften unter beliebigen Bedingungen gleich stark.",
+    "subject_keys": [
+      "topic:science_technology:materialien-mit-besonderen-eigenschaften",
+      "entity:nitinol",
+      "entity:aerogel",
+      "entity:kevlar"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "NITINOL CHARACTERIZATION STUDY",
+          "url": "https://ntrs.nasa.gov/api/citations/19690026989/downloads/19690026989.pdf"
+        },
+        {
+          "title": "NASA Tests New, Ultralight Antennas to Benefit Future National Airspace",
+          "url": "https://www.nasa.gov/centers-and-facilities/glenn/nasa-tests-ultralight-antennas-to-benefit-future-national-airspace/"
+        },
+        {
+          "title": "Kevlar Aramid Fiber – Technical Guide",
+          "url": "https://www.dupont.com/content/dam/aramids/amer/us/en/safety/public/documents/en/Kevlar_Technical_Guide_0319.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma740",
+    "question_type": "match",
+    "primary_category": "science_technology",
+    "subtopic": "Radioaktive Stoffe im Einsatz",
+    "tags": {
+      "topics": [
+        "Radioaktive Stoffe im Einsatz"
+      ],
+      "entities": [
+        "Americium-241",
+        "Technetium-99m",
+        "Radium-226"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem radioaktiven Isotop seine hier beschriebene bekannte Anwendung zu.",
+    "left": [
+      "Americium-241",
+      "Technetium-99m",
+      "Radium-226"
+    ],
+    "right": [
+      "Bildgebende nuklearmedizinische Untersuchungen",
+      "Bestimmte Ionisationsrauchmelder",
+      "Historische selbstleuchtende Zifferblätter"
+    ],
+    "answer": {
+      "Americium-241": "Bestimmte Ionisationsrauchmelder",
+      "Technetium-99m": "Bildgebende nuklearmedizinische Untersuchungen",
+      "Radium-226": "Historische selbstleuchtende Zifferblätter"
+    },
+    "explanation": "Americium-241 wird in bestimmten Ionisationsrauchmeldern eingesetzt. Technetium-99m ist ein wichtiges Diagnostik-Isotop für bildgebende Untersuchungen. Radium-226 wurde früher für selbstleuchtende Zifferblätter verwendet; diese historische Nutzung ist keine heutige Anwendungsempfehlung.",
+    "subject_keys": [
+      "topic:science_technology:radioaktive-stoffe-im-einsatz",
+      "entity:americium-241",
+      "entity:technetium-99m",
+      "entity:radium-226"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Backgrounder on Smoke Detectors | Nuclear Regulatory Commission",
+          "url": "https://www.nrc.gov/regulations-legislation/fact-sheets-brochures/backgrounder-on-smoke-detectors"
+        },
+        {
+          "title": "Technetium - Element information, properties and uses | Periodic Table",
+          "url": "https://periodic-table.rsc.org/element/43/"
+        },
+        {
+          "title": "Radium - Element information, properties and uses | Periodic Table",
+          "url": "https://periodic-table.rsc.org/element/88/radium"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma741",
+    "question_type": "match",
+    "primary_category": "science_technology",
+    "subtopic": "Wie Funde datiert werden",
+    "tags": {
+      "topics": [
+        "Wie Funde datiert werden"
+      ],
+      "entities": [
+        "Dendrochronologie",
+        "Radiokarbondatierung",
+        "Thermolumineszenz"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne der Datierungsmethode ihre natürliche Uhr zu.",
+    "left": [
+      "Dendrochronologie",
+      "Radiokarbondatierung",
+      "Thermolumineszenz"
+    ],
+    "right": [
+      "Zerfall von Kohlenstoff-14 in organischem Material",
+      "Gespeicherte Strahlungsenergie seit starkem Erhitzen",
+      "Muster von Jahresringen im Holz"
+    ],
+    "answer": {
+      "Dendrochronologie": "Muster von Jahresringen im Holz",
+      "Radiokarbondatierung": "Zerfall von Kohlenstoff-14 in organischem Material",
+      "Thermolumineszenz": "Gespeicherte Strahlungsenergie seit starkem Erhitzen"
+    },
+    "explanation": "Die Dendrochronologie vergleicht Muster von Jahresringen. Die Radiokarbondatierung nutzt den Zerfall von Kohlenstoff-14 in ehemals lebendem Material. Thermolumineszenz untersucht gespeicherte Strahlungsenergie, deren Uhr durch ausreichendes Erhitzen zurückgesetzt werden kann.",
+    "subject_keys": [
+      "topic:science_technology:wie-funde-datiert-werden",
+      "entity:dendrochronologie",
+      "entity:radiokarbondatierung",
+      "entity:thermolumineszenz"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Scientific Dating",
+          "url": "https://archaeologydataservice.ac.uk/catalogue/adsdata/arch-4637-1/dissemination/nmr1-509390_191433.pdf"
+        },
+        {
+          "title": "Dating | The Smithsonian Institution's Human Origins Program",
+          "url": "https://humanorigins.si.edu/evidence/dating"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma742",
+    "question_type": "match",
+    "primary_category": "science_technology",
+    "subtopic": "Navigation auf alten Segelschiffen",
+    "tags": {
+      "topics": [
+        "Navigation auf alten Segelschiffen"
+      ],
+      "entities": [
+        "Sextant",
+        "Schiffschronometer",
+        "Log"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem nautischen Instrument seine typische Aufgabe zu.",
+    "left": [
+      "Sextant",
+      "Schiffschronometer",
+      "Log"
+    ],
+    "right": [
+      "Genaue Bezugszeit für die Längenbestimmung bewahren",
+      "Fahrtgeschwindigkeit relativ zum Wasser bestimmen",
+      "Winkel zwischen Himmelskörper und Horizont messen"
+    ],
+    "answer": {
+      "Sextant": "Winkel zwischen Himmelskörper und Horizont messen",
+      "Schiffschronometer": "Genaue Bezugszeit für die Längenbestimmung bewahren",
+      "Log": "Fahrtgeschwindigkeit relativ zum Wasser bestimmen"
+    },
+    "explanation": "Ein Sextant misst Winkel, etwa zwischen einem Stern und dem Horizont. Das Schiffschronometer bewahrt eine genaue Bezugszeit, die mit der Ortszeit zur Längenbestimmung verglichen wird. Das Log dient zur Messung der Fahrt durch das Wasser, nicht unmittelbar über Grund.",
+    "subject_keys": [
+      "topic:science_technology:navigation-auf-alten-segelschiffen",
+      "entity:sextant",
+      "entity:schiffschronometer",
+      "entity:log"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Navigate at Sea! Activity | Time and Navigation",
+          "url": "https://timeandnavigation.si.edu/navigating-at-sea/challenges/navigate-the-sea-activity"
+        },
+        {
+          "title": "Matthew Flinders: letters and papers",
+          "url": "https://flinders.rmg.co.uk/ListGlossary87c0.html?ID=29"
+        },
+        {
+          "title": "Francis Drake, Elizabethan Seafaring, and the Circumnavigation Resources",
+          "url": "https://www.rmg.co.uk/file/20586/download?token=MzYhSd-g"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma743",
+    "question_type": "match",
+    "primary_category": "media_entertainment",
+    "subtopic": "Frühe Fototechnik",
+    "tags": {
+      "topics": [
+        "Frühe Fototechnik"
+      ],
+      "entities": [
+        "Daguerreotypie",
+        "Ambrotypie",
+        "Autochrom"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem historischen Fotoverfahren sein charakteristisches Material zu.",
+    "left": [
+      "Daguerreotypie",
+      "Ambrotypie",
+      "Autochrom"
+    ],
+    "right": [
+      "Glasnegativ vor dunklem Hintergrund",
+      "Gefärbte Kartoffelstärkekörnchen als Farbraster",
+      "Versilberte Kupferplatte"
+    ],
+    "answer": {
+      "Daguerreotypie": "Versilberte Kupferplatte",
+      "Ambrotypie": "Glasnegativ vor dunklem Hintergrund",
+      "Autochrom": "Gefärbte Kartoffelstärkekörnchen als Farbraster"
+    },
+    "explanation": "Die Daguerreotypie erzeugt das Bild auf einer versilberten Kupferplatte. Eine Ambrotypie lässt ein schwaches Glasnegativ vor dunklem Hintergrund positiv erscheinen. Autochrom verwendet ein Farbraster aus eingefärbten Kartoffelstärkekörnchen.",
+    "subject_keys": [
+      "topic:media_entertainment:fruhe-fototechnik",
+      "entity:daguerreotypie",
+      "entity:ambrotypie",
+      "entity:autochrom"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Collection Selection Boxes – Photography: Processes and Techniques · V&A",
+          "url": "https://www.vam.ac.uk/info/collection-selection-boxes-photography-processes-and-techniques"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma744",
+    "question_type": "match",
+    "primary_category": "human_everyday",
+    "subtopic": "Helfer in Lebensmitteln",
+    "tags": {
+      "topics": [
+        "Helfer in Lebensmitteln"
+      ],
+      "entities": [
+        "Lecithin",
+        "Pektin",
+        "Glutamat"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem Lebensmittelbestandteil seine typische technologische oder geschmackliche Funktion zu.",
+    "left": [
+      "Lecithin",
+      "Pektin",
+      "Glutamat"
+    ],
+    "right": [
+      "Kann Marmelade gelieren lassen",
+      "Trägt zum herzhaften Umami-Geschmack bei",
+      "Hilft Fett und Wasser fein zu vermischen"
+    ],
+    "answer": {
+      "Lecithin": "Hilft Fett und Wasser fein zu vermischen",
+      "Pektin": "Kann Marmelade gelieren lassen",
+      "Glutamat": "Trägt zum herzhaften Umami-Geschmack bei"
+    },
+    "explanation": "Lecithin kann als Emulgator beim feinen Vermischen von Fett und Wasser helfen. Pektin ermöglicht unter passenden Bedingungen das Gelieren von Fruchtaufstrichen. Glutamat trägt zum herzhaften Grundgeschmack Umami bei.",
+    "subject_keys": [
+      "topic:human_everyday:helfer-in-lebensmitteln",
+      "entity:lecithin",
+      "entity:pektin",
+      "entity:glutamat"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Science of Cooking: Hollandaise Sauce: What's Going On?",
+          "url": "https://annex.exploratorium.edu/cooking/eggs/hollandaise-pop.html"
+        },
+        {
+          "title": "Preserving food at home: Fruit spreads | UMN Extension",
+          "url": "https://extension.umn.edu/food/preparing/cooking-at-home/food-preservation/fruit-spreads"
+        },
+        {
+          "title": "What is Umami | Umami Information Center",
+          "url": "https://www.umamiinfo.com/what/whatisumami/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma745",
+    "question_type": "match",
+    "primary_category": "human_everyday",
+    "subtopic": "Wäschezeichen verstehen",
+    "tags": {
+      "topics": [
+        "Wäschezeichen verstehen"
+      ],
+      "entities": [
+        "Dreieck",
+        "Quadrat",
+        "Kreis"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne der Grundform auf dem Pflegeetikett ihren Bereich zu.",
+    "left": [
+      "Dreieck",
+      "Quadrat",
+      "Kreis"
+    ],
+    "right": [
+      "Professionelle Textilpflege",
+      "Bleichen",
+      "Trocknen"
+    ],
+    "answer": {
+      "Dreieck": "Bleichen",
+      "Quadrat": "Trocknen",
+      "Kreis": "Professionelle Textilpflege"
+    },
+    "explanation": "Auf Pflegeetiketten steht das Dreieck für Bleichen, das Quadrat für Trocknen und der Kreis für professionelle Textilpflege. Die konkrete Erlaubnis oder Einschränkung wird erst durch Zusätze wie Punkte, Striche oder Durchkreuzen festgelegt.",
+    "subject_keys": [
+      "topic:human_everyday:waschezeichen-verstehen",
+      "entity:dreieck",
+      "entity:quadrat",
+      "entity:kreis"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "GINETEX > Care symbols",
+          "url": "https://www.ginetex.net/gb/labelling/care-symbols.asp"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma746",
+    "question_type": "match",
+    "primary_category": "human_everyday",
+    "subtopic": "Versteckte Rohstoffe in der Küche",
+    "tags": {
+      "topics": [
+        "Versteckte Rohstoffe in der Küche"
+      ],
+      "entities": [
+        "Agar-Agar",
+        "Echter Sago",
+        "Hausenblase"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem Küchen- oder Klärmittel seinen ursprünglichen Rohstoff zu.",
+    "left": [
+      "Agar-Agar",
+      "Echter Sago",
+      "Hausenblase"
+    ],
+    "right": [
+      "Mark bestimmter Palmen",
+      "Schwimmblasen von Fischen",
+      "Rotalgen"
+    ],
+    "answer": {
+      "Agar-Agar": "Rotalgen",
+      "Echter Sago": "Mark bestimmter Palmen",
+      "Hausenblase": "Schwimmblasen von Fischen"
+    },
+    "explanation": "Agar-Agar wird aus bestimmten Rotalgen gewonnen. Echter Sago stammt aus dem Mark geeigneter Palmen und ist von ähnlich aussehenden Ersatzprodukten zu unterscheiden. Hausenblase ist ein traditionelles Klärmittel aus Fischschwimmblasen.",
+    "subject_keys": [
+      "topic:human_everyday:versteckte-rohstoffe-in-der-kuche",
+      "entity:agar-agar",
+      "entity:echter-sago",
+      "entity:hausenblase"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Agaragar, Japanese Isinglass, V",
+          "url": "https://www.igntu.ac.in/eContent/BPharma-4Sem-DrKSRAO.pdf"
+        },
+        {
+          "title": "CODEX STAN 301R-2011",
+          "url": "https://www.fao.org/input/download/standards/11938/CXS_301Re.pdf"
+        },
+        {
+          "title": "Bulletin - United States National Museum",
+          "url": "https://repository.si.edu/bitstreams/ac279207-9b46-4436-803c-998958478844/download"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma747",
+    "question_type": "match",
+    "primary_category": "human_everyday",
+    "subtopic": "Fermentierte Spezialitäten",
+    "tags": {
+      "topics": [
+        "Fermentierte Spezialitäten"
+      ],
+      "entities": [
+        "Tempeh",
+        "Kombucha",
+        "Traditioneller Kefir"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem traditionellen fermentierten Lebensmittel seine typische Grundlage zu.",
+    "left": [
+      "Tempeh",
+      "Kombucha",
+      "Traditioneller Kefir"
+    ],
+    "right": [
+      "Gesüßter Tee",
+      "Milch",
+      "Sojabohnen"
+    ],
+    "answer": {
+      "Tempeh": "Sojabohnen",
+      "Kombucha": "Gesüßter Tee",
+      "Traditioneller Kefir": "Milch"
+    },
+    "explanation": "Tempeh wird traditionell aus fermentierten Sojabohnen hergestellt. Kombucha entsteht aus gesüßtem Tee. Traditioneller Kefir ist ein fermentiertes Milchprodukt; Wasserkefir ist ein anderes Getränk und hier nicht gemeint.",
+    "subject_keys": [
+      "topic:human_everyday:fermentierte-spezialitaten",
+      "entity:tempeh",
+      "entity:kombucha",
+      "entity:traditioneller-kefir"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "From field to tofu | UMN Extension",
+          "url": "https://extension.umn.edu/about/our-stories/news/source-magazine/from-field-to-tofu"
+        },
+        {
+          "title": "Tips to Safely Ferment at Home | USU",
+          "url": "https://extension.usu.edu/preserve-the-harvest/research/tips-to-safely-ferment-at-home"
+        },
+        {
+          "title": "Growing – July-August 2019, Volume 39, Issue 4",
+          "url": "https://extension.oregonstate.edu/sites/extd8/files/documents/9371/0701-growing-web-version.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma748",
+    "question_type": "match",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Baukunst mit ungewöhnlichen Ideen",
+    "tags": {
+      "topics": [
+        "Baukunst mit ungewöhnlichen Ideen"
+      ],
+      "entities": [
+        "Centre Pompidou in Paris",
+        "Habitat 67 in Montréal",
+        "Bosco Verticale in Mailand"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem Bauwerk seine auffällige Gestaltungsidee zu.",
+    "left": [
+      "Centre Pompidou in Paris",
+      "Habitat 67 in Montréal",
+      "Bosco Verticale in Mailand"
+    ],
+    "right": [
+      "Übereinandergesetzte vorgefertigte Wohnmodule",
+      "Versorgungsleitungen und Erschließung außen sichtbar",
+      "Bäume und Sträucher auf Hochhausbalkonen"
+    ],
+    "answer": {
+      "Centre Pompidou in Paris": "Versorgungsleitungen und Erschließung außen sichtbar",
+      "Habitat 67 in Montréal": "Übereinandergesetzte vorgefertigte Wohnmodule",
+      "Bosco Verticale in Mailand": "Bäume und Sträucher auf Hochhausbalkonen"
+    },
+    "explanation": "Beim Centre Pompidou sind technische Versorgung und Erschließung außen sichtbar. Habitat 67 setzt vorgefertigte Wohneinheiten zu einer räumlichen Anlage zusammen. Bosco Verticale integriert Bäume und Sträucher in die Balkone zweier Hochhäuser.",
+    "subject_keys": [
+      "topic:witnesses_of_time:baukunst-mit-ungewohnlichen-ideen",
+      "entity:centre-pompidou-in-paris",
+      "entity:habitat-67-in-montreal",
+      "entity:bosco-verticale-in-mailand"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "An iconic architecture - Centre Pompidou",
+          "url": "https://www.centrepompidou.fr/en/centre-pompidou-is-transforming-itself/an-iconic-architecture"
+        },
+        {
+          "title": "Habitat 67",
+          "url": "https://www.safdiearchitects.com/projects/habitat-67"
+        },
+        {
+          "title": "archdaily | bosco verticale | Stefano Boeri Architetti",
+          "url": "https://www.stefanoboeriarchitetti.net/en/press-release/archdaily-bosco-verticale-2/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ma749",
+    "question_type": "match",
+    "primary_category": "science_technology",
+    "subtopic": "Überraschende Physik",
+    "tags": {
+      "topics": [
+        "Überraschende Physik"
+      ],
+      "entities": [
+        "Leidenfrost-Effekt",
+        "Meißner-Ochsenfeld-Effekt",
+        "Kapillareffekt"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ordne dem physikalischen Effekt seine typische Beobachtung zu.",
+    "left": [
+      "Leidenfrost-Effekt",
+      "Meißner-Ochsenfeld-Effekt",
+      "Kapillareffekt"
+    ],
+    "right": [
+      "Flüssigkeit steigt etwa in einem dünnen Röhrchen auf",
+      "Beim Übergang zum Supraleiter wird Magnetfeld aus dem Inneren verdrängt",
+      "Flüssigkeitstropfen gleiten auf einem eigenen Dampfpolster"
+    ],
+    "answer": {
+      "Leidenfrost-Effekt": "Flüssigkeitstropfen gleiten auf einem eigenen Dampfpolster",
+      "Meißner-Ochsenfeld-Effekt": "Beim Übergang zum Supraleiter wird Magnetfeld aus dem Inneren verdrängt",
+      "Kapillareffekt": "Flüssigkeit steigt etwa in einem dünnen Röhrchen auf"
+    },
+    "explanation": "Beim Leidenfrost-Effekt trennt ein Dampfpolster den Tropfen von einer sehr heißen Fläche. Beim Meißner-Ochsenfeld-Effekt verdrängt ein Material beim Übergang in den supraleitenden Zustand Magnetfeld aus seinem Inneren. Kapillarwirkung kann Flüssigkeiten in engen Röhren aufsteigen lassen.",
+    "subject_keys": [
+      "topic:science_technology:uberraschende-physik",
+      "entity:leidenfrost-effekt",
+      "entity:mei-ner-ochsenfeld-effekt",
+      "entity:kapillareffekt"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Capillary Leidenfrost effect | Nature Physics",
+          "url": "https://www.nature.com/articles/s41567-026-03255-x"
+        },
+        {
+          "title": "Basic principles of RF superconductivity",
+          "url": "https://indico.cern.ch/event/626653/attachments/1524529/2383309/02_-_Basic_principles_of_RF_superconductivity.pdf"
+        },
+        {
+          "title": "Capillary Action and Water | U.S. Geological Survey",
+          "url": "https://www.usgs.gov/water-science-school/science/capillary-action-and-water"
+        }
+      ]
+    }
+  }
+]

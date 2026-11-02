@@ -4224,6 +4224,13 @@ body:has(.home-variant-a)::before {
   text-transform: lowercase;
 }
 .variant-a-action .primary-button span { margin-left: 14px; font-size: 1.35em; }
+.variant-a-action .primary-button:disabled {
+  background: #596171;
+  color: #c5cbd5;
+  box-shadow: none;
+  opacity: 1;
+  cursor: not-allowed;
+}
 .variant-a-action form.variant-a-catchup-launch { margin-top: 8px; }
 .variant-a-catchup-launch .secondary-button {
   width: 100%;

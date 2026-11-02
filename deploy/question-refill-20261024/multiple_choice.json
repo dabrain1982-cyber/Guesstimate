@@ -1,0 +1,2092 @@
+[
+  {
+    "id": "mc700",
+    "question_type": "multiple_choice",
+    "primary_category": "gaming",
+    "subtopic": "Virtuelle Epidemien",
+    "tags": {
+      "topics": [
+        "Virtuelle Epidemien"
+      ],
+      "entities": [
+        "World of Warcraft"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "In welchem Spiel brach 2005 die ungeplante virtuelle Epidemie „Corrupted Blood“ aus?",
+    "options": {
+      "A": "World of Warcraft",
+      "B": "RuneScape",
+      "C": "EVE Online",
+      "D": "EverQuest"
+    },
+    "answer": "A",
+    "explanation": "Ein ansteckender Spieleffekt gelangte aus einem begrenzten Gebiet in die Städte von World of Warcraft. Epidemiologen untersuchten den Vorfall später als Beispiel für menschliches Verhalten bei Ausbrüchen.",
+    "subject_keys": [
+      "topic:gaming:virtuelle-epidemien",
+      "entity:world-of-warcraft",
+      "entity:corrupted-blood"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "The untapped potential of virtual game worlds to shed light on real world epidemics",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1473309907702128"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc701",
+    "question_type": "multiple_choice",
+    "primary_category": "gaming",
+    "subtopic": "Spielen für die Forschung",
+    "tags": {
+      "topics": [
+        "Spielen für die Forschung"
+      ],
+      "entities": [
+        "Foldit"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Was bearbeiten Spieler im Forschungsspiel „Foldit“, um Wissenschaftlern zu helfen?",
+    "options": {
+      "A": "Flugbahnen gefährlicher Asteroiden",
+      "B": "Dreidimensionale Formen von Proteinen",
+      "C": "Verzweigungen unterirdischer Höhlennetze",
+      "D": "Rekonstruktionen zerbrochener Keramik"
+    },
+    "answer": "B",
+    "explanation": "In Foldit werden Proteinmodelle räumlich gefaltet und verbessert. Spieler lieferten unter anderem ein Modell, mit dem sich die Struktur eines viralen Enzyms bestimmen ließ.",
+    "subject_keys": [
+      "topic:gaming:spielen-fur-die-forschung",
+      "entity:foldit",
+      "entity:proteinfaltung"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Scientific discovery by video game players",
+          "url": "https://www.cis.umassd.edu/~fkhatib/Scientific%20discovery%20by%20video%20game%20players.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc702",
+    "question_type": "multiple_choice",
+    "primary_category": "gaming",
+    "subtopic": "Versteckte Botschaften",
+    "tags": {
+      "topics": [
+        "Versteckte Botschaften"
+      ],
+      "entities": [
+        "Adventure"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Was versteckte der Entwickler des Atari-Spiels „Adventure“ in einem geheimen Raum?",
+    "options": {
+      "A": "Die Lösung aller Rätsel",
+      "B": "Eine Vorschau auf das nächste Spiel",
+      "C": "Seinen eigenen Namen",
+      "D": "Die Telefonnummer des Kundendienstes"
+    },
+    "answer": "C",
+    "explanation": "Atari nannte einzelne Entwickler damals nicht. In Adventure versteckte Warren Robinett deshalb seinen Namen in einem geheimen Raum als persönlichen Urheberhinweis.",
+    "subject_keys": [
+      "topic:gaming:versteckte-botschaften",
+      "entity:adventure",
+      "entity:atari"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Hunting for Easter Eggs – The Strong National Museum of Play",
+          "url": "https://www.museumofplay.org/blog/hunting-for-easter-eggs/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc703",
+    "question_type": "multiple_choice",
+    "primary_category": "gaming",
+    "subtopic": "Ungewöhnliches Zubehör",
+    "tags": {
+      "topics": [
+        "Ungewöhnliches Zubehör"
+      ],
+      "entities": [
+        "Pocket Sonar"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Was konnten Angler mit dem Zubehör „Pocket Sonar“ an einem Game Boy tatsächlich tun?",
+    "options": {
+      "A": "Fische unter Wasser orten",
+      "B": "Den Salzgehalt des Wassers messen",
+      "C": "Die Angelschnur automatisch einholen",
+      "D": "Die Lufttemperatur am Ufer aufzeichnen"
+    },
+    "answer": "A",
+    "explanation": "Das 1998 veröffentlichte Pocket Sonar machte den Game Boy zum echten Fischfinder. Ein Sonargerät lieferte die dafür benötigten Unterwasserdaten.",
+    "subject_keys": [
+      "topic:gaming:ungewohnliches-zubehor",
+      "entity:pocket-sonar",
+      "entity:game-boy"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "First sonar enabled peripheral for a gaming console – Guinness World Records",
+          "url": "https://www.guinnessworldrecords.com/world-records/first-sonar-enabled-peripheral-for-a-gaming-console"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc704",
+    "question_type": "multiple_choice",
+    "primary_category": "media_entertainment",
+    "subtopic": "Filmgeräusche",
+    "tags": {
+      "topics": [
+        "Filmgeräusche"
+      ],
+      "entities": [
+        "Star Wars"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Welche Tonaufnahmen stecken unter anderem in Chewbaccas Stimme aus „Star Wars“?",
+    "options": {
+      "A": "Rufe von Raben und Eulen",
+      "B": "Gesang von Buckelwalen und Delfinen",
+      "C": "Laute von Bären und Walrossen",
+      "D": "Zirpen von Grillen und Zikaden"
+    },
+    "answer": "C",
+    "explanation": "Chewbaccas Stimme wurde aus verschiedenen Tieraufnahmen zusammengesetzt. Dazu gehören Bären, Dachse und Walrosse; passende Ausschnitte vermittelten jeweils eine andere Stimmung.",
+    "subject_keys": [
+      "topic:media_entertainment:filmgerausche",
+      "entity:star-wars",
+      "entity:chewbacca"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "5 Iconic Star Wars Sound Effects and How They Were Made",
+          "url": "https://www.starwars.com/news/5-iconic-star-wars-sound-effects-and-how-they-were-made-starwars-com"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc705",
+    "question_type": "multiple_choice",
+    "primary_category": "media_entertainment",
+    "subtopic": "Dreharbeiten in Schwerelosigkeit",
+    "tags": {
+      "topics": [
+        "Dreharbeiten in Schwerelosigkeit"
+      ],
+      "entities": [
+        "Apollo 13"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie entstanden viele der schwerelosen Aufnahmen für den Film „Apollo 13“ von 1995?",
+    "options": {
+      "A": "Beim Filmen in einer Unterwasserstation",
+      "B": "Bei Dreharbeiten in einer Raumstation",
+      "C": "In einer Gondel eines Riesenrades",
+      "D": "Bei Parabelflügen in einem Flugzeug"
+    },
+    "answer": "D",
+    "explanation": "Die Filmcrew drehte an Bord eines NASA-Trainingsflugzeugs. Bei dessen Parabelflügen herrschte jeweils für kurze Zeit echte Schwerelosigkeit; weitere Einstellungen entstanden am Boden.",
+    "subject_keys": [
+      "topic:media_entertainment:dreharbeiten-in-schwerelosigkeit",
+      "entity:apollo-13",
+      "entity:parabelflug"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Apollo 13 (1995): Interview with Ron Howard – Library of Congress",
+          "url": "https://lcweb2.loc.gov/static/programs/national-film-preservation-board/documents/Interview_Ron-Howard_Apollo-13.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc706",
+    "question_type": "multiple_choice",
+    "primary_category": "music",
+    "subtopic": "Frühe elektronische Musik",
+    "tags": {
+      "topics": [
+        "Frühe elektronische Musik"
+      ],
+      "entities": [
+        "Doctor Who"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Mit welcher Technik entstand 1963 der elektronische Klang der ursprünglichen „Doctor Who“-Titelmusik?",
+    "options": {
+      "A": "Durch Bearbeiten und Zusammensetzen von Tonbandaufnahmen",
+      "B": "Durch Programmieren einer digitalen Musiksoftware",
+      "C": "Durch Abspielen fertig gekaufter Synthesizer-Presets",
+      "D": "Durch Einspielen auf einer digitalen Sampling-Tastatur"
+    },
+    "answer": "A",
+    "explanation": "Delia Derbyshire bearbeitete aufgenommene Klänge auf Tonband. Andere Bandgeschwindigkeiten veränderten die Tonhöhe, wiederholte Bandstücke erzeugten Rhythmen.",
+    "subject_keys": [
+      "topic:music:fruhe-elektronische-musik",
+      "entity:doctor-who",
+      "entity:tonbandmontage"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "BBC Ten Pieces Trailblazers: Doctor Who Theme by Delia Derbyshire",
+          "url": "https://teach.files.bbci.co.uk/tenpieces/DERBYSHIRE%20KS3.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc707",
+    "question_type": "multiple_choice",
+    "primary_category": "music",
+    "subtopic": "Musik und Zensur",
+    "tags": {
+      "topics": [
+        "Musik und Zensur"
+      ],
+      "entities": [
+        "Knochenmusik"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Worauf schnitten sowjetische Musikliebhaber heimliche Aufnahmen, die als „Knochenmusik“ bekannt wurden?",
+    "options": {
+      "A": "Auf gebrauchte Röntgenfilme",
+      "B": "Auf gepresste Birkenrinde",
+      "C": "Auf dünne Schieferplatten",
+      "D": "Auf polierte Knochenstücke"
+    },
+    "answer": "A",
+    "explanation": "Für die sogenannten Bone Records wurden Rillen in ausrangierte Röntgenfilme geschnitten. So ließen sich nicht genehmigte Musikaufnahmen trotz knappen Plattenmaterials verbreiten.",
+    "subject_keys": [
+      "topic:music:musik-und-zensur",
+      "entity:knochenmusik",
+      "entity:rontgenfilme"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "X-ray Music: The Bone Records of Soviet Russia and the Art of Bootlegging",
+          "url": "https://library.syracuse.edu/exhibitions/learning-commons-displays/x-ray-music-the-bone-records-of-soviet-russia-and-the-art-of-bootlegging/"
+        },
+        {
+          "title": "The X-Ray Audio Project – Bone Music",
+          "url": "https://www.x-rayaudio.com/x-rayaudioproject"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc708",
+    "question_type": "multiple_choice",
+    "primary_category": "music",
+    "subtopic": "Klangkunst",
+    "tags": {
+      "topics": [
+        "Klangkunst"
+      ],
+      "entities": [
+        "Zadar"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Was bringt die Meeresorgel an der Uferpromenade von Zadar zum Klingen?",
+    "options": {
+      "A": "Der wechselnde Luftdruck in der Kanalisation",
+      "B": "Das Gewicht der darübergehenden Besucher",
+      "C": "Die Bewegung von Wellen und Gezeiten",
+      "D": "Ein unterirdisch fließender Süßwasserbach"
+    },
+    "answer": "C",
+    "explanation": "Unter den Stufen der Promenade liegen unterschiedlich gebaute Pfeifen. Die Energie des bewegten Meerwassers lässt die Installation erklingen.",
+    "subject_keys": [
+      "topic:music:klangkunst",
+      "entity:zadar",
+      "entity:meeresorgel"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Sea Organ – Zadar Tourist Board",
+          "url": "https://zadar.travel/attractions/attractions/organo-marino"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc709",
+    "question_type": "multiple_choice",
+    "primary_category": "music",
+    "subtopic": "Instrumentenbau",
+    "tags": {
+      "topics": [
+        "Instrumentenbau"
+      ],
+      "entities": [
+        "Steelpan"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Welche Alltagsgegenstände wurden in Trinidad und Tobago zur Grundlage der bekannten Steelpans?",
+    "options": {
+      "A": "Gusseiserne Bratpfannen",
+      "B": "Stählerne Ölfässer",
+      "C": "Gepresste Aluminiumschalen",
+      "D": "Emaillierte Badewannen"
+    },
+    "answer": "B",
+    "explanation": "Aus Ölfässern entwickelte sich ein gestimmtes Instrument mit mehreren Tonfeldern. Formung, Bearbeitung und Stimmung der Stahlfläche erzeugen die verschiedenen Töne.",
+    "subject_keys": [
+      "topic:music:instrumentenbau",
+      "entity:steelpan",
+      "entity:trinidad-und-tobago"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Steel Pans – United Nations Gifts",
+          "url": "https://www.un.org/ungifts/steel-pans"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc710",
+    "question_type": "multiple_choice",
+    "primary_category": "music",
+    "subtopic": "Musik der Steinzeit",
+    "tags": {
+      "topics": [
+        "Musik der Steinzeit"
+      ],
+      "entities": [
+        "Hohle Fels"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Woraus besteht die 2008 im Hohle Fels entdeckte, besonders gut erhaltene steinzeitliche Flöte?",
+    "options": {
+      "A": "Aus einem Stück Bernstein",
+      "B": "Aus einem Vogelknochen",
+      "C": "Aus gebranntem Ton",
+      "D": "Aus einer großen Meeresschnecke"
+    },
+    "answer": "B",
+    "explanation": "Die Flöte wurde aus dem Flügelknochen eines Gänsegeiers gefertigt. Sie besitzt fünf Grifflöcher und belegt, wie weit die Herstellung von Musikinstrumenten zurückreicht.",
+    "subject_keys": [
+      "topic:music:musik-der-steinzeit",
+      "entity:hohle-fels",
+      "entity:knochenflote"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Hohle Fels – Universität Tübingen",
+          "url": "https://uni-tuebingen.de/de/107765"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc711",
+    "question_type": "multiple_choice",
+    "primary_category": "plants_animals",
+    "subtopic": "Augen im Tierreich",
+    "tags": {
+      "topics": [
+        "Augen im Tierreich"
+      ],
+      "entities": [
+        "Kammmuscheln"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Welche Tiere besitzen zahlreiche kleine Augen, in denen Hohlspiegel das Licht bündeln?",
+    "options": {
+      "A": "Seesterne",
+      "B": "Seeigel",
+      "C": "Seegurken",
+      "D": "Kammmuscheln"
+    },
+    "answer": "D",
+    "explanation": "Kammmuscheln besitzen viele kleine Augen. In jedem bündelt ein gekrümmter Spiegel das Licht auf lichtempfindliche Zellen – ein Prinzip, das auch Spiegelteleskope nutzen.",
+    "subject_keys": [
+      "topic:plants_animals:augen-im-tierreich",
+      "entity:kammmuscheln",
+      "entity:spiegelaugen"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Scallop Eyes as Inspiration for New Microscope Objectives – University of Zurich",
+          "url": "https://www.news.uzh.ch/en/articles/media/2023/Microscope.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc712",
+    "question_type": "multiple_choice",
+    "primary_category": "plants_animals",
+    "subtopic": "Gestohlene Zellbauteile",
+    "tags": {
+      "topics": [
+        "Gestohlene Zellbauteile"
+      ],
+      "entities": [
+        "Elysia chlorotica"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Was übernimmt die Meeresschnecke Elysia chlorotica aus gefressenen Algen und nutzt es weiter?",
+    "options": {
+      "A": "Kalkschalen zum Schutz des Rückens",
+      "B": "Geißeln zum schnelleren Schwimmen",
+      "C": "Chloroplasten für die Fotosynthese",
+      "D": "Wurzeln zur Befestigung am Meeresboden"
+    },
+    "answer": "C",
+    "explanation": "Die Schnecke lagert funktionsfähige Chloroplasten in Zellen ihres Verdauungssystems ein. Diese aus Algen stammenden Zellbauteile können dort weiter Fotosynthese betreiben.",
+    "subject_keys": [
+      "topic:plants_animals:gestohlene-zellbauteile",
+      "entity:elysia-chlorotica",
+      "entity:kleptoplastie"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Solar-Powered Sea Slugs Shed Light on Search for Perpetual Green Energy – Rutgers University",
+          "url": "https://www.rutgers.edu/news/solar-powered-sea-slugs-shed-light-search-perpetual-green-energy"
+        },
+        {
+          "title": "A host organelle integrates stolen chloroplasts for animal photosynthesis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/12240476/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc713",
+    "question_type": "multiple_choice",
+    "primary_category": "plants_animals",
+    "subtopic": "Tierische Werkzeuge",
+    "tags": {
+      "topics": [
+        "Tierische Werkzeuge"
+      ],
+      "entities": [
+        "Biber"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Welches Metall trägt zur Widerstandsfähigkeit des Zahnschmelzes von Bibern und anderen Nagern bei?",
+    "options": {
+      "A": "Aluminium",
+      "B": "Kupfer",
+      "C": "Eisen",
+      "D": "Zink"
+    },
+    "answer": "C",
+    "explanation": "Eisenreiches Material liegt in winzigen Zwischenräumen des Zahnschmelzes. Diese besondere Struktur trägt zur Festigkeit und zur Widerstandsfähigkeit gegen Säure bei.",
+    "subject_keys": [
+      "topic:plants_animals:tierische-werkzeuge",
+      "entity:biber",
+      "entity:eisenreicher-zahnschmelz"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Rodent Teeth: Ingenious Architecture of Natural Functional Materials to Inspire Human Dentistry – Max Planck Institute for Solid State Research",
+          "url": "https://www.fkf.mpg.de/8401030/rodent-teeth"
+        },
+        {
+          "title": "Ingenious Architecture and Coloration Generation in Enamel of Rodent Teeth – ACS Nano",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11064225/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc714",
+    "question_type": "multiple_choice",
+    "primary_category": "plants_animals",
+    "subtopic": "Jagdtechniken",
+    "tags": {
+      "topics": [
+        "Jagdtechniken"
+      ],
+      "entities": [
+        "Schützenfische"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie holen Schützenfische Beute von Ästen über der Wasseroberfläche?",
+    "options": {
+      "A": "Sie betäuben sie mit elektrischen Entladungen",
+      "B": "Sie treffen sie mit einem gezielten Wasserstrahl",
+      "C": "Sie ziehen sie mit einem Schleimfaden ins Wasser",
+      "D": "Sie lösen sie durch Vibrationen der Äste ab"
+    },
+    "answer": "B",
+    "explanation": "Schützenfische schießen Wasser aus dem Maul und können den Strahl an die Entfernung anpassen. Die getroffene Beute fällt ins Wasser und wird gefressen.",
+    "subject_keys": [
+      "topic:plants_animals:jagdtechniken",
+      "entity:schutzenfische",
+      "entity:wasserstrahl"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Archerfish use their shooting technique to produce adaptive underwater jets",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28082614/"
+        },
+        {
+          "title": "Wie sich das Jagdverhalten den Gesetzen der Ballistik anpasst – Universität Bayreuth",
+          "url": "https://www.presse.uni-bayreuth.de/de/archiv/2012/201-Schuetzenfische.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc715",
+    "question_type": "multiple_choice",
+    "primary_category": "plants_animals",
+    "subtopic": "Landwirtschaft im Tierreich",
+    "tags": {
+      "topics": [
+        "Landwirtschaft im Tierreich"
+      ],
+      "entities": [
+        "Blattschneiderameisen"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wofür tragen Blattschneiderameisen große Mengen Blattstücke in ihre Nester?",
+    "options": {
+      "A": "Als Futtervorrat, der wie Heu getrocknet wird",
+      "B": "Als wasserundurchlässige Auskleidung der Gänge",
+      "C": "Als Fangnetz für kleine Beuteinsekten",
+      "D": "Als Nährboden für gezüchtete Nahrungspilze"
+    },
+    "answer": "D",
+    "explanation": "Die Ameisen verarbeiten die Blattstücke zu Material für ihre unterirdischen Pilzgärten. Der gezüchtete Pilz dient ihnen als Nahrung.",
+    "subject_keys": [
+      "topic:plants_animals:landwirtschaft-im-tierreich",
+      "entity:blattschneiderameisen",
+      "entity:pilzzucht"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Leafcutter Ants – San Diego Zoo Wildlife Explorers",
+          "url": "https://sdzwildlifeexplorers.org/animals/leafcutter-ants"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc716",
+    "question_type": "multiple_choice",
+    "primary_category": "plants_animals",
+    "subtopic": "Verteidigung im Meer",
+    "tags": {
+      "topics": [
+        "Verteidigung im Meer"
+      ],
+      "entities": [
+        "Schleimaale"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie kann der Schleim eines Schleimaals einen angreifenden Raubfisch zum Loslassen bringen?",
+    "options": {
+      "A": "Er behindert dessen Kiemen",
+      "B": "Er enthält ein rasch lähmendes Nervengift",
+      "C": "Er bildet eine starre Schutzschicht um den Schleimaal",
+      "D": "Er täuscht durch Geruch einen ungenießbaren Kadaver vor"
+    },
+    "answer": "A",
+    "explanation": "Der abgesonderte Schleim kann Maul und Kiemen des Angreifers zusetzen. Gefilmte Angriffe zeigen Raubfische, die daraufhin vom Schleimaal ablassen.",
+    "subject_keys": [
+      "topic:plants_animals:verteidigung-im-meer",
+      "entity:schleimaale",
+      "entity:schleimabwehr"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Hagfishes: how much slime can a slime eel make? – Natural History Museum",
+          "url": "https://www.nhm.ac.uk/discover/how-much-slime-can-a-hagfish-make.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc717",
+    "question_type": "multiple_choice",
+    "primary_category": "plants_animals",
+    "subtopic": "Tierische Imitatoren",
+    "tags": {
+      "topics": [
+        "Tierische Imitatoren"
+      ],
+      "entities": [
+        "Prachtleierschwanz"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Welcher australische Vogel kann Geräusche wie Kettensägen oder Motoren in seinen Gesang einbauen?",
+    "options": {
+      "A": "Emu",
+      "B": "Kasuar",
+      "C": "Schwarzschwan",
+      "D": "Prachtleierschwanz"
+    },
+    "answer": "D",
+    "explanation": "Prachtleierschwänze sind hervorragende Lautimitatoren. Sie können sowohl andere Tiere als auch mechanische Geräusche aus ihrer Umgebung nachahmen.",
+    "subject_keys": [
+      "topic:plants_animals:tierische-imitatoren",
+      "entity:prachtleierschwanz",
+      "entity:lautimitation"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Superb Lyrebird – The Australian Museum",
+          "url": "https://australian.museum/learn/animals/birds/superb-lyrebird/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc718",
+    "question_type": "multiple_choice",
+    "primary_category": "plants_animals",
+    "subtopic": "Wüstenpflanzen",
+    "tags": {
+      "topics": [
+        "Wüstenpflanzen"
+      ],
+      "entities": [
+        "Welwitschia"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Was ist an den Laubblättern der Wüstenpflanze Welwitschia so ungewöhnlich?",
+    "options": {
+      "A": "Jedes Blatt wird nach der ersten Regenzeit abgeworfen",
+      "B": "Ihre Blätter entwickeln sich erst nach der ersten Blüte",
+      "C": "Jedes Jahr ersetzt ein neues Blattpaar das vorige",
+      "D": "Sie behält lebenslang dasselbe Blattpaar"
+    },
+    "answer": "D",
+    "explanation": "Nach den Keimblättern entstehen zwei bleibende Laubblätter, die zeitlebens weiterwachsen. Wind und Alter können sie in Streifen zerreißen, sodass es nach mehr Blättern aussieht.",
+    "subject_keys": [
+      "topic:plants_animals:wustenpflanzen",
+      "entity:welwitschia",
+      "entity:dauerblatter"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Welwitschia mirabilis – Cornell University",
+          "url": "https://conservatory.cals.cornell.edu/plants/welwitschia-mirabilis/"
+        },
+        {
+          "title": "Kirstenbosch Conservatory: Ian Reddihough Welwitschia House – SANBI",
+          "url": "https://www.sanbi.org/gardens/kirstenboch/seasons/botanical-society-conservatory/kirstenbosch-conservatory-ian-reddihough-welwitschia-house/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc719",
+    "question_type": "multiple_choice",
+    "primary_category": "plants_animals",
+    "subtopic": "Zusammenarbeit im Tierreich",
+    "tags": {
+      "topics": [
+        "Zusammenarbeit im Tierreich"
+      ],
+      "entities": [
+        "Gemeiner Vampir"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie helfen Gemeine Vampirfledermäuse Artgenossen, die bei der Nahrungssuche erfolglos waren?",
+    "options": {
+      "A": "Sie führen sie zu eigenen Vorräten aus getrocknetem Blut",
+      "B": "Sie säugen auch erwachsene Artgenossen mit Milch",
+      "C": "Sie geben ihnen hochgewürgte Blutnahrung ab",
+      "D": "Sie tragen für sie lebende Beutetiere ins Quartier"
+    },
+    "answer": "C",
+    "explanation": "Vampirfledermäuse teilen aufgenommene Blutnahrung durch Hochwürgen. Die Hilfe erfolgt auch zwischen nicht verwandten Tieren und hängt mit ihren sozialen Beziehungen zusammen.",
+    "subject_keys": [
+      "topic:plants_animals:zusammenarbeit-im-tierreich",
+      "entity:gemeiner-vampir",
+      "entity:nahrungsteilung"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Food sharing in vampire bats: reciprocal help predicts donations more than relatedness or harassment",
+          "url": "https://doi.org/10.1098/rspb.2012.2573"
+        },
+        {
+          "title": "Food sharing in vampire bats: reciprocal help predicts donations more than relatedness or harassment – PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23282995/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc720",
+    "question_type": "multiple_choice",
+    "primary_category": "geography_world",
+    "subtopic": "Ungewöhnliche Landeslagen",
+    "tags": {
+      "topics": [
+        "Ungewöhnliche Landeslagen"
+      ],
+      "entities": [
+        "Kiribati"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Welcher Inselstaat besitzt Land nördlich und südlich des Äquators sowie östlich und westlich des 180. Längengrads?",
+    "options": {
+      "A": "Malediven",
+      "B": "Kiribati",
+      "C": "Kap Verde",
+      "D": "Seychellen"
+    },
+    "answer": "B",
+    "explanation": "Kiribatis weit verstreute Inselgruppen liegen in allen vier geografischen Halbkugeln. Gemeint sind Nord- und Südhalbkugel sowie die durch Null- und 180. Längengrad getrennte Ost- und Westhalbkugel.",
+    "subject_keys": [
+      "topic:geography_world:ungewohnliche-landeslagen",
+      "entity:kiribati",
+      "entity:halbkugeln"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Kiribati Development Plan 2024–2027 – Ministry of Finance and Economic Development",
+          "url": "https://mfed.gov.ki/sites/default/files/2025-09/KDP%202024-2027_Launched_17.09.25_3.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc721",
+    "question_type": "multiple_choice",
+    "primary_category": "geography_world",
+    "subtopic": "Grenzen im Alltag",
+    "tags": {
+      "topics": [
+        "Grenzen im Alltag"
+      ],
+      "entities": [
+        "Baarle"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Was bestimmt in Baarle grundsätzlich die Landeszuordnung eines Hauses, durch das die Grenze verläuft?",
+    "options": {
+      "A": "Die Lage der Küche",
+      "B": "Die größere Hälfte der Dachfläche",
+      "C": "Die Staatsangehörigkeit des Eigentümers",
+      "D": "Die Lage der Haustür"
+    },
+    "answer": "D",
+    "explanation": "In Baarle sind belgische und niederländische Gebiete ineinander verschachtelt. Nach der Haustürregel gibt der Eingang grundsätzlich den Ausschlag; eine Tür genau auf der Grenze bildet einen Sonderfall.",
+    "subject_keys": [
+      "topic:geography_world:grenzen-im-alltag",
+      "entity:baarle",
+      "entity:hausturregel"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Vakantiegids Kempen 2020: Baarle, een grensgeval apart – Provincie Antwerpen",
+          "url": "https://www.provincieantwerpen.be/content/dam/provant/dvt/TPA/jaaroverzicht/Vakantiegids%20Kempen%202020.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc722",
+    "question_type": "multiple_choice",
+    "primary_category": "geography_world",
+    "subtopic": "Neue Landgrenzen",
+    "tags": {
+      "topics": [
+        "Neue Landgrenzen"
+      ],
+      "entities": [
+        "Kanada"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Welches Königreich vereinbarte 2022 mit Kanada die Teilung der Hans-Insel und damit eine gemeinsame Landgrenze?",
+    "options": {
+      "A": "Dänemark",
+      "B": "Norwegen",
+      "C": "Schweden",
+      "D": "Vereinigtes Königreich"
+    },
+    "answer": "A",
+    "explanation": "Kanada und das Königreich Dänemark einigten sich zusammen mit Grönland über Tartupaluk, auch Hans-Insel genannt. Die Grenze folgt einer natürlichen Schlucht auf der kleinen Insel.",
+    "subject_keys": [
+      "topic:geography_world:neue-landgrenzen",
+      "entity:kanada",
+      "entity:danemark"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Boundary dispute – Global Affairs Canada",
+          "url": "https://www.canada.ca/en/global-affairs/news/2022/06/boundary-dispute.html"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc723",
+    "question_type": "multiple_choice",
+    "primary_category": "geography_world",
+    "subtopic": "Abgelegene Orte",
+    "tags": {
+      "topics": [
+        "Abgelegene Orte"
+      ],
+      "entities": [
+        "Point Nemo"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Was macht den „Point Nemo“ im Pazifik geografisch besonders?",
+    "options": {
+      "A": "Er ist der tiefste vermessene Punkt aller Ozeane",
+      "B": "Er liegt genau am Schnittpunkt von Äquator und Datumsgrenze",
+      "C": "Er ist der Meerespunkt mit dem größten Abstand zu Land",
+      "D": "Er ist der Punkt mit der weltweit größten Gezeitenhöhe"
+    },
+    "answer": "C",
+    "explanation": "Point Nemo ist der ozeanische Pol der Unzugänglichkeit. Selbst die nächstgelegenen Inseln und Küsten sind ungefähr 2.688 Kilometer entfernt.",
+    "subject_keys": [
+      "topic:geography_world:abgelegene-orte",
+      "entity:point-nemo",
+      "entity:ozeanischer-pol-der-unzuganglichkeit"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Where is Point Nemo? – NOAA",
+          "url": "https://oceanservice.noaa.gov/facts/nemo.html?hidemenu=true"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc724",
+    "question_type": "multiple_choice",
+    "primary_category": "geography_world",
+    "subtopic": "Rätsel der Landschaft",
+    "tags": {
+      "topics": [
+        "Rätsel der Landschaft"
+      ],
+      "entities": [
+        "Death Valley"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Was schob bei direkten Beobachtungen die „wandernden Steine“ im kalifornischen Death Valley über den Boden?",
+    "options": {
+      "A": "Vom Wind bewegte dünne Eisschollen",
+      "B": "Starke Erdbeben in kurzen Abständen",
+      "C": "Magnetische Kräfte im Untergrund",
+      "D": "Unter den Steinen wachsende Salzkristalle"
+    },
+    "answer": "A",
+    "explanation": "Auf einer flachen Wasserfläche entstanden dünne Eisschollen. Leichter Wind bewegte die Schollen, die Steine über den nassen Schlamm schoben und so lange Spuren hinterließen.",
+    "subject_keys": [
+      "topic:geography_world:ratsel-der-landschaft",
+      "entity:death-valley",
+      "entity:racetrack-playa"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Mystery Solved: Mysterious sailing stones of Death Valley seen in action for the first time – National Park Service",
+          "url": "https://www.nps.gov/deva/learn/news/racetrack.htm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc725",
+    "question_type": "multiple_choice",
+    "primary_category": "geography_world",
+    "subtopic": "Ozeanströmungen",
+    "tags": {
+      "topics": [
+        "Ozeanströmungen"
+      ],
+      "entities": [
+        "Dänemarkstraße"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Warum kann es in der Dänemarkstraße zwischen Grönland und Island einen riesigen „Wasserfall“ unter Wasser geben?",
+    "options": {
+      "A": "Eine tägliche Ebbe saugt das Meer durch eine Felsspalte",
+      "B": "Vulkane ziehen Oberflächenwasser in Magmakammern",
+      "C": "Kaltes, dichteres Wasser sinkt unter wärmeres Wasser",
+      "D": "Eisberge drücken das Wasser bis auf den Meeresboden"
+    },
+    "answer": "C",
+    "explanation": "Kaltes, dichtes Wasser aus den nordischen Meeren strömt unter wärmeres Wasser und über eine unterseeische Geländestufe. Dieser gewaltige Abwärtsstrom wird als Unterwasserwasserfall bezeichnet.",
+    "subject_keys": [
+      "topic:geography_world:ozeanstromungen",
+      "entity:danemarkstrasse",
+      "entity:unterwasserwasserfall"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Where is Earth's Largest Waterfall? – NOAA",
+          "url": "https://oceanservice.noaa.gov/facts/largest-waterfall.html?ck_subscriber_id=623693721"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc726",
+    "question_type": "multiple_choice",
+    "primary_category": "sport",
+    "subtopic": "Sport und Geologie",
+    "tags": {
+      "topics": [
+        "Sport und Geologie"
+      ],
+      "entities": [
+        "Curling"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Aus welcher Region stammt der Granit der Curlingsteine bei den Olympischen Winterspielen 2026?",
+    "options": {
+      "A": "Schottland",
+      "B": "Kanadische Rocky Mountains",
+      "C": "Norwegische Fjordregion",
+      "D": "Schweizer Alpen"
+    },
+    "answer": "A",
+    "explanation": "Der Granit stammt von der schottischen Insel Ailsa Craig. Für die Lauffläche und den Körper werden unterschiedliche Granitarten der Insel eingesetzt, die Wasser beziehungsweise Stößen gut widerstehen.",
+    "subject_keys": [
+      "topic:sport:sport-und-geologie",
+      "entity:curling",
+      "entity:ailsa-craig"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Made in Scotland, built for champions: The curling stones of Milano Cortina 2026 – World Curling",
+          "url": "https://worldcurling.org/2026/02/olympic-curling-stone-feature/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc727",
+    "question_type": "multiple_choice",
+    "primary_category": "sport",
+    "subtopic": "Physik des Sports",
+    "tags": {
+      "topics": [
+        "Physik des Sports"
+      ],
+      "entities": [
+        "Squash"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Warum wird ein Squashball vor einer Partie durch kräftige Schläge aufgewärmt?",
+    "options": {
+      "A": "Damit er mit stärkerer Reibung an der Wand haftet",
+      "B": "Damit er ausreichend hoch zurückspringt",
+      "C": "Damit seine Fluggeschwindigkeit zuverlässig abnimmt",
+      "D": "Damit sein Innendruck auf den Außendruck absinkt"
+    },
+    "answer": "B",
+    "explanation": "Ein warmer Squashball springt anders und höher als ein kalter. Deshalb gehört das Aufwärmen des Balls zur Vorbereitung einer Partie.",
+    "subject_keys": [
+      "topic:sport:physik-des-sports",
+      "entity:squash",
+      "entity:balltemperatur"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Investigations on Squash Ball Bounce – Squash Québec",
+          "url": "https://squash.qc.ca/wp-content/uploads/2023/10/Investigations-on-Squash-Ball-Bounce.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc728",
+    "question_type": "multiple_choice",
+    "primary_category": "sport",
+    "subtopic": "Sportausrüstung",
+    "tags": {
+      "topics": [
+        "Sportausrüstung"
+      ],
+      "entities": [
+        "Eishockey"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Warum werden Eishockeypucks vor dem Einsatz gekühlt beziehungsweise gefroren?",
+    "options": {
+      "A": "Damit sie auf dem Eis stärker haften",
+      "B": "Damit sie ihre Drehbewegung schneller verlieren",
+      "C": "Damit sie beim Schuss weniger Luftwiderstand haben",
+      "D": "Damit sie weniger stark hüpfen"
+    },
+    "answer": "D",
+    "explanation": "Pucks bestehen aus vulkanisiertem Gummi. Die Kühlung verringert übermäßiges Springen und verbessert ihre Handhabung auf dem Eis.",
+    "subject_keys": [
+      "topic:sport:sportausrustung",
+      "entity:eishockey",
+      "entity:puck"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Ice Hockey Terminology – IIHF Milano Cortina 2026",
+          "url": "https://www.iihf.com/en/events/2026/olympic-w/static/71794/ice_hockey_terminology"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc729",
+    "question_type": "multiple_choice",
+    "primary_category": "sport",
+    "subtopic": "Fußballregeln",
+    "tags": {
+      "topics": [
+        "Fußballregeln"
+      ],
+      "entities": [
+        "Fußball"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Ein korrekt ausgeführter Einwurf landet ohne jede weitere Berührung im gegnerischen Tor. Wie geht es weiter?",
+    "options": {
+      "A": "Mit Tor und anschließendem Anstoß",
+      "B": "Mit Wiederholung desselben Einwurfs",
+      "C": "Mit Abstoß für die gegnerische Mannschaft",
+      "D": "Mit Eckstoß für die einwerfende Mannschaft"
+    },
+    "answer": "C",
+    "explanation": "Aus einem Einwurf darf kein direktes Tor erzielt werden. Gelangt der Ball ohne weitere Berührung ins gegnerische Tor, erhält die verteidigende Mannschaft einen Abstoß.",
+    "subject_keys": [
+      "topic:sport:fussballregeln",
+      "entity:fussball",
+      "entity:einwurf"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Law 15 – The Throw-in – IFAB",
+          "url": "https://www.theifab.com/laws/latest/the-throw-in/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc730",
+    "question_type": "multiple_choice",
+    "primary_category": "sport",
+    "subtopic": "Bahnradsport",
+    "tags": {
+      "topics": [
+        "Bahnradsport"
+      ],
+      "entities": [
+        "Keirin"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Bei welcher Bahnraddisziplin folgt das Feld zunächst einem motorisierten Schrittmacher?",
+    "options": {
+      "A": "Keirin",
+      "B": "Madison",
+      "C": "Einzelverfolgung",
+      "D": "Teamsprint"
+    },
+    "answer": "A",
+    "explanation": "Beim Keirin gibt zunächst ein motorisierter Schrittmacher das Tempo vor. Erst nachdem er die Bahn verlassen hat, fällt die Entscheidung im Sprint.",
+    "subject_keys": [
+      "topic:sport:bahnradsport",
+      "entity:keirin",
+      "entity:bahnradsport"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "UCI Cycling Regulations: Part 3 Track Races – 01.01.2026",
+          "url": "https://assets.ctfassets.net/761l7gh5x5an/7IE4WjTvQLqeRF5aniDP34/6a48689b99f3ac31c190fb46513ca56f/PART_3_E_-_As_of_01.01.2026.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc731",
+    "question_type": "multiple_choice",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Städtische Infrastruktur",
+    "tags": {
+      "topics": [
+        "Städtische Infrastruktur"
+      ],
+      "entities": [
+        "London"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Welches große Bauvorhaben brachte Londons „Great Stink“ von 1858 entscheidend voran?",
+    "options": {
+      "A": "Den Bau einer Staumauer durch die Themse",
+      "B": "Den Ersatz sämtlicher Gaslaternen durch elektrisches Licht",
+      "C": "Den Ausbau eines modernen Abwassersystems",
+      "D": "Den Bau einer neuen königlichen Residenz"
+    },
+    "answer": "C",
+    "explanation": "Die mit Abfällen und Fäkalien belastete Themse stank bis ins Parlament. Unter diesem Druck wurde die Finanzierung eines großen neuen Kanalisationssystems beschlossen.",
+    "subject_keys": [
+      "topic:witnesses_of_time:stadtische-infrastruktur",
+      "entity:london",
+      "entity:great-stink"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Dickens and The Great Stink of 1858 – Royal Museums Greenwich",
+          "url": "https://www.rmg.co.uk/stories/maritime-history/library-archive/dickens-great-stink-1858"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc732",
+    "question_type": "multiple_choice",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Postgeschichte",
+    "tags": {
+      "topics": [
+        "Postgeschichte"
+      ],
+      "entities": [
+        "Rohrpost"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wie bewegte sich Briefpost um 1900 durch Rohrnetze unter mehreren US-Großstädten?",
+    "options": {
+      "A": "In kleinen Wagen mit eingebauten Dampfkesseln",
+      "B": "An endlosen Ketten zwischen den Postämtern",
+      "C": "Auf schwimmenden Plattformen in Wasserkanälen",
+      "D": "In Kapseln mithilfe von Luftdruck und Unterdruck"
+    },
+    "answer": "D",
+    "explanation": "Bei der Rohrpost wurden gefüllte Behälter durch Druckluft oder Sog durch unterirdische Röhren bewegt. Solche Netze gab es unter anderem in Philadelphia und New York.",
+    "subject_keys": [
+      "topic:witnesses_of_time:postgeschichte",
+      "entity:rohrpost",
+      "entity:pneumatischer-transport"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Pneumatic Tube Mail – Smithsonian National Postal Museum",
+          "url": "https://postalmuseum.si.edu/exhibition/customers-and-communities-serving-the-cities-city-free-delivery/pneumatic-tube-mail"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc733",
+    "question_type": "multiple_choice",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Historische Farbstoffe",
+    "tags": {
+      "topics": [
+        "Historische Farbstoffe"
+      ],
+      "entities": [
+        "tyrischer Purpur"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Woraus wurde der kostbare tyrische Purpur in der Antike gewonnen?",
+    "options": {
+      "A": "Aus gemahlenen Amethystkristallen",
+      "B": "Aus dem Sekret bestimmter Meeresschnecken",
+      "C": "Aus der Rinde mediterraner Zypressen",
+      "D": "Aus dem Blütenstaub wilder Veilchen"
+    },
+    "answer": "B",
+    "explanation": "Verschiedene Meeresschnecken lieferten das Ausgangssekret für den aufwendig hergestellten Farbstoff. Seine Kostbarkeit machte Purpur zum Zeichen von Reichtum und Macht.",
+    "subject_keys": [
+      "topic:witnesses_of_time:historische-farbstoffe",
+      "entity:tyrischer-purpur",
+      "entity:meeresschnecken"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Tyrian Purple – The University of Chicago Library",
+          "url": "https://www.lib.uchicago.edu/collex/exhibits/originsof-color/organic-dyes-and-lakes/tyrian-purple/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc734",
+    "question_type": "multiple_choice",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Antike Politik",
+    "tags": {
+      "topics": [
+        "Antike Politik"
+      ],
+      "entities": [
+        "Athen"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Worauf schrieben Bürger im antiken Athen bei der Abstimmung über eine Verbannung die Namen ihrer Kandidaten?",
+    "options": {
+      "A": "Auf dünne Bleitäfelchen",
+      "B": "Auf kleine Wachstafeln",
+      "C": "Auf Tonscherben",
+      "D": "Auf Schalen von Muscheln"
+    },
+    "answer": "C",
+    "explanation": "Die beschrifteten Keramikscherben heißen Ostraka und gaben dem Ostrakismos, dem Scherbengericht, seinen Namen. Viele dieser Stimmzettel aus Ton sind in Athen ausgegraben worden.",
+    "subject_keys": [
+      "topic:witnesses_of_time:antike-politik",
+      "entity:athen",
+      "entity:ostrakismos"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Ostraka – American School of Classical Studies at Athens",
+          "url": "https://dev.ascsa.edu.gr/publications/book/?i=9780876612255"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc735",
+    "question_type": "multiple_choice",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Vulkane und Weltgeschichte",
+    "tags": {
+      "topics": [
+        "Vulkane und Weltgeschichte"
+      ],
+      "entities": [
+        "Tambora"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Welcher Vulkanausbruch trug wesentlich zum „Jahr ohne Sommer“ 1816 bei?",
+    "options": {
+      "A": "Der Ausbruch des Tambora in Indonesien",
+      "B": "Der Ausbruch des Vesuvs bei Neapel",
+      "C": "Der Ausbruch des Mount St. Helens in den USA",
+      "D": "Der Ausbruch des Eyjafjallajökull auf Island"
+    },
+    "answer": "A",
+    "explanation": "Der Tambora brach 1815 gewaltig aus. Das in die Atmosphäre eingetragene Material trug zur Abkühlung bei; 1816 folgten in vielen Regionen ungewöhnliche Kälte und schlechte Ernten.",
+    "subject_keys": [
+      "topic:witnesses_of_time:vulkane-und-weltgeschichte",
+      "entity:tambora",
+      "entity:jahr-ohne-sommer"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "1816 : L’année sans été et l’éruption du Tambora – Météo-France",
+          "url": "https://meteofrance.com/meteo-a-z/1816-lannee-sans-ete-et-leruption-du-tambora"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc736",
+    "question_type": "multiple_choice",
+    "primary_category": "witnesses_of_time",
+    "subtopic": "Antike Technik",
+    "tags": {
+      "topics": [
+        "Antike Technik"
+      ],
+      "entities": [
+        "Mechanismus von Antikythera"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Was konnte der antike Mechanismus von Antikythera mithilfe seiner Zahnräder berechnen?",
+    "options": {
+      "A": "Astronomische Zyklen und Finsternisse",
+      "B": "Entfernungen auf See aus Peilwinkeln",
+      "C": "Mengenverhältnisse beim Mischen von Metalllegierungen",
+      "D": "Benötigte Gegengewichte bei Hebekränen"
+    },
+    "answer": "A",
+    "explanation": "Das komplexe Zahnradgerät bildete unter anderem Sonnen- und Mondzyklen ab. Auch die Wiederkehr von Finsternissen konnte damit angezeigt werden.",
+    "subject_keys": [
+      "topic:witnesses_of_time:antike-technik",
+      "entity:mechanismus-von-antikythera",
+      "entity:astronomische-berechnung"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "What is the Mechanism and what does it consist of? – National Archaeological Museum, Athens",
+          "url": "https://antikythera-mechanism.namuseum.gr/en/what-is-the-mechanism-and-what-does-it-consist-of/"
+        },
+        {
+          "title": "The Antikythera Mechanism – ASME",
+          "url": "https://www.asme.org/about-asme/engineering-history/landmarks/271-the-antikythera-mechanism"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc737",
+    "question_type": "multiple_choice",
+    "primary_category": "science_technology",
+    "subtopic": "Historische Werkstoffe",
+    "tags": {
+      "topics": [
+        "Historische Werkstoffe"
+      ],
+      "entities": [
+        "römischer Beton"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Welche Bestandteile können laut Forschung zur Selbstheilung mancher antiken römischen Betone beitragen?",
+    "options": {
+      "A": "Eingeschlossene Metallspäne",
+      "B": "Reaktive Kalkstückchen",
+      "C": "Getrocknete Holzfasern",
+      "D": "Glatte Glaskugeln"
+    },
+    "answer": "B",
+    "explanation": "Entstehen Risse, können sich Bestandteile eingeschlossener Kalkstückchen lösen. Daraus können sich neue Ablagerungen bilden, die den Riss wieder verschließen.",
+    "subject_keys": [
+      "topic:science_technology:historische-werkstoffe",
+      "entity:romischer-beton",
+      "entity:kalkstuckchen"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Pompeii offers insights into ancient Roman building technology – MIT News",
+          "url": "https://news.mit.edu/2025/pompeii-offers-insights-ancient-roman-building-technology-1209"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc738",
+    "question_type": "multiple_choice",
+    "primary_category": "science_technology",
+    "subtopic": "Glas unter Spannung",
+    "tags": {
+      "topics": [
+        "Glas unter Spannung"
+      ],
+      "entities": [
+        "Prince-Rupert-Tropfen"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Was passiert bei einem sogenannten Prince-Rupert-Tropfen aus Glas, wenn seine dünne Spitze abbricht?",
+    "options": {
+      "A": "Nur die Spitze bricht ab; der übrige Tropfen bleibt intakt",
+      "B": "Der ganze Tropfen zerfällt schlagartig in kleine Stücke",
+      "C": "Der Tropfen wird vorübergehend weich und verformbar",
+      "D": "Der dicke Kopf löst sich als unbeschädigte Kugel ab"
+    },
+    "answer": "B",
+    "explanation": "Diese schnell in Wasser abgekühlten Glastropfen stehen unter starken inneren Spannungen. Ihr dicker Kopf ist sehr widerstandsfähig, doch eine Beschädigung am dünnen Ende kann den ganzen Tropfen zertrümmern.",
+    "subject_keys": [
+      "topic:science_technology:glas-unter-spannung",
+      "entity:prince-rupert-tropfen",
+      "entity:glastrane"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Profile of Katharine V. Cashman – PNAS",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9351443/"
+        },
+        {
+          "title": "Paper: A philosophical letter to the Grand Duke of Tuscany – The Royal Society",
+          "url": "https://makingscience.royalsociety.org/items/clp_4i_37"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc739",
+    "question_type": "multiple_choice",
+    "primary_category": "science_technology",
+    "subtopic": "Technik im Vakuum",
+    "tags": {
+      "topics": [
+        "Technik im Vakuum"
+      ],
+      "entities": [
+        "Kaltschweißen"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Welches Problem bezeichnet „Kaltschweißen“ bei beweglichen Metallteilen im Vakuum?",
+    "options": {
+      "A": "Bauteile ziehen sich zusammen, bis jede Bewegung blockiert",
+      "B": "Restwasser friert zwischen den Kontaktflächen fest",
+      "C": "Metall wird im Vakuum spröde wie gefrorenes Glas",
+      "D": "Kontaktflächen können ohne Aufschmelzen aneinanderhaften"
+    },
+    "answer": "D",
+    "explanation": "Unter passenden Kontaktbedingungen können Metalloberflächen im Vakuum fest aneinanderhaften. Dieser Effekt kann Raumfahrtmechanismen stören; er tritt nicht automatisch bei jeder Metallberührung auf.",
+    "subject_keys": [
+      "topic:science_technology:technik-im-vakuum",
+      "entity:kaltschweissen",
+      "entity:vakuum"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "STM-279: Assessment of the Cold Welding between Separable Contact due to Impact and Fretting under Vacuum – ESA",
+          "url": "https://www.esa.int/About_Us/ESA_Publications/STM-279_Assessment_of_the_Cold_Welding_between_Separable_Contact_due_to_Impact_and_Fretting_under_Vacuum"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc740",
+    "question_type": "multiple_choice",
+    "primary_category": "science_technology",
+    "subtopic": "Wetter auf anderen Planeten",
+    "tags": {
+      "topics": [
+        "Wetter auf anderen Planeten"
+      ],
+      "entities": [
+        "Saturn"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Was ist das berühmte „Hexagon“ nahe dem Nordpol des Saturn?",
+    "options": {
+      "A": "Ein sechseckiges Muster aus Eisbrocken im Ringsystem",
+      "B": "Die sechsfache Spiegelung der Sonne in Eiskristallen",
+      "C": "Eine geometrische Anordnung von Magnetfeldlinien",
+      "D": "Ein sechseckig verlaufendes Starkwindband"
+    },
+    "answer": "D",
+    "explanation": "Das Hexagon ist ein großräumiges Muster in Saturns Atmosphäre, das mit einem polaren Jetstream verbunden ist. Schon die Voyager-Sonden beobachteten es.",
+    "subject_keys": [
+      "topic:science_technology:wetter-auf-anderen-planeten",
+      "entity:saturn",
+      "entity:hexagon"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Circles and Hexagons – NASA",
+          "url": "https://www.nasa.gov/image-article/circles-hexagons/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc741",
+    "question_type": "multiple_choice",
+    "primary_category": "science_technology",
+    "subtopic": "Weltraumwetter",
+    "tags": {
+      "topics": [
+        "Weltraumwetter"
+      ],
+      "entities": [
+        "Carrington-Ereignis"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Was verursachte 1859 beim „Carrington-Ereignis“ weltweite Störungen von Telegrafenanlagen?",
+    "options": {
+      "A": "Ein gewaltiger Vulkanausbruch",
+      "B": "Ein außergewöhnlich starker Sonnensturm",
+      "C": "Eine Änderung der Erdumlaufbahn",
+      "D": "Ein weltweit gleichzeitig auftretendes Gewitterband"
+    },
+    "answer": "B",
+    "explanation": "Ein gewaltiger Sonnenausbruch löste einen geomagnetischen Sturm aus. Telegrafensysteme wurden gestört, und Polarlichter waren bis weit in südliche Breiten sichtbar.",
+    "subject_keys": [
+      "topic:science_technology:weltraumwetter",
+      "entity:carrington-ereignis",
+      "entity:sonnensturm"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "The Carrington Event report in MNRAS vol. 20 (1859) – Royal Astronomical Society",
+          "url": "https://ras.ac.uk/media/493"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc742",
+    "question_type": "multiple_choice",
+    "primary_category": "science_technology",
+    "subtopic": "Ungewöhnliche Raumfahrtfracht",
+    "tags": {
+      "topics": [
+        "Ungewöhnliche Raumfahrtfracht"
+      ],
+      "entities": [
+        "Juno"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Welche Spielzeugmarke steuerte drei speziell aus Aluminium gefertigte Figuren für die Raumsonde Juno bei?",
+    "options": {
+      "A": "LEGO",
+      "B": "Playmobil",
+      "C": "Mattel",
+      "D": "Schleich"
+    },
+    "answer": "A",
+    "explanation": "NASA und LEGO entwickelten die Aktion, um Interesse an Wissenschaft und Technik zu wecken. Die drei Minifiguren wurden für den Flug aus Aluminium gefertigt und an der Sonde befestigt.",
+    "subject_keys": [
+      "topic:science_technology:ungewohnliche-raumfahrtfracht",
+      "entity:juno",
+      "entity:lego-figuren"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Juno – NASA Science",
+          "url": "https://science.nasa.gov/mission/juno/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc743",
+    "question_type": "multiple_choice",
+    "primary_category": "human_everyday",
+    "subtopic": "Chemie des Alltags",
+    "tags": {
+      "topics": [
+        "Chemie des Alltags"
+      ],
+      "entities": [
+        "Eisen"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Woher kommt der typische „Metallgeruch“ an der Hand nach dem Anfassen eines eisernen Geländers?",
+    "options": {
+      "A": "Aus flüchtigen Rostpartikeln, die selbst stark riechen",
+      "B": "Aus Reaktionsprodukten von Eisen und Hautfetten",
+      "C": "Aus verdunstendem Schweiß, der durch Reibung erhitzt wird",
+      "D": "Aus freigesetzten Gasen im Inneren des Metalls"
+    },
+    "answer": "B",
+    "explanation": "Bei Hautkontakt kann Eisen Reaktionen von Hautfetten auslösen. Die dabei entstehenden organischen Verbindungen erzeugen den vertrauten Geruch.",
+    "subject_keys": [
+      "topic:human_everyday:chemie-des-alltags",
+      "entity:eisen",
+      "entity:metallgeruch"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "The Two Odors of Iron when Touched or Pickled: (Skin) Carbonyl Compounds and Organophosphines",
+          "url": "https://glindemann.net/pubs/Glindemann%20et%20al%20-%202006%20-%20The%20Two%20Odors%20of%20Iron%20when%20Touched%20or%20Pickled%20-%20%28Skin%29%20Carbonyl%20Compounds%20and%20Organophosphines.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc744",
+    "question_type": "multiple_choice",
+    "primary_category": "human_everyday",
+    "subtopic": "Spurensicherung",
+    "tags": {
+      "topics": [
+        "Spurensicherung"
+      ],
+      "entities": [
+        "Sekundenkleber"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wozu verwendet die Spurensicherung Dämpfe von Sekundenkleber?",
+    "options": {
+      "A": "Um durchgestrichene Tinte chemisch zu entfernen",
+      "B": "Um unsichtbare Fingerabdrücke sichtbar zu machen",
+      "C": "Um das Alter von Handschriften zu bestimmen",
+      "D": "Um Brandbeschleuniger in verkohltem Holz nachzuweisen"
+    },
+    "answer": "B",
+    "explanation": "Das Verfahren heißt Cyanoacrylatbedampfung. Klebstoffbestandteile bilden an latenten Fingerabdruckspuren ein Polymer und machen die Muster sichtbar.",
+    "subject_keys": [
+      "topic:human_everyday:spurensicherung",
+      "entity:sekundenkleber",
+      "entity:cyanoacrylatbedampfung"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Fun with Fingerprints: Cyanoacrylate Fuming – Journal of Chemical Education",
+          "url": "https://pubs.acs.org/doi/10.1021/ed085p816A"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc745",
+    "question_type": "multiple_choice",
+    "primary_category": "human_everyday",
+    "subtopic": "Küchenchemie",
+    "tags": {
+      "topics": [
+        "Küchenchemie"
+      ],
+      "entities": [
+        "Ananas"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Welcher Inhaltsstoff frischer Ananas kann verhindern, dass ein Gelatinedessert fest wird?",
+    "options": {
+      "A": "Ein ätherisches Öl",
+      "B": "Ein quellender Ballaststoff",
+      "C": "Ein natürliches Fruchtwachs",
+      "D": "Ein eiweißspaltendes Enzym"
+    },
+    "answer": "D",
+    "explanation": "Frische Ananas enthält das eiweißspaltende Enzym Bromelain. Es kann die Gelatinestruktur abbauen; ausreichendes Erhitzen inaktiviert das Enzym.",
+    "subject_keys": [
+      "topic:human_everyday:kuchenchemie",
+      "entity:ananas",
+      "entity:bromelain"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Soup or Salad? Investigating the Action of Enzymes in Fruit on Gelatin – Journal of Chemical Education",
+          "url": "https://pubs.acs.org/doi/10.1021/ed076p624"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc746",
+    "question_type": "multiple_choice",
+    "primary_category": "human_everyday",
+    "subtopic": "Küchenphysik",
+    "tags": {
+      "topics": [
+        "Küchenphysik"
+      ],
+      "entities": [
+        "Popcorn"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Was erzeugt im Maiskorn den Druck, durch den Popcorn aufplatzt?",
+    "options": {
+      "A": "Wasser, das beim Erhitzen zu Dampf wird",
+      "B": "Zucker, der sich in Kohlendioxid zersetzt",
+      "C": "Öl, das die feste Schale chemisch auflöst",
+      "D": "Luft, die von außen durch die Schale gepresst wird"
+    },
+    "answer": "A",
+    "explanation": "Ein Popcornkorn enthält etwas Wasser unter einer widerstandsfähigen Hülle. Beim Erhitzen steigt der Druck, bis die Hülle nachgibt und die Stärke aufschäumt.",
+    "subject_keys": [
+      "topic:human_everyday:kuchenphysik",
+      "entity:popcorn",
+      "entity:wasserdampf"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "How does popcorn pop? – USDA National Agricultural Library",
+          "url": "https://www.nal.usda.gov/exhibits/speccoll/exhibits/show/popcorn/how-does-popcorn-pop-"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc747",
+    "question_type": "multiple_choice",
+    "primary_category": "human_everyday",
+    "subtopic": "Wahrnehmung",
+    "tags": {
+      "topics": [
+        "Wahrnehmung"
+      ],
+      "entities": [
+        "Menthol"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Warum fühlt sich Menthol im Mund kühl an?",
+    "options": {
+      "A": "Es entzieht dem Speichel beim Auflösen besonders viel Wärme",
+      "B": "Es verengt die Blutgefäße so stark, dass die Zunge abkühlt",
+      "C": "Es aktiviert Rezeptoren, die auch auf Kälte reagieren",
+      "D": "Es beschleunigt die Verdunstung von Wasser im Mund"
+    },
+    "answer": "C",
+    "explanation": "Menthol kann einen kälteempfindlichen Ionenkanal aktivieren. Die Nerven melden dadurch einen Kältereiz, ohne dass dafür eine entsprechende Abkühlung nötig ist.",
+    "subject_keys": [
+      "topic:human_everyday:wahrnehmung",
+      "entity:menthol",
+      "entity:kaltewahrnehmung"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Identification of a cold receptor reveals a general role for TRP channels in thermosensation – Nature",
+          "url": "https://www.nature.com/articles/nature719"
+        },
+        {
+          "title": "Detecting cold, feeling pain: Study reveals why menthol feels fresh – UC San Francisco",
+          "url": "https://www.ucsf.edu/news/2007/05/98014/detecting-cold-feeling-pain-study-reveals-why-menthol-feels-fresh"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc748",
+    "question_type": "multiple_choice",
+    "primary_category": "human_everyday",
+    "subtopic": "Kaffeeherstellung",
+    "tags": {
+      "topics": [
+        "Kaffeeherstellung"
+      ],
+      "entities": [
+        "Kaffee"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Welches Gas wird in einem Verfahren unter hohem Druck eingesetzt, um Kaffeebohnen Koffein zu entziehen?",
+    "options": {
+      "A": "Helium",
+      "B": "Wasserstoff",
+      "C": "Argon",
+      "D": "Kohlendioxid"
+    },
+    "answer": "D",
+    "explanation": "Kohlendioxid kann unter hohem Druck als Extraktionsmittel dienen. Es löst Koffein aus den noch ungerösteten Bohnen; Kaffee lässt sich also auch mit CO₂ entkoffeinieren.",
+    "subject_keys": [
+      "topic:human_everyday:kaffeeherstellung",
+      "entity:kaffee",
+      "entity:kohlendioxid"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Verarbeitung: Entkoffeinierung – Deutscher Kaffeeverband",
+          "url": "https://kaffeeverband.de/de/kaffeewissen/verarbeitung"
+        },
+        {
+          "title": "Efficient decaffeination of green coffee beans using pressure swing supercritical CO2 extraction",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1466856425002383"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc749",
+    "question_type": "multiple_choice",
+    "primary_category": "human_everyday",
+    "subtopic": "Kleidung und Konstruktion",
+    "tags": {
+      "topics": [
+        "Kleidung und Konstruktion"
+      ],
+      "entities": [
+        "Jeans"
+      ],
+      "genres": [],
+      "regions": [],
+      "eras": []
+    },
+    "prompt": "Wozu dienten die Kupfernieten an den Taschen früher Jeans ursprünglich?",
+    "options": {
+      "A": "Sie verhinderten das Abfärben des blauen Stoffes",
+      "B": "Sie verstärkten die besonders belasteten Stellen",
+      "C": "Sie erlaubten ein einfaches Abnehmen der Taschen",
+      "D": "Sie machten die Taschen wasserdicht"
+    },
+    "answer": "B",
+    "explanation": "Die Nieten sollten verhindern, dass Taschen bei starker Belastung ausreißen. Diese Verstärkung wurde 1873 als Verbesserung der Taschenbefestigung patentiert.",
+    "subject_keys": [
+      "topic:human_everyday:kleidung-und-konstruktion",
+      "entity:jeans",
+      "entity:kupfernieten"
+    ],
+    "source": {
+      "status": "verified",
+      "verified_on": "2026-10-24",
+      "references": [
+        {
+          "title": "Pockets Full of History – Levi Strauss & Co.",
+          "url": "https://www.levistrauss.com/2017/01/12/pockets-full-history/"
+        }
+      ]
+    }
+  }
+]

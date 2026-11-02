@@ -1,5 +1,6 @@
 import json
 import re
+import smtplib
 import sqlite3
 import tempfile
 import unittest
@@ -29,6 +30,7 @@ from app import (
     question_time_factor,
     question_subject_keys,
     reserve_question_sets,
+    record_pool_exhausted,
     send_pool_exhausted_email,
     timed_question_points,
 )
@@ -1700,6 +1702,94 @@ class GameFlowTests(unittest.TestCase):
                 ("question_pool_exhausted",),
             ).fetchone()[0]
             self.assertIsNotNone(sent_at)
+
+    def exhaust_pool(self):
+        database = self.app.get_db()
+        database.executemany(
+            """INSERT OR IGNORE INTO question_usage
+               (question_id, category, source_type, source_id, used_at)
+               VALUES (?, ?, 'test', 'exhausted', ?)""",
+            [(question["id"], category, datetime.now().isoformat())
+             for category, questions in QUESTION_BANK.items() for question in questions],
+        )
+        database.commit()
+
+    def test_empty_pool_keeps_home_and_disables_only_unavailable_round(self):
+        self.register()
+        with self.app.app_context():
+            self.exhaust_pool()
+        response = self.client.get("/")
+        stale_post = self.client.post("/runde/starten", data={"csrf_token": self.csrf()})
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b"variant-a-stage", response.data)
+        self.assertIn(b"variant-a-profile-canonical", response.data)
+        self.assertIn(b"data-game-carousel", response.data)
+        self.assertIn(b"data-leaderboards", response.data)
+        self.assertIn(b'type="submit" disabled', response.data)
+        self.assertNotIn(b"Alle neuen Fragen sind gespielt", response.data)
+        self.assertEqual(stale_post.status_code, 302)
+        self.assertTrue(stale_post.headers["Location"].endswith("/"))
+
+    def test_reserved_round_stays_playable_and_result_accessible_with_empty_pool(self):
+        self.register()
+        with self.app.app_context():
+            get_or_create_round()
+            self.exhaust_pool()
+        response = self.client.get("/")
+        self.assertNotIn(b'type="submit" disabled', response.data)
+        response = self.client.post("/runde/starten", data={"csrf_token": self.csrf()})
+        self.assertTrue(response.headers["Location"].endswith("/runde"))
+        response = self.client.get("/")
+        self.assertIn(b"runde fortsetzen", response.data)
+        with self.app.app_context():
+            self.app.get_db().execute("UPDATE attempts SET status = 'completed', score = 0")
+            self.app.get_db().commit()
+        response = self.client.get("/")
+        self.assertIn(b"heutiges ergebnis", response.data)
+        self.assertEqual(self.client.get("/ergebnis").status_code, 200)
+
+    def test_empty_pool_replays_skip_only_days_without_reserved_questions(self):
+        self.register()
+        monday = date(2026, 10, 19)
+        wednesday = date(2026, 10, 21)
+        with self.app.app_context():
+            get_or_create_round(monday.isoformat())
+            self.exhaust_pool()
+        with patch("app.today_iso", return_value=wednesday.isoformat()), patch(
+            "app.missed_current_week_dates", return_value=["2026-10-19", "2026-10-20"]
+        ):
+            response = self.client.get("/")
+            self.assertIn(b"1 verpasste Runde", response.data)
+            self.assertIn(b'type="submit" disabled', response.data)
+            self.client.post("/woche/auswahl", data={"csrf_token": self.csrf(), "choice": "all"})
+            with self.client.session_transaction() as session:
+                self.assertEqual(session["catchup_queue"], ["2026-10-19", "2026-10-21"])
+            response = self.client.get("/")
+            self.assertNotIn(b'type="submit" disabled', response.data)
+
+    def test_pool_warning_rearms_after_refill_and_failed_delivery_can_retry(self):
+        secret_path = Path(self.tempdir.name) / "mail.secret"
+        secret_path.write_text("test-password", encoding="utf-8")
+        self.app.config.update(MAIL_USER="sender@example.test", MAIL_TO="owner@example.test",
+                               MAIL_PASSWORD_FILE=str(secret_path))
+        with self.app.app_context(), patch("app.smtplib.SMTP") as smtp_class:
+            smtp = smtp_class.return_value.__enter__.return_value
+            record_pool_exhausted()
+            record_pool_exhausted()
+            self.assertEqual(smtp.send_message.call_count, 1)
+            # Reserving from a replenished supply arms a new exhaustion warning.
+            reserve_question_sets("test", "refilled")
+            smtp.send_message.side_effect = smtplib.SMTPException("delivery failed")
+            with self.assertLogs(self.app.logger, level="WARNING"):
+                record_pool_exhausted()
+            row = self.app.get_db().execute(
+                "SELECT sent_at FROM system_notifications WHERE kind = 'question_pool_exhausted'"
+            ).fetchone()
+            self.assertIsNone(row["sent_at"])
+            smtp.send_message.side_effect = None
+            record_pool_exhausted()
+            record_pool_exhausted()
+            self.assertEqual(smtp.send_message.call_count, 3)
 
     def test_consuming_the_last_complete_round_queues_the_notification(self):
         with self.app.app_context():
