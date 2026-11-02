@@ -4,7 +4,7 @@ import sys
 
 
 def register_workshop_buttons(app):
-    if not app.config.get('LOCAL_DEVELOPMENT'):
+    if not (app.config.get('LOCAL_DEVELOPMENT') or app.config.get('BUTTON_RUNTIME_ENABLED')):
         return
     from flask import abort, jsonify, request, send_file, url_for
     from jinja2 import BaseLoader
@@ -23,6 +23,27 @@ def register_workshop_buttons(app):
     files['/button-editor/game-runtime.js'] = root/'offline-preview/button-workshop-v1/game-runtime.js'
     files['/button-editor/game-runtime.css'] = root/'offline-preview/button-workshop-v1/game-runtime.css'
     files['/shared/comic-button.css'] = root/'static/comic-button.css'
+
+    if not app.config.get('LOCAL_DEVELOPMENT'):
+        # The public game gets the same component, without editor screens.
+        hidden = {'index.html', 'workshop.js', 'contour-editor.js', 'profile-capture.html', 'source-check.html'}
+        files = {name: path for name, path in files.items()
+                 if name != '/button-editor/' and name.rsplit('/', 1)[-1] not in hidden}
+
+    @app.after_request
+    def public_asset_prefix(response):
+        endpoint = request.endpoint or ''
+        prefix = request.script_root.rstrip('/')
+        if prefix and endpoint.startswith('workshop_buttons_') and response.mimetype in (
+                'application/json', 'application/javascript', 'text/javascript', 'text/css'):
+            response.direct_passthrough = False
+            text = response.get_data(as_text=True)
+            for folder in ('assets', 'media-assets', 'button-editor', 'shared'):
+                text = text.replace('"/'+folder+'/', '"'+prefix+'/'+folder+'/')
+                text = text.replace("'/"+folder+'/', "'"+prefix+'/'+folder+'/')
+                text = text.replace('url(/'+folder+'/', 'url('+prefix+'/'+folder+'/')
+            response.set_data(text)
+        return response
 
     class DesignLoader(BaseLoader):
         def __init__(self, wrapped): self.wrapped = wrapped

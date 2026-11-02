@@ -2445,8 +2445,9 @@ def register_routes(app: Flask) -> None:
         get_db().execute("SELECT 1").fetchone()
         return {
             "status": "ok",
-            "release": app.config.get('OFFLINE_VERSION') or RELEASE_VERSION,
+            "release": app.config.get('PUBLIC_RELEASE') or app.config.get('OFFLINE_VERSION') or RELEASE_VERSION,
             "code_release": RELEASE_VERSION,
+            "deployment": app.config.get('DEPLOYMENT_ID'),
             "questions": question_pool_status(),
             "pool_mail_ready": pool_mail_ready(),
         }
