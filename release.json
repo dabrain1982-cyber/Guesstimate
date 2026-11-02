@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "version": "1.01.01",
-  "previous_version": "1.1",
+  "version": "1.01.02",
+  "previous_version": "1.01.01",
   "status": "ready",
   "patchnotes": {
     "delivery": "chat_only",
@@ -13,11 +13,16 @@
     "manifest": "release-assets/1.01.01-question-import.json",
     "count": 250,
     "reset_usage": false,
-    "sha256": "2da60a2888ed81ace08fb2d8d919ff3139840d8bc1b58237c40789d77f2a5497"
+    "sha256": "2da60a2888ed81ace08fb2d8d919ff3139840d8bc1b58237c40789d77f2a5497",
+    "introduced_in": "1.01.01"
   },
   "introduction": {
     "once_per_account": true,
     "notice_id": "ikuehe-introduction",
     "permanent_page": "/ikuehe"
+  },
+  "update": {
+    "scope": "Owner included in all-player broadcast; own latest missing receipt only",
+    "new_question_import": false
   }
 }

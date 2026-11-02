@@ -36,6 +36,29 @@ def inbox_summary(db, user_id):
                 attention=row['latest'] > (seen['seen_through'] if seen else 0))
 
 
+def add_latest_broadcast_sender_copy(db, sender_id):
+    """Add only the sender's missing receipt; never resend other deliveries."""
+    if not db.in_transaction:
+        raise ValueError('Die Kontrollkopie benötigt eine gemeinsame Transaktion.')
+    row = db.execute("""
+        SELECT id FROM inbox_messages WHERE sender_id = ? AND broadcast = 1
+        ORDER BY id DESC LIMIT 1
+    """, (sender_id,)).fetchone()
+    if row is None:
+        return dict(message_id=None, copy_added=False)
+    inserted = db.execute(
+        'INSERT OR IGNORE INTO inbox_deliveries(message_id, user_id) VALUES (?, ?)',
+        (row['id'], sender_id)).rowcount
+    if inserted:
+        # A newly delivered older note must also attract its recipient's attention.
+        # Existing read states and all other accounts remain untouched.
+        db.execute("""
+            UPDATE inbox_attention SET seen_through = MIN(seen_through, ?)
+            WHERE user_id = ?
+        """, (row['id'] - 1, sender_id))
+    return dict(message_id=row['id'], copy_added=bool(inserted))
+
+
 def register_inbox(app, login_required, require_csrf, is_owner):
     def owner():
         return app.get_db().execute(
@@ -153,8 +176,7 @@ def register_inbox(app, login_required, require_csrf, is_owner):
         if is_owner(g.user['id']):
             if recipient == 'all':
                 broadcast = True
-                recipient_ids = [r['id'] for r in db.execute(
-                    'SELECT id FROM users WHERE id != ?', (g.user['id'],))]
+                recipient_ids = [r['id'] for r in db.execute('SELECT id FROM users')]
             else:
                 target_id = request.form.get('recipient', type=int)
                 target = db.execute('SELECT id FROM users WHERE id = ? AND id != ?',

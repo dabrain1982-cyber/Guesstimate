@@ -23,7 +23,7 @@ def validate_release(*, for_publication=False):
     if hashlib.sha256(manifest_path.read_bytes()).hexdigest() != refill['sha256']:
         errors.append('Das gebundene Fragenmanifest stimmt nicht mit der Version überein.')
     report = json.loads(manifest_path.read_text(encoding='utf-8'))
-    if report['release'] != version or report['total_added'] != refill['count'] or refill['reset_usage']:
+    if report['release'] != refill.get('introduced_in', version) or report['total_added'] != refill['count'] or refill['reset_usage']:
         errors.append('Fragenpaket und Version widersprechen sich.')
     for item in report['files']:
         if hashlib.sha256(checked_path(item['path']).read_bytes()).hexdigest() != item['sha256']:

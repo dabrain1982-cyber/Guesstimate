@@ -1,0 +1,47 @@
+{
+  "version": "1.01.02",
+  "base_version": "1.01.01",
+  "base_commit": "43b63077b6fb45d259602fc7966da58e2216089c",
+  "owner_included_in_broadcast": true,
+  "control_copy": "latest_own_broadcast_only",
+  "other_recipients_resent": false,
+  "new_question_import": false,
+  "local_inbox_tests": 16,
+  "files": [
+    {
+      "path": "deploy/activate_update_1_01_02.py",
+      "sha256": "9c6e351ce2d0bb7cb08392a5cc2e89b71b1a8d05e57edb5c8dcaaa08e78940f8",
+      "before_sha256": null
+    },
+    {
+      "path": "deploy/validate_release.py",
+      "sha256": "64233f12002d44d20d1b3be152785d6b806904cb7df6a6f78ca0ac0c86203f04",
+      "before_sha256": "0ceab1c9f27b0dfec21b1dda23509790a637eba8e31c26d9564e01a7fd24af49"
+    },
+    {
+      "path": "docs/POSTFACH.md",
+      "sha256": "defcaad6e38090896934871892195a4566eccd63b1797a2b3e2d8796b04e69ab",
+      "before_sha256": "c32a1b8489267fe25617efe793bc0b6595e696e2d37eb2f0a162c8b5b6769b34"
+    },
+    {
+      "path": "inbox.py",
+      "sha256": "43d06d6131e7d62fcd1436b41968b082e46986220c9d42a62c3909b4a0344dbf",
+      "before_sha256": "04042fd1c6356747e7c579332130664baa0f1671f24d593cab7d6cdf47fbfe50"
+    },
+    {
+      "path": "release-log.jsonl",
+      "sha256": "3f43662afe427f3024c1b621afbc29089c0d564deeb48b2dba7a8a5bce429761",
+      "before_sha256": "8c8d819434558b55ab42a7692bdfaf007b5f16f85b96a37bf9943e4c3bcab3d8"
+    },
+    {
+      "path": "release.json",
+      "sha256": "6b4479d0d1f16d6510d1267594953510d58cae3798247ff68814236a231461a5",
+      "before_sha256": "13822ff7aa278758b0ba49247a70635b6332891a1c062dbbbc7d43aa2a5f6529"
+    },
+    {
+      "path": "tests/test_inbox.py",
+      "sha256": "8a0e3689c4cdfc27b8c083bc52f3ddf9f8cfc0a1edb045fe0d84c943fd62561a",
+      "before_sha256": "6e78e1eaddce9bd48753eea2ee2594ec615d739e09ea29bd58ba9f1b4cbdb4e4"
+    }
+  ]
+}

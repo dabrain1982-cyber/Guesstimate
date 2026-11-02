@@ -8,8 +8,8 @@ Empfangene und gesendete Nachrichten bleiben im jeweiligen Postfach erhalten.
 ## Umfang und Versandrechte
 
 - Angemeldete Spieler können ausschließlich dem Betreiber schreiben.
-- Der Betreiber kann einen einzelnen Mitspieler oder alle anderen zum
-  Sendezeitpunkt vorhandenen Konten anschreiben. Maßgeblich ist die bestehende
+- Der Betreiber kann einen einzelnen Mitspieler oder alle zum
+  Sendezeitpunkt vorhandenen Konten einschließlich des eigenen Kontos anschreiben. Maßgeblich ist die bestehende
   Einstellung `OWNER_USERNAME`, normalerweise `stormseed`.
 - Texte sind Klartext mit Zeilenumbrüchen; HTML wird nicht ausgeführt.
 - Es gibt nur Gelesen/Ungelesen. Keine Ticketstufen, Anhänge oder weiteren
@@ -64,3 +64,20 @@ noch aus.
 - Persönliches Offline-Spiel: tatsächlicher Leistenknopf und Betreiberseite
   geöffnet.31 bestehende Tabellen vor/nach der Aktivierung inhaltlich identisch;
   SQLite-Prüfung `ok`, keine persönlichen Nachrichten angelegt.
+
+## V1.01.02 – Absender im Verteiler „Alle Spieler“
+
+Auf Nutzerauftrag vom02.11.2026 enthält die Rundmail auch den Betreiber selbst,
+mit eigenem ungelesenem Eingang und eigener Briefumschlagbestätigung.
+Einzelzustellung und Spielerrechte bleiben unverändert. Der Blick in
+„Gesendet“ markiert die eigene Empfangskopie nicht als gelesen.
+
+Die letzte eigene Rundmail kann einmalig über
+add_latest_broadcast_sender_copy innerhalb einer gesperrten Transaktion
+als Eingang ergänzt werden. Keine zweite Nachricht und keine erneuten
+Zustellungen an andere Spieler. Bei neu ergänzter Kopie wird ausschließlich
+die eigene Hinweisbestätigung bei Bedarf zurückgesetzt, damit der neue Eingang
+auch bei einer älteren Nachrichten-ID Aufmerksamkeit bekommt.
+Wiederholter Aufruf erzeugt keine Kopie und aktiviert keinen bereits
+bestätigten Hinweis erneut. Inhalte, fremde Lesezustände und alle Spieldaten
+bleiben erhalten. Die Live-Aktivierung benötigt den Administratorzugang.

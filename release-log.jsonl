@@ -3,3 +3,4 @@
 {"time_utc": "2026-11-02T05:04:02.995879+00:00", "version": "1.01.01", "event": "prepared_steps_1_2_3", "activated": false, "questions_added": 250, "usage_reset": false, "patchnotes": "pending_final_review"}
 {"time_utc": "2026-11-02T05:53:46.777847+00:00", "version": "1.01.01", "event": "step_4_wallet_and_warning_locally_verified", "activated": false, "normal_wallet": true, "warning_each_seating": true, "test_balances_converted": false, "human_multiplayer_acceptance": false}
 {"time_utc": "2026-11-02T07:12:04.517023+00:00", "version": "1.01.01", "event": "step_5_introduction_and_spelling_locally_verified", "activated": false, "guide": "/ikuehe", "future_rewards": "planned", "human_multiplayer_acceptance": false, "mail_sent": false}
+{"time_utc": "2026-11-02T08:47:17.748033+00:00", "version": "1.01.02", "event": "prepared_sender_in_all_players", "activated": false, "new_broadcasts_sent": false, "backfill": "own_latest_only"}

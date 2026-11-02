@@ -66,7 +66,7 @@ class InboxTests(unittest.TestCase):
 
     def test_broadcast_read_status_is_individual(self):
         self.assertEqual(self.send(recipient='all').status_code, 303)
-        self.assertEqual(sorted(r['user_id'] for r in self.rows('inbox_deliveries')), [2, 3])
+        self.assertEqual(sorted(r['user_id'] for r in self.rows('inbox_deliveries')), [1, 2, 3])
         mira, jan = self.as_user(2), self.as_user(3)
         self.assertEqual(mira.get('/mail/status').json['unread'], 1)
         response = mira.post('/mail/1/lesen', data={'csrf_token':'test-token'}, follow_redirects=True)
@@ -142,6 +142,82 @@ class InboxTests(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertIn('Hallo!\nViele Grüße', response.get_data(as_text=True))
 
+
+    def test_owner_receives_broadcast_unread_with_own_attention(self):
+        self.assertEqual(self.send(recipient='all').status_code,303)
+        self.assertEqual(self.client.get('/mail/status').json,dict(unread=1,latest=1,attention=True))
+        sent=self.client.get('/mail?folder=sent&note=1')
+        self.assertIn('Ein Zettel',sent.get_data(as_text=True))
+        self.assertEqual(self.client.get('/mail/status').json['unread'],1)
+        self.client.post('/mail/oeffnen',data={'csrf_token':'test-token','through':'1'})
+        self.assertEqual(self.client.get('/mail/status').json,dict(unread=1,latest=1,attention=False))
+        self.client.post('/mail/1/lesen',data={'csrf_token':'test-token'})
+        self.assertEqual(self.client.get('/mail/status').json['unread'],0)
+        self.assertEqual(self.as_user(2).get('/mail/status').json['unread'],1)
+
+    def test_broadcast_also_works_when_owner_is_the_only_account(self):
+        with self.app.app_context():
+            db=self.app.get_db()
+            db.execute('DELETE FROM users WHERE id != 1')
+            db.commit()
+        self.assertEqual(self.send(recipient='all').status_code,303)
+        self.assertEqual([r['user_id'] for r in self.rows('inbox_deliveries')],[1])
+
+    def test_latest_old_broadcast_gets_one_sender_copy_without_changing_others(self):
+        from inbox import add_latest_broadcast_sender_copy
+        self.send(recipient='all')
+        self.send(recipient='all')
+        with self.app.app_context():
+            db=self.app.get_db()
+            db.execute('DELETE FROM inbox_deliveries WHERE user_id=1')
+            db.execute('INSERT INTO inbox_attention VALUES(1,99)')
+            db.execute("UPDATE inbox_deliveries SET read_at='2026-11-02T10:00:00' WHERE user_id=2")
+            db.commit()
+            before=[tuple(r) for r in db.execute('SELECT * FROM inbox_deliveries WHERE user_id != 1')]
+            with db:
+                db.execute('BEGIN IMMEDIATE')
+                result=add_latest_broadcast_sender_copy(db,1)
+            self.assertEqual(result,dict(message_id=2,copy_added=True))
+            self.assertEqual([tuple(r) for r in db.execute('SELECT * FROM inbox_deliveries WHERE user_id != 1')],before)
+            self.assertEqual(db.execute('SELECT seen_through FROM inbox_attention WHERE user_id=1').fetchone()[0],1)
+        self.assertEqual(self.client.get('/mail/status').json,dict(unread=1,latest=2,attention=True))
+        self.client.post('/mail/oeffnen',data={'csrf_token':'test-token','through':'2'})
+        with self.app.app_context():
+            db=self.app.get_db()
+            with db:
+                db.execute('BEGIN IMMEDIATE')
+                self.assertEqual(add_latest_broadcast_sender_copy(db,1),dict(message_id=2,copy_added=False))
+        self.assertFalse(self.client.get('/mail/status').json['attention'])
+
+    def test_control_copy_does_nothing_without_owner_broadcast(self):
+        from inbox import add_latest_broadcast_sender_copy
+        self.send(self.as_user(2),recipient='1')
+        before=(self.rows('inbox_messages'),self.rows('inbox_deliveries'))
+        with self.app.app_context():
+            db=self.app.get_db()
+            with db:
+                db.execute('BEGIN IMMEDIATE')
+                self.assertEqual(add_latest_broadcast_sender_copy(db,1),dict(message_id=None,copy_added=False))
+        self.assertEqual((self.rows('inbox_messages'),self.rows('inbox_deliveries')),before)
+
+    def test_deployment_control_copy_preserves_existing_wallet_and_other_receipts(self):
+        import inbox
+        from deploy.activate_update_1_01_02 import own_copy
+        self.send(recipient='all')
+        with self.app.app_context():
+            db=self.app.get_db()
+            db.execute('DELETE FROM inbox_deliveries WHERE user_id=1')
+            db.execute("INSERT INTO currency_entries(user_id,amount,source,reference,detail_json,created_at) VALUES(1,500,'blackjack','preserve-for-copy','{}','2026-11-02')")
+            db.commit()
+            wallet=[tuple(r) for r in db.execute('SELECT * FROM currency_entries')]
+            others=[tuple(r) for r in db.execute('SELECT * FROM inbox_deliveries WHERE user_id != 1')]
+        result=own_copy(Path(self.app.config['DATABASE']),inbox,'stormseed')
+        self.assertTrue(result['copy_added'])
+        self.assertTrue(result['status']['attention'])
+        with self.app.app_context():
+            db=self.app.get_db()
+            self.assertEqual([tuple(r) for r in db.execute('SELECT * FROM currency_entries')],wallet)
+            self.assertEqual([tuple(r) for r in db.execute('SELECT * FROM inbox_deliveries WHERE user_id != 1')],others)
 
 if __name__ == '__main__':
     unittest.main()
